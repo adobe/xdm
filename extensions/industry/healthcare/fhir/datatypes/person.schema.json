@@ -13,136 +13,138 @@
    "definitions":{
       "person":{
          "properties":{
-            "xdm:identifier":{
-               "title":"Identifier",
-               "description":"A human identifier for this person.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/identifier"
-               }
-            },
-            "xdm:active":{
-               "title":"Is Active",
-               "type":"boolean",
-               "description":"Indicates whether the  person's record is in active use."
-            },
-            "xdm:name":{
-               "title":"Name",
-               "description":"A name associated with the person.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/humanname"
-               }
-            },
-            "xdm:telecom":{
-               "title":"Contact Details",
-               "description":"A contact detail (e.g. a telephone number or an email address) by which the person may be contacted.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/contactpoint"
-               }
-            },
-            "xdm:gender":{
-               "title":"Gender",
-               "description":"male | female | other | unknown.",
-               "type":"string",
-               "enum":[
-                  "male",
-                  "female",
-                  "other",
-                  "unknown"
-               ],
-               "meta:enum":{
-                  "male":"Male",
-                  "female":"Female",
-                  "other":"Other",
-                  "unknown":"Unknown"
-               }
-            },
-            "xdm:birthDate":{
-               "title":"Birth Date",
-               "type":"string",
-               "format":"date",
-               "description":"The date of birth for the individual"
-            },
-            "xdm:deceasedBoolean":{
-               "title":"Deceased Indicator",
-               "type":"boolean",
-               "description":"Indicates if the individual is deceased or not."
-            },
-            "xdm:deceasedDateTime":{
-               "title":"Deceased Date Time",
-               "type":"string",
-               "format":"date-time",
-               "description":"Date Time if the person is deceased."
-            },
-            "xdm:address":{
-               "title":"Address",
-               "description":"One or more addresses for the person.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/address"
-               }
-            },
-            "xdm:maritalStatus":{
-               "title":"Marital Status",
-               "description":"Marital (civil) status of a person",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "xdm:communication":{
-               "title":"Communication",
-               "description":"A language which may be used to communicate with the person about his or her health.",
-               "type":"array",
-               "items":{
-                  "type":"object",
-                  "additionalProperties":false,
-                  "properties":{
-                     "xdm:language":{
-                        "title":"Language",
-                        "description":"The language which can be used to communicate with the person about his or her health.",
-                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                     },
-                     "xdm:preferred":{
-                        "title":"Is Preferred Language",
-                        "type":"boolean",
-                        "description":"Language preference indicator"
+            "properties":{
+               "xdm:identifier":{
+                  "title":"Identifier",
+                  "description":"A human identifier for this person.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/identifier"
+                  }
+               },
+               "xdm:active":{
+                  "title":"Is Active",
+                  "type":"boolean",
+                  "description":"Indicates whether the  person's record is in active use."
+               },
+               "xdm:name":{
+                  "title":"Name",
+                  "description":"A name associated with the person.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/humanname"
+                  }
+               },
+               "xdm:telecom":{
+                  "title":"Contact Details",
+                  "description":"A contact detail (e.g. a telephone number or an email address) by which the person may be contacted.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/contactpoint"
+                  }
+               },
+               "xdm:gender":{
+                  "title":"Gender",
+                  "description":"male | female | other | unknown.",
+                  "type":"string",
+                  "enum":[
+                     "male",
+                     "female",
+                     "other",
+                     "unknown"
+                  ],
+                  "meta:enum":{
+                     "male":"Male",
+                     "female":"Female",
+                     "other":"Other",
+                     "unknown":"Unknown"
+                  }
+               },
+               "xdm:birthDate":{
+                  "title":"Birth Date",
+                  "type":"string",
+                  "format":"date",
+                  "description":"The date of birth for the individual"
+               },
+               "xdm:deceasedBoolean":{
+                  "title":"Deceased Indicator",
+                  "type":"boolean",
+                  "description":"Indicates if the individual is deceased or not."
+               },
+               "xdm:deceasedDateTime":{
+                  "title":"Deceased Date Time",
+                  "type":"string",
+                  "format":"date-time",
+                  "description":"Date Time if the person is deceased."
+               },
+               "xdm:address":{
+                  "title":"Address",
+                  "description":"One or more addresses for the person.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/address"
+                  }
+               },
+               "xdm:maritalStatus":{
+                  "title":"Marital Status",
+                  "description":"Marital (civil) status of a person",
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               },
+               "xdm:communication":{
+                  "title":"Communication",
+                  "description":"A language which may be used to communicate with the person about his or her health.",
+                  "type":"array",
+                  "items":{
+                     "type":"object",
+                     "additionalProperties":false,
+                     "properties":{
+                        "xdm:language":{
+                           "title":"Language",
+                           "description":"The language which can be used to communicate with the person about his or her health.",
+                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                        },
+                        "xdm:preferred":{
+                           "title":"Is Preferred Language",
+                           "type":"boolean",
+                           "description":"Language preference indicator"
+                        }
                      }
                   }
-               }
-            },
-            "xdm:managingOrganization":{
-               "title":"Managing Organization",
-               "description":"Organization that is the custodian of the patient record.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
-            },
-            "xdm:link":{
-               "title":"Person Link Details",
-               "description":"Link to a resource that concerns the same actual person.",
-               "type":"array",
-               "items":{
-                  "type":"object",
-                  "additionalProperties":false,
-                  "properties":{
-                     "xdm:target":{
-                        "title":"Target",
-                        "description":"The resource to which this actual person is associated.",
-                        "$ref":"https://ns.fhir.org/datatypes/reference"
-                     },
-                     "xdm:assurance":{
-                        "title":"Assurance",
-                        "description":"level1 | level2 | level3 | level4",
-                        "type":"string",
-                        "enum":[
-                           "level1",
-                           "level2",
-                           "level3",
-                           "level4"
-                        ],
-                        "meta:enum":{
-                           "level1":"Level1",
-                           "level2":"Level2",
-                           "level3":"Level3",
-                           "level4":"Level4"
+               },
+               "xdm:managingOrganization":{
+                  "title":"Managing Organization",
+                  "description":"Organization that is the custodian of the patient record.",
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               },
+               "xdm:link":{
+                  "title":"Person Link Details",
+                  "description":"Link to a resource that concerns the same actual person.",
+                  "type":"array",
+                  "items":{
+                     "type":"object",
+                     "additionalProperties":false,
+                     "properties":{
+                        "xdm:target":{
+                           "title":"Target",
+                           "description":"The resource to which this actual person is associated.",
+                           "$ref":"https://ns.fhir.org/datatypes/reference"
+                        },
+                        "xdm:assurance":{
+                           "title":"Assurance",
+                           "description":"level1 | level2 | level3 | level4",
+                           "type":"string",
+                           "enum":[
+                              "level1",
+                              "level2",
+                              "level3",
+                              "level4"
+                           ],
+                           "meta:enum":{
+                              "level1":"Level1",
+                              "level2":"Level2",
+                              "level3":"Level3",
+                              "level4":"Level4"
+                           }
                         }
                      }
                   }
@@ -158,6 +160,5 @@
    ],
    "meta:status":"experimental"
 }
-
 
 

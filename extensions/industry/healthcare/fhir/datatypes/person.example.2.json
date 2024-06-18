@@ -1,0 +1,60 @@
+{
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "DL"
+      }],
+      "text" : "Ohio driver license"
+    },
+    "system" : "urn:oid:2.16.840.1.113883.4.3.39",
+    "value" : "TL545786",
+    "period" : {
+      "start" : "2041-09-23"
+    },
+    "assigner" : {
+      "display" : "Ohio Bureau of Motor Vehicles"
+    }
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "family" : "Everywoman",
+    "given" : ["Eve",
+    "Marie"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "(621)-479-9743",
+    "use" : "home"
+  }],
+  "gender" : "female",
+  "birthDate" : "1974-03-07",
+  "address" : [{
+    "use" : "home",
+    "line" : ["2086 College St"],
+    "city" : "Sandusky",
+    "state" : "OH",
+    "postalCode" : "44870",
+    "country" : "USA"
+  }],
+  "managingOrganization" : {
+    "reference" : "http://www.goodhealth.com/Organization/12",
+    "display" : "Goodhealth Patient Portal"
+  },
+  "link" : [{
+    "target" : {
+      "reference" : "http://www.goodhealth.com/Patient/98574",
+      "display" : "Eve Everywoman"
+    },
+    "assurance" : "level3"
+  },
+  {
+    "target" : {
+      "reference" : "http://www.acme-medical.com/Patient/ab34d",
+      "display" : "Eve Marie Everywoman"
+    },
+    "assurance" : "level2"
+  }]
+}

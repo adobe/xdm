@@ -5,36 +5,37 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/engageableProfile",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Engageable Profile Fields",
   "description": "A set of meta-data fields related to engageable profile.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/experience"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "definitions": {
     "entities": {
       "properties": {
-        "https://ns.adobe.com/experience/entities/engagement": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement": {
           "title": "Engagement Fields",
           "type": "object",
           "description": "Fields defined for engagement",
           "properties": {
-            "https://ns.adobe.com/experience/entities/engagement/solution": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement/solution": {
               "title": "Solution",
               "type": "object",
               "description": "Object to store solution/product name and solution related fields for engageable profile.",
               "properties": {
-                "https://ns.adobe.com/experience/entities/engagement/solution/name": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement/solution/name": {
                   "title": "Solution Name",
                   "type": "string",
                   "description": "Name of product/solution for engageable profile record."
                 }
               },
-              "https://ns.adobe.com/experience/entities/engagement/latestTimestamp": {
+              "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement/latestTimestamp": {
                 "title": "Latest Timestamp",
                 "type": "string",
+                "format": "date-time",
                 "description": "Latest Timestamp of engageable profile record. Latest time of engagement."
               }
             }
@@ -51,5 +52,5 @@
       "$ref": "#/definitions/entities"
     }
   ],
-  "meta:status": "hidden"
+  "meta:status": "experimental"
 }

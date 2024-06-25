@@ -16,7 +16,7 @@
             "xdm:boundsdDuration":{
                "title":"Bound Duration",
                "description":"Duration Limit",
-               "type":"string"
+              "$ref":"https://ns.fhir.org/datatypes/duration"
             },
             "xdm:boundsRange":{
                "title":"Bound Range",
@@ -31,12 +31,14 @@
             "xdm:count":{
                "title":"count",
                "description":"Number of times to repeat",
-               "type":"integer"
+               "type":"integer",
+               "minimum": 0
             },
             "xdm:countMax":{
                "title":"Maximum Count",
                "description":"Maximum number of times to repeat",
-               "type":"integer"
+               "type":"integer",
+               "minimum": 0
             },
             "xdm:duration":{
                "title":"Duration",
@@ -74,12 +76,14 @@
             "xdm:frequency":{
                "title":"Frequency",
                "description":"Indicates the number of repetitions that should occur within a period. I.e. Event occurs frequency times per period",
-               "type":"number"
+               "type":"number",
+               "minimum": 0
             },
             "xdm:frequencyMax":{
                "title":"Maximum Frequency",
                "description":"Event occurs up to frequencyMax times per period",
-               "type":"number"
+               "type":"number",
+               "minimum": 0
             },
             "xdm:period":{
                "title":"Period",
@@ -163,6 +167,3 @@
    ],
    "meta:status":"experimental"
 }
-
-
-

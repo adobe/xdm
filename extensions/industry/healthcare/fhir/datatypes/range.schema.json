@@ -16,12 +16,12 @@
             "xdm:low":{
                "title":"Low",
                "description":"Low Limit",
-               "type":"string"
+               "$ref":"https://ns.fhir.org/datatypes/simplequantity"
             },
             "xdm:high":{
                "title":"High",
                "description":"High Limit",
-               "type":"string"
+               "$ref":"https://ns.fhir.org/datatypes/simplequantity"
             }
          }
       }

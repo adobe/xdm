@@ -21,7 +21,7 @@
             "xdm:denominator":{
                "title":"Denominator",
                "description":"The value of the denominator.",
-               "type":"string"
+               "$ref":"https://ns.fhir.org/datatypes/simplequantity"
             }
          }
       }

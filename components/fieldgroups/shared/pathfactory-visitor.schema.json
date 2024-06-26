@@ -7,14 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-visitor",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:resourceType": "mixins",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/profile"
   ],
-  "meta:xdmType": "object",
-  "meta:allFieldAccess": true,
   "title": "PathFactory Visitor Fieldgroup Details - V1.1",
   "type": "object",
   "description": "PathFactory Visitor Schema Filed",
@@ -126,9 +123,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/pfVisitorFields",
-      "type": "object",
-      "meta:xdmType": "object"
+      "$ref": "#/definitions/pfVisitorFields"
     }
   ],
   "meta:status": "stable"

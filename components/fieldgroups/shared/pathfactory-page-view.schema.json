@@ -7,14 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-pageview",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:resourceType": "mixins",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "meta:xdmType": "object",
-  "meta:allFieldAccess": true,
   "title": "PathFactory Page Views Fieldgroup Details - V1.1",
   "type": "object",
   "description": "PathFactory Page Views Schema Filed",
@@ -648,9 +645,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/pfPageViewFields",
-      "type": "object",
-      "meta:xdmType": "object"
+      "$ref": "#/definitions/pfPageViewFields"
     }
   ],
   "meta:status": "stable"

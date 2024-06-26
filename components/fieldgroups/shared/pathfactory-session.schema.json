@@ -7,14 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-session",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:resourceType": "mixins",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "meta:xdmType": "object",
-  "meta:allFieldAccess": true,
   "title": "PathFactory Session Fieldgroup Details - V1.1",
   "type": "object",
   "description": "PathFactory Session Schema Filed",
@@ -574,9 +571,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/pfSessionFields",
-      "type": "object",
-      "meta:xdmType": "object"
+      "$ref": "#/definitions/pfSessionFields"
     }
   ],
   "meta:status": "stable"

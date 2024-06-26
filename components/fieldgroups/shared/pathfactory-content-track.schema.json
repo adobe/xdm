@@ -7,14 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-contenttrack",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:resourceType": "mixins",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "meta:xdmType": "object",
-  "meta:allFieldAccess": true,
   "title": "PathFactory Content Track Fieldgroup Details - V1.1",
   "type": "object",
   "description": "PathFactory Content Track Schema Filed",
@@ -232,9 +229,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/pfContentTrackFields",
-      "type": "object",
-      "meta:xdmType": "object"
+      "$ref": "#/definitions/pfContentTrackFields"
     }
   ],
   "meta:status": "stable"

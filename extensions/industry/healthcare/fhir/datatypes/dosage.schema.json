@@ -89,8 +89,8 @@
                      },
                      "xdm:doseQuantity":{
                         "title":"Dose Quantity",
-                        "type":"string",
-                        "description":"Amount of medication per dose."
+                        "description":"Amount of medication per dose.",
+                        "$ref":"https://ns.fhir.org/datatypes/simplequantity"
                      },
                      "xdm:rateRatio":{
                         "title":"Rate Ratio",
@@ -104,8 +104,8 @@
                      },
                      "xdm:rateQuantity":{
                         "title":"Rate Quantity",
-                        "type":"string",
-                        "description":"Amount of medication per unit of time."
+                        "description":"Amount of medication per unit of time.",
+                        "$ref":"https://ns.fhir.org/datatypes/simplequantity"
                      }
                   }
                }
@@ -121,12 +121,12 @@
             "xdm:maxDosePerAdministration":{
                "title":"MaxDosePerAdministration",
                "description":"Upper limit on medication per administration.",
-               "type":"string"
+               "$ref":"https://ns.fhir.org/datatypes/simplequantity"
             },
             "xdm:maxDosePerLifetime":{
                "title":"MaxDosePerLifetime",
                "description":"Upper limit on medication per lifetime of the patient.",
-               "type":"string"
+               "$ref":"https://ns.fhir.org/datatypes/simplequantity"
             }
          }
       }

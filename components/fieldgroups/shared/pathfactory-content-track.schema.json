@@ -1,0 +1,240 @@
+{
+    "meta:license": [
+        "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-contenttrack",
+    "meta:resourceType": "mixins",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "meta:xdmType": "object",
+    "meta:allFieldAccess": true,
+    "title": "PathFactory Content Track Fieldgroup Details - V1.1",
+    "type": "object",
+    "description": "PathFactory Content Track Schema Fileds",
+    "definitions": {
+        "pfContentTrackFields": {
+            "properties": {
+                "xdm:pathfactoryContentTrack": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:createdAtUtc": {
+                            "required": [],
+                            "format": "date-time",
+                            "type": "string",
+                            "description": "",
+                            "title": "Created Date (UTC)",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:appId": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "App ID",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:deleted": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Deleted",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:experienceCustomUrl": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Experience Custom URL",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:experienceId": {
+                            "required": [],
+                            "type": "integer",
+                            "description": "",
+                            "title": "Experience ID",
+                            "meta:xdmType": "int",
+                            "minimum": -2147483648,
+                            "maximum": 2147483647
+                        },
+                        "xdm:externalId": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Experience External ID",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:experienceName": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Experience Name",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:experienceType": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Experience Type (PathFactory Experience)",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:folderId": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Folder ID (PathFactory)",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:isSidebarEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Sidebar Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isBottomBarEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "IS Bottom Bar Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isCardEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Card Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isExitEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Exit Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isInactivityEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Inactivity Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isShareEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Share Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isCaptureEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Capture Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:experienceUuid": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Experience Unique ID",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:isCookieConsentEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Cookie Consent Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isGdprCookieConsentEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Gdpr Cookie Consent Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isHeaderEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Header Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isCookieMessageEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Cookie Message Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isFlowEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Flow Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isSignpostEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Signpost Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isTopicSidebarEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "is topic sidebar enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isLikeEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Like Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:isEndEnabled": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is End Enabled",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:targetContentOrder": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Target Content Order",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:updatedAtUtc": {
+                            "required": [],
+                            "format": "date-time",
+                            "type": "string",
+                            "description": "",
+                            "title": "Updated Date (UTC)",
+                            "meta:xdmType": "date-time"
+                        }
+                    },
+                    "meta:xdmType": "object"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/pfContentTrackFields",
+            "type": "object",
+            "meta:xdmType": "object"
+        }
+    ],
+    "meta:status": "stable"
+}

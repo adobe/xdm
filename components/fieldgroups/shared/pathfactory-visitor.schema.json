@@ -1,0 +1,134 @@
+{
+    "meta:license": [
+        "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/427a0cdf8d2031ebf412e465dedd067f52bafafece6a26fc",
+    "meta:resourceType": "mixins",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "meta:xdmType": "object",
+    "meta:allFieldAccess": true,
+    "title": "PathFactory Visitor Fieldgroup Details - V1.1",
+    "type": "object",
+    "description": "PathFactory Visitor Schema Fileds",
+    "definitions": {
+        "pfVisitorFields": {
+            "properties": {
+                "xdm:pathfactoryVisitor": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:createdAtUtc": {
+                            "required": [],
+                            "format": "date-time",
+                            "type": "string",
+                            "description": "",
+                            "title": "Created At (UTC)",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:emailDomain": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Email Domain",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:email": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Email",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:visitorEcid": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Adobe ECID",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:lastVisitTimeUtc": {
+                            "required": [],
+                            "format": "date-time",
+                            "type": "string",
+                            "description": "",
+                            "title": "Last Visit Time (UTC)",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:visitorId": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Visitor ID",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:visitorUuid": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Visitor UUID",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:visitorIdentity": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Visitor Identity",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:isKnown": {
+                            "required": [],
+                            "type": "boolean",
+                            "description": "",
+                            "title": "Is Known",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:knownFrom": {
+                            "required": [],
+                            "format": "date-time",
+                            "type": "string",
+                            "description": "",
+                            "title": "Known From",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:firstVisitTimeUtc": {
+                            "required": [],
+                            "format": "date-time",
+                            "type": "string",
+                            "description": "",
+                            "title": "First Visit Time (UTC)",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:identityEcid": {
+                            "required": [],
+                            "type": "string",
+                            "description": "",
+                            "title": "Identity ECID",
+                            "meta:xdmType": "string"
+                        }
+                    },
+                    "meta:xdmType": "object",
+                    "required": [
+                        "xdm:visitorId",
+                        "xdm:visitorUuid",
+                        "xdm:visitorIdentity",
+                        "xdm:isKnown"
+                    ]
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/pfVisitorFields",
+            "type": "object",
+            "meta:xdmType": "object"
+        }
+    ],
+    "meta:status": "stable"
+}

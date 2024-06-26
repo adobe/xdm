@@ -113,7 +113,7 @@
                   "xdm:lotNumber":{
                      "title":"LotNumber",
                      "description":"Identifier assigned to batch.",
-                     "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                     "type":"string"
                   },
                   "xdm:expirationDate":{
                      "title":"ExpirationDate",
@@ -138,5 +138,6 @@
    ],
    "meta:status":"experimental"
 }
+
 
 

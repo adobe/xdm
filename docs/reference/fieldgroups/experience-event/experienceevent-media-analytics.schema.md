@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/mixins/experienceevent-media-analytics
 Track interactions with media.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/experienceevent-media-analytics.schema.json](fieldgroups/experience-event/experienceevent-media-analytics.schema.json) |
+|----------------------------------|--------------------------------------|----------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Stable    | No | Forbidden | Permitted | [fieldgroups/experience-event/experienceevent-media-analytics.schema.json](fieldgroups/experience-event/experienceevent-media-analytics.schema.json) |
 ## Schema Hierarchy
 
 * MediaAnalytics Interaction Details  `https://ns.adobe.com/xdm/mixins/experienceevent-media-analytics`
@@ -22,7 +22,6 @@ Track interactions with media.
   "xdm:mediaCollection": {
     "xdm:playhead": 831,
     "xdm:sessionDetails": {
-      "xdm:ID": "1482236761294786918253",
       "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
@@ -30,26 +29,22 @@ Track interactions with media.
       "xdm:channel": "channel"
     },
     "xdm:advertisingDetails": {
-      "xdm:ID": "123456789",
+      "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:podPosition": 1,
       "xdm:playerName": "playerName"
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:offset": 123,
-      "xdm:ID": "123"
+      "xdm:offset": 123
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
       "xdm:offset": 50,
-      "xdm:index": 2,
-      "xdm:isStarted": false,
-      "xdm:isCompleted": false,
-      "xdm:timePlayed": 70
+      "xdm:index": 2
     },
     "xdm:errorDetails": {
-      "xdm:ID": "errorID",
+      "xdm:name": "errorID",
       "xdm:source": "player"
     },
     "xdm:qoeDataDetails": {
@@ -71,15 +66,15 @@ Track interactions with media.
   },
   "xdm:mediaReporting": {
     "xdm:sessionDetails": {
-      "xdm:ID": "1482236761294786918253",
       "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
       "xdm:playerName": "playerName",
-      "xdm:channel": "channel"
+      "xdm:channel": "channel",
+      "xdm:pccr": true
     },
     "xdm:advertisingDetails": {
-      "xdm:ID": "123456789",
+      "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:podPosition": 1,
       "xdm:playerName": "playerName"
@@ -116,7 +111,6 @@ Track interactions with media.
       "xdm:mediaCollection": {
         "xdm:playhead": 0,
         "xdm:sessionDetails": {
-          "xdm:ID": "1482236761294786918253",
           "xdm:name": "123456789",
           "xdm:length": 100,
           "xdm:contentType": "VOD",
@@ -147,10 +141,7 @@ Track interactions with media.
           "xdm:friendlyName": "friendlyName",
           "xdm:length": 100,
           "xdm:offset": 50,
-          "xdm:index": 2,
-          "xdm:isStarted": false,
-          "xdm:isCompleted": false,
-          "xdm:timePlayed": 70
+          "xdm:index": 2
         }
       }
     },
@@ -170,39 +161,38 @@ Track interactions with media.
     },
     {
       "xdm:mediaEventTimestamp": "2017-09-26T15:57:25+00:00",
-      "xdm:mediaEventType": "media.adStart",
+      "xdm:mediaEventType": "media.adBreakStart",
       "xdm:mediaCollection": {
-        "xdm:advertisingDetails": {
-          "xdm:ID": "123456789",
-          "xdm:length": 100,
-          "xdm:podPosition": 1,
-          "xdm:playerName": "playerName"
+        "xdm:advertisingPodDetails": {
+          "xdm:index": 2,
+          "xdm:offset": 123
         },
         "xdm:playhead": 25
       }
     },
     {
       "xdm:mediaEventTimestamp": "2017-09-26T15:58:25+00:00",
-      "xdm:mediaEventType": "media.adBreakStart",
+      "xdm:mediaEventType": "media.adStart",
       "xdm:mediaCollection": {
-        "xdm:advertisingPodDetails": {
-          "xdm:index": 2,
-          "xdm:offset": 123,
-          "xdm:ID": "123"
+        "xdm:advertisingDetails": {
+          "xdm:name": "123456789",
+          "xdm:length": 100,
+          "xdm:podPosition": 1,
+          "xdm:playerName": "playerName"
         },
         "xdm:playhead": 30
       }
     },
     {
       "xdm:mediaEventTimestamp": "2017-09-26T15:59:25+00:00",
-      "xdm:mediaEventType": "media.adBreakComplete",
+      "xdm:mediaEventType": "media.adComplete",
       "xdm:mediaCollection": {
         "xdm:playhead": 35
       }
     },
     {
       "xdm:mediaEventTimestamp": "2017-09-26T16:00:25+00:00",
-      "xdm:mediaEventType": "media.adComplete",
+      "xdm:mediaEventType": "media.adBreakComplete",
       "xdm:mediaCollection": {
         "xdm:playhead": 40
       }

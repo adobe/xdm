@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/datatypes/mediaEvent
 Media event information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/mediaevent.schema.json](datatypes/mediaevent.schema.json) |
+|-------------------------------|-----------------------------------|----------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stable   | No | Forbidden | Permitted | [datatypes/mediaevent.schema.json](datatypes/mediaevent.schema.json) |
 ## Schema Hierarchy
 
 * Media event information `https://ns.adobe.com/xdm/datatypes/mediaEvent`
@@ -24,7 +24,6 @@ Media event information.
   "xdm:mediaCollection": {
     "xdm:playhead": 831,
     "xdm:sessionDetails": {
-      "xdm:ID": "1482236761294786918253",
       "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
@@ -32,28 +31,22 @@ Media event information.
       "xdm:channel": "channel"
     },
     "xdm:advertisingDetails": {
-      "xdm:ID": "123456789",
+      "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:podPosition": 1,
-      "xdm:playerName": "playerName",
-      "xdm:isCompleted": false,
-      "xdm:isStarted": false
+      "xdm:playerName": "playerName"
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:offset": 123,
-      "xdm:ID": "123"
+      "xdm:offset": 123
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
       "xdm:offset": 50,
-      "xdm:index": 2,
-      "xdm:isStarted": false,
-      "xdm:isCompleted": false,
-      "xdm:timePlayed": 70
+      "xdm:index": 2
     },
     "xdm:errorDetails": {
-      "xdm:ID": "errorID",
+      "xdm:name": "errorID",
       "xdm:source": "player"
     },
     "xdm:qoeDataDetails": {

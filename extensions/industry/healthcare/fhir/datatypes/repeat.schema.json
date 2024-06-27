@@ -16,7 +16,7 @@
             "xdm:boundsdDuration":{
                "title":"Bound Duration",
                "description":"Duration Limit",
-              "$ref":"https://ns.fhir.org/datatypes/duration"
+               "$ref":"https://ns.fhir.org/datatypes/duration"
             },
             "xdm:boundsRange":{
                "title":"Bound Range",
@@ -32,13 +32,13 @@
                "title":"count",
                "description":"Number of times to repeat",
                "type":"integer",
-               "minimum": 0
+               "minimum":0
             },
             "xdm:countMax":{
                "title":"Maximum Count",
                "description":"Maximum number of times to repeat",
                "type":"integer",
-               "minimum": 0
+               "minimum":0
             },
             "xdm:duration":{
                "title":"Duration",
@@ -77,13 +77,13 @@
                "title":"Frequency",
                "description":"Indicates the number of repetitions that should occur within a period. I.e. Event occurs frequency times per period",
                "type":"number",
-               "minimum": 0
+               "minimum":0
             },
             "xdm:frequencyMax":{
                "title":"Maximum Frequency",
                "description":"Event occurs up to frequencyMax times per period",
                "type":"number",
-               "minimum": 0
+               "minimum":0
             },
             "xdm:period":{
                "title":"Period",
@@ -121,36 +121,45 @@
             "xdm:dayOfWeek":{
                "title":"Day Of Week",
                "description":"mon | tue | wed | thu | fri | sat | sun",
-               "type":"string",
-               "enum":[
-                  "mon",
-                  "tue",
-                  "wed",
-                  "thu",
-                  "fri",
-                  "sat",
-                  "sun"
-               ],
-               "meta:enum":{
-                  "mon":"Monday",
-                  "tue":"Tuesday",
-                  "wed":"Wednesday",
-                  "thu":"Thursday",
-                  "fri":"Friday",
-                  "sat":"Saturday",
-                  "sun":"Sunday"
+               "type":"array",
+               "items":{
+                  "type":"string",
+                  "enum":[
+                     "mon",
+                     "tue",
+                     "wed",
+                     "thu",
+                     "fri",
+                     "sat",
+                     "sun"
+                  ],
+                  "meta:enum":{
+                     "mon":"Monday",
+                     "tue":"Tuesday",
+                     "wed":"Wednesday",
+                     "thu":"Thursday",
+                     "fri":"Friday",
+                     "sat":"Saturday",
+                     "sun":"Sunday"
+                  }
                }
             },
             "xdm:timeOfDay":{
                "title":"Time Of Day",
                "description":"Time of day for action",
-               "type":"string",
-               "format":"time"
+               "type":"array",
+               "items":{
+                  "type":"string",
+                  "format":"time"
+               }
             },
             "xdm:when":{
                "title":"When",
                "description":"Code for time period of occurrence",
-               "type":"string"
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
             },
             "xdm:offset":{
                "title":"Offset",
@@ -167,3 +176,4 @@
    ],
    "meta:status":"experimental"
 }
+

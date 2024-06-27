@@ -27,8 +27,8 @@
           "type": "string",
           "format": "date-time",
           "description": "The local time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-          "meta:titleId": "placecontext##xdm:localTime##title##7021",
-          "meta:descriptionId": "placecontext##xdm:localTime##description##75591"
+          "meta:titleId": "placecontext##xdm:IPLocalTime##title##7021",
+          "meta:descriptionId": "placecontext##xdm:IPLocalTime##description##75591"
         },
         "xdm:ianaTimezone": {
           "title": "Iana Timezone",
@@ -48,8 +48,8 @@
           "title": "Local time zone offset based on IP geolocation",
           "type": "integer",
           "description": "The current, local time zone offset in minutes from UTC for the localTime in this object.  This will include the current DST offset if applicable and it's calculated based on IP geolocation.",
-          "meta:titleId": "placecontext##xdm:localTimezoneOffset##title##81451",
-          "meta:descriptionId": "placecontext##xdm:localTimezoneOffset##description##18031"
+          "meta:titleId": "placecontext##xdm:IPLocalTimezoneOffset##title##81451",
+          "meta:descriptionId": "placecontext##xdm:IPLocalTimezoneOffset##description##18031"
         },
         "xdm:geo": {
           "title": "Geo",

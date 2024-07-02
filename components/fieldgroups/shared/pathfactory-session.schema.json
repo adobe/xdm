@@ -1,0 +1,578 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-session",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "title": "PathFactory Session Fieldgroup Details - V1.1",
+  "type": "object",
+  "description": "PathFactory Session Schema Field",
+  "definitions": {
+    "pfSessionFields": {
+      "properties": {
+        "xdm:pathfactorySession": {
+          "title": "Pathfactory Session",
+          "description": "Pathfactory Session Field Object",
+          "type": "object",
+          "properties": {
+            "xdm:sessionId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Session ID",
+              "meta:xdmType": "string"
+            },
+            "xdm:modifiedUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Modified UTC",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:averagePercentageScrolled": {
+              "required": [],
+              "type": "number",
+              "description": "",
+              "title": "Average Percentage Scrolled",
+              "meta:xdmType": "number"
+            },
+            "xdm:averageViewTimePerAsset": {
+              "required": [],
+              "type": "number",
+              "description": "",
+              "title": "Average View Time Per Asset",
+              "meta:xdmType": "number"
+            },
+            "xdm:captureModalShownCount": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Capture Modal Shown Count",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:captures": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Captures",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:city": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "City",
+              "meta:xdmType": "string"
+            },
+            "xdm:clicks": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Clicks",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:companyName": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Name",
+              "meta:xdmType": "string"
+            },
+            "xdm:country": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Country",
+              "meta:xdmType": "string"
+            },
+            "xdm:dataSource": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Data Source",
+              "meta:xdmType": "string"
+            },
+            "xdm:demandbaseAnnualSales": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Demandbase Annual Sales",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:demandbaseCompanyName": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Demandbase Company Name",
+              "meta:xdmType": "string"
+            },
+            "xdm:demandbaseEmployeeCount": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Demandbase Employee Count",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:demandbaseIndustry": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Demandbase Industry",
+              "meta:xdmType": "string"
+            },
+            "xdm:demandbaseSid": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Demandbase SID",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:demandbaseWebSite": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Demandbase Website",
+              "meta:xdmType": "string"
+            },
+            "xdm:deviceType": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Device Type",
+              "meta:xdmType": "string"
+            },
+            "xdm:domain": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Domain",
+              "meta:xdmType": "string"
+            },
+            "xdm:emailAddress": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Email Address",
+              "meta:xdmType": "string"
+            },
+            "xdm:emailDomain": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Email Domain",
+              "meta:xdmType": "string"
+            },
+            "xdm:endTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "End Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:endTime": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "End Time",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:engagementScore": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Engagement Score",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:engagementTime": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Engagement Time",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:experienceExternalId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience External ID",
+              "meta:xdmType": "string"
+            },
+            "xdm:experienceId": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Experience ID",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:experienceName": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience Name",
+              "meta:xdmType": "string"
+            },
+            "xdm:incrementalEngagementTime": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Incremental Engagement Time",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:ip": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "IP",
+              "meta:xdmType": "string"
+            },
+            "xdm:ip2ProxyIsproxy": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "IP 2 Proxy Is Proxy",
+              "meta:xdmType": "string"
+            },
+            "xdm:isp": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "ISP",
+              "meta:xdmType": "string"
+            },
+            "xdm:likes": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Likes",
+              "meta:xdmType": "string"
+            },
+            "xdm:os": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "OS",
+              "meta:xdmType": "string"
+            },
+            "xdm:queryString": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Query String",
+              "meta:xdmType": "string"
+            },
+            "xdm:referrerUrl": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Referrer URL",
+              "meta:xdmType": "string"
+            },
+            "xdm:region": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Region",
+              "meta:xdmType": "string"
+            },
+            "xdm:referrerMedium": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Referrer Medium",
+              "meta:xdmType": "string"
+            },
+            "xdm:referrerSource": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Referrer Source",
+              "meta:xdmType": "string"
+            },
+            "xdm:referrerTerm": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Referrer Term",
+              "meta:xdmType": "string"
+            },
+            "xdm:shares": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Shares",
+              "meta:xdmType": "string"
+            },
+            "xdm:startTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Start Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:startTime": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Start Time",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:sixsenseCompanyCountryIsoCode": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Country ISO Code",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanyEmployeeCount": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Sixsense Company Employee Count",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:sixsenseCompanyEmployeeRange": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Employee Range",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanyIndustry": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Industry",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanyNaicscode": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Naicscode",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanyNaicsdescription": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Naicsdescription",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanyPhone": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Phone",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanyPostalCode": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Postal Code",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanyRevenueRange": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Revenue Range",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanySiccode": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Siccode",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanySicdescription": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Sicdescription",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanyState": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company State",
+              "meta:xdmType": "string"
+            },
+            "xdm:sixsenseCompanyStreetAddress": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company Street Address",
+              "meta:xdmType": "string"
+            },
+            "xdm:spiderOrRobot": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Spider OR  Robot",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:totalAssetViews": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Total Asset Views",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:uniqueViews": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Unique Views",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:userAgent": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "User Agent",
+              "meta:xdmType": "string"
+            },
+            "xdm:marketingCampaign": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Campaign",
+              "meta:xdmType": "string"
+            },
+            "xdm:marketingContent": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Content",
+              "meta:xdmType": "string"
+            },
+            "xdm:marketingMedium": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Medium",
+              "meta:xdmType": "string"
+            },
+            "xdm:marketingSource": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Source",
+              "meta:xdmType": "string"
+            },
+            "xdm:marketingTerm": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Term",
+              "meta:xdmType": "string"
+            },
+            "xdm:unifiedExperienceUuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Unified Experience UUID",
+              "meta:xdmType": "string"
+            },
+            "xdm:experienceUuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience UUID",
+              "meta:xdmType": "string"
+            },
+            "xdm:webExpId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Web Exp ID",
+              "meta:xdmType": "string"
+            },
+            "xdm:browser": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Browser",
+              "meta:xdmType": "string"
+            },
+            "xdm:experienceType": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience Type",
+              "meta:xdmType": "string"
+            },
+            "xdm:visitorId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Visitor Identity",
+              "meta:xdmType": "string"
+            },
+            "xdm:visitorUuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Visitor UUID",
+              "meta:xdmType": "string"
+            },
+            "xdm:identityEcid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Identity ECID",
+              "meta:xdmType": "string"
+            }
+          },
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfSessionFields"
+    }
+  ],
+  "meta:status": "stable"
+}

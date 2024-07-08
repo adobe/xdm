@@ -1,0 +1,35 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.fhir.org/datatypes/ratio",
+   "title":"Ratio",
+   "type":"object",
+   "description":"A ratio of two Quantity values - a numerator and a denominator.(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "ratio":{
+         "properties":{
+            "xdm:numerator":{
+               "title":"Numerator",
+               "description":"The value of the numerator.",
+               "$ref":"https://ns.fhir.org/datatypes/quantity"
+            },
+            "xdm:denominator":{
+               "title":"Denominator",
+               "description":"The value of the denominator.",
+               "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/ratio"
+      }
+   ],
+   "meta:status":"experimental"
+}

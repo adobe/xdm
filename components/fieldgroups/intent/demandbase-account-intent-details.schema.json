@@ -26,9 +26,9 @@
           "description": "Adobe generated unique identifier for the record.",
           "type": "string"
         },
-        "xdm:accountDomain": {
-          "title": "Account Domain",
-          "description": "Account Domain.",
+        "xdm:accountId": {
+          "title": "Account Id",
+          "description": "B2B Account Id this intent record is associated with",
           "type": "string"
         },
         "xdm:demandbaseAccountID": {
@@ -36,9 +36,27 @@
           "description": "Company's ID in DemandBase",
           "type": "string"
         },
-        "xdm:accountId": {
-          "title": "Account Id",
-          "description": "B2B Account Id this intent record is associated with",
+        "xdm:durationType": {
+          "title": "Duration Type",
+          "description": "Intent validity period type (e.g. week)",
+          "enum": ["DAY", "WEEK", "MONTH"],
+          "meta:enum": { "DAY": "DAY", "WEEK": "WEEK", "MONTH": "MONTH" }
+        },
+        "xdm:startDate": {
+          "title": "Start Date",
+          "description": "Start date of Intent validity",
+          "type": "string",
+          "format": "date"
+        },
+        "xdm:endDate": {
+          "title": "End Date",
+          "description": "End date of Intent validity",
+          "type": "string",
+          "format": "date"
+        },
+        "xdm:accountDomain": {
+          "title": "Account Domain",
+          "description": "Account Domain.",
           "type": "string"
         },
         "xdm:keyword": {
@@ -56,37 +74,31 @@
           "description": "Keyword Set ID ",
           "type": "string"
         },
+        "xdm:peopleResearchingCount": {
+          "title": "People Researching Count",
+          "description": "Number of people researching the Keyword",
+          "type": "integer"
+        },
         "xdm:intentStrength": {
           "title": "Intent Strength",
           "description": "Keyword Intent Strength (enum: Low, Medium, High)",
-          "type": "string"
-        },
-        "xdm:startDate": {
-          "title": "Start Date",
-          "description": "Start date of Intent validity",
-          "type": "string",
-          "format": "date"
-        },
-        "xdm:endDate": {
-          "title": "End Date",
-          "description": "End date of Intent validity",
-          "type": "string",
-          "format": "date"
+          "enum": ["Low", "Medium", "High"],
+          "meta:enum": { "Low": "Low", "Medium": "Medium", "High": "High" }
         },
         "xdm:isTrending": {
           "title": "Is Trending",
           "description": "Is Keyword currently trending?",
           "type": "boolean"
         },
-        "xdm:peopleResearchingCount": {
-          "title": "People Researching Count",
-          "description": "Number of people researching the Keyword",
+        "xdm:numTrendingDays": {
+          "title": "Number of Trending Days",
+          "description": "Number of days the keyword has been trending",
           "type": "integer"
         },
-        "xdm:durationType": {
-          "title": "Duration Type",
-          "description": "Intent validity period type (e.g. week)",
-          "type": "string"
+        "xdm:trendingScore": {
+          "title": "Trending Score",
+          "description": "Trending Score",
+          "type": "integer"
         },
         "xdm:partitionDate": {
           "title": "Partition Date",

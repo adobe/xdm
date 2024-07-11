@@ -57,10 +57,12 @@
               "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/version##title##96811",
               "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/version##description##49381"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/objectiveMetricID": {
-              "title": "objectiveMetricID",
-              "description": "Id of the objective metric.",
-              "type": "string"
+            "https://ns.adobe.com/experience/journeyOrchestration/objectiveMetricId": {
+              "title": "objectiveMetricId",
+              "description": "Id of the objective metric. This id represents the id of objective for this journey",
+              "type": "string",
+              "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/objectiveMetricId##title##55013",
+              "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/objectiveMetricId##description##55013"
             }
           },
           "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##16441"

@@ -26,7 +26,7 @@
           "description": "Adobe generated unique identifier for the record.",
           "type": "string"
         },
-        "xdm:accountId": {
+        "xdm:accountID": {
           "title": "Account ID",
           "description": "B2B Account Id this intent record is associated with",
           "type": "string"

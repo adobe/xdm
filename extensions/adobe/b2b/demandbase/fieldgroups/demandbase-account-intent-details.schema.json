@@ -26,7 +26,7 @@
           "description": "Adobe generated unique identifier for the record.",
           "type": "string"
         },
-        "xdm:accountID": {
+        "xdm:accountId": {
           "title": "Account ID",
           "description": "B2B Account Id this intent record is associated with",
           "type": "string"
@@ -69,7 +69,7 @@
           "description": "Keyword Set Name",
           "type": "string"
         },
-        "xdm:keywordSetID": {
+        "xdm:keywordSetId": {
           "title": "Keyword Set ID",
           "description": "Keyword Set ID ",
           "type": "string"

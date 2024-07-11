@@ -59,7 +59,7 @@
             },
             "https://ns.adobe.com/experience/journeyOrchestration/objectiveMetricId": {
               "title": "objectiveMetricId",
-              "description": "Id of the objective metric. This id represents the id of objective for this journey",
+              "description": "Id of the objective metric.",
               "type": "string",
               "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/objectiveMetricId##title##55013",
               "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/objectiveMetricId##description##55013"

@@ -1,8 +1,8 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement/solution": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement/solution/name": "ajo"
+    "xdm:solution": {
+      "xdm:name": "ajo"
     },
-    "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement/latestTimestamp": "2023-05-25T15:52:25+00:00"
+    "xdm:latestTimestamp": "2023-05-25T15:52:25+00:00"
   }
 }

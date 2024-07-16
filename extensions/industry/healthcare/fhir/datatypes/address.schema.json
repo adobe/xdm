@@ -6,7 +6,7 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/address",
+   "$id":"https://ns.fhir.org/datatypes/address",
    "title":"Address",
    "type":"object",
    "description":"An address expressed using postal conventions (as opposed to GPS or other location definition formats).(This datatype is created as per HL7 FHIR Release 5 specifications)",
@@ -85,7 +85,7 @@
             "xdm:period":{
                "title":"Period",
                "description":"Time period when address was/is in use.",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+               "$ref":"https://ns.fhir.org/datatypes/period"
             }
          }
       }

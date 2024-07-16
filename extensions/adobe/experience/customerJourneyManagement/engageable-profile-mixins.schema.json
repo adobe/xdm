@@ -21,18 +21,18 @@
           "type": "object",
           "description": "Fields defined for engagement",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement/solution": {
+            "xdm:solution": {
               "title": "Solution",
               "type": "object",
               "description": "Object to store solution/product name and solution related fields for engageable profile.",
               "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement/solution/name": {
+                "xdm:name": {
                   "title": "Solution Name",
                   "type": "string",
                   "description": "Name of product/solution for engageable profile record."
                 }
               },
-              "https://ns.adobe.com/experience/customerJourneyManagement/engageableProfile/engagement/latestTimestamp": {
+              "xdm:latestTimestamp": {
                 "title": "Latest Timestamp",
                 "type": "string",
                 "format": "date-time",

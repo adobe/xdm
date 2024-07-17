@@ -1,9 +1,12 @@
 {
    "availableTime":[
       {
-         "daysOfWeek":"mon"
+         "daysOfWeek":[
+            "mon",
+            "wed",
+            "fri"
+         ]
       }
    ],
    "availableStartTime":"2024-08-25T09:15:00Z"
 }
-

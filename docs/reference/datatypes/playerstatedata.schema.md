@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/datatypes/playerStateData
 Player state data information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/playerstatedata.schema.json](datatypes/playerstatedata.schema.json) |
+|-------------------------------|-----------------------------------|---------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stable  | No | Forbidden | Permitted | [datatypes/playerstatedata.schema.json](datatypes/playerstatedata.schema.json) |
 
 ## Player state data information Example
 ```json
@@ -23,12 +23,12 @@ Player state data information.
 
 # Player state data information Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:count](#xdmcount) | `integer` | Optional | Player state data information (this schema) |
-| [xdm:isSet](#xdmisset) | `boolean` | Optional | Player state data information (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Player state data information (this schema) |
-| [xdm:time](#xdmtime) | `integer` | Optional | Player state data information (this schema) |
+| Property | Type | Required   | Defined by |
+|----------|------|------------|------------|
+| [xdm:count](#xdmcount) | `integer` | Optional   | Player state data information (this schema) |
+| [xdm:isSet](#xdmisset) | `boolean` | Optional   | Player state data information (this schema) |
+| [xdm:name](#xdmname) | `string` | Required   | Player state data information (this schema) |
+| [xdm:time](#xdmtime) | `integer` | Optional   | Player state data information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:count
@@ -76,7 +76,7 @@ Whether or not the player state is set on that state.
 The name of the player state.
 
 `xdm:name`
-* is optional
+* is required
 * type: `string`
 * defined in this schema
 

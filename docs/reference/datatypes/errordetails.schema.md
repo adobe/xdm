@@ -8,36 +8,36 @@ https://ns.adobe.com/xdm/datatypes/errorDetails
 Error details information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/errordetails.schema.json](datatypes/errordetails.schema.json) |
+|-------------------------------|-----------------------------------|----------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stable   | No | Forbidden | Permitted | [datatypes/errordetails.schema.json](datatypes/errordetails.schema.json) |
 
 ## Error details information Example
 ```json
 {
-  "xdm:ID": "errorID",
+  "xdm:name": "errorID",
   "xdm:source": "player"
 }
 ```
 
 # Error details information Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:ID](#xdmid) | `string` | Optional | Error details information (this schema) |
-| [xdm:source](#xdmsource) | `enum` | Optional | Error details information (this schema) |
-| `*` | any | Additional | this schema *allows* additional properties |
+| Property                 | Type | Required   | Defined by |
+|--------------------------|------|------------|------------|
+| [xdm:name](#xdmid)       | `string` | Required   | Error details information (this schema) |
+| [xdm:source](#xdmsource) | `enum` | Required   | Error details information (this schema) |
+| `*`                      | any | Additional | this schema *allows* additional properties |
 
-## xdm:ID
+## xdm:name
 ### Error ID
 
 The error ID.
 
-`xdm:ID`
-* is optional
+`xdm:name`
+* is required
 * type: `string`
 * defined in this schema
 
-### xdm:ID Type
+### xdm:name Type
 
 
 `string`
@@ -60,7 +60,7 @@ All instances must conform to this regular expression
 The error source.
 
 `xdm:source`
-* is optional
+* is required
 * type: `enum`
 * defined in this schema
 

@@ -49,9 +49,9 @@
                   "not-done"
                ],
                "meta:enum":{
-                  "completed":"Active",
-                  "entered-in-error":"Entered-In-Error",
-                  "not-done":"Unknown"
+                  "completed":"Completed",
+                  "entered-in-error":"Entered In Error",
+                  "not-done":"Not Done"
                }
             },
             "fhir:statusReason":{
@@ -105,13 +105,13 @@
             },
             "fhir:occurrenceDateTime":{
                "title":"Occurrence DateTime",
-               "description":"Vaccine administration date.",
+               "description":"Vaccine administration Date.",
                "type":"string",
                "format":"date-time"
             },
             "fhir:occurrenceString":{
                "title":"Occurrence String",
-               "description":"Vaccine administration date.",
+               "description":"Vaccine administration Date.",
                "type":"string"
             },
             "fhir:primarySource":{
@@ -122,7 +122,7 @@
             "fhir:informationSource":{
                "title":"Information Source",
                "description":"Indicates the source of a reported record.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
+               "$ref":"https://ns.fhir.org/datatypes/codeablereference"
             },
             "fhir:location":{
                "title":"Location",
@@ -178,7 +178,7 @@
                "description":"Why immunization occurred.",
                "type":"array",
                "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/reference"
+                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
                }
             },
             "fhir:isSubpotent":{
@@ -215,7 +215,7 @@
                   }
                }
             },
-            "xdm:fundingSource":{
+            "fhir:fundingSource":{
                "title":"Funding Source",
                "description":"Funding source for the vaccine.",
                "$ref":"https://ns.fhir.org/datatypes/codeableconcept"

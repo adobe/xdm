@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/datatypes/advertisingPodDetails
 Advertising Pod details information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/advertisingpoddetails.schema.json](datatypes/advertisingpoddetails.schema.json) |
+|-------------------------------|-----------------------------------|-----------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stable    | No | Forbidden | Permitted | [datatypes/advertisingpoddetails.schema.json](datatypes/advertisingpoddetails.schema.json) |
 
 ## Advertising Pod details information Example
 ```json
@@ -27,7 +27,7 @@ Advertising Pod details information.
 | [xdm:ID](#xdmid) | `string` | Optional | Advertising Pod details information (this schema) |
 | [xdm:friendlyName](#xdmfriendlyname) | `string` | Optional | Advertising Pod details information (this schema) |
 | [xdm:index](#xdmindex) | `integer` | Optional | Advertising Pod details information (this schema) |
-| [xdm:offset](#xdmoffset) | `integer` | Optional | Advertising Pod details information (this schema) |
+| [xdm:offset](#xdmoffset) | `integer` | Required | Advertising Pod details information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:ID
@@ -96,7 +96,7 @@ The index of the ad inside the parent ad break start, for example, the first ad 
 The offset of the ad break inside the content, in seconds.
 
 `xdm:offset`
-* is optional
+* is required
 * type: `integer`
 * defined in this schema
 

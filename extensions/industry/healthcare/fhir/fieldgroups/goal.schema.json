@@ -1,0 +1,211 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.fhir.org/fieldgroup/goal",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Goal",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/classes/goal"
+   ],
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "description":"Describes the intended objective(s) for a patient, group or organization.(Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "goal":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"External Ids for this goal.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:achievementStatus":{
+               "title":"Achievement Status",
+               "description":"in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:lifecycleStatus":{
+               "title":"Lifecycle Status",
+               "description":"proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected",
+               "type":"string",
+               "enum":[
+                  "proposed",
+                  "planned",
+                  "accepted",
+                  "active",
+                  "on-hold",
+                  "completed",
+                  "cancelled",
+                  "entered-in-error",
+                  "rejected"
+               ],
+               "meta:enum":{
+                  "proposed":"Proposed",
+                  "planned":"Planned",
+                  "accepted":"Accepted",
+                  "active":"Active",
+                  "on-hold":"On Hold",
+                  "completed":"Completed",
+                  "cancelled":"Cancelled",
+                  "entered-in-error":"Entered In Error",
+                  "rejected":"Rejected"
+               }
+            },
+            "fhir:category":{
+               "title":"Category",
+               "description":"Indicates a category the goal falls within. E.g. Treatment, dietary, behavioral, etc.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:continuous":{
+               "title":"Continuous",
+               "description":"After meeting the goal, ongoing activity is needed to sustain the goal objective.",
+               "type":"boolean"
+            },
+            "fhir:priority":{
+               "title":"Priority",
+               "description":"high-priority | medium-priority | low-priority.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:description":{
+               "title":"Description",
+               "description":"Code or text describing goal.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:subject":{
+               "title":"Subject",
+               "description":"Who this goal is intended for.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:startDate":{
+               "title":"Start Date",
+               "description":"When goal pursuit begins.",
+               "type":"string",
+               "format":"date"
+            },
+            "fhir:startCodeableConcept":{
+               "title":"Start Codeable Concept",
+               "description":"When goal pursuit begins.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:target":{
+               "title":"Target",
+               "description":"Target outcome for the goal.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "additionalProperties":false,
+                  "properties":{
+                     "xdm:measure":{
+                        "title":"Measure",
+                        "description":"The parameter whose value is being tracked.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:detailQuantity":{
+                        "title":"Detail Quantity",
+                        "description":"The target value to be achieved.",
+                        "$ref":"https://ns.fhir.org/datatypes/quantity"
+                     },
+                     "xdm:detailRange":{
+                        "title":"Detail Range",
+                        "description":"The target value to be achieved.",
+                        "$ref":"https://ns.fhir.org/datatypes/range"
+                     },
+                     "xdm:detailCodeableConcept":{
+                        "title":"Detail Codeable Concept",
+                        "description":"The target value to be achieved.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:detailBoolean":{
+                        "title":"Detail Boolean",
+                        "description":"The target value to be achieved.",
+                        "type":"boolean"
+                     },
+                     "xdm:detailInteger":{
+                        "title":"Detail Integer",
+                        "description":"The target value to be achieved.",
+                        "type":"boolean"
+                     },
+                     "xdm:detailRatio":{
+                        "title":"Detail Ratio",
+                        "description":"The target value to be achieved.",
+                        "$ref":"https://ns.fhir.org/datatypes/ratio"
+                     },
+                     "xdm:dueDate":{
+                        "title":"Due Date",
+                        "description":"Reach goal on or before.",
+                        "type":"string",
+                        "format":"date"
+                     },
+                     "xdm:dueDuration":{
+                        "title":"Due Duration",
+                        "description":"Reach goal on or before.",
+                        "$ref":"https://ns.fhir.org/datatypes/duration"
+                     }
+                  }
+               }
+            },
+            "fhir:statusDate":{
+               "title":"Status Date",
+               "description":"When goal status took effect.",
+               "type":"string",
+               "format":"date"
+            },
+            "fhir:statusReason":{
+               "title":"Status Reason",
+               "description":"Reason for current status.",
+               "type":"string"
+            },
+            "fhir:source":{
+               "title":"Source",
+               "description":"Who's responsible for creating Goal?.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:addresses":{
+               "title":"Addresses",
+               "description":"AIssues addressed by this goal.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:note":{
+               "title":"Note",
+               "description":"Comments about the goal.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/annotation"
+               }
+            },
+            "fhir:outccome":{
+               "title":"Outcome",
+               "description":"What result was achieved regarding the goal?.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+               }
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/goal"
+      }
+   ],
+   "meta:status":"experimental"
+}

@@ -14,7 +14,9 @@
          "healthcare_services"
       ]
    },
-   "meta:intendedToExtend":[ ],
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/classes/goal"
+   ],
    "meta:extensible":true,
    "meta:abstract":true,
    "description":"Describes the intended objective(s) for a patient, group or organization.(Based on HL7 FHIR Release 5 specifications)",

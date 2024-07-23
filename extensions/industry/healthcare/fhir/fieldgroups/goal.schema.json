@@ -177,7 +177,7 @@
             },
             "fhir:addresses":{
                "title":"Addresses",
-               "description":"AIssues addressed by this goal.",
+               "description":"Issues addressed by this goal.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/reference"

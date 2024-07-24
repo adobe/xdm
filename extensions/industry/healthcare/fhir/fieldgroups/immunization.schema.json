@@ -14,9 +14,7 @@
          "healthcare_services"
       ]
    },
-   "meta:intendedToExtend":[
-      "https://ns.adobe.com/xdm/classes/immunization"
-   ],
+   "meta:intendedToExtend":[ ],
    "meta:extensible":true,
    "meta:abstract":true,
    "description":"Immunization event information.(Based on HL7 FHIR Release 5 specifications)",

@@ -14,7 +14,7 @@
          "healthcare_services"
       ]
    },
-   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+   "meta:intendedToExtend":[ ],
    "meta:extensible":true,
    "meta:abstract":true,
    "description":"Insurance or medical plan or a payment agreement.(Based on HL7 FHIR Release 5 specifications)",

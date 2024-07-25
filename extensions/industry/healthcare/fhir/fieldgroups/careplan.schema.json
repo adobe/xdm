@@ -1,0 +1,250 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.fhir.org/fieldgroup/careplan",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Careplan",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:intendedToExtend":[
+      
+   ],
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "description":"Healthcare plan for patient or group. (Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "careplan":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"External Ids for this plan.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:instantiatesCanonical":{
+               "title":"Instantiates Canonical",
+               "description":"Instantiates FHIR protocol or definition.",
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
+            },
+            "fhir:instantiatesUri":{
+               "title":"Instantiates Uri",
+               "description":"Instantiates external protocol or definition.",
+               "type":"array",
+               "items":{
+                  "type":"string",
+                  "format":"uri"
+               }
+            },
+            "fhir:basedOn":{
+               "title":"Based On",
+               "description":"Fulfills plan, proposal or order.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:replaces":{
+               "title":"Replaces",
+               "description":"CarePlan replaced by this CarePlan.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:partOf":{
+               "title":"Part Of",
+               "description":"Part of referenced CarePlan.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:status":{
+               "title":"Status",
+               "description":"draft | active | on-hold | revoked | completed | entered-in-error | unknown",
+               "type":"string",
+               "enum":[
+                  "draft",
+                  "active",
+                  "on-hold",
+                  "revoked",
+                  "completed",
+                  "entered-in-error",
+                  "unknown"
+               ],
+               "meta:enum":{
+                  "draft":"Draft",
+                  "active":"Active",
+                  "on-hold":"On Hold",
+                  "revoked":"Revoked",
+                  "completed":"Completed",
+                  "entered-in-error":"Entered In Error",
+                  "unknown":"Unknown"
+               }
+            },
+            "fhir:intent":{
+               "title":"Intent",
+               "description":"proposal | plan | order | option | directive",
+               "type":"string",
+               "enum":[
+                  "proposal",
+                  "plan",
+                  "order",
+                  "option",
+                  "directive"
+               ],
+               "meta:enum":{
+                  "proposal":"Proposal",
+                  "plan":"Plan",
+                  "order":"Order",
+                  "option":"Option",
+                  "directive":"Directive"
+               }
+            },
+            "fhir:category":{
+               "title":"Category",
+               "description":"Type of plan.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:title":{
+               "title":"Title",
+               "description":"Human-friendly name for the care plan.",
+               "type":"string"
+            },
+            "fhir:description":{
+               "title":"Description",
+               "description":"Summary of nature of plan.",
+               "type":"string"
+            },
+            "fhir:subject":{
+               "title":"Subject",
+               "description":"Who the care plan is for.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:encounter":{
+               "title":"Encounter",
+               "description":"The Encounter during which this CarePlan was created.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:period":{
+               "title":"Period",
+               "description":"Time period plan covers.",
+               "$ref":"https://ns.fhir.org/datatypes/period"
+            },
+            "fhir:created":{
+               "title":"Created",
+               "description":"Date record was first recorded.",
+               "type":"string",
+               "format":"date-time"
+            },
+            "fhir:custodian":{
+               "title":"Custodian",
+               "description":"Who is the designated responsible party.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:contributor":{
+               "title":"Contributor",
+               "description":"Who provided the content of the care plan.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:careTeam":{
+               "title":"Care Team",
+               "description":"Who's involved in plan?.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:addresses":{
+               "title":"Addresses",
+               "description":"Health issues this plan addresses.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+               }
+            },
+            "fhir:supportingInfo":{
+               "title":"Supporting Info",
+               "description":"Information considered as part of plan.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:goal":{
+               "title":"Goal",
+               "description":"Desired outcome of plan.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:activity":{
+               "title":"Activity",
+               "description":"Action to occur or has occurred as part of plan.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "additionalProperties":false,
+                  "properties":{
+                     "xdm:performedActivity":{
+                        "title":"Performed Activity",
+                        "description":"Results of the activity (concept, or Appointment, Encounter, Procedure, etc.).",
+                        "type":"array",
+                        "items":{
+                           "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                        }
+                     },
+                     "xdm:progress":{
+                        "title":"Progress ",
+                        "description":"RComments about the activity status/progress.",
+                        "type":"array",
+                        "items":{
+                           "$ref":"https://ns.fhir.org/datatypes/annotation"
+                        }
+                     },
+                     "xdm:plannedActivityReference":{
+                        "title":"Planned Activity Reference",
+                        "description":"Activity that is intended to be part of the care plan.",
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     }
+                  }
+               },
+               "fhir:note":{
+                  "title":"Note",
+                  "description":"Comments about the plan.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/annotation"
+                  }
+               }
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/careplan"
+      }
+   ],
+   "meta:status":"experimental"
+}

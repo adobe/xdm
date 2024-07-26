@@ -1,0 +1,92 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/intelligentServices/event-journeyai-sendtimeoptimization-reporting",
+  "title": "Intelligent Services JourneyAI Send Time Optimization Reporting",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Contains JourneyAI Send Time Optimization reporting results.",
+  "definitions": {
+    "journeyai-send-time-optimization-reporting": {
+      "properties": {
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI": {
+          "title": "Journey AI",
+          "description": "Journey AI intelligent service provides various insights about message deliveries along customer's journey.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationReporting": {
+              "title": "Send Time Optimization Reporting",
+              "description": "Journey AI send time optimization reporting provide the summary for message deliveries.",
+              "type": "object",
+              "properties": {
+                "https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimizationReporting": {
+                  "title": "Email Send Time Optimization Reporting",
+                  "description": "Send time optimization reporting here are for the email channel.",
+                  "type": "object",
+                  "properties": {
+                    "https://ns.adobe.com/experience/intelligentServices/journeyID": {
+                      "title": "Journey Id",
+                      "description": "Journey Id",
+                      "type": "string"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/noOfSends": {
+                      "title": "Number of send emails",
+                      "description": "Number of send emails for each journey",
+                      "type": "integer",
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/noOfOpens": {
+                      "title": "Number of open emails",
+                      "description": "Number of open emails for each journey",
+                      "type": "integer",
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/noOfClicks": {
+                      "title": "Number of click emails",
+                      "description": "Number of click emails for each journey",
+                      "type": "integer",
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/variant": {
+                      "title": "Methods of email distribution",
+                      "description": "Methods of email distribution.",
+                      "type": "string"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/experimentDate": {
+                      "title": "Experiment Date",
+                      "description": "Experiment date",
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/testFinishDate": {
+                      "title": "Test Finish Date",
+                      "description": "Test finish date",
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/recordCreateDate": {
+                      "title": "Record Create Date",
+                      "description": "Record create date",
+                      "type": "string",
+                      "format": "date"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journeyai-send-time-optimization-reporting"
+    }
+  ],
+  "meta:status": "stable"
+}

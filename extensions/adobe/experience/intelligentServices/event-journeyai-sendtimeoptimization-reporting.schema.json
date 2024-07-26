@@ -39,17 +39,17 @@
                     "https://ns.adobe.com/experience/intelligentServices/noOfSends": {
                       "title": "Number of send emails",
                       "description": "Number of send emails for each journey",
-                      "type": "integer"
+                      "type": "integer",
                     },
                     "https://ns.adobe.com/experience/intelligentServices/noOfOpens": {
                       "title": "Number of open emails",
                       "description": "Number of open emails for each journey",
-                      "type": "integer"
+                      "type": "integer",
                     },
                     "https://ns.adobe.com/experience/intelligentServices/noOfClicks": {
                       "title": "Number of click emails",
                       "description": "Number of click emails for each journey",
-                      "type": "integer"
+                      "type": "integer",
                     },
                     "https://ns.adobe.com/experience/intelligentServices/variant": {
                       "title": "Methods of email distribution",

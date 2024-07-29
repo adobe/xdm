@@ -9,9 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "title": "PathFactory Session Fieldgroup Details - V1.1",
   "type": "object",
   "description": "PathFactory Session Schema Field",
@@ -442,7 +440,7 @@
               "title": "Sixsense Company Street Address",
               "meta:xdmType": "string"
             },
-            "pf:isSpiderOrRobot": {
+            "pf:spiderOrRobot": {
               "required": [],
               "type": "boolean",
               "description": "",

@@ -9,9 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "title": "PathFactory Page Views Fieldgroup Details - V1.1",
   "type": "object",
   "description": "PathFactory Page Views Schema Field",
@@ -298,7 +296,7 @@
               "title": "Browser",
               "meta:xdmType": "string"
             },
-            "pf:isSpiderOrRobot": {
+            "pf:spiderOrRobot": {
               "required": [],
               "type": "boolean",
               "description": "",
@@ -510,7 +508,7 @@
               "title": "Company NAICS Description (6sense)",
               "meta:xdmType": "string"
             },
-            "pf:isSixsenseCompanyIsblacklisted": {
+            "pf:sixsenseCompanyIsblacklisted": {
               "required": [],
               "type": "boolean",
               "description": "",

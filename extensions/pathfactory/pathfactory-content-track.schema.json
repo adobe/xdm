@@ -1,0 +1,238 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-contenttrack",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "title": "PathFactory Content Track Fieldgroup Details - V1.1",
+  "type": "object",
+  "description": "PathFactory Content Track Schema Field",
+  "definitions": {
+    "pfContentTrackFields": {
+      "properties": {
+        "pf:pathfactoryContentTrack": {
+          "type": "object",
+          "title": "Pathfactory Content Track",
+          "description": "Pathfactory Content Track Field Object",
+          "properties": {
+            "pf:createdAtUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Created Date (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pf:appId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "App ID",
+              "meta:xdmType": "string"
+            },
+            "pf:isDeleted": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Deleted",
+              "meta:xdmType": "boolean"
+            },
+            "pf:experienceCustomUrl": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience Custom URL",
+              "meta:xdmType": "string"
+            },
+            "pf:experienceId": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Experience ID",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:externalId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience External ID",
+              "meta:xdmType": "string"
+            },
+            "pf:experienceName": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience Name",
+              "meta:xdmType": "string"
+            },
+            "pf:experienceType": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience Type (PathFactory Experience)",
+              "meta:xdmType": "string"
+            },
+            "pf:folderId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Folder ID (PathFactory)",
+              "meta:xdmType": "string"
+            },
+            "pf:isSidebarEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Sidebar Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isBottomBarEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "IS Bottom Bar Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isCardEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Card Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isExitEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Exit Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isInactivityEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Inactivity Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isShareEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Share Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isCaptureEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Capture Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:experienceUuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience Unique ID",
+              "meta:xdmType": "string"
+            },
+            "pf:isCookieConsentEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Cookie Consent Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isGdprCookieConsentEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Gdpr Cookie Consent Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isHeaderEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Header Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isCookieMessageEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Cookie Message Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isFlowEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Flow Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isSignpostEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Signpost Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isTopicSidebarEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "is topic sidebar enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isLikeEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Like Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:isEndEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is End Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "pf:targetContentOrder": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Target Content Order",
+              "meta:xdmType": "string"
+            },
+            "pf:updatedAtUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Updated Date (UTC)",
+              "meta:xdmType": "date-time"
+            }
+          },
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfContentTrackFields"
+    }
+  ],
+  "meta:status": "stable"
+}

@@ -1,0 +1,132 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-visitor",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
+  "title": "PathFactory Visitor Fieldgroup Details - V1.1",
+  "type": "object",
+  "description": "PathFactory Visitor Schema Field",
+  "definitions": {
+    "pfVisitorFields": {
+      "properties": {
+        "pf:pathfactoryVisitor": {
+          "title": "Pathfactory Visitor",
+          "description": "Pathfactory Visitor Field Object",
+          "type": "object",
+          "properties": {
+            "pf:createdAtUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Created At (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pf:emailDomain": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Email Domain",
+              "meta:xdmType": "string"
+            },
+            "pf:email": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Email",
+              "meta:xdmType": "string"
+            },
+            "pf:visitorEcid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Adobe ECID",
+              "meta:xdmType": "string"
+            },
+            "pf:lastVisitTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Last Visit Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pf:visitorId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Visitor ID",
+              "meta:xdmType": "string"
+            },
+            "pf:visitorUuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Visitor UUID",
+              "meta:xdmType": "string"
+            },
+            "pf:visitorIdentity": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Visitor Identity",
+              "meta:xdmType": "string"
+            },
+            "pf:isKnown": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Is Known",
+              "meta:xdmType": "boolean"
+            },
+            "pf:knownFrom": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Known From",
+              "meta:xdmType": "date-time"
+            },
+            "pf:firstVisitTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "First Visit Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pf:identityEcid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Identity ECID",
+              "meta:xdmType": "string"
+            }
+          },
+          "meta:xdmType": "object",
+          "required": [
+            "pf:visitorId",
+            "pf:visitorUuid",
+            "pf:visitorIdentity",
+            "pf:isKnown"
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfVisitorFields"
+    }
+  ],
+  "meta:status": "stable"
+}

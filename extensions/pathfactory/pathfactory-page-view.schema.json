@@ -1,0 +1,654 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-pageview",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "title": "PathFactory Page Views Fieldgroup Details - V1.1",
+  "type": "object",
+  "description": "PathFactory Page Views Schema Field",
+  "definitions": {
+    "pfPageViewFields": {
+      "properties": {
+        "pf:pathfactoryPageview": {
+          "title": "Pathfactory Page View",
+          "description": "Pathfactory Page View Field Object",
+          "type": "object",
+          "properties": {
+            "pf:appId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Organization UUID",
+              "meta:xdmType": "string"
+            },
+            "pf:pageViewId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Page View Id",
+              "meta:xdmType": "string"
+            },
+            "pf:visitorId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Visitor Identity",
+              "meta:xdmType": "string"
+            },
+            "pf:visitorUuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Visitor UUID",
+              "meta:xdmType": "string"
+            },
+            "pf:sessionId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Session ID",
+              "meta:xdmType": "string"
+            },
+            "pf:sessionIndex": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Session Index",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:pageViewIndex": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Page View Index",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:totalPageViews": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Total Page Views",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:modifiedUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Modified UTC",
+              "meta:xdmType": "date-time"
+            },
+            "pf:createdAt": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Created At",
+              "meta:xdmType": "date-time"
+            },
+            "pf:startTime": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Visit Date/Time",
+              "meta:xdmType": "date-time"
+            },
+            "pf:startTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Visit Date/Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pf:endTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "End Time Utc",
+              "meta:xdmType": "date-time"
+            },
+            "pf:engagedTimeInS": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Engaged Time in S",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:contentUuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Content UUID",
+              "meta:xdmType": "string"
+            },
+            "pf:experienceUuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience Uuid",
+              "meta:xdmType": "string"
+            },
+            "pf:contentId": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Content Id",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:experienceId": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Experience Id",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:verticalPercentageScrolled": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Scroll Depth",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:pageWidth": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Page Width",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:pageHeight": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Page Height",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:pageTitle": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Page Title",
+              "meta:xdmType": "string"
+            },
+            "pf:pageUrl": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Page Url",
+              "meta:xdmType": "string"
+            },
+            "pf:queryString": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Query String",
+              "meta:xdmType": "string"
+            },
+            "pf:pageUrlquery": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Page Urlquery",
+              "meta:xdmType": "string"
+            },
+            "pf:marketingMedium": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Medium",
+              "meta:xdmType": "string"
+            },
+            "pf:marketingSource": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Source",
+              "meta:xdmType": "string"
+            },
+            "pf:marketingTerm": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Term",
+              "meta:xdmType": "string"
+            },
+            "pf:marketingContent": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Content",
+              "meta:xdmType": "string"
+            },
+            "pf:marketingCampaign": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Marketing Campaign",
+              "meta:xdmType": "string"
+            },
+            "pf:pageReferrer": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Page Referrer",
+              "meta:xdmType": "string"
+            },
+            "pf:referrerMedium": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Referrer Medium",
+              "meta:xdmType": "string"
+            },
+            "pf:referrerSource": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Referrer Source",
+              "meta:xdmType": "string"
+            },
+            "pf:referrerTerm": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Referrer Term",
+              "meta:xdmType": "string"
+            },
+            "pf:ipAddress": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "IP Address",
+              "meta:xdmType": "string"
+            },
+            "pf:browser": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Browser",
+              "meta:xdmType": "string"
+            },
+            "pf:isSpiderOrRobot": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Spider/Robot (T/F)",
+              "meta:xdmType": "boolean"
+            },
+            "pf:os": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "OS",
+              "meta:xdmType": "string"
+            },
+            "pf:deviceType": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Device Type",
+              "meta:xdmType": "string"
+            },
+            "pf:fromRecommendation": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "From Recommendation",
+              "meta:xdmType": "string"
+            },
+            "pf:recMdmGuide": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Rec Mdm Guide",
+              "meta:xdmType": "string"
+            },
+            "pf:recMdmConcierge": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Rec Mdm Concierge",
+              "meta:xdmType": "string"
+            },
+            "pf:recSrcRecommended": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Rec Src Recommended",
+              "meta:xdmType": "string"
+            },
+            "pf:recSrcTrending": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Rec Src Trending",
+              "meta:xdmType": "string"
+            },
+            "pf:referrerUrl": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Referrer URL",
+              "meta:xdmType": "string"
+            },
+            "pf:ipIsp": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "IP ISP",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyDomain": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Comapany Domain (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyRegion": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Region (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyCountry": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Country (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyCountryIsoCode": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Country ISO (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyState": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company State (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyCity": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Sixsense Company City",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyStreetAddress": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Address (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyPostalCode": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Postal Code (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyPhone": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Phone (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyIndustry": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Industry (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyEmployeeRange": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Employee Range (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyRevenueRange": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Revenue Range (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyEmployeeCount": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Company Employee Count (6sense)",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:sixsenseCompanyAnnualRevenue": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Annual Revenue (6Sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyTitleLevel": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Title Level (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyTitleFunction": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Title Function (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanySiccode": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company SIC Code (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanySicdescription": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company SIC Description (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyNaicscode": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company NAICS Code (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:sixsenseCompanyNaicsdescription": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company NAICS Description (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:isSixsenseCompanyIsblacklisted": {
+              "required": [],
+              "type": "boolean",
+              "description": "",
+              "title": "Company Blacklisted? (6sense ; T/F)",
+              "meta:xdmType": "boolean"
+            },
+            "pf:sixsenseConfidence": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Company Confidence Level (6sense)",
+              "meta:xdmType": "string"
+            },
+            "pf:experienceType": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience Type",
+              "meta:xdmType": "string"
+            },
+            "pf:demandbaseSid": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Demandbase SID",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:demandbaseCompanyName": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Demandbase Company Name",
+              "meta:xdmType": "string"
+            },
+            "pf:demandbaseAnnualSales": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Demandbase Annual Sales",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:demandbaseEmployeeCount": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Demandbase Employee Count",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:demandbaseIndustry": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Demandbase Industry",
+              "meta:xdmType": "string"
+            },
+            "pf:demandbaseWebSite": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Demandbase Website",
+              "meta:xdmType": "string"
+            },
+            "pf:unifiedEngagementScore": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "PF Engagement Score, Unified",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:engagementScore": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Engagement Score",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:experienceCampaignId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Experience Campaign Id",
+              "meta:xdmType": "string"
+            },
+            "pf:campaignId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Campaign Id",
+              "meta:xdmType": "string"
+            },
+            "pf:websiteExperienceUuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Website Experience Uuid",
+              "meta:xdmType": "string"
+            },
+            "pf:ip2ProxyIsproxy": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Ip 2 Proxy Isproxy",
+              "meta:xdmType": "string"
+            },
+            "pf:normalizedUrl": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Normalized URL",
+              "meta:xdmType": "string"
+            },
+            "pf:identityEcid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Identity ECID",
+              "meta:xdmType": "string"
+            }
+          },
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfPageViewFields"
+    }
+  ],
+  "meta:status": "stable"
+}

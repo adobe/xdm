@@ -1,0 +1,146 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-content",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "title": "PathFactory Content Fieldgroup Details - V1.1",
+  "type": "object",
+  "description": "PathFactory Content Schema Field",
+  "definitions": {
+    "pfContentFields": {
+      "properties": {
+        "pf:pathfactoryContent": {
+          "title": "Pathfactory Content",
+          "description": "Pathfactory Content Field Object",
+          "required": [
+            "pf:contentId",
+            "pf:createdAtUtc",
+            "pf:title",
+            "pf:internalTitle"
+          ],
+          "type": "object",
+          "properties": {
+            "pf:createdAtUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Created AT UTC",
+              "meta:xdmType": "date-time"
+            },
+            "pf:contentId": {
+              "required": [],
+              "type": "integer",
+              "description": "",
+              "title": "Content ID",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pf:updatedAtUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "",
+              "title": "Updated AT UTC",
+              "meta:xdmType": "date-time"
+            },
+            "pf:title": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Content Title",
+              "meta:xdmType": "string"
+            },
+            "pf:internalTitle": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Content Internal Title",
+              "meta:xdmType": "string"
+            },
+            "pf:slug": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Content URL Slug",
+              "meta:xdmType": "string"
+            },
+            "pf:language": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Language",
+              "meta:xdmType": "string"
+            },
+            "pf:description": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Content Description",
+              "meta:xdmType": "string"
+            },
+            "pf:sourceUrl": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Source URL",
+              "meta:xdmType": "string"
+            },
+            "pf:mediaType": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Media Type",
+              "meta:xdmType": "string"
+            },
+            "pf:contentType": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Content Type",
+              "meta:xdmType": "string"
+            },
+            "pf:externalId": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "External ID",
+              "meta:xdmType": "string"
+            },
+            "pf:thumbnail": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Thumbnail",
+              "meta:xdmType": "string"
+            },
+            "pf:uuid": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "Content UUID",
+              "meta:xdmType": "string"
+            }
+          },
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfContentFields"
+    }
+  ],
+  "meta:status": "stable"
+}

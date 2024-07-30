@@ -7,25 +7,25 @@
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
    "$id":"https://ns.fhir.org/datatypes/Virtualservicedetail",
-   "title":"VirtualServiceDetail",
+   "title":"Virtual Service Detail",
    "type":"object",
    "description":"Virtual Service Contact Details.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
       "properties":{
          "xdm:channelType":{
-            "title":"ChannelType",
+            "title":"ChannelT ype",
             "description":"The type of virtual service to connect to (i.e. Teams, Zoom, Specific VMR technology, WhatsApp).",
             "$ref":"https://ns.fhir.org/datatypes/coding"
          },
          "xdm:addressUrl":{
             "title":"Address Url",
-            "description":"What address or number needs to be used for a user to connect to the virtual service to join. The channelType informs as to which datatype is appropriate to use (requires knowledge of the specific type).",
+            "description":"What URL to be used for a user to connect to the virtual service.",
             "type":"string",
             "format":"uri"
          },
          "xdm:addressString":{
-            "title":"Address Url",
-            "description":"What address or number needs to be used for a user to connect to the virtual service to join. The channelType informs as to which datatype is appropriate to use (requires knowledge of the specific type).",
+            "title":"Address String",
+            "description":"What address to be used for a user to connect to the virtual service.",
             "type":"string"
          },
          "xdm:addressContactPoint":{

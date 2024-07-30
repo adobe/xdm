@@ -67,7 +67,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:party":{
                         "title":"Party",
@@ -136,7 +135,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:ype":{
                         "title":"Type",
@@ -173,7 +171,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:type":{
                         "title":"Type",
@@ -218,7 +215,6 @@
                   "type":"array",
                   "items":{
                      "type":"object",
-                     "additionalProperties":false,
                      "properties":{
                         "xdm:type":{
                            "title":"Type",

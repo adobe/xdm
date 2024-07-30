@@ -106,7 +106,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:measure":{
                         "title":"Measure",

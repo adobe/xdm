@@ -24,7 +24,7 @@
                "description":"Free text dosage instructions e.g. SIG"
             },
             "xdm:additionalInstruction":{
-               "title":"AdditionalInstructions",
+               "title":"Additional Instructions",
                "description":"Supplemental instruction or warnings to the patient - e.g. \"with meals\", \"may cause drowsiness\".",
                "type":"array",
                "items":{
@@ -75,7 +75,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:type":{
                         "title":"Type",

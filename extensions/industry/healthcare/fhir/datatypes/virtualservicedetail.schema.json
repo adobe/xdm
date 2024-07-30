@@ -13,7 +13,7 @@
    "definitions":{
       "properties":{
          "xdm:channelType":{
-            "title":"ChannelT ype",
+            "title":"Channel Type",
             "description":"The type of virtual service to connect to (i.e. Teams, Zoom, Specific VMR technology, WhatsApp).",
             "$ref":"https://ns.fhir.org/datatypes/coding"
          },

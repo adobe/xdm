@@ -53,13 +53,13 @@
                         "description":"Always available? i.e. 24 hour service."
                      },
                      "xdm:availableStartTime":{
-                        "title":"AvailableStartTime",
+                        "title":"Available Start Time",
                         "description":"Opening time of day (ignored if allDay = true)",
                         "type":"string",
                         "format":"time"
                      },
                      "xdm:availableEndTime":{
-                        "title":"AvailableEndTime",
+                        "title":"Available End Time",
                         "description":"Closing time of day (ignored if allDay = true)",
                         "type":"string",
                         "format":"time"
@@ -68,7 +68,7 @@
                }
             },
             "xdm:notAvailableTime":{
-               "title":"NotAvailableTime",
+               "title":"NotAvailable Time",
                "description":"Not available during this time due to provided reason..",
                "type":"array",
                "items":{
@@ -98,6 +98,3 @@
    ],
    "meta:status":"experimental"
 }
-
-
-

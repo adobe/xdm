@@ -148,7 +148,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:function":{
                         "title":"Function",
@@ -198,7 +197,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:program":{
                         "title":"Program",
@@ -224,7 +222,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:date":{
                         "title":"Date",
@@ -251,7 +248,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:series":{
                         "title":"Series",
@@ -294,4 +290,3 @@
    ],
    "meta:status":"experimental"
 }
-

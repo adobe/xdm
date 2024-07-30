@@ -43,18 +43,16 @@
                "enum":[
                   "active",
                   "inactive",
-                  "entered-in-error",
-                  "unknown"
+                  "entered-in-error"
                ],
                "meta:enum":{
                   "active":"Active",
                   "inactive":"Inactive",
-                  "entered-in-error":"Entered-In-Error",
-                  "unknown":"Unknown"
+                  "entered-in-error":"Entered-In-Error"
                }
             },
             "fhir:marketingAuthorizationHolder":{
-               "title":"MarketingAuthorizationHolder",
+               "title":"Marketing Authorization Holder",
                "description":"Organization that has authorization to market medication.",
                "$ref":"https://ns.fhir.org/datatypes/reference"
             },
@@ -74,7 +72,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:item":{
                         "title":"Item",
@@ -108,15 +105,14 @@
                "title":"Batch",
                "description":"Details about packaged medications.",
                "type":"object",
-               "additionalProperties":false,
                "properties":{
                   "xdm:lotNumber":{
-                     "title":"LotNumber",
+                     "title":"Lot Number",
                      "description":"Identifier assigned to batch.",
                      "type":"string"
                   },
                   "xdm:expirationDate":{
-                     "title":"ExpirationDate",
+                     "title":"Expiration Date",
                      "description":"When batch will expire.",
                      "type":"string",
                      "format":"date-time"

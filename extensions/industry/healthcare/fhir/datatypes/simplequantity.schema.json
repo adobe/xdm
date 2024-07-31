@@ -6,38 +6,17 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.fhir.org/datatypes/quantity",
-   "title":"Quantity",
+   "$id":"https://ns.fhir.org/datatypes/simplequantity",
+   "title":"SimpleQuantity",
    "type":"object",
    "description":"A measured or measurable amount.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
-      "quantity":{
+      "simpleQuantity":{
          "properties":{
             "xdm:value":{
                "title":"Value",
                "description":"Numerical Value",
                "type":"number"
-            },
-            "xdm:comparator":{
-               "title":"Comparator",
-               "description":"< | <= | >= | > | ad ",
-               "type":"string",
-               "enum":[
-                  "<",
-                  "<=",
-                  ">=",
-                  ">",
-                  "=",
-                  "ad"
-               ],
-               "meta:enum":{
-                  "<":"<",
-                  "<=":"<=",
-                  ">=":">=",
-                  ">":">",
-                  "=":"=",
-                  "ad":"Ad"
-               }
             },
             "xdm:unit":{
                "title":"Unit",
@@ -60,9 +39,8 @@
    },
    "allOf":[
       {
-         "$ref":"#/definitions/quantity"
+         "$ref":"#/definitions/simpleQuantity"
       }
    ],
    "meta:status":"experimental"
 }
-

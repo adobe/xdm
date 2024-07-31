@@ -6,7 +6,7 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/codeablereference",
+   "$id":"https://ns.fhir.org/datatypes/codeablereference",
    "title":"Codeable Reference",
    "type":"object",
    "description":"Reference to a resource or a concept. (This datatype is created as per HL7 FHIR Release 5 specifications)",
@@ -16,20 +16,21 @@
             "xdm:concept":{
                "title":"concept",
                "description":"Reference to a concept (by class)",
-               "$ref":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/codeableconcept"
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
             "xdm:reference":{
                "title":"Reference",
                "description":"Reference to a resource",
-               "$ref":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/reference"
+               "$ref":"https://ns.fhir.org/datatypes/reference"
             }
          }
       }
    },
    "allOf":[
       {
-         "$ref":"#/definitions/codeablereference"
+         "$ref":"#/definitions/codeableReference"
       }
    ],
    "meta:status":"experimental"
 }
+

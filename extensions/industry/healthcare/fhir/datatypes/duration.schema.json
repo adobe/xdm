@@ -6,43 +6,42 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.fhir.org/datatypes/quantity",
-   "title":"Quantity",
+   "$id":"https://ns.fhir.org/datatypes/duration",
+   "title":"Duration",
    "type":"object",
-   "description":"A measured or measurable amount.(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "description":"A length of time.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
-      "quantity":{
+      "duration":{
          "properties":{
             "xdm:value":{
                "title":"Value",
                "description":"Numerical Value",
                "type":"number"
             },
-            "xdm:comparator":{
-               "title":"Comparator",
-               "description":"< | <= | >= | > | ad ",
-               "type":"string",
-               "enum":[
-                  "<",
-                  "<=",
-                  ">=",
-                  ">",
-                  "=",
-                  "ad"
-               ],
-               "meta:enum":{
-                  "<":"<",
-                  "<=":"<=",
-                  ">=":">=",
-                  ">":">",
-                  "=":"=",
-                  "ad":"Ad"
-               }
-            },
             "xdm:unit":{
                "title":"Unit",
-               "description":"Unit representation",
-               "type":"string"
+               "description":"Unit representation in milliseconds, seconds, minutes, hours, days, weeks, months, years ",
+               "type":"string",
+               "enum":[
+                  "ms",
+                  "s",
+                  "min",
+                  "h",
+                  "d",
+                  "wk",
+                  "mo",
+                  "a"
+               ],
+               "meta:enum":{
+                  "ms":"MiliSeconds",
+                  "s":"Seconds",
+                  "min":"Minutes",
+                  "h":"Hours",
+                  "d":"Days",
+                  "wk":"Weeks",
+                  "mo":"Months",
+                  "a":"Years"
+               }
             },
             "xdm:system":{
                "title":"System",
@@ -60,9 +59,8 @@
    },
    "allOf":[
       {
-         "$ref":"#/definitions/quantity"
+         "$ref":"#/definitions/duration"
       }
    ],
    "meta:status":"experimental"
 }
-

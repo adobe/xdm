@@ -6,7 +6,7 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint",
+   "$id":"https://ns.fhir.org/datatypes/contactpoint",
    "title":"Contact Point",
    "type":"object",
    "description":"A contact detail for the person.(This datatype is created as per HL7 FHIR Release 5 specifications)",
@@ -70,7 +70,7 @@
             "xdm:period":{
                "title":"Period",
                "description":"Time period when the contact point was/is in use.",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+               "$ref":"https://ns.fhir.org/datatypes/period"
             }
          }
       }

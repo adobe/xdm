@@ -5,7 +5,7 @@
       "you may not use this file except in compliance with the License. You may obtain a copy",
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/fieldgroup/patientdetail",
+   "$id":"https://ns.fhir.org/fieldgroup/patientdetail",
    "$schema":"http://json-schema.org/draft-06/schema#",
    "title":"Patient",
    "type":"object",
@@ -24,36 +24,36 @@
    "definitions":{
       "patient":{
          "properties":{
-            "xdm:identifier":{
+            "fhir:identifier":{
                "title":"Identifier",
                "description":"An identifier for this patient.",
                "type":"array",
                "items":{
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/identifier"
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
                }
             },
-            "xdm:active":{
+            "fhir:active":{
                "title":"Is Active",
                "type":"boolean",
                "description":"Indicates whether the  patient's record is in active use."
             },
-            "xdm:name":{
+            "fhir:name":{
                "title":"Name",
                "description":"A name associated with the patient",
                "type":"array",
                "items":{
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/humanname"
+                  "$ref":"https://ns.fhir.org/datatypes/humanname"
                }
             },
-            "xdm:telecom":{
+            "fhir:telecom":{
                "title":"Contact Details",
                "description":"A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.",
                "type":"array",
                "items":{
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint"
+                  "$ref":"https://ns.fhir.org/datatypes/contactpoint"
                }
             },
-            "xdm:gender":{
+            "fhir:gender":{
                "title":"Gender",
                "description":"male | female | other | unknown.",
                "type":"string",
@@ -70,47 +70,47 @@
                   "unknown":"Unknown"
                }
             },
-            "xdm:birthDate":{
+            "fhir:birthDate":{
                "title":"Birth Date",
                "type":"string",
                "format":"date",
                "description":"The date of birth for the individual"
             },
-            "xdm:deceasedBoolean":{
+            "fhir:deceasedBoolean":{
                "title":"Deceased Indicator",
                "type":"boolean",
                "description":"Indicates if the individual is deceased or not."
             },
-            "xdm:deceasedDateTime":{
+            "fhir:deceasedDateTime":{
                "title":"Deceased Date Time",
                "type":"string",
                "format":"date-time",
                "description":"Date Time if the patient is deceased."
             },
-            "xdm:address":{
+            "fhir:address":{
                "title":"Address",
                "description":"Patient's Address.",
                "type":"array",
                "items":{
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/address"
+                  "$ref":"https://ns.fhir.org/datatypes/address"
                }
             },
-            "xdm:maritalStatus":{
+            "fhir:maritalStatus":{
                "title":"Marital Status",
                "description":"Martitial status codes",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept"
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
-            "xdm:multipleBirthBoolean":{
+            "fhir:multipleBirthBoolean":{
                "title":"Is Part Of multipleBirth",
                "type":"boolean",
                "description":"Boolean flag indicating if the patient is part of a multiple birth"
             },
-            "xdm:multipleBirthInteger":{
+            "fhir:multipleBirthInteger":{
                "title":"Birth Number",
                "type":"integer",
                "description":"Birth number in the sequence."
             },
-            "xdm:contact":{
+            "fhir:contact":{
                "title":"Patient Contacts",
                "description":"A contact party (e.g. guardian, partner, friend) for the patient",
                "type":"array",
@@ -121,12 +121,12 @@
                      "xdm:relationship":{
                         "title":"Relationship",
                         "description":"The kind of relationship.",
-                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept"
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
                      },
                      "xdm:name":{
                         "title":"Contact Name",
                         "description":"Contact Person Name",
-                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/humanname"
+                        "$ref":"https://ns.fhir.org/datatypes/humanname"
                      },
                      "xdm:telecom":{
                         "title":"Contact Details",
@@ -139,7 +139,7 @@
                               "xdm:contactPoint":{
                                  "title":"Contact Point",
                                  "description":"A contact detail for the person.",
-                                 "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint"
+                                 "$ref":"https://ns.fhir.org/datatypes/contactpoint"
                               }
                            }
                         }
@@ -147,27 +147,27 @@
                      "xdm:address":{
                         "title":"Contact Address",
                         "description":"Patient's Contact Address.",
-                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/address"
+                        "$ref":"https://ns.fhir.org/datatypes/address"
                      },
                      "xdm:gender":{
                         "title":"Contact Gender",
                         "description":"male | female | other | unknown.",
-                        "$ref":"#/definitions/patient/properties/xdm:gender"
+                        "$ref":"#/definitions/patient/properties/fhir:gender"
                      },
                      "xdm:organization":{
                         "title":"Contact Organization",
                         "description":"Organization that is associated with the contact.",
-                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
                      },
                      "xdm:period":{
                         "title":"Contact Period",
                         "description":"Time period when the contact point was/is in use.",
-                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+                        "$ref":"https://ns.fhir.org/datatypes/period"
                      }
                   }
                }
             },
-            "xdm:communication":{
+            "fhir:communication":{
                "title":"Communication",
                "description":"A language which may be used to communicate with the person about his or her health.",
                "type":"array",
@@ -178,7 +178,7 @@
                      "xdm:language":{
                         "title":"Language",
                         "description":"The language which can be used to communicate with the person about his or her health.",
-                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept"
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
                      },
                      "xdm:preferred":{
                         "title":"Is Preferred Language",
@@ -188,20 +188,20 @@
                   }
                }
             },
-            "xdm:generalPractioner":{
+            "fhir:generalPractioner":{
                "title":"General Practioner",
                "description":"Patient's nominated primary care provider.",
                "type":"array",
                "items":{
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
                }
             },
-            "xdm:managingOrganization":{
+            "fhir:managingOrganization":{
                "title":"Managing Organization",
                "description":"Organization that is the custodian of the patient record.",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+               "$ref":"https://ns.fhir.org/datatypes/reference"
             },
-            "xdm:link":{
+            "fhir:link":{
                "title":"Patient Link Details",
                "description":"Link to a Patient or RelatedPerson resource that concerns the same actual individual.",
                "type":"array",
@@ -212,7 +212,7 @@
                      "xdm:other":{
                         "title":"Other",
                         "description":"Link to a Patient or RelatedPerson resource that concerns the same actual individual.",
-                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
                      },
                      "xdm:type":{
                         "title":"Type",
@@ -235,11 +235,3 @@
    ],
    "meta:status":"experimental"
 }
-
-
-
-
-
-
-
-

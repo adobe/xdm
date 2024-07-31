@@ -6,7 +6,7 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/annotation",
+   "$id":"https://ns.fhir.org/datatypes/annotation",
    "title":"Annotation",
    "type":"object",
    "description":"Text node with attribution.(This datatype is created as per HL7 FHIR Release 5 specifications)",
@@ -16,7 +16,7 @@
             "xdm:authorReference":{
                "title":"Author Reference",
                "description":"Reference(Practitioner | PractitionerRole | Patient | RelatedPerson | Organization)",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+               "$ref":"https://ns.fhir.org/datatypes/reference"
             },
             "xdm:authorString":{
                "title":"Author",

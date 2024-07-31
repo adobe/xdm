@@ -30,12 +30,12 @@
          },
          "xdm:addressContactPoint":{
             "title":"Address Contact Point",
-            "description":"Contact address/number.",
+            "description":"Details of a Technology mediated contact point (phone, fax, email, etc.).",
             "$ref":"https://ns.fhir.org/datatypes/contactpoint"
          },
          "xdm:addressExtendedContactDetail":{
             "title":"Address Extended Contact Detail",
-            "description":"Contact address/number.",
+            "description":"Contact information.",
             "$ref":"https://ns.fhir.org/datatypes/extendedcontactdetail"
          },
          "xdm:additionalInfo":{

@@ -14,7 +14,11 @@
          "healthcare_services"
       ]
    },
-   "meta:intendedToExtend":[ ],
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/context/account",
+      "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/classes/provider"
+   ],
    "meta:extensible":true,
    "meta:abstract":true,
    "description":"Describes the intended objective(s) for a patient, group or organization.(Based on HL7 FHIR Release 5 specifications)",
@@ -28,11 +32,6 @@
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/identifier"
                }
-            },
-            "fhir:achievementStatus":{
-               "title":"Achievement Status",
-               "description":"in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable.",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
             "fhir:lifecycleStatus":{
                "title":"Lifecycle Status",
@@ -61,6 +60,11 @@
                   "rejected":"Rejected"
                }
             },
+            "fhir:achievementStatus":{
+               "title":"Achievement Status",
+               "description":"in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
             "fhir:category":{
                "title":"Category",
                "description":"Indicates a category the goal falls within. E.g. Treatment, dietary, behavioral, etc.",
@@ -84,20 +88,17 @@
             "fhir:subject":{
                "title":"Subject",
                "description":"Who this goal is intended for.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/reference"
-               }
+               "$ref":"https://ns.fhir.org/datatypes/reference"
             },
             "fhir:startDate":{
                "title":"Start Date",
-               "description":"When goal pursuit begins.",
+               "description":"The date after which the goal should begin being pursued..",
                "type":"string",
                "format":"date"
             },
             "fhir:startCodeableConcept":{
                "title":"Start Codeable Concept",
-               "description":"When goal pursuit begins.",
+               "description":"The event after which the goal should begin being pursued..",
                "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
             "fhir:target":{
@@ -114,43 +115,48 @@
                      },
                      "xdm:detailQuantity":{
                         "title":"Detail Quantity",
-                        "description":"The target value to be achieved.",
+                        "description":"The target Quantity to be achieved to signify the fulfillment of the goal.",
                         "$ref":"https://ns.fhir.org/datatypes/quantity"
                      },
                      "xdm:detailRange":{
                         "title":"Detail Range",
-                        "description":"The target value to be achieved.",
+                        "description":"The target Range to be achieved to signify the fulfillment of the goal.",
                         "$ref":"https://ns.fhir.org/datatypes/range"
                      },
                      "xdm:detailCodeableConcept":{
                         "title":"Detail Codeable Concept",
-                        "description":"The target value to be achieved.",
+                        "description":"A CodeableConcept to be achieved to signify the fulfillment of the goal..",
                         "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:detailString":{
+                        "title":"Detail String",
+                        "description":"The target value to be achieved to signify the fulfillment of the goal.",
+                        "type":"string"
                      },
                      "xdm:detailBoolean":{
                         "title":"Detail Boolean",
-                        "description":"The target value to be achieved.",
+                        "description":"Boolean flag to indicate the fulfillment of the goal..",
                         "type":"boolean"
                      },
                      "xdm:detailInteger":{
                         "title":"Detail Integer",
-                        "description":"The target value to be achieved.",
-                        "type":"boolean"
+                        "description":"The target value number to be achieved to signify the fulfillment of the goal..",
+                        "type":"integer"
                      },
                      "xdm:detailRatio":{
                         "title":"Detail Ratio",
-                        "description":"The target value to be achieved.",
+                        "description":"The target value in ratio to be achieved to signify the fulfillment of the goal..",
                         "$ref":"https://ns.fhir.org/datatypes/ratio"
                      },
                      "xdm:dueDate":{
                         "title":"Due Date",
-                        "description":"Reach goal on or before.",
+                        "description":"Indicates the date after start by which the goal should be met.",
                         "type":"string",
                         "format":"date"
                      },
                      "xdm:dueDuration":{
                         "title":"Due Duration",
-                        "description":"Reach goal on or before.",
+                        "description":"Indicates the duration after start by which the goal should be met.",
                         "$ref":"https://ns.fhir.org/datatypes/duration"
                      }
                   }
@@ -206,3 +212,4 @@
    ],
    "meta:status":"experimental"
 }
+

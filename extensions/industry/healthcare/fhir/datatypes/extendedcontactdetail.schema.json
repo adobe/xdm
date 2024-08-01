@@ -1,0 +1,64 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.fhir.org/datatypes/extendedcontactdetail",
+   "title":"Extended Contact Detail",
+   "type":"object",
+   "description":"Extended Contact information.(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "extendedcontactdetail":{
+         "properties":{
+            "xdm:purpose":{
+               "title":"Purpose",
+               "description":"The type of contact.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "xdm:name":{
+               "title":"Name",
+               "description":"Name of an individual to contact.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/humanname"
+               }
+            },
+            "xdm:telecom":{
+               "title":"Telecom",
+               "description":"Contact details (e.g.phone/fax/url).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/contactpoint"
+               },
+               "xdm:address":{
+                  "title":"Address",
+                  "description":"Address for the contact.",
+                  "$ref":"https://ns.fhir.org/datatypes/address"
+               },
+               "xdm:organization":{
+                  "title":"Organization",
+                  "description":"This contact detail is handled/monitored by a specific organization.",
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               },
+               "xdm:period":{
+                  "title":"Period",
+                  "description":"Period that this contact was valid for usage.",
+                  "$ref":"https://ns.fhir.org/datatypes/period"
+               }
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/extendedcontactdetail"
+      }
+   ],
+   "meta:status":"experimental"
+}
+
+
+

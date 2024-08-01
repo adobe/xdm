@@ -19,7 +19,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:daysOfWeek":{
                         "title":"Days Of Week",
@@ -73,7 +72,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:description":{
                         "title":"Description",

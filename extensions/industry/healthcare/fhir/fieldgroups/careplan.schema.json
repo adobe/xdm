@@ -15,7 +15,8 @@
       ]
    },
    "meta:intendedToExtend":[
-      
+      "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/context/account"
    ],
    "meta:extensible":true,
    "meta:abstract":true,
@@ -33,7 +34,7 @@
             },
             "fhir:instantiatesCanonical":{
                "title":"Instantiates Canonical",
-               "description":"Instantiates FHIR protocol or definition.",
+               "description":"The URL pointing to a FHIR-defined protocol, guideline, questionnaire or other definition that is adhered to in whole or in part by this CarePlan.",
                "type":"array",
                "items":{
                   "type":"string"
@@ -41,7 +42,7 @@
             },
             "fhir:instantiatesUri":{
                "title":"Instantiates Uri",
-               "description":"Instantiates external protocol or definition.",
+               "description":"The URL pointing to an externally maintained protocol, guideline, questionnaire or other definition that is adhered to in whole or in part by this CarePlan.",
                "type":"array",
                "items":{
                   "type":"string",
@@ -50,7 +51,7 @@
             },
             "fhir:basedOn":{
                "title":"Based On",
-               "description":"Fulfills plan, proposal or order.",
+               "description":"A higher-level request resource (i.e. a plan, proposal or order) that is fulfilled in whole or in part by this care plan.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/reference"
@@ -58,7 +59,7 @@
             },
             "fhir:replaces":{
                "title":"Replaces",
-               "description":"CarePlan replaced by this CarePlan.",
+               "description":"Completed or terminated care plan whose function is taken by this new care plan.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/reference"
@@ -66,7 +67,7 @@
             },
             "fhir:partOf":{
                "title":"Part Of",
-               "description":"Part of referenced CarePlan.",
+               "description":"A larger care plan of which this particular care plan is a component or step.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/reference"
@@ -134,7 +135,7 @@
             },
             "fhir:subject":{
                "title":"Subject",
-               "description":"Who the care plan is for.",
+               "description":"Identifies the patient or group whose intended care is described by the plan.",
                "$ref":"https://ns.fhir.org/datatypes/reference"
             },
             "fhir:encounter":{
@@ -155,12 +156,12 @@
             },
             "fhir:custodian":{
                "title":"Custodian",
-               "description":"Who is the designated responsible party.",
+               "description":"The custodian for the care plan.",
                "$ref":"https://ns.fhir.org/datatypes/reference"
             },
             "fhir:contributor":{
                "title":"Contributor",
-               "description":"Who provided the content of the care plan.",
+               "description":"Identifies the individual(s), organization or device who provided the contents of the care plan.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/reference"
@@ -168,7 +169,7 @@
             },
             "fhir:careTeam":{
                "title":"Care Team",
-               "description":"Who's involved in plan?.",
+               "description":"Identifies all people and organizations who are expected to be involved in the care envisioned by this plan.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/reference"
@@ -192,7 +193,7 @@
             },
             "fhir:goal":{
                "title":"Goal",
-               "description":"Desired outcome of plan.",
+               "description":"Describes the intended objective(s) of carrying out the care plan.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/reference"
@@ -215,7 +216,7 @@
                      },
                      "xdm:progress":{
                         "title":"Progress ",
-                        "description":"RComments about the activity status/progress.",
+                        "description":"Notes about the adherence/status/progress of the activity.",
                         "type":"array",
                         "items":{
                            "$ref":"https://ns.fhir.org/datatypes/annotation"
@@ -230,7 +231,7 @@
                },
                "fhir:note":{
                   "title":"Note",
-                  "description":"Comments about the plan.",
+                  "description":"General notes about the care plan.",
                   "type":"array",
                   "items":{
                      "$ref":"https://ns.fhir.org/datatypes/annotation"

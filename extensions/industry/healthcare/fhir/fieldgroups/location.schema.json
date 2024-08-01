@@ -7,7 +7,7 @@
    ],
    "$id":"https://ns.fhir.org/fieldgroup/locationdetail",
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "title":"Details and position information for a place",
+   "title":"Location",
    "type":"object",
    "meta:tags":{
       "industry":[

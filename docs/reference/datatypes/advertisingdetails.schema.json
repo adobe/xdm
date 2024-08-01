@@ -9,18 +9,18 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Advertising details information",
     "type": "object",
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:extensible": true,
     "description": "Advertising details information.",
     "definitions": {
         "advertisingDetails": {
             "properties": {
-                "xdm:name": {
+                "xdm:friendlyName": {
                     "title": "Ad Name",
                     "type": "string",
                     "description": "Friendly name of the ad. In reporting, “Ad Name” is the classification and “Ad Name (variable)” is the eVar."
                 },
-                "xdm:ID": {
+                "xdm:name": {
                     "title": "Ad ID",
                     "type": "string",
                     "pattern": "^.{1,}$",
@@ -90,7 +90,7 @@
                 }
             },
             "required": [
-                "xdm:ID",
+                "xdm:name",
                 "xdm:length",
                 "xdm:podPosition",
                 "xdm:playerName"
@@ -104,7 +104,7 @@
     ],
     "examples": [
         {
-            "xdm:ID": "123456789",
+            "xdm:name": "123456789",
             "xdm:length": 100,
             "xdm:podPosition": 1,
             "xdm:playerName": "playerName"

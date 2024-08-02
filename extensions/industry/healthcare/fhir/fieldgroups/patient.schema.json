@@ -116,7 +116,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:relationship":{
                         "title":"Relationship",
@@ -134,7 +133,6 @@
                         "type":"array",
                         "items":{
                            "type":"object",
-                           "additionalProperties":false,
                            "properties":{
                               "xdm:contactPoint":{
                                  "title":"Contact Point",
@@ -173,7 +171,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:language":{
                         "title":"Language",
@@ -207,7 +204,6 @@
                "type":"array",
                "items":{
                   "type":"object",
-                  "additionalProperties":false,
                   "properties":{
                      "xdm:other":{
                         "title":"Other",

@@ -1,0 +1,139 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.fhir.org/datatypes/dosage",
+   "title":"Dosage",
+   "type":"object",
+   "description":"How the medication is/was taken or should be taken.(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "dosage":{
+         "properties":{
+            "xdm:sequence":{
+               "title":"Sequence",
+               "type":"integer",
+               "description":"The order of the dosage instructions"
+            },
+            "xdm:text":{
+               "title":"Text",
+               "type":"string",
+               "description":"Free text dosage instructions e.g. SIG"
+            },
+            "xdm:additionalInstruction":{
+               "title":"Additional Instructions",
+               "description":"Supplemental instruction or warnings to the patient - e.g. \"with meals\", \"may cause drowsiness\".",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "xdm:patientInstruction":{
+               "title":"Patient Instruction",
+               "type":"string",
+               "description":"Instructions in terms that are understood by the patient or consumer."
+            },
+            "xdm:timing":{
+               "title":"Timing",
+               "description":"When medication should be administered",
+               "$ref":"https://ns.fhir.org/datatypes/timing"
+            },
+            "xdm:asNeeded":{
+               "title":"As Needed",
+               "type":"boolean",
+               "description":"Take \"as needed\"."
+            },
+            "xdm:asNeededFor":{
+               "title":"As Needed For",
+               "description":"Take \"as needed\" (for x)",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "xdm:site":{
+               "title":"Body Site",
+               "description":"Body site to administer to.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "xdm:route":{
+               "title":"Route",
+               "description":"How drug should enter body.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "xdm:method":{
+               "title":"Method",
+               "description":"Technique for administering medication.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "xdm:doseAndRate":{
+               "title":"Dose and Rate",
+               "description":"Amount of medication administered, to be administered or typical amount to be administered",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:type":{
+                        "title":"Type",
+                        "description":"The kind of dose or rate specified",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:doseRange":{
+                        "title":"Dose Range",
+                        "description":"Amount of medication per dose",
+                        "$ref":"https://ns.fhir.org/datatypes/range"
+                     },
+                     "xdm:doseQuantity":{
+                        "title":"Dose Quantity",
+                        "description":"Amount of medication per dose.",
+                        "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+                     },
+                     "xdm:rateRatio":{
+                        "title":"Rate Ratio",
+                        "description":"Amount of medication per unit of time",
+                        "$ref":"https://ns.fhir.org/datatypes/ratio"
+                     },
+                     "xdm:rateRange":{
+                        "title":"Rate Range",
+                        "description":"Amount of medication per unit of time",
+                        "$ref":"https://ns.fhir.org/datatypes/range"
+                     },
+                     "xdm:rateQuantity":{
+                        "title":"Rate Quantity",
+                        "description":"Amount of medication per unit of time.",
+                        "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+                     }
+                  }
+               }
+            },
+            "xdm:maxDosePerPeriod":{
+               "title":"MaxDoseperPeriod",
+               "description":"Upper limit on medication per unit of time.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/ratio"
+               }
+            },
+            "xdm:maxDosePerAdministration":{
+               "title":"MaxDosePerAdministration",
+               "description":"Upper limit on medication per administration.",
+               "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+            },
+            "xdm:maxDosePerLifetime":{
+               "title":"MaxDosePerLifetime",
+               "description":"Upper limit on medication per lifetime of the patient.",
+               "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/dosage"
+      }
+   ],
+   "meta:status":"experimental"
+}

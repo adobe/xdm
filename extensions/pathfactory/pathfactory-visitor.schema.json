@@ -16,106 +16,106 @@
   "definitions": {
     "pfVisitorFields": {
       "properties": {
-        "pf:pathfactoryVisitor": {
+        "pathfactory:visitor": {
           "title": "Pathfactory Visitor",
           "description": "Pathfactory Visitor Field Object",
           "type": "object",
           "properties": {
-            "pf:createdAtUtc": {
+            "pathfactory:createdAtUtc": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "",
+              "description": "Created date in UTC format",
               "title": "Created At (UTC)",
               "meta:xdmType": "date-time"
             },
-            "pf:emailDomain": {
+            "pathfactory:emailDomain": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Email Domain",
               "title": "Email Domain",
               "meta:xdmType": "string"
             },
-            "pf:email": {
+            "pathfactory:email": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Email Address",
               "title": "Email",
               "meta:xdmType": "string"
             },
-            "pf:visitorEcid": {
+            "pathfactory:visitorEcid": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Adobe ECID",
               "title": "Adobe ECID",
               "meta:xdmType": "string"
             },
-            "pf:lastVisitTimeUtc": {
+            "pathfactory:lastVisitTimeUtc": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "",
+              "description": "Last Visit Date in UTC format",
               "title": "Last Visit Time (UTC)",
               "meta:xdmType": "date-time"
             },
-            "pf:visitorId": {
+            "pathfactory:visitorId": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Visitor ID",
               "title": "Visitor ID",
               "meta:xdmType": "string"
             },
-            "pf:visitorUuid": {
+            "pathfactory:visitorUuid": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Visitor UUID",
               "title": "Visitor UUID",
               "meta:xdmType": "string"
             },
-            "pf:visitorIdentity": {
+            "pathfactory:visitorIdentity": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Visitor Identity",
               "title": "Visitor Identity",
               "meta:xdmType": "string"
             },
-            "pf:isKnown": {
+            "pathfactory:isKnown": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if known is true",
               "title": "Is Known",
               "meta:xdmType": "boolean"
             },
-            "pf:knownFrom": {
+            "pathfactory:knownFrom": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "",
+              "description": "Known From date",
               "title": "Known From",
               "meta:xdmType": "date-time"
             },
-            "pf:firstVisitTimeUtc": {
+            "pathfactory:firstVisitTimeUtc": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "",
+              "description": "First Visit Date in UTC format",
               "title": "First Visit Time (UTC)",
               "meta:xdmType": "date-time"
             },
-            "pf:identityEcid": {
+            "pathfactory:identityEcid": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Identity ECID",
               "title": "Identity ECID",
               "meta:xdmType": "string"
             }
           },
           "meta:xdmType": "object",
           "required": [
-            "pf:visitorId",
-            "pf:visitorUuid",
-            "pf:visitorIdentity",
-            "pf:isKnown"
+            "pathfactory:visitorId",
+            "pathfactory:visitorUuid",
+            "pathfactory:visitorIdentity",
+            "pathfactory:isKnown"
           ]
         }
       }

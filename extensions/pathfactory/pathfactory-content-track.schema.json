@@ -16,208 +16,208 @@
   "definitions": {
     "pfContentTrackFields": {
       "properties": {
-        "pf:pathfactoryContentTrack": {
+        "pathfactory:contentTrack": {
           "type": "object",
           "title": "Pathfactory Content Track",
           "description": "Pathfactory Content Track Field Object",
           "properties": {
-            "pf:createdAtUtc": {
+            "pathfactory:createdAtUtc": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "",
+              "description": "Created Date in UTC format",
               "title": "Created Date (UTC)",
               "meta:xdmType": "date-time"
             },
-            "pf:appId": {
+            "pathfactory:appId": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Application ID",
               "title": "App ID",
               "meta:xdmType": "string"
             },
-            "pf:deleted": {
+            "pathfactory:deleted": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check is deleted",
               "title": "Deleted",
               "meta:xdmType": "boolean"
             },
-            "pf:experienceCustomUrl": {
+            "pathfactory:experienceCustomUrl": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Experience Custom URL (PathFactory Experience)",
               "title": "Experience Custom URL",
               "meta:xdmType": "string"
             },
-            "pf:experienceId": {
+            "pathfactory:experienceId": {
               "required": [],
               "type": "integer",
-              "description": "",
+              "description": "Experience ID (PathFactory Experience)",
               "title": "Experience ID",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pf:externalId": {
+            "pathfactory:externalId": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Experience External ID (PathFactory Experience)",
               "title": "Experience External ID",
               "meta:xdmType": "string"
             },
-            "pf:experienceName": {
+            "pathfactory:experienceName": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Experience Name (PathFactory Experience)",
               "title": "Experience Name",
               "meta:xdmType": "string"
             },
-            "pf:experienceType": {
+            "pathfactory:experienceType": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Experience Type (PathFactory Experience)",
               "title": "Experience Type (PathFactory Experience)",
               "meta:xdmType": "string"
             },
-            "pf:folderId": {
+            "pathfactory:folderId": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Folder ID (PathFactory)",
               "title": "Folder ID (PathFactory)",
               "meta:xdmType": "string"
             },
-            "pf:isSidebarEnabled": {
+            "pathfactory:isSidebarEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if sidebar enabled in PathFactory",
               "title": "Is Sidebar Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isBottomBarEnabled": {
+            "pathfactory:isBottomBarEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if bottom bar is enabled in PathFactory",
               "title": "IS Bottom Bar Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isCardEnabled": {
+            "pathfactory:isCardEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if card is enabled in PathFactory",
               "title": "Is Card Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isExitEnabled": {
+            "pathfactory:isExitEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if exist is enabled in PathFactory",
               "title": "Is Exit Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isInactivityEnabled": {
+            "pathfactory:isInactivityEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if inactivity is enabled in PathFactory",
               "title": "Is Inactivity Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isShareEnabled": {
+            "pathfactory:isShareEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if share is enabled in PathFactory",
               "title": "Is Share Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isCaptureEnabled": {
+            "pathfactory:isCaptureEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if capture is enabled in PathFactory",
               "title": "Is Capture Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:experienceUuid": {
+            "pathfactory:experienceUuid": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Experience Unique ID (PathFactory)",
               "title": "Experience Unique ID",
               "meta:xdmType": "string"
             },
-            "pf:isCookieConsentEnabled": {
+            "pathfactory:isCookieConsentEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if cookie consent is enabled in PathFactory",
               "title": "Is Cookie Consent Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isGdprCookieConsentEnabled": {
+            "pathfactory:isGdprCookieConsentEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if GDPR cookie consent is enabled in PathFactory",
               "title": "Is Gdpr Cookie Consent Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isHeaderEnabled": {
+            "pathfactory:isHeaderEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if header is enabled in PathFactory",
               "title": "Is Header Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isCookieMessageEnabled": {
+            "pathfactory:isCookieMessageEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if cookie message is enabled in PathFactory",
               "title": "Is Cookie Message Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isFlowEnabled": {
+            "pathfactory:isFlowEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if flow is enabled in PathFactory",
               "title": "Is Flow Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isSignpostEnabled": {
+            "pathfactory:isSignpostEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if signpost is enabled in PathFactory",
               "title": "Is Signpost Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isTopicSidebarEnabled": {
+            "pathfactory:isTopicSidebarEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if topic sidebar is enabled in PathFactory",
               "title": "is topic sidebar enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isLikeEnabled": {
+            "pathfactory:isLikeEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if like is enabled in PathFactory",
               "title": "Is Like Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:isEndEnabled": {
+            "pathfactory:isEndEnabled": {
               "required": [],
               "type": "boolean",
-              "description": "",
+              "description": "Boolean variable to check if end is enabled in PathFactory",
               "title": "Is End Enabled",
               "meta:xdmType": "boolean"
             },
-            "pf:targetContentOrder": {
+            "pathfactory:targetContentOrder": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Target Content Order",
               "title": "Target Content Order",
               "meta:xdmType": "string"
             },
-            "pf:updatedAtUtc": {
+            "pathfactory:updatedAtUtc": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "",
+              "description": "Updated date in UTC format",
               "title": "Updated Date (UTC)",
               "meta:xdmType": "date-time"
             }

@@ -16,116 +16,116 @@
   "definitions": {
     "pfContentFields": {
       "properties": {
-        "pf:pathfactoryContent": {
+        "pathfactory:content": {
           "title": "Pathfactory Content",
           "description": "Pathfactory Content Field Object",
           "required": [
-            "pf:contentId",
-            "pf:createdAtUtc",
-            "pf:title",
-            "pf:internalTitle"
+            "pathfactory:contentId",
+            "pathfactory:createdAtUtc",
+            "pathfactory:title",
+            "pathfactory:internalTitle"
           ],
           "type": "object",
           "properties": {
-            "pf:createdAtUtc": {
+            "pathfactory:createdAtUtc": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "",
+              "description": "Created Date in UTC format",
               "title": "Created AT UTC",
               "meta:xdmType": "date-time"
             },
-            "pf:contentId": {
+            "pathfactory:contentId": {
               "required": [],
               "type": "integer",
-              "description": "",
+              "description": "Content ID",
               "title": "Content ID",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pf:updatedAtUtc": {
+            "pathfactory:updatedAtUtc": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "",
+              "description": "Updated Date in UTC format",
               "title": "Updated AT UTC",
               "meta:xdmType": "date-time"
             },
-            "pf:title": {
+            "pathfactory:title": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Content Title",
               "title": "Content Title",
               "meta:xdmType": "string"
             },
-            "pf:internalTitle": {
+            "pathfactory:internalTitle": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Content Internal Title",
               "title": "Content Internal Title",
               "meta:xdmType": "string"
             },
-            "pf:slug": {
+            "pathfactory:slug": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Content URL Slug",
               "title": "Content URL Slug",
               "meta:xdmType": "string"
             },
-            "pf:language": {
+            "pathfactory:language": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Language",
               "title": "Language",
               "meta:xdmType": "string"
             },
-            "pf:description": {
+            "pathfactory:description": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Content Description",
               "title": "Content Description",
               "meta:xdmType": "string"
             },
-            "pf:sourceUrl": {
+            "pathfactory:sourceUrl": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Source URL",
               "title": "Source URL",
               "meta:xdmType": "string"
             },
-            "pf:mediaType": {
+            "pathfactory:mediaType": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Media Type",
               "title": "Media Type",
               "meta:xdmType": "string"
             },
-            "pf:contentType": {
+            "pathfactory:contentType": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Content Type",
               "title": "Content Type",
               "meta:xdmType": "string"
             },
-            "pf:externalId": {
+            "pathfactory:externalId": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "External ID (PathFactory)",
               "title": "External ID",
               "meta:xdmType": "string"
             },
-            "pf:thumbnail": {
+            "pathfactory:thumbnail": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Thumbnail",
               "title": "Thumbnail",
               "meta:xdmType": "string"
             },
-            "pf:uuid": {
+            "pathfactory:uuid": {
               "required": [],
               "type": "string",
-              "description": "",
+              "description": "Content UUID (PathFactory)",
               "title": "Content UUID",
               "meta:xdmType": "string"
             }

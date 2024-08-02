@@ -17,7 +17,8 @@
    "meta:extensible":true,
    "meta:abstract":true,
    "meta:intendedToExtend":[
-      "https://ns.adobe.com/xdm/context/profile"
+      "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/classes/provider"
    ],
    "meta:sensitive-data":true,
    "description":"Demographics and other administrative details about an individual or animal receiving care or other health-related services.(Based on HL7 FHIR Release 5 specifications)",

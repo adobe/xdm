@@ -1,0 +1,130 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-visitor",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "title": "PathFactory Visitor Fieldgroup Details - V1.1",
+  "type": "object",
+  "description": "PathFactory Visitor Schema Field",
+  "definitions": {
+    "pfVisitorFields": {
+      "properties": {
+        "pathfactory:visitor": {
+          "title": "Pathfactory Visitor",
+          "description": "Pathfactory Visitor Field Object",
+          "type": "object",
+          "properties": {
+            "pathfactory:createdAtUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Created date in UTC format",
+              "title": "Created At (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pathfactory:emailDomain": {
+              "required": [],
+              "type": "string",
+              "description": "Email Domain",
+              "title": "Email Domain",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:email": {
+              "required": [],
+              "type": "string",
+              "description": "Email Address",
+              "title": "Email",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:visitorEcid": {
+              "required": [],
+              "type": "string",
+              "description": "Adobe ECID",
+              "title": "Adobe ECID",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:lastVisitTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Last Visit Date in UTC format",
+              "title": "Last Visit Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pathfactory:visitorId": {
+              "required": [],
+              "type": "string",
+              "description": "Visitor ID",
+              "title": "Visitor ID",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:visitorUuid": {
+              "required": [],
+              "type": "string",
+              "description": "Visitor UUID",
+              "title": "Visitor UUID",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:visitorIdentity": {
+              "required": [],
+              "type": "string",
+              "description": "Visitor Identity",
+              "title": "Visitor Identity",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:isKnown": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if known is true",
+              "title": "Is Known",
+              "meta:xdmType": "boolean"
+            },
+            "pathfactory:knownFrom": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Known From date",
+              "title": "Known From",
+              "meta:xdmType": "date-time"
+            },
+            "pathfactory:firstVisitTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "First Visit Date in UTC format",
+              "title": "First Visit Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pathfactory:identityEcid": {
+              "required": [],
+              "type": "string",
+              "description": "Identity ECID",
+              "title": "Identity ECID",
+              "meta:xdmType": "string"
+            }
+          },
+          "meta:xdmType": "object",
+          "required": [
+            "pathfactory:visitorId",
+            "pathfactory:visitorUuid",
+            "pathfactory:visitorIdentity",
+            "pathfactory:isKnown"
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfVisitorFields"
+    }
+  ],
+  "meta:status": "stable"
+}

@@ -1,0 +1,578 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-session",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "title": "PathFactory Session Fieldgroup Details - V1.1",
+  "type": "object",
+  "description": "PathFactory Session Schema Field",
+  "definitions": {
+    "pfSessionFields": {
+      "properties": {
+        "pathfactory:session": {
+          "title": "Pathfactory Session",
+          "description": "Pathfactory Session Field Object",
+          "type": "object",
+          "properties": {
+            "pathfactory:sessionId": {
+              "required": [],
+              "type": "string",
+              "description": "Session ID (PathFactory)",
+              "title": "Session ID",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:modifiedUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Modified date in UTC format",
+              "title": "Modified UTC",
+              "meta:xdmType": "date-time"
+            },
+            "pathfactory:averagePercentageScrolled": {
+              "required": [],
+              "type": "number",
+              "description": "Average Percentage Scrolled",
+              "title": "Average Percentage Scrolled",
+              "meta:xdmType": "number"
+            },
+            "pathfactory:averageViewTimePerAsset": {
+              "required": [],
+              "type": "number",
+              "description": "Average View Time Per Asset",
+              "title": "Average View Time Per Asset",
+              "meta:xdmType": "number"
+            },
+            "pathfactory:captureModalShownCount": {
+              "required": [],
+              "type": "integer",
+              "description": "Capture Modal Shown Count",
+              "title": "Capture Modal Shown Count",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:captures": {
+              "required": [],
+              "type": "integer",
+              "description": "Number of Captures",
+              "title": "Captures",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:city": {
+              "required": [],
+              "type": "string",
+              "description": "City",
+              "title": "City",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:clicks": {
+              "required": [],
+              "type": "integer",
+              "description": "Clicks",
+              "title": "Clicks",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:companyName": {
+              "required": [],
+              "type": "string",
+              "description": "Company Name",
+              "title": "Company Name",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:country": {
+              "required": [],
+              "type": "string",
+              "description": "Country",
+              "title": "Country",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:dataSource": {
+              "required": [],
+              "type": "string",
+              "description": "Data Source",
+              "title": "Data Source",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:demandbaseAnnualSales": {
+              "required": [],
+              "type": "integer",
+              "description": "Demandbase Annual Sales",
+              "title": "Demandbase Annual Sales",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:demandbaseCompanyName": {
+              "required": [],
+              "type": "string",
+              "description": "Demandbase Company Name",
+              "title": "Demandbase Company Name",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:demandbaseEmployeeCount": {
+              "required": [],
+              "type": "integer",
+              "description": "Demandbase Employee Count",
+              "title": "Demandbase Employee Count",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:demandbaseIndustry": {
+              "required": [],
+              "type": "string",
+              "description": "Demandbase Industry",
+              "title": "Demandbase Industry",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:demandbaseSid": {
+              "required": [],
+              "type": "integer",
+              "description": "Demandbase SID",
+              "title": "Demandbase SID",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:demandbaseWebSite": {
+              "required": [],
+              "type": "string",
+              "description": "Demandbase Website",
+              "title": "Demandbase Website",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:deviceType": {
+              "required": [],
+              "type": "string",
+              "description": "Device Type",
+              "title": "Device Type",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:domain": {
+              "required": [],
+              "type": "string",
+              "description": "Domain name",
+              "title": "Domain",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:emailAddress": {
+              "required": [],
+              "type": "string",
+              "description": "Email Address",
+              "title": "Email Address",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:emailDomain": {
+              "required": [],
+              "type": "string",
+              "description": "Email Domain",
+              "title": "Email Domain",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:endTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "End Time in UTC format",
+              "title": "End Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pathfactory:endTime": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "End Time",
+              "title": "End Time",
+              "meta:xdmType": "date-time"
+            },
+            "pathfactory:engagementScore": {
+              "required": [],
+              "type": "integer",
+              "description": "Engagement Score",
+              "title": "Engagement Score",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:engagementTime": {
+              "required": [],
+              "type": "integer",
+              "description": "Engagement Time",
+              "title": "Engagement Time",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:experienceExternalId": {
+              "required": [],
+              "type": "string",
+              "description": "Experience External ID",
+              "title": "Experience External ID",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:experienceId": {
+              "required": [],
+              "type": "integer",
+              "description": "Experience ID (PathFactory)",
+              "title": "Experience ID",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:experienceName": {
+              "required": [],
+              "type": "string",
+              "description": "Experience Name (PathFactory)",
+              "title": "Experience Name",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:incrementalEngagementTime": {
+              "required": [],
+              "type": "integer",
+              "description": "Incremental Engagement Time",
+              "title": "Incremental Engagement Time",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:ip": {
+              "required": [],
+              "type": "string",
+              "description": "IP address",
+              "title": "IP",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:ip2ProxyIsproxy": {
+              "required": [],
+              "type": "string",
+              "description": "IP 2 Proxy Is Proxy",
+              "title": "IP 2 Proxy Is Proxy",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:isp": {
+              "required": [],
+              "type": "string",
+              "description": "ISP name",
+              "title": "ISP",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:likes": {
+              "required": [],
+              "type": "string",
+              "description": "Likes",
+              "title": "Likes",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:os": {
+              "required": [],
+              "type": "string",
+              "description": "OS used while visiting pages",
+              "title": "OS",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:queryString": {
+              "required": [],
+              "type": "string",
+              "description": "Query String",
+              "title": "Query String",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:referrerUrl": {
+              "required": [],
+              "type": "string",
+              "description": "Referrer URL",
+              "title": "Referrer URL",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:region": {
+              "required": [],
+              "type": "string",
+              "description": "Region",
+              "title": "Region",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:referrerMedium": {
+              "required": [],
+              "type": "string",
+              "description": "Referrer Medium",
+              "title": "Referrer Medium",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:referrerSource": {
+              "required": [],
+              "type": "string",
+              "description": "Referrer Source",
+              "title": "Referrer Source",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:referrerTerm": {
+              "required": [],
+              "type": "string",
+              "description": "Referrer Term",
+              "title": "Referrer Term",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:shares": {
+              "required": [],
+              "type": "string",
+              "description": "Shares",
+              "title": "Shares",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:startTimeUtc": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Start time in UTC format",
+              "title": "Start Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "pathfactory:startTime": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Start Time",
+              "title": "Start Time",
+              "meta:xdmType": "date-time"
+            },
+            "pathfactory:sixsenseCompanyCountryIsoCode": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Country ISO Code",
+              "title": "Sixsense Company Country ISO Code",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanyEmployeeCount": {
+              "required": [],
+              "type": "integer",
+              "description": "Sixsense Company Employee Count",
+              "title": "Sixsense Company Employee Count",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:sixsenseCompanyEmployeeRange": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Employee Range",
+              "title": "Sixsense Company Employee Range",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanyIndustry": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Industry",
+              "title": "Sixsense Company Industry",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanyNaicscode": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Naicscode",
+              "title": "Sixsense Company Naicscode",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanyNaicsdescription": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Naicsdescription",
+              "title": "Sixsense Company Naicsdescription",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanyPhone": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Phone",
+              "title": "Sixsense Company Phone",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanyPostalCode": {
+              "required": [],
+              "type": "string",
+              "description":"Sixsense Company Postal Code",
+              "title": "Sixsense Company Postal Code",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanyRevenueRange": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Revenue Range",
+              "title": "Sixsense Company Revenue Range",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanySiccode": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Siccode",
+              "title": "Sixsense Company Siccode",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanySicdescription": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Sicdescription",
+              "title": "Sixsense Company Sicdescription",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanyState": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company State",
+              "title": "Sixsense Company State",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:sixsenseCompanyStreetAddress": {
+              "required": [],
+              "type": "string",
+              "description": "Sixsense Company Street Address",
+              "title": "Sixsense Company Street Address",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:spiderOrRobot": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if spider/robot true in PathFactory",
+              "title": "Spider OR  Robot",
+              "meta:xdmType": "boolean"
+            },
+            "pathfactory:totalAssetViews": {
+              "required": [],
+              "type": "integer",
+              "description": "Total Asset Views",
+              "title": "Total Asset Views",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:uniqueViews": {
+              "required": [],
+              "type": "integer",
+              "description": "Unique Views",
+              "title": "Unique Views",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "pathfactory:userAgent": {
+              "required": [],
+              "type": "string",
+              "description": "User Agent",
+              "title": "User Agent",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:marketingCampaign": {
+              "required": [],
+              "type": "string",
+              "description": "Marketing Campaign",
+              "title": "Marketing Campaign",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:marketingContent": {
+              "required": [],
+              "type": "string",
+              "description": "Marketing Content",
+              "title": "Marketing Content",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:marketingMedium": {
+              "required": [],
+              "type": "string",
+              "description": "Marketing Medium",
+              "title": "Marketing Medium",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:marketingSource": {
+              "required": [],
+              "type": "string",
+              "description": "Marketing Source",
+              "title": "Marketing Source",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:marketingTerm": {
+              "required": [],
+              "type": "string",
+              "description": "Marketing Term",
+              "title": "Marketing Term",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:unifiedExperienceUuid": {
+              "required": [],
+              "type": "string",
+              "description": "Unified Experience UUID (PathFactory)",
+              "title": "Unified Experience UUID",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:experienceUuid": {
+              "required": [],
+              "type": "string",
+              "description": "Experience UUID (PathFactory)",
+              "title": "Experience UUID",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:webExpId": {
+              "required": [],
+              "type": "string",
+              "description": "Web Exp ID",
+              "title": "Web Exp ID",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:browser": {
+              "required": [],
+              "type": "string",
+              "description": "Browser used while visiting pages",
+              "title": "Browser",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:experienceType": {
+              "required": [],
+              "type": "string",
+              "description": "Experience Type (PathFactory)",
+              "title": "Experience Type",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:visitorId": {
+              "required": [],
+              "type": "string",
+              "description": "Visitor Identity",
+              "title": "Visitor Identity",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:visitorUuid": {
+              "required": [],
+              "type": "string",
+              "description": "Visitor UUID",
+              "title": "Visitor UUID",
+              "meta:xdmType": "string"
+            },
+            "pathfactory:identityEcid": {
+              "required": [],
+              "type": "string",
+              "description": "Identity ECID",
+              "title": "Identity ECID",
+              "meta:xdmType": "string"
+            }
+          },
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfSessionFields"
+    }
+  ],
+  "meta:status": "stable"
+}

@@ -20,8 +20,7 @@
       "https://ns.adobe.com/xdm/context/profile",
       "https://ns.adobe.com/xdm/classes/provider"
    ],
-   "meta:sensitive-data":true,
-   "description":"Demographics and other administrative details about an individual or animal receiving care or other health-related services.(Based on HL7 FHIR Release 5 specifications)",
+   "description":"A person with a formal responsibility in the provisioning of healthcare or related services.(Based on HL7 FHIR Release 5 specifications)",
    "definitions":{
       "practitioner":{
          "properties":{
@@ -57,12 +56,24 @@
             "fhir:gender":{
                "title":"Gender",
                "description":"male | female | other | unknown.",
-               "$ref":"https://ns.fhir.org/datatypes/gender"
+                "type":"string",
+               "enum":[
+                  "male",
+                  "female",
+                  "other",
+                  "unknown"
+               ],
+               "meta:enum":{
+                  "male":"Male",
+                  "female":"Female",
+                  "other":"Other",
+                  "unknown":"Unknown"
+               }
             },
             "fhir:birthDate":{
                "title":"Birth Date",
                "type":"string",
-               "description":"The date on which the practitioner was born.",
+               "description":"The date of birth for the practitioner.",
                "format":"date"
             },
             "fhir:deceasedBoolean":{
@@ -147,5 +158,3 @@
    ],
    "meta:status":"experimental"
 }
-
-

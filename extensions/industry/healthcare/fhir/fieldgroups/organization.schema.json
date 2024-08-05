@@ -59,7 +59,7 @@
             },
             "fhir:description":{
                "title":"Description",
-               "description":"ADescription of the organization, which helps provide additional general context on the organization to ensure that the correct organization is selected.",
+               "description":"Description of the organization, which helps provide additional general context on the organization to ensure that the correct organization is selected.",
                "type":"string"
             },
             "fhir:contact":{

@@ -1,0 +1,128 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/fieldgroup/organization",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Organization",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/context/account"
+   ],
+   "description":"A grouping of people or organizations with a common purpose.(Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "organization":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"Identifies this organization across multiple systems.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:active":{
+               "title":"Active",
+               "type":"boolean",
+               "description":"Whether the organization's record is still in active use."
+            },
+            "fhir:type":{
+               "title":"Type",
+               "description":"The kind(s) of organization that this is.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:name":{
+               "title":"Name",
+               "description":"A name associated with the organization.",
+               "type":"string"
+            },
+            "fhir:alias":{
+               "title":"Alias",
+               "description":"A list of alternate names that the organization is known as, or was known as in the past.",
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
+            },
+            "fhir:description":{
+               "title":"Description",
+               "description":"ADescription of the organization, which helps provide additional general context on the organization to ensure that the correct organization is selected.",
+               "type":"string"
+            },
+            "fhir:contact":{
+               "title":"Contact Details",
+               "description":"The contact details of communication devices available relevant to the specific Organization. This can include addresses, phone numbers, fax numbers, mobile numbers, email addresses and web sites.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/extendedcontactdetail"
+               }
+            },
+            "fhir:partOf":{
+               "title":"Part Of Organization",
+               "description":"The organization of which this organization forms a part.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "xdm:endpoint":{
+               "title":"End Point",
+               "description":"Technical endpoints providing access to services operated for the organization.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:qualification":{
+               "title":"Qualification",
+               "description":"The official certifications, accreditations, training, designations and licenses that authorize and/or otherwise endorse the provision of care by the organization.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:identifier":{
+                        "title":"Identifier",
+                        "description":"An identifier for this qualification for the organization.",
+                        "type":"array",
+                        "items":{
+                           "$ref":"https://ns.fhir.org/datatypes/identifier"
+                        }
+                     },
+                     "xdm:code":{
+                        "title":"Code",
+                        "description":"Coded representation of the qualification.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:period":{
+                        "title":"Period",
+                        "description":"Period during which the qualification is valid.",
+                        "$ref":"https://ns.fhir.org/datatypes/period"
+                     },
+                     "xdm:issuer":{
+                        "title":"Issuer",
+                        "description":"Organization that regulates and issues the qualification.",
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/organization"
+      }
+   ],
+   "meta:status":"experimental"
+}

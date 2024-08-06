@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/datatypes/customMetadataDetails
 Custom metadata details information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/custommetadatadetails.schema.json](datatypes/custommetadatadetails.schema.json) |
+|-------------------------------|-----------------------------------|-----------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stable    | No | Forbidden | Permitted | [datatypes/custommetadatadetails.schema.json](datatypes/custommetadatadetails.schema.json) |
 
 ## Custom metadata details information Example
 ```json

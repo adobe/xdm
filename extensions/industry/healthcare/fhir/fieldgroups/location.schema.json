@@ -1,0 +1,187 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.fhir.org/fieldgroup/locationdetail",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Details and position information for a place",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/classes/location"
+   ],
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "description":"Details and position information for a place.(Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "location":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"Unique code or number identifying the location to its users.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:status":{
+               "title":"Status",
+               "description":"active | inactive | suspended",
+               "type":"string",
+               "enum":[
+                  "active",
+                  "inactive",
+                  "suspended"
+               ],
+               "meta:enum":{
+                  "active":"Active",
+                  "inactive":"Inactive",
+                  "suspended":"Suspended"
+               }
+            },
+            "fhir:operationalStatus":{
+               "title":"Operational Status",
+               "description":"The operational status of the location (typically only for a bed/room).",
+               "$ref":"https://ns.fhir.org/datatypes/coding"
+            },
+            "fhir:name":{
+               "title":"Name",
+               "type":"string",
+               "description":"Name of the location as used by humans."
+            },
+            "fhir:alias":{
+               "title":"Alias",
+               "description":"A list of alternate names that the location is known as, or was known as, in the past.",
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
+            },
+            "fhir:description":{
+               "title":"Description",
+               "type":"string",
+               "description":"Additional details about the location that could be displayed as further information to identify the location beyond its name."
+            },
+            "fhir:mode":{
+               "title":"Mode",
+               "description":"instance | kind.",
+               "type":"string",
+               "enum":[
+                  "instance",
+                  "kind"
+               ],
+               "meta:enum":{
+                  "instance":"Instance",
+                  "kind":"Kind"
+               }
+            },
+            "fhir:type":{
+               "title":"Type",
+               "description":"Type of function performed.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:contact":{
+               "title":"Contact",
+               "description":"Official contact details for the location.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/extendedcontactdetail"
+               }
+            },
+            "fhir:address":{
+               "title":"Address",
+               "description":"Physical location.",
+               "$ref":"https://ns.fhir.org/datatypes/address"
+            },
+            "fhir:form":{
+               "title":"Form",
+               "description":"Physical form of the location.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:position":{
+               "title":"Position",
+               "description":"The absolute geographic location.",
+               "type":"object",
+               "properties":{
+                  "xdm:longitude":{
+                     "title":"Longitude",
+                     "description":"Longitude with WGS84 datum.",
+                     "type":"number"
+                  },
+                  "xdm:latitude":{
+                     "title":"Latitude",
+                     "description":"Latitude with WGS84 datum.",
+                     "type":"number"
+                  },
+                  "xdm:altitude":{
+                     "title":"Altitude",
+                     "description":"Altitude with WGS84 datum.",
+                     "type":"number"
+                  }
+               }
+            },
+            "fhir:managingOrganization":{
+               "title":"Managing Organization",
+               "description":"Organization responsible for provisioning and upkeep.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:partOf":{
+               "title":"Part Of Location",
+               "description":"Another Location this one is physically a part of.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:characteristic":{
+               "title":"Characteristic",
+               "description":"Collection of characteristics (attributes).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:hoursOfOperation":{
+               "title":"Hours Of Operation",
+               "description":"What days/times during a week is this location usually open (including exceptions).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/availability"
+               }
+            },
+            "fhir:virtualService":{
+               "title":"Virtual Service",
+               "description":"Connection details of a virtual service (e.g. conference call).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/virtualservicedetail"
+               }
+            },
+            "xdm:endpoint":{
+               "title":"End Point",
+               "description":"Technical endpoints providing access to services operated for the location.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/location"
+      }
+   ],
+   "meta:status":"experimental"
+}
+
+
+

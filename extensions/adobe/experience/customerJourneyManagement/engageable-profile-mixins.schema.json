@@ -31,13 +31,13 @@
                   "type": "string",
                   "description": "Name of product/solution for engageable profile record."
                 }
-              },
-              "xdm:latestTimestamp": {
-                "title": "Latest Timestamp",
-                "type": "string",
-                "format": "date-time",
-                "description": "Latest Timestamp of engageable profile record. Latest time of engagement."
               }
+            },
+            "xdm:latestTimestamp": {
+              "title": "Latest Timestamp",
+              "type": "string",
+              "format": "date-time",
+              "description": "Latest Timestamp of engageable profile record. Latest time of engagement."
             }
           }
         }

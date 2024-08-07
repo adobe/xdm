@@ -27,7 +27,7 @@
          "properties":{
             "fhir:identifier":{
                "title":"Identifier",
-               "description":"External Ids for this goal.",
+               "description":"Business identifiers assigned to this goal by the performer or other systems which remain constant as the resource is updated and propagates from server to server.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/identifier"
@@ -62,7 +62,7 @@
             },
             "fhir:achievementStatus":{
                "title":"Achievement Status",
-               "description":"in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable.",
+               "description":"Describes the progression, or lack thereof, towards the goal against the target (in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable).",
                "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
             "fhir:category":{
@@ -77,7 +77,7 @@
             },
             "fhir:priority":{
                "title":"Priority",
-               "description":"high-priority | medium-priority | low-priority.",
+               "description":"Identifies the mutually agreed level of importance associated with reaching/sustaining the goal. e.g. high-priority | medium-priority | low-priority.",
                "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
             "fhir:description":{
@@ -87,12 +87,12 @@
             },
             "fhir:subject":{
                "title":"Subject",
-               "description":"Who this goal is intended for.",
+               "description":"Identifies the patient, group or organization for whom the goal is being established.",
                "$ref":"https://ns.fhir.org/datatypes/reference"
             },
             "fhir:startDate":{
                "title":"Start Date",
-               "description":"The date after which the goal should begin being pursued..",
+               "description":"The date after which the goal should begin being pursued.",
                "type":"string",
                "format":"date"
             },
@@ -103,7 +103,7 @@
             },
             "fhir:target":{
                "title":"Target",
-               "description":"Target outcome for the goal.",
+               "description":"Indicates what should be done by when.",
                "type":"array",
                "items":{
                   "type":"object",
@@ -135,17 +135,17 @@
                      },
                      "xdm:detailBoolean":{
                         "title":"Detail Boolean",
-                        "description":"Boolean flag to indicate the fulfillment of the goal..",
+                        "description":"Boolean flag to indicate the fulfillment of the goal.",
                         "type":"boolean"
                      },
                      "xdm:detailInteger":{
                         "title":"Detail Integer",
-                        "description":"The target value number to be achieved to signify the fulfillment of the goal..",
+                        "description":"The target value number to be achieved to signify the fulfillment of the goal.",
                         "type":"integer"
                      },
                      "xdm:detailRatio":{
                         "title":"Detail Ratio",
-                        "description":"The target value in ratio to be achieved to signify the fulfillment of the goal..",
+                        "description":"The target value in ratio to be achieved to signify the fulfillment of the goal.",
                         "$ref":"https://ns.fhir.org/datatypes/ratio"
                      },
                      "xdm:dueDate":{
@@ -164,23 +164,23 @@
             },
             "fhir:statusDate":{
                "title":"Status Date",
-               "description":"When goal status took effect.",
+               "description":"Identifies when the current status. I.e. When initially created, when achieved, when cancelled, etc.",
                "type":"string",
                "format":"date"
             },
             "fhir:statusReason":{
                "title":"Status Reason",
-               "description":"Reason for current status.",
+               "description":"Captures the reason for the current status.",
                "type":"string"
             },
             "fhir:source":{
                "title":"Source",
-               "description":"Who's responsible for creating Goal?.",
+               "description":"Indicates whose goal this is - patient goal, practitioner goal, etc.",
                "$ref":"https://ns.fhir.org/datatypes/reference"
             },
             "fhir:addresses":{
                "title":"Addresses",
-               "description":"Issues addressed by this goal.",
+               "description":"The identified conditions and other health record elements that are intended to be addressed by the goal.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/reference"
@@ -196,7 +196,7 @@
             },
             "fhir:outccome":{
                "title":"Outcome",
-               "description":"What result was achieved regarding the goal?.",
+               "description":"Identifies the change (or lack of change) at the point when the status of the goal is assessed.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/codeablereference"

@@ -16,6 +16,13 @@
   "definitions": {
     "messageProfile": {
       "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": {
+          "title": "Message Profile Tracking ID",
+          "type": "string",
+          "description": "A unique tracking id refers to every single message sent as part of a MessageExecution activity.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID##description"
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": {
           "title": "MessageProfile ID",
           "type": "string",

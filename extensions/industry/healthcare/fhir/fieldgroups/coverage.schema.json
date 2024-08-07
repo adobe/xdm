@@ -13,7 +13,8 @@
       "industry":[
          "healthcare_services"
       ]
-   },"meta:intendedToExtend":[
+   },
+   "meta:intendedToExtend":[
       "https://ns.adobe.com/xdm/classes/plan"
    ],
    "meta:extensible":true,
@@ -24,7 +25,7 @@
          "properties":{
             "fhir:identifier":{
                "title":"Identifier",
-               "description":"Business identifier(s) for this coverage.",
+               "description":"The identifier of the coverage as issued by the insurer.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/identifier"
@@ -64,19 +65,19 @@
             },
             "fhir:paymentBy":{
                "title":"Payment By",
-               "description":"Self-pay parties and responsibility.",
+               "description":"Link to the paying party and optionally what specifically they will be responsible to pay.",
                "type":"array",
                "items":{
                   "type":"object",
                   "properties":{
                      "xdm:party":{
                         "title":"Party",
-                        "description":"Parties performing self-payment.",
+                        "description":"The list of parties providing non-insurance payment for the treatment costs.",
                         "$ref":"https://ns.fhir.org/datatypes/reference"
                      },
                      "xdm:responsibility":{
                         "title":"Responsibility",
-                        "description":"Party's responsibility.",
+                        "description":"Description of the financial responsibility.",
                         "type":"string"
                      }
                   }
@@ -84,7 +85,7 @@
             },
             "fhir:type":{
                "title":"Type",
-               "description":"Coverage category such as medical or accident.",
+               "description":"The type of coverage: social program, medical plan, accident coverage (workers compensation, auto), group health or payment by an individual or organization.",
                "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
             "fhir:policyHolder":{
@@ -98,7 +99,7 @@
                "$ref":"https://ns.fhir.org/datatypes/reference"
             },
             "fhir:subscriberId":{
-               "title":"Subscriber Identifier", 
+               "title":"Subscriber Identifier",
                "description":"The insurer assigned ID for the Subscriber.",
                "type":"array",
                "items":{
@@ -139,7 +140,7 @@
                   "properties":{
                      "xdm:ype":{
                         "title":"Type",
-                        "description":"Type of class such as 'group' or 'plan'.",
+                        "description":"The type of classification for which an insurer-specific class label or number and optional name is provided. For example, type may be used to identify a class of coverage or employer group, policy, or plan.",
                         "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
                      },
                      "xdm:value":{
@@ -149,7 +150,7 @@
                      },
                      "xdm:name":{
                         "title":"Name",
-                        "description":"Human readable description of the type and value.",
+                        "description":"A short description for the class.",
                         "type":"string"
                      }
                   }
@@ -202,7 +203,7 @@
                },
                "xdm:valueQuantity":{
                   "title":"Value Quantity",
-                  "description":"The Quantity due from the patient for the cost category.",
+                  "description":"The amount due in percentage from the patient for the cost category.",
                   "$ref":"https://ns.fhir.org/datatypes/simplequantity"
                },
                "xdm:valueMoney":{
@@ -224,7 +225,7 @@
                         },
                         "xdm:period":{
                            "title":"Period",
-                           "description":"The effective period of the exception.",
+                           "description":"The timeframe the exception is in force.",
                            "$ref":"https://ns.fhir.org/datatypes/period"
                         }
                      }
@@ -233,7 +234,7 @@
             },
             "fhir:subrogation":{
                "title":"Subrogation",
-               "description":"Reimbursement to insurer.",
+               "description":"When 'subrogation=true' this insurance instance has been included not for adjudication but to provide insurers with the details to recover costs.",
                "type":"boolean"
             },
             "fhir:contract":{

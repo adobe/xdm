@@ -1,0 +1,65 @@
+{
+   "sequence":1,
+   "text":"1 tablet every four hours as needed for pain",
+   "additionalInstruction":[
+      {
+         "coding":[
+            {
+               "system":"http://snomed.info/sct",
+               "code":"418914006",
+               "display":"Warning. May cause drowsiness. If affected do not drive or operate machinery. Avoid alcoholic drink (qualifier value)"
+            }
+         ]
+      }
+   ],
+   "timing":{
+      "repeat":{
+         "frequency":1,
+         "period":4,
+         "periodUnit":"h"
+      }
+   },
+   "asNeededFor":[
+      {
+         "coding":[
+            {
+               "system":"http://snomed.info/sct",
+               "code":"203082005",
+               "display":"Fibromyalgia (disorder)"
+            }
+         ]
+      }
+   ],
+   "route":{
+      "coding":[
+         {
+            "system":"http://snomed.info/sct",
+            "code":"26643006",
+            "display":"Oral Route"
+         }
+      ]
+   },
+   "doseAndRate":[
+      {
+         "type":{
+            "coding":[
+               {
+                  "system":"http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                  "code":"ordered",
+                  "display":"Ordered"
+               }
+            ]
+         },
+         "doseQuantity":{
+            "value":1,
+            "unit":"TAB",
+            "system":"http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+            "code":"TAB"
+         }
+      }
+   ]
+}
+
+
+
+ 

@@ -1,0 +1,13 @@
+{
+   "CodeableConcept":{
+      "coding":[
+         {
+            "system":"http://snomed.info/sct",
+            "code":"260385009",
+            "display":"Negative"
+         }
+      ],
+      "text":"Negative for Chlamydia Trachomatis rRNA"
+   },
+   "reference":"Codeable Reference example"
+}

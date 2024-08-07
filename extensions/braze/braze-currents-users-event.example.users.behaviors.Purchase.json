@@ -1,0 +1,28 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:appID": "01234567-89ab-cdef-0123-456789abcdef",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id"
+  },
+  "braze:device": {
+    "braze:platform": "ios",
+    "braze:OSVersion": "iOS 10.3.1",
+    "braze:deviceModel": "iPhone 7 Plus",
+    "braze:deviceID": "fedcba87-6543-210f-fedc-ba9876543210"
+  },
+  "braze:customEvent": {
+    "braze:properties": "{\"string_property\":\"b\",\"number_property\":2,\"boolean_property\":true,\"list_property\":[\"c\",\"c\"],\"null_property\":null}"
+  },
+  "braze:adTracking": {
+    "braze:adID": "3456789abcde-f012-3456-789a-bcdef0121234",
+    "braze:adIDType": "google_ad_id",
+    "braze:adTrackingEnabled": true
+  },
+  "braze:purchase": {
+    "braze:productID": "1234",
+    "braze:price": 12.34,
+    "braze:currency": "AED"
+  }
+}

@@ -52,6 +52,11 @@
               "title": "Campaign Identity Namespace",
               "type": "string",
               "description": "AJO Campaign Identity Namespace."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/isIpWarmUpCampaign": {
+              "title": "flag for ipWarmUp campaign",
+              "type": "boolean",
+              "description": "Field to identify if campaign is warmup campaign"
             }
           }
         },
@@ -208,6 +213,11 @@
               "title": "Journey Node Type",
               "type": "string",
               "description": "Represents the journey node type as authored on the canvas"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyProfileNamespace": {
+              "title": "Journey profile namespace",
+              "type": "string",
+              "description": "Represents the profile namespace selected for journey"
             }
           }
         },

@@ -18,6 +18,15 @@
   "definitions": {
     "frequency-capping-constraints": {
       "properties": {
+        "xdm:fCapConstraintsLastIndex": {
+          "type": "integer",
+          "title": "Frequency Capping Constraints Last Index",
+          "description": "Last index of the capping object. This field is hidden on UI.",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 2147483647,
+          "meta:status": "hidden"
+        },
         "xdm:frequencyCappingConstraints": {
           "type": "array",
           "items": {
@@ -25,6 +34,14 @@
             "title": "Frequency capping constraint",
             "description": "Frequency capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity.",
             "properties": {
+              "xdm:index": {
+                "title": "Index",
+                "description": "Index of the capping object, this is used as suffix for counter id when we have multi capping objects. Index starts from 1 and default value is 0.",
+                "type": "integer",
+                "default": 0,
+                "minimum": 0,
+                "maximum": 2147483647
+              },
               "xdm:limit": {
                 "title": "Limit",
                 "description": "How many times an option can be proposed.",

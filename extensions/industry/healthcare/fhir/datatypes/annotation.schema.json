@@ -1,0 +1,46 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.fhir.org/datatypes/annotation",
+   "title":"Annotation",
+   "type":"object",
+   "description":"Text node with attribution.(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "annotation":{
+         "properties":{
+            "xdm:authorReference":{
+               "title":"Author Reference",
+               "description":"Reference(Practitioner | PractitionerRole | Patient | RelatedPerson | Organization)",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "xdm:authorString":{
+               "title":"Author",
+               "description":"Individual responsible for the annotation",
+               "type":"string"
+            },
+            "xdm:time":{
+               "title":"Time",
+               "description":"When the annotation was made",
+               "type":"string",
+               "format":"date-time"
+            },
+            "xdm:text":{
+               "title":"Text",
+               "description":"The annotation - text content",
+               "type":"string"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/annotation"
+      }
+   ],
+   "meta:status":"experimental"
+}

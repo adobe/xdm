@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/descriptors/descriptorTimeSeriesGranularity",
+  "$id": "https://ns.adobe.com/xdm/common/descriptors/descriptorTimeSeriesGranularity",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Time-series Granularity Descriptor",
   "meta:extensible": false,
@@ -18,6 +18,10 @@
   "definitions": {
     "descriptorTimeSeriesGranularity": {
       "properties": {
+        "@type": {
+          "type": "string",
+          "const": "xdm:descriptorTimeSeriesGranularity"
+        },
         "xdm:granularity": {
           "title": "Granularity",
           "description": "Granularity of the time-series / summary data.  The schema's `xdm:timestamp` field is the first timestamp in a period of this granularity.",
@@ -34,6 +38,11 @@
           },
           "meta:titleId": "descriptorTimeSeriesGranularity##xdm:granularity##title##56551",
           "meta:descriptionId": "descriptorTimeSeriesGranularity##xdm:granularity##description##79851"
+        },
+        "xdm:ianaTimezone": {
+          "title": "Iana Timezone",
+          "type": "string",
+          "description": "Timezone of the time-series / summary data as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones. The default is UTC."
         }
       },
       "required": ["xdm:granularity"]
@@ -47,7 +56,7 @@
       "$ref": "#/definitions/descriptorTimeSeriesGranularity"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2022-03-28",
   "meta:titleId": "descriptorTimeSeriesGranularity##title##26941",
   "meta:descriptionId": "descriptorTimeSeriesGranularity##description##51361"

@@ -1,0 +1,87 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.fhir.org/datatypes/humanname",
+   "title":"Human Name",
+   "type":"object",
+   "description":"Name of a human or other living entity - parts and usage.(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "humanName":{
+         "properties":{
+            "xdm:use":{
+               "title":"Use",
+               "description":"usual | official | temp | nickname | anonymous | old | maiden",
+               "type":"string",
+               "enum":[
+                  "usual",
+                  "official",
+                  "temp",
+                  "nickname",
+                  "anonymous",
+                  "old",
+                  "maiden"
+               ],
+               "meta:enum":{
+                  "usual":"Usual",
+                  "official":"Official",
+                  "temp":"Temp",
+                  "nickname":"Nickname",
+                  "anonymous":"Anonymous",
+                  "old":"Old",
+                  "maiden":"Maiden"
+               }
+            },
+            "xdm:text":{
+               "title":"Text",
+               "type":"string",
+               "description":"Text representation of the full name"
+            },
+            "xdm:family":{
+               "title":"Family",
+               "type":"string",
+               "description":"Family name (often called 'Surname')"
+            },
+            "xdm:given":{
+               "title":"Given",
+               "description":"Given names (not always 'first'). Includes middle names",
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
+            },
+            "xdm:prefix":{
+               "title":"Prefix",
+               "description":"Parts that come before the name",
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
+            },
+            "xdm:suffix":{
+               "title":"Prefix",
+               "description":"Parts that come after the name",
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
+            },
+            "xdm:period":{
+               "title":"Period",
+               "description":"Time period when name was/is in use.",
+               "$ref":"https://ns.fhir.org/datatypes/period"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/humanName"
+      }
+   ],
+   "meta:status":"experimental"
+}

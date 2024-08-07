@@ -1,0 +1,70 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.fhir.org/datatypes/identifier",
+   "title":"Identifier",
+   "type":"object",
+   "description":"An identifier intended for computation.(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "identifier":{
+         "properties":{
+            "xdm:use":{
+               "title":"Use",
+               "description":"usual | official | temp | secondary | old (If known)",
+               "type":"string",
+               "enum":[
+                  "usual",
+                  "official",
+                  "temp",
+                  "secondary",
+                  "old"
+               ],
+               "meta:enum":{
+                  "usual":"Usual",
+                  "official":"Official",
+                  "temp":"Temporary",
+                  "secondary":"Secondary",
+                  "old":"Old"
+               }
+            },
+            "xdm:type":{
+               "title":"Type",
+               "description":"Description of identifier",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "xdm:system":{
+               "title":"System",
+               "description":"The namespace for the identifier value",
+               "type":"string",
+               "format":"uri"
+            },
+            "xdm:value":{
+               "title":"Value",
+               "description":"The value that is unique",
+               "type":"string"
+            },
+            "xdm:assigner":{
+               "title":"Assigner",
+               "description":"Organization that issued id",
+               "type":"string"
+            },
+            "xdm:period":{
+               "title":"Period",
+               "description":"Time period when id is/was valid for use",
+               "$ref":"https://ns.fhir.org/datatypes/period"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/identifier"
+      }
+   ],
+   "meta:status":"experimental"
+}

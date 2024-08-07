@@ -42,6 +42,11 @@
                             "title": "Event Code",
                             "type": "string",
                             "description": "The error code indicating the reason for corresponding eventType"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID": {
+                            "title": "Segment ID",
+                            "type": "string",
+                            "description": "The segment id of the incoming experience event"
                         }
                     }
                 }
@@ -60,7 +65,8 @@
                 "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
                 "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
                 "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "error",
-                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_SERVICE_INTERNAL"
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_SERVICE_INTERNAL",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID": "f3485959-0a9e-4004-82d9-f11bd6c4585b"
             }
         }
     ]

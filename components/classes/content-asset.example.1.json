@@ -1,4 +1,5 @@
 {
+  "xdm:version": "v1",
   "xdm:assetPerceptionID": "1c93aa01-f183-a3f1-bda6-a9c96e66afea",
   "xdm:assetID": "https://domain/media_random_id.jpeg",
   "xdm:assetName": "jump.png",
@@ -6,6 +7,7 @@
   "xdm:assetType": "image",
   "xdm:assetThumbnailURL": "https://domain/thumbnail.jpeg",
   "xdm:contentFeaturization": {
+    "xdm:version": "v1",
     "xdm:orientation": "landscape",
     "xdm:overallTone": "warm",
     "xdm:foregroundColors": ["Dark_Green"],

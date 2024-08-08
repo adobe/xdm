@@ -16,17 +16,18 @@
    },
    "meta:extensible":true,
    "meta:abstract":true,
+   "meta:sensitive-data":true,
    "meta:intendedToExtend":[
       "https://ns.adobe.com/xdm/context/profile",
       "https://ns.adobe.com/xdm/classes/provider"
    ],
-   "description":"A person with a formal responsibility in the provisioning of healthcare or related services.(Based on HL7 FHIR Release 5 specifications)",
+   "description":"A person who is directly or indirectly involved in the provisioning of healthcare or related services.(Based on HL7 FHIR Release 5 specifications)",
    "definitions":{
       "practitioner":{
          "properties":{
             "fhir:identifier":{
                "title":"Identifier",
-               "description":"An identifier for the person as this agent.",
+               "description":"An identifier that applies to this person in this role.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/identifier"
@@ -47,7 +48,7 @@
             },
             "fhir:telecom":{
                "title":"Contact Details",
-               "description":"A contact detail for the practitioner (that apply to all roles).",
+               "description":"A contact detail for the practitioner, e.g. a telephone number or an email address.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/contactpoint"
@@ -72,24 +73,24 @@
             },
             "fhir:birthDate":{
                "title":"Birth Date",
-               "type":"string",
                "description":"The date of birth for the practitioner.",
+               "type":"string",
                "format":"date"
             },
             "fhir:deceasedBoolean":{
                "title":"Deceased Indicator",
-               "type":"boolean",
-               "description":"Indicates if the practitioner is deceased or not."
+               "description":"Indicates if the practitioner is deceased or not.",
+               "type":"boolean"
             },
             "fhir:deceasedDateTime":{
                "title":"Deceased Date Time",
+               "description":"Date Time if the practitioner is deceased or not.",
                "type":"string",
-               "format":"date-time",
-               "description":"Date Time if the practitioner is deceased or not."
+               "format":"date-time"
             },
             "fhir:address":{
                "title":"Address",
-               "description":"Address(es) of the practitioner that are not role specific (typically home address).",
+               "description":"Address(es) of the practitioner that are not role specific (typically home address). Work addresses are not typically entered in this property as they are usually role dependent.",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/address"
@@ -97,7 +98,7 @@
             },
             "fhir:qualification":{
                "title":"Qualification",
-               "description":"Qualifications, certifications, accreditations, licenses, training, etc. pertaining to the provision of care.",
+               "description":"The official qualifications, certifications, accreditations, training, licenses (and other types of educations/skills/capabilities) that authorize or otherwise pertain to the provision of care by the practitioner.",
                "type":"array",
                "items":{
                   "type":"object",

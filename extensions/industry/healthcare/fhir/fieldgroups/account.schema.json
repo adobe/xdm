@@ -25,7 +25,7 @@
          "properties":{
             "fhir:identifier":{
                "title":"Identifier",
-               "description":"Account number.",
+               "description":"Unique identifier used to reference the account. Might or might not be intended for human use (e.g. credit card number).",
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/identifier"
@@ -52,19 +52,13 @@
             },
             "fhir:billingStatus":{
                "title":"Billing Status",
-               "description":"Tracks the lifecycle of the account through the billing process.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               }
+               "description":"The BillingStatus tracks the lifecycle of the account through the billing process. It indicates how transactions are treated when they are allocated to the account.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
             "fhir:type":{
                "title":"Type",
                "description":"Categorizes the account for reporting and searching purposes.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               }
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
             "fhir:name":{
                "title":"Name",
@@ -222,7 +216,7 @@
                      },
                      "xdm:packageCode":{
                         "title":"Package Code",
-                        "description":"Package Code specific for billing.",
+                        "description":"The package code can be used to group procedures that may be priced or delivered as a single product. Such as DRGs.",
                         "type":"array",
                         "items":{
                            "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
@@ -230,7 +224,7 @@
                      },
                      "xdm:device":{
                         "title":"Device",
-                        "description":"Any devices that were associated with the procedure.",
+                        "description":"Any devices that were associated with the procedure relevant to the account.",
                         "type":"array",
                         "items":{
                            "$ref":"https://ns.fhir.org/datatypes/reference"

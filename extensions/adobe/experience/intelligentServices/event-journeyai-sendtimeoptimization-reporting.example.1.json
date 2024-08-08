@@ -1,0 +1,16 @@
+{
+  "https://ns.adobe.com/experience/intelligentServices/journeyAI": {
+    "https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationReporting": {
+      "https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimizationReporting": {
+        "https://ns.adobe.com/experience/intelligentServices/journeyID": "1234",
+        "https://ns.adobe.com/experience/intelligentServices/noOfSends": 100,
+        "https://ns.adobe.com/experience/intelligentServices/noOfOpens": 10,
+        "https://ns.adobe.com/experience/intelligentServices/noOfClicks": 1,
+        "https://ns.adobe.com/experience/intelligentServices/variant": "abcd",
+        "https://ns.adobe.com/experience/intelligentServices/experimentDate": "2000-01-01",
+        "https://ns.adobe.com/experience/intelligentServices/testFinishDate": "2000-01-01",
+        "https://ns.adobe.com/experience/intelligentServices/recordCreateDate": "2000-01-01"
+      }
+    }
+  }
+}

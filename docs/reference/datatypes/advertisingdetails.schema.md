@@ -8,13 +8,13 @@ https://ns.adobe.com/xdm/datatypes/advertisingDetails
 Advertising details information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/advertisingdetails.schema.json](datatypes/advertisingdetails.schema.json) |
+|-------------------------------|-----------------------------------|---------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stable  | No | Forbidden | Permitted | [datatypes/advertisingdetails.schema.json](datatypes/advertisingdetails.schema.json) |
 
 ## Advertising details information Example
 ```json
 {
-  "xdm:ID": "123456789",
+  "xdm:name": "123456789",
   "xdm:length": 100,
   "xdm:podPosition": 1,
   "xdm:playerName": "playerName"
@@ -23,35 +23,35 @@ Advertising details information.
 
 # Advertising details information Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:ID](#xdmid) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:advertiser](#xdmadvertiser) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:campaignID](#xdmcampaignid) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:creativeID](#xdmcreativeid) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:creativeURL](#xdmcreativeurl) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:isCompleted](#xdmiscompleted) | `boolean` | Optional | Advertising details information (this schema) |
-| [xdm:isStarted](#xdmisstarted) | `boolean` | Optional | Advertising details information (this schema) |
-| [xdm:length](#xdmlength) | `integer` | Optional | Advertising details information (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:placementID](#xdmplacementid) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:playerName](#xdmplayername) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:podPosition](#xdmpodposition) | `integer` | Optional | Advertising details information (this schema) |
-| [xdm:siteID](#xdmsiteid) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:timePlayed](#xdmtimeplayed) | `integer` | Optional | Advertising details information (this schema) |
-| `*` | any | Additional | this schema *allows* additional properties |
+| Property                             | Type | Required   | Defined by |
+|--------------------------------------|------|------------|------------|
+| [xdm:name](#xdmname)                 | `string` | Required   | Advertising details information (this schema) |
+| [xdm:advertiser](#xdmadvertiser)     | `string` | Optional   | Advertising details information (this schema) |
+| [xdm:campaignID](#xdmcampaignid)     | `string` | Optional   | Advertising details information (this schema) |
+| [xdm:creativeID](#xdmcreativeid)     | `string` | Optional   | Advertising details information (this schema) |
+| [xdm:creativeURL](#xdmcreativeurl)   | `string` | Optional   | Advertising details information (this schema) |
+| [xdm:isCompleted](#xdmiscompleted)   | `boolean` | Optional   | Advertising details information (this schema) |
+| [xdm:isStarted](#xdmisstarted)       | `boolean` | Optional   | Advertising details information (this schema) |
+| [xdm:length](#xdmlength)             | `integer` | Required   | Advertising details information (this schema) |
+| [xdm:friendlyName](#xdmfriendlyname) | `string` | Optional   | Advertising details information (this schema) |
+| [xdm:placementID](#xdmplacementid)   | `string` | Optional   | Advertising details information (this schema) |
+| [xdm:playerName](#xdmplayername)     | `string` | Required   | Advertising details information (this schema) |
+| [xdm:podPosition](#xdmpodposition)   | `integer` | Required   | Advertising details information (this schema) |
+| [xdm:siteID](#xdmsiteid)             | `string` | Optional   | Advertising details information (this schema) |
+| [xdm:timePlayed](#xdmtimeplayed)     | `integer` | Optional   | Advertising details information (this schema) |
+| `*`                                  | any | Additional | this schema *allows* additional properties |
 
-## xdm:ID
+## xdm:name
 ### Ad ID
 
 ID of the ad. Any integer and/or letter combination.
 
-`xdm:ID`
-* is optional
+`xdm:name`
+* is required
 * type: `string`
 * defined in this schema
 
-### xdm:ID Type
+### xdm:name Type
 
 
 `string`
@@ -193,7 +193,7 @@ Ad is started.
 Length of video ad in seconds.
 
 `xdm:length`
-* is optional
+* is required
 * type: `integer`
 * defined in this schema
 
@@ -207,17 +207,17 @@ Length of video ad in seconds.
 
 
 
-## xdm:name
+## xdm:friendlyName
 ### Ad Name
 
 Friendly name of the ad. In reporting, “Ad Name” is the classification and “Ad Name (variable)” is the eVar.
 
-`xdm:name`
+`xdm:friendlyName`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:name Type
+### xdm:friendlyName Type
 
 
 `string`
@@ -253,7 +253,7 @@ Placement ID of the ad.
 The name of the player responsible for rendering the ad.
 
 `xdm:playerName`
-* is optional
+* is required
 * type: `string`
 * defined in this schema
 
@@ -273,7 +273,7 @@ The name of the player responsible for rendering the ad.
 The index of the ad inside the parent ad start, for example, the first ad has index 0 and the second ad has index 1.
 
 `xdm:podPosition`
-* is optional
+* is required
 * type: `integer`
 * defined in this schema
 

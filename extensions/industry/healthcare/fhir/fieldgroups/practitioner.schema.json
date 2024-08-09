@@ -142,7 +142,7 @@
                         "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
                      },
                      "xdm:preferred":{
-                        "title":"Is Preferred Language",
+                        "title":"Preferred Language",
                         "type":"boolean",
                         "description":"Language preference indicator"
                      }

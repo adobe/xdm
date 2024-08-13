@@ -11,7 +11,7 @@
    "type":"object",
    "description":"Extended Contact information.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
-      "extendedcontactdetail":{
+      "extendedContactDetail":{
          "properties":{
             "xdm:purpose":{
                "title":"Purpose",
@@ -54,7 +54,7 @@
    },
    "allOf":[
       {
-         "$ref":"#/definitions/extendedcontactdetail"
+         "$ref":"#/definitions/extendedContactDetail"
       }
    ],
    "meta:status":"experimental"

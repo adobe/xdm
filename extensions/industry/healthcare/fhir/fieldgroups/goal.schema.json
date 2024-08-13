@@ -68,7 +68,10 @@
             "fhir:category":{
                "title":"Category",
                "description":"Indicates a category the goal falls within. E.g. Treatment, dietary, behavioral, etc.",
+               "type":"array",
+               "items":{
                "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            }
             },
             "fhir:continuous":{
                "title":"Continuous",

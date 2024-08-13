@@ -46,6 +46,16 @@
           "title": "unsubscribe",
           "description": "User has requested to not be shown the proposition in the future.",
           "type": "integer"
+        },
+        "xdm:suppressSend": {
+          "title": "suppressSend",
+          "description": "Proposition was suppressed while sending it to the client",
+          "type": "integer"
+        },
+        "xdm:suppressDisplay": {
+          "title": "suppressDisplay",
+          "description": "Proposition was suppressed while displaying it to the client",
+          "type": "integer"
         }
       }
     }

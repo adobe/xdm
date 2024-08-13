@@ -11,52 +11,54 @@
    "type":"object",
    "description":"Virtual Service Contact Details.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
-      "properties":{
-         "xdm:channelType":{
-            "title":"Channel Type",
-            "description":"The type of virtual service to connect to (i.e. Teams, Zoom, Specific VMR technology, WhatsApp).",
-            "$ref":"https://ns.fhir.org/datatypes/coding"
-         },
-         "xdm:addressUrl":{
-            "title":"Address Url",
-            "description":"What URL to be used for a user to connect to the virtual service.",
-            "type":"string",
-            "format":"uri"
-         },
-         "xdm:addressString":{
-            "title":"Address String",
-            "description":"What address to be used for a user to connect to the virtual service.",
-            "type":"string"
-         },
-         "xdm:addressContactPoint":{
-            "title":"Address Contact Point",
-            "description":"Details of a Technology mediated contact point (phone, fax, email, etc.).",
-            "$ref":"https://ns.fhir.org/datatypes/contactpoint"
-         },
-         "xdm:addressExtendedContactDetail":{
-            "title":"Address Extended Contact Detail",
-            "description":"Contact information.",
-            "$ref":"https://ns.fhir.org/datatypes/extendedcontactdetail"
-         },
-         "xdm:additionalInfo":{
-            "title":"Additional Info",
-            "description":"Address to see alternative connection details.",
-            "type":"array",
-            "items":{
+      "VirtualServiceDetail":{
+         "properties":{
+            "xdm:channelType":{
+               "title":"Channel Type",
+               "description":"The type of virtual service to connect to (i.e. Teams, Zoom, Specific VMR technology, WhatsApp).",
+               "$ref":"https://ns.fhir.org/datatypes/coding"
+            },
+            "xdm:addressUrl":{
+               "title":"Address Url",
+               "description":"What URL to be used for a user to connect to the virtual service.",
                "type":"string",
                "format":"uri"
+            },
+            "xdm:addressString":{
+               "title":"Address String",
+               "description":"What address to be used for a user to connect to the virtual service.",
+               "type":"string"
+            },
+            "xdm:addressContactPoint":{
+               "title":"Address Contact Point",
+               "description":"Details of a Technology mediated contact point (phone, fax, email, etc.).",
+               "$ref":"https://ns.fhir.org/datatypes/contactpoint"
+            },
+            "xdm:addressExtendedContactDetail":{
+               "title":"Address Extended Contact Detail",
+               "description":"Contact information.",
+               "$ref":"https://ns.fhir.org/datatypes/extendedcontactdetail"
+            },
+            "xdm:additionalInfo":{
+               "title":"Additional Info",
+               "description":"Address to see alternative connection details.",
+               "type":"array",
+               "items":{
+                  "type":"string",
+                  "format":"uri"
+               }
+            },
+            "xdm:maxParticipants":{
+               "title":"Max Participants",
+               "description":"Maximum number of participants supported by the virtual service.",
+               "type":"integer",
+               "minimum":0
+            },
+            "xdm:sessionKey":{
+               "title":"Session Key",
+               "description":"Session Key required by the virtual service.",
+               "type":"string"
             }
-         },
-         "xdm:maxParticipants":{
-            "title":"Max Participants",
-            "description":"Maximum number of participants supported by the virtual service.",
-            "type":"integer",
-            "minimum":0
-         },
-         "xdm:sessionKey":{
-            "title":"Session Key",
-            "description":"Session Key required by the virtual service.",
-            "type":"string"
          }
       }
    },

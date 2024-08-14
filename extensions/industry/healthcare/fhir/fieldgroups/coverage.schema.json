@@ -138,7 +138,7 @@
                "items":{
                   "type":"object",
                   "properties":{
-                     "xdm:ype":{
+                     "xdm:type":{
                         "title":"Type",
                         "description":"The type of classification for which an insurer-specific class label or number and optional name is provided. For example, type may be used to identify a class of coverage or employer group, policy, or plan.",
                         "$ref":"https://ns.fhir.org/datatypes/codeableconcept"

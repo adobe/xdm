@@ -240,7 +240,11 @@
             "fhir:contract":{
                "title":"Contract Details",
                "description":"The policy(s) which constitute this insurance coverage.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
+               "description":"The insurer assigned ID for the Subscriber.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
             },
             "fhir:insurancePlan":{
                "title":"Insurance Plan",

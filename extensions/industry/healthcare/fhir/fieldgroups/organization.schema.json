@@ -17,7 +17,8 @@
    "meta:extensible":true,
    "meta:abstract":true,
    "meta:intendedToExtend":[
-      "https://ns.adobe.com/xdm/context/account"
+      "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/classes/provider"
    ],
    "description":"A grouping of people or organizations with a common purpose.(Based on HL7 FHIR Release 5 specifications)",
    "definitions":{

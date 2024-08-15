@@ -16,6 +16,13 @@
   "definitions": {
     "messageProfile": {
       "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": {
+          "title": "Message Profile Tracking ID",
+          "type": "string",
+          "description": "A unique tracking id refers to every single message sent as part of a MessageExecution activity.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID##description"
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": {
           "title": "MessageProfile ID",
           "type": "string",
@@ -105,6 +112,16 @@
           "title": "SMS inbound Message",
           "type": "string",
           "description": "SMS inbound reply, e.g. stop, start, subscribe, etc."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundNumber": {
+          "title": "SMS inbound Number",
+          "type": "string",
+          "description": "SMS inbound Number : Sender Id where the MO being received"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/channelType": {
+          "title": "Channel Type",
+          "type": "string",
+          "description": "ChannelType will contain like : SMS, MMS , RCS etc."
         }
       }
     }

@@ -17,7 +17,7 @@
    "meta:extensible":true,
    "meta:abstract":true,
    "meta:intendedToExtend":[
-      "https://ns.adobe.com/xdm/context/appointment",      
+      "https://ns.adobe.com/xdm/context/appointment",
       "https://ns.adobe.com/xdm/context/profile",
       "https://ns.adobe.com/xdm/classes/provider"
    ],
@@ -101,11 +101,7 @@
             },
             "fhir:appointmentType":{
                "title":"Appointment Type",
-               "description":"The style of appointment or patient that has been booked in the slot (not service type).",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               }
+               "description":"The style of appointment or patient that has been booked in the slot (not service type)."
             },
             "fhir:reason":{
                "title":"Reason",
@@ -241,6 +237,56 @@
                "title":"Subject",
                "description":"The patient or group associated with the appointment, if they are to be present (usually) then they should also be included in the participant backbone element.",
                "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:participant":{
+               "title":"Participant",
+               "description":"List of participants involved in the appointment.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:type":{
+                        "title":"Type",
+                        "description":"Role of participant in the appointment.",
+                        "type":"array",
+                        "items":{
+                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                        }
+                     },
+                     "xdm:period":{
+                        "title":"Period",
+                        "description":"Participation period of the actor.",
+                        "$ref":"https://ns.fhir.org/datatypes/period"
+                     },
+                     "xdm:actor":{
+                        "title":"Actor",
+                        "description":"The individual, device, location, or service participating in the appointment.",
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     },
+                     "xdm:required":{
+                        "title":"Required",
+                        "description":"Whether this participant is required to be present at the meeting. If false, the participant is optional.",
+                        "type":"boolean"
+                     },
+                     "xdm:status":{
+                        "title":"Status",
+                        "description":"accepted | declined | tentative | needs-action.",
+                        "type":"string",
+                        "enum":[
+                           "accepted",
+                           "declined",
+                           "tentative",
+                           "needs-action"
+                        ],
+                        "meta:enum":{
+                           "accepted":"Accepted",
+                           "declined":"Declined",
+                           "tentative":"Tentative",
+                           "needs-action":"Needs Action"
+                        }
+                     }
+                  }
+               }
             },
             "fhir:recurrenceId":{
                "title":"RecurrenceId",

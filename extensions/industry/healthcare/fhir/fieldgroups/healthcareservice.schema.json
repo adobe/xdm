@@ -1,0 +1,211 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.fhir.org/fieldgroup/healthcareservice",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Healthcare Service",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/classes/provider"
+   ],
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "description":"The details of a healthcare service available at a location.(Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "healthcareService":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"External identifiers for this item.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:active":{
+               "title":"Active",
+               "description":"This flag is used to mark the record to not be used. This is not used when a center is closed for maintenance, or for holidays, the notAvailable period is to be used for this.",
+               "type":"boolean"
+            },
+            "xdm:providedBy":{
+               "title":"Provided By",
+               "description":"The organization that provides this service.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "xdm:offeredIn":{
+               "title":"Offered In",
+               "description":"When the HealthcareService is representing a specific, schedulable service, the availableIn property can refer to a generic service.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:category":{
+               "title":"Category",
+               "description":"Identifies the broad category of service being performed or delivered.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:type":{
+               "title":"Type",
+               "description":"The specific type of service that may be delivered or performed.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:specialty":{
+               "title":"Specialty",
+               "description":"Collection of specialties handled by the Healthcare service. This is more of a medical term.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:location":{
+               "title":"Location",
+               "description":"The location(s) where this healthcare service may be provided.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:name":{
+               "title":"Name",
+               "description":"Further description of the service as it would be presented to a consumer while searching.",
+               "type":"string"
+            },
+            "fhir:comment":{
+               "title":"Comment",
+               "description":"Any additional description of the service and/or any specific issues not covered by the other attributes, which can be displayed as further detail under the serviceName.",
+               "type":"string"
+            },
+            "fhir:extraDetails":{
+               "title":"Extra Details",
+               "description":"Extra details about the service that can't be placed in the other fields.",
+               "type":"string"
+            },
+            "fhir:contact":{
+               "title":"Contact",
+               "description":"The contact details of communication devices available relevant to the specific HealthcareService. This can include addresses, phone numbers, fax numbers, mobile numbers, email addresses and web sites.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/extendedcontactdetail"
+               }
+            },
+            "fhir:coverageArea":{
+               "title":"Coverage Area",
+               "description":"The location(s) that this service is available to (not where the service is provided).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:serviceProvisionCode":{
+               "title":"Service Provision Code",
+               "description":"The code(s) that detail the conditions under which the healthcare service is available/offered.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               },
+               "fhir:eligibility":{
+                  "title":"Eligibility",
+                  "description":"Does this service have specific eligibility requirements that need to be met in order to use the service?",
+                  "type":"array",
+                  "items":{
+                     "type":"object",
+                     "properties":{
+                        "xdm:code":{
+                           "title":"Code",
+                           "description":"Coded value for the eligibility.",
+                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                        },
+                        "xdm:comment":{
+                           "title":"Comment",
+                           "description":"Describes the eligibility conditions for the service.",
+                           "type":"string"
+                        }
+                     }
+                  }
+               },
+               "fhir:program":{
+                  "title":"Program",
+                  "description":"Programs that this service is applicable to.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  }
+               },
+               "fhir:characteristic":{
+                  "title":"Characteristic",
+                  "description":"Collection of characteristics (attributes).",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  }
+               },
+               "fhir:communication":{
+                  "title":"Communication",
+                  "description":"Some services are specifically made available in multiple languages, this property permits a directory to declare the languages this is offered in. Typically this is only provided where a service operates in communities with mixed languages used.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  }
+               },
+               "fhir:referralMethod":{
+                  "title":"Referral Method",
+                  "description":"Ways that the service accepts referrals, if this is not provided then it is implied that no referral is required.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  }
+               },
+               "fhir:appointmentRequired":{
+                  "title":"Appointment Required",
+                  "description":"Indicates whether or not a prospective consumer will require an appointment for a particular service at a site to be provided by the Organization. Indicates if an appointment is required for access to this service.",
+                  "type":"boolean"
+               },
+               "fhir:availability":{
+                  "title":"Availability",
+                  "description":"A collection of times that the healthcare service is available.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/availability"
+                  }
+               },
+               "fhir:description":{
+                  "title":"Description",
+                  "description":"Code or text describing healthcareService.",
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               },
+               "fhir:endpoint":{
+                  "title":"Endpoint",
+                  "description":"Technical endpoints providing access to services operated for the specific healthcare services defined at this resource.",
+                  "type":"array",
+                  "items":{
+                     "$ref":"https://ns.fhir.org/datatypes/reference"
+                  }
+               }
+            }
+         }
+      },
+      "allOf":[
+         {
+            "$ref":"#/definitions/healthcareService"
+         }
+      ],
+      "meta:status":"experimental"
+   }
+}

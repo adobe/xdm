@@ -1,0 +1,414 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.fhir.org/fieldgroup//appointment",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Appointment",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/context/appointment",      
+      "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/classes/provider"
+   ],
+   "description":"A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).(Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "appointment":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"This records identifiers associated with this appointment concern that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:status":{
+               "title":"Status",
+               "description":"proposed | pending | booked | arrived | fulfilled | cancelled | noshow | entered-in-error | checked-in | waitlist.",
+               "type":"string",
+               "enum":[
+                  "proposed",
+                  "pending",
+                  "booked",
+                  "arrived",
+                  "fulfilled",
+                  "cancelled",
+                  "noshow",
+                  "entered-in-error",
+                  "checked-in",
+                  "waitlist"
+               ],
+               "meta:enum":{
+                  "proposed":"Proposed",
+                  "pending":"Pending",
+                  "booked":"Booked",
+                  "arrived":"Arrived",
+                  "fulfilled":"Fulfilled",
+                  "cancelled":"Cancelled",
+                  "noshow":"No Show",
+                  "entered-in-error":"Entered In Error",
+                  "checked-in":"Checked In",
+                  "waitlist":"Waitlist"
+               }
+            },
+            "fhir:cancellationReason":{
+               "title":"Cancellation Reason",
+               "description":"The coded reason for the appointment being cancelled. This is often used in reporting/billing/futher processing to determine if further actions are required, or specific fees apply.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:class":{
+               "title":"Class",
+               "description":"Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:serviceCategory":{
+               "title":"Service Category",
+               "description":"A broad categorization of the service that is to be performed during this appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:serviceType":{
+               "title":"Service Type",
+               "description":"The specific service that is to be performed during this appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+               }
+            },
+            "fhir:specialty":{
+               "title":"Specialty",
+               "description":"The specialty of a practitioner that would be required to perform the service requested in this appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:appointmentType":{
+               "title":"Appointment Type",
+               "description":"The style of appointment or patient that has been booked in the slot (not service type).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:reason":{
+               "title":"Reason",
+               "description":"The reason that this appointment is being scheduled. This is more clinical than administrative. This can be coded, or as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+               }
+            },
+            "fhir:priority":{
+               "title":"Priority",
+               "description":"The priority of the appointment. Can be used to make informed decisions if needing to re-prioritize appointments. (The iCal Standard specifies 0 as undefined, 1 as highest, 9 as lowest priority).",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:description":{
+               "title":"Description",
+               "description":"The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the note field.",
+               "type":"string"
+            },
+            "fhir:replaces":{
+               "title":"Replaces",
+               "description":"Appointment replaced by this Appointment in cases where there is a cancellation, the details of the cancellation can be found in the cancellationReason property (on the referenced resource).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:virtualService":{
+               "title":"Virtual Service",
+               "description":"Connection details of a virtual service (e.g. conference call).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/virtualservicedetail"
+               }
+            },
+            "fhir:supportingInformation":{
+               "title":"Supporting Information",
+               "description":"Additional information to support the appointment provided when making the appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:previousAppointment":{
+               "title":"Previous Appointment",
+               "description":"The previous appointment in a series of related appointments.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:originatingAppointment":{
+               "title":"Originating Appointment",
+               "description":"The originating appointment in a recurring set of related appointments.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:start":{
+               "title":"Start",
+               "description":"Date/Time that the appointment is to take place.",
+               "type":"string",
+               "format":"date-time"
+            },
+            "fhir:end":{
+               "title":"End",
+               "description":"Date/Time that the appointment is to conclude.",
+               "type":"string",
+               "format":"date-time"
+            },
+            "fhir:minutesDuration":{
+               "title":"Minutes Duration",
+               "description":"Number of minutes that the appointment is to take. This can be less than the duration between the start and end times. For example, where the actual time of appointment is only an estimate or if a 30 minute appointment is being requested, but any time would work. Also, if there is, for example, a planned 15 minute break in the middle of a long appointment, the duration may be 15 minutes less than the difference between the start and end.",
+               "type":"integer",
+               "minimum":0
+            },
+            "fhir:requestedPeriod":{
+               "title":"Requested Period",
+               "description":"A set of date ranges (potentially including times) that the appointment is preferred to be scheduled within.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/period"
+               }
+            },
+            "fhir:slot":{
+               "title":"Slot",
+               "description":"The slots from the participants' schedules that will be filled by the appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:account":{
+               "title":"Account",
+               "description":"The set of accounts that is expected to be used for billing the activities that result from this Appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:created":{
+               "title":"Created",
+               "description":"The date that this appointment was initially created. This could be different to the meta.lastModified value on the initial entry, as this could have been before the resource was created on the FHIR server, and should remain unchanged over the lifespan of the appointment.",
+               "type":"string",
+               "format":"date-time"
+            },
+            "fhir:cancellationDate":{
+               "title":"Cancellation Date",
+               "description":"The date/time describing when the appointment was cancelled.",
+               "type":"string",
+               "format":"date-time"
+            },
+            "fhir:note":{
+               "title":"Note",
+               "description":"Additional notes/comments about the appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/annotation"
+               }
+            },
+            "fhir:patientInstruction":{
+               "title":"Patient Instruction",
+               "description":"The diagnosis relevant to the appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+               }
+            },
+            "fhir:basedOn":{
+               "title":"Based On",
+               "description":"The request this appointment is allocated to assess (e.g. incoming referral or procedure request).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:subject":{
+               "title":"Subject",
+               "description":"The patient or group associated with the appointment, if they are to be present (usually) then they should also be included in the participant backbone element.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:recurrenceId":{
+               "title":"RecurrenceId",
+               "description":"The sequence number that identifies a specific appointment in a recurring pattern.",
+               "type":"integer",
+               "minimum":0
+            },
+            "fhir:occurrenceChanged":{
+               "title":"Occurrence Changed",
+               "description":"This appointment varies from the recurring pattern.",
+               "type":"boolean"
+            },
+            "fhir:recurrenceTemplate":{
+               "title":"Recurrence Template",
+               "description":"The details of the recurrence pattern or template that is used to generate recurring appointments.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:timezone":{
+                        "title":"Timezone",
+                        "description":"The timezone of the recurring appointment occurrences.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:recurrenceType":{
+                        "title":"Recurrence Type",
+                        "description":"How often the appointment series should recur.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:lastOccurrenceDate":{
+                        "title":"Last Occurrence Date",
+                        "description":"Recurring appointments will not occur after this date.",
+                        "type":"string",
+                        "format":"date"
+                     },
+                     "xdm:occurrenceCount":{
+                        "title":"Occurrence Count",
+                        "description":"How many appointments are planned in the recurrence.",
+                        "type":"integer",
+                        "minimum":0
+                     },
+                     "xdm:occurrenceDate":{
+                        "title":"Occurrence Date",
+                        "description":"The list of specific dates that will have appointments generated.",
+                        "type":"array",
+                        "items":{
+                           "type":"string",
+                           "format":"date"
+                        }
+                     },
+                     "xdm:weeklyTemplate":{
+                        "title":"Weekly Template",
+                        "description":"Information about weekly recurring appointments.",
+                        "type":"object",
+                        "properties":{
+                           "xdm:monday":{
+                              "title":"Monday",
+                              "description":"Indicates that recurring appointments should occur on Mondays.",
+                              "type":"boolean"
+                           },
+                           "xdm:tuesday":{
+                              "title":"Tuesday",
+                              "description":"Indicates that recurring appointments should occur on Tuesdays.",
+                              "type":"boolean"
+                           },
+                           "xdm:wednesday":{
+                              "title":"Wednesday",
+                              "description":"Indicates that recurring appointments should occur on Wednesdays.",
+                              "type":"boolean"
+                           },
+                           "xdm:thursday":{
+                              "title":"Thursday",
+                              "description":"Indicates that recurring appointments should occur on Thursdays.",
+                              "type":"boolean"
+                           },
+                           "xdm:friday":{
+                              "title":"friday",
+                              "description":"Indicates that recurring appointments should occur on Fridays.",
+                              "type":"boolean"
+                           },
+                           "xdm:saturday":{
+                              "title":"Saturday",
+                              "description":"Indicates that recurring appointments should occur on Saturdays.",
+                              "type":"boolean"
+                           },
+                           "xdm:sunday":{
+                              "title":"Sunday",
+                              "description":"Indicates that recurring appointments should occur on Sundays.",
+                              "type":"boolean"
+                           },
+                           "xdm:weekInterval":{
+                              "title":"Week Interval",
+                              "description":"The interval defines if the recurrence is every nth week. The default is every week, so it is expected that this value will be 2 or more.",
+                              "type":"integer",
+                              "minimum":0
+                           }
+                        }
+                     },
+                     "xdm:monthlyTemplate":{
+                        "title":"Monthly Template",
+                        "description":"Information about monthly recurring appointments.",
+                        "type":"object",
+                        "properties":{
+                           "xdm:dayOfMonth":{
+                              "title":"Day Of Month",
+                              "description":"Indicates that appointments in the series of recurring appointments should occur on a specific day of the month.",
+                              "type":"integer",
+                              "minimum":0
+                           },
+                           "xdm:nthWeekOfMonth":{
+                              "title":"Nth Week Of Month",
+                              "description":"Indicates that appointments in the series of recurring appointments should occur on a specific day of the month.",
+                              "$ref":"https://ns.fhir.org/datatypes/coding"
+                           },
+                           "xdm:dayOfWeek":{
+                              "title":"Day Of Week",
+                              "description":"Indicates that appointments in the series of recurring appointments should occur on a specific day of the month.",
+                              "$ref":"https://ns.fhir.org/datatypes/coding"
+                           },
+                           "xdm:monthInterval":{
+                              "title":"Month Interval",
+                              "description":"Indicates that recurring appointments should occur every nth month.",
+                              "type":"integer",
+                              "minimum":0
+                           }
+                        }
+                     },
+                     "xdm:yearlyTemplate":{
+                        "title":"Yearly Template",
+                        "description":"Information about yearly recurring appointments.",
+                        "type":"object",
+                        "properties":{
+                           "xdm:yearInterval":{
+                              "title":"Year Interval",
+                              "description":"Appointment recurs every nth year.",
+                              "type":"integer",
+                              "minimum":0
+                           }
+                        }
+                     },
+                     "xdm:excludingDate":{
+                        "title":"Excluding Date",
+                        "description":"Any dates, such as holidays, that should be excluded from the recurrence.",
+                        "type":"array",
+                        "items":{
+                           "type":"string",
+                           "format":"date"
+                        }
+                     },
+                     "xdm:excludingRecurrenceId":{
+                        "title":"Excluding Recurrence Id",
+                        "description":"Any recurrence IDs that should be excluded from the recurrence.",
+                        "type":"array",
+                        "items":{
+                           "type":"integer",
+                           "minimum":0
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/appointment"
+      }
+   ],
+   "meta:status":"experimental"
+}

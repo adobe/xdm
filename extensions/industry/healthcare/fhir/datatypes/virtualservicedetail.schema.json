@@ -6,12 +6,12 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.fhir.org/datatypes/Virtualservicedetail",
+   "$id":"https://ns.fhir.org/datatypes/virtualservicedetail",
    "title":"Virtual Service Detail",
    "type":"object",
    "description":"Virtual Service Contact Details.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
-      "VirtualServiceDetail":{
+      "virtualServiceDetail":{
          "properties":{
             "xdm:channelType":{
                "title":"Channel Type",
@@ -64,7 +64,7 @@
    },
    "allOf":[
       {
-         "$ref":"#/definitions/VirtualServiceDetail"
+         "$ref":"#/definitions/virtualServiceDetail"
       }
    ],
    "meta:status":"experimental"

@@ -185,11 +185,6 @@
                      "$ref":"https://ns.fhir.org/datatypes/availability"
                   }
                },
-               "fhir:description":{
-                  "title":"Description",
-                  "description":"Code or text describing healthcareService.",
-                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               },
                "fhir:endpoint":{
                   "title":"Endpoint",
                   "description":"Technical endpoints providing access to services operated for the specific healthcare services defined at this resource.",

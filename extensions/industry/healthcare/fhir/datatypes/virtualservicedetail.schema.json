@@ -11,8 +11,8 @@
    "type":"object",
    "description":"Virtual Service Contact Details.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
-      "properties":{
-         "xdm:virtualServiceDetail":{
+      "virtualServiceDetail":{
+         "properties":{
             "xdm:channelType":{
                "title":"Channel Type",
                "description":"The type of virtual service to connect to (i.e. Teams, Zoom, Specific VMR technology, WhatsApp).",

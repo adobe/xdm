@@ -195,12 +195,12 @@
                }
             }
          }
-      },
-      "allOf":[
-         {
-            "$ref":"#/definitions/healthcareService"
-         }
-      ],
-      "meta:status":"experimental"
-   }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/healthcareService"
+      }
+   ],
+   "meta:status":"experimental"
 }

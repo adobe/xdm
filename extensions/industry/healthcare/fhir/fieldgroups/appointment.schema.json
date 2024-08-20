@@ -101,7 +101,8 @@
             },
             "fhir:appointmentType":{
                "title":"Appointment Type",
-               "description":"The style of appointment or patient that has been booked in the slot (not service type)."
+               "description":"The style of appointment or patient that has been booked in the slot (not service type).",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
             "fhir:reason":{
                "title":"Reason",

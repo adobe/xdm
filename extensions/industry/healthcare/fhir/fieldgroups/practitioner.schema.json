@@ -16,7 +16,6 @@
    },
    "meta:extensible":true,
    "meta:abstract":true,
-   "meta:sensitive-data":true,
    "meta:intendedToExtend":[
       "https://ns.adobe.com/xdm/context/profile",
       "https://ns.adobe.com/xdm/classes/provider"
@@ -35,8 +34,8 @@
             },
             "fhir:active":{
                "title":"Active",
-               "type":"boolean",
-               "description":"Indicates whether the  Practitioner's record is in active use."
+               "description":"Indicates whether the  Practitioner's record is in active use.",
+               "type":"boolean"
             },
             "fhir:name":{
                "title":"Name",
@@ -57,7 +56,7 @@
             "fhir:gender":{
                "title":"Gender",
                "description":"male | female | other | unknown.",
-                "type":"string",
+               "type":"string",
                "enum":[
                   "male",
                   "female",
@@ -143,8 +142,8 @@
                      },
                      "xdm:preferred":{
                         "title":"Preferred Language",
-                        "type":"boolean",
-                        "description":"Language preference indicator"
+                        "description":"Language preference indicator",
+                        "type":"boolean"
                      }
                   }
                }

@@ -156,7 +156,7 @@
                 },
                 "https://ns.adobe.com/experience/intelligentServices/inferredTimeZone": {
                   "title": "Send Time Optimization Inferred Time Zone",
-                  "description": "This information contains send time optimization model inferred time zone.",
+                  "description": "This information contains send time optimization model inferred time zone (IANA Time Zone Identifiers).",
                   "type": "string"
                 }
               },

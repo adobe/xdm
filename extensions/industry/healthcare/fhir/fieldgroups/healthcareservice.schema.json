@@ -16,7 +16,8 @@
    },
    "meta:intendedToExtend":[
       "https://ns.adobe.com/xdm/context/profile",
-      "https://ns.adobe.com/xdm/classes/provider"
+      "https://ns.adobe.com/xdm/classes/provider",
+      "https://ns.adobe.com/xdm/classes/location"
    ],
    "meta:extensible":true,
    "meta:abstract":true,

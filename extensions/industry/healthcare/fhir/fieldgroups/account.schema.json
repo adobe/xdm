@@ -1,0 +1,307 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/fieldgroup/account",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Account",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/classes/provider"
+   ],
+   "description":"Tracks balance, charges, for patient or cost center.(Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "account":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"Unique identifier used to reference the account. Might or might not be intended for human use (e.g. credit card number).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:status":{
+               "title":"Status",
+               "description":"active | inactive | entered-in-error | on-hold | unknown.",
+               "type":"string",
+               "enum":[
+                  "active",
+                  "inactive",
+                  "entered-in-error",
+                  "on-hold",
+                  "unknown"
+               ],
+               "meta:enum":{
+                  "active":"Active",
+                  "inactive":"Inactive",
+                  "entered-in-error":"Entered In Error",
+                  "on-hold":"On Hold",
+                  "unknown":"Unknown"
+               }
+            },
+            "fhir:billingStatus":{
+               "title":"Billing Status",
+               "description":"The BillingStatus tracks the lifecycle of the account through the billing process. It indicates how transactions are treated when they are allocated to the account.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:type":{
+               "title":"Type",
+               "description":"Categorizes the account for reporting and searching purposes.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:name":{
+               "title":"Name",
+               "description":"Name used for the account when displaying it to humans in reports, etc.",
+               "type":"string"
+            },
+            "fhir:subject":{
+               "title":"Subject",
+               "description":"Identifies the entity which incurs the expenses. While the immediate recipients of services or goods might be entities related to the subject, the expenses were ultimately incurred by the subject of the Account.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:servicePeriod":{
+               "title":"Service Period",
+               "description":"The date range of services associated with this account.",
+               "$ref":"https://ns.fhir.org/datatypes/period"
+            },
+            "fhir:coverage":{
+               "title":"Coverage",
+               "description":"The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:coverage":{
+                        "title":"Coverage",
+                        "description":"The party(s) that contribute to payment (or part of) of the charges applied to this account (including self-pay).",
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     },
+                     "xdm:priority":{
+                        "title":"Priority",
+                        "description":"The priority of the coverage in the context of this account.",
+                        "type":"integer",
+                        "minimum":0
+                     }
+                  }
+               }
+            },
+            "fhir:owner":{
+               "title":"Owner",
+               "description":"Indicates the service area, hospital, department, etc. with responsibility for managing the Account.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:description":{
+               "title":"Description",
+               "description":"Provides additional information about what the account tracks and how it is used.",
+               "type":"string"
+            },
+            "fhir:guarantor":{
+               "title":"Guarantor",
+               "description":"The parties responsible for balancing the account if other payment options fall short.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:party":{
+                        "title":"Party",
+                        "description":"The entity who is responsible.",
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     },
+                     "xdm:onHold":{
+                        "title":"On Hold",
+                        "description":"A guarantor may be placed on credit hold or otherwise have their role temporarily suspended.",
+                        "type":"boolean"
+                     },
+                     "xdm:period":{
+                        "title":"Period",
+                        "description":"The timeframe during which the guarantor accepts responsibility for the account.",
+                        "$ref":"https://ns.fhir.org/datatypes/period"
+                     }
+                  }
+               }
+            },
+            "fhir:diagnosis":{
+               "title":"Diagnosis",
+               "description":"When using an account for billing a specific Encounter the set of diagnoses that are relevant for billing are stored here on the account where they are able to be sequenced appropriately prior to processing to produce claim(s).",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:sequence":{
+                        "title":"Sequence",
+                        "description":"Ranking of the diagnosis (for each type).",
+                        "type":"integer",
+                        "minimum":0
+                     },
+                     "xdm:condition":{
+                        "title":"Condition",
+                        "description":"The diagnosis relevant to the account.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                     },
+                     "xdm:dateOfDiagnosis":{
+                        "title":"Date Of Diagnosis",
+                        "description":"Date of the diagnosis (when coded diagnosis).",
+                        "type":"string",
+                        "format":"date-time"
+                     },
+                     "xdm:type":{
+                        "title":"Type",
+                        "description":"Type that this diagnosis has relevant to the account (e.g. admission, billing, discharge …).",
+                        "type":"array",
+                        "items":{
+                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                        }
+                     },
+                     "xdm:onAdmission":{
+                        "title":"On Admission",
+                        "description":"Was the Diagnosis present on Admission in the related Encounter.",
+                        "type":"boolean"
+                     },
+                     "xdm:packageCode":{
+                        "title":"Package Code",
+                        "description":"The package code can be used to group diagnoses that may be priced or delivered as a single product. Such as DRGs.",
+                        "type":"array",
+                        "items":{
+                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                        }
+                     }
+                  }
+               }
+            },
+            "fhir:procedure":{
+               "title":"Procedure",
+               "description":"When using an account for billing a specific Encounter the set of procedures that are relevant for billing are stored here on the account where they are able to be sequenced appropriately prior to processing to produce claim(s).",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:sequence":{
+                        "title":"Sequence",
+                        "description":"Ranking of the procedure (for each type).",
+                        "type":"integer",
+                        "minimum":0
+                     },
+                     "xdm:code":{
+                        "title":"Code",
+                        "description":"The procedure relevant to the account.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                     },
+                     "xdm:dateOfService":{
+                        "title":"Date Of Service",
+                        "description":"Date of the procedure when using a coded procedure. If using a reference to a procedure, then the date on the procedure should be used.",
+                        "type":"string",
+                        "format":"date-time"
+                     },
+                     "xdm:type":{
+                        "title":"Type",
+                        "description":"How this procedure value should be used in charging the account.",
+                        "type":"array",
+                        "items":{
+                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                        }
+                     },
+                     "xdm:packageCode":{
+                        "title":"Package Code",
+                        "description":"The package code can be used to group procedures that may be priced or delivered as a single product. Such as DRGs.",
+                        "type":"array",
+                        "items":{
+                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                        }
+                     },
+                     "xdm:device":{
+                        "title":"Device",
+                        "description":"Any devices that were associated with the procedure relevant to the account.",
+                        "type":"array",
+                        "items":{
+                           "$ref":"https://ns.fhir.org/datatypes/reference"
+                        }
+                     }
+                  }
+               }
+            },
+            "fhir:relatedAccount":{
+               "title":"Related Account",
+               "description":"Other associated accounts related to this account.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:relationship":{
+                        "title":"Relationship",
+                        "description":"Relationship of the associated Account.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:account":{
+                        "title":"Account",
+                        "description":"Reference to an associated Account.",
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     }
+                  }
+               }
+            },
+            "fhir:currency":{
+               "title":"Currency",
+               "description":"The default currency for the account.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:balance":{
+               "title":"Balance",
+               "description":"The calculated account balances - these are calculated and processed by the finance system.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:aggregate":{
+                        "title":"Aggregate",
+                        "description":"Who is expected to pay this part of the balance.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:term":{
+                        "title":"Term",
+                        "description":"The term of the account balances - The balance value is the amount that was outstanding for this age.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:estimate":{
+                        "title":"Estimate",
+                        "description":"The amount is only an estimated value - this is likely common for current term balances, but not with known terms (that were generated by a backend process).",
+                        "type":"boolean"
+                     },
+                     "xdm:amount":{
+                        "title":"Amount",
+                        "description":"The actual balance value calculated for the age defined in the term property.",
+                        "$ref":"https://ns.fhir.org/datatypes/money"
+                     }
+                  }
+               }
+            },
+            "fhir:calculatedAt":{
+               "title":"Calculated At",
+               "description":"Time the balance amount was calculated.",
+               "type":"string",
+               "format":"date-time"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/account"
+      }
+   ],
+   "meta:status":"experimental"
+}

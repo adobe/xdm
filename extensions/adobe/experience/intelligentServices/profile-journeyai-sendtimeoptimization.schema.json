@@ -94,7 +94,7 @@
                       "type": "string"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/treatmentGroup": {
-                      "title": "STO Model Type",
+                      "title": "STO Model Treatment Group",
                       "description": "STO model treatment group for email.",
                       "type": "string"
                     }
@@ -139,7 +139,7 @@
                       "type": "string"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/treatmentGroup": {
-                      "title": "STO Model Type",
+                      "title": "STO Model Treatment Group",
                       "description": "STO model treatment group for push notification.",
                       "type": "string"
                     }

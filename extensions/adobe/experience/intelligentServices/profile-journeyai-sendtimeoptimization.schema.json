@@ -93,9 +93,9 @@
                       "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23 (168 length string), representing the order of the inclination of a customer clicking an email if it's sent at that hour.",
                       "type": "string"
                     },
-                    "https://ns.adobe.com/experience/intelligentServices/modelType": {
+                    "https://ns.adobe.com/experience/intelligentServices/treatmentGroup": {
                       "title": "STO Model Type",
-                      "description": "STO model type for email.",
+                      "description": "STO model treatment group for email.",
                       "type": "string"
                     }
                   },
@@ -138,9 +138,9 @@
                       "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23 (168 length string), representing the order of the inclination of a customer opening a push notification if it's sent at that hour.",
                       "type": "string"
                     },
-                    "https://ns.adobe.com/experience/intelligentServices/modelType": {
+                    "https://ns.adobe.com/experience/intelligentServices/treatmentGroup": {
                       "title": "STO Model Type",
-                      "description": "STO model type for push notification.",
+                      "description": "STO model treatment group for push notification.",
                       "type": "string"
                     }
                   },

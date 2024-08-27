@@ -92,11 +92,6 @@
                       "title": "Send Time Score Rank to Optimize Click",
                       "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23 (168 length string), representing the order of the inclination of a customer clicking an email if it's sent at that hour.",
                       "type": "string"
-                    },
-                    "https://ns.adobe.com/experience/intelligentServices/treatmentGroup": {
-                      "title": "STO Model Treatment Group",
-                      "description": "STO model treatment group for email.",
-                      "type": "string"
                     }
                   },
                   "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimization##title##23221",
@@ -137,11 +132,6 @@
                       "title": "Send Time Score Rank to Optimize Open",
                       "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23 (168 length string), representing the order of the inclination of a customer opening a push notification if it's sent at that hour.",
                       "type": "string"
-                    },
-                    "https://ns.adobe.com/experience/intelligentServices/treatmentGroup": {
-                      "title": "STO Model Treatment Group",
-                      "description": "STO model treatment group for push notification.",
-                      "type": "string"
                     }
                   },
                   "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##title##50251",
@@ -153,6 +143,11 @@
                   "type": "string",
                   "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##title##16451",
                   "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##description##8931"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/treatmentGroup": {
+                  "title": "STO Model Treatment Group",
+                  "description": "STO model treatment group.",
+                  "type": "string"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/inferredTimeZone": {
                   "title": "Send Time Optimization Inferred Time Zone",

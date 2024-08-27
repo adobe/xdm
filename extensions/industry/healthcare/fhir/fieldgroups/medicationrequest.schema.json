@@ -1,0 +1,372 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.fhir.org/fieldgroup/medicationrequest",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Medication",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/classes/medication",
+       "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/classes/provider"
+
+   ],
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "description":"An order or request for both supply of the medication and the instructions for administration of the medication to a patient.(Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "medicationRequest":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"Identifiers associated with this medication request that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:basedOn":{
+               "title":"Based On",
+               "description":"A plan or request that is fulfilled in whole or in part by this medication request.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:partOf":{
+               "title":"Part Of",
+               "description":"The procedure or medication administration that triggered the dispense.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:status":{
+               "title":"Status",
+               "description":"preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown",
+               "type":"string",
+               "enum":[
+                  "preparation",
+                  "in-progress",
+                  "cancelled",
+                  "on-hold",
+                  "completed",
+                  "entered-in-error",
+                  "stopped",
+                  "declined",
+                  "unknown"
+               ],
+               "meta:enum":{
+                  "preparation":"Preparation",
+                  "in-progress":"In Progress",
+                  "cancelled":"Cancelled",
+                  "on-hold":"On Hold",
+                  "completed":"Completed",
+                  "entered-in-error":"Entered In Error",
+                  "stopped":"Stopped",
+                  "declined":"Declined",
+                  "unknown":"Unknown"
+               }
+            },
+            "fhir:statusReason":{
+               "title":"Status Reason",
+               "description":"Captures the reason for the current state of the MedicationRequest.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:statusChanged":{
+               "title":"Status Changed",
+               "description":"The date (and perhaps time) when the status was changed.",
+               "type":"string",
+               "format":"date-time"
+            },
+            "fhir:intent":{
+               "title":"Intent",
+               "description":"proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option",
+               "type":"string",
+               "enum":[
+                  "proposal",
+                  "plan",
+                  "order",
+                  "original-order",
+                  "reflex-order",
+                  "filler-order",
+                  "instance-order ",
+                  " option"
+               ],
+               "meta:enum":{
+                  "proposal":"Proposal",
+                  "plan":"Plan",
+                  "order":"Order",
+                  "original-order":"Original Order",
+                  "reflex-order":"Reflex Order",
+                  "filler-order":"Filler Order",
+                  "instance-order":"Instance Order",
+                  "option":"Option"
+               }
+            },
+            "fhir:category":{
+               "title":"Category",
+               "description":"An arbitrary categorization or grouping of the medication request. It could be used for indicating where meds are intended to be administered, eg. in an inpatient setting or in a patient's home, or a legal category of the medication.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:priority":{
+               "title":"Priority",
+               "description":"routine | urgent | asap | stat",
+               "type":"string",
+               "enum":[
+                  "routine",
+                  "urgent",
+                  "asap",
+                  "stat"
+               ],
+               "meta:enum":{
+                  "routine":"routine",
+                  "urgent":"urgent",
+                  "asap":"ASAP",
+                  "stat":"STAT"
+               }
+            },
+            "fhr:doNotPerform":{
+               "title":"Do Not Perform",
+               "description":"True if patient is to stop taking or not to start taking the medication.",
+               "type":"boolean"
+            },
+            "fhir:medication":{
+               "title":"Medication",
+               "description":"Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications.",
+               "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+            },
+            "fhir:subject":{
+               "title":"Subject",
+               "description":"The individual or group for whom the medication has been requested.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:informationSource":{
+               "title":"Information Source",
+               "description":"The person or organization who provided the information about this request, if the source is someone other than the requestor. This is often used when the MedicationRequest is reported by another person.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:encounter":{
+               "title":"Encounter",
+               "description":"The Encounter during which this request was created.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:supportingInfo":{
+               "title":"Supporting Info",
+               "description":"Information to support fulfilling (i.e. dispensing or administering) of the medication, for example, patient height and weight, a MedicationStatement for the patient).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:authoredOn":{
+               "title":"Authored On",
+               "description":"The date (and perhaps time) when the prescription was initially written or authored on.",
+               "type":"string",
+               "format":"date-time"
+            },
+            "fhir:requester":{
+               "title":"Requester",
+               "description":"The individual, organization, or device that initiated the request and has responsibility for its activation.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhr:reported":{
+               "title":"Reported",
+               "description":"Indicates if this record was captured as a secondary 'reported' record rather than as an original primary source-of-truth record. It may also indicate the source of the report.",
+               "type":"boolean"
+            },
+            "fhir:performerType":{
+               "title":"Performer Type",
+               "description":"Indicates the type of performer of the administration of the medication.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:performer":{
+               "title":"Performer",
+               "description":"The specified desired performer of the medication treatment (e.g. the performer of the medication administration). For devices, this is the device that is intended to perform the administration of the medication.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:device":{
+               "title":"Device",
+               "description":"The intended type of device that is to be used for the administration of the medication (for example, PCA Pump).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+               }
+            },
+            "fhir:recorder":{
+               "title":"Recorder",
+               "description":"The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:reason":{
+               "title":"Reason",
+               "description":"The reason or the indication for ordering or not ordering the medication.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+               }
+            },
+            "fhir:courseOfTherapyType":{
+               "title":"Course Of Therapy Type",
+               "description":"The description of the overall pattern of the administration of the medication to the patient.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:insurance":{
+               "title":"Insurance",
+               "description":"Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be required for delivering the requested service.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:note":{
+               "title":"Note",
+               "description":"Extra information about the prescription that could not be conveyed by the other attributes.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/annotation"
+               }
+            },
+            "xdm:renderedDosageInstruction":{
+               "title":"Rendered Dosage Instruction",
+               "description":"The full representation of the dose of the medication included in all dosage instructions. To be used when multiple dosage instructions are included to represent complex dosing such as increasing or tapering doses.",
+               "type":"string"
+            },
+            "fhir:effectiveDosePeriod":{
+               "title":"Effective Dose Period",
+               "description":"The period over which the medication is to be taken. Where there are multiple dosageInstruction lines (for example, tapering doses), this is the earliest date and the latest end date of the dosageInstructions.",
+               "$ref":"https://ns.fhir.org/datatypes/period"
+            },
+            "fhir:dosageInstruction":{
+               "title":"Dosage Instruction",
+               "description":"Specific instructions for how the medication is to be used by the patient.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/dosage"
+               }
+            },
+            "fhir:dispenseRequest":{
+               "title":"Dispense Request",
+               "description":"Indicates the specific details for the dispense or medication supply part of a medication request (also known as a Medication Prescription or Medication Order).",
+               "type":"object",
+               "properties":{
+                  "xdm:initialFill":{
+                     "title":"Initial Fill",
+                     "type":"object",
+                     "properties":{
+                        "xdm:quantity":{
+                           "title":"quantity",
+                           "description":"The amount or quantity to provide as part of the first dispense.",
+                           "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+                        },
+                        "xdm:duration":{
+                           "title":"Duration",
+                           "description":"The length of time that the first dispense is expected to last.",
+                           "$ref":"https://ns.fhir.org/datatypes/duration"
+                        }
+                     }
+                  },
+                  "xdm:dispenseInterval":{
+                     "title":"Dispense Interval",
+                     "description":"The minimum period of time that must occur between dispenses of the medication.",
+                     "$ref":"https://ns.fhir.org/datatypes/duration"
+                  },
+                  "xdm:validityPeriod":{
+                     "title":"Validity Period",
+                     "description":"This indicates the validity period of a prescription (stale dating the Prescription).",
+                     "$ref":"https://ns.fhir.org/datatypes/period"
+                  },
+                  "xdm:numberOfRepeatsAllowed":{
+                     "title":"Number Of Repeats Allowed",
+                     "description":"Number of refills authorized",
+                     "type":"integer",
+                     "minimum":0
+                  },
+                  "xdm:quantity":{
+                     "title":"quantity",
+                     "description":"The amount that is to be dispensed for one fill.",
+                     "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+                  },
+                  "xdm:expectedSupplyDuration":{
+                     "title":"Expected Supply Duration",
+                     "description":"Identifies the period time over which the supplied product is expected to be used, or the length of time the dispense is expected to last.",
+                     "$ref":"https://ns.fhir.org/datatypes/duration"
+                  },
+                  "xdm:dispenser":{
+                     "title":"Dispenser",
+                     "description":"Indicates the intended performing Organization that will dispense the medication as specified by the prescriber.",
+                     "$ref":"https://ns.fhir.org/datatypes/reference"
+                  },
+                  "xdm:dispenserInstruction":{
+                     "title":"Dispenser Instruction",
+                     "description":"Provides additional information to the dispenser, for example, counselling to be provided to the patient.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/annotation"
+                     }
+                  },
+                  "xdm:doseAdministrationAid":{
+                     "title":"Dose Administration Aid",
+                     "description":"Provides information about the type of adherence packaging to be supplied for the medication dispense.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  }
+               }
+            },
+            "fhir:substitution":{
+               "title":"Substitution",
+               "description":"Indicates whether or not substitution can or should be part of the dispense. In some cases, substitution must happen, in other cases substitution must not happen.",
+               "type":"object",
+               "properties":{
+                  "xdm:allowedBoolean":{
+                     "title":"Allowed Boolean",
+                     "description":"True if the prescriber allows a different drug to be dispensed from what was prescribed.",
+                     "type":"boolean"
+                  },
+                  "xdm:allowedCodeableConcept":{
+                     "title":"Allowed Codeable Concept",
+                     "description":"Code if the prescriber allows a different drug to be dispensed from what was prescribed.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:reason":{
+                     "title":"Reason",
+                     "description":"Indicates the reason for the substitution, or why substitution must or must not be performed.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  }
+               }
+            },
+            "fhir:eventHistory":{
+               "title":"Event History",
+               "description":"OLinks to Provenance records for past versions of this resource or fulfilling request or event resources that identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the resource.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/medicationRequest"
+      }
+   ],
+   "meta:status":"experimental"
+}

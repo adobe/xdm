@@ -17,7 +17,6 @@
    "meta:extensible":true,
    "meta:abstract":true,
    "meta:intendedToExtend":[
-      "https://ns.adobe.com/xdm/context/appointment",
       "https://ns.adobe.com/xdm/context/profile",
       "https://ns.adobe.com/xdm/classes/provider"
    ],

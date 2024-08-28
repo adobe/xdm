@@ -16,9 +16,8 @@
    },
    "meta:intendedToExtend":[
       "https://ns.adobe.com/xdm/classes/medication",
-       "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/context/profile",
       "https://ns.adobe.com/xdm/classes/provider"
-
    ],
    "meta:extensible":true,
    "meta:abstract":true,
@@ -42,13 +41,15 @@
                   "$ref":"https://ns.fhir.org/datatypes/reference"
                }
             },
-            "fhir:partOf":{
-               "title":"Part Of",
-               "description":"The procedure or medication administration that triggered the dispense.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/reference"
-               }
+            "fhir:priorPrescription":{
+               "title":"Prior Prescription",
+               "description":"Reference to an order/prescription that is being replaced by this MedicationRequest.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:groupIdentifier":{
+               "title":"Group Identifier",
+               "description":"A shared identifier common to multiple independent Request instances that were activated/authorized more or less simultaneously by a single author.",
+               "$ref":"https://ns.fhir.org/datatypes/identifier"
             },
             "fhir:status":{
                "title":"Status",
@@ -166,8 +167,8 @@
                "description":"The Encounter during which this request was created.",
                "$ref":"https://ns.fhir.org/datatypes/reference"
             },
-            "fhir:supportingInfo":{
-               "title":"Supporting Info",
+            "fhir:supportingInformation":{
+               "title":"Supporting Information",
                "description":"Information to support fulfilling (i.e. dispensing or administering) of the medication, for example, patient height and weight, a MedicationStatement for the patient).",
                "type":"array",
                "items":{

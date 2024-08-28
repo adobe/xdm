@@ -38,12 +38,12 @@
                "description":"This flag is used to mark the record to not be used. This is not used when a center is closed for maintenance, or for holidays, the notAvailable period is to be used for this.",
                "type":"boolean"
             },
-            "xdm:providedBy":{
+            "fhir:providedBy":{
                "title":"Provided By",
                "description":"The organization that provides this service.",
                "$ref":"https://ns.fhir.org/datatypes/reference"
             },
-            "xdm:offeredIn":{
+            "fhir:offeredIn":{
                "title":"Offered In",
                "description":"When the HealthcareService is representing a specific, schedulable service, the availableIn property can refer to a generic service.",
                "type":"array",
@@ -120,79 +120,79 @@
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               },
-               "fhir:eligibility":{
-                  "title":"Eligibility",
-                  "description":"Does this service have specific eligibility requirements that need to be met in order to use the service?",
-                  "type":"array",
-                  "items":{
-                     "type":"object",
-                     "properties":{
-                        "xdm:code":{
-                           "title":"Code",
-                           "description":"Coded value for the eligibility.",
-                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                        },
-                        "xdm:comment":{
-                           "title":"Comment",
-                           "description":"Describes the eligibility conditions for the service.",
-                           "type":"string"
-                        }
+               }
+            },
+            "fhir:eligibility":{
+               "title":"Eligibility",
+               "description":"Does this service have specific eligibility requirements that need to be met in order to use the service?",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:code":{
+                        "title":"Code",
+                        "description":"Coded value for the eligibility.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:comment":{
+                        "title":"Comment",
+                        "description":"Describes the eligibility conditions for the service.",
+                        "type":"string"
                      }
                   }
-               },
-               "fhir:program":{
-                  "title":"Program",
-                  "description":"Programs that this service is applicable to.",
-                  "type":"array",
-                  "items":{
-                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                  }
-               },
-               "fhir:characteristic":{
-                  "title":"Characteristic",
-                  "description":"Collection of characteristics (attributes).",
-                  "type":"array",
-                  "items":{
-                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                  }
-               },
-               "fhir:communication":{
-                  "title":"Communication",
-                  "description":"Some services are specifically made available in multiple languages, this property permits a directory to declare the languages this is offered in. Typically this is only provided where a service operates in communities with mixed languages used.",
-                  "type":"array",
-                  "items":{
-                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                  }
-               },
-               "fhir:referralMethod":{
-                  "title":"Referral Method",
-                  "description":"Ways that the service accepts referrals, if this is not provided then it is implied that no referral is required.",
-                  "type":"array",
-                  "items":{
-                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                  }
-               },
-               "fhir:appointmentRequired":{
-                  "title":"Appointment Required",
-                  "description":"Indicates whether or not a prospective consumer will require an appointment for a particular service at a site to be provided by the Organization. Indicates if an appointment is required for access to this service.",
-                  "type":"boolean"
-               },
-               "fhir:availability":{
-                  "title":"Availability",
-                  "description":"A collection of times that the healthcare service is available.",
-                  "type":"array",
-                  "items":{
-                     "$ref":"https://ns.fhir.org/datatypes/availability"
-                  }
-               },
-               "fhir:endpoint":{
-                  "title":"Endpoint",
-                  "description":"Technical endpoints providing access to services operated for the specific healthcare services defined at this resource.",
-                  "type":"array",
-                  "items":{
-                     "$ref":"https://ns.fhir.org/datatypes/reference"
-                  }
+               }
+            },
+            "fhir:program":{
+               "title":"Program",
+               "description":"Programs that this service is applicable to.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:characteristic":{
+               "title":"Characteristic",
+               "description":"Collection of characteristics (attributes).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:communication":{
+               "title":"Communication",
+               "description":"Some services are specifically made available in multiple languages, this property permits a directory to declare the languages this is offered in. Typically this is only provided where a service operates in communities with mixed languages used.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:referralMethod":{
+               "title":"Referral Method",
+               "description":"Ways that the service accepts referrals, if this is not provided then it is implied that no referral is required.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:appointmentRequired":{
+               "title":"Appointment Required",
+               "description":"Indicates whether or not a prospective consumer will require an appointment for a particular service at a site to be provided by the Organization. Indicates if an appointment is required for access to this service.",
+               "type":"boolean"
+            },
+            "fhir:availability":{
+               "title":"Availability",
+               "description":"A collection of times that the healthcare service is available.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/availability"
+               }
+            },
+            "fhir:endpoint":{
+               "title":"Endpoint",
+               "description":"Technical endpoints providing access to services operated for the specific healthcare services defined at this resource.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
                }
             }
          }

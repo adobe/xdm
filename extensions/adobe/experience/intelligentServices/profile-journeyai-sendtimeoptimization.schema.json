@@ -143,6 +143,16 @@
                   "type": "string",
                   "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##title##16451",
                   "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##description##8931"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/treatmentGroup": {
+                  "title": "STO Model Treatment Group",
+                  "description": "STO model treatment group.",
+                  "type": "string"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/inferredTimeZone": {
+                  "title": "Send Time Optimization Inferred Time Zone",
+                  "description": "This information contains send time optimization model inferred time zone (IANA Time Zone Identifiers).",
+                  "type": "string"
                 }
               },
               "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimization##title##99211",

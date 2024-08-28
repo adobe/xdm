@@ -1,0 +1,95 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.fhir.org/fieldgroup/schedule",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Schedule",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/context/appointment"
+   ],
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "description":"A container for slots of time that may be available for booking appointments.(Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "schedule":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"External identifiers for this item.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:active":{
+               "title":"Active",
+               "description":"Whether this schedule record is in active use or should not be used (such as was entered in error).",
+               "type":"boolean"
+            },
+            "fhir:serviceCategory":{
+               "title":"Service Category",
+               "description":"A broad categorization of the service that is to be performed during this appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+               }
+            },
+            "fhir:serviceType":{
+               "title":"Service Type",
+               "description":"The specific service that is to be performed during this appointment.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+               }
+            },
+            "fhir:specialty":{
+               "title":"Specialty",
+               "description":"The specialty of a practitioner that would be required to perform the service requested in this appointment.",
+               "type":"array",
+               "items":{
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            }
+            },
+            "fhir:name":{
+               "title":"Name",
+               "description":"Further description of the schedule as it would be presented to a consumer while searching.",
+               "type":"string"
+            },
+            "fhir:actor":{
+               "title":"Actor",
+               "description":"Slots that reference this schedule resource provide the availability details to these referenced resource(s).",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:planningHorizon":{
+               "title":"Planning Horizon",
+               "description":"The period of time that the slots that reference this Schedule resource cover (even if none exist). These cover the amount of time that an organization's planning horizon; the interval for which they are currently accepting appointments. This does not define a \"template\" for planning outside these dates.",
+               "$ref":"https://ns.fhir.org/datatypes/period"
+            },
+            "fhir:comment":{
+               "title":"Comment",
+               "description":"Comments on the availability to describe any extended information. Such as custom constraints on the slots that may be associated.",
+               "type":"string"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/schedule"
+      }
+   ],
+   "meta:status":"experimental"
+}

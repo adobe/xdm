@@ -246,7 +246,7 @@
                   "$ref":"https://ns.fhir.org/datatypes/annotation"
                }
             },
-            "xdm:renderedDosageInstruction":{
+            "fhir:renderedDosageInstruction":{
                "title":"Rendered Dosage Instruction",
                "description":"The full representation of the dose of the medication included in all dosage instructions. To be used when multiple dosage instructions are included to represent complex dosing such as increasing or tapering doses.",
                "type":"string"

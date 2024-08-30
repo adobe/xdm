@@ -12,554 +12,554 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "title": "PathFactory Session Fieldgroup Details - V1.1",
   "type": "object",
-  "description": "PathFactory Session Schema Field",
+  "description": "This schema field is an integral part of the PathFactory platform's session tracking system, designed to capture and store detailed information about individual user sessions. A session represents a series of interactions a visitor has with the platform within a specific time frame. The PathFactory Session Schema Field records data such as session duration, the sequence of pages viewed, actions taken, and engagement levels. This information is crucial for understanding the context of user behavior, analyzing how visitors navigate through content, and identifying opportunities for enhancing the user experience. By leveraging this data, PathFactory can deliver more personalized content and improve overall session quality, contributing to more effective engagement strategies.",
   "definitions": {
     "pfSessionFields": {
       "properties": {
         "pathfactory:session": {
           "title": "Pathfactory Session",
-          "description": "Pathfactory Session Field Object",
+          "description": "Pathfactory Session Object is used to get all the information related to User Session which can be used to break out users into groups based on certain characteristics of their sessions spent using PathFactory product",
           "type": "object",
           "properties": {
-            "pathfactory:sessionId": {
+            "xdm:sessionID": {
               "required": [],
               "type": "string",
-              "description": "Session ID (PathFactory)",
+              "description": "Defines a unique ID that a web server assigns to a user for the duration of the current session",
               "title": "Session ID",
               "meta:xdmType": "string"
             },
-            "pathfactory:modifiedUtc": {
+            "xdm:modifiedUTC": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Modified date in UTC format",
+              "description": "Defines the Date in UTC format for a session modified in PathFactory platform",
               "title": "Modified UTC",
               "meta:xdmType": "date-time"
             },
-            "pathfactory:averagePercentageScrolled": {
+            "xdm:averagePercentageScrolled": {
               "required": [],
               "type": "number",
-              "description": "Average Percentage Scrolled",
+              "description": "Defines the how much visitor has scrolled the page on avarage veritically",
               "title": "Average Percentage Scrolled",
               "meta:xdmType": "number"
             },
-            "pathfactory:averageViewTimePerAsset": {
+            "xdm:averageViewTimePerAsset": {
               "required": [],
               "type": "number",
-              "description": "Average View Time Per Asset",
+              "description": "Defines the how much time visitor has spent on average Per Asset",
               "title": "Average View Time Per Asset",
               "meta:xdmType": "number"
             },
-            "pathfactory:captureModalShownCount": {
+            "xdm:captureModalShownCount": {
               "required": [],
               "type": "integer",
-              "description": "Capture Modal Shown Count",
+              "description": "Defines the number of forms show in a Modal",
               "title": "Capture Modal Shown Count",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:captures": {
+            "xdm:captures": {
               "required": [],
               "type": "integer",
-              "description": "Number of Captures",
+              "description": "Defines the total number of forms",
               "title": "Captures",
               "meta:xdmType": "int",
               "minimum": -2147483648,
-              "maximum": 2147483647
+              "maximum": 2147483647 
             },
-            "pathfactory:city": {
+            "xdm:city": {
               "required": [],
               "type": "string",
-              "description": "City",
+              "description": "Defines the City of a visitor from where user is trying to access the page",
               "title": "City",
               "meta:xdmType": "string"
             },
-            "pathfactory:clicks": {
+            "xdm:clicks": {
               "required": [],
               "type": "integer",
-              "description": "Clicks",
+              "description": "Defines the Number of clicks by a visitor on the page of PathFactory platform",
               "title": "Clicks",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:companyName": {
+            "xdm:companyName": {
               "required": [],
               "type": "string",
               "description": "Company Name",
               "title": "Company Name",
               "meta:xdmType": "string"
             },
-            "pathfactory:country": {
+            "xdm:country": {
               "required": [],
               "type": "string",
-              "description": "Country",
+              "description": "Defines the Country of a visitor from where user is trying to access the page",
               "title": "Country",
               "meta:xdmType": "string"
             },
-            "pathfactory:dataSource": {
+            "xdm:dataSource": {
               "required": [],
               "type": "string",
               "description": "Data Source",
               "title": "Data Source",
               "meta:xdmType": "string"
             },
-            "pathfactory:demandbaseAnnualSales": {
+            "xdm:demandbaseAnnualSales": {
               "required": [],
               "type": "integer",
-              "description": "Demandbase Annual Sales",
+              "description": "Defines visitor's company's Annual Business Sales fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Annual Sales",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:demandbaseCompanyName": {
+            "xdm:demandbaseCompanyName": {
               "required": [],
               "type": "string",
-              "description": "Demandbase Company Name",
+              "description": "Defines visitor's Comapany name fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Company Name",
               "meta:xdmType": "string"
             },
-            "pathfactory:demandbaseEmployeeCount": {
+            "xdm:demandbaseEmployeeCount": {
               "required": [],
               "type": "integer",
-              "description": "Demandbase Employee Count",
+              "description": "Defines visitor's company's Employee Count fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Employee Count",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:demandbaseIndustry": {
+            "xdm:demandbaseIndustry": {
               "required": [],
               "type": "string",
-              "description": "Demandbase Industry",
+              "description": "Defines visitor's Comapany Industry fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Industry",
               "meta:xdmType": "string"
             },
-            "pathfactory:demandbaseSid": {
+            "xdm:demandbaseSID": {
               "required": [],
               "type": "integer",
-              "description": "Demandbase SID",
+              "description": "Defines the unique Security IDentifier assigned to a company or a group in Demandbase tool",
               "title": "Demandbase SID",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:demandbaseWebSite": {
+            "xdm:demandbaseWebSite": {
               "required": [],
               "type": "string",
-              "description": "Demandbase Website",
+              "description": "Defines visitor's Comapany Website fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Website",
               "meta:xdmType": "string"
             },
-            "pathfactory:deviceType": {
+            "xdm:deviceType": {
               "required": [],
               "type": "string",
-              "description": "Device Type",
+              "description": "Defines the Device used while visting the pages, i.e. Computer, mobile etc.",
               "title": "Device Type",
               "meta:xdmType": "string"
             },
-            "pathfactory:domain": {
+            "xdm:domain": {
               "required": [],
               "type": "string",
-              "description": "Domain name",
+              "description": "Defines visitor's Domain name",
               "title": "Domain",
               "meta:xdmType": "string"
             },
-            "pathfactory:emailAddress": {
+            "xdm:emailAddress": {
               "required": [],
               "type": "string",
-              "description": "Email Address",
+              "description": "Defines the email address of a Visitor",
               "title": "Email Address",
               "meta:xdmType": "string"
             },
-            "pathfactory:emailDomain": {
+            "xdm:emailDomain": {
               "required": [],
               "type": "string",
-              "description": "Email Domain",
+              "description": "Defines the email domain of a Visitor",
               "title": "Email Domain",
               "meta:xdmType": "string"
             },
-            "pathfactory:endTimeUtc": {
+            "xdm:endTimeUTC": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "End Time in UTC format",
+              "description": "Defines the Time in UTC format, when user ended session on a Page in PathFactory platform",
               "title": "End Time (UTC)",
               "meta:xdmType": "date-time"
             },
-            "pathfactory:endTime": {
+            "xdm:endTime": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "End Time",
+              "description": "Defines the Time in general format, when user ended session on a Page in PathFactory platform",
               "title": "End Time",
               "meta:xdmType": "date-time"
             },
-            "pathfactory:engagementScore": {
+            "xdm:engagementScore": {
               "required": [],
               "type": "integer",
-              "description": "Engagement Score",
+              "description": "Defines the total score of a visitor session",
               "title": "Engagement Score",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:engagementTime": {
+            "xdm:engagementTime": {
               "required": [],
               "type": "integer",
-              "description": "Engagement Time",
+              "description": "Defines the total time spent on a current session",
               "title": "Engagement Time",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:experienceExternalId": {
+            "xdm:experienceExternalID": {
               "required": [],
               "type": "string",
-              "description": "Experience External ID",
+              "description": "Defines the Content Track Experience External ID in PathFactory platform",
               "title": "Experience External ID",
               "meta:xdmType": "string"
             },
-            "pathfactory:experienceId": {
+            "xdm:experienceID": {
               "required": [],
               "type": "integer",
-              "description": "Experience ID (PathFactory)",
+              "description": "Defines the unique ID assigned to Content Track Experience in PathFactory platform",
               "title": "Experience ID",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:experienceName": {
+            "xdm:experienceName": {
               "required": [],
               "type": "string",
-              "description": "Experience Name (PathFactory)",
+              "description": "Defines the name given to Experience in PathFactory platform",
               "title": "Experience Name",
               "meta:xdmType": "string"
             },
-            "pathfactory:incrementalEngagementTime": {
+            "xdm:incrementalEngagementTime": {
               "required": [],
               "type": "integer",
-              "description": "Incremental Engagement Time",
+              "description": "Defines the additional time a user spends engaging with content beyond an initial baseline or expected level",
               "title": "Incremental Engagement Time",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:ip": {
+            "xdm:ip": {
               "required": [],
               "type": "string",
-              "description": "IP address",
+              "description": "Defines the IP Address of the Visitor",
               "title": "IP",
               "meta:xdmType": "string"
             },
-            "pathfactory:ip2ProxyIsproxy": {
+            "xdm:ip2ProxyIsproxy": {
               "required": [],
               "type": "string",
-              "description": "IP 2 Proxy Is Proxy",
+              "description": "Defines if the request is coming from the proxy server using 3rd party tool called - IP2Location",
               "title": "IP 2 Proxy Is Proxy",
               "meta:xdmType": "string"
             },
-            "pathfactory:isp": {
+            "xdm:isp": {
               "required": [],
               "type": "string",
-              "description": "ISP name",
+              "description": "Defines the Internet Service Provider's name of the Visitor",
               "title": "ISP",
               "meta:xdmType": "string"
             },
-            "pathfactory:likes": {
+            "xdm:likes": {
               "required": [],
               "type": "string",
-              "description": "Likes",
+              "description": "Defines number of likes page has received",
               "title": "Likes",
               "meta:xdmType": "string"
             },
-            "pathfactory:os": {
+            "xdm:os": {
               "required": [],
               "type": "string",
-              "description": "OS used while visiting pages",
+              "description": "Defines the OS used while visiting the pages",
               "title": "OS",
               "meta:xdmType": "string"
             },
-            "pathfactory:queryString": {
+            "xdm:queryString": {
               "required": [],
               "type": "string",
-              "description": "Query String",
+              "description": "Defines the pre-defined custom query string appended at the end of the page URL, which are created on PathFactory platform",
               "title": "Query String",
               "meta:xdmType": "string"
             },
-            "pathfactory:referrerUrl": {
+            "xdm:referrerURL": {
               "required": [],
               "type": "string",
-              "description": "Referrer URL",
+              "description": "Defines the URL of a source which referred this page",
               "title": "Referrer URL",
               "meta:xdmType": "string"
             },
-            "pathfactory:region": {
+            "xdm:region": {
               "required": [],
               "type": "string",
-              "description": "Region",
+              "description": "Defines the Region from where session is initiated",
               "title": "Region",
               "meta:xdmType": "string"
             },
-            "pathfactory:referrerMedium": {
+            "xdm:referrerMedium": {
               "required": [],
               "type": "string",
-              "description": "Referrer Medium",
+              "description": "Defines how the user visited the first page in the session e.g. search, social, direct, email etc.",
               "title": "Referrer Medium",
               "meta:xdmType": "string"
             },
-            "pathfactory:referrerSource": {
+            "xdm:referrerSource": {
               "required": [],
               "type": "string",
-              "description": "Referrer Source",
+              "description": "Defines the source that referred this page to the user. e.g. Google, Yahoo, LinkedIn etc.",
               "title": "Referrer Source",
               "meta:xdmType": "string"
             },
-            "pathfactory:referrerTerm": {
+            "xdm:referrerTerm": {
               "required": [],
               "type": "string",
-              "description": "Referrer Term",
+              "description": "Defines the term that was searched by the user to find this page.",
               "title": "Referrer Term",
               "meta:xdmType": "string"
             },
-            "pathfactory:shares": {
+            "xdm:shares": {
               "required": [],
               "type": "string",
-              "description": "Shares",
+              "description": "Defines the total number of page shares",
               "title": "Shares",
               "meta:xdmType": "string"
             },
-            "pathfactory:startTimeUtc": {
+            "xdm:startTimeUTC": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Start time in UTC format",
+              "description": "Defines the Time in UTC format, when user started session on a Page in PathFactory platform",
               "title": "Start Time (UTC)",
               "meta:xdmType": "date-time"
             },
-            "pathfactory:startTime": {
+            "xdm:startTime": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Start Time",
+              "description": "Defines the Time in general format, when user started session on a Page in PathFactory platform",
               "title": "Start Time",
               "meta:xdmType": "date-time"
             },
-            "pathfactory:sixsenseCompanyCountryIsoCode": {
+            "xdm:sixsenseCompanyCountryISOCode": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Country ISO Code",
+              "description": "Defines Country ISO Code of visitor's Company and it is fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Country ISO Code",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanyEmployeeCount": {
+            "xdm:sixsenseCompanyEmployeeCount": {
               "required": [],
               "type": "integer",
-              "description": "Sixsense Company Employee Count",
+              "description": "Defines visitor's company's Employee Count fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Employee Count",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:sixsenseCompanyEmployeeRange": {
+            "xdm:sixsenseCompanyEmployeeRange": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Employee Range",
+              "description": "Defines visitor's company's Employee Range (i.e 1-200, 1-10000 etc.) fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Employee Range",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanyIndustry": {
+            "xdm:sixsenseCompanyIndustry": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Industry",
+              "description": "Defines visitor's Comapany Industry fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Industry",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanyNaicscode": {
+            "xdm:sixsenseCompanyNAICSCode": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Naicscode",
+              "description": "Defines visitor's company's North American Industry Classification System Code fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Naicscode",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanyNaicsdescription": {
+            "xdm:sixsenseCompanyNAICSDescription": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Naicsdescription",
+              "description": "Defines visitor's company's North American Industry Classification System Description fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Naicsdescription",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanyPhone": {
+            "xdm:sixsenseCompanyPhone": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Phone",
+              "description": "Defines visitor's Comapany Phone Number fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Phone",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanyPostalCode": {
+            "xdm:sixsenseCompanyPostalCode": {
               "required": [],
               "type": "string",
-              "description":"Sixsense Company Postal Code",
+              "description": "Defines visitor's Comapany Postal Code fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Postal Code",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanyRevenueRange": {
+            "xdm:sixsenseCompanyRevenueRange": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Revenue Range",
+              "description": "Defines visitor's company's Revenue Range fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Revenue Range",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanySiccode": {
+            "xdm:sixsenseCompanySICCode": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Siccode",
+              "description": "Defines visitor's company's Standard Industrial Classification Code fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Siccode",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanySicdescription": {
+            "xdm:sixsenseCompanySICDescription": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Sicdescription",
+              "description": "Defines visitor's company's Standard Industrial Classification Code Description fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Sicdescription",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanyState": {
+            "xdm:sixsenseCompanyState": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company State",
+              "description": "Defines visitor's Comapany State fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company State",
               "meta:xdmType": "string"
             },
-            "pathfactory:sixsenseCompanyStreetAddress": {
+            "xdm:sixsenseCompanyStreetAddress": {
               "required": [],
               "type": "string",
-              "description": "Sixsense Company Street Address",
+              "description": "Defines visitor's Comapany Address fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Street Address",
               "meta:xdmType": "string"
             },
-            "pathfactory:spiderOrRobot": {
+            "xdm:isSpiderOrRobot": {
               "required": [],
               "type": "boolean",
-              "description": "Boolean variable to check if spider/robot true in PathFactory",
+              "description": "Boolean variable to check if the session is generated by a robot or a crawler",
               "title": "Spider OR  Robot",
               "meta:xdmType": "boolean"
             },
-            "pathfactory:totalAssetViews": {
+            "xdm:totalAssetViews": {
               "required": [],
               "type": "integer",
-              "description": "Total Asset Views",
+              "description": "Defines the total number of asset views in a session",
               "title": "Total Asset Views",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:uniqueViews": {
+            "xdm:uniqueViews": {
               "required": [],
               "type": "integer",
-              "description": "Unique Views",
+              "description": "Defines the total number of unique views in a session",
               "title": "Unique Views",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:userAgent": {
+            "xdm:userAgent": {
               "required": [],
               "type": "string",
-              "description": "User Agent",
+              "description": "User Agent request header is a characteristic string that lets servers and network peers identify the application.",
               "title": "User Agent",
               "meta:xdmType": "string"
             },
-            "pathfactory:marketingCampaign": {
+            "xdm:marketingCampaign": {
               "required": [],
               "type": "string",
-              "description": "Marketing Campaign",
+              "description": "Marketing Campaign is a UTM parameter field used by the marketer",
               "title": "Marketing Campaign",
               "meta:xdmType": "string"
             },
-            "pathfactory:marketingContent": {
+            "xdm:marketingContent": {
               "required": [],
               "type": "string",
-              "description": "Marketing Content",
+              "description": "Marketing Content is a UTM parameter field used by the marketer",
               "title": "Marketing Content",
               "meta:xdmType": "string"
             },
-            "pathfactory:marketingMedium": {
+            "xdm:marketingMedium": {
               "required": [],
               "type": "string",
-              "description": "Marketing Medium",
+              "description": "Marketing Medium is a UTM parameter field used by the marketer",
               "title": "Marketing Medium",
               "meta:xdmType": "string"
             },
-            "pathfactory:marketingSource": {
+            "xdm:marketingSource": {
               "required": [],
               "type": "string",
-              "description": "Marketing Source",
+              "description": "Marketing Source is a UTM parameter field used by the marketer",
               "title": "Marketing Source",
               "meta:xdmType": "string"
             },
-            "pathfactory:marketingTerm": {
+            "xdm:marketingTerm": {
               "required": [],
               "type": "string",
-              "description": "Marketing Term",
+              "description": "Marketing Term is a UTM parameter field used by the marketer",
               "title": "Marketing Term",
               "meta:xdmType": "string"
             },
-            "pathfactory:unifiedExperienceUuid": {
+            "xdm:unifiedExperienceUUID": {
               "required": [],
               "type": "string",
-              "description": "Unified Experience UUID (PathFactory)",
+              "description": "Defines the 128 bit unique ID assigned to Unified Experience in PathFactory platform",
               "title": "Unified Experience UUID",
               "meta:xdmType": "string"
             },
-            "pathfactory:experienceUuid": {
+            "xdm:experienceUUID": {
               "required": [],
               "type": "string",
-              "description": "Experience UUID (PathFactory)",
+              "description": "Defines the 128 bit unique ID assigned to Experience in PathFactory platform",
               "title": "Experience UUID",
               "meta:xdmType": "string"
             },
-            "pathfactory:webExpId": {
+            "xdm:webExpID": {
               "required": [],
               "type": "string",
-              "description": "Web Exp ID",
+              "description": "Defines the unique web ID assigned to Experience in PathFactory platform",
               "title": "Web Exp ID",
               "meta:xdmType": "string"
             },
-            "pathfactory:browser": {
+            "xdm:browser": {
               "required": [],
               "type": "string",
-              "description": "Browser used while visiting pages",
+              "description": "Defines the browser used to visit the pages during the current session",
               "title": "Browser",
               "meta:xdmType": "string"
             },
-            "pathfactory:experienceType": {
+            "xdm:experienceType": {
               "required": [],
               "type": "string",
-              "description": "Experience Type (PathFactory)",
+              "description": "Defines the type of the Experience of the page in PathFactory platform",
               "title": "Experience Type",
               "meta:xdmType": "string"
             },
-            "pathfactory:visitorId": {
+            "xdm:visitorID": {
               "required": [],
               "type": "string",
-              "description": "Visitor Identity",
+              "description": "Defines the unique ID assigned to Visitor",
               "title": "Visitor Identity",
               "meta:xdmType": "string"
             },
-            "pathfactory:visitorUuid": {
+            "xdm:visitorUUID": {
               "required": [],
               "type": "string",
-              "description": "Visitor UUID",
+              "description": "Defines the 128 bit unique ID assigned to each visitor upon visiting any Page",
               "title": "Visitor UUID",
               "meta:xdmType": "string"
             },
-            "pathfactory:identityEcid": {
+            "xdm:identityECID": {
               "required": [],
               "type": "string",
-              "description": "Identity ECID",
+              "description": "Defines the unique ECID assigned to a Visitor",
               "title": "Identity ECID",
               "meta:xdmType": "string"
             }
@@ -574,5 +574,5 @@
       "$ref": "#/definitions/pfSessionFields"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "experimental"
 }

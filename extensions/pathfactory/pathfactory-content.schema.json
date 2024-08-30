@@ -12,120 +12,120 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "title": "PathFactory Content Fieldgroup Details - V1.1",
   "type": "object",
-  "description": "PathFactory Content Schema Field",
+  "description": "This Fields helps in organizing and storing key metadata for content assets. It includes details such as creation and update timestamps, titles, language, media type, and unique identifiers. This schema is essential for managing, categorizing, and delivering content effectively within PathFactory, ensuring each asset is easily identifiable and ready for personalized user experiences.",
   "definitions": {
     "pfContentFields": {
       "properties": {
         "pathfactory:content": {
           "title": "Pathfactory Content",
-          "description": "Pathfactory Content Field Object",
+          "description": "Pathfactory Content Field Object is used to get all the information related to Content which can be used for the analytics purpose and for content recommendations",
           "required": [
-            "pathfactory:contentId",
-            "pathfactory:createdAtUtc",
-            "pathfactory:title",
-            "pathfactory:internalTitle"
+            "xdm:contentID",
+            "xdm:createdAtUTC",
+            "xdm:title",
+            "xdm:internalTitle"
           ],
           "type": "object",
           "properties": {
-            "pathfactory:createdAtUtc": {
+            "xdm:createdAtUTC": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Created Date in UTC format",
+              "description": "Defines the Date in UTC format for a Content created in PathFactory platform",
               "title": "Created AT UTC",
               "meta:xdmType": "date-time"
             },
-            "pathfactory:contentId": {
+            "xdm:contentID": {
               "required": [],
               "type": "integer",
-              "description": "Content ID",
+              "description": "Defines the unique ID assigned to a Content",
               "title": "Content ID",
               "meta:xdmType": "int",
               "minimum": -2147483648,
               "maximum": 2147483647
             },
-            "pathfactory:updatedAtUtc": {
+            "xdm:updatedAtUTC": {
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Updated Date in UTC format",
+              "description": "Defines the Date in UTC format for a Content/Asset updated in PathFactory platform",
               "title": "Updated AT UTC",
               "meta:xdmType": "date-time"
             },
-            "pathfactory:title": {
+            "xdm:title": {
               "required": [],
               "type": "string",
-              "description": "Content Title",
+              "description": "Defines the title of the Content",
               "title": "Content Title",
               "meta:xdmType": "string"
             },
-            "pathfactory:internalTitle": {
+            "xdm:internalTitle": {
               "required": [],
               "type": "string",
-              "description": "Content Internal Title",
+              "description": "Defines the title given to the Content to be used only inside PathFactory platform",
               "title": "Content Internal Title",
               "meta:xdmType": "string"
             },
-            "pathfactory:slug": {
+            "xdm:slug": {
               "required": [],
               "type": "string",
-              "description": "Content URL Slug",
+              "description": "Defines the Custom URL slug given to Content in PathFactory platform",
               "title": "Content URL Slug",
               "meta:xdmType": "string"
             },
-            "pathfactory:language": {
+            "xdm:language": {
               "required": [],
               "type": "string",
-              "description": "Language",
+              "description": "Defines the language in which the Content is displayed in PathFactory platform",
               "title": "Language",
               "meta:xdmType": "string"
             },
-            "pathfactory:description": {
+            "xdm:description": {
               "required": [],
               "type": "string",
-              "description": "Content Description",
+              "description": "Defines the description about the Content",
               "title": "Content Description",
               "meta:xdmType": "string"
             },
-            "pathfactory:sourceUrl": {
+            "xdm:sourceURL": {
               "required": [],
               "type": "string",
-              "description": "Source URL",
+              "description": "Defines the source URL from where the Content was imported into the PathFactory platform",
               "title": "Source URL",
               "meta:xdmType": "string"
             },
-            "pathfactory:mediaType": {
+            "xdm:mediaType": {
               "required": [],
               "type": "string",
-              "description": "Media Type",
+              "description": "Defines the type of the Content Media (e.g pdf, mp3, png etc)",
               "title": "Media Type",
               "meta:xdmType": "string"
             },
-            "pathfactory:contentType": {
+            "xdm:contentType": {
               "required": [],
               "type": "string",
-              "description": "Content Type",
+              "description": "Defines the list of content types is provided by PathFactory, but you may add additional types. These tags will help in you search for specific types of content, such as Ebook or Case Study and can also be made public-facing for your target audiences for certain PathFactory features.",
               "title": "Content Type",
               "meta:xdmType": "string"
             },
-            "pathfactory:externalId": {
+            "xdm:externalID": {
               "required": [],
               "type": "string",
-              "description": "External ID (PathFactory)",
+              "description": "Defines the Content External ID in PathFactory platform",
               "title": "External ID",
               "meta:xdmType": "string"
             },
-            "pathfactory:thumbnail": {
+            "xdm:thumbnail": {
               "required": [],
               "type": "string",
-              "description": "Thumbnail",
+              "description": "Defines the string value of thumbnail for a Content",
               "title": "Thumbnail",
               "meta:xdmType": "string"
             },
-            "pathfactory:uuid": {
+            "xdm:UUID": {
               "required": [],
               "type": "string",
-              "description": "Content UUID (PathFactory)",
+              "description": "Defines the 128 bit unique ID assigned to a Content",
               "title": "Content UUID",
               "meta:xdmType": "string"
             }
@@ -140,5 +140,5 @@
       "$ref": "#/definitions/pfContentFields"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "experimental"
 }

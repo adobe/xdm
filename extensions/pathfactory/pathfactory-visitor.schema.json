@@ -98,7 +98,7 @@
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Defines the Date in UTC format when the Visitor fisrt visited any page in PathFactory platform",
+              "description": "Defines the Date in UTC format when the Visitor first visited any page in PathFactory platform",
               "title": "First Visit Time (UTC)",
               "meta:xdmType": "date-time"
             },

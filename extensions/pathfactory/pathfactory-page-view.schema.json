@@ -126,7 +126,7 @@
             "xdm:engagedTimeInS": {
               "required": [],
               "type": "integer",
-              "description": "Defines the time in seconds for which duration, user was engaged with a Page",
+              "description": "Defines the time in seconds for the duration the user was engaged with a Page",
               "title": "Engaged Time in S",
               "meta:xdmType": "int",
               "minimum": -2147483648,
@@ -369,70 +369,70 @@
             "xdm:sixsenseCompanyDomain": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Domain name fetched from 3rd party 6sense tool if available",
-              "title": "Comapany Domain (6sense)",
+              "description": "Defines visitor's Company Domain name fetched from 3rd party 6sense tool if available",
+              "title": "Company Domain (6sense)",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyRegion": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Region fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Region fetched from 3rd party 6sense tool if available",
               "title": "Company Region (6sense)",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyCountry": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Country fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Country fetched from 3rd party 6sense tool if available",
               "title": "Company Country (6sense)",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyCountryIsoCode": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Country ISO Code fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Country ISO Code fetched from 3rd party 6sense tool if available",
               "title": "Company Country ISO (6sense)",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyState": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany State fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company State fetched from 3rd party 6sense tool if available",
               "title": "Company State (6sense)",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyCity": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany City fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company City fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company City",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyStreetAddress": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Address fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Address fetched from 3rd party 6sense tool if available",
               "title": "Company Address (6sense)",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyPostalCode": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Postal Code fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Postal Code fetched from 3rd party 6sense tool if available",
               "title": "Company Postal Code (6sense)",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyPhone": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Phone Number fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Phone Number fetched from 3rd party 6sense tool if available",
               "title": "Company Phone (6sense)",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyIndustry": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Industry fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Industry fetched from 3rd party 6sense tool if available",
               "title": "Company Industry (6sense)",
               "meta:xdmType": "string"
             },
@@ -511,7 +511,7 @@
             "xdm:isSixsenseCompanyBlacklisted": {
               "required": [],
               "type": "boolean",
-              "description": "Boolean variable to check if visitor's company is blocklisted or not using 3rd party tool - 6sense",
+              "description": "Boolean variable to check if visitor's company is blacklisted or not using 3rd party tool - 6sense",
               "title": "Company Blacklisted? (6sense ; T/F)",
               "meta:xdmType": "boolean"
             },
@@ -541,7 +541,7 @@
             "xdm:demandbaseCompanyName": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany name fetched from 3rd party Demandbase tool if available",
+              "description": "Defines visitor's Company name fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Company Name",
               "meta:xdmType": "string"
             },
@@ -566,14 +566,14 @@
             "xdm:demandbaseIndustry": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Industry fetched from 3rd party Demandbase tool if available",
+              "description": "Defines visitor's Company Industry fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Industry",
               "meta:xdmType": "string"
             },
             "xdm:demandbaseWebSite": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Website fetched from 3rd party Demandbase tool if available",
+              "description": "Defines visitor's Company Website fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Website",
               "meta:xdmType": "string"
             },

@@ -46,7 +46,7 @@
             "xdm:averageViewTimePerAsset": {
               "required": [],
               "type": "number",
-              "description": "Defines the how much time visitor has spent on average Per Asset",
+              "description": "Defines the average time the visitor has spent on each asset",
               "title": "Average View Time Per Asset",
               "meta:xdmType": "number"
             },
@@ -62,7 +62,7 @@
             "xdm:captures": {
               "required": [],
               "type": "integer",
-              "description": "Defines the total number of forms",
+              "description": "Defines the total number of times a form was filled",
               "title": "Captures",
               "meta:xdmType": "int",
               "minimum": -2147483648,
@@ -87,7 +87,7 @@
             "xdm:companyName": {
               "required": [],
               "type": "string",
-              "description": "Company Name",
+              "description": "Defines the company of a visitor from where user is trying to access the page",
               "title": "Company Name",
               "meta:xdmType": "string"
             },
@@ -117,7 +117,7 @@
             "xdm:demandbaseCompanyName": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany name fetched from 3rd party Demandbase tool if available",
+              "description": "Defines visitor's Company name fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Company Name",
               "meta:xdmType": "string"
             },
@@ -133,7 +133,7 @@
             "xdm:demandbaseIndustry": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Industry fetched from 3rd party Demandbase tool if available",
+              "description": "Defines visitor's Company Industry fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Industry",
               "meta:xdmType": "string"
             },
@@ -149,7 +149,7 @@
             "xdm:demandbaseWebSite": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Website fetched from 3rd party Demandbase tool if available",
+              "description": "Defines visitor's Company Website fetched from 3rd party Demandbase tool if available",
               "title": "Demandbase Website",
               "meta:xdmType": "string"
             },
@@ -185,7 +185,7 @@
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Defines the Time in UTC format, when user ended session on a Page in PathFactory platform",
+              "description": "Defines the Time in UTC format, when user ended the session",
               "title": "End Time (UTC)",
               "meta:xdmType": "date-time"
             },
@@ -193,7 +193,7 @@
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Defines the Time in general format, when user ended session on a Page in PathFactory platform",
+              "description": "Defines the Time in general format, when user ended the session",
               "title": "End Time",
               "meta:xdmType": "date-time"
             },
@@ -335,7 +335,7 @@
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Defines the Time in UTC format, when user started session on a Page in PathFactory platform",
+              "description": "Defines the Time in UTC format, when user started the session",
               "title": "Start Time (UTC)",
               "meta:xdmType": "date-time"
             },
@@ -343,7 +343,7 @@
               "required": [],
               "format": "date-time",
               "type": "string",
-              "description": "Defines the Time in general format, when user started session on a Page in PathFactory platform",
+              "description": "Defines the Time in general format, when user started the session",
               "title": "Start Time",
               "meta:xdmType": "date-time"
             },
@@ -373,7 +373,7 @@
             "xdm:sixsenseCompanyIndustry": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Industry fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Industry fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Industry",
               "meta:xdmType": "string"
             },
@@ -394,14 +394,14 @@
             "xdm:sixsenseCompanyPhone": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Phone Number fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Phone Number fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Phone",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyPostalCode": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Postal Code fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Postal Code fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Postal Code",
               "meta:xdmType": "string"
             },
@@ -429,14 +429,14 @@
             "xdm:sixsenseCompanyState": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany State fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company State fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company State",
               "meta:xdmType": "string"
             },
             "xdm:sixsenseCompanyStreetAddress": {
               "required": [],
               "type": "string",
-              "description": "Defines visitor's Comapany Address fetched from 3rd party 6sense tool if available",
+              "description": "Defines visitor's Company Address fetched from 3rd party 6sense tool if available",
               "title": "Sixsense Company Street Address",
               "meta:xdmType": "string"
             },

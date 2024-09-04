@@ -62,14 +62,14 @@
             "xdm:internalTitle": {
               "required": [],
               "type": "string",
-              "description": "Defines the title given to the Content to be used only inside PathFactory platform",
+              "description": "Defines the title given to the Content to be used within PathFactory platform",
               "title": "Content Internal Title",
               "meta:xdmType": "string"
             },
             "xdm:slug": {
               "required": [],
               "type": "string",
-              "description": "Defines the Custom URL slug given to Content in PathFactory platform",
+              "description": "Defines the Custom URL slug given to a Content in PathFactory platform",
               "title": "Content URL Slug",
               "meta:xdmType": "string"
             },
@@ -104,7 +104,7 @@
             "xdm:contentType": {
               "required": [],
               "type": "string",
-              "description": "Defines the list of content types is provided by PathFactory, but you may add additional types. These tags will help in you search for specific types of content, such as Ebook or Case Study and can also be made public-facing for your target audiences for certain PathFactory features.",
+              "description": "Defines the list of content types assigned to the content. These tags will help the user in finding a specific type of content, such as Ebook or Case Study and can also be made public-facing for your target audiences",
               "title": "Content Type",
               "meta:xdmType": "string"
             },

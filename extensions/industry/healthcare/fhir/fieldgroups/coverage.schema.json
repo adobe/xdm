@@ -1,0 +1,263 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.fhir.org/fieldgroup/coverage",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Coverage",
+   "type":"object",
+   "meta:tags":{
+      "industry":[
+         "healthcare_services"
+      ]
+   },
+   "meta:intendedToExtend":[
+      "https://ns.adobe.com/xdm/classes/plan"
+   ],
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "description":"Insurance or medical plan or a payment agreement.(Based on HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "coverage":{
+         "properties":{
+            "fhir:identifier":{
+               "title":"Identifier",
+               "description":"The identifier of the coverage as issued by the insurer.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:status":{
+               "title":"Status",
+               "description":"active | cancelled | draft | entered-in-error",
+               "type":"string",
+               "enum":[
+                  "active",
+                  "cancelled",
+                  "draft",
+                  "entered-in-error"
+               ],
+               "meta:enum":{
+                  "active":"Active",
+                  "cancelled":"Cancelled",
+                  "draft":"Draft",
+                  "entered-in-error":"Entered In Error"
+               }
+            },
+            "fhir:kind":{
+               "title":"Kind",
+               "description":"insurance | self-pay | other",
+               "type":"string",
+               "enum":[
+                  "insurance",
+                  "self-pay",
+                  "other"
+               ],
+               "meta:enum":{
+                  "insurance":"Insurance",
+                  "self-pay":"Self Pay",
+                  "other":"Other"
+               }
+            },
+            "fhir:paymentBy":{
+               "title":"Payment By",
+               "description":"Link to the paying party and optionally what specifically they will be responsible to pay.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:party":{
+                        "title":"Party",
+                        "description":"The list of parties providing non-insurance payment for the treatment costs.",
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     },
+                     "xdm:responsibility":{
+                        "title":"Responsibility",
+                        "description":"Description of the financial responsibility.",
+                        "type":"string"
+                     }
+                  }
+               }
+            },
+            "fhir:type":{
+               "title":"Type",
+               "description":"The type of coverage: social program, medical plan, accident coverage (workers compensation, auto), group health or payment by an individual or organization.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:policyHolder":{
+               "title":"Policy Holder",
+               "description":"The party who 'owns' the insurance policy.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:subscriber":{
+               "title":"Subscriber",
+               "description":"The party who has signed-up for or 'owns' the contractual relationship to the policy or to whom the benefit of the policy for services rendered to them or their family is due..",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:subscriberId":{
+               "title":"Subscriber Identifier",
+               "description":"The insurer assigned ID for the Subscriber.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+               }
+            },
+            "fhir:beneficiary":{
+               "title":"Plan Beneficiary",
+               "description":"The party who benefits from the insurance coverage; the patient when products and/or services are provided.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:dependent":{
+               "title":"Dependent number",
+               "description":"A designator for a dependent under the coverage.",
+               "type":"string"
+            },
+            "fhir:relationship":{
+               "title":"Beneficiary Relationship",
+               "description":"The relationship of beneficiary (patient) to the subscriber.",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+            },
+            "fhir:period":{
+               "title":"Coverage start and end dates.",
+               "description":"Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force..",
+               "$ref":"https://ns.fhir.org/datatypes/period"
+            },
+            "fhir:insurer":{
+               "title":"Insurer",
+               "description":"The program or plan underwriter, payor, insurance company.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            },
+            "fhir:class":{
+               "title":"Class",
+               "description":"A suite of underwriter specific classifiers.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:type":{
+                        "title":"Type",
+                        "description":"The type of classification for which an insurer-specific class label or number and optional name is provided. For example, type may be used to identify a class of coverage or employer group, policy, or plan.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:value":{
+                        "title":"Value",
+                        "description":"The alphanumeric identifier associated with the insurer issued label.",
+                        "$ref":"https://ns.fhir.org/datatypes/identifier"
+                     },
+                     "xdm:name":{
+                        "title":"Name",
+                        "description":"A short description for the class.",
+                        "type":"string"
+                     }
+                  }
+               }
+            },
+            "fhir:order":{
+               "title":"Coverage Order",
+               "description":"Relative order of the coverage.",
+               "type":"integer",
+               "minimum":0
+            },
+            "fhir:network":{
+               "title":"Insurer Network",
+               "description":"The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' terms and conditions apply.",
+               "type":"string"
+            },
+            "fhir:costToBeneficiary":{
+               "title":"Cost To Beneficiary",
+               "description":"A suite of codes indicating the cost category and associated amount which have been detailed in the policy and may have been included on the health card..",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "properties":{
+                     "xdm:type":{
+                        "title":"Type",
+                        "description":"The category of patient centric costs associated with treatment..",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:category":{
+                        "title":"Category",
+                        "description":"Code to identify the general type of benefits under which products and services are provided..",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:network":{
+                        "title":"Network",
+                        "description":"Is a flag to indicate whether the benefits refer to in-network providers or out-of-network providers.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:unit":{
+                        "title":"Unit",
+                        "description":"Indicates if the benefits apply to an individual or to the family.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     },
+                     "xdm:term":{
+                        "title":"Term",
+                        "description":"The term or period of the values such as 'maximum lifetime benefit' or 'maximum annual visits'.",
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     }
+                  }
+               },
+               "xdm:valueQuantity":{
+                  "title":"Value Quantity",
+                  "description":"The amount due in percentage from the patient for the cost category.",
+                  "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+               },
+               "xdm:valueMoney":{
+                  "title":"Value Money",
+                  "description":"The amount due from the patient for the cost category.",
+                  "$ref":"https://ns.fhir.org/datatypes/money"
+               },
+               "xdm:exception":{
+                  "title":"Exception",
+                  "description":"A suite of codes indicating exceptions or reductions to patient costs and their effective periods.",
+                  "type":"array",
+                  "items":{
+                     "type":"object",
+                     "properties":{
+                        "xdm:type":{
+                           "title":"Type",
+                           "description":"The code for the specific exception..",
+                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                        },
+                        "xdm:period":{
+                           "title":"Period",
+                           "description":"The timeframe the exception is in force.",
+                           "$ref":"https://ns.fhir.org/datatypes/period"
+                        }
+                     }
+                  }
+               }
+            },
+            "fhir:subrogation":{
+               "title":"Subrogation",
+               "description":"When 'subrogation=true' this insurance instance has been included not for adjudication but to provide insurers with the details to recover costs.",
+               "type":"boolean"
+            },
+            "fhir:contract":{
+               "title":"Contract Details",
+               "description":"The policy(s) which constitute this insurance coverage.",
+               "description":"The insurer assigned ID for the Subscriber.",
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               }
+            },
+            "fhir:insurancePlan":{
+               "title":"Insurance Plan",
+               "description":"The insurance plan details, benefits and costs, which constitute this insurance coverage.",
+               "$ref":"https://ns.fhir.org/datatypes/reference"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/coverage"
+      }
+   ],
+   "meta:status":"experimental"
+}

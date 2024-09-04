@@ -122,6 +122,11 @@
           "title": "Channel Type",
           "type": "string",
           "description": "ChannelType will contain like : SMS, MMS , RCS etc."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profileNumber": {
+          "title": "Profile Phone Number",
+          "type": "string",
+          "description": "Phone Number from whihc we recevied the Inbound message"
         }
       }
     }

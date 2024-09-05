@@ -10,9 +10,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "title": "PathFactory Page Views Fieldgroup Details - V1.1",
+  "title": "PathFactory Page Views Fieldgroup Details",
   "type": "object",
-  "description": "This schema field is a key element within the PathFactory platform's data schema, designed to capture and record detailed information about page views by visitors. It tracks every instance a visitor loads or reloads a page, providing crucial data for analyzing user engagement and content performance. The PathFactory Page Views Schema Field helps in understanding which pages are most frequently viewed, identifying popular content, and detecting patterns in visitor behavior. This data is instrumental in optimizing content delivery, personalizing visitor experiences, and driving strategic decisions based on real-time user interaction insights.",
+  "description": "This Field Group provides fields to capture and record detailed information about page views by visitors. It tracks every instance a visitor loads or reloads a page, providing crucial data for analyzing user engagement and content performance. The PathFactory Page Views Schema Field helps in understanding which pages are most frequently viewed, identifying popular content, and detecting patterns in visitor behavior. This data is instrumental in optimizing content delivery, personalizing visitor experiences, and driving strategic decisions based on real-time user interaction insights.",
   "definitions": {
     "pfPageViewFields": {
       "properties": {

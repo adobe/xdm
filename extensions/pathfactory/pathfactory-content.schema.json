@@ -10,9 +10,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "title": "PathFactory Content Fieldgroup Details - V1.1",
+  "title": "PathFactory Content Fieldgroup Details",
   "type": "object",
-  "description": "This Fields helps in organizing and storing key metadata for content assets. It includes details such as creation and update timestamps, titles, language, media type, and unique identifiers. This schema is essential for managing, categorizing, and delivering content effectively within PathFactory, ensuring each asset is easily identifiable and ready for personalized user experiences.",
+  "description": "This Field Group helps in organizing and storing key metadata for content assets. It includes details such as creation and update timestamps, titles, language, media type, and unique identifiers. This schema is essential for managing, categorizing, and delivering content effectively within PathFactory, ensuring each asset is easily identifiable and ready for personalized user experiences.",
   "definitions": {
     "pfContentFields": {
       "properties": {

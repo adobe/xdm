@@ -10,9 +10,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "title": "PathFactory Visitor Fieldgroup Details - V1.1",
+  "title": "PathFactory Visitor Fieldgroup Details",
   "type": "object",
-  "description": "This schema field is a critical component of the PathFactory platform's visitor tracking and personalization framework. It represents specific attributes or data points within the visitor schema that PathFactory uses to understand and categorize user interactions. These schema fields are essential for tailoring content experiences, enabling personalized pathways, and capturing insights into visitor behavior. The data collected through these fields helps in building comprehensive visitor profiles, facilitating targeted marketing efforts, and enhancing the overall user journey on the platform.",
+  "description": "This Field Group represents specific attributes or data points within the visitor schema that PathFactory uses to understand and categorize user interactions. These schema fields are essential for tailoring content experiences, enabling personalized pathways, and capturing insights into visitor behavior. The data collected through these fields helps in building comprehensive visitor profiles, facilitating targeted marketing efforts, and enhancing the overall user journey on the platform.",
   "definitions": {
     "pfVisitorFields": {
       "properties": {

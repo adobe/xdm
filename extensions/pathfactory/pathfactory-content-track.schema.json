@@ -10,9 +10,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "title": "PathFactory Content Track Fieldgroup Details - V1.1",
+  "title": "PathFactory Content Track Fieldgroup Details",
   "type": "object",
-  "description": "This Schema Field is a data model within the PathFactory platform that captures and organizes metadata related to content tracks. It includes information such as track titles, content sequencing, and associated content assets. This schema is essential for managing how content is grouped, presented, and tracked within PathFactory, enabling personalized content journeys and providing insights into user engagement with specific content tracks.",
+  "description": "This Field group captures and organizes metadata related to content tracks. It includes information such as track titles, content sequencing, and associated content assets. This schema is essential for managing how content is grouped, presented, and tracked within PathFactory, enabling personalized content journeys and providing insights into user engagement with specific content tracks.",
   "definitions": {
     "pfContentTrackFields": {
       "properties": {

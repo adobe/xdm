@@ -10,9 +10,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "title": "PathFactory Session Fieldgroup Details - V1.1",
+  "title": "PathFactory Session Fieldgroup Details",
   "type": "object",
-  "description": "This schema field is an integral part of the PathFactory platform's session tracking system, designed to capture and store detailed information about individual user sessions. A session represents a series of interactions a visitor has with the platform within a specific time frame. The PathFactory Session Schema Field records data such as session duration, the sequence of pages viewed, actions taken, and engagement levels. This information is crucial for understanding the context of user behavior, analyzing how visitors navigate through content, and identifying opportunities for enhancing the user experience. By leveraging this data, PathFactory can deliver more personalized content and improve overall session quality, contributing to more effective engagement strategies.",
+  "description": "This Field Group is designed to capture and store detailed information about individual user sessions. A session represents a series of interactions a visitor has with the platform within a specific time frame. The PathFactory Session Schema Field Group records data such as session duration, the sequence of pages viewed, actions taken, and engagement levels. This information is crucial for understanding the context of user behavior, analyzing how visitors navigate through content, and identifying opportunities for enhancing the user experience. By leveraging this data, PathFactory can deliver more personalized content and improve overall session quality, contributing to more effective engagement strategies.",
   "definitions": {
     "pfSessionFields": {
       "properties": {

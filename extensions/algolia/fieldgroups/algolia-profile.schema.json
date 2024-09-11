@@ -1,0 +1,81 @@
+{
+  "$id":"https://ns.algolia.com/xdm/algolia/fieldgroup/profile",
+  "$schema":"http://json-schema.org/draft-06/schema#",
+  "title": "Algolia Profile Details",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:status": "experimental",
+  "description": "Algolia gathers user's click/conversion events to build user profiles for personalization and A/B testing. This field group properties aligns with the Algolia user profile structure.",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
+  "definitions": {
+    "algolia-profile": {
+      "properties": {
+        "affinities": {
+          "items": {
+            "properties": {
+              "name": {
+                "required": [],
+                "type": "string",
+                "description": "The Facet Name is configured as a searchable facet for filtering.",
+                "title": "Facet Name",
+                "meta:xdmType": "string"
+              },
+              "value": {
+                "required": [],
+                "type": "string",
+                "description": "The Facet Value is a specific value of the Facet Name customers use to filter their search results.",
+                "title": "Attribute Value",
+                "meta:xdmType": "string"
+              },
+              "score": {
+                "required": [],
+                "type": "integer",
+                "description": "The Weighted Score is calculated daily based on the customer click/conversion events.",
+                "title": "Weighted Score",
+                "minimum": 0,
+                "maximum": 20,
+                "meta:xdmType": "int"
+              },
+              "indices": {
+                "items": {
+                  "type": "string",
+                  "meta:xdmType": "string"
+                },
+                "required": [],
+                "type": "array",
+                "description": "The Index/Indices return an array of index/indices where the facet has been configured.",
+                "title": "Search Indices",
+                "meta:xdmType": "array"
+              }
+            },
+            "required": [],
+            "type": "object",
+            "meta:xdmType": "object"
+          },
+          "required": [],
+          "type": "array",
+          "title": "User Affinities",
+          "meta:xdmType": "array"
+        },
+        "userToken": {
+          "required": [],
+          "type": "string",
+          "description": "",
+          "title": "User Token",
+          "meta:xdmType": "string"
+        }
+      },
+      "meta:xdmType": "object",
+      "required": []
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/algolia-profile",
+      "type": "object",
+      "meta:xdmType": "object"
+    }
+  ]
+}

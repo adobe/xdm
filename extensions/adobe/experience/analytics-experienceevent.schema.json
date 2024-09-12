@@ -21,6 +21,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
     "https://ns.adobe.com/xdm/context/experienceevent-marketing",
     "https://ns.adobe.com/xdm/context/experienceevent-media",
+    "https://ns.adobe.com/xdm/mixins/experienceevent-media-analytics",
     "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
     "https://ns.adobe.com/xdm/context/experienceevent-search",
     "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
@@ -64,6 +65,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-media"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-media-analytics"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch"

@@ -32,22 +32,22 @@
                "type":"array",
                "items":{
                   "$ref":"https://ns.fhir.org/datatypes/contactpoint"
+               },
+               "xdm:address":{
+                  "title":"Address",
+                  "description":"Address for the contact.",
+                  "$ref":"https://ns.fhir.org/datatypes/address"
+               },
+               "xdm:organization":{
+                  "title":"Organization",
+                  "description":"This contact detail is handled/monitored by a specific organization.",
+                  "$ref":"https://ns.fhir.org/datatypes/reference"
+               },
+               "xdm:period":{
+                  "title":"Period",
+                  "description":"Period that this contact was valid for usage.",
+                  "$ref":"https://ns.fhir.org/datatypes/period"
                }
-            },
-            "xdm:address":{
-               "title":"Address",
-               "description":"Address for the contact.",
-               "$ref":"https://ns.fhir.org/datatypes/address"
-            },
-            "xdm:organization":{
-               "title":"Organization",
-               "description":"This contact detail is handled/monitored by a specific organization.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
-            },
-            "xdm:period":{
-               "title":"Period",
-               "description":"Period that this contact was valid for usage.",
-               "$ref":"https://ns.fhir.org/datatypes/period"
             }
          }
       }
@@ -59,3 +59,6 @@
    ],
    "meta:status":"experimental"
 }
+
+
+

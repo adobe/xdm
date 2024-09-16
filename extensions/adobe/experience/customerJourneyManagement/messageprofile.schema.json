@@ -127,6 +127,12 @@
           "title": "Profile Phone Number",
           "type": "string",
           "description": "Phone Number from whihc we recevied the Inbound message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/origTimestamp": {
+          "title": "Original Timestamp ",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp from Provider"
         }
       }
     }

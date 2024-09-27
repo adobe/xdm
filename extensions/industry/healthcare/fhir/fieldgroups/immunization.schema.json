@@ -23,7 +23,7 @@
    "definitions":{
       "immunization":{
          "properties":{
-            "xdm:fhir":{
+            "xdm:healthcareImmunization":{
                "type":"object",
                "properties":{
                   "xdm:identifier":{

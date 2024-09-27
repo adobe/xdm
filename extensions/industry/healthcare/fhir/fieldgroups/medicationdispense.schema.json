@@ -25,7 +25,7 @@
    "definitions":{
       "medicationDispense":{
          "properties":{
-            "xdm:fhirmedicationDispense":{
+            "xdm:healthcareMedicationDispense":{
                "type":"object",
                "properties":{
                   "fhir:identifier":{

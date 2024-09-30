@@ -1,19 +1,15 @@
 {
-  "$id":"https://ns.algolia.com/xdm/algolia/fieldgroup/event",
-  "$schema":"http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.algolia.com/xdm/algolia/fieldgroup/event",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Algolia Event Details",
   "type": "object",
   "meta:extensible": false,
   "meta:status": "experimental",
   "description": "Algolia gathers clicks/conversation data that is used to track click/conversion evnets.  It will also unlock Algolia AI features. This field group is a standard field group that can be used to map to these events.",
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "algolia-event": {
-      "required": [
-        "userToken"
-      ],
+      "required": ["userToken"],
       "type": "object",
       "properties": {
         "objectData": {

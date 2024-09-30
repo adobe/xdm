@@ -1,14 +1,12 @@
 {
-  "$id":"https://ns.algolia.com/xdm/algolia/fieldgroup/profile",
-  "$schema":"http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.algolia.com/xdm/algolia/fieldgroup/profile",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Algolia Profile Details",
   "type": "object",
   "meta:extensible": false,
   "meta:status": "experimental",
   "description": "Algolia gathers user's click/conversion events to build user profiles for personalization and A/B testing. This field group properties aligns with the Algolia user profile structure.",
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "definitions": {
     "algolia-profile": {
       "properties": {

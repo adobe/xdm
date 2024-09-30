@@ -1,0 +1,144 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-content",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "title": "PathFactory Content Fieldgroup Details",
+  "type": "object",
+  "description": "This Field Group helps in organizing and storing key metadata for content assets. It includes details such as creation and update timestamps, titles, language, media type, and unique identifiers. This schema is essential for managing, categorizing, and delivering content effectively within PathFactory, ensuring each asset is easily identifiable and ready for personalized user experiences.",
+  "definitions": {
+    "pfContentFields": {
+      "properties": {
+        "pathfactory:content": {
+          "title": "Pathfactory Content",
+          "description": "Pathfactory Content Field Object is used to get all the information related to Content which can be used for the analytics purpose and for content recommendations",
+          "required": [
+            "xdm:contentID",
+            "xdm:createdAtUTC",
+            "xdm:title",
+            "xdm:internalTitle"
+          ],
+          "type": "object",
+          "properties": {
+            "xdm:createdAtUTC": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Defines the Date in UTC format for a Content created in PathFactory platform",
+              "title": "Created AT UTC",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:contentID": {
+              "required": [],
+              "type": "integer",
+              "description": "Defines the unique ID assigned to a Content",
+              "title": "Content ID",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:updatedAtUTC": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Defines the Date in UTC format for a Content/Asset updated in PathFactory platform",
+              "title": "Updated AT UTC",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:title": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the title of the Content",
+              "title": "Content Title",
+              "meta:xdmType": "string"
+            },
+            "xdm:internalTitle": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the title given to the Content to be used within PathFactory platform",
+              "title": "Content Internal Title",
+              "meta:xdmType": "string"
+            },
+            "xdm:slug": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the Custom URL slug given to a Content in PathFactory platform",
+              "title": "Content URL Slug",
+              "meta:xdmType": "string"
+            },
+            "xdm:language": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the language in which the Content is displayed in PathFactory platform",
+              "title": "Language",
+              "meta:xdmType": "string"
+            },
+            "xdm:description": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the description about the Content",
+              "title": "Content Description",
+              "meta:xdmType": "string"
+            },
+            "xdm:sourceURL": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the source URL from where the Content was imported into the PathFactory platform",
+              "title": "Source URL",
+              "meta:xdmType": "string"
+            },
+            "xdm:mediaType": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the type of the Content Media (e.g pdf, mp3, png etc)",
+              "title": "Media Type",
+              "meta:xdmType": "string"
+            },
+            "xdm:contentType": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the list of content types assigned to the content. These tags will help the user in finding a specific type of content, such as Ebook or Case Study and can also be made public-facing for your target audiences",
+              "title": "Content Type",
+              "meta:xdmType": "string"
+            },
+            "xdm:externalID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the Content External ID in PathFactory platform",
+              "title": "External ID",
+              "meta:xdmType": "string"
+            },
+            "xdm:thumbnail": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the string value of thumbnail for a Content",
+              "title": "Thumbnail",
+              "meta:xdmType": "string"
+            },
+            "xdm:UUID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the 128 bit unique ID assigned to a Content",
+              "title": "Content UUID",
+              "meta:xdmType": "string"
+            }
+          },
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfContentFields"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -5,7 +5,7 @@
       "you may not use this file except in compliance with the License. You may obtain a copy",
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
-   "$id":"https://ns.fhir.org/fieldgroup/immunization",
+   "$id":"https://ns.fhir.org/fieldgroups/immunization",
    "$schema":"http://json-schema.org/draft-06/schema#",
    "title":"Immunization",
    "type":"object",
@@ -15,8 +15,7 @@
       ]
    },
    "meta:intendedToExtend":[
-      "https://ns.adobe.com/xdm/context/profile",
-      "https://ns.adobe.com/xdm/classes/provider"
+      "https://ns.adobe.com/xdm/context/experienceevent"
    ],
    "meta:extensible":true,
    "meta:abstract":true,
@@ -24,261 +23,266 @@
    "definitions":{
       "immunization":{
          "properties":{
-            "fhir:identifier":{
-               "title":"Identifier",
-               "description":"Business identifier.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/identifier"
-               }
-            },
-            "fhir:basedOn":{
-               "title":"Based On",
-               "description":"Authority that the immunization event is based on.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/reference"
-               }
-            },
-            "fhir:status":{
-               "title":"Status",
-               "description":"completed | entered-in-error | not-done",
-               "type":"string",
-               "enum":[
-                  "completed",
-                  "entered-in-error",
-                  "not-done"
-               ],
-               "meta:enum":{
-                  "completed":"Completed",
-                  "entered-in-error":"Entered In Error",
-                  "not-done":"Not Done"
-               }
-            },
-            "fhir:statusReason":{
-               "title":"Status Reason",
-               "description":"Reason for current status.",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:vaccineCode":{
-               "title":"Vaccine Code",
-               "description":"Vaccine administered.",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:administeredProduct":{
-               "title":"Administered Product",
-               "description":"Product that was administered.",
-               "$ref":"https://ns.fhir.org/datatypes/codeablereference"
-            },
-            "fhir:manufacturer":{
-               "title":"Manufacturer",
-               "description":"Vaccine manufacturer.",
-               "$ref":"https://ns.fhir.org/datatypes/codeablereference"
-            },
-            "fhir:lotNumber":{
-               "title":"LotNumber",
-               "description":"Vaccine lot number.",
-               "type":"string"
-            },
-            "fhir:expirationDate":{
-               "title":"ExpirationDate",
-               "description":"Vaccine expiration date.",
-               "type":"string",
-               "format":"date"
-            },
-            "fhir:patient":{
-               "title":"Patient",
-               "description":"Who was immunized.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
-            },
-            "fhir:encounter":{
-               "title":"Encounter",
-               "description":"Encounter immunization was part of.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
-            },
-            "fhir:supportingInformation":{
-               "title":"Supporting Information",
-               "description":"Additional information in support of the immunization.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/reference"
-               }
-            },
-            "fhir:occurrenceDateTime":{
-               "title":"Occurrence DateTime",
-               "description":"Vaccine administration Date.",
-               "type":"string",
-               "format":"date-time"
-            },
-            "fhir:occurrenceString":{
-               "title":"Occurrence String",
-               "description":"Vaccine administration Date.",
-               "type":"string"
-            },
-            "fhir:primarySource":{
-               "title":"Primary Source",
-               "description":"Indicates context the data was captured in.",
-               "type":"boolean"
-            },
-            "fhir:informationSource":{
-               "title":"Information Source",
-               "description":"Indicates the source of a reported record.",
-               "$ref":"https://ns.fhir.org/datatypes/codeablereference"
-            },
-            "fhir:location":{
-               "title":"Location",
-               "description":"Where immunization occurred.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
-            },
-            "fhir:site":{
-               "title":"Site",
-               "description":"Body site vaccine was administered.",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:route":{
-               "title":"Route",
-               "description":"How vaccine entered body.",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:doseQuantity":{
-               "title":"Dose Quantity",
-               "description":"Amount of vaccine administered.",
-               "$ref":"https://ns.fhir.org/datatypes/simplequantity"
-            },
-            "fhir:performer":{
-               "title":"Batch",
-               "description":"Who performed event.",
-               "type":"array",
-               "items":{
-                  "type":"object",
-                  "properties":{
-                     "xdm:function":{
-                        "title":"Function",
-                        "description":"What type of performance was done.",
-                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                     },
-                     "xdm:actor":{
-                        "title":"Actor",
-                        "description":"Individual or organization who was performing.",
+            "xdm:healthcareImmunization":{
+               "type":"object",
+               "properties":{
+                  "xdm:identifier":{
+                     "title":"Identifier",
+                     "description":"Business identifier.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/identifier"
+                     }
+                  },
+                  "xdm:basedOn":{
+                     "title":"Based On",
+                     "description":"Authority that the immunization event is based on.",
+                     "type":"array",
+                     "items":{
                         "$ref":"https://ns.fhir.org/datatypes/reference"
                      }
-                  }
-               }
-            },
-            "fhir:note":{
-               "title":"Note",
-               "description":"Additional immunization notes.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/annotation"
-               }
-            },
-            "fhir:reason":{
-               "title":"Reason",
-               "description":"Why immunization occurred.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
-               }
-            },
-            "fhir:isSubpotent":{
-               "title":"Is Subpotent",
-               "description":"Dose potency.",
-               "type":"boolean"
-            },
-            "fhir:subpotentReason":{
-               "title":"Subpotent Reason",
-               "description":"Reason for being subpotent.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               }
-            },
-            "fhir:programEligibility":{
-               "title":"Program Eligibility",
-               "description":"Patient eligibility for a specific vaccination program.",
-               "type":"array",
-               "items":{
-                  "type":"object",
-                  "properties":{
-                     "xdm:program":{
-                        "title":"Program",
-                        "description":"The program that eligibility is declared for.",
-                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                     },
-                     "xdm:programStatus":{
-                        "title":"Program Status",
-                        "description":"TThe patient's eligibility status for the program.",
-                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:status":{
+                     "title":"Status",
+                     "description":"completed | entered-in-error | not-done",
+                     "type":"string",
+                     "enum":[
+                        "completed",
+                        "entered-in-error",
+                        "not-done"
+                     ],
+                     "meta:enum":{
+                        "completed":"Completed",
+                        "entered-in-error":"Entered In Error",
+                        "not-done":"Not Done"
                      }
-                  }
-               }
-            },
-            "fhir:fundingSource":{
-               "title":"Funding Source",
-               "description":"Funding source for the vaccine.",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:reaction":{
-               "title":"Reaction",
-               "description":"Details of a reaction that follows immunization.",
-               "type":"array",
-               "items":{
-                  "type":"object",
-                  "properties":{
-                     "xdm:date":{
-                        "title":"Date",
-                        "description":"When reaction started.",
-                        "type":"string",
-                        "format":"date-time"
-                     },
-                     "xdm:manifestation":{
-                        "title":"Manifestation",
-                        "description":"Additional information on reaction.",
-                        "$ref":"https://ns.fhir.org/datatypes/codeablereference"
-                     },
-                     "xdm:reported":{
-                        "title":"reported",
-                        "description":"Indicates self-reported reaction.",
-                        "type":"boolean"
-                     }
-                  }
-               }
-            },
-            "fhir:protocolApplied":{
-               "title":"Protocol Applied",
-               "description":"Protocol followed by the provider.",
-               "type":"array",
-               "items":{
-                  "type":"object",
-                  "properties":{
-                     "xdm:series":{
-                        "title":"Series",
-                        "description":"Name of vaccine series.",
-                        "type":"string"
-                     },
-                     "xdm:authority":{
-                        "title":"Authority",
-                        "description":"Who is responsible for publishing the recommendations.",
+                  },
+                  "xdm:statusReason":{
+                     "title":"Status Reason",
+                     "description":"Reason for current status.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:vaccineCode":{
+                     "title":"Vaccine Code",
+                     "description":"Vaccine administered.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:administeredProduct":{
+                     "title":"Administered Product",
+                     "description":"Product that was administered.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                  },
+                  "xdm:manufacturer":{
+                     "title":"Manufacturer",
+                     "description":"Vaccine manufacturer.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                  },
+                  "xdm:lotNumber":{
+                     "title":"LotNumber",
+                     "description":"Vaccine lot number.",
+                     "type":"string"
+                  },
+                  "xdm:expirationDate":{
+                     "title":"ExpirationDate",
+                     "description":"Vaccine expiration date.",
+                     "type":"string",
+                     "format":"date"
+                  },
+                  "xdm:patient":{
+                     "title":"Patient",
+                     "description":"Who was immunized.",
+                     "$ref":"https://ns.fhir.org/datatypes/reference"
+                  },
+                  "xdm:encounter":{
+                     "title":"Encounter",
+                     "description":"Encounter immunization was part of.",
+                     "$ref":"https://ns.fhir.org/datatypes/reference"
+                  },
+                  "xdm:supportingInformation":{
+                     "title":"Supporting Information",
+                     "description":"Additional information in support of the immunization.",
+                     "type":"array",
+                     "items":{
                         "$ref":"https://ns.fhir.org/datatypes/reference"
-                     },
-                     "xdm:targetDisease":{
-                        "title":"Target Disease",
-                        "description":"Vaccine preventatable disease being targeted.",
-                        "type":"array",
-                        "items":{
-                           "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     }
+                  },
+                  "xdm:occurrenceDateTime":{
+                     "title":"Occurrence DateTime",
+                     "description":"Vaccine administration Date.",
+                     "type":"string",
+                     "format":"date-time"
+                  },
+                  "xdm:occurrenceString":{
+                     "title":"Occurrence String",
+                     "description":"Vaccine administration Date.",
+                     "type":"string"
+                  },
+                  "xdm:primarySource":{
+                     "title":"Primary Source",
+                     "description":"Indicates context the data was captured in.",
+                     "type":"boolean"
+                  },
+                  "xdm:informationSource":{
+                     "title":"Information Source",
+                     "description":"Indicates the source of a reported record.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                  },
+                  "xdm:location":{
+                     "title":"Location",
+                     "description":"Where immunization occurred.",
+                     "$ref":"https://ns.fhir.org/datatypes/reference"
+                  },
+                  "xdm:site":{
+                     "title":"Site",
+                     "description":"Body site vaccine was administered.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:route":{
+                     "title":"Route",
+                     "description":"How vaccine entered body.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:doseQuantity":{
+                     "title":"Dose Quantity",
+                     "description":"Amount of vaccine administered.",
+                     "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+                  },
+                  "xdm:performer":{
+                     "title":"Batch",
+                     "description":"Who performed event.",
+                     "type":"array",
+                     "items":{
+                        "type":"object",
+                        "properties":{
+                           "xdm:function":{
+                              "title":"Function",
+                              "description":"What type of performance was done.",
+                              "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                           },
+                           "xdm:actor":{
+                              "title":"Actor",
+                              "description":"Individual or organization who was performing.",
+                              "$ref":"https://ns.fhir.org/datatypes/reference"
+                           }
                         }
-                     },
-                     "xdm:doseNumber":{
-                        "title":"Dose Number",
-                        "description":"Dose number within series.",
-                        "type":"string"
-                     },
-                     "xdm:seriesDoses":{
-                        "title":"Series Doses",
-                        "description":"Recommended number of doses for immunity.",
-                        "type":"string"
+                     }
+                  },
+                  "xdm:note":{
+                     "title":"Note",
+                     "description":"Additional immunization notes.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/annotation"
+                     }
+                  },
+                  "xdm:reason":{
+                     "title":"Reason",
+                     "description":"Why immunization occurred.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                     }
+                  },
+                  "xdm:isSubpotent":{
+                     "title":"Is Subpotent",
+                     "description":"Dose potency.",
+                     "type":"boolean"
+                  },
+                  "xdm:subpotentReason":{
+                     "title":"Subpotent Reason",
+                     "description":"Reason for being subpotent.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     }
+                  },
+                  "xdm:programEligibility":{
+                     "title":"Program Eligibility",
+                     "description":"Patient eligibility for a specific vaccination program.",
+                     "type":"array",
+                     "items":{
+                        "type":"object",
+                        "properties":{
+                           "xdm:program":{
+                              "title":"Program",
+                              "description":"The program that eligibility is declared for.",
+                              "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                           },
+                           "xdm:programStatus":{
+                              "title":"Program Status",
+                              "description":"TThe patient's eligibility status for the program.",
+                              "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                           }
+                        }
+                     }
+                  },
+                  "xdm:fundingSource":{
+                     "title":"Funding Source",
+                     "description":"Funding source for the vaccine.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:reaction":{
+                     "title":"Reaction",
+                     "description":"Details of a reaction that follows immunization.",
+                     "type":"array",
+                     "items":{
+                        "type":"object",
+                        "properties":{
+                           "xdm:date":{
+                              "title":"Date",
+                              "description":"When reaction started.",
+                              "type":"string",
+                              "format":"date-time"
+                           },
+                           "xdm:manifestation":{
+                              "title":"Manifestation",
+                              "description":"Additional information on reaction.",
+                              "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                           },
+                           "xdm:reported":{
+                              "title":"reported",
+                              "description":"Indicates self-reported reaction.",
+                              "type":"boolean"
+                           }
+                        }
+                     }
+                  },
+                  "xdm:protocolApplied":{
+                     "title":"Protocol Applied",
+                     "description":"Protocol followed by the provider.",
+                     "type":"array",
+                     "items":{
+                        "type":"object",
+                        "properties":{
+                           "xdm:series":{
+                              "title":"Series",
+                              "description":"Name of vaccine series.",
+                              "type":"string"
+                           },
+                           "xdm:authority":{
+                              "title":"Authority",
+                              "description":"Who is responsible for publishing the recommendations.",
+                              "$ref":"https://ns.fhir.org/datatypes/reference"
+                           },
+                           "xdm:targetDisease":{
+                              "title":"Target Disease",
+                              "description":"Vaccine preventatable disease being targeted.",
+                              "type":"array",
+                              "items":{
+                                 "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                              }
+                           },
+                           "xdm:doseNumber":{
+                              "title":"Dose Number",
+                              "description":"Dose number within series.",
+                              "type":"string"
+                           },
+                           "xdm:seriesDoses":{
+                              "title":"Series Doses",
+                              "description":"Recommended number of doses for immunity.",
+                              "type":"string"
+                           }
+                        }
                      }
                   }
                }

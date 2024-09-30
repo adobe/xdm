@@ -1,0 +1,130 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-visitor",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "title": "PathFactory Visitor Fieldgroup Details",
+  "type": "object",
+  "description": "This Field Group represents specific attributes or data points within the visitor schema that PathFactory uses to understand and categorize user interactions. These schema fields are essential for tailoring content experiences, enabling personalized pathways, and capturing insights into visitor behavior. The data collected through these fields helps in building comprehensive visitor profiles, facilitating targeted marketing efforts, and enhancing the overall user journey on the platform.",
+  "definitions": {
+    "pfVisitorFields": {
+      "properties": {
+        "pathfactory:visitor": {
+          "title": "Pathfactory Visitor",
+          "description": "Pathfactory Visitor Object is used to get all the information related to Visitor which can be used for the analytics purpose and for more personalised user exeprience",
+          "type": "object",
+          "properties": {
+            "xdm:createdAtUTC": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Defines the Date in UTC format when a new Visitor is created in PathFactory platform",
+              "title": "Created At (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:emailDomain": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the email domain of a Visitor",
+              "title": "Email Domain",
+              "meta:xdmType": "string"
+            },
+            "xdm:email": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the email address of a Visitor",
+              "title": "Email",
+              "meta:xdmType": "string"
+            },
+            "xdm:visitorECID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the Adobe ECID of a Visitor",
+              "title": "Adobe ECID",
+              "meta:xdmType": "string"
+            },
+            "xdm:lastVisitTimeUTC": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Defines the Date in UTC format when Visitor last visited any page in PathFactory platform",
+              "title": "Last Visit Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:visitorID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the unique ID assigned to a Visitor",
+              "title": "Visitor ID",
+              "meta:xdmType": "string"
+            },
+            "xdm:visitorUUID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the 128 bit unique ID assigned to a Visitor",
+              "title": "Visitor UUID",
+              "meta:xdmType": "string"
+            },
+            "xdm:visitorIdentity": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the unique Identity assigned to a Visitor in PathFactory platform",
+              "title": "Visitor Identity",
+              "meta:xdmType": "string"
+            },
+            "xdm:isKnown": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if the Visitor is already known to the PathFactory platform or not",
+              "title": "Is Known",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:knownFrom": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Defines the Date in general format since when the Visitor is known to the PathFactory platform",
+              "title": "Known From",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:firstVisitTimeUTC": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Defines the Date in UTC format when the Visitor first visited any page in PathFactory platform",
+              "title": "First Visit Time (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:identityECID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the unique ECID assigned to a Visitor",
+              "title": "Identity ECID",
+              "meta:xdmType": "string"
+            }
+          },
+          "meta:xdmType": "object",
+          "required": [
+            "xdm:visitorID",
+            "xdm:visitorUUID",
+            "xdm:visitorIdentity",
+            "xdm:isKnown"
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfVisitorFields"
+    }
+  ],
+  "meta:status": "experimental"
+}

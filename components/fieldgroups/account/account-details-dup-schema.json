@@ -1,0 +1,40 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/account-details-dup",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Account Details - TEST ONLY - DO NOT USE",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
+  "description": "Collects all details related to a customer's user account including contact details and account preferences.",
+  "meta:sensitive-data": true,
+  "definitions": {
+    "account-details": {
+      "properties": {
+        "xdm:accountName": {
+          "title": "Account Name",
+          "description": "name of company. Up to 255 characters are allowed in this field.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/account-details"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-27",
+  "meta:titleId": "account-details##title##16521",
+  "meta:descriptionId": "account-details##description##72981"
+}

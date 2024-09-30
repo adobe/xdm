@@ -28,7 +28,7 @@
             "xdm:healthcareMedicationRequest":{
                "type":"object",
                "properties":{
-                  "fhir:identifier":{
+                  "xdm:identifier":{
                      "title":"Identifier",
                      "description":"Identifiers associated with this medication request that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate.",
                      "type":"array",

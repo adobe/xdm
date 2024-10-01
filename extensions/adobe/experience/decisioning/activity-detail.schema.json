@@ -26,9 +26,7 @@
         "xdm:priority": {
           "title": "Activity Priority",
           "type": "integer",
-          "description": "Priority set for the activity during publication.",
-          "meta:titleId": "activity-detail##xdm:priority##title##69851",
-          "meta:descriptionId": "activity-detail##xdm:priority##description##18591"
+          "description": "Priority set for the activity during publication."
         },
         "repo:etag": {
           "title": "Activity ETag",

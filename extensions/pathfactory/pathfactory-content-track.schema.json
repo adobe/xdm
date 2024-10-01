@@ -1,0 +1,236 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/pathfactory-contenttrack",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "title": "PathFactory Content Track Fieldgroup Details",
+  "type": "object",
+  "description": "This Field group captures and organizes metadata related to content tracks. It includes information such as track titles, content sequencing, and associated content assets. This schema is essential for managing how content is grouped, presented, and tracked within PathFactory, enabling personalized content journeys and providing insights into user engagement with specific content tracks.",
+  "definitions": {
+    "pfContentTrackFields": {
+      "properties": {
+        "pathfactory:contentTrack": {
+          "type": "object",
+          "title": "Pathfactory Content Track",
+          "description": "Pathfactory Content Track Field Object is used to get all the information related to Content Track which can be used for the analytics purpose and for content track recommendations",
+          "properties": {
+            "xdm:createdAtUTC": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Defines the Date in UTC format for a Content Track Experience created in PathFactory platform",
+              "title": "Created Date (UTC)",
+              "meta:xdmType": "date-time"
+            },
+            "xdm:appID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines 128 bit unique ID assigned to a Client's Organization in PathFactory platform",
+              "title": "App ID",
+              "meta:xdmType": "string"
+            },
+            "xdm:isDeleted": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if the Content Track Experience is deleted in PathFactory platform",
+              "title": "Deleted",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:experienceCustomURL": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the Custom URL given to Content Track Experience in PathFactory platform",
+              "title": "Experience Custom URL",
+              "meta:xdmType": "string"
+            },
+            "xdm:experienceID": {
+              "required": [],
+              "type": "integer",
+              "description": "Defines the unique ID assigned to a Content Track Experience in PathFactory platform",
+              "title": "Experience ID",
+              "meta:xdmType": "int",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            "xdm:externalID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the Content Track Experience External ID in PathFactory platform",
+              "title": "Experience External ID",
+              "meta:xdmType": "string"
+            },
+            "xdm:experienceName": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the name given to Content Track Experience in PathFactory platform",
+              "title": "Experience Name",
+              "meta:xdmType": "string"
+            },
+            "xdm:experienceType": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the type of the Content Track Experience in PathFactory platform",
+              "title": "Experience Type (PathFactory Experience)",
+              "meta:xdmType": "string"
+            },
+            "xdm:folderID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the folder ID under which Content Track Experience is created in PathFactory platform",
+              "title": "Folder ID (PathFactory)",
+              "meta:xdmType": "string"
+            },
+            "xdm:isSidebarEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if sidebar has been enabled to show on Content Track Experience",
+              "title": "Is Sidebar Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isBottomBarEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if bottom bar has been enabled to show on Content Track Experience",
+              "title": "IS Bottom Bar Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isCardEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if card has been enabled to show on Content Track Experience",
+              "title": "Is Card Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isExitEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if exit promotor has been enabled to show on Content Track Experience",
+              "title": "Is Exit Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isInactivityEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if inactivity promotor has been enabled to show on Content Track Experience",
+              "title": "Is Inactivity Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isShareEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if share has been enabled",
+              "title": "Is Share Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isCaptureEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if form capture has been enabled",
+              "title": "Is Capture Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:experienceUUID": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the 128 bit unique ID assigned to a Content Track Experience",
+              "title": "Experience Unique ID",
+              "meta:xdmType": "string"
+            },
+            "xdm:isCookieConsentEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if cookie consent has been enabled on Content Track Experience",
+              "title": "Is Cookie Consent Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isGDPRCookieConsentEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if GDPR cookie consent has been enabled on Content Track Experience",
+              "title": "Is GDPR Cookie Consent Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isHeaderEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if header section has been enabled to show on Content Track Experience",
+              "title": "Is Header Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isCookieMessageEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if a message displaying detailed information of cookies needs to be shown on a Content Track Experience",
+              "title": "Is Cookie Message Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isFlowEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if the flow promoter has been enabled for a Content Track Experience. It is used to show the next button which displays the next content in the Content track",
+              "title": "Is Flow Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isSignpostEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if the signpost has been enabled for a Content Track Experience. It is used to show previous and next button which displays the next and previous content in the Content track",
+              "title": "Is Signpost Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isTopicSidebarEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if the topic sidebar has been enabled for a Content Track Experience. It is used to show Content track in sidebar",
+              "title": "is topic sidebar enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isLikeEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if the like has been enabled to show like icon on Content Experience",
+              "title": "Is Like Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:isEndEnabled": {
+              "required": [],
+              "type": "boolean",
+              "description": "Boolean variable to check if an End promotor has been enabled to show on the last content of the Content Track Experience",
+              "title": "Is End Enabled",
+              "meta:xdmType": "boolean"
+            },
+            "xdm:targetContentOrder": {
+              "required": [],
+              "type": "string",
+              "description": "Defines the order in which Content should be ordered on the Content Track Experience",
+              "title": "Target Content Order",
+              "meta:xdmType": "string"
+            },
+            "xdm:updatedAtUTC": {
+              "required": [],
+              "format": "date-time",
+              "type": "string",
+              "description": "Defines the Date in UTC format for a Content Track Experience updated in PathFactory platform",
+              "title": "Updated Date (UTC)",
+              "meta:xdmType": "date-time"
+            }
+          },
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pfContentTrackFields"
+    }
+  ],
+  "meta:status": "experimental"
+}

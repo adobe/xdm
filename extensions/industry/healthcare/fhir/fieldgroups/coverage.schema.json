@@ -243,7 +243,6 @@
                   "xdm:contract":{
                      "title":"Contract Details",
                      "description":"The policy(s) which constitute this insurance coverage.",
-                     "description":"The insurer assigned ID for the Subscriber.",
                      "type":"array",
                      "items":{
                         "$ref":"https://ns.fhir.org/datatypes/reference"

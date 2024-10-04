@@ -24,65 +24,70 @@
    "definitions":{
       "schedule":{
          "properties":{
-            "fhir:identifier":{
-               "title":"Identifier",
-               "description":"External identifiers for this item.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/identifier"
+            "xdm:healthcareSchedule":{
+               "type":"object",
+               "properties":{
+                  "xdm:identifier":{
+                     "title":"Identifier",
+                     "description":"External identifiers for this item.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/identifier"
+                     }
+                  },
+                  "xdm:active":{
+                     "title":"Active",
+                     "description":"Whether this schedule record is in active use or should not be used (such as was entered in error).",
+                     "type":"boolean"
+                  },
+                  "xdm:serviceCategory":{
+                     "title":"Service Category",
+                     "description":"A broad categorization of the service that is to be performed during this appointment.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     }
+                  },
+                  "xdm:serviceType":{
+                     "title":"Service Type",
+                     "description":"The specific service that is to be performed during this appointment.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/codeablereference"
+                     }
+                  },
+                  "xdm:specialty":{
+                     "title":"Specialty",
+                     "description":"The specialty of a practitioner that would be required to perform the service requested in this appointment.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     }
+                  },
+                  "xdm:name":{
+                     "title":"Name",
+                     "description":"Further description of the schedule as it would be presented to a consumer while searching.",
+                     "type":"string"
+                  },
+                  "xdm:actor":{
+                     "title":"Actor",
+                     "description":"Slots that reference this schedule resource provide the availability details to these referenced resource(s).",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     }
+                  },
+                  "xdm:planningHorizon":{
+                     "title":"Planning Horizon",
+                     "description":"The period of time that the slots that reference this Schedule resource cover (even if none exist). These cover the amount of time that an organization's planning horizon; the interval for which they are currently accepting appointments. This does not define a \"template\" for planning outside these dates.",
+                     "$ref":"https://ns.fhir.org/datatypes/period"
+                  },
+                  "xdm:comment":{
+                     "title":"Comment",
+                     "description":"Comments on the availability to describe any extended information. Such as custom constraints on the slots that may be associated.",
+                     "type":"string"
+                  }
                }
-            },
-            "fhir:active":{
-               "title":"Active",
-               "description":"Whether this schedule record is in active use or should not be used (such as was entered in error).",
-               "type":"boolean"
-            },
-            "fhir:serviceCategory":{
-               "title":"Service Category",
-               "description":"A broad categorization of the service that is to be performed during this appointment.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               }
-            },
-            "fhir:serviceType":{
-               "title":"Service Type",
-               "description":"The specific service that is to be performed during this appointment.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
-               }
-            },
-            "fhir:specialty":{
-               "title":"Specialty",
-               "description":"The specialty of a practitioner that would be required to perform the service requested in this appointment.",
-               "type":"array",
-               "items":{
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            }
-            },
-            "fhir:name":{
-               "title":"Name",
-               "description":"Further description of the schedule as it would be presented to a consumer while searching.",
-               "type":"string"
-            },
-            "fhir:actor":{
-               "title":"Actor",
-               "description":"Slots that reference this schedule resource provide the availability details to these referenced resource(s).",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/reference"
-               }
-            },
-            "fhir:planningHorizon":{
-               "title":"Planning Horizon",
-               "description":"The period of time that the slots that reference this Schedule resource cover (even if none exist). These cover the amount of time that an organization's planning horizon; the interval for which they are currently accepting appointments. This does not define a \"template\" for planning outside these dates.",
-               "$ref":"https://ns.fhir.org/datatypes/period"
-            },
-            "fhir:comment":{
-               "title":"Comment",
-               "description":"Comments on the availability to describe any extended information. Such as custom constraints on the slots that may be associated.",
-               "type":"string"
             }
          }
       }

@@ -24,184 +24,189 @@
    "definitions":{
       "goal":{
          "properties":{
-            "fhir:identifier":{
-               "title":"Identifier",
-               "description":"Business identifiers assigned to this goal by the performer or other systems which remain constant as the resource is updated and propagates from server to server.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/identifier"
-               }
-            },
-            "fhir:lifecycleStatus":{
-               "title":"Lifecycle Status",
-               "description":"proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected",
-               "type":"string",
-               "enum":[
-                  "proposed",
-                  "planned",
-                  "accepted",
-                  "active",
-                  "on-hold",
-                  "completed",
-                  "cancelled",
-                  "entered-in-error",
-                  "rejected"
-               ],
-               "meta:enum":{
-                  "proposed":"Proposed",
-                  "planned":"Planned",
-                  "accepted":"Accepted",
-                  "active":"Active",
-                  "on-hold":"On Hold",
-                  "completed":"Completed",
-                  "cancelled":"Cancelled",
-                  "entered-in-error":"Entered In Error",
-                  "rejected":"Rejected"
-               }
-            },
-            "fhir:achievementStatus":{
-               "title":"Achievement Status",
-               "description":"Describes the progression, or lack thereof, towards the goal against the target (in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable).",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:category":{
-               "title":"Category",
-               "description":"Indicates a category the goal falls within. E.g. Treatment, dietary, behavioral, etc.",
-               "type":"array",
-               "items":{
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            }
-            },
-            "fhir:continuous":{
-               "title":"Continuous",
-               "description":"After meeting the goal, ongoing activity is needed to sustain the goal objective.",
-               "type":"boolean"
-            },
-            "fhir:priority":{
-               "title":"Priority",
-               "description":"Identifies the mutually agreed level of importance associated with reaching/sustaining the goal. e.g. high-priority | medium-priority | low-priority.",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:description":{
-               "title":"Description",
-               "description":"Code or text describing goal.",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:subject":{
-               "title":"Subject",
-               "description":"Identifies the patient, group or organization for whom the goal is being established.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
-            },
-            "fhir:startDate":{
-               "title":"Start Date",
-               "description":"The date after which the goal should begin being pursued.",
-               "type":"string",
-               "format":"date"
-            },
-            "fhir:startCodeableConcept":{
-               "title":"Start Codeable Concept",
-               "description":"The event after which the goal should begin being pursued..",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:target":{
-               "title":"Target",
-               "description":"Indicates what should be done by when.",
-               "type":"array",
-               "items":{
-                  "type":"object",
-                  "properties":{
-                     "xdm:measure":{
-                        "title":"Measure",
-                        "description":"The parameter whose value is being tracked.",
+            "xdm:healthcareGoal":{
+               "type":"object",
+               "properties":{
+                  "xdm:identifier":{
+                     "title":"Identifier",
+                     "description":"Business identifiers assigned to this goal by the performer or other systems which remain constant as the resource is updated and propagates from server to server.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/identifier"
+                     }
+                  },
+                  "xdm:lifecycleStatus":{
+                     "title":"Lifecycle Status",
+                     "description":"proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected",
+                     "type":"string",
+                     "enum":[
+                        "proposed",
+                        "planned",
+                        "accepted",
+                        "active",
+                        "on-hold",
+                        "completed",
+                        "cancelled",
+                        "entered-in-error",
+                        "rejected"
+                     ],
+                     "meta:enum":{
+                        "proposed":"Proposed",
+                        "planned":"Planned",
+                        "accepted":"Accepted",
+                        "active":"Active",
+                        "on-hold":"On Hold",
+                        "completed":"Completed",
+                        "cancelled":"Cancelled",
+                        "entered-in-error":"Entered In Error",
+                        "rejected":"Rejected"
+                     }
+                  },
+                  "xdm:achievementStatus":{
+                     "title":"Achievement Status",
+                     "description":"Describes the progression, or lack thereof, towards the goal against the target (in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable).",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:category":{
+                     "title":"Category",
+                     "description":"Indicates a category the goal falls within. E.g. Treatment, dietary, behavioral, etc.",
+                     "type":"array",
+                     "items":{
                         "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                     },
-                     "xdm:detailQuantity":{
-                        "title":"Detail Quantity",
-                        "description":"The target Quantity to be achieved to signify the fulfillment of the goal.",
-                        "$ref":"https://ns.fhir.org/datatypes/quantity"
-                     },
-                     "xdm:detailRange":{
-                        "title":"Detail Range",
-                        "description":"The target Range to be achieved to signify the fulfillment of the goal.",
-                        "$ref":"https://ns.fhir.org/datatypes/range"
-                     },
-                     "xdm:detailCodeableConcept":{
-                        "title":"Detail Codeable Concept",
-                        "description":"A CodeableConcept to be achieved to signify the fulfillment of the goal..",
-                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                     },
-                     "xdm:detailString":{
-                        "title":"Detail String",
-                        "description":"The target value to be achieved to signify the fulfillment of the goal.",
-                        "type":"string"
-                     },
-                     "xdm:detailBoolean":{
-                        "title":"Detail Boolean",
-                        "description":"Boolean flag to indicate the fulfillment of the goal.",
-                        "type":"boolean"
-                     },
-                     "xdm:detailInteger":{
-                        "title":"Detail Integer",
-                        "description":"The target value number to be achieved to signify the fulfillment of the goal.",
-                        "type":"integer"
-                     },
-                     "xdm:detailRatio":{
-                        "title":"Detail Ratio",
-                        "description":"The target value in ratio to be achieved to signify the fulfillment of the goal.",
-                        "$ref":"https://ns.fhir.org/datatypes/ratio"
-                     },
-                     "xdm:dueDate":{
-                        "title":"Due Date",
-                        "description":"Indicates the date after start by which the goal should be met.",
-                        "type":"string",
-                        "format":"date"
-                     },
-                     "xdm:dueDuration":{
-                        "title":"Due Duration",
-                        "description":"Indicates the duration after start by which the goal should be met.",
-                        "$ref":"https://ns.fhir.org/datatypes/duration"
+                     }
+                  },
+                  "xdm:continuous":{
+                     "title":"Continuous",
+                     "description":"After meeting the goal, ongoing activity is needed to sustain the goal objective.",
+                     "type":"boolean"
+                  },
+                  "xdm:priority":{
+                     "title":"Priority",
+                     "description":"Identifies the mutually agreed level of importance associated with reaching/sustaining the goal. e.g. high-priority | medium-priority | low-priority.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:description":{
+                     "title":"Description",
+                     "description":"Code or text describing goal.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:subject":{
+                     "title":"Subject",
+                     "description":"Identifies the patient, group or organization for whom the goal is being established.",
+                     "$ref":"https://ns.fhir.org/datatypes/reference"
+                  },
+                  "xdm:startDate":{
+                     "title":"Start Date",
+                     "description":"The date after which the goal should begin being pursued.",
+                     "type":"string",
+                     "format":"date"
+                  },
+                  "xdm:startCodeableConcept":{
+                     "title":"Start Codeable Concept",
+                     "description":"The event after which the goal should begin being pursued..",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:target":{
+                     "title":"Target",
+                     "description":"Indicates what should be done by when.",
+                     "type":"array",
+                     "items":{
+                        "type":"object",
+                        "properties":{
+                           "xdm:measure":{
+                              "title":"Measure",
+                              "description":"The parameter whose value is being tracked.",
+                              "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                           },
+                           "xdm:detailQuantity":{
+                              "title":"Detail Quantity",
+                              "description":"The target Quantity to be achieved to signify the fulfillment of the goal.",
+                              "$ref":"https://ns.fhir.org/datatypes/quantity"
+                           },
+                           "xdm:detailRange":{
+                              "title":"Detail Range",
+                              "description":"The target Range to be achieved to signify the fulfillment of the goal.",
+                              "$ref":"https://ns.fhir.org/datatypes/range"
+                           },
+                           "xdm:detailCodeableConcept":{
+                              "title":"Detail Codeable Concept",
+                              "description":"A CodeableConcept to be achieved to signify the fulfillment of the goal..",
+                              "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                           },
+                           "xdm:detailString":{
+                              "title":"Detail String",
+                              "description":"The target value to be achieved to signify the fulfillment of the goal.",
+                              "type":"string"
+                           },
+                           "xdm:detailBoolean":{
+                              "title":"Detail Boolean",
+                              "description":"Boolean flag to indicate the fulfillment of the goal.",
+                              "type":"boolean"
+                           },
+                           "xdm:detailInteger":{
+                              "title":"Detail Integer",
+                              "description":"The target value number to be achieved to signify the fulfillment of the goal.",
+                              "type":"integer"
+                           },
+                           "xdm:detailRatio":{
+                              "title":"Detail Ratio",
+                              "description":"The target value in ratio to be achieved to signify the fulfillment of the goal.",
+                              "$ref":"https://ns.fhir.org/datatypes/ratio"
+                           },
+                           "xdm:dueDate":{
+                              "title":"Due Date",
+                              "description":"Indicates the date after start by which the goal should be met.",
+                              "type":"string",
+                              "format":"date"
+                           },
+                           "xdm:dueDuration":{
+                              "title":"Due Duration",
+                              "description":"Indicates the duration after start by which the goal should be met.",
+                              "$ref":"https://ns.fhir.org/datatypes/duration"
+                           }
+                        }
+                     }
+                  },
+                  "xdm:statusDate":{
+                     "title":"Status Date",
+                     "description":"Identifies when the current status. I.e. When initially created, when achieved, when cancelled, etc.",
+                     "type":"string",
+                     "format":"date"
+                  },
+                  "xdm:statusReason":{
+                     "title":"Status Reason",
+                     "description":"Captures the reason for the current status.",
+                     "type":"string"
+                  },
+                  "xdm:source":{
+                     "title":"Source",
+                     "description":"Indicates whose goal this is - patient goal, practitioner goal, etc.",
+                     "$ref":"https://ns.fhir.org/datatypes/reference"
+                  },
+                  "xdm:addresses":{
+                     "title":"Addresses",
+                     "description":"The identified conditions and other health record elements that are intended to be addressed by the goal.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     }
+                  },
+                  "xdm:note":{
+                     "title":"Note",
+                     "description":"Comments about the goal.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/annotation"
+                     }
+                  },
+                  "xdm:outccome":{
+                     "title":"Outcome",
+                     "description":"Identifies the change (or lack of change) at the point when the status of the goal is assessed.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/codeablereference"
                      }
                   }
-               }
-            },
-            "fhir:statusDate":{
-               "title":"Status Date",
-               "description":"Identifies when the current status. I.e. When initially created, when achieved, when cancelled, etc.",
-               "type":"string",
-               "format":"date"
-            },
-            "fhir:statusReason":{
-               "title":"Status Reason",
-               "description":"Captures the reason for the current status.",
-               "type":"string"
-            },
-            "fhir:source":{
-               "title":"Source",
-               "description":"Indicates whose goal this is - patient goal, practitioner goal, etc.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
-            },
-            "fhir:addresses":{
-               "title":"Addresses",
-               "description":"The identified conditions and other health record elements that are intended to be addressed by the goal.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/reference"
-               }
-            },
-            "fhir:note":{
-               "title":"Note",
-               "description":"Comments about the goal.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/annotation"
-               }
-            },
-            "fhir:outccome":{
-               "title":"Outcome",
-               "description":"Identifies the change (or lack of change) at the point when the status of the goal is assessed.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeablereference"
                }
             }
          }
@@ -214,4 +219,3 @@
    ],
    "meta:status":"experimental"
 }
-

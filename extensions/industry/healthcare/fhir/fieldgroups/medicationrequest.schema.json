@@ -7,7 +7,7 @@
    ],
    "$id":"https://ns.fhir.org/fieldgroups/medicationrequest",
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "title":"Medication",
+   "title":"Medication Request",
    "type":"object",
    "meta:tags":{
       "industry":[
@@ -142,7 +142,7 @@
                         "stat":"STAT"
                      }
                   },
-                  "fhr:doNotPerform":{
+                  "xdm:doNotPerform":{
                      "title":"Do Not Perform",
                      "description":"True if patient is to stop taking or not to start taking the medication.",
                      "type":"boolean"
@@ -189,7 +189,7 @@
                      "description":"The individual, organization, or device that initiated the request and has responsibility for its activation.",
                      "$ref":"https://ns.fhir.org/datatypes/reference"
                   },
-                  "fhr:reported":{
+                  "xdm:reported":{
                      "title":"Reported",
                      "description":"Indicates if this record was captured as a secondary 'reported' record rather than as an original primary source-of-truth record. It may also indicate the source of the report.",
                      "type":"boolean"

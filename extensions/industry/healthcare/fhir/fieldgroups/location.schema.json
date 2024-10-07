@@ -23,153 +23,158 @@
    "definitions":{
       "location":{
          "properties":{
-            "fhir:identifier":{
-               "title":"Identifier",
-               "description":"Unique code or number identifying the location to its users.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/identifier"
-               }
-            },
-            "fhir:status":{
-               "title":"Status",
-               "description":"active | inactive | suspended",
-               "type":"string",
-               "enum":[
-                  "active",
-                  "inactive",
-                  "suspended"
-               ],
-               "meta:enum":{
-                  "active":"Active",
-                  "inactive":"Inactive",
-                  "suspended":"Suspended"
-               }
-            },
-            "fhir:operationalStatus":{
-               "title":"Operational Status",
-               "description":"The operational status of the location (typically only for a bed/room).",
-               "$ref":"https://ns.fhir.org/datatypes/coding"
-            },
-            "fhir:name":{
-               "title":"Name",
-               "type":"string",
-               "description":"Name of the location as used by humans."
-            },
-            "fhir:alias":{
-               "title":"Alias",
-               "description":"A list of alternate names that the location is known as, or was known as, in the past.",
-               "type":"array",
-               "items":{
-                  "type":"string"
-               }
-            },
-            "fhir:description":{
-               "title":"Description",
-               "type":"string",
-               "description":"Additional details about the location that could be displayed as further information to identify the location beyond its name."
-            },
-            "fhir:mode":{
-               "title":"Mode",
-               "description":"instance | kind.",
-               "type":"string",
-               "enum":[
-                  "instance",
-                  "kind"
-               ],
-               "meta:enum":{
-                  "instance":"Instance",
-                  "kind":"Kind"
-               }
-            },
-            "fhir:type":{
-               "title":"Type",
-               "description":"Type of function performed.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               }
-            },
-            "fhir:contact":{
-               "title":"Contact",
-               "description":"Official contact details for the location.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/extendedcontactdetail"
-               }
-            },
-            "fhir:address":{
-               "title":"Address",
-               "description":"Physical location.",
-               "$ref":"https://ns.fhir.org/datatypes/address"
-            },
-            "fhir:form":{
-               "title":"Form",
-               "description":"Physical form of the location.",
-               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-            },
-            "fhir:position":{
-               "title":"Position",
-               "description":"The absolute geographic location.",
+            "xdm:healthcareLocation":{
                "type":"object",
                "properties":{
-                  "xdm:longitude":{
-                     "title":"Longitude",
-                     "description":"Longitude with WGS84 datum.",
-                     "type":"number"
+                  "xdm:identifier":{
+                     "title":"Identifier",
+                     "description":"Unique code or number identifying the location to its users.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/identifier"
+                     }
                   },
-                  "xdm:latitude":{
-                     "title":"Latitude",
-                     "description":"Latitude with WGS84 datum.",
-                     "type":"number"
+                  "xdm:status":{
+                     "title":"Status",
+                     "description":"active | inactive | suspended",
+                     "type":"string",
+                     "enum":[
+                        "active",
+                        "inactive",
+                        "suspended"
+                     ],
+                     "meta:enum":{
+                        "active":"Active",
+                        "inactive":"Inactive",
+                        "suspended":"Suspended"
+                     }
                   },
-                  "xdm:altitude":{
-                     "title":"Altitude",
-                     "description":"Altitude with WGS84 datum.",
-                     "type":"number"
+                  "xdm:operationalStatus":{
+                     "title":"Operational Status",
+                     "description":"The operational status of the location (typically only for a bed/room).",
+                     "$ref":"https://ns.fhir.org/datatypes/coding"
+                  },
+                  "xdm:name":{
+                     "title":"Name",
+                     "type":"string",
+                     "description":"Name of the location as used by humans."
+                  },
+                  "xdm:alias":{
+                     "title":"Alias",
+                     "description":"A list of alternate names that the location is known as, or was known as, in the past.",
+                     "type":"array",
+                     "items":{
+                        "type":"string"
+                     }
+                  },
+                  "xdm:description":{
+                     "title":"Description",
+                     "type":"string",
+                     "description":"Additional details about the location that could be displayed as further information to identify the location beyond its name."
+                  },
+                  "xdm:mode":{
+                     "title":"Mode",
+                     "description":"instance | kind.",
+                     "type":"string",
+                     "enum":[
+                        "instance",
+                        "kind"
+                     ],
+                     "meta:enum":{
+                        "instance":"Instance",
+                        "kind":"Kind"
+                     }
+                  },
+                  "xdm:type":{
+                     "title":"Type",
+                     "description":"Type of function performed.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     }
+                  },
+                  "xdm:contact":{
+                     "title":"Contact",
+                     "description":"Official contact details for the location.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/extendedcontactdetail"
+                     }
+                  },
+                  "xdm:address":{
+                     "title":"Address",
+                     "description":"Physical location.",
+                     "$ref":"https://ns.fhir.org/datatypes/address"
+                  },
+                  "xdm:form":{
+                     "title":"Form",
+                     "description":"Physical form of the location.",
+                     "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                  },
+                  "xdm:position":{
+                     "title":"Position",
+                     "description":"The absolute geographic location.",
+                     "type":"object",
+                     "properties":{
+                        "xdm:longitude":{
+                           "title":"Longitude",
+                           "description":"Longitude with WGS84 datum.",
+                           "type":"number"
+                        },
+                        "xdm:latitude":{
+                           "title":"Latitude",
+                           "description":"Latitude with WGS84 datum.",
+                           "type":"number"
+                        },
+                        "xdm:altitude":{
+                           "title":"Altitude",
+                           "description":"Altitude with WGS84 datum.",
+                           "type":"number"
+                        }
+                     }
+                  },
+                  "xdm:managingOrganization":{
+                     "title":"Managing Organization",
+                     "description":"Organization responsible for provisioning and upkeep.",
+                     "$ref":"https://ns.fhir.org/datatypes/reference"
+                  },
+                  "xdm:partOf":{
+                     "title":"Part Of Location",
+                     "description":"Another Location this one is physically a part of.",
+                     "$ref":"https://ns.fhir.org/datatypes/reference"
+                  },
+                  "xdm:characteristic":{
+                     "title":"Characteristic",
+                     "description":"Collection of characteristics (attributes).",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                     }
+                  },
+                  "xdm:hoursOfOperation":{
+                     "title":"Hours Of Operation",
+                     "description":"What days/times during a week is this location usually open (including exceptions).",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/availability"
+                     }
+                  },
+                  "xdm:virtualService":{
+                     "title":"Virtual Service",
+                     "description":"Connection details of a virtual service (e.g. conference call).",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/virtualservicedetail"
+                     }
+                  },
+                  "xdm:endpoint":{
+                     "title":"End Point",
+                     "description":"Technical endpoints providing access to services operated for the location.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/reference"
+                     }
                   }
-               }
-            },
-            "fhir:managingOrganization":{
-               "title":"Managing Organization",
-               "description":"Organization responsible for provisioning and upkeep.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
-            },
-            "fhir:partOf":{
-               "title":"Part Of Location",
-               "description":"Another Location this one is physically a part of.",
-               "$ref":"https://ns.fhir.org/datatypes/reference"
-            },
-            "fhir:characteristic":{
-               "title":"Characteristic",
-               "description":"Collection of characteristics (attributes).",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               }
-            },
-            "fhir:hoursOfOperation":{
-               "title":"Hours Of Operation",
-               "description":"What days/times during a week is this location usually open (including exceptions).",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/availability"
-               }
-            },
-            "fhir:virtualService":{
-               "title":"Virtual Service",
-               "description":"Connection details of a virtual service (e.g. conference call).",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/virtualservicedetail"
-               }
-            },
-            "xdm:endpoint":{
-               "title":"End Point",
-               "description":"Technical endpoints providing access to services operated for the location.",
-               "type":"array",
-               "items":{
-                  "$ref":"https://ns.fhir.org/datatypes/reference"
                }
             }
          }
@@ -182,6 +187,3 @@
    ],
    "meta:status":"experimental"
 }
-
-
-

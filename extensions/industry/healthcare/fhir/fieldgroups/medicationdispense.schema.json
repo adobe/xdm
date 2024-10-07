@@ -7,7 +7,7 @@
    ],
    "$id":"https://ns.fhir.org/fieldgroups/medicationdispense",
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "title":"Medication",
+   "title":"Medication Dispense",
    "type":"object",
    "meta:tags":{
       "industry":[

@@ -35,6 +35,11 @@
           "meta:titleId": "scope-details##xdm:placement##title##42481",
           "meta:descriptionId": "scope-details##xdm:placement##description##54001"
         },
+        "xdm:rank": {
+          "type": "integer",
+          "title": "Scope Rank",
+          "description": "The ordinal, relative rank associated with the activity amongst all activities that have been selected, qualified and prioritized."
+        },
         "xdm:activity": {
           "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail",
           "title": "Activity Detail for the Scope",

@@ -3,6 +3,15 @@
   "xdm:experienceID": "https://domain/experiments/faq::2023-12-04",
   "xdm:experienceChannel": "web",
   "xdm:experienceThumbnailURL": "https://domain/thumbnail.jpeg",
+  "xdm:contentExperience": {
+    "xdm:version": "v1",
+    "xdm:experienceID": "https://domain.com:2023-01-01",
+    "xdm:experienceGUID": "https://domain.com_2023-01-01",
+    "xdm:experienceName": "item purchase",
+    "xdm:experienceDescription": "item purchase description",
+    "xdm:experienceChannel": "web",
+    "xdm:experienceThumbnailURL": "https://domain.com/media/asset1.jpg"
+  },
   "xdm:contentFeaturization": {
     "xdm:version": "v1",
     "xdm:keywords": ["night", "sweet dreams"],
@@ -25,6 +34,12 @@
     "xdm:desktopPageSpeedScore": 84,
     "xdm:desktopSEOScore": 100,
     "xdm:desktopAccessibilityScore": 98,
-    "xdm:desktopBestPracticesScore": 92
+    "xdm:desktopBestPracticesScore": 92,
+    "xdm:products": [],
+    "xdm:narratives": ["buying an item"],
+    "xdm:tones": ["assertive"],
+    "xdm:marketingEmotions": ["curiosity"],
+    "xdm:concepts": [],
+    "xdm:webpageType": "Homepage"
   }
 }

@@ -1,11 +1,21 @@
 {
-  "xdm:version": "v1",
-  "xdm:assetPerceptionID": "1c93aa01-f183-a3f1-bda6-a9c96e66afea",
-  "xdm:assetID": "https://domain/media_random_id.jpeg",
-  "xdm:assetName": "jump.png",
-  "xdm:assetDescription": "A man is performing a mid-air jump on a skateboard at an indoor skate park",
-  "xdm:assetType": "image",
-  "xdm:assetThumbnailURL": "https://domain/thumbnail.jpeg",
+  "xdm:contentAssets": {
+    "xdm:version": "v1",
+    "xdm:assetPerceptionID": "1c93aa01-f183-a3f1-bda6-a9c96e66afea",
+    "xdm:assetID": "https://domain/media_random_id.jpeg",
+    "xdm:assetGUID": "https://domain/_media_random_id.jpeg",
+    "xdm:assetName": "jump.png",
+    "xdm:assetDescription": "A man is performing a mid-air jump on a skateboard at an indoor skate park",
+    "xdm:assetType": "image",
+    "xdm:assetThumbnailURL": "https://domain/thumbnail.jpeg"
+  },
+  "xdm:contentAudit": {
+    "xdm:createdBy": "1234",
+    "xdm:createdDate": "2022-09-26T15:52:25+00:00",
+    "xdm:lastUpdatedDate": "2024-05-10T15:52:25+00:00",
+    "xdm:lastUpdatedBy": "1234",
+    "xdm:expirationDate": "2025-09-26T15:52:25+00:00"
+  },
   "xdm:contentFeaturization": {
     "xdm:version": "v1",
     "xdm:orientation": "landscape",
@@ -15,7 +25,9 @@
     "xdm:overallColors": ["Brown"],
     "xdm:tags": ["water", "rock", "travel", "adventure", "hike"],
     "xdm:scenes": ["sky", "barn", "theme park"],
+    "xdm:styles": ["abstract", "minimalist"],
     "xdm:photographyStyles": ["product photography"],
+    "xdm:imageType": "graphic_design",
     "xdm:emotions": ["Sad"],
     "xdm:peopleCategories": ["person"],
     "xdm:persuasionStrategies": ["social impact"],
@@ -26,6 +38,12 @@
     "xdm:domain": ["How to tutorials"],
     "xdm:products": ["Adobe Photoshop"],
     "xdm:audioTypes": ["music", "speech"],
-    "xdm:audioGenre": "rock"
+    "xdm:audioGenre": "rock",
+    "xdm:audioGenreCategory": "metal",
+    "xdm:audioMood": "uplifting",
+    "xdm:categories": ["music"],
+    "xdm:objects": ["guitar"],
+    "xdm:lightingCondition": "studio",
+    "xdm:cameraSetting": "normal"
   }
 }

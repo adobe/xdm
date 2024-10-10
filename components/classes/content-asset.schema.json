@@ -16,41 +16,92 @@
   "definitions": {
     "content-asset": {
       "properties": {
-        "xdm:version": {
-          "title": "Asset Version",
-          "type": "string",
-          "description": "Asset version."
-        },
-        "xdm:assetPerceptionID": {
-          "title": "Asset Perception ID",
-          "type": "string",
-          "description": "Unique identifier of the asset perception."
-        },
-        "xdm:assetID": {
-          "title": "Asset ID",
-          "type": "string",
-          "description": "Unique identifier of the asset."
-        },
-        "xdm:assetName": {
-          "title": "Asset Name",
-          "type": "string",
-          "description": "Asset name."
-        },
-        "xdm:assetDescription": {
-          "title": "Asset Description",
-          "type": "string",
-          "description": "Asset description."
-        },
-        "xdm:assetType": {
-          "title": "Asset Type",
-          "type": "string",
-          "description": "Asset type such as image or video."
-        },
-        "xdm:assetThumbnailURL": {
-          "title": "Asset thumbnail URL",
-          "format": "uri",
-          "type": "string",
-          "description": "Asset thumbnail url."
+        "xdm:contentAssets": {
+          "title": "Content Asset.",
+          "description": "Content asset.",
+          "type": "object",
+          "properties": {
+            "xdm:version": {
+              "title": "Asset Version",
+              "type": "string",
+              "description": "Asset version."
+            },
+            "xdm:assetPerceptionID": {
+              "title": "Asset Perception ID",
+              "type": "string",
+              "description": "Unique identifier of the asset perception."
+            },
+            "xdm:assetID": {
+              "title": "Asset ID",
+              "type": "string",
+              "description": "Unique identifier of the asset."
+            },
+            "xdm:assetGUID": {
+              "title": "Asset GUID",
+              "type": "string",
+              "description": "Global unique identifier of the asset."
+            },
+            "xdm:assetName": {
+              "title": "Asset Name",
+              "type": "string",
+              "description": "Asset name."
+            },
+            "xdm:assetDescription": {
+              "title": "Asset Description",
+              "type": "string",
+              "description": "Asset description."
+            },
+            "xdm:assetType": {
+              "title": "Asset Type",
+              "type": "string",
+              "description": "Asset type such as image or video."
+            },
+            "xdm:assetThumbnailURL": {
+              "title": "Asset thumbnail URL",
+              "format": "uri",
+              "type": "string",
+              "description": "Asset thumbnail url."
+            }
+          }
+        }
+      }
+    },
+    "content-asset-audit": {
+      "properties": {
+        "xdm:contentAudit": {
+          "title": "Content Audit",
+          "description": "Content audit.",
+          "type": "object",
+          "properties": {
+            "xdm:createdBy": {
+              "title": "Created By",
+              "description": "Name of the user who created this record",
+              "type": "string"
+            },
+            "xdm:createdDate": {
+              "title": "Created Date",
+              "description": "Date when this record was created.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "xdm:lastUpdatedDate": {
+              "title": "Last Updated Date",
+              "description": "Date when this record was last modofied.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "xdm:lastUpdatedBy": {
+              "title": "Last Updated By",
+              "description": "User who last modified this record.",
+              "type": "string"
+            },
+            "xdm:expirationDate": {
+              "title": "Expiration Date",
+              "description": "Date when this record will expire.",
+              "type": "string",
+              "format": "date-time"
+            }
+          }
         }
       }
     },
@@ -79,7 +130,7 @@
             "xdm:overallTone": {
               "title": "Asset Overall Tone",
               "type": "string",
-              "description": "Asset overall tone.",
+              "description": "This gives the overall tone of the image.",
               "meta:enum": {
                 "warm": "Warm",
                 "cool": "Cool",
@@ -89,7 +140,7 @@
             "xdm:foregroundColors": {
               "title": "Asset Foreground Colors",
               "type": "array",
-              "description": "Asset foreground colors.",
+              "description": "List of colors that cover the important objects/parts of the image. A maximum of 3 colors in the list.",
               "items": {
                 "type": "string"
               }
@@ -97,7 +148,7 @@
             "xdm:backgroundColors": {
               "title": "Asset Background Colors",
               "type": "array",
-              "description": "Asset background colors.",
+              "description": "List of colors that cover the background in the image. A maximum of 3 colors in the list.",
               "items": {
                 "type": "string"
               }
@@ -113,7 +164,7 @@
             "xdm:tags": {
               "title": "Asset Tags",
               "type": "array",
-              "description": "Asset tags.",
+              "description": "List of tags present in the image/video.",
               "items": {
                 "type": "string"
               }
@@ -121,7 +172,15 @@
             "xdm:scenes": {
               "title": "Asset Scenes",
               "type": "array",
-              "description": "Asset scenes.",
+              "description": "Provides scenes of the image/video from the taxonomy of tags.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:styles": {
+              "title": "Asset styles",
+              "type": "array",
+              "description": "Styles, patterns in the image.",
               "items": {
                 "type": "string"
               }
@@ -129,25 +188,30 @@
             "xdm:photographyStyles": {
               "title": "Asset Photography Styles",
               "type": "array",
-              "description": "Asset photography styles.",
+              "description": "Provides photography styles of the image/video from the taxonomy of styles.",
               "items": {
                 "type": "string"
               }
             },
+            "xdm:imageType": {
+              "title": "Image Type",
+              "type": "string",
+              "description": "Type of an image from among:\n\nphotograph\nsketch\npainting\ndigital_cartoon\ninfographics\ngraphic_design\ncollage\nsoftware_screenshot\n"
+            },
             "xdm:cameraPosition": {
               "title": "Asset Camera Positions",
               "type": "string",
-              "description": "Asset camera positions."
+              "description": "For an image, there are 5 tags in this category out of which 1 is predicted depending on the position of the camera w.r.t. the subject of the image.\nThe 5 possible values are: \n low angle shot\n eye level shot\n overhead view\n over the shoulder shot\n dutch angle shot"
             },
             "xdm:cameraProximity": {
               "title": "Asset Camera Proximities",
               "type": "string",
-              "description": "Asset camera proximities."
+              "description": "For an image, there are 3 tags in this category out of which 1 is predicted (as a single element list) depending on the proximity of the camera w.r.t subject. \n\nThe 3 possible values are:\n\ncloseup shot\nmid shot\nlong shot\n"
             },
             "xdm:emotions": {
               "title": "Asset Emotions",
               "type": "array",
-              "description": "Asset emotions.",
+              "description": "Emotions in an image from:\n\nAnger\nScared\nSadness\nShame\nContentment\nHappiness\nLove\nPride\nContempt\nSurprise",
               "items": {
                 "type": "string"
               }
@@ -155,7 +219,7 @@
             "xdm:domain": {
               "title": "Asset Domain",
               "type": "array",
-              "description": "Asset domain.",
+              "description": "Categories of videos, for example: How to tutorials, Education, Sales and Offers, etc.",
               "items": {
                 "type": "string"
               }
@@ -163,7 +227,7 @@
             "xdm:products": {
               "title": "Asset Products",
               "type": "array",
-              "description": "Asset products.",
+              "description": "List of products present in the video.",
               "items": {
                 "type": "string"
               }
@@ -171,7 +235,7 @@
             "xdm:peopleCategories": {
               "title": "Asset People Categories",
               "type": "array",
-              "description": "Asset people Categories.",
+              "description": "Provides tags of the image/video from the taxonomy of {person, man, woman, social group, crowd, people, boy, girl, kid}\n",
               "items": {
                 "type": "string"
               }
@@ -179,7 +243,7 @@
             "xdm:persuasionStrategies": {
               "title": "Asset Persuasion Strategies",
               "type": "array",
-              "description": "Asset persuasion strategies.",
+              "description": "Persuasion strategies that are present in the given image/video.\n\nThe possible values are: \n\nSocial Identity\nSocial Proof\nAuthority\nConcreteness\nFoot in the Door\nOvercoming Reactance\nReciprocity\nAnchoring and Comparison\nSocial Impact\nScarcity\nAnthropomorphism",
               "items": {
                 "type": "string"
               }
@@ -187,7 +251,7 @@
             "xdm:visualContentDensity": {
               "title": "Asset Visual Content Density",
               "type": "string",
-              "description": "Asset visual content density such as low, medium or high.",
+              "description": "Low content density implies a small amount of information present per unit area of the image. This is measured by the average of the magnitudes of edge strengths of semantic edges. If the value is smaller than 0.01 for an image, it is labeled as having a Low content density, and anything below 0.05  but higher than 0.01 is labeled as Medium density.",
               "meta:enum": {
                 "low": "Low",
                 "medium": "Medium",
@@ -197,7 +261,7 @@
             "xdm:visualAttentionSpread": {
               "title": "Asset Visual Attention Spread",
               "type": "string",
-              "description": "Asset visual attention spread such as low, medium or high.",
+              "description": "Attention spread refers to the degree to which the attention of a viewer is divided between different parts of a picture. This is measured by the number of salient blobs (connected components) present in the image weighted by their salience. A score of lower than 1.5 is considered a Low attention spread, and 3.5 or higher is labeled as High.",
               "meta:enum": {
                 "low": "Low",
                 "medium": "Medium",
@@ -207,7 +271,7 @@
             "xdm:audioTypes": {
               "title": "Asset Audio Types",
               "type": "array",
-              "description": "Asset audio types.",
+              "description": "There are 5 tags['music', 'speech', 'silence', 'special effects', 'ambience'] in this category, of which 1 or more can be predicted depending on the type of audio. It'll be empty if there's no audio.",
               "items": {
                 "type": "string"
               }
@@ -215,7 +279,47 @@
             "xdm:audioGenre": {
               "title": "Asset Audio genre",
               "type": "string",
-              "description": "Asset Audio genre."
+              "description": "There are 21 classes in this category, of which 1 is predicted depending on the type of music. It'll be blank if there is no music."
+            },
+            "xdm:audioGenreCategory": {
+              "title": "Asset Audio genre category",
+              "type": "string",
+              "description": "There are 7 classes in this category, of which 1 is predicted depending on the type of music. It'll be blank if there is no music."
+            },
+            "xdm:audioMood": {
+              "title": "Asset Audio mood",
+              "type": "string",
+              "description": "There are 9 classes in this category, of which 1 is predicted depending on the type of music. It'll be blank if there is no music."
+            },
+            "xdm:categories": {
+              "title": "Asset Categories",
+              "type": "array",
+              "description": "There are 16 categories of which 1 is predicted depending on the category of the video. Some examples of categories include Sports, Sales and Offers, HowTo Tutorials, Music, etc.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:objects": {
+              "title": "objects",
+              "type": "array",
+              "description": "Specific objects in the image/video.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:lightingCondition": {
+              "title": "Lighting Condition",
+              "type": "string",
+              "xdm:lightingCondition": {
+                "title": "Lighting Condition",
+                "type": "string",
+                "description": "Lighting Condition from:\n\n golden hour\n blue hour\n midday\n overcast\n night\n high-key\n low-key\n daylighting\n incandescent\n fluorescent\n colorful\n studio\n"
+              }
+            },
+            "xdm:cameraSetting": {
+              "title": "Camera Setting",
+              "type": "string",
+              "description": "Camera Setting from:\n\nfast shutter speed\nlong exposure\nbokeh blur\nmotion blur\ntilt-shift blur\nflash\nwide-angle\nblack and white\nsurreal\ndouble-exposure\nmacro\nnormal mode\n"
             }
           }
         }
@@ -224,13 +328,16 @@
   },
   "allOf": [
     {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
       "$ref": "#/definitions/content-asset"
     },
     {
-      "$ref": "#/definitions/content-asset-featurization"
+      "$ref": "#/definitions/content-asset-audit"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
+      "$ref": "#/definitions/content-asset-featurization"
     }
   ],
   "meta:status": "experimental"

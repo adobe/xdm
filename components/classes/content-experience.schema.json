@@ -16,26 +16,48 @@
   "definitions": {
     "content-experience": {
       "properties": {
-        "xdm:version": {
-          "title": "Asset Version",
-          "type": "string",
-          "description": "Asset version."
-        },
-        "xdm:experienceID": {
-          "title": "Experience ID",
-          "type": "string",
-          "description": "Unique identifier of the content experience."
-        },
-        "xdm:experienceChannel": {
-          "title": "Experience Channel",
-          "type": "string",
-          "description": "Experience channel such as web, mobile or email."
-        },
-        "xdm:experienceThumbnailURL": {
-          "title": "Experience thumbnail URL",
-          "format": "uri",
-          "type": "string",
-          "description": "Experience thumbnail url."
+        "xdm:contentExperience": {
+          "title": "Content Experience",
+          "description": "Content experience.",
+          "type": "object",
+          "properties": {
+            "xdm:version": {
+              "title": "Asset Version",
+              "type": "string",
+              "description": "Asset version."
+            },
+            "xdm:experienceID": {
+              "title": "Experience ID",
+              "type": "string",
+              "description": "Unique identifier of the content experience."
+            },
+            "xdm:experienceGUID": {
+              "title": "Experience GUID",
+              "type": "string",
+              "description": "Global unique identifier of the content experience."
+            },
+            "xdm:experienceName": {
+              "title": "Experience Name",
+              "type": "string",
+              "description": "Experience Name."
+            },
+            "xdm:experienceDescription": {
+              "title": "Experience Description",
+              "type": "string",
+              "description": "Experience description."
+            },
+            "xdm:experienceChannel": {
+              "title": "Experience Channel",
+              "type": "string",
+              "description": "Experience channel such as web, mobile or email."
+            },
+            "xdm:experienceThumbnailURL": {
+              "title": "Experience thumbnail URL",
+              "format": "uri",
+              "type": "string",
+              "description": "Experience thumbnail url."
+            }
+          }
         }
       }
     },
@@ -62,7 +84,7 @@
             "xdm:namedEntities": {
               "title": "Experience Named Entities",
               "type": "array",
-              "description": "Experience named entities.",
+              "description": "All the named entities that are present in the given text, categorised as follows:\n Person\n Location\n Organisation\n Event\n Product\n Work of Art\n Law\n Language\n Miscellaneous\n",
               "items": {
                 "type": "string"
               }
@@ -70,7 +92,7 @@
             "xdm:persuasionStrategies": {
               "title": "Experience Persuasion Strategies",
               "type": "array",
-              "description": "Experience persuasion strategies.",
+              "description": "Persuasion strategies that are present in the given text.\n\nThe possible values are:\n\nSocial Identity\nSocial Proof\nAuthority\nConcreteness\nFoot in the Door\nOvercoming Reactance\nReciprocity\nAnchoring and Comparison\nSocial Impact\nScarcity\nAnthropomorphism",
               "items": {
                 "type": "string"
               }
@@ -195,6 +217,51 @@
               "description": "Experience desktop best practices overall score.",
               "minimum": 0,
               "maximum": 100
+            },
+            "xdm:products": {
+              "title": "Products",
+              "type": "array",
+              "description": "List of products.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:narratives": {
+              "title": "Narratives",
+              "type": "array",
+              "description": "The narratives which the piece of text is building based on relevance from a marketer's view point",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:tones": {
+              "title": "Tones",
+              "type": "array",
+              "description": "Returns the tone of the text from the following taxonomy:\n\nformal\nconversational\nmatter-of-fact\nassertive\nenthusiastic\nhumorous\ninspirational\nempathetic\nsensory\nstorytelling\npoetic\npersonal\nquantitative",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:marketingEmotions": {
+              "title": "Marketing Emotions",
+              "type": "array",
+              "description": "Returns the emotion invoked in the reader of a marketing message:\n\nUrgency\nExclusivity\nEncouragement\nChallenge\nCuriosity\nAchievement\nTrust\nSimplicity\nFascination",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:concepts": {
+              "title": "Concepts",
+              "type": "array",
+              "description": "Relevant concepts in the text.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:webpageType": {
+              "title": "Web Page Type",
+              "type": "string",
+              "description": "For web channel; one of the given webpageTypes:\n\nHomepage\nAbout us\nContact us\nBlog/Articles\nNews\nProduct/Services\nCSR\nCareers\n"
             }
           }
         }

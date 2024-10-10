@@ -35,6 +35,49 @@
                   "title": "Content Experience Source",
                   "type": "string",
                   "description": "Content experience source."
+                },
+                "xdm:experienceChannel": {
+                  "title": "Experience Channel",
+                  "type": "string",
+                  "description": "Content experience channel.",
+                  "meta:xdmType": "string"
+                },
+                "xdm:experienceClicks": {
+                  "title": "Experience Clicks",
+                  "description": "Content experience clicks.",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure"
+                },
+                "xdm:experienceViews": {
+                  "title": "Experience Views",
+                  "description": "Content experience views.",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure"
+                },
+                "xdm:experienceScroll": {
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "title": "Experience Scroll",
+                  "properties": {
+                    "xdm:horizontalPercentageDepth": {
+                      "title": "Horizontal Percentage Depth",
+                      "description": "Content experience scroll horizontal percentage depth.",
+                      "$ref": "https://ns.adobe.com/xdm/data/measure"
+                    },
+                    "xdm:horizontalPixelDepth": {
+                      "title": "Horizontal Pixel Depth",
+                      "description": "Content experience scroll horizontal pixel depth.",
+                      "$ref": "https://ns.adobe.com/xdm/data/measure"
+                    },
+                    "xdm:verticalPercentageDepth": {
+                      "title": "Vertical Percentage Depth",
+                      "description": "Content experience scroll vertical percentage depth.",
+                      "$ref": "https://ns.adobe.com/xdm/data/measure"
+                    },
+                    "xdm:verticalPixelDepth": {
+                      "title": "Vertical Pixel Depth",
+                      "description": "Content experience scroll vertical pixel depth.",
+                      "$ref": "https://ns.adobe.com/xdm/data/measure"
+                    }
+                  }
                 }
               }
             },
@@ -44,6 +87,7 @@
               "description": "Content assets tracking",
               "items": {
                 "type": "object",
+                "meta:xdmType": "object",
                 "properties": {
                   "xdm:assetID": {
                     "title": "Content Asset ID",
@@ -54,9 +98,65 @@
                     "title": "Content Asset Source",
                     "type": "string",
                     "description": "Content asset source."
+                  },
+                  "xdm:assetBlock": {
+                    "title": "Asset Block",
+                    "type": "string",
+                    "description": "Content asset block.",
+                    "meta:xdmType": "string"
+                  },
+                  "xdm:assetHTMLPath": {
+                    "title": "Asset HTML Path",
+                    "type": "string",
+                    "description": "Content asset HTML path.",
+                    "meta:xdmType": "string"
+                  },
+                  "xdm:assetLinkURL": {
+                    "title": "Asset Link URL",
+                    "type": "string",
+                    "description": "Content asset link URL.",
+                    "meta:xdmType": "string"
+                  },
+                  "xdm:assetDisplayHeight": {
+                    "title": "Asset Display Height",
+                    "type": "number",
+                    "description": "Content asset display height.",
+                    "meta:xdmType": "number"
+                  },
+                  "xdm:assetDisplayWidth": {
+                    "title": "Asset Display Width",
+                    "type": "number",
+                    "description": "Content asset display width.",
+                    "meta:xdmType": "number"
+                  },
+                  "xdm:assetAbsoluteLeft": {
+                    "title": "Asset Absolute Left",
+                    "type": "number",
+                    "description": "Content asset absolute left.",
+                    "meta:xdmType": "number"
+                  },
+                  "xdm:assetAbsoluteTop": {
+                    "title": "Asset Absolute Top",
+                    "type": "number",
+                    "description": "Content asset absolute top.",
+                    "meta:xdmType": "number"
+                  },
+                  "xdm:assetClicks": {
+                    "title": "Asset Clicks",
+                    "description": "Content asset clicks.",
+                    "$ref": "https://ns.adobe.com/xdm/data/measure"
+                  },
+                  "xdm:assetViews": {
+                    "title": "Asset Views",
+                    "description": "Content asset views.",
+                    "$ref": "https://ns.adobe.com/xdm/data/measure"
                   }
                 }
               }
+            },
+            "xdm:implementationDetails": {
+              "title": "Implementation details",
+              "$ref": "https://ns.adobe.com/xdm/context/implementationdetails"
             }
           }
         }
@@ -66,9 +166,6 @@
   "allOf": [
     {
       "$ref": "#/definitions/experienceevent-content"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-implementation-details"
     }
   ],
   "meta:status": "experimental"

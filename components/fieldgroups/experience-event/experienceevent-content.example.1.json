@@ -2,22 +2,69 @@
   "xdm:experienceContent": {
     "xdm:experience": {
       "xdm:experienceID": "https://domain.com:2023-01-01",
-      "xdm:experienceSource": "https://domain.com"
+      "xdm:experienceSource": "https://domain.com",
+      "xdm:experienceChannel": "web",
+      "xdm:experienceClicks": {
+        "xdm:value": 2
+      },
+      "xdm:experienceViews": {
+        "xdm:value": 3
+      },
+      "xdm:experienceScroll": {
+        "xdm:horizontalPercentageDepth": {
+          "xdm:value": 0.0
+        },
+        "xdm:horizontalPixelDepth": {
+          "xdm:value": 0.0
+        },
+        "xdm:verticalPercentageDepth": {
+          "xdm:value": 0.0
+        },
+        "xdm:verticalPixelDepth": {
+          "xdm:value": 0.0
+        }
+      }
     },
     "xdm:assets": [
       {
         "xdm:assetID": "https://domain.com/media/asset1.jpg",
-        "xdm:assetSource": "https://domain.com/media/asset1.jpg"
+        "xdm:assetSource": "https://domain.com/media/asset1.jpg",
+        "xdm:assetBlock": "sample",
+        "xdm:assetHTMLPath": "body.div:nth-child(1).div2",
+        "xdm:assetLinkURL": "https://domain.com/app/index.html",
+        "xdm:assetDisplayHeight": 300,
+        "xdm:assetDisplayWidth": 450,
+        "xdm:assetAbsoluteLeft": 0,
+        "xdm:assetAbsoluteTop": 0,
+        "xdm:assetClicks": {
+          "xdm:value": 10
+        },
+        "xdm:assetViews": {
+          "xdm:value": 20
+        }
       },
       {
         "xdm:assetID": "3f39e981-b857-4a2b-9e88-dd1aae5a954a",
-        "xdm:assetSource": "s3://bucket/path/to/object"
+        "xdm:assetSource": "s3://bucket/path/to/object",
+        "xdm:assetBlock": "sample",
+        "xdm:assetHTMLPath": "body.div:nth-child(1).div2",
+        "xdm:assetLinkURL": "https://domain.com/app/index.html",
+        "xdm:assetDisplayHeight": 450,
+        "xdm:assetDisplayWidth": 500,
+        "xdm:assetAbsoluteLeft": 150,
+        "xdm:assetAbsoluteTop": 200,
+        "xdm:assetClicks": {
+          "xdm:value": 2
+        },
+        "xdm:assetViews": {
+          "xdm:value": 30
+        }
       }
-    ]
-  },
-  "xdm:implementationDetails": {
-    "xdm:name": "https://ns.adobe.com/experience/alloy/reactor",
-    "xdm:version": "2.19.2+2.21.4",
-    "xdm:environment": "browser"
+    ],
+    "xdm:implementationDetails": {
+      "xdm:name": "https://ns.adobe.com/experience/alloy/reactor",
+      "xdm:version": "2.19.2+2.21.4",
+      "xdm:environment": "browser"
+    }
   }
 }

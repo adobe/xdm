@@ -1,0 +1,84 @@
+{
+  "meta:license": [
+    "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/b2b/bombora/fieldgroups/bombora-account-intent-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Bombora Account Intent Details",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/b2b/bombora/classes/bombora-account-intent"
+  ],
+  "description": "Captures and maintains additional Bombora intent attributes.",
+  "definitions": {
+    "bombora-intent-details": {
+      "properties": {
+        "xdm:intentID": {
+          "title": "Intent ID",
+          "description": "Adobe generated unique identifier for the record.",
+          "type": "string"
+        },
+        "xdm:accountID": {
+          "title": "Account ID",
+          "description": "B2B Account ID this intent record is associated with",
+          "type": "string"
+        },
+        "xdm:bomboraAccountName": {
+          "title": "Bomboara Account Name",
+          "description": "Account Name from Bombora",
+          "type": "string"
+        },
+        "xdm:accountDomain": {
+          "title": "Account Domain",
+          "description": "Account Domain.",
+          "type": "string"
+        },
+        "xdm:topicID": {
+          "title": "Topic ID",
+          "description": "Intent Topic ID from Bombora",
+          "type": "string"
+        },
+        "xdm:topicName": {
+          "title": "Topic Name",
+          "description": "Intent Topic Name from Bombora",
+          "type": "string"
+        },
+        "xdm:clusterName": {
+          "title": "Cluster Name",
+          "description": "Cluster Name",
+          "type": "string"
+        },
+        "xdm:clusterID": {
+          "title": "Cluster ID",
+          "description": "Cluster ID ",
+          "type": "string"
+        },
+        "xdm:compositeScore": {
+          "title": "Composite Score",
+          "description": "Composite Score of Intent",
+          "type": "integer"
+        },
+        "xdm:partitionDate": {
+          "title": "Partition Date",
+          "description": "Partition date.",
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/bombora-intent-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -153,7 +153,7 @@
                            "xdm:gender":{
                               "title":"Contact Gender",
                               "description":"male | female | other | unknown.",
-                              "$ref":"#/definitions/patient/properties/xdm:gender"
+                              "$ref":"#/definitions/patient/properties/xdm:healthcarePatient/properties/xdm:gender"
                            },
                            "xdm:organization":{
                               "title":"Contact Organization",

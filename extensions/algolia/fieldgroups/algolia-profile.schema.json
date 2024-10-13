@@ -15,64 +15,69 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "definitions": {
     "algolia-profile": {
+      "type": "object",
       "properties": {
-        "affinities": {
-          "items": {
-            "properties": {
-              "name": {
-                "required": [],
-                "type": "string",
-                "description": "The Facet Name is configured as a searchable facet for filtering.",
-                "title": "Facet Name",
-                "meta:xdmType": "string"
-              },
-              "value": {
-                "required": [],
-                "type": "string",
-                "description": "The Facet Value is a specific value of the Facet Name customers use to filter their search results.",
-                "title": "Attribute Value",
-                "meta:xdmType": "string"
-              },
-              "score": {
-                "required": [],
-                "type": "integer",
-                "description": "The Weighted Score is calculated daily based on the customer click/conversion events.",
-                "title": "Weighted Score",
-                "minimum": 0,
-                "maximum": 20,
-                "meta:xdmType": "int"
-              },
-              "indices": {
-                "items": {
-                  "type": "string",
-                  "meta:xdmType": "string"
+        "algoliaProfile": {
+          "properties": {
+            "affinities": {
+              "items": {
+                "properties": {
+                  "name": {
+                    "required": [],
+                    "type": "string",
+                    "description": "The Facet Name is configured as a searchable facet for filtering.",
+                    "title": "Facet Name",
+                    "meta:xdmType": "string"
+                  },
+                  "value": {
+                    "required": [],
+                    "type": "string",
+                    "description": "The Facet Value is a specific value of the Facet Name customers use to filter their search results.",
+                    "title": "Attribute Value",
+                    "meta:xdmType": "string"
+                  },
+                  "score": {
+                    "required": [],
+                    "type": "integer",
+                    "description": "The Weighted Score is calculated daily based on the customer click/conversion events.",
+                    "title": "Weighted Score",
+                    "minimum": 0,
+                    "maximum": 20,
+                    "meta:xdmType": "int"
+                  },
+                  "indices": {
+                    "items": {
+                      "type": "string",
+                      "meta:xdmType": "string"
+                    },
+                    "required": [],
+                    "type": "array",
+                    "description": "The Index/Indices return an array of index/indices where the facet has been configured.",
+                    "title": "Search Indices",
+                    "meta:xdmType": "array"
+                  }
                 },
                 "required": [],
-                "type": "array",
-                "description": "The Index/Indices return an array of index/indices where the facet has been configured.",
-                "title": "Search Indices",
-                "meta:xdmType": "array"
-              }
+                "type": "object",
+                "meta:xdmType": "object"
+              },
+              "required": [],
+              "type": "array",
+              "title": "User Affinities",
+              "meta:xdmType": "array"
             },
-            "required": [],
-            "type": "object",
-            "meta:xdmType": "object"
+            "userToken": {
+              "required": [],
+              "type": "string",
+              "description": "",
+              "title": "User Token",
+              "meta:xdmType": "string"
+            }
           },
-          "required": [],
-          "type": "array",
-          "title": "User Affinities",
-          "meta:xdmType": "array"
-        },
-        "userToken": {
-          "required": [],
-          "type": "string",
-          "description": "",
-          "title": "User Token",
-          "meta:xdmType": "string"
+          "required": []
         }
       },
-      "meta:xdmType": "object",
-      "required": []
+      "meta:xdmType": "object"
     }
   },
   "allOf": [

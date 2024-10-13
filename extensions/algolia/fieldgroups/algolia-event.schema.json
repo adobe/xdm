@@ -15,131 +15,135 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "algolia-event": {
-          "type": "object",
-          "properties": {
-            "algoliaEvent": {
-      "required": ["userToken"],
       "type": "object",
       "properties": {
-        "objectData": {
-          "items": {
-            "properties": {
-              "queryID": {
+        "algoliaEvent": {
+          "required": [
+            "userToken"
+          ],
+          "type": "object",
+          "properties": {
+            "objectData": {
+              "items": {
+                "properties": {
+                  "queryID": {
+                    "required": [],
+                    "type": "string",
+                    "description": "The Query ID is a random sequence of letters and numbers that uniquely identifies a search request. Algolia uses the query ID to connect a search or browse request to a click or conversion event.",
+                    "title": "Query ID",
+                    "meta:xdmType": "string"
+                  },
+                  "quantity": {
+                    "required": [],
+                    "type": "integer",
+                    "description": "The Quantity of the purchased or added-to-cart item.",
+                    "title": "Quantity",
+                    "minimum": 0,
+                    "maximum": 2147483647,
+                    "meta:xdmType": "int"
+                  },
+                  "price": {
+                    "required": [],
+                    "type": "number",
+                    "description": "The final price of the item, inclusive of any discounts in effect.",
+                    "title": "Price",
+                    "meta:xdmType": "number"
+                  },
+                  "discount": {
+                    "required": [],
+                    "type": "number",
+                    "description": "The Discount is an absolute value, measured in currency.",
+                    "title": "Discount",
+                    "meta:xdmType": "number"
+                  }
+                },
                 "required": [],
-                "type": "string",
-                "description": "The Query ID is a random sequence of letters and numbers that uniquely identifies a search request. Algolia uses the query ID to connect a search or browse request to a click or conversion event.",
-                "title": "Query ID",
-                "meta:xdmType": "string"
+                "type": "object",
+                "meta:xdmType": "object"
               },
-              "quantity": {
-                "required": [],
+              "required": [],
+              "type": "array",
+              "description": "The Object Data property allows admins to add additional data that is in the same index in the Object ID's array.",
+              "title": "Object Data",
+              "meta:xdmType": "array"
+            },
+            "queryID": {
+              "required": [],
+              "type": "string",
+              "description": "The Query ID is a random sequence of letters and numbers that uniquely identifies a search request. Algolia uses the query ID to connect a search or browse request to a click or conversion event.",
+              "title": "Query ID",
+              "meta:xdmType": "string"
+            },
+            "positions": {
+              "items": {
                 "type": "integer",
-                "description": "The Quantity of the purchased or added-to-cart item.",
-                "title": "Quantity",
                 "minimum": 0,
                 "maximum": 2147483647,
                 "meta:xdmType": "int"
               },
-              "price": {
-                "required": [],
-                "type": "number",
-                "description": "The final price of the item, inclusive of any discounts in effect.",
-                "title": "Price",
-                "meta:xdmType": "number"
-              },
-              "discount": {
-                "required": [],
-                "type": "number",
-                "description": "The Discount is an absolute value, measured in currency.",
-                "title": "Discount",
-                "meta:xdmType": "number"
-              }
+              "required": [],
+              "type": "array",
+              "description": "The Positions of the clicked objects in the search results. This property is required for click events with queryID. The first search result has a position of 1 (not 0).",
+              "title": "Positions",
+              "meta:xdmType": "array"
             },
-            "required": [],
-            "type": "object",
-            "meta:xdmType": "object"
+            "indexName": {
+              "required": [],
+              "type": "string",
+              "description": "The Index Name that contains the item.",
+              "title": "Index Name",
+              "meta:xdmType": "string"
+            },
+            "objectIDs": {
+              "items": {
+                "type": "string",
+                "meta:xdmType": "string"
+              },
+              "required": [],
+              "type": "array",
+              "description": "The Object IDs is a list of items from a specified Algolia index.",
+              "title": "Object IDs",
+              "meta:xdmType": "array"
+            },
+            "eventSubtype": {
+              "required": [],
+              "type": "string",
+              "description": "The Event Subtype is a specific conversion event.",
+              "title": "Event Subtype",
+              "meta:xdmType": "string"
+            },
+            "eventName": {
+              "required": [],
+              "type": "string",
+              "description": "The Event Name is a user specified event.",
+              "title": "Event Name",
+              "meta:xdmType": "string"
+            },
+            "userToken": {
+              "required": [],
+              "type": "string",
+              "description": "User tokens are strings that uniquely identify users throughout your app.",
+              "title": "User Token",
+              "meta:xdmType": "string"
+            },
+            "currencyCode": {
+              "required": [],
+              "type": "string",
+              "description": "The Currency Code is ISO-4217 currency code, such as USD or EUR. It is required when pricing is included.",
+              "title": "Currency Code",
+              "meta:xdmType": "string"
+            },
+            "authenticatedUserToken": {
+              "required": [],
+              "type": "string",
+              "description": "The Authenticated User Token is pseudonymous identifier for authenticated users.",
+              "title": "Authenticated User Token",
+              "meta:xdmType": "string"
+            }
           },
-          "required": [],
-          "type": "array",
-          "description": "The Object Data property allows admins to add additional data that is in the same index in the Object ID's array.",
-          "title": "Object Data",
-          "meta:xdmType": "array"
-        },
-        "queryID": {
-          "required": [],
-          "type": "string",
-          "description": "The Query ID is a random sequence of letters and numbers that uniquely identifies a search request. Algolia uses the query ID to connect a search or browse request to a click or conversion event.",
-          "title": "Query ID",
-          "meta:xdmType": "string"
-        },
-        "positions": {
-          "items": {
-            "type": "integer",
-            "minimum": 0,
-            "maximum": 2147483647,
-            "meta:xdmType": "int"
-          },
-          "required": [],
-          "type": "array",
-          "description": "The Positions of the clicked objects in the search results. This property is required for click events with queryID. The first search result has a position of 1 (not 0).",
-          "title": "Positions",
-          "meta:xdmType": "array"
-        },
-        "indexName": {
-          "required": [],
-          "type": "string",
-          "description": "The Index Name that contains the item.",
-          "title": "Index Name",
-          "meta:xdmType": "string"
-        },
-        "objectIDs": {
-          "items": {
-            "type": "string",
-            "meta:xdmType": "string"
-          },
-          "required": [],
-          "type": "array",
-          "description": "The Object IDs is a list of items from a specified Algolia index.",
-          "title": "Object IDs",
-          "meta:xdmType": "array"
-        },
-        "eventSubtype": {
-          "required": [],
-          "type": "string",
-          "description": "The Event Subtype is a specific conversion event.",
-          "title": "Event Subtype",
-          "meta:xdmType": "string"
-        },
-        "eventName": {
-          "required": [],
-          "type": "string",
-          "description": "The Event Name is a user specified event.",
-          "title": "Event Name",
-          "meta:xdmType": "string"
-        },
-        "userToken": {
-          "required": [],
-          "type": "string",
-          "description": "User tokens are strings that uniquely identify users throughout your app.",
-          "title": "User Token",
-          "meta:xdmType": "string"
-        },
-        "currencyCode": {
-          "required": [],
-          "type": "string",
-          "description": "The Currency Code is ISO-4217 currency code, such as USD or EUR. It is required when pricing is included.",
-          "title": "Currency Code",
-          "meta:xdmType": "string"
-        },
-        "authenticatedUserToken": {
-          "required": [],
-          "type": "string",
-          "description": "The Authenticated User Token is pseudonymous identifier for authenticated users.",
-          "title": "Authenticated User Token",
-          "meta:xdmType": "string"
+          "meta:xdmType": "object"
         }
-      },
-      "meta:xdmType": "object"
+      }
     }
   },
   "allOf": [

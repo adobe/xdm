@@ -15,6 +15,9 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "algolia-event": {
+          "type": "object",
+          "properties": {
+            "algoliaEvent": {
       "required": ["userToken"],
       "type": "object",
       "properties": {

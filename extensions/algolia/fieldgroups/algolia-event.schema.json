@@ -18,9 +18,7 @@
       "type": "object",
       "properties": {
         "algoliaEvent": {
-          "required": [
-            "userToken"
-          ],
+          "required": ["userToken"],
           "type": "object",
           "properties": {
             "objectData": {

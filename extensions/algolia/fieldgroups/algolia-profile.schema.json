@@ -17,26 +17,26 @@
     "algolia-profile": {
       "type": "object",
       "properties": {
-        "algoliaProfile": {
+        "xdm:algoliaProfile": {
           "properties": {
-            "affinities": {
+            "xdm:affinities": {
               "items": {
                 "properties": {
-                  "name": {
+                  "xdm:name": {
                     "required": [],
                     "type": "string",
                     "description": "The Facet Name is configured as a searchable facet for filtering.",
                     "title": "Facet Name",
                     "meta:xdmType": "string"
                   },
-                  "value": {
+                  "xdm:value": {
                     "required": [],
                     "type": "string",
                     "description": "The Facet Value is a specific value of the Facet Name customers use to filter their search results.",
                     "title": "Attribute Value",
                     "meta:xdmType": "string"
                   },
-                  "score": {
+                  "xdm:score": {
                     "required": [],
                     "type": "integer",
                     "description": "The Weighted Score is calculated daily based on the customer click/conversion events.",
@@ -45,7 +45,7 @@
                     "maximum": 20,
                     "meta:xdmType": "int"
                   },
-                  "indices": {
+                  "xdm:indices": {
                     "items": {
                       "type": "string",
                       "meta:xdmType": "string"
@@ -66,7 +66,7 @@
               "title": "User Affinities",
               "meta:xdmType": "array"
             },
-            "userToken": {
+            "xdm:userToken": {
               "required": [],
               "type": "string",
               "description": "",

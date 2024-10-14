@@ -1,21 +1,19 @@
 {
-  "algoliaEvent": {
-    "authenticatedUserToken": "Sample value",
-    "currencyCode": "Sample value",
-    "eventName": "Sample value",
-    "eventSubtype": "Sample value",
-    "indexName": "Sample value",
-    "objectData": [
-      {
-        "discount": 26751.47,
-        "price": 3908.8,
-        "quantity": 18553,
-        "queryID": "Sample value"
-      }
-    ],
-    "objectIDs": ["Sample value"],
-    "positions": [10148],
-    "queryID": "Sample value",
-    "userToken": "Sample value"
-  }
+  "authenticatedUserToken": "Sample value",
+  "currencyCode": "Sample value",
+  "eventName": "Sample value",
+  "eventSubtype": "Sample value",
+  "indexName": "Sample value",
+  "objectData": [
+    {
+      "discount": 26751.47,
+      "price": 3908.8,
+      "quantity": 18553,
+      "queryID": "Sample value"
+    }
+  ],
+  "objectIDs": ["Sample value"],
+  "positions": [10148],
+  "queryID": "Sample value",
+  "userToken": "Sample value"
 }

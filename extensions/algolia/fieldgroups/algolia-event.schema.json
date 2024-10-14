@@ -18,7 +18,6 @@
       "type": "object",
       "properties": {
         "xdm:algoliaEvent": {
-          "required": [],
           "type": "object",
           "properties": {
             "xdm:objectData": {

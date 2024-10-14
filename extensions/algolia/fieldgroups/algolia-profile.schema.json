@@ -74,10 +74,10 @@
               "meta:xdmType": "string"
             }
           },
-          "required": []
+          "type": "object",
+          "meta:xdmType": "object"
         }
-      },
-      "meta:xdmType": "object"
+      }
     }
   },
   "allOf": [

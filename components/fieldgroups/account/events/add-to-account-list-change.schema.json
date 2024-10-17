@@ -1,0 +1,63 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/account/events/add-to-account-list",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Add to Account List",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "addToAccountList.addToAccountList",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account-activity"
+  ],
+  "description": "Use to capture the activity where an account is added to a list.",
+  "definitions": {
+    "addToAccountList": {
+      "properties": {
+        "xdm:addToAccountList": {
+          "title": "Add to Account List",
+          "type": "object",
+          "properties": {
+            "xdm:listName": {
+              "title": "List Name",
+              "type": "string",
+              "description": "Name of the list the account is added to.",
+              "meta:titleId": "add-to-account-list##xdm:listName##title##50331",
+              "meta:descriptionId": "add-to-account-list##xdm:listName##description##41791"
+            },
+            "xdm:listID": {
+              "title": "List ID",
+              "type": "integer",
+              "description": "Identifier of the Account List.",
+              "meta:titleId": "add-to-account-list##xdm:listID##title##50901",
+              "meta:descriptionId": "add-to-account-list##xdm:listID##description##85241"
+            },
+            "xdm:source": {
+              "title": "Source",
+              "type": "string",
+              "description": "Where the list is from.",
+              "meta:titleId": "add-to-account-list##xdm:source##title##28551",
+              "meta:descriptionId": "add-to-account-list##xdm:source##description##81741"
+            }
+          },
+          "meta:titleId": "add-to-account-list##xdm:addToAccountList##title##77821"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/addToAccountList"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "add-to-account-list##title##79971",
+  "meta:descriptionId": "add-to-account-list##description##46521"
+}

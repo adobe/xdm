@@ -1,0 +1,68 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/account/events/account-interesting-moment",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Account Interesting Moment",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "accountInterestingMoment.accountInterestingMoment",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account-activity"
+  ],
+  "description": "Use to capture the activity where an account has an interesting moment.",
+  "definitions": {
+    "interestingMoment": {
+      "properties": {
+        "xdm:accountInterestingMoment": {
+          "title": "Account Interesting Moment",
+          "type": "object",
+          "properties": {
+            "xdm:source": {
+              "title": "Source",
+              "type": "string",
+              "description": "Where the interesting moment is from.",
+              "meta:titleId": "account-interesting-moment##xdm:source##title##28551",
+              "meta:descriptionId": "account-interesting-moment##xdm:source##description##81741"
+            },
+            "xdm:type": {
+              "title": "Type",
+              "type": "string",
+              "meta:titleId": "account-interesting-moment##xdm:type##title##50331",
+              "meta:descriptionId": "account-interesting-moment##xdm:type##description##41791"
+            },
+            "xdm:stepId": {
+              "title": "Step ID",
+              "type": "integer",
+              "description": "Identifier of the step.",
+              "meta:titleId": "account-interesting-moment##xdm:stepId##title##50901",
+              "meta:descriptionId": "account-interesting-moment##xdm:stepId##description##85241"
+            },
+            "xdm:choiceNumber": {
+              "title": "Choice Number",
+              "type": "integer",
+              "meta:titleId": "account-interesting-moment##xdm:choiceNumber##title##28551",
+              "meta:descriptionId": "account-interesting-moment##xdm:choiceNumber##description##81741"
+            }
+          },
+          "meta:titleId": "account-interesting-moment##xdm:accountInterestingMoment##title##77821"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/interestingMoment"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "account-interesting-moment##title##79971",
+  "meta:descriptionId": "account-interesting-moment##description##46521"
+}

@@ -1,0 +1,102 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/account/events/data-value-change",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Data Value Change",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "dataValueChange.accountDataValueChange",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account-history"
+  ],
+  "description": "Use to capture history of a change in an account attribute.",
+  "definitions": {
+    "accountDataValueChange": {
+      "properties": {
+        "xdm:dataValueChange": {
+          "title": "Data Value Change",
+          "type": "object",
+          "properties": {
+            "xdm:attributeName": {
+              "title": "Attribute Name",
+              "type": "string",
+              "meta:titleId": "data-value-change##xdm:attributeName##title##73041",
+              "meta:descriptionId": "data-value-change##xdm:attributeName##description##10571"
+            },
+            "xdm:reason": {
+              "title": "Reason",
+              "type": "string",
+              "meta:titleId": "data-value-change##xdm:reason##title##73041",
+              "meta:descriptionId": "data-value-change##xdm:reason##description##10571"
+            },
+            "xdm:source": {
+              "title": "Source",
+              "type": "string",
+              "meta:titleId": "data-value-change##xdm:source##title##73041",
+              "meta:descriptionId": "data-value-change##xdm:source##description##10571"
+            },
+            "xdm:oldValueString": {
+              "title": "Old Value String",
+              "type": "string",
+              "description": "Old value.",
+              "meta:titleId": "data-value-change##xdm:oldValueString##title##50331",
+              "meta:descriptionId": "data-value-change##xdm:oldValueString##description##41791"
+            },
+            "xdm:newValueString": {
+              "title": "New Value String",
+              "type": "string",
+              "description": "New value.",
+              "meta:titleId": "data-value-change##xdm:newValueString##title##50901",
+              "meta:descriptionId": "data-value-change##xdm:newValueString##description##85241"
+            },
+            "xdm:oldValueNumber": {
+              "title": "Old Value Number",
+              "type": "double",
+              "description": "Old value.",
+              "meta:titleId": "data-value-change##xdm:oldValueNumber##title##50331",
+              "meta:descriptionId": "data-value-change##xdm:oldValueNumber##description##41791"
+            },
+            "xdm:newValueNumber": {
+              "title": "New Value Number",
+              "type": "double",
+              "description": "New value.",
+              "meta:titleId": "data-value-change##xdm:newValueNumber##title##50901",
+              "meta:descriptionId": "data-value-change##xdm:newValueNumber##description##85241"
+            },
+            "xdm:oldValueDateTime": {
+              "title": "Old Value Datetime",
+              "type": "string",
+              "format": "date-time",
+              "meta:titleId": "data-value-change##xdm:oldValueDateTime##title##73041",
+              "meta:descriptionId": "data-value-change##xdm:oldValueDateTime##description##10571"
+            },
+            "xdm:newValueDateTime": {
+              "title": "New Value Datetime",
+              "type": "string",
+              "format": "date-time",
+              "meta:titleId": "data-value-change##xdm:newValueDateTime##title##73041",
+              "meta:descriptionId": "data-value-change##xdm:newValueDateTime##description##10571"
+            }
+          },
+          "meta:titleId": "data-value-change##xdm:dataValueChange##title##77821"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/accountDataValueChange"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "data-value-change##title##79971",
+  "meta:descriptionId": "data-value-change##description##46521"
+}

@@ -28,7 +28,7 @@
                 "type": "string",
                 "description": "Segment ID"
               },
-              "xdm:segmentNamespace": {
+              "xdm:segmentName": {
                 "title": "Segment Name",
                 "type": "string",
                 "description": "Segment Name"

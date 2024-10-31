@@ -92,6 +92,14 @@
           "type": "string",
           "description": "Type or grouping of content as defined by content producer. Values should be comma delimited in variable implementation."
         },
+        "xdm:genreList": {
+          "title": "Genre List",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Type or grouping of content as defined by content producer. Field represents the comma separated values provided in the genre field."
+        },
         "xdm:firstAirDate": {
           "title": "First Air Date",
           "type": "string",

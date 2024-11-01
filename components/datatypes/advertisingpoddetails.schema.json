@@ -36,7 +36,7 @@
           "description": "The offset of the ad break inside the content, in seconds."
         }
       },
-      "required": ["xdm:offset"]
+      "required": []
     }
   },
   "allOf": [

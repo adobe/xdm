@@ -1,27 +1,28 @@
 {
-  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
-  "timestamp": "2016-10-26T17:26:23+00:00",
-  "braze:appID": "01234567-89ab-cdef-0123-456789abcdef",
+  "@id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "braze:appID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "timestamp": "2034-06-13T09:08:24+00:00",
+  "braze:appGroupID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "braze:user": {
-    "braze:userID": "0123456789abcdef01234567",
-    "braze:externalUserID": "user_id"
+    "braze:userID": "639a35d192b0df004d06514c",
+    "braze:externalUserID": "external_user_id"
   },
   "braze:device": {
-    "braze:platform": "ios",
-    "braze:OSVersion": "iOS 10.3.1",
-    "braze:deviceModel": "iPhone 7 Plus",
-    "braze:deviceID": "fedcba87-6543-210f-fedc-ba9876543210"
+    "braze:platform": "android",
+    "braze:OSVersion": "17.6.1",
+    "braze:deviceModel": "device_model",
+    "braze:deviceID": "device_id"
   },
   "braze:adTracking": {
-    "braze:adID": "3456789abcde-f012-3456-789a-bcdef0121234",
-    "braze:adIDType": "google_ad_id",
+    "braze:adID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:adIDType": "ios_idfa",
     "braze:adTrackingEnabled": true
   },
   "braze:location": {
-    "braze:latitude": 1.2,
-    "braze:longitude": 3.4,
-    "braze:altitude": 5.6,
-    "braze:llAccuracy": 7.8,
-    "braze:altAccuracy": 0.9
+    "braze:latitude": 3.14,
+    "braze:longitude": 3.14,
+    "braze:altitude": 3.14,
+    "braze:llAccuracy": 3.14,
+    "braze:altAccuracy": 3.14
   }
 }

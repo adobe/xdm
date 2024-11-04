@@ -20,7 +20,8 @@
                "items":{
                   "type":"string",
                   "format":"date-time"
-               },
+               }
+            },
                "xdm:repeat":{
                   "title":"Repeat",
                   "description":"TWhen the event is to occur",
@@ -33,7 +34,6 @@
                }
             }
          }
-      }
    },
    "allOf":[
       {

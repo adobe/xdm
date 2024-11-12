@@ -33,8 +33,21 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
           "meta:titleId": "account-activity##xdm:accountKey##title##76911",
           "meta:descriptionId": "account-activity##xdm:accountKey##description##47311"
+        },
+        "xdm:accountEventType": {
+          "title": "Account Event Type",
+          "description": "Event type for the Account",
+          "type": "string",
+          "default": "system",
+          "meta:enum": {
+            "system": "System",
+            "addToAccountList": "Added to Account List",
+            "removeFromAccountList": "Removed from Account List",
+            "addToJourney": "Added to Journey",
+            "removeFromJourney": "Removed from Journey",
+            "accountInterestingMoment": "Account Interesting Moment"
+          }
         }
-      }
     }
   },
   "allOf": [
@@ -42,16 +55,10 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
     },
     {
       "$ref": "#/definitions/account-activity"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
     }
   ],
   "meta:status": "experimental",

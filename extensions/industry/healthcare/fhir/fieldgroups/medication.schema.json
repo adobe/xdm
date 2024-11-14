@@ -78,7 +78,7 @@
                         "properties":{
                            "xdm:item":{
                               "title":"Item",
-                              "description":"The ingredient (substance or medication) that the ingredient.strength relates to.",
+                              "description":"The ingredient (substance or medication) that the ingredient.strength relates to. This is represented as a concept from a code system or described in another resource (Substance or Medication).",
                               "$ref":"https://ns.fhir.org/datatypes/codeablereference"
                            },
                            "xdm:isActive":{
@@ -88,17 +88,17 @@
                            },
                            "xdm:strengthRatio":{
                               "title":"Strength Ratio",
-                              "description":"Quantity of ingredient present.",
+                              "description":"Specifies how many (or how much) of the items there are in this Medication (expressed as a ratio).",
                               "$ref":"https://ns.fhir.org/datatypes/ratio"
                            },
                            "xdm:strengthCodeableConcept":{
                               "title":"Strength Codeable Concept",
-                              "description":"Quantity of ingredient present.",
+                              "description":"Specifies how many (or how much) of the items there are in this Medication (expressed as a system defined terminology).",
                               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
                            },
                            "xdm:strengthQuantity":{
                               "title":"Strength Quantity",
-                              "description":"Quantity of ingredient present.",
+                              "description":"Specifies how many (or how much) of the items there are in this Medication (expressed as a quantity).",
                               "$ref":"https://ns.fhir.org/datatypes/quantity"
                            }
                         }

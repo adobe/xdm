@@ -15,7 +15,8 @@
       ]
    },
    "meta:intendedToExtend":[
-      "https://ns.adobe.com/xdm/classes/medication"
+      "https://ns.adobe.com/xdm/classes/medication",
+      "https://ns.adobe.com/xdm/context/profile"
    ],
    "meta:extensible":true,
    "meta:abstract":true,

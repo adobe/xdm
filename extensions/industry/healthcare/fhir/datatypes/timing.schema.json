@@ -22,18 +22,18 @@
                   "format":"date-time"
                }
             },
-               "xdm:repeat":{
-                  "title":"Repeat",
-                  "description":"TWhen the event is to occur",
-                  "$ref":"https://ns.fhir.org/datatypes/repeat"
-               },
-               "xdm:code":{
-                  "title":"Code",
-                  "description":"C | BID | TID | QID | AM | PM | QD | QOD",
-                  "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-               }
+            "xdm:repeat":{
+               "title":"Repeat",
+               "description":"TWhen the event is to occur",
+               "$ref":"https://ns.fhir.org/datatypes/repeat"
+            },
+            "xdm:code":{
+               "title":"Code",
+               "description":"C | BID | TID | QID | AM | PM | QD | QOD",
+               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             }
          }
+      }
    },
    "allOf":[
       {

@@ -13,7 +13,7 @@
    "definitions":{
       "repeat":{
          "properties":{
-            "xdm:boundsdDuration":{
+            "xdm:boundsDuration":{
                "title":"Bound Duration",
                "description":"Duration Limit",
                "$ref":"https://ns.fhir.org/datatypes/duration"

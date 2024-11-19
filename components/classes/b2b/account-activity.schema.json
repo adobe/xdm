@@ -20,13 +20,6 @@
   "definitions": {
     "account-activity": {
       "properties": {
-        "xdm:accountEventKey": {
-          "title": "Account Event Key",
-          "description": "Unique composite key identifier for the Account Event.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-          "meta:titleId": "account-activity##xdm:accountKey##title##76911",
-          "meta:descriptionId": "account-activity##xdm:accountKey##description##47311"
-        },
         "xdm:accountKey": {
           "title": "Account Key",
           "description": "Unique composite key identifier for the Account.",

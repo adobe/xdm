@@ -12,7 +12,7 @@
   "meta:tags": {
     "b2bSchema": true
   },
-  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalField": "xdm:accountEventType",
   "meta:conditionalValue": "dataValueChange.accountDataValueChange",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/account-history"
@@ -46,28 +46,28 @@
             "xdm:oldValueString": {
               "title": "Old Value String",
               "type": "string",
-              "description": "Old value.",
+              "description": "Old string value.",
               "meta:titleId": "data-value-change##xdm:oldValueString##title##50331",
               "meta:descriptionId": "data-value-change##xdm:oldValueString##description##41791"
             },
             "xdm:newValueString": {
               "title": "New Value String",
               "type": "string",
-              "description": "New value.",
+              "description": "New string value.",
               "meta:titleId": "data-value-change##xdm:newValueString##title##50901",
               "meta:descriptionId": "data-value-change##xdm:newValueString##description##85241"
             },
             "xdm:oldValueNumber": {
               "title": "Old Value Number",
               "type": "double",
-              "description": "Old value.",
+              "description": "Old number value.",
               "meta:titleId": "data-value-change##xdm:oldValueNumber##title##50331",
               "meta:descriptionId": "data-value-change##xdm:oldValueNumber##description##41791"
             },
             "xdm:newValueNumber": {
               "title": "New Value Number",
               "type": "double",
-              "description": "New value.",
+              "description": "New number value.",
               "meta:titleId": "data-value-change##xdm:newValueNumber##title##50901",
               "meta:descriptionId": "data-value-change##xdm:newValueNumber##description##85241"
             },
@@ -75,6 +75,7 @@
               "title": "Old Value Datetime",
               "type": "string",
               "format": "date-time",
+              "description": "Old date value.",
               "meta:titleId": "data-value-change##xdm:oldValueDateTime##title##73041",
               "meta:descriptionId": "data-value-change##xdm:oldValueDateTime##description##10571"
             },
@@ -82,6 +83,7 @@
               "title": "New Value Datetime",
               "type": "string",
               "format": "date-time",
+              "description": "New date value.",
               "meta:titleId": "data-value-change##xdm:newValueDateTime##title##73041",
               "meta:descriptionId": "data-value-change##xdm:newValueDateTime##description##10571"
             }

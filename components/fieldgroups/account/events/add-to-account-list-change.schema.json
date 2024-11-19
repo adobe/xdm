@@ -12,7 +12,7 @@
   "meta:tags": {
     "b2bSchema": true
   },
-  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalField": "xdm:accountEventType",
   "meta:conditionalValue": "addToAccountList.addToAccountList",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/account-activity"

@@ -201,35 +201,35 @@
                               "title":"Term",
                               "description":"The term or period of the values such as 'maximum lifetime benefit' or 'maximum annual visits'.",
                               "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                           }
-                        }
-                     },
-                     "xdm:valueQuantity":{
-                        "title":"Value Quantity",
-                        "description":"The amount due in percentage from the patient for the cost category.",
-                        "$ref":"https://ns.fhir.org/datatypes/simplequantity"
-                     },
-                     "xdm:valueMoney":{
-                        "title":"Value Money",
-                        "description":"The amount due from the patient for the cost category.",
-                        "$ref":"https://ns.fhir.org/datatypes/money"
-                     },
-                     "xdm:exception":{
-                        "title":"Exception",
-                        "description":"A suite of codes indicating exceptions or reductions to patient costs and their effective periods.",
-                        "type":"array",
-                        "items":{
-                           "type":"object",
-                           "properties":{
-                              "xdm:type":{
-                                 "title":"Type",
-                                 "description":"The code for the specific exception..",
-                                 "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
-                              },
-                              "xdm:period":{
-                                 "title":"Period",
-                                 "description":"The timeframe the exception is in force.",
-                                 "$ref":"https://ns.fhir.org/datatypes/period"
+                           },
+                           "xdm:valueQuantity":{
+                              "title":"Value Quantity",
+                              "description":"The amount due in percentage from the patient for the cost category.",
+                              "$ref":"https://ns.fhir.org/datatypes/simplequantity"
+                           },
+                           "xdm:valueMoney":{
+                              "title":"Value Money",
+                              "description":"The amount due from the patient for the cost category.",
+                              "$ref":"https://ns.fhir.org/datatypes/money"
+                           },
+                           "xdm:exception":{
+                              "title":"Exception",
+                              "description":"A suite of codes indicating exceptions or reductions to patient costs and their effective periods.",
+                              "type":"array",
+                              "items":{
+                                 "type":"object",
+                                 "properties":{
+                                    "xdm:type":{
+                                       "title":"Type",
+                                       "description":"The code for the specific exception..",
+                                       "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                                    },
+                                    "xdm:period":{
+                                       "title":"Period",
+                                       "description":"The timeframe the exception is in force.",
+                                       "$ref":"https://ns.fhir.org/datatypes/period"
+                                    }
+                                 }
                               }
                            }
                         }

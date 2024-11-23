@@ -110,7 +110,7 @@
                }
             },
             "xdm:maxDosePerPeriod":{
-               "title":"MaxDoseperPeriod",
+               "title":"Max Dose Per Period",
                "description":"Upper limit on medication per unit of time.",
                "type":"array",
                "items":{
@@ -118,12 +118,12 @@
                }
             },
             "xdm:maxDosePerAdministration":{
-               "title":"MaxDosePerAdministration",
+               "title":"Max Dose Per Administration",
                "description":"Upper limit on medication per administration.",
                "$ref":"https://ns.fhir.org/datatypes/simplequantity"
             },
             "xdm:maxDosePerLifetime":{
-               "title":"MaxDosePerLifetime",
+               "title":"Max Dose Per Lifetime",
                "description":"Upper limit on medication per lifetime of the patient.",
                "$ref":"https://ns.fhir.org/datatypes/simplequantity"
             }

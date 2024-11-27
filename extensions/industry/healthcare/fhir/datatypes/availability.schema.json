@@ -14,7 +14,7 @@
       "availability":{
          "properties":{
             "xdm:availableTime":{
-               "title":"Avaialble Time",
+               "title":"Available Time",
                "description":"Times the {item} is available.",
                "type":"array",
                "items":{
@@ -67,7 +67,7 @@
                }
             },
             "xdm:notAvailableTime":{
-               "title":"NotAvailable Time",
+               "title":"Not Available Time",
                "description":"Not available during this time due to provided reason..",
                "type":"array",
                "items":{

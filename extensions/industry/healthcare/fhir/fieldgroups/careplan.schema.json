@@ -230,14 +230,14 @@
                               "$ref":"https://ns.fhir.org/datatypes/reference"
                            }
                         }
-                     },
-                     "xdm:note":{
-                        "title":"Note",
-                        "description":"General notes about the care plan not covered elsewhere.",
-                        "type":"array",
-                        "items":{
-                           "$ref":"https://ns.fhir.org/datatypes/annotation"
-                        }
+                     }
+                  },
+                  "xdm:note":{
+                     "title":"Note",
+                     "description":"General notes about the care plan not covered elsewhere.",
+                     "type":"array",
+                     "items":{
+                        "$ref":"https://ns.fhir.org/datatypes/annotation"
                      }
                   }
                }

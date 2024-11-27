@@ -44,7 +44,8 @@
           }
         }
       }
-    },
+    }
+  },
     "allOf": [
       {
         "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -57,11 +58,10 @@
         ]
       },
       {
-        "$ref": "#/definitions/account-activity"
+        "$ref": "#/definitions/account-history"
       }
     ],
     "meta:status": "experimental",
-    "meta:titleId": "account-activity##title##4841",
-    "meta:descriptionId": "account-activity##description##65781"
-  }
+    "meta:titleId": "account-history##title##4841",
+    "meta:descriptionId": "account-history##description##65781"
 }

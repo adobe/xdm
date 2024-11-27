@@ -15,7 +15,9 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/time-series"
+  ],
   "description": "XDM Business Account Activity is a standard Experience Data Model (XDM) class that tracks the activities related to a business account. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
   "definitions": {
     "account-activity": {
@@ -41,24 +43,25 @@
             "accountInterestingMoment": "Account Interesting Moment"
           }
         }
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      }
     },
-    {
-      "$ref": "https://ns.adobe.com/xdm/data/time-series",
-      "meta:refProperty": [
-        "/_id",
-        "/timestamp"
-      ]
-    },
-    {
-      "$ref": "#/definitions/account-activity"
-    }
-  ],
-  "meta:status": "experimental",
-  "meta:titleId": "account-activity##title##4841",
-  "meta:descriptionId": "account-activity##description##65781"
+    "allOf": [
+      {
+        "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      },
+      {
+        "$ref": "https://ns.adobe.com/xdm/data/time-series",
+        "meta:refProperty": [
+          "/_id",
+          "/timestamp"
+        ]
+      },
+      {
+        "$ref": "#/definitions/account-activity"
+      }
+    ],
+    "meta:status": "experimental",
+    "meta:titleId": "account-activity##title##4841",
+    "meta:descriptionId": "account-activity##description##65781"
+  }
 }

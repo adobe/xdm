@@ -46,22 +46,22 @@
       }
     }
   },
-    "allOf": [
-      {
-        "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-      },
-      {
-        "$ref": "https://ns.adobe.com/xdm/data/time-series",
-        "meta:refProperty": [
-          "/_id",
-          "/timestamp"
-        ]
-      },
-      {
-        "$ref": "#/definitions/account-history"
-      }
-    ],
-    "meta:status": "experimental",
-    "meta:titleId": "account-history##title##4841",
-    "meta:descriptionId": "account-history##description##65781"
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series",
+      "meta:refProperty": [
+        "/_id",
+        "/timestamp"
+      ]
+    },
+    {
+      "$ref": "#/definitions/account-history"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "account-history##title##4841",
+  "meta:descriptionId": "account-history##description##65781"
 }

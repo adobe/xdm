@@ -27,21 +27,21 @@
           "properties": {
             "xdm:oldValue": {
               "title": "Old Value",
-              "type": "integer",
+              "type": "number",
               "description": "Old score.",
               "meta:titleId": "account-score-change##xdm:oldValue##title##50331",
               "meta:descriptionId": "account-score-change##xdm:oldValue##description##41791"
             },
             "xdm:newValue": {
               "title": "New Value",
-              "type": "integer",
+              "type": "number",
               "description": "New Score.",
               "meta:titleId": "account-score-change##xdm:newValue##title##50901",
               "meta:descriptionId": "account-score-change##xdm:newValue##description##85241"
             },
             "xdm:changeValue": {
               "title": "Change Value",
-              "type": "integer",
+              "type": "number",
               "description": "How much the score is changed by.",
               "meta:titleId": "account-score-change##xdm:changeValue##title##28551",
               "meta:descriptionId": "account-score-change##xdm:changeValue##description##81741"

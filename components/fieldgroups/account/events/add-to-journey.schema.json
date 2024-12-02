@@ -32,7 +32,7 @@
               "meta:titleId": "add-to-journey##xdm:source##title##28551",
               "meta:descriptionId": "add-to-journey##xdm:source##description##81741"
             },
-            "xdm:stepId": {
+            "xdm:stepID": {
               "title": "Step ID",
               "type": "integer",
               "description": "Identifier of the step.",
@@ -42,7 +42,7 @@
             "xdm:choiceNumber": {
               "title": "Choice Number",
               "type": "integer",
-              "meta:titleId": "add-to-journey##xdm:choiceNumber##title##28551",
+              "meta:titleI": "add-to-journey##xdm:choiceNumber##title##28551",
               "meta:descriptionId": "add-to-journey##xdm:choiceNumber##description##81741"
             },
             "xdm:journeyName": {
@@ -52,7 +52,7 @@
               "meta:titleId": "add-to-journey##xdm:journeyName##title##50331",
               "meta:descriptionId": "add-to-journey##xdm:journeyName##description##41791"
             },
-            "xdm:journeyId": {
+            "xdm:journeyID": {
               "title": "Journey ID",
               "type": "integer",
               "description": "Identifier of the Journey.",

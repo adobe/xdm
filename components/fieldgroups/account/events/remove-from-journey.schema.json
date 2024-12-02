@@ -32,7 +32,7 @@
               "meta:titleId": "remove-from-journey##xdm:source##title##28551",
               "meta:descriptionId": "remove-from-journey##xdm:source##description##81741"
             },
-            "xdm:stepId": {
+            "xdm:stepID": {
               "title": "Step ID",
               "type": "integer",
               "description": "Identifier of the step.",
@@ -52,7 +52,7 @@
               "meta:titleId": "remove-from-journey##xdm:journeyName##title##50331",
               "meta:descriptionId": "remove-from-journey##xdm:journeyName##description##41791"
             },
-            "xdm:journeyId": {
+            "xdm:journeyID": {
               "title": "Journey ID",
               "type": "integer",
               "description": "Identifier of the Journey.",

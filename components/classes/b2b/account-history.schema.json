@@ -47,10 +47,7 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/data/time-series",
-      "meta:refProperty": [
-        "/_id",
-        "/timestamp"
-      ]
+      "meta:refProperty": ["/_id", "/timestamp"]
     },
     {
       "$ref": "#/definitions/account-history"

@@ -40,7 +40,7 @@
     "$id": {
       "type": "string",
       "format": "uri",
-      "pattern": "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|([http|https]://ns\\.adobe\\.com/adobecloudplatform/.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)|(http://www.iptc\\.org/.*)|(https://id3\\.org/id3v2.4/.*)|(https://ns\\.adobe\\.com/experience/[a-z0-9-/]*)|(https://ns\\.adobe\\.com/b2b/[a-z0-9-/]*)|(https://ns\\.airship\\.com/[a-z0-9-/]*)|(https://ns\\.braze\\.com/[a-z0-9-/]*)|(https://ns\\.fhir\\.org/[a-z0-9-/]*)"
+      "pattern": "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|([http|https]://ns\\.adobe\\.com/adobecloudplatform/.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)|(http://www.iptc\\.org/.*)|(https://id3\\.org/id3v2.4/.*)|(https://ns\\.adobe\\.com/experience/[a-z0-9-/]*)|(https://ns\\.adobe\\.com/b2b/[a-z0-9-/]*)|(https://ns\\.airship\\.com/[a-z0-9-/]*)|(https://ns\\.algolia\\.com/[a-z0-9-/]*)|(https://ns\\.braze\\.com/[a-z0-9-/]*)|(https://ns\\.fhir\\.org/[a-z0-9-/]*)"
     },
     "meta:license": {
       "type": "array",

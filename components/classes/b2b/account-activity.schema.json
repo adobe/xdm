@@ -1,0 +1,62 @@
+{
+  "meta:license": [
+    "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/account-activity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Account Activity",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "description": "XDM Business Account Activity is a standard Experience Data Model (XDM) class that tracks the activities related to a business account. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
+  "definitions": {
+    "account-activity": {
+      "properties": {
+        "xdm:accountKey": {
+          "title": "Account Key",
+          "description": "Unique composite key identifier for the Account.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "account-activity##xdm:accountKey##title##76911",
+          "meta:descriptionId": "account-activity##xdm:accountKey##description##47311"
+        },
+        "xdm:accountEventType": {
+          "title": "Account Event Type",
+          "description": "Event type for the Account",
+          "type": "string",
+          "default": "system",
+          "meta:enum": {
+            "system": "System",
+            "addToAccountList": "Added to Account List",
+            "removeFromAccountList": "Removed from Account List",
+            "addToJourney": "Added to Journey",
+            "removeFromJourney": "Removed from Journey",
+            "accountInterestingMoment": "Account Interesting Moment"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series",
+      "meta:refProperty": ["/_id", "/timestamp"]
+    },
+    {
+      "$ref": "#/definitions/account-activity"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "account-activity##title##4841",
+  "meta:descriptionId": "account-activity##description##65781"
+}

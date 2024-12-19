@@ -41,7 +41,7 @@
           "type": "string"
         },
         "xdm:errorType": {
-            "title": "Type",
+            "title": "ErrorType",
             "description": "Type of error that occurred.",
             "type": "string",
             "enum": [

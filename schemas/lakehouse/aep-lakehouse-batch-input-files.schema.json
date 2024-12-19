@@ -15,13 +15,13 @@
   "definitions": {
     "batchInputFiles": {
       "properties": {
-        "xdm:datasetId": {
-          "title": "DatasetId",
+        "xdm:datasetID": {
+          "title": "DatasetID",
           "description": "Dataset Id the batch was created for.",
           "type": "string"
         },
-        "xdm:batchId": {
-          "title": "BatchId",
+        "xdm:batchID": {
+          "title": "BatchID",
           "description": "Id for the batch containing the input files.",
           "type": "string"
         },

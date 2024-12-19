@@ -1,10 +1,10 @@
 {
   "xdm:timestamp": "2022-03-03T18:57:00+00:00",
-  "xdm:datasetId": "64b0c0f73f388b1ca8e9950b",
-  "xdm:batchId": "01JE1214EE0PT08E8YDTATGNPB",
+  "xdm:datasetID": "64b0c0f73f388b1ca8e9950b",
+  "xdm:batchID": "01JE1214EE0PT08E8YDTATGNPB",
   "xdm:corruptRecord": "\"name\":\"John Doe\",\"email\":\"jdoegmail.com\",\"phone\":\"123-456-7890\"}",
   "xdm:path": "/example1.json",
-  "xdm:type": "parse",
+  "xdm:errorType": "parse",
   "xdm:errors": [
     {
       "message": "Unable to parse the row",

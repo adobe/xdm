@@ -221,6 +221,54 @@
             }
           }
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourney": {
+          "title": "AJO Batch Journey Entity",
+          "type": "object",
+          "description": "AJO Batch Journey Entity Specific Fields",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyVersionID": {
+              "title": "Batch Journey Version ID",
+              "type": "string",
+              "description": "Represents a frozen version of a Batch Journey"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyName": {
+              "title": "Batch Journey Name",
+              "type": "string",
+              "description": "Represents the Batch journey name"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyID": {
+              "title": "Batch Journey ID",
+              "type": "string",
+              "description": "Represents the Batch Journey ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyCode": {
+              "title": "Batch Journey Code",
+              "type": "string",
+              "description": "Represents the Batch Journey Code"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyaction": {
+              "title": "Batch Journey Action",
+              "type": "object",
+              "description": "Represents the Batch Journey Action",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionID": {
+                  "title": "Batch Journey Action ID",
+                  "type": "string",
+                  "description": "Represents the Batch Journey Action ID"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionName": {
+                  "title": "Batch Journey Action Name",
+                  "type": "string",
+                  "description": "Represents the Batch Journey Action Name"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionNamespace": {
+                  "title": "Batch Journey Action Namespace",
+                  "type": "string",
+                  "description": "Represents the Batch Journey Action Namespace"
+                },
+             }
+            }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/entities/tags": {
           "title": "AJO Entity tags",
           "type": "object",

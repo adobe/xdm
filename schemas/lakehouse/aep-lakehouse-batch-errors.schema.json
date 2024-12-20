@@ -44,7 +44,13 @@
           "title": "ErrorType",
           "description": "Type of error that occurred.",
           "type": "string",
-          "enum": ["parse", "conversion", "validation"]
+          "enum": ["parse", "conversion", "validation"],
+          "meta:enum": {
+            "parse": "Parse",
+            "conversion": "Conversion",
+            "validation": "Validation"
+          }
+          
         },
         "xdm:errors": {
           "title": "Errors",

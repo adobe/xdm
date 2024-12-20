@@ -18,7 +18,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/data/timeseries"
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
     },
     {
       "$ref": "#/definitions/aep-lakehouse-timeseries"

@@ -26,9 +26,9 @@
           "type": "string"
         },
         "xdm:path": {
-            "title": "Path",
-            "description": "Path to the input file that contained this record.",
-            "type": "string"
+          "title": "Path",
+          "description": "Path to the input file that contained this record.",
+          "type": "string"
         },
         "xdm:record": {
           "title": "Record",
@@ -41,14 +41,10 @@
           "type": "string"
         },
         "xdm:errorType": {
-            "title": "ErrorType",
-            "description": "Type of error that occurred.",
-            "type": "string",
-            "enum": [
-                "parse",
-                "conversion",
-                "validation"
-            ]
+          "title": "ErrorType",
+          "description": "Type of error that occurred.",
+          "type": "string",
+          "enum": ["parse", "conversion", "validation"]
         },
         "xdm:errors": {
           "title": "Errors",

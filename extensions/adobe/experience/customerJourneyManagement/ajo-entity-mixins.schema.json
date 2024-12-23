@@ -168,38 +168,44 @@
           "title": "AJO Decision Policy Entity",
           "type": "array",
           "description": "AJO Decision Policy Entity Specific Fields",
-          "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitions": {
-              "title": "Transition",
-              "type": "array",
-              "description": "Transition Specific Fields",
-              "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": {
-                  "title": "Transition Id",
-                  "type": "string",
-                  "description": "Decision Node id"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": {
-                  "title": "Transition Name",
-                  "type": "string",
-                  "description": "Decision Node Name"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": {
-                  "title": "Transition Type",
-                  "type": "string",
-                  "description": "Decision Node Type"
+          "items": {
+            "type": "object",
+            "properties": {
+              "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitions": {
+                "title": "Transition",
+                "type": "array",
+                "description": "Transition Specific Fields",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": {
+                      "title": "Transition Id",
+                      "type": "string",
+                      "description": "Decision Node id"
+                    },
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": {
+                      "title": "Transition Name",
+                      "type": "string",
+                      "description": "Decision Node Name"
+                    },
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": {
+                      "title": "Transition Type",
+                      "type": "string",
+                      "description": "Decision Node Type"
+                    }
+                  }
                 }
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyId": {
+                "title": "Decision Policy Id",
+                "type": "string",
+                "description": "Decision Policy Id"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyName": {
+                "title": "Decision Policy Name",
+                "type": "string",
+                "description": "Decision Policy Name"
               }
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyId": {
-              "title": "Decision Policy Id",
-              "type": "string",
-              "description": "Decision Policy Id"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyName": {
-              "title": "Decision Policy Name",
-              "type": "string",
-              "description": "Decision Policy Name"
             }
           }
         },

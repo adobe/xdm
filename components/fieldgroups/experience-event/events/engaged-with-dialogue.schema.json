@@ -1,0 +1,110 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/engaged-with-dialogue",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Engaged with a Dialogue",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "engagement.dialogue",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "It tracks interactions with dialogues, including chat transcripts, status, and topics discussed.",
+  "definitions": {
+    "engagedwithdialogue": {
+      "properties": {
+        "xdm:dialogue": {
+          "title": "Dialogue",
+          "type": "object",
+          "properties": {
+            "xdm:dialogueID": {
+              "title": "Dialogue ID",
+              "type": "string",
+              "description": "Unique identifier of the dialogue.",
+              "meta:titleId": "engaged-with-dialogue##xdm:dialogueID##title##12345",
+              "meta:descriptionId": "engaged-with-dialogue##xdm:dialogueID##description##67890"
+            },
+            "xdm:dialogueKey": {
+              "title": "Dialogue Key",
+              "description": "Unique key of the dialogue.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "engaged-with-dialogue##xdm:dialogueKey##title##45241",
+              "meta:descriptionId": "engaged-with-dialogue##xdm:dialogueKey##description##13131"
+            },
+            "xdm:dialogueName": {
+              "title": "Dialogue Name",
+              "type": "string",
+              "description": "The name of the dialogue session.",
+              "meta:titleId": "engaged-with-dialogue##xdm:dialogueName##title##54321",
+              "meta:descriptionId": "engaged-with-dialogue##xdm:dialogueName##description##09876"
+            },
+            "xdm:pageURL": {
+              "title": "Page URL",
+              "type": "string",
+              "format": "uri",
+              "description": "URL where the dialogue was initiated.",
+              "meta:titleId": "engaged-with-dialogue##xdm:pageURL##title##11223",
+              "meta:descriptionId": "engaged-with-dialogue##xdm:pageURL##description##44556"
+            }
+          },
+          "meta:titleId": "engaged-with-dialogue##xdm:dialogue##title##66778"
+        },
+        "xdm:conversationDetails": {
+          "title": "Conversation Details",
+          "type": "object",
+          "properties": {
+            "xdm:status": {
+              "title": "Status",
+              "type": "string",
+              "description": "The status of the dialogue session (e.g., Completed).",
+              "meta:titleId": "engaged-with-dialogue##xdm:status##title##33445",
+              "meta:descriptionId": "engaged-with-dialogue##xdm:status##description##55667"
+            },
+            "xdm:summary": {
+              "title": "Summary",
+              "type": "string",
+              "description": "A brief summary of the dialogue conversation.",
+              "meta:titleId": "engaged-with-dialogue##xdm:summary##title##77889",
+              "meta:descriptionId": "engaged-with-dialogue##xdm:summary##description##99001"
+            },
+            "xdm:transcript": {
+              "title": "Transcript",
+              "type": "string",
+              "description": "Transcript of the chat conversation.",
+              "meta:titleId": "engaged-with-dialogue##xdm:transcript##title##22334",
+              "meta:descriptionId": "engaged-with-dialogue##xdm:transcript##description##44556"
+            },
+            "xdm:discussedTopics": {
+              "title": "Discussed Topics",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Topics discussed during the dialogue session.",
+              "meta:titleId": "engaged-with-dialogue##xdm:discussedTopics##title##66778",
+              "meta:descriptionId": "engaged-with-dialogue##xdm:discussedTopics##description##88990"
+            }
+          },
+          "meta:titleId": "engaged-with-dialogue##xdm:conversationDetails##title##11223"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/engagedwithdialogue"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2023-10-05",
+  "meta:titleId": "engaged-with-dialogue##title##33445",
+  "meta:descriptionId": "engaged-with-dialogue##description##55667"
+}

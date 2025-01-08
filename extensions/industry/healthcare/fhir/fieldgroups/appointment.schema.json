@@ -401,12 +401,12 @@
                                  },
                                  "xdm:nthWeekOfMonth":{
                                     "title":"Nth Week Of Month",
-                                    "description":"Indicates that appointments in the series of recurring appointments should occur on a specific day of the month.",
+                                    "description":"Indicates which week within a month the appointments in the series of recurring appointments should occur on.",
                                     "$ref":"https://ns.fhir.org/datatypes/coding"
                                  },
                                  "xdm:dayOfWeek":{
                                     "title":"Day Of Week",
-                                    "description":"Indicates that appointments in the series of recurring appointments should occur on a specific day of the month.",
+                                    "description":"Indicates which day of the week the recurring appointments should occur each nth week.",
                                     "$ref":"https://ns.fhir.org/datatypes/coding"
                                  },
                                  "xdm:monthInterval":{

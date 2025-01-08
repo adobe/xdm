@@ -234,7 +234,7 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyName": {
               "title": "Batch Journey Name",
               "type": "string",
-              "description": "Represents the Batch journey name"
+              "description": "Represents the Batch Journey Name"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyID": {
               "title": "Batch Journey ID",
@@ -246,7 +246,7 @@
               "type": "string",
               "description": "Represents the Batch Journey Code"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyaction": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyAction": {
               "title": "Batch Journey Action",
               "type": "object",
               "description": "Represents the Batch Journey Action",
@@ -261,10 +261,10 @@
                   "type": "string",
                   "description": "Represents the Batch Journey Action Name"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionNamespace": {
-                  "title": "Batch Journey Action Namespace",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyIdentityNamespace": {
+                  "title": "Batch Journey Action Identity Namespace",
                   "type": "string",
-                  "description": "Represents the Batch Journey Action Namespace"
+                  "description": "Represents the Batch Journey Action Identity Namespace"
                 },
              }
             }

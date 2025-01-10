@@ -24,7 +24,7 @@
             },
             "xdm:repeat":{
                "title":"Repeat",
-               "description":"TWhen the event is to occur",
+               "description":"When the event is to occur",
                "$ref":"https://ns.fhir.org/datatypes/repeat"
             },
             "xdm:code":{

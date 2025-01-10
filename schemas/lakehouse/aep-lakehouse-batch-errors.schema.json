@@ -1,0 +1,91 @@
+{
+  "meta:license": [
+    "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/schemas/aep-lakehouse-batch-errors",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Lakehouse Batch Errors",
+  "description": "Global schema for AEP Lakehouse datasets containing batch errors for diagnostics.",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "definitions": {
+    "batchErrors": {
+      "properties": {
+        "xdm:datasetID": {
+          "title": "DatasetID",
+          "description": "Dataset Id the batch was created for.",
+          "type": "string"
+        },
+        "xdm:batchID": {
+          "title": "BatchID",
+          "description": "Id for the batch containing the input files.",
+          "type": "string"
+        },
+        "xdm:path": {
+          "title": "Path",
+          "description": "Path to the input file that contained this record.",
+          "type": "string"
+        },
+        "xdm:record": {
+          "title": "Record",
+          "description": "JSON encoded record that failed to process.",
+          "type": "string"
+        },
+        "xdm:corruptRecord": {
+          "title": "CorruptRecord",
+          "description": "Original record that failed to process",
+          "type": "string"
+        },
+        "xdm:errorType": {
+          "title": "ErrorType",
+          "description": "Type of error that occurred.",
+          "type": "string",
+          "enum": ["parse", "conversion", "validation"],
+          "meta:enum": {
+            "parse": "Parse",
+            "conversion": "Conversion",
+            "validation": "Validation"
+          }
+        },
+        "xdm:errors": {
+          "title": "Errors",
+          "description": "Array of errors that caused this record to fail.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:column": {
+                "title": "Column",
+                "type": "string",
+                "description": "The column that caused the error."
+              },
+              "xdm:code": {
+                "title": "Code",
+                "type": "string",
+                "description": "Standard code for the error."
+              },
+              "xdm:message": {
+                "title": "Message",
+                "type": "string",
+                "description": "Human readable message for the error."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/classes/aep-lakehouse-timeseries"
+    },
+    {
+      "$ref": "#/definitions/batchErrors"
+    }
+  ],
+  "meta:status": "experimental"
+}

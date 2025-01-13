@@ -265,9 +265,10 @@
                   "title": "Batch Journey Action Identity Namespace",
                   "type": "string",
                   "description": "Represents the Batch Journey Action Identity Namespace"
-                },
+                }
              }
             }
+			   }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/entities/tags": {
           "title": "AJO Entity tags",

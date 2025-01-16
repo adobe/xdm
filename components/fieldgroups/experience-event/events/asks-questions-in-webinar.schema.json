@@ -20,6 +20,7 @@
   "description": "It tracks questions asked in webinars, including campaign details and question information.",
   "definitions": {
     "asksquestionsinwebinar": {
+      "type": "object",
       "properties": {
         "xdm:leadOperation": {
           "title": "Lead Operation",
@@ -61,7 +62,8 @@
                   "description": "Unique key of the campaign.",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 }
-              }
+              },
+              "required": ["xdm:askQuestions", "xdm:campaignKey"]
             }
           }
         }

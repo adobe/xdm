@@ -20,6 +20,7 @@
   "description": "It tracks interactions with agents in conversational flows, including agent details, conversation details, and flow information.",
   "definitions": {
     "engagedwithagentinconversationflow": {
+      "type": "object",
       "properties": {
         "xdm:agentDetails": {
           "title": "Agent Details",
@@ -108,5 +109,5 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-01"
+  "meta:createdDate": "2025-01-10"
 }

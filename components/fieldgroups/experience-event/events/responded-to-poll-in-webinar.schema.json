@@ -20,6 +20,7 @@
   "description": "It tracks responses to polls in webinars, including campaign details and poll information.",
   "definitions": {
     "respondedtopollinwebinar": {
+      "type": "object",
       "properties": {
         "xdm:leadOperation": {
           "title": "Lead Operation",
@@ -54,14 +55,15 @@
                       "description": "The response to the poll question."
                     }
                   },
-                  "required": ["xdm:campaignName", "xdm:campaignID", "xdm:question", "xdm:response"]
+                  "required": ["xdm:campaignName", "xdm:campaignID", "xdm:question"]
                 },
                 "xdm:campaignKey": {
                   "title": "Campaign Key",
                   "description": "Unique key of the campaign.",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 }
-              }
+              },
+              "required": ["xdm:pollResponse", "xdm:campaignKey"]
             }
           }
         }
@@ -74,5 +76,5 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-01"
+  "meta:createdDate": "2025-01-10"
 }

@@ -20,6 +20,7 @@
   "description": "It tracks asset downloads in webinars, including campaign details and file information.",
   "definitions": {
     "assetdownloadsinwebinar": {
+      "type": "object",
       "properties": {
         "xdm:leadOperation": {
           "title": "Lead Operation",
@@ -56,7 +57,8 @@
                   "description": "Unique key of the campaign.",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 }
-              }
+              },
+              "required": ["xdm:assetDownload", "xdm:campaignKey"]
             }
           }
         }
@@ -69,5 +71,5 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-01"
+  "meta:createdDate": "2025-01-10"
 }

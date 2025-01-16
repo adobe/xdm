@@ -20,6 +20,7 @@
   "description": "It tracks interactions with documents in dialogues, including document details and dialogue information.",
   "definitions": {
     "interactedwithdocumentindialogue": {
+      "type": "object",
       "properties": {
         "xdm:dialogueDetails": {
           "title": "Dialogue Details",
@@ -91,5 +92,5 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-01"
+  "meta:createdDate": "2025-01-10"
 }

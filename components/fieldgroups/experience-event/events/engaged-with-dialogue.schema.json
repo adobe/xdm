@@ -20,6 +20,7 @@
   "description": "It tracks interactions with dialogues, including chat transcripts, status, and topics discussed.",
   "definitions": {
     "engagedwithdialogue": {
+      "type": "object",
       "properties": {
         "xdm:dialogue": {
           "title": "Dialogue",
@@ -46,7 +47,8 @@
               "format": "uri",
               "description": "URL where the dialogue was initiated."
             }
-          }
+          },
+          "required": ["xdm:dialogueID"]
         },
         "xdm:conversationDetails": {
           "title": "Conversation Details",
@@ -86,5 +88,5 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-01"
+  "meta:createdDate": "2025-01-10"
 }

@@ -20,6 +20,7 @@
   "description": "It tracks call to action clicks in webinars, including campaign details and link information.",
   "definitions": {
     "calltoactionclickedinwebinar": {
+      "type": "object",
       "properties": {
         "xdm:leadOperation": {
           "title": "Lead Operation",
@@ -57,7 +58,8 @@
                   "description": "Unique key of the campaign.",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 }
-              }
+              },
+              "required": ["xdm:callToActionClick", "xdm:campaignKey"]
             }
           }
         }

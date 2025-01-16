@@ -20,6 +20,7 @@
   "description": "It tracks interactions with documents in conversation flows, including document details and flow information.",
   "definitions": {
     "interactedwithdocumentinconversationflow": {
+      "type": "object",
       "properties": {
         "xdm:flowDetails": {
           "title": "Flow Details",
@@ -97,5 +98,5 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-01"
+  "meta:createdDate": "2025-01-10"
 }

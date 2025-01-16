@@ -90,23 +90,23 @@
               "title": "Page URL",
               "type": "string",
               "description": "URL of the page where the dialogue is initiated."
-            },
-            "xdm:dialogueKey": {
-              "title": "Dialogue Key",
-              "description": "Key of the dialogue.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             }
           },
           "required": ["xdm:dialogueID"]
+        },
+        "xdm:dialogueKey": {
+          "title": "Dialogue Key",
+          "description": "Key of the dialogue.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         }
-      },
-      "allOf": [
-        {
-          "$ref": "#/definitions/engagedwithagentindialog"
-        }
-      ],
-      "meta:status": "experimental",
-      "meta:createdDate": "2025-01-10"
+      }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/engagedwithagentindialog"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2025-01-10"
 }

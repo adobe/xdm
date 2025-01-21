@@ -1,0 +1,57 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/auditable",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Audit trail",
+  "type": "object",
+  "meta:abstract": true,
+  "description": "The audit trail schema indicates a data record is auditable. For example, who and when the record was last modified.",
+  "definitions": {
+    "featurization-attributes": {
+      "properties": {
+        "xdm:featurizationAttributes": {
+          "title": "Featurization Attributes",
+          "description": "AI generated attributes.",
+          "type": "array",
+          "properties": {
+            "xdm:version": {
+              "title": "Featurization Version",
+              "type": "string",
+              "description": "Featurization version."
+            },
+            "xdm:parentId": {
+              "title": "Parent ID",
+              "type": "string",
+              "description": "ID of the parent for the content being featurized."
+            },
+            "xdm:category": {
+              "title": "Featurization Version",
+              "type": "string",
+              "description": "Featurization version."
+            },
+            "xdm:stringValue": {
+              "title": "String Value",
+              "type": "string",
+              "description": "String value of the featurized attribute."
+            },
+            "xdm:numberValue": {
+              "title": "Number Value",
+              "type": "number",
+              "description": "Number value of the featurized attribute."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/featurization-attributes"
+    }
+  ]
+}

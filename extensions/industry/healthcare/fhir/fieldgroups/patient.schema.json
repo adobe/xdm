@@ -123,7 +123,10 @@
                            "xdm:relationship":{
                               "title":"Relationship",
                               "description":"The kind of relationship.",
-                              "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                              "type":"array",
+                              "items":{
+                                 "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
+                              }
                            },
                            "xdm:name":{
                               "title":"Contact Name",

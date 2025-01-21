@@ -54,11 +54,8 @@
             },
             "xdm:line":{
                "title":"Line",
-               "description":"Street name, number, direction & P.O. Box etc.",
-               "type":"array",
-               "items":{
-                  "type":"string"
-               }
+               "type":"string",
+               "description":"Street name, number, direction & P.O. Box etc."
             },
             "xdm:city":{
                "title":"City",
@@ -100,3 +97,4 @@
    ],
    "meta:status":"experimental"
 }
+

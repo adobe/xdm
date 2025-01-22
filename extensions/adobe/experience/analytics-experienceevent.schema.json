@@ -37,7 +37,13 @@
   ],
   "definitions": {
     "analytics-experienceevent": {
-      "properties": {}
+      "properties": {
+        "xdm:mediaReporting": {
+          "title": "Media Reporting Details",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
+          "description": "Media Reporting related fields."
+        }
+      }
     }
   },
   "allOf": [

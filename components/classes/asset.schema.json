@@ -39,13 +39,7 @@
             "xdm:idSource": {
               "title": "idSource",
               "type": "string",
-              "description": "The source that created the id for this asset.",
-              "enum": [
-                "AGS",
-                "ACA",
-                "AEM",
-                "CLUSTER"
-              ]
+              "description": "The source that created the id for this asset."
             },
             "xdm:name": {
               "title": "Name",

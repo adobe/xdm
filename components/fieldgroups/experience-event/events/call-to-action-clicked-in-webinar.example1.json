@@ -1,1 +1,12 @@
-{}
+{
+  "xdm:leadOperation": {
+    "xdm:webinar": {
+      "xdm:callToActionClick": {
+        "xdm:campaignName": "Webinar Campaign",
+        "xdm:campaignID": "67890",
+        "xdm:linkClicked": "https://example.com/webinar-link"
+      },
+      "xdm:campaignKey": "webinar-2025"
+    }
+  }
+}

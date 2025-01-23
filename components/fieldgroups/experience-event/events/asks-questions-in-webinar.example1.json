@@ -1,1 +1,13 @@
-{}
+{
+  "xdm:leadOperation": {
+    "xdm:webinar": {
+      "xdm:askQuestions": {
+        "xdm:campaignName": "Webinar Campaign",
+        "xdm:campaignID": "12345",
+        "xdm:isAnswered": true,
+        "xdm:question": "What is the main topic of the webinar?"
+      },
+      "xdm:campaignKey": "webinar-2023"
+    }
+  }
+}

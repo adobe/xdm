@@ -1,0 +1,18 @@
+{
+  "xdm:leadOperation": {
+    "xdm:webinar": {
+      "xdm:pollResponse": {
+        "xdm:campaignName": "Webinar Engagement Campaign",
+        "xdm:campaignID": "CAMP123456",
+        "xdm:question": "What is your favorite feature?",
+        "xdm:response": "Ease of use"
+      },
+      "xdm:campaignKey": {
+        "xdm:sourceType": "CRM",
+        "xdm:sourceInstanceID": "INSTANCE001",
+        "xdm:sourceID": "SOURCE123",
+        "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+      }
+    }
+  }
+}

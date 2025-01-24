@@ -1,10 +1,10 @@
 {
   "xdm:leadOperation": {
     "xdm:webinar": {
-      "xdm:callToActionClick": {
+      "xdm:assetDownload": {
         "xdm:campaignName": "Webinar Engagement Campaign",
         "xdm:campaignID": "CAMP123456",
-        "xdm:linkClicked": "https://example.com/call-to-action"
+        "xdm:file": "presentation.pdf"
       },
       "xdm:campaignKey": {
         "xdm:sourceType": "CRM",

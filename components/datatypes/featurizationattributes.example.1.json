@@ -1,0 +1,24 @@
+{
+  "xdm:featurizationAttributes": [
+    {
+      "xdm:version": "v1",
+      "xdm:category": "keywords",
+      "xdm:stringValue": "night"
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "keywords",
+      "xdm:stringValue": "sweet dreams"
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "wordsCount",
+      "xdm:numberValue": 2244
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "sentencesCount",
+      "xdm:numberValue": 201
+    }
+  ]
+}

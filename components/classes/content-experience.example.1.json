@@ -1,45 +1,41 @@
 {
-  "xdm:version": "v1",
-  "xdm:experienceID": "https://domain/experiments/faq::2023-12-04",
-  "xdm:experienceChannel": "web",
-  "xdm:experienceThumbnailURL": "https://domain/thumbnail.jpeg",
   "xdm:contentExperience": {
     "xdm:version": "v1",
-    "xdm:experienceID": "https://domain.com:2023-01-01",
+    "xdm:_id": "https://domain.com:2023-01-01",
     "xdm:experienceGUID": "https://domain.com_2023-01-01",
+    "xmd:idSource": "AGS",
     "xdm:experienceName": "item purchase",
     "xdm:experienceDescription": "item purchase description",
     "xdm:experienceChannel": "web",
     "xdm:experienceThumbnailURL": "https://domain.com/media/asset1.jpg"
   },
-  "xdm:contentFeaturization": {
-    "xdm:version": "v1",
-    "xdm:keywords": ["night", "sweet dreams"],
-    "xdm:namedEntities": ["Adobe Express"],
-    "xdm:persuasionStrategies": ["social impact"],
-    "xdm:emotions": ["Sad"],
-    "xdm:visualContentDensity": "high",
-    "xdm:wordsCount": 2244,
-    "xdm:sentencesCount": 201,
-    "xdm:hashTagsCount": 3,
-    "xdm:emojisCount": 0,
-    "xdm:textQuotesCount": 5,
-    "xdm:wordsCountPerSentence": 11.164179104477611,
-    "xdm:stopWordsRatio": 0.5,
-    "xdm:readability": "6th and 7th grade",
-    "xdm:mobilePageSpeedScore": 85,
-    "xdm:mobileSEOScore": 98,
-    "xdm:mobileAccessibilityScore": 96,
-    "xdm:mobileBestPracticesScore": 92,
-    "xdm:desktopPageSpeedScore": 84,
-    "xdm:desktopSEOScore": 100,
-    "xdm:desktopAccessibilityScore": 98,
-    "xdm:desktopBestPracticesScore": 92,
-    "xdm:products": [],
-    "xdm:narratives": ["buying an item"],
-    "xdm:tones": ["assertive"],
-    "xdm:marketingEmotions": ["curiosity"],
-    "xdm:concepts": [],
-    "xdm:webpageType": "Homepage"
-  }
+  "xdm:contentAudit": {
+    "xdm:createdBy": "1234",
+    "xdm:createdDate": "2022-09-26T15:52:25+00:00",
+    "xdm:lastUpdatedDate": "2024-05-10T15:52:25+00:00",
+    "xdm:lastUpdatedBy": "1234",
+    "xdm:expirationDate": "2025-09-26T15:52:25+00:00"
+  },
+  "xdm:featurizationAttributes": [
+    {
+      "xdm:version": "v1",
+      "xdm:category": "keywords",
+      "xdm:stringValue": "night"
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "keywords",
+      "xdm:stringValue": "sweet dreams"
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "wordsCount",
+      "xdm:numberValue": 2244
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "sentencesCount",
+      "xdm:numberValue": 201
+    }
+  ]
 }

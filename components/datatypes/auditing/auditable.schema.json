@@ -43,12 +43,6 @@
           "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
           "meta:titleId": "auditable##xdm:modifiedByBatchID##title##45371",
           "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##21001"
-        },
-        "xdm:expirationDate": {
-          "title": "Expiration Date",
-          "description": "Date when this record will expire.",
-          "type": "string",
-          "format": "date-time"
         }
       }
     }

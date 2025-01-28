@@ -24,11 +24,6 @@
               "type": "string",
               "description": "Feature version."
             },
-            "xdm:parentId": {
-              "title": "Parent Id",
-              "type": "string",
-              "description": "Id of the parent for the content being featurized."
-            },
             "xdm:category": {
               "title": "Feature Category",
               "type": "string",

@@ -18,26 +18,29 @@
           "title": "Featurization Attributes",
           "description": "AI generated attributes.",
           "type": "array",
-          "properties": {
-            "xdm:version": {
-              "title": "Feature Version",
-              "type": "string",
-              "description": "Feature version."
-            },
-            "xdm:category": {
-              "title": "Feature Category",
-              "type": "string",
-              "description": "Attribute Category such as scenes, tones, orientation, etc."
-            },
-            "xdm:stringValue": {
-              "title": "Feature String Value",
-              "type": "string",
-              "description": "String value of the featurized attribute."
-            },
-            "xdm:numberValue": {
-              "title": "Feature Number Value",
-              "type": "number",
-              "description": "Number value of the featurized attribute."
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:version": {
+                "title": "Feature Version",
+                "type": "string",
+                "description": "Feature version."
+              },
+              "xdm:category": {
+                "title": "Feature Category",
+                "type": "string",
+                "description": "Attribute Category such as scenes, tones, orientation, etc."
+              },
+              "xdm:stringValue": {
+                "title": "Feature String Value",
+                "type": "string",
+                "description": "String value of the featurized attribute."
+              },
+              "xdm:numberValue": {
+                "title": "Feature Number Value",
+                "type": "number",
+                "description": "Number value of the featurized attribute."
+              }
             }
           }
         }

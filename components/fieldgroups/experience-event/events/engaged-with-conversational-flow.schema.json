@@ -21,7 +21,7 @@
   "definitions": {
     "engagedwithaconversationalflow": {
       "properties": {
-        "xdm:flowContext": {
+        "xdm:conversationFlowContext": {
           "title": "Flow Context",
           "type": "object",
           "properties": {

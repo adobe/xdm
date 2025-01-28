@@ -20,27 +20,27 @@
           "type": "array",
           "properties": {
             "xdm:version": {
-              "title": "Featurization Version",
+              "title": "Feature Version",
               "type": "string",
-              "description": "Featurization version."
+              "description": "Feature version."
             },
             "xdm:parentId": {
-              "title": "Parent ID",
+              "title": "Parent Id",
               "type": "string",
-              "description": "ID of the parent for the content being featurized."
+              "description": "Id of the parent for the content being featurized."
             },
             "xdm:category": {
-              "title": "Featurization Version",
+              "title": "Feature Category",
               "type": "string",
-              "description": "Featurization version."
+              "description": "Attribute Category such as scenes, tones, orientation, etc."
             },
             "xdm:stringValue": {
-              "title": "String Value",
+              "title": "Feature String Value",
               "type": "string",
               "description": "String value of the featurized attribute."
             },
             "xdm:numberValue": {
-              "title": "Number Value",
+              "title": "Feature Number Value",
               "type": "number",
               "description": "Number value of the featurized attribute."
             }

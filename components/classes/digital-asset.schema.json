@@ -26,8 +26,8 @@
               "type": "string",
               "description": "Asset version."
             },
-            "xdm:perceptionID": {
-              "title": "Perception ID",
+            "xdm:perceptionId": {
+              "title": "Perception Id",
               "type": "string",
               "description": "Unique identifier of the asset perception."
             },

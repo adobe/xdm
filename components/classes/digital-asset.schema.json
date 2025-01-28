@@ -70,10 +70,10 @@
       "$ref": "#/definitions/digital-asset"
     },
     {
-      "$ref": "#/definitions/content-audit"
+      "$ref": "https://ns.adobe.com/xdm/common/contentaudit"
     },
     {
-      "$ref": "#/definitions/featurization-attributes"
+      "$ref": "https://ns.adobe.com/xdm/common/featurizationattributes"
     }
   ],
   "meta:status": "experimental"

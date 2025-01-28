@@ -1,0 +1,41 @@
+{
+  "xdm:digitalAsset": {
+    "xdm:version": "v1",
+    "xdm:perceptionID": "1c93aa01-f183-a3f1-bda6-a9c96e66afea",
+    "xdm:_id": "https://domain/media_random_id.jpeg",
+    "xmd:idSource": "ACA",
+    "xdm:name": "jump.png",
+    "xdm:description": "A man is performing a mid-air jump on a skateboard at an indoor skate park",
+    "xdm:assetType": "image",
+    "xdm:thumbnailURL": "https://domain/thumbnail.jpeg"
+  },
+  "xdm:contentAudit": {
+    "xdm:createdBy": "1234",
+    "xdm:createdDate": "2022-09-26T15:52:25+00:00",
+    "xdm:lastUpdatedDate": "2024-05-10T15:52:25+00:00",
+    "xdm:lastUpdatedBy": "1234",
+    "xdm:expirationDate": "2025-09-26T15:52:25+00:00"
+  },
+  "xdm:featurizationAttributes": [
+    {
+      "xdm:version": "v1",
+      "xdm:category": "scenes",
+      "xdm:stringValue": "sky"
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "scenes",
+      "xdm:stringValue": "barn"
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "orientation",
+      "xdm:stringValue": "square"
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "products",
+      "xdm:stringValue": "stock"
+    }
+  ]
+}

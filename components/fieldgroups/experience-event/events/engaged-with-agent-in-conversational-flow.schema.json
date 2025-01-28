@@ -70,7 +70,7 @@
           "title": "Flow Details",
           "type": "object",
           "properties": {
-            "xdm:flowId": {
+            "xdm:flowID": {
               "title": "Flow ID",
               "type": "string",
               "description": "Unique identifier of the flow."
@@ -86,7 +86,7 @@
               "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             }
           },
-          "required": ["xdm:flowId"]
+          "required": ["xdm:flowID"]
         },
         "xdm:pageDetails": {
           "title": "Page Details",

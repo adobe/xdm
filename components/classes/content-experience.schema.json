@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -12,45 +12,256 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "Digital experience such as a website or social media post.",
+  "description": "Content experience.",
   "definitions": {
     "content-experience": {
       "properties": {
         "xdm:contentExperience": {
           "title": "Content Experience",
-          "description": "Digital experience such as a website or social media post.",
+          "description": "Content experience.",
           "type": "object",
           "properties": {
             "xdm:version": {
-              "title": "Version",
+              "title": "Asset Version",
               "type": "string",
-              "description": "Experience version."
+              "description": "Asset version."
             },
-            "xdm:idSource": {
-              "title": "idSource",
+            "xdm:experienceID": {
+              "title": "Experience ID",
               "type": "string",
-              "description": "The source that created the id for this experience."
+              "description": "Unique identifier of the content experience."
             },
-            "xdm:name": {
-              "title": "Name",
+            "xdm:experienceGUID": {
+              "title": "Experience GUID",
               "type": "string",
-              "description": "Experience name."
+              "description": "Global unique identifier of the content experience."
             },
-            "xdm:description": {
-              "title": "Description",
+            "xdm:experienceName": {
+              "title": "Experience Name",
+              "type": "string",
+              "description": "Experience Name."
+            },
+            "xdm:experienceDescription": {
+              "title": "Experience Description",
               "type": "string",
               "description": "Experience description."
             },
-            "xdm:channel": {
-              "title": "Channel",
+            "xdm:experienceChannel": {
+              "title": "Experience Channel",
               "type": "string",
-              "description": "Channel such as web or mobile."
+              "description": "Experience channel such as web, mobile or email."
             },
-            "xdm:thumbnailURL": {
-              "title": "Thumbnail URL",
+            "xdm:experienceThumbnailURL": {
+              "title": "Experience thumbnail URL",
               "format": "uri",
               "type": "string",
               "description": "Experience thumbnail url."
+            }
+          }
+        }
+      }
+    },
+    "content-experience-featurization": {
+      "properties": {
+        "xdm:contentFeaturization": {
+          "title": "Content Featurization",
+          "description": "Content featurization.",
+          "type": "object",
+          "properties": {
+            "xdm:version": {
+              "title": "Experience Featurization Version",
+              "type": "string",
+              "description": "Experience featurization version."
+            },
+            "xdm:keywords": {
+              "title": "Experience Keywords",
+              "type": "array",
+              "description": "Experience keywords.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:namedEntities": {
+              "title": "Experience Named Entities",
+              "type": "array",
+              "description": "All the named entities that are present in the given text, categorised as follows:\n Person\n Location\n Organisation\n Event\n Product\n Work of Art\n Law\n Language\n Miscellaneous\n",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:persuasionStrategies": {
+              "title": "Experience Persuasion Strategies",
+              "type": "array",
+              "description": "Persuasion strategies that are present in the given text.\n\nThe possible values are:\n\nSocial Identity\nSocial Proof\nAuthority\nConcreteness\nFoot in the Door\nOvercoming Reactance\nReciprocity\nAnchoring and Comparison\nSocial Impact\nScarcity\nAnthropomorphism",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:emotions": {
+              "title": "Experience Emotions",
+              "type": "array",
+              "description": "Experience emotions.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:visualContentDensity": {
+              "title": "Experience Visual Content Density",
+              "type": "string",
+              "description": "Experience visual content density such as low, medium or high.",
+              "meta:enum": {
+                "low": "Low",
+                "medium": "Medium",
+                "high": "High"
+              }
+            },
+            "xdm:wordsCount": {
+              "title": "Experience Words Count",
+              "type": "integer",
+              "description": "Experience words Count.",
+              "minimum": 0
+            },
+            "xdm:sentencesCount": {
+              "title": "Experience Sentences Count",
+              "type": "integer",
+              "description": "Experience Sentences Count.",
+              "minimum": 0
+            },
+            "xdm:hashTagsCount": {
+              "title": "Experience Hash Tags Count",
+              "type": "integer",
+              "description": "Experience hash tags count.",
+              "minimum": 0
+            },
+            "xdm:emojisCount": {
+              "title": "Experience Emojis Count",
+              "type": "integer",
+              "description": "Experience emojis count.",
+              "minimum": 0
+            },
+            "xdm:textQuotesCount": {
+              "title": "Experience Text Quotes Count",
+              "type": "integer",
+              "description": "Experience text quotes count.",
+              "minimum": 0
+            },
+            "xdm:wordsCountPerSentence": {
+              "title": "Experience Words Count Per Sentence",
+              "type": "number",
+              "description": "Experience words count per sentence.",
+              "minimum": 0
+            },
+            "xdm:stopWordsRatio": {
+              "title": "Experience Stop Words Ratio",
+              "type": "number",
+              "description": "Experience stop words ratio.",
+              "minimum": 0
+            },
+            "xdm:readability": {
+              "title": "Experience Readability",
+              "type": "string",
+              "description": "Experience readability."
+            },
+            "xdm:mobilePageSpeedScore": {
+              "title": "Experience Mobile Page Speed Score",
+              "type": "integer",
+              "description": "Experience mobile page speed overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:mobileSEOScore": {
+              "title": "Experience Mobile SEO Score",
+              "type": "integer",
+              "description": "Experience mobile seo overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:mobileAccessibilityScore": {
+              "title": "Experience Mobile Accessibility Score",
+              "type": "integer",
+              "description": "Experience mobile accessibility overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:mobileBestPracticesScore": {
+              "title": "Experience Mobile Best Practices Score",
+              "type": "integer",
+              "description": "Experience mobile best practices overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:desktopPageSpeedScore": {
+              "title": "Experience Desktop Page Speed Score",
+              "type": "integer",
+              "description": "Experience desktop page speed overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:desktopSEOScore": {
+              "title": "Experience Desktop SEO Score",
+              "type": "integer",
+              "description": "Experience desktop seo overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:desktopAccessibilityScore": {
+              "title": "Experience Desktop Accessibility Score",
+              "type": "integer",
+              "description": "Experience desktop accessibility overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:desktopBestPracticesScore": {
+              "title": "Experience Desktop Best Practices Score",
+              "type": "integer",
+              "description": "Experience desktop best practices overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:products": {
+              "title": "Products",
+              "type": "array",
+              "description": "List of products.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:narratives": {
+              "title": "Narratives",
+              "type": "array",
+              "description": "The narratives which the piece of text is building based on relevance from a marketer's view point",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:tones": {
+              "title": "Tones",
+              "type": "array",
+              "description": "Returns the tone of the text from the following taxonomy:\n\nformal\nconversational\nmatter-of-fact\nassertive\nenthusiastic\nhumorous\ninspirational\nempathetic\nsensory\nstorytelling\npoetic\npersonal\nquantitative",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:marketingEmotions": {
+              "title": "Marketing Emotions",
+              "type": "array",
+              "description": "Returns the emotion invoked in the reader of a marketing message:\n\nUrgency\nExclusivity\nEncouragement\nChallenge\nCuriosity\nAchievement\nTrust\nSimplicity\nFascination",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:concepts": {
+              "title": "Concepts",
+              "type": "array",
+              "description": "Relevant concepts in the text.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:webpageType": {
+              "title": "Web Page Type",
+              "type": "string",
+              "description": "For web channel; one of the given webpageTypes:\n\nHomepage\nAbout us\nContact us\nBlog/Articles\nNews\nProduct/Services\nCSR\nCareers\n"
             }
           }
         }
@@ -59,16 +270,13 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
-    },
-    {
       "$ref": "#/definitions/content-experience"
     },
     {
-      "$ref": "#/definitions/content-audit"
+      "$ref": "#/definitions/content-experience-featurization"
     },
     {
-      "$ref": "#/definitions/featurization-attributes"
+      "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
   "meta:status": "experimental"

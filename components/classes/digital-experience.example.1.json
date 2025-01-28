@@ -1,0 +1,40 @@
+{
+  "xdm:digitalExperience": {
+    "xdm:version": "v1",
+    "xdm:_id": "https://domain.com:2023-01-01",
+    "xmd:idSource": "AGS",
+    "xdm:name": "item purchase",
+    "xdm:description": "item purchase description",
+    "xdm:channel": "web",
+    "xdm:thumbnailURL": "https://domain.com/media/asset1.jpg"
+  },
+  "xdm:contentAudit": {
+    "xdm:createdBy": "1234",
+    "xdm:createdDate": "2022-09-26T15:52:25+00:00",
+    "xdm:lastUpdatedDate": "2024-05-10T15:52:25+00:00",
+    "xdm:lastUpdatedBy": "1234",
+    "xdm:expirationDate": "2025-09-26T15:52:25+00:00"
+  },
+  "xdm:featurizationAttributes": [
+    {
+      "xdm:version": "v1",
+      "xdm:category": "keywords",
+      "xdm:stringValue": "night"
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "keywords",
+      "xdm:stringValue": "sweet dreams"
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "wordsCount",
+      "xdm:numberValue": 2244
+    },
+    {
+      "xdm:version": "v1",
+      "xdm:category": "sentencesCount",
+      "xdm:numberValue": 201
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/call-to-action-clicked-in-webinar",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Call to Action Clicked in Webinar",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.webinar.callToActionClick",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "It tracks call to action clicks in webinars, including campaign details and link information.",
+  "definitions": {
+    "calltoactionclickedinwebinar": {
+      "type": "object",
+      "properties": {
+        "xdm:leadOperation": {
+          "title": "Lead Operation",
+          "type": "object",
+          "properties": {
+            "xdm:webinar": {
+              "title": "Webinar",
+              "type": "object",
+              "properties": {
+                "xdm:callToActionClick": {
+                  "title": "Call to Action Click",
+                  "type": "object",
+                  "properties": {
+                    "xdm:campaignName": {
+                      "title": "Campaign Name",
+                      "type": "string",
+                      "description": "Name of the campaign."
+                    },
+                    "xdm:campaignID": {
+                      "title": "Campaign ID",
+                      "type": "string",
+                      "description": "Unique identifier of the campaign."
+                    },
+                    "xdm:linkClicked": {
+                      "title": "Link Clicked",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "The link clicked during the webinar."
+                    }
+                  },
+                  "required": ["xdm:campaignName", "xdm:campaignID", "xdm:linkClicked"]
+                },
+                "xdm:campaignKey": {
+                  "title": "Campaign Key",
+                  "description": "Unique key of the campaign.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                }
+              },
+              "required": ["xdm:callToActionClick", "xdm:campaignKey"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/calltoactionclickedinwebinar"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2025-01-01"
+}

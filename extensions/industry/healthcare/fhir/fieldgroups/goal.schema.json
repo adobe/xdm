@@ -199,7 +199,7 @@
                         "$ref":"https://ns.fhir.org/datatypes/annotation"
                      }
                   },
-                  "xdm:outccome":{
+                  "xdm:outcome":{
                      "title":"Outcome",
                      "description":"Identifies the change (or lack of change) at the point when the status of the goal is assessed.",
                      "type":"array",

@@ -44,6 +44,11 @@
           "title": "destinationURL",
           "type": "string",
           "description": "certain assets like images can have a destination, when clicked upon. eg) http://ecommerce.com/product"
+        },
+        "xdm:trackedURL": {
+          "title": "trackedURL",
+          "type": "string",
+          "description": "tracked URL of destination URL. This field would be set by the decisioning system to track click on destination URL."
         }
       }
     }

@@ -1,0 +1,31 @@
+{
+  "xdm:conversationFlowContext": {
+    "xdm:flowDetails": {
+      "xdm:flowId": "FLOW123456",
+      "xdm:flowName": "Customer Support Chat Flow"
+    },
+    "xdm:interactionDetails": {
+      "xdm:interactedUIType": "ChatWindow",
+      "xdm:sourceName": "SupportBot",
+      "xdm:sourceType": "AI Chatbot"
+    },
+    "xdm:conversationDetails": {
+      "xdm:status": "Completed",
+      "xdm:summary": "User inquired about product pricing.",
+      "xdm:transcript": "User: What is the cost of product X? Bot: Product X costs $99.",
+      "xdm:discussedTopics": [
+        "Product Pricing",
+        "Availability"
+      ]
+    },
+    "xdm:pageDetails": {
+      "xdm:pageURL": "https://example.com/chat/support"
+    },
+    "xdm:conversationalFlowKey": {
+      "xdm:sourceType": "CRM",
+      "xdm:sourceInstanceID": "INSTANCE002",
+      "xdm:sourceID": "SOURCE456",
+      "xdm:sourceKey": "CRM|INSTANCE002|SOURCE456"
+    }
+  }
+}

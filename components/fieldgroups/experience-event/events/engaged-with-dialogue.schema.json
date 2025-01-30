@@ -1,0 +1,92 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/engaged-with-dialogue",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Engaged with a Dialogue",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "engagement.dialogue",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "It tracks interactions with dialogues, including chat transcripts, status, and topics discussed.",
+  "definitions": {
+    "engagedwithdialogue": {
+      "type": "object",
+      "properties": {
+        "xdm:dialogue": {
+          "title": "Dialogue",
+          "type": "object",
+          "properties": {
+            "xdm:dialogueID": {
+              "title": "Dialogue ID",
+              "type": "string",
+              "description": "Unique identifier of the dialogue."
+            },
+            "xdm:dialogueKey": {
+              "title": "Dialogue Key",
+              "description": "Unique key of the dialogue.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            },
+            "xdm:dialogueName": {
+              "title": "Dialogue Name",
+              "type": "string",
+              "description": "The name of the dialogue session."
+            },
+            "xdm:pageURL": {
+              "title": "Page URL",
+              "type": "string",
+              "format": "uri",
+              "description": "URL where the dialogue was initiated."
+            }
+          },
+          "required": ["xdm:dialogueID"]
+        },
+        "xdm:conversationDetails": {
+          "title": "Conversation Details",
+          "type": "object",
+          "properties": {
+            "xdm:status": {
+              "title": "Status",
+              "type": "string",
+              "description": "The status of the dialogue session (e.g., Completed)."
+            },
+            "xdm:summary": {
+              "title": "Summary",
+              "type": "string",
+              "description": "A brief summary of the dialogue conversation."
+            },
+            "xdm:transcript": {
+              "title": "Transcript",
+              "type": "string",
+              "description": "Transcript of the chat conversation."
+            },
+            "xdm:discussedTopics": {
+              "title": "Discussed Topics",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Topics discussed during the dialogue session."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/engagedwithdialogue"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2025-01-10"
+}

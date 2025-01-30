@@ -10,13 +10,13 @@
   "title": "Content Audit",
   "type": "object",
   "meta:abstract": true,
-  "description": "Content audit.",
+  "description": "Audit information about digital content such as a digital experience or asset.",
   "definitions": {
     "content-audit": {
       "properties": {
         "xdm:contentAudit": {
           "title": "Content Audit",
-          "description": "Content audit.",
+          "description": "Audit information about digital content such as a digital experience or asset.",
           "type": "object",
           "properties": {
             "xdm:createdBy": {

@@ -51,23 +51,10 @@
                   "description": "Variant of message distribution.",
                   "type": "integer"
                 },
-                "https://ns.adobe.com/experience/intelligentServices/experimentDate": {
-                  "title": "Experiment Date",
-                  "description": "Experiment date",
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "https://ns.adobe.com/experience/intelligentServices/testFinishDate": {
-                  "title": "Test Finish Date",
-                  "description": "Test finish date",
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "https://ns.adobe.com/experience/intelligentServices/recordCreateDate": {
-                  "title": "Record Create Date",
-                  "description": "Record create date",
-                  "type": "string",
-                  "format": "date-time"
+                "https://ns.adobe.com/experience/intelligentServices/batchId": {
+                  "title": "BatchId",
+                  "description": "Batch Id",
+                  "type": "string"
                 }
               }
             }

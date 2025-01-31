@@ -1,14 +1,12 @@
 {
   "https://ns.adobe.com/experience/intelligentServices/journeyAI": {
     "https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationSummary": {
-        "https://ns.adobe.com/experience/intelligentServices/journeyID": "1234",
-        "https://ns.adobe.com/experience/intelligentServices/noOfSends": 100,
-        "https://ns.adobe.com/experience/intelligentServices/noOfOpens": 10,
-        "https://ns.adobe.com/experience/intelligentServices/noOfClicks": 1,
-        "https://ns.adobe.com/experience/intelligentServices/variant": 0,
-        "https://ns.adobe.com/experience/intelligentServices/experimentDate": "2020-01-01T00:00:00+00:00",
-        "https://ns.adobe.com/experience/intelligentServices/testFinishDate": "2020-01-01T00:00:00+00:00",
-        "https://ns.adobe.com/experience/intelligentServices/recordCreateDate": "2020-01-01T00:00:00+00:00"
+      "https://ns.adobe.com/experience/intelligentServices/journeyID": "1234",
+      "https://ns.adobe.com/experience/intelligentServices/noOfSends": 100,
+      "https://ns.adobe.com/experience/intelligentServices/noOfOpens": 10,
+      "https://ns.adobe.com/experience/intelligentServices/noOfClicks": 1,
+      "https://ns.adobe.com/experience/intelligentServices/variant": 0,
+      "https://ns.adobe.com/experience/intelligentServices/batchId": "batch_id"
     }
   }
 }

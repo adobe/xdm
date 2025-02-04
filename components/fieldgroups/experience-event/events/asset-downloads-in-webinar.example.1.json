@@ -4,13 +4,13 @@
       "xdm:assetDownload": {
         "xdm:campaignName": "Webinar Engagement Campaign",
         "xdm:campaignID": "CAMP123456",
-        "xdm:file": "presentation.pdf"
-      },
-      "xdm:campaignKey": {
-        "xdm:sourceType": "CRM",
-        "xdm:sourceInstanceID": "INSTANCE001",
-        "xdm:sourceID": "SOURCE123",
-        "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+        "xdm:file": "presentation.pdf",
+        "xdm:campaignKey": {
+          "xdm:sourceType": "CRM",
+          "xdm:sourceInstanceID": "INSTANCE001",
+          "xdm:sourceID": "SOURCE123",
+          "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+        }
       }
     }
   }

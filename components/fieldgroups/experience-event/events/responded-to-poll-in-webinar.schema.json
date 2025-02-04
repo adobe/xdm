@@ -53,17 +53,17 @@
                       "title": "Poll Response",
                       "type": "string",
                       "description": "The response to the poll question."
+                    },
+                    "xdm:campaignKey": {
+                      "title": "Campaign Key",
+                      "description": "Unique key of the campaign.",
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                     }
                   },
-                  "required": ["xdm:campaignName", "xdm:campaignID", "xdm:question"]
-                },
-                "xdm:campaignKey": {
-                  "title": "Campaign Key",
-                  "description": "Unique key of the campaign.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "required": ["xdm:campaignName", "xdm:campaignID", "xdm:question", "xdm:campaignKey"]
                 }
               },
-              "required": ["xdm:pollResponse", "xdm:campaignKey"]
+              "required": ["xdm:pollResponse"]
             }
           }
         }

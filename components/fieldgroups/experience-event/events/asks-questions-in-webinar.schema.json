@@ -53,17 +53,17 @@
                       "title": "Question",
                       "type": "string",
                       "description": "The question asked during the webinar."
+                    },
+                    "xdm:campaignKey": {
+                      "title": "Campaign Key",
+                      "description": "Unique key of the campaign.",
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                     }
                   },
-                  "required": ["xdm:campaignName", "xdm:campaignID", "xdm:isAnswered", "xdm:question"]
-                },
-                "xdm:campaignKey": {
-                  "title": "Campaign Key",
-                  "description": "Unique key of the campaign.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "required": ["xdm:campaignName", "xdm:campaignID", "xdm:isAnswered", "xdm:question", "xdm:campaignKey"]
                 }
               },
-              "required": ["xdm:askQuestions", "xdm:campaignKey"]
+              "required": ["xdm:askQuestions"]
             }
           }
         }

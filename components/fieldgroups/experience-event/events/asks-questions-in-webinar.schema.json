@@ -63,7 +63,7 @@
                   "required": ["xdm:campaignName", "xdm:campaignID", "xdm:isAnswered", "xdm:question", "xdm:campaignKey"]
                 }
               },
-              "required": ["xdm:askQuestions", "xdm:campaignKey"]
+              "required": ["xdm:askQuestions"]
             }
           }
         }

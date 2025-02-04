@@ -4,13 +4,13 @@
       "xdm:callToActionClick": {
         "xdm:campaignName": "Webinar Engagement Campaign",
         "xdm:campaignID": "CAMP123456",
-        "xdm:linkClicked": "https://example.com/call-to-action"
-      },
-      "xdm:campaignKey": {
-        "xdm:sourceType": "CRM",
-        "xdm:sourceInstanceID": "INSTANCE001",
-        "xdm:sourceID": "SOURCE123",
-        "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+        "xdm:linkClicked": "https://example.com/call-to-action",
+        "xdm:campaignKey": {
+          "xdm:sourceType": "CRM",
+          "xdm:sourceInstanceID": "INSTANCE001",
+          "xdm:sourceID": "SOURCE123",
+          "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+        }
       }
     }
   }

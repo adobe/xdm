@@ -91,6 +91,12 @@
                   "description": "Boolean indicating if there was a change in the lead's status.",
                   "meta:titleId": "statusincampaignprogressionchanged##xdm:isSuccessful##title##15821",
                   "meta:descriptionId": "statusincampaignprogressionchanged##xdm:isSuccessful##description##4811"
+                },
+                "xdm:webinarURL": {
+                  "title": "Webinar URL",
+                  "type": "string",
+                  "format": "uri",
+                  "description": "URL of the webinar."
                 }
               },
               "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignProgression##title##89841"

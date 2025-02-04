@@ -32,17 +32,17 @@
                   "type": "string"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/noOfSends": {
-                  "title": "Send",
+                  "title": "Send Count",
                   "description": "Number of send for each journey",
                   "type": "integer"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/noOfOpens": {
-                  "title": "Open",
+                  "title": "Open Count",
                   "description": "Number of open for each journey",
                   "type": "integer"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/noOfClicks": {
-                  "title": "Click",
+                  "title": "Click Count",
                   "description": "Number of click for each journey",
                   "type": "integer"
                 },

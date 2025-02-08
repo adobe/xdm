@@ -25,7 +25,7 @@
         "braze:timezone": {
           "title": "Timezone",
           "type": "string",
-          "description": "Timezone of the user."
+          "description": "Time zone of the user."
         },
         "braze:appGroupID": {
           "title": "App Group ID",
@@ -44,12 +44,12 @@
             "braze:userID": {
               "title": "User ID",
               "type": "string",
-              "description": "BSON ID of the user that performed this event."
+              "description": "Braze user ID of the user who performed this event."
             },
             "braze:externalUserID": {
               "title": "External User ID",
               "type": "string",
-              "description": "[PII] External user ID of the user."
+              "description": "[PII] External ID of the user."
             },
             "braze:emailAddress": {
               "title": "Email Address",
@@ -88,7 +88,7 @@
             "braze:phoneNumber": {
               "title": "Phone Number",
               "type": "string",
-              "description": "[PII] Phone number of the user in e164 format."
+              "description": "[PII] Phone number of the user in e.164 format (for example +14155552671)."
             }
           }
         },
@@ -194,40 +194,65 @@
           "title": "Canvas",
           "type": "object",
           "properties": {
+            "braze:canvasEntryID": {
+              "title": "Canvas Entry ID",
+              "type": "string",
+              "description": "Unique identifier for this instance of a user in a canvas."
+            },
             "braze:canvasID": {
               "title": "Canvas ID",
               "type": "string",
-              "description": "API ID of the canvas this event belongs to."
+              "description": "API ID of the Canvas this event belongs to."
             },
             "braze:canvasStepMessageVariationID": {
               "title": "Canvas Step Message Variation ID",
               "type": "string",
-              "description": "API ID of the canvas step message variation this user received."
+              "description": "API ID of the Canvas step message variation this user received."
             },
             "braze:canvasName": {
               "title": "Canvas Name",
               "type": "string",
-              "description": "Name of the canvas."
+              "description": "Name of the Canvas."
             },
             "braze:canvasVariationID": {
               "title": "Canvas Variation ID",
               "type": "string",
-              "description": "API ID of the canvas variation this event belongs to."
+              "description": "API ID of the Canvas variation this event belongs to."
             },
             "braze:canvasVariationName": {
               "title": "Canvas Variation Name",
               "type": "string",
-              "description": "Name of the canvas variation this user received."
+              "description": "Name of the Canvas variation this user received."
             },
             "braze:canvasStepID": {
               "title": "Canvas Step ID",
               "type": "string",
-              "description": "API ID of the canvas step this event belongs to."
+              "description": "API ID of the Canvas step this event belongs to."
             },
             "braze:canvasStepName": {
               "title": "Canvas Step Name",
               "type": "string",
-              "description": "Name of the canvas step."
+              "description": "Name of the Canvas step."
+            },
+            "braze:exitReason": {
+              "title": "Exit Reason",
+              "type": "string",
+              "description": "If this is an exit, the reason a user exited the canvas during the step."
+            },
+            "braze:isCanvasEntry": {
+              "title": "Is Canvas Entry",
+              "type": "boolean",
+              "description": "Whether this is entry into a first step in a canvas."
+            },
+            "braze:nextStepID": {
+              "title": "Next Step ID",
+              "type": "string",
+              "description": "API ID of the next step in the canvas."
+            },
+            "braze:progressionType": {
+              "title": "Progression Type",
+              "type": "string",
+              "description": "What type of step progression event this is."
             },
             "braze:experiment": {
               "title": "Experiment",
@@ -257,6 +282,17 @@
             }
           }
         },
+        "braze:featureflag": {
+          "title": "FeatureFlag",
+          "type": "object",
+          "properties": {
+            "braze:featureFlagIDName": {
+              "title": "Feature Flag ID Name",
+              "type": "string",
+              "description": "The Feature Flag Rollout identifier."
+            }
+          }
+        },
         "braze:messaging": {
           "title": "Messaging",
           "type": "object",
@@ -264,7 +300,7 @@
             "braze:sendID": {
               "title": "Send ID",
               "type": "string",
-              "description": "Message send ID this message belongs to."
+              "description": "Message send ID this message belongs to (SMS Sends events only)."
             },
             "braze:dispatchID": {
               "title": "Dispatch ID",
@@ -292,7 +328,7 @@
             "braze:action": {
               "title": "Action",
               "type": "string",
-              "description": "Action taken in response to this message. (e.g. Subscribed, Unsubscribed or None).",
+              "description": "Action taken in response to this message. (for example Subscribed, Unsubscribed or None).",
               "enum": [
                 "Subscribed",
                 "Unsubscribed",
@@ -311,12 +347,12 @@
             "braze:abortLog": {
               "title": "Abort Log",
               "type": "string",
-              "description": "[PII] Log message describing abort details (max: 128 chars)."
+              "description": "[PII] Log message describing abort details (up to 128 chars)."
             },
             "braze:abortType": {
               "title": "Abort Type",
               "type": "string",
-              "description": "Type of abort, one of: \"liquid_abort_message\", \"quiet_hours\", \"rate_limit\".",
+              "description": "Type of abort, one of ['liquid_abort_message', 'message_ttl', 'quiet_hours', 'template_parse_error'].",
               "enum": [
                 "liquid_abort_message",
                 "quiet_hours",
@@ -355,12 +391,12 @@
                 "braze:fromPhoneNumber": {
                   "title": "From Phone Number",
                   "type": "string",
-                  "description": "Phone number used to send."
+                  "description": "Phone number used to send in e.164 format (for example +14155552671)."
                 },
                 "braze:toPhoneNumber": {
                   "title": "To Phone Number",
                   "type": "string",
-                  "description": "[PII] Phone number of the user receiving the message."
+                  "description": "[PII] Phone number of the user receiving the message in e.164 format (for example +14155552671)."
                 },
                 "braze:inboundPhoneNumber": {
                   "title": "Inbound Phone Number",
@@ -414,7 +450,7 @@
                 "braze:machineOpen": {
                   "title": "Machine Open",
                   "type": "string",
-                  "description": "Populated to 'true' if the open event is triggered without user engagement, e.g. by an Apple device with Mail Privacy Protection enabled. Value may change over time to provide more granularity.",
+                  "description": "Populated to 'true' if the open event is triggered without user engagement, for example by an Apple device with Mail Privacy Protection enabled. Value may change over time to provide more granularity.",
                   "enum": [
                     "true"
                   ],
@@ -498,7 +534,7 @@
                 "braze:buttonActionType": {
                   "title": "Button Action Type",
                   "type": "string",
-                  "description": "Action type of the push notification button. one of [uri, deep_link, none, close]. null if not from a button click.",
+                  "description": "Action type of the push notification button, null if not from a button click. One of ['uri', 'deep_link', 'none', 'close'].",
                   "enum": [
                     "URI",
                     "DEEP_LINK",
@@ -521,7 +557,7 @@
                 "braze:version": {
                   "title": "Version",
                   "type": "string",
-                  "description": "Which version of in app message, legacy or triggered."
+                  "description": "Which version of in-app message, legacy or triggered."
                 },
                 "braze:buttonID": {
                   "title": "Button ID",
@@ -547,7 +583,7 @@
                 "braze:providerErrorTitle": {
                   "title": "Provider Error Title",
                   "type": "string",
-                  "description": "Description of failure from WhatsApp."
+                  "description": "Description of error from WhatsApp."
                 }
               }
             }
@@ -560,7 +596,7 @@
             "braze:duration": {
               "title": "Duration",
               "type": "number",
-              "description": "Duration of the session, in seconds."
+              "description": "Duration of the session in seconds."
             },
             "braze:sessionID": {
               "title": "Session ID",
@@ -581,7 +617,7 @@
             "braze:adIDType": {
               "title": "Ad ID Type",
               "type": "string",
-              "description": "One of 'ios_idfa', 'google_ad_id', 'windows_ad_id', or 'roku_ad_id'.",
+              "description": "One of ['ios_idfa', 'google_ad_id', 'windows_ad_id', 'roku_ad_id'].",
               "enum": [
                 "ios_idfa",
                 "google_ad_id",
@@ -683,7 +719,7 @@
             "braze:llAccuracy": {
               "title": "Ll Accuracy",
               "type": "number",
-              "description": "Latitude/longitude accuracy of recorded location."
+              "description": "Accuracy of the latitude and longitude of recorded location."
             },
             "braze:altAccuracy": {
               "title": "Alt Accuracy",

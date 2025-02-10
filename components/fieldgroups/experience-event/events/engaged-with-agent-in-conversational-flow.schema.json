@@ -121,7 +121,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/engagedwithagentinconversationflow"
+      "$ref": "#/definitions/engagedwithagentinconversationalflow"
     }
   ],
   "meta:status": "experimental",

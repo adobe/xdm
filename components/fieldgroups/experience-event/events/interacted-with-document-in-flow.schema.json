@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/interacted-with-document-in-conversational-flow",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Interacted with Document in Conversation Flow",
+  "title": "Interacted with Document in Conversational Flow",
   "type": "object",
   "meta:tags": {
     "b2bSchema": true
@@ -17,7 +17,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "It tracks interactions with documents in conversation flows, including document details and flow information.",
+  "description": "It tracks interactions with documents in conversational flows, including document details and flow information.",
   "definitions": {
     "interactedwithdocumentinconversationalflow": {
       "type": "object",

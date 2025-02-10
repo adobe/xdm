@@ -20,62 +20,69 @@
   "description": "It tracks interactions with dialogues, including chat transcripts, status, and topics discussed.",
   "definitions": {
     "engagedwithdialogue": {
-      "type": "object",
       "properties": {
-        "xdm:dialogue": {
-          "title": "Dialogue",
+        "xdm:engagement": {
+          "title": "Engagement",
           "type": "object",
           "properties": {
-            "xdm:dialogueID": {
-              "title": "Dialogue ID",
-              "type": "string",
-              "description": "Unique identifier of the dialogue."
-            },
-            "xdm:dialogueKey": {
-              "title": "Dialogue Key",
-              "description": "Unique key of the dialogue.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-            },
-            "xdm:dialogueName": {
-              "title": "Dialogue Name",
-              "type": "string",
-              "description": "The name of the dialogue session."
-            },
-            "xdm:pageURL": {
-              "title": "Page URL",
-              "type": "string",
-              "format": "uri",
-              "description": "URL where the dialogue was initiated."
-            }
-          },
-          "required": ["xdm:dialogueID"]
-        },
-        "xdm:conversationDetails": {
-          "title": "Conversation Details",
-          "type": "object",
-          "properties": {
-            "xdm:status": {
-              "title": "Status",
-              "type": "string",
-              "description": "The status of the dialogue session (e.g., Completed)."
-            },
-            "xdm:summary": {
-              "title": "Summary",
-              "type": "string",
-              "description": "A brief summary of the dialogue conversation."
-            },
-            "xdm:transcript": {
-              "title": "Transcript",
-              "type": "string",
-              "description": "Transcript of the chat conversation."
-            },
-            "xdm:discussedTopics": {
-              "title": "Discussed Topics",
-              "type": "array",
-              "items": {
-                "type": "string"
+            "xdm:dialogue": {
+              "title": "Dialogue",
+              "type": "object",
+              "properties": {
+                "xdm:dialogueID": {
+                  "title": "Dialogue ID",
+                  "type": "string",
+                  "description": "Unique identifier of the dialogue."
+                },
+                "xdm:dialogueKey": {
+                  "title": "Dialogue Key",
+                  "description": "Unique key of the dialogue.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
+                "xdm:dialogueName": {
+                  "title": "Dialogue Name",
+                  "type": "string",
+                  "description": "The name of the dialogue session."
+                },
+                "xdm:pageURL": {
+                  "title": "Page URL",
+                  "type": "string",
+                  "format": "uri",
+                  "description": "URL where the dialogue was initiated."
+                }
               },
-              "description": "Topics discussed during the dialogue session."
+              "required": [
+                "xdm:dialogueID"
+              ]
+            },
+            "xdm:conversationDetails": {
+              "title": "Conversation Details",
+              "type": "object",
+              "properties": {
+                "xdm:status": {
+                  "title": "Status",
+                  "type": "string",
+                  "description": "The status of the dialogue session (e.g., Completed)."
+                },
+                "xdm:summary": {
+                  "title": "Summary",
+                  "type": "string",
+                  "description": "A brief summary of the dialogue conversation."
+                },
+                "xdm:transcript": {
+                  "title": "Transcript",
+                  "type": "string",
+                  "description": "Transcript of the chat conversation."
+                },
+                "xdm:discussedTopics": {
+                  "title": "Discussed Topics",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Topics discussed during the dialogue session."
+                }
+              }
             }
           }
         }

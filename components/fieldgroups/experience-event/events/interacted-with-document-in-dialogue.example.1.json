@@ -1,20 +1,24 @@
 {
-  "xdm:dialogueDetails": {
-    "xdm:dialogueID": "DIALOGUE123",
-    "xdm:dialogueName": "Customer Support Chat",
-    "xdm:pageURL": "https://example.com/support-chat"
-  },
-  "xdm:documentDetails": {
-    "xdm:documentID": "DOC123",
-    "xdm:documentName": "User Guide",
-    "xdm:documentURL": "https://example.com/user-guide.pdf",
-    "xdm:isDownloaded": true,
-    "xdm:isOpened": false
-  },
-  "xdm:documentKey": {
-    "xdm:sourceType": "CRM",
-    "xdm:sourceInstanceID": "INSTANCE001",
-    "xdm:sourceID": "SOURCE123",
-    "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+  "xdm:interaction": {
+    "xdm:documentInDialogue": {
+      "xdm:dialogueDetails": {
+        "xdm:dialogueID": "DIALOGUE123",
+        "xdm:dialogueName": "Customer Support Chat",
+        "xdm:pageURL": "https://example.com/support-chat"
+      },
+      "xdm:documentDetails": {
+        "xdm:documentID": "DOC123",
+        "xdm:documentName": "User Guide",
+        "xdm:documentURL": "https://example.com/user-guide.pdf",
+        "xdm:isDownloaded": true,
+        "xdm:isOpened": false
+      },
+      "xdm:documentKey": {
+        "xdm:sourceType": "CRM",
+        "xdm:sourceInstanceID": "INSTANCE001",
+        "xdm:sourceID": "SOURCE123",
+        "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+      }
+    }
   }
 }

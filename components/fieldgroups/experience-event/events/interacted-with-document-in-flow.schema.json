@@ -22,70 +22,84 @@
     "interactedwithdocumentinconversationflow": {
       "type": "object",
       "properties": {
-        "xdm:flowDetails": {
-          "title": "Flow Details",
+        "xdm:interaction": {
           "type": "object",
           "properties": {
-            "xdm:flowId": {
-              "title": "Flow ID",
-              "type": "string",
-              "description": "Unique identifier of the flow."
-            },
-            "xdm:flowName": {
-              "title": "Flow Name",
-              "type": "string",
-              "description": "The name of the flow."
-            }
-          },
-          "required": ["xdm:flowId"]
-        },
-        "xdm:documentDetails": {
-          "title": "Document Details",
-          "type": "object",
-          "properties": {
-            "xdm:documentID": {
-              "title": "Document ID",
-              "type": "string",
-              "description": "Unique identifier of the document."
-            },
-            "xdm:documentName": {
-              "title": "Document Name",
-              "type": "string",
-              "description": "The name of the document."
-            },
-            "xdm:documentURL": {
-              "title": "Document URL",
-              "type": "string",
-              "format": "uri",
-              "description": "URL of the document."
-            },
-            "xdm:isDownloaded": {
-              "title": "Is Document Downloaded",
-              "type": "boolean",
-              "description": "Indicates if the document was downloaded."
-            },
-            "xdm:isOpened": {
-              "title": "Is Document Opened",
-              "type": "boolean",
-              "description": "Indicates if the document was opened."
-            },
-            "xdm:documentKey": {
-              "title": "Document Key",
-              "description": "Unique key of the document.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-            }
-          },
-          "required": ["xdm:documentID"]
-        },
-        "xdm:pageDetails": {
-          "title": "Page Details",
-          "type": "object",
-          "properties": {
-            "xdm:pageURL": {
-              "title": "Page URL",
-              "type": "string",
-              "format": "uri",
-              "description": "URL of the page."
+            "xdm:documentInConversationalFlow": {
+              "type": "object",
+              "properties": {
+                "xdm:flowDetails": {
+                  "title": "Flow Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:flowId": {
+                      "title": "Flow ID",
+                      "type": "string",
+                      "description": "Unique identifier of the flow."
+                    },
+                    "xdm:flowName": {
+                      "title": "Flow Name",
+                      "type": "string",
+                      "description": "The name of the flow."
+                    }
+                  },
+                  "required": [
+                    "xdm:flowId"
+                  ]
+                },
+                "xdm:documentDetails": {
+                  "title": "Document Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:documentID": {
+                      "title": "Document ID",
+                      "type": "string",
+                      "description": "Unique identifier of the document."
+                    },
+                    "xdm:documentName": {
+                      "title": "Document Name",
+                      "type": "string",
+                      "description": "The name of the document."
+                    },
+                    "xdm:documentURL": {
+                      "title": "Document URL",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL of the document."
+                    },
+                    "xdm:isDownloaded": {
+                      "title": "Is Document Downloaded",
+                      "type": "boolean",
+                      "description": "Indicates if the document was downloaded."
+                    },
+                    "xdm:isOpened": {
+                      "title": "Is Document Opened",
+                      "type": "boolean",
+                      "description": "Indicates if the document was opened."
+                    },
+                    "xdm:documentKey": {
+                      "title": "Document Key",
+                      "description": "Unique key of the document.",
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    }
+                  },
+                  "required": [
+                    "xdm:documentID"
+                  ]
+                },
+                "xdm:pageDetails": {
+                  "title": "Page Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:pageURL": {
+                      "title": "Page URL",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL of the page."
+                    }
+                  }
+                }
+              }
             }
           }
         }

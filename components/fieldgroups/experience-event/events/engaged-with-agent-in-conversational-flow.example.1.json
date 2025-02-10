@@ -1,25 +1,29 @@
 {
-  "xdm:agentDetails": {
-    "xdm:agentID": "AGENT123",
-    "xdm:agentEmail": "agent@example.com",
-    "xdm:agentName": "John Doe"
-  },
-  "xdm:conversationDetails": {
-    "xdm:conversationStatus": "completed",
-    "xdm:conversationSummary": "Discussed product features and pricing.",
-    "xdm:conversationTranscript": "Agent: Hello, how can I help you? Customer: I want to know about the product features."
-  },
-  "xdm:flowDetails": {
-    "xdm:flowID": "FLOW123",
-    "xdm:flowName": "Product Inquiry Flow",
-    "xdm:flowKey": {
-      "xdm:sourceType": "CRM",
-      "xdm:sourceInstanceID": "INSTANCE001",
-      "xdm:sourceID": "SOURCE123",
-      "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+  "xdm:engagement": {
+    "xdm:agentInConversationalFlow": {
+      "xdm:agentDetails": {
+        "xdm:agentID": "AGENT123",
+        "xdm:agentEmail": "agent@example.com",
+        "xdm:agentName": "John Doe"
+      },
+      "xdm:conversationDetails": {
+        "xdm:conversationStatus": "completed",
+        "xdm:conversationSummary": "Discussed product features and pricing.",
+        "xdm:conversationTranscript": "Agent: Hello, how can I help you? Customer: I want to know about the product features."
+      },
+      "xdm:flowDetails": {
+        "xdm:flowID": "FLOW123",
+        "xdm:flowName": "Product Inquiry Flow",
+        "xdm:flowKey": {
+          "xdm:sourceType": "CRM",
+          "xdm:sourceInstanceID": "INSTANCE001",
+          "xdm:sourceID": "SOURCE123",
+          "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+        }
+      },
+      "xdm:pageDetails": {
+        "xdm:pageURL": "https://example.com/product-inquiry"
+      }
     }
-  },
-  "xdm:pageDetails": {
-    "xdm:pageURL": "https://example.com/product-inquiry"
   }
 }

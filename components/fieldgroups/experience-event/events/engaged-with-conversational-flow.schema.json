@@ -19,7 +19,7 @@
   ],
   "description": "It tracks interactions in conversation flows, including document details and flow information.",
   "definitions": {
-    "engagedwithaconversationalflow": {
+    "engagedwithaconversationflow": {
       "properties": {
         "xdm:engagement": {
           "title": "Engagement",
@@ -124,7 +124,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/engagedwithaconversationalflow"
+      "$ref": "#/definitions/engagedwithaconversationflow"
     }
   ],
   "meta:status": "experimental",

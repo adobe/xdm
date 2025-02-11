@@ -19,7 +19,7 @@
   ],
   "description": "It tracks interactions with agents in conversational flows, including agent details, conversation details, and flow information.",
   "definitions": {
-    "engagedwithagentinconversationalflow": {
+    "engagedwithagentinconversationflow": {
       "type": "object",
       "properties": {
         "xdm:engagement": {
@@ -121,7 +121,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/engagedwithagentinconversationalflow"
+      "$ref": "#/definitions/engagedwithagentinconversationflow"
     }
   ],
   "meta:status": "experimental",

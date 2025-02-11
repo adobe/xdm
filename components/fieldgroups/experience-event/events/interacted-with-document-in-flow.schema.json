@@ -19,7 +19,7 @@
   ],
   "description": "It tracks interactions with documents in conversational flows, including document details and flow information.",
   "definitions": {
-    "interactedwithdocumentinconversationalflow": {
+    "interactedwithdocumentinconversationflow": {
       "type": "object",
       "properties": {
         "xdm:interaction": {
@@ -108,7 +108,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/interactedwithdocumentinconversationalflow"
+      "$ref": "#/definitions/interactedwithdocumentinconversationflow"
     }
   ],
   "meta:status": "experimental",

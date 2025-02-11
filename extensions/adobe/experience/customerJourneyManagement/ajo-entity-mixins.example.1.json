@@ -45,17 +45,6 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeType": "segmentTrigger",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyProfileNamespace": "ECID"
   },
-  "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourney": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/bathcJourneyVersionID": "03832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyName": "Batch Journey Test",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyID": "0979238rf-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyCode": "Send Welcome Email Message",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyAction": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionID": "0899238rf-51ff",
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionName": "Email Service",
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyIdentityNamespace": "Profile"
-    }
-  },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/tags": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/values": [
       "NewsLetter",

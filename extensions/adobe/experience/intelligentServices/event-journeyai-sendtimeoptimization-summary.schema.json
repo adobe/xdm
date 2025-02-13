@@ -51,6 +51,11 @@
                   "description": "Variant of message distribution.",
                   "type": "integer"
                 },
+                "https://ns.adobe.com/experience/intelligentServices/channel": {
+                  "title": "Channel",
+                  "description": "Message channel",
+                  "type": "string"
+                },
                 "https://ns.adobe.com/experience/intelligentServices/batchId": {
                   "title": "BatchId",
                   "description": "Batch Id",

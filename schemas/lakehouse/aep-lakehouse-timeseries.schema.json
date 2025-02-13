@@ -10,7 +10,6 @@
   "title": "AEP Lakehouse Timeseries",
   "type": "object",
   "meta:extensible": false,
-  "meta:abstract": false,
   "meta:extends": ["https://ns.adobe.com/xdm/data/timeseries"],
   "description": "AEP Lakehouse Timeseries.",
   "definitions": {

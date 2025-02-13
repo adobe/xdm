@@ -1,22 +1,24 @@
 {
-  "xdm:dialogue": {
-    "xdm:dialogueID": "DIALOGUE123",
-    "xdm:dialogueKey": {
-      "xdm:sourceType": "CRM",
-      "xdm:sourceInstanceID": "INSTANCE001",
-      "xdm:sourceID": "SOURCE123",
-      "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+  "xdm: engagement": {
+    "xdm:dialogue": {
+      "xdm:dialogueID": "DIALOGUE123",
+      "xdm:dialogueKey": {
+        "xdm:sourceType": "CRM",
+        "xdm:sourceInstanceID": "INSTANCE001",
+        "xdm:sourceID": "SOURCE123",
+        "xdm:sourceKey": "CRM|INSTANCE001|SOURCE123"
+      },
+      "xdm:dialogueName": "Customer Support Chat",
+      "xdm:pageURL": "https://example.com/support-chat"
     },
-    "xdm:dialogueName": "Customer Support Chat",
-    "xdm:pageURL": "https://example.com/support-chat"
-  },
-  "xdm:conversationDetails": {
-    "xdm:status": "Completed",
-    "xdm:summary": "Resolved customer issue regarding product usage.",
-    "xdm:transcript": "Agent: How can I assist you today? Customer: I need help with using the product.",
-    "xdm:discussedTopics": [
-      "Product Usage",
-      "Troubleshooting"
-    ]
+    "xdm:conversationDetails": {
+      "xdm:status": "Completed",
+      "xdm:summary": "Resolved customer issue regarding product usage.",
+      "xdm:transcript": "Agent: How can I assist you today? Customer: I need help with using the product.",
+      "xdm:discussedTopics": [
+        "Product Usage",
+        "Troubleshooting"
+      ]
+    }
   }
 }

@@ -1,28 +1,30 @@
 {
-  "xdm:agentInDialogue": {
-    "xdm:agentDetails": {
-      "xdm:agentID": "AGENT12345",
-      "xdm:agentEmail": "agent@example.com",
-      "xdm:agentName": "John Doe"
-    },
-    "xdm:conversationDetails": {
-      "xdm:status": "Completed",
-      "xdm:summary": "Resolved user query regarding product refund.",
-      "xdm:transcript": "User: How can I get a refund? Agent: Please submit a refund request via the support portal.",
-      "xdm:discussedTopics": [
-        "Refund Process",
-        "Product Issues"
-      ]
-    },
-    "xdm:dialogueDetails": {
-      "xdm:dialogueID": "DIALOG12345",
-      "xdm:dialogueName": "Refund Assistance",
-      "xdm:pageURL": "https://example.com/support/refund-chat",
-      "xdm:dialogueKey": {
-        "xdm:sourceType": "CRM",
-        "xdm:sourceInstanceID": "INSTANCE003",
-        "xdm:sourceID": "SOURCE789",
-        "xdm:sourceKey": "CRM|INSTANCE003|SOURCE789"
+  "xdm:engagement": {
+    "xdm:agentInDialogue": {
+      "xdm:agentDetails": {
+        "xdm:agentID": "AGENT12345",
+        "xdm:agentEmail": "agent@example.com",
+        "xdm:agentName": "John Doe"
+      },
+      "xdm:conversationDetails": {
+        "xdm:status": "Completed",
+        "xdm:summary": "Resolved user query regarding product refund.",
+        "xdm:transcript": "User: How can I get a refund? Agent: Please submit a refund request via the support portal.",
+        "xdm:discussedTopics": [
+          "Refund Process",
+          "Product Issues"
+        ]
+      },
+      "xdm:dialogueDetails": {
+        "xdm:dialogueID": "DIALOG12345",
+        "xdm:dialogueName": "Refund Assistance",
+        "xdm:pageURL": "https://example.com/support/refund-chat",
+        "xdm:dialogueKey": {
+          "xdm:sourceType": "CRM",
+          "xdm:sourceInstanceID": "INSTANCE003",
+          "xdm:sourceID": "SOURCE789",
+          "xdm:sourceKey": "CRM|INSTANCE003|SOURCE789"
+        }
       }
     }
   }

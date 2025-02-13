@@ -4,10 +4,28 @@
     "xdm:perceptionID": "1c93aa01-f183-a3f1-bda6-a9c96e66afea",
     "xdm:_id": "https://domain/media_random_id.jpeg",
     "xdm:idSource": "ACA",
+    "xdm:assetSource": {
+      "xdm:platform": "ACA",
+      "xdm:sourceID": "https://domain/media_random_id.jpeg"
+    },
     "xdm:name": "jump.png",
     "xdm:description": "A man is performing a mid-air jump on a skateboard at an indoor skate park",
     "xdm:assetType": "image",
-    "xdm:thumbnailURL": "https://domain/thumbnail.jpeg"
+    "xdm:thumbnailURL": "https://domain/thumbnail.jpeg",
+    "xdm:additionalIDs": [
+      {
+        "xdm:platform": "ACA",
+        "xdm:platformID": "https://domain/media_random_id1.jpeg"
+      },
+      {
+        "xdm:platform": "Meta",
+        "xdm:platformID": "Meta_account2_campaign1_adGroup1_ad1_experience1_mock2"
+      },
+      {
+        "xdm:platform": "DV360",
+        "xdm:platformID": "DV360_account4_campaign2_adGroup1_ad2_experience1_mock1"
+      }
+    ]
   },
   "xdm:contentAudit": {
     "xdm:createdBy": "1234",

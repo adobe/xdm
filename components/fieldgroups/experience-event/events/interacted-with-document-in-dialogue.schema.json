@@ -20,68 +20,83 @@
   "description": "It tracks interactions with documents in dialogues, including document details and dialogue information.",
   "definitions": {
     "interactedwithdocumentindialogue": {
-      "type": "object",
       "properties": {
-        "xdm:dialogueDetails": {
-          "title": "Dialogue Details",
+        "xdm:interaction": {
+          "title": "Interaction",
           "type": "object",
           "properties": {
-            "xdm:dialogueID": {
-              "title": "Dialogue ID",
-              "type": "string",
-              "description": "Unique identifier of the dialogue."
-            },
-            "xdm:dialogueName": {
-              "title": "Dialogue Name",
-              "type": "string",
-              "description": "The name of the dialogue session."
-            },
-            "xdm:pageURL": {
-              "title": "Page URL",
-              "type": "string",
-              "format": "uri",
-              "description": "URL where the dialogue was initiated."
+            "xdm:documentInDialogue": {
+              "title": "Document in Dialogue",
+              "type": "object",
+              "properties": {
+                "xdm:dialogueDetails": {
+                  "title": "Dialogue Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:dialogueID": {
+                      "title": "Dialogue ID",
+                      "type": "string",
+                      "description": "Unique identifier of the dialogue."
+                    },
+                    "xdm:dialogueName": {
+                      "title": "Dialogue Name",
+                      "type": "string",
+                      "description": "The name of the dialogue session."
+                    },
+                    "xdm:pageURL": {
+                      "title": "Page URL",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL where the dialogue was initiated."
+                    }
+                  },
+                  "required": [
+                    "xdm:dialogueID"
+                  ]
+                },
+                "xdm:documentDetails": {
+                  "title": "Document Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:documentID": {
+                      "title": "Document ID",
+                      "type": "string",
+                      "description": "Unique identifier of the document."
+                    },
+                    "xdm:documentName": {
+                      "title": "Document Name",
+                      "type": "string",
+                      "description": "The name of the document."
+                    },
+                    "xdm:documentURL": {
+                      "title": "Document URL",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL of the document."
+                    },
+                    "xdm:isDownloaded": {
+                      "title": "Is Document Downloaded",
+                      "type": "boolean",
+                      "description": "Indicates if the document was downloaded."
+                    },
+                    "xdm:isOpened": {
+                      "title": "Is Document Opened",
+                      "type": "boolean",
+                      "description": "Indicates if the document was opened."
+                    }
+                  },
+                  "required": [
+                    "xdm:documentID"
+                  ]
+                },
+                "xdm:documentKey": {
+                  "title": "Document Key",
+                  "description": "Unique key of the document.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                }
+              }
             }
-          },
-          "required": ["xdm:dialogueID"]
-        },
-        "xdm:documentDetails": {
-          "title": "Document Details",
-          "type": "object",
-          "properties": {
-            "xdm:documentID": {
-              "title": "Document ID",
-              "type": "string",
-              "description": "Unique identifier of the document."
-            },
-            "xdm:documentName": {
-              "title": "Document Name",
-              "type": "string",
-              "description": "The name of the document."
-            },
-            "xdm:documentURL": {
-              "title": "Document URL",
-              "type": "string",
-              "format": "uri",
-              "description": "URL of the document."
-            },
-            "xdm:isDownloaded": {
-              "title": "Is Document Downloaded",
-              "type": "boolean",
-              "description": "Indicates if the document was downloaded."
-            },
-            "xdm:isOpened": {
-              "title": "Is Document Opened",
-              "type": "boolean",
-              "description": "Indicates if the document was opened."
-            }
-          },
-          "required": ["xdm:documentID"]
-        },
-        "xdm:documentKey": {
-          "title": "Document Key",
-          "description": "Unique key of the document.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          }
         }
       }
     }

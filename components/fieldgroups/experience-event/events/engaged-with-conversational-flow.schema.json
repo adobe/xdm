@@ -5,122 +5,128 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/events/engaged-with-conversation-flow",
+  "$id": "https://ns.adobe.com/xdm/mixins/events/engaged-with-conversational-flow",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Interacted with Document in Conversation Flow",
+  "title": "Engaged with a Conversational Flow",
   "type": "object",
   "meta:tags": {
     "b2bSchema": true
   },
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "engagement.documentInConversationFlow",
+  "meta:conditionalValue": "engagement.documentInConversationalFlow",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "It tracks interactions in conversation flows, including document details and flow information.",
   "definitions": {
-    "engagedwithaconversationalflow": {
+    "engagedwithaconversationflow": {
       "properties": {
-        "xdm:conversationFlowContext": {
-          "title": "Flow Context",
+        "xdm:engagement": {
+          "title": "Engagement",
           "type": "object",
           "properties": {
-            "xdm:flowDetails": {
-              "title": "Flow Details",
+            "xdm:conversationalFlow": {
+              "title": "Conversational Flow",
               "type": "object",
               "properties": {
-                "xdm:flowId": {
-                  "title": "Flow ID",
-                  "type": "string",
-                  "description": "Unique identifier of the flow."
-                },
-                "xdm:flowName": {
-                  "title": "Flow Name",
-                  "type": "string",
-                  "description": "The name of the flow."
-                }
-              },
-              "required": [
-                "xdm:flowId"
-              ]
-            },
-            "xdm:interactionDetails": {
-              "title": "Interaction Details",
-              "type": "object",
-              "properties": {
-                "xdm:interactedUIType": {
-                  "title": "Interacted UI Type",
-                  "type": "string",
-                  "description": "The type of interaction."
-                },
-                "xdm:sourceName": {
-                  "title": "Source Name",
-                  "type": "string",
-                  "description": "The name of the source."
-                },
-                "xdm:sourceType": {
-                  "title": "Source Type",
-                  "type": "string",
-                  "description": "The type of source."
-                }
-              }
-            },
-            "xdm:conversationDetails": {
-              "title": "Conversation Details",
-              "type": "object",
-              "properties": {
-                "xdm:status": {
-                  "title": "Status",
-                  "type": "string",
-                  "description": "The status of the dialogue session (e.g., Completed)."
-                },
-                "xdm:summary": {
-                  "title": "Summary",
-                  "type": "string",
-                  "description": "A brief summary of the dialogue conversation."
-                },
-                "xdm:transcript": {
-                  "title": "Transcript",
-                  "type": "string",
-                  "description": "Transcript of the chat conversation."
-                },
-                "xdm:discussedTopics": {
-                  "title": "Discussed Topics",
-                  "type": "array",
-                  "items": {
-                    "type": "string"
+                "xdm:flowDetails": {
+                  "title": "Flow Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:flowId": {
+                      "title": "Flow ID",
+                      "type": "string",
+                      "description": "Unique identifier of the flow."
+                    },
+                    "xdm:flowName": {
+                      "title": "Flow Name",
+                      "type": "string",
+                      "description": "The name of the flow."
+                    }
                   },
-                  "description": "Topics discussed during the dialogue session."
+                  "required": [
+                    "xdm:flowId"
+                  ]
+                },
+                "xdm:interactionDetails": {
+                  "title": "Interaction Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:interactedUIType": {
+                      "title": "Interacted UI Type",
+                      "type": "string",
+                      "description": "The type of interaction."
+                    },
+                    "xdm:sourceName": {
+                      "title": "Source Name",
+                      "type": "string",
+                      "description": "The name of the source."
+                    },
+                    "xdm:sourceType": {
+                      "title": "Source Type",
+                      "type": "string",
+                      "description": "The type of source."
+                    }
+                  }
+                },
+                "xdm:conversationDetails": {
+                  "title": "Conversation Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:status": {
+                      "title": "Status",
+                      "type": "string",
+                      "description": "The status of the dialogue session (e.g., Completed)."
+                    },
+                    "xdm:summary": {
+                      "title": "Summary",
+                      "type": "string",
+                      "description": "A brief summary of the dialogue conversation."
+                    },
+                    "xdm:transcript": {
+                      "title": "Transcript",
+                      "type": "string",
+                      "description": "Transcript of the chat conversation."
+                    },
+                    "xdm:discussedTopics": {
+                      "title": "Discussed Topics",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Topics discussed during the dialogue session."
+                    }
+                  }
+                },
+                "xdm:pageDetails": {
+                  "title": "Page Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:pageURL": {
+                      "title": "Page URL",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL of the page."
+                    }
+                  }
+                },
+                "xdm:conversationalFlowKey": {
+                  "title": "Conversational Flow Key",
+                  "description": "Key of the conversational flow.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 }
               }
-            },
-            "xdm:pageDetails": {
-              "title": "Page Details",
-              "type": "object",
-              "properties": {
-                "xdm:pageURL": {
-                  "title": "Page URL",
-                  "type": "string",
-                  "format": "uri",
-                  "description": "URL of the page."
-                }
-              }
-            },
-            "xdm:conversationalFlowKey": {
-              "title": "Conversational Flow Key",
-              "description": "Key of the conversational flow.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             }
           }
         }
       }
     }
   },
-      "allOf": [
-        {
-          "$ref": "#/definitions/engagedwithaconversationalflow"
-        }
-      ],
-      "meta:status": "experimental",
-      "meta:createdDate": "2025-01-01"
+  "allOf": [
+    {
+      "$ref": "#/definitions/engagedwithaconversationflow"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2025-01-01"
 }

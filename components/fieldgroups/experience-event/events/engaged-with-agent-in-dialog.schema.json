@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/engaged-with-agent-in-dialog",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Engaged with an agent in dialog",
+  "title": "Engaged with an Agent in Dialog",
   "type": "object",
   "meta:tags": {
     "b2bSchema": true
@@ -21,102 +21,108 @@
   "definitions": {
     "engagedwithagentindialog": {
       "properties": {
-        "xdm:agentInDialogue": {
-          "title": "Agent in Dialogue",
+        "xdm:engagement": {
+          "title": "Engagement",
           "type": "object",
           "properties": {
-            "xdm:agentDetails": {
-              "title": "Agent Details",
+            "xdm:agentInDialogue": {
+              "title": "Agent in Dialogue",
               "type": "object",
               "properties": {
-                "xdm:agentID": {
-                  "title": "Agent ID",
-                  "type": "string",
-                  "description": "Unique Identifier for an Agent."
-                },
-                "xdm:agentEmail": {
-                  "title": "Agent Email",
-                  "type": "string",
-                  "description": "Email of the Agent."
-                },
-                "xdm:agentName": {
-                  "title": "Agent Name",
-                  "type": "string",
-                  "description": "Name of the Agent."
-                }
-              },
-              "required": [
-                "xdm:agentID"
-              ]
-            },
-            "xdm:conversationDetails": {
-              "title": "Conversation Details",
-              "type": "object",
-              "properties": {
-                "xdm:status": {
-                  "title": "Status",
-                  "type": "string",
-                  "description": "The status of the dialogue session (e.g., Completed)."
-                },
-                "xdm:summary": {
-                  "title": "Summary",
-                  "type": "string",
-                  "description": "A brief summary of the dialogue conversation."
-                },
-                "xdm:transcript": {
-                  "title": "Transcript",
-                  "type": "string",
-                  "description": "Transcript of the chat conversation."
-                },
-                "xdm:discussedTopics": {
-                  "title": "Discussed Topics",
-                  "type": "array",
-                  "items": {
-                    "type": "string"
+                "xdm:agentDetails": {
+                  "title": "Agent Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:agentID": {
+                      "title": "Agent ID",
+                      "type": "string",
+                      "description": "Unique Identifier for an Agent."
+                    },
+                    "xdm:agentEmail": {
+                      "title": "Agent Email",
+                      "type": "string",
+                      "description": "Email of the Agent."
+                    },
+                    "xdm:agentName": {
+                      "title": "Agent Name",
+                      "type": "string",
+                      "description": "Name of the Agent."
+                    }
                   },
-                  "description": "Topics discussed during the dialogue session."
+                  "required": [
+                    "xdm:agentID"
+                  ]
+                },
+                "xdm:conversationDetails": {
+                  "title": "Conversation Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:status": {
+                      "title": "Status",
+                      "type": "string",
+                      "description": "The status of the dialogue session (e.g., Completed)."
+                    },
+                    "xdm:summary": {
+                      "title": "Summary",
+                      "type": "string",
+                      "description": "A brief summary of the dialogue conversation."
+                    },
+                    "xdm:transcript": {
+                      "title": "Transcript",
+                      "type": "string",
+                      "description": "Transcript of the chat conversation."
+                    },
+                    "xdm:discussedTopics": {
+                      "title": "Discussed Topics",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Topics discussed during the dialogue session."
+                    }
+                  }
+                },
+                "xdm:dialogueDetails": {
+                  "title": "Dialogue Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:dialogueID": {
+                      "title": "Dialogue ID",
+                      "type": "string",
+                      "description": "Unique Identifier for a Dialogue."
+                    },
+                    "xdm:dialogueName": {
+                      "title": "Dialogue Name",
+                      "type": "string",
+                      "description": "Name of the Dialogue."
+                    },
+                    "xdm:pageURL": {
+                      "title": "Page URL",
+                      "type": "string",
+                      "description": "URL of the page where the dialogue is initiated."
+                    }
+                  },
+                  "required": [
+                    "xdm:dialogueID"
+                  ]
+                },
+                "xdm:dialogueKey": {
+                  "title": "Dialogue Key",
+                  "description": "Key of the dialogue.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 }
               }
-            },
-            "xdm:dialogueDetails": {
-              "title": "Dialogue Details",
-              "type": "object",
-              "properties": {
-                "xdm:dialogueID": {
-                  "title": "Dialogue ID",
-                  "type": "string",
-                  "description": "Unique Identifier for a Dialogue."
-                },
-                "xdm:dialogueName": {
-                  "title": "Dialogue Name",
-                  "type": "string",
-                  "description": "Name of the Dialogue."
-                },
-                "xdm:pageURL": {
-                  "title": "Page URL",
-                  "type": "string",
-                  "description": "URL of the page where the dialogue is initiated."
-                }
-              },
-              "required": [
-                "xdm:dialogueID"
-              ]
-            },
-            "xdm:dialogueKey": {
-              "title": "Dialogue Key",
-              "description": "Key of the dialogue.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             }
           }
         }
       }
     }
-      },
-      "allOf": [
-        {
-          "$ref": "#/definitions/engagedwithagentindialog"
-        }
-      ],
-      "meta:status": "experimental",
-      "meta:createdDate": "2025-01-10"
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/engagedwithagentindialog"
     }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2025-01-10"
+}

@@ -135,17 +135,10 @@
                            },
                            "xdm:telecom":{
                               "title":"Contact Details",
-                              "description":"A contact detail for the person",
+                              "description":"Patient's contact details.",
                               "type":"array",
                               "items":{
-                                 "type":"object",
-                                 "properties":{
-                                    "xdm:contactPoint":{
-                                       "title":"Contact Point",
-                                       "description":"A contact detail for the person.",
-                                       "$ref":"https://ns.fhir.org/datatypes/contactpoint"
-                                    }
-                                 }
+                                 "$ref":"https://ns.fhir.org/datatypes/contactpoint"
                               }
                            },
                            "xdm:address":{

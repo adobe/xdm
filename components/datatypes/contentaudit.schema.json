@@ -38,7 +38,7 @@
             },
             "xdm:lastUpdatedBy": {
               "title": "Last Updated By",
-              "description": "User who last modified this record.",
+              "description": "Service that last modified this record.",
               "type": "string"
             },
             "xdm:expirationDate": {
@@ -57,5 +57,5 @@
       "$ref": "#/definitions/content-audit"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

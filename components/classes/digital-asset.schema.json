@@ -36,6 +36,23 @@
               "type": "string",
               "description": "The source that created the id for this asset."
             },
+            "xdm:assetSource": {
+              "title": "assetSource",
+              "type": "object",
+              "description": "The source that created this asset.",
+              "properties": {
+                "xdm:platform": {
+                  "title": "Source Platform",
+                  "type": "string",
+                  "description": "The source that created this asset such as ACA or AGS."
+                },
+                "xdm:sourceID": {
+                  "title": "Source ID",
+                  "type": "string",
+                  "description": "The id of the asset from the given source."
+                }
+              }
+            },
             "xdm:name": {
               "title": "Name",
               "type": "string",
@@ -56,6 +73,26 @@
               "format": "uri",
               "type": "string",
               "description": "Asset thumbnail url."
+            },
+            "xdm:additionalIDs": {
+              "title": "Additional IDs",
+              "description": "Additional asset IDs.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:platform": {
+                    "title": "Platform",
+                    "type": "string",
+                    "description": "Platform such as Meta, DV360, or ACA."
+                  },
+                  "xdm:platformID": {
+                    "title": "Platform ID",
+                    "type": "string",
+                    "description": "The asset identifier for the given platform."
+                  }
+                }
+              }
             }
           }
         }
@@ -76,5 +113,5 @@
       "$ref": "https://ns.adobe.com/xdm/common/featurizationattributes"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

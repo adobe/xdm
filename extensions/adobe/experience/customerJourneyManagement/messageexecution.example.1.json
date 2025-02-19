@@ -14,5 +14,11 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignVersionID": "743575e7-a954-48b5-98f6-2e3ee8809c80",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignActionID": "7590e3ec-f4ec-44c4-b8bf-b3f5d710b672",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID": "2a4de0c5-475c-4b67-b616-12d38c6518c1",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType": "marketing"
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType": "marketing",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceType": "orchestratedCampaign",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceID": "123-1234-8989",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceVersionID": "676-23-1234-8989",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceActionId": "235-898798-989"
+  }
 }

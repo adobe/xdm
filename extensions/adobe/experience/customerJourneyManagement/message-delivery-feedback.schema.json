@@ -104,27 +104,6 @@
           },
           "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure##title##88741"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/source": {
-          "title": "Message Source",
-          "type": "object",
-          "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/sourceType": {
-              "title": "Source Type",
-              "type": "string",
-              "description": "Classifies the source type of the message."
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/sourceId": {
-              "title": "Source Id",
-              "type": "string",
-              "description": "Source Id of the entity where message originate."
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/sourceActionId": {
-              "title": "Source ActionId",
-              "type": "string",
-              "description": "Action id of the source from where message originate"
-            }
-          }
-        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": {
           "title": "Retry Count",
           "type": "integer",

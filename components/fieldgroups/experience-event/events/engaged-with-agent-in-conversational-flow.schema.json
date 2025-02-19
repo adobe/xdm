@@ -13,7 +13,7 @@
     "b2bSchema": true
   },
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "engagement.agentInConversationFlow",
+  "meta:conditionalValue": "engagement.agentInConversationalFlow",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
@@ -22,81 +22,97 @@
     "engagedwithagentinconversationflow": {
       "type": "object",
       "properties": {
-        "xdm:agentDetails": {
-          "title": "Agent Details",
+        "xdm:engagement": {
+          "title": "Engagement",
           "type": "object",
           "properties": {
-            "xdm:agentID": {
-              "title": "Agent ID",
-              "type": "string",
-              "description": "Unique identifier of the agent."
-            },
-            "xdm:agentEmail": {
-              "title": "Agent Email",
-              "type": "string",
-              "format": "email",
-              "description": "Email of the agent."
-            },
-            "xdm:agentName": {
-              "title": "Agent Name",
-              "type": "string",
-              "description": "Name of the agent."
-            }
-          },
-          "required": ["xdm:agentID"]
-        },
-        "xdm:conversationDetails": {
-          "title": "Conversation Details",
-          "type": "object",
-          "properties": {
-            "xdm:conversationStatus": {
-              "title": "Conversation Status",
-              "type": "string",
-              "description": "The status of the conversation."
-            },
-            "xdm:conversationSummary": {
-              "title": "Conversation Summary",
-              "type": "string",
-              "description": "A brief summary of the conversation."
-            },
-            "xdm:conversationTranscript": {
-              "title": "Conversation Transcript",
-              "type": "string",
-              "description": "Transcript of the conversation."
-            }
-          }
-        },
-        "xdm:flowDetails": {
-          "title": "Flow Details",
-          "type": "object",
-          "properties": {
-            "xdm:flowID": {
-              "title": "Flow ID",
-              "type": "string",
-              "description": "Unique identifier of the flow."
-            },
-            "xdm:flowName": {
-              "title": "Flow Name",
-              "type": "string",
-              "description": "The name of the flow."
-            },
-            "xdm:flowKey": {
-              "title": "Flow Key",
-              "description": "Unique key of the flow.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-            }
-          },
-          "required": ["xdm:flowID"]
-        },
-        "xdm:pageDetails": {
-          "title": "Page Details",
-          "type": "object",
-          "properties": {
-            "xdm:pageURL": {
-              "title": "Page URL",
-              "type": "string",
-              "format": "uri",
-              "description": "URL of the page."
+            "xdm:agentInConversationalFlow": {
+              "title": "Agent in Conversational Flow",
+              "type": "object",
+              "properties": {
+                "xdm:agentDetails": {
+                  "title": "Agent Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:agentID": {
+                      "title": "Agent ID",
+                      "type": "string",
+                      "description": "Unique identifier of the agent."
+                    },
+                    "xdm:agentEmail": {
+                      "title": "Agent Email",
+                      "type": "string",
+                      "format": "email",
+                      "description": "Email of the agent."
+                    },
+                    "xdm:agentName": {
+                      "title": "Agent Name",
+                      "type": "string",
+                      "description": "Name of the agent."
+                    }
+                  },
+                  "required": [
+                    "xdm:agentID"
+                  ]
+                },
+                "xdm:conversationDetails": {
+                  "title": "Conversation Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:conversationStatus": {
+                      "title": "Conversation Status",
+                      "type": "string",
+                      "description": "The status of the conversation."
+                    },
+                    "xdm:conversationSummary": {
+                      "title": "Conversation Summary",
+                      "type": "string",
+                      "description": "A brief summary of the conversation."
+                    },
+                    "xdm:conversationTranscript": {
+                      "title": "Conversation Transcript",
+                      "type": "string",
+                      "description": "Transcript of the conversation."
+                    }
+                  }
+                },
+                "xdm:flowDetails": {
+                  "title": "Flow Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:flowID": {
+                      "title": "Flow ID",
+                      "type": "string",
+                      "description": "Unique identifier of the flow."
+                    },
+                    "xdm:flowName": {
+                      "title": "Flow Name",
+                      "type": "string",
+                      "description": "The name of the flow."
+                    },
+                    "xdm:flowKey": {
+                      "title": "Flow Key",
+                      "description": "Unique key of the flow.",
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    }
+                  },
+                  "required": [
+                    "xdm:flowID"
+                  ]
+                },
+                "xdm:pageDetails": {
+                  "title": "Page Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:pageURL": {
+                      "title": "Page URL",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL of the page."
+                    }
+                  }
+                }
+              }
             }
           }
         }

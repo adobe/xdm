@@ -221,50 +221,45 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourney": {
-          "title": "AJO Batch Journey Entity",
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign": {
+          "title": "AJO Orchestrated Campaign Entity",
           "type": "object",
-          "description": "AJO Batch Journey Entity Specific Fields",
+          "description": "AJO Orchestrated Campaign Entity Specific Fields",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyVersionID": {
-              "title": "Batch Journey Version ID",
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignVersionID": {
+              "title": "Orchestrated Campaign Version ID",
               "type": "string",
-              "description": "Represents a frozen version of a Batch Journey"
+              "description": "Represents a frozen version of a Orchestrated Campaign"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyName": {
-              "title": "Batch Journey Name",
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignName": {
+              "title": "Orchestrated Campaign Name",
               "type": "string",
-              "description": "Represents the Batch Journey Name"
+              "description": "Represents the Orchestrated Campaign Name"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyID": {
-              "title": "Batch Journey ID",
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignID": {
+              "title": "Orchestrated Campaign ID",
               "type": "string",
-              "description": "Represents the Batch Journey ID"
+              "description": "Represents the Orchestrated Campaign ID"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyCode": {
-              "title": "Batch Journey Code",
-              "type": "string",
-              "description": "Represents the Batch Journey Code"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyAction": {
-              "title": "Batch Journey Action",
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignAction": {
+              "title": "Orchestrated Campaign Action",
               "type": "object",
-              "description": "Represents the Batch Journey Action",
+              "description": "Represents the Orchestrated Campaign Action",
               "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionID": {
-                  "title": "Batch Journey Action ID",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignActionID": {
+                  "title": "Orchestrated Campaign Action ID",
                   "type": "string",
-                  "description": "Represents the Batch Journey Action ID"
+                  "description": "Represents the Orchestrated Campaign Action ID"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionName": {
-                  "title": "Batch Journey Action Name",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignActionName": {
+                  "title": "Orchestrated Campaign Action Name",
                   "type": "string",
-                  "description": "Represents the Batch Journey Action Name"
+                  "description": "Represents the Orchestrated Campaign Action Name"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyIdentityNamespace": {
-                  "title": "Batch Journey Action Identity Namespace",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignIdentityNamespace": {
+                  "title": "Orchestrated Campaign Action Identity Namespace",
                   "type": "string",
-                  "description": "Represents the Batch Journey Action Identity Namespace"
+                  "description": "Represents the Orchestrated Campaign Action Identity Namespace"
                 }
               }
             }

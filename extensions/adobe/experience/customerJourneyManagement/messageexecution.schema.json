@@ -114,35 +114,6 @@
           "title": "Batch Instance ID",
           "type": "string",
           "description": "GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s."
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
-          "title": "Message Source",
-          "type": "object",
-          "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceType": {
-              "title": "Source Type",
-              "type": "string",
-              "description": "Classifies the source type of the message.",
-              "meta:enum": {
-                "orchestratedCampaign": "Orchestrated Campaign"
-              }
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceId": {
-              "title": "Source Id",
-              "type": "string",
-              "description": "Source Version Id of the entity where message originate."
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceVersionId": {
-              "title": "Source Version Id",
-              "type": "string",
-              "description": "Source Id of the entity where message originate."
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceActionId": {
-              "title": "Source ActionId",
-              "type": "string",
-              "description": "Action id of the source from where message originate"
-            }
-          }
         }
       }
     }

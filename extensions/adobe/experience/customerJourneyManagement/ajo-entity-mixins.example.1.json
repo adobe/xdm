@@ -45,15 +45,14 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeType": "segmentTrigger",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyProfileNamespace": "ECID"
   },
-  "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourney": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyVersionID": "03832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyName": "Batch Journey Test",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyID": "0979238rf-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyCode": "Send Welcome Email Message",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyAction": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionID": "0899238rf-51ff",
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionName": "Email Service",
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyIdentityNamespace": "Profile"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignVersionID": "03832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignName": "Orchestrated Campaign Test",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignID": "0979238rf-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignAction": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignActionID": "0899238rf-51ff",
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignActionName": "Email Service",
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignIdentityNamespace": "Profile"
     }
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/tags": {

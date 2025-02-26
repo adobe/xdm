@@ -130,7 +130,7 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceId": {
               "title": "Source Id",
               "type": "string",
-              "description": "Source Version Id of the entity where message originate."
+              "description": "Source Id of the entity where message originate."
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceVersionId": {
               "title": "Source Version Id",

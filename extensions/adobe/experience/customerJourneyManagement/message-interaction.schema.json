@@ -27,7 +27,8 @@
             "spam_complaint",
             "subscription",
             "submit",
-            "visit"
+            "visit",
+            "bot_open"
           ],
           "meta:enum": {
             "click": "Message link clicked.",
@@ -36,7 +37,8 @@
             "spam_complaint": "Message is marked as spam by the user.",
             "subscription": "Subscribe / Unsubscribe to a subscription list.",
             "submit": "Submit message.",
-            "visit": "Message visited."
+            "visit": "Message visited.",
+            "bot_open": "Message opened by a bot."
           },
           "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
           "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791"

@@ -1,0 +1,123 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/fragmentitem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Fragment Item",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:status": "experimental",
+  "description": "Class which represents a Fragment, which is used for Decisioning",
+  "definitions": {
+    "fragmentitem": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/type": {
+          "title": "type of fragment",
+          "type": "string",
+          "description": "Type of fragment ",
+          "meta:enum": {
+            "html": "HTML",
+            "json": "JSON",
+            "expression": "Expression"
+          }
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus": {
+          "title": "life cycle status",
+          "type": "string",
+          "description": "Status associated with fragment life cycle with in ExD.",
+          "meta:enum": {
+            "draft": "Draft",
+            "approved": "Approved",
+            "archived": "Archived"
+          }
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/locale": {
+          "title": "locale of fragment",
+          "type": "string",
+          "description": "Locale associated with the fragment (eg en_US, en, fr_FR, etc) "
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/data": {
+          "title": "data of fragment",
+          "type": "object",
+          "description": "Data associated with the fragment "
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/publishDate": {
+          "title": "publish date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Publish date & time of the fragment at AJO (outside of ExD)"
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/publishStatus": {
+          "title": "publish status",
+          "type": "string",
+          "description": "Publish status of the fragment at AJO (outside of ExD)",
+          "meta:enum": {
+            "published": "Published",
+            "un-published": "Un-published"
+          }
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment": {
+          "title": "External fragment",
+          "type": "object",
+          "description": "Fragment whose source of truth is outside of ExD",
+          "properties": {
+            "xdm:origin": {
+              "title": "origin",
+              "type": "string",
+              "description": "Source of truth of fragments (for example AEM, other potential CMS providers)"
+            },
+            "xdm:status": {
+              "title": "status",
+              "type": "string",
+              "description": "Status as maintained by the external CMS like AEM ( new, draft, published, modified, unpublished), etc "
+            },
+            "xdm:extRefId": {
+              "title": "external reference Id",
+              "type": "string",
+              "description": "Id as referenced in the external system"
+            },
+            "xdm:metadata": {
+              "title": "metadata",
+              "type": "object",
+              "description": "Metadata of the external fragment",
+              "properties": {
+                "xdm:sourceInfo": {
+                  "title": "source Info",
+                  "type": "object",
+                  "description": "Source access Information (can vary based on systems)",
+                  "properties": {
+                    "xdm:repoId": {
+                      "title": "repository Id",
+                      "type": "string",
+                      "description": "Repository Id (AEM)"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "required": ["xdm:origin", "xdm:extRefId"]
+        }
+      },
+      "required": [
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus",
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/type",
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/fragmentitem"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    }
+  ]
+}

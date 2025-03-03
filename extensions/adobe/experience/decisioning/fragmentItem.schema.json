@@ -45,7 +45,8 @@
         "https://ns.adobe.com/experience/decisioning/fragmentitem/data": {
           "title": "data of fragment",
           "type": "object",
-          "description": "Data associated with the fragment "
+          "description": "Data associated with the fragment",
+          "additionalProperties": true
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/publishDate": {
           "title": "publish date",

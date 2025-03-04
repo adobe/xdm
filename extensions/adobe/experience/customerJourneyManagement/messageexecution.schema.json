@@ -119,7 +119,7 @@
           "title": "Message Source",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceType": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceType": {
               "title": "Source Type",
               "type": "string",
               "description": "Classifies the source type of the message.",
@@ -127,17 +127,17 @@
                 "orchestratedCampaign": "Orchestrated Campaign"
               }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceId": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceId": {
               "title": "Source Id",
               "type": "string",
               "description": "Source Id of the entity where message originate."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceVersionId": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceVersionId": {
               "title": "Source Version Id",
               "type": "string",
               "description": "Source Version Id of the entity where message originate."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceActionId": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceActionId": {
               "title": "Source ActionId",
               "type": "string",
               "description": "Action id of the source from where message originate"

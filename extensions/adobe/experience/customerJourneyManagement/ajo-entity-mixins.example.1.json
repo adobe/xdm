@@ -45,15 +45,20 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeType": "segmentTrigger",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyProfileNamespace": "ECID"
   },
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign": {
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignVersionID": "03832ee5-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/name": "Orchestrated Campaign Test",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/description": "Orchestrated Campaign Test",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignID": "0979238rf-51ff-4706-af8a-a8ff6756308b",
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignActionID": "0899238rf-51ff",
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignActionName": "Email Service",
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/IdentityNamespace": "Profile"
-    }
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignActionID": "0899238rf-51ff",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignActionName": "Email Service",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignActionIdentityNamespace": "Profile"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction/id": "inline campaign -1",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction/sourceType": "Orchestrated Campaign",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction/versionID": "inline campaign -1-2",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction/actionID": "inline campaign -1-2-3"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/tags": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/values": [

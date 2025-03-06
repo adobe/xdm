@@ -256,10 +256,42 @@
               "type": "string",
               "description": "Represents the Orchestrated Campaign Action Name"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/IdentityNamespace": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignActionIdentityNamespace": {
               "title": "Orchestrated Campaign Action Identity Namespace",
               "type": "string",
               "description": "Represents the Orchestrated Campaign Action Identity Namespace"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction": {
+          "title": "Executable Action Entity",
+          "type": "object",
+          "description": "Detail of Inline Campaign used for execution",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction/sourceType": {
+              "title": "Source Type of the Entity",
+              "type": "string",
+              "description": "Represents the source type",
+              "meta:enum": {
+                "orchestratedCampaign": "Orchestrated Campaign",
+                "singleStepCampaign": "Single Step Campaign",
+                "journey": "Journey"
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction/id": {
+              "title": "Inline Campaign ID",
+              "type": "string",
+              "description": "Represents the Inline Campaign ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction/versionID": {
+              "title": "Inline Campaign Version ID",
+              "type": "string",
+              "description": "Represents the Inline Campaign Version ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction/actionID": {
+              "title": "Inline Campaign Action ID",
+              "type": "string",
+              "description": "Represents the Inline Campaign Action ID"
             }
           }
         },

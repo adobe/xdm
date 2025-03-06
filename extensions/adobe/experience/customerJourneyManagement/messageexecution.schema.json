@@ -127,18 +127,18 @@
                 "orchestratedCampaign": "Orchestrated Campaign"
               }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceId": {
-              "title": "Source Id",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceID": {
+              "title": "Source ID",
               "type": "string",
               "description": "Source Id of the entity where message originate."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceVersionId": {
-              "title": "Source Version Id",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceVersionID": {
+              "title": "Source Version ID",
               "type": "string",
               "description": "Source Version Id of the entity where message originate."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceActionId": {
-              "title": "Source ActionId",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta/sourceActionID": {
+              "title": "Source ActionID",
               "type": "string",
               "description": "Action id of the source from where message originate"
             }

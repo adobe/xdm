@@ -226,42 +226,40 @@
           "type": "object",
           "description": "AJO Orchestrated Campaign Entity Specific Fields",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignVersionID": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignVersionID": {
               "title": "Orchestrated Campaign Version ID",
               "type": "string",
               "description": "Represents a frozen version of a Orchestrated Campaign"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignName": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/name": {
               "title": "Orchestrated Campaign Name",
               "type": "string",
               "description": "Represents the Orchestrated Campaign Name"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignID": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/description": {
+              "title": "Orchestrated Campaign description",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign description"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignID": {
               "title": "Orchestrated Campaign ID",
               "type": "string",
               "description": "Represents the Orchestrated Campaign ID"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignAction": {
-              "title": "Orchestrated Campaign Action",
-              "type": "object",
-              "description": "Represents the Orchestrated Campaign Action",
-              "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignActionID": {
-                  "title": "Orchestrated Campaign Action ID",
-                  "type": "string",
-                  "description": "Represents the Orchestrated Campaign Action ID"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignActionName": {
-                  "title": "Orchestrated Campaign Action Name",
-                  "type": "string",
-                  "description": "Represents the Orchestrated Campaign Action Name"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaignIdentityNamespace": {
-                  "title": "Orchestrated Campaign Action Identity Namespace",
-                  "type": "string",
-                  "description": "Represents the Orchestrated Campaign Action Identity Namespace"
-                }
-              }
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignActionID": {
+              "title": "Orchestrated Campaign Action ID",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign Action ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/campaignActionName": {
+              "title": "Orchestrated Campaign Action Name",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign Action Name"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign/IdentityNamespace": {
+              "title": "Orchestrated Campaign Action Identity Namespace",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign Action Identity Namespace"
             }
           }
         },

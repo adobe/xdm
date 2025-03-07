@@ -90,7 +90,7 @@
                       "type": "string",
                       "description": "The name of the flow."
                     },
-                    "xdm:flowKey": {
+                    "xdm:conversationalFlowKey": {
                       "title": "Flow Key",
                       "description": "Unique key of the flow.",
                       "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"

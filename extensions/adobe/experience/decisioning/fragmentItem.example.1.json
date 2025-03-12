@@ -1,0 +1,24 @@
+{
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/type": "json",
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus": "approved",
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/locale": "en_US",
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/publishDate": "2025-05-20T10:30:00-05:00",
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/publishStatus": "published",
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment": {
+    "xdm:origin": "aem",
+    "xdm:status": "published",
+    "xdm:extRefId": "565615710-daa5-40f3-88e2-af34cc0c15a8",
+    "xdm:metadata": {
+      "xdm:sourceInfo": {
+        "xdm:repoId": "publish-p77504-e175976-cmstg.adobeaemcloud.com"
+      }
+    }
+  },
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/data": {
+    "fields": [
+      { "model": "2025" },
+      { "price": "40000" },
+      { "category": "sport" }
+    ]
+  }
+}

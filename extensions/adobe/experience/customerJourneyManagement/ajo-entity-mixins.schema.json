@@ -221,52 +221,77 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourney": {
-          "title": "AJO Batch Journey Entity",
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/orchestratedCampaign": {
+          "title": "AJO Orchestrated Campaign Entity",
           "type": "object",
-          "description": "AJO Batch Journey Entity Specific Fields",
+          "description": "AJO Orchestrated Campaign Entity Specific Fields",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyVersionID": {
-              "title": "Batch Journey Version ID",
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID": {
+              "title": "Orchestrated Campaign Version ID",
               "type": "string",
-              "description": "Represents a frozen version of a Batch Journey"
+              "description": "Represents a frozen version of a Orchestrated Campaign"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyName": {
-              "title": "Batch Journey Name",
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": {
+              "title": "Orchestrated Campaign Name",
               "type": "string",
-              "description": "Represents the Batch Journey Name"
+              "description": "Represents the Orchestrated Campaign Name"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyID": {
-              "title": "Batch Journey ID",
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/description": {
+              "title": "Orchestrated Campaign description",
               "type": "string",
-              "description": "Represents the Batch Journey ID"
+              "description": "Represents the Orchestrated Campaign description"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyCode": {
-              "title": "Batch Journey Code",
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID": {
+              "title": "Orchestrated Campaign ID",
               "type": "string",
-              "description": "Represents the Batch Journey Code"
+              "description": "Represents the Orchestrated Campaign ID"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyAction": {
-              "title": "Batch Journey Action",
-              "type": "object",
-              "description": "Represents the Batch Journey Action",
-              "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionID": {
-                  "title": "Batch Journey Action ID",
-                  "type": "string",
-                  "description": "Represents the Batch Journey Action ID"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyActionName": {
-                  "title": "Batch Journey Action Name",
-                  "type": "string",
-                  "description": "Represents the Batch Journey Action Name"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/batchJourneyIdentityNamespace": {
-                  "title": "Batch Journey Action Identity Namespace",
-                  "type": "string",
-                  "description": "Represents the Batch Journey Action Identity Namespace"
-                }
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": {
+              "title": "Orchestrated Campaign Action ID",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign Action ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionName": {
+              "title": "Orchestrated Campaign Action Name",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign Action Name"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionIdentityNamespace": {
+              "title": "Orchestrated Campaign Action Identity Namespace",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign Action Identity Namespace"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction": {
+          "title": "Executable Action Entity",
+          "type": "object",
+          "description": "Detail of Inline Campaign used for execution",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceType": {
+              "title": "Source Type of the Entity",
+              "type": "string",
+              "description": "Represents the source type",
+              "meta:enum": {
+                "orchestratedCampaign": "Orchestrated Campaign",
+                "singleStepCampaign": "Single Step Campaign",
+                "journey": "Journey"
               }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/id": {
+              "title": "Inline Campaign ID",
+              "type": "string",
+              "description": "Represents the Inline Campaign ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/versionID": {
+              "title": "Inline Campaign Version ID",
+              "type": "string",
+              "description": "Represents the Inline Campaign Version ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/actionID": {
+              "title": "Inline Campaign Action ID",
+              "type": "string",
+              "description": "Represents the Inline Campaign Action ID"
             }
           }
         },

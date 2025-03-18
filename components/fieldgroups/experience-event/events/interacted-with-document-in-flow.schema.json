@@ -42,10 +42,7 @@
                       "type": "string",
                       "description": "The name of the flow."
                     }
-                  },
-                  "required": [
-                    "xdm:flowID"
-                  ]
+                  }
                 },
                 "xdm:documentDetails": {
                   "title": "Document Details",
@@ -82,10 +79,7 @@
                       "description": "Unique key of the document.",
                       "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                     }
-                  },
-                  "required": [
-                    "xdm:documentID"
-                  ]
+                  }
                 },
                 "xdm:pageDetails": {
                   "title": "Page Details",

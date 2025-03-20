@@ -55,11 +55,9 @@
                       "description": "Unique key of the campaign.",
                       "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                     }
-                  },
-                  "required": ["xdm:campaignName", "xdm:campaignID", "xdm:linkClicked", "xdm:campaignKey"]
+                  }
                 }
-              },
-              "required": ["xdm:callToActionClick"]
+              }
             }
           }
         }

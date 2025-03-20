@@ -49,10 +49,7 @@
                       "format": "uri",
                       "description": "URL where the dialogue was initiated."
                     }
-                  },
-                  "required": [
-                    "xdm:dialogueID"
-                  ]
+                  }
                 },
                 "xdm:documentDetails": {
                   "title": "Document Details",
@@ -84,10 +81,7 @@
                       "type": "boolean",
                       "description": "Indicates if the document was opened."
                     }
-                  },
-                  "required": [
-                    "xdm:documentID"
-                  ]
+                  }
                 },
                 "xdm:documentKey": {
                   "title": "Document Key",

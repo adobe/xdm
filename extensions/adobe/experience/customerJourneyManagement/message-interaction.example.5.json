@@ -1,0 +1,14 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "reply",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/entityType": "message",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/reply": {
+    "xdm:replySubject": "RE: Your recent purchase",
+    "xdm:replyTimestamp": "2023-03-15T14:32:09Z",
+    "xdm:messageId": "<reply-msg-6789@example.com>",
+    "xdm:inReplyTo": "<original-msg-12345@example.com>",
+    "xdm:references": [
+      "<original-msg-12345@example.com>"
+    ],
+    "xdm:intentCategory": "unclassified"
+  }
+} 

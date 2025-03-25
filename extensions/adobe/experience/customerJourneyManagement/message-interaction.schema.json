@@ -28,7 +28,8 @@
             "subscription",
             "submit",
             "visit",
-            "bot_open"
+            "bot_open",
+            "reply"
           ],
           "meta:enum": {
             "click": "Message link clicked.",
@@ -38,7 +39,8 @@
             "subscription": "Subscribe / Unsubscribe to a subscription list.",
             "submit": "Submit message.",
             "visit": "Message visited.",
-            "bot_open": "Message opened by a bot."
+            "bot_open": "Message opened by a bot.",
+            "reply": "Message replied to by recipient."
           },
           "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
           "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791"
@@ -270,6 +272,11 @@
               }
             }
           }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/reply": {
+          "title": "Message Reply Details",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-reply",
+          "description": "Describes reply message interaction."
         }
       }
     }

@@ -94,18 +94,18 @@
           "meta:titleId": "relationshipdescriptor##xdm:destinationToSourceTitle##title##12871",
           "meta:descriptionId": "relationshipdescriptor##xdm:destinationToSourceTitle##description##22641"
         },
-        "xdm:sourceToDestinationName": {      
+        "xdm:sourceToDestinationName": {
           "title": "Source to Destination Name",
           "type": "string",
           "description": "Provides a name (identifier) for the source->destination relationship.",
-          "maxLength": 35    
+          "maxLength": 35
         },
         "xdm:destinationToSourceName": {
           "title": "Destination to Source Name",
           "type": "string",
           "description": "Provides a name (identifier) for the destination->source relationship",
           "maxLength": 35
-        },   
+        },
         "xdm:cardinality": {
           "title": "Relationship Cardinality",
           "type": "string",

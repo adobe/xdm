@@ -181,17 +181,17 @@
                     "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": {
                       "title": "Transition Id",
                       "type": "string",
-                      "description": "Decision Node id"
+                      "description": "Transition Node id"
                     },
                     "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": {
                       "title": "Transition Name",
                       "type": "string",
-                      "description": "Decision Node Name"
+                      "description": "Transition Node Name"
                     },
                     "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": {
                       "title": "Transition Type",
                       "type": "string",
-                      "description": "Decision Node Type"
+                      "description": "Transition Node Type"
                     }
                   }
                 }

@@ -48,10 +48,7 @@
                       "type": "string",
                       "description": "Name of the Agent."
                     }
-                  },
-                  "required": [
-                    "xdm:agentID"
-                  ]
+                  }
                 },
                 "xdm:conversationDetails": {
                   "title": "Conversation Details",
@@ -101,10 +98,7 @@
                       "type": "string",
                       "description": "URL of the page where the dialogue is initiated."
                     }
-                  },
-                  "required": [
-                    "xdm:dialogueID"
-                  ]
+                  }
                 },
                 "xdm:dialogueKey": {
                   "title": "Dialogue Key",

@@ -44,16 +44,7 @@
           "description": "Email-specific metadata and threading information."
         }
       },
-      "required": ["xdm:channel", "xdm:timestamp"],
-      "dependencies": {
-        "xdm:email": {
-          "properties": {
-            "xdm:channel": {
-              "const": "email"
-            }
-          }
-        }
-      }
+      "required": ["xdm:channel", "xdm:timestamp"]
     }
   },
   "allOf": [

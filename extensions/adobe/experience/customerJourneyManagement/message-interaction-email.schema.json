@@ -1,0 +1,53 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-interaction-email",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe ExperienceEvent - Email Message Interaction Details",
+  "description": "Email-specific metadata and threading information for message interactions",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "email-details": {
+      "properties": {
+        "xdm:subject": {
+          "title": "Email Subject",
+          "type": "string",
+          "description": "Subject line of the email message."
+        },
+        "xdm:messageId": {
+          "title": "Message ID",
+          "type": "string",
+          "description": "The Message-ID header value of the message, uniquely identifying this message in email threading."
+        },
+        "xdm:inReplyTo": {
+          "title": "In Reply To",
+          "type": "string",
+          "description": "The In-Reply-To header value, containing the Message-ID of the original message being replied to."
+        },
+        "xdm:references": {
+          "title": "References",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The References header value, containing the chain of Message-IDs in the conversation thread."
+        }
+      },
+      "required": ["xdm:messageId", "xdm:inReplyTo"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/email-details"
+    }
+  ],
+  "meta:status": "experimental"
+} 

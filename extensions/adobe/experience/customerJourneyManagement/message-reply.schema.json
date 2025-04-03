@@ -8,40 +8,26 @@
   "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-reply",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe ExperienceEvent - Message Reply details",
-  "description": "Details about message replies in a customer journey, tracking email threading and intent",
+  "description": "Details about message replies in a customer journey",
   "type": "object",
   "meta:extensible": true,
   "definitions": {
     "reply": {
       "properties": {
-        "xdm:replySubject": {
-          "title": "Reply Subject",
+        "xdm:channel": {
+          "title": "Reply Channel",
           "type": "string",
-          "description": "Subject line of the reply message."
+          "description": "The channel through which the reply was received.",
+          "meta:enum": {
+            "email": "Email reply",
+            "sms": "SMS reply"
+          }
         },
-        "xdm:replyTimestamp": {
+        "xdm:timestamp": {
           "title": "Reply Timestamp",
           "type": "string",
           "format": "date-time",
           "description": "Timestamp when the reply was received."
-        },
-        "xdm:messageId": {
-          "title": "Message ID",
-          "type": "string",
-          "description": "The Message-ID header value of the reply, uniquely identifying this message in email threading."
-        },
-        "xdm:inReplyTo": {
-          "title": "In Reply To",
-          "type": "string",
-          "description": "The In-Reply-To header value, containing the Message-ID of the original message being replied to."
-        },
-        "xdm:references": {
-          "title": "References",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "The References header value, containing the chain of Message-IDs in the conversation thread."
         },
         "xdm:intentCategory": {
           "title": "Intent Category",
@@ -50,6 +36,21 @@
           "meta:enum": {
             "unsubscribe": "Request to unsubscribe from communications",
             "unclassified": "Intent could not be determined"
+          }
+        },
+        "xdm:email": {
+          "title": "Email Specific Details",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-interaction-email",
+          "description": "Email-specific metadata and threading information."
+        }
+      },
+      "required": ["xdm:channel", "xdm:timestamp"],
+      "dependencies": {
+        "xdm:email": {
+          "properties": {
+            "xdm:channel": {
+              "const": "email"
+            }
           }
         }
       }

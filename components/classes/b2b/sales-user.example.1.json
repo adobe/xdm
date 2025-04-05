@@ -1,8 +1,13 @@
 {
-  "xdm:userID": "0987654321",
+  "xdm:userID": "00Daj00000JTbKaCBE",
+  "xdm:sourceInstanceID": "01Maj000002PmoPETA",
+  "xdm:sourceKey": "00Daj00000JTbKaCBE@01Maj000002PmoPETA.Salesforce",
+  "xdm:sourceType": "Salesforce",
   "xdm:userEmail": "abd@def.hij",
   "xdm:firstName": "John",
   "xdm:lastName": "Doe",
   "xdm:phone": "(123) 867-5309",
-  "xdm:mobilePhone": "1-123-867-5309"
+  "xdm:mobilePhone": "1-123-867-5309",
+  "xdm:created_date": "2025-01-02T22:00:48",
+  "xdm:modified_date": "2025-01-02T22:00:48"
 }

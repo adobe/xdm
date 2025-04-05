@@ -9,13 +9,28 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "B2B Sales User",
   "type": "object",
-  "description": "A sales user is an owner of an Account.",
+  "description": "A sales user is an owner of a B2B Account.",
   "definitions": {
     "sales-user": {
       "properties": {
         "xdm:userID": {
-          "description": "Unique identifier for a sales user.",
+          "description": "CRM identifier of the user.",
           "title": "User ID",
+          "type": "string"
+        },
+        "xdm:sourceInstanceID": {
+          "description": "Name of the platform with the source data.",
+          "title": "Source Instance ID",
+          "type": "string"
+        },
+        "xdm:sourceKey": {
+          "description": "Unique identifier composed of the sourceType, sourceInstanceId, and userId.",
+          "title": "User Key",
+          "type": "string"
+        },
+        "xdm:sourceType": {
+          "description": "Instance or Organization Id of the source data.",
+          "title": "Source Type",
           "type": "string"
         },
         "xdm:userEmail": {
@@ -41,6 +56,16 @@
         "xdm:mobilePhone": {
           "description": "The mobile or alternate phone number used to contact this account user.",
           "title": "MobilePhone",
+          "type": "string"
+        },
+        "xdm:created_date": {
+          "description": "The CRM specific creation date.",
+          "title": "Created Date",
+          "type": "string"
+        },
+        "xdm:modified_date": {
+          "description": "The CRM specific most recent modification date.",
+          "title": "Modified Date",
           "type": "string"
         }
       }

@@ -9,18 +9,18 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "B2B Account Team",
   "type": "object",
-  "description": "A mapping between the B2B Account accountOwnerID field and one or more userIDs in B2B Sales User.",
+  "description": "A mapping between the B2B Account owning team key and one or more user keys for users in B2B Sales User.",
   "definitions": {
     "account-team": {
       "properties": {
-        "xdm:teamID": {
-          "description": "Unique identifier for team containing one or more team members.",
-          "title": "Team ID",
+        "xdm:teamKey": {
+          "description": "Unique identifier composed of the sourceType, sourceInstanceId, and teamId.",
+          "title": "Team Key",
           "type": "string"
         },
-        "xdm:userID": {
-          "description": "Unique identifier for a single user that is part of the team.",
-          "title": "User ID",
+        "xdm:userKey": {
+          "description": "Unique identifier composed of the sourceType, sourceInstanceId, and userId.",
+          "title": "User Key",
           "type": "string"
         }
       }

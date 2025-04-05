@@ -33,7 +33,7 @@
                   "title": "Flow Details",
                   "type": "object",
                   "properties": {
-                    "xdm:flowId": {
+                    "xdm:flowID": {
                       "title": "Flow ID",
                       "type": "string",
                       "description": "Unique identifier of the flow."
@@ -43,10 +43,7 @@
                       "type": "string",
                       "description": "The name of the flow."
                     }
-                  },
-                  "required": [
-                    "xdm:flowId"
-                  ]
+                  }
                 },
                 "xdm:interactionDetails": {
                   "title": "Interaction Details",

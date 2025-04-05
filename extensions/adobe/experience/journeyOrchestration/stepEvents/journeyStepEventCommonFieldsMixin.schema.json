@@ -445,6 +445,11 @@
               "title": "Export Topic Name",
               "type": "string",
               "description": "Read Segment Export Topic Name"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/dryRunID": {
+              "title": "Dry run ID",
+              "type": "string",
+              "description": "Dry run ID corresponding to Dry run instance of a journey"
             }
           },
           "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##31091"

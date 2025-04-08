@@ -12,7 +12,7 @@
   "type": "object",
   "meta:extensible": true,
   "definitions": {
-    "reply": {
+    "messageReply": {
       "properties": {
         "xdm:channel": {
           "title": "Reply Channel",
@@ -34,26 +34,73 @@
           "type": "string",
           "description": "Classified intent of the reply.",
           "meta:enum": {
-            "unsubscribe": "Request to unsubscribe from communications",
-            "unclassified": "Intent could not be determined"
+            "unsubscribe": "Request to unsubscribe from communications"
           }
         },
         "xdm:email": {
           "title": "Email Specific Details",
-          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-interaction-email",
-          "description": "Email-specific metadata and threading information."
+          "type": "object",
+          "description": "Email-specific metadata and threading information.",
+          "properties": {
+            "xdm:subject": {
+              "title": "Email Subject",
+              "type": "string",
+              "description": "Subject line of the email message."
+            },
+            "xdm:messageId": {
+              "title": "Message ID",
+              "type": "string",
+              "description": "The Message-ID header value of the message, uniquely identifying this message in email threading."
+            },
+            "xdm:inReplyTo": {
+              "title": "In Reply To",
+              "type": "string",
+              "description": "The In-Reply-To header value, containing the Message-ID of the original message being replied to."
+            },
+            "xdm:references": {
+              "title": "References",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "The References header value, containing the chain of Message-IDs in the conversation thread."
+            }
+          }
+        },
+        "xdm:sms": {
+          "title": "SMS Specific Details",
+          "type": "object",
+          "description": "SMS-specific metadata."
         }
       },
-      "required": ["xdm:channel", "xdm:timestamp"]
+      "required": ["xdm:channel", "xdm:timestamp"],
+      "dependencies": {
+        "xdm:email": {
+          "properties": {
+            "xdm:channel": {
+              "const": "email"
+            }
+          },
+          "required": ["xdm:messageId", "xdm:inReplyTo"]
+        },
+        "xdm:sms": {
+          "properties": {
+            "xdm:channel": {
+              "const": "sms"
+            }
+          }
+        }
+      },
+      "oneOf": [{ "required": ["xdm:email"] }, { "required": ["xdm:sms"] }],
+      "allOf": [
+        {
+          "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+          "$ref": "#/definitions/messageReply"
+        }
+      ],
+      "meta:status": "experimental"
     }
-  },
-  "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "#/definitions/reply"
-    }
-  ],
-  "meta:status": "experimental"
+  }
 }

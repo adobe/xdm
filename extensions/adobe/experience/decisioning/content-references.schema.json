@@ -26,11 +26,11 @@
             "title": "Reference Details",
             "description": "Content Reference Details supported through AJO or AEM Fragments",
             "$ref": "https://ns.adobe.com/experience/decisioning/fragment-details"
-            }
           }
         }
       }
-    },
+    }
+  },
   "allOf": [
     {
       "$ref": "#/definitions/entities"

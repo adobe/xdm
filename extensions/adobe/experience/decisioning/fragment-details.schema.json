@@ -18,31 +18,31 @@
   "definitions": {
     "entities": {
       "properties": {
-          "xdm:id":{
-            "type": "string",
-            "title": "Fragment Reference Id"
-          },
-          "xdm:source": {
-            "type": "string",
-            "description": "Source of fragment",
-            "meta:enum": {
-              "ajo": "ajo",
-              "aem": "aem"
-            }
-          },
-          "xdm:type": {
-            "title": "type of fragment",
-            "type": "string",
-            "description": "Type of fragment ",
-            "meta:enum": {
-              "html": "HTML",
-              "json": "JSON",
-              "text": "TEXT",
-              "visual": "Visual",
-              "expression": "Expression"
-            }
+        "xdm:id": {
+          "type": "string",
+          "title": "Fragment Reference Id"
+        },
+        "xdm:source": {
+          "type": "string",
+          "description": "Source of fragment",
+          "meta:enum": {
+            "ajo": "ajo",
+            "aem": "aem"
+          }
+        },
+        "xdm:type": {
+          "title": "type of fragment",
+          "type": "string",
+          "description": "Type of fragment ",
+          "meta:enum": {
+            "html": "HTML",
+            "json": "JSON",
+            "text": "TEXT",
+            "visual": "Visual",
+            "expression": "Expression"
           }
         }
+      }
     }
   },
   "allOf": [

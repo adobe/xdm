@@ -8,7 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/content-references",
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/decisioning/option"
+    "https://ns.adobe.com/experience/decisioning/offer-item"
   ],
   "meta:abstract": true,
   "meta:extensible": true,

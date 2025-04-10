@@ -1,0 +1,101 @@
+{
+  "meta:license": [
+    "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/factor-standard-fields",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Factor Standard Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "A field group that defines standard factor fields including factor name, factor value, factor type, and factor value type.",
+  "definitions": {
+    "factor-standard-fields": {
+      "type": "object",
+      "properties": {
+        "xdm:factorName": {
+          "title": "Factor Name",
+          "type": "string",
+          "description": "The name of the factor",
+          "examples": [
+            "CPI",
+            "Humidity", 
+            "Sales Volume",
+            "Customer Satisfaction Score"
+          ],
+          "meta:titleId": "factor-standard-fields##xdm:factorName##title##98732",
+          "meta:descriptionId": "factor-standard-fields##xdm:factorName##description##99700"
+        },
+        "xdm:factorValue": {
+          "title": "Factor Value",
+          "type": "number",
+          "meta:xdmType": "double",
+          "description": "The value of the factor",
+          "examples": [319.5, 0.75, 1000, -2.3],
+          "meta:titleId": "factor-standard-fields##xdm:factorValue##title##98733",
+          "meta:descriptionId": "factor-standard-fields##xdm:factorValue##description##99702"
+        },
+        "xdm:factorType": {
+          "title": "Factor Type",
+          "type": "string", 
+          "description": "The type of the factor",
+          "enum": ["Internal", "External"],
+          "meta:enum": {
+            "Internal": "Internal Factor",
+            "External": "External Factor"
+          },
+          "examples": ["Internal", "External"],
+          "meta:titleId": "factor-standard-fields##xdm:factorType##title##98734",
+          "meta:descriptionId": "factor-standard-fields##xdm:factorType##description##99703"
+        },
+        "xdm:valueType": {
+          "title": "Value Type",
+          "type": "string",
+          "description": "The type of the value",
+          "enum": ["Actual", "Forecasted"],
+          "meta:enum": {
+            "Actual": "Actual Value",
+            "Forecasted": "Forecasted Value"
+          },
+          "examples": ["Actual", "Forecasted"],
+          "meta:titleId": "factor-standard-fields##xdm:valueType##title##98735",
+          "meta:descriptionId": "factor-standard-fields##xdm:valueType##description##99704"
+        }
+      },
+      "required": [
+        "xdm:factorName",
+        "xdm:factorValue"
+      ],
+      "examples": [
+        {
+          "xdm:factorName": "CPI",
+          "xdm:factorValue": 319.5,
+          "xdm:factorType": "External",
+          "xdm:valueType": "Actual"
+        },
+        {
+          "xdm:factorName": "Sales Volume",
+          "xdm:factorValue": 1000,
+          "xdm:factorType": "Internal",
+          "xdm:valueType": "Forecasted"
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/factor-standard-fields"
+    }
+  ],
+  "meta:status": "stabilizing",
+  "meta:createdDate": "2024-04-09",
+  "meta:titleId": "factor-standard-fields##title##98736",
+  "meta:descriptionId": "factor-standard-fields##description##99705"
+}

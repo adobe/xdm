@@ -88,16 +88,16 @@
           "required": ["xdm:messageId", "xdm:inReplyTo"]
         }
       },
-      "oneOf": [{ "required": ["xdm:email"] }],
-      "allOf": [
-        {
-          "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-        },
-        {
-          "$ref": "#/definitions/messageReply"
-        }
-      ],
-      "meta:status": "experimental"
+      "oneOf": [{ "required": ["xdm:email"] }]
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageReply"
+    }
+  ],
+  "meta:status": "experimental"
 }

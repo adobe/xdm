@@ -19,8 +19,7 @@
           "type": "string",
           "description": "The channel through which the reply was received.",
           "meta:enum": {
-            "email": "Email reply",
-            "sms": "SMS reply"
+            "email": "Email reply"
           }
         },
         "xdm:timestamp": {
@@ -29,13 +28,15 @@
           "format": "date-time",
           "description": "Timestamp when the reply was received."
         },
-        "xdm:intentCategory": {
-          "title": "Intent Category",
+        "xdm:intent": {
+          "title": "Identified Intent",
           "type": "string",
-          "description": "Classified intent of the reply.",
-          "meta:enum": {
-            "unsubscribe": "Request to unsubscribe from communications"
-          }
+          "description": "Identified intent of the reply."
+        },
+        "xdm:surfaceId": {
+          "title": "Channel Surface Id",
+          "type": "string",
+          "description": "Channel Surface used to send the original message."
         },
         "xdm:email": {
           "title": "Email Specific Details",
@@ -67,10 +68,13 @@
             }
           }
         },
-        "xdm:sms": {
-          "title": "SMS Specific Details",
+        "additionalMetadata": {
           "type": "object",
-          "description": "SMS-specific metadata."
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string",
+            "description": "String value"
+          }
         }
       },
       "required": ["xdm:channel", "xdm:timestamp"],
@@ -82,16 +86,9 @@
             }
           },
           "required": ["xdm:messageId", "xdm:inReplyTo"]
-        },
-        "xdm:sms": {
-          "properties": {
-            "xdm:channel": {
-              "const": "sms"
-            }
-          }
         }
       },
-      "oneOf": [{ "required": ["xdm:email"] }, { "required": ["xdm:sms"] }],
+      "oneOf": [{ "required": ["xdm:email"] }],
       "allOf": [
         {
           "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

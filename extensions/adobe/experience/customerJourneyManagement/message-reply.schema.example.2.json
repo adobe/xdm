@@ -1,7 +1,8 @@
 {
   "xdm:channel": "email",
   "xdm:timestamp": "2023-05-22T09:15:32Z",
-  "xdm:intentCategory": "unsubscribe",
+  "xdm:intent": "unsubscribe",
+  "xdm:surfaceId": "marketing",
   "xdm:email": {
     "xdm:subject": "RE: Weekly Newsletter",
     "xdm:messageId": "<unsubscribe-reply-123@example.com>",
@@ -10,5 +11,8 @@
       "<newsletter-weekly-456@example.com>",
       "<newsletter-welcome-789@example.com>"
     ]
+  },
+  "additionalMetadata": {
+    "lable": "dev"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "xdm:channel": "email",
+  "xdm:timestamp": "2023-03-15T14:32:09Z",
+  "xdm:intent": "unclassified",
+  "xdm:surfaceId": "email:newsletter",
+  "xdm:email": {
+    "xdm:subject": "RE: Your recent purchase",
+    "xdm:messageId": "<reply-msg-6789@example.com>",
+    "xdm:inReplyTo": "<original-msg-12345@example.com>",
+    "xdm:references": [
+      "<original-msg-12345@example.com>",
+      "<previous-thread-abcd@example.com>"
+    ]
+  },
+  "additionalMetadata": {
+    "lable": "prod"
+  }
+}

@@ -11,6 +11,7 @@
   "type": "object",
   "description": "A sales user is an owner of a B2B Account.",
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:abstract": true,
   "definitions": {
     "sales-user": {
       "properties": {
@@ -59,6 +60,11 @@
           "title": "MobilePhone",
           "type": "string"
         },
+        "xdm:isDeleted": {
+          "description": "Identifies if this user has been deleted from the team. Intended for use with MS Dynamics.",
+          "title": "IsDeleted",
+          "type": "boolean"
+        },
         "xdm:created_date": {
           "description": "The CRM specific creation date.",
           "title": "Created Date",
@@ -79,6 +85,12 @@
     {
       "$ref": "#/definitions/sales-user"
     }
+  ],
+  "required": [
+    "xdm:userID",
+    "xdm:sourceInstanceID",
+    "xdm:sourceKey",
+    "xdm:sourceType"
   ],
   "meta:status": "experimental"
 }

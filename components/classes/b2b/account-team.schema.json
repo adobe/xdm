@@ -11,6 +11,7 @@
   "type": "object",
   "description": "A mapping between the B2B Account owning team key and one or more user keys for users in B2B Sales User.",
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:abstract": true,
   "definitions": {
     "account-team": {
       "properties": {
@@ -23,6 +24,11 @@
           "description": "Unique identifier composed of the sourceType, sourceInstanceId, and userId.",
           "title": "User Key",
           "type": "string"
+        },
+        "xdm:isDeleted": {
+          "description": "Identifies if this user has been deleted from the team. Intended for use with Salesforce.",
+          "title": "IsDeleted",
+          "type": "boolean"
         }
       }
     }
@@ -34,6 +40,10 @@
     {
       "$ref": "#/definitions/account-team"
     }
+  ],
+  "required": [
+    "xdm:teamKey",
+    "xdm:userKey"
   ],
   "meta:status": "experimental"
 }

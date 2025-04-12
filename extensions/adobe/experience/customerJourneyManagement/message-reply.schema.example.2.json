@@ -5,14 +5,14 @@
   "xdm:surfaceId": "marketing",
   "xdm:email": {
     "xdm:subject": "RE: Weekly Newsletter",
-    "xdm:messageId": "<unsubscribe-reply-123@example.com>",
-    "xdm:inReplyTo": "<newsletter-weekly-456@example.com>",
+    "xdm:messageId": "<unsubscribe-reply@example.com>",
+    "xdm:inReplyTo": "<newsletter-weekly@example.com>",
     "xdm:references": [
-      "<newsletter-weekly-456@example.com>",
-      "<newsletter-welcome-789@example.com>"
+      "<newsletter-welcome@example.com>",
+      "<newsletter-weekly@example.com>"
     ]
   },
   "additionalMetadata": {
-    "lable": "dev"
+    "key": "value"
   }
 }

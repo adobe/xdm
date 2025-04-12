@@ -71,7 +71,9 @@
           "required": ["xdm:messageId", "xdm:inReplyTo"]
         },
         "xdm:additionalMetadata": {
+          "title": "Additional Metadata",
           "type": "object",
+          "description": "Additional metadata that can be used in Journey.",
           "meta:xdmType": "map",
           "additionalProperties": {
             "type": "string",

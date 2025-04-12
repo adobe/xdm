@@ -70,7 +70,7 @@
           },
           "required": ["xdm:messageId", "xdm:inReplyTo"]
         },
-        "additionalMetadata": {
+        "xdm:additionalMetadata": {
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {

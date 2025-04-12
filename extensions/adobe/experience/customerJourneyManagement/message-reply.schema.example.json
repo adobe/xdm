@@ -9,7 +9,7 @@
     "xdm:inReplyTo": "<original-msg@example.com>",
     "xdm:references": ["<original-msg@example.com>"]
   },
-  "additionalMetadata": {
+  "xdm:additionalMetadata": {
     "key": "value"
   }
 }

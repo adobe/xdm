@@ -7,9 +7,7 @@
     "xdm:subject": "RE: Your recent purchase",
     "xdm:messageId": "<reply-msg@example.com>",
     "xdm:inReplyTo": "<original-msg@example.com>",
-    "xdm:references": [
-      "<original-msg@example.com>"
-    ]
+    "xdm:references": ["<original-msg@example.com>"]
   },
   "additionalMetadata": {
     "key": "value"

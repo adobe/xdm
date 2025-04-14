@@ -81,15 +81,7 @@
           }
         }
       },
-      "required": ["xdm:channel", "xdm:timestamp"],
-      "anyOf": [
-        {
-          "not": {
-            "properties": { "xdm:channel": { "const": "email" } }
-          }
-        },
-        { "required": ["xdm:email"] }
-      ]
+      "required": ["xdm:channel", "xdm:timestamp"]
     }
   },
   "allOf": [

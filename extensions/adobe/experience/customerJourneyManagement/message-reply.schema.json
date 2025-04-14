@@ -92,5 +92,13 @@
       "$ref": "#/definitions/messageReply"
     }
   ],
+  "anyOf": [
+    {
+      "not": {
+        "properties": { "xdm:channel": { "const": "email" } }
+      }
+    },
+    { "required": ["xdm:email"] }
+  ],
   "meta:status": "experimental"
 }

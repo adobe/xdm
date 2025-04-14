@@ -1,0 +1,104 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-reply",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe ExperienceEvent - Message Reply details",
+  "description": "Details about message replies in a customer journey",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "messageReply": {
+      "properties": {
+        "xdm:channel": {
+          "title": "Reply Channel",
+          "type": "string",
+          "description": "The channel through which the reply was received.",
+          "enum": ["email"],
+          "meta:enum": {
+            "email": "Email reply"
+          }
+        },
+        "xdm:timestamp": {
+          "title": "Reply Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when the reply was received."
+        },
+        "xdm:intent": {
+          "title": "Identified Intent",
+          "type": "string",
+          "description": "Identified intent of the reply."
+        },
+        "xdm:surfaceId": {
+          "title": "Channel Surface Id",
+          "type": "string",
+          "description": "Channel Surface used to send the original message."
+        },
+        "xdm:email": {
+          "title": "Email Specific Details",
+          "type": "object",
+          "description": "Email-specific metadata and threading information.",
+          "properties": {
+            "xdm:subject": {
+              "title": "Email Subject",
+              "type": "string",
+              "description": "Subject line of the email message."
+            },
+            "xdm:messageId": {
+              "title": "Message ID",
+              "type": "string",
+              "description": "The Message-ID header value of the message, uniquely identifying this message in email threading."
+            },
+            "xdm:inReplyTo": {
+              "title": "In Reply To",
+              "type": "string",
+              "description": "The In-Reply-To header value, containing the Message-ID of the original message being replied to."
+            },
+            "xdm:references": {
+              "title": "References",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "The References header value, containing the chain of Message-IDs in the conversation thread."
+            }
+          },
+          "required": ["xdm:messageId", "xdm:inReplyTo"]
+        },
+        "xdm:additionalMetadata": {
+          "title": "Additional Metadata",
+          "type": "object",
+          "description": "Additional metadata that can be used in Journey.",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string",
+            "description": "String value"
+          }
+        }
+      },
+      "required": ["xdm:channel", "xdm:timestamp"],
+      "anyOf": [
+        {
+          "not": {
+            "properties": { "xdm:channel": { "const": "email" } }
+          }
+        },
+        { "required": ["xdm:email"] }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageReply"
+    }
+  ],
+  "meta:status": "experimental"
+}

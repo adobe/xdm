@@ -41,9 +41,6 @@
       "$ref": "#/definitions/account-team"
     }
   ],
-  "required": [
-    "xdm:teamKey",
-    "xdm:userKey"
-  ],
+  "required": ["xdm:teamKey", "xdm:userKey"],
   "meta:status": "experimental"
 }

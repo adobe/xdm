@@ -85,6 +85,7 @@
       "anyOf": [
         {
           "not": {
+            "type": "object",
             "properties": { "xdm:channel": { "const": "email" } }
           }
         },

@@ -34,8 +34,8 @@
           "type": "string",
           "description": "Identified intent of the reply."
         },
-        "xdm:surfaceId": {
-          "title": "Channel Surface Id",
+        "xdm:surfaceID": {
+          "title": "Channel Surface ID",
           "type": "string",
           "description": "Channel Surface used to send the original message."
         },
@@ -49,7 +49,7 @@
               "type": "string",
               "description": "Subject line of the email message."
             },
-            "xdm:messageId": {
+            "xdm:messageID": {
               "title": "Message ID",
               "type": "string",
               "description": "The Message-ID header value of the message, uniquely identifying this message in email threading."
@@ -68,7 +68,7 @@
               "description": "The References header value, containing the chain of Message-IDs in the conversation thread."
             }
           },
-          "required": ["xdm:messageId", "xdm:inReplyTo"]
+          "required": ["xdm:messageID", "xdm:inReplyTo"]
         },
         "xdm:additionalMetadata": {
           "title": "Additional Metadata",

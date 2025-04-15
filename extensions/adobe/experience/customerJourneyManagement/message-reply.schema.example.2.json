@@ -2,10 +2,10 @@
   "xdm:channel": "email",
   "xdm:timestamp": "2023-05-22T09:15:32Z",
   "xdm:intent": "unsubscribe",
-  "xdm:surfaceId": "marketing",
+  "xdm:surfaceID": "marketing",
   "xdm:email": {
     "xdm:subject": "RE: Weekly Newsletter",
-    "xdm:messageId": "<unsubscribe-reply@example.com>",
+    "xdm:messageID": "<unsubscribe-reply@example.com>",
     "xdm:inReplyTo": "<newsletter-weekly@example.com>",
     "xdm:references": [
       "<newsletter-welcome@example.com>",

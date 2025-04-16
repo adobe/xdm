@@ -193,6 +193,11 @@
                       "type": "string",
                       "description": "Transition Node Type"
                     },
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/eligibilityRule": {
+                      "title": "Eligibility Rule",
+                      "type": "string",
+                      "description": "Eligibility Rule for Decision Node"
+                    },
                     "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId": {
                       "title": "Experiment ID",
                       "type": "string",

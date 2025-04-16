@@ -29,6 +29,16 @@
           "description": "Identifies if this user has been deleted from the team. Intended for use with Salesforce.",
           "title": "IsDeleted",
           "type": "boolean"
+        },
+        "xdm:created_date": {
+          "description": "The CRM specific creation date.",
+          "title": "Created Date",
+          "type": "string"
+        },
+        "xdm:modified_date": {
+          "description": "The CRM specific most recent modification date.",
+          "title": "Modified Date",
+          "type": "string"
         }
       }
     }

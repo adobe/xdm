@@ -164,7 +164,7 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/entities/DecisionPolicy": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicy": {
           "title": "AJO Decision Policy Entity",
           "type": "array",
           "description": "AJO Decision Policy Entity Specific Fields",
@@ -178,10 +178,10 @@
                 "items": {
                   "type": "object",
                   "properties": {
-                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": {
-                      "title": "Transition Id",
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionID": {
+                      "title": "Transition ID",
                       "type": "string",
-                      "description": "Transition Node id"
+                      "description": "Transition Node ID"
                     },
                     "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": {
                       "title": "Transition Name",
@@ -198,12 +198,12 @@
                       "type": "string",
                       "description": "Eligibility Rule for Decision Node"
                     },
-                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId": {
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentID": {
                       "title": "Experiment ID",
                       "type": "string",
                       "description": "ID of the Experiment"
                     },
-                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentId": {
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID": {
                       "title": "Treatment ID",
                       "type": "string",
                       "description": "ID of the Treatment"
@@ -216,10 +216,10 @@
                   }
                 }
               },
-              "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyId": {
-                "title": "Decision Policy Id",
+              "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyID": {
+                "title": "Decision Policy ID",
                 "type": "string",
-                "description": "Decision Policy Id"
+                "description": "Decision Policy ID"
               },
               "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyName": {
                 "title": "Decision Policy Name",

@@ -192,6 +192,21 @@
                       "title": "Transition Type",
                       "type": "string",
                       "description": "Transition Node Type"
+                    },
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId": {
+                      "title": "Experiment ID",
+                      "type": "string",
+                      "description": "ID of the Experiment"
+                    },
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentId": {
+                      "title": "Treatment ID",
+                      "type": "string",
+                      "description": "ID of the Treatment"
+                    },
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/isHoldout": {
+                      "title": "Treatment Holdout",
+                      "type": "boolean",
+                      "description": "Is the treatment holdout"
                     }
                   }
                 }
@@ -205,6 +220,11 @@
                 "title": "Decision Policy Name",
                 "type": "string",
                 "description": "Decision Policy Name"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyType": {
+                "title": "Decision Policy Type",
+                "type": "string",
+                "description": "Decision Policy Type"
               }
             }
           }

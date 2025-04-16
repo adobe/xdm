@@ -33,29 +33,29 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName": "Hero page experiment",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName": "The first treatment"
   },
-  "https://ns.adobe.com/experience/customerJourneyManagement/entities/DecisionPolicy": [
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicy": [
     {
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyId": "123-456-789-c",
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyID": "123-456-789-c",
       "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyName": "Decision Policy",
       "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyType": "Message",
       "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitions": [
         {
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": "node-67890",
+          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionID": "node-67890",
           "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": "US Residents",
           "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": "ELIGIBILITY_RULE",
           "https://ns.adobe.com/experience/customerJourneyManagement/entities/eligibilityRule": "US"
         },
         {
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": "node-54321",
+          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionID": "node-54321",
           "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": "California Experiment",
           "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": "EXPERIMENTATION",
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId": "4ngQWVA5axpfxB1PRLPI8S"
+          "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentID": "4ngQWVA5axpfxB1PRLPI8S"
         },
         {
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": "node-67890",
+          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionID": "node-67890",
           "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": "Treatment B",
           "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": "TREATMENT",
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentId": "5dnhk2ln0n9fsl2cct5g",
+          "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID": "5dnhk2ln0n9fsl2cct5g",
           "https://ns.adobe.com/experience/customerJourneyManagement/entities/isHoldout": false
         }
       ]

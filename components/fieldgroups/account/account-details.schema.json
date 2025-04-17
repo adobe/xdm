@@ -137,6 +137,11 @@
           "meta:titleId": "account-details##xdm:accountOwnership##title##34951",
           "meta:descriptionId": "account-details##xdm:accountOwnership##description##34291"
         },
+        "xdm:accountOwnerID": {
+          "title": "Account Owner ID",
+          "description": "The CRM specific id used to identify either a single user or team of users who have ownership of this sales account.",
+          "type": "string"
+        },
         "xdm:accountTradeStyle": {
           "title": "Account Trade Style",
           "description": "A name, different from its legal name, that an organization may use for conducting business. Similar to (Doing business as) or (DBA).",

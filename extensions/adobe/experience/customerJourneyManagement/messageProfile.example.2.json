@@ -11,14 +11,4 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/channelType": "MMS",
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profilenNumber": "12347986421",
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/origTimestamp": "2024-09-26T15:52:25+00:00"
-},
- "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
-  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundMessage": "stop",
-  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundNumber": "1234",
-  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": "Uitlity",
-  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/profilenNumber": "12347986421",
-  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/origTimestamp": "2024-09-26T15:52:25+00:00"
-
 }

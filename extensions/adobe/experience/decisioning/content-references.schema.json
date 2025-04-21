@@ -7,11 +7,8 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/content-references",
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/decisioning/offer-item"
-  ],
   "meta:abstract": true,
-  "meta:extensible": true,
+  "meta:extensible": false,
   "type": "object",
   "title": "Content References",
   "description": "A Map of content reference details and keys to be associated with decision item",
@@ -24,7 +21,7 @@
           "meta:xdmType": "map",
           "additionalProperties": {
             "title": "Reference Details",
-            "description": "Content Reference Details supported through AJO or AEM Fragments",
+            "description": "Content Reference Details supported through AJO or External Fragments",
             "$ref": "https://ns.adobe.com/experience/decisioning/fragment-details"
           }
         }

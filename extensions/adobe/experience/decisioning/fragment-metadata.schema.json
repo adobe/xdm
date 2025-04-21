@@ -8,7 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/fragment-details",
   "meta:abstract": true,
-  "meta:extensible": true,
+  "meta:extensible": false,
   "type": "object",
   "title": "Fragment Details",
   "description": "Fragment are reusable content. This schema constitutes Fragment Details",
@@ -38,8 +38,24 @@
             "visual": "Visual",
             "expression": "Expression"
           }
+        },
+        "xdm:publishStatus": {
+          "title": "Publish Status",
+          "type": "string",
+          "description": "Publish Status of fragment",
+          "meta:enum": {
+            "published": "Published",
+            "un-published": "Un-published"
+          }
+        },
+        "xdm:publishDate": {
+          "title": "publish date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Publish date & time of the fragment at AJO (outside of ExD)"
         }
-      }
+      },
+      "required": ["xdm:id", "xdm:type"]
     }
   },
   "allOf": [

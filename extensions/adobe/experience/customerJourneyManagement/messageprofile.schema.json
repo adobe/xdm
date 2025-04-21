@@ -134,36 +134,37 @@
           "format": "date-time",
           "description": "Timestamp from Provider"
         },
-         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
-           "title": "whatsApp messageType",
-           "type": "string",
-           "description": "whatsApp Message Type, e.g. templateBased,response"
-         },
-         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundMessage": {
-           "title": "whatsApp inbound Message",
-           "type": "string",
-           "description": "whatsApp inbound reply, e.g. stop, start, subscribe, etc."
-         },
-         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundNumber": {
-           "title": "whatsApp inbound Number",
-           "type": "string",
-           "description": "whatsApp inbound Number : Sender Id where the MO being received"
-         },
-         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": {
-           "title": "Channel Type",
-           "type": "string",
-           "description": "whatsApp ChannelType will contain like : Utility,Marketing,Promotional."
-         },
-         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/profileNumber": {
-           "title": "Profile Phone Number",
-           "type": "string",
-           "description": "Phone Number from whihc we recevied the Inbound message"
-         },
-         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/origTimestamp": {
-           "title": "Original Timestamp ",
-           "type": "string",
-           "format": "date-time",
-           "description": "Timestamp from Meta / WhatsApp"
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
+          "title": "whatsApp messageType",
+          "type": "string",
+          "description": "whatsApp Message Type, e.g. templateBased,response"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundMessage": {
+          "title": "whatsApp inbound Message",
+          "type": "string",
+          "description": "whatsApp inbound reply, e.g. stop, start, subscribe, etc."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundNumber": {
+          "title": "whatsApp inbound Number",
+          "type": "string",
+          "description": "whatsApp inbound Number : Sender Id where the MO being received"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": {
+          "title": "Channel Type",
+          "type": "string",
+          "description": "whatsApp ChannelType will contain like : Utility,Marketing,Promotional."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/profileNumber": {
+          "title": "Profile Phone Number",
+          "type": "string",
+          "description": "Phone Number from whihc we recevied the Inbound message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/origTimestamp": {
+          "title": "Original Timestamp ",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp from Meta / WhatsApp"
+        }
       }
     }
   },

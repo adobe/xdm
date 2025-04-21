@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Fragment Item",
   "type": "object",
-  "meta:extensible": false,
+  "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "meta:status": "experimental",
@@ -17,7 +17,7 @@
   "definitions": {
     "fragmentitem": {
       "properties": {
-        "xdm:metadata": {
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/type": {
           "title": "type of fragment",
           "type": "string",
           "description": "Type of fragment ",
@@ -47,6 +47,21 @@
           "type": "object",
           "description": "Data associated with the fragment",
           "additionalProperties": true
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/publishDate": {
+          "title": "publish date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Publish date & time of the fragment at AJO (outside of ExD)"
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/publishStatus": {
+          "title": "publish status",
+          "type": "string",
+          "description": "Publish status of the fragment at AJO (outside of ExD)",
+          "meta:enum": {
+            "published": "Published",
+            "un-published": "Un-published"
+          }
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment": {
           "title": "External fragment",

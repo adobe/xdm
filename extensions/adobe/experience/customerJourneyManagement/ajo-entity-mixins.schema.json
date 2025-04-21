@@ -164,47 +164,72 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/entities/DecisionPolicy": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicy": {
           "title": "AJO Decision Policy Entity",
           "type": "array",
           "description": "AJO Decision Policy Entity Specific Fields",
           "items": {
             "type": "object",
             "properties": {
-              "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitions": {
+              "xdm:transitions": {
                 "title": "Transition",
                 "type": "array",
                 "description": "Transition Specific Fields",
                 "items": {
                   "type": "object",
                   "properties": {
-                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": {
-                      "title": "Transition Id",
+                    "xdm:transitionID": {
+                      "title": "Transition ID",
                       "type": "string",
-                      "description": "Transition Node id"
+                      "description": "Transition Node ID"
                     },
-                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": {
+                    "xdm:transitionName": {
                       "title": "Transition Name",
                       "type": "string",
                       "description": "Transition Node Name"
                     },
-                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": {
+                    "xdm:transitionType": {
                       "title": "Transition Type",
                       "type": "string",
                       "description": "Transition Node Type"
+                    },
+                    "xdm:eligibilityRule": {
+                      "title": "Eligibility Rule",
+                      "type": "string",
+                      "description": "Eligibility Rule for Decision Node"
+                    },
+                    "xdm:experimentID": {
+                      "title": "Experiment ID",
+                      "type": "string",
+                      "description": "ID of the Experiment"
+                    },
+                    "xdm:treatmentID": {
+                      "title": "Treatment ID",
+                      "type": "string",
+                      "description": "ID of the Treatment"
+                    },
+                    "xdm:isHoldout": {
+                      "title": "Treatment Holdout",
+                      "type": "boolean",
+                      "description": "Is the treatment holdout"
                     }
                   }
                 }
               },
-              "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyId": {
-                "title": "Decision Policy Id",
+              "xdm:decisionPolicyID": {
+                "title": "Decision Policy ID",
                 "type": "string",
-                "description": "Decision Policy Id"
+                "description": "Decision Policy ID"
               },
-              "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyName": {
+              "xdm:decisionPolicyName": {
                 "title": "Decision Policy Name",
                 "type": "string",
                 "description": "Decision Policy Name"
+              },
+              "xdm:decisionPolicyType": {
+                "title": "Decision Policy Type",
+                "type": "string",
+                "description": "Decision Policy Type"
               }
             }
           }

@@ -123,6 +123,7 @@
           "title": "Content References",
           "description": "Content References to be associated with offer",
           "$ref": "https://ns.adobe.com/experience/decisioning/content-references"
+        }
       },
       "required": [
         "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus"

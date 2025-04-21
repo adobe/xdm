@@ -28,9 +28,9 @@
           }
         },
         "xdm:type": {
-          "title": "type of fragment",
+          "title": "Type of fragment",
           "type": "string",
-          "description": "Type of fragment ",
+          "description": "Type of fragment",
           "meta:enum": {
             "html": "HTML",
             "json": "JSON",
@@ -49,7 +49,7 @@
           }
         },
         "xdm:publishDate": {
-          "title": "publish date",
+          "title": "Publish date",
           "type": "string",
           "format": "date-time",
           "description": "Publish date & time of the fragment at AJO (outside of ExD)"

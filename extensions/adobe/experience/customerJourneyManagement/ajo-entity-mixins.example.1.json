@@ -33,25 +33,30 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName": "Hero page experiment",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName": "The first treatment"
   },
-  "https://ns.adobe.com/experience/customerJourneyManagement/entities/DecisionPolicy": [
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicy": [
     {
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyId": "123-456-789-c",
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyName": "Decision Policy",
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitions": [
+      "xdm:decisionPolicyID": "123-456-789-c",
+      "xdm:decisionPolicyName": "Decision Policy",
+      "xdm:decisionPolicyType": "Message",
+      "xdm:transitions": [
         {
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": "node-67890",
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": "US Residents",
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": "ELIGIBILITY_RULE"
+          "xdm:transitionID": "node-67890",
+          "xdm:transitionName": "US Residents",
+          "xdm:transitionType": "ELIGIBILITY_RULE",
+          "xdm:eligibilityRule": "US"
         },
         {
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": "node-54321",
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": "California Experiment",
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": "EXPERIMENTATION"
+          "xdm:transitionID": "node-54321",
+          "xdm:transitionName": "California Experiment",
+          "xdm:transitionType": "EXPERIMENTATION",
+          "xdm:experimentID": "4ngQWVA5axpfxB1PRLPI8S"
         },
         {
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionId": "node-67890",
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionName": "Treatment B",
-          "https://ns.adobe.com/experience/customerJourneyManagement/entities/transitionType": "TREATMENT"
+          "xdm:transitionID": "node-67890",
+          "xdm:transitionName": "Treatment B",
+          "xdm:transitionType": "TREATMENT",
+          "xdm:treatmentID": "5dnhk2ln0n9fsl2cct5g",
+          "xdm:isHoldout": false
         }
       ]
     }

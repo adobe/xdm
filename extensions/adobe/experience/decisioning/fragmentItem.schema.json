@@ -17,14 +17,13 @@
   "definitions": {
     "fragmentitem": {
       "properties": {
-        "https://ns.adobe.com/experience/decisioning/fragmentitem/type": {
-          "title": "Type of fragment",
-          "type": "string",
-          "description": "Type of fragment",
-          "meta:enum": {
-            "html": "HTML",
-            "json": "JSON",
-            "expression": "Expression"
+        "xdm:fragmentMetadata": {
+          "type": "object",
+          "description": "Metadata of the fragment",
+          "properties": {
+            "title": "Fragment Metadata",
+            "description": "Fragment Metadata Details",
+            "$ref": "https://ns.adobe.com/experience/decisioning/fragment-metadata"
           }
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus": {
@@ -47,21 +46,6 @@
           "type": "object",
           "description": "Data associated with the fragment",
           "additionalProperties": true
-        },
-        "https://ns.adobe.com/experience/decisioning/fragmentitem/publishDate": {
-          "title": "Publish date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Publish date & time of the fragment at AJO (outside of ExD)"
-        },
-        "https://ns.adobe.com/experience/decisioning/fragmentitem/publishStatus": {
-          "title": "Publish status",
-          "type": "string",
-          "description": "Publish status of the fragment at AJO (outside of ExD)",
-          "meta:enum": {
-            "published": "Published",
-            "un-published": "Un-published"
-          }
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment": {
           "title": "External fragment",
@@ -108,7 +92,7 @@
       },
       "required": [
         "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus",
-        "https://ns.adobe.com/experience/decisioning/fragmentitem/type",
+        "xdm:fragmentMetadata",
         "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment"
       ]
     }

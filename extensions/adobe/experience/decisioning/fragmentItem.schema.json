@@ -17,19 +17,20 @@
   "definitions": {
     "fragmentitem": {
       "properties": {
-        "xdm:fragmentMetadata": {
-          "type": "object",
-          "description": "Metadata of the fragment",
-          "properties": {
-            "title": "Fragment Metadata",
-            "description": "Fragment Metadata Details",
-            "$ref": "https://ns.adobe.com/experience/decisioning/fragment-metadata"
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/type": {
+          "title": "type of fragment",
+          "type": "string",
+          "description": "Type of fragment ",
+          "meta:enum": {
+            "html": "HTML",
+            "json": "JSON",
+            "expression": "Expression"
           }
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus": {
           "title": "life cycle status",
           "type": "string",
-          "description": "Status associated with fragment life cycle within ExD",
+          "description": "Status associated with fragment life cycle with in ExD.",
           "meta:enum": {
             "draft": "Draft",
             "approved": "Approved",
@@ -39,13 +40,28 @@
         "https://ns.adobe.com/experience/decisioning/fragmentitem/locale": {
           "title": "locale of fragment",
           "type": "string",
-          "description": "Locale associated with the fragment (e.g. en_US, en, fr_FR, etc)"
+          "description": "Locale associated with the fragment (eg en_US, en, fr_FR, etc) "
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/data": {
           "title": "data of fragment",
           "type": "object",
           "description": "Data associated with the fragment",
           "additionalProperties": true
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/publishDate": {
+          "title": "publish date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Publish date & time of the fragment at AJO (outside of ExD)"
+        },
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/publishStatus": {
+          "title": "publish status",
+          "type": "string",
+          "description": "Publish status of the fragment at AJO (outside of ExD)",
+          "meta:enum": {
+            "published": "Published",
+            "un-published": "Un-published"
+          }
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment": {
           "title": "External fragment",
@@ -60,7 +76,7 @@
             "xdm:status": {
               "title": "status",
               "type": "string",
-              "description": "Status as maintained by the external CMS like AEM (new, draft, published, modified, unpublished), etc"
+              "description": "Status as maintained by the external CMS like AEM ( new, draft, published, modified, unpublished), etc "
             },
             "xdm:extRefId": {
               "title": "external reference Id",
@@ -92,7 +108,7 @@
       },
       "required": [
         "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus",
-        "xdm:fragmentMetadata",
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/type",
         "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment"
       ]
     }

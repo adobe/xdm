@@ -1,10 +1,5 @@
 {
-  "xdm:fragmentMetadata": {
-    "xdm:id": "fragment_12345",
-    "xdm:type": "json",
-    "xdm:publishStatus": "published",
-    "xdm:publishDate": "2025-04-21T10:00:00Z"
-  },
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/type": "json",
   "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus": "approved",
   "https://ns.adobe.com/experience/decisioning/fragmentitem/locale": "en_US",
   "https://ns.adobe.com/experience/decisioning/fragmentitem/publishDate": "2025-05-20T10:30:00-05:00",

@@ -46,6 +46,11 @@
                     "title": "unsubscribe",
                     "description": "User has requested to not be shown the proposition in the future.",
                     "type": "integer"
+                },
+                "xdm:decision": {
+                    "title": "decision",
+                    "description": "Proposition was offered to the client. This does not guarantee the proposition arrived or was displayed to the user.",
+                    "type": "integer"
                 }
             }
         }

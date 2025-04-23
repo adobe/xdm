@@ -74,6 +74,13 @@
                     "meta:titleId": "scope-details##xdm:experience##title##59941",
                     "meta:descriptionId": "scope-details##xdm:experience##description##86341"
                 },
+                "xdm:decisionPolicy": {
+                    "title": "Selected Decision Policy",
+                    "description": "The decision policy that was selected when the decision was made.",
+                    "$ref": "#/definitions/experience-option-details",
+                    "meta:titleId": "scope-details##xdm:decisionPolicy##title##",
+                    "meta:descriptionId": "scope-details##xdm:decisionPolicy##description##"
+                },
                 "xdm:characteristics": {
                     "title": "Scope Details Characteristics",
                     "description": "Additional properties or attributes belonging to this particular scope details.",

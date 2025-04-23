@@ -13,15 +13,16 @@ A set of direct customer interactions that an end-user might perform when shown 
 
 # Proposition Event Type Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:dismiss](#xdmdismiss) | `integer` | Optional | Proposition Event Type (this schema) |
-| [xdm:display](#xdmdisplay) | `integer` | Optional | Proposition Event Type (this schema) |
-| [xdm:interact](#xdminteract) | `integer` | Optional | Proposition Event Type (this schema) |
-| [xdm:send](#xdmsend) | `integer` | Optional | Proposition Event Type (this schema) |
-| [xdm:trigger](#xdmtrigger) | `integer` | Optional | Proposition Event Type (this schema) |
+| Property                           | Type | Required | Defined by |
+|------------------------------------|------|----------|------------|
+| [xdm:dismiss](#xdmdismiss)         | `integer` | Optional | Proposition Event Type (this schema) |
+| [xdm:display](#xdmdisplay)         | `integer` | Optional | Proposition Event Type (this schema) |
+| [xdm:interact](#xdminteract)       | `integer` | Optional | Proposition Event Type (this schema) |
+| [xdm:send](#xdmsend)               | `integer` | Optional | Proposition Event Type (this schema) |
+| [xdm:trigger](#xdmtrigger)         | `integer` | Optional | Proposition Event Type (this schema) |
 | [xdm:unsubscribe](#xdmunsubscribe) | `integer` | Optional | Proposition Event Type (this schema) |
-| `*` | any | Additional | this schema *allows* additional properties |
+| [xdm:decision](#xdmunsubscribe)    | `integer` | Optional | Proposition Event Type (this schema) |
+| `*`                                | any | Additional | this schema *allows* additional properties |
 
 ## xdm:dismiss
 ### dismiss
@@ -97,6 +98,27 @@ Proposition was sent to the client. This does not guarantee the proposition arri
 
 
 `integer`
+
+
+
+
+
+
+## xdm:decision
+### decision
+
+Proposition was offered to the client. This does not guarantee the proposition arrived or was displayed to the user.
+
+`xdm:decision`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:decision Type
+
+
+`integer`
+
 
 
 

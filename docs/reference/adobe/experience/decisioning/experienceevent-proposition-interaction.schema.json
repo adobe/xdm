@@ -19,6 +19,13 @@
         "decisioning-experienceevent-all": {
             "type": "object",
             "properties": {
+                "xdm:id": {
+                    "type": "string",
+                    "title": "Decision Event Identifier",
+                    "description": "The unique identifier of the overall decision event.",
+                    "meta:titleId": "proposition-interaction##xdm:id##title##",
+                    "meta:descriptionId": "proposition-interaction##xdm:id##description##"
+                },
                 "https://ns.adobe.com/experience/decisioning/propositionEventType": {
                     "title": "Proposition Event",
                     "description": "A record of how the user interacted with the proposition. All propositions recorded on this event will be associated with the same event that is recorded here.",

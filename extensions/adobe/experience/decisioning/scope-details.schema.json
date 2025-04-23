@@ -47,6 +47,11 @@
           "meta:titleId": "scope-details##xdm:activity##title##26571",
           "meta:descriptionId": "scope-details##xdm:activity##description##781"
         },
+        "xdm:decisionPolicy": {
+          "title": "Decision Policy",
+          "description": "The decision policy used to make the decision.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/decision-policy"
+        },
         "xdm:correlationID": {
           "type": "string",
           "title": "Correlation Identifier",

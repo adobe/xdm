@@ -27,7 +27,7 @@
           }
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus": {
-          "title": "Life cycle status",
+          "title": "life cycle status",
           "type": "string",
           "description": "Status associated with fragment life cycle within ExD",
           "meta:enum": {
@@ -37,12 +37,12 @@
           }
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/locale": {
-          "title": "Locale of fragment",
+          "title": "locale of fragment",
           "type": "string",
           "description": "Locale associated with the fragment (e.g. en_US, en, fr_FR, etc)"
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/data": {
-          "title": "Data of fragment",
+          "title": "data of fragment",
           "type": "object",
           "description": "Data associated with the fragment",
           "additionalProperties": true
@@ -53,32 +53,32 @@
           "description": "Fragment whose source of truth is outside of ExD",
           "properties": {
             "xdm:origin": {
-              "title": "Origin",
+              "title": "origin",
               "type": "string",
               "description": "Source of truth of fragments (for example AEM, other potential CMS providers)"
             },
             "xdm:status": {
-              "title": "Status",
+              "title": "status",
               "type": "string",
               "description": "Status as maintained by the external CMS like AEM (new, draft, published, modified, unpublished), etc"
             },
             "xdm:extRefId": {
-              "title": "External reference Id",
+              "title": "external reference Id",
               "type": "string",
               "description": "Id as referenced in the external system"
             },
             "xdm:metadata": {
-              "title": "Metadata",
+              "title": "metadata",
               "type": "object",
               "description": "Metadata of the external fragment",
               "properties": {
                 "xdm:sourceInfo": {
-                  "title": "Source Info",
+                  "title": "source Info",
                   "type": "object",
                   "description": "Source access Information (can vary based on systems)",
                   "properties": {
                     "xdm:repoId": {
-                      "title": "Repository Id",
+                      "title": "repository Id",
                       "type": "string",
                       "description": "Repository Id (AEM)"
                     }

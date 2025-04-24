@@ -118,6 +118,11 @@
             },
             "required": ["xdm:limit", "xdm:scope"]
           }
+        },
+        "https://ns.adobe.com/experience/decisioning/offeritem/contentReferences": {
+          "title": "Content References",
+          "description": "Content References to be associated with offer",
+          "$ref": "https://ns.adobe.com/experience/decisioning/content-references"
         }
       },
       "required": [

@@ -1,5 +1,7 @@
 {
-  "https://ns.adobe.com/experience/decisioning/fragmentitem/type": "json",
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/fragment-metadata": {
+    "xdm:type": "json"
+  },
   "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus": "draft",
   "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment": {
     "xdm:origin": "aem",
@@ -8,6 +10,11 @@
     "xdm:metadata": {
       "xdm:sourceInfo": {
         "xdm:repoId": "publish-p77504-e175976-cmstg.adobeaemcloud.com"
+      },
+      "xdm:modelInfo": {
+        "xdm:modelId": "L2NvbmYvZHV0dGNoYXUvc2V0dGluZ3MvZGFtL2NmbS9tb2RlbHMvc2luZ2xldGV4dGZpZWxk",
+        "xdm:modelName": "commerce-dept-Q1-model",
+        "xdm:modelPath": "/conf/commerce/settings/dam/cfm/models/q1"
       }
     }
   }

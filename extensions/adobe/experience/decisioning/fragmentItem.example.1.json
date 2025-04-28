@@ -1,9 +1,12 @@
 {
-  "https://ns.adobe.com/experience/decisioning/fragmentitem/type": "json",
   "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus": "approved",
   "https://ns.adobe.com/experience/decisioning/fragmentitem/locale": "en_US",
-  "https://ns.adobe.com/experience/decisioning/fragmentitem/publishDate": "2025-05-20T10:30:00-05:00",
-  "https://ns.adobe.com/experience/decisioning/fragmentitem/publishStatus": "published",
+  "https://ns.adobe.com/experience/decisioning/fragmentitem/fragment-metadata": {
+    "xdm:id": "fragment_12345",
+    "xdm:type": "json",
+    "xdm:publishStatus": "published",
+    "xdm:publishDate": "2025-04-21T10:00:00Z"
+  },
   "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment": {
     "xdm:origin": "aem",
     "xdm:status": "published",
@@ -11,14 +14,91 @@
     "xdm:metadata": {
       "xdm:sourceInfo": {
         "xdm:repoId": "publish-p77504-e175976-cmstg.adobeaemcloud.com"
+      },
+      "xdm:modelInfo": {
+        "xdm:modelId": "L2NvbmYvZHV0dGNoYXUvc2V0dGluZ3MvZGFtL2NmbS9tb2RlbHMvc2luZ2xldGV4dGZpZWxk",
+        "xdm:modelName": "commerce-dept-Q1-model",
+        "xdm:modelPath": "/conf/commerce/settings/dam/cfm/models/q1"
       }
     }
   },
   "https://ns.adobe.com/experience/decisioning/fragmentitem/data": {
-    "fields": [
-      { "model": "2025" },
-      { "price": "40000" },
-      { "category": "sport" }
-    ]
+    "xdm:rawData": {
+      "path": "/content/dam/example/en/test-content-fragments",
+      "title": "Test content fragments",
+      "description": "This is a test content fragment",
+      "id": "d1c83a1e-95bd-47bf-8c44-b067a3a514e4",
+      "created": {
+        "at": "2025-04-16T23:20:23.652Z",
+        "by": "john.doe@adobe.com",
+        "fullName": "John Doe"
+      },
+      "modified": {
+        "at": "2025-04-18T17:40:30.71Z",
+        "by": "john.doe@adobe.com",
+        "fullName": "John Doe"
+      },
+      "status": "DRAFT",
+      "fields": [
+        {
+          "name": "model",
+          "type": "float-number",
+          "multiple": false,
+          "locked": false,
+          "values": [2025]
+        },
+        {
+          "name": "price",
+          "type": "float-number",
+          "multiple": false,
+          "locked": false,
+          "values": [40000]
+        },
+        {
+          "name": "category",
+          "type": "text",
+          "multiple": false,
+          "locked": false,
+          "values": ["sport"]
+        },
+        {
+          "name": "isContentDeliveryEnabled",
+          "type": "boolean",
+          "multiple": false,
+          "locked": false,
+          "values": [true]
+        },
+        {
+          "name": "text-content",
+          "type": "long-text",
+          "multiple": false,
+          "locked": false,
+          "values": [
+            "long text content with 5000 chars. This field will be excluded from decision attributes"
+          ]
+        },
+        {
+          "name": "html-content",
+          "type": "long-text",
+          "multiple": false,
+          "locked": false,
+          "values": [
+            "long html content with html, java script, css, etc. This field will be excluded from decision attributes"
+          ]
+        }
+      ],
+      "model": {
+        "id": "L2NvbmYvZHV0dGNoYXUvc2V0dGluZ3MvZGFtL2NmbS9tb2RlbHMvc2luZ2xldGV4dGZpZWxk",
+        "path": "/conf/commerce/settings/dam/cfm/models/q1",
+        "name": "commerce-dept-Q1-model",
+        "title": "Title for commerce dept model - Q1"
+      }
+    },
+    "decisionAttributes": {
+      "model": 2025,
+      "price": 40000,
+      "category": "sport",
+      "isContentDeliveryEnabled": true
+    }
   }
 }

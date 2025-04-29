@@ -37,25 +37,6 @@
           "title": "metadata of fragment",
           "description": "Metadata associated with the AJO Fragment which is stored/published at AJO (outside of ExD)"
         },
-        "https://ns.adobe.com/experience/decisioning/fragmentitem/data": {
-          "title": "data of fragment.",
-          "type": "object",
-          "description": "Data associated with the fragment",
-          "properties": {
-            "rawData": {
-              "title": "Raw data from fragment",
-              "type": "object",
-              "description": "Raw data from Fragment, which would be useful for offline ranking, etc",
-              "additionalProperties": true
-            },
-            "decisionAttributes": {
-              "title": "Decision Attributes",
-              "type": "object",
-              "description": "Dynamic attributes that can be subjected to decisioning based constructs like Rules, Ranking, Item Collection. Content rich fields (HTML / Text) are excluded here.",
-              "additionalProperties": true
-            }
-          }
-        },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment": {
           "title": "External fragment",
           "type": "object",

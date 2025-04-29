@@ -32,79 +32,20 @@
           "type": "string",
           "description": "Locale associated with the fragment (eg en_US, en, fr_FR, etc) "
         },
-        "https://ns.adobe.com/experience/decisioning/fragmentitem/fragment-metadata": {
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/fragmentMetadata": {
           "$ref": "https://ns.adobe.com/experience/decisioning/fragment-metadata",
           "title": "metadata of fragment",
           "description": "Metadata associated with the AJO Fragment which is stored/published at AJO (outside of ExD)"
         },
         "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/external-fragment",
           "title": "External fragment",
-          "type": "object",
-          "description": "Fragment whose source of truth is outside of ExD",
-          "properties": {
-            "xdm:origin": {
-              "title": "origin",
-              "type": "string",
-              "description": "Source of truth of fragments (for example AEM, other potential CMS providers)"
-            },
-            "xdm:status": {
-              "title": "status",
-              "type": "string",
-              "description": "Status as maintained by the external CMS like AEM ( new, draft, published, modified, unpublished), etc "
-            },
-            "xdm:extRefId": {
-              "title": "external reference Id",
-              "type": "string",
-              "description": "Id as referenced in the external system"
-            },
-            "xdm:metadata": {
-              "title": "metadata",
-              "type": "object",
-              "description": "Metadata of the external fragment",
-              "properties": {
-                "xdm:sourceInfo": {
-                  "title": "source Info",
-                  "type": "object",
-                  "description": "Source access Information (can vary based on systems)",
-                  "properties": {
-                    "xdm:repoId": {
-                      "title": "repository Id",
-                      "type": "string",
-                      "description": "Repository Id (AEM)"
-                    }
-                  }
-                },
-                "xdm:modelInfo": {
-                  "title": "model Info",
-                  "type": "object",
-                  "description": "Model or schema on which the fragment is based",
-                  "properties": {
-                    "xdm:modelId": {
-                      "title": "model Id",
-                      "type": "string",
-                      "description": "Model Id"
-                    },
-                    "xdm:modelName": {
-                      "title": "model Name",
-                      "type": "string",
-                      "description": "Model Name"
-                    },
-                    "xdm:modelPath": {
-                      "title": "model path",
-                      "type": "string",
-                      "description": "Model Path"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "required": ["xdm:origin", "xdm:extRefId"]
+          "description": "Fragment whose source of truth is outside of AJO, for eg: AEM Content Fragment."
         }
       },
       "required": [
         "https://ns.adobe.com/experience/decisioning/fragmentitem/lifecycleStatus",
-        "https://ns.adobe.com/experience/decisioning/fragmentitem/fragment-metadata",
+        "https://ns.adobe.com/experience/decisioning/fragmentitem/fragmentMetadata",
         "https://ns.adobe.com/experience/decisioning/fragmentitem/externalFragment"
       ]
     }

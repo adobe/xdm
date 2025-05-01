@@ -11,5 +11,14 @@
         "xdm:unitCount": 2
       }
     }
-  ]
+  ],
+  "xdm:contentReferences": {
+    "xdm:contentReferencesMap": {
+      "mobile": {
+        "xdm:id": "fragment_12345",
+        "xdm:source": "ajo",
+        "xdm:type": "HTML"
+      }
+    }
+  }
 }

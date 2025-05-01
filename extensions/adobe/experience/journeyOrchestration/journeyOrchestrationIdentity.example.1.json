@@ -2,7 +2,7 @@
   "https://ns.adobe.com/experience/journeyOrchestration/profile": {
     "https://ns.adobe.com/experience/journeyOrchestration/ID": "johndoe@test.com",
     "https://ns.adobe.com/experience/journeyOrchestration/namespace": "email",
-    "https://ns.adobe.com/experience/journeyOrchestration/contextualID": "bmwID@234",
-    "https://ns.adobe.com/experience/journeyOrchestration/contextualNamespace": "subscriptionID"
+    "https://ns.adobe.com/experience/journeyOrchestration/supplementalID": "bmwID@234",
+    "https://ns.adobe.com/experience/journeyOrchestration/supplementalNamespace": "subscriptionID"
   }
 }

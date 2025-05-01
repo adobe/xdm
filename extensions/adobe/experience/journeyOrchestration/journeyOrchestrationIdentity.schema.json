@@ -15,7 +15,7 @@
     "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Journey Orchestration identity and contextual identification fields.",
+  "description": "Journey Orchestration identity and supplemental identification fields.",
   "definitions": {
     "identity": {
       "properties": {
@@ -33,15 +33,15 @@
               "type": "string",
               "description": "This field describes the Namespace referenced by the Profile used in the Journey. E.g: Email, ECID "
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/contextualID": {
-              "title": "Contextual ID",
+            "https://ns.adobe.com/experience/journeyOrchestration/supplementalID": {
+              "title": "Supplemental ID",
               "type": "string",
-              "description": "Identity value corresponding to the contextual namespace"
+              "description": "Identity value corresponding to the supplemental namespace"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/contextualNamespace": {
-              "title": "Contextual Namespace",
+            "https://ns.adobe.com/experience/journeyOrchestration/supplementalNamespace": {
+              "title": "Supplemental Namespace",
               "type": "string",
-              "description": "Value of the contextual namespace as part of the journey property"
+              "description": "Value of the supplemental namespace as part of the journey property"
             }
           }
         }

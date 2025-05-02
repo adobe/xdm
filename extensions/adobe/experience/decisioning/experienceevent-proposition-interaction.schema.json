@@ -20,7 +20,7 @@
     "decisioning-experienceevent-all": {
       "type": "object",
       "properties": {
-        "xdm:exdRequestId": {
+        "xdm:exdRequestID": {
           "title": "ExD Decision Event Identifier",
           "type": "string",
           "description": "The unique identifier of the ExD decision event per request."

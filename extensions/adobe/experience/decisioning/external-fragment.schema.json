@@ -16,54 +16,54 @@
     "external-fragment": {
       "properties": {
         "xdm:origin": {
-          "title": "origin",
+          "title": "Origin",
           "type": "string",
           "description": "Source of truth of fragments (for example AEM, other potential CMS providers)"
         },
         "xdm:status": {
-          "title": "status",
+          "title": "Status",
           "type": "string",
           "description": "Status as maintained by the external CMS like AEM ( new, draft, published, modified, unpublished), etc "
         },
-        "xdm:extRefId": {
-          "title": "external reference Id",
+        "xdm:extRefID": {
+          "title": "External Reference Id",
           "type": "string",
           "description": "Id as referenced in the external system"
         },
         "xdm:metadata": {
-          "title": "metadata",
+          "title": "Metadata",
           "type": "object",
           "description": "Metadata of the external fragment",
           "properties": {
             "xdm:sourceInfo": {
-              "title": "source Info",
+              "title": "Source Info",
               "type": "object",
               "description": "Source access Information (can vary based on systems)",
               "properties": {
-                "xdm:repoId": {
-                  "title": "repository Id",
+                "xdm:repoID": {
+                  "title": "Repository Id",
                   "type": "string",
                   "description": "Repository Id (AEM)"
                 }
               }
             },
             "xdm:modelInfo": {
-              "title": "model Info",
+              "title": "Model Info",
               "type": "object",
               "description": "Model or schema on which the fragment is based",
               "properties": {
-                "xdm:modelId": {
-                  "title": "model Id",
+                "xdm:modelID": {
+                  "title": "Model Id",
                   "type": "string",
                   "description": "Model Id"
                 },
                 "xdm:modelName": {
-                  "title": "model Name",
+                  "title": "Model Name",
                   "type": "string",
                   "description": "Model Name"
                 },
                 "xdm:modelPath": {
-                  "title": "model path",
+                  "title": "Model Path",
                   "type": "string",
                   "description": "Model Path"
                 }
@@ -72,7 +72,7 @@
           }
         }
       },
-      "required": ["xdm:origin", "xdm:extRefId"]
+      "required": ["xdm:origin", "xdm:extRefID"]
     }
   },
   "allOf": [

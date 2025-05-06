@@ -18,7 +18,6 @@
         "xdm:id": {
           "title": "Decision Policy Identifier",
           "type": "string",
-          "format": "uri-reference",
           "description": "A unique identifier for the decision policy."
         },
         "repo:etag": {

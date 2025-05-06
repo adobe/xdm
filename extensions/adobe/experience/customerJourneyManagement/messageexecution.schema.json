@@ -113,7 +113,17 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID": {
           "title": "Batch Instance ID",
           "type": "string",
-          "description": "GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s."
+          "description": "GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID's."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences": {
+          "title": "Audiences",
+          "type": "object",
+          "description": "A map of audience objects, where each key is a custom identifier for the audience entry and the value contains audience details.",
+          "additionalProperties": {
+            "$ref": "#/definitions/audienceDefinition"
+          },
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences##title##generated",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences##description##generated"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
           "title": "Message Source",
@@ -147,6 +157,36 @@
           }
         }
       }
+    },
+    "audienceDefinition": {
+      "title": "Audience Definition",
+      "type": "object",
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/audience/id": {
+          "title": "Audience ID",
+          "type": "string",
+          "description": "Identifier for the audience.",
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audience/id##title##generated",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audience/id##description##generated"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/audience/type": {
+          "title": "Audience Type",
+          "type": "string",
+          "description": "Type of the audience. Specifies one of the predefined audience categories.",
+          "meta:enum": {
+            "typeA": "Audience Type A",
+            "typeB": "Audience Type B",
+            "typeC": "Audience Type C"
+          },
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audience/type##title##generated",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audience/type##description##generated"
+        }
+      },
+      "required": [
+        "https://ns.adobe.com/experience/customerJourneyManagement/audience/id",
+        "https://ns.adobe.com/experience/customerJourneyManagement/audience/type"
+      ],
+      "meta:titleId": "messageexecution##audienceDefinition##title##generated"
     }
   },
   "required": [

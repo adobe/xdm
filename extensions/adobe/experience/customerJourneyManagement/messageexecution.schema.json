@@ -120,7 +120,33 @@
           "type": "object",
           "description": "A map of audience objects, where each key is a custom identifier for the audience entry and the value contains audience details.",
           "additionalProperties": {
-            "$ref": "#/definitions/audienceDefinition"
+            "title": "Audience Definition",
+            "type": "object",
+            "properties": {
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/id": {
+                "title": "Audience ID",
+                "type": "string",
+                "description": "Identifier for the audience.",
+                "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audiences/id##title##generated",
+                "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audiences/id##description##generated"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/type": {
+                "title": "Audience Type",
+                "type": "string",
+                "description": "Type of the audience. Specifies one of the predefined audience categories.",
+                "meta:enum": {
+                  "orchestratedCampaign": "Audience Type orchestratedCampaign",
+                  "UPS": "Audience Type UPS",
+                  "SegmentDefinition": "Audience Type SegmentDefinition"
+                },
+                "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audiences/type##title##generated",
+                "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audiences/type##description##generated"
+              }
+            },
+            "required": [
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/id",
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/type"
+            ]
           },
           "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences##title##generated",
           "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences##description##generated"
@@ -157,36 +183,6 @@
           }
         }
       }
-    },
-    "audienceDefinition": {
-      "title": "Audience Definition",
-      "type": "object",
-      "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/audience/id": {
-          "title": "Audience ID",
-          "type": "string",
-          "description": "Identifier for the audience.",
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audience/id##title##generated",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audience/id##description##generated"
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/audience/type": {
-          "title": "Audience Type",
-          "type": "string",
-          "description": "Type of the audience. Specifies one of the predefined audience categories.",
-          "meta:enum": {
-            "typeA": "Audience Type A",
-            "typeB": "Audience Type B",
-            "typeC": "Audience Type C"
-          },
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audience/type##title##generated",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audience/type##description##generated"
-        }
-      },
-      "required": [
-        "https://ns.adobe.com/experience/customerJourneyManagement/audience/id",
-        "https://ns.adobe.com/experience/customerJourneyManagement/audience/type"
-      ],
-      "meta:titleId": "messageexecution##audienceDefinition##title##generated"
     }
   },
   "required": [

@@ -135,17 +135,17 @@
           "description": "Timestamp from Provider"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
-          "title": "whatsApp messageType",
+          "title": "whatsApp MessageType",
           "type": "string",
           "description": "whatsApp Message Type, e.g. templateBased,response"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundMessage": {
-          "title": "whatsApp inbound Message",
+          "title": "whatsApp Inbound Message",
           "type": "string",
           "description": "whatsApp inbound reply, e.g. stop, start, subscribe, etc."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundNumber": {
-          "title": "whatsApp inbound Number",
+          "title": "whatsApp Inbound Number",
           "type": "string",
           "description": "whatsApp inbound Number : Sender Id where the MO being received"
         },

@@ -22,6 +22,11 @@
           "description": "Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.",
           "type": "integer"
         },
+        "xdm:decision": {
+          "title": "decision",
+          "description": "Proposition was offered to the client. This does not guarantee the proposition arrived or was displayed to the user.",
+          "type": "integer"
+        },
         "xdm:trigger": {
           "title": "trigger",
           "description": "Proposition was chosen to be displayed by the client SDK. Other factors may prevent it from actually being displayed.",

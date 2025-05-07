@@ -126,9 +126,7 @@
               "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/id": {
                 "title": "Audience ID",
                 "type": "string",
-                "description": "Identifier for the audience.",
-                "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audiences/id##title##generated",
-                "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audiences/id##description##generated"
+                "description": "Identifier for the audience."
               },
               "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/type": {
                 "title": "Audience Type",
@@ -138,18 +136,14 @@
                   "orchestratedCampaign": "Audience Type orchestratedCampaign",
                   "UPS": "Audience Type UPS",
                   "SegmentDefinition": "Audience Type SegmentDefinition"
-                },
-                "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audiences/type##title##generated",
-                "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/audiences/type##description##generated"
+                }
               }
             },
             "required": [
               "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/id",
               "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/type"
             ]
-          },
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences##title##generated",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences##description##generated"
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
           "title": "Message Source",

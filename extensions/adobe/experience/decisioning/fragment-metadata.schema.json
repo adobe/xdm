@@ -55,7 +55,7 @@
           "description": "Publish date & time of the fragment at AJO (outside of ExD)"
         }
       },
-      "required": ["xdm:id", "xdm:type"]
+      "required": ["xdm:type"]
     }
   },
   "allOf": [

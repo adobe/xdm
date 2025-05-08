@@ -130,9 +130,9 @@
               "type": "string",
               "description": "Type of the audience. Specifies one of the predefined audience categories.",
               "meta:enum": {
-                "orchestratedCampaign": "Orchestrated Campaign",
+                "ORCHESTRATED_CAMPAIGN": "Orchestrated Campaign",
                 "UPS": "UPS",
-                "SegmentDefinition": "Segment Definition"
+                "AUDIENCE_ORCHESTRATION": "Audience Orchestration"
               }
             }
           },

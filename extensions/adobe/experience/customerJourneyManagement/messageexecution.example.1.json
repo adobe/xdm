@@ -22,7 +22,7 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceActionID": "235-898798-989"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/id": "d09abe20-2afd-11f0-8fe0-d7e0b2292388",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/type": "SegmentDefinition"
+    "xdm:id": "d09abe20-2afd-11f0-8fe0-d7e0b2292388",
+    "xdm:type": "SegmentDefinition"
   }
 }

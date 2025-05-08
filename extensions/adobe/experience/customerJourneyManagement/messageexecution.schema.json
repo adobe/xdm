@@ -120,12 +120,12 @@
           "type": "object",
           "description": "Defines the audience associated with this message execution.",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/id": {
+            "xdm:id": {
               "title": "Audience ID",
               "type": "string",
               "description": "Identifier for the audience."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/type": {
+            "xdm:type": {
               "title": "Audience Type",
               "type": "string",
               "description": "Type of the audience. Specifies one of the predefined audience categories.",
@@ -137,8 +137,8 @@
             }
           },
           "required": [
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/id",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audiences/type"
+            "xdm:id",
+            "xdm:type"
           ]
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {

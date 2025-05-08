@@ -135,7 +135,7 @@
           "description": "Timestamp from Provider"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
-          "title": "whatsApp MessageType",
+          "title": "whatsApp Message Type",
           "type": "string",
           "description": "whatsApp Message Type, e.g. templateBased,response"
         },

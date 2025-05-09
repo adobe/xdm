@@ -47,6 +47,43 @@
               "title": "Segment ID",
               "type": "string",
               "description": "The segment id of the incoming experience event"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/rejectedRuleset": {
+              "title": "Rejected Rule Set",
+              "type": "object",
+              "description": "This object will be populated when the incoming event is rejected by journey because it failed a ruleset check. The details of the rule are also mentioned in the rejectedRules array.",
+              "properties": {
+                "xdm:ID": {
+                  "title": "Rule Set ID",
+                  "type": "string",
+                  "description": "The ID of the rejected rule set."
+                },
+                "xdm:name": {
+                  "title": "Rule Set Name",
+                  "type": "string",
+                  "description": "The name of the rejected rule set."
+                },
+                "xdm:rejectedRules": {
+                  "title": "Array of Rejected Rules within the Rule Set that led to rejection of the incoming event.",
+                  "type": "array",
+                  "description": "List of rules that were violated in the ruleset that led to rejection of the  incoming event.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:ID": {
+                        "title": "Rule ID",
+                        "type": "string",
+                        "description": "The ID of the rejected rule"
+                      },
+                      "xdm:name": {
+                        "title": "Rule Name",
+                        "type": "string",
+                        "description": "The name of the rejected rule."
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }

@@ -222,6 +222,47 @@
                   }
                 }
               }
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionOriginEndpoint": {
+              "title": "actionOriginEndpoint",
+              "description": "Full Endpoint of the Custom Action Used",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginStartTime": {
+              "title": "actionExecutionOriginStartTime",
+              "description": "The timestamp in ISO8601 format with UTC TZ, at which the HTTP request was made. Note: For phase 1, this is the timestamp at which the final custom action http request was initiated. For later phases, we will have the respective custom action services send out a separate step event for each failed request except the final request.",
+              "type": "string",
+              "format": "date-time"
+              },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginTime": {
+              "title": "actionExecutionOriginTime",
+              "description": "The response time of the server HTTP call. Note: For phase 1, this is the time taken by the last call, for later phases, we will have the Custom Action services send out a separate step event for each failed request except the final request(as it will be sent by the engine, and we do not want duplicates)",
+              "type": "integer"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionOriginMethod": {
+              "title": "actionOriginMethod",
+              "description": "The method used in the HTTP request(GET,PUT,POST, etc)",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionIsProxy": {
+              "title": "actionIsProxy",
+              "description": "Whether proxy is enabled or not",
+              "type": "boolean"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionOriginIsMTLS": {
+              "title": "actionOriginIsMTLS",
+              "description": "Whether MTLS is enabled or not",
+              "type": "boolean"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionIsThrottled": {
+              "title": "actionIsThrottled",
+              "description": "Whether Throttling is enabled or not",
+              "type": "boolean"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionWaitTime": {
+              "title": "actionWaitTime",
+              "description": "Only supported if actionIsThrottled == true. It reports the amount of time the custom action event spent waiting in the http call throttling topic.",
+              "type": "string"
             }
           },
           "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##10491"

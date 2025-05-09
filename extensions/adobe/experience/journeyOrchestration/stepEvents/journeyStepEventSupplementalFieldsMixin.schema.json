@@ -10,6 +10,10 @@
   "title": "Journey Step Event Supplemental Fields Mixin",
   "type": "object",
   "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Journey Step Event Supplemental Fields Mixin.",
   "definitions": {
     "journeyStepEventSupplementalFields": {

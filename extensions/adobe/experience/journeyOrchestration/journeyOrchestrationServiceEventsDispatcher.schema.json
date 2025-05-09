@@ -67,21 +67,21 @@
                   "items": {
                     "type": "object",
                     "properties": {
-                      "xdm:ID": { 
-                        "title": "Rule ID", 
-                        "type": "string", 
-                        "description": "The ID of the rejected rule." 
+                      "xdm:ID": {
+                        "title": "Rule ID",
+                        "type": "string",
+                        "description": "The ID of the rejected rule"
                       },
-                      "xdm:name": { 
-                        "title": "Rule Name", 
-                        "type": "string", 
+                      "xdm:name": {
+                        "title": "Rule Name",
+                        "type": "string",
                         "description": "The name of the rejected rule."
-                       }
+                      }
                     }
                   }
                 }
               }
-} 
+            }
           }
         }
       }

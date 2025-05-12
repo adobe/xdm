@@ -174,6 +174,41 @@
         }
       }
     },
+    "proxytype": {
+      "properties": {
+        "xdm:proxyType": {
+          "title": "Proxy type",
+          "type": "string",
+          "description": "The type of proxy used.",
+          "enum": [
+            "anonymous",
+            "consumer-privacy",
+            "corporate",
+            "edu",
+            "public",
+            "cloud",
+            "cloud-security",
+            "dns",
+            "vpn",
+            "transparent"
+          ],
+          "meta:enum": {
+            "anonymous": "Anonymous",
+            "consumer-privacy": "Consumer privacy",
+            "corporate": "Corporate",
+            "edu": "Education",
+            "public": "Public",
+            "cloud": "Cloud",
+            "cloud-security": "Cloud security",
+            "dns": "DNS",
+            "vpn": "VPN",
+            "transparent": "Transparent"
+          },
+          "meta:titleId": "environment##xdm:proxyType##title##12341",
+          "meta:descriptionId": "environment##xdm:proxyType##description##12341"
+        }
+      }
+    },
     "carrier": {
       "properties": {
         "xdm:carrier": {
@@ -266,6 +301,9 @@
     },
     {
       "$ref": "#/definitions/connectiontype"
+    },
+    {
+      "$ref": "#/definitions/proxytype"
     },
     {
       "$ref": "#/definitions/carrier"

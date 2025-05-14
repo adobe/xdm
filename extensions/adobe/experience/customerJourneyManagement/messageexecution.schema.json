@@ -135,8 +135,7 @@
                 "AUDIENCE_ORCHESTRATION": "Audience Orchestration"
               }
             }
-          },
-          "required": ["xdm:id", "xdm:type"]
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
           "title": "Message Source",

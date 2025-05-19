@@ -1,0 +1,57 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/rtcdp-collab/dataconnection-snowflake-settings",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Data Connection Settings for Snowflake",
+  "description": "Details of the data connection settings for Snowflake",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/rtcdp-collab/dataconnection"
+  ],
+  "definitions": {
+    "dataconnectionfields": {
+      "properties": {
+        "sourceSettings": {
+          "type": "object",
+          "properties": {
+            "snowflakeSettings": {
+              "title": "Snowflake Settings",
+              "description": "The Snowflake settings for the data connection.",
+              "type": "object",
+              "properties": {
+                "cleanRoomName": {
+                  "title": "Clean Room Name",
+                  "description": "The name of the clean room.",
+                  "type": "string"
+                },
+                "database": {
+                  "title": "Database",
+                  "description": "The name of the database.",
+                  "type": "string"
+                },
+                "schema": {
+                  "title": "Schema",
+                  "description": "The name of the schema.",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/dataconnectionfields"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-rendering-context",
+  "title": "Adobe CJM ExperienceEvent - Message Rendering Context",
+  "description": "Schema for storing the context data required to render a message in Adobe Journey Optimizer",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/identityMap": {
+          "title": "Identity Map",
+          "description": "Map containing identifiers for the profile across different identity namespaces",
+          "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/renderingContext": {
+          "type": "object",
+          "title": "Rendering Context",
+          "description": "A map of namespace identifiers to stringified JSON representations of context objects used in template rendering and personalization",
+          "properties": {
+            "profile": {
+              "type": "string",
+              "title": "Profile Context",
+              "description": "Stringified JSON of profile attributes accessed via the 'profile' namespace in templates"
+            },
+            "offer": {
+              "type": "string",
+              "title": "Offer Context",
+              "description": "Stringified JSON of offer decision information accessed via the 'offer' namespace in templates"
+            },
+            "context": {
+              "type": "string",
+              "title": "Context",
+              "description": "Stringified JSON of context variables for general purpose use"
+            },
+            "propertiesContext": {
+              "type": "string",
+              "title": "Properties Context",
+              "description": "Stringified JSON of Journey Optimizer properties and configuration settings for the message"
+            },
+            "decisionPolicy": {
+              "type": "string",
+              "title": "Decision Policy Context",
+              "description": "Stringified JSON of decision policy information for offer decisioning"
+            },
+            "offerContentAttributes": {
+              "type": "string",
+              "title": "Offer Content Attributes",
+              "description": "Stringified JSON of attributes related to offer content"
+            },
+            "url": {
+              "type": "string",
+              "title": "URL Context",
+              "description": "Stringified JSON of URL-related information for link tracking and management"
+            },
+            "fragment": {
+              "type": "string",
+              "title": "Fragment Context",
+              "description": "Stringified JSON of content fragments that can be inserted into templates"
+            },
+            "externalDataLookup": {
+              "type": "string",
+              "title": "External Data Lookup",
+              "description": "Stringified JSON of context for external data lookups during rendering"
+            },
+            "url-support": {
+              "type": "string",
+              "title": "URL Support",
+              "description": "Stringified JSON of URL-related information for link tracking and management"
+            },
+            "inputSchema": {
+              "type": "string",
+              "title": "Input Schema",
+              "description": "Stringified JSON of URL-related information for link tracking and management"
+            },
+            "channelConfiguration": {
+              "type": "string",
+              "title": "Channel Configuration",
+              "description": "Stringified JSON of URL-related information for link tracking and management"
+            },
+            "segment": {
+              "type": "string",
+              "title": "Segment Context",
+              "description": "Stringified JSON of URL-related information for link tracking and management"
+            },
+            "_cjmProperties": {
+              "type": "string",
+              "title": "CJM Properties",
+              "description": "Stringified JSON of internal properties used by the CJM rendering engine"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageExecution": {
+          "type": "object",
+          "title": "Adobe CJM ExperienceEvent - Message Execution Details",
+          "description": "Message Execution details for the Adobe CJM ExperienceEvent.",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/messageexecution"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageProfile": {
+          "type": "object",
+          "title": "Adobe CJM ExperienceEvent - Message Profile Details",
+          "description": "Message Profile details for the Adobe CJM ExperienceEvent.",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/metadata": {
+          "type": "object",
+          "title": "Rendering Metadata",
+          "description": "Metadata about the rendering context",
+          "properties": {
+            "channelProperties": {
+              "type": "object",
+              "title": "Channel Properties",
+              "description": "Channel-specific properties for message delivery",
+              "oneOf": [
+                {
+                  "properties": {
+                    "email": {
+                      "type": "object",
+                      "title": "Email Channel Properties",
+                      "description": "Properties specific to email delivery",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "const": "email",
+                          "description": "Discriminator field indicating the type of content."
+                        },
+                        "recipient": {
+                          "type": "object",
+                          "properties": {
+                            "email": {
+                              "type": "string",
+                              "format": "email"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "bcc": {
+                              "type": "string",
+                              "format": "email"
+                            }
+                          },
+                          "required": [
+                            "email"
+                          ]
+                        },
+                        "sender": {
+                          "type": "object",
+                          "properties": {
+                            "email": {
+                              "type": "string",
+                              "format": "email"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "errorEmail": {
+                              "type": "string",
+                              "format": "email"
+                            },
+                            "replyToEmail": {
+                              "type": "string",
+                              "format": "email"
+                            },
+                            "replyToName": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "email, errorEmail, replyToEmail"
+                          ]
+                        },
+                        "subject": {
+                          "type": "string",
+                          "title": "Subject",
+                          "description": "Email subject line template"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "properties": {
+                    "sms": {
+                      "type": "object",
+                      "title": "SMS Channel Properties",
+                      "description": "Properties specific to SMS delivery",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "const": "sms",
+                          "description": "Discriminator field indicating the type of content."
+                        },
+                        "recipient": {
+                          "type": "object",
+                          "properties": {
+                            "number": {
+                              "type": "string",
+                              "description": "Recipient's phone number, preferably E.164 format"
+                            }
+                          },
+                          "required": [
+                            "number"
+                          ]
+                        },
+                        "sender": {
+                          "type": "object",
+                          "properties": {
+                            "number": {
+                              "type": "string",
+                              "description": "Sender's phone number or short code."
+                            }
+                          },
+                          "required": [
+                            "number"
+                          ]
+                        },
+                        "title": {
+                          "type": "string",
+                          "description": "Optional title for the SMS."
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/retrievedEntities": {
+          "type": "array",
+          "title": "Retrieved Entities",
+          "description": "An array of stringified JSON representations of entities retrieved during dynamic entity hydration.",
+          "items": {
+            "type": "string",
+            "description": "Stringified JSON representing a retrieved entity's data."
+          }
+        }
+      },
+      "required": ["https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/renderingContext"]
+    }
+  ]
+}

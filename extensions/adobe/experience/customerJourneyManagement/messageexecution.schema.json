@@ -137,6 +137,14 @@
             }
           }
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/enrichedContext": {
+          "title": "Enriched Context",
+          "type": "object",
+          "description": "Dynamic contextual information (custom fields) added by the user via the context-enrichment helper.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
           "title": "Message Source",
           "type": "object",

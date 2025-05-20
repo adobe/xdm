@@ -17,27 +17,27 @@
     "https://ns.adobe.com/experience/rtcdp-collab/dataconnection"
   ],
   "definitions": {
-    "dataconnectionfields": {
+    "dataconnectionfieldsSnowflake": {
       "properties": {
-        "sourceSettings": {
+        "xdm:sourceSettings": {
           "type": "object",
           "properties": {
-            "snowflakeSettings": {
+            "xdm:snowflakeSettings": {
               "title": "Snowflake Settings",
               "description": "The Snowflake settings for the data connection.",
               "type": "object",
               "properties": {
-                "cleanRoomName": {
+                "xdm:cleanRoomName": {
                   "title": "Clean Room Name",
                   "description": "The name of the clean room.",
                   "type": "string"
                 },
-                "database": {
+                "xdm:database": {
                   "title": "Database",
                   "description": "The name of the database.",
                   "type": "string"
                 },
-                "schema": {
+                "xdm:schema": {
                   "title": "Schema",
                   "description": "The name of the schema.",
                   "type": "string"
@@ -51,7 +51,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/dataconnectionfields"
+      "$ref": "#/definitions/dataconnectionfieldsSnowflake"
     }
   ],
   "meta:status": "experimental"

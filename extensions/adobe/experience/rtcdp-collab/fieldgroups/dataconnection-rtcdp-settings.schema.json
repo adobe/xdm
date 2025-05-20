@@ -17,39 +17,39 @@
     "https://ns.adobe.com/experience/rtcdp-collab/dataconnection"
   ],
   "definitions": {
-    "dataconnectionfields": {
+    "dataconnectionfieldsRtcdp": {
       "properties": {
-        "sourceSettings": {
+        "xdm:sourceSettings": {
           "title": "Source Settings",
           "description": "The source settings for the data connection.",
           "type": "object",
           "properties": {
-            "rtcdpSettings": {
+            "xdm:rtcdpSettings": {
               "title": "RTCDP Settings",
               "description": "The RTCDP settings for the data connection.",
               "type": "object",
               "properties": {
-                "imsOrg": {
+                "xdm:imsOrg": {
                   "title": "IMS Org",
                   "description": "The IMS Organization ID for the data connection.",
                   "type": "string"
                 },
-                "sandboxId": {
+                "xdm:sandboxId": {
                   "title": "Sandbox ID",
                   "description": "The sandbox ID for the data connection.",
                   "type": "string"
                 },
-                "sandboxName": {
+                "xdm:sandboxName": {
                   "title": "Sandbox Name",
                   "description": "The sandbox name for the data connection.",
                   "type": "string"
                 },
-                "privacySettings": {
+                "xdm:privacySettings": {
                   "title": "Privacy Settings",
                   "description": "The privacy settings for the data connection.",
                   "type": "object",
                   "properties": {
-                    "marketingActions": {
+                    "xdm:marketingActions": {
                       "title": "Marketing Actions",
                       "description": "The marketing actions for the data connection.",
                       "type": "array",
@@ -59,7 +59,7 @@
                         "type": "string"
                       }
                     },
-                    "consentPolicy": {
+                    "xdm:consentPolicy": {
                       "title": "Consent Policy",
                       "description": "The consent policy for the data connection.",
                       "type": "string"
@@ -75,7 +75,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/dataconnectionfields"
+      "$ref": "#/definitions/dataconnectionfieldsRtcdp"
     }
   ],
   "meta:status": "experimental"

@@ -17,47 +17,47 @@
     "https://ns.adobe.com/experience/rtcdp-collab/dataconnection"
   ],
   "definitions": {
-    "dataconnectionfields": {
+    "dataconnectionfieldsS3": {
       "properties": {
-        "sourceSettings": {
+        "xdm:sourceSettings": {
           "type": "object",
           "properties": {
-            "s3Settings": {
+            "xdm:s3Settings": {
               "title": "S3 Settings",
               "description": "The S3 settings for the data connection.",
               "type": "object",
               "properties": {
-                "bucket": {
+                "xdm:bucket": {
                   "title": "Bucket",
                   "description": "The name of the bucket.",
                   "type": "string"
                 },
-                "path": {
+                "xdm:path": {
                   "title": "Path",
                   "description": "The path in the bucket.",
                   "type": "string"
                 },
-                "fileProperties": {
+                "xdm:fileProperties": {
                   "title": "File Properties",
                   "description": "The file properties as a string.",
                   "type": "string"
                 },
-                "audiencePathMappings": {
+                "xdm:audiencePathMappings": {
                   "title": "Audience Path Mappings",
                   "description": "Mappings of audience IDs to paths and external audience IDs.",
                   "type": "object",
                   "properties": {
-                    "audienceId": {
+                    "xdm:audienceId": {
                       "title": "Audience ID",
                       "description": "The audience ID.",
                       "type": "string"
                     },
-                    "path": {
+                    "xdm:path": {
                       "title": "Path",
                       "description": "The path for the audience.",
                       "type": "string"
                     },
-                    "externalAudienceId": {
+                    "xdm:externalAudienceId": {
                       "title": "External Audience ID",
                       "description": "The external audience ID.",
                       "type": "string"
@@ -73,7 +73,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/dataconnectionfields"
+      "$ref": "#/definitions/dataconnectionfieldsS3"
     }
   ],
   "meta:status": "experimental"

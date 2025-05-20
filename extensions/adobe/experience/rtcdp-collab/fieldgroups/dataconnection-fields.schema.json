@@ -19,24 +19,24 @@
   "definitions": {
     "dataconnectionfields": {
       "properties": {
-        "fields": {
+        "xdm:fields": {
           "title": "Fields",
           "description": "The fields to retrieve from the data source.",
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
-              "sourceName": {
+              "xdm:sourceName": {
                 "title": "Source Name",
                 "description": "The name of the field at source.",
                 "type": "string"
               },
-              "targetName": {
+              "xdm:targetName": {
                 "title": "Target Name",
                 "description": "The name of the field at target.",
                 "type": "string"
               },
-              "matchKey": {
+              "xdm:matchKey": {
                 "title": "Match Key",
                 "description": "Indicated if the field is a match key.",
                 "type": "boolean"

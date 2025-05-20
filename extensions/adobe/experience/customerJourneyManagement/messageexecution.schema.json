@@ -137,10 +137,11 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/enrichedContext": {
-          "title": "Enriched Context",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/metadata": {
+          "title": "metadata",
           "type": "object",
           "description": "Dynamic contextual information (custom fields) added by the user via the context-enrichment helper.",
+          "meta:xdmType": "map",
           "additionalProperties": {
             "type": "string"
           }

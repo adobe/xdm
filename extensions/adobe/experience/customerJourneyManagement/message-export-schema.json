@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-rendering-context",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-export",
   "title": "Adobe CJM ExperienceEvent - Message Export",
   "description": "Schema for storing the rendered message content for outbound channels in Adobe Journey Optimizer",
   "type": "object",
@@ -18,18 +18,18 @@
     },
     {
       "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/identityMap": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExport/identityMap": {
           "title": "Identity Map",
           "description": "Map containing identifiers for the profile across different identity namespaces",
           "$ref": "https://ns.adobe.com/xdm/context/identitymap"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageExecution": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExport/messageExecution": {
           "type": "object",
           "title": "Adobe CJM ExperienceEvent - Message Execution Details",
           "description": "Message Execution details for the Adobe CJM ExperienceEvent.",
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/messageexecution"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageProfile": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExport/messageProfile": {
           "type": "object",
           "title": "Adobe CJM ExperienceEvent - Message Profile Details",
           "description": "Message Profile details for the Adobe CJM ExperienceEvent.",
@@ -159,6 +159,10 @@
                             "message": {
                               "type": "string",
                               "description": "The text content of the SMS message."
+                            },
+                            "media": {
+                              "type": "string",
+                              "description": "The media content of the message."
                             }
                           },
                           "required": ["message"]

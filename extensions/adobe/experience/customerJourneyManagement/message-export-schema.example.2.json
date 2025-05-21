@@ -1,0 +1,48 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/identityMap": {
+    "Phone": [
+      {
+        "id": "+12025550142",
+        "primary": true
+      }
+    ],
+    "ECID": [
+      {
+        "id": "97531086412345",
+        "primary": true
+      }
+    ]
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageExecution": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID": "8765b432-cde2-34b0-9aa0-7baae041ce84",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID": "aa449b86-bc54-3ad1-a84c-7b2a40e78ab1",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageLabel": "Flash Sale Alert",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType": "marketing"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageProfile": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "6438b775-def3-36a1-add1-8baae041ce84",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+      "@id": "https://ns.adobe.com/xdm/channels/sms"
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": "twilio",
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profileNumber": "+12025550142"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExport/message": {
+    "messageDetails": {
+      "smsDetails": {
+        "type": "sms",
+        "recipient": {
+          "number": "+12025550142"
+        },
+        "sender": {
+          "number": "33333"
+        },
+        "content": {
+          "title": "Flash Sale Alert",
+          "message": "EXAMPLE CO: Today only! 24hr FLASH SALE. 40% off all products with code FLASH40. Shop now at https://example.co/sale",
+          "media": "https://cdn.example.com/mms/flash_sale_banner.jpg"
+        }
+      }
+    }
+  }
+} 

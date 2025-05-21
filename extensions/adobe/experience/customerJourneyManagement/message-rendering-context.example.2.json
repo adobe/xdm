@@ -1,0 +1,87 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/identityMap": {
+    "Phone": [
+      {
+        "id": "+12345678901",
+        "primary": true
+      }
+    ],
+    "ECID": [
+      {
+        "id": "87654321987654",
+        "primary": true
+      }
+    ]
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/renderingContext": {
+    "profile": "{\"firstName\":\"Jane\",\"lastName\":\"Smith\",\"loyaltyLevel\":\"Silver\",\"points\":750}",
+    "offer": "{\"id\":\"xcore:personalized-offer:5678\",\"name\":\"Flash Sale\",\"description\":\"Limited time offer: 20% off today only\"}",
+    "context": "{\"currentDate\":\"2023-09-15\",\"locale\":\"en-US\",\"timezone\":\"America/New_York\"}",
+    "propertiesContext": "{\"messageExecutionID\":\"9876a543-def3-45c1-baa1-8caae052df95\"}",
+    "decisionPolicy": "{\"policyId\":\"sms-policy\",\"strategy\":\"priority-based\"}",
+    "offerContentAttributes": "{\"deliveryURL\":\"https://cdn.example.com/offers/flash_sale.jpg\",\"contentType\":\"image/jpeg\"}",
+    "url": "{\"trackingEnabled\":true,\"defaultDomain\":\"sms.example.com\"}",
+    "fragment": "{\"header\":{\"id\":\"sms-header\",\"content\":\"Example Co:\"},\"footer\":{\"id\":\"sms-footer\",\"content\":\"Reply STOP to unsubscribe\"}}",
+    "externalDataLookup": "{\"locationData\":{\"city\":\"New York\",\"storeId\":\"NYC-104\"}}",
+    "url-support": "{\"utm_source\":\"journey\",\"utm_medium\":\"sms\",\"utm_campaign\":\"flash_sale\"}",
+    "inputSchema": "{\"phoneNumber\":\"string\",\"firstName\":\"string\",\"lastName\":\"string\"}",
+    "channelConfiguration": "{\"throttlingPolicy\":\"sms-default\",\"deliveryPriority\":\"high\"}",
+    "segment": "{\"segmentMembership\":{\"ups\":{\"99765a41-f112-42ac-b5b2-3d4f964e8e64\":{\"status\":\"existing\"}}}}",
+    "_cjmProperties": "{\"internalMetrics\":{\"renderingTime\":12,\"templateVersion\":\"1.5\"}}"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageExecution": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID": "9876a543-def3-45c1-baa1-8caae052df95",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID": "bb550c97-df76-5be3-c95e-9d4c62f79cd3",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID": "243fb0f6-df76-5be3-c95e-851bf39f0d62",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/fragmentPublicationIDs": [
+      "8b67e7b4-c770-5bf1-b4b2-616e842fd955"
+    ],
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageLabel": "Flash Sale SMS Alert",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": "1dd96072-598e-50f6-ac7d-12f6731856bd",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID": "c0139636-d44b-51f3-b2d2-06f1c9416f89",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID": "7dfe04dd-cc1f-5fd0-b4ac-67c53a48d79d",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID": "243fb0f6-8b86-523e-0124-851bf39f0d62",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignID": "c4123036-ff25-5523-cfb6-6dd563f00ae4",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignVersionID": "854686f8-ba65-59c6-09g7-3f4ff9910d91",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignActionID": "8601f4fd-g5fd-55d5-c9cg-c4f6e821b783",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID": "3b5ef1d6-586d-5c78-c727-23e49d7529d2",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType": "marketing",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceType": "journey",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceID": "456-6789-1234",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceVersionID": "787-34-5678-1234",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceActionID": "346-987897-123"
+    }
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageProfile": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "7549c886-egf4-58c3-cff3-9dbbf163fg06",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": "6328c987-fgh5-59d4-dgg4-0eccf274gh17",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+      "@id": "https://ns.adobe.com/xdm/channels/sms"
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": false,
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": "twilio",
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType": "send",
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/channelType": "SMS",
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profileNumber": "+12345678901"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/metadata": {
+    "channelProperties": {
+      "sms": {
+        "type": "sms",
+        "recipient": {
+          "number": "+12345678901"
+        },
+        "sender": {
+          "number": "33333"
+        },
+        "title": "Flash Sale Alert"
+      }
+    }
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/retrievedEntities": [
+    "{\"id\":\"store-nyc104\",\"name\":\"New York Downtown\",\"address\":\"123 Broadway, New York, NY\",\"openHours\":\"9AM-9PM\",\"phoneNumber\":\"+12125551234\"}"
+  ]
+} 

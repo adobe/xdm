@@ -137,6 +137,15 @@
             }
           }
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/metadata": {
+          "title": "metadata",
+          "type": "object",
+          "description": "Dynamic contextual custom metadata information added by the user via the personalization helper.",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
           "title": "Message Source",
           "type": "object",

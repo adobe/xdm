@@ -62,17 +62,9 @@
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageProfile": {
     "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "5329b775-cef3-47b2-bee2-8caae052df95",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": "4218b775-def3-48b2-cee2-9caae052ef96",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
       "@id": "https://ns.adobe.com/xdm/channels/email"
-    },
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "B",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
-    "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@example.com",
-    "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
-    "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92",
-    "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/domain": "example.com"
+    }
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/metadata": {
     "channelProperties": {

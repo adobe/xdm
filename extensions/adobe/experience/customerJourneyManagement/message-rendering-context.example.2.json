@@ -30,7 +30,7 @@
     "_cjmProperties": "{\"internalMetrics\":{\"renderingTime\":12,\"templateVersion\":\"1.5\"}}"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageExecution": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID": "9876a543-def3-45c1-baa1-8caae052df95",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID": "CMA-2372838",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID": "bb550c97-df76-5be3-c95e-9d4c62f79cd3",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID": "243fb0f6-df76-5be3-c95e-851bf39f0d62",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/fragmentPublicationIDs": [
@@ -47,7 +47,7 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID": "3b5ef1d6-586d-5c78-c727-23e49d7529d2",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType": "marketing",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceType": "journey",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceType": "orchestratedCampaign",
       "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceID": "456-6789-1234",
       "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceVersionID": "787-34-5678-1234",
       "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceActionID": "346-987897-123"
@@ -55,17 +55,9 @@
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageProfile": {
     "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "7549c886-egf4-58c3-cff3-9dbbf163fg06",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": "6328c987-fgh5-59d4-dgg4-0eccf274gh17",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
       "@id": "https://ns.adobe.com/xdm/channels/sms"
-    },
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": false,
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
-    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": "twilio",
-    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType": "send",
-    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/channelType": "SMS",
-    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profileNumber": "+12345678901"
+    }
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/metadata": {
     "channelProperties": {

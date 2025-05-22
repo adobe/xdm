@@ -1,0 +1,82 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/rtcdp-collab/dataconnection-rtcdp-settings",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Data Connection Settings for RTCDP",
+  "description": "Details of the data connection settings for RTCDP",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/rtcdp-collab/dataconnection"
+  ],
+  "definitions": {
+    "dataconnectionfieldsRtcdp": {
+      "properties": {
+        "xdm:sourceSettings": {
+          "title": "Source Settings",
+          "description": "The source settings for the data connection.",
+          "type": "object",
+          "properties": {
+            "xdm:rtcdpSettings": {
+              "title": "RTCDP Settings",
+              "description": "The RTCDP settings for the data connection.",
+              "type": "object",
+              "properties": {
+                "xdm:imsOrg": {
+                  "title": "IMS Org",
+                  "description": "The IMS Organization ID for the data connection.",
+                  "type": "string"
+                },
+                "xdm:sandboxId": {
+                  "title": "Sandbox ID",
+                  "description": "The sandbox ID for the data connection.",
+                  "type": "string"
+                },
+                "xdm:sandboxName": {
+                  "title": "Sandbox Name",
+                  "description": "The sandbox name for the data connection.",
+                  "type": "string"
+                },
+                "xdm:privacySettings": {
+                  "title": "Privacy Settings",
+                  "description": "The privacy settings for the data connection.",
+                  "type": "object",
+                  "properties": {
+                    "xdm:marketingActions": {
+                      "title": "Marketing Actions",
+                      "description": "The marketing actions for the data connection.",
+                      "type": "array",
+                      "items": {
+                        "title": "Marketing Action",
+                        "description": "The marketing action for the data connection.",
+                        "type": "string"
+                      }
+                    },
+                    "xdm:consentPolicy": {
+                      "title": "Consent Policy",
+                      "description": "The consent policy for the data connection.",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/dataconnectionfieldsRtcdp"
+    }
+  ],
+  "meta:status": "experimental"
+}

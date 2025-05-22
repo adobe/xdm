@@ -246,7 +246,14 @@
           }
         }
       },
-      "required": ["https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/renderingContext"]
+      "required": [
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/identityMap",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/renderingContext",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageExecution",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/messageProfile",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/metadata",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingContext/retrievedEntities"
+      ]
     }
   ]
 }

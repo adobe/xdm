@@ -180,6 +180,7 @@
       "required": [
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExport/identityMap",
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExport/messageExecution",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExport/messageProfile",
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExport/message"
       ]
     }

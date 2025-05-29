@@ -50,10 +50,7 @@
                       "type": "string",
                       "description": "Name of the agent."
                     }
-                  },
-                  "required": [
-                    "xdm:agentID"
-                  ]
+                  }
                 },
                 "xdm:conversationDetails": {
                   "title": "Conversation Details",
@@ -90,15 +87,12 @@
                       "type": "string",
                       "description": "The name of the flow."
                     },
-                    "xdm:flowKey": {
-                      "title": "Flow Key",
+                    "xdm:conversationalFlowKey": {
+                      "title": "Conversational Flow Key",
                       "description": "Unique key of the flow.",
                       "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                     }
-                  },
-                  "required": [
-                    "xdm:flowID"
-                  ]
+                  }
                 },
                 "xdm:pageDetails": {
                   "title": "Page Details",

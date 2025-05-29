@@ -50,10 +50,7 @@
                   "format": "uri",
                   "description": "URL where the dialogue was initiated."
                 }
-              },
-              "required": [
-                "xdm:dialogueID"
-              ]
+              }
             },
             "xdm:conversationDetails": {
               "title": "Conversation Details",

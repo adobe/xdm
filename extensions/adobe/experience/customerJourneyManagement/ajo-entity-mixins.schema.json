@@ -48,6 +48,11 @@
               "type": "string",
               "description": "Action ID of the Campaign that triggered this message execution."
             },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionName": {
+              "title": "Campaign Action Name",
+              "type": "string",
+              "description": "Action Name of the Campaign that triggered this message execution."
+            },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/identityNamespace": {
               "title": "Campaign Identity Namespace",
               "type": "string",

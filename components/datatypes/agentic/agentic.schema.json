@@ -73,12 +73,15 @@
           "type": "array",
           "title": "Agents",
           "description": "Agents used in this experience",
-          "allOf": [
-            { "$ref": "#/definitions/name" },
-            { "$ref": "#/definitions/version" },
-            { "$ref": "#/definitions/score" },
-            { "$ref": "#/definitions/skills" }
-          ]
+          "items": {
+            "type": "object",
+            "allOf": [
+              { "$ref": "#/definitions/name" },
+              { "$ref": "#/definitions/version" },
+              { "$ref": "#/definitions/score" },
+              { "$ref": "#/definitions/skills" }
+            ]
+          }
         }
       }
     },

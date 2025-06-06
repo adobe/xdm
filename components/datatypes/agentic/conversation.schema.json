@@ -84,7 +84,14 @@
               "title": "Rating Classification",
               "type": "number",
               "description": "String/enum value of the rating provided by the end-user.",
-              "examples": ["Thumbs Up", "Thumbs Down", "Positive", "Negative", "5-stars", "1-star"]
+              "examples": [
+                "Thumbs Up",
+                "Thumbs Down",
+                "Positive",
+                "Negative",
+                "5-stars",
+                "1-star"
+              ]
             },
             "xdm:reasons": {
               "title": "Rating Reasons",
@@ -109,7 +116,9 @@
             { "$ref": "#/definitions/count" },
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
-            { "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"}
+            {
+              "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"
+            }
           ]
         }
       }
@@ -126,7 +135,9 @@
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
             { "$ref": "#/definitions/operations" },
-            { "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"}
+            {
+              "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"
+            }
           ]
         }
       }
@@ -143,7 +154,9 @@
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
             { "$ref": "#/definitions/feedback-rating" },
-            { "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"}
+            {
+              "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"
+            }
           ]
         }
       }
@@ -156,7 +169,9 @@
           "description": "Object representing a conversation that includes prompt, response, and feedback with associated metadata",
           "allOf": [
             { "$ref": "#/definitions/id" },
-            { "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"},
+            {
+              "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"
+            },
             { "$ref": "#/definitions/prompt" },
             { "$ref": "#/definitions/response" },
             { "$ref": "#/definitions/feedback" }
@@ -165,8 +180,6 @@
       }
     }
   },
-  "allOf": [
-    { "$ref": "#/definitions/conversation" }
-  ],
+  "allOf": [{ "$ref": "#/definitions/conversation" }],
   "meta:status": "experimental"
 }

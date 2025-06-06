@@ -81,7 +81,7 @@
             },
             "xdm:classification": {
               "title": "Rating Classification",
-              "type": "number",
+              "type": "string",
               "description": "String/enum value of the rating provided by the end-user.",
               "examples": [
                 "Thumbs Up",

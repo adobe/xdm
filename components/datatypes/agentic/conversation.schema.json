@@ -57,8 +57,7 @@
           "title": "Conversational Operations",
           "type": "object",
           "description": "Object containing operational information",
-          "additionalProperties": true,
-          "items": {
+          "properties": {
             "xdm:cached": {
               "title": "Cached",
               "type": "boolean",
@@ -74,7 +73,7 @@
           "title": "Rating",
           "type": "object",
           "description": "Rating data for the feedback",
-          "items": {
+          "properties": {
             "xdm:score": {
               "title": "Rating Score",
               "type": "number",

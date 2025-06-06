@@ -82,7 +82,7 @@
         }
       }
     },
-    "agentic":{
+    "agentic": {
       "properties": {
         "xdm:agentic": {
           "type": "object",
@@ -97,8 +97,6 @@
       }
     }
   },
-  "allOf": [
-    { "$ref": "#/definitions/agentic" }
-  ],
+  "allOf": [{ "$ref": "#/definitions/agentic" }],
   "meta:status": "experimental"
 }

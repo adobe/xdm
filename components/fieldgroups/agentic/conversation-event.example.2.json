@@ -1,0 +1,109 @@
+{
+  "xdm:agentic": {
+    "xdm:name": "Customer Support Experience",
+    "xdm:version": "1.0.0",
+    "xdm:agents": [
+      {
+        "xdm:name": "Chatbot Assistant",
+        "xdm:version": "2.1.3",
+        "xdm:score": 0.92,
+        "xdm:skills": [
+          {
+            "xdm:name": "Intent Recognition",
+            "xdm:version": "1.0.0",
+            "xdm:score": 0.95,
+            "xdm:parameters": {
+              "language": "en-US",
+              "confidenceThreshold": 0.8
+            }
+          },
+          {
+            "xdm:name": "FAQ Retrieval",
+            "xdm:version": "1.2.0",
+            "xdm:score": 0.89,
+            "xdm:parameters": {
+              "maxResults": 5
+            }
+          }
+        ]
+      },
+      {
+        "xdm:name": "Voice Assistant",
+        "xdm:version": "3.0.0",
+        "xdm:score": 0.88,
+        "xdm:skills": [
+          {
+            "xdm:name": "Speech Recognition",
+            "xdm:version": "2.0.1",
+            "xdm:score": 0.91,
+            "xdm:parameters": {
+              "languageModel": "general",
+              "noiseSuppression": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "xdm:conversation": {
+    "xdm:id": "conv-001",
+    "xdm:signals": {
+      "xdm:subjects": [
+        {
+          "xdm:phrase": "capital",
+          "xdm:qualifiers": ["France"]
+        },
+        {
+          "xdm:phrase": "Paris",
+          "xdm:qualifiers": ["France"]
+        }
+      ],
+      "xdm:attributes": {
+        "xdm:intent": "questioning",
+        "xdm:sentiment": "positive",
+        "xdm:tone": "educational"
+      }
+    },
+    "xdm:prompt": {
+      "xdm:id": "prompt-001",
+      "xdm:count": 1,
+      "xdm:source": "end-user",
+      "xdm:raw": "What is the capital of France?",
+      "xdm:signals": {
+        "xdm:subjects": [
+          {
+            "xdm:phrase": "capital",
+            "xdm:qualifiers": ["France"]
+          }
+        ],
+        "xdm:attributes": {
+          "xdm:intent": "questioning",
+          "xdm:sentiment": "positive",
+          "xdm:tone": "inquisitive"
+        }
+      }
+    },
+    "xdm:response": {
+      "xdm:id": "response-001",
+      "xdm:count": 1,
+      "xdm:source": "concierge",
+      "xdm:raw": "The capital of France is Paris.",
+      "xdm:operations": {
+        "xdm:cached": false
+      },
+      "xdm:signals": {
+        "xdm:subjects": [
+          {
+            "xdm:phrase": "capital",
+            "xdm:qualifiers": ["Paris", "France"]
+          }
+        ],
+        "xdm:attributes": {
+          "xdm:intent": "inform",
+          "xdm:sentiment": "positive",
+          "xdm:tone": "educational"
+        }
+      }
+    }
+  }
+}

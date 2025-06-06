@@ -1,0 +1,46 @@
+{
+  "xdm:conversation": {
+    "xdm:id": "conv-001",
+    "xdm:signals": {
+      "xdm:subjects": [
+        {
+          "xdm:phrase": "capital",
+          "xdm:qualifiers": ["France"]
+        },
+        {
+          "xdm:phrase": "Paris",
+          "xdm:qualifiers": ["France"]
+        }
+      ],
+      "xdm:attributes": {
+        "xdm:intent": "questioning",
+        "xdm:sentiment": "positive",
+        "xdm:tone": "educational"
+      }
+    },
+    "xdm:feedback": {
+      "xdm:id": "feedback-001",
+      "xdm:count": 1,
+      "xdm:source": "end-user",
+      "xdm:raw": "Thanks, that was helpful!",
+      "xdm:rating": {
+        "xdm:score": 1,
+        "xdm:classification": "Thumbs Up",
+        "xdm:reasons": ["Accurate", "Quick response"]
+      },
+      "xdm:signals": {
+        "xdm:subjects": [
+          {
+            "xdm:phrase": "helpful",
+            "xdm:qualifiers": []
+          }
+        ],
+        "xdm:attributes": {
+          "xdm:intent": "thanksgiving",
+          "xdm:sentiment": "positive",
+          "xdm:tone": "thankful"
+        }
+      }
+    }
+  }
+}

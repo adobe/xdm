@@ -1,0 +1,104 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/agentic",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agentic Information",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Construct to represent agents, agent skills, etc.",
+  "definitions": {
+    "name": {
+      "properties": {
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "Name of the agent component"
+        }
+      }
+    },
+    "version": {
+      "properties": {
+        "xdm:version": {
+          "title": "Version",
+          "type": "string",
+          "description": "Version of the agent component"
+        }
+      }
+    },
+    "score": {
+      "properties": {
+        "xdm:score": {
+          "title": "Score",
+          "type": "number",
+          "description": "Score of the agent component"
+        }
+      }
+    },
+    "parameters": {
+      "properties": {
+        "xdm:parameters": {
+          "type": "object",
+          "title": "Parameters",
+          "description": "Parameters passed in to the skill of the agent",
+          "additionalProperties": true
+        }
+      }
+    },
+    "skills": {
+      "properties": {
+        "xdm:skills": {
+          "type": "array",
+          "title": "Agent Skills",
+          "description": "Skills associated with a particular agent",
+          "items": {
+            "type": "object",
+            "allOf": [
+              { "$ref": "#/definitions/name" },
+              { "$ref": "#/definitions/version" },
+              { "$ref": "#/definitions/score" },
+              { "$ref": "#/definitions/parameters" }
+            ]
+          }
+        }
+      }
+    },
+    "agents": {
+      "properties": {
+        "xdm:agents": {
+          "type": "array",
+          "title": "Agents",
+          "description": "Agents used in this experience",
+          "allOf": [
+            { "$ref": "#/definitions/name" },
+            { "$ref": "#/definitions/version" },
+            { "$ref": "#/definitions/score" },
+            { "$ref": "#/definitions/skills" }
+          ]
+        }
+      }
+    },
+    "agentic":{
+      "properties": {
+        "xdm:agentic": {
+          "type": "object",
+          "title": "Agentic Experience",
+          "description": "Agentic Experience",
+          "allOf": [
+            { "$ref": "#/definitions/name" },
+            { "$ref": "#/definitions/version" },
+            { "$ref": "#/definitions/agents" }
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    { "$ref": "#/definitions/agentic" }
+  ],
+  "meta:status": "experimental"
+}

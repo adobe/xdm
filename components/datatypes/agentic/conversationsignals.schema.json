@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/common/conversationsignals",
+  "$id": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Conversation Signals",
   "type": "object",
@@ -14,7 +14,7 @@
   "definitions": {
     "conversation-signals": {
       "properties": {
-        "xdm:conversationSignals": {
+        "xdm:signals": {
           "title": "Conversation Signals",
           "description": "Conversation entity signals extracted from raw text. Raw text can be from a prompt, response, feedback, etc.",
           "type": "object",

@@ -1,0 +1,172 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/agentic/conversation",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Conversation",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Construct to represent agents, agent skills, etc.",
+  "definitions": {
+    "id": {
+      "properties": {
+        "xdm:id": {
+          "title": "Conversation element ID",
+          "type": "string",
+          "description": "Conversation element ID"
+        }
+      }
+    },
+    "count": {
+      "properties": {
+        "xdm:count": {
+          "title": "Count",
+          "type": "integer",
+          "description": "Number of prompts/responses/feedback elements in this event, should be equal to 1",
+          "minimum": 1,
+          "maximum": 1
+        }
+      }
+    },
+    "source": {
+      "properties": {
+        "xdm:source": {
+          "title": "Source",
+          "type": "string",
+          "description": "Source of this element",
+          "examples": ["end-user", "bot", "canned"]
+        }
+      }
+    },
+    "raw": {
+      "properties": {
+        "xdm:raw": {
+          "title": "Raw Text",
+          "type": "string",
+          "description": "Raw text element of a conversation"
+        }
+      }
+    },
+    "operations": {
+      "properties": {
+        "xdm:operations": {
+          "title": "Conversational Operations",
+          "type": "object",
+          "description": "Object containing operational information",
+          "additionalProperties": true,
+          "items": {
+            "xdm:cached": {
+              "title": "Cached",
+              "type": "boolean",
+              "description": "Whether this conversation element was cached"
+            }
+          }
+        }
+      }
+    },
+    "feedback-rating": {
+      "properties": {
+        "xdm:rating": {
+          "title": "Rating",
+          "type": "object",
+          "description": "Rating data for the feedback",
+          "items": {
+            "xdm:score": {
+              "title": "Rating Score",
+              "type": "number",
+              "description": "Numerical value of the rating provided by the end-user. For example: 0, 1 might be used for thumbs up/down."
+            },
+            "xdm:classification": {
+              "title": "Rating Classification",
+              "type": "number",
+              "description": "String/enum value of the rating provided by the end-user.",
+              "examples": ["Thumbs Up", "Thumbs Down", "Positive", "Negative", "5-stars", "1-star"]
+            },
+            "xdm:reasons": {
+              "title": "Rating Reasons",
+              "type": "array",
+              "description": "Reasons why the customer provided this rating.",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "prompt": {
+      "properties": {
+        "xdm:prompt": {
+          "title": "Prompt",
+          "type": "object",
+          "description": "Object representing a conversation prompt",
+          "allOf": [
+            { "$ref": "#/definitions/id" },
+            { "$ref": "#/definitions/count" },
+            { "$ref": "#/definitions/source" },
+            { "$ref": "#/definitions/raw" },
+            { "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"}
+          ]
+        }
+      }
+    },
+    "response": {
+      "properties": {
+        "xdm:response": {
+          "title": "Response",
+          "type": "object",
+          "description": "Object representing a conversation response",
+          "allOf": [
+            { "$ref": "#/definitions/id" },
+            { "$ref": "#/definitions/count" },
+            { "$ref": "#/definitions/source" },
+            { "$ref": "#/definitions/raw" },
+            { "$ref": "#/definitions/operations" },
+            { "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"}
+          ]
+        }
+      }
+    },
+    "feedback": {
+      "properties": {
+        "xdm:feedback": {
+          "title": "Feedback",
+          "type": "object",
+          "description": "Object representing a conversation feedback",
+          "allOf": [
+            { "$ref": "#/definitions/id" },
+            { "$ref": "#/definitions/count" },
+            { "$ref": "#/definitions/source" },
+            { "$ref": "#/definitions/raw" },
+            { "$ref": "#/definitions/feedback-rating" },
+            { "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"}
+          ]
+        }
+      }
+    },
+    "conversation": {
+      "properties": {
+        "xdm:conversation": {
+          "title": "Conversation",
+          "type": "object",
+          "description": "Object representing a conversation that includes prompt, response, and feedback with associated metadata",
+          "allOf": [
+            { "$ref": "#/definitions/id" },
+            { "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"},
+            { "$ref": "#/definitions/prompt" },
+            { "$ref": "#/definitions/response" },
+            { "$ref": "#/definitions/feedback" }
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    { "$ref": "#/definitions/conversation" }
+  ],
+  "meta:status": "experimental"
+}

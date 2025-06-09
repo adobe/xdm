@@ -23,5 +23,13 @@
       "xdm:ID":"aaa12-a121e-13aeb-11247-8842b",
       "xdm:name":"thePolicy2"
     }]
-  }
+  },
+  "https://ns.adobe.com/experience/journeyOrchestration/actionOriginEndpoint": "https://api.example.com/v1/data",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginStartTime": "2024-03-15T10:15:30.456Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginTime": 245,
+  "https://ns.adobe.com/experience/journeyOrchestration/actionOriginMethod": "POST",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionIsProxy": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/actionOriginIsMTLS": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/actionIsThrottled": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/actionWaitTime": "PT0.5S"
 }

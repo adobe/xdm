@@ -1,0 +1,118 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-rendered-content",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Message Rendered Content",
+  "description": "Schema for storing the rendered message per channel in Adobe Journey Optimizer",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "definitions": {
+    "message-rendered-content": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent": {
+          "type": "object",
+          "title": "Rendered Content",
+          "description": "Content rendered for specific channels",
+          "oneOf": [
+            {
+              "properties": {
+                "email": {
+                  "type": "object",
+                  "title": "Email Channel Content",
+                  "description": "Email-specific rendered content",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "const": "email",
+                      "description": "Discriminator field indicating the type of content"
+                    },
+                    "subject": {
+                      "type": "string",
+                      "description": "The email subject line"
+                    },
+                    "html": {
+                      "type": "string",
+                      "description": "The HTML content of the email"
+                    },
+                    "text": {
+                      "type": "string",
+                      "description": "The plain text content of the email"
+                    }
+                  },
+                  "required": ["type", "subject", "html", "text"]
+                }
+              }
+            },
+            {
+              "properties": {
+                "sms": {
+                  "type": "object",
+                  "title": "SMS Channel Content",
+                  "description": "SMS-specific rendered content",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "const": "sms",
+                      "description": "Discriminator field indicating the type of content"
+                    },
+                    "title": {
+                      "type": "string",
+                      "description": "The title of the SMS message"
+                    },
+                    "message": {
+                      "type": "string",
+                      "description": "The text content of the SMS message"
+                    },
+                    "media": {
+                      "type": "string",
+                      "description": "Media content reference for the SMS (MMS)"
+                    }
+                  },
+                  "required": ["type", "message"]
+                }
+              }
+            },
+            {
+              "properties": {
+                "openChannel": {
+                  "type": "object",
+                  "title": "Open Channel Content",
+                  "description": "Content for custom, open channels",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "const": "openChannel",
+                      "description": "Discriminator field indicating the type of content"
+                    },
+                    "content": {
+                      "type": "object",
+                      "description": "The custom content for the open channel",
+                      "additionalProperties": true
+                    }
+                  },
+                  "required": ["type", "content"]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+    },
+    {
+      "$ref": "#/definitions/message-rendered-content"
+    }
+  ],
+  "meta:status": "stable"
+}

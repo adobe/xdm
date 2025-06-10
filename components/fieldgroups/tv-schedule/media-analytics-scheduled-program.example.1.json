@@ -1,0 +1,49 @@
+{
+  "xdm:scheduleDate": "2025-01-02",
+  "xdm:mediaProgramDetails": {
+    "xdm:name": "Program Name",
+    "xdm:length": 3600,
+    "xdm:startTimestamp": "2025-01-01T23:30:00Z"
+  },
+  "xdm:defaultMetadata": {
+    "xdm:show": "Show Name",
+    "xdm:season": "Season 1",
+    "xdm:episode": "Episode 1",
+    "xdm:assetID": "Asset ID",
+    "xdm:genreList": ["comedy", "romance"],
+    "xdm:firstAirDate": "2025-01-01",
+    "xdm:firstDigitalDate": "2025-01-01",
+    "xdm:rating": "TV-PG",
+    "xdm:originator": "Content Creator",
+    "xdm:network": "Network Name",
+    "xdm:showType": "full episode",
+    "xdm:dayPart": "primetime",
+    "xdm:feed": "EAST HD",
+    "xdm:streamFormat": "HD",
+    "xdm:artist": "Artist Name",
+    "xdm:album": "Album Name",
+    "xdm:label": "Record Label",
+    "xdm:author": "Media Author",
+    "xdm:station": "Radio Station Name",
+    "xdm:publisher": "Content Publisher",
+    "xdm:cdn": "Content Delivery Network"
+  },
+  "xdm:customMetadata": [
+    {
+      "xdm:name": "customName",
+      "xdm:value": "test1"
+    },
+    {
+      "xdm:name": "test2",
+      "xdm:value": "customValue"
+    },
+    {
+      "xdm:name": "test3",
+      "xdm:value": "customValue"
+    }
+  ],
+  "xdm:scheduleFilter": {
+    "xdm:filterPath": "xdm.mediaReporting.sessionDetails.channel",
+    "xdm:filterValue": "channel"
+  }
+}

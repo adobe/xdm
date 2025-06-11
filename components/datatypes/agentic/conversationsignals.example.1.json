@@ -11,9 +11,9 @@
       }
     ],
     "xdm:attributes": {
-      "xdm:intent": "inform",
-      "xdm:sentiment": "positive",
-      "xdm:tone": "educational"
+      "xdm:intent": ["inform"],
+      "xdm:sentiment": ["positive"],
+      "xdm:tone": ["educational", "opportunistic"]
     }
   }
 }

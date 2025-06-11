@@ -13,9 +13,9 @@
         }
       ],
       "xdm:attributes": {
-        "xdm:intent": "questioning",
-        "xdm:sentiment": "positive",
-        "xdm:tone": "educational"
+        "xdm:intent": ["questioning"],
+        "xdm:sentiment": ["positive"],
+        "xdm:tone": ["educational"]
       }
     },
     "xdm:prompt": {
@@ -31,9 +31,9 @@
           }
         ],
         "xdm:attributes": {
-          "xdm:intent": "questioning",
-          "xdm:sentiment": "positive",
-          "xdm:tone": "inquisitive"
+          "xdm:intent": ["questioning"],
+          "xdm:sentiment": ["positive"],
+          "xdm:tone": ["inquisitive"]
         }
       }
     },
@@ -53,9 +53,9 @@
           }
         ],
         "xdm:attributes": {
-          "xdm:intent": "inform",
-          "xdm:sentiment": "positive",
-          "xdm:tone": "educational"
+          "xdm:intent": ["inform"],
+          "xdm:sentiment": ["positive"],
+          "xdm:tone": ["educational"]
         }
       }
     },
@@ -77,9 +77,9 @@
           }
         ],
         "xdm:attributes": {
-          "xdm:intent": "thanksgiving",
-          "xdm:sentiment": "positive",
-          "xdm:tone": "thankful"
+          "xdm:intent": ["thanksgiving"],
+          "xdm:sentiment": ["positive"],
+          "xdm:tone": ["thankful"]
         }
       }
     }

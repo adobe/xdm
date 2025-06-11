@@ -13,9 +13,9 @@
         }
       ],
       "xdm:attributes": {
-        "xdm:intent": "questioning",
-        "xdm:sentiment": "positive",
-        "xdm:tone": "educational"
+        "xdm:intent": ["questioning"],
+        "xdm:sentiment": ["positive"],
+        "xdm:tone": ["educational"]
       }
     },
     "xdm:feedback": {
@@ -36,9 +36,9 @@
           }
         ],
         "xdm:attributes": {
-          "xdm:intent": "thanksgiving",
-          "xdm:sentiment": "positive",
-          "xdm:tone": "thankful"
+          "xdm:intent": ["thanksgiving"],
+          "xdm:sentiment": ["positive"],
+          "xdm:tone": ["thankful"]
         }
       }
     }

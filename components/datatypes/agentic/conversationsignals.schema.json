@@ -45,19 +45,28 @@
               "type": "object",
               "properties": {
                 "xdm:intent": {
-                  "type": "string",
-                  "title": "Intent",
-                  "description": "The extracted intent of the raw text"
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "title": "Intent",
+                    "description": "List of intents associated with this phrase"
+                  }
                 },
                 "xdm:sentiment": {
-                  "type": "string",
-                  "title": "Sentiment",
-                  "description": "The extracted sentiment of the raw text"
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "title": "Sentiment",
+                    "description": "List of sentiments of the raw text"
+                  }
                 },
                 "xdm:tone": {
-                  "type": "string",
-                  "title": "Tone",
-                  "description": "The extracted tone of the raw text"
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "title": "Tone",
+                    "description": "List of tones of the raw text"
+                  }
                 }
               }
             }

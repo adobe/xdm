@@ -12,18 +12,27 @@
             "xdm:name": "Intent Recognition",
             "xdm:version": "1.0.0",
             "xdm:score": 0.95,
-            "xdm:parameters": {
-              "language": "en-US",
-              "confidenceThreshold": 0.8
-            }
+            "xdm:parameters": [
+              {
+                "key": "language",
+                "value": "un-US"
+              },
+              {
+                "key": "confidenceThreshold",
+                "value": "0.8"
+              }
+            ]
           },
           {
             "xdm:name": "FAQ Retrieval",
             "xdm:version": "1.2.0",
             "xdm:score": 0.89,
-            "xdm:parameters": {
-              "maxResults": 5
-            }
+            "xdm:parameters": [
+              {
+                "key": "maxResults",
+                "value": "5"
+              }
+            ]
           }
         ]
       },
@@ -36,10 +45,16 @@
             "xdm:name": "Speech Recognition",
             "xdm:version": "2.0.1",
             "xdm:score": 0.91,
-            "xdm:parameters": {
-              "languageModel": "general",
-              "noiseSuppression": true
-            }
+            "xdm:parameters": [
+              {
+                "key": "languageModel",
+                "value": "general"
+              },
+              {
+                "key": "noiseSuppression",
+                "value": "true"
+              }
+            ]
           }
         ]
       }

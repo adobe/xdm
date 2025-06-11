@@ -42,10 +42,12 @@
     "parameters": {
       "properties": {
         "xdm:parameters": {
-          "type": "object",
+          "type": "array",
           "title": "Parameters",
           "description": "Parameters passed in to the skill of the agent",
-          "additionalProperties": true
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
+          }
         }
       }
     },

@@ -17,11 +17,11 @@
     "message-rendered-content": {
       "properties": {
         "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent": {
-          "type": "object",
           "title": "Rendered Content",
           "description": "Content rendered for specific channels",
           "oneOf": [
             {
+              "type": "object",
               "properties": {
                 "email": {
                   "type": "object",
@@ -51,6 +51,7 @@
               }
             },
             {
+              "type": "object",
               "properties": {
                 "sms": {
                   "type": "object",
@@ -80,6 +81,7 @@
               }
             },
             {
+              "type": "object",
               "properties": {
                 "openChannel": {
                   "type": "object",

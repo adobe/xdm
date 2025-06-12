@@ -17,11 +17,11 @@
     "message-delivery-metadata": {
       "properties": {
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata": {
-          "type": "object",
           "title": "Message Delivery Metadata",
           "description": "Channel-specific metadata for message delivery",
           "oneOf": [
             {
+              "type": "object",
               "properties": {
                 "email": {
                   "type": "object",
@@ -97,6 +97,7 @@
               }
             },
             {
+              "type": "object",
               "properties": {
                 "sms": {
                   "type": "object",
@@ -138,6 +139,7 @@
               }
             },
             {
+              "type": "object",
               "properties": {
                 "openChannel": {
                   "type": "object",

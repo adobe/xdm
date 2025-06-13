@@ -32,6 +32,13 @@
               "description": "Bot probability score between 0 and 1, 0 meaning not a bot.",
               "meta:titleId": "bot-detection##xdm:score##title##45711",
               "meta:descriptionId": "bot-detection##xdm:score##description##26511"
+            },
+            "xdm:name": {
+              "title": "Name",
+              "type": "string",
+              "description": "Bot name.",
+              "meta:titleId": "bot-detection##xdm:name##title##45712",
+              "meta:descriptionId": "bot-detection##xdm:name##description##26512"
             }
           }
         }

@@ -124,6 +124,7 @@
           "description": "Content References to be associated with offer",
           "type": "object",
           "xdm:type": "object",
+          "meta:status": "deprecated",
           "meta:xdmType": "map",
           "additionalProperties": {
             "title": "Reference Details",

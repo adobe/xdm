@@ -14,7 +14,7 @@
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
   "definitions": {
-    "message-delivery-metadata": {
+    "messageDeliveryMetadata": {
       "properties": {
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata": {
           "title": "Message Delivery Metadata",
@@ -170,7 +170,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/time-series"
     },
     {
-      "$ref": "#/definitions/message-delivery-metadata"
+      "$ref": "#/definitions/messageDeliveryMetadata"
     }
   ],
   "meta:status": "stable"

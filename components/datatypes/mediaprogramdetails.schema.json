@@ -1,0 +1,43 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/mediaProgramDetails",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Media Program Details information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Media Program Details information.",
+  "definitions": {
+    "mediaProgramDetails": {
+      "properties": {
+        "xdm:name": {
+          "title": "Content Name",
+          "type": "string",
+          "description": "This is the “friendly” (human-readable) name of the content. It will be used to create a Media Event of type ScheduleData with this value as friendly name."
+        },
+        "xdm:length": {
+          "title": "Media Content Length",
+          "type": "integer",
+          "description": "Program Length - This is the length (or duration) of the program (in seconds)."
+        },
+        "xdm:startTimestamp": {
+          "title": "Timestamp of the Start of the Program",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time when a program was started."
+        }
+      },
+      "required": ["xdm:name", "xdm:length", "xdm:startTimestamp"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/mediaProgramDetails"
+    }
+  ]
+}

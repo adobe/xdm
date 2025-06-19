@@ -15,154 +15,128 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
   "definitions": {
     "messageDeliveryMetadata": {
-      "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata": {
-          "title": "Message Delivery Metadata",
-          "description": "Channel-specific metadata for message delivery",
-          "oneOf": [
-            {
+      "oneOf": [
+        {
+          "type": "object",
+          "title": "Email Metadata",
+          "description": "Metadata specific to email delivery",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "email",
+              "description": "Discriminator field indicating the type of metadata"
+            },
+            "recipient": {
               "type": "object",
               "properties": {
                 "email": {
-                  "type": "object",
-                  "title": "Email Metadata",
-                  "description": "Metadata specific to email delivery",
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "const": "email",
-                      "description": "Discriminator field indicating the type of metadata"
-                    },
-                    "recipient": {
-                      "type": "object",
-                      "properties": {
-                        "email": {
-                          "type": "string",
-                          "format": "email",
-                          "description": "Recipient's email address"
-                        },
-                        "name": {
-                          "type": "string",
-                          "description": "Recipient's name"
-                        },
-                        "bcc": {
-                          "type": "string",
-                          "format": "email",
-                          "description": "BCC email address"
-                        }
-                      },
-                      "required": ["email"]
-                    },
-                    "sender": {
-                      "type": "object",
-                      "properties": {
-                        "email": {
-                          "type": "string",
-                          "format": "email",
-                          "description": "Sender's email address"
-                        },
-                        "name": {
-                          "type": "string",
-                          "description": "Sender's name"
-                        },
-                        "errorEmail": {
-                          "type": "string",
-                          "format": "email",
-                          "description": "Email address for delivery errors"
-                        },
-                        "replyToEmail": {
-                          "type": "string",
-                          "format": "email",
-                          "description": "Reply-to email address"
-                        },
-                        "replyToName": {
-                          "type": "string",
-                          "description": "Reply-to name"
-                        }
-                      },
-                      "required": [
-                        "email",
-                        "name",
-                        "replyToEmail",
-                        "errorEmail"
-                      ]
-                    },
-                    "subject": {
-                      "type": "string",
-                      "description": "Email subject line"
-                    }
-                  },
-                  "required": ["type", "recipient", "sender", "subject"]
+                  "type": "string",
+                  "format": "email",
+                  "description": "Recipient's email address"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Recipient's name"
+                },
+                "bcc": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "BCC email address"
                 }
-              }
+              },
+              "required": ["email"]
             },
-            {
+            "sender": {
               "type": "object",
               "properties": {
-                "sms": {
-                  "type": "object",
-                  "title": "SMS Metadata",
-                  "description": "Metadata specific to SMS delivery",
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "const": "sms",
-                      "description": "Discriminator field indicating the type of metadata"
-                    },
-                    "recipient": {
-                      "type": "object",
-                      "properties": {
-                        "number": {
-                          "type": "string",
-                          "description": "Recipient's phone number"
-                        }
-                      },
-                      "required": ["number"]
-                    },
-                    "sender": {
-                      "type": "object",
-                      "properties": {
-                        "number": {
-                          "type": "string",
-                          "description": "Sender's phone number"
-                        }
-                      },
-                      "required": ["number"]
-                    },
-                    "title": {
-                      "type": "string",
-                      "description": "Title of the SMS message"
-                    }
-                  },
-                  "required": ["type", "recipient", "sender", "title"]
+                "email": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Sender's email address"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Sender's name"
+                },
+                "errorEmail": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Email address for delivery errors"
+                },
+                "replyToEmail": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Reply-to email address"
+                },
+                "replyToName": {
+                  "type": "string",
+                  "description": "Reply-to name"
                 }
-              }
+              },
+              "required": ["email", "name", "replyToEmail", "errorEmail"]
             },
-            {
-              "type": "object",
-              "properties": {
-                "openChannel": {
-                  "type": "object",
-                  "title": "Open Channel Metadata",
-                  "description": "Metadata for custom, open channels",
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "const": "openChannel",
-                      "description": "Discriminator field indicating the type of metadata"
-                    },
-                    "metadata": {
-                      "type": "string",
-                      "description": "Stringified JSON of channel-specific metadata"
-                    }
-                  },
-                  "required": ["type", "metadata"]
-                }
-              }
+            "subject": {
+              "type": "string",
+              "description": "Email subject line"
             }
-          ]
+          },
+          "required": ["type", "recipient", "sender", "subject"]
+        },
+        {
+          "type": "object",
+          "title": "SMS Metadata",
+          "description": "Metadata specific to SMS delivery",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "sms",
+              "description": "Discriminator field indicating the type of metadata"
+            },
+            "recipient": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "string",
+                  "description": "Recipient's phone number"
+                }
+              },
+              "required": ["number"]
+            },
+            "sender": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "string",
+                  "description": "Sender's phone number"
+                }
+              },
+              "required": ["number"]
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the SMS message"
+            }
+          },
+          "required": ["type", "recipient", "sender", "title"]
+        },
+        {
+          "type": "object",
+          "title": "Open Channel Metadata",
+          "description": "Metadata for custom, open channels",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "openChannel",
+              "description": "Discriminator field indicating the type of metadata"
+            },
+            "metadata": {
+              "type": "string",
+              "description": "Stringified JSON of channel-specific metadata"
+            }
+          },
+          "required": ["type", "metadata"]
         }
-      }
+      ]
     }
   },
   "allOf": [

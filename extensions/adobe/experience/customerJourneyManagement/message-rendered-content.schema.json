@@ -15,97 +15,76 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
   "definitions": {
     "messageRenderedContent": {
-      "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent": {
-          "title": "Rendered Content",
-          "description": "Content rendered for specific channels",
-          "oneOf": [
-            {
-              "type": "object",
-              "properties": {
-                "email": {
-                  "type": "object",
-                  "title": "Email Channel Content",
-                  "description": "Email-specific rendered content",
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "const": "email",
-                      "description": "Discriminator field indicating the type of content"
-                    },
-                    "subject": {
-                      "type": "string",
-                      "description": "The email subject line"
-                    },
-                    "html": {
-                      "type": "string",
-                      "description": "The HTML content of the email"
-                    },
-                    "text": {
-                      "type": "string",
-                      "description": "The plain text content of the email"
-                    }
-                  },
-                  "required": ["type", "subject", "html", "text"]
-                }
-              }
+      "oneOf": [
+        {
+          "type": "object",
+          "title": "Email Channel Content",
+          "description": "Email-specific rendered content",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "email",
+              "description": "Discriminator field indicating the type of content"
             },
-            {
-              "type": "object",
-              "properties": {
-                "sms": {
-                  "type": "object",
-                  "title": "SMS Channel Content",
-                  "description": "SMS-specific rendered content",
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "const": "sms",
-                      "description": "Discriminator field indicating the type of content"
-                    },
-                    "title": {
-                      "type": "string",
-                      "description": "The title of the SMS message"
-                    },
-                    "message": {
-                      "type": "string",
-                      "description": "The text content of the SMS message"
-                    },
-                    "media": {
-                      "type": "string",
-                      "description": "Media content reference for the SMS (MMS)"
-                    }
-                  },
-                  "required": ["type", "message"]
-                }
-              }
+            "subject": {
+              "type": "string",
+              "description": "The email subject line"
             },
-            {
-              "type": "object",
-              "properties": {
-                "openChannel": {
-                  "type": "object",
-                  "title": "Open Channel Content",
-                  "description": "Content for custom, open channels",
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "const": "openChannel",
-                      "description": "Discriminator field indicating the type of content"
-                    },
-                    "content": {
-                      "type": "object",
-                      "description": "The custom content for the open channel",
-                      "additionalProperties": true
-                    }
-                  },
-                  "required": ["type", "content"]
-                }
-              }
+            "html": {
+              "type": "string",
+              "description": "The HTML content of the email"
+            },
+            "text": {
+              "type": "string",
+              "description": "The plain text content of the email"
             }
-          ]
+          },
+          "required": ["type", "subject", "html", "text"]
+        },
+        {
+          "type": "object",
+          "title": "SMS Channel Content",
+          "description": "SMS-specific rendered content",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "sms",
+              "description": "Discriminator field indicating the type of content"
+            },
+            "title": {
+              "type": "string",
+              "description": "The title of the SMS message"
+            },
+            "message": {
+              "type": "string",
+              "description": "The text content of the SMS message"
+            },
+            "media": {
+              "type": "string",
+              "description": "Media content reference for the SMS (MMS)"
+            }
+          },
+          "required": ["type", "message"]
+        },
+        {
+          "type": "object",
+          "title": "Open Channel Content",
+          "description": "Content for custom, open channels",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "openChannel",
+              "description": "Discriminator field indicating the type of content"
+            },
+            "content": {
+              "type": "object",
+              "description": "The custom content for the open channel",
+              "additionalProperties": true
+            }
+          },
+          "required": ["type", "content"]
         }
-      }
+      ]
     }
   },
   "allOf": [

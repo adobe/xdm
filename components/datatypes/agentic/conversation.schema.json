@@ -12,12 +12,21 @@
   "meta:extensible": true,
   "description": "Construct to represent agents, agent skills, etc.",
   "definitions": {
-    "id": {
+    "conversationId": {
       "properties": {
         "xdm:id": {
-          "title": "Conversation element ID",
+          "title": "Conversation ID",
           "type": "string",
-          "description": "Conversation element ID"
+          "description": "ID to group several interactions together"
+        }
+      }
+    },
+    "interactionId": {
+      "properties": {
+        "xdm:id": {
+          "title": "Interaction ID",
+          "type": "string",
+          "description": "A single instance of a prompt, response, and feedback"
         }
       }
     },
@@ -111,7 +120,6 @@
           "type": "object",
           "description": "Object representing a conversation prompt",
           "allOf": [
-            { "$ref": "#/definitions/id" },
             { "$ref": "#/definitions/count" },
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
@@ -129,7 +137,6 @@
           "type": "object",
           "description": "Object representing a conversation response",
           "allOf": [
-            { "$ref": "#/definitions/id" },
             { "$ref": "#/definitions/count" },
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
@@ -148,7 +155,6 @@
           "type": "object",
           "description": "Object representing a conversation feedback",
           "allOf": [
-            { "$ref": "#/definitions/id" },
             { "$ref": "#/definitions/count" },
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
@@ -167,10 +173,8 @@
           "type": "object",
           "description": "Object representing a conversation that includes prompt, response, and feedback with associated metadata",
           "allOf": [
-            { "$ref": "#/definitions/id" },
-            {
-              "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"
-            },
+            { "$ref": "#/definitions/conversationId" },
+            { "$ref": "#/definitions/interactionId" },
             { "$ref": "#/definitions/prompt" },
             { "$ref": "#/definitions/response" },
             { "$ref": "#/definitions/feedback" }

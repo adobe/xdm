@@ -351,9 +351,7 @@
       "required": [
         "xdm:name",
         "xdm:length",
-        "xdm:contentType",
-        "xdm:playerName",
-        "xdm:channel"
+        "xdm:contentType"
       ]
     }
   },

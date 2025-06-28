@@ -335,6 +335,21 @@
               "title": "Orchestrated Campaign Action Identity Namespace",
               "type": "string",
               "description": "Represents the Orchestrated Campaign Action Identity Namespace"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/targetEntity": {
+              "title": "Orchestrated Campaign Target Entity",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign Target Entity"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/secondaryEntity": {
+              "title": "Orchestrated Campaign Secondary Entity",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign Secondary Entity"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/dedupKey": {
+              "title": "Orchestrated Campaign Deduplication Key",
+              "type": "string",
+              "description": "Represents the Orchestrated Campaign Dedup Key. Optionally populated and represents the key passed in _id of the event"
             }
           }
         },

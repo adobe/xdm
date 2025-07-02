@@ -82,9 +82,8 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": "0899238rf-51ff",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionName": "Email Service",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionIdentityNamespace": "Profile",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/targetEntity": "Profile",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/secondaryEntity": "Booking",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/dedupKey": "BookingId"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/targetDimension": "Recipients",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/secondaryDimension": "Booking"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/id": "inline campaign -1",

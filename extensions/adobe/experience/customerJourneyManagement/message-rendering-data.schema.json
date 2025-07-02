@@ -46,7 +46,7 @@
                     },
                     "context": {
                       "type": "string",
-                      "title": "Context",
+                      "title": "Contextual Attribute Context",
                       "description": "Stringified JSON of context variables for general purpose use"
                     },
                     "propertiesContext": {

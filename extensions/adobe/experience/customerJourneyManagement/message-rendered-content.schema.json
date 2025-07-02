@@ -39,7 +39,7 @@
               "description": "The plain text content of the email"
             }
           },
-          "required": ["type", "subject", "html", "text"]
+          "required": ["type", "subject", "html"]
         },
         {
           "type": "object",

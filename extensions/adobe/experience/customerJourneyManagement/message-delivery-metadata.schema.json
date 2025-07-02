@@ -39,9 +39,12 @@
                   "description": "Recipient's name"
                 },
                 "bcc": {
-                  "type": "string",
-                  "format": "email",
-                  "description": "BCC email address"
+                  "type": "array",
+                  "description": "BCC email address",
+                  "items": {
+                    "type": "string",
+                    "format": "email"
+                  }
                 }
               },
               "required": ["email"]
@@ -74,13 +77,9 @@
                 }
               },
               "required": ["email", "name", "replyToEmail", "errorEmail"]
-            },
-            "subject": {
-              "type": "string",
-              "description": "Email subject line"
             }
           },
-          "required": ["type", "recipient", "sender", "subject"]
+          "required": ["type", "recipient", "sender"]
         },
         {
           "type": "object",
@@ -104,20 +103,19 @@
             },
             "sender": {
               "type": "object",
+              "description": "Sender's phone number",
               "properties": {
-                "number": {
-                  "type": "string",
-                  "description": "Sender's phone number"
+                "numbers": {
+                  "type": "array",
+                  "items": {
+                  "type": "string"
+                  }
                 }
               },
-              "required": ["number"]
-            },
-            "title": {
-              "type": "string",
-              "description": "Title of the SMS message"
+              "required": ["numbers"]
             }
           },
-          "required": ["type", "recipient", "sender", "title"]
+          "required": ["type", "recipient", "sender"]
         },
         {
           "type": "object",

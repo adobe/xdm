@@ -49,15 +49,15 @@
           "type": "boolean",
           "description": "True if the message execution is send time optimized."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryEntityID": {
-          "title": "Secondary Entity ID",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionName": {
+          "title": "Secondary Dimension Name",
           "type": "string",
-          "description": "The secondary entity ID of the message profile."
+          "description": "The secondary dimension name of the message profile."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryEntityName": {
-          "title": "Secondary Entity Name",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionID": {
+          "title": "Secondary Dimension Id",
           "type": "string",
-          "description": "The secondary entity name of the message profile."
+          "description": "The secondary dimension id of the message profile."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": {
           "title": "isTestExecution",

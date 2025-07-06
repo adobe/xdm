@@ -81,6 +81,17 @@
           "type": "string",
           "description": "Domain of the recipient's email address."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentCount": {
+          "title": "Attachment Count",
+          "type": "integer",
+          "description": "Number of attachments in the email message.",
+          "minimum": 0
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/totalAttachmentSize": {
+          "title": "Total Attachment Size",
+          "type": "integer",
+          "description": "Total size of all attachments in bytes."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
           "title": "Push Platform",
           "type": "string",

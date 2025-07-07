@@ -1,0 +1,17 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata": {
+    "type": "email",
+    "recipient": {
+      "email": "jane.doe@example.com",
+      "name": "Jane Doe",
+      "bcc": ["manager@example.com", "audit@example.com"]
+    },
+    "sender": {
+      "email": "noreply@adobe.com",
+      "name": "Adobe Team",
+      "errorEmail": "errors@adobe.com",
+      "replyToEmail": "support@adobe.com",
+      "replyToName": "Adobe Support"
+    }
+  }
+}

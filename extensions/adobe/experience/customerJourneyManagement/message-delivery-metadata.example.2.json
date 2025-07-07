@@ -1,0 +1,11 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata": {
+    "type": "sms",
+    "recipient": {
+      "number": "+15551234567"
+    },
+    "sender": {
+      "numbers": ["+15557654321"]
+    }
+  }
+}

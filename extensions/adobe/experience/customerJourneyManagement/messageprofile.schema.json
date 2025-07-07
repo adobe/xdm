@@ -92,6 +92,22 @@
           "type": "integer",
           "description": "Total size of all attachments in bytes."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentTypes": {
+          "title": "Attachment Types",
+          "type": "array",
+          "description": "List of content types (MIME types) of attachments in the email message.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentNames": {
+          "title": "Attachment Names",
+          "type": "array",
+          "description": "List of file names of attachments in the email message.",
+          "items": {
+            "type": "string"
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
           "title": "Push Platform",
           "type": "string",

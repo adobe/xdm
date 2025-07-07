@@ -11,12 +11,16 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/domain": "domain.com",
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentCount": 1,
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/totalAttachmentSize": 1048576,
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentCount": 3,
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/totalAttachmentSize": 2097152,
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentTypes": [
+    "image/jpeg",
+    "image/png",
     "application/pdf"
   ],
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentNames": [
-    "invoice.pdf"
+    "product-photo.jpg",
+    "company-logo.png",
+    "brochure.pdf"
   ]
 }

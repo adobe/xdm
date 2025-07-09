@@ -23,6 +23,14 @@
           "type": "string",
           "const": "xdm:descriptorTimestamp",
           "meta:titleId": "descriptorTimestamp##@type##title##12345"
+        },
+        "xdm:sourceProperty": {
+          "title": "Source Property",
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" } }
+          ],
+          "description": "When present, the property of the source schema to which this timestamp descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
         }
       },
       "required": ["xdm:sourceProperty"]

@@ -1,0 +1,192 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/media-scheduled-program",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Media Analytics Scheduled Program",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "description": "Track media scheduled program information.",
+  "definitions": {
+    "media-scheduled-program": {
+      "properties": {
+        "xdm:scheduleDate": {
+          "title": "The date of the schedule event",
+          "type": "string",
+          "format": "date",
+          "description": "The date when a program was scheduled."
+        },
+        "xdm:mediaProgramDetails": {
+          "title": "Media Program Details",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaProgramDetails",
+          "description": "Media Program related fields."
+        },
+        "xdm:defaultMetadata": {
+          "title": "The Default Metadata",
+          "type": "object",
+          "properties": {
+            "xdm:show": {
+              "title": "Series Name",
+              "type": "string",
+              "description": "Program/Series Name. Program Name is required only if the show is part of a series."
+            },
+            "xdm:season": {
+              "title": "Season Number",
+              "type": "string",
+              "description": "The season number the show belongs to. Season Series is required only if the show is part of a series."
+            },
+            "xdm:episode": {
+              "title": "Episode Number",
+              "type": "string",
+              "description": "The number of the episode."
+            },
+            "xdm:assetID": {
+              "title": "Asset ID",
+              "type": "string",
+              "description": "This is the unique identifier for the content of the media asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems."
+            },
+            "xdm:genreList": {
+              "title": "Genre List",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Type or grouping of content as defined by content producer. Field represents the comma separated values provided in the genre field."
+            },
+            "xdm:firstAirDate": {
+              "title": "First Air Date",
+              "type": "string",
+              "description": "The date when the content first aired on television. Any date format is acceptable, but Adobe recommends: YYYY-MM-DD."
+            },
+            "xdm:firstDigitalDate": {
+              "title": "First Digital Date",
+              "type": "string",
+              "description": "The date when the content first aired on any digital channel or platform. Any date format is acceptable but Adobe recommends: YYYY-MM-DD."
+            },
+            "xdm:rating": {
+              "title": "Rating Value",
+              "type": "string",
+              "description": "Rating as defined by TV Parental Guidelines."
+            },
+            "xdm:originator": {
+              "title": "Creator Name",
+              "type": "string",
+              "description": "Creator of the content."
+            },
+            "xdm:network": {
+              "title": "Broadcast Network",
+              "type": "string",
+              "description": "The network/channel name."
+            },
+            "xdm:showType": {
+              "title": "Show Type",
+              "type": "string",
+              "description": "The type of content for example, trailer or full episode."
+            },
+            "xdm:dayPart": {
+              "title": "Day Part",
+              "type": "string",
+              "description": "A property that defines the time of the day when the content was broadcast or played. This could have any value set as necessary by customers."
+            },
+            "xdm:feed": {
+              "title": "Feed Type",
+              "type": "string",
+              "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL."
+            },
+            "xdm:streamFormat": {
+              "title": "Stream Format",
+              "type": "string",
+              "description": "Format of the stream (HD, SD)."
+            },
+            "xdm:artist": {
+              "title": "Artist",
+              "type": "string",
+              "description": "The name of the album artist or group performing the music recording or video."
+            },
+            "xdm:album": {
+              "title": "Album",
+              "type": "string",
+              "description": "The name of the album that the music recording or video belongs to."
+            },
+            "xdm:label": {
+              "title": "Record Label",
+              "type": "string",
+              "description": "Name of the record label."
+            },
+            "xdm:author": {
+              "title": "Author",
+              "type": "string",
+              "description": "Name of the media author."
+            },
+            "xdm:station": {
+              "title": "Radio Station",
+              "type": "string",
+              "description": "The radio station name on which the audio is played."
+            },
+            "xdm:publisher": {
+              "title": "Publisher",
+              "type": "string",
+              "description": "Name of the audio content publisher."
+            },
+            "xdm:cdn": {
+              "title": "Content Delivery Network",
+              "type": "string",
+              "description": "The content delivery network of the content played."
+            }
+          },
+          "description": "The scheduled program default metadata that will be used to overwrite the default metadata of the generated media events."
+        },
+        "xdm:customMetadata": {
+          "title": "The Custom Metadata",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/customMetadataDetails"
+          },
+          "description": "The list of custom metadata."
+        },
+        "xdm:scheduleFilter": {
+          "title": "The Schedule Filter",
+          "type": "object",
+          "description": "The schedule filter is used to filter the media events in order to create schedule events.",
+          "properties": {
+            "xdm:filterPath": {
+              "title": "The filter path",
+              "type": "string",
+              "description": "The xdm path of the property used to filter media events"
+            },
+            "xdm:filterValue": {
+              "title": "The filter value",
+              "type": "string",
+              "description": "The value of the property used to filter media events"
+            }
+          }
+        }
+      },
+      "required": [
+        "xdm:scheduleDate",
+        "xdm:mediaProgramDetails",
+        "xdm:defaultMetadata",
+        "xdm:customMetadata",
+        "xdm:scheduleFilter"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/media-scheduled-program"
+    }
+  ],
+  "meta:status": "experimental"
+}

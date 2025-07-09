@@ -118,6 +118,24 @@
             },
             "required": ["xdm:limit", "xdm:scope"]
           }
+        },
+        "https://ns.adobe.com/experience/decisioning/offeritem/contentReferences": {
+          "title": "Content References",
+          "description": "Content References to be associated with offer",
+          "$ref": "https://ns.adobe.com/experience/decisioning/content-references",
+          "meta:status": "deprecated"
+        },
+        "https://ns.adobe.com/experience/decisioning/offeritem/contentReferencesMap": {
+          "title": "Content References",
+          "description": "Content References to be associated with offer",
+          "type": "object",
+          "xdm:type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "title": "Reference Details",
+            "description": "Content Reference Details supported through AJO or External Fragments",
+            "$ref": "https://ns.adobe.com/experience/decisioning/fragment-metadata"
+          }
         }
       },
       "required": [

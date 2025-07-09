@@ -28,6 +28,17 @@
               "title": "Request ID",
               "type": "string",
               "description": "The request Id used by Journey Orchestration to track the flow of a request."
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/logs": {
+              "title": "logs(Map)",
+              "type": "object",
+              "description": "Useful for logging various information, for example logging a curl request/response.",
+              "meta:xdmType": "map",
+              "additionalProperties": {
+                "title": "Values for capturing various information as logs, ex: curl request/response",
+                "type": "string",
+                "description": "A logs map that can contain values of type string"
+              }
             }
           }
         }

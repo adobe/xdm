@@ -11,16 +11,21 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/domain": "domain.com",
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentCount": 3,
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/totalAttachmentSize": 2097152,
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentTypes": [
-    "image/jpeg",
-    "image/png",
-    "application/pdf"
-  ],
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentNames": [
-    "product-photo.jpg",
-    "company-logo.png",
-    "brochure.pdf"
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachment": [
+    {
+      "xdm:name": "invoice.pdf",
+      "xdm:contentType": "application/pdf",
+      "xdm:size": 1048576
+    },
+    {
+      "xdm:name": "product-photo1.jpg",
+      "xdm:contentType": "image/jpeg",
+      "xdm:size": 262144
+    },
+    {
+      "xdm:name": "product-photo2.jpg",
+      "xdm:contentType": "image/jpeg",
+      "xdm:size": 262144
+    }
   ]
 }

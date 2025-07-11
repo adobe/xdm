@@ -81,31 +81,12 @@
           "type": "string",
           "description": "Domain of the recipient's email address."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentCount": {
-          "title": "Attachment Count",
-          "type": "integer",
-          "description": "Number of attachments in the email message.",
-          "minimum": 0
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/totalAttachmentSize": {
-          "title": "Total Attachment Size",
-          "type": "integer",
-          "description": "Total size of all attachments in bytes."
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentTypes": {
-          "title": "Attachment Types",
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachment": {
+          "title": "Email Attachments",
           "type": "array",
-          "description": "List of content types (MIME types) of attachments in the email message.",
+          "description": "List of attachments in the email message.",
           "items": {
-            "type": "string"
-          }
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachmentNames": {
-          "title": "Attachment Names",
-          "type": "array",
-          "description": "List of file names of attachments in the email message.",
-          "items": {
-            "type": "string"
+            "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/attachment"
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {

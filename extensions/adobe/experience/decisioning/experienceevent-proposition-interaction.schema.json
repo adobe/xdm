@@ -20,6 +20,11 @@
     "decisioning-experienceevent-all": {
       "type": "object",
       "properties": {
+        "https://ns.adobe.com/experience/decisioning/exdRequestID": {
+          "title": "ExD Decision Event Identifier",
+          "type": "string",
+          "description": "The unique identifier of the ExD decision event per request."
+        },
         "https://ns.adobe.com/experience/decisioning/propositionEventType": {
           "title": "Proposition Event",
           "description": "A record of how the user interacted with the proposition. All propositions recorded on this event will be associated with the same event that is recorded here.",

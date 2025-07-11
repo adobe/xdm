@@ -152,6 +152,11 @@
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##title##21291",
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##description##85421"
             },
+            "https://ns.adobe.com/experience/journeyOrchestration/journeyDeploymentID": {
+              "title": "journeyDeploymentID",
+              "description": "As a journey can be republished, each profile execution should be traceable to the state of the journey. Therefore for each step event, we are introducing a new field. In the context of this project, a journeyDeploymentID will map to a particular DP/Fragment change and will allow us to trace which profile executed with which state of DP/Fragment",
+              "type": "string"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": {
               "title": "journeyVersionName",
               "description": "Name of the journey as shown on the authoring UI.",

@@ -1,0 +1,84 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/external-fragment",
+  "meta:abstract": true,
+  "meta:extensible": false,
+  "type": "object",
+  "title": "External Fragment",
+  "description": "External Fragments are fragments residing outside of AJO, which are exposed by CMS solutions like AEM, others.",
+  "definitions": {
+    "external-fragment": {
+      "properties": {
+        "xdm:origin": {
+          "title": "Origin",
+          "type": "string",
+          "description": "Source of truth of fragments (for example AEM, other potential CMS providers)"
+        },
+        "xdm:status": {
+          "title": "Status",
+          "type": "string",
+          "description": "Status as maintained by the external CMS like AEM ( new, draft, published, modified, unpublished), etc "
+        },
+        "xdm:extRefID": {
+          "title": "External Reference Id",
+          "type": "string",
+          "description": "Id as referenced in the external system"
+        },
+        "xdm:metadata": {
+          "title": "Metadata",
+          "type": "object",
+          "description": "Metadata of the external fragment",
+          "properties": {
+            "xdm:sourceInfo": {
+              "title": "Source Info",
+              "type": "object",
+              "description": "Source access Information (can vary based on systems)",
+              "properties": {
+                "xdm:repoID": {
+                  "title": "Repository Id",
+                  "type": "string",
+                  "description": "Repository Id (AEM)"
+                }
+              }
+            },
+            "xdm:modelInfo": {
+              "title": "Model Info",
+              "type": "object",
+              "description": "Model or schema on which the fragment is based",
+              "properties": {
+                "xdm:modelID": {
+                  "title": "Model Id",
+                  "type": "string",
+                  "description": "Model Id"
+                },
+                "xdm:modelName": {
+                  "title": "Model Name",
+                  "type": "string",
+                  "description": "Model Name"
+                },
+                "xdm:modelPath": {
+                  "title": "Model Path",
+                  "type": "string",
+                  "description": "Model Path"
+                }
+              }
+            }
+          }
+        }
+      },
+      "required": ["xdm:origin", "xdm:extRefID"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/external-fragment"
+    }
+  ],
+  "meta:status": "experimental"
+}

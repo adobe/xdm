@@ -1,0 +1,80 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/rtcdp-collab/dataconnection-s3-settings",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Data Connection Settings for S3",
+  "description": "Details of the data connection settings for S3",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/rtcdp-collab/dataconnection"
+  ],
+  "definitions": {
+    "dataconnectionfieldsS3": {
+      "properties": {
+        "xdm:sourceSettings": {
+          "type": "object",
+          "properties": {
+            "xdm:s3Settings": {
+              "title": "S3 Settings",
+              "description": "The S3 settings for the data connection.",
+              "type": "object",
+              "properties": {
+                "xdm:bucket": {
+                  "title": "Bucket",
+                  "description": "The name of the bucket.",
+                  "type": "string"
+                },
+                "xdm:path": {
+                  "title": "Path",
+                  "description": "The path in the bucket.",
+                  "type": "string"
+                },
+                "xdm:fileProperties": {
+                  "title": "File Properties",
+                  "description": "The file properties as a string.",
+                  "type": "string"
+                },
+                "xdm:audiencePathMappings": {
+                  "title": "Audience Path Mappings",
+                  "description": "Mappings of audience IDs to paths and external audience IDs.",
+                  "type": "object",
+                  "properties": {
+                    "xdm:audienceId": {
+                      "title": "Audience ID",
+                      "description": "The audience ID.",
+                      "type": "string"
+                    },
+                    "xdm:path": {
+                      "title": "Path",
+                      "description": "The path for the audience.",
+                      "type": "string"
+                    },
+                    "xdm:externalAudienceId": {
+                      "title": "External Audience ID",
+                      "description": "The external audience ID.",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/dataconnectionfieldsS3"
+    }
+  ],
+  "meta:status": "experimental"
+}

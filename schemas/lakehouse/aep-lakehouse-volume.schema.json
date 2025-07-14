@@ -1,0 +1,84 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/schemas/aep-lakehouse-content",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Lakehouse Content",
+  "description": "Global schema for AEP Lakehouse Volumes",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "definitions": {
+    "content": {
+      "properties": {
+        "xdm:path": {
+          "title": "Path",
+          "description": "Logical location of the file relative to the Volume root (Primary Key)",
+          "type": "string"
+        },
+        "xdm:absolutePath": {
+          "title": "AbsolutePath",
+          "description": "Location of the file in absolute terms, including the storage provider prefix.",
+          "type": "string"
+        },
+        "xdm:name": {
+          "title": "Name",
+          "description": "File name",
+          "type": "string"
+        },
+        "xdm:type": {
+          "title": "Type",
+          "description": "File type",
+          "type": "string"
+        },
+        "xdm:size": {
+          "title": "Size",
+          "description": "File size in bytes",
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        },
+        "xdm:createTime": {
+          "title": "Create Time",
+          "description": "The date and time when this file was created.",
+          "type": "string",
+          "format": "date-time",
+          "meta:titleId": "aep-lakehouse-volume##xdm:createTime##title##7234",
+          "meta:descriptionId": "aep-lakehouse-volume##xdm:createTime##description##8956"
+        },
+        "xdm:modificationTime": {
+          "title": "ModificationTime",
+          "description": "The date and time when this file was last modified.",
+          "type": "string",
+          "format": "date-time",
+          "meta:titleId": "aep-lakehouse-volume##xdm:modificationTime##title##4821",
+          "meta:descriptionId": "aep-lakehouse-volume##xdm:modificationTime##description##6743"
+        },
+        "xdm:tags": {
+          "title": "Tags",
+          "description": "Key value pairs set on the files in cloud storage.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "xdm:webUrl": {
+          "title": "WebURL",
+          "description": "Optional url from where this content is located.",
+          "type": "string",
+          "format": "uri-reference"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/content"
+    }
+  ],
+  "meta:status": "experimental"
+}

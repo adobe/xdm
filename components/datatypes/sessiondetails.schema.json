@@ -348,11 +348,7 @@
           "description": "Indicates that a redirect occurred."
         }
       },
-      "required": [
-        "xdm:name",
-        "xdm:length",
-        "xdm:contentType"
-      ]
+      "required": ["xdm:name", "xdm:length", "xdm:contentType"]
     }
   },
   "allOf": [

@@ -20,11 +20,13 @@
         "xdm:productPageURL": {
           "title": "Product Page URL",
           "type": "string",
+          "format": "uri",
           "description": "The URL for the landing page of a product."
         },
         "xdm:productImageURL": {
           "title": "Product Image URL",
           "type": "string",
+          "format": "uri",
           "description": "The URL for the primary image of a product."
         }
       }

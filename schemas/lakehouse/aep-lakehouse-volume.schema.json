@@ -70,7 +70,7 @@
           "title": "WebURL",
           "description": "Optional url from where this content is located.",
           "type": "string",
-          "format": "uri-reference"
+          "format": "uri"
         }
       }
     }

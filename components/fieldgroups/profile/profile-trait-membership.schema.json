@@ -25,7 +25,7 @@
             "$ref": "https://ns.adobe.com/xdm/datatypes/traitMembership"
           }
         },
-        "xdm:__system__traitMembership": {
+        "xdm:system__traitMembership": {
           "title": "System Trait Membership",
           "type": "string",
           "description": "Binary encoded system representation of trait membership for optimized storage and processing. This field is managed by the system and contains compressed trait membership data."

@@ -28,8 +28,7 @@
           "format": "date-time",
           "description": "The timestamp until which the trait membership is valid."
         }
-      },
-      "required": ["xdm:lastQualificationTime", "xdm:validUntil"]
+      }
     }
   },
   "allOf": [

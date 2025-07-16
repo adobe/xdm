@@ -23,8 +23,7 @@
           "type": "string",
           "const": "xdm:descriptorTimestamp"
         }
-      },
-      "required": ["xdm:sourceProperty"]
+      }
     }
   },
   "allOf": [

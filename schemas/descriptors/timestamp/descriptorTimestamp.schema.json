@@ -16,15 +16,12 @@
   "type": "object",
   "description": "Identifies a root-level field containing the event timestamp for time-series schemas. The field must be of type Date-Time and required in the source schema.",
   "definitions": {
-    "descriptor": {
+    "descriptorTimestamp": {
       "properties": {
         "@type": {
-          "const": "xdm:descriptorTimestamp"
-        },
-        "xdm:sourceProperty": {
-          "title": "Source Property",
+          "title": "Type",
           "type": "string",
-          "description": "The property of the source schema that represents the timestamp. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
+          "const": "xdm:descriptorTimestamp"
         }
       },
       "required": ["xdm:sourceProperty"]
@@ -35,10 +32,9 @@
       "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
     },
     {
-      "$ref": "#/definitions/descriptor"
+      "$ref": "#/definitions/descriptorTimestamp"
     }
   ],
-  "required": ["xdm:sourceProperty"],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19"
 }

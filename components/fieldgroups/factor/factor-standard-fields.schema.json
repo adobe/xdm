@@ -14,7 +14,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
   "description": "A field group that defines standard factor fields including factor name, factor value, factor type, factor value type, and Granularity.",
   "definitions": {
-    "factor-standard-fields": {      
+    "factor-standard-fields": {
       "properties": {
         "xdm:factorName": {
           "title": "Factor Name",

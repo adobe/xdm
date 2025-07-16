@@ -15,17 +15,12 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
   "definitions": {
     "messageRenderedContent": {
-      "oneOf": [
-        {
+      "properties": {
+        "email": {
           "type": "object",
           "title": "Email Channel Content",
           "description": "Email-specific rendered content",
           "properties": {
-            "type": {
-              "type": "string",
-              "const": "email",
-              "description": "Discriminator field indicating the type of content"
-            },
             "subject": {
               "type": "string",
               "description": "The email subject line"
@@ -39,18 +34,13 @@
               "description": "The plain text content of the email"
             }
           },
-          "required": ["type", "subject", "html"]
+          "required": ["subject", "html"]
         },
-        {
+        "sms": {
           "type": "object",
           "title": "SMS Channel Content",
           "description": "SMS-specific rendered content",
           "properties": {
-            "type": {
-              "type": "string",
-              "const": "sms",
-              "description": "Discriminator field indicating the type of content"
-            },
             "title": {
               "type": "string",
               "description": "The title of the SMS message"
@@ -64,27 +54,9 @@
               "description": "Media content reference for the SMS (MMS)"
             }
           },
-          "required": ["type", "message"]
-        },
-        {
-          "type": "object",
-          "title": "Open Channel Content",
-          "description": "Content for custom, open channels",
-          "properties": {
-            "type": {
-              "type": "string",
-              "const": "openChannel",
-              "description": "Discriminator field indicating the type of content"
-            },
-            "content": {
-              "type": "object",
-              "description": "The custom content for the open channel",
-              "additionalProperties": true
-            }
-          },
-          "required": ["type", "content"]
+          "required": ["message"]
         }
-      ]
+      }
     }
   },
   "allOf": [

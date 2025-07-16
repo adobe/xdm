@@ -15,17 +15,12 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
   "definitions": {
     "messageDeliveryMetadata": {
-      "oneOf": [
-        {
+      "properties": {
+        "email": {
           "type": "object",
           "title": "Email Metadata",
           "description": "Metadata specific to email delivery",
           "properties": {
-            "type": {
-              "type": "string",
-              "const": "email",
-              "description": "Discriminator field indicating the type of metadata"
-            },
             "recipient": {
               "type": "object",
               "properties": {
@@ -79,18 +74,13 @@
               "required": ["email", "name", "replyToEmail", "errorEmail"]
             }
           },
-          "required": ["type", "recipient", "sender"]
+          "required": ["recipient", "sender"]
         },
-        {
+        "sms": {
           "type": "object",
           "title": "SMS Metadata",
           "description": "Metadata specific to SMS delivery",
           "properties": {
-            "type": {
-              "type": "string",
-              "const": "sms",
-              "description": "Discriminator field indicating the type of metadata"
-            },
             "recipient": {
               "type": "object",
               "properties": {
@@ -115,26 +105,9 @@
               "required": ["numbers"]
             }
           },
-          "required": ["type", "recipient", "sender"]
-        },
-        {
-          "type": "object",
-          "title": "Open Channel Metadata",
-          "description": "Metadata for custom, open channels",
-          "properties": {
-            "type": {
-              "type": "string",
-              "const": "openChannel",
-              "description": "Discriminator field indicating the type of metadata"
-            },
-            "metadata": {
-              "type": "string",
-              "description": "Stringified JSON of channel-specific metadata"
-            }
-          },
-          "required": ["type", "metadata"]
+          "required": ["recipient", "sender"]
         }
-      ]
+      }
     }
   },
   "allOf": [

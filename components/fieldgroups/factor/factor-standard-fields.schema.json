@@ -33,7 +33,6 @@
         "xdm:factorValue": {
           "title": "Factor Value",
           "type": "number",
-          "meta:xdmType": "double",
           "description": "The value of the factor",
           "examples": [319.5, 0.75, 1000, -2.3],
           "meta:titleId": "factor-standard-fields##xdm:factorValue##title##98733",

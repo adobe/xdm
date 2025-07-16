@@ -4,10 +4,7 @@
       "recipient": {
         "email": "jane.doe@example.com",
         "name": "Jane Doe",
-        "bcc": [
-          "manager@example.com",
-          "audit@example.com"
-        ]
+        "bcc": ["manager@example.com", "audit@example.com"]
       },
       "sender": {
         "email": "noreply@adobe.com",

@@ -1,6 +1,5 @@
 {
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageData": {
-    "type": "rendering-context",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata": {
     "renderingContext": {
       "profile": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"email\":\"john.doe@example.com\"}",
       "offer": "{\"offerId\":\"OFF123\",\"description\":\"20% off your next purchase\"}",

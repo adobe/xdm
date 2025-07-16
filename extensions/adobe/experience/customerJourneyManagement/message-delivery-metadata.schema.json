@@ -16,7 +16,7 @@
   "definitions": {
     "messageDeliveryMetadata": {
       "properties": {
-        "email": {
+        "emailMetadata": {
           "type": "object",
           "title": "Email Metadata",
           "description": "Metadata specific to email delivery",
@@ -76,7 +76,7 @@
           },
           "required": ["recipient", "sender"]
         },
-        "sms": {
+        "smsMetadata": {
           "type": "object",
           "title": "SMS Metadata",
           "description": "Metadata specific to SMS delivery",

@@ -1,0 +1,31 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf95",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": "3218b775-bef3-46b2-aee2-7caae052cf96",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/email"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/domain": "domain.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachment": [
+    {
+      "xdm:name": "invoice.pdf",
+      "xdm:contentType": "application/pdf",
+      "xdm:size": 1048576
+    },
+    {
+      "xdm:name": "product-photo1.jpg",
+      "xdm:contentType": "image/jpeg",
+      "xdm:size": 262144
+    },
+    {
+      "xdm:name": "product-photo2.jpg",
+      "xdm:contentType": "image/jpeg",
+      "xdm:size": 262144
+    }
+  ]
+}

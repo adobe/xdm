@@ -17,7 +17,6 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
-    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journey",
     "https://ns.adobe.com/xdm/context/profile"
   ],
   "description": "Values computed by the Stitching service, which are meant to provide a more accurate customer journey.",

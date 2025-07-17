@@ -49,6 +49,16 @@
           "type": "boolean",
           "description": "True if the message execution is send time optimized."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionName": {
+          "title": "Secondary Dimension Name",
+          "type": "string",
+          "description": "The secondary dimension name of the message profile."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionID": {
+          "title": "Secondary Dimension Id",
+          "type": "string",
+          "description": "The secondary dimension id of the message profile."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": {
           "title": "isTestExecution",
           "type": "boolean",

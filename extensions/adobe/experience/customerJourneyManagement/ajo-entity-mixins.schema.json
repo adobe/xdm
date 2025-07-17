@@ -335,6 +335,16 @@
               "title": "Orchestrated Campaign Action Identity Namespace",
               "type": "string",
               "description": "Represents the Orchestrated Campaign Action Identity Namespace"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/targetDimension": {
+              "title": "Orchestrated Campaign Target Dimension",
+              "type": "string",
+              "description": "Represents the main sending dimension of the orchestrated campaign action."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/secondaryDimension": {
+              "title": "Orchestrated Campaign Secondary Dimension",
+              "type": "string",
+              "description": "Represents the secondary sending dimension for the orchestrated campaign action."
             }
           }
         },

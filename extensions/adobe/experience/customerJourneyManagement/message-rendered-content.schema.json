@@ -12,56 +12,61 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "messageRenderedContent": {
       "properties": {
-        "emailContent": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent": {
           "type": "object",
           "title": "Email Channel Content",
           "description": "Email-specific rendered content",
           "properties": {
-            "subject": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/subject": {
               "type": "string",
               "description": "The email subject line"
             },
-            "html": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/html": {
               "type": "string",
               "description": "The HTML content of the email"
             },
-            "text": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/text": {
               "type": "string",
               "description": "The plain text content of the email"
             }
           },
-          "required": ["subject", "html"]
+          "required": [
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/subject",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/html"
+          ]
         },
-        "smsContent": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent": {
           "type": "object",
           "title": "SMS Channel Content",
           "description": "SMS-specific rendered content",
           "properties": {
-            "title": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/title": {
               "type": "string",
               "description": "The title of the SMS message"
             },
-            "message": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/message": {
               "type": "string",
               "description": "The text content of the SMS message"
             },
-            "media": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/media": {
               "type": "string",
               "description": "Media content reference for the SMS (MMS)"
             }
           },
-          "required": ["message"]
+          "required": [
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/message"
+          ]
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
       "$ref": "#/definitions/messageRenderedContent"

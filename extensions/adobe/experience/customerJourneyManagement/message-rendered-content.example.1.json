@@ -1,9 +1,9 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent": {
-    "emailContent": {
-      "subject": "Welcome to Adobe Journey Optimizer!",
-      "html": "<html><body><h1>Hello, John!</h1><p>Thank you for joining us.</p></body></html>",
-      "text": "Hello, John! Thank you for joining us."
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/subject": "Welcome to Adobe Journey Optimizer!",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/html": "<html><body><h1>Hello, John!</h1><p>Thank you for joining us.</p></body></html>",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/text": "Hello, John! Thank you for joining us."
     }
   }
 }

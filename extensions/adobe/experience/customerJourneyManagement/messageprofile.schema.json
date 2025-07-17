@@ -91,6 +91,14 @@
           "type": "string",
           "description": "Domain of the recipient's email address."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachment": {
+          "title": "Email Attachments",
+          "type": "array",
+          "description": "List of attachments in the email message.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/attachment"
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
           "title": "Push Platform",
           "type": "string",

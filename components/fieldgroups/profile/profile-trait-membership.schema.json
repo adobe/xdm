@@ -1,0 +1,45 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/profile-trait-membership",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Profile Trait Membership",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Trait membership information such as including which active traits the profile belongs to, the last qualification time, and when the membership is valid until.",
+  "definitions": {
+    "profile-trait-membership": {
+      "properties": {
+        "xdm:traitMembership": {
+          "title": "Trait Membership",
+          "type": "object",
+          "meta:xdmType": "map",
+          "description": "Map of trait IDs to their membership details. Each key is a trait ID, and the value contains qualification and expiration information.",
+          "additionalProperties": {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/traitMembership"
+          }
+        },
+        "xdm:system__traitMembership": {
+          "title": "System Trait Membership",
+          "type": "string",
+          "description": "Binary encoded system representation of trait membership for optimized storage and processing. This field is managed by the system and contains compressed trait membership data."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/profile-trait-membership"
+    }
+  ],
+  "meta:status": "experimental"
+}

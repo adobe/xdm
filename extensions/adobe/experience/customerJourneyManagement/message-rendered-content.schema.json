@@ -1,0 +1,76 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-rendered-content",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Message Rendered Content",
+  "description": "Schema for storing the rendered message per channel in Adobe Journey Optimizer",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "messageRenderedContent": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent": {
+          "type": "object",
+          "title": "Email Channel Content",
+          "description": "Email-specific rendered content",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/subject": {
+              "type": "string",
+              "description": "The email subject line"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/html": {
+              "type": "string",
+              "description": "The HTML content of the email"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/text": {
+              "type": "string",
+              "description": "The plain text content of the email"
+            }
+          },
+          "required": [
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/subject",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/html"
+          ]
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent": {
+          "type": "object",
+          "title": "SMS Channel Content",
+          "description": "SMS-specific rendered content",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/title": {
+              "type": "string",
+              "description": "The title of the SMS message"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/message": {
+              "type": "string",
+              "description": "The text content of the SMS message"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/media": {
+              "type": "string",
+              "description": "Media content reference for the SMS (MMS)"
+            }
+          },
+          "required": [
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/message"
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageRenderedContent"
+    }
+  ],
+  "meta:status": "stable"
+}

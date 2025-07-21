@@ -1,0 +1,25 @@
+{
+  "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus": "draft",
+  "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints": [
+    {
+      "xdm:scope": "global",
+      "xdm:events": ["decisioning"],
+      "xdm:repeat": {
+        "xdm:enabled": true,
+        "xdm:unit": "week",
+        "xdm:unitCount": 2
+      },
+      "xdm:dynamicCappingThresholdEnabled": true,
+      "xdm:dynamicCappingThresholdQuery": "elsData.`ds-id`.cappingThreshold"
+    }
+  ],
+  "xdm:contentReferences": {
+    "xdm:contentReferencesMap": {
+      "mobile": {
+        "xdm:id": "fragment_12345",
+        "xdm:source": "ajo",
+        "xdm:type": "HTML"
+      }
+    }
+  }
+}

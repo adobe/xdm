@@ -14,7 +14,10 @@
   "meta:tags": {
     "industry": ["all"]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent"
+  ],
   "description": "Values computed by the Stitching service, which are meant to provide a more accurate customer journey.",
   "definitions": {
     "experienceevent-stitching": {

@@ -1,21 +1,19 @@
 {
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/recipient": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/recipient/email": "jane.doe@example.com",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/recipient/name": "Jane Doe",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/recipient/bcc": [
-          "manager@example.com",
-          "audit@example.com"
-        ]
-      },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/email": "noreply@adobe.com",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/name": "Adobe Team",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/errorEmail": "errors@adobe.com",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/replyToEmail": "support@adobe.com",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/replyToName": "Adobe Support"
-      }
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/recipient": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/recipient/email": "jane.doe@example.com",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/recipient/name": "Jane Doe",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/recipient/bcc": [
+        "manager@example.com",
+        "audit@example.com"
+      ]
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/email": "noreply@adobe.com",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/name": "Adobe Team",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/errorEmail": "errors@adobe.com",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/replyToEmail": "support@adobe.com",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/sender/replyToName": "Adobe Support"
     }
   }
 }

@@ -1,14 +1,12 @@
 {
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient/number": "+15551234567"
-      },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender/numbers": [
-          "+15557654321"
-        ]
-      }
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient/number": "+15551234567"
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender/numbers": [
+        "+15557654321"
+      ]
     }
   }
 }

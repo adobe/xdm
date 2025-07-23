@@ -1,0 +1,139 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-metadata",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Message Delivery Metadata",
+  "description": "Schema for delivery metadata for different channels in Adobe Journey Optimizer",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "definitions": {
+    "messageDeliveryMetadataBlock": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata": {
+          "title": "<put a title for this field>",
+          "description": "<put a description for this field",
+          "type": "object",
+          "properties": {
+            "xdm:emailMetadata": {
+              "type": "object",
+              "title": "Email Metadata",
+              "description": "Metadata specific to email delivery",
+              "properties": {
+                "xdm:recipient": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:email": {
+                      "type": "string",
+                      "format": "email",
+                      "title": "Recipient's email address",
+                      "description": ""
+                    },
+                    "xdm:name": {
+                      "type": "string",
+                      "title": "Recipient's name",
+                      "description": ""
+                    },
+                    "xdm:bcc": {
+                      "type": "array",
+                      "title": "BCC email address",
+                      "description": "",
+                      "items": {
+                        "type": "string",
+                        "format": "email"
+                      }
+                    }
+                  },
+                  "required": ["email"]
+                },
+                "xdm:sender": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:email": {
+                      "type": "string",
+                      "format": "email",
+                      "title": "Sender's email address",
+                      "description": ""
+                    },
+                    "xdm:name": {
+                      "type": "string",
+                      "title": "Sender's name",
+                      "description": ""
+                    },
+                    "xdm:errorEmail": {
+                      "type": "string",
+                      "format": "email",
+                      "title": "Email address for delivery errors",
+                      "description": ""
+                    },
+                    "xdm:replyToEmail": {
+                      "type": "string",
+                      "format": "email",
+                      "title": "Reply-to email address",
+                      "description": ""
+                    },
+                    "xdm:replyToName": {
+                      "type": "string",
+                      "title": "Reply-to name",
+                      "description": ""
+                    }
+                  },
+                  "required": ["email", "name", "replyToEmail", "errorEmail"]
+                }
+              },
+              "required": ["recipient", "sender"]
+            },
+            "xdm:smsMetadata": {
+              "type": "object",
+              "title": "SMS Metadata",
+              "description": "Metadata specific to SMS delivery",
+              "properties": {
+                "recipient": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:number": {
+                      "type": "string",
+                      "title": "Recipient's phone number",
+                      "description": ""
+                    }
+                  },
+                  "required": ["number"]
+                },
+                "xdm:sender": {
+                  "type": "object",
+                  "title": "Sender's phone number",
+                  "description": "",
+                  "properties": {
+                    "numbers": {
+                      "xdm:type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": ["numbers"]
+                }
+              },
+              "required": ["recipient", "sender"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+    },
+    {
+      "$ref": "#/definitions/messageDeliveryMetadataBlock"
+    }
+  ],
+  "meta:status": "stable"
+}

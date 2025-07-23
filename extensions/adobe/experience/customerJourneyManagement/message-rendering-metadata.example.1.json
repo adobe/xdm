@@ -1,24 +1,22 @@
 {
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/profile": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"email\":\"john.doe@example.com\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/offer": "{\"offerId\":\"OFF123\",\"description\":\"20% off your next purchase\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/context": "{\"channel\":\"email\",\"language\":\"en-US\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/propertiesContext": "{\"brand\":\"Adobe\",\"campaign\":\"Spring Sale\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/decisionPolicy": "{\"policyId\":\"POLICY1\",\"decision\":\"accept\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/offerContentAttributes": "{\"headline\":\"Special Offer\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/url": "{\"landingPage\":\"https://adobe.com/sale\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/fragment": "{\"header\":\"Welcome!\",\"footer\":\"Thank you\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/externalDataLookup": "{\"lookupId\":\"LKP1\",\"result\":\"success\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/url-support": "{\"shortener\":\"bit.ly\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/inputSchema": "{\"fields\":[\"firstName\",\"lastName\"]}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/channelConfiguration": "{\"provider\":\"SendGrid\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/segment": "{\"segmentId\":\"SEG1\"}",
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/_cjmProperties": "{\"internalFlag\":true}"
-    },
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/retrievedEntities": [
-      "{\"entityType\":\"profile\",\"id\":\"12345\"}",
-      "{\"entityType\":\"offer\",\"id\":\"OFF123\"}"
-    ]
-  }
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/profile": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"email\":\"john.doe@example.com\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/offer": "{\"offerId\":\"OFF123\",\"description\":\"20% off your next purchase\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/context": "{\"channel\":\"email\",\"language\":\"en-US\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/propertiesContext": "{\"brand\":\"Adobe\",\"campaign\":\"Spring Sale\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/decisionPolicy": "{\"policyId\":\"POLICY1\",\"decision\":\"accept\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/offerContentAttributes": "{\"headline\":\"Special Offer\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/url": "{\"landingPage\":\"https://adobe.com/sale\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/fragment": "{\"header\":\"Welcome!\",\"footer\":\"Thank you\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/externalDataLookup": "{\"lookupId\":\"LKP1\",\"result\":\"success\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/url-support": "{\"shortener\":\"bit.ly\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/inputSchema": "{\"fields\":[\"firstName\",\"lastName\"]}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/channelConfiguration": "{\"provider\":\"SendGrid\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/segment": "{\"segmentId\":\"SEG1\"}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/_cjmProperties": "{\"internalFlag\":true}"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/retrievedEntities": [
+    "{\"entityType\":\"profile\",\"id\":\"12345\"}",
+    "{\"entityType\":\"offer\",\"id\":\"OFF123\"}"
+  ]
 }

@@ -79,45 +79,7 @@
           "meta:titleId": "factor-standard-fields##xdm:granularity##title##98736",
           "meta:descriptionId": "factor-standard-fields##xdm:granularity##description##99705"
         }
-      },
-      "required": ["xdm:factorName", "xdm:factorValue"],
-      "examples": [
-        {
-          "xdm:factorName": "CPI",
-          "xdm:factorValue": 319.5,
-          "xdm:factorType": "External",
-          "xdm:valueType": "Actual",
-          "xdm:granularity": "Daily"
-        },
-        {
-          "xdm:factorName": "Sales Volume",
-          "xdm:factorValue": 1000,
-          "xdm:factorType": "Internal",
-          "xdm:valueType": "Forecasted",
-          "xdm:granularity": "Monthly"
-        },
-        {
-          "xdm:factorName": "Humidity",
-          "xdm:factorValue": 0.75,
-          "xdm:factorType": "External",
-          "xdm:valueType": "Actual",
-          "xdm:granularity": "Weekly"
-        },
-        {
-          "xdm:factorName": "Customer Satisfaction Score",
-          "xdm:factorValue": 8.2,
-          "xdm:factorType": "Internal",
-          "xdm:valueType": "Actual",
-          "xdm:granularity": "Monthly"
-        },
-        {
-          "xdm:factorName": "Market Share",
-          "xdm:factorValue": 0.35,
-          "xdm:factorType": "External",
-          "xdm:valueType": "Forecasted",
-          "xdm:granularity": "Weekly"
-        }
-      ]
+      }
     }
   },
   "allOf": [
@@ -128,5 +90,43 @@
   "meta:status": "experimental",
   "meta:createdDate": "2024-04-09",
   "meta:titleId": "factor-standard-fields##title##98737",
-  "meta:descriptionId": "factor-standard-fields##description##99706"
+  "meta:descriptionId": "factor-standard-fields##description##99706",
+  "required": ["xdm:factorName", "xdm:factorValue"],
+  "examples": [
+    {
+      "xdm:factorName": "CPI",
+      "xdm:factorValue": 319.5,
+      "xdm:factorType": "External",
+      "xdm:valueType": "Actual",
+      "xdm:granularity": "Daily"
+    },
+    {
+      "xdm:factorName": "Sales Volume",
+      "xdm:factorValue": 1000,
+      "xdm:factorType": "Internal",
+      "xdm:valueType": "Forecasted",
+      "xdm:granularity": "Monthly"
+    },
+    {
+      "xdm:factorName": "Humidity",
+      "xdm:factorValue": 0.75,
+      "xdm:factorType": "External",
+      "xdm:valueType": "Actual",
+      "xdm:granularity": "Weekly"
+    },
+    {
+      "xdm:factorName": "Customer Satisfaction Score",
+      "xdm:factorValue": 8.2,
+      "xdm:factorType": "Internal",
+      "xdm:valueType": "Actual",
+      "xdm:granularity": "Monthly"
+    },
+    {
+      "xdm:factorName": "Market Share",
+      "xdm:factorValue": 0.35,
+      "xdm:factorType": "External",
+      "xdm:valueType": "Forecasted",
+      "xdm:granularity": "Weekly"
+    }
+  ]
 }

@@ -13,6 +13,16 @@
   "definitions": {
     "conversiondetails": {
       "properties": {
+        "xdm:trackingCode": {
+          "title": "Conversion Tracking Code",
+          "type": "string",
+          "description": "Campaign and Ad details of a conversion."
+        },
+        "xdm:trackingIdentities": {
+          "title": "Conversion tracking identity details",
+          "type": "string",
+          "description": "Tracking identity details for a conversion."
+        },
         "xdm:conversionProperties": {
           "type": "object",
           "description": "List of Conversion Property Map.",

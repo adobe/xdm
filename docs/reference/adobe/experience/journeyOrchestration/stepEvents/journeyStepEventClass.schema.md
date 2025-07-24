@@ -39,7 +39,7 @@ A time-series based Journey Step Event Class.
 A unique identifier for the time-series event.
 
 `@id`
-* is optional
+* is required
 * type: `string`
 * defined in [Time-series Schema](../../../../behaviors/time-series.schema.md#id)
 
@@ -185,7 +185,7 @@ The primary event type for this time-series record.
 The time when an event or observation occurred.
 
 `xdm:timestamp`
-* is optional
+* is required
 * type: `string`
 * defined in [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmtimestamp)
 

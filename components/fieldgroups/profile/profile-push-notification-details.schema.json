@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Information regarding push notifications and live activities, such as mobile application, device details, push notification tokens and push to start token.",
+  "description": "Field Group regarding mobile push notifications and live activities. Information regarding traditional push tokens will be saved in `pushNotificationDetails` array field and information regarding live activity push to start token will be saved in `liveActivityPushNotificationDetails` array field. Its an array to support multiple tokens against the same profile. Both the objects will store information such the mobile application's id, device details, platform and the relevant tokens for identifying the device.",
   "definitions": {
     "profile-push-notification-details": {
       "properties": {
@@ -132,7 +132,7 @@
               "xdm:attributeType": {
                 "title": "Live Activity Attribute Type or Activity Type",
                 "type": "string",
-                "description": "The attribute type or activity type for the live activity.",
+                "description": "The attribute type or activity type for a live activity. A mobile application can have multiple live activities and each will have a different activity type/attribute type to identify the different live activities.",
                 "meta:titleId": "profile-push-notification-details##xdm:attributeType##title##12345",
                 "meta:descriptionId": "profile-push-notification-details##xdm:attributeType##description##67890"
               }

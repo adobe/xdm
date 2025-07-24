@@ -1,0 +1,139 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-metadata",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Message Delivery Metadata",
+  "description": "Schema for delivery metadata for different channels in Adobe Journey Optimizer",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "messageDeliveryMetadata": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata": {
+          "type": "object",
+          "title": "Email Metadata",
+          "description": "Metadata specific to email delivery",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient": {
+              "type": "object",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient/email": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Recipient's email address"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient/name": {
+                  "type": "string",
+                  "description": "Recipient's name"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient/bcc": {
+                  "type": "array",
+                  "description": "BCC email address",
+                  "items": {
+                    "type": "string",
+                    "format": "email"
+                  }
+                }
+              },
+              "required": [
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient/email"
+              ]
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender": {
+              "type": "object",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/email": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Sender's email address"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/name": {
+                  "type": "string",
+                  "description": "Sender's name"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/errorEmail": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Email address for delivery errors"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/replyToEmail": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Reply-to email address"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/replyToName": {
+                  "type": "string",
+                  "description": "Reply-to name"
+                }
+              },
+              "required": [
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/email",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/name",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/replyToEmail",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/errorEmail"
+              ]
+            }
+          },
+          "required": [
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender"
+          ]
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata": {
+          "type": "object",
+          "title": "SMS Metadata",
+          "description": "Metadata specific to SMS delivery",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient": {
+              "type": "object",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient/number": {
+                  "type": "string",
+                  "description": "Recipient's phone number"
+                }
+              },
+              "required": [
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient/number"
+              ]
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender": {
+              "type": "object",
+              "description": "Sender's phone number",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender/numbers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender/numbers"
+              ]
+            }
+          },
+          "required": [
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender"
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageDeliveryMetadata"
+    }
+  ],
+  "meta:status": "stable"
+}

@@ -7,10 +7,15 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionID": "123456",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionName": "Booking",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92",
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/domain": "domain.com"
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/domain": "domain.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachment": [
+    {
+      "xdm:name": "quarterly-report.pdf",
+      "xdm:contentType": "application/pdf",
+      "xdm:size": 524288
+    }
+  ]
 }

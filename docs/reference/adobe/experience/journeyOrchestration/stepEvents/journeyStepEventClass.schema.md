@@ -25,12 +25,12 @@ A time-series based Journey Step Event Class.
 
 # Journey Step Event Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | [Time-series Schema](../../../../behaviors/time-series.schema.md#id) |
-| [https://ns.adobe.com/experience/journeyOrchestration/serviceType](#httpsnsadobecomexperiencejourneyorchestrationservicetype) | `string` | Optional | Journey Step Event (this schema) |
-| [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmeventtype) |
-| [xdm:timestamp](#xdmtimestamp) | `string` | Optional | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmtimestamp) |
+| Property | Type | Required   | Defined by |
+|----------|------|------------|------------|
+| [@id](#id) | `string` | Required   | [Time-series Schema](../../../../behaviors/time-series.schema.md#id) |
+| [https://ns.adobe.com/experience/journeyOrchestration/serviceType](#httpsnsadobecomexperiencejourneyorchestrationservicetype) | `string` | Optional   | Journey Step Event (this schema) |
+| [xdm:eventType](#xdmeventtype) | `string` | Optional   | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmeventtype) |
+| [xdm:timestamp](#xdmtimestamp) | `string` | Required   | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmtimestamp) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

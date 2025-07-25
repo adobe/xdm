@@ -33,18 +33,12 @@
           "title": "Factor Type",
           "type": "string",
           "description": "The type of the factor",
-          "enum": [
-            "Internal",
-            "External"
-          ],
+          "enum": ["Internal", "External"],
           "meta:enum": {
             "Internal": "Internal Factor",
             "External": "External Factor"
           },
-          "examples": [
-            "Internal",
-            "External"
-          ],
+          "examples": ["Internal", "External"],
           "default": "Internal",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:factorType"
@@ -53,12 +47,7 @@
           "title": "Factor Value",
           "type": "number",
           "description": "The value of the factor",
-          "examples": [
-            319.5,
-            0.75,
-            1000,
-            -2.3
-          ],
+          "examples": [319.5, 0.75, 1000, -2.3],
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:factorValue"
         },
@@ -66,21 +55,13 @@
           "title": "Granularity",
           "type": "string",
           "description": "The granularity of the factor",
-          "enum": [
-            "Daily",
-            "Weekly",
-            "Monthly"
-          ],
+          "enum": ["Daily", "Weekly", "Monthly"],
           "meta:enum": {
             "Daily": "Daily",
             "Weekly": "Weekly",
             "Monthly": "Monthly"
           },
-          "examples": [
-            "Daily",
-            "Weekly",
-            "Monthly"
-          ],
+          "examples": ["Daily", "Weekly", "Monthly"],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:granularity"
         },
@@ -88,27 +69,18 @@
           "title": "Value Type",
           "type": "string",
           "description": "The type of the value",
-          "enum": [
-            "Actual",
-            "Forecasted"
-          ],
+          "enum": ["Actual", "Forecasted"],
           "meta:enum": {
             "Actual": "Actual Value",
             "Forecasted": "Forecasted Value"
           },
-          "examples": [
-            "Actual",
-            "Forecasted"
-          ],
+          "examples": ["Actual", "Forecasted"],
           "default": "Actual",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:valueType"
         }
       },
-      "required": [
-        "factorName",
-        "factorValue"
-      ]
+      "required": ["factorName", "factorValue"]
     }
   },
   "allOf": [

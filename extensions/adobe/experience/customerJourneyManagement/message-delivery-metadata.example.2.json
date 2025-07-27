@@ -1,10 +1,10 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient/number": "+15551234567"
+    "xdm:recipient": {
+      "xdm:number": "+15551234567"
     },
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender/numbers": [
+    "xdm:sender": {
+      "xdm:numbers": [
         "+15557654321"
       ]
     }

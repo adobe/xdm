@@ -21,19 +21,19 @@
           "title": "Email Metadata",
           "description": "Metadata specific to email delivery",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient": {
+            "xdm:recipient": {
               "type": "object",
               "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient/email": {
+                "xdm:email": {
                   "type": "string",
                   "format": "email",
                   "description": "Recipient's email address"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient/name": {
+                "xdm:name": {
                   "type": "string",
                   "description": "Recipient's name"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient/bcc": {
+                "xdm:bcc": {
                   "type": "array",
                   "description": "BCC email address",
                   "items": {
@@ -43,47 +43,47 @@
                 }
               },
               "required": [
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient/email"
+                "xdm:email"
               ]
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender": {
+            "xdm:sender": {
               "type": "object",
               "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/email": {
+                "xdm:email": {
                   "type": "string",
                   "format": "email",
                   "description": "Sender's email address"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/name": {
+                "xdm:name": {
                   "type": "string",
                   "description": "Sender's name"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/errorEmail": {
+                "xdm:errorEmail": {
                   "type": "string",
                   "format": "email",
                   "description": "Email address for delivery errors"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/replyToEmail": {
+                "xdm:replyToEmail": {
                   "type": "string",
                   "format": "email",
                   "description": "Reply-to email address"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/replyToName": {
+                "xdm:replyToName": {
                   "type": "string",
                   "description": "Reply-to name"
                 }
               },
               "required": [
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/email",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/name",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/replyToEmail",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender/errorEmail"
+                "xdm:email",
+                "xdm:name",
+                "xdm:replyToEmail",
+                "xdm:errorEmail"
               ]
             }
           },
           "required": [
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/recipient",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata/sender"
+            "xdm:recipient",
+            "xdm:sender"
           ]
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata": {
@@ -91,23 +91,23 @@
           "title": "SMS Metadata",
           "description": "Metadata specific to SMS delivery",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient": {
+            "xdm:recipient": {
               "type": "object",
               "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient/number": {
+                "xdm:number": {
                   "type": "string",
                   "description": "Recipient's phone number"
                 }
               },
               "required": [
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient/number"
+                "xdm:number"
               ]
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender": {
+            "xdm:sender": {
               "type": "object",
               "description": "Sender's phone number",
               "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender/numbers": {
+                "xdm:numbers": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -115,13 +115,13 @@
                 }
               },
               "required": [
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender/numbers"
+                "xdm:numbers"
               ]
             }
           },
           "required": [
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/recipient",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata/sender"
+            "xdm:recipient",
+            "xdm:sender"
           ]
         }
       }
@@ -135,5 +135,5 @@
       "$ref": "#/definitions/messageDeliveryMetadata"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "experimental"
 }

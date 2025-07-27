@@ -1,7 +1,7 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/title": "Promo",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/message": "Your code is 12345. Use it to get 20% off!",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/media": "https://example.com/media/promo.jpg"
+    "xdm:title": "Promo",
+    "xdm:message": "Your code is 12345. Use it to get 20% off!",
+    "xdm:media": "https://example.com/media/promo.jpg"
   }
 }

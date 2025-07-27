@@ -21,22 +21,22 @@
           "title": "Email Channel Content",
           "description": "Email-specific rendered content",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/subject": {
+            "xdm:subject": {
               "type": "string",
               "description": "The email subject line"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/html": {
+            "xdm:html": {
               "type": "string",
               "description": "The HTML content of the email"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/text": {
+            "xdm:text": {
               "type": "string",
               "description": "The plain text content of the email"
             }
           },
           "required": [
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/subject",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/emailContent/html"
+            "xdm:subject",
+            "xdm:html"
           ]
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent": {
@@ -44,21 +44,21 @@
           "title": "SMS Channel Content",
           "description": "SMS-specific rendered content",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/title": {
+            "xdm:title": {
               "type": "string",
               "description": "The title of the SMS message"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/message": {
+            "xdm:message": {
               "type": "string",
               "description": "The text content of the SMS message"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/media": {
+            "xdm:media": {
               "type": "string",
               "description": "Media content reference for the SMS (MMS)"
             }
           },
           "required": [
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent/message"
+            "xdm:message"
           ]
         }
       }
@@ -72,5 +72,5 @@
       "$ref": "#/definitions/messageRenderedContent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "experimental"
 }

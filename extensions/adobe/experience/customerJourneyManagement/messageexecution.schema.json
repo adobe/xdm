@@ -113,7 +113,38 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID": {
           "title": "Batch Instance ID",
           "type": "string",
-          "description": "GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s."
+          "description": "GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID's."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audience": {
+          "title": "Audience",
+          "type": "object",
+          "description": "Defines the audience associated with this message execution.",
+          "properties": {
+            "xdm:id": {
+              "title": "Audience ID",
+              "type": "string",
+              "description": "Identifier for the audience."
+            },
+            "xdm:type": {
+              "title": "Audience Type",
+              "type": "string",
+              "description": "Type of the audience. Specifies one of the predefined audience categories.",
+              "meta:enum": {
+                "ORCHESTRATED_CAMPAIGN": "Orchestrated Campaign",
+                "UPS": "UPS",
+                "AUDIENCE_ORCHESTRATION": "Audience Orchestration"
+              }
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/metadata": {
+          "title": "metadata",
+          "type": "object",
+          "description": "Dynamic contextual custom metadata information added by the user via the personalization helper.",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/parentSourceMeta": {
           "title": "Message Source",

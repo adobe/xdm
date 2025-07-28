@@ -245,6 +245,11 @@
           "type": "integer",
           "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads."
         },
+        "xdm:scheduleTimePlayed": {
+          "title": "Schedule Time Played",
+          "type": "integer",
+          "description": "Sums the event duration (in seconds) for all events of type PLAY on the main content for the scheduled program."
+        },
         "xdm:uniqueTimePlayed": {
           "title": "Unique Time Played",
           "type": "integer",
@@ -343,13 +348,7 @@
           "description": "Indicates that a redirect occurred."
         }
       },
-      "required": [
-        "xdm:name",
-        "xdm:length",
-        "xdm:contentType",
-        "xdm:playerName",
-        "xdm:channel"
-      ]
+      "required": ["xdm:name", "xdm:length", "xdm:contentType"]
     }
   },
   "allOf": [

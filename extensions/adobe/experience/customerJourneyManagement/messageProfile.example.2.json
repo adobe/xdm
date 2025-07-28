@@ -10,5 +10,13 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundNumber": "1234",
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/channelType": "MMS",
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profilenNumber": "12347986421",
-  "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/origTimestamp": "2024-09-26T15:52:25+00:00"
+  "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/origTimestamp": "2024-09-26T15:52:25+00:00",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/sms"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/profileNumber": "12347986421",
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": "marketing",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/whastApp"
+  }
 }

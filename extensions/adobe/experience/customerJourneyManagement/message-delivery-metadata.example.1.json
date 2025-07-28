@@ -3,10 +3,7 @@
     "xdm:recipient": {
       "xdm:email": "jane.doe@example.com",
       "xdm:name": "Jane Doe",
-      "xdm:bcc": [
-        "manager@example.com",
-        "audit@example.com"
-      ]
+      "xdm:bcc": ["manager@example.com", "audit@example.com"]
     },
     "xdm:sender": {
       "xdm:email": "noreply@adobe.com",

@@ -34,10 +34,7 @@
               "description": "The plain text content of the email"
             }
           },
-          "required": [
-            "xdm:subject",
-            "xdm:html"
-          ]
+          "required": ["xdm:subject", "xdm:html"]
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderedContent/smsContent": {
           "type": "object",
@@ -57,9 +54,7 @@
               "description": "Media content reference for the SMS (MMS)"
             }
           },
-          "required": [
-            "xdm:message"
-          ]
+          "required": ["xdm:message"]
         }
       }
     }

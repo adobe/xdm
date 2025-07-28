@@ -42,9 +42,7 @@
                   }
                 }
               },
-              "required": [
-                "xdm:email"
-              ]
+              "required": ["xdm:email"]
             },
             "xdm:sender": {
               "type": "object",
@@ -81,10 +79,7 @@
               ]
             }
           },
-          "required": [
-            "xdm:recipient",
-            "xdm:sender"
-          ]
+          "required": ["xdm:recipient", "xdm:sender"]
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata": {
           "type": "object",
@@ -99,9 +94,7 @@
                   "description": "Recipient's phone number"
                 }
               },
-              "required": [
-                "xdm:number"
-              ]
+              "required": ["xdm:number"]
             },
             "xdm:sender": {
               "type": "object",
@@ -114,15 +107,10 @@
                   }
                 }
               },
-              "required": [
-                "xdm:numbers"
-              ]
+              "required": ["xdm:numbers"]
             }
           },
-          "required": [
-            "xdm:recipient",
-            "xdm:sender"
-          ]
+          "required": ["xdm:recipient", "xdm:sender"]
         }
       }
     }

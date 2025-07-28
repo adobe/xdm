@@ -20,77 +20,9 @@
           "type": "object",
           "title": "Rendering Context Map",
           "description": "A map of namespace identifiers to stringified JSON representations of context objects used in template rendering and personalization",
-          "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/profile": {
-              "type": "string",
-              "title": "Profile Context",
-              "description": "Stringified JSON of profile attributes accessed via the 'profile' namespace in templates"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/offer": {
-              "type": "string",
-              "title": "Offer Context",
-              "description": "Stringified JSON of offer decision information accessed via the 'offer' namespace in templates"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/context": {
-              "type": "string",
-              "title": "Contextual Attribute Context",
-              "description": "Stringified JSON of context variables for general purpose use"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/propertiesContext": {
-              "type": "string",
-              "title": "Properties Context",
-              "description": "Stringified JSON of Journey Optimizer properties and configuration settings for the message"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/decisionPolicy": {
-              "type": "string",
-              "title": "Decision Policy Context",
-              "description": "Stringified JSON of decision policy information for offer decisioning"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/offerContentAttributes": {
-              "type": "string",
-              "title": "Offer Content Attributes",
-              "description": "Stringified JSON of attributes related to offer content"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/url": {
-              "type": "string",
-              "title": "URL Context",
-              "description": "Stringified JSON of URL-related information for link tracking and management"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/fragment": {
-              "type": "string",
-              "title": "Fragment Context",
-              "description": "Stringified JSON of content fragments that can be inserted into templates"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/externalDataLookup": {
-              "type": "string",
-              "title": "External Data Lookup",
-              "description": "Stringified JSON of context for external data lookups during rendering"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/url-support": {
-              "type": "string",
-              "title": "URL Support",
-              "description": "Stringified JSON of URL-related information for link tracking and management"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/inputSchema": {
-              "type": "string",
-              "title": "Input Schema",
-              "description": "Stringified JSON of URL-related information for link tracking and management"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/channelConfiguration": {
-              "type": "string",
-              "title": "Channel Configuration",
-              "description": "Stringified JSON of URL-related information for link tracking and management"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/segment": {
-              "type": "string",
-              "title": "Segment Context",
-              "description": "Stringified JSON of URL-related information for link tracking and management"
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext/_cjmProperties": {
-              "type": "string",
-              "title": "CJM Properties",
-              "description": "Stringified JSON of internal properties used by the CJM rendering engine"
-            }
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/retrievedEntities": {

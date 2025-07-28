@@ -182,6 +182,48 @@
           "type": "string",
           "format": "date-time",
           "description": "Timestamp from Meta / WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/emoji": {
+          "title": "Emoji coming in for the Reaction from WhatsApp ",
+          "type": "string",
+          "format": "string",
+          "description": "Emoji coming in for the Reaction from WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/messageId": {
+          "title": "Reaction on the Mesage Id ",
+          "type": "string",
+          "format": "string",
+          "description": "Reaction on the Mesage Id"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/action": {
+          "title": "action from WhatsApp ",
+          "type": "string",
+          "format": "string",
+          "description": "action from WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveEvent/selectedTitle": {
+          "title": "selectedTitle from WhatsApp ",
+          "type": "string",
+          "format": "string",
+          "description": "selectedTitle from WhatsApp Message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveEvent/interactiveType": {
+          "title": "interactiveType from WhatsApp ",
+          "type": "string",
+          "format": "string",
+          "description": "interactiveType from WhatsApp Message, Type of interactive:list_reply, button_reply, button"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveEvent/selectedDescription": {
+          "title": "selectedDescription from WhatsApp ",
+          "type": "string",
+          "format": "string",
+          "description": "selectedDescription from WhatsApp Message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveEvent/selectedId": {
+          "title": "Id of the Selected Option from WhatsApp ",
+          "type": "string",
+          "format": "string",
+          "description": "Incmoing Text Message from WhatsApp"
         }
       }
     }

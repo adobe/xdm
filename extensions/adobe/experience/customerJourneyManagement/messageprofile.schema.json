@@ -211,7 +211,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedDescription": {
           "title": "selectedDescription from WhatsApp ",
           "type": "string",
-          "description": "Selected description in the WhatsApp message"
+          "description": "Description of the Selected WhatsApp interactive message"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedID": {
           "title": "ID of the selected option from WhatsApp ",

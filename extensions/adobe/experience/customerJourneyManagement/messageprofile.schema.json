@@ -183,43 +183,43 @@
           "format": "date-time",
           "description": "Timestamp from Meta / WhatsApp"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/reaction": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
           "title": "Emoji coming in for the Reaction from WhatsApp ",
           "type": "string",
           "format": "string",
           "description": "Emoji coming in for the Reaction from WhatsApp"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/messageId": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionMessageId": {
           "title": "Reaction on the Mesage Id ",
           "type": "string",
           "format": "string",
           "description": "Reaction on the Mesage Id"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/action": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": {
           "title": "action from WhatsApp ",
           "type": "string",
           "format": "string",
           "description": "action from WhatsApp"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveEvent/selectedTitle": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedTitle": {
           "title": "selectedTitle from WhatsApp ",
           "type": "string",
           "format": "string",
           "description": "selectedTitle from WhatsApp Message"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveEvent/interactiveType": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveType": {
           "title": "interactiveType from WhatsApp ",
           "type": "string",
           "format": "string",
           "description": "interactiveType from WhatsApp Message, Type of interactive:list_reply, button_reply, button"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveEvent/selectedDescription": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedDescription": {
           "title": "selectedDescription from WhatsApp ",
           "type": "string",
           "format": "string",
           "description": "selectedDescription from WhatsApp Message"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveEvent/selectedId": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedId": {
           "title": "Id of the Selected Option from WhatsApp ",
           "type": "string",
           "format": "string",

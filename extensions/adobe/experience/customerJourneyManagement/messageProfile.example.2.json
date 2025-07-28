@@ -16,7 +16,7 @@
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/profileNumber": "12347986421",
   "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": "marketing",
-  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/emoji": "like",
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/reaction": "like",
   "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/action": "react",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/whastApp"

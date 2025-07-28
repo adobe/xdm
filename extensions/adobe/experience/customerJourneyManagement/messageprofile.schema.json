@@ -183,7 +183,7 @@
           "format": "date-time",
           "description": "Timestamp from Meta / WhatsApp"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/emoji": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent/reaction": {
           "title": "Emoji coming in for the Reaction from WhatsApp ",
           "type": "string",
           "format": "string",

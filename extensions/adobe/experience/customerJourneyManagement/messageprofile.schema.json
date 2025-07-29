@@ -209,7 +209,7 @@
           "description": "Interactive type from WhatsApp message — options include: list reply, button reply, and button."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedDescription": {
-          "title": "selectedDescription from WhatsApp ",
+          "title": "Selected Description",
           "type": "string",
           "description": "Description of the Selected WhatsApp interactive message"
         },

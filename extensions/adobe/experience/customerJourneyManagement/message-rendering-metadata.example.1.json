@@ -1,0 +1,22 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext": {
+    "profile": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"email\":\"john.doe@example.com\"}",
+    "offer": "{\"offerId\":\"OFF123\",\"description\":\"20% off your next purchase\"}",
+    "context": "{\"channel\":\"email\",\"language\":\"en-US\"}",
+    "propertiesContext": "{\"brand\":\"Adobe\",\"campaign\":\"Spring Sale\"}",
+    "decisionPolicy": "{\"policyId\":\"POLICY1\",\"decision\":\"accept\"}",
+    "offerContentAttributes": "{\"headline\":\"Special Offer\"}",
+    "url": "{\"landingPage\":\"https://adobe.com/sale\"}",
+    "fragment": "{\"header\":\"Welcome!\",\"footer\":\"Thank you\"}",
+    "externalDataLookup": "{\"lookupId\":\"LKP1\",\"result\":\"success\"}",
+    "url-support": "{\"shortener\":\"bit.ly\"}",
+    "inputSchema": "{\"fields\":[\"firstName\",\"lastName\"]}",
+    "channelConfiguration": "{\"provider\":\"SendGrid\"}",
+    "segment": "{\"segmentId\":\"SEG1\"}",
+    "_cjmProperties": "{\"internalFlag\":true}"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/retrievedEntities": [
+    "{\"entityType\":\"profile\",\"id\":\"12345\"}",
+    "{\"entityType\":\"offer\",\"id\":\"OFF123\"}"
+  ]
+}

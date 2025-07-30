@@ -120,6 +120,17 @@
                     "default": 1
                   }
                 }
+              },
+              "xdm:dynamicCappingThresholdEnabled": {
+                "title": "Toggle for Static or Dynamic Capping Threshold",
+                "description": "If set to true, PQL query will be used to determine the capping threshold. The UI will not show limit field when this is enabled and will show a text box to enter PQL query.",
+                "type": "boolean",
+                "default": false
+              },
+              "xdm:dynamicCappingThresholdQuery": {
+                "title": "PQL Query for Dynamic Capping Threshold",
+                "description": "PQL query to determine the capping threshold.",
+                "type": "string"
               }
             },
             "required": ["xdm:limit", "xdm:scope"]

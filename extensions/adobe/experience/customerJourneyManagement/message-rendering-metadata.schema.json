@@ -1,0 +1,49 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-data",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Message Rendering Data",
+  "description": "Schema for storing the context data required to render a message in Adobe Journey Optimizer",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "messageRenderingMetadata": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/renderingContext": {
+          "type": "object",
+          "title": "Rendering Context Map",
+          "description": "A map of namespace identifiers to stringified JSON representations of context objects used in template rendering and personalization",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageRenderingMetadata/retrievedEntities": {
+          "type": "array",
+          "title": "Retrieved Entities",
+          "description": "An array of stringified JSON representations of entities retrieved during dynamic entity hydration",
+          "items": {
+            "type": "string",
+            "description": "Stringified JSON representing a retrieved entity's data"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageRenderingMetadata"
+    }
+  ],
+  "meta:status": "experimental"
+}

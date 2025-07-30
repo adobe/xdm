@@ -1,0 +1,127 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-metadata",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Message Delivery Metadata",
+  "description": "Schema for delivery metadata for different channels in Adobe Journey Optimizer",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "messageDeliveryMetadata": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata": {
+          "type": "object",
+          "title": "Email Metadata",
+          "description": "Metadata specific to email delivery",
+          "properties": {
+            "xdm:recipient": {
+              "type": "object",
+              "properties": {
+                "xdm:email": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Recipient's email address"
+                },
+                "xdm:name": {
+                  "type": "string",
+                  "description": "Recipient's name"
+                },
+                "xdm:bcc": {
+                  "type": "array",
+                  "description": "BCC email address",
+                  "items": {
+                    "type": "string",
+                    "format": "email"
+                  }
+                }
+              },
+              "required": ["xdm:email"]
+            },
+            "xdm:sender": {
+              "type": "object",
+              "properties": {
+                "xdm:email": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Sender's email address"
+                },
+                "xdm:name": {
+                  "type": "string",
+                  "description": "Sender's name"
+                },
+                "xdm:errorEmail": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Email address for delivery errors"
+                },
+                "xdm:replyToEmail": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Reply-to email address"
+                },
+                "xdm:replyToName": {
+                  "type": "string",
+                  "description": "Reply-to name"
+                }
+              },
+              "required": [
+                "xdm:email",
+                "xdm:name",
+                "xdm:replyToEmail",
+                "xdm:errorEmail"
+              ]
+            }
+          },
+          "required": ["xdm:recipient", "xdm:sender"]
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/smsMetadata": {
+          "type": "object",
+          "title": "SMS Metadata",
+          "description": "Metadata specific to SMS delivery",
+          "properties": {
+            "xdm:recipient": {
+              "type": "object",
+              "properties": {
+                "xdm:number": {
+                  "type": "string",
+                  "description": "Recipient's phone number"
+                }
+              },
+              "required": ["xdm:number"]
+            },
+            "xdm:sender": {
+              "type": "object",
+              "description": "Sender's phone number",
+              "properties": {
+                "xdm:numbers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": ["xdm:numbers"]
+            }
+          },
+          "required": ["xdm:recipient", "xdm:sender"]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageDeliveryMetadata"
+    }
+  ],
+  "meta:status": "experimental"
+}

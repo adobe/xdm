@@ -1,7 +1,7 @@
 {
-  "xdm:factorName": "Sales Volume",
-  "xdm:factorValue": 1000,
-  "xdm:factorType": "Internal",
-  "xdm:valueType": "Forecasted",
-  "xdm:granularity": "Monthly"
+  "factorName": "Sales Volume",
+  "factorValue": 1000,
+  "factorType": "Internal",
+  "valueType": "Forecasted",
+  "granularity": "Monthly"
 }

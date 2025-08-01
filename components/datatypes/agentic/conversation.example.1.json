@@ -3,7 +3,6 @@
     "xdm:conversationId": "conv-001",
     "xdm:interactionId": "int-001",
     "xdm:prompt": {
-      "xdm:count": 1,
       "xdm:source": "end-user",
       "xdm:raw": "What is the capital of France?",
       "xdm:signals": {
@@ -21,7 +20,6 @@
       }
     },
     "xdm:response": {
-      "xdm:count": 1,
       "xdm:source": "concierge",
       "xdm:raw": "The capital of France is Paris.",
       "xdm:operations": {
@@ -42,7 +40,6 @@
       }
     },
     "xdm:feedback": {
-      "xdm:count": 1,
       "xdm:source": "end-user",
       "xdm:raw": "Thanks, that was helpful!",
       "xdm:rating": {

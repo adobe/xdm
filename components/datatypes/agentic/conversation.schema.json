@@ -30,17 +30,6 @@
         }
       }
     },
-    "count": {
-      "properties": {
-        "xdm:count": {
-          "title": "Count",
-          "type": "integer",
-          "description": "Number of prompts/responses/feedback elements in this event, should be equal to 1",
-          "minimum": 1,
-          "maximum": 1
-        }
-      }
-    },
     "source": {
       "properties": {
         "xdm:source": {
@@ -120,7 +109,6 @@
           "type": "object",
           "description": "Object representing a conversation prompt",
           "allOf": [
-            { "$ref": "#/definitions/count" },
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
             {
@@ -137,7 +125,6 @@
           "type": "object",
           "description": "Object representing a conversation response",
           "allOf": [
-            { "$ref": "#/definitions/count" },
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
             { "$ref": "#/definitions/operations" },
@@ -155,7 +142,6 @@
           "type": "object",
           "description": "Object representing a conversation feedback",
           "allOf": [
-            { "$ref": "#/definitions/count" },
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
             { "$ref": "#/definitions/feedback-rating" },

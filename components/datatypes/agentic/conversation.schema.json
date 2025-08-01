@@ -110,10 +110,7 @@
           "description": "Object representing a conversation prompt",
           "allOf": [
             { "$ref": "#/definitions/source" },
-            { "$ref": "#/definitions/raw" },
-            {
-              "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"
-            }
+            { "$ref": "#/definitions/raw" }
           ]
         }
       }
@@ -127,10 +124,7 @@
           "allOf": [
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
-            { "$ref": "#/definitions/operations" },
-            {
-              "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"
-            }
+            { "$ref": "#/definitions/operations" }
           ]
         }
       }
@@ -144,10 +138,7 @@
           "allOf": [
             { "$ref": "#/definitions/source" },
             { "$ref": "#/definitions/raw" },
-            { "$ref": "#/definitions/feedback-rating" },
-            {
-              "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversationsignals"
-            }
+            { "$ref": "#/definitions/feedback-rating" }
           ]
         }
       }

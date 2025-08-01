@@ -50,39 +50,13 @@
     "xdm:interactionId": "int-001",
     "xdm:prompt": {
       "xdm:source": "end-user",
-      "xdm:raw": "What is the capital of France?",
-      "xdm:signals": {
-        "xdm:subjects": [
-          {
-            "xdm:phrase": "capital",
-            "xdm:qualifiers": ["France"]
-          }
-        ],
-        "xdm:attributes": {
-          "xdm:intent": ["questioning"],
-          "xdm:sentiment": ["positive"],
-          "xdm:tone": ["inquisitive"]
-        }
-      }
+      "xdm:raw": "What is the capital of France?"
     },
     "xdm:response": {
       "xdm:source": "concierge",
       "xdm:raw": "The capital of France is Paris.",
       "xdm:operations": {
         "xdm:cached": false
-      },
-      "xdm:signals": {
-        "xdm:subjects": [
-          {
-            "xdm:phrase": "capital",
-            "xdm:qualifiers": ["Paris", "France"]
-          }
-        ],
-        "xdm:attributes": {
-          "xdm:intent": ["inform"],
-          "xdm:sentiment": ["positive"],
-          "xdm:tone": ["educational"]
-        }
       }
     },
     "xdm:feedback": {
@@ -92,19 +66,6 @@
         "xdm:score": 1,
         "xdm:classification": "Thumbs Up",
         "xdm:reasons": ["Accurate", "Quick response"]
-      },
-      "xdm:signals": {
-        "xdm:subjects": [
-          {
-            "xdm:phrase": "helpful",
-            "xdm:qualifiers": []
-          }
-        ],
-        "xdm:attributes": {
-          "xdm:intent": ["thanksgiving"],
-          "xdm:sentiment": ["positive"],
-          "xdm:tone": ["thankful"]
-        }
       }
     }
   }

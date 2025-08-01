@@ -43,9 +43,24 @@
     "raw": {
       "properties": {
         "xdm:raw": {
-          "title": "Raw Text",
-          "type": "string",
-          "description": "Raw text element of a conversation"
+          "type": "array",
+          "title": "Raw Text and Purpose",
+          "description": "Raw text with purpose of the text",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:text": {
+                "title": "Text",
+                "description": "Text",
+                "type": "string"
+              },
+              "xdm:purpose": {
+                "title": "Purpose",
+                "description": "Purpose",
+                "type": "string"
+              }
+            }
+          }
         }
       }
     },

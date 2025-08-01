@@ -65,11 +65,29 @@
     "xdm:interactionId": "int-001",
     "xdm:prompt": {
       "xdm:source": "end-user",
-      "xdm:raw": "What is the capital of France?"
+      "xdm:raw": [
+        {
+          "xdm:text": "What is the capital of France?",
+          "xdm:purpose": "User Input"
+        }
+      ]
     },
     "xdm:response": {
       "xdm:source": "concierge",
-      "xdm:raw": "The capital of France is Paris.",
+      "xdm:raw": [
+        {
+          "xdm:text": "The capital of France is Paris.",
+          "xdm:purpose": "main"
+        },
+        {
+          "xdm:text": "Would you like to plan a trip to Paris?",
+          "xdm:purpose": "advertisement"
+        },
+        {
+          "xdm:text": "https://en.wikipedia.org/wiki/France",
+          "xdm:purpose": "citation"
+        }
+      ],
       "xdm:operations": {
         "xdm:cached": false
       }

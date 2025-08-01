@@ -64,22 +64,6 @@
         }
       }
     },
-    "operations": {
-      "properties": {
-        "xdm:operations": {
-          "title": "Conversational Operations",
-          "type": "object",
-          "description": "Object containing operational information",
-          "properties": {
-            "xdm:cached": {
-              "title": "Cached",
-              "type": "boolean",
-              "description": "Whether this conversation element was cached"
-            }
-          }
-        }
-      }
-    },
     "feedback-rating": {
       "properties": {
         "xdm:rating": {
@@ -138,8 +122,7 @@
           "description": "Object representing a conversation response",
           "allOf": [
             { "$ref": "#/definitions/source" },
-            { "$ref": "#/definitions/raw" },
-            { "$ref": "#/definitions/operations" }
+            { "$ref": "#/definitions/raw" }
           ]
         }
       }

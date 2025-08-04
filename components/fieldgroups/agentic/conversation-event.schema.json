@@ -15,6 +15,7 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Conversation Event data including agentic information, prompt, response, feedback an associated metadata.",
+
   "definitions": {
     "conversationId": {
       "properties": {
@@ -160,25 +161,6 @@
           ]
         }
       }
-    },
-    "conversation-event": {
-      "properties": {
-        "xdm:conversationEvent": {
-          "items": {
-            "allOf": [
-              {
-                "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-              },
-              {
-                "$ref": "https://ns.adobe.com/xdm/fieldgroups/agenticevent"
-              },
-              {
-                "$ref": "#/definitions/conversation"
-              }
-            ]
-          }
-        }
-      }
     }
   },
   "allOf": [
@@ -186,7 +168,10 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/conversation-event"
+      "$ref": "https://ns.adobe.com/xdm/fieldgroups/agenticevent"
+    },
+    {
+      "$ref": "#/definitions/conversation"
     }
   ],
   "meta:status": "experimental"

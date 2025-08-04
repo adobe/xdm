@@ -62,7 +62,7 @@
   },
   "xdm:conversation": {
     "xdm:conversationId": "conv-001",
-    "xdm:interactionId": "int-001",
+    "xdm:turnId": "int-001",
     "xdm:prompt": {
       "xdm:source": "end-user",
       "xdm:raw": [

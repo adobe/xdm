@@ -17,14 +17,14 @@
         "xdm:id": {
           "title": "Conversation ID",
           "type": "string",
-          "description": "ID to group several interactions together"
+          "description": "ID to group several turns together"
         }
       }
     },
-    "interactionId": {
+    "turnId": {
       "properties": {
         "xdm:id": {
-          "title": "Interaction ID",
+          "title": "Turn ID",
           "type": "string",
           "description": "A single instance of a prompt, response, and feedback"
         }
@@ -149,7 +149,7 @@
           "description": "Object representing a conversation that includes prompt, response, and feedback with associated metadata",
           "allOf": [
             { "$ref": "#/definitions/conversationId" },
-            { "$ref": "#/definitions/interactionId" },
+            { "$ref": "#/definitions/turnId" },
             { "$ref": "#/definitions/prompt" },
             { "$ref": "#/definitions/response" },
             { "$ref": "#/definitions/feedback" }

@@ -94,7 +94,9 @@
           "title": "Agentic Experience",
           "description": "Agentic Experience",
           "allOf": [
-            { "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"},
+            {
+              "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+            },
             { "$ref": "#/definitions/name" },
             { "$ref": "#/definitions/version" },
             { "$ref": "#/definitions/agents" }
@@ -104,7 +106,9 @@
     }
   },
   "allOf": [
-    { "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context" },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     { "$ref": "#/definitions/agentic" }
   ],
   "meta:status": "experimental"

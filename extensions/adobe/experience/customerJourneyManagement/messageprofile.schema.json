@@ -182,6 +182,41 @@
           "type": "string",
           "format": "date-time",
           "description": "Timestamp from Meta / WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
+          "title": "Emoji received as a reaction from WhatsApp",
+          "type": "string",
+          "description": "Emoji received as a reaction from WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionMessageID": {
+          "title": "Reaction on the mesage ID ",
+          "type": "string",
+          "description": "Reaction on the mesage ID"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": {
+          "title": "Action from WhatsApp ",
+          "type": "string",
+          "description": "Action from WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedTitle": {
+          "title": "User-selected title from WhatsApp ",
+          "type": "string",
+          "description": "User-selected title from WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveType": {
+          "title": "Interactive type from WhatsApp ",
+          "type": "string",
+          "description": "Interactive type from WhatsApp message — options include: list reply, button reply, and button."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedDescription": {
+          "title": "Selected Description",
+          "type": "string",
+          "description": "Description of the Selected WhatsApp interactive message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedID": {
+          "title": "ID of the selected option from WhatsApp ",
+          "type": "string",
+          "description": "ID of the selected option from WhatsApp "
         }
       }
     }

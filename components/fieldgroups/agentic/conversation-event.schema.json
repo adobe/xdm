@@ -16,6 +16,151 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Conversation Event data including agentic information, prompt, response, feedback an associated metadata.",
   "definitions": {
+    "conversationId": {
+      "properties": {
+        "xdm:id": {
+          "title": "Conversation ID",
+          "type": "string",
+          "description": "ID to group several turns together"
+        }
+      }
+    },
+    "turnId": {
+      "properties": {
+        "xdm:id": {
+          "title": "Turn ID",
+          "type": "string",
+          "description": "A single instance of a prompt, response, and feedback"
+        }
+      }
+    },
+    "source": {
+      "properties": {
+        "xdm:source": {
+          "title": "Source",
+          "type": "string",
+          "description": "Source of this element",
+          "examples": ["end-user", "bot", "canned"]
+        }
+      }
+    },
+    "raw": {
+      "properties": {
+        "xdm:raw": {
+          "type": "array",
+          "title": "Raw Text and Purpose",
+          "description": "Raw text with purpose of the text",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:text": {
+                "title": "Text",
+                "description": "Text",
+                "type": "string"
+              },
+              "xdm:purpose": {
+                "title": "Purpose",
+                "description": "Purpose",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "feedback-rating": {
+      "properties": {
+        "xdm:rating": {
+          "title": "Rating",
+          "type": "object",
+          "description": "Rating data for the feedback",
+          "properties": {
+            "xdm:score": {
+              "title": "Rating Score",
+              "type": "number",
+              "description": "Numerical value of the rating provided by the end-user. For example: 0, 1 might be used for thumbs up/down."
+            },
+            "xdm:classification": {
+              "title": "Rating Classification",
+              "type": "string",
+              "description": "String/enum value of the rating provided by the end-user.",
+              "examples": [
+                "Thumbs Up",
+                "Thumbs Down",
+                "Positive",
+                "Negative",
+                "5-stars",
+                "1-star"
+              ]
+            },
+            "xdm:reasons": {
+              "title": "Rating Reasons",
+              "type": "array",
+              "description": "Reasons why the customer provided this rating.",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "prompt": {
+      "properties": {
+        "xdm:prompt": {
+          "title": "Prompt",
+          "type": "object",
+          "description": "Object representing a conversation prompt",
+          "allOf": [
+            { "$ref": "#/definitions/source" },
+            { "$ref": "#/definitions/raw" }
+          ]
+        }
+      }
+    },
+    "response": {
+      "properties": {
+        "xdm:response": {
+          "title": "Response",
+          "type": "object",
+          "description": "Object representing a conversation response",
+          "allOf": [
+            { "$ref": "#/definitions/source" },
+            { "$ref": "#/definitions/raw" }
+          ]
+        }
+      }
+    },
+    "feedback": {
+      "properties": {
+        "xdm:feedback": {
+          "title": "Feedback",
+          "type": "object",
+          "description": "Object representing a conversation feedback",
+          "allOf": [
+            { "$ref": "#/definitions/source" },
+            { "$ref": "#/definitions/raw" },
+            { "$ref": "#/definitions/feedback-rating" }
+          ]
+        }
+      }
+    },
+    "conversation": {
+      "properties": {
+        "xdm:conversation": {
+          "title": "Conversation",
+          "type": "object",
+          "description": "Object representing a conversation that includes prompt, response, and feedback with associated metadata",
+          "allOf": [
+            { "$ref": "#/definitions/conversationId" },
+            { "$ref": "#/definitions/turnId" },
+            { "$ref": "#/definitions/prompt" },
+            { "$ref": "#/definitions/response" },
+            { "$ref": "#/definitions/feedback" }
+          ]
+        }
+      }
+    },
     "conversation-event": {
       "properties": {
         "xdm:conversationEvent": {
@@ -25,10 +170,10 @@
                 "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
               },
               {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/agentic"
+                "$ref": "https://ns.adobe.com/xdm/fieldgroups/agenticevent"
               },
               {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/agentic/conversation"
+                "$ref": "#/definitions/conversation"
               }
             ]
           }

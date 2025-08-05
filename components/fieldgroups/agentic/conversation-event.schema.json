@@ -15,15 +15,6 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Conversation Event data including agentic information, prompt, response, feedback an associated metadata.",
-  "properties": {
-    "xdm:eventType": {
-      "meta:enum": {
-        "conversation.turn": "Conversation Turn",
-        "conversation.recommendation": "Conversation Recommendation",
-        "conversation.feedback": "Conversation Feedback"
-      }
-    }
-  },
   "definitions": {
     "conversationId": {
       "properties": {
@@ -156,6 +147,13 @@
     },
     "conversation": {
       "properties": {
+        "xdm:eventType": {
+          "meta:enum": {
+            "conversation.turn": "Conversation Turn",
+            "conversation.recommendation": "Conversation Recommendation",
+            "conversation.feedback": "Conversation Feedback"
+          }
+        },
         "xdm:conversation": {
           "title": "Conversation",
           "type": "object",

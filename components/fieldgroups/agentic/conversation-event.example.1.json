@@ -6,8 +6,12 @@
       "xdm:source": "end-user",
       "xdm:raw": [
         {
-          "xdm:text": "What is the capital of France?",
+          "xdm:text": "What is the capital of France? This link says it is Lyon.",
           "xdm:purpose": "User Input"
+        },
+        {
+          "xdm:text": "https://wrong.geography.com/france",
+          "xdm:purpose": "link"
         }
       ]
     },

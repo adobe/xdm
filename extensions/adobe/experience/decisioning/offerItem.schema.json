@@ -55,7 +55,7 @@
                 "title": "Limit",
                 "description": "How many times an option can be proposed.",
                 "type": "integer",
-                "minimum": 1
+                "minimum": 0
               },
               "xdm:scope": {
                 "title": "scope",

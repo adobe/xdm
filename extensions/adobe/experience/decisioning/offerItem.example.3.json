@@ -9,6 +9,7 @@
         "xdm:unit": "week",
         "xdm:unitCount": 2
       },
+      "xdm:limit": 0,
       "xdm:dynamicCappingThresholdEnabled": true,
       "xdm:dynamicCappingThresholdQuery": "elsData.`ds-id`.cappingThreshold"
     }

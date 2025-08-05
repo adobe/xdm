@@ -133,7 +133,7 @@
                 "type": "string"
               }
             },
-            "required": ["xdm:limit", "xdm:scope"]
+            "required": ["xdm:scope"]
           }
         },
         "https://ns.adobe.com/experience/decisioning/offeritem/contentReferences": {

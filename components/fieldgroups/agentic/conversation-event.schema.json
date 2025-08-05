@@ -168,9 +168,6 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/fieldgroups/agenticevent"
-    },
-    {
       "$ref": "#/definitions/conversation"
     }
   ],

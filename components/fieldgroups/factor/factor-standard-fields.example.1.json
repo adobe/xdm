@@ -1,7 +1,9 @@
 {
-  "xdm:factorName": "CPI",
-  "xdm:factorValue": 319.5,
-  "xdm:factorType": "External",
-  "xdm:valueType": "Actual",
-  "xdm:granularity": "Daily"
+  "xdm:factor": {
+    "xdm:factorName": "CPI",
+    "xdm:factorValue": 319.5,
+    "xdm:factorType": "External",
+    "xdm:valueType": "Actual",
+    "xdm:granularity": "Daily"
+  }
 }

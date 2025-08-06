@@ -10,6 +10,7 @@
   "title": "Agentic Information",
   "type": "object",
   "meta:extensible": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Construct to represent agents, agent skills, etc.",
   "definitions": {
     "name": {
@@ -87,9 +88,9 @@
         }
       }
     },
-    "agentic": {
+    "agenticExperience": {
       "properties": {
-        "xdm:agentic": {
+        "xdm:agenticExperience": {
           "type": "object",
           "title": "Agentic Experience",
           "description": "Agentic Experience",
@@ -106,7 +107,7 @@
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
-    { "$ref": "#/definitions/agentic" }
+    { "$ref": "#/definitions/agenticExperience" }
   ],
   "meta:status": "experimental"
 }

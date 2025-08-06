@@ -16,18 +16,18 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Conversation Event data including agentic information, prompt, response, feedback an associated metadata.",
   "definitions": {
-    "conversationId": {
+    "conversationID": {
       "properties": {
-        "xdm:id": {
+        "xdm:conversationID": {
           "title": "Conversation ID",
           "type": "string",
           "description": "ID to group several turns together"
         }
       }
     },
-    "turnId": {
+    "turnID": {
       "properties": {
-        "xdm:id": {
+        "xdm:turnID": {
           "title": "Turn ID",
           "type": "string",
           "description": "A single instance of a prompt, response, and feedback"
@@ -159,8 +159,8 @@
           "type": "object",
           "description": "Object representing a conversation that includes prompt, response, and feedback with associated metadata",
           "allOf": [
-            { "$ref": "#/definitions/conversationId" },
-            { "$ref": "#/definitions/turnId" },
+            { "$ref": "#/definitions/conversationID" },
+            { "$ref": "#/definitions/turnID" },
             { "$ref": "#/definitions/prompt" },
             { "$ref": "#/definitions/response" },
             { "$ref": "#/definitions/feedback" }

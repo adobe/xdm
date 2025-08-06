@@ -121,7 +121,7 @@
               "description": "The type of live activity event being triggered.",
               "meta:enum": {
                 "localStart": "Local start event for live activity",
-                "pushToStart": "Push to start event for live activity",
+                "pushToStart": "Push to start or remote start event for live activity",
                 "update": "Update event for live activity",
                 "end": "End event for live activity"
               }

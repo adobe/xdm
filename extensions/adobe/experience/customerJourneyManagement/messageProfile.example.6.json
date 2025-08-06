@@ -9,6 +9,6 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": "apns",
   "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/liveActivity": {
     "event": "pushToStart",
-    "liveActivityID": "live-activity-xyz789"
+    "channelID": "broadcast-channel-abc123"
   }
 }

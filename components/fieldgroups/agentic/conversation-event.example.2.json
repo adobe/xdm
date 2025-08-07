@@ -1,0 +1,32 @@
+{
+  "xdm:conversation": {
+    "xdm:conversationID": "conv-001",
+    "xdm:turnID": "int-001",
+    "xdm:prompt": {
+      "xdm:source": "end-user",
+      "xdm:raw": [
+        {
+          "xdm:text": "What is the capital of France?",
+          "xdm:purpose": "User Input"
+        }
+      ]
+    },
+    "xdm:response": {
+      "xdm:source": "concierge",
+      "xdm:raw": [
+        {
+          "xdm:text": "The capital of France is Paris.",
+          "xdm:purpose": "main"
+        },
+        {
+          "xdm:text": "Would you like to plan a trip to Paris?",
+          "xdm:purpose": "advertisement"
+        },
+        {
+          "xdm:text": "https://en.wikipedia.org/wiki/France",
+          "xdm:purpose": "citation"
+        }
+      ]
+    }
+  }
+}

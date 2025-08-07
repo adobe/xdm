@@ -1,6 +1,8 @@
 {
-  "xdm:factorName": "Customer Satisfaction Score",
-  "xdm:factorValue": 8.2,
-  "xdm:factorType": "Internal",
-  "xdm:valueType": "Actual"
+  "xdm:factor": {
+    "xdm:factorName": "Customer Satisfaction Score",
+    "xdm:factorValue": 8.2,
+    "xdm:factorType": "Internal",
+    "xdm:valueType": "Actual"
+  }
 }

@@ -43,7 +43,7 @@
     "mode": {
       "properties": {
         "xdm:mode": {
-          "title": "mode",
+          "title": "Mode",
           "type": "string",
           "description": "Mode this event was created in (e.g. test, preview, release)"
         }

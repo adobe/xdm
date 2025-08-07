@@ -51,7 +51,7 @@
                   }
                 },
                 "xdm:conciergeConversationDetails": {
-                  "title": "Concierge Details",
+                  "title": "Concierge Session Details",
                   "type": "object",
                   "properties": {
                     "xdm:status": {

@@ -1,0 +1,122 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/engagement-business-representative-concierge",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Engaged with a business representative in Concierge",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "engagement.business.representative.concierge",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Engaged with a business representative through Concierge in the Conversation.",
+  "definitions": {
+    "engagewithbusinessrepresentativeinconcierge": {
+      "properties": {
+        "xdm:engagement": {
+          "title": "Engagement",
+          "type": "object",
+          "properties": {
+            "xdm:businessRepresentativeInConcierge": {
+              "title": "Business representative",
+              "type": "object",
+              "properties": {
+                "xdm:businessRepresentativeDetails": {
+                  "title": "Business representative Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:businessRepresentativeID": {
+                      "title": "Business representative ID",
+                      "type": "string",
+                      "description": "Unique Identifier for a Business representative."
+                    },
+                    "xdm:businessRepresentativeEmail": {
+                      "title": "Business representative Email",
+                      "type": "string",
+                      "description": "Email of the Business representative."
+                    },
+                    "xdm:businessRepresentativeName": {
+                      "title": "Business representative Name",
+                      "type": "string",
+                      "description": "Name of the Business representative."
+                    }
+                  }
+                },
+                "xdm:conciergeConversationDetails": {
+                  "title": "Concierge Session Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:status": {
+                      "title": "Status",
+                      "type": "string",
+                      "description": "The status of the Concierge session"
+                    },
+                    "xdm:summary": {
+                      "title": "Summary",
+                      "type": "string",
+                      "description": "A brief summary of the Concierge."
+                    },
+                    "xdm:transcript": {
+                      "title": "Transcript",
+                      "type": "string",
+                      "description": "Transcript of the chat Concierge."
+                    },
+                    "xdm:discussedTopics": {
+                      "title": "Discussed Topics",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Topics discussed during the Concierge session."
+                    }
+                  }
+                },
+                "xdm:conciergeDetails": {
+                  "title": "Concierge Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:conciergeID": {
+                      "title": "Concierge ID",
+                      "type": "string",
+                      "description": "Unique Identifier for a Concierge."
+                    },
+                    "xdm:conciergeName": {
+                      "title": "Concierge Name",
+                      "type": "string",
+                      "description": "Name of the Concierge."
+                    },
+                    "xdm:pageURL": {
+                      "title": "Page URL",
+                      "type": "string",
+                      "description": "URL of the page where the Concierge is initiated."
+                    }
+                  }
+                },
+                "xdm:conciergeKey": {
+                  "title": "Concierge Key",
+                  "description": "Key of the Concierge.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/engagewithbusinessrepresentativeinconcierge"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2025-08-04"
+}

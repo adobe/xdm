@@ -2,6 +2,8 @@
   "xdm:agenticExperience": {
     "xdm:name": "Customer Support Experience",
     "xdm:version": "1.0.0",
+    "xdm:environment": "dev",
+    "xdm:mode": "preview",
     "xdm:agents": [
       {
         "xdm:name": "Chatbot Assistant",

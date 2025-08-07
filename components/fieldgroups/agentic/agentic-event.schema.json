@@ -31,6 +31,24 @@
         }
       }
     },
+    "environment": {
+      "properties": {
+        "xdm:environment": {
+          "title": "Environment",
+          "type": "string",
+          "description": "Environment this event originated from (e.g. dev, stage, prod)"
+        }
+      }
+    },
+    "mode": {
+      "properties": {
+        "xdm:mode": {
+          "title": "mode",
+          "type": "string",
+          "description": "Mode this event was created in (e.g. test, preview, release)"
+        }
+      }
+    },
     "score": {
       "properties": {
         "xdm:score": {
@@ -97,6 +115,8 @@
           "allOf": [
             { "$ref": "#/definitions/name" },
             { "$ref": "#/definitions/version" },
+            { "$ref": "#/definitions/environment" },
+            { "$ref": "#/definitions/mode" },
             { "$ref": "#/definitions/agents" }
           ]
         }

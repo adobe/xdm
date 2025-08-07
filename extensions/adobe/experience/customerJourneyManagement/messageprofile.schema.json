@@ -110,6 +110,34 @@
           "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title##73351",
           "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description##33451"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/liveActivity": {
+          "title": "Live Activity Details",
+          "type": "object",
+          "description": "Live activity context for mobile push notifications. It includes the live activity ID, live activity event and an optional channel id which is used incase of broadcasting a live activity across multiple devices.",
+          "properties": {
+            "xdm:event": {
+              "title": "Live Activity Event",
+              "type": "string",
+              "description": "The type of live activity event being triggered.",
+              "meta:enum": {
+                "localStart": "Local start event for live activity",
+                "pushToStart": "Push to start or remote start event for live activity",
+                "update": "Update event for live activity",
+                "end": "End event for live activity"
+              }
+            },
+            "xdm:channelID": {
+              "title": "Broadcast Channel ID",
+              "type": "string",
+              "description": "The broadcast channel identifier for the live activity."
+            },
+            "xdm:liveActivityID": {
+              "title": "Live Activity ID",
+              "type": "string",
+              "description": "The unique identifier for the live activity."
+            }
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": {
           "title": "SMS Provider",
           "type": "string",

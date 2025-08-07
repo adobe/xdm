@@ -55,7 +55,7 @@
                 "title": "Limit",
                 "description": "How many times an option can be proposed.",
                 "type": "integer",
-                "minimum": 1
+                "minimum": 0
               },
               "xdm:scope": {
                 "title": "scope",
@@ -133,7 +133,7 @@
                 "type": "string"
               }
             },
-            "required": ["xdm:limit", "xdm:scope"]
+            "required": ["xdm:scope"]
           }
         },
         "https://ns.adobe.com/experience/decisioning/offeritem/contentReferences": {

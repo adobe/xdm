@@ -1,0 +1,14 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": "track-12345-live-activity",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "msg-profile-67890",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/push"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "Live Activity Update",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
+  "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": "apns",
+  "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/liveActivity": {
+    "event": "pushToStart",
+    "channelID": "broadcast-channel-abc123"
+  }
+}

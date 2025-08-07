@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Information regarding push notifications, such as mobile application and device details.",
+  "description": "Field Group regarding mobile push notifications and live activities. Information regarding traditional push tokens will be saved in `pushNotificationDetails` array field and information regarding live activity push to start token will be saved in `liveActivityPushNotificationDetails` array field. Its an array to support multiple tokens against the same profile. Both the objects will store information such the mobile application's id, device details, platform and the relevant tokens for identifying the device.",
   "definitions": {
     "profile-push-notification-details": {
       "properties": {
@@ -86,6 +86,60 @@
           },
           "meta:titleId": "profile-push-notification-details##xdm:pushNotificationDetails##title##63081",
           "meta:descriptionId": "profile-push-notification-details##xdm:pushNotificationDetails##description##88351"
+        },
+        "xdm:liveActivityPushNotificationDetails": {
+          "title": "Live Activity Push details",
+          "type": "array",
+          "description": "Live activity push details array containing notification info required to send mobile live activity push notification to a specific mobile application on a given device for an activityType/attributeType.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:token": {
+                "title": "Push to Start Token",
+                "type": "string",
+                "description": "Valid push to start token for the given push platform for starting a live activity.",
+                "meta:titleId": "profile-push-notification-details##xdm:token##title##47132",
+                "meta:descriptionId": "profile-push-notification-details##xdm:token##description##23862"
+              },
+              "xdm:platform": {
+                "title": "Live Activity Push Platform",
+                "type": "string",
+                "description": "Push provider, e.g. apns, apnsSandbox or fcm",
+                "meta:titleId": "profile-push-notification-details##xdm:platform##title##90382",
+                "meta:descriptionId": "profile-push-notification-details##xdm:platform##description##81362"
+              },
+              "xdm:denylisted": {
+                "title": "Denylist Flag",
+                "type": "boolean",
+                "description": "Indicates whether the push to start token is blocked by the push provider for starting a live activity.",
+                "meta:titleId": "profile-push-notification-details##xdm:denylisted##title##31342",
+                "meta:descriptionId": "profile-push-notification-details##xdm:denylisted##description##71162"
+              },
+              "xdm:appID": {
+                "title": "Application Identifier",
+                "type": "string",
+                "description": "Unique Identifier for the mobile application.",
+                "meta:titleId": "profile-push-notification-details##xdm:appID##title##49932",
+                "meta:descriptionId": "profile-push-notification-details##xdm:appID##description##44512"
+              },
+              "xdm:identity": {
+                "title": "Identity associated with this push to start token",
+                "$ref": "https://ns.adobe.com/xdm/context/identity",
+                "description": "The identity associated with this push to start token before profile stitching.",
+                "meta:titleId": "profile-push-notification-details##xdm:identity##title##38412",
+                "meta:descriptionId": "profile-push-notification-details##xdm:identity##description##81182"
+              },
+              "xdm:attributeType": {
+                "title": "Live Activity Attribute Type or Activity Type",
+                "type": "string",
+                "description": "The attribute type or activity type for a live activity. A mobile application can have multiple live activities and each will have a different activity type/attribute type to identify the different live activities.",
+                "meta:titleId": "profile-push-notification-details##xdm:attributeType##title##12345",
+                "meta:descriptionId": "profile-push-notification-details##xdm:attributeType##description##67890"
+              }
+            }
+          },
+          "meta:titleId": "profile-push-notification-details##xdm:liveActivityPushNotificationDetails##title##63082",
+          "meta:descriptionId": "profile-push-notification-details##xdm:liveActivityPushNotificationDetails##description##88352"
         }
       }
     }
@@ -101,5 +155,5 @@
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "profile-push-notification-details##title##65141",
-  "meta:descriptionId": "profile-push-notification-details##description##65501"
+  "meta:descriptionId": "profile-push-notification-details##description##65502"
 }

@@ -1,0 +1,24 @@
+{
+  "xdm:conversation": {
+    "xdm:conversationID": "conv-001",
+    "xdm:turnID": "int-001",
+    "xdm:feedback": {
+      "xdm:source": "end-user",
+      "xdm:raw": [
+        {
+          "xdm:text": "Great help",
+          "xdm:purpose": "enum picker"
+        },
+        {
+          "xdm:text": "screenshot.png",
+          "xdm:purpose": "image"
+        }
+      ],
+      "xdm:rating": {
+        "xdm:score": 1,
+        "xdm:classification": "Thumbs Up",
+        "xdm:reasons": ["Accurate", "Quick response"]
+      }
+    }
+  }
+}

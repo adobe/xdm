@@ -115,7 +115,7 @@
           "type": "object",
           "description": "Live activity context for mobile push notifications. It includes the live activity ID, live activity event and an optional channel id which is used incase of broadcasting a live activity across multiple devices.",
           "properties": {
-            "event": {
+            "xdm:event": {
               "title": "Live Activity Event",
               "type": "string",
               "description": "The type of live activity event being triggered.",
@@ -126,12 +126,12 @@
                 "end": "End event for live activity"
               }
             },
-            "channelID": {
+            "xdm:channelID": {
               "title": "Broadcast Channel ID",
               "type": "string",
               "description": "The broadcast channel identifier for the live activity."
             },
-            "liveActivityID": {
+            "xdm:liveActivityID": {
               "title": "Live Activity ID",
               "type": "string",
               "description": "The unique identifier for the live activity."

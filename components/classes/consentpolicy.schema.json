@@ -1,0 +1,62 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/consentpolicy",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Consent Policy",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This is the base class for a consent policy definition which includes fields like name, description, version, and status. This class can be used to build Consent Policy XDM schemas.",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/xdm/common/auditable"
+  ],
+  "definitions": {
+    "consentpolicy": {
+      "properties": {
+        "xdm:name": {
+          "title": "Consent Policy name",
+          "type": "string",
+          "description": "Name of the consent policy."
+        },
+        "xdm:description": {
+          "title": "Consent Policy description",
+          "type": "string",
+          "description": "Description of the consent policy."
+        },
+        "xdm:status": {
+          "type": "string",
+          "title": "Consent Policy status",
+          "description": "Current status of consent policy from external system normalized to enabled or disabled.",
+          "enum": ["ENABLED", "DISABLED"],
+          "meta:enum": {
+            "ENABLED": "Enabled",
+            "DISABLED": "Disabled"
+          }
+        }
+      }
+    }
+  },
+  "required": ["xdm:name"],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/consentpolicy"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2025-08-11"
+}

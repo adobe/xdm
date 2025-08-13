@@ -75,7 +75,7 @@
               "meta:titleId": "feedbackevent##xdm:name##title##21761",
               "meta:descriptionId": "feedbackevent##xdm:name##description##48161"
             },
-            "xdm:requestTimestamp":{
+            "xdm:requestTimestamp": {
               "title": "Request Timestamp",
               "type": "string",
               "format": "date-time",
@@ -83,7 +83,7 @@
               "meta:titleId": "feedbackevent##xdm:requestTimestamp##title##21762",
               "meta:descriptionId": "feedbackevent##xdm:requestTimestamp##description##48162"
             },
-            "xdm:firstAttemptTimestamp":{
+            "xdm:firstAttemptTimestamp": {
               "title": "First Attempt Timestamp",
               "type": "string",
               "format": "date-time",

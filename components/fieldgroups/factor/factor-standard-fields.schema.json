@@ -16,106 +16,125 @@
   "definitions": {
     "factor-standard-fields": {
       "properties": {
-        "xdm:factorName": {
-          "title": "Factor Name",
-          "type": "string",
-          "description": "The name of the factor",
-          "examples": [
-            "CPI",
-            "Humidity",
-            "Sales Volume",
-            "Customer Satisfaction Score"
-          ],
-          "meta:titleId": "factor-standard-fields##xdm:factorName##title##98732",
-          "meta:descriptionId": "factor-standard-fields##xdm:factorName##description##99700"
-        },
-        "xdm:factorValue": {
-          "title": "Factor Value",
-          "type": "number",
-          "description": "The value of the factor",
-          "examples": [319.5, 0.75, 1000, -2.3],
-          "meta:titleId": "factor-standard-fields##xdm:factorValue##title##98733",
-          "meta:descriptionId": "factor-standard-fields##xdm:factorValue##description##99702"
-        },
-        "xdm:factorType": {
-          "title": "Factor Type",
-          "type": "string",
-          "description": "The type of the factor",
-          "enum": ["Internal", "External"],
-          "meta:enum": {
-            "Internal": "Internal Factor",
-            "External": "External Factor"
+        "xdm:factor": {
+          "title": "Factor Parent Object",
+          "type": "object",
+          "description": "Factor Parent Object",
+          "properties": {
+            "xdm:factorName": {
+              "title": "Factor Name",
+              "type": "string",
+              "description": "The name of the factor",
+              "examples": [
+                "CPI",
+                "Humidity",
+                "Sales Volume",
+                "Customer Satisfaction Score"
+              ],
+              "meta:titleId": "factor-standard-fields##xdm:factorName##title##98732",
+              "meta:descriptionId": "factor-standard-fields##xdm:factorName##description##99700"
+            },
+            "xdm:factorValue": {
+              "title": "Factor Value",
+              "type": "number",
+              "description": "The value of the factor",
+              "examples": [319.5, 0.75, 1000, -2.3],
+              "meta:titleId": "factor-standard-fields##xdm:factorValue##title##98733",
+              "meta:descriptionId": "factor-standard-fields##xdm:factorValue##description##99702"
+            },
+            "xdm:factorType": {
+              "title": "Factor Type",
+              "type": "string",
+              "description": "The type of the factor",
+              "enum": ["Internal", "External"],
+              "meta:enum": {
+                "Internal": "Internal Factor",
+                "External": "External Factor"
+              },
+              "examples": ["Internal", "External"],
+              "meta:titleId": "factor-standard-fields##xdm:factorType##title##98734",
+              "meta:descriptionId": "factor-standard-fields##xdm:factorType##description##99703",
+              "default": "Internal"
+            },
+            "xdm:valueType": {
+              "title": "Value Type",
+              "type": "string",
+              "description": "The type of the value",
+              "enum": ["Actual", "Forecasted"],
+              "meta:enum": {
+                "Actual": "Actual Value",
+                "Forecasted": "Forecasted Value"
+              },
+              "examples": ["Actual", "Forecasted"],
+              "meta:titleId": "factor-standard-fields##xdm:valueType##title##98735",
+              "meta:descriptionId": "factor-standard-fields##xdm:valueType##description##99704",
+              "default": "Actual"
+            },
+            "xdm:granularity": {
+              "title": "Granularity",
+              "type": "string",
+              "description": "The granularity of the factor",
+              "enum": ["Daily", "Weekly", "Monthly"],
+              "meta:enum": {
+                "Daily": "Daily",
+                "Weekly": "Weekly",
+                "Monthly": "Monthly"
+              },
+              "examples": ["Daily", "Weekly", "Monthly"],
+              "meta:titleId": "factor-standard-fields##xdm:granularity##title##98736",
+              "meta:descriptionId": "factor-standard-fields##xdm:granularity##description##99705"
+            }
           },
-          "examples": ["Internal", "External"],
-          "meta:titleId": "factor-standard-fields##xdm:factorType##title##98734",
-          "meta:descriptionId": "factor-standard-fields##xdm:factorType##description##99703",
-          "default": "Internal"
-        },
-        "xdm:valueType": {
-          "title": "Value Type",
-          "type": "string",
-          "description": "The type of the value",
-          "enum": ["Actual", "Forecasted"],
-          "meta:enum": {
-            "Actual": "Actual Value",
-            "Forecasted": "Forecasted Value"
-          },
-          "examples": ["Actual", "Forecasted"],
-          "meta:titleId": "factor-standard-fields##xdm:valueType##title##98735",
-          "meta:descriptionId": "factor-standard-fields##xdm:valueType##description##99704",
-          "default": "Actual"
-        },
-        "xdm:granularity": {
-          "title": "Granularity",
-          "type": "string",
-          "description": "The granularity of the factor",
-          "enum": ["Daily", "Weekly", "Monthly"],
-          "meta:enum": {
-            "Daily": "Daily",
-            "Weekly": "Weekly",
-            "Monthly": "Monthly"
-          },
-          "examples": ["Daily", "Weekly", "Monthly"],
-          "meta:titleId": "factor-standard-fields##xdm:granularity##title##98736",
-          "meta:descriptionId": "factor-standard-fields##xdm:granularity##description##99705"
+          "required": ["xdm:factorName", "xdm:factorValue"],
+          "meta:titleId": "factor-standard-fields##xdm:factor##title##98738",
+          "meta:descriptionId": "factor-standard-fields##xdm:factor##description##99707"
         }
       },
-      "required": ["xdm:factorName", "xdm:factorValue"],
       "examples": [
         {
-          "xdm:factorName": "CPI",
-          "xdm:factorValue": 319.5,
-          "xdm:factorType": "External",
-          "xdm:valueType": "Actual",
-          "xdm:granularity": "Daily"
+          "xdm:factor": {
+            "xdm:factorName": "CPI",
+            "xdm:factorValue": 319.5,
+            "xdm:factorType": "External",
+            "xdm:valueType": "Actual",
+            "xdm:granularity": "Daily"
+          }
         },
         {
-          "xdm:factorName": "Sales Volume",
-          "xdm:factorValue": 1000,
-          "xdm:factorType": "Internal",
-          "xdm:valueType": "Forecasted",
-          "xdm:granularity": "Monthly"
+          "xdm:factor": {
+            "xdm:factorName": "Sales Volume",
+            "xdm:factorValue": 1000,
+            "xdm:factorType": "Internal",
+            "xdm:valueType": "Forecasted",
+            "xdm:granularity": "Monthly"
+          }
         },
         {
-          "xdm:factorName": "Humidity",
-          "xdm:factorValue": 0.75,
-          "xdm:factorType": "External",
-          "xdm:valueType": "Actual",
-          "xdm:granularity": "Weekly"
+          "xdm:factor": {
+            "xdm:factorName": "Humidity",
+            "xdm:factorValue": 0.75,
+            "xdm:factorType": "External",
+            "xdm:valueType": "Actual",
+            "xdm:granularity": "Weekly"
+          }
         },
         {
-          "xdm:factorName": "Customer Satisfaction Score",
-          "xdm:factorValue": 8.2,
-          "xdm:factorType": "Internal",
-          "xdm:valueType": "Actual",
-          "xdm:granularity": "Monthly"
+          "xdm:factor": {
+            "xdm:factorName": "Customer Satisfaction Score",
+            "xdm:factorValue": 8.2,
+            "xdm:factorType": "Internal",
+            "xdm:valueType": "Actual",
+            "xdm:granularity": "Monthly"
+          }
         },
         {
-          "xdm:factorName": "Market Share",
-          "xdm:factorValue": 0.35,
-          "xdm:factorType": "External",
-          "xdm:valueType": "Forecasted",
-          "xdm:granularity": "Weekly"
+          "xdm:factor": {
+            "xdm:factorName": "Market Share",
+            "xdm:factorValue": 0.35,
+            "xdm:factorType": "External",
+            "xdm:valueType": "Forecasted",
+            "xdm:granularity": "Weekly"
+          }
         }
       ]
     }

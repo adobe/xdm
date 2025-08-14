@@ -1,29 +1,108 @@
 {
-  "xdm:advisorInConcierge": {
-    "xdm:advisorDetails": {
-      "xdm:advisorID": "advisor-5678",
-      "xdm:advisorEmail": "jane.doe@advisoryco.com",
-      "xdm:advisorName": "Jane Doe"
-    },
-    "xdm:conciergeConversationDetails": {
-      "xdm:status": "completed",
-      "xdm:summary": "Discussed investment strategies and account upgrades.",
-      "xdm:transcript": "Advisor: Hello! Let’s talk about how we can grow your portfolio.\nCustomer: Sounds good.",
-      "xdm:discussedTopics": [
-        "Investment Strategies",
-        "Account Upgrades",
-        "Risk Tolerance"
-      ]
-    },
-    "xdm:conciergeDetails": {
-      "xdm:conciergeID": "concierge-9012",
-      "xdm:conciergeName": "Alex Concierge"
-    },
-    "xdm:conciergeKey": {
-      "xdm:sourceID": "livechat-web",
-      "xdm:sourceInstanceID": "session-9988",
-      "xdm:externalID": "external-abc-123"
-    },
-    "xdm:pageURL": "https://example.com/concierge/chat-complete"
-  }
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/meeting-booked-concierge",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Booked Meeting in Concierge",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "meeting.booked.concierge",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Booked a meeting with advisor in the Conversation.",
+  "definitions": {
+    "scheduledmeetinginconcierge": {
+      "properties": {
+        "xdm:scheduledmeeting": {
+          "title": "Booked Meeting in Concierge",
+          "type": "object",
+          "properties": {
+            "xdm:advisorDetails": {
+              "title": "Advisor details",
+              "type": "object",
+              "properties": {
+                "xdm:advisorID": {
+                  "title": "Advisor ID",
+                  "type": "string",
+                  "description": "Unique Identifier for a Advisor."
+                },
+                "xdm:advisorEmail": {
+                  "title": "Advisor Email",
+                  "type": "string",
+                  "description": "Email of the Advisor."
+                },
+                "xdm:advisorName": {
+                  "title": "Advisor name",
+                  "type": "string",
+                  "description": "Name of the Advisor."
+                }
+              }
+            },
+            "xdm:meetingDetails": {
+              "title": "Meeting Details",
+              "type": "object",
+              "properties": {
+                "xdm:meetingStatus": {
+                  "title": "Meeting Status",
+                  "type": "string",
+                  "description": "The status of the Meeting"
+                },
+                "xdm:scheduledFor": {
+                  "title": "Scheduled for",
+                  "type": "string",
+                  "description": "Time at which meeting is scheduled for."
+                },
+                "xdm:routingType": {
+                  "title": "Routing type",
+                  "type": "string",
+                  "description": "Routing type."
+                }
+              }
+            },
+            "xdm:conciergeDetails": {
+              "title": "Concierge Details",
+              "type": "object",
+              "properties": {
+                "xdm:conciergeID": {
+                  "title": "Concierge ID",
+                  "type": "string",
+                  "description": "Unique Identifier for a Concierge."
+                },
+                "xdm:conciergeName": {
+                  "title": "Concierge Name",
+                  "type": "string",
+                  "description": "Name of the Concierge."
+                }
+              }
+            },
+            "xdm:conciergeKey": {
+              "title": "Concierge Key",
+              "description": "Key of the Concierge.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            },
+            "xdm:pageURL": {
+              "title": "Page URL",
+              "type": "string",
+              "description": "URL of the page where the Concierge is initiated."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/scheduledmeetinginconcierge"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2025-08-04"
 }

@@ -17,10 +17,16 @@
   "definitions": {
     "offeritem": {
       "properties": {
-        "https://ns.adobe.com/experience/decisioning/offeritem/etag": {
+        "xdm:etag": {
           "title": "ETag",
           "type": "string",
           "description": "Entity tag for versioning of the offer item. Used for optimistic concurrency control."
+        },
+        "https://ns.adobe.com/experience/decisioning/offeritem/etag": {
+          "title": "ETag",
+          "type": "string",
+          "description": "Entity tag for versioning of the offer item. Used for optimistic concurrency control.",
+          "meta:status": "deprecated"
         },
         "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus": {
           "title": "life cycle status",
@@ -55,7 +61,7 @@
                 "title": "Limit",
                 "description": "How many times an option can be proposed.",
                 "type": "integer",
-                "minimum": 1
+                "minimum": 0
               },
               "xdm:scope": {
                 "title": "scope",
@@ -133,7 +139,7 @@
                 "type": "string"
               }
             },
-            "required": ["xdm:limit", "xdm:scope"]
+            "required": ["xdm:scope"]
           }
         },
         "https://ns.adobe.com/experience/decisioning/offeritem/contentReferences": {

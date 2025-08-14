@@ -74,6 +74,22 @@
               "description": "A human-friendly identifier of the campaign activity which is originating this message.",
               "meta:titleId": "feedbackevent##xdm:name##title##21761",
               "meta:descriptionId": "feedbackevent##xdm:name##description##48161"
+            },
+            "xdm:requestTimestamp": {
+              "title": "Request Timestamp",
+              "type": "string",
+              "format": "date-time",
+              "description": "The timestamp of the request to send the message.",
+              "meta:titleId": "feedbackevent##xdm:requestTimestamp##title##21762",
+              "meta:descriptionId": "feedbackevent##xdm:requestTimestamp##description##48162"
+            },
+            "xdm:firstAttemptTimestamp": {
+              "title": "First Attempt Timestamp",
+              "type": "string",
+              "format": "date-time",
+              "description": "The timestamp of the first delivery attempt of the message.",
+              "meta:titleId": "feedbackevent##xdm:firstAttemptTimestamp##title##21763",
+              "meta:descriptionId": "feedbackevent##xdm:firstAttemptTimestamp##description##48163"
             }
           },
           "meta:titleId": "feedbackevent##https://ns.adobe.com/experience/campaign/feedback/delivery##title##36671"

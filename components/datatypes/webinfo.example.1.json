@@ -4,8 +4,8 @@
     "xdm:server": "example.com",
     "xdm:name": "product home",
     "xdm:URL": "https://www.example.com/products",
-    "xdm:errorPage": false,
-    "xdm:homePage": true,
+    "xdm:isErrorPage": false,
+    "xdm:isHomePage": true,
     "xdm:pageViews": {
       "xdm:value": 1.0
     }

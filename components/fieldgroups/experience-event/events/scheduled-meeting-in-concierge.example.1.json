@@ -1,26 +1,25 @@
 {
-  "xdm:engagement": {
-    "xdm:businessRepresentativeInConcierge": {
-      "xdm:businessRepresentativeDetails": {
-        "xdm:businessRepresentativeID": "rep-1021",
-        "xdm:businessRepresentativeEmail": "john.smith@example.com",
-        "xdm:businessRepresentativeName": "John Smith"
-      },
-      "xdm:meetingDetails": {
-        "xdm:status": "Scheduled",
-        "xdm:scheduledFor": "2025-08-10T09:00:00Z"
-      },
-      "xdm:conciergeDetails": {
-        "xdm:conciergeID": "concierge-7890",
-        "xdm:conciergeName": "Marketing Concierge",
-        "xdm:pageURL": "https://example.com/book/meeting"
-      },
-      "xdm:conciergeKey": {
-        "xdm:sourceType": "MeetingScheduler",
-        "xdm:sourceInstanceID": "scheduler-instance-002",
-        "xdm:sourceID": "meeting-332",
-        "xdm:sourceKey": "MeetingScheduler|scheduler-instance-002|meeting-332"
-      }
-    }
+  "xdm:eventType": "meeting.booked.concierge",
+  "xdm:scheduledmeeting": {
+    "xdm:advisorDetails": {
+      "xdm:advisorID": "advisor-123",
+      "xdm:advisorEmail": "jane.doe@company.com",
+      "xdm:advisorName": "Jane Doe"
+    },
+    "xdm:meetingDetails": {
+      "xdm:meetingStatus": "confirmed",
+      "xdm:scheduledFor": "2025-09-01T10:30:00Z",
+      "xdm:routingType": "manual"
+    },
+    "xdm:conciergeDetails": {
+      "xdm:conciergeID": "concierge-001",
+      "xdm:conciergeName": "Live Chat Concierge"
+    },
+    "xdm:conciergeKey": {
+      "xdm:sourceID": "web-chat",
+      "xdm:sourceInstanceID": "session-789",
+      "xdm:externalID": "ext-456"
+    },
+    "xdm:pageURL": "https://www.example.com/schedule-meeting"
   }
 }

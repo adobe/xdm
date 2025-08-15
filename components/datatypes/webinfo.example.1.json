@@ -6,6 +6,7 @@
     "xdm:URL": "https://www.example.com/products",
     "xdm:isErrorPage": false,
     "xdm:isHomePage": true,
+    "xdm:isPreRendered": true,
     "xdm:pageViews": {
       "xdm:value": 1.0
     }

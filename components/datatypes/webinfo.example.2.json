@@ -5,7 +5,8 @@
     "xdm:name": "product home",
     "xdm:URL": "https://www.example.com/products",
     "xdm:isErrorPage": false,
-    "xdm:isHomePage": true
+    "xdm:isHomePage": true,
+    "xdm:isPreRendered": false
   },
   "xdm:webInteraction": {
     "xdm:type": "other",

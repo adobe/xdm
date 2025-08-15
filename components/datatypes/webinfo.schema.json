@@ -69,6 +69,11 @@
               "meta:titleId": "webinfo##xdm:isHomePage##title##9601",
               "meta:descriptionId": "webinfo##xdm:isHomePage##description##11801"
             },
+            "xdm:isPreRendered": {
+              "title": "Is pre-rendered",
+              "type": "boolean",
+              "description": "Flag that indicates if the page has been pre-rendered or partially pre-rendered prior to being viewed."
+            },
             "xdm:pageViews": {
               "title": "Page Views",
               "$ref": "https://ns.adobe.com/xdm/data/measure",

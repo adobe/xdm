@@ -112,13 +112,13 @@
           "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount##description##65331"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/requestTimestamp": {
-              "title": "Request Timestamp",
-              "type": "string",
-              "format": "date-time",
-              "description": "The timestamp of the request to send the message.",
-              "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/requestTimestamp##title##33622",
-              "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/requestTimestamp##description##65332"
-            },
+          "title": "Request Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp of the request to send the message.",
+          "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/requestTimestamp##title##33622",
+          "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/requestTimestamp##description##65332"
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/firstAttemptTimestamp": {
           "title": "First Attempt Timestamp",
           "type": "string",

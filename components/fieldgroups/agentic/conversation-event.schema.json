@@ -148,6 +148,9 @@
     "conversation": {
       "properties": {
         "xdm:eventType": {
+          "title": "Event Type",
+          "type": "string",
+          "description": "The primary event type for this time-series record.",
           "meta:enum": {
             "conversation.turn": "Conversation Turn",
             "conversation.recommendation": "Conversation Recommendation",

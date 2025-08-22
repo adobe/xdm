@@ -13,7 +13,6 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Construct to represent agents, agent skills, etc.",
   "definitions": {
-
     "agenticExperience": {
       "properties": {
         "xdm:agenticExperience": {

@@ -16,7 +16,6 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Conversation Event data including agentic information, prompt, response, feedback an associated metadata.",
   "definitions": {
-
     "conversation": {
       "properties": {
         "xdm:eventType": {

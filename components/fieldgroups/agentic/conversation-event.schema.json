@@ -49,9 +49,9 @@
               "description": "Object representing a conversation prompt",
               "properties": {
                 "xdm:source": {
-                  "title": "Source",
+                  "title": "Prompt Source",
                   "type": "string",
-                  "description": "Source of this element",
+                  "description": "Source of the prompt",
                   "examples": ["end-user", "bot", "canned"]
                 },
                 "xdm:raw": {
@@ -67,9 +67,10 @@
                         "type": "string"
                       },
                       "xdm:purpose": {
-                        "title": "Purpose",
-                        "description": "Purpose",
-                        "type": "string"
+                        "title": "Prompt Section Purpose",
+                        "description": "Purpose of the prompt data. Users may input multiple things simultaneously such as text and a link or attachment.",
+                        "type": "string",
+                        "examples": ["free-form text", "attachment", "link"]
                       }
                     }
                   }
@@ -82,9 +83,9 @@
               "description": "Object representing a conversation response",
               "properties": {
                 "xdm:source": {
-                  "title": "Source",
+                  "title": "Response Source",
                   "type": "string",
-                  "description": "Source of this element",
+                  "description": "Source of the response",
                   "examples": ["end-user", "bot", "canned"]
                 },
                 "xdm:raw": {
@@ -100,9 +101,10 @@
                         "type": "string"
                       },
                       "xdm:purpose": {
-                        "title": "Purpose",
-                        "description": "Purpose",
-                        "type": "string"
+                        "title": "Response Section Purpose",
+                        "description": "Purpose of the response data. Agents may respond with multiple things simultaneously such as text, video, links, pictures, etc.",
+                        "type": "string",
+                        "examples": ["main", "link", "picture", "video"]
                       }
                     }
                   }
@@ -115,9 +117,9 @@
               "description": "Object representing a conversation feedback",
               "properties": {
                 "xdm:source": {
-                  "title": "Source",
+                  "title": "Feedback Source",
                   "type": "string",
-                  "description": "Source of this element",
+                  "description": "Source of the feedback",
                   "examples": ["end-user", "bot", "canned"]
                 },
                 "xdm:raw": {
@@ -133,25 +135,26 @@
                         "type": "string"
                       },
                       "xdm:purpose": {
-                        "title": "Purpose",
-                        "description": "Purpose",
-                        "type": "string"
+                        "title": "Feedback Section Purpose",
+                        "description": "Purpose of the feedback data. Users may input multiple things simultaneously such as text, screenshot, links, attachments, etc.",
+                        "type": "string",
+                        "examples": ["free-form text", "screenshot", "attachment", "link"]
                       }
                     }
                   }
                 },
                 "xdm:rating": {
-                  "title": "Rating",
+                  "title": "Feedback Rating",
                   "type": "object",
                   "description": "Rating data for the feedback",
                   "properties": {
                     "xdm:score": {
-                      "title": "Rating Score",
+                      "title": "Feedback Rating Score",
                       "type": "number",
-                      "description": "Numerical value of the rating provided by the end-user. For example: 0, 1 might be used for thumbs up/down."
+                      "description": "Numerical value of the rating provided by the end-user ranging from -1.0 (negative) to 1.0 (positive)."
                     },
                     "xdm:classification": {
-                      "title": "Rating Classification",
+                      "title": "Feedback Rating Classification",
                       "type": "string",
                       "description": "String/enum value of the rating provided by the end-user.",
                       "examples": [
@@ -164,9 +167,9 @@
                       ]
                     },
                     "xdm:reasons": {
-                      "title": "Rating Reasons",
+                      "title": "Feedback Rating Reasons",
                       "type": "array",
-                      "description": "Reasons why the customer provided this rating.",
+                      "description": "Canned reasons why the customer provided this rating usually presented as a set of checkboxes.",
                       "items": {
                         "type": "string"
                       }

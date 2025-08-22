@@ -21,14 +21,14 @@
           "description": "Agentic Experience",
           "properties": {
             "xdm:name": {
-              "title": "Name",
+              "title": "Concierge Name",
               "type": "string",
-              "description": "Name of the agent component"
+              "description": "Name of the concierge combining a set of agents"
             },
             "xdm:version": {
-              "title": "Version",
+              "title": "Concierge Version",
               "type": "string",
-              "description": "Version of the agent component"
+              "description": "Version of the concierge combining a set of agents"
             },
             "xdm:environment": {
               "title": "Environment",
@@ -48,19 +48,19 @@
                 "type": "object",
                 "properties": {
                   "xdm:name": {
-                    "title": "Name",
+                    "title": "Agent Name",
                     "type": "string",
                     "description": "Name of the agent component"
                   },
                   "xdm:version": {
-                    "title": "Version",
+                    "title": "Agent Version",
                     "type": "string",
                     "description": "Version of the agent component"
                   },
                   "xdm:score": {
-                    "title": "Score",
+                    "title": "Agent Matching Score",
                     "type": "number",
-                    "description": "Score of the agent component"
+                    "description": "Score used by orchestration engine matching the agent"
                   },
                   "xdm:skills": {
                     "type": "array",
@@ -70,23 +70,23 @@
                       "type": "object",
                       "properties": {
                         "xdm:name": {
-                          "title": "Name",
+                          "title": "Skill Name",
                           "type": "string",
-                          "description": "Name of the agent component"
+                          "description": "Name of skill used under the agent"
                         },
                         "xdm:version": {
-                          "title": "Version",
+                          "title": "Skill Version",
                           "type": "string",
-                          "description": "Version of the agent component"
+                          "description": "Version of the skill provided by the agent"
                         },
                         "xdm:score": {
-                          "title": "Score",
+                          "title": "Skill Matching Score",
                           "type": "number",
-                          "description": "Score of the agent component"
+                          "description": "Score resulting from the agent matching to the skill"
                         },
                         "xdm:parameters": {
                           "type": "array",
-                          "title": "Parameters",
+                          "title": "Skill Parameters",
                           "description": "Parameters passed in to the skill of the agent",
                           "items": {
                             "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"

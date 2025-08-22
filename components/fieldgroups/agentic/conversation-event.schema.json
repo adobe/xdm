@@ -138,7 +138,12 @@
                         "title": "Feedback Section Purpose",
                         "description": "Purpose of the feedback data. Users may input multiple things simultaneously such as text, screenshot, links, attachments, etc.",
                         "type": "string",
-                        "examples": ["free-form text", "screenshot", "attachment", "link"]
+                        "examples": [
+                          "free-form text",
+                          "screenshot",
+                          "attachment",
+                          "link"
+                        ]
                       }
                     }
                   }

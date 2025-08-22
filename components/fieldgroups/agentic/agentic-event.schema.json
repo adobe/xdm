@@ -13,112 +13,93 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Construct to represent agents, agent skills, etc.",
   "definitions": {
-    "name": {
-      "properties": {
-        "xdm:name": {
-          "title": "Name",
-          "type": "string",
-          "description": "Name of the agent component"
-        }
-      }
-    },
-    "version": {
-      "properties": {
-        "xdm:version": {
-          "title": "Version",
-          "type": "string",
-          "description": "Version of the agent component"
-        }
-      }
-    },
-    "environment": {
-      "properties": {
-        "xdm:environment": {
-          "title": "Environment",
-          "type": "string",
-          "description": "Environment this event originated from (e.g. dev, stage, prod)"
-        }
-      }
-    },
-    "mode": {
-      "properties": {
-        "xdm:mode": {
-          "title": "Mode",
-          "type": "string",
-          "description": "Mode this event was created in (e.g. test, preview, release)"
-        }
-      }
-    },
-    "score": {
-      "properties": {
-        "xdm:score": {
-          "title": "Score",
-          "type": "number",
-          "description": "Score of the agent component"
-        }
-      }
-    },
-    "parameters": {
-      "properties": {
-        "xdm:parameters": {
-          "type": "array",
-          "title": "Parameters",
-          "description": "Parameters passed in to the skill of the agent",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
-          }
-        }
-      }
-    },
-    "skills": {
-      "properties": {
-        "xdm:skills": {
-          "type": "array",
-          "title": "Agent Skills",
-          "description": "Skills associated with a particular agent",
-          "items": {
-            "type": "object",
-            "allOf": [
-              { "$ref": "#/definitions/name" },
-              { "$ref": "#/definitions/version" },
-              { "$ref": "#/definitions/score" },
-              { "$ref": "#/definitions/parameters" }
-            ]
-          }
-        }
-      }
-    },
-    "agents": {
-      "properties": {
-        "xdm:agents": {
-          "type": "array",
-          "title": "Agents",
-          "description": "Agents used in this experience",
-          "items": {
-            "type": "object",
-            "allOf": [
-              { "$ref": "#/definitions/name" },
-              { "$ref": "#/definitions/version" },
-              { "$ref": "#/definitions/score" },
-              { "$ref": "#/definitions/skills" }
-            ]
-          }
-        }
-      }
-    },
+
     "agenticExperience": {
       "properties": {
         "xdm:agenticExperience": {
           "type": "object",
           "title": "Agentic Experience",
           "description": "Agentic Experience",
-          "allOf": [
-            { "$ref": "#/definitions/name" },
-            { "$ref": "#/definitions/version" },
-            { "$ref": "#/definitions/environment" },
-            { "$ref": "#/definitions/mode" },
-            { "$ref": "#/definitions/agents" }
-          ]
+          "properties": {
+            "xdm:name": {
+              "title": "Name",
+              "type": "string",
+              "description": "Name of the agent component"
+            },
+            "xdm:version": {
+              "title": "Version",
+              "type": "string",
+              "description": "Version of the agent component"
+            },
+            "xdm:environment": {
+              "title": "Environment",
+              "type": "string",
+              "description": "Environment this event originated from (e.g. dev, stage, prod)"
+            },
+            "xdm:mode": {
+              "title": "Mode",
+              "type": "string",
+              "description": "Mode this event was created in (e.g. test, preview, release)"
+            },
+            "xdm:agents": {
+              "type": "array",
+              "title": "Agents",
+              "description": "Agents used in this experience",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:name": {
+                    "title": "Name",
+                    "type": "string",
+                    "description": "Name of the agent component"
+                  },
+                  "xdm:version": {
+                    "title": "Version",
+                    "type": "string",
+                    "description": "Version of the agent component"
+                  },
+                  "xdm:score": {
+                    "title": "Score",
+                    "type": "number",
+                    "description": "Score of the agent component"
+                  },
+                  "xdm:skills": {
+                    "type": "array",
+                    "title": "Agent Skills",
+                    "description": "Skills associated with a particular agent",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:name": {
+                          "title": "Name",
+                          "type": "string",
+                          "description": "Name of the agent component"
+                        },
+                        "xdm:version": {
+                          "title": "Version",
+                          "type": "string",
+                          "description": "Version of the agent component"
+                        },
+                        "xdm:score": {
+                          "title": "Score",
+                          "type": "number",
+                          "description": "Score of the agent component"
+                        },
+                        "xdm:parameters": {
+                          "type": "array",
+                          "title": "Parameters",
+                          "description": "Parameters passed in to the skill of the agent",
+                          "items": {
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

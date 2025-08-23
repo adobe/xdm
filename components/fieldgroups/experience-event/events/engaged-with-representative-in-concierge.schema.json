@@ -7,46 +7,42 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/engagement-business-representative-concierge",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Engaged with a business representative in Concierge",
+  "title": "Engaged with  Advisor in Concierge",
   "type": "object",
   "meta:tags": {
     "b2bSchema": true
   },
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "engagement.business.representative.concierge",
+  "meta:conditionalValue": "engagement.advisor.concierge",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Engaged with a business representative through Concierge in the Conversation.",
+  "description": "Engaged with a advisor through Concierge in the Conversation.",
   "definitions": {
-    "engagewithbusinessrepresentativeinconcierge": {
+    "engagewithadvisorinconcierge": {
       "properties": {
-        "xdm:engagement": {
-          "title": "Engagement",
-          "type": "object",
-          "properties": {
-            "xdm:businessRepresentativeInConcierge": {
-              "title": "Business representative",
+            "xdm:advisorInConcierge": {
+              "title": "Engaged with  Advisor in Concierge",
               "type": "object",
               "properties": {
-                "xdm:businessRepresentativeDetails": {
-                  "title": "Business representative Details",
+                "xdm:advisorDetails": {
+                  "title": "Advisor details",
                   "type": "object",
                   "properties": {
-                    "xdm:businessRepresentativeID": {
-                      "title": "Business representative ID",
+                    "xdm:advisorID": {
+                      "title": "Advisor ID",
                       "type": "string",
-                      "description": "Unique Identifier for a Business representative."
+                      "description": "Unique Identifier for a Advisor."
                     },
-                    "xdm:businessRepresentativeEmail": {
-                      "title": "Business representative Email",
+                    "xdm:advisorEmail": {
+                      "title": "Advisor Email",
                       "type": "string",
-                      "description": "Email of the Business representative."
+                      "description": "Email of the Advisor."
                     },
-                    "xdm:businessRepresentativeName": {
-                      "title": "Business representative Name",
+                    "xdm:advisorName": {
+                      "title": "Advisor name",
                       "type": "string",
-                      "description": "Name of the Business representative."
+                      "description": "Name of the Advisor."
                     }
                   }
                 },
@@ -92,11 +88,6 @@
                       "title": "Concierge Name",
                       "type": "string",
                       "description": "Name of the Concierge."
-                    },
-                    "xdm:pageURL": {
-                      "title": "Page URL",
-                      "type": "string",
-                      "description": "URL of the page where the Concierge is initiated."
                     }
                   }
                 },
@@ -104,17 +95,20 @@
                   "title": "Concierge Key",
                   "description": "Key of the Concierge.",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
+                "xdm:pageURL": {
+                  "title": "Page URL",
+                  "type": "string",
+                  "description": "URL of the page where the Concierge is initiated."
                 }
               }
             }
           }
         }
-      }
-    }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/engagewithbusinessrepresentativeinconcierge"
+      "$ref": "#/definitions/engagewithadvisorinconcierge"
     }
   ],
   "meta:status": "experimental",

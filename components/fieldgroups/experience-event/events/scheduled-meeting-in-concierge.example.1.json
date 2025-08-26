@@ -1,25 +1,47 @@
 {
   "xdm:eventType": "meeting.booked.concierge",
   "xdm:scheduledmeeting": {
-    "xdm:advisorDetails": {
-      "xdm:advisorID": "advisor-123",
-      "xdm:advisorEmail": "jane.doe@company.com",
-      "xdm:advisorName": "Jane Doe"
+    "xdm:consultantDetails": {
+      "xdm:consultantID": "CONSULT-4567",
+      "xdm:consultantEmail": "janedoe@example.com",
+      "xdm:consultantName": "Jane Doe"
     },
     "xdm:meetingDetails": {
-      "xdm:meetingStatus": "confirmed",
-      "xdm:scheduledFor": "2025-09-01T10:30:00Z",
-      "xdm:routingType": "manual"
-    },
-    "xdm:conciergeDetails": {
-      "xdm:conciergeID": "concierge-001",
-      "xdm:conciergeName": "Live Chat Concierge"
+      "xdm:meetingStatus": "scheduled",
+      "xdm:scheduledFor": "2025-09-15T14:00:00Z",
+      "xdm:routingType": "auto"
     },
     "xdm:conciergeKey": {
-      "xdm:sourceID": "web-chat",
-      "xdm:sourceInstanceID": "session-789",
-      "xdm:externalID": "ext-456"
+      "xdm:sourceID": "concierge-ai",
+      "xdm:sourceType": "web",
+      "xdm:sourceInstanceID": "instance-1234"
     },
-    "xdm:pageURL": "https://www.example.com/schedule-meeting"
+    "xdm:agenticExperience": {
+      "xdm:name": "ConciergeAI",
+      "xdm:version": "1.0.0",
+      "xdm:environment": "prod",
+      "xdm:mode": "release",
+      "xdm:agents": [
+        {
+          "xdm:name": "Agent-Matcher",
+          "xdm:version": "2.3.4",
+          "xdm:score": 95.2,
+          "xdm:skills": [
+            {
+              "xdm:name": "AvailabilityChecker",
+              "xdm:version": "1.1",
+              "xdm:score": 87.0,
+              "xdm:parameters": [
+                {
+                  "xdm:key": "timezone",
+                  "xdm:value": "America/New_York"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "xdm:pageURL": "https://www.example.com/booking/concierge"
   }
 }

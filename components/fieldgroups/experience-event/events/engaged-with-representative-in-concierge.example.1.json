@@ -1,29 +1,31 @@
 {
-  "xdm:advisorInConcierge": {
-    "xdm:advisorDetails": {
-      "xdm:advisorID": "advisor-5678",
-      "xdm:advisorEmail": "jane.doe@advisoryco.com",
-      "xdm:advisorName": "Jane Doe"
-    },
-    "xdm:conciergeConversationDetails": {
-      "xdm:status": "completed",
-      "xdm:summary": "Discussed investment strategies and account upgrades.",
-      "xdm:transcript": "Advisor: Hello! Let’s talk about how we can grow your portfolio.\nCustomer: Sounds good.",
-      "xdm:discussedTopics": [
-        "Investment Strategies",
-        "Account Upgrades",
-        "Risk Tolerance"
-      ]
-    },
-    "xdm:conciergeDetails": {
-      "xdm:conciergeID": "concierge-9012",
-      "xdm:conciergeName": "Alex Concierge"
-    },
-    "xdm:conciergeKey": {
-      "xdm:sourceID": "livechat-web",
-      "xdm:sourceInstanceID": "session-9988",
-      "xdm:externalID": "external-abc-123"
-    },
-    "xdm:pageURL": "https://example.com/concierge/chat-complete"
+  "xdm:engagement": {
+    "xdm:businessRepresentativeInConcierge": {
+      "xdm:businessRepresentativeDetails": {
+        "xdm:businessRepresentativeID": "rep-789",
+        "xdm:businessRepresentativeEmail": "rep.jane.doe@example.com",
+        "xdm:businessRepresentativeName": "Jane Doe"
+      },
+      "xdm:conciergeConversationDetails": {
+        "xdm:status": "Completed",
+        "xdm:summary": "Client discussed enterprise pricing options.",
+        "xdm:transcript": "Client: Can I get pricing for 500+, Yes, let me send a quote.",
+        "xdm:discussedTopics": [
+          "Enterprise Pricing",
+          "Bulk Licensing"
+        ]
+      },
+      "xdm:conciergeDetails": {
+        "xdm:conciergeID": "concierge-1234",
+        "xdm:conciergeName": "Enterprise Sales Concierge",
+        "xdm:pageURL": "https://example.com/contact/concierge"
+      },
+      "xdm:conciergeKey": {
+        "xdm:sourceType": "SalesPortal",
+        "xdm:sourceInstanceID": "portal-instance-01",
+        "xdm:sourceID": "source-9988",
+        "xdm:sourceKey": "SalesPortal|portal-instance-01|source-9988"
+      }
+    }
   }
 }

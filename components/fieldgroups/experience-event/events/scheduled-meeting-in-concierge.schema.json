@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/events/meeting-booked-concierge",
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/meeting-booked-concierge",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Booked Meeting in Concierge",
   "type": "object",
@@ -17,7 +17,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Booked a meeting with advisor in the Conversation.",
+  "description": "Booked a meeting with consultant in the Conversation.",
   "definitions": {
     "scheduledmeetinginconcierge": {
       "properties": {
@@ -25,24 +25,24 @@
           "title": "Booked Meeting in Concierge",
           "type": "object",
           "properties": {
-            "xdm:advisorDetails": {
-              "title": "Advisor details",
+            "xdm:consultantDetails": {
+              "title": "Consultant details",
               "type": "object",
               "properties": {
-                "xdm:advisorID": {
-                  "title": "Advisor ID",
+                "xdm:consultantID": {
+                  "title": "Consultant ID",
                   "type": "string",
-                  "description": "Unique Identifier for a Advisor."
+                  "description": "Unique Identifier for a Consultant."
                 },
-                "xdm:advisorEmail": {
-                  "title": "Advisor Email",
+                "xdm:consultantEmail": {
+                  "title": "Consultant Email",
                   "type": "string",
-                  "description": "Email of the Advisor."
+                  "description": "Email of the Consultant."
                 },
-                "xdm:advisorName": {
-                  "title": "Advisor name",
+                "xdm:consultantName": {
+                  "title": "Consultant name",
                   "type": "string",
-                  "description": "Name of the Advisor."
+                  "description": "Name of the Consultant."
                 }
               }
             },
@@ -67,31 +67,18 @@
                 }
               }
             },
-            "xdm:conciergeDetails": {
-              "title": "Concierge Details",
-              "type": "object",
-              "properties": {
-                "xdm:conciergeID": {
-                  "title": "Concierge ID",
-                  "type": "string",
-                  "description": "Unique Identifier for a Concierge."
-                },
-                "xdm:conciergeName": {
-                  "title": "Concierge Name",
-                  "type": "string",
-                  "description": "Name of the Concierge."
-                }
-              }
-            },
             "xdm:conciergeKey": {
               "title": "Concierge Key",
               "description": "Key of the Concierge.",
               "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             },
+            "xdm:agenticExperience": {
+              "description": "Agentic Experience",
+              "$ref": "https://ns.adobe.com/xdm/fieldgroups/agenticevent#/definitions/agenticExperience/properties/xdm:agenticExperience"
+            },
             "xdm:pageURL": {
-              "title": "Page URL",
-              "type": "string",
-              "description": "URL of the page where the Concierge is initiated."
+              "description": "URL of the page where the Concierge is initiated.",
+              "$ref": "https://ns.adobe.com/xdm/context/webpagedetails#/definitions/webpagedetails/properties/xdm:URL"
             }
           }
         }

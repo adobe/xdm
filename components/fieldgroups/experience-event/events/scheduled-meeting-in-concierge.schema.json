@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/fieldgroups/meeting-booked-concierge",
+  "$id": "https://ns.adobe.com/xdm/mixins/events/meeting-booked-concierge",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Booked Meeting in Concierge",
   "type": "object",
@@ -16,11 +16,6 @@
   "meta:conditionalValue": "meeting.booked.concierge",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/fieldgroups/agenticevent",
-    "https://ns.adobe.com/xdm/context/webpagedetails",
-    "https://ns.adobe.com/xdm/datatypes/b2b-source"
   ],
   "description": "Booked a meeting with consultant in the Conversation.",
   "definitions": {
@@ -72,6 +67,12 @@
                   "description": "Routing type used for the meeting"
                 }
               }
+            },
+            "xdm:conciergeKey": {
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            },
+            "xdm:webpageDetails": {
+              "$ref": "https://ns.adobe.com/xdm/context/webpagedetails"
             }
           }
         }
@@ -81,19 +82,6 @@
   "allOf": [
     {
       "$ref": "#/definitions/scheduledmeetinginconcierge"
-
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/fieldgroups/agenticevent"
-
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/webpagedetails"
-
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-
     }
   ],
   "meta:status": "experimental",

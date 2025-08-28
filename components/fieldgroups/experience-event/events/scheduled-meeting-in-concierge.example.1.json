@@ -1,27 +1,32 @@
 {
   "xdm:eventType": "meeting.booked.concierge",
-  "xdm:timestamp": "2025-08-27T14:30:00Z",
   "xdm:scheduledmeeting": {
     "xdm:consultantDetails": {
-      "xdm:consultantID": "CONSULT1234",
-      "xdm:consultantEmail": "consultant@example.com",
-      "xdm:consultantName": "Alex Johnson"
+      "xdm:consultantID": "CONSULT-1234",
+      "xdm:consultantEmail": "john.doe@example.com",
+      "xdm:consultantName": "John Doe"
     },
     "xdm:meetingDetails": {
-      "xdm:meetingStatus": "confirmed",
-      "xdm:scheduledFor": "2025-08-29T10:00:00Z",
-      "xdm:routingType": "auto"
+      "xdm:meetingStatus": "scheduled",
+      "xdm:scheduledFor": "2025-09-30T10:00:00Z",
+      "xdm:routingType": "manual"
+    },
+    "xdm:conciergeKey": {
+      "xdm:sourceID": "b2b-platform",
+      "xdm:sourceType": "CRM",
+      "xdm:sourceInstanceID": "crm-instance-42"
+    },
+    "xdm:webpagedetails": {
+      "xdm:siteSection": "Consultation Bookings",
+      "xdm:name": "Consultant Booking Page",
+      "xdm:viewName": "Confirmation",
+      "xdm:URL": "https://www.example.com/book-consultation",
+      "xdm:server": "example.com",
+      "xdm:isErrorPage": false,
+      "xdm:isHomePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1
+      }
     }
-  },
-  "xdm:webPageDetails": {
-    "xdm:URL": "https://example.com/concierge/booking"
-  },
-  "xdm:agenticExperience": {
-    "xdm:name": "ConciergeAI",
-    "xdm:experienceMode": "automated"
-  },
-  "xdm:conciergeKey": {
-    "xdm:sourceID": "concierge-booking-system",
-    "xdm:sourceType": "web"
   }
 }

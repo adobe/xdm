@@ -17,6 +17,11 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/fieldgroups/agenticevent",
+    "https://ns.adobe.com/xdm/context/webpagedetails",
+    "https://ns.adobe.com/xdm/datatypes/b2b-source"
+  ],
   "description": "Booked a meeting with consultant in the Conversation.",
   "definitions": {
     "scheduledmeetinginconcierge": {
@@ -32,17 +37,17 @@
                 "xdm:consultantID": {
                   "title": "Consultant ID",
                   "type": "string",
-                  "description": "Unique Identifier for a Consultant."
+                  "description": "Unique Identifier for a Consultant"
                 },
                 "xdm:consultantEmail": {
                   "title": "Consultant Email",
                   "type": "string",
-                  "description": "Email of the Consultant."
+                  "description": "Email of the Consultant"
                 },
                 "xdm:consultantName": {
                   "title": "Consultant name",
                   "type": "string",
-                  "description": "Name of the Consultant."
+                  "description": "Name of the Consultant"
                 }
               }
             },
@@ -53,32 +58,20 @@
                 "xdm:meetingStatus": {
                   "title": "Meeting Status",
                   "type": "string",
-                  "description": "The status of the Meeting"
+                  "description": "Status of the scheduled meeting"
                 },
                 "xdm:scheduledFor": {
                   "title": "Scheduled for",
                   "type": "string",
-                  "description": "Time at which meeting is scheduled for."
+                  "format": "date-time",
+                  "description": "Scheduled start time of the meeting"
                 },
                 "xdm:routingType": {
                   "title": "Routing type",
                   "type": "string",
-                  "description": "Routing type."
+                  "description": "Routing type used for the meeting"
                 }
               }
-            },
-            "xdm:conciergeKey": {
-              "title": "Concierge Key",
-              "description": "Key of the Concierge.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-            },
-            "xdm:agenticExperience": {
-              "description": "Agentic Experience",
-              "$ref": "https://ns.adobe.com/xdm/fieldgroups/agenticevent#/definitions/agenticExperience/properties/xdm:agenticExperience"
-            },
-            "xdm:pageURL": {
-              "description": "URL of the page where the Concierge is initiated.",
-              "$ref": "https://ns.adobe.com/xdm/context/webpagedetails#/definitions/webpagedetails/properties/xdm:URL"
             }
           }
         }
@@ -88,6 +81,19 @@
   "allOf": [
     {
       "$ref": "#/definitions/scheduledmeetinginconcierge"
+
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/fieldgroups/agenticevent"
+
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/webpagedetails"
+
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+
     }
   ],
   "meta:status": "experimental",

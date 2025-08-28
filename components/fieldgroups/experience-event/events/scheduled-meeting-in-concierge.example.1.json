@@ -1,47 +1,27 @@
 {
   "xdm:eventType": "meeting.booked.concierge",
+  "xdm:timestamp": "2025-08-27T14:30:00Z",
   "xdm:scheduledmeeting": {
     "xdm:consultantDetails": {
-      "xdm:consultantID": "CONSULT-4567",
-      "xdm:consultantEmail": "janedoe@example.com",
-      "xdm:consultantName": "Jane Doe"
+      "xdm:consultantID": "CONSULT1234",
+      "xdm:consultantEmail": "consultant@example.com",
+      "xdm:consultantName": "Alex Johnson"
     },
     "xdm:meetingDetails": {
-      "xdm:meetingStatus": "scheduled",
-      "xdm:scheduledFor": "2025-09-15T14:00:00Z",
+      "xdm:meetingStatus": "confirmed",
+      "xdm:scheduledFor": "2025-08-29T10:00:00Z",
       "xdm:routingType": "auto"
-    },
-    "xdm:conciergeKey": {
-      "xdm:sourceID": "concierge-ai",
-      "xdm:sourceType": "web",
-      "xdm:sourceInstanceID": "instance-1234"
-    },
-    "xdm:agenticExperience": {
-      "xdm:name": "ConciergeAI",
-      "xdm:version": "1.0.0",
-      "xdm:environment": "prod",
-      "xdm:mode": "release",
-      "xdm:agents": [
-        {
-          "xdm:name": "Agent-Matcher",
-          "xdm:version": "2.3.4",
-          "xdm:score": 95.2,
-          "xdm:skills": [
-            {
-              "xdm:name": "AvailabilityChecker",
-              "xdm:version": "1.1",
-              "xdm:score": 87.0,
-              "xdm:parameters": [
-                {
-                  "xdm:key": "timezone",
-                  "xdm:value": "America/New_York"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "xdm:pageURL": "https://www.example.com/booking/concierge"
+    }
+  },
+  "xdm:webPageDetails": {
+    "xdm:URL": "https://example.com/concierge/booking"
+  },
+  "xdm:agenticExperience": {
+    "xdm:name": "ConciergeAI",
+    "xdm:experienceMode": "automated"
+  },
+  "xdm:conciergeKey": {
+    "xdm:sourceID": "concierge-booking-system",
+    "xdm:sourceType": "web"
   }
 }

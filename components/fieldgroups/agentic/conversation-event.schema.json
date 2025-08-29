@@ -43,6 +43,84 @@
               "type": "string",
               "description": "A single instance of a prompt, response, and feedback"
             },
+            "xdm:signals": {
+              "type": "array",
+              "title": "Conversation Signals",
+              "description": "Signals based on this event and the conversation to date",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:scope": {
+                    "title": "Scope",
+                    "description": "Scope of inputs from which this set of signals is derived.",
+                    "type": "string",
+                    "examples": [
+                      "turn",
+                      "conversation-to-date",
+                      "last-N-turns",
+                      "feedback"
+                    ]
+                  },
+                  "xdm:subjects": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "description": "Subjects and qualifiers of the scoped input, similar to keywords but more meaningful",
+                      "properties": {
+                        "xdm:phrase": {
+                          "type": "string",
+                          "title": "Phrase",
+                          "description": "A phrase or keyword extracted from the scoped input"
+                        },
+                        "xdm:qualifiers": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "title": "Phrase Qualifiers",
+                            "description": "List of qualifiers for the scoped input"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "xdm:attributes": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:intent": {
+                        "type": "array",
+                        "items": {
+                          "title": "Intent",
+                          "description": "Intent derived from the scoped input",
+                          "type": "string",
+                          "examples": [
+                            "make a purchase",
+                            "learn more",
+                            "browsing"
+                          ]
+                        }
+                      },
+                      "xdm:sentiment": {
+                        "type": "number",
+                        "title": "Sentiment",
+                        "description": "Score from -1 (meaning negative) to 1 (indicating positive) to indicate sentiment",
+                        "minimum": -1.0,
+                        "maximum": 1.0,
+                        "examples": [-1.0, -0.34, 0, 0.7, 1.0]
+                      },
+                      "xdm:tone": {
+                        "type": "array",
+                        "items": {
+                          "title": "Tone",
+                          "description": "Tone derived from the scoped input",
+                          "type": "string",
+                          "examples": ["thrilled", "contemplative", "upset"]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "xdm:prompt": {
               "title": "Prompt",
               "type": "object",

@@ -2,6 +2,48 @@
   "xdm:conversation": {
     "xdm:conversationID": "conv-001",
     "xdm:turnID": "int-001",
+    "xdm:signals": [
+      {
+        "xdm:scope": "turn",
+        "xdm:subjects": [
+          {
+            "xdm:phrase": "capital of France",
+            "xdm:qualifiers": ["geographic", "factual", "educational"]
+          },
+          {
+            "xdm:phrase": "Paris",
+            "xdm:qualifiers": ["city", "correct-answer", "capital"]
+          },
+          {
+            "xdm:phrase": "misinformation",
+            "xdm:qualifiers": ["incorrect-link", "fact-checking"]
+          }
+        ],
+        "xdm:attributes": {
+          "xdm:intent": ["learn more", "fact-checking"],
+          "xdm:sentiment": 0.3,
+          "xdm:tone": ["curious", "questioning"]
+        }
+      },
+      {
+        "xdm:scope": "conversation-to-date",
+        "xdm:subjects": [
+          {
+            "xdm:phrase": "geography question",
+            "xdm:qualifiers": ["educational", "factual"]
+          },
+          {
+            "xdm:phrase": "travel interest",
+            "xdm:qualifiers": ["potential-booking", "commercial"]
+          }
+        ],
+        "xdm:attributes": {
+          "xdm:intent": ["learn more", "browsing"],
+          "xdm:sentiment": 0.7,
+          "xdm:tone": ["satisfied", "engaged"]
+        }
+      }
+    ],
     "xdm:prompt": {
       "xdm:source": "end-user",
       "xdm:raw": [

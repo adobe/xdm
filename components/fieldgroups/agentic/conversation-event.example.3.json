@@ -2,6 +2,30 @@
   "xdm:conversation": {
     "xdm:conversationID": "conv-001",
     "xdm:turnID": "int-001",
+    "xdm:signals": [
+      {
+        "xdm:scope": "feedback",
+        "xdm:subjects": [
+          {
+            "xdm:phrase": "positive feedback",
+            "xdm:qualifiers": ["satisfaction", "thumbs-up", "user-rating"]
+          },
+          {
+            "xdm:phrase": "accuracy appreciation",
+            "xdm:qualifiers": ["quality", "correctness", "helpful"]
+          },
+          {
+            "xdm:phrase": "response speed",
+            "xdm:qualifiers": ["efficiency", "quick-response", "performance"]
+          }
+        ],
+        "xdm:attributes": {
+          "xdm:intent": ["provide feedback"],
+          "xdm:sentiment": 0.9,
+          "xdm:tone": ["satisfied", "appreciative"]
+        }
+      }
+    ],
     "xdm:feedback": {
       "xdm:source": "end-user",
       "xdm:raw": [

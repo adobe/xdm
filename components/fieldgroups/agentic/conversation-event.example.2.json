@@ -1,24 +1,33 @@
 {
+  "xdm:eventType": "conversation.turn",
   "xdm:conversation": {
     "xdm:conversationID": "conv-001",
     "xdm:turnID": "int-001",
     "xdm:signals": [
       {
         "xdm:scope": "turn",
-        "xdm:subjects": [
-          {
-            "xdm:phrase": "capital of France",
-            "xdm:qualifiers": ["geographic", "factual", "basic-knowledge"]
-          },
-          {
-            "xdm:phrase": "Paris",
-            "xdm:qualifiers": ["city", "capital", "accurate-response"]
-          }
-        ],
         "xdm:attributes": {
-          "xdm:intent": ["learn more"],
-          "xdm:sentiment": 0.1,
-          "xdm:tone": ["curious", "neutral"]
+          "xdm:subjects": {
+            "xdm:values": [
+              {
+                "xdm:phrase": "capital of France",
+                "xdm:qualifiers": ["geographic", "factual", "basic-knowledge"]
+              },
+              {
+                "xdm:phrase": "Paris",
+                "xdm:qualifiers": ["city", "capital", "accurate-response"]
+              }
+            ]
+          },
+          "xdm:intents": {
+            "xdm:values": ["learn more"]
+          },
+          "xdm:sentiment": {
+            "xdm:value": 0.1
+          },
+          "xdm:tones": {
+            "xdm:values": ["curious", "neutral"]
+          }
         }
       }
     ],

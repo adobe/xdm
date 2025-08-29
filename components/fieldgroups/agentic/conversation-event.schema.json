@@ -61,59 +61,78 @@
                       "feedback"
                     ]
                   },
-                  "xdm:subjects": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "description": "Subjects and qualifiers of the scoped input, similar to keywords but more meaningful",
-                      "properties": {
-                        "xdm:phrase": {
-                          "type": "string",
-                          "title": "Phrase",
-                          "description": "A phrase or keyword extracted from the scoped input"
-                        },
-                        "xdm:qualifiers": {
-                          "type": "array",
-                          "items": {
-                            "type": "string",
-                            "title": "Phrase Qualifiers",
-                            "description": "List of qualifiers for the scoped input"
-                          }
-                        }
-                      }
-                    }
-                  },
                   "xdm:attributes": {
                     "type": "object",
                     "properties": {
-                      "xdm:intent": {
-                        "type": "array",
-                        "items": {
-                          "title": "Intent",
-                          "description": "Intent derived from the scoped input",
-                          "type": "string",
-                          "examples": [
-                            "make a purchase",
-                            "learn more",
-                            "browsing"
-                          ]
+                      "xdm:subjects": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:values": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "description": "Subjects and qualifiers of the scoped input, similar to keywords but more meaningful",
+                              "properties": {
+                                "xdm:phrase": {
+                                  "type": "string",
+                                  "title": "Phrase",
+                                  "description": "A phrase or keyword extracted from the scoped input"
+                                },
+                                "xdm:qualifiers": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string",
+                                    "title": "Phrase Qualifiers",
+                                    "description": "List of qualifiers for the scoped input"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "xdm:intents": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:values": {
+                            "type": "array",
+                            "items": {
+                              "title": "Intents",
+                              "description": "Intents derived from the scoped input",
+                              "type": "string",
+                              "examples": [
+                                "make a purchase",
+                                "learn more",
+                                "browsing"
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "xdm:tones": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:values": {
+                            "type": "array",
+                            "items": {
+                              "title": "Tones",
+                              "description": "Tones derived from the scoped input",
+                              "type": "string",
+                              "examples": ["thrilled", "contemplative", "upset"]
+                            }
+                          }
                         }
                       },
                       "xdm:sentiment": {
-                        "type": "number",
-                        "title": "Sentiment",
-                        "description": "Score from -1 (meaning negative) to 1 (indicating positive) to indicate sentiment",
-                        "minimum": -1.0,
-                        "maximum": 1.0,
-                        "examples": [-1.0, -0.34, 0, 0.7, 1.0]
-                      },
-                      "xdm:tone": {
-                        "type": "array",
-                        "items": {
-                          "title": "Tone",
-                          "description": "Tone derived from the scoped input",
-                          "type": "string",
-                          "examples": ["thrilled", "contemplative", "upset"]
+                        "type": "object",
+                        "properties": {
+                          "xdm:value": {
+                            "title": "Sentiment",
+                            "description": "Score from -1 (meaning negative) to 1 (indicating positive) to indicate sentiment",
+                            "minimum": -1.0,
+                            "maximum": 1.0,
+                            "examples": [-1.0, -0.34, 0, 0.7, 1.0]
+                          }
                         }
                       }
                     }

@@ -1,28 +1,41 @@
 {
+  "xdm:eventType": "conversation.feedback",
   "xdm:conversation": {
     "xdm:conversationID": "conv-001",
     "xdm:turnID": "int-001",
     "xdm:signals": [
       {
         "xdm:scope": "feedback",
-        "xdm:subjects": [
-          {
-            "xdm:phrase": "positive feedback",
-            "xdm:qualifiers": ["satisfaction", "thumbs-up", "user-rating"]
-          },
-          {
-            "xdm:phrase": "accuracy appreciation",
-            "xdm:qualifiers": ["quality", "correctness", "helpful"]
-          },
-          {
-            "xdm:phrase": "response speed",
-            "xdm:qualifiers": ["efficiency", "quick-response", "performance"]
-          }
-        ],
         "xdm:attributes": {
-          "xdm:intent": ["provide feedback"],
-          "xdm:sentiment": 0.9,
-          "xdm:tone": ["satisfied", "appreciative"]
+          "xdm:subjects": {
+            "xdm:values": [
+              {
+                "xdm:phrase": "positive feedback",
+                "xdm:qualifiers": ["satisfaction", "thumbs-up", "user-rating"]
+              },
+              {
+                "xdm:phrase": "accuracy appreciation",
+                "xdm:qualifiers": ["quality", "correctness", "helpful"]
+              },
+              {
+                "xdm:phrase": "response speed",
+                "xdm:qualifiers": [
+                  "efficiency",
+                  "quick-response",
+                  "performance"
+                ]
+              }
+            ]
+          },
+          "xdm:intents": {
+            "xdm:values": ["provide feedback"]
+          },
+          "xdm:sentiment": {
+            "xdm:value": 0.9
+          },
+          "xdm:tones": {
+            "xdm:values": ["satisfied", "appreciative"]
+          }
         }
       }
     ],

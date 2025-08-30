@@ -42,5 +42,11 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/aep-user-context"
+    }
+  ],
+  "meta:status": "experimental"
 }

@@ -1,0 +1,10 @@
+{
+  "xdm:traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+  "xdm:spanId": "00f067aa0ba902b7",
+  "xdm:parentSpanId": "0123456789abcdef",
+  "xdm:name": "genai-inference-operation",
+  "xdm:kind": "SPAN_KIND_CLIENT",
+  "xdm:startTimeUnixNano": "1640995200000000000",
+  "xdm:endTimeUnixNano": "1640995205000000000",
+  "xdm:status": "OK"
+}

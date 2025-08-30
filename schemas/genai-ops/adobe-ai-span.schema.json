@@ -27,6 +27,11 @@
             "type": "string",
             "description": "The ImsOrgName."
           },
+          "xdm:imsUserId": {
+            "title": "ImsOrg User ID",
+            "type": "string",
+            "description": "The ImsOrg User ID."
+          },
           "xdm:sandboxID": {
             "title": "SandboxID",
             "type": "string",

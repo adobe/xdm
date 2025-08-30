@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/adobe-ai-span",
+  "$id": "https://ns.adobe.com/xdm/mixins/aep-agent-decision-tracking",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "AEP Agent Application Span",
+  "title": "AEP Agent Decision Tracking",
   "type": "object",
   "auditable": true,
   "meta:extensible": true,
@@ -19,14 +19,14 @@
   "definitions": {
     "aep-agent-decision-tracking": {
       "properties": {
-        "xdm:gen_ai": {
+        "xdm:adobe": {
           "type": "object",
           "description": "GenAI Block",
           "properties": {
-            "xdm:agent": {
+            "xdm:gen_ai": {
               "type": "object",
               "properties": {
-                "xdm:adobe": {
+                "xdm:agent": {
                   "type": "object",
                   "properties": {
                     "xdm:execution": {

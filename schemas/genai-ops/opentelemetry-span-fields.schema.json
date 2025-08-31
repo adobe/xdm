@@ -19,38 +19,43 @@
   "definitions": {
     "opentelemetry-span-fields": {
       "properties": {
-        "xdm:traceId": {
-          "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
-          "type": "string",
-          "description": "The ID of the trace."
-        },
-        "xdm:spanId": {
-          "type": "string",
-          "description": "The ID of the span."
-        },
-        "xdm:parentSpanId": {
-          "type": "string",
-          "description": "The ID of the parent span."
-        },
-        "xdm:name": {
-          "type": "string",
-          "description": "The name of the span."
-        },
-        "xdm:kind": {
-          "type": "string",
-          "description": "The kind of the span."
-        },
-        "xdm:startTimeUnixNano": {
-          "type": "string",
-          "description": "The start time of the span."
-        },
-        "xdm:endTimeUnixNano": {
-          "type": "string",
-          "description": "The end time of the span."
-        },
-        "xdm:status": {
-          "type": "string",
-          "description": "The status of the span."
+        "xdm:opentelemetrySpan": {
+          "type": "object",
+          "properties": {
+            "xdm:traceId": {
+              "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+              "type": "string",
+              "description": "The ID of the trace."
+            },
+            "xdm:spanId": {
+              "type": "string",
+              "description": "The ID of the span."
+            },
+            "xdm:parentSpanId": {
+              "type": "string",
+              "description": "The ID of the parent span."
+            },
+            "xdm:name": {
+              "type": "string",
+              "description": "The name of the span."
+            },
+            "xdm:kind": {
+              "type": "string",
+              "description": "The kind of the span."
+            },
+            "xdm:startTimeUnixNano": {
+              "type": "string",
+              "description": "The start time of the span."
+            },
+            "xdm:endTimeUnixNano": {
+              "type": "string",
+              "description": "The end time of the span."
+            },
+            "xdm:status": {
+              "type": "string",
+              "description": "The status of the span."
+            }
+          }
         }
       }
     }

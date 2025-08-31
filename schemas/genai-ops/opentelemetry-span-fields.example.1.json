@@ -1,10 +1,12 @@
 {
-  "xdm:traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
-  "xdm:spanId": "00f067aa0ba902b7",
-  "xdm:parentSpanId": "0123456789abcdef",
-  "xdm:name": "genai-inference-operation",
-  "xdm:kind": "SPAN_KIND_CLIENT",
-  "xdm:startTimeUnixNano": "1640995200000000000",
-  "xdm:endTimeUnixNano": "1640995205000000000",
-  "xdm:status": "OK"
+  "xdm:opentelemetrySpan": {
+    "xdm:traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+    "xdm:spanId": "00f067aa0ba902b7",
+    "xdm:parentSpanId": "0af7651916cd43dd",
+    "xdm:name": "genai.agent.analytics.query",
+    "xdm:kind": "server",
+    "xdm:startTimeUnixNano": "1706356200000000000",
+    "xdm:endTimeUnixNano": "1706356205500000000",
+    "xdm:status": "ok"
+  }
 }

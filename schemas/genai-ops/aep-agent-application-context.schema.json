@@ -19,51 +19,49 @@
   "definitions": {
     "aep-agent-application-context": {
       "properties": {
-        "xdm:gen_ai": {
+        "xdm:adobe": {
           "type": "object",
           "properties": {
-            "xdm:system": {
-              "type": "string",
-              "title": "System Identifier",
-              "description": "Adobe Experience Cloud application identifier that determines agent selection and feature enablement."
-            },
-            "xdm:adobe": {
+            "xdm:gen_ai": {
               "type": "object",
-              "properties": {
-                "xdm:userSurface": {
-                  "type": "string",
-                  "description": "User interface surface where the request originated."
-                },
-                "xdm:upstreamClient": {
-                  "type": "string",
-                  "description": "Upstream client information for observability and feature flag management."
-                },
-                "xdm:pageName": {
-                  "type": "string",
-                  "description": "Human-readable page name from the application."
-                },
-                "xdm:pageUrl": {
-                  "type": "string",
-                  "description": "Full URL of the current page in the application."
-                },
-                "xdm:dataview": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:id": {
-                      "type": "string",
-                      "description": "Data view identifier (commonly used in analytics applications)."
-                    },
-                    "xdm:name": {
-                      "type": "string",
-                      "description": "The name of the dataview in the Adobe system."
+              "xdm:application": {
+                "type": "object",
+                "properties": {
+                  "xdm:userSurface": {
+                    "type": "string",
+                    "description": "User interface surface where the request originated."
+                  },
+                  "xdm:upstreamClient": {
+                    "type": "string",
+                    "description": "Upstream client information for observability and feature flag management."
+                  },
+                  "xdm:pageName": {
+                    "type": "string",
+                    "description": "Human-readable page name from the application."
+                  },
+                  "xdm:pageUrl": {
+                    "type": "string",
+                    "description": "Full URL of the current page in the application."
+                  },
+                  "xdm:dataview": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:id": {
+                        "type": "string",
+                        "description": "Data view identifier (commonly used in analytics applications)."
+                      },
+                      "xdm:name": {
+                        "type": "string",
+                        "description": "The name of the dataview in the Adobe system."
+                      }
                     }
+                  },
+                  "xdm:additional_app_context": {
+                    "type": "string",
+                    "description": "Additional application context in the Adobe system."
                   }
                 }
               }
-            },
-            "xdm:additional_app_context": {
-              "type": "string",
-              "description": "Additional application context in the Adobe system."
             }
           }
         }

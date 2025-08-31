@@ -1,0 +1,129 @@
+{
+  "xdm:timestamp": "2025-01-15T10:30:45.123Z",
+  "xdm:eventType": "aep.ai.agent.trace",
+  "_id": "trace-event-2025-01-15-abc123def456",
+  "xdm:imsOrgID": "1234567890ABCDEF@AdobeOrg",
+  "xdm:imsOrgName": "Adobe Experience Platform Demo Org",
+  "xdm:imsUserId": "user123456789@adobe.com",
+  "xdm:sandboxID": "prod-sandbox-001",
+  "xdm:sandboxName": "Production Sandbox",
+  "xdm:traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+  "xdm:spanId": "00f067aa0ba902b7",
+  "xdm:parentSpanId": "0123456789abcdef",
+  "xdm:name": "aep-agent-analytics-interaction",
+  "xdm:kind": "SPAN_KIND_SERVER",
+  "xdm:startTimeUnixNano": "1640995200000000000",
+  "xdm:endTimeUnixNano": "1640995205000000000",
+  "xdm:status": "OK",
+  "xdm:conversationId": "conv-2025-01-15-abc123def456",
+  "xdm:interactionId": "int-789xyz012uvw",
+  "xdm:user": {
+    "xdm:id": "user-12345-abcdef"
+  },
+  "xdm:adobe": {
+    "xdm:userPermissions": {
+      "canReadData": true,
+      "canWriteData": false,
+      "canDeleteData": false,
+      "canManageUsers": true,
+      "canAccessAnalytics": true,
+      "canExportData": false
+    },
+    "xdm:gen_ai": {
+      "xdm:request": {
+        "xdm:context": "{\"dataSource\": \"analytics\", \"timeRange\": \"last30days\", \"metrics\": [\"pageViews\", \"uniqueVisitors\"]}",
+        "xdm:message": "Please analyze the website traffic data for the last 30 days and provide insights on user engagement patterns.",
+        "xdm:aoInstanceId": "ao-instance-prod-001",
+        "xdm:copilotVersion": "2.1.5",
+        "xdm:createdDate": "2025-01-15T10:30:00Z",
+        "xdm:isTestRequest": false,
+        "xdm:llmFamily": "gpt-4",
+        "xdm:releaseVersion": "v2025.1.0",
+        "xdm:username": "user123456789@adobe.com",
+        "xdm:featureFlags": "{\"enableAdvancedAnalytics\": true, \"enableRealTimeData\": false, \"betaFeatures\": true}"
+      },
+      "xdm:agent": {
+        "xdm:execution": {
+          "xdm:decision": {
+            "xdm:type": "tool_selection",
+            "xdm:options": "[\"analytics_query\", \"data_visualization\", \"report_generation\", \"trend_analysis\"]",
+            "xdm:selected": "trend_analysis",
+            "xdm:confidence": 0.87,
+            "xdm:reasoning": "Based on the user's request for insights on engagement patterns, trend analysis is the most appropriate tool to identify patterns and changes over time in the specified metrics."
+          },
+          "xdm:planning": {
+            "xdm:strategy": "hierarchical_decomposition",
+            "xdm:taskCount": 4,
+            "xdm:complexity": "medium",
+            "xdm:dependencies": "[{\"task\": \"data_collection\", \"depends_on\": []}, {\"task\": \"data_analysis\", \"depends_on\": [\"data_collection\"]}, {\"task\": \"visualization\", \"depends_on\": [\"data_analysis\"]}, {\"task\": \"report_generation\", \"depends_on\": [\"visualization\"]}]"
+          }
+        }
+      },
+      "xdm:application": {
+        "xdm:userSurface": "analytics-dashboard",
+        "xdm:upstreamClient": "analytics-web-app-v2.1.0",
+        "xdm:pageName": "Marketing Campaign Analysis",
+        "xdm:pageUrl": "https://analytics.adobe.com/workspace/projects/campaign-analysis-2025",
+        "xdm:dataview": {
+          "xdm:id": "dv_prod_marketing_2025",
+          "xdm:name": "Production Marketing Data View 2025"
+        },
+        "xdm:additional_app_context": "{\"projectId\": \"proj_12345\", \"workspaceType\": \"freeform\", \"reportSuite\": \"rsid_prod_marketing\"}"
+      }
+    }
+  },
+  "xdm:gen_ai": {
+    "xdm:operation": {
+      "xdm:name": "invoke_agent"
+    },
+    "xdm:system": "adobe-aep-agent-platform",
+    "xdm:conversation": {
+      "xdm:id": "conv-2025-01-15-abc123"
+    },
+    "xdm:output": {
+      "xdm:type": "text"
+    },
+    "xdm:request": {
+      "xdm:choice": {
+        "xdm:count": 1
+      },
+      "xdm:model": "gpt-4-turbo",
+      "xdm:seed": 42,
+      "xdm:frequency_penalty": 0.0,
+      "xdm:max_tokens": 2048,
+      "xdm:presence_penalty": 0.0,
+      "xdm:stop_sequences": ["\\n\\n", "END"],
+      "xdm:temperature": 0.7,
+      "xdm:top_k": 50,
+      "xdm:top_p": 0.9
+    },
+    "xdm:response": {
+      "xdm:finish_reasons": ["stop"],
+      "xdm:id": "chatcmpl-abc123def456",
+      "xdm:model": "gpt-4-turbo-2024-04-09"
+    },
+    "xdm:usage": {
+      "xdm:input_tokens": 150,
+      "xdm:output_tokens": 75
+    },
+    "xdm:agent": {
+      "xdm:description": "Analytics Insights Agent for marketing data analysis",
+      "xdm:id": "agent-analytics-specialist-001",
+      "xdm:name": "Analytics Insights Agent"
+    },
+    "xdm:tool": {
+      "xdm:call": {
+        "xdm:id": "call_abc123def456"
+      },
+      "xdm:description": "Analyzes website traffic data and generates insights on user engagement patterns",
+      "xdm:name": "analytics_trend_analyzer"
+    }
+  },
+  "xdm:error": {
+    "xdm:type": "none"
+  },
+  "xdm:server": {
+    "xdm:address": "aep-agent-platform.adobe.com",
+    "xdm:port": 8080
+  }
+}

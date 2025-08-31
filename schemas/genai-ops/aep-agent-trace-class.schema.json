@@ -16,13 +16,19 @@
   "description": "AEP AI Agent Trace Class",
   "definitions": {
     "aep-ai-agent-trace-class": {
-      "properties": {}
+      "properties": {
+        "xdm:eventType": {
+          "title": "Event Type",
+          "type": "string",
+          "description": "The primary event type for this time-series record.",
+          "meta:enum": {
+            "aep.ai.agent.trace": "AEP AI Agent Trace"
+          }
+        }
+      }
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "https://ns.adobe.com/xdm/data/time-series"
     },

@@ -16,135 +16,6 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Conversation Event data including agentic information, prompt, response, feedback an associated metadata.",
   "definitions": {
-    "conversationID": {
-      "properties": {
-        "xdm:conversationID": {
-          "title": "Conversation ID",
-          "type": "string",
-          "description": "ID to group several turns together"
-        }
-      }
-    },
-    "turnID": {
-      "properties": {
-        "xdm:turnID": {
-          "title": "Turn ID",
-          "type": "string",
-          "description": "A single instance of a prompt, response, and feedback"
-        }
-      }
-    },
-    "source": {
-      "properties": {
-        "xdm:source": {
-          "title": "Source",
-          "type": "string",
-          "description": "Source of this element",
-          "examples": ["end-user", "bot", "canned"]
-        }
-      }
-    },
-    "raw": {
-      "properties": {
-        "xdm:raw": {
-          "type": "array",
-          "title": "Raw Text and Purpose",
-          "description": "Raw text with purpose of the text",
-          "items": {
-            "type": "object",
-            "properties": {
-              "xdm:text": {
-                "title": "Text",
-                "description": "Text",
-                "type": "string"
-              },
-              "xdm:purpose": {
-                "title": "Purpose",
-                "description": "Purpose",
-                "type": "string"
-              }
-            }
-          }
-        }
-      }
-    },
-    "feedback-rating": {
-      "properties": {
-        "xdm:rating": {
-          "title": "Rating",
-          "type": "object",
-          "description": "Rating data for the feedback",
-          "properties": {
-            "xdm:score": {
-              "title": "Rating Score",
-              "type": "number",
-              "description": "Numerical value of the rating provided by the end-user. For example: 0, 1 might be used for thumbs up/down."
-            },
-            "xdm:classification": {
-              "title": "Rating Classification",
-              "type": "string",
-              "description": "String/enum value of the rating provided by the end-user.",
-              "examples": [
-                "Thumbs Up",
-                "Thumbs Down",
-                "Positive",
-                "Negative",
-                "5-stars",
-                "1-star"
-              ]
-            },
-            "xdm:reasons": {
-              "title": "Rating Reasons",
-              "type": "array",
-              "description": "Reasons why the customer provided this rating.",
-              "items": {
-                "type": "string"
-              }
-            }
-          }
-        }
-      }
-    },
-    "prompt": {
-      "properties": {
-        "xdm:prompt": {
-          "title": "Prompt",
-          "type": "object",
-          "description": "Object representing a conversation prompt",
-          "allOf": [
-            { "$ref": "#/definitions/source" },
-            { "$ref": "#/definitions/raw" }
-          ]
-        }
-      }
-    },
-    "response": {
-      "properties": {
-        "xdm:response": {
-          "title": "Response",
-          "type": "object",
-          "description": "Object representing a conversation response",
-          "allOf": [
-            { "$ref": "#/definitions/source" },
-            { "$ref": "#/definitions/raw" }
-          ]
-        }
-      }
-    },
-    "feedback": {
-      "properties": {
-        "xdm:feedback": {
-          "title": "Feedback",
-          "type": "object",
-          "description": "Object representing a conversation feedback",
-          "allOf": [
-            { "$ref": "#/definitions/source" },
-            { "$ref": "#/definitions/raw" },
-            { "$ref": "#/definitions/feedback-rating" }
-          ]
-        }
-      }
-    },
     "conversation": {
       "properties": {
         "xdm:eventType": {
@@ -161,13 +32,255 @@
           "title": "Conversation",
           "type": "object",
           "description": "Object representing a conversation that includes prompt, response, and feedback with associated metadata",
-          "allOf": [
-            { "$ref": "#/definitions/conversationID" },
-            { "$ref": "#/definitions/turnID" },
-            { "$ref": "#/definitions/prompt" },
-            { "$ref": "#/definitions/response" },
-            { "$ref": "#/definitions/feedback" }
-          ]
+          "properties": {
+            "xdm:conversationID": {
+              "title": "Conversation ID",
+              "type": "string",
+              "description": "ID to group several turns together"
+            },
+            "xdm:turnID": {
+              "title": "Turn ID",
+              "type": "string",
+              "description": "A single instance of a prompt, response, and feedback"
+            },
+            "xdm:signals": {
+              "type": "array",
+              "title": "Conversation Signals",
+              "description": "Signals based on this event and the conversation to date",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:scope": {
+                    "title": "Scope",
+                    "description": "Scope of inputs from which this set of signals is derived.",
+                    "type": "string",
+                    "examples": [
+                      "turn",
+                      "conversation-to-date",
+                      "last-N-turns",
+                      "feedback"
+                    ]
+                  },
+                  "xdm:attributes": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:subjects": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:values": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "description": "Subjects and qualifiers of the scoped input, similar to keywords but more meaningful",
+                              "properties": {
+                                "xdm:phrase": {
+                                  "type": "string",
+                                  "title": "Phrase",
+                                  "description": "A phrase or keyword extracted from the scoped input"
+                                },
+                                "xdm:qualifiers": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string",
+                                    "title": "Phrase Qualifiers",
+                                    "description": "List of qualifiers for the scoped input"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "xdm:intents": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:values": {
+                            "type": "array",
+                            "items": {
+                              "title": "Intents",
+                              "description": "Intents derived from the scoped input",
+                              "type": "string",
+                              "examples": [
+                                "make a purchase",
+                                "learn more",
+                                "browsing"
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "xdm:tones": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:values": {
+                            "type": "array",
+                            "items": {
+                              "title": "Tones",
+                              "description": "Tones derived from the scoped input",
+                              "type": "string",
+                              "examples": ["thrilled", "contemplative", "upset"]
+                            }
+                          }
+                        }
+                      },
+                      "xdm:sentiment": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:value": {
+                            "title": "Sentiment",
+                            "description": "Score from -1 (meaning negative) to 1 (indicating positive) to indicate sentiment",
+                            "minimum": -1.0,
+                            "maximum": 1.0,
+                            "examples": [-1.0, -0.34, 0, 0.7, 1.0]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "xdm:prompt": {
+              "title": "Prompt",
+              "type": "object",
+              "description": "Object representing a conversation prompt",
+              "properties": {
+                "xdm:source": {
+                  "title": "Prompt Source",
+                  "type": "string",
+                  "description": "Source of the prompt",
+                  "examples": ["end-user", "bot", "canned"]
+                },
+                "xdm:raw": {
+                  "type": "array",
+                  "title": "Raw Text and Purpose",
+                  "description": "Raw text with purpose of the text",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:text": {
+                        "title": "Text",
+                        "description": "Text",
+                        "type": "string"
+                      },
+                      "xdm:purpose": {
+                        "title": "Prompt Section Purpose",
+                        "description": "Purpose of the prompt data. Users may input multiple things simultaneously such as text and a link or attachment.",
+                        "type": "string",
+                        "examples": ["free-form text", "attachment", "link"]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "xdm:response": {
+              "title": "Response",
+              "type": "object",
+              "description": "Object representing a conversation response",
+              "properties": {
+                "xdm:source": {
+                  "title": "Response Source",
+                  "type": "string",
+                  "description": "Source of the response",
+                  "examples": ["end-user", "bot", "canned"]
+                },
+                "xdm:raw": {
+                  "type": "array",
+                  "title": "Raw Text and Purpose",
+                  "description": "Raw text with purpose of the text",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:text": {
+                        "title": "Text",
+                        "description": "Text",
+                        "type": "string"
+                      },
+                      "xdm:purpose": {
+                        "title": "Response Section Purpose",
+                        "description": "Purpose of the response data. Agents may respond with multiple things simultaneously such as text, video, links, pictures, etc.",
+                        "type": "string",
+                        "examples": ["main", "link", "picture", "video"]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "xdm:feedback": {
+              "title": "Feedback",
+              "type": "object",
+              "description": "Object representing a conversation feedback",
+              "properties": {
+                "xdm:source": {
+                  "title": "Feedback Source",
+                  "type": "string",
+                  "description": "Source of the feedback",
+                  "examples": ["end-user", "bot", "canned"]
+                },
+                "xdm:raw": {
+                  "type": "array",
+                  "title": "Raw Text and Purpose",
+                  "description": "Raw text with purpose of the text",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:text": {
+                        "title": "Text",
+                        "description": "Text",
+                        "type": "string"
+                      },
+                      "xdm:purpose": {
+                        "title": "Feedback Section Purpose",
+                        "description": "Purpose of the feedback data. Users may input multiple things simultaneously such as text, screenshot, links, attachments, etc.",
+                        "type": "string",
+                        "examples": [
+                          "free-form text",
+                          "screenshot",
+                          "attachment",
+                          "link"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "xdm:rating": {
+                  "title": "Feedback Rating",
+                  "type": "object",
+                  "description": "Rating data for the feedback",
+                  "properties": {
+                    "xdm:score": {
+                      "title": "Feedback Rating Score",
+                      "type": "number",
+                      "description": "Numerical value of the rating provided by the end-user ranging from -1.0 (negative) to 1.0 (positive)."
+                    },
+                    "xdm:classification": {
+                      "title": "Feedback Rating Classification",
+                      "type": "string",
+                      "description": "String/enum value of the rating provided by the end-user.",
+                      "examples": [
+                        "Thumbs Up",
+                        "Thumbs Down",
+                        "Positive",
+                        "Negative",
+                        "5-stars",
+                        "1-star"
+                      ]
+                    },
+                    "xdm:reasons": {
+                      "title": "Feedback Rating Reasons",
+                      "type": "array",
+                      "description": "Canned reasons why the customer provided this rating usually presented as a set of checkboxes.",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

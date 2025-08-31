@@ -29,8 +29,7 @@
                   "type": "string",
                   "description": "The name of the operation being performed."
                 }
-              },
-              "required": ["xdm:name"]
+              }
             },
             "xdm:system": {
               "type": "string",
@@ -158,8 +157,7 @@
                 }
               }
             }
-          },
-          "required": ["xdm:operation", "xdm:system"]
+          }
         },
         "xdm:error": {
           "type": "object",
@@ -183,8 +181,7 @@
             }
           }
         }
-      },
-      "required": ["xdm:gen_ai"]
+      }
     }
   },
   "allOf": [

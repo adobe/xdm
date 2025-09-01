@@ -15,18 +15,6 @@
       "xdm:sourceID": "b2b-platform",
       "xdm:sourceType": "CRM",
       "xdm:sourceInstanceID": "crm-instance-42"
-    },
-    "xdm:webpagedetails": {
-      "xdm:siteSection": "Consultation Bookings",
-      "xdm:name": "Consultant Booking Page",
-      "xdm:viewName": "Confirmation",
-      "xdm:URL": "https://www.example.com/book-consultation",
-      "xdm:server": "example.com",
-      "xdm:isErrorPage": false,
-      "xdm:isHomePage": false,
-      "xdm:pageViews": {
-        "xdm:value": 1
-      }
     }
   }
 }

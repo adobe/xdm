@@ -70,9 +70,6 @@
             },
             "xdm:conciergeKey": {
               "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-            },
-            "xdm:webpageDetails": {
-              "$ref": "https://ns.adobe.com/xdm/context/webpagedetails"
             }
           }
         }

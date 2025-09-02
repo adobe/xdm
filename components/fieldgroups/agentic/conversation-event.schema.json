@@ -70,7 +70,7 @@
                         "title": "Subjects",
                         "properties": {
                           "xdm:values": {
-                            "title": "Values",
+                            "title": "Subjects",
                             "type": "array",
                             "items": {
                               "type": "object",
@@ -83,7 +83,7 @@
                                 },
                                 "xdm:qualifiers": {
                                   "type": "array",
-                                  "title": "Qualifiers",
+                                  "title": "Phrase Qualifiers",
                                   "items": {
                                     "type": "string",
                                     "title": "Phrase Qualifiers",
@@ -101,9 +101,9 @@
                         "properties": {
                           "xdm:values": {
                             "type": "array",
-                            "title": "Values",
+                            "title": "Intent Values",
                             "items": {
-                              "title": "Values",
+                              "title": "Intent Values",
                               "description": "Intents derived from the scoped input",
                               "type": "string",
                               "examples": [
@@ -121,9 +121,9 @@
                         "properties": {
                           "xdm:values": {
                             "type": "array",
-                            "title": "Values",
+                            "title": "Tone Values",
                             "items": {
-                              "title": "Values",
+                              "title": "Tone Values",
                               "description": "Tones derived from the scoped input",
                               "type": "string",
                               "examples": ["thrilled", "contemplative", "upset"]
@@ -136,7 +136,7 @@
                         "title": "Sentiment",
                         "properties": {
                           "xdm:value": {
-                            "title": "Value",
+                            "title": "Sentiment Value",
                             "type": "number",
                             "description": "Score from -1 (meaning negative) to 1 (indicating positive) to indicate sentiment",
                             "minimum": -1.0,

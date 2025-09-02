@@ -128,6 +128,7 @@
                         "properties": {
                           "xdm:value": {
                             "title": "Sentiment",
+                            "type": "number",
                             "description": "Score from -1 (meaning negative) to 1 (indicating positive) to indicate sentiment",
                             "minimum": -1.0,
                             "maximum": 1.0,

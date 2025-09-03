@@ -115,6 +115,12 @@
               "meta:titleId": "profile-loyalty-details##xdm:tier##title##75921",
               "meta:descriptionId": "profile-loyalty-details##xdm:tier##description##54761"
             },
+            "xdm:tierExpiryDate": {
+              "title": "Tier Expiry Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Date when the customer's current loyalty tier expires."
+            },
             "xdm:adjustedPoints": {
               "title": "Adjusted Points",
               "type": "number",
@@ -199,49 +205,52 @@
                   },
                   "xdm:tasks": {
                     "title": "Challenge Tasks",
-                    "type": "object",
-                    "properties": {
-                      "xdm:endDate": {
-                        "title": "Task End Date",
-                        "type": "string",
-                        "format": "date-time",
-                        "description": "End date and time for the challenge task."
-                      },
-                      "xdm:entity": {
-                        "title": "Task Entity",
-                        "type": "string",
-                        "description": "Entity or object the task is related to."
-                      },
-                      "xdm:goal": {
-                        "title": "Task Goal",
-                        "type": "number",
-                        "description": "Target goal value for the challenge task."
-                      },
-                      "xdm:name": {
-                        "title": "Task Name",
-                        "type": "string",
-                        "description": "Name or description of the specific task."
-                      },
-                      "xdm:progress": {
-                        "title": "Task Progress",
-                        "type": "number",
-                        "description": "Current progress value toward the task goal."
-                      },
-                      "xdm:startDate": {
-                        "title": "Task Start Date",
-                        "type": "string",
-                        "format": "date-time",
-                        "description": "Start date and time for the challenge task."
-                      },
-                      "xdm:status": {
-                        "title": "Task Status",
-                        "type": "string",
-                        "description": "Current status of the task (in progress, completed, failed, etc.)."
-                      },
-                      "xdm:type": {
-                        "title": "Task Type",
-                        "type": "string",
-                        "description": "Type or category of the challenge task."
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:endDate": {
+                          "title": "Task End Date",
+                          "type": "string",
+                          "format": "date-time",
+                          "description": "End date and time for the challenge task."
+                        },
+                        "xdm:entity": {
+                          "title": "Task Entity",
+                          "type": "string",
+                          "description": "Entity or object the task is related to."
+                        },
+                        "xdm:goal": {
+                          "title": "Task Goal",
+                          "type": "number",
+                          "description": "Target goal value for the challenge task."
+                        },
+                        "xdm:name": {
+                          "title": "Task Name",
+                          "type": "string",
+                          "description": "Name or description of the specific task."
+                        },
+                        "xdm:progress": {
+                          "title": "Task Progress",
+                          "type": "number",
+                          "description": "Current progress value toward the task goal."
+                        },
+                        "xdm:startDate": {
+                          "title": "Task Start Date",
+                          "type": "string",
+                          "format": "date-time",
+                          "description": "Start date and time for the challenge task."
+                        },
+                        "xdm:status": {
+                          "title": "Task Status",
+                          "type": "string",
+                          "description": "Current status of the task (in progress, completed, failed, etc.)."
+                        },
+                        "xdm:type": {
+                          "title": "Task Type",
+                          "type": "string",
+                          "description": "Type or category of the challenge task."
+                        }
                       }
                     },
                     "description": "Details about the specific tasks within the loyalty challenge."

@@ -25,7 +25,7 @@
           "properties": {
             "xdm:gen_ai": {
               "type": "object",
-              "description": "Agent Block",
+              "description": "GenAI Block",
               "properties": {
                 "xdm:conversationId": {
                   "type": "string",

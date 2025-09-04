@@ -23,7 +23,7 @@
           "type": "object",
           "description": "Adobe Block",
           "properties": {
-            "xdm:imsOrgID": {
+            "xdm:imsOrgId": {
               "title": "ImsOrg ID",
               "type": "string",
               "description": "The ImsOrgID."
@@ -38,7 +38,7 @@
               "type": "string",
               "description": "The ImsOrg User ID."
             },
-            "xdm:sandboxID": {
+            "xdm:sandboxId": {
               "title": "SandboxID",
               "type": "string",
               "description": "The SandboxID."

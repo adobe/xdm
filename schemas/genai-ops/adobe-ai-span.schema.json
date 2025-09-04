@@ -20,6 +20,8 @@
     "adobe-ai-span": {
       "properties": {
         "xdm:adobe": {
+          "type": "object",
+          "description": "Adobe Block",
           "properties": {
             "xdm:imsOrgID": {
               "title": "ImsOrg ID",

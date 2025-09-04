@@ -15,7 +15,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
   ],
-  "description": "Captures properties related to AEP Agent Application.",
+  "description": "Captures properties related to AEP Agent Decision Tracking.",
   "definitions": {
     "aep-agent-decision-tracking": {
       "properties": {

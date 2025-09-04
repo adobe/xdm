@@ -50,6 +50,9 @@
       "$ref": "https://ns.adobe.com/xdm/mixins/aep-user-context"
     },
     {
+      "$ref": "https://ns.adobe.com/xdm/mixins/aep-agent-custom-fields"
+    },
+    {
       "$ref": "https://ns.adobe.com/xdm/mixins/genai-create-agent-span"
     },
     {

@@ -19,13 +19,25 @@
   "definitions": {
     "aep-agent-conversation-tracking": {
       "properties": {
-        "xdm:conversationId": {
-          "type": "string",
-          "description": "The conversation ID."
-        },
-        "xdm:interactionId": {
-          "type": "string",
-          "description": "The interaction ID."
+        "xdm:adobe": {
+          "type": "object",
+          "description": "Adobe Block",
+          "properties": {
+            "xdm:gen_ai": {
+              "type": "object",
+              "description": "Agent Block",
+              "properties": {
+                "xdm:conversationId": {
+                  "type": "string",
+                  "description": "The conversation ID."
+                },
+                "xdm:interactionId": {
+                  "type": "string",
+                  "description": "The interaction ID."
+                }
+              }
+            }
+          }
         }
       }
     }

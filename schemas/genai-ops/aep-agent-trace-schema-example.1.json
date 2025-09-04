@@ -5,23 +5,23 @@
   "@id": "https://example.com/agent-trace/12345678-1234-1234-1234-123456789012",
   "xdm:timestamp": "2025-01-27T10:30:45.123Z",
   "xdm:eventType": "genai.agent.trace",
-  "xdm:imsOrgID": "1234567890ABCDEF12345678@AdobeOrg",
-  "xdm:imsOrgName": "Adobe Experience Platform Demo",
-  "xdm:imsUserId": "user123@adobe.com",
-  "xdm:sandboxID": "prod-sandbox-001",
-  "xdm:sandboxName": "Production Sandbox",
-  "xdm:conversationId": "conv_abc123def456",
-  "xdm:interactionId": "interaction_789xyz012",
   "xdm:user": {
     "xdm:id": "user-12345"
   },
   "xdm:adobe": {
+    "xdm:imsOrgId": "1234567890ABCDEF12345678@AdobeOrg",
+    "xdm:imsOrgName": "Adobe Experience Platform Demo",
+    "xdm:imsUserId": "user123@adobe.com",
+    "xdm:sandboxId": "prod-sandbox-001",
+    "xdm:sandboxName": "Production Sandbox",
     "xdm:userPermissions": {
       "read_analytics": true,
       "write_segments": false,
       "admin_access": true
     },
     "xdm:gen_ai": {
+      "xdm:conversationId": "conv_abc123def456",
+      "xdm:interactionId": "interaction_789xyz012",
       "xdm:application": {
         "xdm:userSurface": "web-dashboard",
         "xdm:upstreamClient": "analytics-workspace-v2.1.0",

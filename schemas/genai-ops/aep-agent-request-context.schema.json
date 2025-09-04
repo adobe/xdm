@@ -30,6 +30,19 @@
                 "xdm:request": {
                   "type": "object",
                   "properties": {
+                    "xdm:function": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:input": {
+                          "type": "string",
+                          "description": "Input parameters for the function."
+                        },
+                        "xdm:output": {
+                          "type": "string",
+                          "description": "Response from the function."
+                        }
+                      }
+                    },
                     "xdm:context": {
                       "type": "string",
                       "description": "Agent-to-agent request text data. It should contain a subset of information from MessageSendParams.message.parts[].data_part as json string."

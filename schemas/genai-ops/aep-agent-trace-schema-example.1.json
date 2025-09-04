@@ -34,6 +34,10 @@
         "xdm:additional_app_context": "project_id=proj_abc123, workspace_version=2.1.0"
       },
       "xdm:request": {
+        "xdm:function": {
+          "xdm:input": "{\"user_query\": \"Show me the top performing products last quarter\", \"filters\": [{\"dimension\": \"product_category\", \"operator\": \"equals\", \"value\": \"electronics\"}]}",
+          "xdm:output": "{\"top_products\": [\"product_A\", \"product_B\", \"product_C\"], \"total_revenue\": 1234567.89}"
+        },
         "xdm:context": "{\"user_query\": \"Show me the top performing products last quarter\", \"filters\": [{\"dimension\": \"product_category\", \"operator\": \"equals\", \"value\": \"electronics\"}]}",
         "xdm:message": "{\"text_part\": \"Analyze sales performance for electronics products in Q4 2024, focusing on revenue and conversion metrics\"}",
         "xdm:aoInstanceId": "ao-instance-prod-001",

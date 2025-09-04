@@ -20,30 +20,32 @@
     "adobe-ai-span": {
       "properties": {
         "xdm:adobe": {
-          "xdm:imsOrgID": {
-            "title": "ImsOrg ID",
-            "type": "string",
-            "description": "The ImsOrgID."
-          },
-          "xdm:imsOrgName": {
-            "title": "ImsOrg Name",
-            "type": "string",
-            "description": "The ImsOrgName."
-          },
-          "xdm:imsUserId": {
-            "title": "ImsOrg User ID",
-            "type": "string",
-            "description": "The ImsOrg User ID."
-          },
-          "xdm:sandboxID": {
-            "title": "SandboxID",
-            "type": "string",
-            "description": "The SandboxID."
-          },
-          "xdm:sandboxName": {
-            "title": "SandboxName",
-            "type": "string",
-            "description": "The SandboxName."
+          "properties": {
+            "xdm:imsOrgID": {
+              "title": "ImsOrg ID",
+              "type": "string",
+              "description": "The ImsOrgID."
+            },
+            "xdm:imsOrgName": {
+              "title": "ImsOrg Name",
+              "type": "string",
+              "description": "The ImsOrgName."
+            },
+            "xdm:imsUserId": {
+              "title": "ImsOrg User ID",
+              "type": "string",
+              "description": "The ImsOrg User ID."
+            },
+            "xdm:sandboxID": {
+              "title": "SandboxID",
+              "type": "string",
+              "description": "The SandboxID."
+            },
+            "xdm:sandboxName": {
+              "title": "SandboxName",
+              "type": "string",
+              "description": "The SandboxName."
+            }
           }
         }
       }

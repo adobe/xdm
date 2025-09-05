@@ -43,6 +43,113 @@
               "type": "string",
               "description": "A single instance of a prompt, response, and feedback"
             },
+            "xdm:signals": {
+              "type": "array",
+              "title": "Conversation Signals",
+              "description": "Signals based on this event and the conversation to date",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:scope": {
+                    "title": "Scope",
+                    "description": "Scope of inputs from which this set of signals is derived.",
+                    "type": "string",
+                    "examples": [
+                      "turn",
+                      "conversation-to-date",
+                      "last-N-turns",
+                      "feedback"
+                    ]
+                  },
+                  "xdm:attributes": {
+                    "title": "Attributes",
+                    "type": "object",
+                    "properties": {
+                      "xdm:subjects": {
+                        "type": "object",
+                        "title": "Subjects",
+                        "properties": {
+                          "xdm:values": {
+                            "title": "Subjects",
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "description": "Subjects and qualifiers of the scoped input, similar to keywords but more meaningful",
+                              "properties": {
+                                "xdm:phrase": {
+                                  "type": "string",
+                                  "title": "Phrase",
+                                  "description": "A phrase or keyword extracted from the scoped input"
+                                },
+                                "xdm:qualifiers": {
+                                  "type": "array",
+                                  "title": "Phrase Qualifiers",
+                                  "items": {
+                                    "type": "string",
+                                    "title": "Phrase Qualifiers",
+                                    "description": "List of qualifiers for the scoped input"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "xdm:intents": {
+                        "type": "object",
+                        "title": "Intents",
+                        "properties": {
+                          "xdm:values": {
+                            "type": "array",
+                            "title": "Intent Values",
+                            "items": {
+                              "title": "Intent Values",
+                              "description": "Intents derived from the scoped input",
+                              "type": "string",
+                              "examples": [
+                                "make a purchase",
+                                "learn more",
+                                "browsing"
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "xdm:tones": {
+                        "type": "object",
+                        "title": "Tones",
+                        "properties": {
+                          "xdm:values": {
+                            "type": "array",
+                            "title": "Tone Values",
+                            "items": {
+                              "title": "Tone Values",
+                              "description": "Tones derived from the scoped input",
+                              "type": "string",
+                              "examples": ["thrilled", "contemplative", "upset"]
+                            }
+                          }
+                        }
+                      },
+                      "xdm:sentiment": {
+                        "type": "object",
+                        "title": "Sentiment",
+                        "properties": {
+                          "xdm:value": {
+                            "title": "Sentiment Value",
+                            "type": "number",
+                            "description": "Score from -1 (meaning negative) to 1 (indicating positive) to indicate sentiment",
+                            "minimum": -1.0,
+                            "maximum": 1.0,
+                            "examples": [-1.0, -0.34, 0, 0.7, 1.0]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "xdm:prompt": {
               "title": "Prompt",
               "type": "object",
@@ -67,7 +174,7 @@
                         "type": "string"
                       },
                       "xdm:purpose": {
-                        "title": "Prompt Section Purpose",
+                        "title": "Prompt Purpose",
                         "description": "Purpose of the prompt data. Users may input multiple things simultaneously such as text and a link or attachment.",
                         "type": "string",
                         "examples": ["free-form text", "attachment", "link"]
@@ -101,7 +208,7 @@
                         "type": "string"
                       },
                       "xdm:purpose": {
-                        "title": "Response Section Purpose",
+                        "title": "Response Purpose",
                         "description": "Purpose of the response data. Agents may respond with multiple things simultaneously such as text, video, links, pictures, etc.",
                         "type": "string",
                         "examples": ["main", "link", "picture", "video"]
@@ -135,7 +242,7 @@
                         "type": "string"
                       },
                       "xdm:purpose": {
-                        "title": "Feedback Section Purpose",
+                        "title": "Feedback Purpose",
                         "description": "Purpose of the feedback data. Users may input multiple things simultaneously such as text, screenshot, links, attachments, etc.",
                         "type": "string",
                         "examples": [

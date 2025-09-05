@@ -44,16 +44,22 @@
               "description": "The kind of the span."
             },
             "xdm:startTimeUnixNano": {
-              "type": "string",
+              "type": "number",
               "description": "The start time of the span."
             },
             "xdm:endTimeUnixNano": {
-              "type": "string",
+              "type": "number",
               "description": "The end time of the span."
             },
             "xdm:status": {
-              "type": "string",
-              "description": "The status of the span."
+              "type": "object",
+              "description": "The status of the span.",
+              "properties": {
+                "xdm:code": {
+                  "type": "string",
+                  "description": "The code of the status."
+                }
+              }
             }
           }
         }

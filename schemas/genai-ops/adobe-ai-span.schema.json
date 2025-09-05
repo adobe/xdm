@@ -49,6 +49,20 @@
               "description": "The SandboxName."
             }
           }
+        },
+        "xdm:scope": {
+          "type": "object",
+          "description": "The scope of the span.",
+          "properties": {
+            "xdm:name": {
+              "type": "string",
+              "description": "The ID of the scope."
+            },
+            "xdm:version": {
+              "type": "string",
+              "description": "The version of the scope."
+            }
+          }
         }
       }
     }

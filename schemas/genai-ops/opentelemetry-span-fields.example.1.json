@@ -5,8 +5,10 @@
     "xdm:parentSpanId": "0af7651916cd43dd",
     "xdm:name": "genai.agent.analytics.query",
     "xdm:kind": "server",
-    "xdm:startTimeUnixNano": "1706356200000000000",
-    "xdm:endTimeUnixNano": "1706356205500000000",
-    "xdm:status": "ok"
+    "xdm:startTimeUnixNano": 1706356200000000000,
+    "xdm:endTimeUnixNano": 1706356205500000000,
+    "xdm:status": {
+      "xdm:code": "ok"
+    }
   }
 }

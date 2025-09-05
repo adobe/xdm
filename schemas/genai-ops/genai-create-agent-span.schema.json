@@ -31,6 +31,15 @@
                 }
               }
             },
+            "xdm:provider": {
+              "type": "object",
+              "properties": {
+                "xdm:name": {
+                  "type": "string",
+                  "description": "The Generative AI provider as identified by the client or server instrumentation."
+                }
+              }
+            },
             "xdm:system": {
               "type": "string",
               "description": "The Generative AI product as identified by the client or server instrumentation."
@@ -60,6 +69,10 @@
                   "description": "The name of the GenAI model a request is being made to."
                 }
               }
+            },
+            "xdm:system_instructions": {
+              "type": "string",
+              "description": "The system message or instructions provided to the GenAI model separately from the chat history."
             }
           }
         },

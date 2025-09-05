@@ -31,6 +31,15 @@
                 }
               }
             },
+            "xdm:provider": {
+              "type": "object",
+              "properties": {
+                "xdm:name": {
+                  "type": "string",
+                  "description": "The Generative AI provider as identified by the client or server instrumentation."
+                }
+              }
+            },
             "xdm:system": {
               "type": "string",
               "description": "The Generative AI product as identified by the client or server instrumentation."
@@ -70,12 +79,25 @@
                 }
               }
             },
+            "xdm:input": {
+              "type": "object",
+              "properties": {
+                "xdm:messages": {
+                  "type": "string",
+                  "description": "The chat history provided to the model as an input."
+                }
+              }
+            },
             "xdm:output": {
               "type": "object",
               "properties": {
                 "xdm:type": {
                   "type": "string",
                   "description": "Represents the content type requested by the client."
+                },
+                "xdm:messages": {
+                  "type": "string",
+                  "description": "Messages returned by the model where each message represents a specific model response (choice, candidate)"
                 }
               }
             },
@@ -156,6 +178,10 @@
                   "description": "The number of tokens used in the GenAI response (completion)."
                 }
               }
+            },
+            "xdm:system_instructions": {
+              "type": "string",
+              "description": "The system message or instructions provided to the GenAI model separately from the chat history."
             }
           }
         },

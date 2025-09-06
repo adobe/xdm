@@ -57,7 +57,7 @@
                         }
                       }
                     },
-                    "xdm:additional_app_context": {
+                    "xdm:additionalAppContext": {
                       "type": "string",
                       "description": "Additional application context in the Adobe system."
                     }

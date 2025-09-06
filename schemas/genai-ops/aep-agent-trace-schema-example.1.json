@@ -32,7 +32,7 @@
           "xdm:id": "dv_retail_analytics_2024",
           "xdm:name": "Retail Analytics 2024"
         },
-        "xdm:additional_app_context": "project_id=proj_abc123, workspace_version=2.1.0"
+        "xdm:additionalAppContext": "project_id=proj_abc123, workspace_version=2.1.0"
       },
       "xdm:request": {
         "xdm:function": {
@@ -140,13 +140,13 @@
     "xdm:port": 443
   },
   "xdm:opentelemetrySpan": {
-    "xdm:traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
-    "xdm:spanId": "00f067aa0ba902b7",
-    "xdm:parentSpanId": "0af7651916cd43dd",
+    "xdm:trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+    "xdm:span_id": "00f067aa0ba902b7",
+    "xdm:parent_span_id": "0af7651916cd43dd",
     "xdm:name": "genai.agent.analytics.query",
     "xdm:kind": "server",
-    "xdm:startTimeUnixNano": 1706356200000000000,
-    "xdm:endTimeUnixNano": 1706356205500000000,
+    "xdm:start_time_unix_nano": 1706356200000000000,
+    "xdm:end_time_unix_nano": 1706356205500000000,
     "xdm:status": {
       "xdm:code": "ok"
     }

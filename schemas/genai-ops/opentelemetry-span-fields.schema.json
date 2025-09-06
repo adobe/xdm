@@ -22,16 +22,15 @@
         "xdm:opentelemetrySpan": {
           "type": "object",
           "properties": {
-            "xdm:traceId": {
-              "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+            "xdm:trace_id": {
               "type": "string",
               "description": "The ID of the trace."
             },
-            "xdm:spanId": {
+            "xdm:span_id": {
               "type": "string",
               "description": "The ID of the span."
             },
-            "xdm:parentSpanId": {
+            "xdm:parent_span_id": {
               "type": "string",
               "description": "The ID of the parent span."
             },
@@ -43,11 +42,11 @@
               "type": "string",
               "description": "The kind of the span."
             },
-            "xdm:startTimeUnixNano": {
+            "xdm:start_time_unix_nano": {
               "type": "number",
               "description": "The start time of the span."
             },
-            "xdm:endTimeUnixNano": {
+            "xdm:end_time_unix_nano": {
               "type": "number",
               "description": "The end time of the span."
             },

@@ -1,0 +1,18 @@
+{
+  "xdm:adobe": {
+    "xdm:gen_ai": {
+      "xdm:request": {
+        "xdm:context": "{\"dataSource\": \"analytics\", \"timeRange\": \"last30days\", \"metrics\": [\"pageViews\", \"uniqueVisitors\"]}",
+        "xdm:message": "Please analyze the website traffic data for the last 30 days and provide insights on user engagement patterns.",
+        "xdm:aoInstanceId": "ao-instance-prod-001",
+        "xdm:copilotVersion": "2.1.5",
+        "xdm:createdDate": "2025-01-15T10:30:00Z",
+        "xdm:isTestRequest": false,
+        "xdm:llmFamily": "gpt-4",
+        "xdm:releaseVersion": "v2025.1.0",
+        "xdm:username": "john.doe@company.com",
+        "xdm:featureFlags": "{\"enableAdvancedAnalytics\": true, \"enableRealTimeData\": false, \"betaFeatures\": true}"
+      }
+    }
+  }
+}

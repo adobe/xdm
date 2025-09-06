@@ -1,0 +1,14 @@
+{
+  "xdm:opentelemetrySpan": {
+    "xdm:trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+    "xdm:span_id": "00f067aa0ba902b7",
+    "xdm:parent_span_id": "0af7651916cd43dd",
+    "xdm:name": "genai.agent.analytics.query",
+    "xdm:kind": "server",
+    "xdm:start_time_unix_nano": 1706356200000000000,
+    "xdm:end_time_unix_nano": 1706356205500000000,
+    "xdm:status": {
+      "xdm:code": "ok"
+    }
+  }
+}

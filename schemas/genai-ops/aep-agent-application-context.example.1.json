@@ -1,0 +1,17 @@
+{
+  "xdm:adobe": {
+    "xdm:gen_ai": {
+      "xdm:application": {
+        "xdm:userSurface": "analytics-dashboard",
+        "xdm:upstreamClient": "analytics-web-app-v2.1.0",
+        "xdm:pageName": "Marketing Campaign Analysis",
+        "xdm:pageUrl": "https://analytics.adobe.com/workspace/projects/campaign-analysis-2025",
+        "xdm:dataview": {
+          "xdm:id": "dv_prod_marketing_2025",
+          "xdm:name": "Production Marketing Data View 2025"
+        },
+        "xdm:additional_app_context": "{\"projectId\": \"proj_12345\", \"workspaceType\": \"freeform\", \"reportSuite\": \"rsid_prod_marketing\"}"
+      }
+    }
+  }
+}

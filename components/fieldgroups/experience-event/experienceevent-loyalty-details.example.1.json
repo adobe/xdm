@@ -6,7 +6,19 @@
         "xdm:source": "coupon",
         "xdm:triggeredForItem": "SKU-12345",
         "xdm:scope": "item",
+        "xdm:promotionId": "PROMO-WELCOME"
+      },
+      {
+        "xdm:value": 20.0,
+        "xdm:source": "pointsRedemption",
+        "xdm:scope": "transaction",
         "xdm:promotionId": "PROMO-ABC"
+      },
+      {
+        "xdm:value": 6.99,
+        "xdm:source": "referral",
+        "xdm:scope": "additionalCost",
+        "xdm:promotionId": "PROMO-REF"
       }
     ],
     "xdm:couponRedemption": [

@@ -1,0 +1,76 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/adobe-ai-span",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe AI Span",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
+  ],
+  "description": "Captures properties related to Adobe AI Spans.",
+  "definitions": {
+    "adobe-ai-span": {
+      "properties": {
+        "xdm:adobe": {
+          "type": "object",
+          "description": "Adobe Block",
+          "properties": {
+            "xdm:imsOrgId": {
+              "title": "ImsOrg ID",
+              "type": "string",
+              "description": "The ImsOrgID."
+            },
+            "xdm:imsOrgName": {
+              "title": "ImsOrg Name",
+              "type": "string",
+              "description": "The ImsOrgName."
+            },
+            "xdm:imsUserId": {
+              "title": "ImsOrg User ID",
+              "type": "string",
+              "description": "The ImsOrg User ID."
+            },
+            "xdm:sandboxId": {
+              "title": "SandboxID",
+              "type": "string",
+              "description": "The SandboxID."
+            },
+            "xdm:sandboxName": {
+              "title": "SandboxName",
+              "type": "string",
+              "description": "The SandboxName."
+            }
+          }
+        },
+        "xdm:scope": {
+          "type": "object",
+          "description": "The scope of the span.",
+          "properties": {
+            "xdm:name": {
+              "type": "string",
+              "description": "The ID of the scope."
+            },
+            "xdm:version": {
+              "type": "string",
+              "description": "The version of the scope."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/adobe-ai-span"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,73 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/aep-agent-planning-task-decomposition",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Agent Planning Task Decomposition",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
+  ],
+  "description": "Captures properties related to AEP Agent Application.",
+  "definitions": {
+    "aep-agent-planning-task-decomposition": {
+      "properties": {
+        "xdm:adobe": {
+          "type": "object",
+          "description": "GenAI Block",
+          "properties": {
+            "xdm:gen_ai": {
+              "type": "object",
+              "description": "Agent Block",
+              "properties": {
+                "xdm:agent": {
+                  "type": "object",
+                  "description": "Adobe Block",
+                  "properties": {
+                    "xdm:execution": {
+                      "type": "object",
+                      "description": "Execution Block",
+                      "properties": {
+                        "xdm:planning": {
+                          "type": "object",
+                          "description": "Planning Block",
+                          "properties": {
+                            "xdm:strategy": {
+                              "type": "string",
+                              "description": "Planning approach or methodology used."
+                            },
+                            "xdm:taskCount": {
+                              "type": "integer",
+                              "description": "Number of subtasks or components created."
+                            },
+                            "xdm:complexity": {
+                              "type": "string",
+                              "description": "Assessment of task complexity level."
+                            },
+                            "xdm:dependencies": {
+                              "type": "string",
+                              "description": "JSON array of task dependencies identified."
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{ "$ref": "#/definitions/aep-agent-planning-task-decomposition" }],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,23 @@
+{
+  "xdm:gen_ai": {
+    "xdm:operation": {
+      "xdm:name": "invoke_agent"
+    },
+    "xdm:system": "adobe-aep-agent-platform",
+    "xdm:agent": {
+      "xdm:description": "Analytics Insights Agent for marketing data analysis",
+      "xdm:id": "agent-analytics-specialist-001",
+      "xdm:name": "Analytics Insights Agent"
+    },
+    "xdm:request": {
+      "xdm:model": "gpt-4-turbo"
+    }
+  },
+  "xdm:error": {
+    "xdm:type": "none"
+  },
+  "xdm:server": {
+    "xdm:port": 8080,
+    "xdm:address": "aep-agent-platform.adobe.com"
+  }
+}

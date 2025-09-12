@@ -1,0 +1,106 @@
+{
+  "xdm:loyalty": {
+    "xdm:joinDate": "2021-01-26T15:52:25+00:00",
+    "xdm:loyaltyID": ["L79UH4XR1", "ALT-12345"],
+    "xdm:program": "purchase rewards",
+    "xdm:status": "active",
+    "xdm:tier": "silver",
+    "xdm:tierExpiryDate": "2025-12-31T23:59:59Z",
+    "xdm:upgradeDate": "2022-07-01T10:00:00Z",
+    "xdm:points": 8974,
+    "xdm:pointsRedeemed": 5148,
+    "xdm:adjustedPoints": 50,
+    "xdm:expiredPoints": 120,
+    "xdm:lifetimePoints": 14292,
+    "xdm:lifetimePurchases": 2399.95,
+    "xdm:promisedPoints": 300,
+    "xdm:returnedPoints": 20,
+    "xdm:pointsExpiration": [
+      {
+        "xdm:pointsExpiring": 300,
+        "xdm:pointsExpirationDate": "2025-10-31T00:00:00Z"
+      }
+    ],
+    "xdm:cardsDetails": [
+      {
+        "xdm:number": "999000111222",
+        "xdm:series": "standard",
+        "xdm:status": "active"
+      }
+    ],
+    "xdm:challenges": [
+      {
+        "xdm:id": "CH-001",
+        "xdm:name": "Holiday shopping challenge",
+        "xdm:description": "Spend $500 to earn 500 bonus points",
+        "xdm:series": "Holiday 2025",
+        "xdm:status": "active",
+        "xdm:startDate": "2025-11-01T00:00:00Z",
+        "xdm:endDate": "2025-12-31T23:59:59Z",
+        "xdm:frequencyType": "campaign",
+        "xdm:tasks": [
+          {
+            "xdm:name": "Spend 500 USD",
+            "xdm:type": "spend",
+            "xdm:entity": "purchase",
+            "xdm:goal": 500,
+            "xdm:progress": 250,
+            "xdm:startDate": "2025-11-01T00:00:00Z",
+            "xdm:endDate": "2025-12-31T23:59:59Z",
+            "xdm:status": "in_progress"
+          }
+        ]
+      }
+    ],
+    "xdm:rewards": {
+      "xdm:badges": [
+        {
+          "xdm:id": "B-100",
+          "xdm:name": "Silver shopper",
+          "xdm:series": "2025",
+          "xdm:status": "active",
+          "xdm:startDate": "2025-01-01T00:00:00Z",
+          "xdm:endDate": "2025-12-31T23:59:59Z"
+        }
+      ],
+      "xdm:coupons": [
+        {
+          "xdm:id": "C-10OFF",
+          "xdm:name": "10% off storewide",
+          "xdm:series": "Fall 2025",
+          "xdm:status": "active",
+          "xdm:startDate": "2025-09-01T00:00:00Z",
+          "xdm:endDate": "2025-10-01T00:00:00Z",
+          "xdm:discountValue": 10,
+          "xdm:redemptionCount": 1,
+          "xdm:redemptionLimit": 3,
+          "xdm:storeName": "Acme Store"
+        }
+      ],
+      "xdm:giveaways": [
+        {
+          "xdm:id": "G-500PTS",
+          "xdm:name": "Win 500 points",
+          "xdm:partnerId": "P-01",
+          "xdm:partnerName": "Partner Co",
+          "xdm:type": "sweepstakes",
+          "xdm:series": "Fall 2025",
+          "xdm:status": "ended",
+          "xdm:startDate": "2025-08-01T00:00:00Z",
+          "xdm:endDate": "2025-08-31T23:59:59Z"
+        }
+      ],
+      "xdm:referrals": [
+        {
+          "xdm:id": "R-123",
+          "xdm:name": "Refer-a-friend Q3",
+          "xdm:recipient": "john.doe@example.com",
+          "xdm:series": "Q3 2025",
+          "xdm:status": "completed",
+          "xdm:startDate": "2025-07-01T00:00:00Z",
+          "xdm:endDate": "2025-09-30T23:59:59Z"
+        }
+      ]
+    }
+  }
+}

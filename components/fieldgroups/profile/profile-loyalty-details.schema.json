@@ -114,6 +114,404 @@
               "description": "Captures the loyalty progam tier in which a visitor is enrolled.",
               "meta:titleId": "profile-loyalty-details##xdm:tier##title##75921",
               "meta:descriptionId": "profile-loyalty-details##xdm:tier##description##54761"
+            },
+            "xdm:tierExpiryDate": {
+              "title": "Tier Expiry Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Date when the customer's current loyalty tier expires."
+            },
+            "xdm:adjustedPoints": {
+              "title": "Adjusted Points",
+              "type": "number",
+              "description": "Points that have been adjusted due to corrections, returns, or other modifications.",
+              "meta:titleId": "profile-loyalty-details##xdm:adjustedPoints##title##12345",
+              "meta:descriptionId": "profile-loyalty-details##xdm:adjustedPoints##description##67890"
+            },
+            "xdm:cardsDetails": {
+              "title": "Loyalty Cards Details",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:number": {
+                    "title": "Card Number",
+                    "type": "string",
+                    "description": "The loyalty card number or identifier."
+                  },
+                  "xdm:series": {
+                    "title": "Card Series",
+                    "type": "string",
+                    "description": "The series or collection the loyalty card belongs to."
+                  },
+                  "xdm:status": {
+                    "title": "Card Status",
+                    "type": "string",
+                    "description": "Current status of the loyalty card (active, inactive, suspended, etc.)."
+                  }
+                }
+              },
+              "description": "Details about the user's loyalty cards, if any.",
+              "meta:titleId": "profile-loyalty-details##xdm:cardsDetails##title##11111",
+              "meta:descriptionId": "profile-loyalty-details##xdm:cardsDetails##description##22222"
+            },
+            "xdm:challenges": {
+              "title": "Loyalty Challenges",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:description": {
+                    "title": "Challenge Description",
+                    "type": "string",
+                    "description": "Detailed description of the loyalty challenge or campaign."
+                  },
+                  "xdm:endDate": {
+                    "title": "Challenge End Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "End date and time of the loyalty challenge."
+                  },
+                  "xdm:frequencyType": {
+                    "title": "Frequency Type",
+                    "type": "string",
+                    "description": "Type of frequency for the challenge (daily, weekly, monthly, etc.)."
+                  },
+                  "xdm:id": {
+                    "title": "Challenge ID",
+                    "type": "string",
+                    "description": "Unique identifier for the loyalty challenge."
+                  },
+                  "xdm:name": {
+                    "title": "Challenge Name",
+                    "type": "string",
+                    "description": "Name or title of the loyalty challenge."
+                  },
+                  "xdm:series": {
+                    "title": "Challenge Series",
+                    "type": "string",
+                    "description": "Series or collection the challenge belongs to."
+                  },
+                  "xdm:startDate": {
+                    "title": "Challenge Start Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Start date and time of the loyalty challenge."
+                  },
+                  "xdm:status": {
+                    "title": "Challenge Status",
+                    "type": "string",
+                    "description": "Current status of the challenge (active, completed, expired, etc.)."
+                  },
+                  "xdm:tasks": {
+                    "title": "Challenge Tasks",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:endDate": {
+                          "title": "Task End Date",
+                          "type": "string",
+                          "format": "date-time",
+                          "description": "End date and time for the challenge task."
+                        },
+                        "xdm:entity": {
+                          "title": "Task Entity",
+                          "type": "string",
+                          "description": "Entity or object the task is related to."
+                        },
+                        "xdm:goal": {
+                          "title": "Task Goal",
+                          "type": "number",
+                          "description": "Target goal value for the challenge task."
+                        },
+                        "xdm:name": {
+                          "title": "Task Name",
+                          "type": "string",
+                          "description": "Name or description of the specific task."
+                        },
+                        "xdm:progress": {
+                          "title": "Task Progress",
+                          "type": "number",
+                          "description": "Current progress value toward the task goal."
+                        },
+                        "xdm:startDate": {
+                          "title": "Task Start Date",
+                          "type": "string",
+                          "format": "date-time",
+                          "description": "Start date and time for the challenge task."
+                        },
+                        "xdm:status": {
+                          "title": "Task Status",
+                          "type": "string",
+                          "description": "Current status of the task (in progress, completed, failed, etc.)."
+                        },
+                        "xdm:type": {
+                          "title": "Task Type",
+                          "type": "string",
+                          "description": "Type or category of the challenge task."
+                        }
+                      }
+                    },
+                    "description": "Details about the specific tasks within the loyalty challenge."
+                  }
+                }
+              },
+              "description": "Loyalty challenges or campaigns the customer is participating in.",
+              "meta:titleId": "profile-loyalty-details##xdm:challenges##title##33333",
+              "meta:descriptionId": "profile-loyalty-details##xdm:challenges##description##44444"
+            },
+            "xdm:expiredPoints": {
+              "title": "Expired Points",
+              "type": "number",
+              "description": "Total number of points that have expired and are no longer available for use.",
+              "meta:titleId": "profile-loyalty-details##xdm:expiredPoints##title##55555",
+              "meta:descriptionId": "profile-loyalty-details##xdm:expiredPoints##description##66666"
+            },
+            "xdm:lifetimePoints": {
+              "title": "Lifetime Points",
+              "type": "number",
+              "description": "Total points earned by the customer throughout their entire loyalty program membership.",
+              "meta:titleId": "profile-loyalty-details##xdm:lifetimePoints##title##77777",
+              "meta:descriptionId": "profile-loyalty-details##xdm:lifetimePoints##description##88888"
+            },
+            "xdm:lifetimePurchases": {
+              "title": "Lifetime Purchases",
+              "type": "number",
+              "description": "Total monetary value of all purchases made by the customer throughout their loyalty program membership.",
+              "meta:titleId": "profile-loyalty-details##xdm:lifetimePurchases##title##99999",
+              "meta:descriptionId": "profile-loyalty-details##xdm:lifetimePurchases##description##00000"
+            },
+            "xdm:promisedPoints": {
+              "title": "Promised Points",
+              "type": "number",
+              "description": "Points that have been promised but not yet credited to the customer's account.",
+              "meta:titleId": "profile-loyalty-details##xdm:promisedPoints##title##11112",
+              "meta:descriptionId": "profile-loyalty-details##xdm:promisedPoints##description##22223"
+            },
+            "xdm:returnedPoints": {
+              "title": "Returned Points",
+              "type": "number",
+              "description": "Points that have been returned to the customer's account due to refunds or adjustments.",
+              "meta:titleId": "profile-loyalty-details##xdm:returnedPoints##title##33334",
+              "meta:descriptionId": "profile-loyalty-details##xdm:returnedPoints##description##44445"
+            },
+            "xdm:rewards": {
+              "title": "Loyalty Rewards",
+              "type": "object",
+              "description": "Various types of rewards available to the customer through the loyalty program.",
+              "properties": {
+                "xdm:badges": {
+                  "title": "Achievement Badges",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:endDate": {
+                        "title": "Badge End Date",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Date when the badge expires or becomes invalid."
+                      },
+                      "xdm:id": {
+                        "title": "Badge ID",
+                        "type": "string",
+                        "description": "Unique identifier for the achievement badge."
+                      },
+                      "xdm:name": {
+                        "title": "Badge Name",
+                        "type": "string",
+                        "description": "Name or title of the achievement badge."
+                      },
+                      "xdm:series": {
+                        "title": "Badge Series",
+                        "type": "string",
+                        "description": "Series or collection the badge belongs to."
+                      },
+                      "xdm:startDate": {
+                        "title": "Badge Start Date",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Date when the badge was awarded or became active."
+                      },
+                      "xdm:status": {
+                        "title": "Badge Status",
+                        "type": "string",
+                        "description": "Current status of the badge (active, expired, revoked, etc.)."
+                      }
+                    }
+                  },
+                  "description": "Achievement badges earned by the customer through various activities."
+                },
+                "xdm:coupons": {
+                  "title": "Loyalty Coupons",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:discountValue": {
+                        "title": "Discount Value",
+                        "type": "number",
+                        "description": "Monetary value of the discount provided by the coupon."
+                      },
+                      "xdm:endDate": {
+                        "title": "Coupon End Date",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Expiration date of the coupon."
+                      },
+                      "xdm:id": {
+                        "title": "Coupon ID",
+                        "type": "string",
+                        "description": "Unique identifier for the loyalty coupon."
+                      },
+                      "xdm:name": {
+                        "title": "Coupon Name",
+                        "type": "string",
+                        "description": "Name or description of the coupon offer."
+                      },
+                      "xdm:redemptionCount": {
+                        "title": "Redemption Count",
+                        "type": "integer",
+                        "description": "Number of times this coupon has been redeemed."
+                      },
+                      "xdm:redemptionLimit": {
+                        "title": "Redemption Limit",
+                        "type": "integer",
+                        "description": "Maximum number of times this coupon can be redeemed."
+                      },
+                      "xdm:series": {
+                        "title": "Coupon Series",
+                        "type": "string",
+                        "description": "Series or campaign the coupon belongs to."
+                      },
+                      "xdm:startDate": {
+                        "title": "Coupon Start Date",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Date when the coupon becomes valid for use."
+                      },
+                      "xdm:status": {
+                        "title": "Coupon Status",
+                        "type": "string",
+                        "description": "Current status of the coupon (active, expired, redeemed, etc.)."
+                      },
+                      "xdm:storeName": {
+                        "title": "Store Name",
+                        "type": "string",
+                        "description": "Name of the store where the coupon can be used."
+                      }
+                    }
+                  },
+                  "description": "Discount coupons available to the customer through the loyalty program."
+                },
+                "xdm:giveaways": {
+                  "title": "Loyalty Giveaways",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:endDate": {
+                        "title": "Giveaway End Date",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "End date of the giveaway promotion."
+                      },
+                      "xdm:id": {
+                        "title": "Giveaway ID",
+                        "type": "string",
+                        "description": "Unique identifier for the giveaway promotion."
+                      },
+                      "xdm:name": {
+                        "title": "Giveaway Name",
+                        "type": "string",
+                        "description": "Name or description of the giveaway promotion."
+                      },
+                      "xdm:partnerId": {
+                        "title": "Partner ID",
+                        "type": "string",
+                        "description": "Identifier for the partner offering the giveaway."
+                      },
+                      "xdm:partnerName": {
+                        "title": "Partner Name",
+                        "type": "string",
+                        "description": "Name of the partner offering the giveaway."
+                      },
+                      "xdm:series": {
+                        "title": "Giveaway Series",
+                        "type": "string",
+                        "description": "Series or campaign the giveaway belongs to."
+                      },
+                      "xdm:startDate": {
+                        "title": "Giveaway Start Date",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Start date of the giveaway promotion."
+                      },
+                      "xdm:status": {
+                        "title": "Giveaway Status",
+                        "type": "string",
+                        "description": "Current status of the giveaway (active, ended, won, etc.)."
+                      },
+                      "xdm:type": {
+                        "title": "Giveaway Type",
+                        "type": "string",
+                        "description": "Type or category of the giveaway promotion."
+                      }
+                    }
+                  },
+                  "description": "Giveaway promotions available to the customer through the loyalty program."
+                },
+                "xdm:referrals": {
+                  "title": "Referral Rewards",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:endDate": {
+                        "title": "Referral End Date",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "End date of the referral reward period."
+                      },
+                      "xdm:id": {
+                        "title": "Referral ID",
+                        "type": "string",
+                        "description": "Unique identifier for the referral reward."
+                      },
+                      "xdm:name": {
+                        "title": "Referral Name",
+                        "type": "string",
+                        "description": "Name or description of the referral reward."
+                      },
+                      "xdm:recipient": {
+                        "title": "Referral Recipient",
+                        "type": "string",
+                        "description": "Name or identifier of the person who was referred."
+                      },
+                      "xdm:series": {
+                        "title": "Referral Series",
+                        "type": "string",
+                        "description": "Series or campaign the referral belongs to."
+                      },
+                      "xdm:startDate": {
+                        "title": "Referral Start Date",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Start date of the referral reward period."
+                      },
+                      "xdm:status": {
+                        "title": "Referral Status",
+                        "type": "string",
+                        "description": "Current status of the referral (pending, completed, expired, etc.)."
+                      }
+                    }
+                  },
+                  "description": "Referral rewards earned by the customer for referring others to the loyalty program."
+                }
+              },
+              "meta:titleId": "profile-loyalty-details##xdm:rewards##title##55556",
+              "meta:descriptionId": "profile-loyalty-details##xdm:rewards##description##66667"
             }
           },
           "meta:descriptionId": "profile-loyalty-details##xdm:loyalty##description##85311"

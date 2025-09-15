@@ -40,7 +40,7 @@
                   "description": "Email of the Consultant"
                 },
                 "xdm:consultantName": {
-                  "title": "Consultant name",
+                  "title": "Consultant Name",
                   "type": "string",
                   "description": "Name of the Consultant"
                 }
@@ -56,19 +56,21 @@
                   "description": "Status of the scheduled meeting"
                 },
                 "xdm:scheduledFor": {
-                  "title": "Scheduled for",
+                  "title": "Scheduled At",
                   "type": "string",
                   "format": "date-time",
                   "description": "Scheduled start time of the meeting"
                 },
                 "xdm:routingType": {
-                  "title": "Routing type",
+                  "title": "Routing Type",
                   "type": "string",
                   "description": "Routing type used for the meeting"
                 }
               }
             },
             "xdm:conciergeKey": {
+              "title": "Concierge Source",
+              "description": "Source of the Concierge",
               "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             }
           }

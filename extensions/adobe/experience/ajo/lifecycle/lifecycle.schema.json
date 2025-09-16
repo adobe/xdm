@@ -44,10 +44,10 @@
           "type": "string",
           "description": "Human-readable name of the AJO entity."
         },
-        "https://ns.adobe.com/experience/ajo/lifecycle/sourceStatus": {
-          "title": "Source Status",
+        "https://ns.adobe.com/experience/ajo/lifecycle/sourceState": {
+          "title": "Source State",
           "type": "string",
-          "description": "The lifecycle status of the journey step (e.g., draft, live, completed)."
+          "description": "The lifecycle state of the AJO entity (e.g., draft, live, completed)."
         },
         "https://ns.adobe.com/experience/ajo/lifecycle/isRecurrent": {
           "title": "Is Recurrent",
@@ -81,7 +81,7 @@
         "https://ns.adobe.com/experience/ajo/lifecycle/sourceId": "campaign-123",
         "https://ns.adobe.com/experience/ajo/lifecycle/sourceType": "campaign",
         "https://ns.adobe.com/experience/ajo/lifecycle/sourceName": "Welcome Campaign",
-        "https://ns.adobe.com/experience/ajo/lifecycle/sourceStatus": "draft",
+        "https://ns.adobe.com/experience/ajo/lifecycle/sourceState": "draft",
         "https://ns.adobe.com/experience/ajo/lifecycle/action": "publishing",
         "https://ns.adobe.com/experience/ajo/lifecycle/actionStatus": "failed"
       }

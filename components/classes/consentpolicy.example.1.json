@@ -1,5 +1,6 @@
 {
   "@id": "https://data.adobe.io/consentpolicies/12345678-abcd-1234-efgh-567890123456",
+  "xdm:cpID": "cp_email_marketing_001",
   "xdm:name": "Email Marketing Consent Policy",
   "xdm:description": "Policy governing user consent for email marketing communications and promotional content delivery.",
   "xdm:status": "ENABLED",

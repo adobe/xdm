@@ -32,14 +32,19 @@
                   "description": "The name of the clean room.",
                   "type": "string"
                 },
-                "xdm:database": {
+                "xdm:databaseName": {
                   "title": "Database",
                   "description": "The name of the database.",
                   "type": "string"
                 },
-                "xdm:schema": {
+                "xdm:schemaName": {
                   "title": "Schema",
                   "description": "The name of the schema.",
+                  "type": "string"
+                },
+                "xdm:tableName": {
+                  "title": "Table",
+                  "description": "The name of the table.",
                   "type": "string"
                 }
               }

@@ -30,6 +30,13 @@
           "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##title##31921",
           "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##description##94561"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID": {
+          "title": "Request ID",
+          "type": "string",
+          "description": "A unique request id refers to every single message sent as part of a MessageExecution activity.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##title##31922",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##description##94562"
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
           "title": "Experience channel",
           "description": "Experience channel related to the ExperienceEvent.",

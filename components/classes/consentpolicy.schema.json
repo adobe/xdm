@@ -19,6 +19,11 @@
   "definitions": {
     "consentpolicy": {
       "properties": {
+        "xdm:cpID": {
+          "title": "Consent Policy ID",
+          "type": "string",
+          "description": "A unique identifier for the consent policy record."
+        },
         "xdm:name": {
           "title": "Consent Policy name",
           "type": "string",

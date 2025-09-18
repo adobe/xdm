@@ -1,6 +1,7 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": "track-12345-live-activity",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "msg-profile-67890",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID": "live-activity-67892",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/push"
   },

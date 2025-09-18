@@ -185,14 +185,14 @@
               "description": "The start date of the data connection.",
               "type": "integer",
               "minimum": 0,
-              "maximum": 9007199254740991
+              "maximum": 9007199254740992
             },
             "xdm:endDateEpochMillis": {
               "title": "End Date",
               "description": "The end date of the data connection.",
               "type": "integer",
               "minimum": 0,
-              "maximum": 9007199254740991
+              "maximum": 9007199254740992
             },
             "xdm:frequency": {
               "title": "Data Export Frequency",
@@ -201,6 +201,20 @@
             }
           },
           "meta:xdmType": "object"
+        },
+        "xdm:createdAtUTC": {
+          "title": "Created At UTC",
+          "description": "The creation timestamp in UTC.",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740992
+        },
+        "xdm:updatedAtUTC": {
+          "title": "Updated At UTC",
+          "description": "The last updated timestamp in UTC.",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740992
         },
         "xdm:matchKeyToUseCaseSettings": {
           "title": "Match Key Use Case Settings",

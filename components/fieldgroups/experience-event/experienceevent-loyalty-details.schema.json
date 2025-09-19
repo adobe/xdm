@@ -23,6 +23,7 @@
           "type": "object",
           "description": "Captures loyalty-related attributes observed on an experience event.",
           "properties": {
+            
             "xdm:discounts": {
               "title": "Discounts",
               "type": "array",

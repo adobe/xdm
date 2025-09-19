@@ -43,26 +43,6 @@
           "title": "Source Name",
           "type": "string",
           "description": "Human-readable name of the AJO entity."
-        },
-        "https://ns.adobe.com/experience/ajo/lifecycle/sourceState": {
-          "title": "Source State",
-          "type": "string",
-          "description": "The lifecycle state of the AJO entity (e.g., draft, live, completed)."
-        },
-        "https://ns.adobe.com/experience/ajo/lifecycle/isRecurrent": {
-          "title": "Is Recurrent",
-          "type": "boolean",
-          "description": "Indicates if this lifecycle event is part of a recurring AJO entity."
-        },
-        "https://ns.adobe.com/experience/ajo/lifecycle/batchInstanceId": {
-          "title": "Batch Instance ID",
-          "type": "string",
-          "description": "Unique identifier for the batch instance."
-        },
-        "https://ns.adobe.com/experience/ajo/lifecycle/recurrenceIndex": {
-          "title": "Recurrence Index",
-          "type": "integer",
-          "description": "Index value representing the recurrence index of a recurring AJO entity."
         }
       },
       "required": [
@@ -81,7 +61,6 @@
         "https://ns.adobe.com/experience/ajo/lifecycle/sourceId": "campaign-123",
         "https://ns.adobe.com/experience/ajo/lifecycle/sourceType": "campaign",
         "https://ns.adobe.com/experience/ajo/lifecycle/sourceName": "Welcome Campaign",
-        "https://ns.adobe.com/experience/ajo/lifecycle/sourceState": "draft",
         "https://ns.adobe.com/experience/ajo/lifecycle/action": "publishing",
         "https://ns.adobe.com/experience/ajo/lifecycle/actionStatus": "failed"
       }

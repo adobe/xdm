@@ -1,0 +1,67 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/genai-execute-tool-span",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "GenAI Execute Tool Span",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
+  ],
+  "description": "Captures properties related to GenAI Execute Tool Spans.",
+  "definitions": {
+    "genai-execute-tool-span": {
+      "properties": {
+        "xdm:gen_ai": {
+          "type": "object",
+          "properties": {
+            "xdm:tool": {
+              "type": "object",
+              "properties": {
+                "xdm:call": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:id": {
+                      "type": "string",
+                      "description": "The tool call identifier."
+                    }
+                  }
+                },
+                "xdm:description": {
+                  "type": "string",
+                  "description": "The tool description."
+                },
+                "xdm:name": {
+                  "type": "string",
+                  "description": "Name of the tool utilized by the agent."
+                }
+              }
+            }
+          }
+        },
+        "xdm:error": {
+          "type": "object",
+          "properties": {
+            "xdm:type": {
+              "type": "string",
+              "description": "Describes a class of error the operation ended with."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/genai-execute-tool-span"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -4,11 +4,13 @@
       "bucket": "Sample value",
       "path": "Sample value",
       "fileProperties": "Sample value",
-      "audiencePathMappings": {
-        "audienceId": "Sample value",
-        "path": "Sample value",
-        "externalAudienceId": "Sample value"
-      }
+      "audiencePathMappings": [
+        {
+          "audienceId": "Sample value",
+          "path": "Sample value",
+          "externalAudienceId": "Sample value"
+        }
+      ]
     }
   }
 }

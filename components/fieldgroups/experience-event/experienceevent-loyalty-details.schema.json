@@ -1,0 +1,179 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-loyalty-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Loyalty-related event data such as discounts, coupon/points/redemption, referrals, and points gained.",
+  "definitions": {
+    "experienceevent-loyalty": {
+      "properties": {
+        "xdm:loyalty": {
+          "type": "object",
+          "description": "Captures loyalty-related attributes observed on an experience event.",
+          "properties": {
+            "xdm:discounts": {
+              "title": "Discounts",
+              "type": "array",
+              "description": "List of discounts applied as part of this event.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:value": {
+                    "title": "Discount Value",
+                    "type": "number",
+                    "description": "Monetary value of the discount applied."
+                  },
+                  "xdm:source": {
+                    "title": "Discount Source",
+                    "type": "string",
+                    "description": "Origin of the discount (e.g., coupon, referral, pointsRedemption)."
+                  },
+                  "xdm:triggeredForItem": {
+                    "title": "Triggered For Item",
+                    "type": "string",
+                    "description": "SKU or identifier of the item this discount is for, if applicable."
+                  },
+                  "xdm:scope": {
+                    "title": "Scope",
+                    "type": "string",
+                    "description": "Scope of the discount (e.g., additionalCost, item, total)."
+                  },
+                  "xdm:promotionId": {
+                    "title": "Promotion ID",
+                    "type": "string",
+                    "description": "Identifier of the promotion that triggered this discount."
+                  }
+                }
+              }
+            },
+            "xdm:couponRedemption": {
+              "title": "Coupon Redemptions",
+              "type": "array",
+              "description": "Coupons redeemed during this event.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:id": {
+                    "title": "Coupon ID",
+                    "type": "string",
+                    "description": "Coupon code or identifier."
+                  },
+                  "xdm:series": {
+                    "title": "Coupon Series",
+                    "type": "string",
+                    "description": "Series or campaign the coupon belongs to."
+                  },
+                  "xdm:seriesName": {
+                    "title": "Coupon Series Name",
+                    "type": "string",
+                    "description": "Human-readable name of the coupon series."
+                  },
+                  "xdm:promotionId": {
+                    "title": "Promotion ID",
+                    "type": "string",
+                    "description": "Identifier of the promotion this coupon is from."
+                  }
+                }
+              }
+            },
+            "xdm:pointsRedemption": {
+              "title": "Points Redemption",
+              "type": "object",
+              "description": "Points redeemed as part of this event.",
+              "properties": {
+                "xdm:value": {
+                  "title": "Points Value",
+                  "type": "number",
+                  "description": "Number of points redeemed."
+                },
+                "xdm:promotionId": {
+                  "title": "Promotion ID",
+                  "type": "string",
+                  "description": "Identifier of the promotion governing this points redemption."
+                },
+                "xdm:loyaltyProgramId": {
+                  "title": "Loyalty Program ID",
+                  "type": "string",
+                  "description": "Identifier of the loyalty program managing these points."
+                },
+                "xdm:transactionId": {
+                  "title": "Transaction ID",
+                  "type": "string",
+                  "description": "Identifier of the points redemption transaction, if applicable."
+                }
+              }
+            },
+            "xdm:referralRedemption": {
+              "title": "Referral Redemptions",
+              "type": "array",
+              "description": "Referral codes redeemed during this event.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:code": {
+                    "title": "Referral Code",
+                    "type": "string",
+                    "description": "Referral code used."
+                  },
+                  "xdm:promotionId": {
+                    "title": "Promotion ID",
+                    "type": "string",
+                    "description": "Identifier of the promotion the referral is from."
+                  }
+                }
+              }
+            },
+            "xdm:pointsGained": {
+              "title": "Points Gained",
+              "type": "array",
+              "description": "Points gained as part of this event.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:value": {
+                    "title": "Points Value",
+                    "type": "number",
+                    "description": "Number of points gained."
+                  },
+                  "xdm:promotionId": {
+                    "title": "Promotion ID",
+                    "type": "string",
+                    "description": "Identifier of the promotion governing this points acquisition."
+                  },
+                  "xdm:loyaltyProgramId": {
+                    "title": "Loyalty Program ID",
+                    "type": "string",
+                    "description": "Identifier of the loyalty program managing these points."
+                  },
+                  "xdm:transactionId": {
+                    "title": "Transaction ID",
+                    "type": "string",
+                    "description": "Identifier of the points acquisition transaction, if applicable."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent-loyalty"
+    }
+  ],
+  "meta:status": "experimental"
+}

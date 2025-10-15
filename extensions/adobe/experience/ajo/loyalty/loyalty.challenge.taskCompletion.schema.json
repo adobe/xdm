@@ -1,0 +1,127 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/taskCompletion",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Challenge Task Completion",
+  "description": "Details about task completion records within a loyalty challenge, including accumulated values and item-level tracking.",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "taskCompletion": {
+      "properties": {
+        "https://ns.adobe.com/experience/ajo/loyalty/accumulators": {
+          "title": "Accumulators",
+          "type": "object",
+          "description": "Accumulated values for task completion.",
+          "properties": {
+            "https://ns.adobe.com/experience/ajo/loyalty/spend": {
+              "title": "Spend",
+              "type": "number",
+              "description": "Total spend accumulated.",
+              "meta:xdmType": "number"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
+              "title": "Quantity",
+              "type": "number",
+              "description": "Total quantity accumulated.",
+              "meta:xdmType": "number"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/item_list": {
+              "title": "Item List",
+              "type": "array",
+              "description": "List of items contributing to task completion.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "https://ns.adobe.com/experience/ajo/loyalty/id": {
+                    "title": "ID",
+                    "type": "string",
+                    "description": "Item identifier.",
+                    "minLength": 1,
+                    "meta:xdmType": "string"
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/item_id": {
+                    "title": "Item ID",
+                    "type": "string",
+                    "description": "Product item ID.",
+                    "minLength": 1,
+                    "meta:xdmType": "string"
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/item_name": {
+                    "title": "Item Name",
+                    "type": "string",
+                    "description": "Product item name.",
+                    "minLength": 1,
+                    "meta:xdmType": "string"
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/unit_price": {
+                    "title": "Unit Price",
+                    "type": "number",
+                    "description": "Unit price of the item.",
+                    "meta:xdmType": "number"
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
+                    "title": "Quantity",
+                    "type": "number",
+                    "description": "Quantity of the item.",
+                    "meta:xdmType": "number"
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
+                    "title": "Transaction ID",
+                    "type": "string",
+                    "description": "Transaction identifier.",
+                    "minLength": 1,
+                    "meta:xdmType": "string"
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/locationId": {
+                    "title": "Location ID",
+                    "type": "string",
+                    "description": "Location identifier.",
+                    "minLength": 1,
+                    "meta:xdmType": "string"
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/timestamp": {
+                    "title": "Timestamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Timestamp of the item transaction.",
+                    "meta:xdmType": "date-time"
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/item_set": {
+                    "title": "Item Set",
+                    "type": "array",
+                    "description": "Set of item categories or tags.",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "meta:xdmType": "string"
+                    },
+                    "meta:xdmType": "array"
+                  }
+                },
+                "meta:xdmType": "object"
+              },
+              "meta:xdmType": "array"
+            }
+          },
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/loyaltyChallengeTaskCompletion"
+    }
+  ],
+  "meta:status": "experimental"
+}
+

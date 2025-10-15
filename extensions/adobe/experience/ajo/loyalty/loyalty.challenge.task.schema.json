@@ -1,0 +1,132 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/task",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Challenge Task",
+  "description": "Details about a task within a loyalty challenge, including state, dates, variables, and completion tracking.",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "task": {
+      "properties": {
+        "https://ns.adobe.com/experience/ajo/loyalty/name": {
+          "title": "Task Name",
+          "type": "string",
+          "description": "Name of the task.",
+          "minLength": 1,
+          "meta:xdmType": "string"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/state": {
+          "title": "Task State",
+          "type": "string",
+          "description": "Current state of the task.",
+          "minLength": 1,
+          "meta:xdmType": "string"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/startDate": {
+          "title": "Task Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time when the task started.",
+          "meta:xdmType": "date-time"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/endDate": {
+          "title": "Task End Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time when the task ended.",
+          "meta:xdmType": "date-time"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/variables": {
+          "title": "Variables",
+          "type": "object",
+          "description": "Task variables and configuration.",
+          "properties": {
+            "https://ns.adobe.com/experience/ajo/loyalty/type": {
+              "title": "Type",
+              "type": "string",
+              "description": "Type of task variable.",
+              "minLength": 1,
+              "meta:xdmType": "string"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/goal": {
+              "title": "Goal",
+              "type": "number",
+              "description": "Goal value for the task.",
+              "meta:xdmType": "number"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/isSingleTransaction": {
+              "title": "Is Single Transaction",
+              "type": "boolean",
+              "description": "Indicates if the task must be completed in a single transaction.",
+              "meta:xdmType": "boolean"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/include": {
+              "title": "Include",
+              "type": "object",
+              "description": "Values to include in task completion.",
+              "properties": {
+                "https://ns.adobe.com/experience/ajo/loyalty/valuesSet": {
+                  "title": "Values Set",
+                  "type": "array",
+                  "description": "Set of values to include.",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "meta:xdmType": "string"
+                  },
+                  "meta:xdmType": "array"
+                }
+              },
+              "meta:xdmType": "object"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/exclude": {
+              "title": "Exclude",
+              "type": "object",
+              "description": "Values to exclude from task completion.",
+              "properties": {
+                "https://ns.adobe.com/experience/ajo/loyalty/valuesSet": {
+                  "title": "Values Set",
+                  "type": "array",
+                  "description": "Set of values to exclude.",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "meta:xdmType": "string"
+                  },
+                  "meta:xdmType": "array"
+                }
+              },
+              "meta:xdmType": "object"
+            }
+          },
+          "meta:xdmType": "object"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/taskCompletions": {
+          "title": "Task Completions",
+          "type": "array",
+          "description": "List of task completion records.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/ajo/loyalty/challenge/taskCompletion"
+          },
+          "meta:xdmType": "array"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/loyaltyChallengeTask"
+    }
+  ],
+  "meta:status": "experimental"
+}
+

@@ -124,6 +124,11 @@
           },
           "description": "The types of locations (virtual places) that this channel consists of and can deliver content to.",
           "meta:descriptionId": "channel##xdm:locationTypes##description##91781"
+        },
+        "xdm:referringSource": {
+          "title": "Referring Source",
+          "description": "Referring source to this channel",
+          "type": "string"
         }
       }
     }

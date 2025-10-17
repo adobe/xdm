@@ -120,8 +120,10 @@
                                 "typed_bookmarked",
                                 "email",
                                 "social",
-                                "unknown",
-                                "usenet"
+                                "hard_drive",
+                                "usenet",
+                                "nojs",
+                                "conversational_ai"
                             ],
                             "meta:enum": {
                                 "internal": "Internal",
@@ -130,8 +132,10 @@
                                 "typed_bookmarked": "Typed or bookmarked",
                                 "email": "Email",
                                 "social": "Social network",
-                                "unknown": "Unknown",
-                                "news": "Usenet newsgroup"
+                                "hard_drive": "Hard Drive",
+                                "usenet": "Usenet newsgroup",
+                                "nojs": "No JS",
+                                "conversational_ai": "Conversational AI"
                             }
                         }
                     }

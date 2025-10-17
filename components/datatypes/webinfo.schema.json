@@ -158,8 +158,10 @@
                 "typed_bookmarked",
                 "email",
                 "social",
-                "unknown",
-                "usenet"
+                "usenet",
+                "hard_drive",
+                "nojs",
+                "conversational_ai"
               ],
               "meta:enum": {
                 "internal": "Internal",
@@ -168,8 +170,10 @@
                 "typed_bookmarked": "Typed or bookmarked",
                 "email": "Email",
                 "social": "Social network",
-                "unknown": "Unknown",
-                "usenet": "Usenet newsgroup"
+                "hard_drive": "Hard Drive",
+                "usenet": "Usenet newsgroup",
+                "nojs": "No JS",
+                "conversational_ai": "Conversational AI"
               },
               "meta:titleId": "webinfo##xdm:type##title##17421",
               "meta:descriptionId": "webinfo##xdm:type##description##31751"

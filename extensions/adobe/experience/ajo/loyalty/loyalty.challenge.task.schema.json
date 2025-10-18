@@ -69,12 +69,12 @@
             "https://ns.adobe.com/experience/ajo/loyalty/include": {
               "title": "Include",
               "type": "object",
-              "description": "Values to include in task completion.",
+              "description": "Defines the item labels/categories that will satisfy this task.",
               "properties": {
                 "https://ns.adobe.com/experience/ajo/loyalty/valuesSet": {
                   "title": "Values Set",
                   "type": "array",
-                  "description": "Set of values to include.",
+                  "description": "List of item labels or categories that qualify for task completion.",
                   "items": {
                     "type": "string",
                     "minLength": 1,
@@ -88,12 +88,12 @@
             "https://ns.adobe.com/experience/ajo/loyalty/exclude": {
               "title": "Exclude",
               "type": "object",
-              "description": "Values to exclude from task completion.",
+              "description": "Defines the item labels/categories that should be excluded from satisfying this task.",
               "properties": {
                 "https://ns.adobe.com/experience/ajo/loyalty/valuesSet": {
                   "title": "Values Set",
                   "type": "array",
-                  "description": "Set of values to exclude.",
+                  "description": "List of item labels or categories that should not count toward task completion.",
                   "items": {
                     "type": "string",
                     "minLength": 1,
@@ -110,7 +110,7 @@
         "https://ns.adobe.com/experience/ajo/loyalty/taskCompletions": {
           "title": "Task Completions",
           "type": "array",
-          "description": "List of task completion records.",
+          "description": "List of task completions that counted toward satisfying this task.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/ajo/loyalty/challenge/taskCompletion"
           },

@@ -8,12 +8,46 @@
   "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/taskCompletion",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Loyalty Challenge Task Completion",
-  "description": "Details about task completion records within a loyalty challenge, including accumulated values and item-level tracking.",
+  "description": "Details about task completion records within a loyalty challenge's task, including accumulated values and item-level tracking.",
   "type": "object",
   "meta:extensible": true,
   "definitions": {
     "taskCompletion": {
       "properties": {
+        "https://ns.adobe.com/experience/ajo/loyalty/id": {
+          "title": "ID",
+          "type": "string",
+          "description": "id of the event that triggered this task completion ",
+          "minLength": 1,
+          "meta:xdmType": "string"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/timestamp": {
+          "title": "Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the task completion.",
+          "meta:xdmType": "date-time"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/utcOffset": {
+          "title": "UTC Offset",
+          "type": "integer",
+          "description": "part of the day for this task completion",
+          "meta:xdmType": "int"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
+          "title": "Transaction ID",
+          "type": "string",
+          "description": "id of the transaction that triggered this task completion",
+          "minLength": 1,
+          "meta:xdmType": "string"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/locationId": {
+          "title": "Location ID",
+          "type": "string",
+          "description": "id of the location where this task completion occurred",
+          "minLength": 1,
+          "meta:xdmType": "string"
+        },
         "https://ns.adobe.com/experience/ajo/loyalty/accumulators": {
           "title": "Accumulators",
           "type": "object",
@@ -38,13 +72,6 @@
               "items": {
                 "type": "object",
                 "properties": {
-                  "https://ns.adobe.com/experience/ajo/loyalty/id": {
-                    "title": "ID",
-                    "type": "string",
-                    "description": "Item identifier.",
-                    "minLength": 1,
-                    "meta:xdmType": "string"
-                  },
                   "https://ns.adobe.com/experience/ajo/loyalty/item_id": {
                     "title": "Item ID",
                     "type": "string",
@@ -70,27 +97,6 @@
                     "type": "number",
                     "description": "Quantity of the item.",
                     "meta:xdmType": "number"
-                  },
-                  "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
-                    "title": "Transaction ID",
-                    "type": "string",
-                    "description": "Transaction identifier.",
-                    "minLength": 1,
-                    "meta:xdmType": "string"
-                  },
-                  "https://ns.adobe.com/experience/ajo/loyalty/locationId": {
-                    "title": "Location ID",
-                    "type": "string",
-                    "description": "Location identifier.",
-                    "minLength": 1,
-                    "meta:xdmType": "string"
-                  },
-                  "https://ns.adobe.com/experience/ajo/loyalty/timestamp": {
-                    "title": "Timestamp",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Timestamp of the item transaction.",
-                    "meta:xdmType": "date-time"
                   },
                   "https://ns.adobe.com/experience/ajo/loyalty/item_set": {
                     "title": "Item Set",
@@ -119,7 +125,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/loyaltyChallengeTaskCompletion"
+      "$ref": "#/definitions/taskCompletion"
     }
   ],
   "meta:status": "experimental"

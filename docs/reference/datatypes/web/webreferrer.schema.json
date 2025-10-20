@@ -33,7 +33,8 @@
                         "hard_drive",
                         "usenet",
                         "nojs",
-                        "conversational_ai"
+                        "conversational_ai",
+                        "unknown"
                     ],
                     "meta:enum": {
                         "internal": "Internal",
@@ -45,7 +46,8 @@
                         "hard_drive": "Hard Drive",
                         "usenet": "Usenet newsgroup",
                         "nojs": "No JS",
-                        "conversational_ai": "Conversational AI"
+                        "conversational_ai": "Conversational AI",
+                        "unknown": "Unknown"
                     }
                 },
                 "xdm:linkName": {

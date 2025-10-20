@@ -452,6 +452,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `usenet`           | Usenet newsgroup    |
 | `nojs`             | No JS               |
 | `conversational_ai`| Conversational AI   |
+| `unknown`          | Unknown             |
 
 
 

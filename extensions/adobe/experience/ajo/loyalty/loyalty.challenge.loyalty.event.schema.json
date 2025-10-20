@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/ajo/loyalty/loyalty-event",
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/loyaltyEvent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Loyalty Event",
   "type": "object",
@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Captures loyalty event details including transaction information and item lists.",
+  "description": "Details of a Loyalty Event to be processed by the Loyalty Challenge Service.",
   "definitions": {
     "customFields": {
       "properties": {
@@ -98,7 +98,10 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/customFields"
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/loyaltyChallengeLoyaltyEvent"
     }
   ],
   "meta:status": "experimental"

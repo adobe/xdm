@@ -346,6 +346,11 @@
           "title": "Pccr",
           "type": "boolean",
           "description": "Indicates that a redirect occurred."
+        },
+        "xdm:dataIngestionSource": {
+          "title": "Data Ingestion Source",
+          "type": "string",
+          "description": "Indicates the method or channel through which the data was ingested into Adobe Experience Platform."
         }
       },
       "required": ["xdm:name", "xdm:length", "xdm:contentType"]

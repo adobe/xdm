@@ -1,14 +1,16 @@
 {
   "sourceSettings": {
     "s3Settings": {
-      "audiencePathMappings": {
-        "audienceId": "Sample value",
-        "externalAudienceId": "Sample value",
-        "path": "Sample value"
-      },
       "bucket": "Sample value",
+      "path": "Sample value",
       "fileProperties": "Sample value",
-      "path": "Sample value"
+      "audiencePathMappings": [
+        {
+          "audienceId": "Sample value",
+          "path": "Sample value",
+          "externalAudienceId": "Sample value"
+        }
+      ]
     }
   }
 }

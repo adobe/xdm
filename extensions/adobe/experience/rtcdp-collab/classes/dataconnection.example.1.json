@@ -1,19 +1,55 @@
 {
-  "collaboratorId": "123456",
-  "createdAtUTC": 1747690510,
-  "createdBy": "user@company.com",
-  "datasetEntityType": "Audience",
-  "description": "Sample value",
-  "imsOrg": "Sample value",
+  "id": "Sample value",
   "name": "Sample value",
-  "ownerCollaboratorId": "Sample value",
+  "description": "Sample value",
+  "status": "Sample value",
+  "imsOrg": "Sample value",
+  "createdAtEpochMillis": 1747776910,
+  "updatedAtEpochMillis": 1747776910,
+  "createdBy": "User@CompanyOrg",
+  "ownerCollaboratorId": "User@CompanyOrg",
+  "updatedBy": "User@CompanyOrg",
+  "version": "Sample value",
+  "collaboratorId": "123456",
+  "sourceType": "Sample value",
+  "type": "Sample value",
+  "isEgress": true,
+  "isSystem": false,
+  "fieldMappings": [
+    {
+      "sourceName": "Sample value",
+      "targetName": "Sample value",
+      "matchKey": true,
+      "sourceType": "Sample value",
+      "transformation": {
+        "functions": [
+          {
+            "type": "Sample value"
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "type": "Sample value",
+          "target": "Sample value"
+        }
+      ]
+    }
+  ],
   "scheduleSettings": {
     "startDateEpochMillis": 1747776910,
-    "endDateEpochMillis": 1747949710
+    "endDateEpochMillis": 1747949710,
+    "frequency": "Sample value"
   },
-  "sourceType": "AEP-RTCDP",
-  "status": "Sample value",
-  "updatedAtUTC": 23911,
-  "updatedBy": "Sample value",
-  "version": "Sample value"
+  "createdAtUTC": 1747776910,
+  "updatedAtUTC": 1747776910,
+  "matchKeyToUseCaseSettings": [
+    {
+      "id": "Sample value",
+      "discover": true,
+      "share": true,
+      "activate": true,
+      "measure": true
+    }
+  ]
 }

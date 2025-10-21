@@ -5,94 +5,73 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/events/engagement-meeting-concierge",
+  "$id": "https://ns.adobe.com/xdm/mixins/events/meeting-booked-concierge",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Scheduled meeting in concierge",
+  "title": "Booked Meeting in Concierge",
   "type": "object",
   "meta:tags": {
     "b2bSchema": true
   },
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "engagement.meeting.concierge",
+  "meta:conditionalValue": "meeting.booked.concierge",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Booked a meeting with business representative in the Conversation.",
+  "description": "Booked a meeting with consultant in the Conversation.",
   "definitions": {
     "scheduledmeetinginconcierge": {
       "properties": {
-        "xdm:engagement": {
-          "title": "Engagement",
+        "xdm:scheduledmeeting": {
+          "title": "Booked Meeting in Concierge",
           "type": "object",
           "properties": {
-            "xdm:businessRepresentativeInConcierge": {
-              "title": "Business representative",
+            "xdm:consultantDetails": {
+              "title": "Consultant details",
               "type": "object",
               "properties": {
-                "xdm:businessRepresentativeDetails": {
-                  "title": "Business representative Details",
-                  "type": "object",
-                  "properties": {
-                    "xdm:businessRepresentativeID": {
-                      "title": "Business representative ID",
-                      "type": "string",
-                      "description": "Unique Identifier for a Business representative."
-                    },
-                    "xdm:businessRepresentativeEmail": {
-                      "title": "Business representative Email",
-                      "type": "string",
-                      "description": "Email of the Business representative."
-                    },
-                    "xdm:businessRepresentativeName": {
-                      "title": "Business representative Name",
-                      "type": "string",
-                      "description": "Name of the Business representative."
-                    }
-                  }
+                "xdm:consultantID": {
+                  "title": "Consultant ID",
+                  "type": "string",
+                  "description": "Unique Identifier for a Consultant"
                 },
-                "xdm:meetingDetails": {
-                  "title": "Meeting Details",
-                  "type": "object",
-                  "properties": {
-                    "xdm:status": {
-                      "title": "Status",
-                      "type": "string",
-                      "description": "The status of the Meeting"
-                    },
-                    "xdm:scheduledFor": {
-                      "title": "Scheduled for",
-                      "type": "string",
-                      "description": "Time at which meeting is scheduled for."
-                    }
-                  }
+                "xdm:consultantEmail": {
+                  "title": "Consultant Email",
+                  "type": "string",
+                  "description": "Email of the Consultant"
                 },
-                "xdm:conciergeDetails": {
-                  "title": "Concierge Details",
-                  "type": "object",
-                  "properties": {
-                    "xdm:conciergeID": {
-                      "title": "Concierge ID",
-                      "type": "string",
-                      "description": "Unique Identifier for a Concierge."
-                    },
-                    "xdm:conciergeName": {
-                      "title": "Concierge Name",
-                      "type": "string",
-                      "description": "Name of the Concierge."
-                    },
-                    "xdm:pageURL": {
-                      "title": "Page URL",
-                      "type": "string",
-                      "description": "URL of the page where the Concierge is initiated."
-                    }
-                  }
-                },
-                "xdm:conciergeKey": {
-                  "title": "Concierge Key",
-                  "description": "Key of the Concierge.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "xdm:consultantName": {
+                  "title": "Consultant Name",
+                  "type": "string",
+                  "description": "Name of the Consultant"
                 }
               }
+            },
+            "xdm:meetingDetails": {
+              "title": "Meeting Details",
+              "type": "object",
+              "properties": {
+                "xdm:meetingStatus": {
+                  "title": "Meeting Status",
+                  "type": "string",
+                  "description": "Status of the scheduled meeting"
+                },
+                "xdm:scheduledFor": {
+                  "title": "Scheduled At",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Scheduled start time of the meeting"
+                },
+                "xdm:routingType": {
+                  "title": "Routing Type",
+                  "type": "string",
+                  "description": "Routing type used for the meeting"
+                }
+              }
+            },
+            "xdm:conciergeKey": {
+              "title": "Concierge Source",
+              "description": "Source of the Concierge",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             }
           }
         }

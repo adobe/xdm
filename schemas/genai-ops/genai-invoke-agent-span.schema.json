@@ -1,0 +1,219 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/genai-invoke-agent-span",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "GenAI Invoke Agent Span",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
+  ],
+  "description": "Captures properties related to GenAI Agent Execution Spans.",
+  "definitions": {
+    "genai-invoke-agent-span": {
+      "properties": {
+        "xdm:gen_ai": {
+          "type": "object",
+          "properties": {
+            "xdm:operation": {
+              "type": "object",
+              "properties": {
+                "xdm:name": {
+                  "type": "string",
+                  "description": "The name of the operation being performed."
+                }
+              }
+            },
+            "xdm:provider": {
+              "type": "object",
+              "properties": {
+                "xdm:name": {
+                  "type": "string",
+                  "description": "The Generative AI provider as identified by the client or server instrumentation."
+                }
+              }
+            },
+            "xdm:system": {
+              "type": "string",
+              "description": "The Generative AI product as identified by the client or server instrumentation."
+            },
+            "xdm:agent": {
+              "type": "object",
+              "properties": {
+                "xdm:description": {
+                  "type": "string",
+                  "description": "Free-form description of the GenAI agent provided by the application."
+                },
+                "xdm:id": {
+                  "type": "string",
+                  "description": "The unique identifier of the GenAI agent."
+                },
+                "xdm:name": {
+                  "type": "string",
+                  "description": "Human-readable name of the GenAI agent provided by the application."
+                }
+              }
+            },
+            "xdm:conversation": {
+              "type": "object",
+              "properties": {
+                "xdm:id": {
+                  "type": "string",
+                  "description": "The unique identifier for a conversation (session, thread), used to store and correlate messages within this conversation."
+                }
+              }
+            },
+            "xdm:data_source": {
+              "type": "object",
+              "properties": {
+                "xdm:id": {
+                  "type": "string",
+                  "description": "The data source identifier."
+                }
+              }
+            },
+            "xdm:input": {
+              "type": "object",
+              "properties": {
+                "xdm:messages": {
+                  "type": "string",
+                  "description": "The chat history provided to the model as an input."
+                }
+              }
+            },
+            "xdm:output": {
+              "type": "object",
+              "properties": {
+                "xdm:type": {
+                  "type": "string",
+                  "description": "Represents the content type requested by the client."
+                },
+                "xdm:messages": {
+                  "type": "string",
+                  "description": "Messages returned by the model where each message represents a specific model response (choice, candidate)"
+                }
+              }
+            },
+            "xdm:request": {
+              "type": "object",
+              "properties": {
+                "xdm:choice": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:count": {
+                      "type": "integer",
+                      "description": "The target number of candidate completions to return."
+                    }
+                  }
+                },
+                "xdm:model": {
+                  "type": "string",
+                  "description": "The name of the GenAI model a request is being made to."
+                },
+                "xdm:seed": {
+                  "type": "integer",
+                  "description": "Requests with same seed value more likely to return same result."
+                },
+                "xdm:frequency_penalty": {
+                  "type": "number",
+                  "description": "The frequency penalty setting for the GenAI request."
+                },
+                "xdm:max_tokens": {
+                  "type": "integer",
+                  "description": "The maximum number of tokens the model generates for a request."
+                },
+                "xdm:presence_penalty": {
+                  "type": "number",
+                  "description": "The presence penalty setting for the GenAI request."
+                },
+                "xdm:stop_sequences": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "description": "List of sequences that the model will use to stop generating further tokens."
+                },
+                "xdm:temperature": {
+                  "type": "number",
+                  "description": "The temperature setting for the GenAI request."
+                },
+                "xdm:top_p": {
+                  "type": "number",
+                  "description": "The top_p sampling setting for the GenAI request."
+                }
+              }
+            },
+            "xdm:response": {
+              "type": "object",
+              "properties": {
+                "xdm:finish_reasons": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "description": "Array of reasons the model stopped generating tokens, corresponding to each generation received."
+                },
+                "xdm:id": {
+                  "type": "string",
+                  "description": "The unique identifier for the completion."
+                },
+                "xdm:model": {
+                  "type": "string",
+                  "description": "The name of the model that generated the response."
+                }
+              }
+            },
+            "xdm:usage": {
+              "type": "object",
+              "properties": {
+                "xdm:input_tokens": {
+                  "type": "integer",
+                  "description": "The number of tokens used in the GenAI input (prompt)."
+                },
+                "xdm:output_tokens": {
+                  "type": "integer",
+                  "description": "The number of tokens used in the GenAI response (completion)."
+                }
+              }
+            },
+            "xdm:system_instructions": {
+              "type": "string",
+              "description": "The system message or instructions provided to the GenAI model separately from the chat history."
+            }
+          }
+        },
+        "xdm:error": {
+          "type": "object",
+          "properties": {
+            "xdm:type": {
+              "type": "string",
+              "description": "Describes a class of error the operation ended with."
+            }
+          }
+        },
+        "xdm:server": {
+          "type": "object",
+          "properties": {
+            "xdm:port": {
+              "type": "integer",
+              "description": "GenAI server port."
+            },
+            "xdm:address": {
+              "type": "string",
+              "description": "GenAI server address."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/genai-invoke-agent-span"
+    }
+  ],
+  "meta:status": "experimental"
+}

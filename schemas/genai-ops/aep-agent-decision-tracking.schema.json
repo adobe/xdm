@@ -1,0 +1,75 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/aep-agent-decision-tracking",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Agent Decision Tracking",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
+  ],
+  "description": "Captures properties related to AEP Agent Decision Tracking.",
+  "definitions": {
+    "aep-agent-decision-tracking": {
+      "properties": {
+        "xdm:adobe": {
+          "type": "object",
+          "description": "GenAI Block",
+          "properties": {
+            "xdm:gen_ai": {
+              "type": "object",
+              "properties": {
+                "xdm:agent": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:execution": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:decision": {
+                          "type": "object",
+                          "properties": {
+                            "xdm:type": {
+                              "type": "string",
+                              "description": "Type of decision being made."
+                            },
+                            "xdm:options": {
+                              "type": "string",
+                              "description": "JSON array of available choices considered."
+                            },
+                            "xdm:selected": {
+                              "type": "string",
+                              "description": "The option that was ultimately chosen."
+                            },
+                            "xdm:confidence": {
+                              "type": "number",
+                              "description": "Confidence score for the decision.",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "xdm:reasoning": {
+                              "type": "string",
+                              "description": "Rationale or explanation for why this option was chosen."
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{ "$ref": "#/definitions/aep-agent-decision-tracking" }],
+  "meta:status": "experimental"
+}

@@ -1,16 +1,19 @@
 {
   "xdm:agenticExperience": {
+    "xdm:conciergeID": "concierge-cs-001",
     "xdm:name": "Customer Support Experience",
     "xdm:version": "1.0.0",
     "xdm:environment": "dev",
     "xdm:mode": "preview",
     "xdm:agents": [
       {
-        "xdm:name": "Chatbot Assistant",
+        "xdm:agentID": "agent-bond-007",
+        "xdm:name": "James the Chatbot Assistant",
         "xdm:version": "2.1.3",
         "xdm:score": 0.92,
         "xdm:skills": [
           {
+            "xdm:skillID": "skill-intent-001",
             "xdm:name": "Intent Recognition",
             "xdm:version": "1.0.0",
             "xdm:score": 0.95,
@@ -26,6 +29,7 @@
             ]
           },
           {
+            "xdm:skillID": "skill-faq-001",
             "xdm:name": "FAQ Retrieval",
             "xdm:version": "1.2.0",
             "xdm:score": 0.89,
@@ -39,11 +43,13 @@
         ]
       },
       {
+        "xdm:agentID": "agent-voice-007",
         "xdm:name": "Voice Assistant",
         "xdm:version": "3.0.0",
         "xdm:score": 0.88,
         "xdm:skills": [
           {
+            "xdm:skillID": "skill-speech-001",
             "xdm:name": "Speech Recognition",
             "xdm:version": "2.0.1",
             "xdm:score": 0.91,

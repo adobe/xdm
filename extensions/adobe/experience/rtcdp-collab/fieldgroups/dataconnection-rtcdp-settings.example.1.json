@@ -2,12 +2,24 @@
   "sourceSettings": {
     "rtcdpSettings": {
       "imsOrg": "Sample value",
-      "privacySettings": {
-        "consentPolicy": "Sample value",
-        "marketingActions": ["Sample value"]
-      },
       "sandboxId": "Sample value",
-      "sandboxName": "Sample value"
+      "sandboxName": "Sample value",
+      "privacySettings": {
+        "applyMarketingActions": [
+          "Sample value"
+        ],
+        "applyDataSharingConsentPolicies": "Sample value",
+        "audienceConsentSettings": {
+          "filterType": "Sample value",
+          "audiences": [
+            {
+              "id": "Sample value",
+              "namespace": "Sample value"
+            }
+          ]
+        }
+      },
+      "audienceTTL": 12345678
     }
   }
 }

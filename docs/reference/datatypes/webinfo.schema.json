@@ -69,6 +69,11 @@
                             "meta:titleId": "webinfo##xdm:isHomePage##title##9601",
                             "meta:descriptionId": "webinfo##xdm:isHomePage##description##11801"
                         },
+                        "xdm:isPreRendered": {
+                            "title": "Is pre-rendered",
+                            "type": "boolean",
+                            "description": "Flag that indicates if the page has been pre-rendered or partially pre-rendered prior to being viewed."
+                        },
                         "xdm:pageViews": {
                             "title": "Page Views",
                             "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -157,8 +162,11 @@
                                 "typed_bookmarked",
                                 "email",
                                 "social",
-                                "unknown",
-                                "usenet"
+                                "usenet",
+                                "hard_drive",
+                                "nojs",
+                                "conversational_ai",
+                                "unknown"
                             ],
                             "meta:enum": {
                                 "internal": "Internal",
@@ -167,8 +175,11 @@
                                 "typed_bookmarked": "Typed or bookmarked",
                                 "email": "Email",
                                 "social": "Social network",
-                                "unknown": "Unknown",
-                                "usenet": "Usenet newsgroup"
+                                "hard_drive": "Hard Drive",
+                                "usenet": "Usenet newsgroup",
+                                "nojs": "No JS",
+                                "conversational_ai": "Conversational AI",
+                                "unknown": "Unknown"
                             },
                             "meta:titleId": "webinfo##xdm:type##title##17421",
                             "meta:descriptionId": "webinfo##xdm:type##description##31751"
@@ -198,8 +209,9 @@
                 "xdm:server": "example.com",
                 "xdm:name": "product home",
                 "xdm:URL": "https://www.example.com/products",
-                "xdm:errorPage": false,
-                "xdm:homePage": true,
+                "xdm:isErrorPage": false,
+                "xdm:isHomePage": true,
+                "xdm:isPreRendered": true,
                 "xdm:pageViews": {
                     "xdm:value": 1
                 }
@@ -215,8 +227,9 @@
                 "xdm:server": "example.com",
                 "xdm:name": "product home",
                 "xdm:URL": "https://www.example.com/products",
-                "xdm:errorPage": false,
-                "xdm:homePage": true
+                "xdm:isErrorPage": false,
+                "xdm:isHomePage": true,
+                "xdm:isPreRendered": false
             },
             "xdm:webInteraction": {
                 "xdm:type": "other",

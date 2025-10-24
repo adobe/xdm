@@ -1,0 +1,69 @@
+{
+  "name": "candy_snack_purchase_2",
+  "state": "sent",
+  "startDate": "2025-07-15T05:00:00.000+00:00",
+  "endDate": "2025-12-31T04:59:59.000+00:00",
+  "variables": {
+    "type": "qty",
+    "goal": 2,
+    "isSingleTransaction": false,
+    "include": {
+      "valuesSet": [
+        "822145",
+        "822518",
+        "822456",
+        "822145",
+        "822430",
+        "822510",
+        "822235",
+        "822130",
+        "822440",
+        "822120",
+        "822071",
+        "822070",
+        "822380",
+        "822072"
+      ]
+    },
+    "exclude": {
+      "valuesSet": []
+    }
+  },
+  "taskCompletions": [
+    {
+      "id": "f3a8d2c1-9b4e-4f7a-a1c3-5e8f9d2b6a4c",
+      "timestamp": "2025-08-24T19:46:05.000+00:00",
+      "utcOffset": 0,
+      "transactionId": "850000_20250824_7003945",
+      "locationId": "8520",
+      "accumulators": {
+        "spend": 5,
+        "quantity": 2,
+        "item_list": [
+          {
+            "item_id": "822145",
+            "item_name": "Slice Pizza, Supreme",
+            "unit_price": 2.5,
+            "quantity": 1,
+            "item_set": [
+              "822145",
+              "187",
+              "18702"
+            ]
+          },
+          {
+            "item_id": "822145",
+            "item_name": "Slice Pizza, Supreme",
+            "unit_price": 2.5,
+            "quantity": 1,
+            "item_set": [
+              "822145",
+              "187",
+              "18702"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

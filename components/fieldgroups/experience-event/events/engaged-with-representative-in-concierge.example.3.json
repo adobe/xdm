@@ -1,0 +1,27 @@
+{
+  "xdm:eventType": "engagement.business.representative.concierge",
+  "@id": "event-abc123-completed",
+  "xdm:timestamp": "2025-01-15T10:15:30Z",
+  "xdm:engagement": {
+    "xdm:businessRepresentativeInConcierge": {
+      "xdm:businessRepresentativeDetails": {
+        "xdm:businessRepresentativeID": "agent1@adobe.com",
+        "xdm:businessRepresentativeName": "John Doe",
+        "xdm:businessRepresentativeEmail": "agent1@adobe.com"
+      },
+      "xdm:conciergeConversationDetails": {
+        "xdm:sessionID": "session-abc123",
+        "xdm:status": "COMPLETED_BY_AGENT",
+        "xdm:initiatedAt": "2025-01-15T10:00:00Z",
+        "xdm:notifiedAgents": ["agent1@adobe.com", "agent2@adobe.com"],
+        "xdm:acceptedAt": "2025-01-15T10:00:45Z",
+        "xdm:completedAt": "2025-01-15T10:15:30Z",
+        "xdm:completedBy": "AGENT",
+        "xdm:summary": "Customer inquired about product pricing and features",
+        "xdm:transcriptURL": "https://experience.adobe.com/transcript/session-abc123",
+        "xdm:discussedTopics": ["Pricing", "Features", "Integration"]
+      }
+    }
+  }
+}
+

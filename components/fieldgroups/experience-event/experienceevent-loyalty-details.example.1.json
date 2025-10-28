@@ -1,0 +1,53 @@
+{
+  "xdm:loyalty": {
+    "xdm:discounts": [
+      {
+        "xdm:value": 10.0,
+        "xdm:source": "coupon",
+        "xdm:triggeredForItem": "SKU-12345",
+        "xdm:scope": "item",
+        "xdm:promotionId": "PROMO-WELCOME"
+      },
+      {
+        "xdm:value": 20.0,
+        "xdm:source": "pointsRedemption",
+        "xdm:scope": "transaction",
+        "xdm:promotionId": "PROMO-ABC"
+      },
+      {
+        "xdm:value": 6.99,
+        "xdm:source": "referral",
+        "xdm:scope": "additionalCost",
+        "xdm:promotionId": "PROMO-REF"
+      }
+    ],
+    "xdm:couponRedemption": [
+      {
+        "xdm:id": "WELCOME10",
+        "xdm:series": "WELCOME",
+        "xdm:seriesName": "welcome 10% off",
+        "xdm:promotionId": "PROMO-WELCOME"
+      }
+    ],
+    "xdm:pointsRedemption": {
+      "xdm:value": 50.0,
+      "xdm:promotionId": "PROMO-POINTS",
+      "xdm:loyaltyProgramId": "LP-001",
+      "xdm:transactionId": "TXN-RED-001"
+    },
+    "xdm:referralRedemption": [
+      {
+        "xdm:code": "REF-1234",
+        "xdm:promotionId": "PROMO-REF"
+      }
+    ],
+    "xdm:pointsGained": [
+      {
+        "xdm:value": 50.0,
+        "xdm:promotionId": "PROMO-POINTS-GAIN",
+        "xdm:loyaltyProgramId": "LP-001",
+        "xdm:transactionId": "TXN-GAIN-001"
+      }
+    ]
+  }
+}

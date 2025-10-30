@@ -63,14 +63,6 @@
                       "title": "Status",
                       "type": "string",
                       "description": "Current lifecycle status of the session.",
-                      "enum": [
-                        "INITIATED",
-                        "ACCEPTED",
-                        "COMPLETED_BY_AGENT",
-                        "COMPLETED_BY_VISITOR",
-                        "MISSED",
-                        "EXPIRED"
-                      ],
                       "meta:enum": {
                         "INITIATED": "Visitor requested chat, agents notified",
                         "ACCEPTED": "Agent accepted the request",

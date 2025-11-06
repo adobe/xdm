@@ -63,6 +63,42 @@
               "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##description##90041"
             }
           },
+          "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleset": {
+            "title": "Ruleset",
+            "type": "object",
+            "description": "Ruleset information for message exclusion.",
+            "properties": {
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ID": {
+                "title": "ID",
+                "type": "string",
+                "description": "Ruleset ID."
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/name": {
+                "title": "Name",
+                "type": "string",
+                "description": "Ruleset name."
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/rules": {
+                "title": "Rules",
+                "type": "array",
+                "description": "Array of rules within the ruleset.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ID": {
+                      "title": "ID",
+                      "type": "string",
+                      "description": "Rule ID."
+                    },
+                    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/name": {
+                      "title": "Name",
+                      "type": "string",
+                      "description": "Rule name."
+                    }
+                  }
+                }
+              }
+            },
           "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion##title##32491"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {

@@ -1,0 +1,18 @@
+{
+  "xdm:trackingTemplate": "{lpurl}?s_kwcid=AL!{userid}!3!{creative}!{matchtype}!{network}!{keyword}",
+  "xdm:finalUrlSuffix": "utm_source=google&utm_medium=cpc",
+  "xdm:customParameters": [
+    {
+      "xdm:key": "campaign_id",
+      "xdm:value": "{campaignid}"
+    },
+    {
+      "xdm:key": "adgroup_id",
+      "xdm:value": "{adgroupid}"
+    },
+    {
+      "xdm:key": "keyword",
+      "xdm:value": "{keyword}"
+    }
+  ]
+}

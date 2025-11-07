@@ -1,0 +1,34 @@
+{
+  "xdm:creativeID": "creative-12345",
+  "xdm:creativeType": "image",
+  "xdm:title": "Summer Sale - 50% Off",
+  "xdm:body": "Don't miss our biggest sale of the season. Shop now and save big on all summer items.",
+  "xdm:callToAction": "Shop Now",
+  "xdm:destinationURL": "https://example.com/summer-sale?utm_source=facebook&utm_campaign=summer2025",
+  "xdm:displayURL": "https://example.com/summer-sale",
+  "xdm:trackingURLs": [
+    {
+      "xdm:eventType": "impression",
+      "xdm:url": "https://tracking.example.com/imp?id=12345"
+    },
+    {
+      "xdm:eventType": "click",
+      "xdm:url": "https://tracking.example.com/click?id=12345"
+    }
+  ],
+  "xdm:assets": [
+    {
+      "xdm:assetID": "asset-001",
+      "xdm:assetType": "image",
+      "xdm:name": "summer-sale-hero.jpg",
+      "xdm:url": "https://cdn.example.com/images/summer-sale-hero.jpg",
+      "xdm:thumbnailURL": "https://cdn.example.com/images/summer-sale-hero-thumb.jpg",
+      "xdm:dimensions": {
+        "xdm:width": 1200,
+        "xdm:height": 628
+      },
+      "xdm:fileSize": 245760,
+      "xdm:hash": "a3f5c8d9e2b1f4a6c7d8e9f0a1b2c3d4"
+    }
+  ]
+}

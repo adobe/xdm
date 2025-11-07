@@ -1,0 +1,43 @@
+{
+  "xdm:creativeID": "creative-carousel-001",
+  "xdm:creativeType": "carousel",
+  "xdm:title": "Explore Our Collection",
+  "xdm:body": "Swipe through our latest products and find your favorites.",
+  "xdm:callToAction": "View Collection",
+  "xdm:destinationURL": "https://example.com/collection",
+  "xdm:assets": [
+    {
+      "xdm:assetID": "asset-carousel-001",
+      "xdm:assetType": "image",
+      "xdm:name": "product-1.jpg",
+      "xdm:url": "https://cdn.example.com/carousel/product-1.jpg",
+      "xdm:dimensions": {
+        "xdm:width": 1080,
+        "xdm:height": 1080
+      },
+      "xdm:fileSize": 180224
+    },
+    {
+      "xdm:assetID": "asset-carousel-002",
+      "xdm:assetType": "image",
+      "xdm:name": "product-2.jpg",
+      "xdm:url": "https://cdn.example.com/carousel/product-2.jpg",
+      "xdm:dimensions": {
+        "xdm:width": 1080,
+        "xdm:height": 1080
+      },
+      "xdm:fileSize": 195584
+    },
+    {
+      "xdm:assetID": "asset-carousel-003",
+      "xdm:assetType": "image",
+      "xdm:name": "product-3.jpg",
+      "xdm:url": "https://cdn.example.com/carousel/product-3.jpg",
+      "xdm:dimensions": {
+        "xdm:width": 1080,
+        "xdm:height": 1080
+      },
+      "xdm:fileSize": 172032
+    }
+  ]
+}

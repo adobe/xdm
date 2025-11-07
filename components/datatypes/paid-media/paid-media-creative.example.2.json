@@ -1,0 +1,24 @@
+{
+  "xdm:creativeID": "creative-67890",
+  "xdm:creativeType": "video",
+  "xdm:title": "New Product Launch",
+  "xdm:body": "Introducing our revolutionary new product. Watch the video to learn more.",
+  "xdm:callToAction": "Learn More",
+  "xdm:destinationURL": "https://example.com/new-product",
+  "xdm:assets": [
+    {
+      "xdm:assetID": "asset-video-001",
+      "xdm:assetType": "video",
+      "xdm:name": "product-launch-video.mp4",
+      "xdm:url": "https://cdn.example.com/videos/product-launch.mp4",
+      "xdm:thumbnailURL": "https://cdn.example.com/videos/product-launch-thumb.jpg",
+      "xdm:dimensions": {
+        "xdm:width": 1920,
+        "xdm:height": 1080
+      },
+      "xdm:fileSize": 15728640,
+      "xdm:duration": 30.5,
+      "xdm:hash": "b4e6d9f1a2c3e5d7f8a9b0c1d2e3f4a5"
+    }
+  ]
+}

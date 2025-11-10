@@ -1,18 +1,80 @@
 {
   "xdm:geoTargeting": {
-    "xdm:countries": ["DE", "FR", "IT", "ES"],
-    "xdm:postalCodes": ["10115", "75001", "00100", "28001"]
+    "xdm:countries": ["US"],
+    "xdm:regions": ["New York", "New Jersey", "Connecticut", "Pennsylvania"],
+    "xdm:cities": [
+      "New York",
+      "Newark",
+      "Jersey City",
+      "Stamford",
+      "Philadelphia"
+    ],
+    "xdm:postalCodes": ["10001", "10002", "10003", "07102", "06901", "19102"]
   },
   "xdm:demographicTargeting": {
     "xdm:ageRanges": [
       {
+        "xdm:minAge": 35,
+        "xdm:maxAge": 44
+      },
+      {
         "xdm:minAge": 45,
+        "xdm:maxAge": 54
+      },
+      {
+        "xdm:minAge": 55,
         "xdm:maxAge": 65
       }
     ],
-    "xdm:languages": ["de-DE", "fr-FR", "it-IT", "es-ES"]
+    "xdm:genders": ["male"],
+    "xdm:languages": ["en-US"]
+  },
+  "xdm:interestTargeting": {
+    "xdm:interests": [
+      "Business & Finance",
+      "Technology",
+      "Professional Development",
+      "Leadership & Management",
+      "Entrepreneurship",
+      "Investment & Trading"
+    ],
+    "xdm:behaviors": [
+      "Business Decision Makers",
+      "High Income Earners",
+      "Frequent Business Travelers",
+      "Premium Product Buyers",
+      "Desktop Users"
+    ],
+    "xdm:customAudiences": [
+      {
+        "xdm:audienceID": "23851234567890999",
+        "xdm:audienceName": "LinkedIn Professional Network",
+        "xdm:audienceType": "custom"
+      },
+      {
+        "xdm:audienceID": "23851234567891000",
+        "xdm:audienceName": "B2B Website Visitors",
+        "xdm:audienceType": "retargeting"
+      }
+    ]
   },
   "xdm:deviceTargeting": {
-    "xdm:deviceTypes": ["desktop", "tablet"]
+    "xdm:deviceTypes": ["desktop", "tablet"],
+    "xdm:operatingSystems": ["Windows", "macOS", "iOS"],
+    "xdm:browsers": ["Chrome", "Safari", "Edge", "Firefox"]
+  },
+  "xdm:placementTargeting": {
+    "xdm:placements": [
+      "facebook_feed",
+      "facebook_right_column",
+      "facebook_marketplace",
+      "audience_network"
+    ],
+    "xdm:publisherCategories": [
+      "Business & Finance",
+      "Technology & Computing",
+      "News & Media",
+      "Professional Services"
+    ]
   }
 }

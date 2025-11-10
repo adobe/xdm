@@ -1,0 +1,187 @@
+{
+  "xdm:paidMedia": {
+    "xdm:attributionMetrics": {
+      "xdm:attributionModel": "DATA_DRIVEN",
+      "xdm:clickAttributionWindow": "30_DAY",
+      "xdm:viewAttributionWindow": "1_DAY",
+      "xdm:crossDeviceAttribution": {
+        "xdm:enabled": true,
+        "xdm:crossDeviceConversions": 425,
+        "xdm:crossDeviceConversionRate": 0.34,
+        "xdm:deviceSwitchRate": 0.42,
+        "xdm:averageDevicesPerPath": 1.8,
+        "xdm:devicePathBreakdown": {
+          "xdm:mobileToDesktop": 245,
+          "xdm:desktopToMobile": 125,
+          "xdm:mobileToMobileApp": 55
+        }
+      },
+      "xdm:attributionSettings": {
+        "xdm:primaryModel": "data_driven",
+        "xdm:comparisonModels": [
+          "last_click",
+          "first_click",
+          "linear",
+          "time_decay",
+          "position_based"
+        ],
+        "xdm:clickWindow": "30d",
+        "xdm:viewWindow": "1d",
+        "xdm:engagementWindow": "7d",
+        "xdm:conversionLagDays": 3,
+        "xdm:crossDevice": true,
+        "xdm:crossChannel": true,
+        "xdm:deduplication": true,
+        "xdm:deduplicationWindow": "24h"
+      },
+      "xdm:attributionBreakdown": {
+        "xdm:dataDrivernAttribution": {
+          "xdm:conversions": 1250,
+          "xdm:conversionValue": 187500,
+          "xdm:attributedRevenue": 187500,
+          "xdm:attributionPercentage": 1.0
+        },
+        "xdm:lastClickAttribution": {
+          "xdm:conversions": 980,
+          "xdm:conversionValue": 147000,
+          "xdm:attributedRevenue": 147000,
+          "xdm:attributionPercentage": 0.784
+        },
+        "xdm:firstClickAttribution": {
+          "xdm:conversions": 1450,
+          "xdm:conversionValue": 217500,
+          "xdm:attributedRevenue": 217500,
+          "xdm:attributionPercentage": 1.16
+        },
+        "xdm:linearAttribution": {
+          "xdm:conversions": 1180,
+          "xdm:conversionValue": 177000,
+          "xdm:attributedRevenue": 177000,
+          "xdm:attributionPercentage": 0.944
+        },
+        "xdm:timeDecayAttribution": {
+          "xdm:conversions": 1100,
+          "xdm:conversionValue": 165000,
+          "xdm:attributedRevenue": 165000,
+          "xdm:attributionPercentage": 0.88
+        },
+        "xdm:positionBasedAttribution": {
+          "xdm:conversions": 1220,
+          "xdm:conversionValue": 183000,
+          "xdm:attributedRevenue": 183000,
+          "xdm:attributionPercentage": 0.976
+        }
+      },
+      "xdm:touchpointAnalysis": {
+        "xdm:averageTouchpoints": 4.2,
+        "xdm:medianTouchpoints": 3,
+        "xdm:maxTouchpoints": 15,
+        "xdm:singleTouchConversions": 180,
+        "xdm:multiTouchConversions": 1070,
+        "xdm:assistedConversions": 890,
+        "xdm:directConversions": 360,
+        "xdm:touchpointDistribution": {
+          "xdm:firstTouch": 0.28,
+          "xdm:midTouch": 0.45,
+          "xdm:lastTouch": 0.27
+        },
+        "xdm:averageTimeBetweenTouchpoints": 2.5,
+        "xdm:averageTimeToConversion": 8.3
+      },
+      "xdm:channelAttribution": {
+        "xdm:paidSocial": {
+          "xdm:touchpoints": 3250,
+          "xdm:conversions": 625,
+          "xdm:conversionValue": 93750,
+          "xdm:attributionCredit": 0.5,
+          "xdm:assistedConversions": 445,
+          "xdm:lastTouchConversions": 180
+        },
+        "xdm:paidSearch": {
+          "xdm:touchpoints": 2100,
+          "xdm:conversions": 375,
+          "xdm:conversionValue": 56250,
+          "xdm:attributionCredit": 0.3,
+          "xdm:assistedConversions": 265,
+          "xdm:lastTouchConversions": 110
+        },
+        "xdm:display": {
+          "xdm:touchpoints": 1850,
+          "xdm:conversions": 125,
+          "xdm:conversionValue": 18750,
+          "xdm:attributionCredit": 0.1,
+          "xdm:assistedConversions": 95,
+          "xdm:lastTouchConversions": 30
+        },
+        "xdm:email": {
+          "xdm:touchpoints": 950,
+          "xdm:conversions": 125,
+          "xdm:conversionValue": 18750,
+          "xdm:attributionCredit": 0.1,
+          "xdm:assistedConversions": 85,
+          "xdm:lastTouchConversions": 40
+        }
+      },
+      "xdm:conversionPath": {
+        "xdm:topPaths": [
+          {
+            "xdm:pathSequence": "Paid Social > Paid Search > Email > Paid Social",
+            "xdm:conversions": 145,
+            "xdm:conversionValue": 21750,
+            "xdm:averageTimeToConversion": 12.5,
+            "xdm:pathLength": 4
+          },
+          {
+            "xdm:pathSequence": "Paid Social > Display > Paid Social",
+            "xdm:conversions": 120,
+            "xdm:conversionValue": 18000,
+            "xdm:averageTimeToConversion": 8.2,
+            "xdm:pathLength": 3
+          },
+          {
+            "xdm:pathSequence": "Paid Social > Paid Social",
+            "xdm:conversions": 95,
+            "xdm:conversionValue": 14250,
+            "xdm:averageTimeToConversion": 5.1,
+            "xdm:pathLength": 2
+          }
+        ],
+        "xdm:pathComplexity": "medium",
+        "xdm:averagePathLength": 4.2,
+        "xdm:mostCommonFirstTouch": "paid_social",
+        "xdm:mostCommonLastTouch": "paid_social"
+      },
+      "xdm:incrementalityMetrics": {
+        "xdm:incrementalConversions": 875,
+        "xdm:incrementalityRate": 0.7,
+        "xdm:baselineConversions": 375,
+        "xdm:liftPercentage": 2.33,
+        "xdm:incrementalROAS": 4.2,
+        "xdm:controlGroupSize": 50000,
+        "xdm:testGroupSize": 50000
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_attribution_setting",
+          "xdm:stringValue": "7_day_click_1_day_view"
+        },
+        {
+          "xdm:fieldName": "meta_conversion_tracking_pixel",
+          "xdm:stringValue": "pixel_123456789"
+        },
+        {
+          "xdm:fieldName": "meta_attribution_model_version",
+          "xdm:stringValue": "v3.2"
+        },
+        {
+          "xdm:fieldName": "meta_cross_device_enabled",
+          "xdm:stringValue": "true"
+        },
+        {
+          "xdm:fieldName": "meta_attribution_data_freshness",
+          "xdm:stringValue": "2025-11-10T08:00:00Z"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/conversion-metrics",
+  "title": "Core Paid Media Conversion Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Detailed conversion tracking metrics for paid media campaigns",
+  "definitions": {
+    "conversion-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:conversionMetrics": {
+              "type": "object",
+              "title": "Conversion Metrics",
+              "description": "Detailed conversion tracking metrics",
+              "properties": {
+                "xdm:postClickConversions": {
+                  "type": "number",
+                  "title": "Post-Click Conversions",
+                  "description": "Conversions attributed to clicks",
+                  "minimum": 0
+                },
+                "xdm:postViewConversions": {
+                  "type": "number",
+                  "title": "Post-View Conversions",
+                  "description": "Conversions attributed to views",
+                  "minimum": 0
+                },
+                "xdm:postEngagementConversions": {
+                  "type": "number",
+                  "title": "Post-Engagement Conversions",
+                  "description": "Conversions attributed to engagements",
+                  "minimum": 0
+                },
+                "xdm:conversionsByType": {
+                  "type": "object",
+                  "title": "Conversions by Type",
+                  "description": "Breakdown of conversions by event type",
+                  "properties": {
+                    "xdm:purchases": {
+                      "type": "number",
+                      "title": "Purchases",
+                      "minimum": 0
+                    },
+                    "xdm:addToCart": {
+                      "type": "number",
+                      "title": "Add to Cart",
+                      "minimum": 0
+                    },
+                    "xdm:initiateCheckout": {
+                      "type": "number",
+                      "title": "Initiate Checkout",
+                      "minimum": 0
+                    },
+                    "xdm:leads": {
+                      "type": "number",
+                      "title": "Leads",
+                      "minimum": 0
+                    },
+                    "xdm:registrations": {
+                      "type": "number",
+                      "title": "Registrations",
+                      "minimum": 0
+                    },
+                    "xdm:downloads": {
+                      "type": "number",
+                      "title": "Downloads",
+                      "minimum": 0
+                    },
+                    "xdm:subscriptions": {
+                      "type": "number",
+                      "title": "Subscriptions",
+                      "minimum": 0
+                    },
+                    "xdm:customEvents": {
+                      "type": "number",
+                      "title": "Custom Events",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "xdm:conversionRate": {
+                  "type": "number",
+                  "title": "Conversion Rate",
+                  "description": "Overall conversion rate",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:costPerAction": {
+                  "type": "number",
+                  "title": "Cost Per Action",
+                  "description": "Average cost per conversion action",
+                  "minimum": 0
+                },
+                "xdm:conversionLag": {
+                  "type": "number",
+                  "title": "Conversion Lag",
+                  "description": "Average time from ad interaction to conversion (in hours)",
+                  "minimum": 0
+                },
+                "xdm:conversionPath": {
+                  "type": "object",
+                  "title": "Conversion Path Metrics",
+                  "description": "Metrics about the conversion path and touchpoints",
+                  "properties": {
+                    "xdm:averagePathLength": {
+                      "type": "number",
+                      "title": "Average Path Length",
+                      "minimum": 0
+                    },
+                    "xdm:medianPathLength": {
+                      "type": "number",
+                      "title": "Median Path Length",
+                      "minimum": 0
+                    },
+                    "xdm:singleTouchConversions": {
+                      "type": "number",
+                      "title": "Single Touch Conversions",
+                      "minimum": 0
+                    },
+                    "xdm:multiTouchConversions": {
+                      "type": "number",
+                      "title": "Multi Touch Conversions",
+                      "minimum": 0
+                    },
+                    "xdm:averageTouchpoints": {
+                      "type": "number",
+                      "title": "Average Touchpoints",
+                      "minimum": 0
+                    },
+                    "xdm:assistedConversions": {
+                      "type": "number",
+                      "title": "Assisted Conversions",
+                      "minimum": 0
+                    },
+                    "xdm:directConversions": {
+                      "type": "number",
+                      "title": "Direct Conversions",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "xdm:assistedConversions": {
+                  "type": "number",
+                  "title": "Assisted Conversions",
+                  "description": "Conversions where this ad assisted but wasn't the last touch",
+                  "minimum": 0
+                },
+                "xdm:directConversions": {
+                  "type": "number",
+                  "title": "Direct Conversions",
+                  "description": "Conversions where this ad was the last touch",
+                  "minimum": 0
+                },
+                "xdm:newCustomerConversions": {
+                  "type": "number",
+                  "title": "New Customer Conversions",
+                  "description": "Conversions from new customers",
+                  "minimum": 0
+                },
+                "xdm:returningCustomerConversions": {
+                  "type": "number",
+                  "title": "Returning Customer Conversions",
+                  "description": "Conversions from returning customers",
+                  "minimum": 0
+                },
+                "xdm:averageOrderValue": {
+                  "type": "number",
+                  "title": "Average Order Value",
+                  "description": "Average value per conversion",
+                  "minimum": 0
+                },
+                "xdm:totalOrderValue": {
+                  "type": "number",
+                  "title": "Total Order Value",
+                  "description": "Total value of all conversions",
+                  "minimum": 0
+                },
+                "xdm:conversionQuality": {
+                  "type": "object",
+                  "title": "Conversion Quality",
+                  "description": "Quality metrics for conversions",
+                  "properties": {
+                    "xdm:qualityScore": {
+                      "type": "number",
+                      "title": "Quality Score",
+                      "description": "Overall conversion quality score",
+                      "minimum": 0,
+                      "maximum": 10
+                    },
+                    "xdm:fraudRate": {
+                      "type": "number",
+                      "title": "Fraud Rate",
+                      "description": "Percentage of conversions flagged as fraudulent",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:validationRate": {
+                      "type": "number",
+                      "title": "Validation Rate",
+                      "description": "Percentage of conversions that passed validation",
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                },
+                "xdm:leads": {
+                  "type": "integer",
+                  "title": "Leads",
+                  "description": "Total number of leads generated",
+                  "minimum": 0
+                },
+                "xdm:qualifiedLeads": {
+                  "type": "integer",
+                  "title": "Qualified Leads",
+                  "description": "Number of qualified/validated leads",
+                  "minimum": 0
+                },
+                "xdm:costPerLead": {
+                  "type": "number",
+                  "title": "Cost Per Lead",
+                  "description": "Average cost per lead",
+                  "minimum": 0
+                },
+                "xdm:leadFormOpens": {
+                  "type": "integer",
+                  "title": "Lead Form Opens",
+                  "description": "Number of times lead form was opened",
+                  "minimum": 0
+                },
+                "xdm:leadFormSubmissions": {
+                  "type": "integer",
+                  "title": "Lead Form Submissions",
+                  "description": "Number of lead form submissions",
+                  "minimum": 0
+                },
+                "xdm:leadFormCompletionRate": {
+                  "type": "number",
+                  "title": "Lead Form Completion Rate",
+                  "description": "Percentage of opened forms that were submitted",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/conversion-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

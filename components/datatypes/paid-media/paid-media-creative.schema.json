@@ -62,13 +62,11 @@
         },
         "xdm:destinationURL": {
           "type": "string",
-          "format": "uri",
           "title": "Destination URL",
           "description": "Landing page URL where users are directed"
         },
         "xdm:displayURL": {
           "type": "string",
-          "format": "uri",
           "title": "Display URL",
           "description": "URL displayed in the ad"
         },
@@ -86,7 +84,6 @@
               },
               "xdm:url": {
                 "type": "string",
-                "format": "uri",
                 "title": "Tracking URL",
                 "description": "The tracking URL"
               }
@@ -130,13 +127,11 @@
         },
         "xdm:url": {
           "type": "string",
-          "format": "uri",
           "title": "Asset URL",
           "description": "URL where the asset can be accessed"
         },
         "xdm:thumbnailURL": {
           "type": "string",
-          "format": "uri",
           "title": "Thumbnail URL",
           "description": "URL for asset thumbnail"
         },

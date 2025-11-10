@@ -1,10 +1,18 @@
 {
   "xdm:geoTargeting": {
     "xdm:countries": ["US"],
+    "xdm:regions": ["California"],
+    "xdm:cities": [
+      "San Francisco",
+      "Oakland",
+      "San Jose",
+      "Berkeley",
+      "Palo Alto"
+    ],
     "xdm:radius": {
       "xdm:latitude": 37.7749,
       "xdm:longitude": -122.4194,
-      "xdm:radiusKm": 25
+      "xdm:radiusKm": 40
     }
   },
   "xdm:demographicTargeting": {
@@ -12,20 +20,64 @@
       {
         "xdm:minAge": 18,
         "xdm:maxAge": 24
+      },
+      {
+        "xdm:minAge": 25,
+        "xdm:maxAge": 34
       }
     ],
-    "xdm:genders": ["female"]
+    "xdm:genders": ["female"],
+    "xdm:languages": ["en-US", "es-US", "zh-CN"]
   },
   "xdm:interestTargeting": {
+    "xdm:interests": [
+      "Fashion & Style",
+      "Beauty & Cosmetics",
+      "Health & Wellness",
+      "Fitness",
+      "Yoga & Meditation",
+      "Sustainable Living"
+    ],
+    "xdm:behaviors": [
+      "Online Shoppers",
+      "Fashion-Forward Shoppers",
+      "Health & Wellness Enthusiasts",
+      "Mobile App Users"
+    ],
     "xdm:customAudiences": [
       {
-        "xdm:audienceID": "aud-lookalike-001",
-        "xdm:audienceName": "Lookalike - High Value Customers",
+        "xdm:audienceID": "23851234567890666",
+        "xdm:audienceName": "Lookalike - High Value Customers (1%)",
         "xdm:audienceType": "lookalike"
+      },
+      {
+        "xdm:audienceID": "23851234567890777",
+        "xdm:audienceName": "Instagram Engagers - Last 90 Days",
+        "xdm:audienceType": "custom"
+      },
+      {
+        "xdm:audienceID": "23851234567890888",
+        "xdm:audienceName": "Video Viewers - 75% Completion",
+        "xdm:audienceType": "retargeting"
       }
     ]
   },
   "xdm:deviceTargeting": {
-    "xdm:deviceTypes": ["mobile"]
+    "xdm:deviceTypes": ["mobile"],
+    "xdm:operatingSystems": ["iOS", "Android"],
+    "xdm:browsers": ["in_app", "mobile_web"]
+  },
+  "xdm:placementTargeting": {
+    "xdm:placements": [
+      "instagram_feed",
+      "instagram_stories",
+      "instagram_reels",
+      "instagram_explore"
+    ],
+    "xdm:publisherCategories": [
+      "Fashion & Beauty",
+      "Lifestyle",
+      "Health & Wellness"
+    ]
   }
 }

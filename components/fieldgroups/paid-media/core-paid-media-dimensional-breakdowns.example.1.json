@@ -1,0 +1,118 @@
+{
+  "xdm:paidMedia": {
+    "xdm:dimensionalBreakdowns": {
+      "xdm:deviceType": "mobile",
+      "xdm:platform": "instagram",
+      "xdm:placement": "instagram_feed",
+      "xdm:age": "25-34",
+      "xdm:gender": "female",
+      "xdm:country": "US",
+      "xdm:region": "California",
+      "xdm:city": "San Francisco",
+      "xdm:deviceBreakdown": {
+        "xdm:deviceType": "mobile",
+        "xdm:deviceOS": "ios",
+        "xdm:deviceModel": "iPhone 15 Pro",
+        "xdm:deviceManufacturer": "Apple",
+        "xdm:osVersion": "17.1",
+        "xdm:browserType": "in_app",
+        "xdm:browserVersion": "mobile_app",
+        "xdm:screenResolution": "1179x2556",
+        "xdm:connectionType": "wifi",
+        "xdm:carrier": "Verizon"
+      },
+      "xdm:placementBreakdown": {
+        "xdm:publisher": "instagram",
+        "xdm:placement": "instagram_feed",
+        "xdm:position": "feed",
+        "xdm:placementType": "feed",
+        "xdm:adFormat": "single_image",
+        "xdm:inventoryType": "premium",
+        "xdm:environment": "mobile_app"
+      },
+      "xdm:demographicBreakdown": {
+        "xdm:ageRange": "25-34",
+        "xdm:ageMin": 25,
+        "xdm:ageMax": 34,
+        "xdm:gender": "female",
+        "xdm:householdIncome": "75000-100000",
+        "xdm:education": "college",
+        "xdm:employmentStatus": "employed",
+        "xdm:maritalStatus": "single",
+        "xdm:parentalStatus": "non_parent",
+        "xdm:homeOwnership": "renter"
+      },
+      "xdm:geographicBreakdown": {
+        "xdm:country": "US",
+        "xdm:countryCode": "US",
+        "xdm:region": "California",
+        "xdm:regionCode": "CA",
+        "xdm:city": "San Francisco",
+        "xdm:postalCode": "94105",
+        "xdm:dma": "807",
+        "xdm:dmaName": "San Francisco-Oakland-San Jose",
+        "xdm:metro": "San Francisco Bay Area",
+        "xdm:latitude": 37.7749,
+        "xdm:longitude": -122.4194,
+        "xdm:timezone": "America/Los_Angeles",
+        "xdm:locationType": "home"
+      },
+      "xdm:audienceBreakdown": {
+        "xdm:audienceSegment": "tech_enthusiasts_25_54",
+        "xdm:audienceType": "custom",
+        "xdm:audienceSource": "website_visitors",
+        "xdm:audienceSize": 125000,
+        "xdm:audienceReach": 85000,
+        "xdm:audiencePenetration": 0.68,
+        "xdm:lookalikeSimilarity": 0,
+        "xdm:isLookalike": false,
+        "xdm:isRetargeting": true
+      },
+      "xdm:temporalBreakdown": {
+        "xdm:dayOfWeek": "Tuesday",
+        "xdm:hourOfDay": 14,
+        "xdm:timeOfDay": "afternoon",
+        "xdm:dayPart": "business_hours",
+        "xdm:weekOfYear": 45,
+        "xdm:monthOfYear": 11,
+        "xdm:quarter": "Q4",
+        "xdm:isWeekend": false,
+        "xdm:isHoliday": false
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_platform",
+          "xdm:stringValue": "instagram"
+        },
+        {
+          "xdm:fieldName": "meta_placement",
+          "xdm:stringValue": "instagram_feed"
+        },
+        {
+          "xdm:fieldName": "meta_device_platform",
+          "xdm:stringValue": "mobile"
+        },
+        {
+          "xdm:fieldName": "meta_publisher_platform",
+          "xdm:stringValue": "instagram"
+        },
+        {
+          "xdm:fieldName": "meta_impression_device",
+          "xdm:stringValue": "mobile_iphone"
+        },
+        {
+          "xdm:fieldName": "meta_age_bucket",
+          "xdm:stringValue": "25-34"
+        },
+        {
+          "xdm:fieldName": "meta_gender",
+          "xdm:stringValue": "female"
+        },
+        {
+          "xdm:fieldName": "meta_region",
+          "xdm:stringValue": "California"
+        }
+      ]
+    }
+  }
+}

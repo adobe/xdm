@@ -1,0 +1,196 @@
+{
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:entityType": "account",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:metadata": {
+      "xdm:name": "Acme Corp - Google Ads Account",
+      "xdm:status": "active",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/New_York",
+      "xdm:createdTime": "2019-06-20T10:00:00Z",
+      "xdm:updatedTime": "2025-11-09T12:00:00Z"
+    },
+    "xdm:accountDetails": {
+      "xdm:accountName": "Acme Corp - Google Ads Account",
+      "xdm:accountType": "business",
+      "xdm:businessName": "Acme Corporation",
+      "xdm:industry": "Technology",
+      "xdm:country": "US",
+      "xdm:isTestAccount": false,
+      "xdm:businessInfo": {
+        "xdm:businessID": "google_business_987654321",
+        "xdm:businessManagerID": "mcc_111222333444",
+        "xdm:legalEntityName": "Acme Corporation Inc.",
+        "xdm:taxID": "12-3456789",
+        "xdm:businessAddress": {
+          "xdm:street1": "456 Commerce Boulevard",
+          "xdm:street2": "Floor 12",
+          "xdm:city": "New York",
+          "xdm:region": "NY",
+          "xdm:postalCode": "10001",
+          "xdm:country": "US"
+        },
+        "xdm:businessPhone": "+1-212-555-0200",
+        "xdm:businessEmail": "google-ads@acmecorp.com",
+        "xdm:businessWebsite": "https://www.acmecorp.com",
+        "xdm:businessCategory": "Technology Company",
+        "xdm:businessVertical": "Software as a Service",
+        "xdm:employeeCount": "1001-5000",
+        "xdm:annualRevenue": "50000000-100000000",
+        "xdm:yearEstablished": 2010,
+        "xdm:publiclyTraded": true,
+        "xdm:stockSymbol": "ACME",
+        "xdm:parentCompany": "Acme Holdings LLC"
+      },
+      "xdm:billingInfo": {
+        "xdm:billingType": "postpaid",
+        "xdm:paymentMethodID": "billing_profile_567890",
+        "xdm:billingCurrency": "USD",
+        "xdm:billingAddress": {
+          "xdm:street1": "456 Commerce Boulevard",
+          "xdm:street2": "Accounts Payable",
+          "xdm:city": "New York",
+          "xdm:region": "NY",
+          "xdm:postalCode": "10001",
+          "xdm:country": "US"
+        },
+        "xdm:billingEmail": "ap@acmecorp.com",
+        "xdm:billingContact": "Robert Finance",
+        "xdm:billingPhone": "+1-212-555-0250",
+        "xdm:invoiceDelivery": "email",
+        "xdm:paymentTerms": "net_30",
+        "xdm:creditLimit": 750000,
+        "xdm:currentBalance": 85000,
+        "xdm:availableCredit": 665000,
+        "xdm:lastPaymentDate": "2025-11-01T09:00:00Z",
+        "xdm:lastPaymentAmount": 62000,
+        "xdm:nextBillingDate": "2025-12-01T00:00:00Z",
+        "xdm:autoPayEnabled": false,
+        "xdm:billingThreshold": 50000,
+        "xdm:taxExempt": false
+      },
+      "xdm:contactInfo": {
+        "xdm:primaryContact": {
+          "xdm:name": "Emily Marketing",
+          "xdm:email": "emily.marketing@acmecorp.com",
+          "xdm:phone": "+1-212-555-0220",
+          "xdm:title": "VP of Digital Marketing",
+          "xdm:userID": "user_google_xyz789"
+        },
+        "xdm:technicalContact": {
+          "xdm:name": "Michael Tech",
+          "xdm:email": "michael.tech@acmecorp.com",
+          "xdm:phone": "+1-212-555-0230",
+          "xdm:title": "Senior Marketing Analyst",
+          "xdm:userID": "user_google_abc456"
+        },
+        "xdm:billingContact": {
+          "xdm:name": "Robert Finance",
+          "xdm:email": "robert.finance@acmecorp.com",
+          "xdm:phone": "+1-212-555-0250",
+          "xdm:title": "Controller",
+          "xdm:userID": "user_google_def123"
+        },
+        "xdm:notificationEmails": [
+          "google-ads-alerts@acmecorp.com",
+          "sem-reports@acmecorp.com"
+        ]
+      },
+      "xdm:spendingLimits": {
+        "xdm:dailySpendLimit": 8000,
+        "xdm:monthlySpendLimit": 240000,
+        "xdm:lifetimeSpendLimit": 0,
+        "xdm:currentDailySpend": 6500,
+        "xdm:currentMonthlySpend": 145000,
+        "xdm:lifetimeSpend": 2850000,
+        "xdm:spendLimitResetDay": 1,
+        "xdm:alertThreshold": 0.9,
+        "xdm:alertsEnabled": true,
+        "xdm:pauseOnLimitReached": true
+      },
+      "xdm:accountPermissions": {
+        "xdm:canCreateCampaigns": true,
+        "xdm:canEditCampaigns": true,
+        "xdm:canDeleteCampaigns": true,
+        "xdm:canViewReports": true,
+        "xdm:canManageBilling": true,
+        "xdm:canManageUsers": true,
+        "xdm:canAccessAPI": true,
+        "xdm:canUseAdvancedFeatures": true,
+        "xdm:restrictedPlacements": [],
+        "xdm:allowedCountries": ["US", "CA", "GB", "AU", "DE", "FR", "JP"],
+        "xdm:blockedCategories": [],
+        "xdm:requiresApproval": false
+      },
+      "xdm:accountSettings": {
+        "xdm:timezone": "America/New_York",
+        "xdm:language": "en_US",
+        "xdm:currency": "USD",
+        "xdm:attributionWindow": "30d_click",
+        "xdm:conversionTracking": true,
+        "xdm:pixelID": "",
+        "xdm:catalogID": "",
+        "xdm:appID": "",
+        "xdm:domainVerification": true,
+        "xdm:verifiedDomains": [
+          "acmecorp.com",
+          "shop.acmecorp.com",
+          "www.acmecorp.com"
+        ],
+        "xdm:brandSafetyEnabled": true,
+        "xdm:adReviewEnabled": true,
+        "xdm:autoOptimizationEnabled": true
+      },
+      "xdm:accountStatus": {
+        "xdm:status": "active",
+        "xdm:accountHealth": "excellent",
+        "xdm:complianceStatus": "compliant",
+        "xdm:verificationStatus": "verified",
+        "xdm:riskLevel": "low",
+        "xdm:restrictions": [],
+        "xdm:warnings": [],
+        "xdm:lastReviewDate": "2025-09-20T10:00:00Z",
+        "xdm:nextReviewDate": "2025-12-20T00:00:00Z"
+      },
+      "xdm:partnerIntegrations": {
+        "xdm:crmIntegration": true,
+        "xdm:crmProvider": "Salesforce",
+        "xdm:analyticsIntegration": true,
+        "xdm:analyticsProvider": "Google Analytics 4",
+        "xdm:cdpIntegration": true,
+        "xdm:cdpProvider": "Adobe Real-Time CDP",
+        "xdm:attributionProvider": "Google Ads Attribution",
+        "xdm:dataWarehouseIntegration": true,
+        "xdm:dataWarehouseProvider": "BigQuery"
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_customer_id",
+          "xdm:stringValue": "1234567890"
+        },
+        {
+          "xdm:fieldName": "google_manager_customer_id",
+          "xdm:stringValue": "111222333444"
+        },
+        {
+          "xdm:fieldName": "google_account_type",
+          "xdm:stringValue": "standard"
+        },
+        {
+          "xdm:fieldName": "google_account_creation_date",
+          "xdm:stringValue": "2019-06-20T10:00:00Z"
+        },
+        {
+          "xdm:fieldName": "google_conversion_tracking_id",
+          "xdm:stringValue": "AW-123456789"
+        },
+        {
+          "xdm:fieldName": "google_remarketing_tag_id",
+          "xdm:stringValue": "DC-987654321"
+        }
+      ]
+    }
+  }
+}

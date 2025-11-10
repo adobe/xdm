@@ -1,0 +1,113 @@
+{
+  "xdm:paidMedia": {
+    "xdm:costMetrics": {
+      "xdm:spend": 18000,
+      "xdm:spendMicros": 18000000000,
+      "xdm:cpc": 7.2,
+      "xdm:cpm": 36.0,
+      "xdm:cpp": 0.56,
+      "xdm:cpe": 2.02,
+      "xdm:cpv": 0.15,
+      "xdm:cpa": 14.4,
+      "xdm:cpvc": 0.23,
+      "xdm:cpl": 73.47,
+      "xdm:biddingMetrics": {
+        "xdm:bidAmount": 8.5,
+        "xdm:bidAmountMicros": 8500000,
+        "xdm:bidCap": 12.0,
+        "xdm:costCap": 15.0,
+        "xdm:targetCPA": 14.0,
+        "xdm:targetROAS": 4.0,
+        "xdm:actualCPA": 14.4,
+        "xdm:actualROAS": 10.42,
+        "xdm:bidStrategy": "lowest_cost_without_cap",
+        "xdm:bidType": "automatic",
+        "xdm:averageBid": 7.85,
+        "xdm:maxBid": 12.0,
+        "xdm:minBid": 3.5,
+        "xdm:bidAdjustments": 1.15
+      },
+      "xdm:qualityMetrics": {
+        "xdm:qualityScore": 8.5,
+        "xdm:relevanceScore": 9.0,
+        "xdm:engagementScore": 8.2,
+        "xdm:conversionScore": 8.8,
+        "xdm:adRank": 76.5,
+        "xdm:expectedCTR": "above_average",
+        "xdm:adRelevance": "above_average",
+        "xdm:landingPageExperience": "above_average"
+      },
+      "xdm:impressionShare": {
+        "xdm:impressionShare": 0.68,
+        "xdm:impressionShareRank": 0.72,
+        "xdm:impressionShareBudget": 0.85,
+        "xdm:lostImpressionShareRank": 0.15,
+        "xdm:lostImpressionShareBudget": 0.17,
+        "xdm:exactMatchImpressionShare": 0.75,
+        "xdm:topImpressionShare": 0.42,
+        "xdm:absoluteTopImpressionShare": 0.28
+      },
+      "xdm:budgetUtilization": {
+        "xdm:budgetAllocated": 60000,
+        "xdm:budgetSpent": 18000,
+        "xdm:budgetRemaining": 42000,
+        "xdm:budgetUtilization": 0.3,
+        "xdm:dailyBudget": 2000,
+        "xdm:dailySpend": 600,
+        "xdm:dailyBudgetUtilization": 0.3,
+        "xdm:pacingStatus": "on_track",
+        "xdm:projectedSpend": 60000,
+        "xdm:budgetOverrun": 0,
+        "xdm:budgetUnderrun": 0
+      },
+      "xdm:efficiencyMetrics": {
+        "xdm:costPerThousandReach": 0.69,
+        "xdm:costPerEngagement": 2.02,
+        "xdm:costPerVideoView": 0.15,
+        "xdm:costPerVideoCompletion": 0.23,
+        "xdm:costPerLead": 73.47,
+        "xdm:costPerQualifiedLead": 97.3,
+        "xdm:costPerAppInstall": 0,
+        "xdm:costPerRegistration": 100.0,
+        "xdm:costPerSubscription": 189.47,
+        "xdm:costPerDownload": 56.25
+      },
+      "xdm:returnMetrics": {
+        "xdm:roas": 10.42,
+        "xdm:roi": 9.42,
+        "xdm:revenuePerClick": 75.0,
+        "xdm:revenuePerImpression": 3.75,
+        "xdm:profitPerClick": 67.8,
+        "xdm:profitMargin": 0.904,
+        "xdm:breakEvenROAS": 1.0,
+        "xdm:incrementalROAS": 4.2
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_currency",
+          "xdm:stringValue": "USD"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        },
+        {
+          "xdm:fieldName": "meta_billing_event",
+          "xdm:stringValue": "IMPRESSIONS"
+        },
+        {
+          "xdm:fieldName": "meta_optimization_goal",
+          "xdm:stringValue": "LINK_CLICKS"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_budget_optimization",
+          "xdm:stringValue": "true"
+        },
+        {
+          "xdm:fieldName": "meta_spend_cap",
+          "xdm:stringValue": "2500"
+        }
+      ]
+    }
+  }
+}

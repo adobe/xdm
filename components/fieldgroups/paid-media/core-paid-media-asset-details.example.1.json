@@ -1,0 +1,143 @@
+{
+  "xdm:paidMedia": {
+    "xdm:assetDetails": {
+      "xdm:assetType": "video",
+      "xdm:title": "Fall Product Launch - 30 Second Hero Video",
+      "xdm:description": "Introducing our latest product innovation with stunning visuals and compelling storytelling. Features product benefits, customer testimonials, and call-to-action.",
+      "xdm:mediaProperties": {
+        "xdm:url": "https://cdn.acmecorp.com/videos/fall-launch-hero-30s.mp4",
+        "xdm:thumbnailUrl": "https://cdn.acmecorp.com/videos/thumbnails/fall-launch-hero-30s.jpg",
+        "xdm:previewUrl": "https://cdn.acmecorp.com/videos/previews/fall-launch-hero-30s-preview.mp4",
+        "xdm:mimeType": "video/mp4",
+        "xdm:fileSize": 45678912,
+        "xdm:width": 1920,
+        "xdm:height": 1080,
+        "xdm:aspectRatio": "16:9",
+        "xdm:orientation": "landscape",
+        "xdm:duration": 30,
+        "xdm:bitrate": 12000,
+        "xdm:frameRate": 30,
+        "xdm:codec": "h264",
+        "xdm:colorSpace": "sRGB",
+        "xdm:hasAudio": true,
+        "xdm:audioCodec": "aac",
+        "xdm:audioChannels": 2,
+        "xdm:audioBitrate": 128
+      },
+      "xdm:fileProperties": {
+        "xdm:fileName": "fall-launch-hero-30s.mp4",
+        "xdm:fileHash": "sha256:abc123def456ghi789jkl012mno345pqr678stu901vwx234yz",
+        "xdm:uploadDate": "2025-10-28T14:30:00Z",
+        "xdm:lastModifiedDate": "2025-10-28T14:30:00Z",
+        "xdm:version": "1.0",
+        "xdm:source": "professional_production",
+        "xdm:uploadedBy": "user_creative_team_lead"
+      },
+      "xdm:videoProperties": {
+        "xdm:videoID": "video_987654321012345",
+        "xdm:videoFormat": "mp4",
+        "xdm:videoQuality": "hd",
+        "xdm:videoLength": 30,
+        "xdm:videoResolution": "1080p",
+        "xdm:videoOrientation": "landscape",
+        "xdm:hasSubtitles": true,
+        "xdm:subtitleLanguages": ["en", "es", "fr"],
+        "xdm:hasCaptions": true,
+        "xdm:captionLanguages": ["en"],
+        "xdm:soundOn": true,
+        "xdm:autoPlay": true,
+        "xdm:looping": false,
+        "xdm:thumbnailTimestamp": 5,
+        "xdm:videoStyle": "cinematic",
+        "xdm:videoTone": "inspirational",
+        "xdm:videoPacing": "fast",
+        "xdm:sceneCount": 8,
+        "xdm:transitionStyle": "smooth_cuts",
+        "xdm:colorGrading": "warm_vibrant",
+        "xdm:musicTrack": "upbeat_corporate",
+        "xdm:voiceOver": true,
+        "xdm:voiceOverLanguage": "en",
+        "xdm:textOverlays": true,
+        "xdm:brandLogoPresent": true,
+        "xdm:productShown": true,
+        "xdm:peopleShown": true,
+        "xdm:locationShown": false
+      },
+      "xdm:creativeMetadata": {
+        "xdm:creativeID": "creative_vid_987654321",
+        "xdm:creativeName": "Fall Product Launch - 30s Video",
+        "xdm:creativeVersion": "v2.1",
+        "xdm:creativeStatus": "approved",
+        "xdm:creativeCategory": "product_video",
+        "xdm:creativeTheme": "fall_2025_launch",
+        "xdm:creativeConcept": "Innovation meets simplicity",
+        "xdm:targetAudience": "tech_enthusiasts_25_54",
+        "xdm:brandGuidelines": "compliant",
+        "xdm:legalApproval": true,
+        "xdm:legalApprovalDate": "2025-10-30T10:00:00Z",
+        "xdm:copyrightOwner": "Acme Corporation",
+        "xdm:licenseType": "owned",
+        "xdm:rightsExpiration": "perpetual",
+        "xdm:creativeAgency": "Acme In-House Creative",
+        "xdm:productionCompany": "Acme Studios",
+        "xdm:director": "Jane Creative",
+        "xdm:producer": "John Producer"
+      },
+      "xdm:performanceHints": {
+        "xdm:recommendedPlacements": [
+          "facebook_feed",
+          "instagram_feed",
+          "instagram_reels"
+        ],
+        "xdm:recommendedDevices": ["mobile", "desktop"],
+        "xdm:recommendedAudiences": ["tech_enthusiasts", "early_adopters"],
+        "xdm:estimatedEngagementRate": 0.08,
+        "xdm:estimatedCompletionRate": 0.65,
+        "xdm:qualityScore": 8.5,
+        "xdm:relevanceScore": 9.0,
+        "xdm:creativeFatigueRisk": "low",
+        "xdm:seasonality": "fall_winter"
+      },
+      "xdm:accessibilityFeatures": {
+        "xdm:altText": "30-second video showcasing Acme's new product with dynamic visuals and customer testimonials",
+        "xdm:closedCaptions": true,
+        "xdm:audioDescription": false,
+        "xdm:transcriptAvailable": true,
+        "xdm:transcriptUrl": "https://cdn.acmecorp.com/videos/transcripts/fall-launch-hero-30s.txt",
+        "xdm:signLanguage": false,
+        "xdm:highContrast": false,
+        "xdm:wcagCompliance": "AA"
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_video_id",
+          "xdm:stringValue": "987654321012345"
+        },
+        {
+          "xdm:fieldName": "meta_video_status",
+          "xdm:stringValue": "ready"
+        },
+        {
+          "xdm:fieldName": "meta_video_upload_date",
+          "xdm:stringValue": "2025-10-28T14:30:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_video_thumbnail_url",
+          "xdm:stringValue": "https://scontent.xx.fbcdn.net/v/t15.5256-10/video_thumb.jpg"
+        },
+        {
+          "xdm:fieldName": "meta_video_format_support",
+          "xdm:stringValue": "feed,story,reels"
+        },
+        {
+          "xdm:fieldName": "meta_video_captions_auto_generated",
+          "xdm:stringValue": "false"
+        },
+        {
+          "xdm:fieldName": "meta_video_sound_collection_id",
+          "xdm:stringValue": "sound_collection_123456"
+        }
+      ]
+    }
+  }
+}

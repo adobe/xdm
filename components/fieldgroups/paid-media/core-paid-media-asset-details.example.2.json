@@ -1,0 +1,143 @@
+{
+  "xdm:paidMedia": {
+    "xdm:assetDetails": {
+      "xdm:assetType": "image",
+      "xdm:title": "Holiday Sale - Hero Banner Image",
+      "xdm:description": "Eye-catching hero banner featuring holiday sale messaging with product showcase and promotional offer. Optimized for feed and story placements.",
+      "xdm:mediaProperties": {
+        "xdm:url": "https://cdn.acmecorp.com/images/holiday-sale-hero-banner.jpg",
+        "xdm:thumbnailUrl": "https://cdn.acmecorp.com/images/thumbnails/holiday-sale-hero-banner-thumb.jpg",
+        "xdm:previewUrl": "https://cdn.acmecorp.com/images/previews/holiday-sale-hero-banner-preview.jpg",
+        "xdm:mimeType": "image/jpeg",
+        "xdm:fileSize": 2456789,
+        "xdm:width": 1200,
+        "xdm:height": 628,
+        "xdm:aspectRatio": "1.91:1",
+        "xdm:orientation": "landscape",
+        "xdm:duration": 0,
+        "xdm:bitrate": 0,
+        "xdm:frameRate": 0,
+        "xdm:codec": "jpeg",
+        "xdm:colorSpace": "sRGB",
+        "xdm:hasAudio": false,
+        "xdm:audioCodec": "",
+        "xdm:audioChannels": 0,
+        "xdm:audioBitrate": 0
+      },
+      "xdm:fileProperties": {
+        "xdm:fileName": "holiday-sale-hero-banner.jpg",
+        "xdm:fileHash": "sha256:xyz789abc456def123ghi890jkl567mno234pqr901stu678vwx345",
+        "xdm:uploadDate": "2025-11-01T09:00:00Z",
+        "xdm:lastModifiedDate": "2025-11-01T09:00:00Z",
+        "xdm:version": "1.0",
+        "xdm:source": "professional_design",
+        "xdm:uploadedBy": "user_design_team_lead"
+      },
+      "xdm:imageProperties": {
+        "xdm:imageID": "image_456789123456789",
+        "xdm:imageFormat": "jpeg",
+        "xdm:imageQuality": "high",
+        "xdm:imageResolution": "1200x628",
+        "xdm:imageOrientation": "landscape",
+        "xdm:dpi": 72,
+        "xdm:colorProfile": "sRGB IEC61966-2.1",
+        "xdm:hasTransparency": false,
+        "xdm:isAnimated": false,
+        "xdm:frameCount": 1,
+        "xdm:compressionQuality": 90,
+        "xdm:imageStyle": "modern_clean",
+        "xdm:imageComposition": "rule_of_thirds",
+        "xdm:dominantColors": ["#FF6B35", "#004E89", "#FFFFFF"],
+        "xdm:colorPalette": "warm_vibrant",
+        "xdm:textOverlay": true,
+        "xdm:textPercentage": 15,
+        "xdm:brandLogoPresent": true,
+        "xdm:productShown": true,
+        "xdm:peopleShown": false,
+        "xdm:faceCount": 0,
+        "xdm:backgroundType": "solid_color",
+        "xdm:lightingStyle": "bright_even",
+        "xdm:photographyStyle": "product_photography"
+      },
+      "xdm:creativeMetadata": {
+        "xdm:creativeID": "creative_img_456789123",
+        "xdm:creativeName": "Holiday Sale - Hero Banner",
+        "xdm:creativeVersion": "v1.0",
+        "xdm:creativeStatus": "approved",
+        "xdm:creativeCategory": "promotional_image",
+        "xdm:creativeTheme": "holiday_2025",
+        "xdm:creativeConcept": "Festive savings celebration",
+        "xdm:targetAudience": "value_shoppers_all_ages",
+        "xdm:brandGuidelines": "compliant",
+        "xdm:legalApproval": true,
+        "xdm:legalApprovalDate": "2025-11-01T08:00:00Z",
+        "xdm:copyrightOwner": "Acme Corporation",
+        "xdm:licenseType": "owned",
+        "xdm:rightsExpiration": "perpetual",
+        "xdm:creativeAgency": "Acme In-House Design",
+        "xdm:productionCompany": "Acme Creative Studio",
+        "xdm:director": "",
+        "xdm:producer": "Sarah Designer"
+      },
+      "xdm:performanceHints": {
+        "xdm:recommendedPlacements": [
+          "facebook_feed",
+          "instagram_feed",
+          "facebook_marketplace"
+        ],
+        "xdm:recommendedDevices": ["mobile", "desktop"],
+        "xdm:recommendedAudiences": [
+          "shoppers",
+          "deal_seekers",
+          "holiday_shoppers"
+        ],
+        "xdm:estimatedEngagementRate": 0.06,
+        "xdm:estimatedCompletionRate": 1.0,
+        "xdm:qualityScore": 9.0,
+        "xdm:relevanceScore": 8.5,
+        "xdm:creativeFatigueRisk": "medium",
+        "xdm:seasonality": "holiday_season"
+      },
+      "xdm:accessibilityFeatures": {
+        "xdm:altText": "Holiday sale banner featuring 40% off promotion with festive red and blue color scheme and product images",
+        "xdm:closedCaptions": false,
+        "xdm:audioDescription": false,
+        "xdm:transcriptAvailable": false,
+        "xdm:transcriptUrl": "",
+        "xdm:signLanguage": false,
+        "xdm:highContrast": false,
+        "xdm:wcagCompliance": "AA"
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_image_hash",
+          "xdm:stringValue": "abc123def456ghi789jkl012"
+        },
+        {
+          "xdm:fieldName": "meta_image_status",
+          "xdm:stringValue": "active"
+        },
+        {
+          "xdm:fieldName": "meta_image_upload_date",
+          "xdm:stringValue": "2025-11-01T09:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_image_url",
+          "xdm:stringValue": "https://scontent.xx.fbcdn.net/v/t45.1600-4/image_hash.jpg"
+        },
+        {
+          "xdm:fieldName": "meta_image_format_support",
+          "xdm:stringValue": "feed,story,marketplace"
+        },
+        {
+          "xdm:fieldName": "meta_text_overlay_percentage",
+          "xdm:stringValue": "15"
+        },
+        {
+          "xdm:fieldName": "meta_image_quality_score",
+          "xdm:stringValue": "9.0"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "xdm:paidMedia": {
+    "xdm:accountDetails": {
+      "xdm:accountName": "Acme Corp - Meta Business Account",
+      "xdm:accountType": "business",
+      "xdm:businessName": "Acme Corporation",
+      "xdm:industry": "Technology",
+      "xdm:country": "US",
+      "xdm:isTestAccount": false,
+      "xdm:businessInfo": {
+        "xdm:businessID": "123456789012345",
+        "xdm:businessManagerID": "987654321098765",
+        "xdm:legalEntityName": "Acme Corporation Inc.",
+        "xdm:taxID": "12-3456789",
+        "xdm:businessAddress": {
+          "xdm:street1": "123 Innovation Drive",
+          "xdm:street2": "Suite 500",
+          "xdm:city": "San Francisco",
+          "xdm:region": "CA",
+          "xdm:postalCode": "94105",
+          "xdm:country": "US"
+        },
+        "xdm:businessPhone": "+1-415-555-0100",
+        "xdm:businessEmail": "advertising@acmecorp.com",
+        "xdm:businessWebsite": "https://www.acmecorp.com",
+        "xdm:businessCategory": "Technology Company",
+        "xdm:businessVertical": "Software as a Service",
+        "xdm:employeeCount": "1001-5000",
+        "xdm:annualRevenue": "50000000-100000000",
+        "xdm:yearEstablished": 2010,
+        "xdm:publiclyTraded": true,
+        "xdm:stockSymbol": "ACME",
+        "xdm:parentCompany": "Acme Holdings LLC"
+      },
+      "xdm:billingInfo": {
+        "xdm:billingType": "credit_card",
+        "xdm:paymentMethodID": "pm_1234567890abcdef",
+        "xdm:billingCurrency": "USD",
+        "xdm:billingAddress": {
+          "xdm:street1": "123 Innovation Drive",
+          "xdm:street2": "Finance Department",
+          "xdm:city": "San Francisco",
+          "xdm:region": "CA",
+          "xdm:postalCode": "94105",
+          "xdm:country": "US"
+        },
+        "xdm:billingEmail": "billing@acmecorp.com",
+        "xdm:billingContact": "Jane Smith",
+        "xdm:billingPhone": "+1-415-555-0150",
+        "xdm:invoiceDelivery": "email",
+        "xdm:paymentTerms": "immediate",
+        "xdm:creditLimit": 500000,
+        "xdm:currentBalance": 125000,
+        "xdm:availableCredit": 375000,
+        "xdm:lastPaymentDate": "2025-11-03T10:30:00Z",
+        "xdm:lastPaymentAmount": 45000,
+        "xdm:nextBillingDate": "2025-12-01T00:00:00Z",
+        "xdm:autoPayEnabled": true,
+        "xdm:billingThreshold": 10000,
+        "xdm:taxExempt": false
+      },
+      "xdm:contactInfo": {
+        "xdm:primaryContact": {
+          "xdm:name": "John Doe",
+          "xdm:email": "john.doe@acmecorp.com",
+          "xdm:phone": "+1-415-555-0120",
+          "xdm:title": "Director of Digital Marketing",
+          "xdm:userID": "user_abc123xyz"
+        },
+        "xdm:technicalContact": {
+          "xdm:name": "Sarah Johnson",
+          "xdm:email": "sarah.johnson@acmecorp.com",
+          "xdm:phone": "+1-415-555-0130",
+          "xdm:title": "Marketing Technology Manager",
+          "xdm:userID": "user_def456uvw"
+        },
+        "xdm:billingContact": {
+          "xdm:name": "Jane Smith",
+          "xdm:email": "jane.smith@acmecorp.com",
+          "xdm:phone": "+1-415-555-0150",
+          "xdm:title": "Finance Manager",
+          "xdm:userID": "user_ghi789rst"
+        },
+        "xdm:notificationEmails": [
+          "marketing-alerts@acmecorp.com",
+          "performance-reports@acmecorp.com",
+          "billing-notifications@acmecorp.com"
+        ]
+      },
+      "xdm:spendingLimits": {
+        "xdm:dailySpendLimit": 5000,
+        "xdm:monthlySpendLimit": 150000,
+        "xdm:lifetimeSpendLimit": 1000000,
+        "xdm:currentDailySpend": 3250,
+        "xdm:currentMonthlySpend": 87500,
+        "xdm:lifetimeSpend": 425000,
+        "xdm:spendLimitResetDay": 1,
+        "xdm:alertThreshold": 0.8,
+        "xdm:alertsEnabled": true,
+        "xdm:pauseOnLimitReached": false
+      },
+      "xdm:accountPermissions": {
+        "xdm:canCreateCampaigns": true,
+        "xdm:canEditCampaigns": true,
+        "xdm:canDeleteCampaigns": true,
+        "xdm:canViewReports": true,
+        "xdm:canManageBilling": true,
+        "xdm:canManageUsers": true,
+        "xdm:canAccessAPI": true,
+        "xdm:canUseAdvancedFeatures": true,
+        "xdm:restrictedPlacements": [],
+        "xdm:allowedCountries": ["US", "CA", "GB", "AU", "DE", "FR"],
+        "xdm:blockedCategories": ["gambling", "alcohol"],
+        "xdm:requiresApproval": false
+      },
+      "xdm:accountSettings": {
+        "xdm:timezone": "America/Los_Angeles",
+        "xdm:language": "en_US",
+        "xdm:currency": "USD",
+        "xdm:attributionWindow": "28d_click_1d_view",
+        "xdm:conversionTracking": true,
+        "xdm:pixelID": "pixel_123456789",
+        "xdm:catalogID": "catalog_987654321",
+        "xdm:appID": "app_456789123",
+        "xdm:domainVerification": true,
+        "xdm:verifiedDomains": ["acmecorp.com", "shop.acmecorp.com"],
+        "xdm:brandSafetyEnabled": true,
+        "xdm:adReviewEnabled": true,
+        "xdm:autoOptimizationEnabled": true
+      },
+      "xdm:accountStatus": {
+        "xdm:status": "active",
+        "xdm:accountHealth": "good",
+        "xdm:complianceStatus": "compliant",
+        "xdm:verificationStatus": "verified",
+        "xdm:riskLevel": "low",
+        "xdm:restrictions": [],
+        "xdm:warnings": [],
+        "xdm:lastReviewDate": "2025-10-15T14:30:00Z",
+        "xdm:nextReviewDate": "2026-01-15T00:00:00Z"
+      },
+      "xdm:partnerIntegrations": {
+        "xdm:crmIntegration": true,
+        "xdm:crmProvider": "Salesforce",
+        "xdm:analyticsIntegration": true,
+        "xdm:analyticsProvider": "Adobe Analytics",
+        "xdm:cdpIntegration": true,
+        "xdm:cdpProvider": "Adobe Real-Time CDP",
+        "xdm:attributionProvider": "Adobe Attribution AI",
+        "xdm:dataWarehouseIntegration": true,
+        "xdm:dataWarehouseProvider": "Snowflake"
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_business_verification_status",
+          "xdm:stringValue": "verified"
+        },
+        {
+          "xdm:fieldName": "meta_ad_account_id",
+          "xdm:stringValue": "act_123456789012345"
+        },
+        {
+          "xdm:fieldName": "meta_business_manager_name",
+          "xdm:stringValue": "Acme Corp Business Manager"
+        },
+        {
+          "xdm:fieldName": "meta_account_creation_date",
+          "xdm:stringValue": "2020-03-15T08:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_two_factor_enabled",
+          "xdm:stringValue": "true"
+        },
+        {
+          "xdm:fieldName": "meta_agency_relationship",
+          "xdm:stringValue": "direct"
+        }
+      ]
+    }
+  }
+}

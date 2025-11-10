@@ -1,0 +1,112 @@
+{
+  "xdm:paidMedia": {
+    "xdm:experienceDetails": {
+      "xdm:experienceType": "carousel",
+      "xdm:landingPageURL": "https://shop.acmecorp.com/products",
+      "xdm:displayURL": "shop.acmecorp.com/products",
+      "xdm:finalURL": "https://shop.acmecorp.com/products?utm_source=facebook&utm_medium=carousel&utm_campaign=showcase2025",
+      "xdm:carouselProperties": {
+        "xdm:cardCount": 5,
+        "xdm:carouselType": "product_carousel",
+        "xdm:autoAdvance": false,
+        "xdm:looping": true,
+        "xdm:cards": [
+          {
+            "xdm:cardIndex": 1,
+            "xdm:cardID": "card_001",
+            "xdm:headline": "Premium Wireless Headphones",
+            "xdm:description": "Experience crystal-clear sound with 40-hour battery life",
+            "xdm:imageURL": "https://cdn.acmecorp.com/products/headphones-premium.jpg",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/headphones-premium",
+            "xdm:callToAction": "Shop Now",
+            "xdm:price": 299.99,
+            "xdm:currency": "USD",
+            "xdm:productID": "prod_headphones_001"
+          },
+          {
+            "xdm:cardIndex": 2,
+            "xdm:cardID": "card_002",
+            "xdm:headline": "Smart Fitness Watch",
+            "xdm:description": "Track your health and fitness goals with precision",
+            "xdm:imageURL": "https://cdn.acmecorp.com/products/watch-fitness.jpg",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/watch-fitness",
+            "xdm:callToAction": "Shop Now",
+            "xdm:price": 399.99,
+            "xdm:currency": "USD",
+            "xdm:productID": "prod_watch_002"
+          },
+          {
+            "xdm:cardIndex": 3,
+            "xdm:cardID": "card_003",
+            "xdm:headline": "Portable Bluetooth Speaker",
+            "xdm:description": "Powerful sound in a compact, waterproof design",
+            "xdm:imageURL": "https://cdn.acmecorp.com/products/speaker-portable.jpg",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/speaker-portable",
+            "xdm:callToAction": "Shop Now",
+            "xdm:price": 149.99,
+            "xdm:currency": "USD",
+            "xdm:productID": "prod_speaker_003"
+          },
+          {
+            "xdm:cardIndex": 4,
+            "xdm:cardID": "card_004",
+            "xdm:headline": "Wireless Charging Pad",
+            "xdm:description": "Fast wireless charging for all your devices",
+            "xdm:imageURL": "https://cdn.acmecorp.com/products/charger-wireless.jpg",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/charger-wireless",
+            "xdm:callToAction": "Shop Now",
+            "xdm:price": 49.99,
+            "xdm:currency": "USD",
+            "xdm:productID": "prod_charger_004"
+          },
+          {
+            "xdm:cardIndex": 5,
+            "xdm:cardID": "card_005",
+            "xdm:headline": "USB-C Hub Adapter",
+            "xdm:description": "Connect all your devices with this versatile hub",
+            "xdm:imageURL": "https://cdn.acmecorp.com/products/hub-usbc.jpg",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/hub-usbc",
+            "xdm:callToAction": "Shop Now",
+            "xdm:price": 79.99,
+            "xdm:currency": "USD",
+            "xdm:productID": "prod_hub_005"
+          }
+        ],
+        "xdm:catalogID": "catalog_987654321",
+        "xdm:productSetID": "product_set_123456",
+        "xdm:dynamicProductAds": false
+      },
+      "xdm:interactionProperties": {
+        "xdm:allowSwipe": true,
+        "xdm:allowTap": true,
+        "xdm:allowZoom": false,
+        "xdm:allowFullscreen": false,
+        "xdm:interactionTracking": true,
+        "xdm:cardViewTracking": true,
+        "xdm:swipeTracking": true
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_experience_type",
+          "xdm:stringValue": "carousel"
+        },
+        {
+          "xdm:fieldName": "meta_carousel_card_count",
+          "xdm:stringValue": "5"
+        },
+        {
+          "xdm:fieldName": "meta_catalog_id",
+          "xdm:stringValue": "catalog_987654321"
+        },
+        {
+          "xdm:fieldName": "meta_product_set_id",
+          "xdm:stringValue": "product_set_123456"
+        },
+        {
+          "xdm:fieldName": "meta_dynamic_ads",
+          "xdm:stringValue": "false"
+        }
+      ]
+    }
+  }
+}

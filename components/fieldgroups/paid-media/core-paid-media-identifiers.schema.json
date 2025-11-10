@@ -220,8 +220,7 @@
                 "adGroup",
                 "ad",
                 "experience",
-                "asset",
-                "metrics"
+                "asset"
               ],
               "meta:enum": {
                 "account": "Ad Account",
@@ -229,8 +228,7 @@
                 "adGroup": "Ad Group/Ad Set/Ad Squad",
                 "ad": "Individual Ad",
                 "experience": "Creative Experience",
-                "asset": "Creative Asset",
-                "metrics": "Performance Metrics"
+                "asset": "Creative Asset"
               }
             },
             "xdm:hierarchyPath": {

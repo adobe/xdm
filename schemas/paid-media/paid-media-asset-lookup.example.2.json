@@ -1,0 +1,169 @@
+{
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:entityType": "asset",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:assetID": "456789123456789",
+    "xdm:assetGUID": "meta_act_123456789012345_asset_456789123456789",
+    "xdm:metadata": {
+      "xdm:name": "Holiday Sale - Hero Banner Image",
+      "xdm:status": "active",
+      "xdm:createdTime": "2025-10-28T09:00:00Z",
+      "xdm:updatedTime": "2025-11-01T08:00:00Z"
+    },
+    "xdm:assetDetails": {
+      "xdm:assetType": "image",
+      "xdm:assetFormat": "jpg",
+      "xdm:assetSubType": "feed_image",
+      "xdm:assetCategory": "promotional",
+      "xdm:assetSource": "uploaded",
+      "xdm:assetLibrary": "meta_creative_hub",
+      "xdm:assetOwner": "acme_corp",
+      "xdm:assetPermissions": "private",
+      "xdm:isStockAsset": false,
+      "xdm:stockProvider": "",
+      "xdm:stockAssetID": "",
+      "xdm:licenseType": "owned",
+      "xdm:rightsManagement": {
+        "xdm:copyrightOwner": "Acme Corporation",
+        "xdm:licenseExpiration": "",
+        "xdm:usageRights": "unlimited",
+        "xdm:geographicRestrictions": [],
+        "xdm:platformRestrictions": [],
+        "xdm:exclusivityPeriod": ""
+      },
+      "xdm:fileProperties": {
+        "xdm:fileName": "holiday_sale_hero_banner_1200x628.jpg",
+        "xdm:fileSize": 2456789,
+        "xdm:fileSizeUnit": "bytes",
+        "xdm:fileHash": "sha256:xyz789abc123def456ghi789jkl012mno345pqr678stu901vwx234",
+        "xdm:mimeType": "image/jpeg",
+        "xdm:encoding": "",
+        "xdm:bitrate": 0,
+        "xdm:bitrateUnit": "",
+        "xdm:colorSpace": "sRGB",
+        "xdm:colorDepth": 24,
+        "xdm:compressionType": "lossy"
+      },
+      "xdm:urlProperties": {
+        "xdm:assetURL": "https://scontent.xx.fbcdn.net/v/t45.1600-4/456789123456789_image.jpg",
+        "xdm:thumbnailURL": "https://scontent.xx.fbcdn.net/v/t45.1600-4/456789123456789_thumb.jpg",
+        "xdm:previewURL": "https://business.facebook.com/creatives/preview/456789123456789",
+        "xdm:downloadURL": "https://business.facebook.com/creatives/download/456789123456789",
+        "xdm:cdnURL": "https://cdn.acmecorp.com/assets/holiday_sale_hero_banner.jpg",
+        "xdm:streamingURL": "",
+        "xdm:embedCode": ""
+      },
+      "xdm:imageProperties": {
+        "xdm:width": 1200,
+        "xdm:height": 628,
+        "xdm:aspectRatio": "1.91:1",
+        "xdm:orientation": "landscape",
+        "xdm:resolution": 72,
+        "xdm:resolutionUnit": "dpi",
+        "xdm:format": "jpeg",
+        "xdm:transparency": false,
+        "xdm:animated": false,
+        "xdm:frameCount": 1,
+        "xdm:colorProfile": "sRGB IEC61966-2.1",
+        "xdm:hasAlphaChannel": false,
+        "xdm:imageQuality": "high",
+        "xdm:optimizedForWeb": true,
+        "xdm:progressive": true
+      },
+      "xdm:contentProperties": {
+        "xdm:title": "Holiday Sale - Up to 50% Off",
+        "xdm:description": "Don't miss our biggest sale of the year! Save up to 50% on select products.",
+        "xdm:headline": "Holiday Sale",
+        "xdm:bodyText": "Up to 50% Off Select Items",
+        "xdm:callToAction": "Shop Now",
+        "xdm:brandName": "Acme Corp",
+        "xdm:productName": "",
+        "xdm:tagline": "Limited Time Offer",
+        "xdm:keywords": ["sale", "holiday", "discount", "shopping", "deals"],
+        "xdm:hashtags": [
+          "#HolidaySale",
+          "#AcmeCorp",
+          "#ShopNow",
+          "#LimitedTime"
+        ],
+        "xdm:mentions": ["@AcmeCorp"],
+        "xdm:language": "en",
+        "xdm:locale": "en_US"
+      },
+      "xdm:creativeElements": {
+        "xdm:primaryColor": "#CC0000",
+        "xdm:secondaryColor": "#FFFFFF",
+        "xdm:accentColor": "#FFD700",
+        "xdm:backgroundColor": "#F8F8F8",
+        "xdm:textColor": "#FFFFFF",
+        "xdm:fontFamily": "Arial",
+        "xdm:logoIncluded": true,
+        "xdm:logoPosition": "top_center",
+        "xdm:brandingLevel": "prominent",
+        "xdm:visualStyle": "bold",
+        "xdm:mood": "exciting",
+        "xdm:tone": "urgent"
+      },
+      "xdm:performanceMetadata": {
+        "xdm:assetScore": 7.8,
+        "xdm:qualityScore": 8.5,
+        "xdm:relevanceScore": 8.2,
+        "xdm:engagementScore": 7.5,
+        "xdm:creativeFatigue": 0.25,
+        "xdm:freshnessScore": 0.9,
+        "xdm:adStrength": "good",
+        "xdm:predictedPerformance": "medium_high",
+        "xdm:benchmarkComparison": "average"
+      },
+      "xdm:usageTracking": {
+        "xdm:timesUsed": 8,
+        "xdm:activeCampaigns": 2,
+        "xdm:activeAdGroups": 3,
+        "xdm:activeAds": 5,
+        "xdm:firstUsedDate": "2025-11-01T00:00:00Z",
+        "xdm:lastUsedDate": "2025-11-09T12:00:00Z",
+        "xdm:totalImpressions": 850000,
+        "xdm:totalClicks": 28000,
+        "xdm:totalSpend": 7500
+      },
+      "xdm:reviewStatus": {
+        "xdm:status": "approved",
+        "xdm:reviewDate": "2025-10-29T09:00:00Z",
+        "xdm:reviewerID": "meta_reviewer_789",
+        "xdm:reviewNotes": "Approved - meets all policy requirements",
+        "xdm:policyViolations": [],
+        "xdm:appealStatus": "not_applicable",
+        "xdm:autoApproved": true,
+        "xdm:requiresManualReview": false
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_image_hash",
+          "xdm:stringValue": "abc123def456ghi789jkl012"
+        },
+        {
+          "xdm:fieldName": "meta_image_name",
+          "xdm:stringValue": "Holiday Sale - Hero Banner Image"
+        },
+        {
+          "xdm:fieldName": "meta_upload_date",
+          "xdm:stringValue": "2025-10-28T09:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_image_status",
+          "xdm:stringValue": "active"
+        },
+        {
+          "xdm:fieldName": "meta_image_type",
+          "xdm:stringValue": "uploaded"
+        },
+        {
+          "xdm:fieldName": "meta_image_category",
+          "xdm:stringValue": "promotional"
+        }
+      ]
+    }
+  }
+}

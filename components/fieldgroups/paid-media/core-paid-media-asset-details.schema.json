@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Asset-specific details and configuration fields for paid media creative assets",
   "definitions": {
     "asset-details": {
@@ -249,7 +249,10 @@
                     "xdm:buttonProperties": {
                       "type": "object",
                       "title": "Button Properties",
-                      "description": "Properties for interactive buttons"
+                      "description": "Properties for interactive buttons",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     },
                     "xdm:webViewProperties": {
                       "type": "object",
@@ -266,7 +269,10 @@
                     "xdm:deepLinkProperties": {
                       "type": "object",
                       "title": "Deep Link Properties",
-                      "description": "Properties for deep link interactions"
+                      "description": "Properties for deep link interactions",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     }
                   }
                 },

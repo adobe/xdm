@@ -411,7 +411,7 @@ Run `npm run validate` to validate that all example files match their correspond
 - Caches fetched remote schemas to avoid duplicate requests
 - Reports validation results including count of remote schemas fetched
 
-The command validates `components`, `extensions`, and `schemas` directories by default, or you can specify specific directories: `npm run validate components/datatypes/paid-media`.
+The command validates `components`, `extensions`, and `schemas` directories by default, or you can specify specific directories: `npm run validate components/datatypes/paid-media`. 
 
 ### Re-Use and Modularity
 

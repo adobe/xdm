@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Ad-specific details and configuration fields for paid media ads",
   "definitions": {
     "ad-details": {
@@ -202,7 +202,10 @@
                     "xdm:objectStorySpec": {
                       "type": "object",
                       "title": "Object Story Spec",
-                      "description": "Full story specification for complex ad types"
+                      "description": "Full story specification for complex ad types",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     },
                     "xdm:isShareable": {
                       "type": "boolean",
@@ -224,12 +227,18 @@
                     "xdm:appInstallProperties": {
                       "type": "object",
                       "title": "App Install Properties",
-                      "description": "Properties for app install ads"
+                      "description": "Properties for app install ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     },
                     "xdm:deepLinkProperties": {
                       "type": "object",
                       "title": "Deep Link Properties",
-                      "description": "Properties for deep link ads"
+                      "description": "Properties for deep link ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     }
                   }
                 },
@@ -282,32 +291,50 @@
                     "xdm:chatProperties": {
                       "type": "object",
                       "title": "Chat Properties",
-                      "description": "Properties for chat-enabled ads"
+                      "description": "Properties for chat-enabled ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     },
                     "xdm:webViewProperties": {
                       "type": "object",
                       "title": "Web View Properties",
-                      "description": "Properties for web view ads"
+                      "description": "Properties for web view ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     },
                     "xdm:adToLensProperties": {
                       "type": "object",
                       "title": "Ad to Lens Properties",
-                      "description": "Properties for AR lens ads"
+                      "description": "Properties for AR lens ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     },
                     "xdm:adToCallProperties": {
                       "type": "object",
                       "title": "Ad to Call Properties",
-                      "description": "Properties for call-to-action ads"
+                      "description": "Properties for call-to-action ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     },
                     "xdm:adToMessageProperties": {
                       "type": "object",
                       "title": "Ad to Message Properties",
-                      "description": "Properties for message ads"
+                      "description": "Properties for message ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     },
                     "xdm:reminderProperties": {
                       "type": "object",
                       "title": "Reminder Properties",
-                      "description": "Properties for reminder ads"
+                      "description": "Properties for reminder ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
                     }
                   }
                 },

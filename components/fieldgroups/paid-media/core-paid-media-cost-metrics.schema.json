@@ -236,7 +236,13 @@
                     "xdm:pacingStatus": {
                       "type": "string",
                       "title": "Pacing Status",
-                      "enum": ["on_track", "ahead", "behind", "paused"]
+                      "enum": ["on_track", "ahead", "behind", "paused"],
+                      "meta:enum": {
+                        "on_track": "On Track",
+                        "ahead": "Ahead",
+                        "behind": "Behind",
+                        "paused": "Paused"
+                      }
                     },
                     "xdm:projectedSpend": {
                       "type": "number",

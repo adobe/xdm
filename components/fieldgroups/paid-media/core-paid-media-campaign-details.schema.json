@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Campaign-specific details and configuration fields for paid media campaigns",
   "definitions": {
     "campaign-details": {
@@ -209,7 +209,16 @@
                                   "friday",
                                   "saturday",
                                   "sunday"
-                                ]
+                                ],
+                                "meta:enum": {
+                                  "monday": "Monday",
+                                  "tuesday": "Tuesday",
+                                  "wednesday": "Wednesday",
+                                  "thursday": "Thursday",
+                                  "friday": "Friday",
+                                  "saturday": "Saturday",
+                                  "sunday": "Sunday"
+                                }
                               },
                               "xdm:startHour": {
                                 "type": "integer",
@@ -428,7 +437,16 @@
                           "STORIES",
                           "REELS",
                           "OTHER"
-                        ]
+                        ],
+                        "meta:enum": {
+                          "SEARCH": "Search",
+                          "PRODUCT_PAGE": "Product Page",
+                          "HOME": "Home",
+                          "FEED": "Feed",
+                          "STORIES": "Stories",
+                          "REELS": "Reels",
+                          "OTHER": "Other"
+                        }
                       },
                       "xdm:adjustmentPercentage": {
                         "type": "number",

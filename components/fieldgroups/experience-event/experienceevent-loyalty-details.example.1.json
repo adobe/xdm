@@ -29,12 +29,14 @@
         "xdm:promotionId": "PROMO-WELCOME"
       }
     ],
-    "xdm:pointsRedemption": {
-      "xdm:value": 50.0,
-      "xdm:promotionId": "PROMO-POINTS",
-      "xdm:loyaltyProgramId": "LP-001",
-      "xdm:transactionId": "TXN-RED-001"
-    },
+    "xdm:pointsRedemption": [
+      {
+        "xdm:value": 50.0,
+        "xdm:promotionId": "PROMO-POINTS",
+        "xdm:loyaltyProgramId": "LP-001",
+        "xdm:transactionId": "TXN-RED-001"
+      }
+    ],
     "xdm:referralRedemption": [
       {
         "xdm:code": "REF-1234",

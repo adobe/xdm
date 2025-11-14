@@ -90,28 +90,31 @@
             },
             "xdm:pointsRedemption": {
               "title": "Points Redemption",
-              "type": "object",
+              "type": "array",
               "description": "Points redeemed as part of this event.",
-              "properties": {
-                "xdm:value": {
-                  "title": "Points Value",
-                  "type": "number",
-                  "description": "Number of points redeemed."
-                },
-                "xdm:promotionId": {
-                  "title": "Promotion ID",
-                  "type": "string",
-                  "description": "Identifier of the promotion governing this points redemption."
-                },
-                "xdm:loyaltyProgramId": {
-                  "title": "Loyalty Program ID",
-                  "type": "string",
-                  "description": "Identifier of the loyalty program managing these points."
-                },
-                "xdm:transactionId": {
-                  "title": "Transaction ID",
-                  "type": "string",
-                  "description": "Identifier of the points redemption transaction, if applicable."
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:value": {
+                    "title": "Points Value",
+                    "type": "number",
+                    "description": "Number of points redeemed."
+                  },
+                  "xdm:promotionId": {
+                    "title": "Promotion ID",
+                    "type": "string",
+                    "description": "Identifier of the promotion governing this points redemption."
+                  },
+                  "xdm:loyaltyProgramId": {
+                    "title": "Loyalty Program ID",
+                    "type": "string",
+                    "description": "Identifier of the loyalty program managing these points."
+                  },
+                  "xdm:transactionId": {
+                    "title": "Transaction ID",
+                    "type": "string",
+                    "description": "Identifier of the points redemption transaction, if applicable."
+                  }
                 }
               }
             },

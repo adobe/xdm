@@ -1,0 +1,38 @@
+{
+  "_id": "personId1_challengeId1",
+  "_experience": {
+    "ajo": {
+      "loyalty": {
+        "challenge": {
+          "description": "Complete your morning routine challenge this week and earn bonus points!",
+          "tasks": [
+            {
+              "description": "Purchase 3 breakfast items during morning hours for 2 consecutive days",
+              "excludedProducts": [
+                "PROMO-ITEM-001",
+                "GIFT-CARD-100"
+              ],
+              "includedProducts": [
+                "BREAKFAST-SANDWICH-001",
+                "COFFEE-LATTE-16OZ",
+                "BAGEL-CREAM-CHEESE",
+                "OATMEAL-CLASSIC"
+              ],
+              "goals": {
+                "quantity": 3,
+                "contiguousDays": 2
+              },
+              "maxRepeats": 2,
+              "reward": "50 points"
+            }
+          ],
+          "timeOfDay": {
+            "end": 900,
+            "start": 720
+          }
+        }
+      }
+    }
+  }
+}
+

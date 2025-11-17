@@ -1,0 +1,124 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge-personalization",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Challenge Personalization",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Personalization settings for loyalty challenges including task configurations, product restrictions, goals, and time windows.",
+  "definitions": {
+    "challenge-personalization": {
+      "properties": {
+        "https://ns.adobe.com/experience/ajo/loyalty/challenge": {
+          "title": "Challenge",
+          "type": "object",
+          "description": "Challenge personalization details.",
+          "properties": {
+            "https://ns.adobe.com/experience/ajo/loyalty/description": {
+              "title": "Description",
+              "type": "string",
+              "description": "Personalized challenge description."
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/tasks": {
+              "title": "Tasks",
+              "type": "array",
+              "description": "List of tasks within the challenge.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "https://ns.adobe.com/experience/ajo/loyalty/description": {
+                    "title": "Task Description",
+                    "type": "string",
+                    "description": "Personalized task description."
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/excludedProducts": {
+                    "title": "Excluded Products",
+                    "type": "array",
+                    "description": "List of product SKUs excluded from this task.",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/includedProducts": {
+                    "title": "Included Products",
+                    "type": "array",
+                    "description": "List of product SKUs included in this task.",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/goals": {
+                    "title": "Goals",
+                    "type": "object",
+                    "description": "Goal criteria for task completion.",
+                    "properties": {
+                      "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
+                        "title": "Quantity",
+                        "type": "integer",
+                        "description": "Target quantity to achieve."
+                      },
+                      "https://ns.adobe.com/experience/ajo/loyalty/spend": {
+                        "title": "Spend",
+                        "type": "number",
+                        "description": "Target spending amount to achieve."
+                      },
+                      "https://ns.adobe.com/experience/ajo/loyalty/contiguousDays": {
+                        "title": "Contiguous Days",
+                        "type": "integer",
+                        "description": "Number of consecutive days required."
+                      }
+                    }
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/maxRepeats": {
+                    "title": "Max Repeats",
+                    "type": "integer",
+                    "description": "Maximum number of times this task can be repeated."
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/reward": {
+                    "title": "Reward",
+                    "type": "string",
+                    "description": "Reward for completing this task."
+                  }
+                }
+              }
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/timeOfDay": {
+              "title": "Time of Day",
+              "type": "object",
+              "description": "Time window during the day for which the challenge is active.",
+              "properties": {
+                "https://ns.adobe.com/experience/ajo/loyalty/start": {
+                  "title": "Start",
+                  "type": "integer",
+                  "description": "Start time in minutes from midnight (e.g., 720 for 12:00 PM)."
+                },
+                "https://ns.adobe.com/experience/ajo/loyalty/end": {
+                  "title": "End",
+                  "type": "integer",
+                  "description": "End time in minutes from midnight (e.g., 900 for 3:00 PM)."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/challenge-personalization"
+    }
+  ],
+  "meta:status": "experimental"
+}
+

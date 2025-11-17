@@ -1,0 +1,40 @@
+{
+  "_id": "personId2_challengeId5",
+  "_experience": {
+    "ajo": {
+      "loyalty": {
+        "challenge": {
+          "description": "Spend $30 on lunch items this week and get rewarded!",
+          "tasks": [
+            {
+              "description": "Purchase at least $30 worth of lunch menu items during lunch hours",
+              "excludedProducts": [
+                "ALCOHOL-BEER-001",
+                "ALCOHOL-WINE-002",
+                "GIFT-CARD-050"
+              ],
+              "includedProducts": [
+                "SANDWICH-TURKEY-CLUB",
+                "SALAD-CAESAR",
+                "SOUP-TOMATO-BASIL",
+                "WRAP-CHICKEN-AVOCADO",
+                "BOWL-POKE-TUNA",
+                "BURGER-VEGGIE"
+              ],
+              "goals": {
+                "spend": 30.00
+              },
+              "maxRepeats": 1,
+              "reward": "150 points"
+            }
+          ],
+          "timeOfDay": {
+            "end": 840,
+            "start": 660
+          }
+        }
+      }
+    }
+  }
+}
+

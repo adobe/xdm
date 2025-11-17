@@ -21,7 +21,10 @@
               ],
               "goals": {
                 "quantity": 3,
-                "contiguousDays": 2
+                "dailyVisits": {
+                  "contiguous": true,
+                  "value": 2
+                }
               },
               "maxRepeats": 2,
               "reward": "50 points"

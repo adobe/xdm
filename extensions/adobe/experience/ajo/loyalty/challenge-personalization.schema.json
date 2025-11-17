@@ -26,6 +26,11 @@
               "type": "string",
               "description": "Personalized challenge description."
             },
+            "https://ns.adobe.com/experience/ajo/loyalty/reward": {
+              "title": "Reward",
+              "type": "string",
+              "description": "Reward for completing the entire challenge."
+            },
             "https://ns.adobe.com/experience/ajo/loyalty/tasks": {
               "title": "Tasks",
               "type": "array",

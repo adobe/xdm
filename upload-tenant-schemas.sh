@@ -151,60 +151,13 @@ upload_schema() {
             return 0
         fi
 
+        # Note: If DELETE_EXISTING is true, resources should have been deleted in bulk before upload
+        # So if we still get "already exists", something went wrong with the bulk delete
         if [ "$DELETE_EXISTING" = true ]; then
-            echo -e "    ${YELLOW}⚠${NC} Already exists, deleting and recreating (--delete-existing flag set)..."
-
-            # URL-encode the schema $id for use in the DELETE endpoint
-            local encoded_id=$(printf '%s' "$schema_id" | jq -sRr @uri)
-
-            # Delete the existing resource
-            delete_response=$(curl -s -w "\n%{http_code}" -X DELETE \
-                "${PLATFORM_URL}/data/foundation/schemaregistry/tenant/${endpoint}/${encoded_id}" \
-                -H "Authorization: Bearer ${ACCESS_TOKEN}" \
-                -H "x-api-key: ${CLIENT_ID}" \
-                -H "x-gw-ims-org-id: ${ORG_ID}" \
-                -H "x-sandbox-name: ${SANDBOX_NAME}")
-
-            delete_http_code=$(echo "$delete_response" | tail -n1)
-            delete_response_body=$(echo "$delete_response" | sed '$d')
-
-            if [[ "$delete_http_code" =~ ^2[0-9][0-9]$ ]]; then
-                echo -e "    ${GREEN}✓${NC} Deleted (HTTP ${delete_http_code})"
-            elif [ "$delete_http_code" = "404" ]; then
-                echo -e "    ${YELLOW}⚠${NC} Not found for deletion (HTTP 404), will try to create anyway"
-            else
-                echo -e "    ${RED}✗${NC} Delete failed (HTTP ${delete_http_code})"
-                echo -e "${RED}Response:${NC}"
-                echo "$delete_response_body" | jq '.' 2>/dev/null || echo "$delete_response_body"
-                return 1
-            fi
-
-            # Now try to create it (again) with POST
-            response=$(curl -s -w "\n%{http_code}" -X POST \
-                "${PLATFORM_URL}/data/foundation/schemaregistry/tenant/${endpoint}" \
-                -H 'Content-Type: application/json' \
-                -H "Authorization: Bearer ${ACCESS_TOKEN}" \
-                -H "x-api-key: ${CLIENT_ID}" \
-                -H "x-gw-ims-org-id: ${ORG_ID}" \
-                -H "x-sandbox-name: ${SANDBOX_NAME}" \
-                -d @"${file_path}")
-
-            http_code=$(echo "$response" | tail -n1)
-            response_body=$(echo "$response" | sed '$d')
-
-            if [[ "$http_code" =~ ^2[0-9][0-9]$ ]]; then
-                echo -e "    ${GREEN}✓${NC} Recreated (HTTP ${http_code})"
-                schema_id=$(echo "$response_body" | grep -o '"$id":"[^"]*"' | cut -d'"' -f4)
-                if [ -n "$schema_id" ]; then
-                    echo -e "    ${BLUE}ID:${NC} ${schema_id}"
-                fi
-                return 0
-            else
-                echo -e "    ${RED}✗${NC} Recreate failed (HTTP ${http_code})"
-                echo -e "${RED}Response:${NC}"
-                echo "$response_body" | jq '.' 2>/dev/null || echo "$response_body"
-                return 1
-            fi
+            echo -e "    ${RED}✗${NC} Already exists even after bulk delete attempt"
+            echo -e "${RED}Response:${NC}"
+            echo "$response_body" | jq '.' 2>/dev/null || echo "$response_body"
+            return 1
         fi
 
         echo -e "    ${YELLOW}⚠${NC} Already exists, attempting to update with PUT..."
@@ -250,6 +203,126 @@ upload_schema() {
         return 1
     fi
 }
+
+# Function to delete a schema resource
+delete_schema() {
+    local file_path="$1"
+    local endpoint="$2"
+    local file_name=$(basename "$file_path")
+
+    echo -e "  Deleting: ${YELLOW}${file_name}${NC}"
+
+    # Extract the $id from the schema file
+    local schema_id=$(jq -r '.["$id"]' "$file_path")
+
+    # URL-encode the schema $id for use in the DELETE endpoint
+    local encoded_id=$(printf '%s' "$schema_id" | jq -sRr @uri)
+
+    # Delete the resource
+    response=$(curl -s -w "\n%{http_code}" -X DELETE \
+        "${PLATFORM_URL}/data/foundation/schemaregistry/tenant/${endpoint}/${encoded_id}" \
+        -H "Authorization: Bearer ${ACCESS_TOKEN}" \
+        -H "x-api-key: ${CLIENT_ID}" \
+        -H "x-gw-ims-org-id: ${ORG_ID}" \
+        -H "x-sandbox-name: ${SANDBOX_NAME}")
+
+    http_code=$(echo "$response" | tail -n1)
+    response_body=$(echo "$response" | sed '$d')
+
+    if [[ "$http_code" =~ ^2[0-9][0-9]$ ]]; then
+        echo -e "    ${GREEN}✓${NC} Deleted (HTTP ${http_code})"
+        return 0
+    elif [ "$http_code" = "404" ]; then
+        echo -e "    ${YELLOW}⚠${NC} Not found (HTTP 404), already deleted or never existed"
+        return 0
+    else
+        echo -e "    ${RED}✗${NC} Delete failed (HTTP ${http_code})"
+        echo -e "${RED}Response:${NC}"
+        echo "$response_body" | jq '.' 2>/dev/null || echo "$response_body"
+        return 1
+    fi
+}
+
+# If --delete-existing flag is set, delete all resources in reverse order first
+if [ "$DELETE_EXISTING" = true ]; then
+    echo -e "${BLUE}Deleting existing resources in reverse order...${NC}"
+    echo ""
+
+    # Delete schemas first (they depend on fieldgroups)
+    if [ -d "schemas/paid-media" ]; then
+        echo -e "${GREEN}Deleting schemas...${NC}"
+        file_count=0
+        for file in schemas/paid-media/*.schema.json; do
+            if [ -f "$file" ]; then
+                if ! delete_schema "$file" "schemas"; then
+                    echo -e "${RED}Delete failed. Exiting.${NC}"
+                    exit 1
+                fi
+                ((file_count++))
+                echo ""
+            fi
+        done
+        echo -e "  Deleted ${GREEN}${file_count}${NC} schema files"
+        echo ""
+    fi
+
+    # Delete fieldgroups (they depend on datatypes)
+    if [ -d "components/fieldgroups/paid-media" ]; then
+        echo -e "${GREEN}Deleting fieldgroups...${NC}"
+        file_count=0
+        for file in components/fieldgroups/paid-media/*.schema.json; do
+            if [ -f "$file" ]; then
+                if ! delete_schema "$file" "fieldgroups"; then
+                    echo -e "${RED}Delete failed. Exiting.${NC}"
+                    exit 1
+                fi
+                ((file_count++))
+                echo ""
+            fi
+        done
+        echo -e "  Deleted ${GREEN}${file_count}${NC} fieldgroup files"
+        echo ""
+    fi
+
+    # Delete datatypes (they depend on nothing, but classes might depend on them)
+    if [ -d "components/datatypes/paid-media" ]; then
+        echo -e "${GREEN}Deleting datatypes...${NC}"
+        file_count=0
+        for file in components/datatypes/paid-media/*.schema.json; do
+            if [ -f "$file" ]; then
+                if ! delete_schema "$file" "datatypes"; then
+                    echo -e "${RED}Delete failed. Exiting.${NC}"
+                    exit 1
+                fi
+                ((file_count++))
+                echo ""
+            fi
+        done
+        echo -e "  Deleted ${GREEN}${file_count}${NC} datatype files"
+        echo ""
+    fi
+
+    # Delete classes last
+    if [ -d "components/classes" ]; then
+        echo -e "${GREEN}Deleting classes...${NC}"
+        class_count=0
+        for file in components/classes/*.schema.json; do
+            if [ -f "$file" ]; then
+                if ! delete_schema "$file" "classes"; then
+                    echo -e "${RED}Delete failed. Exiting.${NC}"
+                    exit 1
+                fi
+                ((class_count++))
+                echo ""
+            fi
+        done
+        echo -e "  Deleted ${GREEN}${class_count}${NC} class files"
+        echo ""
+    fi
+
+    echo -e "${GREEN}✓ All resources deleted successfully!${NC}"
+    echo ""
+fi
 
 # Upload classes first (needed by fieldgroups and schemas)
 if [ -d "components/classes" ]; then

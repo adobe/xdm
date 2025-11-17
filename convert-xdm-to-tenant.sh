@@ -101,35 +101,25 @@ process_schema_file() {
     # 4. Strip "xdm:" namespace from property keys
     # 5. Remove meta:intendedToExtend from fieldgroups (not needed for tenant schemas)
 
-    jq --arg tenant_id "$TENANT_ID" '
-        # Function to recursively update all $ref values and replace xdm: with tenant: in property keys
-        def update_refs_and_keys:
+    jq --arg tenant_id "$TENANT_ID" --arg file_type "$file_type" '
+        # Function to recursively update all $ref values
+        def update_refs:
             if type == "object" then
-                # First handle $ref if present
+                # Handle $ref if present
                 (if has("$ref") then
                     .["$ref"] |= (
                         gsub("https://ns\\.adobe\\.com/xdm/datatypes/paid-media"; "https://ns.adobe.com/\($tenant_id)/datatypes/paid-media") |
                         gsub("https://ns\\.adobe\\.com/xdm/mixins/paid-media"; "https://ns.adobe.com/\($tenant_id)/mixins/paid-media")
                     )
                 else . end) |
-                # Then recursively process all values and rename keys
+                # Recursively process all values
                 to_entries |
-                map(
-                    # Replace "xdm:" prefix with tenant ID prefix for custom fields
-                    if .key | startswith("xdm:") then
-                        .key |= gsub("^xdm:"; "\($tenant_id):")
-                    else . end |
-                    # Recursively process the value
-                    .value |= update_refs_and_keys
-                ) |
+                map(.value |= update_refs) |
                 from_entries
             elif type == "array" then
-                # For arrays, check if they contain strings that need replacement (like in "required" arrays)
                 map(
-                    if type == "string" and startswith("xdm:") then
-                        gsub("^xdm:"; "\($tenant_id):")
-                    elif type == "object" or type == "array" then
-                        update_refs_and_keys
+                    if type == "object" or type == "array" then
+                        update_refs
                     else
                         .
                     end
@@ -137,6 +127,52 @@ process_schema_file() {
             else
                 .
             end;
+
+        # Function to strip xdm: prefix from property keys (but not from values)
+        def strip_xdm_prefix:
+            if type == "object" then
+                to_entries |
+                map(
+                    # Strip xdm: prefix from keys
+                    if .key | startswith("xdm:") then
+                        .key |= gsub("^xdm:"; "")
+                    else . end |
+                    # Recursively process the value
+                    .value |= strip_xdm_prefix
+                ) |
+                from_entries
+            elif type == "array" then
+                # For arrays, check if they contain strings that need replacement (like in "required" arrays)
+                map(
+                    if type == "string" and startswith("xdm:") then
+                        gsub("^xdm:"; "")
+                    elif type == "object" or type == "array" then
+                        strip_xdm_prefix
+                    else
+                        .
+                    end
+                )
+            else
+                .
+            end;
+
+        # Function to add tenant namespace prefix to property keys
+        # Only for fieldgroups, not for datatypes (datatypes are reusable type definitions)
+        # This produces Standard XDM format (tenantId:fieldName) for API upload
+        # Note: Remove leading underscore from tenant_id when using as namespace prefix
+        def add_tenant_prefix:
+            if $file_type == "fieldgroup" and has("definitions") and (.definitions | type == "object") then
+                .definitions |= (
+                    to_entries | map(
+                        .value.properties |= (
+                            to_entries | map(
+                                # Remove leading underscore from tenant_id for namespace prefix
+                                .key = "\($tenant_id | ltrimstr("_")):\(.key)"
+                            ) | from_entries
+                        )
+                    ) | from_entries
+                )
+            else . end;
 
         # Update top-level $id
         if has("$id") then
@@ -180,8 +216,14 @@ process_schema_file() {
             )
         else . end |
 
-        # Recursively update all $ref values and strip xdm: from property keys throughout the document
-        update_refs_and_keys
+        # First strip xdm: prefix from all property keys
+        strip_xdm_prefix |
+
+        # Then add tenant prefix to property keys (for fieldgroups only)
+        add_tenant_prefix |
+
+        # Finally update all $ref values
+        update_refs
     ' "$input_file" > "$output_file"
     
     if [ $? -eq 0 ]; then

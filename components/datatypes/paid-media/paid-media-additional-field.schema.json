@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field",
   "title": "Paid Media Additional Field",
   "type": "object",
-  "description": "Flexible field structure for storing platform-specific or custom fields not defined in core schema. Supports multiple value types to accommodate different data types from paid media network APIs.",
+  "description": "Flexible field structure for storing platform-specific or custom fields not defined in core schema.  Supports multiple value types to accommodate different data types from paid media network APIs.",
   "properties": {
     "xdm:fieldName": {
       "title": "Field Name",

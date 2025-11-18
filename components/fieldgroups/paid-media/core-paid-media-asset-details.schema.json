@@ -73,6 +73,11 @@
                   "title": "Asset Content",
                   "description": "Text content of the asset (for text assets)"
                 },
+                "xdm:sourceURL": {
+                  "type": "string",
+                  "title": "Source URL",
+                  "description": "Source URL of the asset (GenStudio migration aid)"
+                },
                 "xdm:mediaProperties": {
                   "type": "object",
                   "title": "Media Properties",

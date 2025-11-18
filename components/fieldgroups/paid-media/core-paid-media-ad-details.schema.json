@@ -59,6 +59,11 @@
                     "other": "Other Ad Type"
                   }
                 },
+                "xdm:adSubtype": {
+                  "type": "string",
+                  "title": "Ad Subtype",
+                  "description": "Additional classification of the ad beyond the main type (GenStudio migration aid)"
+                },
                 "xdm:creative": {
                   "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-creative",
                   "title": "Creative Details",

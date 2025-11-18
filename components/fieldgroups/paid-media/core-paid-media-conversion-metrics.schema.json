@@ -39,6 +39,58 @@
                   "title": "Post-Engagement Conversions",
                   "description": "Conversions attributed to engagements"
                 },
+                "xdm:actionValue": {
+                  "type": "number",
+                  "title": "Action Value",
+                  "description": "Total value of all conversion actions",
+                  "minimum": 0
+                },
+                "xdm:actionType": {
+                  "type": "string",
+                  "title": "Action Type",
+                  "description": "Type of conversion action being measured (e.g., 'purchase', 'lead', 'app_install')"
+                },
+                "xdm:actionSource": {
+                  "type": "string",
+                  "title": "Action Source",
+                  "description": "Source of the conversion action (e.g., 'website', 'app', 'offline')"
+                },
+                "xdm:oneDayClickActionValue": {
+                  "type": "number",
+                  "title": "1-Day Click Action Value",
+                  "description": "Action value attributed to clicks within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:oneDayViewActionValue": {
+                  "type": "number",
+                  "title": "1-Day View Action Value",
+                  "description": "Action value attributed to views within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:sevenDayClickActionValue": {
+                  "type": "number",
+                  "title": "7-Day Click Action Value",
+                  "description": "Action value attributed to clicks within 7-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:oneDayClickConversions": {
+                  "type": "number",
+                  "title": "1-Day Click Conversions",
+                  "description": "Number of conversions attributed to clicks within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:oneDayViewConversions": {
+                  "type": "number",
+                  "title": "1-Day View Conversions",
+                  "description": "Number of conversions attributed to views within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:sevenDayClickConversions": {
+                  "type": "number",
+                  "title": "7-Day Click Conversions",
+                  "description": "Number of conversions attributed to clicks within 7-day attribution window",
+                  "minimum": 0
+                },
                 "xdm:conversionsByType": {
                   "type": "object",
                   "title": "Conversions by Type",

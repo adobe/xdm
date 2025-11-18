@@ -17,21 +17,15 @@
         "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
           "title": "Quantity",
           "type": "number",
-          "description": "Total quantity accumulated for this task completion.",
-          "meta:xdmType": "number"
-        },
+          "description": "Total quantity accumulated for this task completion."        },
         "https://ns.adobe.com/experience/ajo/loyalty/spend": {
           "title": "Spend",
           "type": "number",
-          "description": "Total spend accumulated for this task completion.",
-          "meta:xdmType": "number"
-        },
+          "description": "Total spend accumulated for this task completion."        },
         "https://ns.adobe.com/experience/ajo/loyalty/visits": {
           "title": "Visits",
           "type": "integer",
-          "description": "Number of visits accumulated for this task completion.",
-          "meta:xdmType": "int"
-        },
+          "description": "Number of visits accumulated for this task completion."        },
         "https://ns.adobe.com/experience/ajo/loyalty/qualifiedEvents": {
           "title": "Qualified Events",
           "type": "array",
@@ -39,24 +33,20 @@
           "items": {
             "type": "object",
             "properties": {
-                  "https://ns.adobe.com/experience/ajo/loyalty/timestamp": {
-                    "title": "Timestamp",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Timestamp of the qualified event.",
-                    "meta:xdmType": "date-time"
-                  },
-                  "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
-                    "title": "Transaction ID",
-                    "type": "string",
-                    "description": "Transaction ID associated with this qualified event.",
-                "minLength": 1,
-                "meta:xdmType": "string"
+              "https://ns.adobe.com/experience/ajo/loyalty/timestamp": {
+                "title": "Timestamp",
+                "type": "string",
+                "format": "date-time",
+                "description": "Timestamp of the qualified event."
+              },
+              "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
+                "title": "Transaction ID",
+                "type": "string",
+                "description": "Transaction ID associated with this qualified event.",
+                "minLength": 1
               }
-            },
-            "meta:xdmType": "object"
-          },
-          "meta:xdmType": "array"
+            }
+          }
         }
       }
     }

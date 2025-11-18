@@ -30,71 +30,61 @@
                   "title": "Challenge ID",
                   "type": "string",
                   "description": "Unique identifier for the loyalty challenge.",
-                  "minLength": 1,
-                  "meta:xdmType": "string"
+                  "minLength": 1
                 },
                 "name": {
                   "title": "Challenge Name",
                   "type": "string",
                   "description": "Human-readable name of the loyalty challenge.",
-                  "minLength": 1,
-                  "meta:xdmType": "string"
+                  "minLength": 1
                 },
                 "description": {
                   "title": "Description",
                   "type": "string",
                   "description": "Description of the challenge.",
-                  "minLength": 1,
-                  "meta:xdmType": "string"
+                  "minLength": 1
                 },
                 "state": {
                   "title": "State",
                   "type": "string",
                   "description": "Current state of the challenge.",
-                  "minLength": 1,
-                  "meta:xdmType": "string"
+                  "minLength": 1
                 },
                 "startDate": {
                   "title": "Start Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "Date and time when the challenge started or became available.",
-                  "meta:xdmType": "date-time"
+                  "description": "Date and time when the challenge started or became available."
                 },
                 "endDate": {
                   "title": "End Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "Date and time when the challenge expires or ended.",
-                  "meta:xdmType": "date-time"
+                  "description": "Date and time when the challenge expires or ended."
                 },
                 "completionDate": {
                   "title": "Completion Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "Date and time when the challenge was completed.",
-                  "meta:xdmType": "date-time"
+                  "description": "Date and time when the challenge was completed."
                 },
                 "signupDate": {
                   "title": "Signup Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "Date and time when the customer signed up for the challenge.",
-                  "meta:xdmType": "date-time"
+                  "description": "Date and time when the customer signed up for the challenge."
                 },
                 "optedIn": {
                   "title": "Opted In",
                   "type": "boolean",
-                  "description": "Indicates whether the customer has opted into the challenge.",
-                  "meta:xdmType": "boolean"
+                  "description": "Indicates whether the customer has opted into the challenge."
                 },
                 "tasksToComplete": {
                   "title": "Tasks to Complete",
                   "type": "integer",
                   "description": "Number of tasks required to complete the challenge.",
                   "minimum": -2147483648,
-                  "maximum": 2147483647,
-                  "meta:xdmType": "int"
+                  "maximum": 2147483647
                 },
                 "dependsOn": {
                   "title": "Depends On",
@@ -105,18 +95,15 @@
                       "title": "Challenge ID",
                       "type": "string",
                       "description": "ID of the challenge that this challenge depends on.",
-                      "minLength": 1,
-                      "meta:xdmType": "string"
+                      "minLength": 1
                     },
                     "state": {
                       "title": "State",
                       "type": "string",
                       "description": "Required state of the dependent challenge.",
-                      "minLength": 1,
-                      "meta:xdmType": "string"
+                      "minLength": 1
                     }
-                  },
-                  "meta:xdmType": "object"
+                  }
                 },
                 "tasks": {
                   "title": "Tasks",
@@ -124,14 +111,11 @@
                   "description": "List of tasks within the challenge.",
                   "items": {
                     "$ref": "https://ns.adobe.com/experience/ajo/loyalty/challenge/task"
-                  },
-                  "meta:xdmType": "array"
+                  }
                 }
-              },
-              "meta:xdmType": "object"
+              }
             }
-          },
-          "meta:xdmType": "object"
+          }
         }
       }
     }

@@ -45,15 +45,13 @@
                 "exclude": {
                   "valuesSet": []
                 },
-                "singleTrans": true,
                 "spendMin": 0.0,
-                "qtyMin": 1.0,
-                "maxTrans": 0
+                "qtyMin": 1.0
               },
               "currentProgress": {
                 "quantity": 1,
                 "spend": 2.5,
-                "visits": 1,
+                "days": 1,
                 "qualifiedEvents": [
                   {
                     "timestamp": "2025-08-24T19:46:05.000+00:00",
@@ -65,7 +63,7 @@
                 {
                   "quantity": 1,
                   "spend": 2.5,
-                  "visits": 1,
+                  "days": 1,
                   "qualifiedEvents": [
                     {
                       "timestamp": "2025-08-24T19:46:05.000+00:00",
@@ -102,15 +100,13 @@
                 "exclude": {
                   "valuesSet": []
                 },
-                "singleTrans": false,
                 "spendMin": 0.0,
-                "qtyMin": 2.0,
-                "maxTrans": 0
+                "qtyMin": 2.0
               },
               "currentProgress": {
                 "quantity": 2,
                 "spend": 5.0,
-                "visits": 1,
+                "days": 1,
                 "qualifiedEvents": [
                   {
                     "timestamp": "2025-08-24T19:46:05.000+00:00",
@@ -122,7 +118,7 @@
                 {
                   "quantity": 2,
                   "spend": 5.0,
-                  "visits": 1,
+                  "days": 1,
                   "qualifiedEvents": [
                     {
                       "timestamp": "2025-08-24T19:46:05.000+00:00",
@@ -159,15 +155,13 @@
                 "exclude": {
                   "valuesSet": []
                 },
-                "singleTrans": false,
                 "spendMin": 0.0,
-                "qtyMin": 3.0,
-                "maxTrans": 0
+                "qtyMin": 3.0
               },
               "currentProgress": {
                 "quantity": 3,
                 "spend": 7.5,
-                "visits": 1,
+                "days": 1,
                 "qualifiedEvents": [
                   {
                     "timestamp": "2025-08-24T19:46:05.000+00:00",
@@ -179,7 +173,7 @@
                 {
                   "quantity": 3,
                   "spend": 7.5,
-                  "visits": 1,
+                  "days": 1,
                   "qualifiedEvents": [
                     {
                       "timestamp": "2025-08-24T19:46:05.000+00:00",

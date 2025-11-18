@@ -18,27 +18,32 @@
           "title": "Task State",
           "type": "string",
           "description": "Current state of the task.",
-          "minLength": 1        },
+          "minLength": 1
+        },
         "https://ns.adobe.com/experience/ajo/loyalty/name": {
           "title": "Task Name",
           "type": "string",
           "description": "Name of the task.",
-          "minLength": 1        },
+          "minLength": 1
+        },
         "https://ns.adobe.com/experience/ajo/loyalty/description": {
           "title": "Task Description",
           "type": "string",
           "description": "Description of the task.",
-          "minLength": 1        },
+          "minLength": 1
+        },
         "https://ns.adobe.com/experience/ajo/loyalty/startDate": {
           "title": "Task Start Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date and time when the task started."        },
+          "description": "Date and time when the task started."
+        },
         "https://ns.adobe.com/experience/ajo/loyalty/endDate": {
           "title": "Task End Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date and time when the task ended."        },
+          "description": "Date and time when the task ended."
+        },
         "https://ns.adobe.com/experience/ajo/loyalty/variables": {
           "title": "Variables",
           "type": "object",
@@ -55,7 +60,8 @@
                   "description": "List of item labels or categories that qualify for task completion.",
                   "items": {
                     "type": "string",
-                    "minLength": 1                  }
+                    "minLength": 1
+                  }
                 }
               }
             },
@@ -70,15 +76,10 @@
                   "description": "List of item labels or categories that should not count toward task completion.",
                   "items": {
                     "type": "string",
-                    "minLength": 1                  }
+                    "minLength": 1
+                  }
                 }
               }
-            },
-            "https://ns.adobe.com/experience/ajo/loyalty/singleTrans": {
-              "title": "Single Transaction",
-              "type": "boolean",
-              "description": "Indicates if the task must be completed in a single transaction.",
-              "meta:xdmType": "boolean"
             },
             "https://ns.adobe.com/experience/ajo/loyalty/multiDay": {
               "title": "Multi Day",
@@ -88,28 +89,26 @@
                 "https://ns.adobe.com/experience/ajo/loyalty/contiguous": {
                   "title": "Contiguous",
                   "type": "boolean",
-                  "description": "Whether the visits must be on consecutive days."                },
+                  "description": "Whether the visits must be on consecutive days."
+                },
                 "https://ns.adobe.com/experience/ajo/loyalty/days": {
                   "title": "Days",
                   "type": "integer",
-                  "description": "Number of days required for visits."                }
+                  "description": "Number of days required for visits."
+                }
               }
             },
             "https://ns.adobe.com/experience/ajo/loyalty/spendMin": {
               "title": "Minimum Spend",
               "type": "number",
-              "description": "Minimum spend amount required."            },
+              "description": "Minimum spend amount required."
+            },
             "https://ns.adobe.com/experience/ajo/loyalty/qtyMin": {
               "title": "Minimum Quantity",
               "type": "number",
-              "description": "Minimum quantity required."            },
-            "https://ns.adobe.com/experience/ajo/loyalty/maxTrans": {
-              "title": "Maximum Transactions",
-              "type": "integer",
-              "description": "Maximum number of transactions that count toward the task (0 for unlimited).",
-              "meta:xdmType": "int"
+              "description": "Minimum quantity required."
             }
-            }
+          }
         },
         "https://ns.adobe.com/experience/ajo/loyalty/currentProgress": {
           "title": "Current Progress",
@@ -119,15 +118,17 @@
             "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
               "title": "Quantity",
               "type": "number",
-              "description": "Current quantity accumulated."            },
+              "description": "Current quantity accumulated."
+            },
             "https://ns.adobe.com/experience/ajo/loyalty/spend": {
               "title": "Spend",
               "type": "number",
-              "description": "Current spend accumulated."            },
-            "https://ns.adobe.com/experience/ajo/loyalty/visits": {
-              "title": "Visits",
+              "description": "Current spend accumulated."
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/days": {
+              "title": "days",
               "type": "integer",
-              "description": "Number of visits accumulated.",
+              "description": "Number of qualified days accumulated.",
               "meta:xdmType": "int"
             },
             "https://ns.adobe.com/experience/ajo/loyalty/qualifiedEvents": {
@@ -141,17 +142,19 @@
                     "title": "Timestamp",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Timestamp of the qualified event."                  },
+                    "description": "Timestamp of the qualified event."
+                  },
                   "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
                     "title": "Transaction ID",
                     "type": "string",
                     "description": "Transaction ID associated with this qualified event.",
-                    "minLength": 1                  }
-            }
+                    "minLength": 1
+                  }
+                }
               },
               "meta:xdmType": "array"
             }
-            }
+          }
         },
         "https://ns.adobe.com/experience/ajo/loyalty/taskCompletions": {
           "title": "Task Completions",
@@ -175,4 +178,3 @@
   ],
   "meta:status": "experimental"
 }
-

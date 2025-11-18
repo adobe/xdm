@@ -43,53 +43,46 @@
                     "type": "string",
                     "description": "Personalized task description."
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/excludedProducts": {
-                    "title": "Excluded Products",
+                  "https://ns.adobe.com/experience/ajo/loyalty/excludedItemLabels": {
+                    "title": "Excluded Item Labels",
                     "type": "array",
-                    "description": "List of product SKUs excluded from this task.",
+                    "description": "List of product SKU/categories/labels excluded from qualifying for this task.",
                     "items": {
                       "type": "string"
                     }
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/includedProducts": {
-                    "title": "Included Products",
+                  "https://ns.adobe.com/experience/ajo/loyalty/includedItemLabels": {
+                    "title": "Included Item Labels",
                     "type": "array",
-                    "description": "List of product SKUs included in this task.",
+                    "description": "List of product SKUs/categories/labels that can qualify for this task.",
                     "items": {
                       "type": "string"
                     }
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/goals": {
-                    "title": "Goals",
+                  "https://ns.adobe.com/experience/ajo/loyalty/qtyMin": {
+                    "title": "Minimum Quantity",
+                    "type": "integer",
+                    "description": "Target quantity to achieve."
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/spendMin": {
+                    "title": "Minimum Spend",
+                    "type": "number",
+                    "description": "Target spending amount to achieve."
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/multiDay": {
+                    "title": "multiDay",
                     "type": "object",
-                    "description": "Goal criteria for task completion.",
+                    "description": "Multi-day visit requirements for task completion.",
                     "properties": {
-                      "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
-                        "title": "Quantity",
+                      "https://ns.adobe.com/experience/ajo/loyalty/contiguous": {
+                        "title": "Contiguous",
+                        "type": "boolean",
+                        "description": "Whether the visits must be on consecutive days."
+                      },
+                      "https://ns.adobe.com/experience/ajo/loyalty/days": {
+                        "title": "Days",
                         "type": "integer",
-                        "description": "Target quantity to achieve."
-                      },
-                      "https://ns.adobe.com/experience/ajo/loyalty/spend": {
-                        "title": "Spend",
-                        "type": "number",
-                        "description": "Target spending amount to achieve."
-                      },
-                      "https://ns.adobe.com/experience/ajo/loyalty/dailyVisits": {
-                        "title": "Daily Visits",
-                        "type": "object",
-                        "description": "Daily visit requirements for task completion.",
-                        "properties": {
-                          "https://ns.adobe.com/experience/ajo/loyalty/contiguous": {
-                            "title": "Contiguous",
-                            "type": "boolean",
-                            "description": "Whether the visits must be on consecutive periods of time."
-                          },
-                          "https://ns.adobe.com/experience/ajo/loyalty/value": {
-                            "title": "Value",
-                            "type": "integer",
-                            "description": "Number of daily visits required."
-                          }
-                        }
+                        "description": "Number of qualified days required."
                       }
                     }
                   },

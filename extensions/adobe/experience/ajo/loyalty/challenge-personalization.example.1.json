@@ -9,22 +9,21 @@
           "tasks": [
             {
               "description": "Purchase 3 breakfast items during morning hours for 2 consecutive days",
-              "excludedProducts": [
+              "excludedItemLabels": [
                 "PROMO-ITEM-001",
                 "GIFT-CARD-100"
               ],
-              "includedProducts": [
+              "includedItemLabels": [
                 "BREAKFAST-SANDWICH-001",
                 "COFFEE-LATTE-16OZ",
                 "BAGEL-CREAM-CHEESE",
                 "OATMEAL-CLASSIC"
               ],
-              "goals": {
-                "quantity": 3,
-                "dailyVisits": {
-                  "contiguous": true,
-                  "value": 2
-                }
+              "qtyMin": 3,
+              "spendMin": 30.0,
+              "multiDay": {
+                "contiguous": true,
+                "days": 2
               },
               "maxRepeats": 2,
               "reward": "50 points"

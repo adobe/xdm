@@ -8,12 +8,12 @@
           "tasks": [
             {
               "description": "Purchase at least $30 worth of lunch menu items during lunch hours",
-              "excludedProducts": [
+              "excludedItemLabels": [
                 "ALCOHOL-BEER-001",
                 "ALCOHOL-WINE-002",
                 "GIFT-CARD-050"
               ],
-              "includedProducts": [
+              "includedItemLabels": [
                 "SANDWICH-TURKEY-CLUB",
                 "SALAD-CAESAR",
                 "SOUP-TOMATO-BASIL",
@@ -21,9 +21,7 @@
                 "BOWL-POKE-TUNA",
                 "BURGER-VEGGIE"
               ],
-              "goals": {
-                "spend": 30.00
-              },
+              "spendMin": 30.00,
               "maxRepeats": 1,
               "reward": "150 points"
             }

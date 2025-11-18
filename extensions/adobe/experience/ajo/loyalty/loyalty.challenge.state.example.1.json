@@ -43,10 +43,6 @@
             "valuesSet": []
           },
           "singleTrans": true,
-          "multiDay": {
-            "contiguous": false,
-            "days": 1
-          },
           "spendMin": 0.0,
           "qtyMin": 1.0,
           "maxTrans": 0
@@ -104,10 +100,6 @@
             "valuesSet": []
           },
           "singleTrans": false,
-          "multiDay": {
-            "contiguous": false,
-            "days": 1
-          },
           "spendMin": 0.0,
           "qtyMin": 2.0,
           "maxTrans": 0
@@ -165,10 +157,6 @@
             "valuesSet": []
           },
           "singleTrans": false,
-          "multiDay": {
-            "contiguous": false,
-            "days": 1
-          },
           "spendMin": 0.0,
           "qtyMin": 3.0,
           "maxTrans": 0

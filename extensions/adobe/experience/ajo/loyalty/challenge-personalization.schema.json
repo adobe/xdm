@@ -76,8 +76,20 @@
                       },
                       "https://ns.adobe.com/experience/ajo/loyalty/dailyVisits": {
                         "title": "Daily Visits",
-                        "type": "integer",
-                        "description": "Daily visits requirement for task completion."
+                        "type": "object",
+                        "description": "Daily visit requirements for task completion.",
+                        "properties": {
+                          "https://ns.adobe.com/experience/ajo/loyalty/contiguous": {
+                            "title": "Contiguous",
+                            "type": "boolean",
+                            "description": "Whether the visits must be on consecutive periods of time."
+                          },
+                          "https://ns.adobe.com/experience/ajo/loyalty/value": {
+                            "title": "Value",
+                            "type": "integer",
+                            "description": "Number of daily visits required."
+                          }
+                        }
                       }
                     }
                   },

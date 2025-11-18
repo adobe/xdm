@@ -1,191 +1,197 @@
 {
-  "challenge": {
-    "id": "7b2c4586-243e-4687-bc89-665ea44ff798",
-    "name": "c69b_buy3snacks_202503",
-    "description": "Buy 3 snacks challenge for March 2025",
-    "state": "sent",
-    "startDate": "2025-07-15T05:00:00.000+00:00",
-    "endDate": "2025-12-31T04:59:59.000+00:00",
-    "completionDate": "2025-08-28T23:53:25.682+00:00",
-    "signupDate": "2025-08-28T23:45:30.044+00:00",
-    "optedIn": true,
-    "tasksToComplete": 0,
-    "dependsOn": {
-      "challengeId": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
-      "state": "sent"
-    },
-    "tasks": [
-      {
-        "state": "sent",
-        "name": "candy_snack_purchase_1",
-        "description": "Purchase 1 qualifying snack item in a single transaction",
-        "startDate": "2025-07-15T05:00:00.000+00:00",
-        "endDate": "2025-12-31T04:59:59.000+00:00",
-        "variables": {
-          "include": {
-            "valuesSet": [
-              "822145",
-              "822518",
-              "822456",
-              "822430",
-              "822510",
-              "822235",
-              "822130",
-              "822440",
-              "822120",
-              "822071",
-              "822070",
-              "822380",
-              "822072"
-            ]
+  "_experience": {
+    "ajo": {
+      "loyalty": {
+        "challenge": {
+          "id": "7b2c4586-243e-4687-bc89-665ea44ff798",
+          "name": "c69b_buy3snacks_202503",
+          "description": "Buy 3 snacks challenge for March 2025",
+          "state": "sent",
+          "startDate": "2025-07-15T05:00:00.000+00:00",
+          "endDate": "2025-12-31T04:59:59.000+00:00",
+          "completionDate": "2025-08-28T23:53:25.682+00:00",
+          "signupDate": "2025-08-28T23:45:30.044+00:00",
+          "optedIn": true,
+          "tasksToComplete": 0,
+          "dependsOn": {
+            "challengeId": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+            "state": "sent"
           },
-          "exclude": {
-            "valuesSet": []
-          },
-          "singleTrans": true,
-          "spendMin": 0.0,
-          "qtyMin": 1.0,
-          "maxTrans": 0
-        },
-        "currentProgress": {
-          "quantity": 1,
-          "spend": 2.5,
-          "visits": 1,
-          "qualifiedEvents": [
+          "tasks": [
             {
-              "timestamp": "2025-08-24T19:46:05.000+00:00",
-              "transactionId": "850000_20250824_7003945"
+              "state": "sent",
+              "name": "candy_snack_purchase_1",
+              "description": "Purchase 1 qualifying snack item in a single transaction",
+              "startDate": "2025-07-15T05:00:00.000+00:00",
+              "endDate": "2025-12-31T04:59:59.000+00:00",
+              "variables": {
+                "include": {
+                  "valuesSet": [
+                    "822145",
+                    "822518",
+                    "822456",
+                    "822430",
+                    "822510",
+                    "822235",
+                    "822130",
+                    "822440",
+                    "822120",
+                    "822071",
+                    "822070",
+                    "822380",
+                    "822072"
+                  ]
+                },
+                "exclude": {
+                  "valuesSet": []
+                },
+                "singleTrans": true,
+                "spendMin": 0.0,
+                "qtyMin": 1.0,
+                "maxTrans": 0
+              },
+              "currentProgress": {
+                "quantity": 1,
+                "spend": 2.5,
+                "visits": 1,
+                "qualifiedEvents": [
+                  {
+                    "timestamp": "2025-08-24T19:46:05.000+00:00",
+                    "transactionId": "850000_20250824_7003945"
+                  }
+                ]
+              },
+              "taskCompletions": [
+                {
+                  "quantity": 1,
+                  "spend": 2.5,
+                  "visits": 1,
+                  "qualifiedEvents": [
+                    {
+                      "timestamp": "2025-08-24T19:46:05.000+00:00",
+                      "transactionId": "850000_20250824_7003945"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "state": "sent",
+              "name": "candy_snack_purchase_2",
+              "description": "Purchase 2 qualifying snack items across multiple transactions",
+              "startDate": "2025-07-15T05:00:00.000+00:00",
+              "endDate": "2025-12-31T04:59:59.000+00:00",
+              "variables": {
+                "include": {
+                  "valuesSet": [
+                    "822145",
+                    "822518",
+                    "822456",
+                    "822430",
+                    "822510",
+                    "822235",
+                    "822130",
+                    "822440",
+                    "822120",
+                    "822071",
+                    "822070",
+                    "822380",
+                    "822072"
+                  ]
+                },
+                "exclude": {
+                  "valuesSet": []
+                },
+                "singleTrans": false,
+                "spendMin": 0.0,
+                "qtyMin": 2.0,
+                "maxTrans": 0
+              },
+              "currentProgress": {
+                "quantity": 2,
+                "spend": 5.0,
+                "visits": 1,
+                "qualifiedEvents": [
+                  {
+                    "timestamp": "2025-08-24T19:46:05.000+00:00",
+                    "transactionId": "850000_20250824_7003945"
+                  }
+                ]
+              },
+              "taskCompletions": [
+                {
+                  "quantity": 2,
+                  "spend": 5.0,
+                  "visits": 1,
+                  "qualifiedEvents": [
+                    {
+                      "timestamp": "2025-08-24T19:46:05.000+00:00",
+                      "transactionId": "850000_20250824_7003945"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "state": "sent",
+              "name": "candy_snack_purchase_3",
+              "description": "Purchase 3 qualifying snack items across multiple transactions",
+              "startDate": "2025-07-15T05:00:00.000+00:00",
+              "endDate": "2025-12-31T04:59:59.000+00:00",
+              "variables": {
+                "include": {
+                  "valuesSet": [
+                    "822145",
+                    "822518",
+                    "822456",
+                    "822430",
+                    "822510",
+                    "822235",
+                    "822130",
+                    "822440",
+                    "822120",
+                    "822071",
+                    "822070",
+                    "822380",
+                    "822072"
+                  ]
+                },
+                "exclude": {
+                  "valuesSet": []
+                },
+                "singleTrans": false,
+                "spendMin": 0.0,
+                "qtyMin": 3.0,
+                "maxTrans": 0
+              },
+              "currentProgress": {
+                "quantity": 3,
+                "spend": 7.5,
+                "visits": 1,
+                "qualifiedEvents": [
+                  {
+                    "timestamp": "2025-08-24T19:46:05.000+00:00",
+                    "transactionId": "850000_20250824_7003945"
+                  }
+                ]
+              },
+              "taskCompletions": [
+                {
+                  "quantity": 3,
+                  "spend": 7.5,
+                  "visits": 1,
+                  "qualifiedEvents": [
+                    {
+                      "timestamp": "2025-08-24T19:46:05.000+00:00",
+                      "transactionId": "850000_20250824_7003945"
+                    }
+                  ]
+                }
+              ]
             }
           ]
-        },
-        "taskCompletions": [
-          {
-            "quantity": 1,
-            "spend": 2.5,
-            "visits": 1,
-            "qualifiedEvents": [
-              {
-                "timestamp": "2025-08-24T19:46:05.000+00:00",
-                "transactionId": "850000_20250824_7003945"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "state": "sent",
-        "name": "candy_snack_purchase_2",
-        "description": "Purchase 2 qualifying snack items across multiple transactions",
-        "startDate": "2025-07-15T05:00:00.000+00:00",
-        "endDate": "2025-12-31T04:59:59.000+00:00",
-        "variables": {
-          "include": {
-            "valuesSet": [
-              "822145",
-              "822518",
-              "822456",
-              "822430",
-              "822510",
-              "822235",
-              "822130",
-              "822440",
-              "822120",
-              "822071",
-              "822070",
-              "822380",
-              "822072"
-            ]
-          },
-          "exclude": {
-            "valuesSet": []
-          },
-          "singleTrans": false,
-          "spendMin": 0.0,
-          "qtyMin": 2.0,
-          "maxTrans": 0
-        },
-        "currentProgress": {
-          "quantity": 2,
-          "spend": 5.0,
-          "visits": 1,
-          "qualifiedEvents": [
-            {
-              "timestamp": "2025-08-24T19:46:05.000+00:00",
-              "transactionId": "850000_20250824_7003945"
-            }
-          ]
-        },
-        "taskCompletions": [
-          {
-            "quantity": 2,
-            "spend": 5.0,
-            "visits": 1,
-            "qualifiedEvents": [
-              {
-                "timestamp": "2025-08-24T19:46:05.000+00:00",
-                "transactionId": "850000_20250824_7003945"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "state": "sent",
-        "name": "candy_snack_purchase_3",
-        "description": "Purchase 3 qualifying snack items across multiple transactions",
-        "startDate": "2025-07-15T05:00:00.000+00:00",
-        "endDate": "2025-12-31T04:59:59.000+00:00",
-        "variables": {
-          "include": {
-            "valuesSet": [
-              "822145",
-              "822518",
-              "822456",
-              "822430",
-              "822510",
-              "822235",
-              "822130",
-              "822440",
-              "822120",
-              "822071",
-              "822070",
-              "822380",
-              "822072"
-            ]
-          },
-          "exclude": {
-            "valuesSet": []
-          },
-          "singleTrans": false,
-          "spendMin": 0.0,
-          "qtyMin": 3.0,
-          "maxTrans": 0
-        },
-        "currentProgress": {
-          "quantity": 3,
-          "spend": 7.5,
-          "visits": 1,
-          "qualifiedEvents": [
-            {
-              "timestamp": "2025-08-24T19:46:05.000+00:00",
-              "transactionId": "850000_20250824_7003945"
-            }
-          ]
-        },
-        "taskCompletions": [
-          {
-            "quantity": 3,
-            "spend": 7.5,
-            "visits": 1,
-            "qualifiedEvents": [
-              {
-                "timestamp": "2025-08-24T19:46:05.000+00:00",
-                "transactionId": "850000_20250824_7003945"
-              }
-            ]
-          }
-        ]
+        }
       }
-    ]
+    }
   }
 }

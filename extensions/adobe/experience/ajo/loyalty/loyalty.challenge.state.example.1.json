@@ -16,20 +16,17 @@
     },
     "tasks": [
       {
+        "state": "sent",
         "name": "candy_snack_purchase_1",
-        "state": "sent",
+        "description": "Purchase 1 qualifying snack item in a single transaction",
         "startDate": "2025-07-15T05:00:00.000+00:00",
         "endDate": "2025-12-31T04:59:59.000+00:00",
         "variables": {
-          "type": "qty",
-          "goal": 1,
-          "isSingleTransaction": true,
           "include": {
             "valuesSet": [
               "822145",
               "822518",
               "822456",
-              "822145",
               "822430",
               "822510",
               "822235",
@@ -44,50 +41,53 @@
           },
           "exclude": {
             "valuesSet": []
-          }
+          },
+          "singleTrans": true,
+          "multiDay": {
+            "contiguous": false,
+            "days": 1
+          },
+          "spendMin": 0.0,
+          "qtyMin": 1.0,
+          "maxTrans": 0
+        },
+        "currentProgress": {
+          "quantity": 1,
+          "spend": 2.5,
+          "visits": 1,
+          "qualifiedEvents": [
+            {
+              "timestamp": "2025-08-24T19:46:05.000+00:00",
+              "transactionId": "850000_20250824_7003945"
+            }
+          ]
         },
         "taskCompletions": [
           {
-            "id": "f3a8d2c1-9b4e-4f7a-a1c3-5e8f9d2b6a4c",
-            "timestamp": "2025-08-24T19:46:05.000+00:00",
-            "utcOffset": 0,
-            "transactionId": "850000_20250824_7003945",
-            "locationId": "8520",
-            "accumulators": {
-              "spend": 2.5,
-              "quantity": 1,
-              "item_list": [
-                {
-                  "item_id": "822145",
-                  "item_name": "Slice Pizza, Supreme",
-                  "unit_price": 2.5,
-                  "quantity": 1,
-                  "item_set": [
-                    "822145",
-                    "187",
-                    "18702"
-                  ]
-                }
-              ]
-            }
+            "quantity": 1,
+            "spend": 2.5,
+            "visits": 1,
+            "qualifiedEvents": [
+              {
+                "timestamp": "2025-08-24T19:46:05.000+00:00",
+                "transactionId": "850000_20250824_7003945"
+              }
+            ]
           }
         ]
       },
       {
+        "state": "sent",
         "name": "candy_snack_purchase_2",
-        "state": "sent",
+        "description": "Purchase 2 qualifying snack items across multiple transactions",
         "startDate": "2025-07-15T05:00:00.000+00:00",
         "endDate": "2025-12-31T04:59:59.000+00:00",
         "variables": {
-          "type": "qty",
-          "goal": 2,
-          "isSingleTransaction": false,
           "include": {
             "valuesSet": [
               "822145",
               "822518",
               "822456",
-              "822145",
               "822430",
               "822510",
               "822235",
@@ -102,61 +102,53 @@
           },
           "exclude": {
             "valuesSet": []
-          }
+          },
+          "singleTrans": false,
+          "multiDay": {
+            "contiguous": false,
+            "days": 1
+          },
+          "spendMin": 0.0,
+          "qtyMin": 2.0,
+          "maxTrans": 0
+        },
+        "currentProgress": {
+          "quantity": 2,
+          "spend": 5.0,
+          "visits": 1,
+          "qualifiedEvents": [
+            {
+              "timestamp": "2025-08-24T19:46:05.000+00:00",
+              "transactionId": "850000_20250824_7003945"
+            }
+          ]
         },
         "taskCompletions": [
           {
-            "id": "e4b9c3d2-8a5f-6e8a-b2d4-6f9e8c3a5b7d",
-            "timestamp": "2025-08-24T19:46:05.000+00:00",
-            "utcOffset": 0,
-            "transactionId": "850000_20250824_7003945",
-            "locationId": "8520",
-            "accumulators": {
-              "spend": 5,
-              "quantity": 2,
-              "item_list": [
-                {
-                  "item_id": "822145",
-                  "item_name": "Slice Pizza, Supreme",
-                  "unit_price": 2.5,
-                  "quantity": 1,
-                  "item_set": [
-                    "822145",
-                    "187",
-                    "18702"
-                  ]
-                },
-                {
-                  "item_id": "822145",
-                  "item_name": "Slice Pizza, Supreme",
-                  "unit_price": 2.5,
-                  "quantity": 1,
-                  "item_set": [
-                    "822145",
-                    "187",
-                    "18702"
-                  ]
-                }
-              ]
-            }
+            "quantity": 2,
+            "spend": 5.0,
+            "visits": 1,
+            "qualifiedEvents": [
+              {
+                "timestamp": "2025-08-24T19:46:05.000+00:00",
+                "transactionId": "850000_20250824_7003945"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "candy_snack_purchase_3",
         "state": "sent",
+        "name": "candy_snack_purchase_3",
+        "description": "Purchase 3 qualifying snack items across multiple transactions",
         "startDate": "2025-07-15T05:00:00.000+00:00",
         "endDate": "2025-12-31T04:59:59.000+00:00",
         "variables": {
-          "type": "qty",
-          "goal": 3,
-          "isSingleTransaction": false,
           "include": {
             "valuesSet": [
               "822145",
               "822518",
               "822456",
-              "822145",
               "822430",
               "822510",
               "822235",
@@ -171,54 +163,38 @@
           },
           "exclude": {
             "valuesSet": []
-          }
+          },
+          "singleTrans": false,
+          "multiDay": {
+            "contiguous": false,
+            "days": 1
+          },
+          "spendMin": 0.0,
+          "qtyMin": 3.0,
+          "maxTrans": 0
+        },
+        "currentProgress": {
+          "quantity": 3,
+          "spend": 7.5,
+          "visits": 1,
+          "qualifiedEvents": [
+            {
+              "timestamp": "2025-08-24T19:46:05.000+00:00",
+              "transactionId": "850000_20250824_7003945"
+            }
+          ]
         },
         "taskCompletions": [
           {
-            "id": "c5d8e2f1-7b6a-9c4d-e3f5-8a9b7c6d5e4f",
-            "timestamp": "2025-08-24T19:46:05.000+00:00",
-            "utcOffset": 0,
-            "transactionId": "850000_20250824_7003945",
-            "locationId": "8520",
-            "accumulators": {
-              "spend": 7.5,
-              "quantity": 3,
-              "item_list": [
-                {
-                  "item_id": "822145",
-                  "item_name": "Slice Pizza, Supreme",
-                  "unit_price": 2.5,
-                  "quantity": 1,
-                  "item_set": [
-                    "822145",
-                    "187",
-                    "18702"
-                  ]
-                },
-                {
-                  "item_id": "822145",
-                  "item_name": "Slice Pizza, Supreme",
-                  "unit_price": 2.5,
-                  "quantity": 1,
-                  "item_set": [
-                    "822145",
-                    "187",
-                    "18702"
-                  ]
-                },
-                {
-                  "item_id": "822145",
-                  "item_name": "Slice Pizza, Supreme",
-                  "unit_price": 2.5,
-                  "quantity": 1,
-                  "item_set": [
-                    "822145",
-                    "187",
-                    "18702"
-                  ]
-                }
-              ]
-            }
+            "quantity": 3,
+            "spend": 7.5,
+            "visits": 1,
+            "qualifiedEvents": [
+              {
+                "timestamp": "2025-08-24T19:46:05.000+00:00",
+                "transactionId": "850000_20250824_7003945"
+              }
+            ]
           }
         ]
       }

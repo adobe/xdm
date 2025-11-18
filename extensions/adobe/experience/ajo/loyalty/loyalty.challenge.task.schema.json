@@ -14,6 +14,13 @@
   "definitions": {
     "task": {
       "properties": {
+        "https://ns.adobe.com/experience/ajo/loyalty/state": {
+          "title": "Task State",
+          "type": "string",
+          "description": "Current state of the task.",
+          "minLength": 1,
+          "meta:xdmType": "string"
+        },
         "https://ns.adobe.com/experience/ajo/loyalty/name": {
           "title": "Task Name",
           "type": "string",
@@ -21,10 +28,10 @@
           "minLength": 1,
           "meta:xdmType": "string"
         },
-        "https://ns.adobe.com/experience/ajo/loyalty/state": {
-          "title": "Task State",
+        "https://ns.adobe.com/experience/ajo/loyalty/description": {
+          "title": "Task Description",
           "type": "string",
-          "description": "Current state of the task.",
+          "description": "Description of the task.",
           "minLength": 1,
           "meta:xdmType": "string"
         },
@@ -47,25 +54,6 @@
           "type": "object",
           "description": "Task variables and configuration.",
           "properties": {
-            "https://ns.adobe.com/experience/ajo/loyalty/type": {
-              "title": "Type",
-              "type": "string",
-              "description": "Type of task variable.",
-              "minLength": 1,
-              "meta:xdmType": "string"
-            },
-            "https://ns.adobe.com/experience/ajo/loyalty/goal": {
-              "title": "Goal",
-              "type": "number",
-              "description": "Goal value for the task.",
-              "meta:xdmType": "number"
-            },
-            "https://ns.adobe.com/experience/ajo/loyalty/isSingleTransaction": {
-              "title": "Is Single Transaction",
-              "type": "boolean",
-              "description": "Indicates if the task must be completed in a single transaction.",
-              "meta:xdmType": "boolean"
-            },
             "https://ns.adobe.com/experience/ajo/loyalty/include": {
               "title": "Include",
               "type": "object",
@@ -103,6 +91,102 @@
                 }
               },
               "meta:xdmType": "object"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/singleTrans": {
+              "title": "Single Transaction",
+              "type": "boolean",
+              "description": "Indicates if the task must be completed in a single transaction.",
+              "meta:xdmType": "boolean"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/multiDay": {
+              "title": "Multi Day",
+              "type": "object",
+              "description": "Multi-day visit requirements for task completion.",
+              "properties": {
+                "https://ns.adobe.com/experience/ajo/loyalty/contiguous": {
+                  "title": "Contiguous",
+                  "type": "boolean",
+                  "description": "Whether the visits must be on consecutive days.",
+                  "meta:xdmType": "boolean"
+                },
+                "https://ns.adobe.com/experience/ajo/loyalty/days": {
+                  "title": "Days",
+                  "type": "integer",
+                  "description": "Number of days required for visits.",
+                  "meta:xdmType": "int"
+                }
+              },
+              "meta:xdmType": "object"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/spendMin": {
+              "title": "Minimum Spend",
+              "type": "number",
+              "description": "Minimum spend amount required.",
+              "meta:xdmType": "number"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/qtyMin": {
+              "title": "Minimum Quantity",
+              "type": "number",
+              "description": "Minimum quantity required.",
+              "meta:xdmType": "number"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/maxTrans": {
+              "title": "Maximum Transactions",
+              "type": "integer",
+              "description": "Maximum number of transactions that count toward the task (0 for unlimited).",
+              "meta:xdmType": "int"
+            }
+          },
+          "meta:xdmType": "object"
+        },
+        "https://ns.adobe.com/experience/ajo/loyalty/currentProgress": {
+          "title": "Current Progress",
+          "type": "object",
+          "description": "Current progress toward task completion.",
+          "properties": {
+            "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
+              "title": "Quantity",
+              "type": "number",
+              "description": "Current quantity accumulated.",
+              "meta:xdmType": "number"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/spend": {
+              "title": "Spend",
+              "type": "number",
+              "description": "Current spend accumulated.",
+              "meta:xdmType": "number"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/visits": {
+              "title": "Visits",
+              "type": "integer",
+              "description": "Number of visits accumulated.",
+              "meta:xdmType": "int"
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/qualifiedEvents": {
+              "title": "Qualified Events",
+              "type": "array",
+              "description": "List of events that provided progress toward task completion.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "https://ns.adobe.com/experience/ajo/loyalty/timestamp": {
+                    "title": "Timestamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Timestamp of the qualified event.",
+                    "meta:xdmType": "date-time"
+                  },
+                  "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
+                    "title": "Transaction ID",
+                    "type": "string",
+                    "description": "Transaction ID associated with this qualified event.",
+                    "minLength": 1,
+                    "meta:xdmType": "string"
+                  }
+                },
+                "meta:xdmType": "object"
+              },
+              "meta:xdmType": "array"
             }
           },
           "meta:xdmType": "object"
@@ -124,7 +208,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/loyaltyChallengeTask"
+      "$ref": "#/definitions/task"
     }
   ],
   "meta:status": "experimental"

@@ -14,108 +14,49 @@
   "definitions": {
     "taskCompletion": {
       "properties": {
-        "https://ns.adobe.com/experience/ajo/loyalty/id": {
-          "title": "ID",
-          "type": "string",
-          "description": "id of the event that triggered this task completion ",
-          "minLength": 1,
-          "meta:xdmType": "string"
+        "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
+          "title": "Quantity",
+          "type": "number",
+          "description": "Total quantity accumulated for this task completion.",
+          "meta:xdmType": "number"
         },
-        "https://ns.adobe.com/experience/ajo/loyalty/timestamp": {
-          "title": "Timestamp",
-          "type": "string",
-          "format": "date-time",
-          "description": "Timestamp of the task completion.",
-          "meta:xdmType": "date-time"
+        "https://ns.adobe.com/experience/ajo/loyalty/spend": {
+          "title": "Spend",
+          "type": "number",
+          "description": "Total spend accumulated for this task completion.",
+          "meta:xdmType": "number"
         },
-        "https://ns.adobe.com/experience/ajo/loyalty/utcOffset": {
-          "title": "UTC Offset",
+        "https://ns.adobe.com/experience/ajo/loyalty/visits": {
+          "title": "Visits",
           "type": "integer",
-          "description": "part of the day for this task completion",
+          "description": "Number of visits accumulated for this task completion.",
           "meta:xdmType": "int"
         },
-        "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
-          "title": "Transaction ID",
-          "type": "string",
-          "description": "id of the transaction that triggered this task completion",
-          "minLength": 1,
-          "meta:xdmType": "string"
-        },
-        "https://ns.adobe.com/experience/ajo/loyalty/locationId": {
-          "title": "Location ID",
-          "type": "string",
-          "description": "id of the location where this task completion occurred",
-          "minLength": 1,
-          "meta:xdmType": "string"
-        },
-        "https://ns.adobe.com/experience/ajo/loyalty/accumulators": {
-          "title": "Accumulators",
-          "type": "object",
-          "description": "Accumulated values for task completion.",
-          "properties": {
-            "https://ns.adobe.com/experience/ajo/loyalty/spend": {
-              "title": "Spend",
-              "type": "number",
-              "description": "Total spend accumulated.",
-              "meta:xdmType": "number"
-            },
-            "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
-              "title": "Quantity",
-              "type": "number",
-              "description": "Total quantity accumulated.",
-              "meta:xdmType": "number"
-            },
-            "https://ns.adobe.com/experience/ajo/loyalty/item_list": {
-              "title": "Item List",
-              "type": "array",
-              "description": "List of items contributing to task completion.",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "https://ns.adobe.com/experience/ajo/loyalty/item_id": {
-                    "title": "Item ID",
+        "https://ns.adobe.com/experience/ajo/loyalty/qualifiedEvents": {
+          "title": "Qualified Events",
+          "type": "array",
+          "description": "List of events that provided progress toward task completion.",
+          "items": {
+            "type": "object",
+            "properties": {
+                  "https://ns.adobe.com/experience/ajo/loyalty/timestamp": {
+                    "title": "Timestamp",
                     "type": "string",
-                    "description": "Product item ID.",
-                    "minLength": 1,
-                    "meta:xdmType": "string"
+                    "format": "date-time",
+                    "description": "Timestamp of the qualified event.",
+                    "meta:xdmType": "date-time"
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/item_name": {
-                    "title": "Item Name",
+                  "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
+                    "title": "Transaction ID",
                     "type": "string",
-                    "description": "Product item name.",
-                    "minLength": 1,
-                    "meta:xdmType": "string"
-                  },
-                  "https://ns.adobe.com/experience/ajo/loyalty/unit_price": {
-                    "title": "Unit Price",
-                    "type": "number",
-                    "description": "Unit price of the item.",
-                    "meta:xdmType": "number"
-                  },
-                  "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
-                    "title": "Quantity",
-                    "type": "number",
-                    "description": "Quantity of the item.",
-                    "meta:xdmType": "number"
-                  },
-                  "https://ns.adobe.com/experience/ajo/loyalty/item_set": {
-                    "title": "Item Set",
-                    "type": "array",
-                    "description": "Set of item categories or tags.",
-                    "items": {
-                      "type": "string",
-                      "minLength": 1,
-                      "meta:xdmType": "string"
-                    },
-                    "meta:xdmType": "array"
-                  }
-                },
-                "meta:xdmType": "object"
-              },
-              "meta:xdmType": "array"
-            }
+                    "description": "Transaction ID associated with this qualified event.",
+                "minLength": 1,
+                "meta:xdmType": "string"
+              }
+            },
+            "meta:xdmType": "object"
           },
-          "meta:xdmType": "object"
+          "meta:xdmType": "array"
         }
       }
     }

@@ -22,10 +22,10 @@
           "title": "Spend",
           "type": "number",
           "description": "Total spend accumulated for this task completion."        },
-        "https://ns.adobe.com/experience/ajo/loyalty/visits": {
-          "title": "Visits",
+        "https://ns.adobe.com/experience/ajo/loyalty/days": {
+          "title": "days",
           "type": "integer",
-          "description": "Number of visits accumulated for this task completion."        },
+          "description": "Number of qualified days accumulated for this task completion."        },
         "https://ns.adobe.com/experience/ajo/loyalty/qualifiedEvents": {
           "title": "Qualified Events",
           "type": "array",

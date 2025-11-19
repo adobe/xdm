@@ -161,7 +161,7 @@
           "minimum": 0
         },
         "xdm:duration": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "type": "number",
           "title": "Duration",
           "description": "Duration in seconds (for video/audio assets)"
         },

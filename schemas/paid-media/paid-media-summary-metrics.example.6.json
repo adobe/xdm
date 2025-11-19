@@ -146,76 +146,107 @@
       }
     },
     "xdm:extendedMetrics": {
-      "xdm:videoViews": 0,
-      "xdm:videoViewsP25": 0,
-      "xdm:videoViewsP50": 0,
-      "xdm:videoViewsP75": 0,
-      "xdm:videoViewsP95": 0,
-      "xdm:videoViewsP100": 0,
-      "xdm:videoAvgWatchTime": 0,
-      "xdm:videoAvgWatchPercentage": 0,
-      "xdm:engagements": 803,
-      "xdm:engagementRate": 0.054,
-      "xdm:likes": 401,
-      "xdm:comments": 80,
-      "xdm:shares": 134,
-      "xdm:saves": 188,
-      "xdm:linkClicks": 535,
-      "xdm:landingPageViews": 482,
-      "xdm:outboundClicks": 509,
-      "xdm:uniqueClicks": 482,
-      "xdm:uniqueLinkClicks": 482,
-      "xdm:costPerEngagement": 0.481,
-      "xdm:costPerLike": 0.963,
-      "xdm:costPerComment": 4.828,
-      "xdm:costPerShare": 2.883
+      "xdm:likes": {
+        "xdm:value": 401
+      },
+      "xdm:comments": {
+        "xdm:value": 80
+      },
+      "xdm:shares": {
+        "xdm:value": 134
+      },
+      "xdm:saves": {
+        "xdm:value": 188
+      },
+      "xdm:linkClicks": {
+        "xdm:value": 535
+      },
+      "xdm:outboundClicks": {
+        "xdm:value": 509
+      },
+      "xdm:uniqueClicks": {
+        "xdm:value": 482
+      }
     },
     "xdm:conversionMetrics": {
-      "xdm:viewThroughConversions": 5,
-      "xdm:clickThroughConversions": 22,
-      "xdm:totalConversions": 27,
-      "xdm:conversionRate": 0.056,
-      "xdm:costPerConversion": 14.31,
-      "xdm:conversionValue": 1337.5,
-      "xdm:valuePerConversion": 49.54,
-      "xdm:purchases": 22,
-      "xdm:purchaseValue": 1067.5,
-      "xdm:addToCart": 54,
-      "xdm:initiateCheckout": 32,
-      "xdm:leads": 5,
-      "xdm:signups": 11,
-      "xdm:downloads": 16,
-      "xdm:costPerPurchase": 17.56,
-      "xdm:costPerLead": 77.25,
-      "xdm:costPerSignup": 35.11
+      "xdm:postViewConversions": {
+        "xdm:value": 5
+      },
+      "xdm:postClickConversions": {
+        "xdm:value": 22
+      },
+      "xdm:conversionRate": {
+        "xdm:value": 0.056
+      },
+      "xdm:costPerAction": {
+        "xdm:value": 14.31
+      },
+      "xdm:actionValue": 1337.5,
+      "xdm:conversionsByType": {
+        "xdm:purchases": {
+          "xdm:value": 22
+        },
+        "xdm:addToCart": {
+          "xdm:value": 54
+        },
+        "xdm:initiateCheckout": {
+          "xdm:value": 32
+        },
+        "xdm:leads": {
+          "xdm:value": 5
+        },
+        "xdm:downloads": {
+          "xdm:value": 16
+        }
+      },
+      "xdm:leads": {
+        "xdm:value": 5
+      },
+      "xdm:costPerLead": {
+        "xdm:value": 77.25
+      }
     },
     "xdm:costMetrics": {
-      "xdm:totalSpend": 386.25,
-      "xdm:averageCPC": 0.722,
-      "xdm:averageCPM": 26.0,
-      "xdm:averageCPA": 14.31,
-      "xdm:averageCPE": 0.481,
+      "xdm:averageCpc": {
+        "xdm:value": 0.722
+      },
+      "xdm:averageCpm": {
+        "xdm:value": 26.0
+      },
+      "xdm:averageCpa": {
+        "xdm:value": 14.31
+      },
+      "xdm:averageCpe": {
+        "xdm:value": 0.481
+      },
       "xdm:budgetUtilization": {
-        "xdm:budgetAllocated": 0,
-        "xdm:budgetSpent": 552.5,
-        "xdm:budgetRemaining": 0,
-        "xdm:budgetUtilization": 0,
-        "xdm:dailyBudget": 0
+        "xdm:budgetAllocated": {
+          "xdm:value": 0
+        },
+        "xdm:budgetSpent": {
+          "xdm:value": 386.25
+        },
+        "xdm:budgetRemaining": {
+          "xdm:value": 0
+        },
+        "xdm:budgetUtilization": {
+          "xdm:value": 0
+        },
+        "xdm:dailyBudget": {
+          "xdm:value": 0
+        }
       }
     },
     "xdm:attributionMetrics": {
       "xdm:attributionModel": "LAST_CLICK",
-      "xdm:attributionWindow": "7d_click_1d_view",
-      "xdm:assistedConversions": 8,
-      "xdm:lastClickConversions": 19,
-      "xdm:firstClickConversions": 11,
-      "xdm:linearConversions": 13,
-      "xdm:timeDecayConversions": 16,
-      "xdm:positionBasedConversions": 15
+      "xdm:clickAttributionWindow": "7_DAY",
+      "xdm:viewAttributionWindow": "1_DAY"
     },
     "xdm:qualityMetrics": {
       "xdm:qualityScore": 7.8,
-      "xdm:relevanceScore": 8.2,
+      "xdm:relevanceScore": {
+        "xdm:value": 8.2
+      },
       "xdm:engagementRateRanking": "average",
       "xdm:conversionRateRanking": "above_average",
       "xdm:qualityRanking": "average",

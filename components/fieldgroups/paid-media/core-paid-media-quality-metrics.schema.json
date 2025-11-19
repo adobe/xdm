@@ -25,175 +25,129 @@
               "description": "Ad quality and performance indicators",
               "properties": {
                 "xdm:relevanceScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Relevance Score",
-                  "description": "Ad relevance score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Ad relevance score"
                 },
                 "xdm:engagementScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Engagement Score",
-                  "description": "Ad engagement quality score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Ad engagement quality score"
                 },
                 "xdm:conversionScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Conversion Score",
-                  "description": "Ad conversion quality score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Ad conversion quality score"
                 },
                 "xdm:overallQualityScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Overall Quality Score",
-                  "description": "Overall ad quality score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Overall ad quality score"
                 },
                 "xdm:negativeActions": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Negative Actions",
-                  "description": "Number of negative actions (hides, reports, etc.)",
-                  "minimum": 0
+                  "description": "Number of negative actions (hides, reports, etc.)"
                 },
                 "xdm:negativeActionRate": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Negative Action Rate",
-                  "description": "Rate of negative actions",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Rate of negative actions"
                 },
                 "xdm:positiveActions": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Positive Actions",
-                  "description": "Number of positive actions (likes, shares, etc.)",
-                  "minimum": 0
+                  "description": "Number of positive actions (likes, shares, etc.)"
                 },
                 "xdm:positiveActionRate": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Positive Action Rate",
-                  "description": "Rate of positive actions",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Rate of positive actions"
                 },
                 "xdm:brandSafetyScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Brand Safety Score",
-                  "description": "Brand safety compliance score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Brand safety compliance score"
                 },
                 "xdm:viewabilityScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Viewability Score",
-                  "description": "Ad viewability quality score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Ad viewability quality score"
                 },
                 "xdm:fraudScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Fraud Score",
-                  "description": "Ad fraud risk score (higher = more risk)",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Ad fraud risk score (higher = more risk)"
                 },
                 "xdm:invalidTrafficRate": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Invalid Traffic Rate",
-                  "description": "Percentage of traffic flagged as invalid",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Percentage of traffic flagged as invalid"
                 },
                 "xdm:botTrafficRate": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Bot Traffic Rate",
-                  "description": "Percentage of traffic identified as bot traffic",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Percentage of traffic identified as bot traffic"
                 },
                 "xdm:humanTrafficRate": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Human Traffic Rate",
-                  "description": "Percentage of traffic verified as human",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Percentage of traffic verified as human"
                 },
                 "xdm:attentionScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Attention Score",
-                  "description": "User attention quality score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "User attention quality score"
                 },
                 "xdm:dwellTime": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Dwell Time",
-                  "description": "Average time users spend viewing the ad (seconds)",
-                  "minimum": 0
+                  "description": "Average time users spend viewing the ad (seconds)"
                 },
                 "xdm:interactionDepth": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Interaction Depth",
-                  "description": "Depth of user interaction with the ad",
-                  "minimum": 0
+                  "description": "Depth of user interaction with the ad"
                 },
                 "xdm:creativeFatigue": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Creative Fatigue",
-                  "description": "Creative fatigue score (higher = more fatigued)",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Creative fatigue score (higher = more fatigued)"
                 },
                 "xdm:frequencyFatigue": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Frequency Fatigue",
-                  "description": "Frequency fatigue score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Frequency fatigue score"
                 },
                 "xdm:audienceRelevance": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Audience Relevance",
-                  "description": "Relevance of ad to target audience",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Relevance of ad to target audience"
                 },
                 "xdm:contextualRelevance": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Contextual Relevance",
-                  "description": "Relevance of ad to content context",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Relevance of ad to content context"
                 },
                 "xdm:emotionalResonance": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Emotional Resonance",
-                  "description": "Emotional impact score of the ad",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Emotional impact score of the ad"
                 },
                 "xdm:memorabilityScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Memorability Score",
-                  "description": "Ad memorability score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Ad memorability score"
                 },
                 "xdm:brandLiftScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Brand Lift Score",
-                  "description": "Brand awareness lift score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Brand awareness lift score"
                 },
                 "xdm:intentLiftScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Intent Lift Score",
-                  "description": "Purchase intent lift score",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Purchase intent lift score"
                 },
                 "xdm:qualityTrend": {
                   "type": "string",
@@ -213,19 +167,17 @@
                   "description": "Comparison to industry benchmarks",
                   "properties": {
                     "xdm:industryAverage": {
-                      "type": "number",
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "title": "Industry Average",
                       "description": "Industry average quality score"
                     },
                     "xdm:percentileRank": {
-                      "type": "number",
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "title": "Percentile Rank",
-                      "description": "Percentile rank compared to industry",
-                      "minimum": 0,
-                      "maximum": 100
+                      "description": "Percentile rank compared to industry"
                     },
                     "xdm:competitorAverage": {
-                      "type": "number",
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "title": "Competitor Average",
                       "description": "Average quality score of competitors"
                     }

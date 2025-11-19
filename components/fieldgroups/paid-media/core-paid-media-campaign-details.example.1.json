@@ -176,6 +176,42 @@
         {
           "xdm:fieldName": "meta_effective_status",
           "xdm:stringValue": "ACTIVE"
+        },
+        {
+          "xdm:fieldName": "meta_daily_budget",
+          "xdm:numberValue": {
+            "xdm:value": 500
+          }
+        },
+        {
+          "xdm:fieldName": "meta_lifetime_budget",
+          "xdm:numberValue": {
+            "xdm:value": 15000
+          }
+        },
+        {
+          "xdm:fieldName": "meta_budget_remaining",
+          "xdm:numberValue": {
+            "xdm:value": 12350.75
+          }
+        },
+        {
+          "xdm:fieldName": "meta_spend_cap",
+          "xdm:numberValue": {
+            "xdm:value": 2500
+          }
+        },
+        {
+          "xdm:fieldName": "meta_adset_count",
+          "xdm:numberValue": {
+            "xdm:value": 5
+          }
+        },
+        {
+          "xdm:fieldName": "meta_ad_count",
+          "xdm:numberValue": {
+            "xdm:value": 15
+          }
         }
       ]
     }

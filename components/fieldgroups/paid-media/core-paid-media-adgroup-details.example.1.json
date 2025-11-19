@@ -204,6 +204,48 @@
         {
           "xdm:fieldName": "meta_promoted_object_type",
           "xdm:stringValue": "PAGE"
+        },
+        {
+          "xdm:fieldName": "meta_bid_amount",
+          "xdm:numberValue": {
+            "xdm:value": 1.25
+          }
+        },
+        {
+          "xdm:fieldName": "meta_daily_min_spend_target",
+          "xdm:numberValue": {
+            "xdm:value": 450
+          }
+        },
+        {
+          "xdm:fieldName": "meta_daily_spend_cap",
+          "xdm:numberValue": {
+            "xdm:value": 550
+          }
+        },
+        {
+          "xdm:fieldName": "meta_lifetime_min_spend_target",
+          "xdm:numberValue": {
+            "xdm:value": 13500
+          }
+        },
+        {
+          "xdm:fieldName": "meta_lifetime_spend_cap",
+          "xdm:numberValue": {
+            "xdm:value": 16500
+          }
+        },
+        {
+          "xdm:fieldName": "meta_targeting_expansion_score",
+          "xdm:numberValue": {
+            "xdm:value": 0.65
+          }
+        },
+        {
+          "xdm:fieldName": "meta_estimated_audience_size",
+          "xdm:numberValue": {
+            "xdm:value": 2500000
+          }
         }
       ]
     }

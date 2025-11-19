@@ -1,112 +1,117 @@
 {
   "xdm:paidMedia": {
     "xdm:extendedMetrics": {
-      "xdm:viewableImpressions": 42500,
-      "xdm:viewabilityRate": 0.85,
-      "xdm:measurableImpressions": 48000,
-      "xdm:measurabilityRate": 0.96,
-      "xdm:socialEngagement": {
-        "xdm:likes": 8934,
-        "xdm:reactions": 9876,
-        "xdm:loves": 3456,
-        "xdm:wows": 1234,
-        "xdm:hahas": 567,
-        "xdm:sads": 89,
-        "xdm:angrys": 34,
-        "xdm:comments": 1247,
-        "xdm:shares": 892,
-        "xdm:saves": 456,
-        "xdm:follows": 234,
-        "xdm:profileVisits": 1890,
-        "xdm:linkClicks": 2500,
-        "xdm:photoViews": 12500,
-        "xdm:postEngagements": 12345,
-        "xdm:engagementRate": 0.247
+      "xdm:viewableImpressions": {
+        "xdm:value": 42500
       },
-      "xdm:appMetrics": {
-        "xdm:appInstalls": 0,
-        "xdm:appEvents": 0,
-        "xdm:appEventValue": 0,
-        "xdm:appEngagements": 0,
-        "xdm:appPurchases": 0,
-        "xdm:appRevenue": 0,
-        "xdm:appRetention": 0,
-        "xdm:appUninstalls": 0
+      "xdm:viewabilityRate": {
+        "xdm:value": 0.85
       },
-      "xdm:leadMetrics": {
-        "xdm:leadSubmissions": 245,
-        "xdm:leadFormOpens": 890,
-        "xdm:leadFormCompletionRate": 0.275,
-        "xdm:leadQuality": 7.5,
-        "xdm:qualifiedLeads": 185,
-        "xdm:leadQualificationRate": 0.755
+      "xdm:uniqueClicks": {
+        "xdm:value": 2340
       },
-      "xdm:ecommerceMetrics": {
-        "xdm:productViews": 12500,
-        "xdm:addToCart": 2340,
-        "xdm:addToCartRate": 0.187,
-        "xdm:checkouts": 1450,
-        "xdm:checkoutRate": 0.62,
-        "xdm:purchases": 875,
-        "xdm:purchaseRate": 0.603,
-        "xdm:revenue": 187500,
-        "xdm:averageOrderValue": 214.29,
-        "xdm:itemsPerOrder": 2.3,
-        "xdm:cartAbandonment": 0.397,
-        "xdm:wishlistAdds": 678,
-        "xdm:productReviews": 45
+      "xdm:linkClicks": {
+        "xdm:value": 2500
       },
-      "xdm:brandMetrics": {
-        "xdm:brandAwareness": 0.42,
-        "xdm:brandRecall": 0.38,
-        "xdm:brandConsideration": 0.28,
-        "xdm:brandPreference": 0.22,
-        "xdm:brandLoyalty": 0.18,
-        "xdm:brandSentiment": 0.75,
-        "xdm:netPromoterScore": 45
+      "xdm:outboundClicks": {
+        "xdm:value": 2340
       },
-      "xdm:offlineMetrics": {
-        "xdm:storeVisits": 0,
-        "xdm:storeLocatorSearches": 234,
-        "xdm:directionsRequests": 156,
-        "xdm:phoneCallClicks": 89,
-        "xdm:offlineConversions": 0,
-        "xdm:offlineRevenue": 0
+      "xdm:saves": {
+        "xdm:value": 456
       },
-      "xdm:additionalDetails": [
-        {
-          "xdm:fieldName": "meta_viewable_impressions",
-          "xdm:stringValue": "42500"
-        },
-        {
-          "xdm:fieldName": "meta_post_engagement",
-          "xdm:stringValue": "12345"
-        },
-        {
-          "xdm:fieldName": "meta_post_reactions",
-          "xdm:stringValue": "9876"
-        },
-        {
-          "xdm:fieldName": "meta_post_comments",
-          "xdm:stringValue": "1247"
-        },
-        {
-          "xdm:fieldName": "meta_post_shares",
-          "xdm:stringValue": "892"
-        },
-        {
-          "xdm:fieldName": "meta_post_saves",
-          "xdm:stringValue": "456"
-        },
-        {
-          "xdm:fieldName": "meta_link_clicks",
-          "xdm:stringValue": "2500"
-        },
-        {
-          "xdm:fieldName": "meta_outbound_clicks",
-          "xdm:stringValue": "2340"
-        }
-      ]
+      "xdm:shares": {
+        "xdm:value": 892
+      },
+      "xdm:likes": {
+        "xdm:value": 8934
+      },
+      "xdm:comments": {
+        "xdm:value": 1247
+      },
+      "xdm:pageEngagement": {
+        "xdm:value": 5678
+      },
+      "xdm:pageLikes": {
+        "xdm:value": 234
+      },
+      "xdm:postEngagement": {
+        "xdm:value": 12345
+      },
+      "xdm:postComments": {
+        "xdm:value": 1247
+      },
+      "xdm:postReactions": {
+        "xdm:value": 9876
+      },
+      "xdm:postShares": {
+        "xdm:value": 892
+      },
+      "xdm:postSaves": {
+        "xdm:value": 456
+      },
+      "xdm:follows": {
+        "xdm:value": 234
+      },
+      "xdm:profileVisits": {
+        "xdm:value": 1890
+      },
+      "xdm:websiteVisits": {
+        "xdm:value": 3450
+      },
+      "xdm:averageDwellTime": {
+        "xdm:value": 45.5
+      },
+      "xdm:appInstalls": {
+        "xdm:value": 0
+      },
+      "xdm:appOpens": {
+        "xdm:value": 0
+      },
+      "xdm:leadSubmissions": {
+        "xdm:value": 245
+      },
+      "xdm:signups": {
+        "xdm:value": 320
+      },
+      "xdm:downloads": {
+        "xdm:value": 456
+      },
+      "xdm:subscriptions": {
+        "xdm:value": 95
+      },
+      "xdm:checkouts": {
+        "xdm:value": 1450
+      },
+      "xdm:addToCarts": {
+        "xdm:value": 2340
+      },
+      "xdm:wishlistAdds": {
+        "xdm:value": 678
+      },
+      "xdm:productViews": {
+        "xdm:value": 12500
+      },
+      "xdm:photoViews": {
+        "xdm:value": 12500
+      },
+      "xdm:catalogViews": {
+        "xdm:value": 3450
+      },
+      "xdm:storeVisits": {
+        "xdm:value": 0
+      },
+      "xdm:callsGenerated": {
+        "xdm:value": 89
+      },
+      "xdm:directionsRequested": {
+        "xdm:value": 156
+      },
+      "xdm:eventResponses": {
+        "xdm:value": 78
+      },
+      "xdm:messagesSent": {
+        "xdm:value": 234
+      }
     }
   }
 }

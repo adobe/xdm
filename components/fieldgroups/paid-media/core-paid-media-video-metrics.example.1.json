@@ -1,95 +1,111 @@
 {
   "xdm:paidMedia": {
     "xdm:videoMetrics": {
-      "xdm:videoPlays": 9500,
-      "xdm:video3SecViews": 8900,
-      "xdm:video2SecViews": 9200,
-      "xdm:video6SecViews": 8450,
-      "xdm:video10SecViews": 7890,
-      "xdm:videoViewRate2Sec": 0.968,
-      "xdm:videoViewRate6Sec": 0.889,
-      "xdm:video15SecViews": 7234,
-      "xdm:video30SecViews": 6234,
-      "xdm:videoQuartile1": 8234,
-      "xdm:videoQuartile2": 7456,
-      "xdm:videoQuartile3": 6789,
-      "xdm:videoCompletions": 5785,
-      "xdm:videoCompletionRate": 0.65,
-      "xdm:videoViewRate25Percent": 0.867,
-      "xdm:videoViewRate50Percent": 0.785,
-      "xdm:videoViewRate75Percent": 0.715,
-      "xdm:videoViewRate100Percent": 0.609,
-      "xdm:averageVideoWatchTime": 18.5,
-      "xdm:totalVideoWatchTime": 175750,
-      "xdm:videoMrcViews": 8234,
-      "xdm:videoThroughplayViews": 5785,
-      "xdm:videoSkips": 1265,
-      "xdm:videoSkipRate": 0.133,
-      "xdm:videoReplays": 456,
-      "xdm:videoPauses": 1234,
-      "xdm:videoResumes": 1156,
-      "xdm:videoFullscreenViews": 2345,
-      "xdm:videoMutes": 890,
-      "xdm:videoUnmutes": 678,
-      "xdm:videoVolumeChanges": 234,
-      "xdm:videoClickToPlays": 3456,
-      "xdm:videoAutoPlays": 6044,
-      "xdm:videoViewabilityRate": 0.85,
-      "xdm:videoAudibilityRate": 0.72,
-      "xdm:additionalDetails": [
-        {
-          "xdm:fieldName": "meta_video_plays",
-          "xdm:stringValue": "9500"
-        },
-        {
-          "xdm:fieldName": "meta_video_3_sec_views",
-          "xdm:stringValue": "8900"
-        },
-        {
-          "xdm:fieldName": "meta_video_30_sec_watched_actions",
-          "xdm:stringValue": "6234"
-        },
-        {
-          "xdm:fieldName": "meta_video_p25_watched_actions",
-          "xdm:stringValue": "8234"
-        },
-        {
-          "xdm:fieldName": "meta_video_p50_watched_actions",
-          "xdm:stringValue": "7456"
-        },
-        {
-          "xdm:fieldName": "meta_video_p75_watched_actions",
-          "xdm:stringValue": "6789"
-        },
-        {
-          "xdm:fieldName": "meta_video_p95_watched_actions",
-          "xdm:stringValue": "5785"
-        },
-        {
-          "xdm:fieldName": "meta_video_p100_watched_actions",
-          "xdm:stringValue": "5785"
-        },
-        {
-          "xdm:fieldName": "meta_video_avg_time_watched_actions",
-          "xdm:stringValue": "18.5"
-        },
-        {
-          "xdm:fieldName": "meta_video_total_time_watched",
-          "xdm:stringValue": "175750"
-        },
-        {
-          "xdm:fieldName": "meta_video_completion_rate",
-          "xdm:stringValue": "0.65"
-        },
-        {
-          "xdm:fieldName": "meta_video_viewability_rate",
-          "xdm:stringValue": "0.85"
-        },
-        {
-          "xdm:fieldName": "meta_video_sound_on_rate",
-          "xdm:stringValue": "0.72"
-        }
-      ]
+      "xdm:videoPlays": {
+        "xdm:value": 9500
+      },
+      "xdm:video3SecViews": {
+        "xdm:value": 8900
+      },
+      "xdm:video2SecViews": {
+        "xdm:value": 9200
+      },
+      "xdm:video6SecViews": {
+        "xdm:value": 8450
+      },
+      "xdm:video10SecViews": {
+        "xdm:value": 7890
+      },
+      "xdm:videoViewRate2Sec": {
+        "xdm:value": 0.968
+      },
+      "xdm:videoViewRate6Sec": {
+        "xdm:value": 0.889
+      },
+      "xdm:video15SecViews": {
+        "xdm:value": 7234
+      },
+      "xdm:video30SecViews": {
+        "xdm:value": 6234
+      },
+      "xdm:videoQuartile1": {
+        "xdm:value": 8234
+      },
+      "xdm:videoQuartile2": {
+        "xdm:value": 7456
+      },
+      "xdm:videoQuartile3": {
+        "xdm:value": 6789
+      },
+      "xdm:videoCompletions": {
+        "xdm:value": 5785
+      },
+      "xdm:videoCompletionRate": {
+        "xdm:value": 0.65
+      },
+      "xdm:videoViewRate25Percent": {
+        "xdm:value": 0.867
+      },
+      "xdm:videoViewRate50Percent": {
+        "xdm:value": 0.785
+      },
+      "xdm:videoViewRate75Percent": {
+        "xdm:value": 0.715
+      },
+      "xdm:videoViewRate100Percent": {
+        "xdm:value": 0.609
+      },
+      "xdm:averageVideoWatchTime": {
+        "xdm:value": 18.5
+      },
+      "xdm:totalVideoWatchTime": {
+        "xdm:value": 175750
+      },
+      "xdm:videoMrcViews": {
+        "xdm:value": 8234
+      },
+      "xdm:videoThroughplayViews": {
+        "xdm:value": 5785
+      },
+      "xdm:videoSkips": {
+        "xdm:value": 1265
+      },
+      "xdm:videoSkipRate": {
+        "xdm:value": 0.133
+      },
+      "xdm:videoReplays": {
+        "xdm:value": 456
+      },
+      "xdm:videoPauses": {
+        "xdm:value": 1234
+      },
+      "xdm:videoResumes": {
+        "xdm:value": 1156
+      },
+      "xdm:videoFullscreenViews": {
+        "xdm:value": 2345
+      },
+      "xdm:videoMutes": {
+        "xdm:value": 890
+      },
+      "xdm:videoUnmutes": {
+        "xdm:value": 678
+      },
+      "xdm:videoVolumeChanges": {
+        "xdm:value": 234
+      },
+      "xdm:videoClickToPlays": {
+        "xdm:value": 3456
+      },
+      "xdm:videoAutoPlays": {
+        "xdm:value": 6044
+      },
+      "xdm:videoViewabilityRate": {
+        "xdm:value": 0.85
+      },
+      "xdm:videoAudibilityRate": {
+        "xdm:value": 0.72
+      }
     }
   }
 }

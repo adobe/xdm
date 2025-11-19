@@ -23,7 +23,7 @@
     },
     "xdm:numberValue": {
       "title": "Number Value",
-      "type": "number",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
       "description": "Numeric value of the field"
     },
     "xdm:booleanValue": {

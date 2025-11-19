@@ -1,22 +1,54 @@
 {
   "xdm:paidMedia": {
     "xdm:metrics": {
-      "xdm:impressions": 50000,
-      "xdm:clicks": 2500,
-      "xdm:spend": 18000,
-      "xdm:reach": 26000,
-      "xdm:frequency": 1.92,
-      "xdm:ctr": 0.05,
-      "xdm:cpm": 36.0,
-      "xdm:cpc": 7.2,
-      "xdm:conversions": 1250,
-      "xdm:conversionValue": 187500,
-      "xdm:costPerConversion": 14.4,
-      "xdm:roas": 10.42,
-      "xdm:videoViews": 8900,
-      "xdm:videoCompletions": 5785,
-      "xdm:engagements": 12345,
-      "xdm:engagementRate": 0.247,
+      "xdm:impressions": {
+        "xdm:value": 50000
+      },
+      "xdm:clicks": {
+        "xdm:value": 2500
+      },
+      "xdm:spend": {
+        "xdm:value": 18000
+      },
+      "xdm:reach": {
+        "xdm:value": 26000
+      },
+      "xdm:frequency": {
+        "xdm:value": 1.92
+      },
+      "xdm:ctr": {
+        "xdm:value": 0.05
+      },
+      "xdm:cpm": {
+        "xdm:value": 36.0
+      },
+      "xdm:cpc": {
+        "xdm:value": 7.2
+      },
+      "xdm:conversions": {
+        "xdm:value": 1250
+      },
+      "xdm:conversionValue": {
+        "xdm:value": 187500
+      },
+      "xdm:costPerConversion": {
+        "xdm:value": 14.4
+      },
+      "xdm:roas": {
+        "xdm:value": 10.42
+      },
+      "xdm:videoViews": {
+        "xdm:value": 8900
+      },
+      "xdm:videoCompletions": {
+        "xdm:value": 5785
+      },
+      "xdm:engagements": {
+        "xdm:value": 12345
+      },
+      "xdm:engagementRate": {
+        "xdm:value": 0.247
+      },
       "xdm:additionalMetrics": [
         {
           "xdm:metricName": "outbound_clicks",

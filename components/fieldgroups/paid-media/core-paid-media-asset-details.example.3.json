@@ -234,6 +234,36 @@
         {
           "xdm:fieldName": "meta_webhook_url",
           "xdm:stringValue": "https://api.acmecorp.com/leads/webhook"
+        },
+        {
+          "xdm:fieldName": "meta_form_field_count",
+          "xdm:numberValue": {
+            "xdm:value": 8
+          }
+        },
+        {
+          "xdm:fieldName": "meta_form_completion_rate",
+          "xdm:numberValue": {
+            "xdm:value": 0.67
+          }
+        },
+        {
+          "xdm:fieldName": "meta_form_avg_completion_time_seconds",
+          "xdm:numberValue": {
+            "xdm:value": 145.5
+          }
+        },
+        {
+          "xdm:fieldName": "meta_form_total_submissions",
+          "xdm:numberValue": {
+            "xdm:value": 1247
+          }
+        },
+        {
+          "xdm:fieldName": "meta_form_quality_score",
+          "xdm:numberValue": {
+            "xdm:value": 8.2
+          }
         }
       ]
     }

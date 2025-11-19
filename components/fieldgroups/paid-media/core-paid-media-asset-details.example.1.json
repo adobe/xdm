@@ -136,6 +136,36 @@
         {
           "xdm:fieldName": "meta_video_sound_collection_id",
           "xdm:stringValue": "sound_collection_123456"
+        },
+        {
+          "xdm:fieldName": "meta_video_file_size_bytes",
+          "xdm:numberValue": {
+            "xdm:value": 45678912
+          }
+        },
+        {
+          "xdm:fieldName": "meta_video_bitrate_kbps",
+          "xdm:numberValue": {
+            "xdm:value": 5000
+          }
+        },
+        {
+          "xdm:fieldName": "meta_video_quality_score",
+          "xdm:numberValue": {
+            "xdm:value": 8.7
+          }
+        },
+        {
+          "xdm:fieldName": "meta_video_engagement_score",
+          "xdm:numberValue": {
+            "xdm:value": 0.78
+          }
+        },
+        {
+          "xdm:fieldName": "meta_video_avg_watch_time_seconds",
+          "xdm:numberValue": {
+            "xdm:value": 18.5
+          }
         }
       ]
     }

@@ -25,102 +25,84 @@
               "description": "Detailed cost and bidding metrics",
               "properties": {
                 "xdm:spendInMicroCurrency": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Spend (Micro Currency)",
-                  "description": "Amount spent in micro currency units",
-                  "minimum": 0
+                  "description": "Amount spent in micro currency units"
                 },
                 "xdm:averageCpm": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Average CPM",
-                  "description": "Average cost per thousand impressions",
-                  "minimum": 0
+                  "description": "Average cost per thousand impressions"
                 },
                 "xdm:averageCpc": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Average CPC",
-                  "description": "Average cost per click",
-                  "minimum": 0
+                  "description": "Average cost per click"
                 },
                 "xdm:averageCpe": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Average CPE",
-                  "description": "Average cost per engagement",
-                  "minimum": 0
+                  "description": "Average cost per engagement"
                 },
                 "xdm:averageCpv": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Average CPV",
-                  "description": "Average cost per video view",
-                  "minimum": 0
+                  "description": "Average cost per video view"
                 },
                 "xdm:averageCpa": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Average CPA",
-                  "description": "Average cost per acquisition/action",
-                  "minimum": 0
+                  "description": "Average cost per acquisition/action"
                 },
                 "xdm:averageCpl": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Average CPL",
-                  "description": "Average cost per lead",
-                  "minimum": 0
+                  "description": "Average cost per lead"
                 },
                 "xdm:bidAmount": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Bid Amount",
-                  "description": "Average bid amount",
-                  "minimum": 0
+                  "description": "Average bid amount"
                 },
                 "xdm:bidAmountMicro": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Bid Amount (Micro Currency)",
-                  "description": "Bid amount in micro currency units",
-                  "minimum": 0
+                  "description": "Bid amount in micro currency units"
                 },
                 "xdm:maxBid": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Maximum Bid",
-                  "description": "Maximum bid amount set",
-                  "minimum": 0
+                  "description": "Maximum bid amount set"
                 },
                 "xdm:minBid": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Minimum Bid",
-                  "description": "Minimum bid amount set",
-                  "minimum": 0
+                  "description": "Minimum bid amount set"
                 },
                 "xdm:targetBid": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Target Bid",
-                  "description": "Target bid amount for automated bidding",
-                  "minimum": 0
+                  "description": "Target bid amount for automated bidding"
                 },
                 "xdm:actualBid": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Actual Bid",
-                  "description": "Actual bid amount used in auctions",
-                  "minimum": 0
+                  "description": "Actual bid amount used in auctions"
                 },
                 "xdm:qualityScore": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Quality Score",
-                  "description": "Ad quality score (platform-specific)",
-                  "minimum": 0,
-                  "maximum": 10
+                  "description": "Ad quality score (platform-specific)"
                 },
                 "xdm:adRank": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Ad Rank",
-                  "description": "Ad rank score used for auction positioning",
-                  "minimum": 0
+                  "description": "Ad rank score used for auction positioning"
                 },
                 "xdm:competitionIndex": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Competition Index",
-                  "description": "Competition level index for the auction",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Competition level index for the auction"
                 },
                 "xdm:impressionShare": {
                   "type": "object",
@@ -128,68 +110,48 @@
                   "description": "Detailed impression share metrics",
                   "properties": {
                     "xdm:impressionShare": {
-                      "type": "number",
-                      "title": "Impression Share",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Impression Share"
                     },
                     "xdm:impressionShareRank": {
-                      "type": "number",
-                      "title": "Impression Share Rank",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Impression Share Rank"
                     },
                     "xdm:impressionShareBudget": {
-                      "type": "number",
-                      "title": "Impression Share Budget",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Impression Share Budget"
                     },
                     "xdm:lostImpressionShareRank": {
-                      "type": "number",
-                      "title": "Lost Impression Share Rank",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Lost Impression Share Rank"
                     },
                     "xdm:lostImpressionShareBudget": {
-                      "type": "number",
-                      "title": "Lost Impression Share Budget",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Lost Impression Share Budget"
                     },
                     "xdm:exactMatchImpressionShare": {
-                      "type": "number",
-                      "title": "Exact Match Impression Share",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Exact Match Impression Share"
                     },
                     "xdm:topImpressionShare": {
-                      "type": "number",
-                      "title": "Top Impression Share",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Top Impression Share"
                     },
                     "xdm:absoluteTopImpressionShare": {
-                      "type": "number",
-                      "title": "Absolute Top Impression Share",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Absolute Top Impression Share"
                     }
                   }
                 },
                 "xdm:lostImpressionShareRank": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Lost Impression Share (Rank)",
-                  "description": "Impression share lost due to ad rank",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Impression share lost due to ad rank"
                 },
                 "xdm:lostImpressionShareBudget": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Lost Impression Share (Budget)",
-                  "description": "Impression share lost due to budget constraints",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Impression share lost due to budget constraints"
                 },
                 "xdm:budgetUtilization": {
                   "type": "object",
@@ -197,41 +159,32 @@
                   "description": "Detailed budget utilization metrics",
                   "properties": {
                     "xdm:budgetAllocated": {
-                      "type": "number",
-                      "title": "Budget Allocated",
-                      "minimum": 0
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Allocated"
                     },
                     "xdm:budgetSpent": {
-                      "type": "number",
-                      "title": "Budget Spent",
-                      "minimum": 0
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Spent"
                     },
                     "xdm:budgetRemaining": {
-                      "type": "number",
-                      "title": "Budget Remaining",
-                      "minimum": 0
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Remaining"
                     },
                     "xdm:budgetUtilization": {
-                      "type": "number",
-                      "title": "Budget Utilization",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Utilization"
                     },
                     "xdm:dailyBudget": {
-                      "type": "number",
-                      "title": "Daily Budget",
-                      "minimum": 0
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Daily Budget"
                     },
                     "xdm:dailySpend": {
-                      "type": "number",
-                      "title": "Daily Spend",
-                      "minimum": 0
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Daily Spend"
                     },
                     "xdm:dailyBudgetUtilization": {
-                      "type": "number",
-                      "title": "Daily Budget Utilization",
-                      "minimum": 0,
-                      "maximum": 1
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Daily Budget Utilization"
                     },
                     "xdm:pacingStatus": {
                       "type": "string",
@@ -245,53 +198,43 @@
                       }
                     },
                     "xdm:projectedSpend": {
-                      "type": "number",
-                      "title": "Projected Spend",
-                      "minimum": 0
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Projected Spend"
                     },
                     "xdm:budgetOverrun": {
-                      "type": "number",
-                      "title": "Budget Overrun",
-                      "minimum": 0
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Overrun"
                     },
                     "xdm:budgetUnderrun": {
-                      "type": "number",
-                      "title": "Budget Underrun",
-                      "minimum": 0
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Underrun"
                     }
                   }
                 },
                 "xdm:budgetRemaining": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Budget Remaining",
-                  "description": "Remaining budget amount",
-                  "minimum": 0
+                  "description": "Remaining budget amount"
                 },
                 "xdm:budgetPacing": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Budget Pacing",
-                  "description": "Budget pacing percentage (actual vs. planned)",
-                  "minimum": 0
+                  "description": "Budget pacing percentage (actual vs. planned)"
                 },
                 "xdm:costEfficiency": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Cost Efficiency",
-                  "description": "Cost efficiency score compared to benchmarks",
-                  "minimum": 0
+                  "description": "Cost efficiency score compared to benchmarks"
                 },
                 "xdm:marginOfError": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Margin of Error",
-                  "description": "Statistical margin of error for cost metrics",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Statistical margin of error for cost metrics"
                 },
                 "xdm:confidenceLevel": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Confidence Level",
-                  "description": "Statistical confidence level for cost metrics",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Statistical confidence level for cost metrics"
                 },
                 "xdm:costTrend": {
                   "type": "string",
@@ -306,10 +249,9 @@
                   }
                 },
                 "xdm:costVariance": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Cost Variance",
-                  "description": "Variance in cost metrics",
-                  "minimum": 0
+                  "description": "Variance in cost metrics"
                 }
               }
             }

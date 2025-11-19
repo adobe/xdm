@@ -174,6 +174,42 @@
         {
           "xdm:fieldName": "meta_agency_relationship",
           "xdm:stringValue": "direct"
+        },
+        {
+          "xdm:fieldName": "meta_account_spend_limit",
+          "xdm:numberValue": {
+            "xdm:value": 50000
+          }
+        },
+        {
+          "xdm:fieldName": "meta_account_balance",
+          "xdm:numberValue": {
+            "xdm:value": 12500.5
+          }
+        },
+        {
+          "xdm:fieldName": "meta_min_daily_budget",
+          "xdm:numberValue": {
+            "xdm:value": 1
+          }
+        },
+        {
+          "xdm:fieldName": "meta_min_campaign_group_spend_cap",
+          "xdm:numberValue": {
+            "xdm:value": 100
+          }
+        },
+        {
+          "xdm:fieldName": "meta_account_age_days",
+          "xdm:numberValue": {
+            "xdm:value": 1715
+          }
+        },
+        {
+          "xdm:fieldName": "meta_total_campaigns",
+          "xdm:numberValue": {
+            "xdm:value": 247
+          }
         }
       ]
     }

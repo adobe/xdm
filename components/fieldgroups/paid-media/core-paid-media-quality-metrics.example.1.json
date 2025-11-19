@@ -1,75 +1,93 @@
 {
   "xdm:paidMedia": {
     "xdm:qualityMetrics": {
-      "xdm:relevanceScore": 9.0,
-      "xdm:engagementScore": 8.2,
-      "xdm:conversionScore": 8.8,
-      "xdm:overallQualityScore": 8.67,
-      "xdm:negativeActions": 25,
-      "xdm:negativeActionRate": 0.0005,
-      "xdm:positiveActions": 12345,
-      "xdm:positiveActionRate": 0.247,
-      "xdm:brandSafetyScore": 9.5,
-      "xdm:viewabilityScore": 8.5,
-      "xdm:fraudScore": 0.5,
-      "xdm:invalidTrafficRate": 0.02,
-      "xdm:botTrafficRate": 0.015,
-      "xdm:humanTrafficRate": 0.985,
-      "xdm:attentionScore": 7.8,
-      "xdm:dwellTime": 4.2,
-      "xdm:interactionDepth": 3.5,
-      "xdm:creativeFatigue": 2.1,
-      "xdm:frequencyFatigue": 1.8,
-      "xdm:audienceRelevance": 8.9,
-      "xdm:contextualRelevance": 8.5,
-      "xdm:emotionalResonance": 7.6,
-      "xdm:memorabilityScore": 7.2,
-      "xdm:brandLiftScore": 6.8,
-      "xdm:intentLiftScore": 7.4,
+      "xdm:relevanceScore": {
+        "xdm:value": 9.0
+      },
+      "xdm:engagementScore": {
+        "xdm:value": 8.2
+      },
+      "xdm:conversionScore": {
+        "xdm:value": 8.8
+      },
+      "xdm:overallQualityScore": {
+        "xdm:value": 8.67
+      },
+      "xdm:negativeActions": {
+        "xdm:value": 25
+      },
+      "xdm:negativeActionRate": {
+        "xdm:value": 0.0005
+      },
+      "xdm:positiveActions": {
+        "xdm:value": 12345
+      },
+      "xdm:positiveActionRate": {
+        "xdm:value": 0.247
+      },
+      "xdm:brandSafetyScore": {
+        "xdm:value": 9.5
+      },
+      "xdm:viewabilityScore": {
+        "xdm:value": 8.5
+      },
+      "xdm:fraudScore": {
+        "xdm:value": 0.5
+      },
+      "xdm:invalidTrafficRate": {
+        "xdm:value": 0.02
+      },
+      "xdm:botTrafficRate": {
+        "xdm:value": 0.015
+      },
+      "xdm:humanTrafficRate": {
+        "xdm:value": 0.985
+      },
+      "xdm:attentionScore": {
+        "xdm:value": 7.8
+      },
+      "xdm:dwellTime": {
+        "xdm:value": 4.2
+      },
+      "xdm:interactionDepth": {
+        "xdm:value": 3.5
+      },
+      "xdm:creativeFatigue": {
+        "xdm:value": 2.1
+      },
+      "xdm:frequencyFatigue": {
+        "xdm:value": 1.8
+      },
+      "xdm:audienceRelevance": {
+        "xdm:value": 8.9
+      },
+      "xdm:contextualRelevance": {
+        "xdm:value": 8.5
+      },
+      "xdm:emotionalResonance": {
+        "xdm:value": 7.6
+      },
+      "xdm:memorabilityScore": {
+        "xdm:value": 7.2
+      },
+      "xdm:brandLiftScore": {
+        "xdm:value": 6.8
+      },
+      "xdm:intentLiftScore": {
+        "xdm:value": 7.4
+      },
       "xdm:qualityTrend": "improving",
       "xdm:benchmarkComparison": {
-        "xdm:industryAverage": 7.5,
-        "xdm:percentileRank": 78,
-        "xdm:competitorAverage": 7.8
-      },
-      "xdm:additionalDetails": [
-        {
-          "xdm:fieldName": "meta_quality_ranking",
-          "xdm:stringValue": "above_average"
+        "xdm:industryAverage": {
+          "xdm:value": 7.5
         },
-        {
-          "xdm:fieldName": "meta_engagement_rate_ranking",
-          "xdm:stringValue": "above_average"
+        "xdm:percentileRank": {
+          "xdm:value": 78
         },
-        {
-          "xdm:fieldName": "meta_conversion_rate_ranking",
-          "xdm:stringValue": "above_average"
-        },
-        {
-          "xdm:fieldName": "meta_negative_feedback_rate",
-          "xdm:stringValue": "0.0005"
-        },
-        {
-          "xdm:fieldName": "meta_hide_rate",
-          "xdm:stringValue": "0.00046"
-        },
-        {
-          "xdm:fieldName": "meta_report_rate",
-          "xdm:stringValue": "0.00004"
-        },
-        {
-          "xdm:fieldName": "meta_positive_feedback_rate",
-          "xdm:stringValue": "0.247"
-        },
-        {
-          "xdm:fieldName": "meta_viewability_rate",
-          "xdm:stringValue": "0.85"
-        },
-        {
-          "xdm:fieldName": "meta_brand_safety_score",
-          "xdm:stringValue": "9.5"
+        "xdm:competitorAverage": {
+          "xdm:value": 7.8
         }
-      ]
+      }
     }
   }
 }

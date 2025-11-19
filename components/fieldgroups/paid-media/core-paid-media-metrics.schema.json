@@ -25,102 +25,84 @@
               "description": "Common performance metrics for paid media campaigns",
               "properties": {
                 "xdm:impressions": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Impressions",
-                  "description": "Number of times ads were displayed",
-                  "minimum": 0
+                  "description": "Number of times ads were displayed"
                 },
                 "xdm:clicks": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Clicks",
-                  "description": "Number of clicks on ads",
-                  "minimum": 0
+                  "description": "Number of clicks on ads"
                 },
                 "xdm:spend": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Spend",
-                  "description": "Amount spent in account currency",
-                  "minimum": 0
+                  "description": "Amount spent in account currency"
                 },
                 "xdm:reach": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Reach",
-                  "description": "Number of unique users who saw the ads",
-                  "minimum": 0
+                  "description": "Number of unique users who saw the ads"
                 },
                 "xdm:frequency": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Frequency",
-                  "description": "Average number of times each user saw the ads",
-                  "minimum": 0
+                  "description": "Average number of times each user saw the ads"
                 },
                 "xdm:ctr": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Click-Through Rate",
-                  "description": "Click-through rate (clicks/impressions)",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Click-through rate (clicks/impressions)"
                 },
                 "xdm:cpm": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Cost Per Mille",
-                  "description": "Cost per thousand impressions",
-                  "minimum": 0
+                  "description": "Cost per thousand impressions"
                 },
                 "xdm:cpc": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Cost Per Click",
-                  "description": "Average cost per click",
-                  "minimum": 0
+                  "description": "Average cost per click"
                 },
                 "xdm:conversions": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Conversions",
-                  "description": "Total number of conversions",
-                  "minimum": 0
+                  "description": "Total number of conversions"
                 },
                 "xdm:conversionValue": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Conversion Value",
-                  "description": "Total value of conversions in account currency",
-                  "minimum": 0
+                  "description": "Total value of conversions in account currency"
                 },
                 "xdm:costPerConversion": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Cost Per Conversion",
-                  "description": "Average cost per conversion",
-                  "minimum": 0
+                  "description": "Average cost per conversion"
                 },
                 "xdm:roas": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Return on Ad Spend",
-                  "description": "Return on ad spend (conversion value / spend)",
-                  "minimum": 0
+                  "description": "Return on ad spend (conversion value / spend)"
                 },
                 "xdm:videoViews": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Video Views",
-                  "description": "Number of video views",
-                  "minimum": 0
+                  "description": "Number of video views"
                 },
                 "xdm:videoCompletions": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Video Completions",
-                  "description": "Number of video completions",
-                  "minimum": 0
+                  "description": "Number of video completions"
                 },
                 "xdm:engagements": {
-                  "type": "integer",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Engagements",
-                  "description": "Total engagement actions (likes, shares, comments, etc.)",
-                  "minimum": 0
+                  "description": "Total engagement actions (likes, shares, comments, etc.)"
                 },
                 "xdm:engagementRate": {
-                  "type": "number",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "title": "Engagement Rate",
-                  "description": "Engagement rate (engagements/impressions)",
-                  "minimum": 0,
-                  "maximum": 1
+                  "description": "Engagement rate (engagements/impressions)"
                 },
                 "xdm:additionalMetrics": {
                   "title": "Additional Metrics",

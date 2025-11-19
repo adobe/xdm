@@ -1,7 +1,7 @@
 {
   "xdm:paidMedia": {
     "xdm:adNetwork": "meta",
-    "xdm:adNetworkName": "Meta (Facebook)",
+    "xdm:network": "meta",
     "xdm:entityType": "ad",
     "xdm:accountID": "act_123456789012345",
     "xdm:accountGUID": "meta_act_123456789012345",
@@ -16,27 +16,31 @@
     "xdm:assetID": "asset_456789123456789",
     "xdm:assetGUID": "meta_act_123456789012345_asset_456789123456789",
     "xdm:hierarchyPath": "act_123456789012345/23851234567890789/23851234567890456/23851234567890123",
-    "xdm:parentEntityType": "adGroup",
-    "xdm:parentEntityID": "23851234567890456",
-    "xdm:rootEntityType": "account",
-    "xdm:rootEntityID": "act_123456789012345",
-    "xdm:externalIDs": {
-      "xdm:businessManagerID": "987654321098765",
-      "xdm:pageID": "123456789012345",
-      "xdm:pixelID": "pixel_123456789",
-      "xdm:catalogID": "catalog_987654321",
-      "xdm:productSetID": "product_set_123456",
-      "xdm:appID": "app_456789123",
-      "xdm:instagramAccountID": "ig_acmecorp",
-      "xdm:creativeID": "creative_vid_987654321",
-      "xdm:videoID": "video_987654321012345",
-      "xdm:imageHash": "abc123def456ghi789jkl012"
-    },
-    "xdm:crossNetworkIDs": {
-      "xdm:universalCampaignID": "ucid_550e8400e29b41d4a716446655440002",
-      "xdm:universalAdGroupID": "uagid_550e8400e29b41d4a716446655440003",
-      "xdm:universalAdID": "uaid_550e8400e29b41d4a716446655440004",
-      "xdm:crossNetworkTrackingID": "xnt_acme_fall2025_traffic"
+    "xdm:entityIDs": {
+      "xdm:account": {
+        "xdm:accountGUID": "meta_act_123456789012345",
+        "xdm:accountID": "act_123456789012345"
+      },
+      "xdm:campaign": {
+        "xdm:campaignGUID": "meta_act_123456789012345_23851234567890789",
+        "xdm:campaignID": "23851234567890789"
+      },
+      "xdm:adGroup": {
+        "xdm:adGroupGUID": "meta_act_123456789012345_23851234567890456",
+        "xdm:adGroupID": "23851234567890456"
+      },
+      "xdm:ad": {
+        "xdm:adGUID": "meta_act_123456789012345_23851234567890123",
+        "xdm:adID": "23851234567890123"
+      },
+      "xdm:experience": {
+        "xdm:experienceGUID": "meta_act_123456789012345_creative_vid_987654321",
+        "xdm:experienceID": "creative_vid_987654321"
+      },
+      "xdm:asset": {
+        "xdm:assetGUID": "meta_act_123456789012345_asset_456789123456789",
+        "xdm:assetID": "asset_456789123456789"
+      }
     },
     "xdm:additionalDetails": [
       {

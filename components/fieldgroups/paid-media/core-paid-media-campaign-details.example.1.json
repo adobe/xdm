@@ -7,67 +7,36 @@
       "xdm:promotedObject": {
         "xdm:objectType": "page",
         "xdm:objectID": "page_acmecorp_official",
-        "xdm:pageID": "123456789012345",
-        "xdm:pixelID": "pixel_123456789",
-        "xdm:customEventType": "LINK_CLICK",
-        "xdm:applicationID": "app_456789123",
-        "xdm:productCatalogID": "catalog_987654321",
-        "xdm:productSetID": "product_set_123456",
-        "xdm:offlineConversionDataSetID": "",
-        "xdm:destinationURL": "https://www.acmecorp.com/fall-launch"
+        "xdm:objectName": "Acme Corp Official Page",
+        "xdm:objectURL": "https://www.acmecorp.com/fall-launch"
       },
       "xdm:budgetSettings": {
-        "xdm:budgetType": "daily",
-        "xdm:dailyBudget": 2000,
-        "xdm:lifetimeBudget": 0,
-        "xdm:totalBudget": 60000,
-        "xdm:budgetRemaining": 42500,
-        "xdm:budgetSpent": 17500,
-        "xdm:budgetUtilization": 0.292,
-        "xdm:pacing": "standard",
-        "xdm:pacingType": "standard",
-        "xdm:campaignBudgetOptimization": true,
-        "xdm:cboEnabled": true,
-        "xdm:budgetRebalancing": true,
+        "xdm:isCampaignBudgetOptimization": true,
         "xdm:spendCap": 2500,
-        "xdm:bidCap": 0,
-        "xdm:costCap": 0
+        "xdm:bidStrategy": "LOWEST_COST_WITHOUT_CAP",
+        "xdm:bidAmount": 0
       },
-      "xdm:targetingStrategy": {
-        "xdm:targetingExpansion": true,
-        "xdm:detailedTargetingExpansion": "expansion_all",
-        "xdm:advantagePlusAudience": false,
-        "xdm:advantagePlusCreative": false,
-        "xdm:advantagePlusCatalog": false,
-        "xdm:lookalikExpansion": true,
-        "xdm:automaticPlacements": true,
-        "xdm:dynamicCreative": false
-      },
-      "xdm:schedulingSettings": {
-        "xdm:startDate": "2025-11-01T00:00:00Z",
-        "xdm:endDate": "2025-11-30T23:59:59Z",
-        "xdm:scheduleType": "continuous",
-        "xdm:runContinuously": false,
-        "xdm:dayParting": false,
-        "xdm:dayPartingSchedule": [],
-        "xdm:timezone": "America/Los_Angeles",
+      "xdm:scheduling": {
+        "xdm:isAlwaysOn": false,
         "xdm:flightDates": [
           {
             "xdm:startDate": "2025-11-01T00:00:00Z",
-            "xdm:endDate": "2025-11-30T23:59:59Z"
+            "xdm:endDate": "2025-11-30T23:59:59Z",
+            "xdm:budget": 60000
           }
-        ]
+        ],
+        "xdm:dayParting": {
+          "xdm:enabled": false,
+          "xdm:schedule": []
+        }
       },
       "xdm:frequencyCapping": {
         "xdm:enabled": true,
         "xdm:impressionCap": 5,
-        "xdm:timePeriod": "week",
-        "xdm:timePeriodDays": 7,
-        "xdm:applyToAllAdSets": true,
-        "xdm:resetFrequency": "weekly"
+        "xdm:timePeriod": "week"
       },
       "xdm:conversionTracking": {
-        "xdm:pixelID": "pixel_123456789",
+        "xdm:pixelIDs": ["pixel_123456789"],
         "xdm:conversionEvents": [
           "PageView",
           "ViewContent",
@@ -75,67 +44,14 @@
           "InitiateCheckout",
           "Purchase"
         ],
-        "xdm:customConversions": [
-          {
-            "xdm:eventName": "ProductPageView",
-            "xdm:eventID": "custom_event_001",
-            "xdm:eventValue": 0
-          },
-          {
-            "xdm:eventName": "DemoRequest",
-            "xdm:eventID": "custom_event_002",
-            "xdm:eventValue": 50
-          }
-        ],
-        "xdm:offlineConversions": false,
-        "xdm:serverSideTracking": true,
-        "xdm:conversionAPI": true,
-        "xdm:deduplication": true,
         "xdm:attributionWindow": "7d_click_1d_view"
       },
-      "xdm:optimizationSettings": {
-        "xdm:objective": "OUTCOME_TRAFFIC",
-        "xdm:optimizationGoal": "LINK_CLICKS",
-        "xdm:billingEvent": "IMPRESSIONS",
-        "xdm:bidStrategy": "LOWEST_COST_WITHOUT_CAP",
-        "xdm:pacing": "standard",
-        "xdm:deliveryType": "standard",
-        "xdm:learningPhase": "learning",
-        "xdm:autoOptimization": true
-      },
-      "xdm:ios14Settings": {
-        "xdm:campaignOptedIn": true,
-        "xdm:attOptimization": true,
-        "xdm:aggregatedEventMeasurement": true,
-        "xdm:prioritizedEvents": ["Purchase", "AddToCart", "ViewContent"],
-        "xdm:domainVerification": true,
-        "xdm:verifiedDomain": "acmecorp.com",
-        "xdm:skadnetworkEnabled": true,
-        "xdm:conversionValueSchema": "default"
-      },
-      "xdm:brandSafety": {
-        "xdm:inventoryFilter": "standard",
-        "xdm:blockLists": ["block_list_sensitive_content"],
-        "xdm:contentCategories": [
-          "news",
-          "entertainment",
-          "technology",
-          "business"
-        ],
-        "xdm:excludedCategories": ["mature_content", "political", "gambling"],
-        "xdm:publisherBlockLists": [],
-        "xdm:appBlockLists": [],
-        "xdm:brandSuitability": "standard"
-      },
-      "xdm:creativeSettings": {
-        "xdm:dynamicCreative": false,
-        "xdm:multiAdvertiserAds": false,
-        "xdm:catalogAds": false,
-        "xdm:collectionAds": false,
-        "xdm:instantExperience": false,
-        "xdm:videoPolling": false,
-        "xdm:playableAds": false
-      },
+      "xdm:ios14CampaignType": "REGULAR_CAMPAIGN",
+      "xdm:skanEnabled": true,
+      "xdm:skanPostbackWindow": "POSTBACK_WINDOW_MODE2",
+      "xdm:appProfilePageEnabled": false,
+      "xdm:catalogId": "catalog_987654321",
+      "xdm:productSetId": "product_set_123456",
       "xdm:additionalDetails": [
         {
           "xdm:fieldName": "meta_campaign_id",

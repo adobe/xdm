@@ -1,98 +1,98 @@
 {
   "xdm:paidMedia": {
     "xdm:experienceDetails": {
+      "xdm:experienceName": "Fall 2025 Product Showcase Carousel",
+      "xdm:experienceDescription": "Multi-product carousel showcasing our latest tech accessories",
       "xdm:experienceType": "carousel",
+      "xdm:sourceURL": "https://cdn.acmecorp.com/experiences/fall2025-carousel",
+      "xdm:thumbnailURL": "https://cdn.acmecorp.com/experiences/fall2025-carousel-thumb.jpg",
       "xdm:landingPageURL": "https://shop.acmecorp.com/products",
-      "xdm:displayURL": "shop.acmecorp.com/products",
-      "xdm:finalURL": "https://shop.acmecorp.com/products?utm_source=facebook&utm_medium=carousel&utm_campaign=showcase2025",
+      "xdm:headingText": "Discover Our Latest Tech",
+      "xdm:bodyText": "Shop our newest collection of premium accessories",
+      "xdm:callToAction": "Shop Now",
+      "xdm:assetIDs": [
+        "asset_001",
+        "asset_002",
+        "asset_003",
+        "asset_004",
+        "asset_005"
+      ],
+      "xdm:assetGUIDs": [
+        "meta_act_123_asset_001",
+        "meta_act_123_asset_002",
+        "meta_act_123_asset_003",
+        "meta_act_123_asset_004",
+        "meta_act_123_asset_005"
+      ],
       "xdm:carouselProperties": {
         "xdm:cardCount": 5,
-        "xdm:carouselType": "product_carousel",
-        "xdm:autoAdvance": false,
-        "xdm:looping": true,
         "xdm:cards": [
           {
             "xdm:cardIndex": 1,
-            "xdm:cardID": "card_001",
-            "xdm:headline": "Premium Wireless Headphones",
-            "xdm:description": "Experience crystal-clear sound with 40-hour battery life",
-            "xdm:imageURL": "https://cdn.acmecorp.com/products/headphones-premium.jpg",
-            "xdm:destinationURL": "https://shop.acmecorp.com/products/headphones-premium",
-            "xdm:callToAction": "Shop Now",
-            "xdm:price": 299.99,
-            "xdm:currency": "USD",
-            "xdm:productID": "prod_headphones_001"
+            "xdm:assetID": "asset_001",
+            "xdm:assetGUID": "meta_act_123_asset_001",
+            "xdm:heading": "Premium Wireless Headphones",
+            "description": "Experience crystal-clear sound with 40-hour battery life",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/headphones-premium"
           },
           {
             "xdm:cardIndex": 2,
-            "xdm:cardID": "card_002",
-            "xdm:headline": "Smart Fitness Watch",
-            "xdm:description": "Track your health and fitness goals with precision",
-            "xdm:imageURL": "https://cdn.acmecorp.com/products/watch-fitness.jpg",
-            "xdm:destinationURL": "https://shop.acmecorp.com/products/watch-fitness",
-            "xdm:callToAction": "Shop Now",
-            "xdm:price": 399.99,
-            "xdm:currency": "USD",
-            "xdm:productID": "prod_watch_002"
+            "xdm:assetID": "asset_002",
+            "xdm:assetGUID": "meta_act_123_asset_002",
+            "xdm:heading": "Smart Fitness Watch",
+            "description": "Track your health and fitness goals with precision",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/watch-fitness"
           },
           {
             "xdm:cardIndex": 3,
-            "xdm:cardID": "card_003",
-            "xdm:headline": "Portable Bluetooth Speaker",
-            "xdm:description": "Powerful sound in a compact, waterproof design",
-            "xdm:imageURL": "https://cdn.acmecorp.com/products/speaker-portable.jpg",
-            "xdm:destinationURL": "https://shop.acmecorp.com/products/speaker-portable",
-            "xdm:callToAction": "Shop Now",
-            "xdm:price": 149.99,
-            "xdm:currency": "USD",
-            "xdm:productID": "prod_speaker_003"
+            "xdm:assetID": "asset_003",
+            "xdm:assetGUID": "meta_act_123_asset_003",
+            "xdm:heading": "Portable Bluetooth Speaker",
+            "description": "Powerful sound in a compact, waterproof design",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/speaker-portable"
           },
           {
             "xdm:cardIndex": 4,
-            "xdm:cardID": "card_004",
-            "xdm:headline": "Wireless Charging Pad",
-            "xdm:description": "Fast wireless charging for all your devices",
-            "xdm:imageURL": "https://cdn.acmecorp.com/products/charger-wireless.jpg",
-            "xdm:destinationURL": "https://shop.acmecorp.com/products/charger-wireless",
-            "xdm:callToAction": "Shop Now",
-            "xdm:price": 49.99,
-            "xdm:currency": "USD",
-            "xdm:productID": "prod_charger_004"
+            "xdm:assetID": "asset_004",
+            "xdm:assetGUID": "meta_act_123_asset_004",
+            "xdm:heading": "Wireless Charging Pad",
+            "description": "Fast wireless charging for all your devices",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/charger-wireless"
           },
           {
             "xdm:cardIndex": 5,
-            "xdm:cardID": "card_005",
-            "xdm:headline": "USB-C Hub Adapter",
-            "xdm:description": "Connect all your devices with this versatile hub",
-            "xdm:imageURL": "https://cdn.acmecorp.com/products/hub-usbc.jpg",
-            "xdm:destinationURL": "https://shop.acmecorp.com/products/hub-usbc",
-            "xdm:callToAction": "Shop Now",
-            "xdm:price": 79.99,
-            "xdm:currency": "USD",
-            "xdm:productID": "prod_hub_005"
+            "xdm:assetID": "asset_005",
+            "xdm:assetGUID": "meta_act_123_asset_005",
+            "xdm:heading": "USB-C Hub Adapter",
+            "description": "Connect all your devices with this versatile hub",
+            "xdm:destinationURL": "https://shop.acmecorp.com/products/hub-usbc"
           }
-        ],
-        "xdm:catalogID": "catalog_987654321",
-        "xdm:productSetID": "product_set_123456",
-        "xdm:dynamicProductAds": false
+        ]
       },
       "xdm:interactionProperties": {
-        "xdm:allowSwipe": true,
-        "xdm:allowTap": true,
-        "xdm:allowZoom": false,
-        "xdm:allowFullscreen": false,
-        "xdm:interactionTracking": true,
-        "xdm:cardViewTracking": true,
-        "xdm:swipeTracking": true
+        "xdm:isInteractive": true,
+        "xdm:interactionType": "swipe"
       },
       "xdm:additionalDetails": [
         {
-          "xdm:fieldName": "meta_experience_type",
-          "xdm:stringValue": "carousel"
+          "xdm:fieldName": "meta_display_url",
+          "xdm:stringValue": "shop.acmecorp.com/products"
         },
         {
-          "xdm:fieldName": "meta_carousel_card_count",
-          "xdm:stringValue": "5"
+          "xdm:fieldName": "meta_final_url",
+          "xdm:stringValue": "https://shop.acmecorp.com/products?utm_source=facebook&utm_medium=carousel&utm_campaign=showcase2025"
+        },
+        {
+          "xdm:fieldName": "meta_carousel_type",
+          "xdm:stringValue": "product_carousel"
+        },
+        {
+          "xdm:fieldName": "meta_auto_advance",
+          "xdm:booleanValue": false
+        },
+        {
+          "xdm:fieldName": "meta_looping",
+          "xdm:booleanValue": true
         },
         {
           "xdm:fieldName": "meta_catalog_id",
@@ -104,7 +104,35 @@
         },
         {
           "xdm:fieldName": "meta_dynamic_ads",
-          "xdm:stringValue": "false"
+          "xdm:booleanValue": false
+        },
+        {
+          "xdm:fieldName": "meta_allow_swipe",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_allow_tap",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_allow_zoom",
+          "xdm:booleanValue": false
+        },
+        {
+          "xdm:fieldName": "meta_allow_fullscreen",
+          "xdm:booleanValue": false
+        },
+        {
+          "xdm:fieldName": "meta_interaction_tracking",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_card_view_tracking",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_swipe_tracking",
+          "xdm:booleanValue": true
         }
       ]
     }

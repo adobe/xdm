@@ -146,102 +146,133 @@
       }
     },
     "xdm:extendedMetrics": {
-      "xdm:videoViews": 17000,
-      "xdm:videoViewsP25": 14875,
-      "xdm:videoViewsP50": 12750,
-      "xdm:videoViewsP75": 10625,
-      "xdm:videoViewsP95": 8500,
-      "xdm:videoViewsP100": 6375,
-      "xdm:videoAvgWatchTime": 18.5,
-      "xdm:videoAvgWatchPercentage": 0.607,
-      "xdm:engagements": 1148,
-      "xdm:engagementRate": 0.054,
-      "xdm:likes": 574,
-      "xdm:comments": 115,
-      "xdm:shares": 191,
-      "xdm:saves": 268,
-      "xdm:linkClicks": 765,
-      "xdm:landingPageViews": 689,
-      "xdm:outboundClicks": 727,
-      "xdm:uniqueClicks": 689,
-      "xdm:uniqueLinkClicks": 689,
-      "xdm:costPerEngagement": 0.481,
-      "xdm:costPerLike": 0.963,
-      "xdm:costPerComment": 4.804,
-      "xdm:costPerShare": 2.892
+      "xdm:likes": {
+        "xdm:value": 574
+      },
+      "xdm:comments": {
+        "xdm:value": 115
+      },
+      "xdm:shares": {
+        "xdm:value": 191
+      },
+      "xdm:saves": {
+        "xdm:value": 268
+      },
+      "xdm:linkClicks": {
+        "xdm:value": 765
+      },
+      "xdm:outboundClicks": {
+        "xdm:value": 727
+      },
+      "xdm:uniqueClicks": {
+        "xdm:value": 689
+      }
     },
     "xdm:videoMetrics": {
-      "xdm:videoViews": 17000,
-      "xdm:videoViewsP25": 14875,
-      "xdm:videoViewsP50": 12750,
-      "xdm:videoViewsP75": 10625,
-      "xdm:videoViewsP95": 8500,
-      "xdm:videoViewsP100": 6375,
-      "xdm:videoAvgWatchTime": 18.5,
-      "xdm:videoAvgWatchPercentage": 0.607,
-      "xdm:videoCompletionRate": 0.375,
-      "xdm:videoViewRate": 0.8,
-      "xdm:costPerVideoView": 0.0325,
-      "xdm:costPerCompletedView": 0.0867,
-      "xdm:videoEngagements": 1148,
-      "xdm:videoEngagementRate": 0.0675,
-      "xdm:videoPlays": 21250,
-      "xdm:videoStarts": 21250,
-      "xdm:videoReplays": 850,
-      "xdm:videoPauses": 2125,
-      "xdm:videoResumes": 1700,
-      "xdm:videoSkips": 4250,
-      "xdm:videoMutes": 1063,
-      "xdm:videoUnmutes": 425,
-      "xdm:videoFullscreenEnters": 638,
-      "xdm:videoFullscreenExits": 638
+      "xdm:videoPlays": {
+        "xdm:value": 21250
+      },
+      "xdm:videoCompletionRate": {
+        "xdm:value": 0.375
+      },
+      "xdm:videoReplays": {
+        "xdm:value": 850
+      },
+      "xdm:videoPauses": {
+        "xdm:value": 2125
+      },
+      "xdm:videoResumes": {
+        "xdm:value": 1700
+      },
+      "xdm:videoSkips": {
+        "xdm:value": 4250
+      },
+      "xdm:videoMutes": {
+        "xdm:value": 1063
+      },
+      "xdm:videoUnmutes": {
+        "xdm:value": 425
+      }
     },
     "xdm:conversionMetrics": {
-      "xdm:viewThroughConversions": 8,
-      "xdm:clickThroughConversions": 30,
-      "xdm:totalConversions": 38,
-      "xdm:conversionRate": 0.055,
-      "xdm:costPerConversion": 14.54,
-      "xdm:conversionValue": 1912.5,
-      "xdm:valuePerConversion": 50.33,
-      "xdm:purchases": 30,
-      "xdm:purchaseValue": 1525.0,
-      "xdm:addToCart": 77,
-      "xdm:initiateCheckout": 46,
-      "xdm:leads": 8,
-      "xdm:signups": 15,
-      "xdm:downloads": 23,
-      "xdm:costPerPurchase": 18.42,
-      "xdm:costPerLead": 69.06,
-      "xdm:costPerSignup": 36.83
+      "xdm:postViewConversions": {
+        "xdm:value": 8
+      },
+      "xdm:postClickConversions": {
+        "xdm:value": 30
+      },
+      "xdm:conversionRate": {
+        "xdm:value": 0.055
+      },
+      "xdm:costPerAction": {
+        "xdm:value": 14.54
+      },
+      "xdm:actionValue": 1912.5,
+      "xdm:conversionsByType": {
+        "xdm:purchases": {
+          "xdm:value": 30
+        },
+        "xdm:addToCart": {
+          "xdm:value": 77
+        },
+        "xdm:initiateCheckout": {
+          "xdm:value": 46
+        },
+        "xdm:leads": {
+          "xdm:value": 8
+        },
+        "xdm:downloads": {
+          "xdm:value": 23
+        }
+      },
+      "xdm:leads": {
+        "xdm:value": 8
+      },
+      "xdm:costPerLead": {
+        "xdm:value": 69.06
+      }
     },
     "xdm:costMetrics": {
-      "xdm:totalSpend": 552.5,
-      "xdm:averageCPC": 0.722,
-      "xdm:averageCPM": 26.0,
-      "xdm:averageCPA": 14.54,
-      "xdm:averageCPE": 0.481,
+      "xdm:averageCpc": {
+        "xdm:value": 0.722
+      },
+      "xdm:averageCpm": {
+        "xdm:value": 26.0
+      },
+      "xdm:averageCpa": {
+        "xdm:value": 14.54
+      },
+      "xdm:averageCpe": {
+        "xdm:value": 0.481
+      },
       "xdm:budgetUtilization": {
-        "xdm:budgetAllocated": 0,
-        "xdm:budgetSpent": 552.5,
-        "xdm:budgetRemaining": 0,
-        "xdm:budgetUtilization": 0,
-        "xdm:dailyBudget": 0
+        "xdm:budgetAllocated": {
+          "xdm:value": 0
+        },
+        "xdm:budgetSpent": {
+          "xdm:value": 552.5
+        },
+        "xdm:budgetRemaining": {
+          "xdm:value": 0
+        },
+        "xdm:budgetUtilization": {
+          "xdm:value": 0
+        },
+        "xdm:dailyBudget": {
+          "xdm:value": 0
+        }
       }
     },
     "xdm:attributionMetrics": {
       "xdm:attributionModel": "LAST_CLICK",
-      "xdm:attributionWindow": "7d_click_1d_view",
-      "xdm:assistedConversions": 11,
-      "xdm:lastClickConversions": 27,
-      "xdm:firstClickConversions": 15,
-      "xdm:linearConversions": 19,
-      "xdm:timeDecayConversions": 23,
-      "xdm:positionBasedConversions": 21
+      "xdm:clickAttributionWindow": "7_DAY",
+      "xdm:viewAttributionWindow": "1_DAY"
     },
     "xdm:qualityMetrics": {
       "xdm:qualityScore": 8.5,
-      "xdm:relevanceScore": 8.8,
+      "xdm:relevanceScore": {
+        "xdm:value": 8.8
+      },
       "xdm:engagementRateRanking": "above_average",
       "xdm:conversionRateRanking": "above_average",
       "xdm:qualityRanking": "above_average",

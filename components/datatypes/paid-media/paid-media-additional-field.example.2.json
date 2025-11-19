@@ -1,4 +1,6 @@
 {
   "xdm:fieldName": "custom_score",
-  "xdm:numberValue": 87.5
+  "xdm:numberValue": {
+    "xdm:value": 87.5
+  }
 }

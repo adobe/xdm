@@ -2,44 +2,28 @@
   "xdm:paidMedia": {
     "xdm:assetDetails": {
       "xdm:assetType": "lead_form",
-      "xdm:title": "Product Demo Request - Instant Form",
-      "xdm:description": "Lead generation form for product demo requests. Collects contact information and company details for sales follow-up.",
+      "xdm:assetSubType": "instant_form",
+      "title": "Product Demo Request - Instant Form",
+      "description": "Lead generation form for product demo requests. Collects contact information and company details for sales follow-up.",
+      "xdm:content": "",
       "xdm:mediaProperties": {
         "xdm:url": "",
-        "xdm:thumbnailUrl": "",
-        "xdm:previewUrl": "",
-        "xdm:mimeType": "application/json",
-        "xdm:fileSize": 0,
-        "xdm:width": 0,
-        "xdm:height": 0,
-        "xdm:aspectRatio": "",
-        "xdm:orientation": "",
-        "xdm:duration": 0,
-        "xdm:bitrate": 0,
-        "xdm:frameRate": 0,
-        "xdm:codec": "",
-        "xdm:colorSpace": "",
-        "xdm:hasAudio": false,
-        "xdm:audioCodec": "",
-        "xdm:audioChannels": 0,
-        "xdm:audioBitrate": 0
+        "xdm:permalinkURL": "",
+        "xdm:thumbnailURL": "",
+        "xdm:source": "",
+        "xdm:hash": ""
       },
       "xdm:fileProperties": {
-        "xdm:fileName": "product-demo-request-form.json",
-        "xdm:fileHash": "",
-        "xdm:uploadDate": "2025-10-25T11:00:00Z",
-        "xdm:lastModifiedDate": "2025-11-02T14:30:00Z",
-        "xdm:version": "2.3",
-        "xdm:source": "meta_lead_ads",
-        "xdm:uploadedBy": "user_marketing_ops"
+        "xdm:fileSize": 0,
+        "xdm:fileSizeFormatted": "0 B",
+        "xdm:mimeType": "application/json",
+        "xdm:fileExtension": "json",
+        "xdm:encoding": ""
       },
       "xdm:leadFormProperties": {
         "xdm:formID": "form_lead_789123456",
         "xdm:formName": "Product Demo Request Form",
         "xdm:formType": "instant_form",
-        "xdm:formVersion": "2.3",
-        "xdm:formStatus": "active",
-        "xdm:formLanguage": "en_US",
         "xdm:formFields": [
           {
             "xdm:fieldName": "full_name",
@@ -121,86 +105,14 @@
             ]
           }
         ],
-        "xdm:customQuestions": [
-          {
-            "xdm:questionText": "What is your primary business challenge?",
-            "xdm:questionType": "multiple_choice",
-            "xdm:required": false,
-            "xdm:options": [
-              "Scaling operations",
-              "Improving efficiency",
-              "Reducing costs",
-              "Increasing revenue",
-              "Other"
-            ]
-          }
-        ],
-        "xdm:privacyPolicy": {
-          "xdm:url": "https://www.acmecorp.com/privacy",
-          "xdm:text": "By submitting this form, you agree to our Privacy Policy and Terms of Service."
-        },
-        "xdm:customDisclaimer": "We respect your privacy. Your information will only be used to contact you about our products and services.",
-        "xdm:thankYouScreen": {
-          "xdm:headline": "Thank you for your interest!",
-          "xdm:description": "A member of our team will contact you within 24 hours to schedule your personalized demo.",
-          "xdm:ctaButton": {
-            "xdm:text": "Visit Our Website",
-            "xdm:url": "https://www.acmecorp.com"
-          }
-        },
-        "xdm:completionTracking": true,
-        "xdm:partialSubmissionTracking": false,
-        "xdm:fieldValidation": true,
-        "xdm:spamProtection": true,
-        "xdm:duplicateDetection": true
+        "xdm:privacyPolicyURL": "https://www.acmecorp.com/privacy",
+        "xdm:customDisclaimer": "We respect your privacy. Your information will only be used to contact you about our products and services."
       },
-      "xdm:creativeMetadata": {
-        "xdm:creativeID": "creative_form_789123456",
-        "xdm:creativeName": "Product Demo Request Form",
-        "xdm:creativeVersion": "v2.3",
-        "xdm:creativeStatus": "approved",
-        "xdm:creativeCategory": "lead_generation_form",
-        "xdm:creativeTheme": "b2b_lead_gen",
-        "xdm:creativeConcept": "Frictionless demo request",
-        "xdm:targetAudience": "b2b_decision_makers",
-        "xdm:brandGuidelines": "compliant",
-        "xdm:legalApproval": true,
-        "xdm:legalApprovalDate": "2025-10-25T10:00:00Z",
-        "xdm:copyrightOwner": "Acme Corporation",
-        "xdm:licenseType": "owned",
-        "xdm:rightsExpiration": "perpetual",
-        "xdm:creativeAgency": "Acme Marketing Ops",
-        "xdm:productionCompany": "",
-        "xdm:director": "",
-        "xdm:producer": "Mike Marketing"
-      },
-      "xdm:performanceHints": {
-        "xdm:recommendedPlacements": [
-          "facebook_feed",
-          "instagram_feed",
-          "messenger_inbox"
-        ],
-        "xdm:recommendedDevices": ["mobile", "desktop"],
-        "xdm:recommendedAudiences": [
-          "b2b_decision_makers",
-          "enterprise_buyers"
-        ],
-        "xdm:estimatedEngagementRate": 0.12,
-        "xdm:estimatedCompletionRate": 0.75,
-        "xdm:qualityScore": 8.0,
-        "xdm:relevanceScore": 9.0,
-        "xdm:creativeFatigueRisk": "low",
-        "xdm:seasonality": "year_round"
-      },
-      "xdm:accessibilityFeatures": {
-        "xdm:altText": "Lead generation form for requesting a product demo",
-        "xdm:closedCaptions": false,
-        "xdm:audioDescription": false,
-        "xdm:transcriptAvailable": false,
-        "xdm:transcriptUrl": "",
-        "xdm:signLanguage": false,
-        "xdm:highContrast": false,
-        "xdm:wcagCompliance": "AA"
+      "xdm:usageMetadata": {
+        "xdm:usageCount": 8,
+        "xdm:lastUsedDate": "2025-11-10T10:00:00Z",
+        "xdm:associatedCampaigns": ["campaign_b2b_lead_gen_2025"],
+        "xdm:associatedAds": ["ad_form_789123456"]
       },
       "xdm:additionalDetails": [
         {

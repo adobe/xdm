@@ -2,122 +2,16 @@
   "xdm:paidMedia": {
     "xdm:adDetails": {
       "xdm:adType": "carousel",
-      "xdm:adFormat": "carousel_ad",
       "xdm:reviewStatus": "approved",
+      "xdm:reviewStatusReasons": [],
       "xdm:deliveryStatus": "active",
       "xdm:isPinDeleted": false,
       "xdm:isRemovable": true,
-      "xdm:creativeDetails": {
-        "xdm:creativeID": "creative_car_789456123",
-        "xdm:creativeName": "Product Showcase - 5 Card Carousel",
-        "xdm:creativeType": "carousel",
-        "xdm:creativeFormat": "carousel_feed",
-        "xdm:creativeVersion": "v3.2",
-        "xdm:creativeTemplate": "carousel_product",
-        "xdm:dynamicCreative": false,
-        "xdm:personalized": true,
-        "xdm:localized": true,
-        "xdm:locale": "en_US",
-        "xdm:brandID": "brand_acme_123",
-        "xdm:campaignTheme": "product_showcase_2025"
-      },
-      "xdm:adReviewDetails": {
-        "xdm:reviewStatus": "approved",
-        "xdm:reviewDate": "2025-11-07T16:45:00Z",
-        "xdm:reviewerID": "meta_reviewer_321",
-        "xdm:reviewNotes": "All carousel cards approved - complies with commerce policies",
-        "xdm:policyViolations": [],
-        "xdm:appealStatus": "not_applicable",
-        "xdm:lastModifiedDate": "2025-11-07T15:30:00Z",
-        "xdm:autoApproved": false,
-        "xdm:requiresManualReview": true
-      },
-      "xdm:deliveryDetails": {
-        "xdm:deliveryStatus": "active",
-        "xdm:effectiveStatus": "active",
-        "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
-        "xdm:pacing": "accelerated",
-        "xdm:deliveryEstimate": "good",
-        "xdm:learningPhase": "completed",
-        "xdm:lastDeliveryCheck": "2025-11-10T09:00:00Z",
-        "xdm:estimatedDailyReach": 95000,
-        "xdm:saturationLevel": "medium"
-      },
+      "xdm:payingAdvertiserName": "Acme Corporation",
       "xdm:socialMediaProperties": {
-        "xdm:postID": "post_123456789_444555666",
-        "xdm:pageID": "page_acmecorp_official",
-        "xdm:instagramAccountID": "ig_acmecorp",
-        "xdm:allowComments": true,
-        "xdm:allowSharing": true,
-        "xdm:allowLikes": true,
-        "xdm:commentCount": 892,
-        "xdm:shareCount": 456,
-        "xdm:likeCount": 6789,
-        "xdm:reactionCount": 7234,
-        "xdm:saveCount": 1234,
-        "xdm:hideCount": 18,
-        "xdm:reportCount": 3,
-        "xdm:organicImpressions": 34000,
-        "xdm:organicReach": 26000,
-        "xdm:viralImpressions": 15000,
-        "xdm:viralReach": 11000
-      },
-      "xdm:callToAction": {
-        "xdm:type": "shop_now",
-        "xdm:text": "Shop Now",
-        "xdm:url": "https://shop.acmecorp.com/products?utm_source=facebook&utm_medium=carousel&utm_campaign=showcase2025",
-        "xdm:displayUrl": "shop.acmecorp.com/products",
-        "xdm:deepLink": "acmecorp://products/showcase",
-        "xdm:trackingTemplate": "https://track.acmecorp.com/click?ad={ad_id}&card={card_id}&placement={placement}",
-        "xdm:utmParameters": {
-          "xdm:source": "facebook",
-          "xdm:medium": "carousel",
-          "xdm:campaign": "showcase2025",
-          "xdm:content": "5_card_carousel",
-          "xdm:term": "product_showcase"
-        }
-      },
-      "xdm:linkProperties": {
-        "xdm:destinationURL": "https://shop.acmecorp.com/products",
-        "xdm:displayURL": "shop.acmecorp.com",
-        "xdm:urlTags": "utm_source=facebook&utm_medium=carousel&utm_campaign=showcase2025",
-        "xdm:trackingPixels": [
-          "https://track.acmecorp.com/impression?ad=car_789456123",
-          "https://analytics.acmecorp.com/pixel?type=view&id=showcase2025"
-        ],
-        "xdm:clickTrackers": [
-          "https://track.acmecorp.com/click?ad=car_789456123",
-          "https://analytics.acmecorp.com/pixel?type=click&id=showcase2025"
-        ],
-        "xdm:conversionTracking": true,
-        "xdm:conversionPixelID": "pixel_123456789"
-      },
-      "xdm:appProperties": {
-        "xdm:appID": "app_456789123",
-        "xdm:appName": "Acme Shopping",
-        "xdm:appPlatform": "ios",
-        "xdm:appStoreURL": "https://apps.apple.com/app/acme-shopping/id123456789",
-        "xdm:appDeepLink": "acmecorp://products/showcase",
-        "xdm:appEventTracking": true,
-        "xdm:appEventName": "view_content",
-        "xdm:sdkVersion": "9.2.1"
-      },
-      "xdm:leadGenProperties": {
-        "xdm:formID": "form_not_applicable",
-        "xdm:formType": "not_applicable",
-        "xdm:instantForm": false,
-        "xdm:privacyPolicyURL": "https://www.acmecorp.com/privacy",
-        "xdm:customDisclaimer": "By submitting, you agree to receive product updates from Acme Corp."
-      },
-      "xdm:interactionProperties": {
-        "xdm:allowInteraction": true,
-        "xdm:interactionType": "carousel_swipe",
-        "xdm:swipeUpEnabled": false,
-        "xdm:pollEnabled": false,
-        "xdm:quizEnabled": false,
-        "xdm:gamificationEnabled": false,
-        "xdm:arEnabled": false,
-        "xdm:threeDEnabled": false
+        "xdm:effectiveObjectStoryID": "post_123456789_444555666",
+        "xdm:isShareable": true,
+        "xdm:favoriteDisplayMode": "default"
       },
       "xdm:additionalDetails": [
         {

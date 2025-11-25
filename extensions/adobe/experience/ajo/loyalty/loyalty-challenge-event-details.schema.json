@@ -37,10 +37,8 @@
                   },
                   "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
                     "title": "Quantity",
-                    "type": "integer",
-                    "description": "The quantity of the item.",
-                    "minimum": -2147483648,
-                    "maximum": 2147483647
+                    "type": "number",
+                    "description": "The quantity of the item."
                   },
                   "https://ns.adobe.com/experience/ajo/loyalty/itemName": {
                     "title": "Item Name",

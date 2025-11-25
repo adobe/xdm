@@ -61,7 +61,7 @@
                   },
                   "https://ns.adobe.com/experience/ajo/loyalty/qtyMin": {
                     "title": "Minimum Quantity",
-                    "type": "integer",
+                    "type": "number",
                     "description": "Target quantity to achieve."
                   },
                   "https://ns.adobe.com/experience/ajo/loyalty/spendMin": {

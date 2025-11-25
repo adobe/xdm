@@ -4,32 +4,25 @@
       "loyalty": {
         "challenge": {
           "locationId": "store-123",
-          "transactionId": "txn-456789",          
+          "transactionId": "txn-456789",
+          "localTimezoneOffset": 420,
           "itemList": [
             {
               "unitPrice": 29.99,
               "quantity": 2,
               "itemName": "Coffee Beans",
-              "itemMap": {
-                "roastLevel": "medium",
-                "origin": "Colombia"
-              },
               "itemSet": [
-                "organic",
-                "fair-trade"
+                "sku-200-123",
+                "category-200"
               ]
             },
             {
               "unitPrice": 12.50,
               "quantity": 1,
               "itemName": "Travel Mug",
-              "itemMap": {
-                "color": "blue",
-                "size": "16oz"
-              },
               "itemSet": [
-                "reusable",
-                "insulated"
+                "sku-500-789",
+                "category-500"
               ]
             }
           ]

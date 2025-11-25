@@ -48,14 +48,6 @@
                     "description": "The name of the item.",
                     "minLength": 1
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/itemMap": {
-                    "title": "Item Map",
-                    "type": "object",
-                    "description": "Additional properties for the item as key-value pairs.",
-                    "additionalProperties": {
-                      "type": "string"
-                    }
-                  },
                   "https://ns.adobe.com/experience/ajo/loyalty/itemSet": {
                     "title": "Item Set",
                     "type": "array",
@@ -80,7 +72,15 @@
               "type": "string",
               "description": "The unique identifier for the loyalty transaction.",
               "minLength": 1
+            },
+            "https://ns.adobe.com/experience/ajo/loyalty/localTimezoneOffset": {
+              "title": "Local Timezone Offset",
+              "type": "integer",
+              "description": "The current, local time zone offset in minutes from UTC for the location of this event. This will include the current DST offset if applicable.",
+              "minimum": -2147483648,
+              "maximum": 2147483647
             }
+
           }
         }
       },

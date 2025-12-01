@@ -37,7 +37,15 @@
               "description": "List of tasks within the challenge.",
               "items": {
                 "type": "object",
+                "required": [
+                  "https://ns.adobe.com/experience/ajo/loyalty/name"
+                ],
                 "properties": {
+                  "https://ns.adobe.com/experience/ajo/loyalty/name": {
+                    "title": "Task Name",
+                    "type": "string",
+                    "description": "Name of the task to personalize."
+                  },
                   "https://ns.adobe.com/experience/ajo/loyalty/description": {
                     "title": "Task Description",
                     "type": "string",
@@ -47,6 +55,7 @@
                     "title": "Excluded Item Labels",
                     "type": "array",
                     "description": "List of product SKU/categories/labels excluded from qualifying for this task.",
+                    "uniqueItems": true,
                     "items": {
                       "type": "string"
                     }
@@ -55,6 +64,7 @@
                     "title": "Included Item Labels",
                     "type": "array",
                     "description": "List of product SKUs/categories/labels that can qualify for this task.",
+                    "uniqueItems": true,
                     "items": {
                       "type": "string"
                     }

@@ -8,6 +8,7 @@
           "reward": "100 points",
           "tasks": [
             {
+              "name": "breakfast_purchase_challenge",
               "description": "Purchase 3 breakfast items during morning hours for 2 consecutive days",
               "excludedItemLabels": [
                 "PROMO-ITEM-001",

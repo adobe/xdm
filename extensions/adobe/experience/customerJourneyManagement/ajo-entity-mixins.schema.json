@@ -239,6 +239,31 @@
             }
           }
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet": {
+          "title": "AJO Rule Set Entity",
+          "type": "array",
+          "description": "AJO Rule Set Entity Specific Fields",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:ruleSetID": {
+                "title": "Rule Set ID",
+                "type": "string",
+                "description": "ID for the rule set"
+              },
+              "xdm:ruleSetName": {
+                "title": "Rule Set Name",
+                "type": "string",
+                "description": "Name for the rule set"
+              },
+              "xdm:decisionPolicyID": {
+                "title": "Decision Policy ID",
+                "type": "string",
+                "description": "ID for the decision policy"
+              }
+            }
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
           "title": "AJO Journey Entity",
           "type": "object",

@@ -175,7 +175,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/creative"
+      "$ref": "#/definitions/paidMediaCreative"
     }
   ],
   "meta:status": "experimental"

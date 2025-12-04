@@ -11,7 +11,7 @@
   "type": "object",
   "description": "Data type representing creative assets and content for paid media ads",
   "definitions": {
-    "creative": {
+    "paidMediaCreative": {
       "properties": {
         "xdm:creativeID": {
           "type": "string",

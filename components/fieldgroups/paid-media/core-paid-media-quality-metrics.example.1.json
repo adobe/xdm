@@ -31,45 +31,7 @@
         "xdm:industryAverage": 7.5,
         "xdm:percentileRank": 78,
         "xdm:competitorAverage": 7.8
-      },
-      "xdm:additionalDetails": [
-        {
-          "xdm:fieldName": "meta_quality_ranking",
-          "xdm:stringValue": "above_average"
-        },
-        {
-          "xdm:fieldName": "meta_engagement_rate_ranking",
-          "xdm:stringValue": "above_average"
-        },
-        {
-          "xdm:fieldName": "meta_conversion_rate_ranking",
-          "xdm:stringValue": "above_average"
-        },
-        {
-          "xdm:fieldName": "meta_negative_feedback_rate",
-          "xdm:stringValue": "0.0005"
-        },
-        {
-          "xdm:fieldName": "meta_hide_rate",
-          "xdm:stringValue": "0.00046"
-        },
-        {
-          "xdm:fieldName": "meta_report_rate",
-          "xdm:stringValue": "0.00004"
-        },
-        {
-          "xdm:fieldName": "meta_positive_feedback_rate",
-          "xdm:stringValue": "0.247"
-        },
-        {
-          "xdm:fieldName": "meta_viewability_rate",
-          "xdm:stringValue": "0.85"
-        },
-        {
-          "xdm:fieldName": "meta_brand_safety_score",
-          "xdm:stringValue": "9.5"
-        }
-      ]
+      }
     }
   }
 }

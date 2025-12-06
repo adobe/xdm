@@ -25,19 +25,22 @@
               "description": "Detailed conversion tracking metrics",
               "properties": {
                 "xdm:postClickConversions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Post-Click Conversions",
-                  "description": "Conversions attributed to clicks"
+                  "description": "Conversions attributed to clicks",
+                  "minimum": 0
                 },
                 "xdm:postViewConversions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Post-View Conversions",
-                  "description": "Conversions attributed to views"
+                  "description": "Conversions attributed to views",
+                  "minimum": 0
                 },
                 "xdm:postEngagementConversions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Post-Engagement Conversions",
-                  "description": "Conversions attributed to engagements"
+                  "description": "Conversions attributed to engagements",
+                  "minimum": 0
                 },
                 "xdm:actionValue": {
                   "type": "number",
@@ -97,53 +100,65 @@
                   "description": "Breakdown of conversions by event type",
                   "properties": {
                     "xdm:purchases": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Purchases"
+                      "type": "number",
+                      "title": "Purchases",
+                      "minimum": 0
                     },
                     "xdm:addToCart": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Add to Cart"
+                      "type": "number",
+                      "title": "Add to Cart",
+                      "minimum": 0
                     },
                     "xdm:initiateCheckout": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Initiate Checkout"
+                      "type": "number",
+                      "title": "Initiate Checkout",
+                      "minimum": 0
                     },
                     "xdm:leads": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Leads"
+                      "type": "number",
+                      "title": "Leads",
+                      "minimum": 0
                     },
                     "xdm:registrations": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Registrations"
+                      "type": "number",
+                      "title": "Registrations",
+                      "minimum": 0
                     },
                     "xdm:downloads": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Downloads"
+                      "type": "number",
+                      "title": "Downloads",
+                      "minimum": 0
                     },
                     "xdm:subscriptions": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Subscriptions"
+                      "type": "number",
+                      "title": "Subscriptions",
+                      "minimum": 0
                     },
                     "xdm:customEvents": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Custom Events"
+                      "type": "number",
+                      "title": "Custom Events",
+                      "minimum": 0
                     }
                   }
                 },
                 "xdm:conversionRate": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Conversion Rate",
-                  "description": "Overall conversion rate"
+                  "description": "Overall conversion rate",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:costPerAction": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Cost Per Action",
-                  "description": "Average cost per conversion action"
+                  "description": "Average cost per conversion action",
+                  "minimum": 0
                 },
                 "xdm:conversionLag": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Conversion Lag",
-                  "description": "Average time from ad interaction to conversion (in hours)"
+                  "description": "Average time from ad interaction to conversion (in hours)",
+                  "minimum": 0
                 },
                 "xdm:conversionPath": {
                   "type": "object",
@@ -151,64 +166,77 @@
                   "description": "Metrics about the conversion path and touchpoints",
                   "properties": {
                     "xdm:averagePathLength": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Average Path Length"
+                      "type": "number",
+                      "title": "Average Path Length",
+                      "minimum": 0
                     },
                     "xdm:medianPathLength": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Median Path Length"
+                      "type": "number",
+                      "title": "Median Path Length",
+                      "minimum": 0
                     },
                     "xdm:singleTouchConversions": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Single Touch Conversions"
+                      "type": "number",
+                      "title": "Single Touch Conversions",
+                      "minimum": 0
                     },
                     "xdm:multiTouchConversions": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Multi Touch Conversions"
+                      "type": "number",
+                      "title": "Multi Touch Conversions",
+                      "minimum": 0
                     },
                     "xdm:averageTouchpoints": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Average Touchpoints"
+                      "type": "number",
+                      "title": "Average Touchpoints",
+                      "minimum": 0
                     },
                     "xdm:assistedConversions": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Assisted Conversions"
+                      "type": "number",
+                      "title": "Assisted Conversions",
+                      "minimum": 0
                     },
                     "xdm:directConversions": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Direct Conversions"
+                      "type": "number",
+                      "title": "Direct Conversions",
+                      "minimum": 0
                     }
                   }
                 },
                 "xdm:assistedConversions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Assisted Conversions",
-                  "description": "Conversions where this ad assisted but wasn't the last touch"
+                  "description": "Conversions where this ad assisted but wasn't the last touch",
+                  "minimum": 0
                 },
                 "xdm:directConversions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Direct Conversions",
-                  "description": "Conversions where this ad was the last touch"
+                  "description": "Conversions where this ad was the last touch",
+                  "minimum": 0
                 },
                 "xdm:newCustomerConversions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "New Customer Conversions",
-                  "description": "Conversions from new customers"
+                  "description": "Conversions from new customers",
+                  "minimum": 0
                 },
                 "xdm:returningCustomerConversions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Returning Customer Conversions",
-                  "description": "Conversions from returning customers"
+                  "description": "Conversions from returning customers",
+                  "minimum": 0
                 },
                 "xdm:averageOrderValue": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Average Order Value",
-                  "description": "Average value per conversion"
+                  "description": "Average value per conversion",
+                  "minimum": 0
                 },
                 "xdm:totalOrderValue": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Total Order Value",
-                  "description": "Total value of all conversions"
+                  "description": "Total value of all conversions",
+                  "minimum": 0
                 },
                 "xdm:conversionQuality": {
                   "type": "object",
@@ -216,51 +244,64 @@
                   "description": "Quality metrics for conversions",
                   "properties": {
                     "xdm:qualityScore": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "type": "number",
                       "title": "Quality Score",
-                      "description": "Overall conversion quality score"
+                      "description": "Overall conversion quality score",
+                      "minimum": 0,
+                      "maximum": 10
                     },
                     "xdm:fraudRate": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "type": "number",
                       "title": "Fraud Rate",
-                      "description": "Percentage of conversions flagged as fraudulent"
+                      "description": "Percentage of conversions flagged as fraudulent",
+                      "minimum": 0,
+                      "maximum": 1
                     },
                     "xdm:validationRate": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "type": "number",
                       "title": "Validation Rate",
-                      "description": "Percentage of conversions that passed validation"
+                      "description": "Percentage of conversions that passed validation",
+                      "minimum": 0,
+                      "maximum": 1
                     }
                   }
                 },
                 "xdm:leads": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Leads",
-                  "description": "Total number of leads generated"
+                  "description": "Total number of leads generated",
+                  "minimum": 0
                 },
                 "xdm:qualifiedLeads": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Qualified Leads",
-                  "description": "Number of qualified/validated leads"
+                  "description": "Number of qualified/validated leads",
+                  "minimum": 0
                 },
                 "xdm:costPerLead": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Cost Per Lead",
-                  "description": "Average cost per lead"
+                  "description": "Average cost per lead",
+                  "minimum": 0
                 },
                 "xdm:leadFormOpens": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Lead Form Opens",
-                  "description": "Number of times lead form was opened"
+                  "description": "Number of times lead form was opened",
+                  "minimum": 0
                 },
                 "xdm:leadFormSubmissions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Lead Form Submissions",
-                  "description": "Number of lead form submissions"
+                  "description": "Number of lead form submissions",
+                  "minimum": 0
                 },
                 "xdm:leadFormCompletionRate": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Lead Form Completion Rate",
-                  "description": "Percentage of opened forms that were submitted"
+                  "description": "Percentage of opened forms that were submitted",
+                  "minimum": 0,
+                  "maximum": 1
                 }
               }
             }

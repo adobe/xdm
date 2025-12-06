@@ -61,39 +61,11 @@
         },
         {
           "xdm:fieldName": "meta_text_overlay_percentage",
-          "xdm:numberValue": {
-            "xdm:value": 15
-          }
+          "xdm:stringValue": "15"
         },
         {
           "xdm:fieldName": "meta_image_quality_score",
-          "xdm:numberValue": {
-            "xdm:value": 9.0
-          }
-        },
-        {
-          "xdm:fieldName": "meta_image_file_size_bytes",
-          "xdm:numberValue": {
-            "xdm:value": 2456789
-          }
-        },
-        {
-          "xdm:fieldName": "meta_image_aspect_ratio",
-          "xdm:numberValue": {
-            "xdm:value": 1.91
-          }
-        },
-        {
-          "xdm:fieldName": "meta_image_brightness_score",
-          "xdm:numberValue": {
-            "xdm:value": 0.72
-          }
-        },
-        {
-          "xdm:fieldName": "meta_image_contrast_score",
-          "xdm:numberValue": {
-            "xdm:value": 0.68
-          }
+          "xdm:stringValue": "9.0"
         }
       ]
     }

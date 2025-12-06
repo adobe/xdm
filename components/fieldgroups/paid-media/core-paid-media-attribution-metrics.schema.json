@@ -126,42 +126,53 @@
                       "title": "Enabled"
                     },
                     "xdm:crossDeviceConversions": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Cross Device Conversions"
+                      "type": "number",
+                      "title": "Cross Device Conversions",
+                      "minimum": 0
                     },
                     "xdm:crossDeviceConversionRate": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Cross Device Conversion Rate"
+                      "type": "number",
+                      "title": "Cross Device Conversion Rate",
+                      "minimum": 0,
+                      "maximum": 1
                     },
                     "xdm:deviceSwitchRate": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Device Switch Rate"
+                      "type": "number",
+                      "title": "Device Switch Rate",
+                      "minimum": 0,
+                      "maximum": 1
                     },
                     "xdm:averageDevicesPerPath": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
-                      "title": "Average Devices Per Path"
+                      "type": "number",
+                      "title": "Average Devices Per Path",
+                      "minimum": 0
                     },
                     "xdm:devicePathBreakdown": {
                       "type": "object",
                       "title": "Device Path Breakdown",
                       "properties": {
                         "xdm:mobileToDesktop": {
-                          "$ref": "https://ns.adobe.com/xdm/data/measure"
+                          "type": "number",
+                          "minimum": 0
                         },
                         "xdm:desktopToMobile": {
-                          "$ref": "https://ns.adobe.com/xdm/data/measure"
+                          "type": "number",
+                          "minimum": 0
                         },
                         "xdm:mobileToMobileApp": {
-                          "$ref": "https://ns.adobe.com/xdm/data/measure"
+                          "type": "number",
+                          "minimum": 0
                         }
                       }
                     }
                   }
                 },
                 "xdm:attributionWeight": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Attribution Weight",
-                  "description": "Weight assigned to this touchpoint in attribution"
+                  "description": "Weight assigned to this touchpoint in attribution",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:touchpointPosition": {
                   "type": "string",
@@ -182,44 +193,54 @@
                   "minimum": 1
                 },
                 "xdm:totalTouchpoints": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Total Touchpoints",
-                  "description": "Total number of touchpoints in the conversion path"
+                  "description": "Total number of touchpoints in the conversion path",
+                  "minimum": 1
                 },
                 "xdm:pathLength": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Path Length",
-                  "description": "Length of the conversion path in days"
+                  "description": "Length of the conversion path in days",
+                  "minimum": 0
                 },
                 "xdm:timeToConversion": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Time to Conversion",
-                  "description": "Time from this touchpoint to conversion in hours"
+                  "description": "Time from this touchpoint to conversion in hours",
+                  "minimum": 0
                 },
                 "xdm:attributionConfidence": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Attribution Confidence",
-                  "description": "Confidence score for the attribution"
+                  "description": "Confidence score for the attribution",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:incrementalImpact": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Incremental Impact",
-                  "description": "Incremental impact of this touchpoint on conversion"
+                  "description": "Incremental impact of this touchpoint on conversion",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:baselineConversions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Baseline Conversions",
-                  "description": "Expected conversions without this touchpoint"
+                  "description": "Expected conversions without this touchpoint",
+                  "minimum": 0
                 },
                 "xdm:incrementalConversions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Incremental Conversions",
-                  "description": "Additional conversions attributed to this touchpoint"
+                  "description": "Additional conversions attributed to this touchpoint",
+                  "minimum": 0
                 },
                 "xdm:liftPercentage": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Lift Percentage",
-                  "description": "Percentage lift in conversions due to this touchpoint"
+                  "description": "Percentage lift in conversions due to this touchpoint",
+                  "minimum": 0
                 },
                 "xdm:attributionMethodology": {
                   "type": "object",
@@ -242,14 +263,17 @@
                       "description": "Period used to train the attribution model"
                     },
                     "xdm:dataQuality": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "type": "number",
                       "title": "Data Quality",
-                      "description": "Quality score of data used for attribution"
+                      "description": "Quality score of data used for attribution",
+                      "minimum": 0,
+                      "maximum": 1
                     },
                     "xdm:sampleSize": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "type": "integer",
                       "title": "Sample Size",
-                      "description": "Sample size used for attribution modeling"
+                      "description": "Sample size used for attribution modeling",
+                      "minimum": 0
                     }
                   }
                 },
@@ -259,9 +283,11 @@
                   "description": "Attribution across different marketing channels",
                   "properties": {
                     "xdm:channelContribution": {
-                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "type": "number",
                       "title": "Channel Contribution",
-                      "description": "This channel's contribution to the conversion"
+                      "description": "This channel's contribution to the conversion",
+                      "minimum": 0,
+                      "maximum": 1
                     },
                     "xdm:channelSequence": {
                       "type": "array",
@@ -277,7 +303,7 @@
                             "type": "integer"
                           },
                           "xdm:weight": {
-                            "$ref": "https://ns.adobe.com/xdm/data/measure"
+                            "type": "number"
                           }
                         }
                       }

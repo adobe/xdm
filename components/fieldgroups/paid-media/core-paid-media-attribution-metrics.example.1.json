@@ -17,78 +17,46 @@
           "xdm:mobileToMobileApp": 55
         }
       },
-      "xdm:attributionWeight": {
-        "xdm:value": 0.85
-      },
+      "xdm:attributionWeight": 0.85,
       "xdm:touchpointPosition": "middle",
       "xdm:touchpointSequence": 3,
-      "xdm:totalTouchpoints": {
-        "xdm:value": 4
-      },
-      "xdm:pathLength": {
-        "xdm:value": 8.3
-      },
-      "xdm:timeToConversion": {
-        "xdm:value": 199.2
-      },
-      "xdm:attributionConfidence": {
-        "xdm:value": 0.92
-      },
-      "xdm:incrementalImpact": {
-        "xdm:value": 0.7
-      },
-      "xdm:baselineConversions": {
-        "xdm:value": 375
-      },
-      "xdm:incrementalConversions": {
-        "xdm:value": 875
-      },
-      "xdm:liftPercentage": {
-        "xdm:value": 2.33
-      },
+      "xdm:totalTouchpoints": 4,
+      "xdm:pathLength": 8,
+      "xdm:timeToConversion": 199.2,
+      "xdm:attributionConfidence": 0.92,
+      "xdm:incrementalImpact": 0.7,
+      "xdm:baselineConversions": 375,
+      "xdm:incrementalConversions": 875,
+      "xdm:liftPercentage": 2.33,
       "xdm:attributionMethodology": {
         "xdm:algorithmType": "data_driven",
         "xdm:modelVersion": "v3.2",
         "xdm:trainingPeriod": "90_days",
-        "xdm:dataQuality": {
-          "xdm:value": 0.95
-        },
-        "xdm:sampleSize": {
-          "xdm:value": 100000
-        }
+        "xdm:dataQuality": 0.95,
+        "xdm:sampleSize": 100000
       },
       "xdm:crossChannelAttribution": {
-        "xdm:channelContribution": {
-          "xdm:value": 0.5
-        },
+        "xdm:channelContribution": 0.5,
         "xdm:channelSequence": [
           {
             "xdm:channel": "paid_social",
             "xdm:position": 1,
-            "xdm:weight": {
-              "xdm:value": 0.28
-            }
+            "xdm:weight": 0.28
           },
           {
             "xdm:channel": "paid_search",
             "xdm:position": 2,
-            "xdm:weight": {
-              "xdm:value": 0.22
-            }
+            "xdm:weight": 0.22
           },
           {
             "xdm:channel": "email",
             "xdm:position": 3,
-            "xdm:weight": {
-              "xdm:value": 0.15
-            }
+            "xdm:weight": 0.15
           },
           {
             "xdm:channel": "paid_social",
             "xdm:position": 4,
-            "xdm:weight": {
-              "xdm:value": 0.35
-            }
+            "xdm:weight": 0.35
           }
         ],
         "xdm:dominantChannel": "paid_social"

@@ -25,179 +25,224 @@
               "description": "Metrics specific to video ads",
               "properties": {
                 "xdm:videoPlays": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Plays",
-                  "description": "Number of video plays"
+                  "description": "Number of video plays",
+                  "minimum": 0
                 },
                 "xdm:video3SecViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "3-Second Video Views",
-                  "description": "Number of 3-second video views"
+                  "description": "Number of 3-second video views",
+                  "minimum": 0
                 },
                 "xdm:video2SecViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "2-Second Video Views",
-                  "description": "Number of times video was viewed for at least 2 seconds"
+                  "description": "Number of times video was viewed for at least 2 seconds",
+                  "minimum": 0
                 },
                 "xdm:video6SecViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "6-Second Video Views",
-                  "description": "Number of times video was viewed for at least 6 seconds"
+                  "description": "Number of times video was viewed for at least 6 seconds",
+                  "minimum": 0
                 },
                 "xdm:video10SecViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "10-Second Video Views",
-                  "description": "Number of times video was viewed for at least 10 seconds"
+                  "description": "Number of times video was viewed for at least 10 seconds",
+                  "minimum": 0
                 },
                 "xdm:videoViewRate2Sec": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "2-Second Video View Rate",
-                  "description": "Percentage of videos viewed for at least 2 seconds"
+                  "description": "Percentage of videos viewed for at least 2 seconds",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:videoViewRate6Sec": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "6-Second Video View Rate",
-                  "description": "Percentage of videos viewed for at least 6 seconds"
+                  "description": "Percentage of videos viewed for at least 6 seconds",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:video15SecViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "15-Second Video Views",
-                  "description": "Number of 15-second video views"
+                  "description": "Number of 15-second video views",
+                  "minimum": 0
                 },
                 "xdm:video30SecViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "30-Second Video Views",
-                  "description": "Number of 30-second video views"
+                  "description": "Number of 30-second video views",
+                  "minimum": 0
                 },
                 "xdm:videoQuartile1": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video 25% Completion",
-                  "description": "Number of videos watched to 25%"
+                  "description": "Number of videos watched to 25%",
+                  "minimum": 0
                 },
                 "xdm:videoQuartile2": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video 50% Completion",
-                  "description": "Number of videos watched to 50%"
+                  "description": "Number of videos watched to 50%",
+                  "minimum": 0
                 },
                 "xdm:videoQuartile3": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video 75% Completion",
-                  "description": "Number of videos watched to 75%"
+                  "description": "Number of videos watched to 75%",
+                  "minimum": 0
                 },
                 "xdm:videoCompletions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Completions",
-                  "description": "Number of videos watched to completion"
+                  "description": "Number of videos watched to completion",
+                  "minimum": 0
                 },
                 "xdm:videoCompletionRate": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Video Completion Rate",
-                  "description": "Percentage of videos watched to completion"
+                  "description": "Percentage of videos watched to completion",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:videoViewRate25Percent": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "25% Video View Rate",
-                  "description": "Percentage of videos viewed to 25% completion"
+                  "description": "Percentage of videos viewed to 25% completion",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:videoViewRate50Percent": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "50% Video View Rate",
-                  "description": "Percentage of videos viewed to 50% completion"
+                  "description": "Percentage of videos viewed to 50% completion",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:videoViewRate75Percent": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "75% Video View Rate",
-                  "description": "Percentage of videos viewed to 75% completion"
+                  "description": "Percentage of videos viewed to 75% completion",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:videoViewRate100Percent": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "100% Video View Rate",
-                  "description": "Percentage of videos viewed to 100% completion"
+                  "description": "Percentage of videos viewed to 100% completion",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:averageVideoWatchTime": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Average Video Watch Time",
-                  "description": "Average time spent watching videos in seconds"
+                  "description": "Average time spent watching videos in seconds",
+                  "minimum": 0
                 },
                 "xdm:totalVideoWatchTime": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Total Video Watch Time",
-                  "description": "Total time spent watching videos in seconds"
+                  "description": "Total time spent watching videos in seconds",
+                  "minimum": 0
                 },
                 "xdm:videoMrcViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video MRC Views",
-                  "description": "Video views meeting MRC standards"
+                  "description": "Video views meeting MRC standards",
+                  "minimum": 0
                 },
                 "xdm:videoThroughplayViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Throughplay Views",
-                  "description": "Number of throughplay video views"
+                  "description": "Number of throughplay video views",
+                  "minimum": 0
                 },
                 "xdm:videoSkips": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Skips",
-                  "description": "Number of video skips"
+                  "description": "Number of video skips",
+                  "minimum": 0
                 },
                 "xdm:videoSkipRate": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Video Skip Rate",
-                  "description": "Percentage of videos that were skipped"
+                  "description": "Percentage of videos that were skipped",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:videoReplays": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Replays",
-                  "description": "Number of video replays"
+                  "description": "Number of video replays",
+                  "minimum": 0
                 },
                 "xdm:videoPauses": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Pauses",
-                  "description": "Number of video pauses"
+                  "description": "Number of video pauses",
+                  "minimum": 0
                 },
                 "xdm:videoResumes": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Resumes",
-                  "description": "Number of video resumes after pause"
+                  "description": "Number of video resumes after pause",
+                  "minimum": 0
                 },
                 "xdm:videoFullscreenViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Fullscreen Views",
-                  "description": "Number of fullscreen video views"
+                  "description": "Number of fullscreen video views",
+                  "minimum": 0
                 },
                 "xdm:videoMutes": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Mutes",
-                  "description": "Number of video mutes"
+                  "description": "Number of video mutes",
+                  "minimum": 0
                 },
                 "xdm:videoUnmutes": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Unmutes",
-                  "description": "Number of video unmutes"
+                  "description": "Number of video unmutes",
+                  "minimum": 0
                 },
                 "xdm:videoVolumeChanges": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Volume Changes",
-                  "description": "Number of video volume changes"
+                  "description": "Number of video volume changes",
+                  "minimum": 0
                 },
                 "xdm:videoClickToPlays": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Click to Plays",
-                  "description": "Number of click-to-play actions"
+                  "description": "Number of click-to-play actions",
+                  "minimum": 0
                 },
                 "xdm:videoAutoPlays": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Video Auto Plays",
-                  "description": "Number of auto-play video starts"
+                  "description": "Number of auto-play video starts",
+                  "minimum": 0
                 },
                 "xdm:videoViewabilityRate": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Video Viewability Rate",
-                  "description": "Percentage of video impressions that were viewable"
+                  "description": "Percentage of video impressions that were viewable",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:videoAudibilityRate": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Video Audibility Rate",
-                  "description": "Percentage of video views with audible sound"
+                  "description": "Percentage of video views with audible sound",
+                  "minimum": 0,
+                  "maximum": 1
                 }
               }
             }

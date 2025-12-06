@@ -25,189 +25,227 @@
               "description": "Additional metrics beyond core metrics",
               "properties": {
                 "xdm:viewableImpressions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Viewable Impressions",
-                  "description": "Number of viewable impressions"
+                  "description": "Number of viewable impressions",
+                  "minimum": 0
                 },
                 "xdm:viewabilityRate": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Viewability Rate",
-                  "description": "Percentage of impressions that were viewable"
+                  "description": "Percentage of impressions that were viewable",
+                  "minimum": 0,
+                  "maximum": 1
                 },
                 "xdm:uniqueClicks": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Unique Clicks",
-                  "description": "Number of unique users who clicked"
+                  "description": "Number of unique users who clicked",
+                  "minimum": 0
                 },
                 "xdm:linkClicks": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Link Clicks",
-                  "description": "Number of clicks on links"
+                  "description": "Number of clicks on links",
+                  "minimum": 0
                 },
                 "xdm:outboundClicks": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Outbound Clicks",
-                  "description": "Number of clicks leading to external sites"
+                  "description": "Number of clicks leading to external sites",
+                  "minimum": 0
                 },
                 "xdm:saves": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Saves",
-                  "description": "Number of saves/bookmarks"
+                  "description": "Number of saves/bookmarks",
+                  "minimum": 0
                 },
                 "xdm:shares": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Shares",
-                  "description": "Number of shares"
+                  "description": "Number of shares",
+                  "minimum": 0
                 },
                 "xdm:likes": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Likes",
-                  "description": "Number of likes/reactions"
+                  "description": "Number of likes/reactions",
+                  "minimum": 0
                 },
                 "xdm:comments": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Comments",
-                  "description": "Number of comments"
+                  "description": "Number of comments",
+                  "minimum": 0
                 },
                 "xdm:pageEngagement": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Page Engagement",
-                  "description": "Page engagement actions"
+                  "description": "Page engagement actions",
+                  "minimum": 0
                 },
                 "xdm:pageLikes": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Page Likes",
-                  "description": "Page likes"
+                  "description": "Page likes",
+                  "minimum": 0
                 },
                 "xdm:postEngagement": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Post Engagement",
-                  "description": "Post engagement actions"
+                  "description": "Post engagement actions",
+                  "minimum": 0
                 },
                 "xdm:postComments": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Post Comments",
-                  "description": "Comments on posts"
+                  "description": "Comments on posts",
+                  "minimum": 0
                 },
                 "xdm:postReactions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Post Reactions",
-                  "description": "Reactions on posts"
+                  "description": "Reactions on posts",
+                  "minimum": 0
                 },
                 "xdm:postShares": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Post Shares",
-                  "description": "Shares of posts"
+                  "description": "Shares of posts",
+                  "minimum": 0
                 },
                 "xdm:postSaves": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Post Saves",
-                  "description": "Saves of posts"
+                  "description": "Saves of posts",
+                  "minimum": 0
                 },
                 "xdm:follows": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Follows",
-                  "description": "Number of new followers gained"
+                  "description": "Number of new followers gained",
+                  "minimum": 0
                 },
                 "xdm:profileVisits": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Profile Visits",
-                  "description": "Number of profile visits generated"
+                  "description": "Number of profile visits generated",
+                  "minimum": 0
                 },
                 "xdm:websiteVisits": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Website Visits",
-                  "description": "Number of website visits generated"
+                  "description": "Number of website visits generated",
+                  "minimum": 0
                 },
                 "xdm:averageDwellTime": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "number",
                   "title": "Average Dwell Time",
-                  "description": "Average dwell time (seconds) (alias for qualityMetrics.dwellTime to ease migration)"
+                  "description": "Average dwell time (seconds) (alias for qualityMetrics.dwellTime to ease migration)",
+                  "minimum": 0
                 },
                 "xdm:appInstalls": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "App Installs",
-                  "description": "Number of app installations"
+                  "description": "Number of app installations",
+                  "minimum": 0
                 },
                 "xdm:appOpens": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "App Opens",
-                  "description": "Number of app opens"
+                  "description": "Number of app opens",
+                  "minimum": 0
                 },
                 "xdm:leadSubmissions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Lead Submissions",
-                  "description": "Number of lead form submissions"
+                  "description": "Number of lead form submissions",
+                  "minimum": 0
                 },
                 "xdm:signups": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Signups",
-                  "description": "Number of user signups"
+                  "description": "Number of user signups",
+                  "minimum": 0
                 },
                 "xdm:downloads": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Downloads",
-                  "description": "Number of downloads"
+                  "description": "Number of downloads",
+                  "minimum": 0
                 },
                 "xdm:subscriptions": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Subscriptions",
-                  "description": "Number of subscriptions"
+                  "description": "Number of subscriptions",
+                  "minimum": 0
                 },
                 "xdm:checkouts": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Checkouts",
-                  "description": "Number of checkout initiations"
+                  "description": "Number of checkout initiations",
+                  "minimum": 0
                 },
                 "xdm:addToCarts": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Add to Carts",
-                  "description": "Number of add to cart actions"
+                  "description": "Number of add to cart actions",
+                  "minimum": 0
                 },
                 "xdm:wishlistAdds": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Wishlist Adds",
-                  "description": "Number of wishlist additions"
+                  "description": "Number of wishlist additions",
+                  "minimum": 0
                 },
                 "xdm:productViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Product Views",
-                  "description": "Number of product page views"
+                  "description": "Number of product page views",
+                  "minimum": 0
                 },
                 "xdm:photoViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Photo Views",
-                  "description": "Number of photo views"
+                  "description": "Number of photo views",
+                  "minimum": 0
                 },
                 "xdm:catalogViews": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Catalog Views",
-                  "description": "Number of catalog views"
+                  "description": "Number of catalog views",
+                  "minimum": 0
                 },
                 "xdm:storeVisits": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Store Visits",
-                  "description": "Number of physical store visits"
+                  "description": "Number of physical store visits",
+                  "minimum": 0
                 },
                 "xdm:callsGenerated": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Calls Generated",
-                  "description": "Number of phone calls generated"
+                  "description": "Number of phone calls generated",
+                  "minimum": 0
                 },
                 "xdm:directionsRequested": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Directions Requested",
-                  "description": "Number of direction requests"
+                  "description": "Number of direction requests",
+                  "minimum": 0
                 },
                 "xdm:eventResponses": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Event Responses",
-                  "description": "Number of event responses"
+                  "description": "Number of event responses",
+                  "minimum": 0
                 },
                 "xdm:messagesSent": {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "type": "integer",
                   "title": "Messages Sent",
-                  "description": "Number of messages sent"
+                  "description": "Number of messages sent",
+                  "minimum": 0
                 }
               }
             }

@@ -45,42 +45,6 @@
         {
           "xdm:fieldName": "meta_bid_strategy",
           "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
-        },
-        {
-          "xdm:fieldName": "meta_quality_score",
-          "xdm:numberValue": {
-            "xdm:value": 8.5
-          }
-        },
-        {
-          "xdm:fieldName": "meta_relevance_score",
-          "xdm:numberValue": {
-            "xdm:value": 7.8
-          }
-        },
-        {
-          "xdm:fieldName": "meta_engagement_rate_ranking",
-          "xdm:numberValue": {
-            "xdm:value": 0.85
-          }
-        },
-        {
-          "xdm:fieldName": "meta_conversion_rate_ranking",
-          "xdm:numberValue": {
-            "xdm:value": 0.72
-          }
-        },
-        {
-          "xdm:fieldName": "meta_frequency",
-          "xdm:numberValue": {
-            "xdm:value": 2.34
-          }
-        },
-        {
-          "xdm:fieldName": "meta_unique_inline_link_click_ctr",
-          "xdm:numberValue": {
-            "xdm:value": 3.45
-          }
         }
       ]
     }

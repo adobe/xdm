@@ -246,12 +246,12 @@
           "items": {
             "type": "object",
             "properties": {
-              "xdm:ruleSetID": {
+              "xdm:id": {
                 "title": "Rule Set ID",
                 "type": "string",
                 "description": "ID for the rule set"
               },
-              "xdm:ruleSetName": {
+              "xdm:name": {
                 "title": "Rule Set Name",
                 "type": "string",
                 "description": "Name for the rule set"

@@ -14,32 +14,32 @@
   "definitions": {
     "taskCompletion": {
       "properties": {
-        "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
+        "xdm:quantity": {
           "title": "Quantity",
           "type": "number",
           "description": "Total quantity accumulated for this task completion."        },
-        "https://ns.adobe.com/experience/ajo/loyalty/spend": {
+        "xdm:spend": {
           "title": "Spend",
           "type": "number",
           "description": "Total spend accumulated for this task completion."        },
-        "https://ns.adobe.com/experience/ajo/loyalty/days": {
+        "xdm:days": {
           "title": "days",
           "type": "integer",
           "description": "Number of qualified days accumulated for this task completion."        },
-        "https://ns.adobe.com/experience/ajo/loyalty/qualifiedEvents": {
+        "xdm:qualifiedEvents": {
           "title": "Qualified Events",
           "type": "array",
           "description": "List of events that provided progress toward task completion.",
           "items": {
             "type": "object",
             "properties": {
-              "https://ns.adobe.com/experience/ajo/loyalty/timestamp": {
+              "xdm:timestamp": {
                 "title": "Timestamp",
                 "type": "string",
                 "format": "date-time",
                 "description": "Timestamp of the qualified event."
               },
-              "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
+              "xdm:transactionId": {
                 "title": "Transaction ID",
                 "type": "string",
                 "description": "Transaction ID associated with this qualified event.",

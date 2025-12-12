@@ -1,0 +1,69 @@
+{
+  "_experience": {
+    "ajo": {
+      "loyalty": {
+        "state": "incomplete",
+        "name": "qualifying purchase 4 times",
+        "description": "Visit 4 days in a row and make a qualifying purchase each time and receive 60 Bonus Stars",
+        "startDate": "2025-08-01T00:00:00.000+00:00",
+        "endDate": "2025-12-31T23:59:59.000+00:00",
+        "variables": {
+          "include": {
+            "valuesSet": [
+              "*"
+            ]
+          },
+          "exclude": {
+            "valuesSet": [
+              "NYT"
+            ]
+          },
+          "singleTrans": false,
+          "multiDay": {
+            "contiguous": true,
+            "days": 3
+          },
+          "spendMin": 0.0,
+          "qtyMin": 1.0,
+          "maxTrans": 0
+        },
+        "currentProgress": {
+          "quantity": 0,
+          "spend": 0.0,
+          "visits": 0,
+          "qualifiedEvents": [
+            {
+              "timestamp": "2025-10-01T00:00:00.000+00:00",
+              "transactionId": "txn-20251001-001"
+            },
+            {
+              "timestamp": "2025-10-02T00:00:00.000+00:00",
+              "transactionId": "txn-20251002-001"
+            }
+          ]
+        },
+        "taskCompletions": [
+          {
+            "quantity": 3,
+            "spend": 40.0,
+            "visits": 3,
+            "qualifiedEvents": [
+              {
+                "timestamp": "2025-09-01T00:00:00.000+00:00",
+                "transactionId": "txn-20250901-001"
+              },
+              {
+                "timestamp": "2025-09-02T00:00:00.000+00:00",
+                "transactionId": "txn-20250902-001"
+              },
+              {
+                "timestamp": "2025-09-03T00:00:00.000+00:00",
+                "transactionId": "txn-20250903-001"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

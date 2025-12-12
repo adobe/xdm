@@ -16,7 +16,7 @@
   ],
   "description": "Captures the state and progress of loyalty challenges for a customer, including tasks, dependencies, and completion tracking.",
   "definitions": {
-    "customFields": {
+    "loyaltyChallengeStateChange": {
       "properties": {
         "https://ns.adobe.com/experience/ajo/loyalty": {
           "type": "object",

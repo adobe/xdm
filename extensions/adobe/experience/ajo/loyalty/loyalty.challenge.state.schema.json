@@ -16,70 +16,70 @@
   ],
   "description": "Captures the state and progress of loyalty challenges for a customer, including tasks, dependencies, and completion tracking.",
   "definitions": {
-    "customFields": {
+    "loyaltyChallengeStateChange": {
       "properties": {
         "https://ns.adobe.com/experience/ajo/loyalty": {
           "type": "object",
           "properties": {
-            "challenge": {
+            "xdm:challenge": {
               "type": "object",
               "title": "Challenge",
               "description": "Loyalty challenge details and state",
               "properties": {
-                "id": {
+                "xdm:id": {
                   "title": "Challenge ID",
                   "type": "string",
                   "description": "Unique identifier for the loyalty challenge.",
                   "minLength": 1
                 },
-                "name": {
+                "xdm:name": {
                   "title": "Challenge Name",
                   "type": "string",
                   "description": "Human-readable name of the loyalty challenge.",
                   "minLength": 1
                 },
-                "description": {
+                "xdm:description": {
                   "title": "Description",
                   "type": "string",
                   "description": "Description of the challenge.",
                   "minLength": 1
                 },
-                "state": {
+                "xdm:state": {
                   "title": "State",
                   "type": "string",
                   "description": "Current state of the challenge.",
                   "minLength": 1
                 },
-                "startDate": {
+                "xdm:startDate": {
                   "title": "Start Date",
                   "type": "string",
                   "format": "date-time",
                   "description": "Date and time when the challenge started or became available."
                 },
-                "endDate": {
+                "xdm:endDate": {
                   "title": "End Date",
                   "type": "string",
                   "format": "date-time",
                   "description": "Date and time when the challenge expires or ended."
                 },
-                "completionDate": {
+                "xdm:completionDate": {
                   "title": "Completion Date",
                   "type": "string",
                   "format": "date-time",
                   "description": "Date and time when the challenge was completed."
                 },
-                "signupDate": {
+                "xdm:signupDate": {
                   "title": "Signup Date",
                   "type": "string",
                   "format": "date-time",
                   "description": "Date and time when the customer signed up for the challenge."
                 },
-                "optedIn": {
+                "xdm:optedIn": {
                   "title": "Opted In",
                   "type": "boolean",
                   "description": "Indicates whether the customer has opted into the challenge."
                 },
-                "tasksToComplete": {
+                "xdm:tasksToComplete": {
                   "title": "Tasks to Complete",
                   "type": "integer",
                   "description": "Number of tasks required to complete the challenge.",

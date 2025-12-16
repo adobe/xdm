@@ -84,9 +84,7 @@
         },
         {
           "xdm:fieldName": "google_year_established",
-          "xdm:numberValue": {
-            "xdm:value": 2010
-          }
+          "xdm:numberValue": 2010
         },
         {
           "xdm:fieldName": "google_publicly_traded",
@@ -130,9 +128,7 @@
         },
         {
           "xdm:fieldName": "google_available_credit",
-          "xdm:numberValue": {
-            "xdm:value": 665000
-          }
+          "xdm:numberValue": 665000
         },
         {
           "xdm:fieldName": "google_last_payment_date",
@@ -140,9 +136,7 @@
         },
         {
           "xdm:fieldName": "google_last_payment_amount",
-          "xdm:numberValue": {
-            "xdm:value": 62000
-          }
+          "xdm:numberValue": 62000
         },
         {
           "xdm:fieldName": "google_next_billing_date",
@@ -154,9 +148,7 @@
         },
         {
           "xdm:fieldName": "google_billing_threshold",
-          "xdm:numberValue": {
-            "xdm:value": 50000
-          }
+          "xdm:numberValue": 50000
         },
         {
           "xdm:fieldName": "google_tax_exempt",
@@ -192,33 +184,23 @@
         },
         {
           "xdm:fieldName": "google_current_daily_spend",
-          "xdm:numberValue": {
-            "xdm:value": 6500
-          }
+          "xdm:numberValue": 6500
         },
         {
           "xdm:fieldName": "google_current_monthly_spend",
-          "xdm:numberValue": {
-            "xdm:value": 145000
-          }
+          "xdm:numberValue": 145000
         },
         {
           "xdm:fieldName": "google_lifetime_spend",
-          "xdm:numberValue": {
-            "xdm:value": 2850000
-          }
+          "xdm:numberValue": 2850000
         },
         {
           "xdm:fieldName": "google_spend_limit_reset_day",
-          "xdm:numberValue": {
-            "xdm:value": 1
-          }
+          "xdm:numberValue": 1
         },
         {
           "xdm:fieldName": "google_alert_threshold",
-          "xdm:numberValue": {
-            "xdm:value": 0.9
-          }
+          "xdm:numberValue": 0.9
         },
         {
           "xdm:fieldName": "google_alerts_enabled",

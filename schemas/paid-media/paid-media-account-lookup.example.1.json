@@ -84,9 +84,7 @@
         },
         {
           "xdm:fieldName": "meta_year_established",
-          "xdm:numberValue": {
-            "xdm:value": 2010
-          }
+          "xdm:numberValue": 2010
         },
         {
           "xdm:fieldName": "meta_publicly_traded",
@@ -130,9 +128,7 @@
         },
         {
           "xdm:fieldName": "meta_available_credit",
-          "xdm:numberValue": {
-            "xdm:value": 375000
-          }
+          "xdm:numberValue": 375000
         },
         {
           "xdm:fieldName": "meta_last_payment_date",
@@ -140,9 +136,7 @@
         },
         {
           "xdm:fieldName": "meta_last_payment_amount",
-          "xdm:numberValue": {
-            "xdm:value": 45000
-          }
+          "xdm:numberValue": 45000
         },
         {
           "xdm:fieldName": "meta_next_billing_date",
@@ -154,9 +148,7 @@
         },
         {
           "xdm:fieldName": "meta_billing_threshold",
-          "xdm:numberValue": {
-            "xdm:value": 10000
-          }
+          "xdm:numberValue": 10000
         },
         {
           "xdm:fieldName": "meta_tax_exempt",
@@ -192,33 +184,23 @@
         },
         {
           "xdm:fieldName": "meta_current_daily_spend",
-          "xdm:numberValue": {
-            "xdm:value": 3250
-          }
+          "xdm:numberValue": 3250
         },
         {
           "xdm:fieldName": "meta_current_monthly_spend",
-          "xdm:numberValue": {
-            "xdm:value": 87500
-          }
+          "xdm:numberValue": 87500
         },
         {
           "xdm:fieldName": "meta_lifetime_spend",
-          "xdm:numberValue": {
-            "xdm:value": 425000
-          }
+          "xdm:numberValue": 425000
         },
         {
           "xdm:fieldName": "meta_spend_limit_reset_day",
-          "xdm:numberValue": {
-            "xdm:value": 1
-          }
+          "xdm:numberValue": 1
         },
         {
           "xdm:fieldName": "meta_alert_threshold",
-          "xdm:numberValue": {
-            "xdm:value": 0.8
-          }
+          "xdm:numberValue": 0.8
         },
         {
           "xdm:fieldName": "meta_alerts_enabled",

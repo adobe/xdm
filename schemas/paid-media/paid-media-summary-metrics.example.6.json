@@ -146,95 +146,41 @@
       }
     },
     "xdm:extendedMetrics": {
-      "xdm:likes": {
-        "xdm:value": 401
-      },
-      "xdm:comments": {
-        "xdm:value": 80
-      },
-      "xdm:shares": {
-        "xdm:value": 134
-      },
-      "xdm:saves": {
-        "xdm:value": 188
-      },
-      "xdm:linkClicks": {
-        "xdm:value": 535
-      },
-      "xdm:outboundClicks": {
-        "xdm:value": 509
-      },
-      "xdm:uniqueClicks": {
-        "xdm:value": 482
-      }
+      "xdm:likes": 401,
+      "xdm:comments": 80,
+      "xdm:shares": 134,
+      "xdm:saves": 188,
+      "xdm:linkClicks": 535,
+      "xdm:outboundClicks": 509,
+      "xdm:uniqueClicks": 482
     },
     "xdm:conversionMetrics": {
-      "xdm:postViewConversions": {
-        "xdm:value": 5
-      },
-      "xdm:postClickConversions": {
-        "xdm:value": 22
-      },
-      "xdm:conversionRate": {
-        "xdm:value": 0.056
-      },
-      "xdm:costPerAction": {
-        "xdm:value": 14.31
-      },
+      "xdm:postViewConversions": 5,
+      "xdm:postClickConversions": 22,
+      "xdm:conversionRate": 0.056,
+      "xdm:costPerAction": 14.31,
       "xdm:actionValue": 1337.5,
       "xdm:conversionsByType": {
-        "xdm:purchases": {
-          "xdm:value": 22
-        },
-        "xdm:addToCart": {
-          "xdm:value": 54
-        },
-        "xdm:initiateCheckout": {
-          "xdm:value": 32
-        },
-        "xdm:leads": {
-          "xdm:value": 5
-        },
-        "xdm:downloads": {
-          "xdm:value": 16
-        }
+        "xdm:purchases": 22,
+        "xdm:addToCart": 54,
+        "xdm:initiateCheckout": 32,
+        "xdm:leads": 5,
+        "xdm:downloads": 16
       },
-      "xdm:leads": {
-        "xdm:value": 5
-      },
-      "xdm:costPerLead": {
-        "xdm:value": 77.25
-      }
+      "xdm:leads": 5,
+      "xdm:costPerLead": 77.25
     },
     "xdm:costMetrics": {
-      "xdm:averageCpc": {
-        "xdm:value": 0.722
-      },
-      "xdm:averageCpm": {
-        "xdm:value": 26.0
-      },
-      "xdm:averageCpa": {
-        "xdm:value": 14.31
-      },
-      "xdm:averageCpe": {
-        "xdm:value": 0.481
-      },
+      "xdm:averageCpc": 0.722,
+      "xdm:averageCpm": 26.0,
+      "xdm:averageCpa": 14.31,
+      "xdm:averageCpe": 0.481,
       "xdm:budgetUtilization": {
-        "xdm:budgetAllocated": {
-          "xdm:value": 0
-        },
-        "xdm:budgetSpent": {
-          "xdm:value": 386.25
-        },
-        "xdm:budgetRemaining": {
-          "xdm:value": 0
-        },
-        "xdm:budgetUtilization": {
-          "xdm:value": 0
-        },
-        "xdm:dailyBudget": {
-          "xdm:value": 0
-        }
+        "xdm:budgetAllocated": 0,
+        "xdm:budgetSpent": 386.25,
+        "xdm:budgetRemaining": 0,
+        "xdm:budgetUtilization": 0,
+        "xdm:dailyBudget": 0
       }
     },
     "xdm:attributionMetrics": {
@@ -244,9 +190,7 @@
     },
     "xdm:qualityMetrics": {
       "xdm:qualityScore": 7.8,
-      "xdm:relevanceScore": {
-        "xdm:value": 8.2
-      },
+      "xdm:relevanceScore": 8.2,
       "xdm:engagementRateRanking": "average",
       "xdm:conversionRateRanking": "above_average",
       "xdm:qualityRanking": "average",

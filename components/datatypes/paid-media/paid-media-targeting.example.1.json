@@ -1,0 +1,123 @@
+{
+  "xdm:geoTargeting": {
+    "xdm:countries": ["US", "CA"],
+    "xdm:regions": [
+      "California",
+      "New York",
+      "Texas",
+      "Florida",
+      "Ontario",
+      "British Columbia"
+    ],
+    "xdm:cities": [
+      "San Francisco",
+      "Los Angeles",
+      "New York",
+      "Austin",
+      "Miami",
+      "Toronto",
+      "Vancouver"
+    ],
+    "xdm:postalCodes": [
+      "94105",
+      "90001",
+      "10001",
+      "78701",
+      "33101",
+      "M5H",
+      "V6B"
+    ]
+  },
+  "xdm:demographicTargeting": {
+    "xdm:ageRanges": [
+      {
+        "xdm:minAge": 25,
+        "xdm:maxAge": 34
+      },
+      {
+        "xdm:minAge": 35,
+        "xdm:maxAge": 44
+      },
+      {
+        "xdm:minAge": 45,
+        "xdm:maxAge": 54
+      }
+    ],
+    "xdm:genders": ["all"],
+    "xdm:languages": ["en-US", "en-CA", "es-US"]
+  },
+  "xdm:interestTargeting": {
+    "xdm:interests": [
+      "Technology",
+      "Consumer Electronics",
+      "Audio Equipment",
+      "Gadgets & Tech News",
+      "Music",
+      "Fitness & Wellness",
+      "Online Shopping",
+      "Premium Brands"
+    ],
+    "xdm:behaviors": [
+      "Online Shoppers",
+      "Engaged Shoppers",
+      "Early Technology Adopters",
+      "Premium Product Buyers",
+      "Mobile Device Users",
+      "Frequent International Travelers"
+    ],
+    "xdm:customAudiences": [
+      {
+        "xdm:audienceID": "23851234567890111",
+        "xdm:audienceName": "Website Visitors - Last 30 Days",
+        "xdm:audienceType": "retargeting"
+      },
+      {
+        "xdm:audienceID": "23851234567890222",
+        "xdm:audienceName": "Product Page Viewers - Headphones",
+        "xdm:audienceType": "retargeting"
+      },
+      {
+        "xdm:audienceID": "23851234567890333",
+        "xdm:audienceName": "Cart Abandoners - Last 14 Days",
+        "xdm:audienceType": "retargeting"
+      },
+      {
+        "xdm:audienceID": "23851234567890444",
+        "xdm:audienceName": "Lookalike - High Value Customers (1%)",
+        "xdm:audienceType": "lookalike"
+      },
+      {
+        "xdm:audienceID": "23851234567890555",
+        "xdm:audienceName": "Email Subscribers - Tech Enthusiasts",
+        "xdm:audienceType": "custom"
+      }
+    ]
+  },
+  "xdm:deviceTargeting": {
+    "xdm:deviceTypes": ["mobile", "desktop", "tablet"],
+    "xdm:operatingSystems": ["iOS", "Android", "Windows", "macOS"],
+    "xdm:browsers": ["Chrome", "Safari", "Firefox", "Edge", "Samsung Internet"]
+  },
+  "xdm:placementTargeting": {
+    "xdm:placements": [
+      "facebook_feed",
+      "instagram_feed",
+      "instagram_stories",
+      "instagram_reels",
+      "facebook_marketplace",
+      "facebook_video_feeds",
+      "facebook_right_column",
+      "messenger_inbox",
+      "messenger_stories",
+      "audience_network"
+    ],
+    "xdm:publisherCategories": [
+      "Technology & Computing",
+      "Consumer Electronics",
+      "Music & Audio",
+      "Lifestyle",
+      "Entertainment",
+      "News & Media"
+    ]
+  }
+}

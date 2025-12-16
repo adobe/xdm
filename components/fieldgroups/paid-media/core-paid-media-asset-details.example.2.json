@@ -1,0 +1,101 @@
+{
+  "xdm:paidMedia": {
+    "xdm:assetDetails": {
+      "xdm:assetType": "image",
+      "xdm:assetSubType": "jpeg",
+      "title": "Holiday Sale - Hero Banner Image",
+      "description": "Eye-catching hero banner featuring holiday sale messaging with product showcase and promotional offer. Optimized for feed and story placements.",
+      "xdm:content": "",
+      "xdm:mediaProperties": {
+        "xdm:url": "https://cdn.acmecorp.com/images/holiday-sale-hero-banner.jpg",
+        "xdm:permalinkURL": "https://cdn.acmecorp.com/images/holiday-sale-hero-banner.jpg",
+        "xdm:thumbnailURL": "https://cdn.acmecorp.com/images/thumbnails/holiday-sale-hero-banner-thumb.jpg",
+        "xdm:source": "https://cdn.acmecorp.com/images/holiday-sale-hero-banner.jpg",
+        "xdm:hash": "sha256:xyz789abc456def123ghi890jkl567mno234pqr901stu678vwx345"
+      },
+      "xdm:dimensions": {
+        "xdm:width": 1200,
+        "xdm:height": 628,
+        "xdm:aspectRatio": "1.91:1",
+        "xdm:orientation": "landscape"
+      },
+      "xdm:fileProperties": {
+        "xdm:fileSize": 2456789,
+        "xdm:fileSizeFormatted": "2.3 MB",
+        "xdm:mimeType": "image/jpeg",
+        "xdm:fileExtension": "jpg",
+        "xdm:encoding": "jpeg"
+      },
+      "xdm:imageProperties": {
+        "xdm:colorSpace": "sRGB",
+        "xdm:hasTransparency": false,
+        "xdm:isAnimated": false,
+        "xdm:dominantColors": ["#FF6B35", "#004E89", "#FFFFFF"]
+      },
+      "xdm:usageMetadata": {
+        "xdm:usageCount": 3,
+        "xdm:lastUsedDate": "2025-11-10T09:00:00Z",
+        "xdm:associatedCampaigns": ["campaign_holiday_2025"],
+        "xdm:associatedAds": ["ad_img_456789123"]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_image_hash",
+          "xdm:stringValue": "abc123def456ghi789jkl012"
+        },
+        {
+          "xdm:fieldName": "meta_image_status",
+          "xdm:stringValue": "active"
+        },
+        {
+          "xdm:fieldName": "meta_image_upload_date",
+          "xdm:stringValue": "2025-11-01T09:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_image_url",
+          "xdm:stringValue": "https://scontent.xx.fbcdn.net/v/t45.1600-4/image_hash.jpg"
+        },
+        {
+          "xdm:fieldName": "meta_image_format_support",
+          "xdm:stringValue": "feed,story,marketplace"
+        },
+        {
+          "xdm:fieldName": "meta_text_overlay_percentage",
+          "xdm:numberValue": {
+            "xdm:value": 15
+          }
+        },
+        {
+          "xdm:fieldName": "meta_image_quality_score",
+          "xdm:numberValue": {
+            "xdm:value": 9.0
+          }
+        },
+        {
+          "xdm:fieldName": "meta_image_file_size_bytes",
+          "xdm:numberValue": {
+            "xdm:value": 2456789
+          }
+        },
+        {
+          "xdm:fieldName": "meta_image_aspect_ratio",
+          "xdm:numberValue": {
+            "xdm:value": 1.91
+          }
+        },
+        {
+          "xdm:fieldName": "meta_image_brightness_score",
+          "xdm:numberValue": {
+            "xdm:value": 0.72
+          }
+        },
+        {
+          "xdm:fieldName": "meta_image_contrast_score",
+          "xdm:numberValue": {
+            "xdm:value": 0.68
+          }
+        }
+      ]
+    }
+  }
+}

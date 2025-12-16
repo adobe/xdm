@@ -1,0 +1,111 @@
+{
+  "xdm:paidMedia": {
+    "xdm:videoMetrics": {
+      "xdm:videoPlays": {
+        "xdm:value": 9500
+      },
+      "xdm:video3SecViews": {
+        "xdm:value": 8900
+      },
+      "xdm:video2SecViews": {
+        "xdm:value": 9200
+      },
+      "xdm:video6SecViews": {
+        "xdm:value": 8450
+      },
+      "xdm:video10SecViews": {
+        "xdm:value": 7890
+      },
+      "xdm:videoViewRate2Sec": {
+        "xdm:value": 0.968
+      },
+      "xdm:videoViewRate6Sec": {
+        "xdm:value": 0.889
+      },
+      "xdm:video15SecViews": {
+        "xdm:value": 7234
+      },
+      "xdm:video30SecViews": {
+        "xdm:value": 6234
+      },
+      "xdm:videoQuartile1": {
+        "xdm:value": 8234
+      },
+      "xdm:videoQuartile2": {
+        "xdm:value": 7456
+      },
+      "xdm:videoQuartile3": {
+        "xdm:value": 6789
+      },
+      "xdm:videoCompletions": {
+        "xdm:value": 5785
+      },
+      "xdm:videoCompletionRate": {
+        "xdm:value": 0.65
+      },
+      "xdm:videoViewRate25Percent": {
+        "xdm:value": 0.867
+      },
+      "xdm:videoViewRate50Percent": {
+        "xdm:value": 0.785
+      },
+      "xdm:videoViewRate75Percent": {
+        "xdm:value": 0.715
+      },
+      "xdm:videoViewRate100Percent": {
+        "xdm:value": 0.609
+      },
+      "xdm:averageVideoWatchTime": {
+        "xdm:value": 18.5
+      },
+      "xdm:totalVideoWatchTime": {
+        "xdm:value": 175750
+      },
+      "xdm:videoMrcViews": {
+        "xdm:value": 8234
+      },
+      "xdm:videoThroughplayViews": {
+        "xdm:value": 5785
+      },
+      "xdm:videoSkips": {
+        "xdm:value": 1265
+      },
+      "xdm:videoSkipRate": {
+        "xdm:value": 0.133
+      },
+      "xdm:videoReplays": {
+        "xdm:value": 456
+      },
+      "xdm:videoPauses": {
+        "xdm:value": 1234
+      },
+      "xdm:videoResumes": {
+        "xdm:value": 1156
+      },
+      "xdm:videoFullscreenViews": {
+        "xdm:value": 2345
+      },
+      "xdm:videoMutes": {
+        "xdm:value": 890
+      },
+      "xdm:videoUnmutes": {
+        "xdm:value": 678
+      },
+      "xdm:videoVolumeChanges": {
+        "xdm:value": 234
+      },
+      "xdm:videoClickToPlays": {
+        "xdm:value": 3456
+      },
+      "xdm:videoAutoPlays": {
+        "xdm:value": 6044
+      },
+      "xdm:videoViewabilityRate": {
+        "xdm:value": 0.85
+      },
+      "xdm:videoAudibilityRate": {
+        "xdm:value": 0.72
+      }
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/core-metadata",
+  "title": "Core Paid Media Metadata",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Core metadata fields common across paid media entities",
+  "definitions": {
+    "core-metadata": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:metadata": {
+              "type": "object",
+              "title": "Paid Media Core Metadata",
+              "description": "Common metadata fields for paid media entities",
+              "properties": {
+                "xdm:name": {
+                  "type": "string",
+                  "title": "Name",
+                  "description": "Display name of the entity (campaign name, ad name, etc.)"
+                },
+                "xdm:status": {
+                  "type": "string",
+                  "title": "Status",
+                  "description": "Current status of the entity",
+                  "enum": [
+                    "active",
+                    "paused",
+                    "deleted",
+                    "archived",
+                    "draft",
+                    "completed",
+                    "pending_review",
+                    "rejected",
+                    "unknown"
+                  ],
+                  "meta:enum": {
+                    "active": "Active/Running",
+                    "paused": "Paused",
+                    "deleted": "Deleted",
+                    "archived": "Archived",
+                    "draft": "Draft",
+                    "completed": "Completed",
+                    "pending_review": "Pending Review",
+                    "rejected": "Rejected",
+                    "unknown": "Unknown Status"
+                  }
+                },
+                "xdm:servingStatus": {
+                  "type": "string",
+                  "title": "Serving Status",
+                  "description": "Detailed serving status indicating why entity may not be serving",
+                  "enum": [
+                    "CAMPAIGN_STATUS_ENABLED",
+                    "PENDING_START_DATE",
+                    "ENDED",
+                    "CAMPAIGN_OUT_OF_BUDGET",
+                    "ACCOUNT_OUT_OF_BUDGET",
+                    "CAMPAIGN_PAUSED",
+                    "ADVERTISER_PAUSED",
+                    "PENDING_REVIEW",
+                    "PENDING_MODERATION",
+                    "REJECTED",
+                    "CAMPAIGN_INCOMPLETE",
+                    "PAYMENT_FAILURE",
+                    "BILLING_HOLD",
+                    "POLICING_SUSPENDED",
+                    "OTHER"
+                  ],
+                  "meta:enum": {
+                    "CAMPAIGN_STATUS_ENABLED": "Actively Serving",
+                    "PENDING_START_DATE": "Scheduled - Not Yet Started",
+                    "ENDED": "Campaign Ended",
+                    "CAMPAIGN_OUT_OF_BUDGET": "Campaign Budget Exhausted",
+                    "ACCOUNT_OUT_OF_BUDGET": "Account Budget Exhausted",
+                    "CAMPAIGN_PAUSED": "Campaign Paused",
+                    "ADVERTISER_PAUSED": "Account Paused",
+                    "PENDING_REVIEW": "Pending Review",
+                    "PENDING_MODERATION": "Pending Moderation",
+                    "REJECTED": "Rejected by Review",
+                    "CAMPAIGN_INCOMPLETE": "Campaign Setup Incomplete",
+                    "PAYMENT_FAILURE": "Payment Method Failed",
+                    "BILLING_HOLD": "Billing Hold",
+                    "POLICING_SUSPENDED": "Suspended for Policy Violation",
+                    "OTHER": "Other Status"
+                  }
+                },
+                "xdm:currency": {
+                  "type": "string",
+                  "title": "Currency",
+                  "description": "Currency code (ISO 4217) for monetary values"
+                },
+                "xdm:currencyCode": {
+                  "type": "string",
+                  "title": "Currency Code",
+                  "description": "Alias of currency (ISO 4217) for migration from GenStudio templates"
+                },
+                "xdm:timezone": {
+                  "type": "string",
+                  "title": "Timezone",
+                  "description": "Timezone for the entity (e.g., America/New_York)"
+                },
+                "xdm:timestamp": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "Timestamp",
+                  "description": "The time when the metadata record was captured or last updated (GenStudio migration aid)"
+                },
+                "xdm:startTime": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "Start Time",
+                  "description": "When the entity becomes active/starts running"
+                },
+                "xdm:endTime": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "End Time",
+                  "description": "When the entity stops running/expires"
+                },
+                "xdm:start": {
+                  "type": "string",
+                  "format": "date",
+                  "title": "Start Date",
+                  "description": "Campaign start date (GenStudio migration aid)"
+                },
+                "xdm:end": {
+                  "type": "string",
+                  "format": "date",
+                  "title": "End Date",
+                  "description": "Campaign end date (GenStudio migration aid)"
+                },
+                "xdm:objective": {
+                  "type": "string",
+                  "title": "Objective",
+                  "description": "Campaign or ad group objective/goal",
+                  "enum": [
+                    "awareness",
+                    "consideration",
+                    "conversions",
+                    "reach",
+                    "traffic",
+                    "engagement",
+                    "app_installs",
+                    "video_views",
+                    "lead_generation",
+                    "catalog_sales",
+                    "store_visits",
+                    "other"
+                  ],
+                  "meta:enum": {
+                    "awareness": "Brand Awareness",
+                    "consideration": "Consideration",
+                    "conversions": "Conversions",
+                    "reach": "Reach",
+                    "traffic": "Traffic/Link Clicks",
+                    "engagement": "Engagement",
+                    "app_installs": "App Installs",
+                    "video_views": "Video Views",
+                    "lead_generation": "Lead Generation",
+                    "catalog_sales": "Catalog Sales",
+                    "store_visits": "Store Visits",
+                    "other": "Other Objective"
+                  }
+                },
+                "xdm:budgetType": {
+                  "type": "string",
+                  "title": "Budget Type",
+                  "description": "Type of budget allocation",
+                  "enum": ["daily", "lifetime", "campaign_budget_optimization"],
+                  "meta:enum": {
+                    "daily": "Daily Budget",
+                    "lifetime": "Lifetime Budget",
+                    "campaign_budget_optimization": "Campaign Budget Optimization"
+                  }
+                },
+                "xdm:dailyBudget": {
+                  "type": "number",
+                  "title": "Daily Budget",
+                  "description": "Daily budget amount in account currency",
+                  "minimum": 0
+                },
+                "xdm:lifetimeBudget": {
+                  "type": "number",
+                  "title": "Lifetime Budget",
+                  "description": "Total lifetime budget amount in account currency",
+                  "minimum": 0
+                },
+                "xdm:budget": {
+                  "type": "number",
+                  "title": "Budget",
+                  "description": "Total campaign budget (GenStudio migration aid - alias for lifetimeBudget)",
+                  "minimum": 0
+                },
+                "xdm:biddingStrategy": {
+                  "type": "string",
+                  "title": "Bidding Strategy",
+                  "description": "Bidding strategy used for the entity"
+                },
+                "xdm:optimizationGoal": {
+                  "type": "string",
+                  "title": "Optimization Goal",
+                  "description": "What the ad delivery is optimized for"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/core-metadata"
+    }
+  ],
+  "meta:status": "experimental"
+}

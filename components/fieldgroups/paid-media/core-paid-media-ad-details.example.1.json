@@ -1,0 +1,88 @@
+{
+  "xdm:paidMedia": {
+    "xdm:adDetails": {
+      "xdm:adType": "video",
+      "xdm:reviewStatus": "approved",
+      "xdm:reviewStatusReasons": [],
+      "xdm:deliveryStatus": "active",
+      "xdm:isPinDeleted": false,
+      "xdm:isRemovable": true,
+      "xdm:payingAdvertiserName": "Acme Corporation",
+      "xdm:socialMediaProperties": {
+        "xdm:effectiveObjectStoryID": "post_123456789_987654321",
+        "xdm:isShareable": true,
+        "xdm:favoriteDisplayMode": "default"
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_ad_id",
+          "xdm:stringValue": "23851234567890123"
+        },
+        {
+          "xdm:fieldName": "meta_adset_id",
+          "xdm:stringValue": "23851234567890456"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_id",
+          "xdm:stringValue": "23851234567890789"
+        },
+        {
+          "xdm:fieldName": "meta_video_id",
+          "xdm:stringValue": "987654321012345"
+        },
+        {
+          "xdm:fieldName": "meta_placement_optimization",
+          "xdm:stringValue": "automatic"
+        },
+        {
+          "xdm:fieldName": "meta_objective",
+          "xdm:stringValue": "OUTCOME_TRAFFIC"
+        },
+        {
+          "xdm:fieldName": "meta_buying_type",
+          "xdm:stringValue": "AUCTION"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        },
+        {
+          "xdm:fieldName": "meta_quality_score",
+          "xdm:numberValue": {
+            "xdm:value": 8.5
+          }
+        },
+        {
+          "xdm:fieldName": "meta_relevance_score",
+          "xdm:numberValue": {
+            "xdm:value": 7.8
+          }
+        },
+        {
+          "xdm:fieldName": "meta_engagement_rate_ranking",
+          "xdm:numberValue": {
+            "xdm:value": 0.85
+          }
+        },
+        {
+          "xdm:fieldName": "meta_conversion_rate_ranking",
+          "xdm:numberValue": {
+            "xdm:value": 0.72
+          }
+        },
+        {
+          "xdm:fieldName": "meta_frequency",
+          "xdm:numberValue": {
+            "xdm:value": 2.34
+          }
+        },
+        {
+          "xdm:fieldName": "meta_unique_inline_link_click_ctr",
+          "xdm:numberValue": {
+            "xdm:value": 3.45
+          }
+        }
+      ]
+    }
+  }
+}

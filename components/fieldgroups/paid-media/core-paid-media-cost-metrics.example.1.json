@@ -1,0 +1,138 @@
+{
+  "xdm:paidMedia": {
+    "xdm:costMetrics": {
+      "xdm:spendInMicroCurrency": {
+        "xdm:value": 18000000000
+      },
+      "xdm:averageCpm": {
+        "xdm:value": 36.0
+      },
+      "xdm:averageCpc": {
+        "xdm:value": 7.2
+      },
+      "xdm:averageCpe": {
+        "xdm:value": 2.02
+      },
+      "xdm:averageCpv": {
+        "xdm:value": 0.15
+      },
+      "xdm:averageCpa": {
+        "xdm:value": 14.4
+      },
+      "xdm:averageCpl": {
+        "xdm:value": 73.47
+      },
+      "xdm:bidAmount": {
+        "xdm:value": 8.5
+      },
+      "xdm:bidAmountMicro": {
+        "xdm:value": 8500000
+      },
+      "xdm:maxBid": {
+        "xdm:value": 12.0
+      },
+      "xdm:minBid": {
+        "xdm:value": 3.5
+      },
+      "xdm:targetBid": {
+        "xdm:value": 14.0
+      },
+      "xdm:actualBid": {
+        "xdm:value": 7.85
+      },
+      "xdm:qualityScore": {
+        "xdm:value": 8.5
+      },
+      "xdm:adRank": {
+        "xdm:value": 76.5
+      },
+      "xdm:competitionIndex": {
+        "xdm:value": 0.65
+      },
+      "xdm:impressionShare": {
+        "xdm:impressionShare": {
+          "xdm:value": 0.68
+        },
+        "xdm:impressionShareRank": {
+          "xdm:value": 0.72
+        },
+        "xdm:impressionShareBudget": {
+          "xdm:value": 0.85
+        },
+        "xdm:lostImpressionShareRank": {
+          "xdm:value": 0.15
+        },
+        "xdm:lostImpressionShareBudget": {
+          "xdm:value": 0.17
+        },
+        "xdm:exactMatchImpressionShare": {
+          "xdm:value": 0.75
+        },
+        "xdm:topImpressionShare": {
+          "xdm:value": 0.42
+        },
+        "xdm:absoluteTopImpressionShare": {
+          "xdm:value": 0.28
+        }
+      },
+      "xdm:lostImpressionShareRank": {
+        "xdm:value": 0.15
+      },
+      "xdm:lostImpressionShareBudget": {
+        "xdm:value": 0.17
+      },
+      "xdm:budgetUtilization": {
+        "xdm:budgetAllocated": {
+          "xdm:value": 60000
+        },
+        "xdm:budgetSpent": {
+          "xdm:value": 18000
+        },
+        "xdm:budgetRemaining": {
+          "xdm:value": 42000
+        },
+        "xdm:budgetUtilization": {
+          "xdm:value": 0.3
+        },
+        "xdm:dailyBudget": {
+          "xdm:value": 2000
+        },
+        "xdm:dailySpend": {
+          "xdm:value": 600
+        },
+        "xdm:dailyBudgetUtilization": {
+          "xdm:value": 0.3
+        },
+        "xdm:pacingStatus": "on_track",
+        "xdm:projectedSpend": {
+          "xdm:value": 60000
+        },
+        "xdm:budgetOverrun": {
+          "xdm:value": 0
+        },
+        "xdm:budgetUnderrun": {
+          "xdm:value": 0
+        }
+      },
+      "xdm:budgetRemaining": {
+        "xdm:value": 42000
+      },
+      "xdm:budgetPacing": {
+        "xdm:value": 1.0
+      },
+      "xdm:costEfficiency": {
+        "xdm:value": 0.85
+      },
+      "xdm:marginOfError": {
+        "xdm:value": 0.05
+      },
+      "xdm:confidenceLevel": {
+        "xdm:value": 0.95
+      },
+      "xdm:costTrend": "stable",
+      "xdm:costVariance": {
+        "xdm:value": 0.12
+      }
+    }
+  }
+}

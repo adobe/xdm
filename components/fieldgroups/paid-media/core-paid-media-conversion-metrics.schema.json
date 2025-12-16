@@ -1,0 +1,330 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/conversion-metrics",
+  "title": "Core Paid Media Conversion Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Detailed conversion tracking metrics for paid media campaigns",
+  "definitions": {
+    "conversion-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:conversionMetrics": {
+              "type": "object",
+              "title": "Conversion Metrics",
+              "description": "Detailed conversion tracking metrics",
+              "properties": {
+                "xdm:postClickConversions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Post-Click Conversions",
+                  "description": "Conversions attributed to clicks"
+                },
+                "xdm:postViewConversions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Post-View Conversions",
+                  "description": "Conversions attributed to views"
+                },
+                "xdm:postEngagementConversions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Post-Engagement Conversions",
+                  "description": "Conversions attributed to engagements"
+                },
+                "xdm:actionValue": {
+                  "type": "number",
+                  "title": "Action Value",
+                  "description": "Total value of all conversion actions",
+                  "minimum": 0
+                },
+                "xdm:actionType": {
+                  "type": "string",
+                  "title": "Action Type",
+                  "description": "Type of conversion action being measured (e.g., 'purchase', 'lead', 'app_install')"
+                },
+                "xdm:actionSource": {
+                  "type": "string",
+                  "title": "Action Source",
+                  "description": "Source of the conversion action (e.g., 'website', 'app', 'offline')"
+                },
+                "xdm:oneDayClickActionValue": {
+                  "type": "number",
+                  "title": "1-Day Click Action Value",
+                  "description": "Action value attributed to clicks within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:oneDayViewActionValue": {
+                  "type": "number",
+                  "title": "1-Day View Action Value",
+                  "description": "Action value attributed to views within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:sevenDayClickActionValue": {
+                  "type": "number",
+                  "title": "7-Day Click Action Value",
+                  "description": "Action value attributed to clicks within 7-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:oneDayClickConversions": {
+                  "type": "number",
+                  "title": "1-Day Click Conversions",
+                  "description": "Number of conversions attributed to clicks within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:oneDayViewConversions": {
+                  "type": "number",
+                  "title": "1-Day View Conversions",
+                  "description": "Number of conversions attributed to views within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:sevenDayClickConversions": {
+                  "type": "number",
+                  "title": "7-Day Click Conversions",
+                  "description": "Number of conversions attributed to clicks within 7-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:actionValue": {
+                  "type": "number",
+                  "title": "Action Value",
+                  "description": "Total value of all conversion actions",
+                  "minimum": 0
+                },
+                "xdm:actionType": {
+                  "type": "string",
+                  "title": "Action Type",
+                  "description": "Type of conversion action being measured (e.g., 'purchase', 'lead', 'app_install')"
+                },
+                "xdm:actionSource": {
+                  "type": "string",
+                  "title": "Action Source",
+                  "description": "Source of the conversion action (e.g., 'website', 'app', 'offline')"
+                },
+                "xdm:oneDayClickActionValue": {
+                  "type": "number",
+                  "title": "1-Day Click Action Value",
+                  "description": "Action value attributed to clicks within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:oneDayViewActionValue": {
+                  "type": "number",
+                  "title": "1-Day View Action Value",
+                  "description": "Action value attributed to views within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:sevenDayClickActionValue": {
+                  "type": "number",
+                  "title": "7-Day Click Action Value",
+                  "description": "Action value attributed to clicks within 7-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:oneDayClickConversions": {
+                  "type": "number",
+                  "title": "1-Day Click Conversions",
+                  "description": "Number of conversions attributed to clicks within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:oneDayViewConversions": {
+                  "type": "number",
+                  "title": "1-Day View Conversions",
+                  "description": "Number of conversions attributed to views within 1-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:sevenDayClickConversions": {
+                  "type": "number",
+                  "title": "7-Day Click Conversions",
+                  "description": "Number of conversions attributed to clicks within 7-day attribution window",
+                  "minimum": 0
+                },
+                "xdm:conversionsByType": {
+                  "type": "object",
+                  "title": "Conversions by Type",
+                  "description": "Breakdown of conversions by event type",
+                  "properties": {
+                    "xdm:purchases": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Purchases"
+                    },
+                    "xdm:addToCart": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Add to Cart"
+                    },
+                    "xdm:initiateCheckout": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Initiate Checkout"
+                    },
+                    "xdm:leads": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Leads"
+                    },
+                    "xdm:registrations": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Registrations"
+                    },
+                    "xdm:downloads": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Downloads"
+                    },
+                    "xdm:subscriptions": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Subscriptions"
+                    },
+                    "xdm:customEvents": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Custom Events"
+                    }
+                  }
+                },
+                "xdm:conversionRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Conversion Rate",
+                  "description": "Overall conversion rate"
+                },
+                "xdm:costPerAction": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Cost Per Action",
+                  "description": "Average cost per conversion action"
+                },
+                "xdm:conversionLag": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Conversion Lag",
+                  "description": "Average time from ad interaction to conversion (in hours)"
+                },
+                "xdm:conversionPath": {
+                  "type": "object",
+                  "title": "Conversion Path Metrics",
+                  "description": "Metrics about the conversion path and touchpoints",
+                  "properties": {
+                    "xdm:averagePathLength": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Average Path Length"
+                    },
+                    "xdm:medianPathLength": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Median Path Length"
+                    },
+                    "xdm:singleTouchConversions": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Single Touch Conversions"
+                    },
+                    "xdm:multiTouchConversions": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Multi Touch Conversions"
+                    },
+                    "xdm:averageTouchpoints": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Average Touchpoints"
+                    },
+                    "xdm:assistedConversions": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Assisted Conversions"
+                    },
+                    "xdm:directConversions": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Direct Conversions"
+                    }
+                  }
+                },
+                "xdm:assistedConversions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Assisted Conversions",
+                  "description": "Conversions where this ad assisted but wasn't the last touch"
+                },
+                "xdm:directConversions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Direct Conversions",
+                  "description": "Conversions where this ad was the last touch"
+                },
+                "xdm:newCustomerConversions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "New Customer Conversions",
+                  "description": "Conversions from new customers"
+                },
+                "xdm:returningCustomerConversions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Returning Customer Conversions",
+                  "description": "Conversions from returning customers"
+                },
+                "xdm:averageOrderValue": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Average Order Value",
+                  "description": "Average value per conversion"
+                },
+                "xdm:totalOrderValue": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Total Order Value",
+                  "description": "Total value of all conversions"
+                },
+                "xdm:conversionQuality": {
+                  "type": "object",
+                  "title": "Conversion Quality",
+                  "description": "Quality metrics for conversions",
+                  "properties": {
+                    "xdm:qualityScore": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Quality Score",
+                      "description": "Overall conversion quality score"
+                    },
+                    "xdm:fraudRate": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Fraud Rate",
+                      "description": "Percentage of conversions flagged as fraudulent"
+                    },
+                    "xdm:validationRate": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Validation Rate",
+                      "description": "Percentage of conversions that passed validation"
+                    }
+                  }
+                },
+                "xdm:leads": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Leads",
+                  "description": "Total number of leads generated"
+                },
+                "xdm:qualifiedLeads": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Qualified Leads",
+                  "description": "Number of qualified/validated leads"
+                },
+                "xdm:costPerLead": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Cost Per Lead",
+                  "description": "Average cost per lead"
+                },
+                "xdm:leadFormOpens": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Lead Form Opens",
+                  "description": "Number of times lead form was opened"
+                },
+                "xdm:leadFormSubmissions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Lead Form Submissions",
+                  "description": "Number of lead form submissions"
+                },
+                "xdm:leadFormCompletionRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Lead Form Completion Rate",
+                  "description": "Percentage of opened forms that were submitted"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/conversion-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

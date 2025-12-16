@@ -1,0 +1,199 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/quality-metrics",
+  "title": "Core Paid Media Quality Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Ad quality and performance indicators for paid media campaigns",
+  "definitions": {
+    "quality-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:qualityMetrics": {
+              "type": "object",
+              "title": "Quality Metrics",
+              "description": "Ad quality and performance indicators",
+              "properties": {
+                "xdm:relevanceScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Relevance Score",
+                  "description": "Ad relevance score"
+                },
+                "xdm:engagementScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Engagement Score",
+                  "description": "Ad engagement quality score"
+                },
+                "xdm:conversionScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Conversion Score",
+                  "description": "Ad conversion quality score"
+                },
+                "xdm:overallQualityScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Overall Quality Score",
+                  "description": "Overall ad quality score"
+                },
+                "xdm:negativeActions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Negative Actions",
+                  "description": "Number of negative actions (hides, reports, etc.)"
+                },
+                "xdm:negativeActionRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Negative Action Rate",
+                  "description": "Rate of negative actions"
+                },
+                "xdm:positiveActions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Positive Actions",
+                  "description": "Number of positive actions (likes, shares, etc.)"
+                },
+                "xdm:positiveActionRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Positive Action Rate",
+                  "description": "Rate of positive actions"
+                },
+                "xdm:brandSafetyScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Brand Safety Score",
+                  "description": "Brand safety compliance score"
+                },
+                "xdm:viewabilityScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Viewability Score",
+                  "description": "Ad viewability quality score"
+                },
+                "xdm:fraudScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Fraud Score",
+                  "description": "Ad fraud risk score (higher = more risk)"
+                },
+                "xdm:invalidTrafficRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Invalid Traffic Rate",
+                  "description": "Percentage of traffic flagged as invalid"
+                },
+                "xdm:botTrafficRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Bot Traffic Rate",
+                  "description": "Percentage of traffic identified as bot traffic"
+                },
+                "xdm:humanTrafficRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Human Traffic Rate",
+                  "description": "Percentage of traffic verified as human"
+                },
+                "xdm:attentionScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Attention Score",
+                  "description": "User attention quality score"
+                },
+                "xdm:dwellTime": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Dwell Time",
+                  "description": "Average time users spend viewing the ad (seconds)"
+                },
+                "xdm:interactionDepth": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Interaction Depth",
+                  "description": "Depth of user interaction with the ad"
+                },
+                "xdm:creativeFatigue": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Creative Fatigue",
+                  "description": "Creative fatigue score (higher = more fatigued)"
+                },
+                "xdm:frequencyFatigue": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Frequency Fatigue",
+                  "description": "Frequency fatigue score"
+                },
+                "xdm:audienceRelevance": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Audience Relevance",
+                  "description": "Relevance of ad to target audience"
+                },
+                "xdm:contextualRelevance": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Contextual Relevance",
+                  "description": "Relevance of ad to content context"
+                },
+                "xdm:emotionalResonance": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Emotional Resonance",
+                  "description": "Emotional impact score of the ad"
+                },
+                "xdm:memorabilityScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Memorability Score",
+                  "description": "Ad memorability score"
+                },
+                "xdm:brandLiftScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Brand Lift Score",
+                  "description": "Brand awareness lift score"
+                },
+                "xdm:intentLiftScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Intent Lift Score",
+                  "description": "Purchase intent lift score"
+                },
+                "xdm:qualityTrend": {
+                  "type": "string",
+                  "title": "Quality Trend",
+                  "description": "Trend direction for quality metrics",
+                  "enum": ["improving", "declining", "stable", "volatile"],
+                  "meta:enum": {
+                    "improving": "Quality is improving",
+                    "declining": "Quality is declining",
+                    "stable": "Quality is stable",
+                    "volatile": "Quality is volatile"
+                  }
+                },
+                "xdm:benchmarkComparison": {
+                  "type": "object",
+                  "title": "Benchmark Comparison",
+                  "description": "Comparison to industry benchmarks",
+                  "properties": {
+                    "xdm:industryAverage": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Industry Average",
+                      "description": "Industry average quality score"
+                    },
+                    "xdm:percentileRank": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Percentile Rank",
+                      "description": "Percentile rank compared to industry"
+                    },
+                    "xdm:competitorAverage": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Competitor Average",
+                      "description": "Average quality score of competitors"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/quality-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

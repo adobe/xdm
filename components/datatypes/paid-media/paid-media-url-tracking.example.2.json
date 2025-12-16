@@ -1,0 +1,34 @@
+{
+  "xdm:trackingTemplate": "https://tracking.acmecorp.com/redirect?destination={{url}}&network=meta&campaign={{campaign.id}}&adset={{adset.id}}&ad={{ad.id}}&placement={{placement}}",
+  "xdm:finalUrlSuffix": "utm_source=instagram&utm_medium=paid_social&utm_campaign={{campaign.name}}&fbclid={{ad.id}}",
+  "xdm:customParameters": [
+    {
+      "xdm:key": "utm_source",
+      "xdm:value": "instagram"
+    },
+    {
+      "xdm:key": "utm_medium",
+      "xdm:value": "paid_social"
+    },
+    {
+      "xdm:key": "utm_campaign",
+      "xdm:value": "{{campaign.name}}"
+    },
+    {
+      "xdm:key": "utm_content",
+      "xdm:value": "{{ad.name}}"
+    },
+    {
+      "xdm:key": "utm_term",
+      "xdm:value": "instagram_{{placement}}"
+    },
+    {
+      "xdm:key": "fbclid",
+      "xdm:value": "{{ad.id}}"
+    },
+    {
+      "xdm:key": "ig_placement",
+      "xdm:value": "{{placement}}"
+    }
+  ]
+}

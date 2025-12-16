@@ -1,0 +1,269 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/cost-metrics",
+  "title": "Core Paid Media Cost Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Detailed cost and bidding metrics for paid media campaigns",
+  "definitions": {
+    "cost-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:costMetrics": {
+              "type": "object",
+              "title": "Cost Metrics",
+              "description": "Detailed cost and bidding metrics",
+              "properties": {
+                "xdm:spendInMicroCurrency": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Spend (Micro Currency)",
+                  "description": "Amount spent in micro currency units"
+                },
+                "xdm:averageCpm": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Average CPM",
+                  "description": "Average cost per thousand impressions"
+                },
+                "xdm:averageCpc": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Average CPC",
+                  "description": "Average cost per click"
+                },
+                "xdm:averageCpe": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Average CPE",
+                  "description": "Average cost per engagement"
+                },
+                "xdm:averageCpv": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Average CPV",
+                  "description": "Average cost per video view"
+                },
+                "xdm:averageCpa": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Average CPA",
+                  "description": "Average cost per acquisition/action"
+                },
+                "xdm:averageCpl": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Average CPL",
+                  "description": "Average cost per lead"
+                },
+                "xdm:bidAmount": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Bid Amount",
+                  "description": "Average bid amount"
+                },
+                "xdm:bidAmountMicro": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Bid Amount (Micro Currency)",
+                  "description": "Bid amount in micro currency units"
+                },
+                "xdm:maxBid": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Maximum Bid",
+                  "description": "Maximum bid amount set"
+                },
+                "xdm:minBid": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Minimum Bid",
+                  "description": "Minimum bid amount set"
+                },
+                "xdm:targetBid": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Target Bid",
+                  "description": "Target bid amount for automated bidding"
+                },
+                "xdm:actualBid": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Actual Bid",
+                  "description": "Actual bid amount used in auctions"
+                },
+                "xdm:qualityScore": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Quality Score",
+                  "description": "Ad quality score (platform-specific)"
+                },
+                "xdm:adRank": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Ad Rank",
+                  "description": "Ad rank score used for auction positioning"
+                },
+                "xdm:competitionIndex": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Competition Index",
+                  "description": "Competition level index for the auction"
+                },
+                "xdm:impressionShare": {
+                  "type": "object",
+                  "title": "Impression Share Metrics",
+                  "description": "Detailed impression share metrics",
+                  "properties": {
+                    "xdm:impressionShare": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Impression Share"
+                    },
+                    "xdm:impressionShareRank": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Impression Share Rank"
+                    },
+                    "xdm:impressionShareBudget": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Impression Share Budget"
+                    },
+                    "xdm:lostImpressionShareRank": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Lost Impression Share Rank"
+                    },
+                    "xdm:lostImpressionShareBudget": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Lost Impression Share Budget"
+                    },
+                    "xdm:exactMatchImpressionShare": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Exact Match Impression Share"
+                    },
+                    "xdm:topImpressionShare": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Top Impression Share"
+                    },
+                    "xdm:absoluteTopImpressionShare": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Absolute Top Impression Share"
+                    }
+                  }
+                },
+                "xdm:lostImpressionShareRank": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Lost Impression Share (Rank)",
+                  "description": "Impression share lost due to ad rank"
+                },
+                "xdm:lostImpressionShareBudget": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Lost Impression Share (Budget)",
+                  "description": "Impression share lost due to budget constraints"
+                },
+                "xdm:budgetUtilization": {
+                  "type": "object",
+                  "title": "Budget Utilization Metrics",
+                  "description": "Detailed budget utilization metrics",
+                  "properties": {
+                    "xdm:budgetAllocated": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Allocated"
+                    },
+                    "xdm:budgetSpent": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Spent"
+                    },
+                    "xdm:budgetRemaining": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Remaining"
+                    },
+                    "xdm:budgetUtilization": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Utilization"
+                    },
+                    "xdm:dailyBudget": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Daily Budget"
+                    },
+                    "xdm:dailySpend": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Daily Spend"
+                    },
+                    "xdm:dailyBudgetUtilization": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Daily Budget Utilization"
+                    },
+                    "xdm:pacingStatus": {
+                      "type": "string",
+                      "title": "Pacing Status",
+                      "enum": ["on_track", "ahead", "behind", "paused"],
+                      "meta:enum": {
+                        "on_track": "On Track",
+                        "ahead": "Ahead",
+                        "behind": "Behind",
+                        "paused": "Paused"
+                      }
+                    },
+                    "xdm:projectedSpend": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Projected Spend"
+                    },
+                    "xdm:budgetOverrun": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Overrun"
+                    },
+                    "xdm:budgetUnderrun": {
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "title": "Budget Underrun"
+                    }
+                  }
+                },
+                "xdm:budgetRemaining": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Budget Remaining",
+                  "description": "Remaining budget amount"
+                },
+                "xdm:budgetPacing": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Budget Pacing",
+                  "description": "Budget pacing percentage (actual vs. planned)"
+                },
+                "xdm:costEfficiency": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Cost Efficiency",
+                  "description": "Cost efficiency score compared to benchmarks"
+                },
+                "xdm:marginOfError": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Margin of Error",
+                  "description": "Statistical margin of error for cost metrics"
+                },
+                "xdm:confidenceLevel": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Confidence Level",
+                  "description": "Statistical confidence level for cost metrics"
+                },
+                "xdm:costTrend": {
+                  "type": "string",
+                  "title": "Cost Trend",
+                  "description": "Trend direction for costs",
+                  "enum": ["increasing", "decreasing", "stable", "volatile"],
+                  "meta:enum": {
+                    "increasing": "Costs are increasing",
+                    "decreasing": "Costs are decreasing",
+                    "stable": "Costs are stable",
+                    "volatile": "Costs are volatile"
+                  }
+                },
+                "xdm:costVariance": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Cost Variance",
+                  "description": "Variance in cost metrics"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/cost-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,93 @@
+{
+  "xdm:paidMedia": {
+    "xdm:qualityMetrics": {
+      "xdm:relevanceScore": {
+        "xdm:value": 9.0
+      },
+      "xdm:engagementScore": {
+        "xdm:value": 8.2
+      },
+      "xdm:conversionScore": {
+        "xdm:value": 8.8
+      },
+      "xdm:overallQualityScore": {
+        "xdm:value": 8.67
+      },
+      "xdm:negativeActions": {
+        "xdm:value": 25
+      },
+      "xdm:negativeActionRate": {
+        "xdm:value": 0.0005
+      },
+      "xdm:positiveActions": {
+        "xdm:value": 12345
+      },
+      "xdm:positiveActionRate": {
+        "xdm:value": 0.247
+      },
+      "xdm:brandSafetyScore": {
+        "xdm:value": 9.5
+      },
+      "xdm:viewabilityScore": {
+        "xdm:value": 8.5
+      },
+      "xdm:fraudScore": {
+        "xdm:value": 0.5
+      },
+      "xdm:invalidTrafficRate": {
+        "xdm:value": 0.02
+      },
+      "xdm:botTrafficRate": {
+        "xdm:value": 0.015
+      },
+      "xdm:humanTrafficRate": {
+        "xdm:value": 0.985
+      },
+      "xdm:attentionScore": {
+        "xdm:value": 7.8
+      },
+      "xdm:dwellTime": {
+        "xdm:value": 4.2
+      },
+      "xdm:interactionDepth": {
+        "xdm:value": 3.5
+      },
+      "xdm:creativeFatigue": {
+        "xdm:value": 2.1
+      },
+      "xdm:frequencyFatigue": {
+        "xdm:value": 1.8
+      },
+      "xdm:audienceRelevance": {
+        "xdm:value": 8.9
+      },
+      "xdm:contextualRelevance": {
+        "xdm:value": 8.5
+      },
+      "xdm:emotionalResonance": {
+        "xdm:value": 7.6
+      },
+      "xdm:memorabilityScore": {
+        "xdm:value": 7.2
+      },
+      "xdm:brandLiftScore": {
+        "xdm:value": 6.8
+      },
+      "xdm:intentLiftScore": {
+        "xdm:value": 7.4
+      },
+      "xdm:qualityTrend": "improving",
+      "xdm:benchmarkComparison": {
+        "xdm:industryAverage": {
+          "xdm:value": 7.5
+        },
+        "xdm:percentileRank": {
+          "xdm:value": 78
+        },
+        "xdm:competitorAverage": {
+          "xdm:value": 7.8
+        }
+      }
+    }
+  }
+}

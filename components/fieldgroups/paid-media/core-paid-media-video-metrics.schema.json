@@ -1,0 +1,215 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/video-metrics",
+  "title": "Core Paid Media Video Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Video-specific performance metrics for paid media campaigns",
+  "definitions": {
+    "video-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:videoMetrics": {
+              "type": "object",
+              "title": "Video Metrics",
+              "description": "Metrics specific to video ads",
+              "properties": {
+                "xdm:videoPlays": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Plays",
+                  "description": "Number of video plays"
+                },
+                "xdm:video3SecViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "3-Second Video Views",
+                  "description": "Number of 3-second video views"
+                },
+                "xdm:video2SecViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "2-Second Video Views",
+                  "description": "Number of times video was viewed for at least 2 seconds"
+                },
+                "xdm:video6SecViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "6-Second Video Views",
+                  "description": "Number of times video was viewed for at least 6 seconds"
+                },
+                "xdm:video10SecViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "10-Second Video Views",
+                  "description": "Number of times video was viewed for at least 10 seconds"
+                },
+                "xdm:videoViewRate2Sec": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "2-Second Video View Rate",
+                  "description": "Percentage of videos viewed for at least 2 seconds"
+                },
+                "xdm:videoViewRate6Sec": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "6-Second Video View Rate",
+                  "description": "Percentage of videos viewed for at least 6 seconds"
+                },
+                "xdm:video15SecViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "15-Second Video Views",
+                  "description": "Number of 15-second video views"
+                },
+                "xdm:video30SecViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "30-Second Video Views",
+                  "description": "Number of 30-second video views"
+                },
+                "xdm:videoQuartile1": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video 25% Completion",
+                  "description": "Number of videos watched to 25%"
+                },
+                "xdm:videoQuartile2": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video 50% Completion",
+                  "description": "Number of videos watched to 50%"
+                },
+                "xdm:videoQuartile3": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video 75% Completion",
+                  "description": "Number of videos watched to 75%"
+                },
+                "xdm:videoCompletions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Completions",
+                  "description": "Number of videos watched to completion"
+                },
+                "xdm:videoCompletionRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Completion Rate",
+                  "description": "Percentage of videos watched to completion"
+                },
+                "xdm:videoViewRate25Percent": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "25% Video View Rate",
+                  "description": "Percentage of videos viewed to 25% completion"
+                },
+                "xdm:videoViewRate50Percent": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "50% Video View Rate",
+                  "description": "Percentage of videos viewed to 50% completion"
+                },
+                "xdm:videoViewRate75Percent": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "75% Video View Rate",
+                  "description": "Percentage of videos viewed to 75% completion"
+                },
+                "xdm:videoViewRate100Percent": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "100% Video View Rate",
+                  "description": "Percentage of videos viewed to 100% completion"
+                },
+                "xdm:averageVideoWatchTime": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Average Video Watch Time",
+                  "description": "Average time spent watching videos in seconds"
+                },
+                "xdm:totalVideoWatchTime": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Total Video Watch Time",
+                  "description": "Total time spent watching videos in seconds"
+                },
+                "xdm:videoMrcViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video MRC Views",
+                  "description": "Video views meeting MRC standards"
+                },
+                "xdm:videoThroughplayViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Throughplay Views",
+                  "description": "Number of throughplay video views"
+                },
+                "xdm:videoSkips": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Skips",
+                  "description": "Number of video skips"
+                },
+                "xdm:videoSkipRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Skip Rate",
+                  "description": "Percentage of videos that were skipped"
+                },
+                "xdm:videoReplays": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Replays",
+                  "description": "Number of video replays"
+                },
+                "xdm:videoPauses": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Pauses",
+                  "description": "Number of video pauses"
+                },
+                "xdm:videoResumes": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Resumes",
+                  "description": "Number of video resumes after pause"
+                },
+                "xdm:videoFullscreenViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Fullscreen Views",
+                  "description": "Number of fullscreen video views"
+                },
+                "xdm:videoMutes": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Mutes",
+                  "description": "Number of video mutes"
+                },
+                "xdm:videoUnmutes": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Unmutes",
+                  "description": "Number of video unmutes"
+                },
+                "xdm:videoVolumeChanges": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Volume Changes",
+                  "description": "Number of video volume changes"
+                },
+                "xdm:videoClickToPlays": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Click to Plays",
+                  "description": "Number of click-to-play actions"
+                },
+                "xdm:videoAutoPlays": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Auto Plays",
+                  "description": "Number of auto-play video starts"
+                },
+                "xdm:videoViewabilityRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Viewability Rate",
+                  "description": "Percentage of video impressions that were viewable"
+                },
+                "xdm:videoAudibilityRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Audibility Rate",
+                  "description": "Percentage of video views with audible sound"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/video-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

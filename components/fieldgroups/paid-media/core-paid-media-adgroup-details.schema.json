@@ -1,0 +1,326 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/adgroup-details",
+  "title": "Core Paid Media Ad Group Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Ad group-specific details and configuration fields for paid media ad groups/ad sets/ad squads",
+  "definitions": {
+    "adgroup-details": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:adGroupDetails": {
+              "type": "object",
+              "title": "Ad Group Details",
+              "description": "Specific details for paid media ad groups/ad sets/ad squads",
+              "properties": {
+                "xdm:adGroupType": {
+                  "type": "string",
+                  "title": "Ad Group Type",
+                  "description": "Type of ad group",
+                  "enum": [
+                    "standard",
+                    "dynamic",
+                    "smart",
+                    "shopping",
+                    "video",
+                    "app_install",
+                    "lead_generation",
+                    "reach_frequency",
+                    "other"
+                  ],
+                  "meta:enum": {
+                    "standard": "Standard Ad Group",
+                    "dynamic": "Dynamic Ad Group",
+                    "smart": "Smart/Automated Ad Group",
+                    "shopping": "Shopping Ad Group",
+                    "video": "Video Ad Group",
+                    "app_install": "App Install Ad Group",
+                    "lead_generation": "Lead Generation Ad Group",
+                    "reach_frequency": "Reach & Frequency Ad Group",
+                    "other": "Other Ad Group Type"
+                  }
+                },
+                "xdm:childAdType": {
+                  "type": "string",
+                  "title": "Child Ad Type",
+                  "description": "Type of ads contained in this ad group"
+                },
+                "xdm:promotedObject": {
+                  "type": "object",
+                  "title": "Promoted Object",
+                  "description": "Object being promoted at ad group level",
+                  "properties": {
+                    "xdm:objectType": {
+                      "type": "string",
+                      "title": "Object Type"
+                    },
+                    "xdm:objectID": {
+                      "type": "string",
+                      "title": "Object ID"
+                    },
+                    "xdm:productSetID": {
+                      "type": "string",
+                      "title": "Product Set ID",
+                      "description": "Product catalog set ID for shopping campaigns"
+                    }
+                  }
+                },
+                "xdm:budgetSettings": {
+                  "type": "object",
+                  "title": "Budget Settings",
+                  "description": "Ad group budget configuration",
+                  "properties": {
+                    "xdm:budgetInMicroCurrency": {
+                      "type": "integer",
+                      "title": "Budget (Micro Currency)",
+                      "description": "Budget amount in micro currency units"
+                    },
+                    "xdm:bidInMicroCurrency": {
+                      "type": "integer",
+                      "title": "Bid (Micro Currency)",
+                      "description": "Bid amount in micro currency units"
+                    },
+                    "xdm:bidStrategyType": {
+                      "type": "string",
+                      "title": "Bid Strategy Type",
+                      "enum": [
+                        "manual_cpc",
+                        "enhanced_cpc",
+                        "maximize_clicks",
+                        "maximize_conversions",
+                        "target_cpa",
+                        "target_roas",
+                        "target_impression_share",
+                        "automatic",
+                        "lowest_cost",
+                        "cost_cap",
+                        "bid_cap",
+                        "min_roas"
+                      ],
+                      "meta:enum": {
+                        "manual_cpc": "Manual CPC",
+                        "enhanced_cpc": "Enhanced CPC",
+                        "maximize_clicks": "Maximize Clicks",
+                        "maximize_conversions": "Maximize Conversions",
+                        "target_cpa": "Target CPA",
+                        "target_roas": "Target ROAS",
+                        "target_impression_share": "Target Impression Share",
+                        "automatic": "Automatic Bidding",
+                        "lowest_cost": "Lowest Cost",
+                        "cost_cap": "Cost Cap",
+                        "bid_cap": "Bid Cap",
+                        "min_roas": "Minimum ROAS"
+                      }
+                    },
+                    "xdm:targetCpa": {
+                      "type": "number",
+                      "title": "Target CPA",
+                      "description": "Target cost per acquisition"
+                    },
+                    "xdm:targetRoas": {
+                      "type": "number",
+                      "title": "Target ROAS",
+                      "description": "Target return on ad spend"
+                    },
+                    "xdm:roasValueMicro": {
+                      "type": "integer",
+                      "title": "ROAS Value (Micro)",
+                      "description": "Desired ROAS value in micro currency"
+                    }
+                  }
+                },
+                "xdm:targeting": {
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-targeting",
+                  "title": "Ad Group Targeting",
+                  "description": "Targeting specifications for the ad group"
+                },
+                "xdm:optimizationSettings": {
+                  "type": "object",
+                  "title": "Optimization Settings",
+                  "description": "Ad group optimization configuration",
+                  "properties": {
+                    "xdm:optimizationGoalMetadata": {
+                      "type": "object",
+                      "title": "Optimization Goal Metadata",
+                      "description": "Metadata for optimization goals",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    },
+                    "xdm:conversionWindow": {
+                      "type": "string",
+                      "title": "Conversion Window",
+                      "description": "Delivery optimization window"
+                    },
+                    "xdm:isAutoTargetingEnabled": {
+                      "type": "boolean",
+                      "title": "Auto Targeting Enabled",
+                      "description": "Whether auto-targeting is enabled"
+                    },
+                    "xdm:isCampaignOptimization": {
+                      "type": "boolean",
+                      "title": "Campaign Optimization",
+                      "description": "Whether creative optimization is enabled"
+                    }
+                  }
+                },
+                "xdm:placementSettings": {
+                  "type": "object",
+                  "title": "Placement Settings",
+                  "description": "Ad placement configuration",
+                  "properties": {
+                    "xdm:placementGroup": {
+                      "type": "string",
+                      "title": "Placement Group",
+                      "description": "Campaign placement group type"
+                    },
+                    "xdm:placements": {
+                      "type": "array",
+                      "title": "Placements",
+                      "description": "Specific ad placements",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "xdm:deviceTypes": {
+                      "type": "array",
+                      "title": "Device Types",
+                      "description": "Targeted device types",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "xdm:deliverySettings": {
+                  "type": "object",
+                  "title": "Delivery Settings",
+                  "description": "Ad delivery configuration",
+                  "properties": {
+                    "xdm:pacingDeliveryType": {
+                      "type": "string",
+                      "title": "Pacing Delivery Type",
+                      "enum": ["standard", "accelerated"],
+                      "meta:enum": {
+                        "standard": "Standard Delivery",
+                        "accelerated": "Accelerated Delivery"
+                      }
+                    },
+                    "xdm:deliveryConstraint": {
+                      "type": "string",
+                      "title": "Delivery Constraint",
+                      "description": "Type of delivery constraint"
+                    },
+                    "xdm:deliveryStatus": {
+                      "type": "string",
+                      "title": "Delivery Status",
+                      "description": "Current delivery status"
+                    },
+                    "xdm:reachGoal": {
+                      "type": "integer",
+                      "title": "Reach Goal",
+                      "description": "Target reach goal"
+                    },
+                    "xdm:impressionGoal": {
+                      "type": "integer",
+                      "title": "Impression Goal",
+                      "description": "Target impression goal"
+                    }
+                  }
+                },
+                "xdm:trackingSettings": {
+                  "type": "object",
+                  "title": "Tracking Settings",
+                  "description": "Tracking and measurement configuration",
+                  "properties": {
+                    "xdm:pixelID": {
+                      "type": "string",
+                      "title": "Pixel ID",
+                      "description": "Pixel associated with the ad group"
+                    },
+                    "xdm:measurementProviderNames": {
+                      "type": "array",
+                      "title": "Measurement Provider Names",
+                      "description": "Approved measurement providers",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "xdm:eventSources": {
+                      "type": "array",
+                      "title": "Event Sources",
+                      "description": "Event sources for tracking",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "xdm:skadnetworkProperties": {
+                      "type": "object",
+                      "title": "SKAdNetwork Properties",
+                      "description": "SKAdNetwork configuration for iOS",
+                      "properties": {
+                        "xdm:status": {
+                          "type": "string",
+                          "title": "SKAdNetwork Status",
+                          "description": "SKAdNetwork enrollment status"
+                        }
+                      }
+                    },
+                    "xdm:urlTracking": {
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-url-tracking"
+                    }
+                  }
+                },
+                "xdm:brandSafetyConfig": {
+                  "type": "object",
+                  "title": "Brand Safety Configuration",
+                  "description": "Brand safety and content filtering settings",
+                  "properties": {
+                    "xdm:inventoryFilter": {
+                      "type": "string",
+                      "title": "Inventory Filter",
+                      "description": "Brand safety inventory filter level"
+                    },
+                    "xdm:blockedCategories": {
+                      "type": "array",
+                      "title": "Blocked Categories",
+                      "description": "Content categories to avoid",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "xdm:additionalDetails": {
+                  "title": "Additional Ad Group Details",
+                  "description": "Platform-specific ad group details not defined in core schema. Allows ingestion of arbitrary fields from paid media network APIs without requiring schema changes.",
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/adgroup-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

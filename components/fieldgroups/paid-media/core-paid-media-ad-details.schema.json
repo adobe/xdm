@@ -1,0 +1,370 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/ad-details",
+  "title": "Core Paid Media Ad Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Ad-specific details and configuration fields for paid media ads",
+  "definitions": {
+    "ad-details": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:adDetails": {
+              "type": "object",
+              "title": "Ad Details",
+              "description": "Specific details for individual paid media ads",
+              "properties": {
+                "xdm:adType": {
+                  "type": "string",
+                  "title": "Ad Type",
+                  "description": "Type of ad creative",
+                  "enum": [
+                    "text",
+                    "image",
+                    "video",
+                    "carousel",
+                    "collection",
+                    "dynamic",
+                    "responsive",
+                    "shopping",
+                    "app_install",
+                    "lead_form",
+                    "playable",
+                    "interactive",
+                    "other"
+                  ],
+                  "meta:enum": {
+                    "text": "Text Ad",
+                    "image": "Image Ad",
+                    "video": "Video Ad",
+                    "carousel": "Carousel Ad",
+                    "collection": "Collection Ad",
+                    "dynamic": "Dynamic Ad",
+                    "responsive": "Responsive Ad",
+                    "shopping": "Shopping Ad",
+                    "app_install": "App Install Ad",
+                    "lead_form": "Lead Form Ad",
+                    "playable": "Playable Ad",
+                    "interactive": "Interactive Ad",
+                    "other": "Other Ad Type"
+                  }
+                },
+                "xdm:adSubtype": {
+                  "type": "string",
+                  "title": "Ad Subtype",
+                  "description": "Additional classification of the ad beyond the main type (GenStudio migration aid)"
+                },
+                "xdm:creative": {
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-creative",
+                  "title": "Creative Details",
+                  "description": "Creative content and assets for the ad"
+                },
+                "xdm:reviewStatus": {
+                  "type": "string",
+                  "title": "Review Status",
+                  "description": "Ad review/approval status",
+                  "enum": [
+                    "pending",
+                    "approved",
+                    "rejected",
+                    "under_review",
+                    "needs_attention",
+                    "not_reviewed"
+                  ],
+                  "meta:enum": {
+                    "pending": "Pending Review",
+                    "approved": "Approved",
+                    "rejected": "Rejected",
+                    "under_review": "Under Review",
+                    "needs_attention": "Needs Attention",
+                    "not_reviewed": "Not Reviewed"
+                  }
+                },
+                "xdm:reviewStatusReasons": {
+                  "type": "array",
+                  "title": "Review Status Reasons",
+                  "description": "Reasons for review rejection or issues",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "xdm:deliveryStatus": {
+                  "type": "string",
+                  "title": "Delivery Status",
+                  "description": "Current delivery status of the ad",
+                  "enum": [
+                    "active",
+                    "inactive",
+                    "pending",
+                    "learning",
+                    "limited",
+                    "not_delivering",
+                    "completed"
+                  ],
+                  "meta:enum": {
+                    "active": "Actively Delivering",
+                    "inactive": "Not Delivering",
+                    "pending": "Pending Delivery",
+                    "learning": "In Learning Phase",
+                    "limited": "Limited Delivery",
+                    "not_delivering": "Not Delivering",
+                    "completed": "Delivery Completed"
+                  }
+                },
+                "xdm:isPinDeleted": {
+                  "type": "boolean",
+                  "title": "Is Pin Deleted",
+                  "description": "Whether the original pin/post is deleted (for social platforms)"
+                },
+                "xdm:isRemovable": {
+                  "type": "boolean",
+                  "title": "Is Removable",
+                  "description": "Whether the ad can be removed"
+                },
+                "xdm:payingAdvertiserName": {
+                  "type": "string",
+                  "title": "Paying Advertiser Name",
+                  "description": "Name of the paying advertiser (for political/regulated ads)"
+                },
+                "xdm:creativeAssetGroupsSpec": {
+                  "type": "object",
+                  "title": "Creative Asset Groups Spec",
+                  "description": "Specification for dynamic creative or asset customization",
+                  "properties": {
+                    "xdm:isDynamic": {
+                      "type": "boolean",
+                      "title": "Is Dynamic Creative",
+                      "description": "Whether this uses dynamic creative assembly"
+                    },
+                    "xdm:assetGroups": {
+                      "type": "array",
+                      "title": "Asset Groups",
+                      "description": "Groups of creative assets",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:groupName": {
+                            "type": "string",
+                            "title": "Group Name"
+                          },
+                          "xdm:assetIDs": {
+                            "type": "array",
+                            "title": "Asset IDs",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "xdm:degreesOfFreedomSpec": {
+                  "type": "object",
+                  "title": "Degrees of Freedom Spec",
+                  "description": "Specification for automated creative features (AI enhancements)",
+                  "properties": {
+                    "xdm:enabled": {
+                      "type": "boolean",
+                      "title": "AI Enhancement Enabled",
+                      "description": "Whether AI creative enhancements are enabled"
+                    },
+                    "xdm:features": {
+                      "type": "array",
+                      "title": "AI Features",
+                      "description": "Specific AI features enabled",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "xdm:socialMediaProperties": {
+                  "type": "object",
+                  "title": "Social Media Properties",
+                  "description": "Properties specific to social media ads",
+                  "properties": {
+                    "xdm:effectiveObjectStoryID": {
+                      "type": "string",
+                      "title": "Effective Object Story ID",
+                      "description": "Links to the social media post used as the ad"
+                    },
+                    "xdm:sourceInstagramMediaID": {
+                      "type": "string",
+                      "title": "Source Instagram Media ID",
+                      "description": "Instagram media ID for Instagram-originated creatives"
+                    },
+                    "xdm:objectStorySpec": {
+                      "type": "object",
+                      "title": "Object Story Spec",
+                      "description": "Full story specification for complex ad types",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    },
+                    "xdm:isShareable": {
+                      "type": "boolean",
+                      "title": "Is Shareable",
+                      "description": "Whether users can share the ad with friends"
+                    },
+                    "xdm:favoriteDisplayMode": {
+                      "type": "string",
+                      "title": "Favorite Display Mode",
+                      "description": "How users can favorite the creative within the app"
+                    }
+                  }
+                },
+                "xdm:appProperties": {
+                  "type": "object",
+                  "title": "App Properties",
+                  "description": "Properties for app install/engagement ads",
+                  "properties": {
+                    "xdm:appInstallProperties": {
+                      "type": "object",
+                      "title": "App Install Properties",
+                      "description": "Properties for app install ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    },
+                    "xdm:deepLinkProperties": {
+                      "type": "object",
+                      "title": "Deep Link Properties",
+                      "description": "Properties for deep link ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    }
+                  }
+                },
+                "xdm:leadGenerationProperties": {
+                  "type": "object",
+                  "title": "Lead Generation Properties",
+                  "description": "Properties for lead generation ads",
+                  "properties": {
+                    "xdm:leadGenerationFormID": {
+                      "type": "string",
+                      "title": "Lead Generation Form ID",
+                      "description": "ID of the lead generation form"
+                    },
+                    "xdm:offerDisclaimerID": {
+                      "type": "string",
+                      "title": "Offer Disclaimer ID",
+                      "description": "ID of offer disclaimer associated with the creative"
+                    }
+                  }
+                },
+                "xdm:partnershipProperties": {
+                  "type": "object",
+                  "title": "Partnership Properties",
+                  "description": "Properties for partnership/creator ads",
+                  "properties": {
+                    "xdm:creatorPartnershipType": {
+                      "type": "string",
+                      "title": "Creator Partnership Type",
+                      "description": "Type of creator partnership"
+                    },
+                    "xdm:profileProperties": {
+                      "type": "object",
+                      "title": "Profile Properties",
+                      "description": "Profile properties for partnership ads",
+                      "properties": {
+                        "xdm:profileID": {
+                          "type": "string",
+                          "title": "Profile ID",
+                          "description": "ID of the associated profile"
+                        }
+                      }
+                    }
+                  }
+                },
+                "xdm:interactionProperties": {
+                  "type": "object",
+                  "title": "Interaction Properties",
+                  "description": "Properties for interactive ad features",
+                  "properties": {
+                    "xdm:chatProperties": {
+                      "type": "object",
+                      "title": "Chat Properties",
+                      "description": "Properties for chat-enabled ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    },
+                    "xdm:webViewProperties": {
+                      "type": "object",
+                      "title": "Web View Properties",
+                      "description": "Properties for web view ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    },
+                    "xdm:adToLensProperties": {
+                      "type": "object",
+                      "title": "Ad to Lens Properties",
+                      "description": "Properties for AR lens ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    },
+                    "xdm:adToCallProperties": {
+                      "type": "object",
+                      "title": "Ad to Call Properties",
+                      "description": "Properties for call-to-action ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    },
+                    "xdm:adToMessageProperties": {
+                      "type": "object",
+                      "title": "Ad to Message Properties",
+                      "description": "Properties for message ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    },
+                    "xdm:reminderProperties": {
+                      "type": "object",
+                      "title": "Reminder Properties",
+                      "description": "Properties for reminder ads",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    }
+                  }
+                },
+                "xdm:urlTracking": {
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-url-tracking"
+                },
+                "xdm:additionalDetails": {
+                  "title": "Additional Ad Details",
+                  "description": "Platform-specific ad details not defined in core schema. Allows ingestion of arbitrary fields from paid media network APIs without requiring schema changes.",
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/ad-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

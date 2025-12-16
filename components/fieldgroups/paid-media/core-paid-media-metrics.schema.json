@@ -1,0 +1,151 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/core-metrics",
+  "title": "Core Paid Media Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Core performance metrics common across paid media platforms",
+  "definitions": {
+    "core-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:metrics": {
+              "type": "object",
+              "title": "Paid Media Core Metrics",
+              "description": "Common performance metrics for paid media campaigns",
+              "properties": {
+                "xdm:impressions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Impressions",
+                  "description": "Number of times ads were displayed"
+                },
+                "xdm:clicks": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Clicks",
+                  "description": "Number of clicks on ads"
+                },
+                "xdm:spend": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Spend",
+                  "description": "Amount spent in account currency"
+                },
+                "xdm:reach": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Reach",
+                  "description": "Number of unique users who saw the ads"
+                },
+                "xdm:frequency": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Frequency",
+                  "description": "Average number of times each user saw the ads"
+                },
+                "xdm:ctr": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Click-Through Rate",
+                  "description": "Click-through rate (clicks/impressions)"
+                },
+                "xdm:cpm": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Cost Per Mille",
+                  "description": "Cost per thousand impressions"
+                },
+                "xdm:cpc": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Cost Per Click",
+                  "description": "Average cost per click"
+                },
+                "xdm:conversions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Conversions",
+                  "description": "Total number of conversions"
+                },
+                "xdm:conversionValue": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Conversion Value",
+                  "description": "Total value of conversions in account currency"
+                },
+                "xdm:costPerConversion": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Cost Per Conversion",
+                  "description": "Average cost per conversion"
+                },
+                "xdm:roas": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Return on Ad Spend",
+                  "description": "Return on ad spend (conversion value / spend)"
+                },
+                "xdm:videoViews": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Views",
+                  "description": "Number of video views"
+                },
+                "xdm:videoCompletions": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Video Completions",
+                  "description": "Number of video completions"
+                },
+                "xdm:engagements": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Engagements",
+                  "description": "Total engagement actions (likes, shares, comments, etc.)"
+                },
+                "xdm:engagementRate": {
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "title": "Engagement Rate",
+                  "description": "Engagement rate (engagements/impressions)"
+                },
+                "xdm:additionalMetrics": {
+                  "title": "Additional Metrics",
+                  "description": "Platform-specific or custom metrics not defined in core schema. Allows ingestion of arbitrary metrics from paid media network APIs without requiring schema changes.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:metricName": {
+                        "title": "Metric Name",
+                        "type": "string",
+                        "description": "Name of the metric (e.g., 'video_30_sec_watched_actions', 'video_p95_watched_actions', 'outbound_click_rate')"
+                      },
+                      "xdm:metricValue": {
+                        "title": "Metric Value",
+                        "type": "number",
+                        "description": "Numeric value of the metric"
+                      },
+                      "xdm:metricType": {
+                        "title": "Metric Type",
+                        "type": "string",
+                        "description": "Type/category of metric (e.g., 'video', 'conversion', 'engagement', 'attribution')"
+                      },
+                      "xdm:metricUnit": {
+                        "title": "Metric Unit",
+                        "type": "string",
+                        "description": "Unit of measurement (e.g., 'count', 'percentage', 'currency', 'seconds')"
+                      }
+                    },
+                    "required": ["xdm:metricName", "xdm:metricValue"]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/core-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

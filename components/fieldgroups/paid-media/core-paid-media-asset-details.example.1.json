@@ -1,0 +1,105 @@
+{
+  "xdm:paidMedia": {
+    "xdm:assetDetails": {
+      "xdm:assetType": "video",
+      "xdm:assetSubType": "mp4",
+      "title": "Fall Product Launch - 30 Second Hero Video",
+      "description": "Introducing our latest product innovation with stunning visuals and compelling storytelling. Features product benefits, customer testimonials, and call-to-action.",
+      "xdm:content": "",
+      "xdm:mediaProperties": {
+        "xdm:url": "https://cdn.acmecorp.com/videos/fall-launch-hero-30s.mp4",
+        "xdm:permalinkURL": "https://cdn.acmecorp.com/videos/fall-launch-hero-30s.mp4",
+        "xdm:thumbnailURL": "https://cdn.acmecorp.com/videos/thumbnails/fall-launch-hero-30s.jpg",
+        "xdm:source": "https://cdn.acmecorp.com/videos/fall-launch-hero-30s.mp4",
+        "xdm:hash": "sha256:abc123def456ghi789jkl012mno345pqr678stu901vwx234yz"
+      },
+      "xdm:dimensions": {
+        "xdm:width": 1920,
+        "xdm:height": 1080,
+        "xdm:aspectRatio": "16:9",
+        "xdm:orientation": "landscape"
+      },
+      "xdm:fileProperties": {
+        "xdm:fileSize": 45678912,
+        "xdm:fileSizeFormatted": "43.5 MB",
+        "xdm:mimeType": "video/mp4",
+        "xdm:fileExtension": "mp4",
+        "xdm:encoding": "h264"
+      },
+      "xdm:videoProperties": {
+        "xdm:duration": 30,
+        "xdm:frameRate": 30,
+        "xdm:bitrate": 12000,
+        "xdm:codec": "h264",
+        "xdm:hasAudio": true,
+        "xdm:youtubeVideoID": ""
+      },
+      "xdm:usageMetadata": {
+        "xdm:usageCount": 5,
+        "xdm:lastUsedDate": "2025-11-10T08:00:00Z",
+        "xdm:associatedCampaigns": ["campaign_fall_2025_launch"],
+        "xdm:associatedAds": ["ad_vid_987654321", "ad_vid_987654322"]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_video_id",
+          "xdm:stringValue": "987654321012345"
+        },
+        {
+          "xdm:fieldName": "meta_video_status",
+          "xdm:stringValue": "ready"
+        },
+        {
+          "xdm:fieldName": "meta_video_upload_date",
+          "xdm:stringValue": "2025-10-28T14:30:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_video_thumbnail_url",
+          "xdm:stringValue": "https://scontent.xx.fbcdn.net/v/t15.5256-10/video_thumb.jpg"
+        },
+        {
+          "xdm:fieldName": "meta_video_format_support",
+          "xdm:stringValue": "feed,story,reels"
+        },
+        {
+          "xdm:fieldName": "meta_video_captions_auto_generated",
+          "xdm:stringValue": "false"
+        },
+        {
+          "xdm:fieldName": "meta_video_sound_collection_id",
+          "xdm:stringValue": "sound_collection_123456"
+        },
+        {
+          "xdm:fieldName": "meta_video_file_size_bytes",
+          "xdm:numberValue": {
+            "xdm:value": 45678912
+          }
+        },
+        {
+          "xdm:fieldName": "meta_video_bitrate_kbps",
+          "xdm:numberValue": {
+            "xdm:value": 5000
+          }
+        },
+        {
+          "xdm:fieldName": "meta_video_quality_score",
+          "xdm:numberValue": {
+            "xdm:value": 8.7
+          }
+        },
+        {
+          "xdm:fieldName": "meta_video_engagement_score",
+          "xdm:numberValue": {
+            "xdm:value": 0.78
+          }
+        },
+        {
+          "xdm:fieldName": "meta_video_avg_watch_time_seconds",
+          "xdm:numberValue": {
+            "xdm:value": 18.5
+          }
+        }
+      ]
+    }
+  }
+}

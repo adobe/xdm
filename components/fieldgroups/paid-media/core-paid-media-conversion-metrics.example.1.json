@@ -1,0 +1,120 @@
+{
+  "xdm:paidMedia": {
+    "xdm:conversionMetrics": {
+      "xdm:postClickConversions": {
+        "xdm:value": 1250
+      },
+      "xdm:postViewConversions": {
+        "xdm:value": 385
+      },
+      "xdm:postEngagementConversions": {
+        "xdm:value": 125
+      },
+      "xdm:conversionsByType": {
+        "xdm:purchases": {
+          "xdm:value": 875
+        },
+        "xdm:addToCart": {
+          "xdm:value": 2340
+        },
+        "xdm:initiateCheckout": {
+          "xdm:value": 1450
+        },
+        "xdm:leads": {
+          "xdm:value": 245
+        },
+        "xdm:registrations": {
+          "xdm:value": 180
+        },
+        "xdm:downloads": {
+          "xdm:value": 320
+        },
+        "xdm:subscriptions": {
+          "xdm:value": 95
+        },
+        "xdm:customEvents": {
+          "xdm:value": 125
+        }
+      },
+      "xdm:conversionRate": {
+        "xdm:value": 0.0352
+      },
+      "xdm:costPerAction": {
+        "xdm:value": 10.23
+      },
+      "xdm:conversionLag": {
+        "xdm:value": 8.3
+      },
+      "xdm:conversionPath": {
+        "xdm:averagePathLength": {
+          "xdm:value": 4.2
+        },
+        "xdm:medianPathLength": {
+          "xdm:value": 3
+        },
+        "xdm:singleTouchConversions": {
+          "xdm:value": 180
+        },
+        "xdm:multiTouchConversions": {
+          "xdm:value": 1580
+        },
+        "xdm:averageTouchpoints": {
+          "xdm:value": 4.2
+        },
+        "xdm:assistedConversions": {
+          "xdm:value": 890
+        },
+        "xdm:directConversions": {
+          "xdm:value": 870
+        }
+      },
+      "xdm:assistedConversions": {
+        "xdm:value": 890
+      },
+      "xdm:directConversions": {
+        "xdm:value": 870
+      },
+      "xdm:newCustomerConversions": {
+        "xdm:value": 425
+      },
+      "xdm:returningCustomerConversions": {
+        "xdm:value": 825
+      },
+      "xdm:averageOrderValue": {
+        "xdm:value": 214.29
+      },
+      "xdm:totalOrderValue": {
+        "xdm:value": 187500
+      },
+      "xdm:conversionQuality": {
+        "xdm:qualityScore": {
+          "xdm:value": 8.2
+        },
+        "xdm:fraudRate": {
+          "xdm:value": 0.02
+        },
+        "xdm:validationRate": {
+          "xdm:value": 0.98
+        }
+      },
+      "xdm:leads": {
+        "xdm:value": 245
+      },
+      "xdm:qualifiedLeads": {
+        "xdm:value": 185
+      },
+      "xdm:costPerLead": {
+        "xdm:value": 73.47
+      },
+      "xdm:leadFormOpens": {
+        "xdm:value": 890
+      },
+      "xdm:leadFormSubmissions": {
+        "xdm:value": 245
+      },
+      "xdm:leadFormCompletionRate": {
+        "xdm:value": 0.275
+      }
+    }
+  }
+}

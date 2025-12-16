@@ -1,0 +1,190 @@
+{
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:entityType": "asset",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:assetID": "987654321012345",
+    "xdm:assetGUID": "meta_act_123456789012345_asset_987654321012345",
+    "xdm:metadata": {
+      "xdm:name": "Fall Product Launch - 30 Second Video",
+      "xdm:status": "active",
+      "xdm:createdTime": "2025-10-25T14:00:00Z",
+      "xdm:updatedTime": "2025-11-05T10:00:00Z"
+    },
+    "xdm:assetDetails": {
+      "xdm:assetType": "video",
+      "xdm:assetFormat": "mp4",
+      "xdm:assetSubType": "feed_video",
+      "xdm:assetCategory": "product_demo",
+      "xdm:assetSource": "uploaded",
+      "xdm:assetLibrary": "meta_creative_hub",
+      "xdm:assetOwner": "acme_corp",
+      "xdm:assetPermissions": "private",
+      "xdm:isStockAsset": false,
+      "xdm:stockProvider": "",
+      "xdm:stockAssetID": "",
+      "xdm:licenseType": "owned",
+      "xdm:rightsManagement": {
+        "xdm:copyrightOwner": "Acme Corporation",
+        "xdm:licenseExpiration": "",
+        "xdm:usageRights": "unlimited",
+        "xdm:geographicRestrictions": [],
+        "xdm:platformRestrictions": [],
+        "xdm:exclusivityPeriod": ""
+      },
+      "xdm:fileProperties": {
+        "xdm:fileName": "fall_product_launch_30s_v2.mp4",
+        "xdm:fileSize": 45678912,
+        "xdm:fileSizeUnit": "bytes",
+        "xdm:fileHash": "sha256:abc123def456ghi789jkl012mno345pqr678stu901vwx234yz",
+        "xdm:mimeType": "video/mp4",
+        "xdm:encoding": "h264",
+        "xdm:bitrate": 5000,
+        "xdm:bitrateUnit": "kbps",
+        "xdm:colorSpace": "sRGB",
+        "xdm:colorDepth": 24,
+        "xdm:compressionType": "lossy"
+      },
+      "xdm:urlProperties": {
+        "xdm:assetURL": "https://video.xx.fbcdn.net/v/t42.1790-2/987654321012345_video.mp4",
+        "xdm:thumbnailURL": "https://scontent.xx.fbcdn.net/v/t45.1600-4/987654321012345_thumb.jpg",
+        "xdm:previewURL": "https://business.facebook.com/creatives/preview/987654321012345",
+        "xdm:downloadURL": "https://business.facebook.com/creatives/download/987654321012345",
+        "xdm:cdnURL": "https://cdn.acmecorp.com/assets/fall_product_launch_30s_v2.mp4",
+        "xdm:streamingURL": "https://stream.acmecorp.com/assets/987654321012345/manifest.m3u8",
+        "xdm:embedCode": "<iframe src='https://www.facebook.com/plugins/video.php?href=987654321012345'></iframe>"
+      },
+      "xdm:videoProperties": {
+        "xdm:duration": 30.5,
+        "xdm:durationUnit": "seconds",
+        "xdm:width": 1920,
+        "xdm:height": 1080,
+        "xdm:aspectRatio": "16:9",
+        "xdm:orientation": "landscape",
+        "xdm:frameRate": 30,
+        "xdm:frameRateUnit": "fps",
+        "xdm:videoCodec": "h264",
+        "xdm:audioCodec": "aac",
+        "xdm:audioChannels": 2,
+        "xdm:audioSampleRate": 48000,
+        "xdm:audioBitrate": 192,
+        "xdm:hasAudio": true,
+        "xdm:hasSubtitles": true,
+        "xdm:subtitleLanguages": ["en", "es", "fr"],
+        "xdm:closedCaptions": true,
+        "xdm:captionFormat": "srt",
+        "xdm:videoQuality": "1080p",
+        "xdm:hdrEnabled": false,
+        "xdm:is360": false,
+        "xdm:isVertical": false,
+        "xdm:isSquare": false,
+        "xdm:autoplay": true,
+        "xdm:looping": false,
+        "xdm:soundOn": true
+      },
+      "xdm:contentProperties": {
+        "xdm:title": "Introducing Our Revolutionary New Product",
+        "xdm:description": "Experience the future of technology with our latest innovation. Available now for a limited time.",
+        "xdm:headline": "Revolutionary Innovation",
+        "xdm:bodyText": "Transform your workflow with cutting-edge features designed for modern professionals.",
+        "xdm:callToAction": "Learn More",
+        "xdm:brandName": "Acme Corp",
+        "xdm:productName": "Acme Pro X",
+        "xdm:tagline": "Innovation Meets Excellence",
+        "xdm:keywords": [
+          "technology",
+          "innovation",
+          "productivity",
+          "professional",
+          "software"
+        ],
+        "xdm:hashtags": [
+          "#AcmeCorp",
+          "#Innovation",
+          "#TechSolutions",
+          "#ProductLaunch"
+        ],
+        "xdm:mentions": ["@AcmeCorp"],
+        "xdm:language": "en",
+        "xdm:locale": "en_US"
+      },
+      "xdm:creativeElements": {
+        "xdm:primaryColor": "#0066CC",
+        "xdm:secondaryColor": "#FFFFFF",
+        "xdm:accentColor": "#FF6600",
+        "xdm:backgroundColor": "#F5F5F5",
+        "xdm:textColor": "#333333",
+        "xdm:fontFamily": "Helvetica Neue",
+        "xdm:logoIncluded": true,
+        "xdm:logoPosition": "top_left",
+        "xdm:brandingLevel": "prominent",
+        "xdm:visualStyle": "modern",
+        "xdm:mood": "professional",
+        "xdm:tone": "confident"
+      },
+      "xdm:performanceMetadata": {
+        "xdm:assetScore": 8.5,
+        "xdm:qualityScore": 9.2,
+        "xdm:relevanceScore": 8.8,
+        "xdm:engagementScore": 8.3,
+        "xdm:creativeFatigue": 0.15,
+        "xdm:freshnessScore": 0.95,
+        "xdm:adStrength": "excellent",
+        "xdm:predictedPerformance": "high",
+        "xdm:benchmarkComparison": "above_average"
+      },
+      "xdm:usageTracking": {
+        "xdm:timesUsed": 12,
+        "xdm:activeCampaigns": 3,
+        "xdm:activeAdGroups": 5,
+        "xdm:activeAds": 8,
+        "xdm:firstUsedDate": "2025-11-01T00:00:00Z",
+        "xdm:lastUsedDate": "2025-11-09T15:00:00Z",
+        "xdm:totalImpressions": 1250000,
+        "xdm:totalClicks": 45000,
+        "xdm:totalSpend": 12500
+      },
+      "xdm:reviewStatus": {
+        "xdm:status": "approved",
+        "xdm:reviewDate": "2025-10-26T10:00:00Z",
+        "xdm:reviewerID": "meta_reviewer_456",
+        "xdm:reviewNotes": "Approved - high quality video content",
+        "xdm:policyViolations": [],
+        "xdm:appealStatus": "not_applicable",
+        "xdm:autoApproved": false,
+        "xdm:requiresManualReview": true
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_video_id",
+          "xdm:stringValue": "987654321012345"
+        },
+        {
+          "xdm:fieldName": "meta_video_title",
+          "xdm:stringValue": "Fall Product Launch - 30 Second Video"
+        },
+        {
+          "xdm:fieldName": "meta_upload_date",
+          "xdm:stringValue": "2025-10-25T14:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_video_status",
+          "xdm:stringValue": "ready"
+        },
+        {
+          "xdm:fieldName": "meta_video_type",
+          "xdm:stringValue": "uploaded"
+        },
+        {
+          "xdm:fieldName": "meta_thumbnail_source",
+          "xdm:stringValue": "auto_generated"
+        },
+        {
+          "xdm:fieldName": "meta_video_insights_enabled",
+          "xdm:stringValue": "true"
+        }
+      ]
+    }
+  }
+}

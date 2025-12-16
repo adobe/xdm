@@ -1,0 +1,390 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/asset-details",
+  "title": "Core Paid Media Asset Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Asset-specific details and configuration fields for paid media creative assets",
+  "definitions": {
+    "asset-details": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:assetDetails": {
+              "type": "object",
+              "title": "Asset Details",
+              "description": "Specific details for paid media creative assets",
+              "properties": {
+                "xdm:assetType": {
+                  "type": "string",
+                  "title": "Asset Type",
+                  "description": "Type of creative asset",
+                  "enum": [
+                    "image",
+                    "video",
+                    "audio",
+                    "text",
+                    "html5",
+                    "document",
+                    "lead_form",
+                    "dynamic_education",
+                    "youtube_video",
+                    "other"
+                  ],
+                  "meta:enum": {
+                    "image": "Image Asset",
+                    "video": "Video Asset",
+                    "audio": "Audio Asset",
+                    "text": "Text Asset",
+                    "html5": "HTML5 Asset",
+                    "document": "Document Asset",
+                    "lead_form": "Lead Form Asset",
+                    "dynamic_education": "Dynamic Education Asset",
+                    "youtube_video": "YouTube Video Asset",
+                    "other": "Other Asset Type"
+                  }
+                },
+                "xdm:assetSubType": {
+                  "type": "string",
+                  "title": "Asset Sub-type",
+                  "description": "More specific asset sub-type or format"
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Asset Title",
+                  "description": "Title or name of the asset"
+                },
+                "description": {
+                  "type": "string",
+                  "title": "Asset Description",
+                  "description": "Description of the asset content"
+                },
+                "xdm:content": {
+                  "type": "string",
+                  "title": "Asset Content",
+                  "description": "Text content of the asset (for text assets)"
+                },
+                "xdm:sourceURL": {
+                  "type": "string",
+                  "title": "Source URL",
+                  "description": "Source URL of the asset (GenStudio migration aid)"
+                },
+                "xdm:mediaProperties": {
+                  "type": "object",
+                  "title": "Media Properties",
+                  "description": "Properties specific to media assets",
+                  "properties": {
+                    "xdm:url": {
+                      "type": "string",
+                      "title": "Asset URL",
+                      "description": "Direct URL to access the asset"
+                    },
+                    "xdm:permalinkURL": {
+                      "type": "string",
+                      "title": "Permalink URL",
+                      "description": "Permanent link to the asset"
+                    },
+                    "xdm:thumbnailURL": {
+                      "type": "string",
+                      "title": "Thumbnail URL",
+                      "description": "URL for asset thumbnail"
+                    },
+                    "xdm:source": {
+                      "type": "string",
+                      "title": "Source URL",
+                      "description": "Original source URL of the asset"
+                    },
+                    "xdm:hash": {
+                      "type": "string",
+                      "title": "Asset Hash",
+                      "description": "Unique hash identifier for the asset content"
+                    }
+                  }
+                },
+                "xdm:dimensions": {
+                  "type": "object",
+                  "title": "Asset Dimensions",
+                  "description": "Dimensional properties of the asset",
+                  "properties": {
+                    "xdm:width": {
+                      "type": "integer",
+                      "title": "Width",
+                      "description": "Width in pixels"
+                    },
+                    "xdm:height": {
+                      "type": "integer",
+                      "title": "Height",
+                      "description": "Height in pixels"
+                    },
+                    "xdm:aspectRatio": {
+                      "type": "string",
+                      "title": "Aspect Ratio",
+                      "description": "Aspect ratio of the asset (e.g., 16:9, 1:1)"
+                    },
+                    "xdm:orientation": {
+                      "type": "string",
+                      "title": "Orientation",
+                      "enum": ["landscape", "portrait", "square"],
+                      "meta:enum": {
+                        "landscape": "Landscape",
+                        "portrait": "Portrait",
+                        "square": "Square"
+                      }
+                    }
+                  }
+                },
+                "xdm:fileProperties": {
+                  "type": "object",
+                  "title": "File Properties",
+                  "description": "File-specific properties",
+                  "properties": {
+                    "xdm:fileSize": {
+                      "type": "integer",
+                      "title": "File Size",
+                      "description": "File size in bytes"
+                    },
+                    "xdm:fileSizeFormatted": {
+                      "type": "string",
+                      "title": "File Size Formatted",
+                      "description": "Human-readable file size (e.g., 2.5 MB)"
+                    },
+                    "xdm:mimeType": {
+                      "type": "string",
+                      "title": "MIME Type",
+                      "description": "MIME type of the file"
+                    },
+                    "xdm:fileExtension": {
+                      "type": "string",
+                      "title": "File Extension",
+                      "description": "File extension (e.g., jpg, mp4, pdf)"
+                    },
+                    "xdm:encoding": {
+                      "type": "string",
+                      "title": "Encoding",
+                      "description": "File encoding format"
+                    }
+                  }
+                },
+                "xdm:videoProperties": {
+                  "type": "object",
+                  "title": "Video Properties",
+                  "description": "Properties specific to video assets",
+                  "properties": {
+                    "xdm:duration": {
+                      "type": "number",
+                      "title": "Duration",
+                      "description": "Video duration in seconds"
+                    },
+                    "xdm:frameRate": {
+                      "type": "number",
+                      "title": "Frame Rate",
+                      "description": "Video frame rate (fps)"
+                    },
+                    "xdm:bitrate": {
+                      "type": "integer",
+                      "title": "Bitrate",
+                      "description": "Video bitrate in kbps"
+                    },
+                    "xdm:codec": {
+                      "type": "string",
+                      "title": "Video Codec",
+                      "description": "Video codec used"
+                    },
+                    "xdm:hasAudio": {
+                      "type": "boolean",
+                      "title": "Has Audio",
+                      "description": "Whether the video contains audio"
+                    },
+                    "xdm:youtubeVideoID": {
+                      "type": "string",
+                      "title": "YouTube Video ID",
+                      "description": "YouTube video ID (for YouTube video assets)"
+                    }
+                  }
+                },
+                "xdm:imageProperties": {
+                  "type": "object",
+                  "title": "Image Properties",
+                  "description": "Properties specific to image assets",
+                  "properties": {
+                    "xdm:colorSpace": {
+                      "type": "string",
+                      "title": "Color Space",
+                      "description": "Color space of the image (e.g., RGB, CMYK)"
+                    },
+                    "xdm:hasTransparency": {
+                      "type": "boolean",
+                      "title": "Has Transparency",
+                      "description": "Whether the image has transparency/alpha channel"
+                    },
+                    "xdm:isAnimated": {
+                      "type": "boolean",
+                      "title": "Is Animated",
+                      "description": "Whether the image is animated (e.g., GIF)"
+                    },
+                    "xdm:dominantColors": {
+                      "type": "array",
+                      "title": "Dominant Colors",
+                      "description": "Dominant colors in the image",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "xdm:interactionProperties": {
+                  "type": "object",
+                  "title": "Interaction Properties",
+                  "description": "Properties for interactive assets",
+                  "properties": {
+                    "xdm:interactionType": {
+                      "type": "string",
+                      "title": "Interaction Type",
+                      "description": "Type of interaction supported by the asset"
+                    },
+                    "xdm:buttonProperties": {
+                      "type": "object",
+                      "title": "Button Properties",
+                      "description": "Properties for interactive buttons",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    },
+                    "xdm:webViewProperties": {
+                      "type": "object",
+                      "title": "Web View Properties",
+                      "description": "Properties for web view interactions",
+                      "properties": {
+                        "xdm:url": {
+                          "type": "string",
+                          "title": "Web View URL",
+                          "description": "URL for web view interaction"
+                        }
+                      }
+                    },
+                    "xdm:deepLinkProperties": {
+                      "type": "object",
+                      "title": "Deep Link Properties",
+                      "description": "Properties for deep link interactions",
+                      "additionalProperties": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                      }
+                    }
+                  }
+                },
+                "xdm:leadFormProperties": {
+                  "type": "object",
+                  "title": "Lead Form Properties",
+                  "description": "Properties specific to lead form assets",
+                  "properties": {
+                    "xdm:backgroundImageAsset": {
+                      "type": "string",
+                      "title": "Background Image Asset",
+                      "description": "Background image asset for lead forms"
+                    },
+                    "xdm:formFields": {
+                      "type": "array",
+                      "title": "Form Fields",
+                      "description": "Fields included in the lead form",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:fieldType": {
+                            "type": "string",
+                            "title": "Field Type"
+                          },
+                          "xdm:fieldLabel": {
+                            "type": "string",
+                            "title": "Field Label"
+                          },
+                          "xdm:isRequired": {
+                            "type": "boolean",
+                            "title": "Is Required"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "xdm:dynamicEducationProperties": {
+                  "type": "object",
+                  "title": "Dynamic Education Properties",
+                  "description": "Properties for dynamic education assets",
+                  "properties": {
+                    "xdm:imageURL": {
+                      "type": "string",
+                      "title": "Image URL",
+                      "description": "Main image URL for dynamic education asset"
+                    },
+                    "xdm:thumbnailImageURL": {
+                      "type": "string",
+                      "title": "Thumbnail Image URL",
+                      "description": "Thumbnail image URL for dynamic education asset"
+                    }
+                  }
+                },
+                "xdm:usageMetadata": {
+                  "type": "object",
+                  "title": "Usage Metadata",
+                  "description": "Metadata about asset usage",
+                  "properties": {
+                    "xdm:usageCount": {
+                      "type": "integer",
+                      "title": "Usage Count",
+                      "description": "Number of times this asset has been used"
+                    },
+                    "xdm:lastUsedDate": {
+                      "type": "string",
+                      "format": "date-time",
+                      "title": "Last Used Date",
+                      "description": "When the asset was last used"
+                    },
+                    "xdm:associatedCampaigns": {
+                      "type": "array",
+                      "title": "Associated Campaigns",
+                      "description": "Campaigns that use this asset",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "xdm:associatedAds": {
+                      "type": "array",
+                      "title": "Associated Ads",
+                      "description": "Ads that use this asset",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "xdm:additionalDetails": {
+                  "title": "Additional Asset Details",
+                  "description": "Platform-specific asset details not defined in core schema. Allows ingestion of arbitrary fields from paid media network APIs without requiring schema changes.",
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/asset-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -145,7 +145,7 @@
                             "title": "Card Heading",
                             "description": "Heading text for this card"
                           },
-                          "description": {
+                          "xdm:description": {
                             "type": "string",
                             "title": "Card Description",
                             "description": "Description text for this card"

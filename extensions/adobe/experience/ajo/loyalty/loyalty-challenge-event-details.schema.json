@@ -23,30 +23,30 @@
           "type": "object",
           "description": "Loyalty challenge event details.",
           "properties": {
-            "https://ns.adobe.com/experience/ajo/loyalty/itemList": {
+            "xdm:itemList": {
               "title": "Item List",
               "type": "array",
               "description": "List of items involved in the loyalty transaction.",
               "items": {
                 "type": "object",
                 "properties": {
-                  "https://ns.adobe.com/experience/ajo/loyalty/unitPrice": {
+                  "xdm:unitPrice": {
                     "title": "Unit Price",
                     "type": "number",
                     "description": "The price per unit of the item."
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/quantity": {
+                  "xdm:quantity": {
                     "title": "Quantity",
                     "type": "number",
                     "description": "The quantity of the item."
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/itemName": {
+                  "xdm:itemName": {
                     "title": "Item Name",
                     "type": "string",
                     "description": "The name of the item.",
                     "minLength": 1
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/itemSet": {
+                  "xdm:itemSet": {
                     "title": "Item Set",
                     "type": "array",
                     "description": "Properties/tags of the item.",
@@ -59,19 +59,19 @@
                 }
               }
             },
-            "https://ns.adobe.com/experience/ajo/loyalty/locationId": {
+            "xdm:locationId": {
               "title": "Location ID",
               "type": "string",
               "description": "The identifier for the location where the loyalty transaction occurred.",
               "minLength": 1
             },
-            "https://ns.adobe.com/experience/ajo/loyalty/transactionId": {
+            "xdm:transactionId": {
               "title": "Transaction ID",
               "type": "string",
               "description": "The unique identifier for the loyalty transaction.",
               "minLength": 1
             },
-            "https://ns.adobe.com/experience/ajo/loyalty/localTimezoneOffset": {
+            "xdm:localTimezoneOffset": {
               "title": "Local Timezone Offset",
               "type": "integer",
               "description": "The current, local time zone offset in minutes from UTC for the location of this event. This will include the current DST offset if applicable.",

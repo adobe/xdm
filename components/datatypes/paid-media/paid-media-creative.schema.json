@@ -13,167 +13,172 @@
   "definitions": {
     "paidMediaCreative": {
       "properties": {
-        "xdm:creativeID": {
-          "type": "string",
-          "title": "Creative ID",
-          "description": "Unique identifier for the creative"
-        },
-        "xdm:creativeType": {
-          "type": "string",
-          "title": "Creative Type",
-          "description": "Type of creative content",
-          "enum": [
-            "image",
-            "video",
-            "carousel",
-            "collection",
-            "dynamic",
-            "text",
-            "html5",
-            "playable",
-            "other"
-          ],
-          "meta:enum": {
-            "image": "Static Image",
-            "video": "Video",
-            "carousel": "Carousel/Multi-image",
-            "collection": "Collection/Catalog",
-            "dynamic": "Dynamic Creative",
-            "text": "Text Only",
-            "html5": "HTML5/Rich Media",
-            "playable": "Playable Ad",
-            "other": "Other Creative Type"
-          }
-        },
-        "xdm:title": {
-          "type": "string",
-          "title": "Title",
-          "description": "Creative title or headline"
-        },
-        "xdm:body": {
-          "type": "string",
-          "title": "Body Text",
-          "description": "Main body text or description"
-        },
-        "xdm:callToAction": {
-          "type": "string",
-          "title": "Call to Action",
-          "description": "Call to action text or type"
-        },
-        "xdm:destinationURL": {
-          "type": "string",
-          "format": "uri",
-          "title": "Destination URL",
-          "description": "Landing page URL where users are directed"
-        },
-        "xdm:displayURL": {
-          "type": "string",
-          "format": "uri",
-          "title": "Display URL",
-          "description": "URL displayed in the ad"
-        },
-        "xdm:trackingURLs": {
-          "type": "array",
-          "title": "Tracking URLs",
-          "description": "Third-party tracking URLs",
-          "items": {
-            "type": "object",
-            "properties": {
-              "xdm:eventType": {
-                "type": "string",
-                "title": "Event Type",
-                "description": "Type of event being tracked (click, impression, conversion)"
-              },
-              "xdm:url": {
-                "type": "string",
-                "format": "uri",
-                "title": "Tracking URL",
-                "description": "The tracking URL"
+        "xdm:paidMediaCreative": {
+          "type": "object",
+          "title": "Paid Media Creative",
+          "description": "Creative details for paid media advertising",
+          "properties": {
+            "xdm:creativeID": {
+              "type": "string",
+              "title": "Creative ID",
+              "description": "Unique identifier for the creative"
+            },
+            "xdm:creativeType": {
+              "type": "string",
+              "title": "Creative Type",
+              "description": "Type of creative content",
+              "enum": [
+                "image",
+                "video",
+                "carousel",
+                "collection",
+                "dynamic",
+                "text",
+                "html5",
+                "playable",
+                "other"
+              ],
+              "meta:enum": {
+                "image": "Static Image",
+                "video": "Video",
+                "carousel": "Carousel/Multi-image",
+                "collection": "Collection/Catalog",
+                "dynamic": "Dynamic Creative",
+                "text": "Text Only",
+                "html5": "HTML5/Rich Media",
+                "playable": "Playable Ad",
+                "other": "Other Creative Type"
+              }
+            },
+            "xdm:title": {
+              "type": "string",
+              "title": "Title",
+              "description": "Creative title or headline"
+            },
+            "xdm:body": {
+              "type": "string",
+              "title": "Body Text",
+              "description": "Main body text or description"
+            },
+            "xdm:callToAction": {
+              "type": "string",
+              "title": "Call to Action",
+              "description": "Call to action text or type"
+            },
+            "xdm:destinationURL": {
+              "type": "string",
+              "format": "uri",
+              "title": "Destination URL",
+              "description": "Landing page URL where users are directed"
+            },
+            "xdm:displayURL": {
+              "type": "string",
+              "format": "uri",
+              "title": "Display URL",
+              "description": "URL displayed in the ad"
+            },
+            "xdm:trackingURLs": {
+              "type": "array",
+              "title": "Tracking URLs",
+              "description": "Third-party tracking URLs",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:eventType": {
+                    "type": "string",
+                    "title": "Event Type",
+                    "description": "Type of event being tracked (click, impression, conversion)"
+                  },
+                  "xdm:url": {
+                    "type": "string",
+                    "format": "uri",
+                    "title": "Tracking URL",
+                    "description": "The tracking URL"
+                  }
+                }
+              }
+            },
+            "xdm:assets": {
+              "type": "array",
+              "title": "Creative Assets",
+              "description": "Media assets used in the creative",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:assetID": {
+                    "type": "string",
+                    "title": "Asset ID",
+                    "description": "Unique identifier for the asset"
+                  },
+                  "xdm:assetType": {
+                    "type": "string",
+                    "title": "Asset Type",
+                    "description": "Type of media asset",
+                    "enum": ["image", "video", "audio", "document", "other"],
+                    "meta:enum": {
+                      "image": "Image",
+                      "video": "Video",
+                      "audio": "Audio",
+                      "document": "Document",
+                      "other": "Other Asset Type"
+                    }
+                  },
+                  "xdm:name": {
+                    "type": "string",
+                    "title": "Asset Name",
+                    "description": "Name or title of the asset"
+                  },
+                  "xdm:url": {
+                    "type": "string",
+                    "format": "uri",
+                    "title": "Asset URL",
+                    "description": "URL where the asset can be accessed"
+                  },
+                  "xdm:thumbnailURL": {
+                    "type": "string",
+                    "format": "uri",
+                    "title": "Thumbnail URL",
+                    "description": "URL for asset thumbnail"
+                  },
+                  "xdm:dimensions": {
+                    "type": "object",
+                    "title": "Asset Dimensions",
+                    "description": "Dimensions of the asset",
+                    "properties": {
+                      "xdm:width": {
+                        "type": "integer",
+                        "title": "Width",
+                        "description": "Width in pixels",
+                        "minimum": 0
+                      },
+                      "xdm:height": {
+                        "type": "integer",
+                        "title": "Height",
+                        "description": "Height in pixels",
+                        "minimum": 0
+                      }
+                    }
+                  },
+                  "xdm:fileSize": {
+                    "type": "integer",
+                    "title": "File Size",
+                    "description": "File size in bytes",
+                    "minimum": 0
+                  },
+                  "xdm:duration": {
+                    "type": "number",
+                    "title": "Duration",
+                    "description": "Duration in seconds (for video/audio assets)"
+                  },
+                  "xdm:hash": {
+                    "type": "string",
+                    "title": "Asset Hash",
+                    "description": "Unique hash identifier for the asset content"
+                  }
+                }
               }
             }
           }
-        },
-        "xdm:assets": {
-          "type": "array",
-          "title": "Creative Assets",
-          "description": "Media assets used in the creative",
-          "items": {
-            "$ref": "#/definitions/asset"
-          }
-        }
-      }
-    },
-    "asset": {
-      "properties": {
-        "xdm:assetID": {
-          "type": "string",
-          "title": "Asset ID",
-          "description": "Unique identifier for the asset"
-        },
-        "xdm:assetType": {
-          "type": "string",
-          "title": "Asset Type",
-          "description": "Type of media asset",
-          "enum": ["image", "video", "audio", "document", "other"],
-          "meta:enum": {
-            "image": "Image",
-            "video": "Video",
-            "audio": "Audio",
-            "document": "Document",
-            "other": "Other Asset Type"
-          }
-        },
-        "xdm:name": {
-          "type": "string",
-          "title": "Asset Name",
-          "description": "Name or title of the asset"
-        },
-        "xdm:url": {
-          "type": "string",
-          "format": "uri",
-          "title": "Asset URL",
-          "description": "URL where the asset can be accessed"
-        },
-        "xdm:thumbnailURL": {
-          "type": "string",
-          "format": "uri",
-          "title": "Thumbnail URL",
-          "description": "URL for asset thumbnail"
-        },
-        "xdm:dimensions": {
-          "type": "object",
-          "title": "Asset Dimensions",
-          "description": "Dimensions of the asset",
-          "properties": {
-            "xdm:width": {
-              "type": "integer",
-              "title": "Width",
-              "description": "Width in pixels",
-              "minimum": 0
-            },
-            "xdm:height": {
-              "type": "integer",
-              "title": "Height",
-              "description": "Height in pixels",
-              "minimum": 0
-            }
-          }
-        },
-        "xdm:fileSize": {
-          "type": "integer",
-          "title": "File Size",
-          "description": "File size in bytes",
-          "minimum": 0
-        },
-        "xdm:duration": {
-          "type": "number",
-          "title": "Duration",
-          "description": "Duration in seconds (for video/audio assets)"
-        },
-        "xdm:hash": {
-          "type": "string",
-          "title": "Asset Hash",
-          "description": "Unique hash identifier for the asset content"
         }
       }
     }

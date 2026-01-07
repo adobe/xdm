@@ -1,0 +1,246 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/datatypes/paid-media-targeting",
+  "title": "Paid Media Targeting",
+  "type": "object",
+  "description": "Data type representing targeting specifications for paid media campaigns",
+  "definitions": {
+    "targeting": {
+      "properties": {
+        "xdm:geoTargeting": {
+          "type": "object",
+          "title": "Geographic Targeting",
+          "description": "Geographic targeting specifications",
+          "properties": {
+            "xdm:countries": {
+              "type": "array",
+              "title": "Countries",
+              "description": "Targeted countries (ISO country codes)",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:regions": {
+              "type": "array",
+              "title": "Regions/States",
+              "description": "Targeted regions or states",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:cities": {
+              "type": "array",
+              "title": "Cities",
+              "description": "Targeted cities",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:postalCodes": {
+              "type": "array",
+              "title": "Postal Codes",
+              "description": "Targeted postal codes",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:radius": {
+              "type": "object",
+              "title": "Radius Targeting",
+              "description": "Location radius targeting",
+              "properties": {
+                "xdm:latitude": {
+                  "type": "number",
+                  "title": "Latitude"
+                },
+                "xdm:longitude": {
+                  "type": "number",
+                  "title": "Longitude"
+                },
+                "xdm:radiusKm": {
+                  "type": "number",
+                  "title": "Radius (km)",
+                  "description": "Radius in kilometers"
+                }
+              }
+            }
+          }
+        },
+        "xdm:demographicTargeting": {
+          "type": "object",
+          "title": "Demographic Targeting",
+          "description": "Demographic targeting specifications",
+          "properties": {
+            "xdm:ageRanges": {
+              "type": "array",
+              "title": "Age Ranges",
+              "description": "Targeted age ranges",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:minAge": {
+                    "type": "integer",
+                    "title": "Minimum Age"
+                  },
+                  "xdm:maxAge": {
+                    "type": "integer",
+                    "title": "Maximum Age"
+                  }
+                }
+              }
+            },
+            "xdm:genders": {
+              "type": "array",
+              "title": "Genders",
+              "description": "Targeted genders",
+              "items": {
+                "type": "string",
+                "enum": ["male", "female", "all", "unknown"],
+                "meta:enum": {
+                  "male": "Male",
+                  "female": "Female",
+                  "all": "All Genders",
+                  "unknown": "Unknown/Unspecified"
+                }
+              }
+            },
+            "xdm:languages": {
+              "type": "array",
+              "title": "Languages",
+              "description": "Targeted languages (ISO language codes)",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "xdm:interestTargeting": {
+          "type": "object",
+          "title": "Interest Targeting",
+          "description": "Interest and behavior targeting",
+          "properties": {
+            "xdm:interests": {
+              "type": "array",
+              "title": "Interests",
+              "description": "Targeted interest categories",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:behaviors": {
+              "type": "array",
+              "title": "Behaviors",
+              "description": "Targeted behaviors",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:customAudiences": {
+              "type": "array",
+              "title": "Custom Audiences",
+              "description": "Custom audience segments",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:audienceID": {
+                    "type": "string",
+                    "title": "Audience ID"
+                  },
+                  "xdm:audienceName": {
+                    "type": "string",
+                    "title": "Audience Name"
+                  },
+                  "xdm:audienceType": {
+                    "type": "string",
+                    "title": "Audience Type",
+                    "enum": ["custom", "lookalike", "retargeting", "similar"],
+                    "meta:enum": {
+                      "custom": "Custom Audience",
+                      "lookalike": "Lookalike Audience",
+                      "retargeting": "Retargeting Audience",
+                      "similar": "Similar Audience"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "xdm:deviceTargeting": {
+          "type": "object",
+          "title": "Device Targeting",
+          "description": "Device and platform targeting",
+          "properties": {
+            "xdm:deviceTypes": {
+              "type": "array",
+              "title": "Device Types",
+              "description": "Targeted device types",
+              "items": {
+                "type": "string",
+                "enum": ["desktop", "mobile", "tablet", "tv", "other"],
+                "meta:enum": {
+                  "desktop": "Desktop",
+                  "mobile": "Mobile",
+                  "tablet": "Tablet",
+                  "tv": "Connected TV",
+                  "other": "Other Device"
+                }
+              }
+            },
+            "xdm:operatingSystems": {
+              "type": "array",
+              "title": "Operating Systems",
+              "description": "Targeted operating systems",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:browsers": {
+              "type": "array",
+              "title": "Browsers",
+              "description": "Targeted browsers",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "xdm:placementTargeting": {
+          "type": "object",
+          "title": "Placement Targeting",
+          "description": "Ad placement targeting",
+          "properties": {
+            "xdm:placements": {
+              "type": "array",
+              "title": "Placements",
+              "description": "Targeted ad placements",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:publisherCategories": {
+              "type": "array",
+              "title": "Publisher Categories",
+              "description": "Targeted publisher categories",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/targeting"
+    }
+  ],
+  "meta:status": "experimental"
+}

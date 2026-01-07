@@ -1,0 +1,52 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field",
+  "title": "Paid Media Additional Field",
+  "type": "object",
+  "description": "Flexible field structure for storing platform-specific or custom fields not defined in core schema.  Supports multiple value types to accommodate different data types from paid media network APIs.",
+  "definitions": {
+    "additionalField": {
+      "properties": {
+        "xdm:fieldName": {
+          "title": "Field Name",
+          "type": "string",
+          "description": "Name of the additional field"
+        },
+        "xdm:stringValue": {
+          "title": "String Value",
+          "type": "string",
+          "description": "String value of the field"
+        },
+        "xdm:numberValue": {
+          "title": "Number Value",
+          "type": "number",
+          "description": "Numeric value of the field"
+        },
+        "xdm:booleanValue": {
+          "title": "Boolean Value",
+          "type": "boolean",
+          "description": "Boolean value of the field"
+        },
+        "xdm:dateValue": {
+          "title": "Date Value",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date/time value of the field"
+        }
+      },
+      "required": ["xdm:fieldName"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/additionalField"
+    }
+  ],
+  "meta:status": "experimental"
+}

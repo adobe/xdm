@@ -1,0 +1,32 @@
+{
+  "xdm:loyalty": {
+    "xdm:joinDate": "2021-01-26T15:52:25+00:00",
+    "xdm:loyaltyID": ["L79UH4XR1", "ALT-12345"],
+    "xdm:program": "purchase rewards",
+    "xdm:status": "active",
+    "xdm:tier": "silver",
+    "xdm:tierExpiryDate": "2025-12-31T23:59:59Z",
+    "xdm:upgradeDate": "2022-07-01T10:00:00Z",
+    "xdm:points": 8974,
+    "xdm:pointsRedeemed": 5148,
+    "xdm:adjustedPoints": 50,
+    "xdm:expiredPoints": 120,
+    "xdm:lifetimePoints": 14292,
+    "xdm:lifetimePurchases": 2399.95,
+    "xdm:promisedPoints": 300,
+    "xdm:returnedPoints": 20,
+    "xdm:pointsExpiration": [
+      {
+        "xdm:pointsExpiring": 300,
+        "xdm:pointsExpirationDate": "2025-10-31T00:00:00Z"
+      }
+    ],
+    "xdm:cardsDetails": [
+      {
+        "xdm:number": "999000111222",
+        "xdm:series": "standard",
+        "xdm:status": "active"
+      }
+    ]
+  }
+}

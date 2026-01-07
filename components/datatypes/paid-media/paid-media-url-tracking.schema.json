@@ -10,37 +10,46 @@
   "title": "Paid Media URL Tracking",
   "type": "object",
   "description": "URL tracking configuration for paid media campaigns, ad groups, and ads. Captures tracking templates and custom parameters used to track user clicks and conversions.",
-  "properties": {
-    "xdm:trackingTemplate": {
-      "type": "string",
-      "title": "Tracking URL Template",
-      "description": "URL tracking template with macros (e.g., {lpurl}?s_kwcid=AL!{userid}!3!{creative})"
-    },
-    "xdm:finalUrlSuffix": {
-      "type": "string",
-      "title": "Final URL Suffix",
-      "description": "Parameters appended to the final URL"
-    },
-    "xdm:customParameters": {
-      "type": "array",
-      "title": "Custom URL Parameters",
-      "description": "Custom tracking parameters configured for the entity",
-      "items": {
-        "type": "object",
-        "properties": {
-          "xdm:key": {
-            "type": "string",
-            "title": "Parameter Key",
-            "description": "Parameter name (e.g., 'utm_source', 'campaign_id')"
-          },
-          "xdm:value": {
-            "type": "string",
-            "title": "Parameter Value",
-            "description": "Parameter value or macro (e.g., '{campaignid}')"
+  "definitions": {
+    "urlTracking": {
+      "properties": {
+        "xdm:trackingTemplate": {
+          "type": "string",
+          "title": "Tracking URL Template",
+          "description": "URL tracking template with macros (e.g., {lpurl}?s_kwcid=AL!{userid}!3!{creative})"
+        },
+        "xdm:finalUrlSuffix": {
+          "type": "string",
+          "title": "Final URL Suffix",
+          "description": "Parameters appended to the final URL"
+        },
+        "xdm:customParameters": {
+          "type": "array",
+          "title": "Custom URL Parameters",
+          "description": "Custom tracking parameters configured for the entity",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:key": {
+                "type": "string",
+                "title": "Parameter Key",
+                "description": "Parameter name (e.g., 'utm_source', 'campaign_id')"
+              },
+              "xdm:value": {
+                "type": "string",
+                "title": "Parameter Value",
+                "description": "Parameter value or macro (e.g., '{campaignid}')"
+              }
+            }
           }
         }
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/urlTracking"
+    }
+  ],
   "meta:status": "experimental"
 }

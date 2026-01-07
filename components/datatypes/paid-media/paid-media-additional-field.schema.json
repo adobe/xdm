@@ -10,34 +10,43 @@
   "title": "Paid Media Additional Field",
   "type": "object",
   "description": "Flexible field structure for storing platform-specific or custom fields not defined in core schema.  Supports multiple value types to accommodate different data types from paid media network APIs.",
-  "properties": {
-    "xdm:fieldName": {
-      "title": "Field Name",
-      "type": "string",
-      "description": "Name of the additional field"
-    },
-    "xdm:stringValue": {
-      "title": "String Value",
-      "type": "string",
-      "description": "String value of the field"
-    },
-    "xdm:numberValue": {
-      "title": "Number Value",
-      "type": "number",
-      "description": "Numeric value of the field"
-    },
-    "xdm:booleanValue": {
-      "title": "Boolean Value",
-      "type": "boolean",
-      "description": "Boolean value of the field"
-    },
-    "xdm:dateValue": {
-      "title": "Date Value",
-      "type": "string",
-      "format": "date-time",
-      "description": "Date/time value of the field"
+  "definitions": {
+    "additionalField": {
+      "properties": {
+        "xdm:fieldName": {
+          "title": "Field Name",
+          "type": "string",
+          "description": "Name of the additional field"
+        },
+        "xdm:stringValue": {
+          "title": "String Value",
+          "type": "string",
+          "description": "String value of the field"
+        },
+        "xdm:numberValue": {
+          "title": "Number Value",
+          "type": "number",
+          "description": "Numeric value of the field"
+        },
+        "xdm:booleanValue": {
+          "title": "Boolean Value",
+          "type": "boolean",
+          "description": "Boolean value of the field"
+        },
+        "xdm:dateValue": {
+          "title": "Date Value",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date/time value of the field"
+        }
+      },
+      "required": ["xdm:fieldName"]
     }
   },
-  "required": ["xdm:fieldName"],
+  "allOf": [
+    {
+      "$ref": "#/definitions/additionalField"
+    }
+  ],
   "meta:status": "experimental"
 }

@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
   "description": "Core identifier fields used across all paid media entities and ad networks",
   "definitions": {
     "core-identifiers": {
@@ -125,121 +125,13 @@
               "title": "Portfolio GUID",
               "description": "Portfolio identifier for grouping campaigns (Amazon Ads and similar platforms) across all networks"
             },
-            "xdm:entityIDs": {
-              "type": "object",
-              "title": "Entity IDs",
-              "description": "Nested platform entity identifiers to ease migration from GenStudio templates",
-              "properties": {
-                "xdm:account": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:accountGUID": {
-                      "type": "string",
-                      "title": "Account GUID"
-                    },
-                    "xdm:accountID": {
-                      "type": "string",
-                      "title": "Account ID"
-                    }
-                  }
-                },
-                "xdm:campaign": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:campaignGUID": {
-                      "type": "string",
-                      "title": "Campaign GUID"
-                    },
-                    "xdm:campaignID": {
-                      "type": "string",
-                      "title": "Campaign ID"
-                    }
-                  }
-                },
-                "xdm:adGroup": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:adGroupGUID": {
-                      "type": "string",
-                      "title": "Ad Group GUID"
-                    },
-                    "xdm:adGroupID": {
-                      "type": "string",
-                      "title": "Ad Group ID"
-                    }
-                  }
-                },
-                "xdm:ad": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:adGUID": {
-                      "type": "string",
-                      "title": "Ad GUID"
-                    },
-                    "xdm:adID": {
-                      "type": "string",
-                      "title": "Ad ID"
-                    }
-                  }
-                },
-                "xdm:experience": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:experienceGUID": {
-                      "type": "string",
-                      "title": "Experience GUID"
-                    },
-                    "xdm:experienceID": {
-                      "type": "string",
-                      "title": "Experience ID"
-                    }
-                  }
-                },
-                "xdm:asset": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:assetGUID": {
-                      "type": "string",
-                      "title": "Asset GUID"
-                    },
-                    "xdm:assetID": {
-                      "type": "string",
-                      "title": "Asset ID"
-                    }
-                  }
-                }
-              }
-            },
-            "xdm:entityType": {
-              "type": "string",
-              "title": "Entity Type",
-              "description": "Type of paid media entity this record represents",
-              "enum": [
-                "account",
-                "campaign",
-                "adGroup",
-                "ad",
-                "experience",
-                "asset",
-                "metrics"
-              ],
-              "meta:enum": {
-                "account": "Ad Account",
-                "campaign": "Campaign",
-                "adGroup": "Ad Group/Ad Set/Ad Squad",
-                "ad": "Individual Ad",
-                "experience": "Creative Experience",
-                "asset": "Creative Asset",
-                "metrics": "Performance Metrics"
-              }
-            },
             "xdm:hierarchyPath": {
               "type": "string",
               "title": "Hierarchy Path",
               "description": "Full hierarchical path showing parent-child relationships (e.g., account_id/campaign_id/adgroup_id/ad_id)"
             }
           },
-          "required": ["xdm:adNetwork", "xdm:entityType"]
+          "required": ["xdm:adNetwork"]
         }
       }
     }

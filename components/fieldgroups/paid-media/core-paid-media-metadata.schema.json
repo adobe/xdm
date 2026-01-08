@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
   "description": "Core metadata fields common across paid media entities",
   "definitions": {
     "core-metadata": {

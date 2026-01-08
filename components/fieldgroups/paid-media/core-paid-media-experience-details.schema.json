@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
   "description": "Experience-specific details and configuration fields for paid media creative experiences",
   "definitions": {
     "experience-details": {
@@ -145,7 +145,7 @@
                             "title": "Card Heading",
                             "description": "Heading text for this card"
                           },
-                          "description": {
+                          "xdm:description": {
                             "type": "string",
                             "title": "Card Description",
                             "description": "Description text for this card"

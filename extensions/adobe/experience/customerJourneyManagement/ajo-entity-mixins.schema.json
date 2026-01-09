@@ -239,19 +239,19 @@
               "xdm:rankingType": {
                 "title": "Ranking Type",
                 "type": "string",
-                "description": "Ranking Type of the decision policy. This is present when decision policy type is ranking."
+                "description": "Ranking Type of the decision policy"
               },
               "xdm:formulaId": {
                 "title": "Formula ID",
                 "type": "string",
-                "description": "Id of the formula linked to the decision policy of type ranking"
+                "description": "ID of the formula used for ranking"
               }
             }
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet": {
           "title": "AJO Rule Set Entity",
-          "type": "array",
+          "type": "object",
           "description": "AJO Rule Set Entity Specific Fields",
           "items": {
             "type": "object",

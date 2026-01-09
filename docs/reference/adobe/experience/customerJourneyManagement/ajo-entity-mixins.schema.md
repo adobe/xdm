@@ -491,3 +491,72 @@ Represents a frozen version of a Journey
 
 
 
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet
+### AJO Ruleset Entity Specific Fields
+
+AJO Ruleset Entity Specific Fields
+
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet`
+* is optional
+* type: `object`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/id`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/name`| string | Optional|
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/id
+##### Rule Set ID
+
+ID of the Rule Set
+
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/id`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/id Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/name
+##### Rule Set Name
+
+Name of the Rule Set
+
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/name`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/name Type
+
+
+`string`
+
+
+
+
+
+
+
+
+

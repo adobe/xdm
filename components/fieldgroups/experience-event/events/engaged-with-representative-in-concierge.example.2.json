@@ -1,0 +1,22 @@
+{
+  "xdm:eventType": "engagement.business.representative.concierge",
+  "@id": "event-abc123-accepted",
+  "xdm:timestamp": "2025-01-15T10:00:45Z",
+  "xdm:engagement": {
+    "xdm:businessRepresentativeInConcierge": {
+      "xdm:businessRepresentativeDetails": {
+        "xdm:businessRepresentativeID": "agent1@adobe.com",
+        "xdm:businessRepresentativeName": "John Doe",
+        "xdm:businessRepresentativeEmail": "agent1@adobe.com"
+      },
+      "xdm:conciergeConversationDetails": {
+        "xdm:sessionID": "session-abc123",
+        "xdm:status": "ACCEPTED",
+        "xdm:initiatedAt": "2025-01-15T10:00:00Z",
+        "xdm:notifiedAgents": ["agent1@adobe.com", "agent2@adobe.com"],
+        "xdm:acceptedAt": "2025-01-15T10:00:45Z"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,153 @@
+{
+  "xdm:paidMedia": {
+    "xdm:assetDetails": {
+      "xdm:assetType": "lead_form",
+      "xdm:assetSubType": "instant_form",
+      "title": "Product Demo Request - Instant Form",
+      "description": "Lead generation form for product demo requests. Collects contact information and company details for sales follow-up.",
+      "xdm:content": "",
+      "xdm:mediaProperties": {
+        "xdm:url": "",
+        "xdm:permalinkURL": "",
+        "xdm:thumbnailURL": "",
+        "xdm:source": "",
+        "xdm:hash": ""
+      },
+      "xdm:fileProperties": {
+        "xdm:fileSize": 0,
+        "xdm:fileSizeFormatted": "0 B",
+        "xdm:mimeType": "application/json",
+        "xdm:fileExtension": "json",
+        "xdm:encoding": ""
+      },
+      "xdm:leadFormProperties": {
+        "xdm:formID": "form_lead_789123456",
+        "xdm:formName": "Product Demo Request Form",
+        "xdm:formType": "instant_form",
+        "xdm:formFields": [
+          {
+            "xdm:fieldName": "full_name",
+            "xdm:fieldType": "text",
+            "xdm:fieldLabel": "Full Name",
+            "xdm:required": true,
+            "xdm:prefilled": true
+          },
+          {
+            "xdm:fieldName": "email",
+            "xdm:fieldType": "email",
+            "xdm:fieldLabel": "Email Address",
+            "xdm:required": true,
+            "xdm:prefilled": true
+          },
+          {
+            "xdm:fieldName": "phone_number",
+            "xdm:fieldType": "phone",
+            "xdm:fieldLabel": "Phone Number",
+            "xdm:required": true,
+            "xdm:prefilled": true
+          },
+          {
+            "xdm:fieldName": "company_name",
+            "xdm:fieldType": "text",
+            "xdm:fieldLabel": "Company Name",
+            "xdm:required": true,
+            "xdm:prefilled": false
+          },
+          {
+            "xdm:fieldName": "job_title",
+            "xdm:fieldType": "text",
+            "xdm:fieldLabel": "Job Title",
+            "xdm:required": true,
+            "xdm:prefilled": false
+          },
+          {
+            "xdm:fieldName": "company_size",
+            "xdm:fieldType": "select",
+            "xdm:fieldLabel": "Company Size",
+            "xdm:required": true,
+            "xdm:prefilled": false,
+            "xdm:options": [
+              "1-10",
+              "11-50",
+              "51-200",
+              "201-500",
+              "501-1000",
+              "1000+"
+            ]
+          },
+          {
+            "xdm:fieldName": "industry",
+            "xdm:fieldType": "select",
+            "xdm:fieldLabel": "Industry",
+            "xdm:required": false,
+            "xdm:prefilled": false,
+            "xdm:options": [
+              "Technology",
+              "Healthcare",
+              "Finance",
+              "Retail",
+              "Manufacturing",
+              "Other"
+            ]
+          },
+          {
+            "xdm:fieldName": "timeline",
+            "xdm:fieldType": "select",
+            "xdm:fieldLabel": "When are you looking to implement?",
+            "xdm:required": false,
+            "xdm:prefilled": false,
+            "xdm:options": [
+              "Immediately",
+              "1-3 months",
+              "3-6 months",
+              "6+ months",
+              "Just researching"
+            ]
+          }
+        ],
+        "xdm:privacyPolicyURL": "https://www.acmecorp.com/privacy",
+        "xdm:customDisclaimer": "We respect your privacy. Your information will only be used to contact you about our products and services."
+      },
+      "xdm:usageMetadata": {
+        "xdm:usageCount": 8,
+        "xdm:lastUsedDate": "2025-11-10T10:00:00Z",
+        "xdm:associatedCampaigns": ["campaign_b2b_lead_gen_2025"],
+        "xdm:associatedAds": ["ad_form_789123456"]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_form_id",
+          "xdm:stringValue": "789123456789012"
+        },
+        {
+          "xdm:fieldName": "meta_form_status",
+          "xdm:stringValue": "ACTIVE"
+        },
+        {
+          "xdm:fieldName": "meta_form_type",
+          "xdm:stringValue": "LEAD_GENERATION"
+        },
+        {
+          "xdm:fieldName": "meta_form_created_date",
+          "xdm:stringValue": "2025-10-25T11:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_form_updated_date",
+          "xdm:stringValue": "2025-11-02T14:30:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_crm_integration",
+          "xdm:stringValue": "salesforce"
+        },
+        {
+          "xdm:fieldName": "meta_lead_delivery_method",
+          "xdm:stringValue": "webhook"
+        },
+        {
+          "xdm:fieldName": "meta_webhook_url",
+          "xdm:stringValue": "https://api.acmecorp.com/leads/webhook"
+        }
+      ]
+    }
+  }
+}

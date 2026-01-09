@@ -1,0 +1,64 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/taskCompletion",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Challenge Task Completion",
+  "description": "Details about task completion records within a loyalty challenge's task, including accumulated values and item-level tracking.",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "taskCompletion": {
+      "properties": {
+        "xdm:quantity": {
+          "title": "Quantity",
+          "type": "number",
+          "description": "Total quantity accumulated for this task completion."        },
+        "xdm:spend": {
+          "title": "Spend",
+          "type": "number",
+          "description": "Total spend accumulated for this task completion."        },
+        "xdm:days": {
+          "title": "days",
+          "type": "integer",
+          "description": "Number of qualified days accumulated for this task completion."        },
+        "xdm:qualifiedEvents": {
+          "title": "Qualified Events",
+          "type": "array",
+          "description": "List of events that provided progress toward task completion.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:timestamp": {
+                "title": "Timestamp",
+                "type": "string",
+                "format": "date-time",
+                "description": "Timestamp of the qualified event."
+              },
+              "xdm:transactionId": {
+                "title": "Transaction ID",
+                "type": "string",
+                "description": "Transaction ID associated with this qualified event.",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/taskCompletion"
+    }
+  ],
+  "meta:status": "experimental"
+}
+

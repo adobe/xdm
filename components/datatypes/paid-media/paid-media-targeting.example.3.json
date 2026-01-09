@@ -1,0 +1,18 @@
+{
+  "xdm:geoTargeting": {
+    "xdm:countries": ["DE", "FR", "IT", "ES"],
+    "xdm:postalCodes": ["10115", "75001", "00100", "28001"]
+  },
+  "xdm:demographicTargeting": {
+    "xdm:ageRanges": [
+      {
+        "xdm:minAge": 45,
+        "xdm:maxAge": 65
+      }
+    ],
+    "xdm:languages": ["de-DE", "fr-FR", "it-IT", "es-ES"]
+  },
+  "xdm:deviceTargeting": {
+    "xdm:deviceTypes": ["desktop", "tablet"]
+  }
+}

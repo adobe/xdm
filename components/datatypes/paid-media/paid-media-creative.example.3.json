@@ -1,86 +1,45 @@
 {
-  "xdm:creativeID": "creative_car_789456123",
-  "xdm:creativeType": "carousel",
-  "xdm:title": "Explore Our Tech Collection",
-  "xdm:body": "Swipe through our latest premium tech products. From wireless headphones to smart watches, find everything you need to upgrade your digital lifestyle. Shop the collection and save up to 30%.",
-  "xdm:callToAction": "Shop Now",
-  "xdm:destinationURL": "https://shop.acmecorp.com/collections/tech?utm_source=facebook&utm_medium=paid_social&utm_campaign=fall_2025_launch&utm_content=carousel_ad&fbclid={{ad.id}}",
-  "xdm:displayURL": "shop.acmecorp.com/collections/tech",
-  "xdm:trackingURLs": [
-    {
-      "xdm:eventType": "impression",
-      "xdm:url": "https://tracking.acmecorp.com/pixel/imp?creative=creative_car_789456123&campaign=23851234567890789&placement=instagram_feed"
-    },
-    {
-      "xdm:eventType": "click",
-      "xdm:url": "https://tracking.acmecorp.com/pixel/click?creative=creative_car_789456123&campaign=23851234567890789&placement=instagram_feed"
-    }
-  ],
-  "xdm:assets": [
-    {
-      "xdm:assetID": "asset_car_001_headphones",
-      "xdm:assetType": "image",
-      "xdm:name": "carousel-card-1-headphones-1080x1080.jpg",
-      "xdm:url": "https://cdn.acmecorp.com/creatives/fall2025/carousel/card-1-headphones-1080x1080.jpg",
-      "xdm:thumbnailURL": "https://cdn.acmecorp.com/creatives/fall2025/carousel/thumbs/card-1-headphones-300x300.jpg",
-      "xdm:dimensions": {
-        "xdm:width": 1080,
-        "xdm:height": 1080
+  "xdm:paidMediaCreative": {
+    "xdm:creativeID": "creative-carousel-001",
+    "xdm:creativeType": "carousel",
+    "xdm:title": "Explore Our Collection",
+    "xdm:body": "Swipe through our latest products and find your favorites.",
+    "xdm:callToAction": "View Collection",
+    "xdm:destinationURL": "https://example.com/collection",
+    "xdm:assets": [
+      {
+        "xdm:assetID": "asset-carousel-001",
+        "xdm:assetType": "image",
+        "xdm:name": "product-1.jpg",
+        "xdm:url": "https://cdn.example.com/carousel/product-1.jpg",
+        "xdm:dimensions": {
+          "xdm:width": 1080,
+          "xdm:height": 1080
+        },
+        "xdm:fileSize": 180224
       },
-      "xdm:fileSize": 456789,
-      "xdm:hash": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
-    },
-    {
-      "xdm:assetID": "asset_car_002_watch",
-      "xdm:assetType": "image",
-      "xdm:name": "carousel-card-2-smartwatch-1080x1080.jpg",
-      "xdm:url": "https://cdn.acmecorp.com/creatives/fall2025/carousel/card-2-smartwatch-1080x1080.jpg",
-      "xdm:thumbnailURL": "https://cdn.acmecorp.com/creatives/fall2025/carousel/thumbs/card-2-smartwatch-300x300.jpg",
-      "xdm:dimensions": {
-        "xdm:width": 1080,
-        "xdm:height": 1080
+      {
+        "xdm:assetID": "asset-carousel-002",
+        "xdm:assetType": "image",
+        "xdm:name": "product-2.jpg",
+        "xdm:url": "https://cdn.example.com/carousel/product-2.jpg",
+        "xdm:dimensions": {
+          "xdm:width": 1080,
+          "xdm:height": 1080
+        },
+        "xdm:fileSize": 195584
       },
-      "xdm:fileSize": 423456,
-      "xdm:hash": "b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7"
-    },
-    {
-      "xdm:assetID": "asset_car_003_speaker",
-      "xdm:assetType": "image",
-      "xdm:name": "carousel-card-3-speaker-1080x1080.jpg",
-      "xdm:url": "https://cdn.acmecorp.com/creatives/fall2025/carousel/card-3-speaker-1080x1080.jpg",
-      "xdm:thumbnailURL": "https://cdn.acmecorp.com/creatives/fall2025/carousel/thumbs/card-3-speaker-300x300.jpg",
-      "xdm:dimensions": {
-        "xdm:width": 1080,
-        "xdm:height": 1080
-      },
-      "xdm:fileSize": 398765,
-      "xdm:hash": "c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8"
-    },
-    {
-      "xdm:assetID": "asset_car_004_charger",
-      "xdm:assetType": "image",
-      "xdm:name": "carousel-card-4-charger-1080x1080.jpg",
-      "xdm:url": "https://cdn.acmecorp.com/creatives/fall2025/carousel/card-4-charger-1080x1080.jpg",
-      "xdm:thumbnailURL": "https://cdn.acmecorp.com/creatives/fall2025/carousel/thumbs/card-4-charger-300x300.jpg",
-      "xdm:dimensions": {
-        "xdm:width": 1080,
-        "xdm:height": 1080
-      },
-      "xdm:fileSize": 367890,
-      "xdm:hash": "d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9"
-    },
-    {
-      "xdm:assetID": "asset_car_005_hub",
-      "xdm:assetType": "image",
-      "xdm:name": "carousel-card-5-hub-1080x1080.jpg",
-      "xdm:url": "https://cdn.acmecorp.com/creatives/fall2025/carousel/card-5-hub-1080x1080.jpg",
-      "xdm:thumbnailURL": "https://cdn.acmecorp.com/creatives/fall2025/carousel/thumbs/card-5-hub-300x300.jpg",
-      "xdm:dimensions": {
-        "xdm:width": 1080,
-        "xdm:height": 1080
-      },
-      "xdm:fileSize": 389012,
-      "xdm:hash": "e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0"
-    }
-  ]
+      {
+        "xdm:assetID": "asset-carousel-003",
+        "xdm:assetType": "image",
+        "xdm:name": "product-3.jpg",
+        "xdm:url": "https://cdn.example.com/carousel/product-3.jpg",
+        "xdm:dimensions": {
+          "xdm:width": 1080,
+          "xdm:height": 1080
+        },
+        "xdm:fileSize": 172032
+      }
+    ]
+  }
 }

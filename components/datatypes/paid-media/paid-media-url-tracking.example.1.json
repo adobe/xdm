@@ -1,54 +1,18 @@
 {
-  "xdm:trackingTemplate": "https://shop.acmecorp.com/products/headphones-premium?fbclid={{ad.id}}&campaign_id={{campaign.id}}&adset_id={{adset.id}}&creative_id={{ad.creative}}",
-  "xdm:finalUrlSuffix": "utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{placement}}&fbclid={{ad.id}}",
+  "xdm:trackingTemplate": "{lpurl}?s_kwcid=AL!{userid}!3!{creative}!{matchtype}!{network}!{keyword}",
+  "xdm:finalUrlSuffix": "utm_source=google&utm_medium=cpc",
   "xdm:customParameters": [
     {
-      "xdm:key": "utm_source",
-      "xdm:value": "facebook"
-    },
-    {
-      "xdm:key": "utm_medium",
-      "xdm:value": "paid_social"
-    },
-    {
-      "xdm:key": "utm_campaign",
-      "xdm:value": "{{campaign.name}}"
-    },
-    {
-      "xdm:key": "utm_content",
-      "xdm:value": "{{ad.name}}"
-    },
-    {
-      "xdm:key": "utm_term",
-      "xdm:value": "{{placement}}"
-    },
-    {
-      "xdm:key": "fbclid",
-      "xdm:value": "{{ad.id}}"
-    },
-    {
       "xdm:key": "campaign_id",
-      "xdm:value": "{{campaign.id}}"
+      "xdm:value": "{campaignid}"
     },
     {
-      "xdm:key": "adset_id",
-      "xdm:value": "{{adset.id}}"
+      "xdm:key": "adgroup_id",
+      "xdm:value": "{adgroupid}"
     },
     {
-      "xdm:key": "ad_id",
-      "xdm:value": "{{ad.id}}"
-    },
-    {
-      "xdm:key": "creative_id",
-      "xdm:value": "{{ad.creative}}"
-    },
-    {
-      "xdm:key": "placement",
-      "xdm:value": "{{placement}}"
-    },
-    {
-      "xdm:key": "site_source_name",
-      "xdm:value": "{{site_source_name}}"
+      "xdm:key": "keyword",
+      "xdm:value": "{keyword}"
     }
   ]
 }

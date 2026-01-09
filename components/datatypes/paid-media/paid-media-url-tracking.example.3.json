@@ -1,33 +1,13 @@
 {
-  "xdm:finalUrlSuffix": "utm_source=facebook&utm_medium=messenger&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&fbclid={{ad.id}}",
+  "xdm:finalUrlSuffix": "gclid={gclid}&msclkid={msclkid}",
   "xdm:customParameters": [
     {
-      "xdm:key": "utm_source",
-      "xdm:value": "facebook"
+      "xdm:key": "source",
+      "xdm:value": "paid_search"
     },
     {
-      "xdm:key": "utm_medium",
-      "xdm:value": "messenger"
-    },
-    {
-      "xdm:key": "utm_campaign",
-      "xdm:value": "{{campaign.name}}"
-    },
-    {
-      "xdm:key": "utm_content",
-      "xdm:value": "{{ad.name}}"
-    },
-    {
-      "xdm:key": "fbclid",
-      "xdm:value": "{{ad.id}}"
-    },
-    {
-      "xdm:key": "messenger_placement",
-      "xdm:value": "{{placement}}"
-    },
-    {
-      "xdm:key": "network",
-      "xdm:value": "meta"
+      "xdm:key": "placement",
+      "xdm:value": "{placement}"
     }
   ]
 }

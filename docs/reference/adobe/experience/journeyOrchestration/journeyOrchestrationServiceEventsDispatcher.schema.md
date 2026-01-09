@@ -81,7 +81,7 @@ The error code indicating the reason for corresponding eventType
 #### https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCodeReason
 ##### Event Code Reason
 
-The reason for the corresponding eventCode
+The reason for the corresponding eventCode, if any, so that it can be used for debugging or informational purposes.
 
 `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCodeReason`
 * is optional

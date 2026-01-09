@@ -46,7 +46,7 @@
                         "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCodeReason": {
                             "title": "Event Code Reason",
                             "type": "string",
-                            "description": "The reason for the corresponding eventType"
+                            "description": "The reason for the corresponding eventCode, if any, so that it can be used for debugging or informational purposes."
                         },
                         "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID": {
                             "title": "Segment ID",

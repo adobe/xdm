@@ -1,0 +1,215 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/account-details",
+  "title": "Core Paid Media Account Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
+  "description": "Account-specific details and configuration fields for paid media accounts",
+  "definitions": {
+    "account-details": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:accountDetails": {
+              "type": "object",
+              "title": "Account Details",
+              "description": "Specific details for paid media accounts",
+              "properties": {
+                "xdm:accountName": {
+                  "type": "string",
+                  "title": "Account Name",
+                  "description": "Display name of the ad account"
+                },
+                "xdm:accountType": {
+                  "type": "string",
+                  "title": "Account Type",
+                  "description": "Type of account",
+                  "enum": ["business", "personal", "agency", "brand", "other"],
+                  "meta:enum": {
+                    "business": "Business Account",
+                    "personal": "Personal Account",
+                    "agency": "Agency Account",
+                    "brand": "Brand Account",
+                    "other": "Other Account Type"
+                  }
+                },
+                "xdm:businessName": {
+                  "type": "string",
+                  "title": "Business Name",
+                  "description": "Name of the business associated with the account"
+                },
+                "xdm:industry": {
+                  "type": "string",
+                  "title": "Industry",
+                  "description": "Industry category of the business"
+                },
+                "xdm:country": {
+                  "type": "string",
+                  "title": "Country",
+                  "description": "Country where the account is registered (ISO country code)"
+                },
+                "xdm:isTestAccount": {
+                  "type": "boolean",
+                  "title": "Is Test Account",
+                  "description": "Whether this is a test/sandbox account"
+                },
+                "xdm:parentAccountID": {
+                  "type": "string",
+                  "title": "Parent Account ID",
+                  "description": "ID of parent account (for sub-accounts or managed accounts)"
+                },
+                "xdm:agencyID": {
+                  "type": "string",
+                  "title": "Agency ID",
+                  "description": "ID of managing agency (if applicable)"
+                },
+                "xdm:permissions": {
+                  "type": "array",
+                  "title": "Account Permissions",
+                  "description": "User permissions for this account",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "owner",
+                      "admin",
+                      "analyst",
+                      "campaign_manager",
+                      "creative_manager",
+                      "finance_manager",
+                      "viewer"
+                    ],
+                    "meta:enum": {
+                      "owner": "Account Owner",
+                      "admin": "Administrator",
+                      "analyst": "Analyst",
+                      "campaign_manager": "Campaign Manager",
+                      "creative_manager": "Creative Manager",
+                      "finance_manager": "Finance Manager",
+                      "viewer": "Viewer"
+                    }
+                  }
+                },
+                "xdm:spendingLimits": {
+                  "type": "object",
+                  "title": "Spending Limits",
+                  "description": "Account-level spending limits",
+                  "properties": {
+                    "xdm:dailyLimit": {
+                      "type": "number",
+                      "title": "Daily Spending Limit",
+                      "description": "Daily spending limit in account currency",
+                      "minimum": 0
+                    },
+                    "xdm:monthlyLimit": {
+                      "type": "number",
+                      "title": "Monthly Spending Limit",
+                      "description": "Monthly spending limit in account currency",
+                      "minimum": 0
+                    },
+                    "xdm:totalLimit": {
+                      "type": "number",
+                      "title": "Total Spending Limit",
+                      "description": "Total account spending limit",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "xdm:billingInfo": {
+                  "type": "object",
+                  "title": "Billing Information",
+                  "description": "Account billing details",
+                  "properties": {
+                    "xdm:billingType": {
+                      "type": "string",
+                      "title": "Billing Type",
+                      "enum": [
+                        "prepaid",
+                        "postpaid",
+                        "credit_line",
+                        "credit_card"
+                      ],
+                      "meta:enum": {
+                        "prepaid": "Prepaid",
+                        "postpaid": "Postpaid",
+                        "credit_line": "Credit Line",
+                        "credit_card": "Credit Card"
+                      }
+                    },
+                    "xdm:paymentMethod": {
+                      "type": "string",
+                      "title": "Payment Method",
+                      "description": "Primary payment method"
+                    },
+                    "xdm:creditLimit": {
+                      "type": "number",
+                      "title": "Credit Limit",
+                      "description": "Account credit limit",
+                      "minimum": 0
+                    },
+                    "xdm:currentBalance": {
+                      "type": "number",
+                      "title": "Current Balance",
+                      "description": "Current account balance",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "xdm:contactInfo": {
+                  "type": "object",
+                  "title": "Contact Information",
+                  "description": "Account contact details",
+                  "properties": {
+                    "xdm:primaryEmail": {
+                      "type": "string",
+                      "format": "email",
+                      "title": "Primary Email",
+                      "description": "Primary contact email"
+                    },
+                    "xdm:phone": {
+                      "type": "string",
+                      "title": "Phone Number",
+                      "description": "Primary contact phone number"
+                    },
+                    "xdm:website": {
+                      "type": "string",
+                      "title": "Website URL",
+                      "description": "Business website URL"
+                    },
+                    "xdm:address": {
+                      "title": "Business Address",
+                      "description": "Business Address.",
+                      "$ref": "https://ns.adobe.com/xdm/common/address"
+                    }
+                  }
+                },
+                "xdm:additionalDetails": {
+                  "title": "Additional Account Details",
+                  "description": "Platform-specific account details not defined in core schema. Allows ingestion of arbitrary fields from paid media network APIs without requiring schema changes.",
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/account-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

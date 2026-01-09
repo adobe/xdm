@@ -21,37 +21,37 @@
           "type": "object",
           "description": "Challenge personalization details.",
           "properties": {
-            "https://ns.adobe.com/experience/ajo/loyalty/description": {
+            "xdm:description": {
               "title": "Description",
               "type": "string",
               "description": "Personalized challenge description."
             },
-            "https://ns.adobe.com/experience/ajo/loyalty/reward": {
+            "xdm:reward": {
               "title": "Reward",
               "type": "string",
               "description": "Reward for completing the entire challenge."
             },
-            "https://ns.adobe.com/experience/ajo/loyalty/tasks": {
+            "xdm:tasks": {
               "title": "Tasks",
               "type": "array",
               "description": "List of tasks within the challenge.",
               "items": {
                 "type": "object",
                 "required": [
-                  "https://ns.adobe.com/experience/ajo/loyalty/name"
+                  "xdm:name"
                 ],
                 "properties": {
-                  "https://ns.adobe.com/experience/ajo/loyalty/name": {
+                  "xdm:name": {
                     "title": "Task Name",
                     "type": "string",
                     "description": "Name of the task to personalize."
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/description": {
+                  "xdm:description": {
                     "title": "Task Description",
                     "type": "string",
                     "description": "Personalized task description."
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/excludedItemLabels": {
+                  "xdm:excludedItemLabels": {
                     "title": "Excluded Item Labels",
                     "type": "array",
                     "description": "List of product SKU/categories/labels excluded from qualifying for this task.",
@@ -60,7 +60,7 @@
                       "type": "string"
                     }
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/includedItemLabels": {
+                  "xdm:includedItemLabels": {
                     "title": "Included Item Labels",
                     "type": "array",
                     "description": "List of product SKUs/categories/labels that can qualify for this task.",
@@ -69,39 +69,39 @@
                       "type": "string"
                     }
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/qtyMin": {
+                  "xdm:qtyMin": {
                     "title": "Minimum Quantity",
                     "type": "number",
                     "description": "Target quantity to achieve."
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/spendMin": {
+                  "xdm:spendMin": {
                     "title": "Minimum Spend",
                     "type": "number",
                     "description": "Target spending amount to achieve."
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/multiDay": {
+                  "xdm:multiDay": {
                     "title": "multiDay",
                     "type": "object",
                     "description": "Multi-day visit requirements for task completion.",
                     "properties": {
-                      "https://ns.adobe.com/experience/ajo/loyalty/contiguous": {
+                      "xdm:contiguous": {
                         "title": "Contiguous",
                         "type": "boolean",
                         "description": "Whether the visits must be on consecutive days."
                       },
-                      "https://ns.adobe.com/experience/ajo/loyalty/days": {
+                        "xdm:days": {
                         "title": "Days",
                         "type": "integer",
                         "description": "Number of qualified days required."
                       }
                     }
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/maxRepeats": {
+                  "xdm:maxRepeats": {
                     "title": "Max Repeats",
                     "type": "integer",
                     "description": "Maximum number of times this task can be repeated."
                   },
-                  "https://ns.adobe.com/experience/ajo/loyalty/reward": {
+                  "xdm:reward": {
                     "title": "Reward",
                     "type": "string",
                     "description": "Reward for completing this task."
@@ -109,17 +109,17 @@
                 }
               }
             },
-            "https://ns.adobe.com/experience/ajo/loyalty/timeOfDay": {
+            "xdm:timeOfDay": {
               "title": "Time of Day",
               "type": "object",
               "description": "Time window during the day for which the challenge is active.",
               "properties": {
-                "https://ns.adobe.com/experience/ajo/loyalty/start": {
+                "xdm:start": {
                   "title": "Start",
                   "type": "integer",
                   "description": "Start time in minutes from midnight (e.g., 720 for 12:00 PM)."
                 },
-                "https://ns.adobe.com/experience/ajo/loyalty/end": {
+                "xdm:end": {
                   "title": "End",
                   "type": "integer",
                   "description": "End time in minutes from midnight (e.g., 900 for 3:00 PM)."

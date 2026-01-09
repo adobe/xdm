@@ -1,0 +1,180 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/task",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Challenge Task",
+  "description": "Details about a task within a loyalty challenge, including state, dates, variables, and completion tracking.",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "task": {
+      "properties": {
+        "xdm:state": {
+          "title": "Task State",
+          "type": "string",
+          "description": "Current state of the task.",
+          "minLength": 1
+        },
+        "xdm:name": {
+          "title": "Task Name",
+          "type": "string",
+          "description": "Name of the task.",
+          "minLength": 1
+        },
+        "xdm:description": {
+          "title": "Task Description",
+          "type": "string",
+          "description": "Description of the task.",
+          "minLength": 1
+        },
+        "xdm:startDate": {
+          "title": "Task Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time when the task started."
+        },
+        "xdm:endDate": {
+          "title": "Task End Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time when the task ended."
+        },
+        "xdm:variables": {
+          "title": "Variables",
+          "type": "object",
+          "description": "Task variables and configuration.",
+          "properties": {
+            "xdm:include": {
+              "title": "Include",
+              "type": "object",
+              "description": "Defines the item labels/categories that will satisfy this task.",
+              "properties": {
+                "xdm:valuesSet": {
+                  "title": "Values Set",
+                  "type": "array",
+                  "description": "List of item labels or categories that qualify for task completion.",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "xdm:exclude": {
+              "title": "Exclude",
+              "type": "object",
+              "description": "Defines the item labels/categories that should be excluded from satisfying this task.",
+              "properties": {
+                "xdm:valuesSet": {
+                  "title": "Values Set",
+                  "type": "array",
+                  "description": "List of item labels or categories that should not count toward task completion.",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "xdm:multiDay": {
+              "title": "Multi Day",
+              "type": "object",
+              "description": "Multi-day visit requirements for task completion.",
+              "properties": {
+                "xdm:contiguous": {
+                  "title": "Contiguous",
+                  "type": "boolean",
+                  "description": "Whether the visits must be on consecutive days."
+                },
+                "xdm:days": {
+                  "title": "Days",
+                  "type": "integer",
+                  "description": "Number of days required for visits."
+                }
+              }
+            },
+            "xdm:spendMin": {
+              "title": "Minimum Spend",
+              "type": "number",
+              "description": "Minimum spend amount required."
+            },
+            "xdm:qtyMin": {
+              "title": "Minimum Quantity",
+              "type": "number",
+              "description": "Minimum quantity required."
+            }
+          }
+        },
+        "xdm:currentProgress": {
+          "title": "Current Progress",
+          "type": "object",
+          "description": "Current progress toward task completion.",
+          "properties": {
+            "xdm:quantity": {
+              "title": "Quantity",
+              "type": "number",
+              "description": "Current quantity accumulated."
+            },
+            "xdm:spend": {
+              "title": "Spend",
+              "type": "number",
+              "description": "Current spend accumulated."
+            },
+            "xdm:days": {
+              "title": "days",
+              "type": "integer",
+              "description": "Number of qualified days accumulated.",
+              "meta:xdmType": "int"
+            },
+            "xdm:qualifiedEvents": {
+              "title": "Qualified Events",
+              "type": "array",
+              "description": "List of events that provided progress toward task completion.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:timestamp": {
+                    "title": "Timestamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Timestamp of the qualified event."
+                  },
+                  "xdm:transactionId": {
+                    "title": "Transaction ID",
+                    "type": "string",
+                    "description": "Transaction ID associated with this qualified event.",
+                    "minLength": 1
+                  }
+                }
+              },
+              "meta:xdmType": "array"
+            }
+          }
+        },
+        "xdm:taskCompletions": {
+          "title": "Task Completions",
+          "type": "array",
+          "description": "List of task completions that counted toward satisfying this task.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/ajo/loyalty/challenge/taskCompletion"
+          },
+          "meta:xdmType": "array"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/task"
+    }
+  ],
+  "meta:status": "experimental"
+}

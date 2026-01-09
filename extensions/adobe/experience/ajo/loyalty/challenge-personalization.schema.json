@@ -16,7 +16,7 @@
   "definitions": {
     "challenge-personalization": {
       "properties": {
-        "https://ns.adobe.com/experience/ajo/loyalty/challenge": {
+        "xdm:challenge": {
           "title": "Challenge",
           "type": "object",
           "description": "Challenge personalization details.",

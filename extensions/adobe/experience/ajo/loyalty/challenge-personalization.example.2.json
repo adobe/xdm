@@ -1,39 +1,32 @@
 {
-  "_id": "personId2_challengeId5",
-  "_experience": {
-    "ajo": {
-      "loyalty": {
-        "challenge": {
-          "description": "Spend $30 on lunch items this week and get rewarded!",
-          "tasks": [
-            {
-              "name": "lunch_spend_challenge",
-              "description": "Purchase at least $30 worth of lunch menu items during lunch hours",
-              "excludedItemLabels": [
-                "ALCOHOL-BEER-001",
-                "ALCOHOL-WINE-002",
-                "GIFT-CARD-050"
-              ],
-              "includedItemLabels": [
-                "SANDWICH-TURKEY-CLUB",
-                "SALAD-CAESAR",
-                "SOUP-TOMATO-BASIL",
-                "WRAP-CHICKEN-AVOCADO",
-                "BOWL-POKE-TUNA",
-                "BURGER-VEGGIE"
-              ],
-              "spendMin": 30.00,
-              "maxRepeats": 1,
-              "reward": "150 points"
-            }
-          ],
-          "timeOfDay": {
-            "end": 840,
-            "start": 660
-          }
-        }
+  "_id": "personId2",
+  "challenge": {
+    "description": "Spend $30 on lunch items this week and get rewarded!",
+    "tasks": [
+      {
+        "name": "lunch_spend_challenge",
+        "description": "Purchase at least $30 worth of lunch menu items during lunch hours",
+        "excludedItemLabels": [
+          "ALCOHOL-BEER-001",
+          "ALCOHOL-WINE-002",
+          "GIFT-CARD-050"
+        ],
+        "includedItemLabels": [
+          "SANDWICH-TURKEY-CLUB",
+          "SALAD-CAESAR",
+          "SOUP-TOMATO-BASIL",
+          "WRAP-CHICKEN-AVOCADO",
+          "BOWL-POKE-TUNA",
+          "BURGER-VEGGIE"
+        ],
+        "spendMin": 30.00,
+        "maxRepeats": 1,
+        "reward": "150 points"
       }
+    ],
+    "timeOfDay": {
+      "end": 840,
+      "start": 660
     }
   }
 }
-

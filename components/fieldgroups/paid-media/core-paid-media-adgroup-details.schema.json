@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
   "description": "Ad group-specific details and configuration fields for paid media ad groups/ad sets/ad squads",
   "definitions": {
     "adgroup-details": {

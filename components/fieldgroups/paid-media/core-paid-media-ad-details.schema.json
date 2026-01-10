@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
   "description": "Ad-specific details and configuration fields for paid media ads",
   "definitions": {
     "ad-details": {
@@ -58,11 +58,6 @@
                     "interactive": "Interactive Ad",
                     "other": "Other Ad Type"
                   }
-                },
-                "xdm:adSubtype": {
-                  "type": "string",
-                  "title": "Ad Subtype",
-                  "description": "Additional classification of the ad beyond the main type (GenStudio migration aid)"
                 },
                 "xdm:creative": {
                   "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-creative",

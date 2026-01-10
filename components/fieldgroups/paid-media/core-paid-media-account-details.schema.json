@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
   "description": "Account-specific details and configuration fields for paid media accounts",
   "definitions": {
     "account-details": {
@@ -185,47 +185,9 @@
                       "description": "Business website URL"
                     },
                     "xdm:address": {
-                      "type": "object",
                       "title": "Business Address",
-                      "properties": {
-                        "xdm:street1": {
-                          "type": "string",
-                          "title": "Street Address Line 1",
-                          "description": "First line of street address"
-                        },
-                        "xdm:street2": {
-                          "type": "string",
-                          "title": "Street Address Line 2",
-                          "description": "Second line of street address (suite, apt, etc.)"
-                        },
-                        "xdm:street3": {
-                          "type": "string",
-                          "title": "Street Address Line 3",
-                          "description": "Third line of street address"
-                        },
-                        "xdm:city": {
-                          "type": "string",
-                          "title": "City"
-                        },
-                        "xdm:state": {
-                          "type": "string",
-                          "title": "State/Province",
-                          "description": "State or province"
-                        },
-                        "xdm:region": {
-                          "type": "string",
-                          "title": "Region",
-                          "description": "State, province, or region"
-                        },
-                        "xdm:postalCode": {
-                          "type": "string",
-                          "title": "Postal Code"
-                        },
-                        "xdm:country": {
-                          "type": "string",
-                          "title": "Country"
-                        }
-                      }
+                      "description": "Business Address.",
+                      "$ref": "https://ns.adobe.com/xdm/common/address"
                     }
                   }
                 },

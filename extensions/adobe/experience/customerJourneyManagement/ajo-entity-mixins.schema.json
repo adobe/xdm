@@ -253,19 +253,16 @@
           "title": "AJO Rule Set Entity",
           "type": "object",
           "description": "AJO Rule Set Entity Specific Fields",
-          "items": {
-            "type": "object",
-            "properties": {
-              "xdm:id": {
-                "title": "Rule Set ID",
-                "type": "string",
-                "description": "ID for the rule set"
-              },
-              "xdm:name": {
-                "title": "Rule Set Name",
-                "type": "string",
-                "description": "Name for the rule set"
-              }
+          "properties": {
+            "xdm:id": {
+              "title": "Rule Set ID",
+              "type": "string",
+              "description": "ID for the rule set"
+            },
+            "xdm:name": {
+              "title": "Rule Set Name",
+              "type": "string",
+              "description": "Name for the rule set"
             }
           }
         },

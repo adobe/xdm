@@ -1,0 +1,207 @@
+{
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:entityType": "campaign",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:campaignID": "23851234567890789",
+    "xdm:campaignGUID": "meta_act_123456789012345_23851234567890789",
+    "xdm:hierarchyPath": "act_123456789012345/23851234567890789",
+    "xdm:metadata": {
+      "xdm:name": "Fall 2025 Product Launch - Traffic Campaign",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/Los_Angeles",
+      "xdm:createdTime": "2025-10-15T10:00:00Z",
+      "xdm:updatedTime": "2025-11-09T15:30:00Z",
+      "xdm:startTime": "2025-11-01T00:00:00Z",
+      "xdm:endTime": "2025-11-30T23:59:59Z",
+      "xdm:objective": "traffic",
+      "xdm:budgetType": "daily",
+      "xdm:dailyBudget": 2000,
+      "xdm:lifetimeBudget": 0,
+      "xdm:biddingStrategy": "lowest_cost_without_cap",
+      "xdm:optimizationGoal": "link_clicks"
+    },
+    "xdm:campaignDetails": {
+      "xdm:campaignType": "traffic",
+      "xdm:subType": "link_clicks",
+      "xdm:isAutomatedCampaign": false,
+      "xdm:promotedObject": {
+        "xdm:objectType": "page",
+        "xdm:objectID": "page_acmecorp_official",
+        "xdm:pageID": "123456789012345",
+        "xdm:pixelID": "pixel_123456789",
+        "xdm:customEventType": "LINK_CLICK",
+        "xdm:applicationID": "app_456789123",
+        "xdm:productCatalogID": "catalog_987654321",
+        "xdm:productSetID": "product_set_123456",
+        "xdm:offlineConversionDataSetID": "",
+        "xdm:destinationURL": "https://www.acmecorp.com/fall-launch"
+      },
+      "xdm:budgetSettings": {
+        "xdm:budgetType": "daily",
+        "xdm:dailyBudget": 2000,
+        "xdm:lifetimeBudget": 0,
+        "xdm:totalBudget": 60000,
+        "xdm:budgetRemaining": 42500,
+        "xdm:budgetSpent": 17500,
+        "xdm:budgetUtilization": 0.292,
+        "xdm:pacing": "standard",
+        "xdm:pacingType": "standard",
+        "xdm:campaignBudgetOptimization": true,
+        "xdm:cboEnabled": true,
+        "xdm:budgetRebalancing": true,
+        "xdm:spendCap": 2500,
+        "xdm:bidCap": 0,
+        "xdm:costCap": 0
+      },
+      "xdm:targetingStrategy": {
+        "xdm:targetingExpansion": true,
+        "xdm:detailedTargetingExpansion": "expansion_all",
+        "xdm:advantagePlusAudience": false,
+        "xdm:advantagePlusCreative": false,
+        "xdm:advantagePlusCatalog": false,
+        "xdm:lookalikExpansion": true,
+        "xdm:automaticPlacements": true,
+        "xdm:dynamicCreative": false
+      },
+      "xdm:schedulingSettings": {
+        "xdm:startDate": "2025-11-01T00:00:00Z",
+        "xdm:endDate": "2025-11-30T23:59:59Z",
+        "xdm:scheduleType": "continuous",
+        "xdm:runContinuously": false,
+        "xdm:dayParting": false,
+        "xdm:dayPartingSchedule": [],
+        "xdm:timezone": "America/Los_Angeles",
+        "xdm:flightDates": [
+          {
+            "xdm:startDate": "2025-11-01T00:00:00Z",
+            "xdm:endDate": "2025-11-30T23:59:59Z"
+          }
+        ]
+      },
+      "xdm:frequencyCapping": {
+        "xdm:enabled": true,
+        "xdm:impressionCap": 5,
+        "xdm:timePeriod": "week",
+        "xdm:timePeriodDays": 7,
+        "xdm:applyToAllAdSets": true,
+        "xdm:resetFrequency": "weekly"
+      },
+      "xdm:conversionTracking": {
+        "xdm:pixelID": "pixel_123456789",
+        "xdm:conversionEvents": [
+          "PageView",
+          "ViewContent",
+          "AddToCart",
+          "InitiateCheckout",
+          "Purchase"
+        ],
+        "xdm:customConversions": [
+          {
+            "xdm:eventName": "ProductPageView",
+            "xdm:eventID": "custom_event_001",
+            "xdm:eventValue": 0
+          },
+          {
+            "xdm:eventName": "DemoRequest",
+            "xdm:eventID": "custom_event_002",
+            "xdm:eventValue": 50
+          }
+        ],
+        "xdm:offlineConversions": false,
+        "xdm:serverSideTracking": true,
+        "xdm:conversionAPI": true,
+        "xdm:deduplication": true,
+        "xdm:attributionWindow": "7d_click_1d_view"
+      },
+      "xdm:optimizationSettings": {
+        "xdm:objective": "OUTCOME_TRAFFIC",
+        "xdm:optimizationGoal": "LINK_CLICKS",
+        "xdm:billingEvent": "IMPRESSIONS",
+        "xdm:bidStrategy": "LOWEST_COST_WITHOUT_CAP",
+        "xdm:pacing": "standard",
+        "xdm:deliveryType": "standard",
+        "xdm:learningPhase": "learning",
+        "xdm:autoOptimization": true
+      },
+      "xdm:ios14Settings": {
+        "xdm:campaignOptedIn": true,
+        "xdm:attOptimization": true,
+        "xdm:aggregatedEventMeasurement": true,
+        "xdm:prioritizedEvents": ["Purchase", "AddToCart", "ViewContent"],
+        "xdm:domainVerification": true,
+        "xdm:verifiedDomain": "acmecorp.com",
+        "xdm:skadnetworkEnabled": true,
+        "xdm:conversionValueSchema": "default"
+      },
+      "xdm:brandSafety": {
+        "xdm:inventoryFilter": "standard",
+        "xdm:blockLists": ["block_list_sensitive_content"],
+        "xdm:contentCategories": [
+          "news",
+          "entertainment",
+          "technology",
+          "business"
+        ],
+        "xdm:excludedCategories": ["mature_content", "political", "gambling"],
+        "xdm:publisherBlockLists": [],
+        "xdm:appBlockLists": [],
+        "xdm:brandSuitability": "standard"
+      },
+      "xdm:creativeSettings": {
+        "xdm:dynamicCreative": false,
+        "xdm:multiAdvertiserAds": false,
+        "xdm:catalogAds": false,
+        "xdm:collectionAds": false,
+        "xdm:instantExperience": false,
+        "xdm:videoPolling": false,
+        "xdm:playableAds": false
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_campaign_id",
+          "xdm:stringValue": "23851234567890789"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_name",
+          "xdm:stringValue": "Fall 2025 Product Launch - Traffic Campaign"
+        },
+        {
+          "xdm:fieldName": "meta_objective",
+          "xdm:stringValue": "OUTCOME_TRAFFIC"
+        },
+        {
+          "xdm:fieldName": "meta_buying_type",
+          "xdm:stringValue": "AUCTION"
+        },
+        {
+          "xdm:fieldName": "meta_special_ad_categories",
+          "xdm:stringValue": "NONE"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_budget_optimization",
+          "xdm:stringValue": "true"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_spending_limit",
+          "xdm:stringValue": "2500"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_status",
+          "xdm:stringValue": "ACTIVE"
+        },
+        {
+          "xdm:fieldName": "meta_effective_status",
+          "xdm:stringValue": "ACTIVE"
+        }
+      ]
+    }
+  }
+}

@@ -39,6 +39,8 @@
       "xdm:decisionPolicyID": "123-456-789-c",
       "xdm:decisionPolicyName": "Decision Policy",
       "xdm:decisionPolicyType": "Message",
+      "xdm:rankingType": "",
+      "xdm:formulaId": "",
       "xdm:transitions": [
         {
           "xdm:transitionID": "node-67890",
@@ -62,6 +64,10 @@
       ]
     }
   ],
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/id": "a2YioO",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Rule Set Name"
+  },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName": "Marketing Test Journey",

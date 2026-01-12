@@ -1,0 +1,34 @@
+{
+  "_experience": {
+    "ajo": {
+      "loyalty": {
+        "challenge": {
+          "locationId": "store-123",
+          "transactionId": "txn-456789",
+          "localTimezoneOffset": 420,
+          "itemList": [
+            {
+              "unitPrice": 29.99,
+              "quantity": 2,
+              "itemName": "Coffee Beans",
+              "itemSet": [
+                "sku-200-123",
+                "category-200"
+              ]
+            },
+            {
+              "unitPrice": 12.50,
+              "quantity": 1,
+              "itemName": "Travel Mug",
+              "itemSet": [
+                "sku-500-789",
+                "category-500"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+

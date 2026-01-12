@@ -1,0 +1,92 @@
+{
+  "xdm:paidMedia": {
+    "xdm:adGroupDetails": {
+      "xdm:adGroupType": "standard",
+      "xdm:childAdType": "video",
+      "xdm:budgetSettings": {
+        "xdm:budgetInMicroCurrency": 500000000,
+        "xdm:bidInMicroCurrency": 1250000,
+        "xdm:bidStrategyType": "lowest_cost",
+        "xdm:targetCpa": 25.5,
+        "xdm:targetRoas": 3.5,
+        "xdm:roasValueMicro": 3500000
+      },
+      "xdm:optimizationSettings": {
+        "xdm:conversionWindow": "7d_click_1d_view",
+        "xdm:isAutoTargetingEnabled": true,
+        "xdm:isCampaignOptimization": false
+      },
+      "xdm:placementSettings": {
+        "xdm:placementGroup": "automatic_placements",
+        "xdm:placements": [
+          "facebook_feed",
+          "instagram_feed",
+          "facebook_marketplace",
+          "facebook_video_feeds",
+          "facebook_right_column",
+          "instagram_explore",
+          "instagram_reels",
+          "messenger_inbox",
+          "audience_network_native",
+          "audience_network_banner",
+          "audience_network_interstitial",
+          "audience_network_rewarded_video"
+        ],
+        "xdm:deviceTypes": ["mobile", "desktop"]
+      },
+      "xdm:deliverySettings": {
+        "xdm:pacingDeliveryType": "standard",
+        "xdm:deliveryConstraint": "none",
+        "xdm:deliveryStatus": "active",
+        "xdm:reachGoal": 125000,
+        "xdm:impressionGoal": 500000
+      },
+      "xdm:trackingSettings": {
+        "xdm:pixelID": "pixel_123456789",
+        "xdm:measurementProviderNames": ["meta", "adobe"],
+        "xdm:eventSources": ["pixel", "app"],
+        "xdm:skadnetworkProperties": {
+          "xdm:status": "enrolled"
+        }
+      },
+      "xdm:brandSafetyConfig": {
+        "xdm:inventoryFilter": "standard",
+        "xdm:blockedCategories": ["mature_content", "political"]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_adset_id",
+          "xdm:stringValue": "23851234567890456"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_id",
+          "xdm:stringValue": "23851234567890789"
+        },
+        {
+          "xdm:fieldName": "meta_adset_name",
+          "xdm:stringValue": "Fall Launch - Video - 25-54 - Tech Enthusiasts"
+        },
+        {
+          "xdm:fieldName": "meta_optimization_goal",
+          "xdm:stringValue": "LINK_CLICKS"
+        },
+        {
+          "xdm:fieldName": "meta_billing_event",
+          "xdm:stringValue": "IMPRESSIONS"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        },
+        {
+          "xdm:fieldName": "meta_destination_type",
+          "xdm:stringValue": "WEBSITE"
+        },
+        {
+          "xdm:fieldName": "meta_promoted_object_type",
+          "xdm:stringValue": "PAGE"
+        }
+      ]
+    }
+  }
+}

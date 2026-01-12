@@ -1,0 +1,331 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/attribution-metrics",
+  "title": "Core Paid Media Attribution Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Attribution window and methodology details for paid media campaigns",
+  "definitions": {
+    "attribution-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:attributionMetrics": {
+              "type": "object",
+              "title": "Attribution Metrics",
+              "description": "Attribution window and methodology details",
+              "properties": {
+                "xdm:attributionModel": {
+                  "type": "string",
+                  "title": "Attribution Model",
+                  "description": "Attribution model used for conversions",
+                  "enum": [
+                    "LAST_CLICK",
+                    "FIRST_CLICK",
+                    "LINEAR",
+                    "TIME_DECAY",
+                    "POSITION_BASED",
+                    "DATA_DRIVEN",
+                    "EVEN_CREDIT",
+                    "CUSTOM"
+                  ],
+                  "meta:enum": {
+                    "LAST_CLICK": "Last Click",
+                    "FIRST_CLICK": "First Click",
+                    "LINEAR": "Linear",
+                    "TIME_DECAY": "Time Decay",
+                    "POSITION_BASED": "Position Based",
+                    "DATA_DRIVEN": "Data Driven",
+                    "EVEN_CREDIT": "Even Credit",
+                    "CUSTOM": "Custom Model"
+                  }
+                },
+                "xdm:clickAttributionWindow": {
+                  "type": "string",
+                  "title": "Click Attribution Window",
+                  "description": "Click attribution window (e.g., '7_DAY', '30_DAY', or number of days as string)",
+                  "enum": [
+                    "1_DAY",
+                    "7_DAY",
+                    "14_DAY",
+                    "28_DAY",
+                    "30_DAY",
+                    "60_DAY",
+                    "90_DAY",
+                    "CUSTOM"
+                  ],
+                  "meta:enum": {
+                    "1_DAY": "1 Day",
+                    "7_DAY": "7 Days",
+                    "14_DAY": "14 Days",
+                    "28_DAY": "28 Days",
+                    "30_DAY": "30 Days",
+                    "60_DAY": "60 Days",
+                    "90_DAY": "90 Days",
+                    "CUSTOM": "Custom Window"
+                  }
+                },
+                "xdm:viewAttributionWindow": {
+                  "type": "string",
+                  "title": "View Attribution Window",
+                  "description": "View attribution window (e.g., '1_DAY', '7_DAY', or number of days as string)",
+                  "enum": [
+                    "1_DAY",
+                    "7_DAY",
+                    "14_DAY",
+                    "28_DAY",
+                    "30_DAY",
+                    "CUSTOM"
+                  ],
+                  "meta:enum": {
+                    "1_DAY": "1 Day",
+                    "7_DAY": "7 Days",
+                    "14_DAY": "14 Days",
+                    "28_DAY": "28 Days",
+                    "30_DAY": "30 Days",
+                    "CUSTOM": "Custom Window"
+                  }
+                },
+                "xdm:engagementAttributionWindow": {
+                  "type": "string",
+                  "title": "Engagement Attribution Window",
+                  "description": "Engagement attribution window (e.g., '1_DAY', '7_DAY', or number of days as string)",
+                  "enum": [
+                    "1_DAY",
+                    "7_DAY",
+                    "14_DAY",
+                    "28_DAY",
+                    "30_DAY",
+                    "CUSTOM"
+                  ],
+                  "meta:enum": {
+                    "1_DAY": "1 Day",
+                    "7_DAY": "7 Days",
+                    "14_DAY": "14 Days",
+                    "28_DAY": "28 Days",
+                    "30_DAY": "30 Days",
+                    "CUSTOM": "Custom Window"
+                  }
+                },
+                "xdm:crossDeviceAttribution": {
+                  "type": "object",
+                  "title": "Cross-Device Attribution Metrics",
+                  "description": "Detailed cross-device attribution metrics",
+                  "properties": {
+                    "xdm:enabled": {
+                      "type": "boolean",
+                      "title": "Enabled"
+                    },
+                    "xdm:crossDeviceConversions": {
+                      "type": "number",
+                      "title": "Cross Device Conversions",
+                      "minimum": 0
+                    },
+                    "xdm:crossDeviceConversionRate": {
+                      "type": "number",
+                      "title": "Cross Device Conversion Rate",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:deviceSwitchRate": {
+                      "type": "number",
+                      "title": "Device Switch Rate",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:averageDevicesPerPath": {
+                      "type": "number",
+                      "title": "Average Devices Per Path",
+                      "minimum": 0
+                    },
+                    "xdm:devicePathBreakdown": {
+                      "type": "object",
+                      "title": "Device Path Breakdown",
+                      "properties": {
+                        "xdm:mobileToDesktop": {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        "xdm:desktopToMobile": {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        "xdm:mobileToMobileApp": {
+                          "type": "number",
+                          "minimum": 0
+                        }
+                      }
+                    }
+                  }
+                },
+                "xdm:attributionWeight": {
+                  "type": "number",
+                  "title": "Attribution Weight",
+                  "description": "Weight assigned to this touchpoint in attribution",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:touchpointPosition": {
+                  "type": "string",
+                  "title": "Touchpoint Position",
+                  "description": "Position of this touchpoint in the customer journey",
+                  "enum": ["first", "middle", "last", "only"],
+                  "meta:enum": {
+                    "first": "First Touchpoint",
+                    "middle": "Middle Touchpoint",
+                    "last": "Last Touchpoint",
+                    "only": "Only Touchpoint"
+                  }
+                },
+                "xdm:touchpointSequence": {
+                  "type": "integer",
+                  "title": "Touchpoint Sequence",
+                  "description": "Sequence number of this touchpoint in the journey",
+                  "minimum": 1
+                },
+                "xdm:totalTouchpoints": {
+                  "type": "integer",
+                  "title": "Total Touchpoints",
+                  "description": "Total number of touchpoints in the conversion path",
+                  "minimum": 1
+                },
+                "xdm:pathLength": {
+                  "type": "integer",
+                  "title": "Path Length",
+                  "description": "Length of the conversion path in days",
+                  "minimum": 0
+                },
+                "xdm:timeToConversion": {
+                  "type": "number",
+                  "title": "Time to Conversion",
+                  "description": "Time from this touchpoint to conversion in hours",
+                  "minimum": 0
+                },
+                "xdm:attributionConfidence": {
+                  "type": "number",
+                  "title": "Attribution Confidence",
+                  "description": "Confidence score for the attribution",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:incrementalImpact": {
+                  "type": "number",
+                  "title": "Incremental Impact",
+                  "description": "Incremental impact of this touchpoint on conversion",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:baselineConversions": {
+                  "type": "number",
+                  "title": "Baseline Conversions",
+                  "description": "Expected conversions without this touchpoint",
+                  "minimum": 0
+                },
+                "xdm:incrementalConversions": {
+                  "type": "number",
+                  "title": "Incremental Conversions",
+                  "description": "Additional conversions attributed to this touchpoint",
+                  "minimum": 0
+                },
+                "xdm:liftPercentage": {
+                  "type": "number",
+                  "title": "Lift Percentage",
+                  "description": "Percentage lift in conversions due to this touchpoint",
+                  "minimum": 0
+                },
+                "xdm:attributionMethodology": {
+                  "type": "object",
+                  "title": "Attribution Methodology",
+                  "description": "Details about the attribution methodology used",
+                  "properties": {
+                    "xdm:algorithmType": {
+                      "type": "string",
+                      "title": "Algorithm Type",
+                      "description": "Type of attribution algorithm used"
+                    },
+                    "xdm:modelVersion": {
+                      "type": "string",
+                      "title": "Model Version",
+                      "description": "Version of the attribution model"
+                    },
+                    "xdm:trainingPeriod": {
+                      "type": "string",
+                      "title": "Training Period",
+                      "description": "Period used to train the attribution model"
+                    },
+                    "xdm:dataQuality": {
+                      "type": "number",
+                      "title": "Data Quality",
+                      "description": "Quality score of data used for attribution",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:sampleSize": {
+                      "type": "integer",
+                      "title": "Sample Size",
+                      "description": "Sample size used for attribution modeling",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "xdm:crossChannelAttribution": {
+                  "type": "object",
+                  "title": "Cross-Channel Attribution",
+                  "description": "Attribution across different marketing channels",
+                  "properties": {
+                    "xdm:channelContribution": {
+                      "type": "number",
+                      "title": "Channel Contribution",
+                      "description": "This channel's contribution to the conversion",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:channelSequence": {
+                      "type": "array",
+                      "title": "Channel Sequence",
+                      "description": "Sequence of channels in the conversion path",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:channel": {
+                            "type": "string"
+                          },
+                          "xdm:position": {
+                            "type": "integer"
+                          },
+                          "xdm:weight": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "xdm:dominantChannel": {
+                      "type": "string",
+                      "title": "Dominant Channel",
+                      "description": "Channel with the highest attribution weight"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/attribution-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

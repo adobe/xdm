@@ -1,0 +1,481 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/campaign-details",
+  "title": "Core Paid Media Campaign Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
+  "description": "Campaign-specific details and configuration fields for paid media campaigns",
+  "definitions": {
+    "campaign-details": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:campaignDetails": {
+              "type": "object",
+              "title": "Campaign Details",
+              "description": "Specific details for paid media campaigns",
+              "properties": {
+                "xdm:campaignType": {
+                  "type": "string",
+                  "title": "Campaign Type",
+                  "description": "Type of campaign",
+                  "enum": [
+                    "search",
+                    "display",
+                    "video",
+                    "shopping",
+                    "social",
+                    "mobile_app",
+                    "connected_tv",
+                    "audio",
+                    "native",
+                    "lead_generation",
+                    "catalog_sales",
+                    "sponsored_products",
+                    "sponsored_brands",
+                    "sponsored_display",
+                    "sponsored_tv",
+                    "traffic",
+                    "other"
+                  ],
+                  "meta:enum": {
+                    "search": "Search Campaign",
+                    "display": "Display Campaign",
+                    "video": "Video Campaign",
+                    "shopping": "Shopping Campaign",
+                    "social": "Social Media Campaign",
+                    "mobile_app": "Mobile App Campaign",
+                    "connected_tv": "Connected TV Campaign",
+                    "audio": "Audio Campaign",
+                    "native": "Native Campaign",
+                    "lead_generation": "Lead Generation Campaign",
+                    "catalog_sales": "Catalog Sales Campaign",
+                    "sponsored_products": "Sponsored Products (Amazon)",
+                    "sponsored_brands": "Sponsored Brands (Amazon)",
+                    "sponsored_display": "Sponsored Display (Amazon)",
+                    "sponsored_tv": "Sponsored TV (Amazon)",
+                    "traffic": "Traffic Campaign",
+                    "other": "Other Campaign Type"
+                  }
+                },
+                "xdm:subType": {
+                  "type": "string",
+                  "title": "Campaign Sub-type",
+                  "description": "More specific campaign sub-type or format"
+                },
+                "xdm:promotedObject": {
+                  "type": "object",
+                  "title": "Promoted Object",
+                  "description": "Object being promoted by the campaign",
+                  "properties": {
+                    "xdm:objectType": {
+                      "type": "string",
+                      "title": "Object Type",
+                      "enum": [
+                        "page",
+                        "app",
+                        "product",
+                        "event",
+                        "website",
+                        "catalog",
+                        "other"
+                      ],
+                      "meta:enum": {
+                        "page": "Social Media Page",
+                        "app": "Mobile App",
+                        "product": "Product/Service",
+                        "event": "Event",
+                        "website": "Website",
+                        "catalog": "Product Catalog",
+                        "other": "Other Object"
+                      }
+                    },
+                    "xdm:objectID": {
+                      "type": "string",
+                      "title": "Object ID",
+                      "description": "ID of the promoted object"
+                    },
+                    "xdm:objectName": {
+                      "type": "string",
+                      "title": "Object Name",
+                      "description": "Name of the promoted object"
+                    },
+                    "xdm:objectURL": {
+                      "type": "string",
+                      "title": "Object URL",
+                      "description": "URL of the promoted object"
+                    }
+                  }
+                },
+                "xdm:budgetSettings": {
+                  "type": "object",
+                  "title": "Budget Settings",
+                  "description": "Campaign budget configuration",
+                  "properties": {
+                    "xdm:isCampaignBudgetOptimization": {
+                      "type": "boolean",
+                      "title": "Campaign Budget Optimization",
+                      "description": "Whether campaign uses automatic budget optimization"
+                    },
+                    "xdm:spendCap": {
+                      "type": "number",
+                      "title": "Spend Cap",
+                      "description": "Maximum amount that can be spent",
+                      "minimum": 0
+                    },
+                    "xdm:bidStrategy": {
+                      "type": "string",
+                      "title": "Bid Strategy",
+                      "description": "Bidding strategy for the campaign"
+                    },
+                    "xdm:bidAmount": {
+                      "type": "number",
+                      "title": "Bid Amount",
+                      "description": "Bid amount or target cost"
+                    }
+                  }
+                },
+                "xdm:targeting": {
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-targeting",
+                  "title": "Campaign Targeting",
+                  "description": "Targeting specifications for the campaign"
+                },
+                "xdm:scheduling": {
+                  "type": "object",
+                  "title": "Campaign Scheduling",
+                  "description": "Campaign scheduling settings",
+                  "properties": {
+                    "xdm:isAlwaysOn": {
+                      "type": "boolean",
+                      "title": "Always On",
+                      "description": "Whether campaign runs continuously"
+                    },
+                    "xdm:flightDates": {
+                      "type": "array",
+                      "title": "Flight Dates",
+                      "description": "Campaign flight periods",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:startDate": {
+                            "type": "string",
+                            "format": "date-time",
+                            "title": "Flight Start Date"
+                          },
+                          "xdm:endDate": {
+                            "type": "string",
+                            "format": "date-time",
+                            "title": "Flight End Date"
+                          },
+                          "xdm:budget": {
+                            "type": "number",
+                            "title": "Flight Budget",
+                            "minimum": 0
+                          }
+                        }
+                      }
+                    },
+                    "xdm:dayParting": {
+                      "type": "object",
+                      "title": "Day Parting",
+                      "description": "Time-of-day scheduling",
+                      "properties": {
+                        "xdm:enabled": {
+                          "type": "boolean",
+                          "title": "Day Parting Enabled"
+                        },
+                        "xdm:schedule": {
+                          "type": "array",
+                          "title": "Schedule",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "xdm:dayOfWeek": {
+                                "type": "string",
+                                "enum": [
+                                  "monday",
+                                  "tuesday",
+                                  "wednesday",
+                                  "thursday",
+                                  "friday",
+                                  "saturday",
+                                  "sunday"
+                                ],
+                                "meta:enum": {
+                                  "monday": "Monday",
+                                  "tuesday": "Tuesday",
+                                  "wednesday": "Wednesday",
+                                  "thursday": "Thursday",
+                                  "friday": "Friday",
+                                  "saturday": "Saturday",
+                                  "sunday": "Sunday"
+                                }
+                              },
+                              "xdm:startHour": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 23
+                              },
+                              "xdm:endHour": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 23
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "xdm:frequencyCapping": {
+                  "type": "object",
+                  "title": "Frequency Capping",
+                  "description": "Frequency cap settings",
+                  "properties": {
+                    "xdm:enabled": {
+                      "type": "boolean",
+                      "title": "Frequency Capping Enabled"
+                    },
+                    "xdm:impressionCap": {
+                      "type": "integer",
+                      "title": "Impression Cap",
+                      "description": "Maximum impressions per user"
+                    },
+                    "xdm:timePeriod": {
+                      "type": "string",
+                      "title": "Time Period",
+                      "enum": ["hour", "day", "week", "month"],
+                      "meta:enum": {
+                        "hour": "Per Hour",
+                        "day": "Per Day",
+                        "week": "Per Week",
+                        "month": "Per Month"
+                      }
+                    }
+                  }
+                },
+                "xdm:conversionTracking": {
+                  "type": "object",
+                  "title": "Conversion Tracking",
+                  "description": "Conversion tracking configuration",
+                  "properties": {
+                    "xdm:pixelIDs": {
+                      "type": "array",
+                      "title": "Pixel IDs",
+                      "description": "Tracking pixel IDs associated with campaign",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "xdm:conversionEvents": {
+                      "type": "array",
+                      "title": "Conversion Events",
+                      "description": "Events being tracked for conversions",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "xdm:attributionWindow": {
+                      "type": "string",
+                      "title": "Attribution Window",
+                      "description": "Attribution window as a string (e.g., '7d_click_1d_view')"
+                    },
+                    "xdm:urlTracking": {
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-url-tracking"
+                    }
+                  }
+                },
+                "xdm:ios14CampaignType": {
+                  "type": "string",
+                  "title": "iOS 14 Campaign Type",
+                  "description": "Campaign type for iOS 14+ attribution handling",
+                  "enum": [
+                    "REGULAR_CAMPAIGN",
+                    "IOS14_CAMPAIGN",
+                    "ADVANCED_DEDICATED_CAMPAIGN"
+                  ],
+                  "meta:enum": {
+                    "REGULAR_CAMPAIGN": "Regular Campaign",
+                    "IOS14_CAMPAIGN": "iOS 14 Dedicated Campaign",
+                    "ADVANCED_DEDICATED_CAMPAIGN": "Advanced Dedicated Campaign"
+                  }
+                },
+                "xdm:skanEnabled": {
+                  "type": "boolean",
+                  "title": "SKAN Enabled",
+                  "description": "Whether SKAdNetwork (Apple's attribution framework) is enabled for this campaign"
+                },
+                "xdm:skanPostbackWindow": {
+                  "type": "string",
+                  "title": "SKAN Postback Window",
+                  "description": "SKAN 4.0 postback window mode selection",
+                  "enum": [
+                    "POSTBACK_WINDOW_MODE1",
+                    "POSTBACK_WINDOW_MODE2",
+                    "POSTBACK_WINDOW_MODE3"
+                  ],
+                  "meta:enum": {
+                    "POSTBACK_WINDOW_MODE1": "Postback Window 1 (0-2 days)",
+                    "POSTBACK_WINDOW_MODE2": "Postback Window 2 (3-7 days)",
+                    "POSTBACK_WINDOW_MODE3": "Postback Window 3 (8-35 days)"
+                  }
+                },
+                "xdm:appProfilePageEnabled": {
+                  "type": "boolean",
+                  "title": "App Profile Page Enabled",
+                  "description": "Whether App Profile Page is enabled for the campaign"
+                },
+                "xdm:isAutomatedCampaign": {
+                  "type": "boolean",
+                  "title": "Is Automated Campaign",
+                  "description": "Whether this is an automated/smart campaign with machine learning optimization"
+                },
+                "xdm:automatedCampaignType": {
+                  "type": "string",
+                  "title": "Automated Campaign Type",
+                  "description": "Specific type of automated campaign",
+                  "enum": [
+                    "SMART_PLUS",
+                    "SMART_PERFORMANCE_WEB",
+                    "PERFORMANCE_MAX",
+                    "MAXIMUM_DELIVERY",
+                    "AUTO_CAMPAIGN",
+                    "DYNAMIC_CREATIVE",
+                    "GMV_MAX",
+                    "OTHER"
+                  ],
+                  "meta:enum": {
+                    "SMART_PLUS": "Smart+ Campaign (TikTok)",
+                    "SMART_PERFORMANCE_WEB": "Smart Performance Web Campaign (TikTok)",
+                    "PERFORMANCE_MAX": "Performance Max (Google)",
+                    "MAXIMUM_DELIVERY": "Maximum Delivery (LinkedIn)",
+                    "AUTO_CAMPAIGN": "Auto Campaign (Amazon)",
+                    "DYNAMIC_CREATIVE": "Dynamic Creative Optimization",
+                    "GMV_MAX": "GMV Max Campaign (TikTok)",
+                    "OTHER": "Other Automated Type"
+                  }
+                },
+                "xdm:catalogId": {
+                  "type": "string",
+                  "title": "Catalog ID",
+                  "description": "Product catalog identifier for catalog-based campaigns"
+                },
+                "xdm:catalogAuthorizedBusinessCenterId": {
+                  "type": "string",
+                  "title": "Catalog Authorized Business Center ID",
+                  "description": "Business Center ID that authorized the catalog access"
+                },
+                "xdm:productSource": {
+                  "type": "string",
+                  "title": "Product Source",
+                  "description": "Source of products for the campaign",
+                  "enum": [
+                    "CATALOG",
+                    "STORE",
+                    "TIKTOK_SHOP",
+                    "AMAZON",
+                    "SHOPIFY",
+                    "MANUAL",
+                    "OTHER"
+                  ],
+                  "meta:enum": {
+                    "CATALOG": "Product Catalog",
+                    "STORE": "Online Store",
+                    "TIKTOK_SHOP": "TikTok Shop",
+                    "AMAZON": "Amazon Store",
+                    "SHOPIFY": "Shopify Store",
+                    "MANUAL": "Manually Selected Products",
+                    "OTHER": "Other Product Source"
+                  }
+                },
+                "xdm:productSetId": {
+                  "type": "string",
+                  "title": "Product Set ID",
+                  "description": "Specific product set within catalog"
+                },
+                "xdm:storeId": {
+                  "type": "string",
+                  "title": "Store ID",
+                  "description": "Online store identifier (e.g., TikTok Shop ID, Amazon Store ID)"
+                },
+                "xdm:storeAuthorizedBusinessCenterId": {
+                  "type": "string",
+                  "title": "Store Authorized Business Center ID",
+                  "description": "Business Center ID that authorized the store access"
+                },
+                "xdm:placementBidAdjustments": {
+                  "type": "array",
+                  "title": "Placement Bid Adjustments",
+                  "description": "Bid adjustment percentages by ad placement",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:placement": {
+                        "type": "string",
+                        "title": "Placement",
+                        "description": "Placement identifier (e.g., TOP_OF_SEARCH, PRODUCT_PAGE, HOME, DETAIL_PAGE)"
+                      },
+                      "xdm:placementType": {
+                        "type": "string",
+                        "title": "Placement Type",
+                        "description": "Type of placement",
+                        "enum": [
+                          "SEARCH",
+                          "PRODUCT_PAGE",
+                          "HOME",
+                          "FEED",
+                          "STORIES",
+                          "REELS",
+                          "OTHER"
+                        ],
+                        "meta:enum": {
+                          "SEARCH": "Search",
+                          "PRODUCT_PAGE": "Product Page",
+                          "HOME": "Home",
+                          "FEED": "Feed",
+                          "STORIES": "Stories",
+                          "REELS": "Reels",
+                          "OTHER": "Other"
+                        }
+                      },
+                      "xdm:adjustmentPercentage": {
+                        "type": "number",
+                        "title": "Adjustment Percentage",
+                        "description": "Bid adjustment percentage (e.g., 50 for +50%, -25 for -25%)"
+                      }
+                    },
+                    "required": ["xdm:placement", "xdm:adjustmentPercentage"]
+                  }
+                },
+                "xdm:additionalDetails": {
+                  "title": "Additional Campaign Details",
+                  "description": "Platform-specific campaign details not defined in core schema. Allows ingestion of arbitrary fields from paid media network APIs without requiring schema changes.",
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/campaign-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

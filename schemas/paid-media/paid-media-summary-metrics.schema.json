@@ -13,18 +13,6 @@
   "meta:class": "https://ns.adobe.com/xdm/classes/summarymetrics",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/classes/summarymetrics",
-    "https://ns.adobe.com/xdm/mixins/paid-media/core-identifiers",
-    "https://ns.adobe.com/xdm/mixins/paid-media/core-metrics",
-    "https://ns.adobe.com/xdm/mixins/paid-media/dimensional-breakdowns",
-    "https://ns.adobe.com/xdm/mixins/paid-media/extended-metrics",
-    "https://ns.adobe.com/xdm/mixins/paid-media/video-metrics",
-    "https://ns.adobe.com/xdm/mixins/paid-media/conversion-metrics",
-    "https://ns.adobe.com/xdm/mixins/paid-media/cost-metrics",
-    "https://ns.adobe.com/xdm/mixins/paid-media/attribution-metrics",
-    "https://ns.adobe.com/xdm/mixins/paid-media/quality-metrics"
-  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/classes/summarymetrics"

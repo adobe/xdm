@@ -10,18 +10,15 @@
   "title": "Paid Media Ad Lookup",
   "type": "object",
   "description": "Schema for paid media ad lookup dataset containing individual ad metadata across all ad networks",
-  "meta:class": "https://ns.adobe.com/xdm/data/record",
+  "meta:class": "https://ns.adobe.com/xdm/classes/paid-media",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record",
-    "https://ns.adobe.com/xdm/mixins/paid-media/core-identifiers",
-    "https://ns.adobe.com/xdm/mixins/paid-media/core-metadata",
-    "https://ns.adobe.com/xdm/mixins/paid-media/ad-details"
-  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/classes/paid-media"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/mixins/paid-media/core-identifiers"

@@ -1,0 +1,336 @@
+{
+  "xdm:entityType": "account",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:metadata": {
+      "xdm:name": "Acme Corp - Google Ads Account",
+      "xdm:status": "active",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/New_York",
+      "xdm:createdTime": "2019-06-20T10:00:00Z",
+      "xdm:updatedTime": "2025-11-09T12:00:00Z"
+    },
+    "xdm:accountDetails": {
+      "xdm:accountName": "Acme Corp - Google Ads Account",
+      "xdm:accountType": "business",
+      "xdm:businessName": "Acme Corporation",
+      "xdm:industry": "Technology",
+      "xdm:country": "US",
+      "xdm:isTestAccount": false,
+      "xdm:parentAccountID": "mcc_111222333444",
+      "xdm:permissions": ["owner", "admin"],
+      "xdm:spendingLimits": {
+        "xdm:dailyLimit": 8000,
+        "xdm:monthlyLimit": 240000,
+        "xdm:totalLimit": 0
+      },
+      "xdm:billingInfo": {
+        "xdm:billingType": "postpaid",
+        "xdm:paymentMethod": "invoice",
+        "xdm:creditLimit": 750000,
+        "xdm:currentBalance": 85000
+      },
+      "xdm:contactInfo": {
+        "xdm:primaryEmail": "emily.marketing@acmecorp.com",
+        "xdm:phone": "+1-212-555-0220",
+        "xdm:website": "https://www.acmecorp.com",
+        "xdm:address": {
+          "xdm:street1": "456 Commerce Boulevard",
+          "xdm:street2": "Floor 12",
+          "xdm:city": "New York",
+          "xdm:region": "NY",
+          "xdm:postalCode": "10001",
+          "xdm:country": "US"
+        }
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_business_id",
+          "xdm:stringValue": "google_business_987654321"
+        },
+        {
+          "xdm:fieldName": "google_legal_entity_name",
+          "xdm:stringValue": "Acme Corporation Inc."
+        },
+        {
+          "xdm:fieldName": "google_tax_id",
+          "xdm:stringValue": "12-3456789"
+        },
+        {
+          "xdm:fieldName": "google_business_phone",
+          "xdm:stringValue": "+1-212-555-0200"
+        },
+        {
+          "xdm:fieldName": "google_business_email",
+          "xdm:stringValue": "google-ads@acmecorp.com"
+        },
+        {
+          "xdm:fieldName": "google_business_category",
+          "xdm:stringValue": "Technology Company"
+        },
+        {
+          "xdm:fieldName": "google_business_vertical",
+          "xdm:stringValue": "Software as a Service"
+        },
+        {
+          "xdm:fieldName": "google_employee_count",
+          "xdm:stringValue": "1001-5000"
+        },
+        {
+          "xdm:fieldName": "google_annual_revenue",
+          "xdm:stringValue": "50000000-100000000"
+        },
+        {
+          "xdm:fieldName": "google_year_established",
+          "xdm:numberValue": 2010
+        },
+        {
+          "xdm:fieldName": "google_publicly_traded",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_stock_symbol",
+          "xdm:stringValue": "ACME"
+        },
+        {
+          "xdm:fieldName": "google_parent_company",
+          "xdm:stringValue": "Acme Holdings LLC"
+        },
+        {
+          "xdm:fieldName": "google_payment_method_id",
+          "xdm:stringValue": "billing_profile_567890"
+        },
+        {
+          "xdm:fieldName": "google_billing_currency",
+          "xdm:stringValue": "USD"
+        },
+        {
+          "xdm:fieldName": "google_billing_email",
+          "xdm:stringValue": "ap@acmecorp.com"
+        },
+        {
+          "xdm:fieldName": "google_billing_contact",
+          "xdm:stringValue": "Robert Finance"
+        },
+        {
+          "xdm:fieldName": "google_billing_phone",
+          "xdm:stringValue": "+1-212-555-0250"
+        },
+        {
+          "xdm:fieldName": "google_invoice_delivery",
+          "xdm:stringValue": "email"
+        },
+        {
+          "xdm:fieldName": "google_payment_terms",
+          "xdm:stringValue": "net_30"
+        },
+        {
+          "xdm:fieldName": "google_available_credit",
+          "xdm:numberValue": 665000
+        },
+        {
+          "xdm:fieldName": "google_last_payment_date",
+          "xdm:stringValue": "2025-11-01T09:00:00Z"
+        },
+        {
+          "xdm:fieldName": "google_last_payment_amount",
+          "xdm:numberValue": 62000
+        },
+        {
+          "xdm:fieldName": "google_next_billing_date",
+          "xdm:stringValue": "2025-12-01T00:00:00Z"
+        },
+        {
+          "xdm:fieldName": "google_auto_pay_enabled",
+          "xdm:booleanValue": false
+        },
+        {
+          "xdm:fieldName": "google_billing_threshold",
+          "xdm:numberValue": 50000
+        },
+        {
+          "xdm:fieldName": "google_tax_exempt",
+          "xdm:booleanValue": false
+        },
+        {
+          "xdm:fieldName": "google_primary_contact_name",
+          "xdm:stringValue": "Emily Marketing"
+        },
+        {
+          "xdm:fieldName": "google_primary_contact_title",
+          "xdm:stringValue": "VP of Digital Marketing"
+        },
+        {
+          "xdm:fieldName": "google_primary_contact_user_id",
+          "xdm:stringValue": "user_google_xyz789"
+        },
+        {
+          "xdm:fieldName": "google_technical_contact_name",
+          "xdm:stringValue": "Michael Tech"
+        },
+        {
+          "xdm:fieldName": "google_technical_contact_email",
+          "xdm:stringValue": "michael.tech@acmecorp.com"
+        },
+        {
+          "xdm:fieldName": "google_technical_contact_phone",
+          "xdm:stringValue": "+1-212-555-0230"
+        },
+        {
+          "xdm:fieldName": "google_technical_contact_title",
+          "xdm:stringValue": "Senior Marketing Analyst"
+        },
+        {
+          "xdm:fieldName": "google_current_daily_spend",
+          "xdm:numberValue": 6500
+        },
+        {
+          "xdm:fieldName": "google_current_monthly_spend",
+          "xdm:numberValue": 145000
+        },
+        {
+          "xdm:fieldName": "google_lifetime_spend",
+          "xdm:numberValue": 2850000
+        },
+        {
+          "xdm:fieldName": "google_spend_limit_reset_day",
+          "xdm:numberValue": 1
+        },
+        {
+          "xdm:fieldName": "google_alert_threshold",
+          "xdm:numberValue": 0.9
+        },
+        {
+          "xdm:fieldName": "google_alerts_enabled",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_pause_on_limit_reached",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_timezone",
+          "xdm:stringValue": "America/New_York"
+        },
+        {
+          "xdm:fieldName": "google_language",
+          "xdm:stringValue": "en_US"
+        },
+        {
+          "xdm:fieldName": "google_attribution_window",
+          "xdm:stringValue": "30d_click"
+        },
+        {
+          "xdm:fieldName": "google_conversion_tracking",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_domain_verification",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_verified_domains",
+          "xdm:stringValue": "acmecorp.com,shop.acmecorp.com,www.acmecorp.com"
+        },
+        {
+          "xdm:fieldName": "google_brand_safety_enabled",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_ad_review_enabled",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_auto_optimization_enabled",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_account_health",
+          "xdm:stringValue": "excellent"
+        },
+        {
+          "xdm:fieldName": "google_compliance_status",
+          "xdm:stringValue": "compliant"
+        },
+        {
+          "xdm:fieldName": "google_verification_status",
+          "xdm:stringValue": "verified"
+        },
+        {
+          "xdm:fieldName": "google_risk_level",
+          "xdm:stringValue": "low"
+        },
+        {
+          "xdm:fieldName": "google_last_review_date",
+          "xdm:stringValue": "2025-09-20T10:00:00Z"
+        },
+        {
+          "xdm:fieldName": "google_next_review_date",
+          "xdm:stringValue": "2025-12-20T00:00:00Z"
+        },
+        {
+          "xdm:fieldName": "google_crm_integration",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_crm_provider",
+          "xdm:stringValue": "Salesforce"
+        },
+        {
+          "xdm:fieldName": "google_analytics_integration",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_analytics_provider",
+          "xdm:stringValue": "Google Analytics 4"
+        },
+        {
+          "xdm:fieldName": "google_cdp_integration",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_cdp_provider",
+          "xdm:stringValue": "Adobe Real-Time CDP"
+        },
+        {
+          "xdm:fieldName": "google_attribution_provider",
+          "xdm:stringValue": "Google Ads Attribution"
+        },
+        {
+          "xdm:fieldName": "google_data_warehouse_integration",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_data_warehouse_provider",
+          "xdm:stringValue": "BigQuery"
+        },
+        {
+          "xdm:fieldName": "google_customer_id",
+          "xdm:stringValue": "1234567890"
+        },
+        {
+          "xdm:fieldName": "google_manager_customer_id",
+          "xdm:stringValue": "111222333444"
+        },
+        {
+          "xdm:fieldName": "google_account_type",
+          "xdm:stringValue": "standard"
+        },
+        {
+          "xdm:fieldName": "google_account_creation_date",
+          "xdm:stringValue": "2019-06-20T10:00:00Z"
+        },
+        {
+          "xdm:fieldName": "google_conversion_tracking_id",
+          "xdm:stringValue": "AW-123456789"
+        },
+        {
+          "xdm:fieldName": "google_remarketing_tag_id",
+          "xdm:stringValue": "DC-987654321"
+        }
+      ]
+    }
+  }
+}

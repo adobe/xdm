@@ -1,0 +1,237 @@
+{
+  "xdm:entityType": "adgroup",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:campaignID": "23851234567890789",
+    "xdm:campaignGUID": "meta_act_123456789012345_23851234567890789",
+    "xdm:adGroupID": "23851234567890456",
+    "xdm:adGroupGUID": "meta_act_123456789012345_23851234567890456",
+    "xdm:hierarchyPath": "act_123456789012345/23851234567890789/23851234567890456",
+    "xdm:metadata": {
+      "xdm:name": "Fall Launch - Video - 25-54 - Tech Enthusiasts",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/Los_Angeles",
+      "xdm:createdTime": "2025-10-20T12:00:00Z",
+      "xdm:updatedTime": "2025-11-09T14:00:00Z",
+      "xdm:startTime": "2025-11-01T00:00:00Z",
+      "xdm:endTime": "2025-11-30T23:59:59Z",
+      "xdm:objective": "traffic",
+      "xdm:budgetType": "daily",
+      "xdm:dailyBudget": 500,
+      "xdm:lifetimeBudget": 0,
+      "xdm:biddingStrategy": "lowest_cost_without_cap",
+      "xdm:optimizationGoal": "link_clicks"
+    },
+    "xdm:adGroupDetails": {
+      "xdm:adGroupType": "standard",
+      "xdm:childAdType": "video",
+      "xdm:budgetSettings": {
+        "xdm:budgetType": "daily",
+        "xdm:dailyBudget": 500,
+        "xdm:lifetimeBudget": 0,
+        "xdm:budgetRemaining": 350,
+        "xdm:budgetSpent": 150,
+        "xdm:budgetUtilization": 0.3,
+        "xdm:pacing": "standard",
+        "xdm:pacingType": "standard",
+        "xdm:budgetOptimization": false,
+        "xdm:sharedBudget": false,
+        "xdm:budgetResetTime": "00:00:00",
+        "xdm:budgetTimezone": "America/Los_Angeles"
+      },
+      "xdm:targetingSettings": {
+        "xdm:geoTargeting": {
+          "xdm:countries": ["US"],
+          "xdm:regions": ["California", "New York", "Texas", "Florida"],
+          "xdm:cities": [
+            "San Francisco",
+            "Los Angeles",
+            "New York",
+            "Austin",
+            "Miami"
+          ],
+          "xdm:postalCodes": [],
+          "xdm:dmas": ["807", "501", "803"],
+          "xdm:radius": 0,
+          "xdm:radiusUnit": "mile",
+          "xdm:locationType": "home"
+        },
+        "xdm:demographicTargeting": {
+          "xdm:ageMin": 25,
+          "xdm:ageMax": 54,
+          "xdm:genders": ["male", "female"],
+          "xdm:languages": ["en"],
+          "xdm:education": ["college", "grad_school"],
+          "xdm:relationshipStatus": [],
+          "xdm:workEmployers": [],
+          "xdm:workPositions": ["manager", "director", "executive"]
+        },
+        "xdm:interestTargeting": {
+          "xdm:interests": [
+            "Technology",
+            "Business",
+            "Innovation",
+            "Entrepreneurship"
+          ],
+          "xdm:behaviors": [
+            "Early technology adopters",
+            "Business decision makers"
+          ],
+          "xdm:lifeEvents": []
+        },
+        "xdm:audienceTargeting": {
+          "xdm:customAudiences": [
+            "audience_website_visitors_30d",
+            "audience_app_users"
+          ],
+          "xdm:lookalikeSources": ["audience_purchasers_90d"],
+          "xdm:lookalikeSimilarity": 0.05,
+          "xdm:excludedAudiences": ["audience_existing_customers"],
+          "xdm:audienceExpansion": true,
+          "xdm:detailedTargeting": "expansion_all"
+        },
+        "xdm:deviceTargeting": {
+          "xdm:devices": ["mobile", "desktop"],
+          "xdm:platforms": ["ios", "android", "windows", "mac"],
+          "xdm:osVersions": [],
+          "xdm:deviceModels": [],
+          "xdm:connectionTypes": ["wifi", "cellular"]
+        }
+      },
+      "xdm:optimizationSettings": {
+        "xdm:optimizationGoal": "link_clicks",
+        "xdm:billingEvent": "impressions",
+        "xdm:bidStrategy": "lowest_cost_without_cap",
+        "xdm:bidAmount": 0,
+        "xdm:bidCap": 0,
+        "xdm:costCap": 0,
+        "xdm:roas": 0,
+        "xdm:optimizationEvent": "LINK_CLICK",
+        "xdm:conversionWindow": "7d_click_1d_view",
+        "xdm:attributionSetting": "7_day_click_1_day_view",
+        "xdm:deliveryType": "standard",
+        "xdm:campaignBudgetOptimization": false
+      },
+      "xdm:placementSettings": {
+        "xdm:placementType": "automatic",
+        "xdm:placements": [
+          "facebook_feed",
+          "instagram_feed",
+          "facebook_marketplace",
+          "facebook_video_feeds",
+          "facebook_right_column",
+          "instagram_explore",
+          "instagram_reels",
+          "messenger_inbox",
+          "audience_network_native",
+          "audience_network_banner",
+          "audience_network_interstitial",
+          "audience_network_rewarded_video"
+        ],
+        "xdm:excludedPlacements": [],
+        "xdm:publisherPlatforms": [
+          "facebook",
+          "instagram",
+          "messenger",
+          "audience_network"
+        ],
+        "xdm:devicePlatforms": ["mobile", "desktop"],
+        "xdm:facebookPositions": [
+          "feed",
+          "marketplace",
+          "video_feeds",
+          "right_column",
+          "instant_article",
+          "instream_video"
+        ],
+        "xdm:instagramPositions": ["stream", "story", "explore", "reels"],
+        "xdm:messengerPositions": ["messenger_home", "sponsored_messages"],
+        "xdm:audienceNetworkPositions": [
+          "classic",
+          "instream_video",
+          "rewarded_video"
+        ]
+      },
+      "xdm:deliverySettings": {
+        "xdm:startTime": "2025-11-01T00:00:00Z",
+        "xdm:endTime": "2025-11-30T23:59:59Z",
+        "xdm:scheduleType": "continuous",
+        "xdm:dayParting": false,
+        "xdm:dayPartingSchedule": [],
+        "xdm:frequencyCap": {
+          "xdm:enabled": true,
+          "xdm:impressions": 3,
+          "xdm:period": "day"
+        },
+        "xdm:deliveryEstimate": "good",
+        "xdm:learningPhase": "learning",
+        "xdm:minimumRoas": 0
+      },
+      "xdm:trackingSettings": {
+        "xdm:pixelID": "pixel_123456789",
+        "xdm:conversionTracking": true,
+        "xdm:offlineConversionTracking": false,
+        "xdm:appEventTracking": true,
+        "xdm:urlParameters": "utm_source=facebook&utm_medium=paid&utm_campaign=fall2025&utm_content=video_adset",
+        "xdm:trackingSpecs": [
+          {
+            "xdm:eventType": "LINK_CLICK",
+            "xdm:eventSource": "pixel",
+            "xdm:eventID": "pixel_123456789"
+          },
+          {
+            "xdm:eventType": "PAGE_VIEW",
+            "xdm:eventSource": "pixel",
+            "xdm:eventID": "pixel_123456789"
+          }
+        ]
+      },
+      "xdm:brandSafetySettings": {
+        "xdm:blockLists": ["block_list_sensitive_content"],
+        "xdm:inventoryFilter": "standard",
+        "xdm:contentCategories": ["news", "entertainment", "technology"],
+        "xdm:excludedCategories": ["mature_content", "political"],
+        "xdm:publisherBlockLists": [],
+        "xdm:appBlockLists": []
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_adset_id",
+          "xdm:stringValue": "23851234567890456"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_id",
+          "xdm:stringValue": "23851234567890789"
+        },
+        {
+          "xdm:fieldName": "meta_adset_name",
+          "xdm:stringValue": "Fall Launch - Video - 25-54 - Tech Enthusiasts"
+        },
+        {
+          "xdm:fieldName": "meta_optimization_goal",
+          "xdm:stringValue": "LINK_CLICKS"
+        },
+        {
+          "xdm:fieldName": "meta_billing_event",
+          "xdm:stringValue": "IMPRESSIONS"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        },
+        {
+          "xdm:fieldName": "meta_destination_type",
+          "xdm:stringValue": "WEBSITE"
+        },
+        {
+          "xdm:fieldName": "meta_promoted_object_type",
+          "xdm:stringValue": "PAGE"
+        }
+      ]
+    }
+  }
+}

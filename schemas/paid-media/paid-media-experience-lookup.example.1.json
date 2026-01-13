@@ -1,0 +1,177 @@
+{
+  "xdm:entityType": "experience",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:experienceID": "creative_vid_987654321",
+    "xdm:experienceGUID": "meta_act_123456789012345_creative_vid_987654321",
+    "xdm:metadata": {
+      "xdm:name": "Fall Product Launch - 30s Video Creative",
+      "xdm:status": "active",
+      "xdm:createdTime": "2025-10-28T15:00:00Z",
+      "xdm:updatedTime": "2025-11-05T11:00:00Z"
+    },
+    "xdm:experienceDetails": {
+      "xdm:experienceType": "single_video",
+      "xdm:experienceFormat": "single_video",
+      "xdm:experienceTemplate": "video_standard",
+      "xdm:experienceVersion": "v2.1",
+      "xdm:isDynamic": false,
+      "xdm:isPersonalized": true,
+      "xdm:isLocalized": true,
+      "xdm:locale": "en_US",
+      "xdm:primaryAssetID": "987654321012345",
+      "xdm:primaryAssetGUID": "meta_act_123456789012345_asset_987654321012345",
+      "xdm:primaryAssetType": "video",
+      "xdm:assetIDs": ["987654321012345"],
+      "xdm:assetGUIDs": ["meta_act_123456789012345_asset_987654321012345"],
+      "xdm:assetCount": 1,
+      "xdm:assetTypes": ["video"],
+      "xdm:contentDetails": {
+        "xdm:primaryText": "Introducing our revolutionary new product that will transform the way you work. Experience innovation like never before.",
+        "xdm:headline": "Revolutionary Innovation",
+        "xdm:description": "Transform your workflow with cutting-edge features designed for modern professionals. Available now for a limited time.",
+        "xdm:callToActionType": "learn_more",
+        "xdm:callToActionText": "Learn More",
+        "xdm:destinationURL": "https://www.acmecorp.com/fall-launch?utm_source=facebook&utm_medium=video&utm_campaign=fall2025",
+        "xdm:displayURL": "acmecorp.com/fall-launch",
+        "xdm:linkDescription": "Discover the future of productivity",
+        "xdm:brandName": "Acme Corp",
+        "xdm:productName": "Acme Pro X",
+        "xdm:tagline": "Innovation Meets Excellence",
+        "xdm:additionalText": "Limited time offer - Learn more today"
+      },
+      "xdm:visualElements": {
+        "xdm:primaryColor": "#0066CC",
+        "xdm:secondaryColor": "#FFFFFF",
+        "xdm:accentColor": "#FF6600",
+        "xdm:backgroundColor": "#F5F5F5",
+        "xdm:textColor": "#333333",
+        "xdm:fontFamily": "Helvetica Neue",
+        "xdm:logoIncluded": true,
+        "xdm:logoPosition": "top_left",
+        "xdm:brandingLevel": "prominent",
+        "xdm:visualStyle": "modern",
+        "xdm:mood": "professional",
+        "xdm:tone": "confident",
+        "xdm:overlayText": true,
+        "xdm:overlayPosition": "bottom_third",
+        "xdm:animationStyle": "smooth",
+        "xdm:transitionType": "fade"
+      },
+      "xdm:targetingContext": {
+        "xdm:campaignTheme": "fall_2025_launch",
+        "xdm:audienceSegment": "tech_enthusiasts",
+        "xdm:ageRange": "25-54",
+        "xdm:genderTarget": "all",
+        "xdm:geographicFocus": "US_major_metros",
+        "xdm:deviceOptimization": "mobile_first",
+        "xdm:placementOptimization": "feed_optimized",
+        "xdm:seasonality": "fall",
+        "xdm:productCategory": "technology",
+        "xdm:customerJourneyStage": "awareness"
+      },
+      "xdm:performanceAttributes": {
+        "xdm:creativeConcept": "product_demo",
+        "xdm:messageStrategy": "problem_solution",
+        "xdm:emotionalAppeal": "aspiration",
+        "xdm:valueProposition": "innovation",
+        "xdm:urgency": "limited_time",
+        "xdm:socialProof": false,
+        "xdm:testimonials": false,
+        "xdm:demonstration": true,
+        "xdm:comparison": false,
+        "xdm:educationalContent": true
+      },
+      "xdm:technicalSpecs": {
+        "xdm:aspectRatios": ["16:9"],
+        "xdm:dimensions": ["1920x1080"],
+        "xdm:fileSizes": [45678912],
+        "xdm:durations": [30.5],
+        "xdm:formats": ["mp4"],
+        "xdm:codecs": ["h264"],
+        "xdm:bitrates": [5000],
+        "xdm:frameRates": [30],
+        "xdm:hasAudio": true,
+        "xdm:hasSubtitles": true,
+        "xdm:subtitleLanguages": ["en", "es", "fr"],
+        "xdm:closedCaptions": true,
+        "xdm:hdrEnabled": false,
+        "xdm:is360": false
+      },
+      "xdm:usageMetrics": {
+        "xdm:timesUsed": 12,
+        "xdm:activeCampaigns": 3,
+        "xdm:activeAdGroups": 5,
+        "xdm:activeAds": 8,
+        "xdm:firstUsedDate": "2025-11-01T00:00:00Z",
+        "xdm:lastUsedDate": "2025-11-09T15:00:00Z",
+        "xdm:totalImpressions": 1250000,
+        "xdm:totalClicks": 45000,
+        "xdm:totalConversions": 2250,
+        "xdm:totalSpend": 12500,
+        "xdm:averageCTR": 0.036,
+        "xdm:averageCPC": 0.278,
+        "xdm:averageCPA": 5.56,
+        "xdm:averageROAS": 4.5
+      },
+      "xdm:qualityMetrics": {
+        "xdm:creativeScore": 8.5,
+        "xdm:qualityScore": 9.2,
+        "xdm:relevanceScore": 8.8,
+        "xdm:engagementScore": 8.3,
+        "xdm:adStrength": "excellent",
+        "xdm:creativeFatigue": 0.15,
+        "xdm:freshnessScore": 0.95,
+        "xdm:predictedPerformance": "high",
+        "xdm:benchmarkComparison": "above_average",
+        "xdm:policyCompliance": "compliant"
+      },
+      "xdm:reviewStatus": {
+        "xdm:status": "approved",
+        "xdm:reviewDate": "2025-10-29T10:00:00Z",
+        "xdm:reviewerID": "meta_reviewer_456",
+        "xdm:reviewNotes": "Approved - high quality video creative",
+        "xdm:policyViolations": [],
+        "xdm:appealStatus": "not_applicable",
+        "xdm:autoApproved": false,
+        "xdm:requiresManualReview": true
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_creative_id",
+          "xdm:stringValue": "creative_vid_987654321"
+        },
+        {
+          "xdm:fieldName": "meta_creative_name",
+          "xdm:stringValue": "Fall Product Launch - 30s Video Creative"
+        },
+        {
+          "xdm:fieldName": "meta_creative_type",
+          "xdm:stringValue": "video"
+        },
+        {
+          "xdm:fieldName": "meta_video_id",
+          "xdm:stringValue": "987654321012345"
+        },
+        {
+          "xdm:fieldName": "meta_creative_status",
+          "xdm:stringValue": "active"
+        },
+        {
+          "xdm:fieldName": "meta_objective_type",
+          "xdm:stringValue": "OUTCOME_TRAFFIC"
+        },
+        {
+          "xdm:fieldName": "meta_placement_optimization",
+          "xdm:stringValue": "automatic"
+        },
+        {
+          "xdm:fieldName": "meta_dynamic_creative",
+          "xdm:stringValue": "false"
+        }
+      ]
+    }
+  }
+}

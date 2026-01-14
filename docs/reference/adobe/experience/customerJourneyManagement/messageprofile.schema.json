@@ -1,144 +1,273 @@
 {
-    "meta:license": [
-        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-        "you may not use this file except in compliance with the License. You may obtain a copy",
-        "of the License at https://creativecommons.org/licenses/by/4.0/"
-    ],
-    "$id": "https://ns.adobe.com/experience/customerJourneyManagement/messageprofile",
-    "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Adobe CJM ExperienceEvent - Message Profile Details",
-    "description": "Message Profile details for the Adobe CJM ExperienceEvent.",
-    "type": "object",
-    "meta:extensible": true,
-    "meta:abstract": true,
-    "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/experienceevent"
-    ],
-    "definitions": {
-        "messageProfile": {
-            "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": {
-                    "title": "MessageProfile ID",
-                    "type": "string",
-                    "description": "A unique id refers to every single message sent as part of a MessageExecution activity.",
-                    "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##title##31921",
-                    "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##description##94561"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID": {
-                    "title": "Request ID",
-                    "type": "string",
-                    "description": "A unique request id refers to every single message sent as part of a MessageExecution activity.",
-                    "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##title##31922",
-                    "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##description##94562"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
-                    "title": "Experience channel",
-                    "description": "Experience channel related to the ExperienceEvent.",
-                    "$ref": "https://ns.adobe.com/xdm/channels/channel",
-                    "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##title##5131",
-                    "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##description##30511"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": {
-                    "title": "Content Variant",
-                    "type": "string",
-                    "description": "A message execution can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.",
-                    "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##title##71711",
-                    "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##description##28141"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": {
-                    "title": "isSendTimeOptimized",
-                    "type": "boolean",
-                    "description": "True if the message execution is send time optimized."
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": {
-                    "title": "isTestExecution",
-                    "type": "boolean",
-                    "description": "True if the message is sent as Test Execution."
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": {
-                    "title": "Address",
-                    "type": "string",
-                    "format": "email",
-                    "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
-                    "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##title##801",
-                    "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##description##17861"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": {
-                    "title": "Email Namespace",
-                    "type": "string",
-                    "description": "Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email",
-                    "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##title##63731",
-                    "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##description##34571"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": {
-                    "title": "IP Address",
-                    "type": "string",
-                    "description": "Outbound IP address of the customer used to deliver the message.",
-                    "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##title##99731",
-                    "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##description##75691"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
-                    "title": "Push Platform",
-                    "type": "string",
-                    "description": "Push provider service, e.g. apns or fcm",
-                    "meta:enum": {
-                        "apns": "Apple Push Notification service",
-                        "fcm": "Firebase cloud messaging service"
-                    },
-                    "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title##73351",
-                    "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description##33451"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": {
-                    "title": "SMS Provider",
-                    "type": "string",
-                    "description": "SMS provider , e.g. sinch or twilio",
-                    "meta:enum": {
-                        "sinch": "Sinch sms provider",
-                        "twilio": "Twilio sms provider",
-                        "vibes": "Vibes sms Provider "
-                    }
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType": {
-                    "title": "SMS messageType",
-                    "type": "string",
-                    "description": "SMS provider, e.g. inbound, inboundReply or send"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundMessage": {
-                    "title": "SMS inbound Message",
-                    "type": "string",
-                    "description": "SMS inbound reply, e.g. stop, start, subscribe, etc.",
-                }
-                
-            }
-        }
-    },
-    "required": [
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel"
-    ],
-    "allOf": [
-        {
-            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/messageprofile",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Message Profile Details",
+  "description": "Message Profile details for the Adobe CJM ExperienceEvent.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "messageProfile": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": {
+          "title": "Message Profile Tracking ID",
+          "type": "string",
+          "description": "A unique tracking id refers to every single message sent as part of a MessageExecution activity.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID##description"
         },
-        {
-            "$ref": "#/definitions/messageProfile"
-        }
-    ],
-    "meta:status": "stable",
-    "meta:titleId": "messageprofile##title##66431",
-    "meta:descriptionId": "messageprofile##description##41271",
-    "examples": [
-        {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf94",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
-                "@id": "https://ns.adobe.com/xdm/channels/email"
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": {
+          "title": "MessageProfile ID",
+          "type": "string",
+          "description": "A unique id refers to every single message sent as part of a MessageExecution activity.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##title##31921",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##description##94561"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID": {
+          "title": "Request ID",
+          "type": "string",
+          "description": "A unique request id refers to every single message sent as part of a MessageExecution activity.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##title##31922",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##description##94562"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+          "title": "Experience channel",
+          "description": "Experience channel related to the ExperienceEvent.",
+          "$ref": "https://ns.adobe.com/xdm/channels/channel",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##title##5131",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##description##30511"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": {
+          "title": "Content Variant",
+          "type": "string",
+          "description": "A message execution can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##title##71711",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##description##28141"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": {
+          "title": "isSendTimeOptimized",
+          "type": "boolean",
+          "description": "True if the message execution is send time optimized."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionName": {
+          "title": "Secondary Dimension Name",
+          "type": "string",
+          "description": "The secondary dimension name of the message profile."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionID": {
+          "title": "Secondary Dimension Id",
+          "type": "string",
+          "description": "The secondary dimension id of the message profile."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": {
+          "title": "isTestExecution",
+          "type": "boolean",
+          "description": "True if the message is sent as Test Execution."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": {
+          "title": "Address",
+          "type": "string",
+          "format": "email",
+          "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##title##801",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##description##17861"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": {
+          "title": "Email Namespace",
+          "type": "string",
+          "description": "Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##title##63731",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##description##34571"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": {
+          "title": "IP Address",
+          "type": "string",
+          "description": "Outbound IP address of the customer used to deliver the message.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##title##99731",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##description##75691"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/domain": {
+          "title": "Domain",
+          "type": "string",
+          "description": "Domain of the recipient's email address."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachment": {
+          "title": "Email Attachments",
+          "type": "array",
+          "description": "List of attachments in the email message.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/attachment"
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
+          "title": "Push Platform",
+          "type": "string",
+          "description": "Push provider service, e.g. apns or fcm",
+          "meta:enum": {
+            "apns": "Apple Push Notification service",
+            "fcm": "Firebase cloud messaging service"
+          },
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title##73351",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description##33451"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/liveActivity": {
+          "title": "Live Activity Details",
+          "type": "object",
+          "description": "Live activity context for mobile push notifications. It includes the live activity ID, live activity event and an optional channel id which is used incase of broadcasting a live activity across multiple devices.",
+          "properties": {
+            "xdm:event": {
+              "title": "Live Activity Event",
+              "type": "string",
+              "description": "The type of live activity event being triggered.",
+              "meta:enum": {
+                "localStart": "Local start event for live activity",
+                "pushToStart": "Push to start or remote start event for live activity",
+                "update": "Update event for live activity",
+                "end": "End event for live activity"
+              }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
-            "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
-            "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
-            "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92"
+            "xdm:channelID": {
+              "title": "Broadcast Channel ID",
+              "type": "string",
+              "description": "The broadcast channel identifier for the live activity."
+            },
+            "xdm:liveActivityID": {
+              "title": "Live Activity ID",
+              "type": "string",
+              "description": "The unique identifier for the live activity."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": {
+          "title": "SMS Provider",
+          "type": "string",
+          "description": "SMS provider , e.g. sinch or twilio",
+          "meta:enum": {
+            "sinch": "Sinch sms provider",
+            "infobip": "Twilio sms provider",
+            "twilio": "Twilio sms provider",
+            "vibes": "Vibes sms Provider "
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType": {
+          "title": "SMS messageType",
+          "type": "string",
+          "description": "SMS provider, e.g. inbound, inboundReply or send"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundMessage": {
+          "title": "SMS inbound Message",
+          "type": "string",
+          "description": "SMS inbound reply, e.g. stop, start, subscribe, etc."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundNumber": {
+          "title": "SMS inbound Number",
+          "type": "string",
+          "description": "SMS inbound Number : Sender Id where the MO being received"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/channelType": {
+          "title": "Channel Type",
+          "type": "string",
+          "description": "ChannelType will contain like : SMS, MMS , RCS etc."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profileNumber": {
+          "title": "Profile Phone Number",
+          "type": "string",
+          "description": "Phone Number from whihc we recevied the Inbound message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/origTimestamp": {
+          "title": "Original Timestamp ",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp from Provider"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
+          "title": "whatsApp Message Type",
+          "type": "string",
+          "description": "whatsApp Message Type, e.g. templateBased,response"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundMessage": {
+          "title": "whatsApp Inbound Message",
+          "type": "string",
+          "description": "whatsApp inbound reply, e.g. stop, start, subscribe, etc."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundNumber": {
+          "title": "whatsApp Inbound Number",
+          "type": "string",
+          "description": "whatsApp inbound Number : Sender Id where the MO being received"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": {
+          "title": "Channel Type",
+          "type": "string",
+          "description": "whatsApp ChannelType will contain like : Utility,Marketing,Promotional."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/profileNumber": {
+          "title": "Profile Phone Number",
+          "type": "string",
+          "description": "Phone Number from whihc we recevied the Inbound message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/origTimestamp": {
+          "title": "Original Timestamp ",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp from Meta / WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
+          "title": "Response Content",
+          "type": "string",
+          "description": "Content of the user response - emoji for reactions (e.g. ❤️, 👍), or message text for replies to a specific message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionMessageID": {
+          "title": "Original Message ID",
+          "type": "string",
+          "description": "ID of the original message being responded to (for reactions or replies)"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": {
+          "title": "Response Action Type",
+          "type": "string",
+          "description": "Type of response action from WhatsApp - react, unreact, or reply"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedTitle": {
+          "title": "User-selected title from WhatsApp ",
+          "type": "string",
+          "description": "User-selected title from WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveType": {
+          "title": "Interactive type from WhatsApp ",
+          "type": "string",
+          "description": "Interactive type from WhatsApp message — options include: list reply, button reply, and button."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedDescription": {
+          "title": "Selected Description",
+          "type": "string",
+          "description": "Description of the Selected WhatsApp interactive message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedID": {
+          "title": "ID of the selected option from WhatsApp ",
+          "type": "string",
+          "description": "ID of the selected option from WhatsApp "
         }
-    ]
+      }
+    }
+  },
+  "required": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel"
+  ],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageProfile"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:titleId": "messageprofile##title##66431",
+  "meta:descriptionId": "messageprofile##description##41271"
 }

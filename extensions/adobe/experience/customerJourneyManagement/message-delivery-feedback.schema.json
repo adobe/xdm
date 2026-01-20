@@ -61,6 +61,11 @@
               "description": "Provide exclusion subcode, like exact typology rule-id.",
               "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##title##95631",
               "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##description##90041"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/details": {
+              "title": "Exclusion Details",
+              "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-exclusion-details",
+              "description": "Additional details about the exclusion. Content varies by exclusion reason."
             }
           },
           "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion##title##32491"

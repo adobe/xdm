@@ -274,6 +274,11 @@
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID##title##35411",
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID##description##96341"
             },
+            "https://ns.adobe.com/experience/journeyOrchestration/waveID": {
+              "title": "waveID",
+              "description": "Identifier of the wave execution for this journey instance. Present when the journey instance is orchestrated as part of a wave and used to correlate step events and downstream message feedback events.",
+              "type": "string"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID": {
               "meta:status": "deprecated",
               "title": "batchUnitaryBranchID",

@@ -1,0 +1,324 @@
+{
+  "xdm:entityType": "account",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:metadata": {
+      "xdm:name": "Acme Corp - Meta Business Account",
+      "xdm:status": "active",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/Los_Angeles",
+      "xdm:createdTime": "2020-03-15T08:00:00Z",
+      "xdm:updatedTime": "2025-11-09T15:30:00Z"
+    },
+    "xdm:accountDetails": {
+      "xdm:accountName": "Acme Corp - Meta Business Account",
+      "xdm:accountType": "business",
+      "xdm:businessName": "Acme Corporation",
+      "xdm:industry": "Technology",
+      "xdm:country": "US",
+      "xdm:isTestAccount": false,
+      "xdm:parentAccountID": "987654321098765",
+      "xdm:permissions": ["admin", "campaign_manager", "finance_manager"],
+      "xdm:spendingLimits": {
+        "xdm:dailyLimit": 5000,
+        "xdm:monthlyLimit": 150000,
+        "xdm:totalLimit": 1000000
+      },
+      "xdm:billingInfo": {
+        "xdm:billingType": "credit_card",
+        "xdm:paymentMethod": "credit_card",
+        "xdm:creditLimit": 500000,
+        "xdm:currentBalance": 125000
+      },
+      "xdm:contactInfo": {
+        "xdm:primaryEmail": "john.doe@acmecorp.com",
+        "xdm:phone": "+1-415-555-0120",
+        "xdm:website": "https://www.acmecorp.com",
+        "xdm:address": {
+          "xdm:street1": "123 Innovation Drive",
+          "xdm:street2": "Suite 500",
+          "xdm:city": "San Francisco",
+          "xdm:region": "CA",
+          "xdm:postalCode": "94105",
+          "xdm:country": "US"
+        }
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_business_id",
+          "xdm:stringValue": "123456789012345"
+        },
+        {
+          "xdm:fieldName": "meta_business_manager_id",
+          "xdm:stringValue": "987654321098765"
+        },
+        {
+          "xdm:fieldName": "meta_legal_entity_name",
+          "xdm:stringValue": "Acme Corporation Inc."
+        },
+        {
+          "xdm:fieldName": "meta_tax_id",
+          "xdm:stringValue": "12-3456789"
+        },
+        {
+          "xdm:fieldName": "meta_business_email",
+          "xdm:stringValue": "advertising@acmecorp.com"
+        },
+        {
+          "xdm:fieldName": "meta_business_category",
+          "xdm:stringValue": "Technology Company"
+        },
+        {
+          "xdm:fieldName": "meta_business_vertical",
+          "xdm:stringValue": "Software as a Service"
+        },
+        {
+          "xdm:fieldName": "meta_employee_count",
+          "xdm:stringValue": "1001-5000"
+        },
+        {
+          "xdm:fieldName": "meta_annual_revenue",
+          "xdm:stringValue": "50000000-100000000"
+        },
+        {
+          "xdm:fieldName": "meta_year_established",
+          "xdm:numberValue": 2010
+        },
+        {
+          "xdm:fieldName": "meta_publicly_traded",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_stock_symbol",
+          "xdm:stringValue": "ACME"
+        },
+        {
+          "xdm:fieldName": "meta_parent_company",
+          "xdm:stringValue": "Acme Holdings LLC"
+        },
+        {
+          "xdm:fieldName": "meta_payment_method_id",
+          "xdm:stringValue": "pm_1234567890abcdef"
+        },
+        {
+          "xdm:fieldName": "meta_billing_currency",
+          "xdm:stringValue": "USD"
+        },
+        {
+          "xdm:fieldName": "meta_billing_email",
+          "xdm:stringValue": "billing@acmecorp.com"
+        },
+        {
+          "xdm:fieldName": "meta_billing_contact",
+          "xdm:stringValue": "Jane Smith"
+        },
+        {
+          "xdm:fieldName": "meta_billing_phone",
+          "xdm:stringValue": "+1-415-555-0150"
+        },
+        {
+          "xdm:fieldName": "meta_invoice_delivery",
+          "xdm:stringValue": "email"
+        },
+        {
+          "xdm:fieldName": "meta_payment_terms",
+          "xdm:stringValue": "immediate"
+        },
+        {
+          "xdm:fieldName": "meta_available_credit",
+          "xdm:numberValue": 375000
+        },
+        {
+          "xdm:fieldName": "meta_last_payment_date",
+          "xdm:stringValue": "2025-11-03T10:30:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_last_payment_amount",
+          "xdm:numberValue": 45000
+        },
+        {
+          "xdm:fieldName": "meta_next_billing_date",
+          "xdm:stringValue": "2025-12-01T00:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_auto_pay_enabled",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_billing_threshold",
+          "xdm:numberValue": 10000
+        },
+        {
+          "xdm:fieldName": "meta_tax_exempt",
+          "xdm:booleanValue": false
+        },
+        {
+          "xdm:fieldName": "meta_primary_contact_name",
+          "xdm:stringValue": "John Doe"
+        },
+        {
+          "xdm:fieldName": "meta_primary_contact_title",
+          "xdm:stringValue": "Director of Digital Marketing"
+        },
+        {
+          "xdm:fieldName": "meta_primary_contact_user_id",
+          "xdm:stringValue": "user_abc123xyz"
+        },
+        {
+          "xdm:fieldName": "meta_technical_contact_name",
+          "xdm:stringValue": "Sarah Johnson"
+        },
+        {
+          "xdm:fieldName": "meta_technical_contact_email",
+          "xdm:stringValue": "sarah.johnson@acmecorp.com"
+        },
+        {
+          "xdm:fieldName": "meta_technical_contact_phone",
+          "xdm:stringValue": "+1-415-555-0130"
+        },
+        {
+          "xdm:fieldName": "meta_technical_contact_title",
+          "xdm:stringValue": "Marketing Technology Manager"
+        },
+        {
+          "xdm:fieldName": "meta_current_daily_spend",
+          "xdm:numberValue": 3250
+        },
+        {
+          "xdm:fieldName": "meta_current_monthly_spend",
+          "xdm:numberValue": 87500
+        },
+        {
+          "xdm:fieldName": "meta_lifetime_spend",
+          "xdm:numberValue": 425000
+        },
+        {
+          "xdm:fieldName": "meta_spend_limit_reset_day",
+          "xdm:numberValue": 1
+        },
+        {
+          "xdm:fieldName": "meta_alert_threshold",
+          "xdm:numberValue": 0.8
+        },
+        {
+          "xdm:fieldName": "meta_alerts_enabled",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_pause_on_limit_reached",
+          "xdm:booleanValue": false
+        },
+        {
+          "xdm:fieldName": "meta_timezone",
+          "xdm:stringValue": "America/Los_Angeles"
+        },
+        {
+          "xdm:fieldName": "meta_language",
+          "xdm:stringValue": "en_US"
+        },
+        {
+          "xdm:fieldName": "meta_attribution_window",
+          "xdm:stringValue": "28d_click_1d_view"
+        },
+        {
+          "xdm:fieldName": "meta_conversion_tracking",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_pixel_id",
+          "xdm:stringValue": "pixel_123456789"
+        },
+        {
+          "xdm:fieldName": "meta_catalog_id",
+          "xdm:stringValue": "catalog_987654321"
+        },
+        {
+          "xdm:fieldName": "meta_app_id",
+          "xdm:stringValue": "app_456789123"
+        },
+        {
+          "xdm:fieldName": "meta_domain_verification",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_verified_domains",
+          "xdm:stringValue": "acmecorp.com,shop.acmecorp.com"
+        },
+        {
+          "xdm:fieldName": "meta_brand_safety_enabled",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_ad_review_enabled",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_auto_optimization_enabled",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_account_health",
+          "xdm:stringValue": "good"
+        },
+        {
+          "xdm:fieldName": "meta_compliance_status",
+          "xdm:stringValue": "compliant"
+        },
+        {
+          "xdm:fieldName": "meta_verification_status",
+          "xdm:stringValue": "verified"
+        },
+        {
+          "xdm:fieldName": "meta_risk_level",
+          "xdm:stringValue": "low"
+        },
+        {
+          "xdm:fieldName": "meta_last_review_date",
+          "xdm:stringValue": "2025-10-15T14:30:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_next_review_date",
+          "xdm:stringValue": "2026-01-15T00:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_crm_integration",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_crm_provider",
+          "xdm:stringValue": "Salesforce"
+        },
+        {
+          "xdm:fieldName": "meta_analytics_integration",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_analytics_provider",
+          "xdm:stringValue": "Adobe Analytics"
+        },
+        {
+          "xdm:fieldName": "meta_cdp_integration",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_cdp_provider",
+          "xdm:stringValue": "Adobe Real-Time CDP"
+        },
+        {
+          "xdm:fieldName": "meta_attribution_provider",
+          "xdm:stringValue": "Adobe Attribution AI"
+        },
+        {
+          "xdm:fieldName": "meta_data_warehouse_integration",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_data_warehouse_provider",
+          "xdm:stringValue": "Snowflake"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/extended-metrics",
+  "title": "Core Paid Media Extended Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Extended performance metrics beyond core metrics for paid media campaigns",
+  "definitions": {
+    "extended-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:extendedMetrics": {
+              "type": "object",
+              "title": "Extended Metrics",
+              "description": "Additional metrics beyond core metrics",
+              "properties": {
+                "xdm:viewableImpressions": {
+                  "type": "integer",
+                  "title": "Viewable Impressions",
+                  "description": "Number of viewable impressions",
+                  "minimum": 0
+                },
+                "xdm:viewabilityRate": {
+                  "type": "number",
+                  "title": "Viewability Rate",
+                  "description": "Percentage of impressions that were viewable",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:uniqueClicks": {
+                  "type": "integer",
+                  "title": "Unique Clicks",
+                  "description": "Number of unique users who clicked",
+                  "minimum": 0
+                },
+                "xdm:linkClicks": {
+                  "type": "integer",
+                  "title": "Link Clicks",
+                  "description": "Number of clicks on links",
+                  "minimum": 0
+                },
+                "xdm:outboundClicks": {
+                  "type": "integer",
+                  "title": "Outbound Clicks",
+                  "description": "Number of clicks leading to external sites",
+                  "minimum": 0
+                },
+                "xdm:saves": {
+                  "type": "integer",
+                  "title": "Saves",
+                  "description": "Number of saves/bookmarks",
+                  "minimum": 0
+                },
+                "xdm:shares": {
+                  "type": "integer",
+                  "title": "Shares",
+                  "description": "Number of shares",
+                  "minimum": 0
+                },
+                "xdm:likes": {
+                  "type": "integer",
+                  "title": "Likes",
+                  "description": "Number of likes/reactions",
+                  "minimum": 0
+                },
+                "xdm:comments": {
+                  "type": "integer",
+                  "title": "Comments",
+                  "description": "Number of comments",
+                  "minimum": 0
+                },
+                "xdm:pageEngagement": {
+                  "type": "integer",
+                  "title": "Page Engagement",
+                  "description": "Page engagement actions",
+                  "minimum": 0
+                },
+                "xdm:pageLikes": {
+                  "type": "integer",
+                  "title": "Page Likes",
+                  "description": "Page likes",
+                  "minimum": 0
+                },
+                "xdm:postEngagement": {
+                  "type": "integer",
+                  "title": "Post Engagement",
+                  "description": "Post engagement actions",
+                  "minimum": 0
+                },
+                "xdm:postComments": {
+                  "type": "integer",
+                  "title": "Post Comments",
+                  "description": "Comments on posts",
+                  "minimum": 0
+                },
+                "xdm:postReactions": {
+                  "type": "integer",
+                  "title": "Post Reactions",
+                  "description": "Reactions on posts",
+                  "minimum": 0
+                },
+                "xdm:postShares": {
+                  "type": "integer",
+                  "title": "Post Shares",
+                  "description": "Shares of posts",
+                  "minimum": 0
+                },
+                "xdm:postSaves": {
+                  "type": "integer",
+                  "title": "Post Saves",
+                  "description": "Saves of posts",
+                  "minimum": 0
+                },
+                "xdm:follows": {
+                  "type": "integer",
+                  "title": "Follows",
+                  "description": "Number of new followers gained",
+                  "minimum": 0
+                },
+                "xdm:profileVisits": {
+                  "type": "integer",
+                  "title": "Profile Visits",
+                  "description": "Number of profile visits generated",
+                  "minimum": 0
+                },
+                "xdm:websiteVisits": {
+                  "type": "integer",
+                  "title": "Website Visits",
+                  "description": "Number of website visits generated",
+                  "minimum": 0
+                },
+                "xdm:averageDwellTime": {
+                  "type": "number",
+                  "title": "Average Dwell Time",
+                  "description": "Average dwell time (seconds) (alias for qualityMetrics.dwellTime to ease migration)",
+                  "minimum": 0
+                },
+                "xdm:appInstalls": {
+                  "type": "integer",
+                  "title": "App Installs",
+                  "description": "Number of app installations",
+                  "minimum": 0
+                },
+                "xdm:appOpens": {
+                  "type": "integer",
+                  "title": "App Opens",
+                  "description": "Number of app opens",
+                  "minimum": 0
+                },
+                "xdm:leadSubmissions": {
+                  "type": "integer",
+                  "title": "Lead Submissions",
+                  "description": "Number of lead form submissions",
+                  "minimum": 0
+                },
+                "xdm:signups": {
+                  "type": "integer",
+                  "title": "Signups",
+                  "description": "Number of user signups",
+                  "minimum": 0
+                },
+                "xdm:downloads": {
+                  "type": "integer",
+                  "title": "Downloads",
+                  "description": "Number of downloads",
+                  "minimum": 0
+                },
+                "xdm:subscriptions": {
+                  "type": "integer",
+                  "title": "Subscriptions",
+                  "description": "Number of subscriptions",
+                  "minimum": 0
+                },
+                "xdm:checkouts": {
+                  "type": "integer",
+                  "title": "Checkouts",
+                  "description": "Number of checkout initiations",
+                  "minimum": 0
+                },
+                "xdm:addToCarts": {
+                  "type": "integer",
+                  "title": "Add to Carts",
+                  "description": "Number of add to cart actions",
+                  "minimum": 0
+                },
+                "xdm:wishlistAdds": {
+                  "type": "integer",
+                  "title": "Wishlist Adds",
+                  "description": "Number of wishlist additions",
+                  "minimum": 0
+                },
+                "xdm:productViews": {
+                  "type": "integer",
+                  "title": "Product Views",
+                  "description": "Number of product page views",
+                  "minimum": 0
+                },
+                "xdm:photoViews": {
+                  "type": "integer",
+                  "title": "Photo Views",
+                  "description": "Number of photo views",
+                  "minimum": 0
+                },
+                "xdm:catalogViews": {
+                  "type": "integer",
+                  "title": "Catalog Views",
+                  "description": "Number of catalog views",
+                  "minimum": 0
+                },
+                "xdm:storeVisits": {
+                  "type": "integer",
+                  "title": "Store Visits",
+                  "description": "Number of physical store visits",
+                  "minimum": 0
+                },
+                "xdm:callsGenerated": {
+                  "type": "integer",
+                  "title": "Calls Generated",
+                  "description": "Number of phone calls generated",
+                  "minimum": 0
+                },
+                "xdm:directionsRequested": {
+                  "type": "integer",
+                  "title": "Directions Requested",
+                  "description": "Number of direction requests",
+                  "minimum": 0
+                },
+                "xdm:eventResponses": {
+                  "type": "integer",
+                  "title": "Event Responses",
+                  "description": "Number of event responses",
+                  "minimum": 0
+                },
+                "xdm:messagesSent": {
+                  "type": "integer",
+                  "title": "Messages Sent",
+                  "description": "Number of messages sent",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/extended-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

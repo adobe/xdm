@@ -1,0 +1,60 @@
+{
+  "xdm:paidMedia": {
+    "xdm:adDetails": {
+      "xdm:adType": "carousel",
+      "xdm:reviewStatus": "approved",
+      "xdm:reviewStatusReasons": [],
+      "xdm:deliveryStatus": "active",
+      "xdm:isPinDeleted": false,
+      "xdm:isRemovable": true,
+      "xdm:payingAdvertiserName": "Acme Corporation",
+      "xdm:socialMediaProperties": {
+        "xdm:effectiveObjectStoryID": "post_123456789_444555666",
+        "xdm:isShareable": true,
+        "xdm:favoriteDisplayMode": "default"
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_ad_id",
+          "xdm:stringValue": "23851234567894444"
+        },
+        {
+          "xdm:fieldName": "meta_adset_id",
+          "xdm:stringValue": "23851234567895555"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_id",
+          "xdm:stringValue": "23851234567896666"
+        },
+        {
+          "xdm:fieldName": "meta_carousel_card_count",
+          "xdm:stringValue": "5"
+        },
+        {
+          "xdm:fieldName": "meta_placement_optimization",
+          "xdm:stringValue": "automatic"
+        },
+        {
+          "xdm:fieldName": "meta_objective",
+          "xdm:stringValue": "OUTCOME_SALES"
+        },
+        {
+          "xdm:fieldName": "meta_buying_type",
+          "xdm:stringValue": "AUCTION"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "COST_CAP"
+        },
+        {
+          "xdm:fieldName": "meta_catalog_id",
+          "xdm:stringValue": "catalog_987654321"
+        },
+        {
+          "xdm:fieldName": "meta_product_set_id",
+          "xdm:stringValue": "product_set_123456"
+        }
+      ]
+    }
+  }
+}

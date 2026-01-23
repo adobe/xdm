@@ -1,0 +1,95 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/loyalty-challenge-event-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Challenge Event Details",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Experience event field group for loyalty events to be processed by Loyalty Challenge Service.",
+  "definitions": {
+    "loyalty-challenge-event-details": {
+      "properties": {
+        "https://ns.adobe.com/experience/ajo/loyalty/challenge": {
+          "title": "Challenge",
+          "type": "object",
+          "description": "Loyalty challenge event details.",
+          "properties": {
+            "xdm:itemList": {
+              "title": "Item List",
+              "type": "array",
+              "description": "List of items involved in the loyalty transaction.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:unitPrice": {
+                    "title": "Unit Price",
+                    "type": "number",
+                    "description": "The price per unit of the item."
+                  },
+                  "xdm:quantity": {
+                    "title": "Quantity",
+                    "type": "number",
+                    "description": "The quantity of the item."
+                  },
+                  "xdm:itemName": {
+                    "title": "Item Name",
+                    "type": "string",
+                    "description": "The name of the item.",
+                    "minLength": 1
+                  },
+                  "xdm:itemSet": {
+                    "title": "Item Set",
+                    "type": "array",
+                    "description": "Properties/tags of the item.",
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            },
+            "xdm:locationId": {
+              "title": "Location ID",
+              "type": "string",
+              "description": "The identifier for the location where the loyalty transaction occurred.",
+              "minLength": 1
+            },
+            "xdm:transactionId": {
+              "title": "Transaction ID",
+              "type": "string",
+              "description": "The unique identifier for the loyalty transaction.",
+              "minLength": 1
+            },
+            "xdm:localTimezoneOffset": {
+              "title": "Local Timezone Offset",
+              "type": "integer",
+              "description": "The current, local time zone offset in minutes from UTC for the location of this event. This will include the current DST offset if applicable.",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            }
+
+          }
+        }
+      },
+      "required": []
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/loyalty-challenge-event-details"
+    }
+  ],
+  "meta:status": "experimental"
+}
+

@@ -1,0 +1,247 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/quality-metrics",
+  "title": "Core Paid Media Quality Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Ad quality and performance indicators for paid media campaigns",
+  "definitions": {
+    "quality-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:qualityMetrics": {
+              "type": "object",
+              "title": "Quality Metrics",
+              "description": "Ad quality and performance indicators",
+              "properties": {
+                "xdm:relevanceScore": {
+                  "type": "number",
+                  "title": "Relevance Score",
+                  "description": "Ad relevance score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:engagementScore": {
+                  "type": "number",
+                  "title": "Engagement Score",
+                  "description": "Ad engagement quality score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:conversionScore": {
+                  "type": "number",
+                  "title": "Conversion Score",
+                  "description": "Ad conversion quality score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:overallQualityScore": {
+                  "type": "number",
+                  "title": "Overall Quality Score",
+                  "description": "Overall ad quality score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:negativeActions": {
+                  "type": "integer",
+                  "title": "Negative Actions",
+                  "description": "Number of negative actions (hides, reports, etc.)",
+                  "minimum": 0
+                },
+                "xdm:negativeActionRate": {
+                  "type": "number",
+                  "title": "Negative Action Rate",
+                  "description": "Rate of negative actions",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:positiveActions": {
+                  "type": "integer",
+                  "title": "Positive Actions",
+                  "description": "Number of positive actions (likes, shares, etc.)",
+                  "minimum": 0
+                },
+                "xdm:positiveActionRate": {
+                  "type": "number",
+                  "title": "Positive Action Rate",
+                  "description": "Rate of positive actions",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:brandSafetyScore": {
+                  "type": "number",
+                  "title": "Brand Safety Score",
+                  "description": "Brand safety compliance score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:viewabilityScore": {
+                  "type": "number",
+                  "title": "Viewability Score",
+                  "description": "Ad viewability quality score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:fraudScore": {
+                  "type": "number",
+                  "title": "Fraud Score",
+                  "description": "Ad fraud risk score (higher = more risk)",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:invalidTrafficRate": {
+                  "type": "number",
+                  "title": "Invalid Traffic Rate",
+                  "description": "Percentage of traffic flagged as invalid",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:botTrafficRate": {
+                  "type": "number",
+                  "title": "Bot Traffic Rate",
+                  "description": "Percentage of traffic identified as bot traffic",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:humanTrafficRate": {
+                  "type": "number",
+                  "title": "Human Traffic Rate",
+                  "description": "Percentage of traffic verified as human",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:attentionScore": {
+                  "type": "number",
+                  "title": "Attention Score",
+                  "description": "User attention quality score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:dwellTime": {
+                  "type": "number",
+                  "title": "Dwell Time",
+                  "description": "Average time users spend viewing the ad (seconds)",
+                  "minimum": 0
+                },
+                "xdm:interactionDepth": {
+                  "type": "number",
+                  "title": "Interaction Depth",
+                  "description": "Depth of user interaction with the ad",
+                  "minimum": 0
+                },
+                "xdm:creativeFatigue": {
+                  "type": "number",
+                  "title": "Creative Fatigue",
+                  "description": "Creative fatigue score (higher = more fatigued)",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:frequencyFatigue": {
+                  "type": "number",
+                  "title": "Frequency Fatigue",
+                  "description": "Frequency fatigue score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:audienceRelevance": {
+                  "type": "number",
+                  "title": "Audience Relevance",
+                  "description": "Relevance of ad to target audience",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:contextualRelevance": {
+                  "type": "number",
+                  "title": "Contextual Relevance",
+                  "description": "Relevance of ad to content context",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:emotionalResonance": {
+                  "type": "number",
+                  "title": "Emotional Resonance",
+                  "description": "Emotional impact score of the ad",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:memorabilityScore": {
+                  "type": "number",
+                  "title": "Memorability Score",
+                  "description": "Ad memorability score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:brandLiftScore": {
+                  "type": "number",
+                  "title": "Brand Lift Score",
+                  "description": "Brand awareness lift score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:intentLiftScore": {
+                  "type": "number",
+                  "title": "Intent Lift Score",
+                  "description": "Purchase intent lift score",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:qualityTrend": {
+                  "type": "string",
+                  "title": "Quality Trend",
+                  "description": "Trend direction for quality metrics",
+                  "enum": ["improving", "declining", "stable", "volatile"],
+                  "meta:enum": {
+                    "improving": "Quality is improving",
+                    "declining": "Quality is declining",
+                    "stable": "Quality is stable",
+                    "volatile": "Quality is volatile"
+                  }
+                },
+                "xdm:benchmarkComparison": {
+                  "type": "object",
+                  "title": "Benchmark Comparison",
+                  "description": "Comparison to industry benchmarks",
+                  "properties": {
+                    "xdm:industryAverage": {
+                      "type": "number",
+                      "title": "Industry Average",
+                      "description": "Industry average quality score"
+                    },
+                    "xdm:percentileRank": {
+                      "type": "number",
+                      "title": "Percentile Rank",
+                      "description": "Percentile rank compared to industry",
+                      "minimum": 0,
+                      "maximum": 100
+                    },
+                    "xdm:competitorAverage": {
+                      "type": "number",
+                      "title": "Competitor Average",
+                      "description": "Average quality score of competitors"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/quality-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

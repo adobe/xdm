@@ -1,0 +1,13 @@
+{
+  "xdm:finalUrlSuffix": "gclid={gclid}&msclkid={msclkid}",
+  "xdm:customParameters": [
+    {
+      "xdm:key": "source",
+      "xdm:value": "paid_search"
+    },
+    {
+      "xdm:key": "placement",
+      "xdm:value": "{placement}"
+    }
+  ]
+}

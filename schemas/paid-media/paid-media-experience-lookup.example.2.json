@@ -1,0 +1,181 @@
+{
+  "xdm:entityType": "experience",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:experienceID": "creative_rda_111222333",
+    "xdm:experienceGUID": "google_ads_1234567890_creative_rda_111222333",
+    "xdm:metadata": {
+      "xdm:name": "Responsive Display Ad - Tech Solutions Multi-Asset",
+      "xdm:status": "active",
+      "xdm:createdTime": "2025-09-20T13:00:00Z",
+      "xdm:updatedTime": "2025-11-05T09:00:00Z"
+    },
+    "xdm:experienceDetails": {
+      "xdm:experienceType": "single_image",
+      "xdm:experienceFormat": "responsive_display_ad",
+      "xdm:experienceTemplate": "responsive_display_standard",
+      "xdm:experienceVersion": "v3.2",
+      "xdm:isDynamic": true,
+      "xdm:isPersonalized": true,
+      "xdm:isLocalized": true,
+      "xdm:locale": "en_US",
+      "xdm:primaryAssetID": "222333444555",
+      "xdm:primaryAssetGUID": "google_ads_1234567890_asset_222333444555",
+      "xdm:primaryAssetType": "image",
+      "xdm:assetIDs": ["222333444555", "333444555666", "444555666777"],
+      "xdm:assetGUIDs": [
+        "google_ads_1234567890_asset_222333444555",
+        "google_ads_1234567890_asset_333444555666",
+        "google_ads_1234567890_asset_444555666777"
+      ],
+      "xdm:assetCount": 3,
+      "xdm:assetTypes": ["image", "image", "image"],
+      "xdm:contentDetails": {
+        "xdm:primaryText": "Transform your business with our cutting-edge software platform designed for modern enterprises. Streamline operations and boost productivity.",
+        "xdm:headline": "Professional Software Solution",
+        "xdm:description": "Discover how Acme Pro X can revolutionize your workflow with powerful features, seamless integration, and enterprise-grade security.",
+        "xdm:callToActionType": "learn_more",
+        "xdm:callToActionText": "Learn More",
+        "xdm:destinationURL": "https://www.acmecorp.com/solutions?utm_source=google&utm_medium=display&utm_campaign=tech_solutions",
+        "xdm:displayURL": "acmecorp.com/solutions",
+        "xdm:linkDescription": "Explore our enterprise solutions",
+        "xdm:brandName": "Acme Corp",
+        "xdm:productName": "Acme Pro X",
+        "xdm:tagline": "Built for Excellence",
+        "xdm:additionalText": "Trusted by leading enterprises worldwide"
+      },
+      "xdm:visualElements": {
+        "xdm:primaryColor": "#0066CC",
+        "xdm:secondaryColor": "#FFFFFF",
+        "xdm:accentColor": "#00CC66",
+        "xdm:backgroundColor": "#F8F8F8",
+        "xdm:textColor": "#333333",
+        "xdm:fontFamily": "Roboto",
+        "xdm:logoIncluded": true,
+        "xdm:logoPosition": "top_left",
+        "xdm:brandingLevel": "moderate",
+        "xdm:visualStyle": "clean",
+        "xdm:mood": "professional",
+        "xdm:tone": "informative",
+        "xdm:overlayText": false,
+        "xdm:overlayPosition": "",
+        "xdm:animationStyle": "none",
+        "xdm:transitionType": "none"
+      },
+      "xdm:targetingContext": {
+        "xdm:campaignTheme": "tech_solutions_2025",
+        "xdm:audienceSegment": "tech_professionals",
+        "xdm:ageRange": "25-65",
+        "xdm:genderTarget": "all",
+        "xdm:geographicFocus": "US_tech_hubs",
+        "xdm:deviceOptimization": "multi_device",
+        "xdm:placementOptimization": "display_network",
+        "xdm:seasonality": "evergreen",
+        "xdm:productCategory": "enterprise_software",
+        "xdm:customerJourneyStage": "consideration"
+      },
+      "xdm:performanceAttributes": {
+        "xdm:creativeConcept": "product_showcase",
+        "xdm:messageStrategy": "value_proposition",
+        "xdm:emotionalAppeal": "trust",
+        "xdm:valueProposition": "efficiency",
+        "xdm:urgency": "none",
+        "xdm:socialProof": true,
+        "xdm:testimonials": false,
+        "xdm:demonstration": false,
+        "xdm:comparison": false,
+        "xdm:educationalContent": true
+      },
+      "xdm:technicalSpecs": {
+        "xdm:aspectRatios": ["1:1", "1.91:1", "4:5"],
+        "xdm:dimensions": ["1200x1200", "1200x628", "1080x1350"],
+        "xdm:fileSizes": [3456789, 2987654, 3123456],
+        "xdm:durations": [],
+        "xdm:formats": ["png", "png", "png"],
+        "xdm:codecs": [],
+        "xdm:bitrates": [],
+        "xdm:frameRates": [],
+        "xdm:hasAudio": false,
+        "xdm:hasSubtitles": false,
+        "xdm:subtitleLanguages": [],
+        "xdm:closedCaptions": false,
+        "xdm:hdrEnabled": false,
+        "xdm:is360": false
+      },
+      "xdm:usageMetrics": {
+        "xdm:timesUsed": 15,
+        "xdm:activeCampaigns": 3,
+        "xdm:activeAdGroups": 4,
+        "xdm:activeAds": 6,
+        "xdm:firstUsedDate": "2025-10-01T00:00:00Z",
+        "xdm:lastUsedDate": "2025-11-09T10:00:00Z",
+        "xdm:totalImpressions": 1850000,
+        "xdm:totalClicks": 52000,
+        "xdm:totalConversions": 1850,
+        "xdm:totalSpend": 18500,
+        "xdm:averageCTR": 0.028,
+        "xdm:averageCPC": 0.356,
+        "xdm:averageCPA": 10.0,
+        "xdm:averageROAS": 3.8
+      },
+      "xdm:qualityMetrics": {
+        "xdm:creativeScore": 8.2,
+        "xdm:qualityScore": 9.0,
+        "xdm:relevanceScore": 8.5,
+        "xdm:engagementScore": 7.8,
+        "xdm:adStrength": "excellent",
+        "xdm:creativeFatigue": 0.35,
+        "xdm:freshnessScore": 0.75,
+        "xdm:predictedPerformance": "medium_high",
+        "xdm:benchmarkComparison": "above_average",
+        "xdm:policyCompliance": "compliant"
+      },
+      "xdm:reviewStatus": {
+        "xdm:status": "approved",
+        "xdm:reviewDate": "2025-09-21T09:00:00Z",
+        "xdm:reviewerID": "google_reviewer_123",
+        "xdm:reviewNotes": "Approved - complies with Google Ads policies",
+        "xdm:policyViolations": [],
+        "xdm:appealStatus": "not_applicable",
+        "xdm:autoApproved": false,
+        "xdm:requiresManualReview": true
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_creative_id",
+          "xdm:stringValue": "creative_rda_111222333"
+        },
+        {
+          "xdm:fieldName": "google_creative_name",
+          "xdm:stringValue": "Responsive Display Ad - Tech Solutions Multi-Asset"
+        },
+        {
+          "xdm:fieldName": "google_creative_type",
+          "xdm:stringValue": "RESPONSIVE_DISPLAY_AD"
+        },
+        {
+          "xdm:fieldName": "google_creative_status",
+          "xdm:stringValue": "ENABLED"
+        },
+        {
+          "xdm:fieldName": "google_ad_strength",
+          "xdm:stringValue": "EXCELLENT"
+        },
+        {
+          "xdm:fieldName": "google_policy_summary_approval_status",
+          "xdm:stringValue": "APPROVED"
+        },
+        {
+          "xdm:fieldName": "google_asset_count",
+          "xdm:stringValue": "3"
+        },
+        {
+          "xdm:fieldName": "google_dynamic_creative",
+          "xdm:stringValue": "true"
+        }
+      ]
+    }
+  }
+}

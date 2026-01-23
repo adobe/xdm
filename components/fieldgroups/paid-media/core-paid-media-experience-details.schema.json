@@ -1,0 +1,315 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/experience-details",
+  "title": "Core Paid Media Experience Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
+  "description": "Experience-specific details and configuration fields for paid media creative experiences",
+  "definitions": {
+    "experience-details": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:experienceDetails": {
+              "type": "object",
+              "title": "Experience Details",
+              "description": "Specific details for paid media creative experiences",
+              "properties": {
+                "xdm:experienceName": {
+                  "type": "string",
+                  "title": "Experience Name",
+                  "description": "Name of the creative experience"
+                },
+                "xdm:experienceDescription": {
+                  "type": "string",
+                  "title": "Experience Description",
+                  "description": "Description of the creative experience"
+                },
+                "xdm:experienceType": {
+                  "type": "string",
+                  "title": "Experience Type",
+                  "description": "Type of creative experience",
+                  "enum": [
+                    "single_image",
+                    "single_video",
+                    "carousel",
+                    "collection",
+                    "slideshow",
+                    "canvas",
+                    "instant_experience",
+                    "playable",
+                    "other"
+                  ],
+                  "meta:enum": {
+                    "single_image": "Single Image Experience",
+                    "single_video": "Single Video Experience",
+                    "carousel": "Carousel Experience",
+                    "collection": "Collection Experience",
+                    "slideshow": "Slideshow Experience",
+                    "canvas": "Canvas Experience",
+                    "instant_experience": "Instant Experience",
+                    "playable": "Playable Experience",
+                    "other": "Other Experience Type"
+                  }
+                },
+                "xdm:sourceURL": {
+                  "type": "string",
+                  "title": "Source URL",
+                  "description": "Source URL of the experience"
+                },
+                "xdm:thumbnailURL": {
+                  "type": "string",
+                  "title": "Thumbnail URL",
+                  "description": "Thumbnail URL for the experience"
+                },
+                "xdm:landingPageURL": {
+                  "type": "string",
+                  "title": "Landing Page URL",
+                  "description": "Landing page URL for the experience"
+                },
+                "xdm:headingText": {
+                  "type": "string",
+                  "title": "Heading Text",
+                  "description": "Main heading or title text displayed in the experience"
+                },
+                "xdm:bodyText": {
+                  "type": "string",
+                  "title": "Body Text",
+                  "description": "Body or description text displayed in the experience"
+                },
+                "xdm:callToAction": {
+                  "type": "string",
+                  "title": "Call To Action",
+                  "description": "Call to action text or button label"
+                },
+                "xdm:assetIDs": {
+                  "type": "array",
+                  "title": "Asset IDs",
+                  "description": "Array of asset IDs used in this experience",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "xdm:assetGUIDs": {
+                  "type": "array",
+                  "title": "Asset GUIDs",
+                  "description": "Array of asset GUIDs used in this experience",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "xdm:carouselProperties": {
+                  "type": "object",
+                  "title": "Carousel Properties",
+                  "description": "Properties specific to carousel experiences",
+                  "properties": {
+                    "xdm:cardCount": {
+                      "type": "integer",
+                      "title": "Card Count",
+                      "description": "Number of cards in the carousel",
+                      "minimum": 1
+                    },
+                    "xdm:cards": {
+                      "type": "array",
+                      "title": "Carousel Cards",
+                      "description": "Individual cards in the carousel",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:cardIndex": {
+                            "type": "integer",
+                            "title": "Card Index",
+                            "description": "Position of the card in the carousel"
+                          },
+                          "xdm:assetID": {
+                            "type": "string",
+                            "title": "Asset ID",
+                            "description": "Asset ID for this card"
+                          },
+                          "xdm:assetGUID": {
+                            "type": "string",
+                            "title": "Asset GUID",
+                            "description": "Asset GUID for this card"
+                          },
+                          "xdm:heading": {
+                            "type": "string",
+                            "title": "Card Heading",
+                            "description": "Heading text for this card"
+                          },
+                          "xdm:description": {
+                            "type": "string",
+                            "title": "Card Description",
+                            "description": "Description text for this card"
+                          },
+                          "xdm:destinationURL": {
+                            "type": "string",
+                            "title": "Destination URL",
+                            "description": "Destination URL for this card"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "xdm:collectionProperties": {
+                  "type": "object",
+                  "title": "Collection Properties",
+                  "description": "Properties specific to collection experiences",
+                  "properties": {
+                    "xdm:coverAssetID": {
+                      "type": "string",
+                      "title": "Cover Asset ID",
+                      "description": "Asset ID for the collection cover"
+                    },
+                    "xdm:coverAssetGUID": {
+                      "type": "string",
+                      "title": "Cover Asset GUID",
+                      "description": "Asset GUID for the collection cover"
+                    },
+                    "xdm:itemCount": {
+                      "type": "integer",
+                      "title": "Item Count",
+                      "description": "Number of items in the collection",
+                      "minimum": 1
+                    }
+                  }
+                },
+                "xdm:videoProperties": {
+                  "type": "object",
+                  "title": "Video Experience Properties",
+                  "description": "Properties specific to video experiences",
+                  "properties": {
+                    "xdm:duration": {
+                      "type": "number",
+                      "title": "Duration",
+                      "description": "Video duration in seconds"
+                    },
+                    "xdm:hasSound": {
+                      "type": "boolean",
+                      "title": "Has Sound",
+                      "description": "Whether the video experience includes sound"
+                    },
+                    "xdm:autoplay": {
+                      "type": "boolean",
+                      "title": "Autoplay",
+                      "description": "Whether the video autoplays"
+                    }
+                  }
+                },
+                "xdm:interactionProperties": {
+                  "type": "object",
+                  "title": "Interaction Properties",
+                  "description": "Properties for interactive experiences",
+                  "properties": {
+                    "xdm:isInteractive": {
+                      "type": "boolean",
+                      "title": "Is Interactive",
+                      "description": "Whether the experience is interactive"
+                    },
+                    "xdm:interactionType": {
+                      "type": "string",
+                      "title": "Interaction Type",
+                      "description": "Type of interaction supported",
+                      "enum": [
+                        "swipe",
+                        "tap",
+                        "click",
+                        "scroll",
+                        "playable",
+                        "form",
+                        "other"
+                      ],
+                      "meta:enum": {
+                        "swipe": "Swipe Interaction",
+                        "tap": "Tap Interaction",
+                        "click": "Click Interaction",
+                        "scroll": "Scroll Interaction",
+                        "playable": "Playable Interaction",
+                        "form": "Form Interaction",
+                        "other": "Other Interaction Type"
+                      }
+                    }
+                  }
+                },
+                "xdm:instantExperienceProperties": {
+                  "type": "object",
+                  "title": "Instant Experience Properties",
+                  "description": "Properties specific to instant/canvas experiences",
+                  "properties": {
+                    "xdm:templateType": {
+                      "type": "string",
+                      "title": "Template Type",
+                      "description": "Type of instant experience template used"
+                    },
+                    "xdm:componentCount": {
+                      "type": "integer",
+                      "title": "Component Count",
+                      "description": "Number of components in the instant experience"
+                    }
+                  }
+                },
+                "xdm:performanceMetadata": {
+                  "type": "object",
+                  "title": "Performance Metadata",
+                  "description": "Metadata about experience performance",
+                  "properties": {
+                    "xdm:usageCount": {
+                      "type": "integer",
+                      "title": "Usage Count",
+                      "description": "Number of times this experience has been used"
+                    },
+                    "xdm:lastUsedDate": {
+                      "type": "string",
+                      "format": "date-time",
+                      "title": "Last Used Date",
+                      "description": "When the experience was last used"
+                    },
+                    "xdm:associatedCampaigns": {
+                      "type": "array",
+                      "title": "Associated Campaigns",
+                      "description": "Campaigns that use this experience",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "xdm:associatedAds": {
+                      "type": "array",
+                      "title": "Associated Ads",
+                      "description": "Ads that use this experience",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "xdm:additionalDetails": {
+                  "title": "Additional Experience Details",
+                  "description": "Platform-specific experience details not defined in core schema. Allows ingestion of arbitrary fields from paid media network APIs without requiring schema changes.",
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experience-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

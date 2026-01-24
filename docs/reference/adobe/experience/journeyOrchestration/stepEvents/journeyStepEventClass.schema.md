@@ -25,12 +25,12 @@ A time-series based Journey Step Event Class.
 
 # Journey Step Event Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | [Time-series Schema](../../../../behaviors/time-series.schema.md#id) |
-| [https://ns.adobe.com/experience/journeyOrchestration/serviceType](#httpsnsadobecomexperiencejourneyorchestrationservicetype) | `string` | Optional | Journey Step Event (this schema) |
-| [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmeventtype) |
-| [xdm:timestamp](#xdmtimestamp) | `string` | Optional | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmtimestamp) |
+| Property | Type | Required   | Defined by |
+|----------|------|------------|------------|
+| [@id](#id) | `string` | Required   | [Time-series Schema](../../../../behaviors/time-series.schema.md#id) |
+| [https://ns.adobe.com/experience/journeyOrchestration/serviceType](#httpsnsadobecomexperiencejourneyorchestrationservicetype) | `string` | Optional   | Journey Step Event (this schema) |
+| [xdm:eventType](#xdmeventtype) | `string` | Optional   | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmeventtype) |
+| [xdm:timestamp](#xdmtimestamp) | `string` | Required   | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmtimestamp) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -39,7 +39,7 @@ A time-series based Journey Step Event Class.
 A unique identifier for the time-series event.
 
 `@id`
-* is optional
+* is required
 * type: `string`
 * defined in [Time-series Schema](../../../../behaviors/time-series.schema.md#id)
 
@@ -185,7 +185,7 @@ The primary event type for this time-series record.
 The time when an event or observation occurred.
 
 `xdm:timestamp`
-* is optional
+* is required
 * type: `string`
 * defined in [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmtimestamp)
 

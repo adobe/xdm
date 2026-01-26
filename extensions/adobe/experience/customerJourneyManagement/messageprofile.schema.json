@@ -219,19 +219,19 @@
           "description": "Timestamp from Meta / WhatsApp"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
-          "title": "Emoji received as a reaction from WhatsApp",
+          "title": "Response Content",
           "type": "string",
-          "description": "Emoji received as a reaction from WhatsApp"
+          "description": "Content of the user response - emoji for reactions (e.g. ❤️, 👍), or message text for replies to a specific message"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionMessageID": {
-          "title": "Reaction on the mesage ID ",
+          "title": "Original Message ID",
           "type": "string",
-          "description": "Reaction on the mesage ID"
+          "description": "ID of the original message being responded to (for reactions or replies)"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": {
-          "title": "Action from WhatsApp ",
+          "title": "Response Action Type",
           "type": "string",
-          "description": "Action from WhatsApp"
+          "description": "Type of response action from WhatsApp - react, unreact, or reply"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedTitle": {
           "title": "User-selected title from WhatsApp ",

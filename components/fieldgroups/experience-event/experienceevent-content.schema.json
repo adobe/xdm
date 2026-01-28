@@ -95,14 +95,7 @@
                   "meta:xdmType": "map",
                   "description": "Additional experience properties.",
                   "additionalProperties": {
-                    "type": [
-                      "string",
-                      "number",
-                      "integer",
-                      "boolean",
-                      "object",
-                      "array"
-                    ],
+                    "type": "object",
                     "description": "Additional property value of any type"
                   }
                 }
@@ -184,14 +177,7 @@
                     "meta:xdmType": "map",
                     "description": "Additional asset properties.",
                     "additionalProperties": {
-                      "type": [
-                        "string",
-                        "number",
-                        "integer",
-                        "boolean",
-                        "object",
-                        "array"
-                      ],
+                      "type": "object",
                       "description": "Additional property value of any type"
                     }
                   }

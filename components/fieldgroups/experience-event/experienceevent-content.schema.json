@@ -21,16 +21,6 @@
           "type": "object",
           "description": "Experience information content.",
           "properties": {
-            "xdm:idSource": {
-              "title": "ID Source",
-              "type": "string",
-              "description": "Content ID source."
-            },
-            "xdm:channel": {
-              "title": "Channel",
-              "type": "string",
-              "description": "Content channel."
-            },
             "xdm:experience": {
               "title": "Content Experience",
               "description": "Content experience tracking",
@@ -87,23 +77,6 @@
                       "description": "Content experience scroll vertical pixel depth.",
                       "$ref": "https://ns.adobe.com/xdm/data/measure"
                     }
-                  }
-                },
-                "xdm:experienceExtras": {
-                  "title": "Experience Extras",
-                  "type": "object",
-                  "meta:xdmType": "map",
-                  "description": "Additional experience properties.",
-                  "additionalProperties": {
-                    "type": [
-                      "string",
-                      "number",
-                      "integer",
-                      "boolean",
-                      "object",
-                      "array"
-                    ],
-                    "description": "Additional property value of any type"
                   }
                 }
               }
@@ -177,23 +150,6 @@
                     "title": "Asset Views",
                     "description": "Content asset views.",
                     "$ref": "https://ns.adobe.com/xdm/data/measure"
-                  },
-                  "xdm:assetExtras": {
-                    "title": "Asset Extras",
-                    "type": "object",
-                    "meta:xdmType": "map",
-                    "description": "Additional asset properties.",
-                    "additionalProperties": {
-                      "type": [
-                        "string",
-                        "number",
-                        "integer",
-                        "boolean",
-                        "object",
-                        "array"
-                      ],
-                      "description": "Additional property value of any type"
-                    }
                   }
                 }
               }

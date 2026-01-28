@@ -27,8 +27,9 @@
         }
       },
       "xdm:experienceExtras": {
-        "viewDurations": 15.5,
-        "loadDurations": 2.3
+        "viewDurations": "15.5",
+        "loadDurations": "2.3",
+        "type": "header",
       }
     },
     "xdm:assets": [
@@ -49,8 +50,9 @@
           "xdm:value": 20
         },
         "xdm:assetExtras": {
-          "viewDurations": 8.2,
-          "loadDurations": 1.1
+          "viewDurations": "12",
+          "loadDurations": "2.2",
+          "type": "header",
         }
       },
       {

@@ -124,7 +124,12 @@
                     "xdm:summary": {
                       "title": "Summary",
                       "type": "string",
-                      "description": "A brief summary of the conversation."
+                      "description": "A brief summary of the Concierge."
+                    },
+                    "xdm:transcript": {
+                      "title": "Transcript",
+                      "type": "string",
+                      "description": "Transcript of the chat Concierge."
                     },
                     "xdm:discussedTopics": {
                       "title": "Discussed Topics",

@@ -6,104 +6,67 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/intelligentServices/profile-journeyai-engagementscores",
-  "title": "Intelligent Services JourneyAI Engagement Scores",
+  "$id": "https://ns.adobe.com/experience/intelligentServices/profile-journeyai-channeloptimizationscores",
+  "title": "Intelligent Services JourneyAI Channel Optimization Scores",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Contains JourneyAI Engagement Scores, which provides individual customer's propensities to engage with a message.",
+  "description": "Contains JourneyAI Channel Optimization Scores, which provides individual customer's propensities to engage across different communication channels.",
   "definitions": {
-    "journeyai-engagement-scores": {
+    "journeyai-channeloptimization-scores": {
       "properties": {
-        "https://ns.adobe.com/experience/intelligentServices/journeyAI": {
-          "title": "Journey AI",
-          "description": "Journey AI intelligent service provides various insights about message deliveries along customer's journey.",
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimization": {
+          "title": "Channel Optimization",
+          "description": "Journey AI channel optimization provides insights about which communication channel is most effective for each customer.",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/intelligentServices/engagementScores": {
-              "title": "Engagement Scores",
-              "description": "Journey AI engagement scores provide likelihoods of a customer engaging with a newly delivered message.",
+            "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationByEngagement": {
+              "title": "Channel Optimization By Engagement",
+              "description": "Channel optimization scores based on engagement likelihood across different channels.",
               "type": "object",
               "properties": {
-                "https://ns.adobe.com/experience/intelligentServices/emailEngagementScores": {
-                  "title": "Email Engagement Scores",
-                  "description": "Engagement scores here are for email channel messages.",
-                  "type": "object",
-                  "properties": {
-                    "https://ns.adobe.com/experience/intelligentServices/clickEngagementScore": {
-                      "title": "Click Engagement Score",
-                      "description": "This score represents the probability for a customer to click on links in an email.",
-                      "type": "number",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/clickEngagementScore##title##40381",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/clickEngagementScore##description##82231"
-                    },
-                    "https://ns.adobe.com/experience/intelligentServices/openEnagementScore": {
-                      "title": "Open Engagement Score",
-                      "description": "This score represents the probability of a customer to open an email.",
-                      "type": "number",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/openEnagementScore##title##48071",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/openEnagementScore##description##14211"
-                    },
-                    "https://ns.adobe.com/experience/intelligentServices/retentionLevel": {
-                      "title": "Retention Level",
-                      "description": "Retention level is a qualitative categorization of customer's likelihood of staying subscribed to the email list.",
-                      "type": "string",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionLevel##title##5061",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionLevel##description##38971"
-                    },
-                    "https://ns.adobe.com/experience/intelligentServices/retentionPercentRank": {
-                      "title": "Retention Percent Rank",
-                      "description": "Retention percent rank is a percentile rank of the likelihood of staying subscribed to the email list.",
-                      "type": "number",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionPercentRank##title##36501",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionPercentRank##description##67391"
-                    },
-                    "https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability": {
-                      "title": "Unsubscription Probability",
-                      "description": "Unsubscription probability is the probability of a recipient to unsubscribe from email channel conditioned on email opened.",
-                      "type": "number",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##title##79511",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##description##41"
-                    },
-                    "https://ns.adobe.com/experience/intelligentServices/churnReasonCode": {
-                      "title": "Churn Reason Code",
-                      "description": "Churn Reason Code is a qualitative categorization of customer's predicted churn reason.",
-                      "type": "string"
-                    },
-                    "https://ns.adobe.com/experience/intelligentServices/maxSendsInThirtyDays": {
-                      "title": "Max Sends In Thirty Days",
-                      "description": "Max Sends In Thirty Days is the recommended maximum number of message sends in thrity days to a customer to avoid customer churn.",
-                      "type": "number"
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScores": {
+                  "title": "Channel Optimization Scores",
+                  "description": "Array of channel-specific optimization scores indicating the likelihood of engagement for each channel.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "channel": {
+                        "title": "Channel",
+                        "description": "The communication channel (e.g., email, push, sms).",
+                        "type": "string"
+                      },
+                      "score": {
+                        "title": "Score",
+                        "description": "The optimization score representing the likelihood of engagement for this channel.",
+                        "type": "number"
+                      }
                     }
-                  },
-                  "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##title##20341",
-                  "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##description##25901"
+                  }
                 },
-                "https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo": {
-                  "title": "Engagement Scores Info",
-                  "description": "This information contains engagement scores model version and scoring date as a concatenated string, e.g. v1.3.0_2020-11-04.",
-                  "type": "string",
-                  "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo##title##1981",
-                  "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo##description##64011"
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScoringInfo": {
+                  "title": "Channel Optimization Scoring Info",
+                  "description": "This information contains channel optimization model version and scoring date as a concatenated string, e.g. v0.1.0_2026-01-17.",
+                  "type": "string"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationHasSufficientHistory": {
+                  "title": "Has Sufficient History",
+                  "description": "Indicates whether the customer has sufficient interaction history across channels to generate reliable optimization scores.",
+                  "type": "boolean"
                 }
-              },
-              "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScores##title##55031",
-              "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScores##description##2461"
+              }
             }
-          },
-          "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/journeyAI##title##25171",
-          "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/journeyAI##description##63401"
+          }
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyai-engagement-scores"
+      "$ref": "#/definitions/journeyai-channeloptimization-scores"
     }
   ],
-  "meta:status": "stable",
-  "meta:titleId": "profile-journeyai-engagementscores##title##97731",
-  "meta:descriptionId": "profile-journeyai-engagementscores##description##76481"
+  "meta:status": "experimentalß"
 }

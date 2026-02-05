@@ -121,6 +121,11 @@
                         "SYSTEM": "Session ended automatically (timeout/error)"
                       }
                     },
+                    "xdm:summary": {
+                      "title": "Summary",
+                      "type": "string",
+                      "description": "A brief summary of the conversation."
+                    },
                     "xdm:discussedTopics": {
                       "title": "Discussed Topics",
                       "type": "array",

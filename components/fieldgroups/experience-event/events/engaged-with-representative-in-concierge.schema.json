@@ -116,7 +116,7 @@
                       "description": "Entity that ended the session.",
                       "enum": ["REPRESENTATIVE", "VISITOR", "SYSTEM"],
                       "meta:enum": {
-                        "AGENT": "Session ended by the representative",
+                        "REPRESENTATIVE": "Session ended by the representative",
                         "VISITOR": "Session ended by the visitor",
                         "SYSTEM": "Session ended automatically (timeout/error)"
                       }

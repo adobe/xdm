@@ -17,7 +17,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Engaged with a business representative through Concierge in the Conversation.",
+  "description": "Engaged with a business representative through Concierge in the Conversation. Supports lifecycle tracking with multiple events per session.",
   "definitions": {
     "engagewithbusinessrepresentativeinconcierge": {
       "properties": {
@@ -54,20 +54,72 @@
                   "title": "Concierge Session Details",
                   "type": "object",
                   "properties": {
+                    "xdm:sessionID": {
+                      "title": "Session ID",
+                      "type": "string",
+                      "description": "Unique identifier for the session. Used to link lifecycle events."
+                    },
                     "xdm:status": {
                       "title": "Status",
                       "type": "string",
-                      "description": "The status of the Concierge session"
+                      "description": "Current lifecycle status of the session.",
+                      "enum": [
+                        "INITIATED",
+                        "REPRESENTATIVES_NOT_AVAILABLE",
+                        "REPRESENTATIVES_FULLY_OCCUPIED",
+                        "ACCEPTED",
+                        "REPRESENTATIVES_NOT_ACCEPTED",
+                        "SYSTEM_ERROR",
+                        "COMPLETED",
+                        "EXPIRED"
+                      ],
+                      "meta:enum": {
+                        "INITIATED": "Visitor requested chat, representative notified",
+                        "REPRESENTATIVES_NOT_AVAILABLE": "No representatives were available",
+                        "REPRESENTATIVES_FULLY_OCCUPIED": "All available representatives were fully occupied",
+                        "ACCEPTED": "Representative accepted the request",
+                        "REPRESENTATIVES_NOT_ACCEPTED": "No notified representatives accepted the request",
+                        "SYSTEM_ERROR": "System error occurred",
+                        "COMPLETED": "Session completed",
+                        "EXPIRED": "Session expired"
+                      }
                     },
-                    "xdm:summary": {
-                      "title": "Summary",
+                    "xdm:initiatedAt": {
+                      "title": "Initiated At",
                       "type": "string",
-                      "description": "A brief summary of the Concierge."
+                      "format": "date-time",
+                      "description": "ISO 8601 timestamp when the session was initiated by the visitor."
                     },
-                    "xdm:transcript": {
-                      "title": "Transcript",
+                    "xdm:notifiedAgents": {
+                      "title": "Notified Agents",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "List of business representative IDs who were notified about this session."
+                    },
+                    "xdm:acceptedAt": {
+                      "title": "Accepted At",
                       "type": "string",
-                      "description": "Transcript of the chat Concierge."
+                      "format": "date-time",
+                      "description": "ISO 8601 timestamp when an agent accepted the session. Used to calculate response time."
+                    },
+                    "xdm:completedAt": {
+                      "title": "Completed At",
+                      "type": "string",
+                      "format": "date-time",
+                      "description": "ISO 8601 timestamp when the session was completed or marked as missed."
+                    },
+                    "xdm:completedBy": {
+                      "title": "Completed By",
+                      "type": "string",
+                      "description": "Entity that ended the session.",
+                      "enum": ["REPRESENTATIVE", "VISITOR", "SYSTEM"],
+                      "meta:enum": {
+                        "AGENT": "Session ended by the representative",
+                        "VISITOR": "Session ended by the visitor",
+                        "SYSTEM": "Session ended automatically (timeout/error)"
+                      }
                     },
                     "xdm:discussedTopics": {
                       "title": "Discussed Topics",

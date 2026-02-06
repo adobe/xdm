@@ -1,14 +1,20 @@
 {
   "xdm:eventType": "engagement.business.representative.concierge",
-  "@id": "event-xyz789-initiated",
-  "xdm:timestamp": "2025-01-15T09:30:00Z",
+  "@id": "event-xyz789-accepted",
+  "xdm:timestamp": "2025-01-15T09:30:25Z",
   "xdm:engagement": {
     "xdm:businessRepresentativeInConcierge": {
+      "xdm:businessRepresentativeDetails": {
+        "xdm:businessRepresentativeID": "agent2-id",
+        "xdm:businessRepresentativeName": "Sarah Smith",
+        "xdm:businessRepresentativeEmail": "agent2@adobe.com"
+      },
       "xdm:conciergeConversationDetails": {
         "xdm:sessionID": "session-xyz789",
-        "xdm:status": "INITIATED",
+        "xdm:status": "ACCEPTED",
         "xdm:initiatedAt": "2025-01-15T09:30:00Z",
-        "xdm:notifiedAgents": ["agent1@adobe.com", "agent2@adobe.com", "agent3@adobe.com"]
+        "xdm:notifiedAgents": ["agent1@adobe.com", "agent2@adobe.com", "agent3@adobe.com"],
+        "xdm:acceptedAt": "2025-01-15T09:30:25Z"
       },
       "xdm:conciergeDetails": {
         "xdm:conciergeID": "concierge-001",

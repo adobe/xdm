@@ -12,7 +12,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "messageInteraction": {
       "properties": {
@@ -49,7 +51,10 @@
           "title": "The entity in whose context this event is published",
           "type": "string",
           "description": "The entity in whose context this event is published",
-          "enum": ["landing_page", "message"],
+          "enum": [
+            "landing_page",
+            "message"
+          ],
           "meta:enum": {
             "landing_page": "Event is related to landing page entity",
             "message": "Event is related to message entity"
@@ -120,7 +125,10 @@
               "title": "Source Type",
               "type": "string",
               "description": "Type of the Source of Landing Page.",
-              "enum": ["internal", "external"],
+              "enum": [
+                "internal",
+                "external"
+              ],
               "meta:enum": {
                 "internal": "Internal for AJO Landing Page",
                 "external": "External for Non-AJO Landing Page"
@@ -144,7 +152,12 @@
                         "title": "Subscription Choice",
                         "type": "string",
                         "description": "Subscription Choice for the Subscription List.",
-                        "enum": ["y", "n", "p", "u"],
+                        "enum": [
+                          "y",
+                          "n",
+                          "p",
+                          "u"
+                        ],
                         "meta:enum": {
                           "y": "Subscribed to Subscription List",
                           "n": "Unsubscribed to Subscription List",
@@ -178,7 +191,12 @@
                             "title": "Consent choice",
                             "type": "string",
                             "description": "Consent choice for the channel.",
-                            "enum": ["y", "n", "p", "u"],
+                            "enum": [
+                              "y",
+                              "n",
+                              "p",
+                              "u"
+                            ],
                             "meta:enum": {
                               "y": "Subscribed to channel",
                               "n": "Unsubscribed to channel",
@@ -202,7 +220,12 @@
                             "title": "Consent choice",
                             "type": "string",
                             "description": "Consent choice for the contact address.",
-                            "enum": ["y", "n", "p", "u"],
+                            "enum": [
+                              "y",
+                              "n",
+                              "p",
+                              "u"
+                            ],
                             "meta:enum": {
                               "y": "Contact address subscribed",
                               "n": "Contact address unsubscribed",
@@ -253,7 +276,10 @@
               "title": "Source Type",
               "type": "string",
               "description": "Type of the Source of Subscription List.",
-              "enum": ["internal", "external"],
+              "enum": [
+                "internal",
+                "external"
+              ],
               "meta:enum": {
                 "internal": "Internal for AJO Landing Page",
                 "external": "External for Non-AJO Landing Page"
@@ -263,7 +289,12 @@
               "title": "Subscription Choice",
               "type": "string",
               "description": "Subscription Choice for the Subscription List.",
-              "enum": ["yes", "no", "pending", "unknown"],
+              "enum": [
+                "yes",
+                "no",
+                "pending",
+                "unknown"
+              ],
               "meta:enum": {
                 "yes": "Subscribed to Subscription List",
                 "no": "Unsubscribed to Subscription List",
@@ -279,16 +310,14 @@
           "description": "Describes reply message interaction."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/fillOutForm": {
-              "title": "Fill Out Form",
-              "type": "object",
-              "description": "Details about form filled out during web interaction.",
-              "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webFormID": {
-                  "title": "Web Form ID",
-                  "type": "string",
-                  "description": "Unique Identifier for the web form."
-                }
-              }
+          "title": "Fill Out Form",
+          "type": "object",
+          "description": "Details about form filled out during web interaction.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webFormID": {
+              "title": "Web Form ID",
+              "type": "string",
+              "description": "Unique Identifier for the web form."
             }
           }
         },

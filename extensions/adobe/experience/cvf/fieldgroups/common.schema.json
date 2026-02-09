@@ -1,0 +1,74 @@
+{
+    "meta:license": [
+        "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/cvf/fieldgroups/common",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Common",
+    "description": "Common CVF properties: category, snapshot time, and sandbox (and org) from which the data was collected.",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "definitions": {
+        "common": {
+            "properties": {
+                "category": {
+                    "title": "Category",
+                    "description": "Category of the CVF payload (e.g. segment, destination, aggregateProfileStats).",
+                    "type": "string"
+                },
+                "snapshotTime": {
+                    "title": "Snapshot Time",
+                    "description": "Timestamp of the snapshot.",
+                    "type": "number"
+                },
+                "sandbox": {
+                    "title": "Sandbox",
+                    "description": "Sandbox (and org) from which the data was collected.",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "title": "Name",
+                            "description": "Sandbox name.",
+                            "type": "string"
+                        },
+                        "type": {
+                            "title": "Type",
+                            "description": "Sandbox type (e.g. development, production).",
+                            "type": "string"
+                        },
+                        "org": {
+                            "title": "Organization",
+                            "description": "Organization (IMS org and tenant) for the sandbox.",
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "title": "ID",
+                                    "description": "IMS organization ID.",
+                                    "type": "string"
+                                },
+                                "tenantId": {
+                                    "title": "Tenant ID",
+                                    "description": "Tenant identifier.",
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "allOf": [
+            {
+                "$ref": "#/definitions/common"
+            }
+        ],
+        "meta:status": "experimental"
+    }
+}

@@ -63,12 +63,12 @@
                     }
                 }
             }
-        },
-        "allOf": [
-            {
-                "$ref": "#/definitions/common"
-            }
-        ],
-        "meta:status": "experimental"
-    }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/common"
+        }
+    ],
+    "meta:status": "experimental"
 }

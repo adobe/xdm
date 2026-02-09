@@ -277,6 +277,85 @@
           "title": "Message Reply Details",
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-reply",
           "description": "Describes reply message interaction."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/fillOutForm": {
+              "title": "Fill Out Form",
+              "type": "object",
+              "description": "Details about form filled out during web interaction.",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webFormID": {
+                  "title": "Web Form ID",
+                  "type": "string",
+                  "description": "Unique Identifier for the web form."
+                }
+              }
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/web": {
+          "title": "Web Details",
+          "type": "object",
+          "description": "Describes web interaction details involved in a message interaction.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webPageDetails": {
+              "title": "Web Page Details",
+              "type": "object",
+              "description": "Details about the web page involved in the interaction.",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/name": {
+                  "title": "Name",
+                  "type": "string",
+                  "description": "The name of the web page."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/queryParameters": {
+                  "title": "Query Parameters",
+                  "type": "string",
+                  "description": "The query parameters of the web page URL."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webPageID": {
+                  "title": "Web Page ID",
+                  "type": "string",
+                  "description": "Unique Identifier for the web page."
+                }
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webReferrer": {
+              "title": "Web Referrer",
+              "type": "object",
+              "description": "Details about the web referrer.",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/URL": {
+                  "title": "URL",
+                  "type": "string",
+                  "description": "The referrer URL."
+                }
+              }
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/environment": {
+          "title": "Environment Details",
+          "type": "object",
+          "description": "Describes environment details involved in a message interaction.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/browserDetails": {
+              "title": "Browser Details",
+              "type": "object",
+              "description": "Details about the browser used during the interaction.",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/userAgent": {
+                  "title": "User Agent",
+                  "type": "string",
+                  "description": "The user agent string of the browser."
+                }
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/ipV4": {
+              "title": "IPv4 Address",
+              "type": "string",
+              "description": "The IPv4 address of the client."
+            }
+          }
         }
       }
     }

@@ -65,6 +65,53 @@
               "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##description##90041"
             }
           },
+          "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleset": {
+            "title": "Ruleset",
+            "type": "object",
+            "description": "Ruleset information for message exclusion.",
+            "properties": {
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/rulesetID": {
+                "title": "Ruleset ID",
+                "type": "string",
+                "description": "Unique identifier of the ruleset.",
+                "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/rulesetID##title##12345",
+                "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/rulesetID##description##67890"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/rulesetName": {
+                "title": "Ruleset Name",
+                "type": "string",
+                "description": "Name of the ruleset.",
+                "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/rulesetName##title##23456",
+                "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/rulesetName##description##78901"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/rules": {
+                "title": "Rules",
+                "type": "array",
+                "description": "Array of rules within the ruleset.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleID": {
+                      "title": "Rule ID",
+                      "type": "string",
+                      "description": "Unique identifier of the rule.",
+                      "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleID##title##34567",
+                      "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleID##description##89012"
+                    },
+                    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleName": {
+                      "title": "Rule Name",
+                      "type": "string",
+                      "description": "Name of the rule.",
+                      "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleName##title##45678",
+                      "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleName##description##90123"
+                    }
+                  }
+                }
+              }
+            },
+            "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleset##title##56789",
+            "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/ruleset##description##12340"
+          },
           "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion##title##32491"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {

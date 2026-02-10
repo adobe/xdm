@@ -49,6 +49,11 @@
           "title": "trackedURL",
           "type": "string",
           "description": "tracked URL of destination URL. This field would be set by the decisioning system to track click on destination URL."
+        },
+        "xdm:edgePath": {
+          "title": "edgePath",
+          "type": "string",
+          "description": "edge Path of tracker URL."
         }
       }
     }

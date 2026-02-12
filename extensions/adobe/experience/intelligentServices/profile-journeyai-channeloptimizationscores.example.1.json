@@ -17,6 +17,42 @@
       ],
       "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScoringInfo": "v0.1.0_2026-01-17",
       "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationHasSufficientHistory": true
+    },
+    "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationByConversion": {
+      "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScores": [
+        {
+          "channel": "email",
+          "score": 0.078
+        },
+        {
+          "channel": "push",
+          "score": 0.052
+        },
+        {
+          "channel": "sms",
+          "score": 0.031
+        }
+      ],
+      "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScoringInfo": "v0.1.0_2026-01-17",
+      "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationHasSufficientHistory": true
+    },
+    "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationByRevenue": {
+      "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScores": [
+        {
+          "channel": "email",
+          "score": 0.091
+        },
+        {
+          "channel": "push",
+          "score": 0.045
+        },
+        {
+          "channel": "sms",
+          "score": 0.038
+        }
+      ],
+      "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScoringInfo": "v0.1.0_2026-01-17",
+      "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationHasSufficientHistory": true
     }
   },
   "xdm:identityMap": {

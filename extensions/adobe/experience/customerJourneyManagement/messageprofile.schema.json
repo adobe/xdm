@@ -221,7 +221,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
           "title": "Response Content",
           "type": "string",
-          "description": "Content of the user response - emoji for reactions (e.g. ❤️, 👍), or message text for replies to a specific message"
+          "description": "Content of the user response - emoji for reactions, or message text for replies to a specific message"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionMessageID": {
           "title": "Original Message ID",

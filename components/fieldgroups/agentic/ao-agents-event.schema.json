@@ -1,0 +1,475 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/aoAgentsEventSystemFields",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AO Events System Fields",
+  "type": "object",
+  "description": "AO Events System Fields",
+  "definitions": {
+    "aoAgentsEventSystemFields": {
+      "properties": {
+        "aoEventSystemFields": {
+          "type": "object",
+          "title": "AO Events Systems Fields v2",
+          "description": "AO Events Systems Fields v2",
+          "properties": {
+            "eventname": {
+              "type": "string",
+              "description": "Event name following pattern {namespace}.{component}.{event_name}",
+              "meta:xdmType": "string"
+            },
+            "timestamp": {
+              "type": "string",
+              "format": "date-time",
+              "meta:xdmType": "date-time"
+            },
+            "severityText": {
+              "type": "string",
+              "description": "Human-readable severity level",
+              "enum": ["TRACE", "DEBUG", "INFO", "WARN", "ERROR", "FATAL"],
+              "meta:enum": {
+                "TRACE": "TRACE",
+                "DEBUG": "DEBUG",
+                "INFO": "INFO",
+                "WARN": "WARN",
+                "ERROR": "ERROR",
+                "FATAL": "FATAL"
+              },
+              "meta:xdmType": "string"
+            },
+            "severityNumber": {
+              "type": "integer",
+              "description": "Numeric severity level according to OpenTelemetry specification",
+              "minimum": 1,
+              "maximum": 24,
+              "meta:xdmType": "byte"
+            },
+            "attributes": {
+              "type": "object",
+              "description": "Key-value pairs providing event context",
+              "required": [
+                "ims_org_id",
+                "ao_conversation_id",
+                "ao_interaction_id"
+              ],
+              "properties": {
+                "ims_org_id": {
+                  "type": "string",
+                  "description": "Adobe IMS organization identifier",
+                  "meta:xdmType": "string"
+                },
+                "ims_user_id": {
+                  "type": "string",
+                  "description": "Adobe IMS user identifier",
+                  "meta:xdmType": "string"
+                },
+                "sandbox_name": {
+                  "type": "string",
+                  "description": "AEP Sandbox name",
+                  "meta:xdmType": "string"
+                },
+                "sandbox_id": {
+                  "type": "string",
+                  "description": "AEP Sandbox identifier",
+                  "meta:xdmType": "string"
+                },
+                "ao_manifest_id": {
+                  "type": "string",
+                  "description": "Agent manifest identifier (e.g., aiassistant_p1_manifest)",
+                  "meta:xdmType": "string"
+                },
+                "ao_conversation_id": {
+                  "type": "string",
+                  "description": "Unique conversation identifier",
+                  "meta:xdmType": "string"
+                },
+                "ao_interaction_id": {
+                  "type": "string",
+                  "description": "Unique interaction identifier within conversation",
+                  "meta:xdmType": "string"
+                },
+                "ao_schema_version": {
+                  "type": "string",
+                  "description": "Event schema version following semantic versioning (e.g., '1.0.0'). Indicates which schema version this event conforms to.",
+                  "meta:xdmType": "string"
+                },
+                "ethos_region": {
+                  "type": "string",
+                  "description": "Geographic region identifier",
+                  "examples": ["us-west-2", "eu-central-1"],
+                  "meta:xdmType": "string"
+                },
+                "ethos_cell": {
+                  "type": "string",
+                  "description": "Ethos cell identifier",
+                  "meta:xdmType": "string"
+                },
+                "ethos_service_name": {
+                  "type": "string",
+                  "description": "Service name identifier",
+                  "examples": [
+                    "agent-orchestrator",
+                    "operational-insights-agent"
+                  ],
+                  "meta:xdmType": "string"
+                },
+                "ethos_environment": {
+                  "type": "string",
+                  "description": "Deployment environment",
+                  "enum": ["dev", "stage", "prod"],
+                  "meta:enum": {
+                    "dev": "DEV",
+                    "stage": "STAGE",
+                    "prod": "PROD"
+                  },
+                  "meta:xdmType": "string"
+                },
+                "ao_app_application": {
+                  "type": "string",
+                  "description": "Application identifier (e.g., CJA, AEP)",
+                  "meta:xdmType": "string"
+                },
+                "ao_app_upstream_client": {
+                  "type": "string",
+                  "description": "Upstream client from which the user has done the request (e.g., next gen-ui, ms-copilot)",
+                  "meta:xdmType": "string"
+                },
+                "ao_app_user_surface": {
+                  "type": "string",
+                  "description": "Surface from which the user has made the request (e.g., teams, powerpoint)",
+                  "meta:xdmType": "string"
+                },
+                "ao_app_dataview_id": {
+                  "type": "string",
+                  "description": "Dataview id for analytics applications",
+                  "meta:xdmType": "string"
+                },
+                "ao_customer_data_usage": {
+                  "type": "string",
+                  "description": "Whether usage is primary or secondary",
+                  "enum": ["primary", "secondary"],
+                  "meta:enum": {
+                    "primary": "Primary",
+                    "secondary": "Secondary"
+                  },
+                  "meta:xdmType": "string"
+                },
+                "event_id": {
+                  "type": "string",
+                  "format": "uuid",
+                  "description": "Event uuid used for deduplication",
+                  "meta:xdmType": "string"
+                },
+                "otel_span_id": {
+                  "type": "string",
+                  "description": "Span id of the associated span (if span present)",
+                  "meta:xdmType": "string"
+                },
+                "otel_trace_id": {
+                  "type": "string",
+                  "description": "Trace id of the associated span (if span present)",
+                  "meta:xdmType": "string"
+                },
+                "otel_parent_span_id": {
+                  "type": "string",
+                  "description": "Parent span id for the current associated span (if span present)",
+                  "meta:xdmType": "string"
+                }
+              },
+              "meta:xdmType": "object"
+            },
+            "body": {
+              "type": "object",
+              "description": "Event-specific payload containing detailed information based on event type",
+              "properties": {
+                "agent_name": {
+                  "type": "string",
+                  "description": "Name of the agent (for agent invocation/response/error events)",
+                  "meta:xdmType": "string"
+                },
+                "agent_version": {
+                  "type": "string",
+                  "description": "Version of the agent (for agent invocation/response/error events)",
+                  "meta:xdmType": "string"
+                },
+                "task_id": {
+                  "type": "string",
+                  "description": "Task identifier (for agent invocation/response/error events)",
+                  "meta:xdmType": "string"
+                },
+                "plan_id": {
+                  "type": "string",
+                  "description": "Plan identifier (for agent invocation/response/error/transfer events)",
+                  "meta:xdmType": "string"
+                },
+                "task_state": {
+                  "type": "string",
+                  "enum": ["pending", "running", "completed", "failed"],
+                  "meta:enum": {
+                    "pending": "PENDING",
+                    "running": "RUNNING",
+                    "completed": "COMPLETED",
+                    "failed": "FAILED"
+                  },
+                  "description": "State of the task (for agent invocation/response/error/transfer events)",
+                  "meta:xdmType": "string"
+                },
+                "error_type": {
+                  "type": "string",
+                  "description": "Exception class name (for error events)",
+                  "meta:xdmType": "string"
+                },
+                "agent_names": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "meta:xdmType": "string"
+                  },
+                  "description": "Names of agents included in plan (for plan events)",
+                  "meta:xdmType": "array"
+                },
+                "tasks_succeeded": {
+                  "type": "integer",
+                  "description": "Number of successful tasks (for plan.complete event)",
+                  "minimum": -2147483648,
+                  "maximum": 2147483647,
+                  "meta:xdmType": "int"
+                },
+                "tasks_failed": {
+                  "type": "integer",
+                  "description": "Number of failed tasks (for plan.complete event)",
+                  "minimum": -2147483648,
+                  "maximum": 2147483647,
+                  "meta:xdmType": "int"
+                },
+                "conversation_id": {
+                  "type": "string",
+                  "description": "Conversation identifier (for interaction events)",
+                  "meta:xdmType": "string"
+                },
+                "interaction_id": {
+                  "type": "string",
+                  "description": "Interaction identifier (for interaction events)",
+                  "meta:xdmType": "string"
+                },
+                "agents": {
+                  "type": "array",
+                  "description": "List of agents called during interaction with call counts (for interaction.end event)",
+                  "items": {
+                    "type": "object",
+                    "required": ["agent_name", "call_count"],
+                    "properties": {
+                      "agent_name": {
+                        "type": "string",
+                        "description": "Name of the agent that was called",
+                        "meta:xdmType": "string"
+                      },
+                      "agent_version": {
+                        "type": "string",
+                        "description": "Version string of the agent (optional)",
+                        "meta:xdmType": "string"
+                      },
+                      "call_count": {
+                        "type": "integer",
+                        "description": "Number of times this agent was called",
+                        "minimum": 0,
+                        "maximum": 2147483647,
+                        "meta:xdmType": "int"
+                      }
+                    },
+                    "additionalProperties": false,
+                    "meta:xdmType": "object"
+                  },
+                  "meta:xdmType": "array"
+                },
+                "guardrail_type": {
+                  "type": "string",
+                  "description": "The type of guardrail in place (e.g., rate_limit, token_limit) (for guardrail.triggered event)",
+                  "examples": ["rate_limit", "token_limit"],
+                  "meta:xdmType": "string"
+                },
+                "content_type": {
+                  "type": "string",
+                  "description": "Type of content moderated (e.g., user_input, agent_output) (for content_moderation.blocked event)",
+                  "examples": ["user_input", "agent_output"],
+                  "meta:xdmType": "string"
+                },
+                "moderation_category": {
+                  "type": "string",
+                  "description": "Moderation category (e.g., inappropriate_content, pii_detected) (for content_moderation.blocked event)",
+                  "examples": ["inappropriate_content", "pii_detected"],
+                  "meta:xdmType": "string"
+                },
+                "exception_type": {
+                  "type": "string",
+                  "description": "Exception class name (for exception.occurred event)",
+                  "meta:xdmType": "string"
+                },
+                "tool_name": {
+                  "type": "string",
+                  "description": "Name of the invoked tool/function (for tool events)",
+                  "meta:xdmType": "string"
+                },
+                "skills_used": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "meta:xdmType": "string"
+                  },
+                  "description": "Skills used for responding to this request (for agent.execution.start/complete events)",
+                  "meta:xdmType": "array"
+                },
+                "failed_skills": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "meta:xdmType": "string"
+                  },
+                  "description": "Failed using these skills for responding to this request (for agent.execution.failed event)",
+                  "meta:xdmType": "array"
+                },
+                "successful_skills": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "meta:xdmType": "string"
+                  },
+                  "description": "Skills successfully used for responding to this request (for agent.execution.failed event)",
+                  "meta:xdmType": "array"
+                },
+                "input": {
+                  "type": "object",
+                  "description": "Input structure for agent response generation (for agent.response.generate event)",
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "description": "Prompt received by agent",
+                      "meta:xdmType": "string"
+                    },
+                    "dataparts": {
+                      "type": "array",
+                      "description": "Extra-data received by agent as dataparts",
+                      "items": {
+                        "type": "string",
+                        "meta:xdmType": "string"
+                      },
+                      "meta:xdmType": "array"
+                    }
+                  },
+                  "meta:xdmType": "object"
+                },
+                "output": {
+                  "type": "object",
+                  "description": "Output structure for agent response generation (for agent.response.generate event)",
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "description": "Response sent by the agent",
+                      "meta:xdmType": "string"
+                    },
+                    "dataparts": {
+                      "type": "array",
+                      "description": "Extra-data returned by agent as dataparts",
+                      "items": {
+                        "type": "string",
+                        "meta:xdmType": "string"
+                      },
+                      "meta:xdmType": "array"
+                    }
+                  },
+                  "meta:xdmType": "object"
+                },
+                "handling_strategy": {
+                  "type": "string",
+                  "description": "Strategy used to handle error (circuit breaker, exponential backoff) (for agent.error.handled event)",
+                  "examples": ["circuit_breaker", "exponential_backoff"],
+                  "meta:xdmType": "string"
+                },
+                "escalation_reason": {
+                  "type": "string",
+                  "description": "Reason for escalation (e.g., authorization required) (for agent.error.escalate event)",
+                  "examples": [
+                    "authorization_required",
+                    "max_retries_exceeded"
+                  ],
+                  "meta:xdmType": "string"
+                },
+                "feedback_type": {
+                  "type": "string",
+                  "description": "Feedback type (e.g., interaction feedback, in the future perhaps llm-generated info on conversation quality) (for feedback event)",
+                  "examples": ["InteractionFeedback"],
+                  "meta:xdmType": "string"
+                },
+                "feedback_data": {
+                  "type": "object",
+                  "description": "Dictionary of data fields for feedback (for feedback event). For interaction feedback: sentiment_label, sentiment_pick_list, sentiment_comment, is_flagged, flag_pick_list, flag_comment",
+                  "properties": {
+                    "sentiment_label": {
+                      "type": "string",
+                      "description": "Sentiment label for the feedback",
+                      "meta:xdmType": "string"
+                    },
+                    "sentiment_pick_list": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "meta:xdmType": "string"
+                      },
+                      "description": "List of sentiment options selected",
+                      "meta:xdmType": "array"
+                    },
+                    "sentiment_comment": {
+                      "type": "string",
+                      "description": "Free-text sentiment comment",
+                      "meta:xdmType": "string"
+                    },
+                    "is_flagged": {
+                      "type": "boolean",
+                      "description": "Whether the interaction was flagged",
+                      "meta:xdmType": "boolean"
+                    },
+                    "flag_pick_list": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "meta:xdmType": "string"
+                      },
+                      "description": "List of flag reasons selected",
+                      "meta:xdmType": "array"
+                    },
+                    "flag_comment": {
+                      "type": "string",
+                      "description": "Free-text flag comment",
+                      "meta:xdmType": "string"
+                    }
+                  },
+                  "meta:xdmType": "object"
+                }
+              },
+              "meta:xdmType": "object"
+            }
+          },
+          "required": [
+            "eventname",
+            "timestamp",
+            "severityText",
+            "severityNumber",
+            "attributes"
+          ],
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/aoAgentsEventSystemFields"
+    }
+  ],
+  "meta:status": "experimental"
+}

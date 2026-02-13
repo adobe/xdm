@@ -1,0 +1,115 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/intelligentServices/profile-journeyai-channeloptimizationscores",
+  "title": "Intelligent Services JourneyAI Channel Optimization Scores",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Contains JourneyAI Channel Optimization Scores, which provides individual customer's propensities to engage across different communication channels.",
+  "definitions": {
+    "channelOptimizationScores": {
+      "title": "Channel Optimization Scores",
+      "description": "Array of channel-specific optimization scores indicating the likelihood of engagement for each channel.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "channel": {
+            "title": "Channel",
+            "description": "The communication channel (e.g., email, push, sms).",
+            "type": "string"
+          },
+          "score": {
+            "title": "Score",
+            "description": "The optimization score representing the likelihood of engagement for this channel.",
+            "type": "number"
+          }
+        }
+      }
+    },
+    "journeyai-channeloptimization-scores": {
+      "properties": {
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimization": {
+          "title": "Channel Optimization",
+          "description": "Journey AI channel optimization provides insights about which communication channel is most effective for each customer.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationByEngagement": {
+              "title": "Channel Optimization By Engagement",
+              "description": "Channel optimization scores based on engagement likelihood across different channels.",
+              "type": "object",
+              "properties": {
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScores": {
+                  "$ref": "#/definitions/channelOptimizationScores"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScoringInfo": {
+                  "title": "Channel Optimization Scoring Info",
+                  "description": "This information contains channel optimization model version and scoring date as a concatenated string, e.g. v0.1.0_2026-01-17.",
+                  "type": "string"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationHasSufficientHistory": {
+                  "title": "Has Sufficient History",
+                  "description": "Indicates whether the customer has sufficient interaction history across channels to generate reliable optimization scores.",
+                  "type": "boolean"
+                }
+              }
+            },
+            "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationByConversion": {
+              "title": "Channel Optimization By Conversion",
+              "description": "Channel optimization scores based on conversion likelihood across different channels.",
+              "type": "object",
+              "properties": {
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScores": {
+                  "$ref": "#/definitions/channelOptimizationScores"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScoringInfo": {
+                  "title": "Channel Optimization Scoring Info",
+                  "description": "This information contains channel optimization model version and scoring date as a concatenated string, e.g. v0.1.0_2026-01-17.",
+                  "type": "string"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationHasSufficientHistory": {
+                  "title": "Has Sufficient History",
+                  "description": "Indicates whether the customer has sufficient interaction history across channels to generate reliable optimization scores.",
+                  "type": "boolean"
+                }
+              }
+            },
+            "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationByRevenue": {
+              "title": "Channel Optimization By Revenue",
+              "description": "Channel optimization scores based on revenue generation likelihood across different channels.",
+              "type": "object",
+              "properties": {
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScores": {
+                  "$ref": "#/definitions/channelOptimizationScores"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationScoringInfo": {
+                  "title": "Channel Optimization Scoring Info",
+                  "description": "This information contains channel optimization model version and scoring date as a concatenated string, e.g. v0.1.0_2026-01-17.",
+                  "type": "string"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/channelOptimizationHasSufficientHistory": {
+                  "title": "Has Sufficient History",
+                  "description": "Indicates whether the customer has sufficient interaction history across channels to generate reliable optimization scores.",
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journeyai-channeloptimization-scores"
+    }
+  ],
+  "meta:status": "experimental"
+}

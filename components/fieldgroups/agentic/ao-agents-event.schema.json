@@ -10,6 +10,7 @@
   "title": "AO Events System Fields",
   "type": "object",
   "description": "AO Events System Fields",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],  
   "definitions": {
     "aoAgentsEventSystemFields": {
       "properties": {
@@ -22,11 +23,6 @@
               "type": "string",
               "description": "Event name following pattern {namespace}.{component}.{event_name}",
               "meta:xdmType": "string"
-            },
-            "timestamp": {
-              "type": "string",
-              "format": "date-time",
-              "meta:xdmType": "date-time"
             },
             "severityText": {
               "type": "string",
@@ -247,16 +243,6 @@
                   "maximum": 2147483647,
                   "meta:xdmType": "int"
                 },
-                "conversation_id": {
-                  "type": "string",
-                  "description": "Conversation identifier (for interaction events)",
-                  "meta:xdmType": "string"
-                },
-                "interaction_id": {
-                  "type": "string",
-                  "description": "Interaction identifier (for interaction events)",
-                  "meta:xdmType": "string"
-                },
                 "agents": {
                   "type": "array",
                   "description": "List of agents called during interaction with call counts (for interaction.end event)",
@@ -314,15 +300,6 @@
                   "type": "string",
                   "description": "Name of the invoked tool/function (for tool events)",
                   "meta:xdmType": "string"
-                },
-                "skills_used": {
-                  "type": "array",
-                  "items": {
-                    "type": "string",
-                    "meta:xdmType": "string"
-                  },
-                  "description": "Skills used for responding to this request (for agent.execution.start/complete events)",
-                  "meta:xdmType": "array"
                 },
                 "failed_skills": {
                   "type": "array",

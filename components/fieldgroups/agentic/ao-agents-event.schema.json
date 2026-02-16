@@ -10,7 +10,7 @@
   "title": "AO Events System Fields",
   "type": "object",
   "description": "AO Events System Fields",
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],  
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "aoAgentsEventSystemFields": {
       "properties": {

@@ -433,7 +433,6 @@
           },
           "required": [
             "eventname",
-            "timestamp",
             "severityText",
             "severityNumber",
             "attributes"

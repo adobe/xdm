@@ -3,5 +3,6 @@
   "xdm:type": "image",
   "xdm:sourceURL": "http://cdn.com/myimage.png",
   "xdm:destinationURL": "http://ecommerce.com/product",
-  "xdm:trackedURL": "http://tracker-host/?tuid=1234"
+  "xdm:trackedURL": "http://tracker-host/?tuid=1234",
+  "xdm:edgePath": "/?tuid=1234"
 }

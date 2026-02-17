@@ -115,15 +115,6 @@
                   "description": "Exception class name (for error events)",
                   "meta:xdmType": "string"
                 },
-                "agent_names": {
-                  "type": "array",
-                  "items": {
-                    "type": "string",
-                    "meta:xdmType": "string"
-                  },
-                  "description": "Names of agents included in plan (for plan events)",
-                  "meta:xdmType": "array"
-                },
                 "agents": {
                   "type": "array",
                   "description": "List of agents called during interaction with call counts (for interaction.end event)",

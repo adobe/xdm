@@ -1,9 +1,7 @@
 {
-  "aoEventSystemFields": {
+  "aoEventFields": {
     "eventname": "ao.agent.response.complete",
     "timestamp": "2026-02-12T14:30:00.000Z",
-    "severityText": "INFO",
-    "severityNumber": 9,
     "attributes": {
       "ims_org_id": "1A2B3C4D5E6F7G8H9I0J@AdobeOrg",
       "ims_user_id": "user-abc123@adobe.com",
@@ -13,38 +11,23 @@
       "ao_conversation_id": "conv-8f3a2b1c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
       "ao_interaction_id": "int-9a4b3c2d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
       "ao_schema_version": "1.0.0",
-      "ethos_region": "us-west-2",
-      "ethos_cell": "cell-prod-01",
-      "ethos_service_name": "agent-orchestrator",
-      "ethos_environment": "prod",
       "ao_app_application": "CJA",
       "ao_app_upstream_client": "next-gen-ui",
       "ao_app_user_surface": "teams",
-      "ao_customer_data_usage": "primary",
-      "event_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
-      "otel_trace_id": "trace-abc123def456",
-      "otel_span_id": "span-789xyz012",
-      "otel_parent_span_id": "span-parent-456"
+      "ao_customer_data_usage": "primary"
     },
     "body": {
-      "agent_name": "CustomerSupportAgent",
-      "agent_version": "2.1.0",
-      "task_id": "task-7b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
-      "plan_id": "plan-8c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
-      "task_state": "completed",
-      "skills_used": [
-        "IntentRecognition",
-        "FAQRetrieval",
-        "ResponseGeneration"
-      ],
-      "input": {
-        "text": "What is your return policy for electronics?",
-        "dataparts": []
-      },
-      "output": {
-        "text": "Our electronics return policy allows returns within 30 days with original packaging and receipt.",
-        "dataparts": []
-      }
+      "agents": [
+        {
+          "agent_name": "CustomerSupportAgent",
+          "agent_version": "2.1.0",
+          "call_count": 3
+        },
+        {
+          "agent_name": "FAQRetrievalAgent",
+          "call_count": 1
+        }
+      ]
     }
   }
 }

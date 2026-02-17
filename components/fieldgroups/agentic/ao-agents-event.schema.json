@@ -164,12 +164,7 @@
               "meta:xdmType": "object"
             }
           },
-          "required": [
-            "eventname",
-            "severityText",
-            "severityNumber",
-            "attributes"
-          ],
+          "required": ["eventname", "attributes"],
           "meta:xdmType": "object"
         }
       }

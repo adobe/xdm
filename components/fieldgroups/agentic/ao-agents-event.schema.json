@@ -14,149 +14,91 @@
   "definitions": {
     "aoAgentsEventFields": {
       "properties": {
-        "aoEventFields": {
+        "agenticExperience": {
           "type": "object",
-          "title": "AO Events Fields",
-          "description": "AO Events Fields",
+          "title": "Agentic Experience",
+          "description": "Agentic Experience",
           "properties": {
-            "eventname": {
-              "type": "string",
-              "description": "Event name following pattern {namespace}.{component}.{event_name}",
-              "meta:xdmType": "string"
-            },
-            "attributes": {
+            "internal": {
               "type": "object",
-              "description": "Key-value pairs providing event context",
-              "required": [
-                "ims_org_id",
-                "ao_conversation_id",
-                "ao_interaction_id"
-              ],
+              "title": "AO Events Fields",
+              "description": "AO Events Fields",
               "properties": {
-                "ims_org_id": {
+                "eventname": {
                   "type": "string",
-                  "description": "Adobe IMS organization identifier",
-                  "meta:xdmType": "string"
+                  "description": "Event name following pattern {namespace}.{component}.{eventName}"
                 },
-                "ims_user_id": {
-                  "type": "string",
-                  "description": "Adobe IMS user identifier",
-                  "meta:xdmType": "string"
-                },
-                "sandbox_name": {
-                  "type": "string",
-                  "description": "AEP Sandbox name",
-                  "meta:xdmType": "string"
-                },
-                "sandbox_id": {
-                  "type": "string",
-                  "description": "AEP Sandbox identifier",
-                  "meta:xdmType": "string"
-                },
-                "ao_manifest_id": {
-                  "type": "string",
-                  "description": "Agent manifest identifier (e.g., aiassistant_p1_manifest)",
-                  "meta:xdmType": "string"
-                },
-                "ao_conversation_id": {
-                  "type": "string",
-                  "description": "Unique conversation identifier",
-                  "meta:xdmType": "string"
-                },
-                "ao_interaction_id": {
-                  "type": "string",
-                  "description": "Unique interaction identifier within conversation",
-                  "meta:xdmType": "string"
-                },
-                "ao_schema_version": {
-                  "type": "string",
-                  "description": "Event schema version following semantic versioning (e.g., '1.0.0'). Indicates which schema version this event conforms to.",
-                  "meta:xdmType": "string"
-                },
-                "ao_app_application": {
-                  "type": "string",
-                  "description": "Application identifier (e.g., CJA, AEP)",
-                  "meta:xdmType": "string"
-                },
-                "ao_app_upstream_client": {
-                  "type": "string",
-                  "description": "Upstream client from which the user has done the request (e.g., next gen-ui, ms-copilot)",
-                  "meta:xdmType": "string"
-                },
-                "ao_app_user_surface": {
-                  "type": "string",
-                  "description": "Surface from which the user has made the request (e.g., teams, powerpoint)",
-                  "meta:xdmType": "string"
-                },
-                "ao_customer_data_usage": {
-                  "type": "string",
-                  "description": "Whether usage is primary or secondary",
-                  "enum": ["primary", "secondary"],
-                  "meta:enum": {
-                    "primary": "Primary",
-                    "secondary": "Secondary"
-                  },
-                  "meta:xdmType": "string"
-                }
-              },
-              "meta:xdmType": "object"
-            },
-            "body": {
-              "type": "object",
-              "description": "Event-specific payload containing detailed information based on event type",
-              "properties": {
-                "agent_version": {
-                  "type": "string",
-                  "description": "Version of the agent (for agent invocation/response/error events)",
-                  "meta:xdmType": "string"
-                },
-                "error_type": {
-                  "type": "string",
-                  "description": "Exception class name (for error events)",
-                  "meta:xdmType": "string"
-                },
-                "agents": {
-                  "type": "array",
-                  "description": "List of agents called during interaction with call counts (for interaction.end event)",
-                  "items": {
-                    "type": "object",
-                    "required": ["agent_name", "call_count"],
-                    "properties": {
-                      "agent_name": {
-                        "type": "string",
-                        "description": "Name of the agent that was called",
-                        "meta:xdmType": "string"
-                      },
-                      "agent_version": {
-                        "type": "string",
-                        "description": "Version string of the agent (optional)",
-                        "meta:xdmType": "string"
-                      },
-                      "call_count": {
-                        "type": "integer",
-                        "description": "Number of times this agent was called",
-                        "minimum": 0,
-                        "maximum": 2147483647,
-                        "meta:xdmType": "int"
-                      }
+                "attributes": {
+                  "type": "object",
+                  "description": "Key-value pairs providing event context",
+                  "required": ["imsOrgID"],
+                  "properties": {
+                    "imsOrgID": {
+                      "type": "string",
+                      "description": "Adobe IMS organization identifier"
                     },
-                    "additionalProperties": false,
-                    "meta:xdmType": "object"
-                  },
-                  "meta:xdmType": "array"
+                    "imsUserID": {
+                      "type": "string",
+                      "description": "Adobe IMS user identifier"
+                    },
+                    "sandboxName": {
+                      "type": "string",
+                      "description": "AEP Sandbox name"
+                    },
+                    "sandboxID": {
+                      "type": "string",
+                      "description": "AEP Sandbox identifier"
+                    },
+                    "aoManifestID": {
+                      "type": "string",
+                      "description": "Agent manifest identifier (e.g., aiassistant_p1_manifest)"
+                    },
+                    "aoSchemaVersion": {
+                      "type": "string",
+                      "description": "Event schema version following semantic versioning (e.g., '1.0.0'). Indicates which schema version this event conforms to."
+                    },
+                    "aoAppApplication": {
+                      "type": "string",
+                      "description": "Application identifier (e.g., CJA, AEP)"
+                    },
+                    "aoAppUpstreamClient": {
+                      "type": "string",
+                      "description": "Upstream client from which the user has done the request (e.g., next gen-ui, ms-copilot)"
+                    },
+                    "aoAppUserSurface": {
+                      "type": "string",
+                      "description": "Surface from which the user has made the request (e.g., teams, powerpoint)"
+                    },
+                    "aoCustomerDataUsage": {
+                      "type": "string",
+                      "description": "Whether usage is primary or secondary",
+                      "enum": ["primary", "secondary"],
+                      "meta:enum": {
+                        "primary": "Primary",
+                        "secondary": "Secondary"
+                      }
+                    }
+                  }
                 },
-                "feedback_type": {
-                  "type": "string",
-                  "description": "Feedback type (e.g., interaction feedback, in the future perhaps llm-generated info on conversation quality) (for feedback event)",
-                  "examples": ["InteractionFeedback"],
-                  "meta:xdmType": "string"
+                "body": {
+                  "type": "object",
+                  "description": "Event-specific payload containing detailed information based on event type",
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "description": "Exception class name (for error events)"
+                    },
+                    "feedbackType": {
+                      "type": "string",
+                      "description": "Feedback type (e.g., interaction feedback, in the future perhaps llm-generated info on conversation quality) (for feedback event)",
+                      "examples": ["InteractionFeedback"]
+                    }
+                  }
                 }
               },
-              "meta:xdmType": "object"
+              "required": ["eventname", "attributes"]
             }
-          },
-          "required": ["eventname", "attributes"],
-          "meta:xdmType": "object"
+          }
         }
       }
     }

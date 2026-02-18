@@ -1,33 +1,23 @@
 {
-  "aoEventFields": {
-    "eventname": "ao.agent.response.complete",
+  "agenticExperience": {
     "timestamp": "2026-02-12T14:30:00.000Z",
-    "attributes": {
-      "ims_org_id": "1A2B3C4D5E6F7G8H9I0J@AdobeOrg",
-      "ims_user_id": "user-abc123@adobe.com",
-      "sandbox_name": "prod-sandbox",
-      "sandbox_id": "sandbox-prod-001",
-      "ao_manifest_id": "aiassistant_p1_manifest",
-      "ao_conversation_id": "conv-8f3a2b1c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
-      "ao_interaction_id": "int-9a4b3c2d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
-      "ao_schema_version": "1.0.0",
-      "ao_app_application": "CJA",
-      "ao_app_upstream_client": "next-gen-ui",
-      "ao_app_user_surface": "teams",
-      "ao_customer_data_usage": "primary"
-    },
-    "body": {
-      "agents": [
-        {
-          "agent_name": "CustomerSupportAgent",
-          "agent_version": "2.1.0",
-          "call_count": 3
-        },
-        {
-          "agent_name": "FAQRetrievalAgent",
-          "call_count": 1
-        }
-      ]
+    "internal": {
+      "eventname": "ao.agent.interaction.end",
+      "attributes": {
+        "imsOrgID": "1A2B3C4D5E6F7G8H9I0J@AdobeOrg",
+        "imsUserID": "user-abc123@adobe.com",
+        "sandboxName": "prod-sandbox",
+        "sandboxID": "sandbox-prod-001",
+        "aoManifestID": "aiassistant_p1_manifest",
+        "aoSchemaVersion": "1.0.0",
+        "aoAppApplication": "CJA",
+        "aoAppUpstreamClient": "next-gen-ui",
+        "aoAppUserSurface": "teams",
+        "aoCustomerDataUsage": "primary"
+      },
+      "body": {
+        "feedbackType": "InteractionFeedback"
+      }
     }
   }
 }

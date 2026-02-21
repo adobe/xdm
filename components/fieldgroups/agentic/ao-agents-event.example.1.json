@@ -1,0 +1,23 @@
+{
+  "agenticExperience": {
+    "timestamp": "2026-02-12T14:30:00.000Z",
+    "internal": {
+      "eventname": "ao.agent.interaction.end",
+      "attributes": {
+        "imsOrgID": "1A2B3C4D5E6F7G8H9I0J@AdobeOrg",
+        "imsUserID": "user-abc123@adobe.com",
+        "sandboxName": "prod-sandbox",
+        "sandboxID": "sandbox-prod-001",
+        "aoManifestID": "aiassistant_p1_manifest",
+        "aoSchemaVersion": "1.0.0",
+        "aoAppApplication": "CJA",
+        "aoAppUpstreamClient": "next-gen-ui",
+        "aoAppUserSurface": "teams",
+        "aoCustomerDataUsage": "primary"
+      },
+      "body": {
+        "feedbackType": "InteractionFeedback"
+      }
+    }
+  }
+}

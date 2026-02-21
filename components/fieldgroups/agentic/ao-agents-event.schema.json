@@ -1,0 +1,112 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/aoAgentsEventFields",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AO Events Fields",
+  "type": "object",
+  "description": "AO Events Fields",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "aoAgentsEventFields": {
+      "properties": {
+        "agenticExperience": {
+          "type": "object",
+          "title": "Agentic Experience",
+          "description": "Agentic Experience",
+          "properties": {
+            "internal": {
+              "type": "object",
+              "title": "AO Events Fields",
+              "description": "AO Events Fields",
+              "properties": {
+                "eventname": {
+                  "type": "string",
+                  "description": "Event name following pattern {namespace}.{component}.{eventName}"
+                },
+                "attributes": {
+                  "type": "object",
+                  "description": "Key-value pairs providing event context",
+                  "required": ["imsOrgID"],
+                  "properties": {
+                    "imsOrgID": {
+                      "type": "string",
+                      "description": "Adobe IMS organization identifier"
+                    },
+                    "imsUserID": {
+                      "type": "string",
+                      "description": "Adobe IMS user identifier"
+                    },
+                    "sandboxName": {
+                      "type": "string",
+                      "description": "AEP Sandbox name"
+                    },
+                    "sandboxID": {
+                      "type": "string",
+                      "description": "AEP Sandbox identifier"
+                    },
+                    "aoManifestID": {
+                      "type": "string",
+                      "description": "Agent manifest identifier (e.g., aiassistant_p1_manifest)"
+                    },
+                    "aoSchemaVersion": {
+                      "type": "string",
+                      "description": "Event schema version following semantic versioning (e.g., '1.0.0'). Indicates which schema version this event conforms to."
+                    },
+                    "aoAppApplication": {
+                      "type": "string",
+                      "description": "Application identifier (e.g., CJA, AEP)"
+                    },
+                    "aoAppUpstreamClient": {
+                      "type": "string",
+                      "description": "Upstream client from which the user has done the request (e.g., next gen-ui, ms-copilot)"
+                    },
+                    "aoAppUserSurface": {
+                      "type": "string",
+                      "description": "Surface from which the user has made the request (e.g., teams, powerpoint)"
+                    },
+                    "aoCustomerDataUsage": {
+                      "type": "string",
+                      "description": "Whether usage is primary or secondary",
+                      "enum": ["primary", "secondary"],
+                      "meta:enum": {
+                        "primary": "Primary",
+                        "secondary": "Secondary"
+                      }
+                    }
+                  }
+                },
+                "body": {
+                  "type": "object",
+                  "description": "Event-specific payload containing detailed information based on event type",
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "description": "Exception class name (for error events)"
+                    },
+                    "feedbackType": {
+                      "type": "string",
+                      "description": "Feedback type (e.g., interaction feedback, in the future perhaps llm-generated info on conversation quality) (for feedback event)",
+                      "examples": ["InteractionFeedback"]
+                    }
+                  }
+                }
+              },
+              "required": ["eventname", "attributes"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/aoAgentsEventFields"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -124,7 +124,7 @@
                 },
                 "xdm:additionalMetrics": {
                   "title": "Additional Metrics",
-                  "description": "Platform-specific or custom metrics not defined in core schema. Allows ingestion of arbitrary metrics from paid media network APIs without requiring schema changes.",
+                  "description": "Platform-specific or custom metrics not defined in core schema. Allows ingestion of arbitrary metrics from paid media network APIs without requiring schema changes. For conversion attribution window breakdown (Meta Insights API), use metricName like {actionType}_1d_click, {actionType}_7d_click, {actionType}_1d_view (e.g. purchases_1d_click, leads_7d_click) and metricType 'attribution'.",
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -132,7 +132,7 @@
                       "xdm:metricName": {
                         "title": "Metric Name",
                         "type": "string",
-                        "description": "Name of the metric (e.g., 'video_30_sec_watched_actions', 'video_p95_watched_actions', 'outbound_click_rate')"
+                        "description": "Name of the metric (e.g. 'video_30_sec_watched_actions', 'video_p95_watched_actions', 'outbound_click_rate', 'purchases_1d_click', 'purchases_7d_click', 'purchases_1d_view' for attribution windows)"
                       },
                       "xdm:metricValue": {
                         "title": "Metric Value",

@@ -39,7 +39,8 @@
     }
   },
   "allOf": [
-    { "$ref": "https://ns.adobe.com/experience/cvf/fieldgroups/common" },
+    { "$ref": "https://ns.adobe.com/xdm/context/experienceevent" },
+    { "$ref": "https://ns.adobe.com/experience/cvf/fieldgroups/cvf-common-properties" },
     { "$ref": "#/definitions/segment" }
   ],
   "meta:status": "experimental"

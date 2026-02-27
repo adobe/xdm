@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/cvf/cdp/destination",
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-00/00-cdp/destination",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Cvf: Alpha: Destination",
   "description": "CDP destination data.",
@@ -16,21 +16,26 @@
   "definitions": {
     "destination": {
       "properties": {
-        "destination": {
-          "title": "Destination",
-          "description": "Destination id, name, export mode, and related data.",
+        "cvf": {
           "type": "object",
           "properties": {
-            "id": { "title": "ID", "description": "Destination identifier.", "type": "string" },
-            "name": { "title": "Name", "type": "string" },
-            "creationTime": { "title": "Creation Time", "description": "Destination creation timestamp.", "type": "number" },
-            "isActive": { "title": "Is Active", "type": "boolean" },
-            "exportMode": { "title": "Export Mode", "description": "Export mode.", "type": "string" },
-            "audiences": {
-              "title": "Audiences",
-              "description": "Audience names exported to this destination.",
-              "type": "array",
-              "items": { "type": "string" }
+            "destination": {
+              "title": "Destination",
+              "description": "Destination id, name, export mode, and related data.",
+              "type": "object",
+              "properties": {
+                "id": { "title": "ID", "description": "Destination identifier.", "type": "string" },
+                "name": { "title": "Name", "type": "string" },
+                "creationTime": { "title": "Creation Time", "description": "Destination creation timestamp.", "type": "number" },
+                "isActive": { "title": "Is Active", "type": "boolean" },
+                "exportMode": { "title": "Export Mode", "description": "Export mode.", "type": "string" },
+                "audiences": {
+                  "title": "Audiences",
+                  "description": "Audience names exported to this destination.",
+                  "type": "array",
+                  "items": { "type": "string" }
+                }
+              }
             }
           }
         }

@@ -1,22 +1,24 @@
 {
-  "category": "aggregateProfileStats",
-  "sandbox": {
-    "name": "Sample Value",
-    "type": "Sample Value",
-    "org": {
-      "id": "Sample Value",
-      "tenantId": "Sample Value"
-    }
-  },
-  "snapshotTime": 0,
-  "aggregateProfileStats": {
-    "mergePolicy": {
-      "id": "Sample Value",
-      "name": "Sample Value"
+  "cvf": {
+    "category": "aggregateProfileStats",
+    "sandbox": {
+      "name": "Sample Value",
+      "type": "Sample Value",
+      "org": {
+        "id": "Sample Value",
+        "tenantId": "Sample Value"
+      }
     },
-    "numAudienceActivatedProfiles": 0,
-    "numIdentities": 0,
-    "numProfiles": 0,
-    "numMultiIdentityProfiles": 0
+    "snapshotTime": 0,
+    "aggregateProfileStats": {
+      "mergePolicy": {
+        "id": "Sample Value",
+        "name": "Sample Value"
+      },
+      "numAudienceActivatedProfiles": 0,
+      "numIdentities": 0,
+      "numProfiles": 0,
+      "numMultiIdentityProfiles": 0
+    }
   }
 }

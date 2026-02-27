@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/cvf/cdp/audience",
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-00/00-cdp/audience",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Cvf: Alpha: Audience",
   "description": "CDP audience data. Each entry represents an AEP audience.",
@@ -16,45 +16,50 @@
   "definitions": {
     "audience": {
       "properties": {
-        "audience": {
-          "title": "Audience",
-          "description": "Audience id, name, evaluation mode, and related data.",
+        "cvf": {
           "type": "object",
           "properties": {
-            "id": {
-              "title": "ID",
-              "description": "Audience identifier.",
-              "type": "string"
-            },
-            "name": {
-              "title": "Name",
-              "type": "string"
-            },
-            "creationTime": {
-              "title": "Creation Time",
-              "description": "Audience creation timestamp.",
-              "type": "number"
-            },
-            "isActive": {
-              "title": "Is Active",
-              "type": "boolean"
-            },
-            "evaluationMode": {
-              "title": "Evaluation Mode",
-              "description": "Evaluation mode (e.g. streaming, batch).",
-              "type": "string"
-            },
-            "numProfiles": {
-              "title": "Number of Profiles",
-              "type": "integer",
-              "minimum": 0
-            },
-            "destinations": {
-              "title": "Destinations",
-              "description": "Destination names this audience is sent to.",
-              "type": "array",
-              "items": {
-                "type": "string"
+            "audience": {
+              "title": "Audience",
+              "description": "Audience id, name, evaluation mode, and related data.",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "title": "ID",
+                  "description": "Audience identifier.",
+                  "type": "string"
+                },
+                "name": {
+                  "title": "Name",
+                  "type": "string"
+                },
+                "creationTime": {
+                  "title": "Creation Time",
+                  "description": "Audience creation timestamp.",
+                  "type": "number"
+                },
+                "isActive": {
+                  "title": "Is Active",
+                  "type": "boolean"
+                },
+                "evaluationMode": {
+                  "title": "Evaluation Mode",
+                  "description": "Evaluation mode (e.g. streaming, batch).",
+                  "type": "string"
+                },
+                "numProfiles": {
+                  "title": "Number of Profiles",
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "destinations": {
+                  "title": "Destinations",
+                  "description": "Destination names this audience is sent to.",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }

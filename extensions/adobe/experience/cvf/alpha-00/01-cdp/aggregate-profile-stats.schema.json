@@ -66,7 +66,7 @@
   },
   "allOf": [
     { "$ref": "https://ns.adobe.com/xdm/context/experienceevent" },
-    { "$ref": "https://ns.adobe.com/experience/cvf/alpha-00/00-fieldgroups/cvf-common-properties" },
+    { "$ref": "https://ns.adobe.com/experience/cvf/alpha-00/cvf-common-properties" },
     { "$ref": "#/definitions/aggregateProfileStats" }
   ],
   "meta:status": "experimental"

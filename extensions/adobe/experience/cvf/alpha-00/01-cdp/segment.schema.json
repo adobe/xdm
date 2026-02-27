@@ -5,30 +5,31 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/cvf/cdp/destination",
+  "$id": "https://ns.adobe.com/experience/cvf/cdp/segment",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Destination",
-  "description": "CDP destination data.",
+  "title": "Segment",
+  "description": "CDP segment data. Each entry represents an AEP audience.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
-    "destination": {
+    "segment": {
       "properties": {
-        "destination": {
-          "title": "Destination",
-          "description": "Destination id, name, export mode, and related data.",
+        "segment": {
+          "title": "Segment",
+          "description": "Segment id, name, evaluation mode, and related data.",
           "type": "object",
           "properties": {
-            "id": { "title": "ID", "description": "Destination identifier.", "type": "string" },
+            "id": { "title": "ID", "description": "Segment identifier.", "type": "string" },
             "name": { "title": "Name", "type": "string" },
-            "creationTime": { "title": "Creation Time", "description": "Destination creation timestamp.", "type": "number" },
+            "creationTime": { "title": "Creation Time", "description": "Segment creation timestamp.", "type": "number" },
             "isActive": { "title": "Is Active", "type": "boolean" },
-            "exportMode": { "title": "Export Mode", "description": "Export mode.", "type": "string" },
-            "segments": {
-              "title": "Segments",
-              "description": "Segment names exported to this destination.",
+            "evaluationMode": { "title": "Evaluation Mode", "description": "Evaluation mode (e.g. streaming, batch).", "type": "string" },
+            "numProfiles": { "title": "Number of Profiles", "type": "integer", "minimum": 0 },
+            "destinations": {
+              "title": "Destinations",
+              "description": "Destination names this segment is sent to.",
               "type": "array",
               "items": { "type": "string" }
             }
@@ -39,8 +40,8 @@
   },
   "allOf": [
     { "$ref": "https://ns.adobe.com/xdm/context/experienceevent" },
-    { "$ref": "https://ns.adobe.com/experience/cvf/fieldgroups/cvf-common-properties" },
-    { "$ref": "#/definitions/destination" }
+    { "$ref": "https://ns.adobe.com/experience/cvf/alpha-00/00-fieldgroups/cvf-common-properties" },
+    { "$ref": "#/definitions/segment" }
   ],
   "meta:status": "experimental"
 }

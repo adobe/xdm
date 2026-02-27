@@ -18,7 +18,7 @@
       "properties": {
         "category": {
           "title": "Category",
-          "description": "Category of the CVF payload (e.g. segment, destination, aggregateProfileStats).",
+          "description": "Category of the CVF payload (e.g. audience, destination, aggregateProfileStats).",
           "type": "string"
         },
         "snapshotTime": {

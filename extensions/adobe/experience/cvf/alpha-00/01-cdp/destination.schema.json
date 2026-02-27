@@ -26,9 +26,9 @@
             "creationTime": { "title": "Creation Time", "description": "Destination creation timestamp.", "type": "number" },
             "isActive": { "title": "Is Active", "type": "boolean" },
             "exportMode": { "title": "Export Mode", "description": "Export mode.", "type": "string" },
-            "segments": {
-              "title": "Segments",
-              "description": "Segment names exported to this destination.",
+            "audiences": {
+              "title": "Audiences",
+              "description": "Audience names exported to this destination.",
               "type": "array",
               "items": { "type": "string" }
             }

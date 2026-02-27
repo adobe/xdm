@@ -30,15 +30,27 @@
                 "name": { "title": "Name", "type": "string" }
               }
             },
+            "numAudienceActivatedProfiles": {
+              "title": "Number of Audience Activated Profiles",
+              "description": "Number of profiles activated by at least one audience.",
+              "type": "integer",
+              "minimum": 0
+            },
+            "numIdentities": {
+              "title": "Number of Identities",
+              "description": "Total number of identities.",
+              "type": "integer",
+              "minimum": 0
+            },
             "numProfiles": {
               "title": "Number of Profiles",
               "description": "Total number of profiles.",
               "type": "integer",
               "minimum": 0
             },
-            "numSegmentedProfiles": {
-              "title": "Number of Segmented Profiles",
-              "description": "Number of profiles in segments.",
+            "numMultiIdentityProfiles": {
+              "title": "Number of Multi-Identity Profiles",
+              "description": "Number of profiles with multiple identities.",
               "type": "integer",
               "minimum": 0
             }

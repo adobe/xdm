@@ -139,14 +139,6 @@
                           "title": "Enabled",
                           "type": "boolean",
                           "description": "Whether the reward is enabled."
-                        },
-                        "xdm:metadata": {
-                          "title": "Metadata",
-                          "type": "object",
-                          "description": "Freeform custom key-value metadata for the reward.",
-                          "additionalProperties": {
-                            "type": "string"
-                          }
                         }
                       }
                     },

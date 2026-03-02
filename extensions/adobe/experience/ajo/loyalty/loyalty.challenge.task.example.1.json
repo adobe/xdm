@@ -1,26 +1,28 @@
 {
-  "_experience": {
-    "ajo": {
-      "loyalty": {
-        "id": "task-qualifying-purchase-4",
-        "state": "incomplete",
-        "name": "qualifying purchase 4 times",
-        "description": "Visit 4 days in a row and make a qualifying purchase each time and receive 60 Bonus Stars",
-        "startDate": "2025-08-01T00:00:00.000+00:00",
-        "endDate": "2025-12-31T23:59:59.000+00:00",
-        "schedule": {
-          "duration": "daily",
-          "maxRepeat": 999
-        },
-        "variables": {
-          "include": { "valuesSet": ["*"] },
-          "exclude": { "valuesSet": ["NYT"] },
-          "singleTrans": false,
-          "spendMin": 0,
-          "qtyMin": 1,
-          "maxTrans": 0
-        }
-      }
-    }
+  "id": "task-qualifying-purchase-4",
+  "state": "incomplete",
+  "name": "qualifying purchase 4 times",
+  "description": "Visit 4 days in a row and make a qualifying purchase each time and receive 60 Bonus Stars",
+  "startDate": "2025-08-01T00:00:00.000+00:00",
+  "endDate": "2025-12-31T23:59:59.000+00:00",
+  "schedule": {
+    "duration": "daily",
+    "maxRepeat": 999
+  },
+  "variables": {
+    "include": {
+      "valuesSet": [
+        "*"
+      ]
+    },
+    "exclude": {
+      "valuesSet": [
+        "NYT"
+      ]
+    },
+    "singleTrans": false,
+    "spendMin": 0,
+    "qtyMin": 1,
+    "maxTrans": 0
   }
 }

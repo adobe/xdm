@@ -29,7 +29,8 @@
             "delay",
             "duplicate",
             "denylist",
-            "delivered"
+            "delivered",
+            "read"
           ],
           "meta:enum": {
             "error": "Message processing failed",
@@ -39,7 +40,8 @@
             "delay": "Message delayed",
             "duplicate": "Duplicate message skipped",
             "denylist": "Invalid destination skipped",
-            "delivered": "Message Delivered"
+            "delivered": "Message Delivered",
+            "read": "Message read"
           },
           "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##title##21101",
           "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##description##54571"

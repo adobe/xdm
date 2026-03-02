@@ -72,10 +72,17 @@
                     "aoCustomerDataUsage": {
                       "type": "string",
                       "description": "Whether usage is primary or secondary",
-                      "enum": ["primary", "secondary"],
+                      "enum": [
+                        "primary",
+                        "secondary",
+                        "no_data_access",
+                        "unknown"
+                      ],
                       "meta:enum": {
                         "primary": "Primary",
-                        "secondary": "Secondary"
+                        "secondary": "Secondary",
+                        "no_data_access": "No Data Access",
+                        "unknown": "Unknown"
                       }
                     }
                   }

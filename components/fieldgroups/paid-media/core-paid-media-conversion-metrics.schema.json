@@ -45,7 +45,7 @@
                 "xdm:conversionsByType": {
                   "type": "object",
                   "title": "Conversions by Type",
-                  "description": "Breakdown of conversions by event type",
+                  "description": "Breakdown of conversions by event type (default attribution window, e.g. 7d click). Common types shared by Meta Insights API and Google Ads/GA4. For attribution window breakdown use additionalMetrics in paidMedia.metrics with metricName e.g. purchases_1d_click, purchases_7d_click, purchases_1d_view.",
                   "properties": {
                     "xdm:purchases": {
                       "type": "number",
@@ -85,6 +85,26 @@
                     "xdm:customEvents": {
                       "type": "number",
                       "title": "Custom Events",
+                      "minimum": 0
+                    },
+                    "xdm:addPaymentInfo": {
+                      "type": "number",
+                      "title": "Add Payment Info",
+                      "minimum": 0
+                    },
+                    "xdm:search": {
+                      "type": "number",
+                      "title": "Search",
+                      "minimum": 0
+                    },
+                    "xdm:viewContent": {
+                      "type": "number",
+                      "title": "View Content",
+                      "minimum": 0
+                    },
+                    "xdm:landingPageView": {
+                      "type": "number",
+                      "title": "Landing Page View",
                       "minimum": 0
                     }
                   }

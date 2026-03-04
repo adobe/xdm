@@ -1,0 +1,16 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryMetadata/emailMetadata": {
+    "xdm:recipient": {
+      "xdm:email": "jane.doe@example.com",
+      "xdm:name": "Jane Doe",
+      "xdm:bcc": ["manager@example.com", "audit@example.com"]
+    },
+    "xdm:sender": {
+      "xdm:email": "noreply@adobe.com",
+      "xdm:name": "Adobe Team",
+      "xdm:errorEmail": "errors@adobe.com",
+      "xdm:replyToEmail": "support@adobe.com",
+      "xdm:replyToName": "Adobe Support"
+    }
+  }
+}

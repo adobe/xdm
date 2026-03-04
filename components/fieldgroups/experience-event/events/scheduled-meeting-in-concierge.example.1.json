@@ -1,0 +1,20 @@
+{
+  "xdm:eventType": "meeting.booked.concierge",
+  "xdm:scheduledmeeting": {
+    "xdm:consultantDetails": {
+      "xdm:consultantID": "CONSULT-1234",
+      "xdm:consultantEmail": "john.doe@example.com",
+      "xdm:consultantName": "John Doe"
+    },
+    "xdm:meetingDetails": {
+      "xdm:meetingStatus": "scheduled",
+      "xdm:scheduledFor": "2025-09-30T10:00:00Z",
+      "xdm:routingType": "manual"
+    },
+    "xdm:conciergeKey": {
+      "xdm:sourceID": "b2b-platform",
+      "xdm:sourceType": "CRM",
+      "xdm:sourceInstanceID": "crm-instance-42"
+    }
+  }
+}

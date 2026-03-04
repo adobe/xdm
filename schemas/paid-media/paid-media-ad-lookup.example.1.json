@@ -1,0 +1,182 @@
+{
+  "xdm:entityType": "ad",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:campaignID": "23851234567890789",
+    "xdm:campaignGUID": "meta_act_123456789012345_23851234567890789",
+    "xdm:adGroupID": "23851234567890456",
+    "xdm:adGroupGUID": "meta_act_123456789012345_23851234567890456",
+    "xdm:adID": "23851234567890123",
+    "xdm:adGUID": "meta_act_123456789012345_23851234567890123",
+    "xdm:experienceID": "creative_vid_987654321",
+    "xdm:experienceGUID": "meta_act_123456789012345_creative_vid_987654321",
+    "xdm:hierarchyPath": "act_123456789012345/23851234567890789/23851234567890456/23851234567890123",
+    "xdm:metadata": {
+      "xdm:name": "Fall Product Launch - 30s Video Ad",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/Los_Angeles",
+      "xdm:createdTime": "2025-10-28T16:00:00Z",
+      "xdm:updatedTime": "2025-11-09T13:00:00Z",
+      "xdm:startTime": "2025-11-01T00:00:00Z",
+      "xdm:endTime": "2025-11-30T23:59:59Z"
+    },
+    "xdm:adDetails": {
+      "xdm:adType": "video",
+      "xdm:adFormat": "single_video",
+      "xdm:reviewStatus": "approved",
+      "xdm:deliveryStatus": "active",
+      "xdm:isPinDeleted": false,
+      "xdm:isRemovable": true,
+      "xdm:creativeDetails": {
+        "xdm:creativeID": "creative_vid_987654321",
+        "xdm:creativeName": "Fall Product Launch - 30s Video",
+        "xdm:creativeType": "video",
+        "xdm:creativeFormat": "feed_video",
+        "xdm:creativeVersion": "v2.1",
+        "xdm:creativeTemplate": "video_standard",
+        "xdm:dynamicCreative": false,
+        "xdm:personalized": true,
+        "xdm:localized": true,
+        "xdm:locale": "en_US",
+        "xdm:brandID": "brand_acme_123",
+        "xdm:campaignTheme": "fall_2025_launch"
+      },
+      "xdm:adReviewDetails": {
+        "xdm:reviewStatus": "approved",
+        "xdm:reviewDate": "2025-11-05T14:30:00Z",
+        "xdm:reviewerID": "meta_reviewer_456",
+        "xdm:reviewNotes": "Approved - complies with all advertising policies",
+        "xdm:policyViolations": [],
+        "xdm:appealStatus": "not_applicable",
+        "xdm:lastModifiedDate": "2025-11-05T10:15:00Z",
+        "xdm:autoApproved": false,
+        "xdm:requiresManualReview": false
+      },
+      "xdm:deliveryDetails": {
+        "xdm:deliveryStatus": "active",
+        "xdm:effectiveStatus": "active",
+        "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+        "xdm:pacing": "standard",
+        "xdm:deliveryEstimate": "good",
+        "xdm:learningPhase": "completed",
+        "xdm:lastDeliveryCheck": "2025-11-10T08:00:00Z",
+        "xdm:estimatedDailyReach": 125000,
+        "xdm:saturationLevel": "low"
+      },
+      "xdm:socialMediaProperties": {
+        "xdm:postID": "post_123456789_987654321",
+        "xdm:pageID": "page_acmecorp_official",
+        "xdm:instagramAccountID": "ig_acmecorp",
+        "xdm:allowComments": true,
+        "xdm:allowSharing": true,
+        "xdm:allowLikes": true,
+        "xdm:commentCount": 1247,
+        "xdm:shareCount": 892,
+        "xdm:likeCount": 8934,
+        "xdm:reactionCount": 9876,
+        "xdm:saveCount": 456,
+        "xdm:hideCount": 23,
+        "xdm:reportCount": 2,
+        "xdm:organicImpressions": 45000,
+        "xdm:organicReach": 32000,
+        "xdm:viralImpressions": 12000,
+        "xdm:viralReach": 8500
+      },
+      "xdm:callToAction": {
+        "xdm:type": "learn_more",
+        "xdm:text": "Learn More",
+        "xdm:url": "https://www.acmecorp.com/fall-launch?utm_source=facebook&utm_medium=video&utm_campaign=fall2025",
+        "xdm:displayUrl": "acmecorp.com/fall-launch",
+        "xdm:deepLink": "acmecorp://products/fall-launch",
+        "xdm:trackingTemplate": "https://track.acmecorp.com/click?ad={ad_id}&placement={placement}",
+        "xdm:utmParameters": {
+          "xdm:source": "facebook",
+          "xdm:medium": "video",
+          "xdm:campaign": "fall2025",
+          "xdm:content": "30s_video",
+          "xdm:term": "product_launch"
+        }
+      },
+      "xdm:linkProperties": {
+        "xdm:destinationURL": "https://www.acmecorp.com/fall-launch",
+        "xdm:displayURL": "acmecorp.com",
+        "xdm:urlTags": "utm_source=facebook&utm_medium=video&utm_campaign=fall2025",
+        "xdm:trackingPixels": [
+          "https://track.acmecorp.com/impression?ad=vid_987654321",
+          "https://analytics.acmecorp.com/pixel?type=view&id=fall2025"
+        ],
+        "xdm:clickTrackers": [
+          "https://track.acmecorp.com/click?ad=vid_987654321",
+          "https://analytics.acmecorp.com/pixel?type=click&id=fall2025"
+        ],
+        "xdm:conversionTracking": true,
+        "xdm:conversionPixelID": "pixel_123456789"
+      },
+      "xdm:appProperties": {
+        "xdm:appID": "app_456789123",
+        "xdm:appName": "Acme Shopping",
+        "xdm:appPlatform": "ios",
+        "xdm:appStoreURL": "https://apps.apple.com/app/acme-shopping/id123456789",
+        "xdm:appDeepLink": "acmecorp://products/fall-launch",
+        "xdm:appEventTracking": true,
+        "xdm:appEventName": "product_view",
+        "xdm:sdkVersion": "9.2.1"
+      },
+      "xdm:leadGenProperties": {
+        "xdm:formID": "form_not_applicable",
+        "xdm:formType": "not_applicable",
+        "xdm:instantForm": false,
+        "xdm:privacyPolicyURL": "https://www.acmecorp.com/privacy",
+        "xdm:customDisclaimer": "By submitting, you agree to receive marketing communications from Acme Corp."
+      },
+      "xdm:interactionProperties": {
+        "xdm:allowInteraction": true,
+        "xdm:interactionType": "video_engagement",
+        "xdm:swipeUpEnabled": false,
+        "xdm:pollEnabled": false,
+        "xdm:quizEnabled": false,
+        "xdm:gamificationEnabled": false,
+        "xdm:arEnabled": false,
+        "xdm:threeDEnabled": false
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_ad_id",
+          "xdm:stringValue": "23851234567890123"
+        },
+        {
+          "xdm:fieldName": "meta_adset_id",
+          "xdm:stringValue": "23851234567890456"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_id",
+          "xdm:stringValue": "23851234567890789"
+        },
+        {
+          "xdm:fieldName": "meta_video_id",
+          "xdm:stringValue": "987654321012345"
+        },
+        {
+          "xdm:fieldName": "meta_placement_optimization",
+          "xdm:stringValue": "automatic"
+        },
+        {
+          "xdm:fieldName": "meta_objective",
+          "xdm:stringValue": "OUTCOME_TRAFFIC"
+        },
+        {
+          "xdm:fieldName": "meta_buying_type",
+          "xdm:stringValue": "AUCTION"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        }
+      ]
+    }
+  }
+}

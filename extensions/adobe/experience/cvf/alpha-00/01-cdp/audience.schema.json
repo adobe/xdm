@@ -1,0 +1,75 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-00/cdp/audience",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Cvf: Alpha: Audience",
+  "description": "CDP audience data. Each entry represents an AEP audience.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": false,
+  "definitions": {
+    "audience": {
+      "properties": {
+        "cvf": {
+          "type": "object",
+          "properties": {
+            "audience": {
+              "title": "Audience",
+              "description": "Audience id, name, evaluation mode, and related data.",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "title": "ID",
+                  "description": "Audience identifier.",
+                  "type": "string"
+                },
+                "name": {
+                  "title": "Name",
+                  "type": "string"
+                },
+                "creationTime": {
+                  "title": "Creation Time",
+                  "description": "Audience creation timestamp.",
+                  "type": "number"
+                },
+                "isActive": {
+                  "title": "Is Active",
+                  "type": "boolean"
+                },
+                "evaluationMode": {
+                  "title": "Evaluation Mode",
+                  "description": "Evaluation mode (e.g. streaming, batch).",
+                  "type": "string"
+                },
+                "numProfiles": {
+                  "title": "Number of Profiles",
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "destinations": {
+                  "title": "Destinations",
+                  "description": "Destination names this audience is sent to.",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    { "$ref": "https://ns.adobe.com/xdm/context/experienceevent" },
+    { "$ref": "https://ns.adobe.com/experience/cvf/alpha-00/cvf-common-properties" },
+    { "$ref": "#/definitions/audience" }
+  ],
+  "meta:status": "experimental"
+}

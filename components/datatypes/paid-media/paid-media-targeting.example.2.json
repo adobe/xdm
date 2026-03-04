@@ -1,0 +1,31 @@
+{
+  "xdm:geoTargeting": {
+    "xdm:countries": ["US"],
+    "xdm:radius": {
+      "xdm:latitude": 37.7749,
+      "xdm:longitude": -122.4194,
+      "xdm:radiusKm": 25
+    }
+  },
+  "xdm:demographicTargeting": {
+    "xdm:ageRanges": [
+      {
+        "xdm:minAge": 18,
+        "xdm:maxAge": 24
+      }
+    ],
+    "xdm:genders": ["female"]
+  },
+  "xdm:interestTargeting": {
+    "xdm:customAudiences": [
+      {
+        "xdm:audienceID": "aud-lookalike-001",
+        "xdm:audienceName": "Lookalike - High Value Customers",
+        "xdm:audienceType": "lookalike"
+      }
+    ]
+  },
+  "xdm:deviceTargeting": {
+    "xdm:deviceTypes": ["mobile"]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/classes/paid-media",
+  "title": "Paid Media",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Base class for paid media advertising entities including accounts, campaigns, ad groups, ads, experiences, and assets.",
+  "definitions": {
+    "paid-media": {
+      "properties": {
+        "xdm:entityType": {
+          "title": "Entity Type",
+          "type": "string",
+          "description": "The type of paid media entity",
+          "enum": [
+            "account",
+            "campaign",
+            "adgroup",
+            "ad",
+            "experience",
+            "asset"
+          ],
+          "meta:enum": {
+            "account": "Advertising account or customer account",
+            "campaign": "Advertising campaign",
+            "adgroup": "Ad group, ad set, or ad squad",
+            "ad": "Individual advertisement",
+            "experience": "Creative experience or multi-asset composition",
+            "asset": "Creative asset or media"
+          }
+        },
+        "xdm:entityIDs": {
+          "type": "object",
+          "title": "Entity IDs",
+          "description": "Nested platform entity identifiers to ease migration from GenStudio templates",
+          "properties": {
+            "xdm:account": {
+              "type": "object",
+              "properties": {
+                "xdm:accountGUID": {
+                  "type": "string",
+                  "title": "Account GUID"
+                },
+                "xdm:accountID": {
+                  "type": "string",
+                  "title": "Account ID"
+                }
+              }
+            },
+            "xdm:campaign": {
+              "type": "object",
+              "properties": {
+                "xdm:campaignGUID": {
+                  "type": "string",
+                  "title": "Campaign GUID"
+                },
+                "xdm:campaignID": {
+                  "type": "string",
+                  "title": "Campaign ID"
+                }
+              }
+            },
+            "xdm:adGroup": {
+              "type": "object",
+              "properties": {
+                "xdm:adGroupGUID": {
+                  "type": "string",
+                  "title": "Ad Group GUID"
+                },
+                "xdm:adGroupID": {
+                  "type": "string",
+                  "title": "Ad Group ID"
+                }
+              }
+            },
+            "xdm:ad": {
+              "type": "object",
+              "properties": {
+                "xdm:adGUID": {
+                  "type": "string",
+                  "title": "Ad GUID"
+                },
+                "xdm:adID": {
+                  "type": "string",
+                  "title": "Ad ID"
+                }
+              }
+            },
+            "xdm:experience": {
+              "type": "object",
+              "properties": {
+                "xdm:experienceGUID": {
+                  "type": "string",
+                  "title": "Experience GUID"
+                },
+                "xdm:experienceID": {
+                  "type": "string",
+                  "title": "Experience ID"
+                }
+              }
+            },
+            "xdm:asset": {
+              "type": "object",
+              "properties": {
+                "xdm:assetGUID": {
+                  "type": "string",
+                  "title": "Asset GUID"
+                },
+                "xdm:assetID": {
+                  "type": "string",
+                  "title": "Asset ID"
+                }
+              }
+            }
+          }
+        }
+      },
+      "required": ["xdm:entityType"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/paid-media"
+    }
+  ],
+  "meta:status": "experimental"
+}

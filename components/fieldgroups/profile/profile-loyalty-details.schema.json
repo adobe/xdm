@@ -114,6 +114,81 @@
               "description": "Captures the loyalty progam tier in which a visitor is enrolled.",
               "meta:titleId": "profile-loyalty-details##xdm:tier##title##75921",
               "meta:descriptionId": "profile-loyalty-details##xdm:tier##description##54761"
+            },
+            "xdm:tierExpiryDate": {
+              "title": "Tier Expiry Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Date when the customer's current loyalty tier expires."
+            },
+            "xdm:adjustedPoints": {
+              "title": "Adjusted Points",
+              "type": "number",
+              "description": "Points that have been adjusted due to corrections, returns, or other modifications.",
+              "meta:titleId": "profile-loyalty-details##xdm:adjustedPoints##title##12345",
+              "meta:descriptionId": "profile-loyalty-details##xdm:adjustedPoints##description##67890"
+            },
+            "xdm:cardsDetails": {
+              "title": "Loyalty Cards Details",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:number": {
+                    "title": "Card Number",
+                    "type": "string",
+                    "description": "The loyalty card number or identifier."
+                  },
+                  "xdm:series": {
+                    "title": "Card Series",
+                    "type": "string",
+                    "description": "The series or collection the loyalty card belongs to."
+                  },
+                  "xdm:status": {
+                    "title": "Card Status",
+                    "type": "string",
+                    "description": "Current status of the loyalty card (active, inactive, suspended, etc.)."
+                  }
+                }
+              },
+              "description": "Details about the user's loyalty cards, if any.",
+              "meta:titleId": "profile-loyalty-details##xdm:cardsDetails##title##11111",
+              "meta:descriptionId": "profile-loyalty-details##xdm:cardsDetails##description##22222"
+            },
+            "xdm:expiredPoints": {
+              "title": "Expired Points",
+              "type": "number",
+              "description": "Total number of points that have expired and are no longer available for use.",
+              "meta:titleId": "profile-loyalty-details##xdm:expiredPoints##title##55555",
+              "meta:descriptionId": "profile-loyalty-details##xdm:expiredPoints##description##66666"
+            },
+            "xdm:lifetimePoints": {
+              "title": "Lifetime Points",
+              "type": "number",
+              "description": "Total points earned by the customer throughout their entire loyalty program membership.",
+              "meta:titleId": "profile-loyalty-details##xdm:lifetimePoints##title##77777",
+              "meta:descriptionId": "profile-loyalty-details##xdm:lifetimePoints##description##88888"
+            },
+            "xdm:lifetimePurchases": {
+              "title": "Lifetime Purchases",
+              "type": "number",
+              "description": "Total monetary value of all purchases made by the customer throughout their loyalty program membership.",
+              "meta:titleId": "profile-loyalty-details##xdm:lifetimePurchases##title##99999",
+              "meta:descriptionId": "profile-loyalty-details##xdm:lifetimePurchases##description##00000"
+            },
+            "xdm:promisedPoints": {
+              "title": "Promised Points",
+              "type": "number",
+              "description": "Points that have been promised but not yet credited to the customer's account.",
+              "meta:titleId": "profile-loyalty-details##xdm:promisedPoints##title##11112",
+              "meta:descriptionId": "profile-loyalty-details##xdm:promisedPoints##description##22223"
+            },
+            "xdm:returnedPoints": {
+              "title": "Returned Points",
+              "type": "number",
+              "description": "Points that have been returned to the customer's account due to refunds or adjustments.",
+              "meta:titleId": "profile-loyalty-details##xdm:returnedPoints##title##33334",
+              "meta:descriptionId": "profile-loyalty-details##xdm:returnedPoints##description##44445"
             }
           },
           "meta:descriptionId": "profile-loyalty-details##xdm:loyalty##description##85311"

@@ -1,0 +1,98 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/aep-agent-request-context",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Agent Request Context",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
+  ],
+  "description": "Captures properties related to AEP Agent Application.",
+  "definitions": {
+    "aep-agent-request-context": {
+      "properties": {
+        "xdm:adobe": {
+          "type": "object",
+          "properties": {
+            "xdm:gen_ai": {
+              "type": "object",
+              "title": "Request Context",
+              "description": "Contextual information about the request.",
+              "properties": {
+                "xdm:request": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:function": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:input": {
+                          "type": "string",
+                          "description": "Input parameters for the function."
+                        },
+                        "xdm:output": {
+                          "type": "string",
+                          "description": "Response from the function."
+                        }
+                      }
+                    },
+                    "xdm:context": {
+                      "type": "string",
+                      "description": "Agent-to-agent request text data. It should contain a subset of information from MessageSendParams.message.parts[].data_part as json string."
+                    },
+                    "xdm:message": {
+                      "type": "string",
+                      "description": "Agent-to-agent request context data. It should contain a subset of information from MessageSendParams.message.parts[].text_part as json string."
+                    },
+                    "xdm:aoInstanceId": {
+                      "type": "string",
+                      "description": "AO (Adobe Orchestrator) instance identifier used for request execution."
+                    },
+                    "xdm:copilotVersion": {
+                      "type": "string",
+                      "description": "Version of the copilot being used for agent behavior determination."
+                    },
+                    "xdm:createdDate": {
+                      "type": "string",
+                      "format": "date-time",
+                      "description": "Timestamp when the request was created."
+                    },
+                    "xdm:isTestRequest": {
+                      "type": "boolean",
+                      "description": "Indicates whether this is a test request."
+                    },
+                    "xdm:llmFamily": {
+                      "type": "string",
+                      "description": "The family of Large Language Model being used."
+                    },
+                    "xdm:releaseVersion": {
+                      "type": "string",
+                      "description": "Release version for determining enabled functionality and model types."
+                    },
+                    "xdm:username": {
+                      "type": "string",
+                      "description": "Username of the person making the request."
+                    },
+                    "xdm:featureFlags": {
+                      "type": "string",
+                      "description": "A collection of feature flags and their values. Each key represents a feature flag name, and the value represents the flag's current state or variant. Used to determine features enabled for specific users or context combinations."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{ "$ref": "#/definitions/aep-agent-request-context" }],
+  "meta:status": "experimental"
+}

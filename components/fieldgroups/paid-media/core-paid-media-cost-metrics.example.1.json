@@ -1,0 +1,40 @@
+{
+  "xdm:paidMedia": {
+    "xdm:costMetrics": {
+      "xdm:spendInMicroCurrency": 18000000000,
+      "xdm:averageCpc": 7.2,
+      "xdm:averageCpm": 36.0,
+      "xdm:averageCpe": 2.02,
+      "xdm:averageCpv": 0.15,
+      "xdm:averageCpa": 14.4,
+      "xdm:averageCpl": 73.47,
+      "xdm:bidAmount": 8.5,
+      "xdm:bidAmountMicro": 8500000,
+      "xdm:maxBid": 12.0,
+      "xdm:minBid": 3.5,
+      "xdm:impressionShare": {
+        "xdm:impressionShare": 0.68,
+        "xdm:impressionShareRank": 0.72,
+        "xdm:impressionShareBudget": 0.85,
+        "xdm:lostImpressionShareRank": 0.15,
+        "xdm:lostImpressionShareBudget": 0.17,
+        "xdm:exactMatchImpressionShare": 0.75,
+        "xdm:topImpressionShare": 0.42,
+        "xdm:absoluteTopImpressionShare": 0.28
+      },
+      "xdm:budgetUtilization": {
+        "xdm:budgetAllocated": 60000,
+        "xdm:budgetSpent": 18000,
+        "xdm:budgetRemaining": 42000,
+        "xdm:budgetUtilization": 0.3,
+        "xdm:dailyBudget": 2000,
+        "xdm:dailySpend": 600,
+        "xdm:dailyBudgetUtilization": 0.3,
+        "xdm:pacingStatus": "on_track",
+        "xdm:projectedSpend": 60000,
+        "xdm:budgetOverrun": 0,
+        "xdm:budgetUnderrun": 0
+      }
+    }
+  }
+}

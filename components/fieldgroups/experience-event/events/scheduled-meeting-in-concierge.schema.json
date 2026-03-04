@@ -1,0 +1,88 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/meeting-booked-concierge",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Booked Meeting in Concierge",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "meeting.booked.concierge",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Booked a meeting with consultant in the Conversation.",
+  "definitions": {
+    "scheduledmeetinginconcierge": {
+      "properties": {
+        "xdm:scheduledmeeting": {
+          "title": "Booked Meeting in Concierge",
+          "type": "object",
+          "properties": {
+            "xdm:consultantDetails": {
+              "title": "Consultant details",
+              "type": "object",
+              "properties": {
+                "xdm:consultantID": {
+                  "title": "Consultant ID",
+                  "type": "string",
+                  "description": "Unique Identifier for a Consultant"
+                },
+                "xdm:consultantEmail": {
+                  "title": "Consultant Email",
+                  "type": "string",
+                  "description": "Email of the Consultant"
+                },
+                "xdm:consultantName": {
+                  "title": "Consultant Name",
+                  "type": "string",
+                  "description": "Name of the Consultant"
+                }
+              }
+            },
+            "xdm:meetingDetails": {
+              "title": "Meeting Details",
+              "type": "object",
+              "properties": {
+                "xdm:meetingStatus": {
+                  "title": "Meeting Status",
+                  "type": "string",
+                  "description": "Status of the scheduled meeting"
+                },
+                "xdm:scheduledFor": {
+                  "title": "Scheduled At",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Scheduled start time of the meeting"
+                },
+                "xdm:routingType": {
+                  "title": "Routing Type",
+                  "type": "string",
+                  "description": "Routing type used for the meeting"
+                }
+              }
+            },
+            "xdm:conciergeKey": {
+              "title": "Concierge Source",
+              "description": "Source of the Concierge",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/scheduledmeetinginconcierge"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2025-08-04"
+}

@@ -1,0 +1,6 @@
+{
+  "@type": "xdm:descriptorDuplicationExclusions",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": ["/courtesyTitle", "/suffix"]
+}

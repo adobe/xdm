@@ -1,0 +1,120 @@
+{
+  "xdm:paidMedia": {
+    "xdm:metrics": {
+      "xdm:impressions": 50000,
+      "xdm:clicks": 2500,
+      "xdm:spend": 18000,
+      "xdm:reach": 26000,
+      "xdm:frequency": 1.92,
+      "xdm:ctr": 0.05,
+      "xdm:cpm": 36.0,
+      "xdm:cpc": 7.2,
+      "xdm:conversions": 1250,
+      "xdm:conversionValue": 187500,
+      "xdm:costPerConversion": 14.4,
+      "xdm:roas": 10.42,
+      "xdm:videoViews": 8900,
+      "xdm:videoCompletions": 5785,
+      "xdm:engagements": 12345,
+      "xdm:engagementRate": 0.247,
+      "xdm:additionalMetrics": [
+        {
+          "xdm:metricName": "outbound_clicks",
+          "xdm:metricValue": 2340,
+          "xdm:metricType": "clicks",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "link_clicks",
+          "xdm:metricValue": 2500,
+          "xdm:metricType": "clicks",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "landing_page_views",
+          "xdm:metricValue": 2340,
+          "xdm:metricType": "engagement",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "post_engagement",
+          "xdm:metricValue": 12345,
+          "xdm:metricType": "engagement",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "post_reactions",
+          "xdm:metricValue": 9876,
+          "xdm:metricType": "engagement",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "post_comments",
+          "xdm:metricValue": 1247,
+          "xdm:metricType": "engagement",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "post_shares",
+          "xdm:metricValue": 892,
+          "xdm:metricType": "engagement",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "post_saves",
+          "xdm:metricValue": 456,
+          "xdm:metricType": "engagement",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "video_30_sec_watched_actions",
+          "xdm:metricValue": 6234,
+          "xdm:metricType": "video",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "video_p95_watched_actions",
+          "xdm:metricValue": 5785,
+          "xdm:metricType": "video",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "video_avg_time_watched_actions",
+          "xdm:metricValue": 18.5,
+          "xdm:metricType": "video",
+          "xdm:metricUnit": "seconds"
+        },
+        {
+          "xdm:metricName": "cost_per_outbound_click",
+          "xdm:metricValue": 7.69,
+          "xdm:metricType": "cost",
+          "xdm:metricUnit": "currency"
+        },
+        {
+          "xdm:metricName": "cost_per_unique_click",
+          "xdm:metricValue": 8.12,
+          "xdm:metricType": "cost",
+          "xdm:metricUnit": "currency"
+        },
+        {
+          "xdm:metricName": "unique_clicks",
+          "xdm:metricValue": 2217,
+          "xdm:metricType": "clicks",
+          "xdm:metricUnit": "count"
+        },
+        {
+          "xdm:metricName": "unique_ctr",
+          "xdm:metricValue": 0.0443,
+          "xdm:metricType": "rate",
+          "xdm:metricUnit": "percentage"
+        },
+        {
+          "xdm:metricName": "frequency",
+          "xdm:metricValue": 1.92,
+          "xdm:metricType": "frequency",
+          "xdm:metricUnit": "count"
+        }
+      ]
+    }
+  }
+}

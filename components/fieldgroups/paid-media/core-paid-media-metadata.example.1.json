@@ -1,0 +1,80 @@
+{
+  "xdm:paidMedia": {
+    "xdm:metadata": {
+      "xdm:name": "Fall 2025 Product Launch - Traffic Campaign",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:currency": "USD",
+      "xdm:currencyCode": "USD",
+      "xdm:timezone": "America/Los_Angeles",
+      "xdm:createdTime": "2025-10-15T10:00:00Z",
+      "xdm:updatedTime": "2025-11-09T15:30:00Z",
+      "xdm:startTime": "2025-11-01T00:00:00Z",
+      "xdm:endTime": "2025-11-30T23:59:59Z",
+      "xdm:objective": "traffic",
+      "xdm:budgetType": "daily",
+      "xdm:dailyBudget": 2000,
+      "xdm:lifetimeBudget": 0,
+      "xdm:biddingStrategy": "lowest_cost_without_cap",
+      "xdm:optimizationGoal": "link_clicks",
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_campaign_name",
+          "xdm:stringValue": "Fall 2025 Product Launch - Traffic Campaign"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_status",
+          "xdm:stringValue": "ACTIVE"
+        },
+        {
+          "xdm:fieldName": "meta_effective_status",
+          "xdm:stringValue": "ACTIVE"
+        },
+        {
+          "xdm:fieldName": "meta_configured_status",
+          "xdm:stringValue": "ACTIVE"
+        },
+        {
+          "xdm:fieldName": "meta_objective",
+          "xdm:stringValue": "OUTCOME_TRAFFIC"
+        },
+        {
+          "xdm:fieldName": "meta_buying_type",
+          "xdm:stringValue": "AUCTION"
+        },
+        {
+          "xdm:fieldName": "meta_special_ad_categories",
+          "xdm:stringValue": "NONE"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        },
+        {
+          "xdm:fieldName": "meta_budget_optimization",
+          "xdm:stringValue": "true"
+        },
+        {
+          "xdm:fieldName": "meta_daily_budget",
+          "xdm:stringValue": "2000"
+        },
+        {
+          "xdm:fieldName": "meta_created_time",
+          "xdm:stringValue": "2025-10-15T10:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_updated_time",
+          "xdm:stringValue": "2025-11-09T15:30:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_start_time",
+          "xdm:stringValue": "2025-11-01T00:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_stop_time",
+          "xdm:stringValue": "2025-11-30T23:59:59Z"
+        }
+      ]
+    }
+  }
+}

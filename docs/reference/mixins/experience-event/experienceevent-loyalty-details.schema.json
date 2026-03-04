@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-loyalty-details",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Loyalty Details",
+    "title": "Loyalty Event Details",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,

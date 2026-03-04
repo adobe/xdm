@@ -30,6 +30,13 @@
           "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##title##31921",
           "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##description##94561"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID": {
+          "title": "Request ID",
+          "type": "string",
+          "description": "A unique request id refers to every single message sent as part of a MessageExecution activity.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##title##31922",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##description##94562"
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
           "title": "Experience channel",
           "description": "Experience channel related to the ExperienceEvent.",
@@ -110,6 +117,34 @@
           "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title##73351",
           "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description##33451"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/liveActivity": {
+          "title": "Live Activity Details",
+          "type": "object",
+          "description": "Live activity context for mobile push notifications. It includes the live activity ID, live activity event and an optional channel id which is used incase of broadcasting a live activity across multiple devices.",
+          "properties": {
+            "xdm:event": {
+              "title": "Live Activity Event",
+              "type": "string",
+              "description": "The type of live activity event being triggered.",
+              "meta:enum": {
+                "localStart": "Local start event for live activity",
+                "pushToStart": "Push to start or remote start event for live activity",
+                "update": "Update event for live activity",
+                "end": "End event for live activity"
+              }
+            },
+            "xdm:channelID": {
+              "title": "Broadcast Channel ID",
+              "type": "string",
+              "description": "The broadcast channel identifier for the live activity."
+            },
+            "xdm:liveActivityID": {
+              "title": "Live Activity ID",
+              "type": "string",
+              "description": "The unique identifier for the live activity."
+            }
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": {
           "title": "SMS Provider",
           "type": "string",
@@ -182,6 +217,41 @@
           "type": "string",
           "format": "date-time",
           "description": "Timestamp from Meta / WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
+          "title": "Response Content",
+          "type": "string",
+          "description": "Content of the user response - emoji for reactions, or message text for replies to a specific message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionMessageID": {
+          "title": "Original Message ID",
+          "type": "string",
+          "description": "ID of the original message being responded to (for reactions or replies)"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": {
+          "title": "Response Action Type",
+          "type": "string",
+          "description": "Type of response action from WhatsApp - react, unreact, or reply"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedTitle": {
+          "title": "User-selected title from WhatsApp ",
+          "type": "string",
+          "description": "User-selected title from WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveType": {
+          "title": "Interactive type from WhatsApp ",
+          "type": "string",
+          "description": "Interactive type from WhatsApp message — options include: list reply, button reply, and button."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedDescription": {
+          "title": "Selected Description",
+          "type": "string",
+          "description": "Description of the Selected WhatsApp interactive message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedID": {
+          "title": "ID of the selected option from WhatsApp ",
+          "type": "string",
+          "description": "ID of the selected option from WhatsApp "
         }
       }
     }

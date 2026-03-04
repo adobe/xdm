@@ -1,0 +1,31 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "visit",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "456",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/url": "https://www.adobe.com/products/experience-platform.html",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType": "tracked",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/entityType": "message",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+    "web",
+    "form-submission"
+  ],
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "Experience Platform Page",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/fillOutForm": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webFormID": "contact-form-2024"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/web": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webPageDetails": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/name": "Experience Platform Product Page",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/queryParameters": "utm_source=email&utm_campaign=winter_promo",
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webPageID": "page-98765"
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/webReferrer": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/URL": "https://www.google.com/search?q=adobe+experience+platform"
+    }
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/environment": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/browserDetails": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/ipV4": "192.168.1.100"
+  }
+}

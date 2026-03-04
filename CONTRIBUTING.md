@@ -404,6 +404,15 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 
 `npm lint` uses [Prettier](https://prettier.io), which offers integrations for consistent formatting for many editors and IDEs.
 
+Run `npm run validate` to validate that all example files match their corresponding schemas. The validator:
+
+- Builds an in-memory map of all local schema files by their `$id` (useful for validating unpublished schemas in PRs)
+- Automatically fetches remote/published schemas via HTTP/HTTPS when `$ref` references aren't found locally
+- Caches fetched remote schemas to avoid duplicate requests
+- Reports validation results including count of remote schemas fetched
+
+The command validates `components`, `extensions`, and `schemas` directories by default, or you can specify specific directories: `npm run validate components/datatypes/paid-media`.
+
 ### Re-Use and Modularity
 
 In order to encourage re-use of definitions and modularity of schema files, avoid putting all property declarations into the root of the schema, instead use a `definitions` object with one sub-key for each semantic unit. Then, at the bottom of your schema definition, `$ref`erence them using the `allOf` construct.

@@ -1,0 +1,145 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/core-identifiers",
+  "title": "Core Paid Media Identifiers",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
+  "description": "Core identifier fields used across all paid media entities and ad networks",
+  "definitions": {
+    "core-identifiers": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:adNetwork": {
+              "type": "string",
+              "title": "Ad Network",
+              "description": "The advertising platform/network",
+              "enum": [
+                "meta",
+                "google_ads",
+                "google_cm360",
+                "snapchat",
+                "pinterest",
+                "tiktok",
+                "linkedin",
+                "amazon",
+                "reddit",
+                "twitter",
+                "other"
+              ],
+              "meta:enum": {
+                "meta": "Meta Ads (Facebook/Instagram)",
+                "google_ads": "Google Ads",
+                "google_cm360": "Google Campaign Manager 360",
+                "snapchat": "Snapchat Ads",
+                "pinterest": "Pinterest Ads",
+                "tiktok": "TikTok Ads",
+                "linkedin": "LinkedIn Ads",
+                "amazon": "Amazon Ads",
+                "reddit": "Reddit Ads",
+                "twitter": "Twitter/X Ads",
+                "other": "Other ad network"
+              }
+            },
+            "xdm:network": {
+              "type": "string",
+              "title": "Network",
+              "description": "Alias of adNetwork for migration from GenStudio templates"
+            },
+            "xdm:accountID": {
+              "type": "string",
+              "title": "Account ID",
+              "description": "Unique identifier for the ad account within the network"
+            },
+            "xdm:accountGUID": {
+              "type": "string",
+              "title": "Account GUID",
+              "description": "Unique identifier for the ad account across all networks"
+            },
+            "xdm:campaignID": {
+              "type": "string",
+              "title": "Campaign ID",
+              "description": "Unique identifier for the campaign within the network"
+            },
+            "xdm:campaignGUID": {
+              "type": "string",
+              "title": "Campaign GUID",
+              "description": "Unique identifier for the campaign across all networks"
+            },
+            "xdm:adGroupID": {
+              "type": "string",
+              "title": "Ad Group ID",
+              "description": "Unique identifier for the ad group/ad set/ad squad within the network"
+            },
+            "xdm:adGroupGUID": {
+              "type": "string",
+              "title": "Ad Group GUID",
+              "description": "Unique identifier for the ad group/ad set/ad squad across all networks"
+            },
+            "xdm:adID": {
+              "type": "string",
+              "title": "Ad ID",
+              "description": "Unique identifier for the individual ad within the network"
+            },
+            "xdm:adGUID": {
+              "type": "string",
+              "title": "Ad GUID",
+              "description": "Unique identifier for the individual ad across all networks"
+            },
+            "xdm:experienceID": {
+              "type": "string",
+              "title": "Experience ID",
+              "description": "Unique identifier for creative experience (multi-asset compositions) within the network"
+            },
+            "xdm:experienceGUID": {
+              "type": "string",
+              "title": "Experience GUID",
+              "description": "Unique identifier for creative experience (multi-asset compositions) across all networks"
+            },
+            "xdm:assetID": {
+              "type": "string",
+              "title": "Asset ID",
+              "description": "Unique identifier for creative assets (images, videos, etc.) within the network"
+            },
+            "xdm:assetGUID": {
+              "type": "string",
+              "title": "Asset GUID",
+              "description": "Unique identifier for creative assets (images, videos, etc.) across all networks"
+            },
+            "xdm:portfolioID": {
+              "type": "string",
+              "title": "Portfolio ID",
+              "description": "Portfolio identifier for grouping campaigns (Amazon Ads and similar platforms) within the network"
+            },
+            "xdm:portfolioGUID": {
+              "type": "string",
+              "title": "Portfolio GUID",
+              "description": "Portfolio identifier for grouping campaigns (Amazon Ads and similar platforms) across all networks"
+            },
+            "xdm:hierarchyPath": {
+              "type": "string",
+              "title": "Hierarchy Path",
+              "description": "Full hierarchical path showing parent-child relationships (e.g., account_id/campaign_id/adgroup_id/ad_id)"
+            }
+          },
+          "required": ["xdm:adNetwork"]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/core-identifiers"
+    }
+  ],
+  "meta:status": "experimental"
+}

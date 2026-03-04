@@ -1,0 +1,25 @@
+{
+  "_experience": {
+    "ajo": {
+      "loyalty": {
+        "quantity": 3,
+        "spend": 40.0,
+        "days": 3,
+        "qualifiedEvents": [
+          {
+            "timestamp": "2025-09-01T00:00:00.000+00:00",
+            "transactionId": "txn-20250901-001"
+          },
+          {
+            "timestamp": "2025-09-02T00:00:00.000+00:00",
+            "transactionId": "txn-20250902-001"
+          },
+          {
+            "timestamp": "2025-09-03T00:00:00.000+00:00",
+            "transactionId": "txn-20250903-001"
+          }
+        ]
+      }
+    }
+  }
+}

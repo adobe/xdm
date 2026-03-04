@@ -17,8 +17,17 @@
             "challengeId": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
             "state": "sent"
           },
+          "reward": {
+            "endpoint": "5f95b128-35ce-43b1-a720-c282d9d2c2b2",
+            "definition": "ea982bfd-3c91-4b05-aa51-73127910fe30",
+            "rewardDefinition": {
+              "denomination": "Stars",
+              "enabled": true
+            }
+          },
           "tasks": [
             {
+              "id": "candy_snack_purchase_1",
               "state": "sent",
               "name": "candy_snack_purchase_1",
               "description": "Purchase 1 qualifying snack item in a single transaction",
@@ -45,35 +54,21 @@
                 "exclude": {
                   "valuesSet": []
                 },
-                "spendMin": 0.0,
-                "qtyMin": 1.0
-              },
-              "currentProgress": {
-                "quantity": 1,
-                "spend": 2.5,
-                "days": 1,
-                "qualifiedEvents": [
-                  {
-                    "timestamp": "2025-08-24T19:46:05.000+00:00",
-                    "transactionId": "850000_20250824_7003945"
-                  }
-                ]
+                "spendMin": 0,
+                "qtyMin": 1
               },
               "taskCompletions": [
                 {
-                  "quantity": 1,
-                  "spend": 2.5,
-                  "days": 1,
-                  "qualifiedEvents": [
-                    {
-                      "timestamp": "2025-08-24T19:46:05.000+00:00",
-                      "transactionId": "850000_20250824_7003945"
-                    }
-                  ]
+                  "completionDate": "2025-08-24T19:46:05.000+00:00",
+                  "accumulators": {
+                    "qty": 1,
+                    "spend": 2.5
+                  }
                 }
               ]
             },
             {
+              "id": "candy_snack_purchase_2",
               "state": "sent",
               "name": "candy_snack_purchase_2",
               "description": "Purchase 2 qualifying snack items across multiple transactions",
@@ -100,35 +95,21 @@
                 "exclude": {
                   "valuesSet": []
                 },
-                "spendMin": 0.0,
-                "qtyMin": 2.0
-              },
-              "currentProgress": {
-                "quantity": 2,
-                "spend": 5.0,
-                "days": 1,
-                "qualifiedEvents": [
-                  {
-                    "timestamp": "2025-08-24T19:46:05.000+00:00",
-                    "transactionId": "850000_20250824_7003945"
-                  }
-                ]
+                "spendMin": 0,
+                "qtyMin": 2
               },
               "taskCompletions": [
                 {
-                  "quantity": 2,
-                  "spend": 5.0,
-                  "days": 1,
-                  "qualifiedEvents": [
-                    {
-                      "timestamp": "2025-08-24T19:46:05.000+00:00",
-                      "transactionId": "850000_20250824_7003945"
-                    }
-                  ]
+                  "completionDate": "2025-08-24T19:46:05.000+00:00",
+                  "accumulators": {
+                    "qty": 2,
+                    "spend": 5
+                  }
                 }
               ]
             },
             {
+              "id": "candy_snack_purchase_3",
               "state": "sent",
               "name": "candy_snack_purchase_3",
               "description": "Purchase 3 qualifying snack items across multiple transactions",
@@ -155,31 +136,16 @@
                 "exclude": {
                   "valuesSet": []
                 },
-                "spendMin": 0.0,
-                "qtyMin": 3.0
-              },
-              "currentProgress": {
-                "quantity": 3,
-                "spend": 7.5,
-                "days": 1,
-                "qualifiedEvents": [
-                  {
-                    "timestamp": "2025-08-24T19:46:05.000+00:00",
-                    "transactionId": "850000_20250824_7003945"
-                  }
-                ]
+                "spendMin": 0,
+                "qtyMin": 3
               },
               "taskCompletions": [
                 {
-                  "quantity": 3,
-                  "spend": 7.5,
-                  "days": 1,
-                  "qualifiedEvents": [
-                    {
-                      "timestamp": "2025-08-24T19:46:05.000+00:00",
-                      "transactionId": "850000_20250824_7003945"
-                    }
-                  ]
+                  "completionDate": "2025-08-24T19:46:05.000+00:00",
+                  "accumulators": {
+                    "qty": 3,
+                    "spend": 7.5
+                  }
                 }
               ]
             }

@@ -14,22 +14,52 @@
   "definitions": {
     "taskCompletion": {
       "properties": {
+        "xdm:completionDate": {
+          "title": "Completion Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time when the task was completed."
+        },
+        "xdm:accumulators": {
+          "title": "Accumulators",
+          "type": "object",
+          "description": "Accumulated quantity and spend for this task completion.",
+          "properties": {
+            "xdm:qty": {
+              "title": "Quantity",
+              "type": "number",
+              "description": "Total quantity accumulated."
+            },
+            "xdm:spend": {
+              "title": "Spend",
+              "type": "number",
+              "description": "Total spend accumulated."
+            }
+          }
+        },
         "xdm:quantity": {
           "title": "Quantity",
           "type": "number",
-          "description": "Total quantity accumulated for this task completion."        },
+          "description": "Total quantity accumulated for this task completion.",
+          "meta:status": "deprecated"
+        },
         "xdm:spend": {
           "title": "Spend",
           "type": "number",
-          "description": "Total spend accumulated for this task completion."        },
+          "description": "Total spend accumulated for this task completion.",
+          "meta:status": "deprecated"
+        },
         "xdm:days": {
           "title": "days",
           "type": "integer",
-          "description": "Number of qualified days accumulated for this task completion."        },
+          "description": "Number of qualified days accumulated for this task completion.",
+          "meta:status": "deprecated"
+        },
         "xdm:qualifiedEvents": {
           "title": "Qualified Events",
           "type": "array",
           "description": "List of events that provided progress toward task completion.",
+          "meta:status": "deprecated",
           "items": {
             "type": "object",
             "properties": {
@@ -52,13 +82,8 @@
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "#/definitions/taskCompletion"
-    }
+    { "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context" },
+    { "$ref": "#/definitions/taskCompletion" }
   ],
   "meta:status": "experimental"
 }
-

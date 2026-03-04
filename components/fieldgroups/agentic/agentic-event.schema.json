@@ -99,6 +99,11 @@
                           "type": "number",
                           "description": "Score resulting from the agent matching to the skill"
                         },
+                        "xdm:failed": {
+                          "title": "Skill Failed",
+                          "type": "boolean",
+                          "description": "Flag stating that the skill execution failed"
+                        },
                         "xdm:parameters": {
                           "type": "array",
                           "title": "Skill Parameters",

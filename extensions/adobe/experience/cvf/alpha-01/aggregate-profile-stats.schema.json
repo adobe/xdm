@@ -1,0 +1,68 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-01/cdp/aggregate-profile-stats",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Cvf: Alpha01: Aggregate Profile Stats",
+  "description": "CDP aggregate profile statistics.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "definitions": {
+    "aggregateProfileStats": {
+      "properties": {
+        "cvf": {
+          "type": "object",
+          "properties": {
+            "aggregateProfileStats": {
+              "title": "Aggregate Profile Stats",
+              "description": "Aggregate profile statistics.",
+              "type": "object",
+              "properties": {
+                "mergePolicy": {
+                  "title": "Merge Policy",
+                  "description": "Merge policy id and name.",
+                  "type": "object",
+                  "properties": {
+                    "id": { "title": "ID", "description": "Merge policy identifier (primaryId).", "type": "string" },
+                    "name": { "title": "Name", "type": "string" }
+                  }
+                },
+                "numAudienceActivatedProfiles": {
+                  "title": "Number of Audience Activated Profiles",
+                  "description": "Number of profiles activated by at least one audience.",
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "numIdentities": {
+                  "title": "Number of Identities",
+                  "description": "Total number of identities.",
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "numProfiles": {
+                  "title": "Number of Profiles",
+                  "description": "Total number of profiles.",
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "numMultiIdentityProfiles": {
+                  "title": "Number of Multi-Identity Profiles",
+                  "description": "Number of profiles with multiple identities.",
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{ "$ref": "#/definitions/aggregateProfileStats" }],
+  "meta:status": "experimental"
+}

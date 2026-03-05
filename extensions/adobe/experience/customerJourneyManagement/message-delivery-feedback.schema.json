@@ -30,7 +30,8 @@
             "duplicate",
             "denylist",
             "delivered",
-            "read"
+            "read",
+            "unknown"
           ],
           "meta:enum": {
             "error": "Message processing failed",
@@ -41,7 +42,8 @@
             "duplicate": "Duplicate message skipped",
             "denylist": "Invalid destination skipped",
             "delivered": "Message Delivered",
-            "read": "Message read"
+            "read": "Message read",
+            "unknown": "Message status is unknown"
           },
           "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##title##21101",
           "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##description##54571"

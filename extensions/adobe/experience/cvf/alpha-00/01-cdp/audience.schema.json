@@ -11,7 +11,7 @@
   "description": "CDP audience data. Each entry represents an AEP audience.",
   "type": "object",
   "meta:extensible": true,
-  "meta:abstract": false,
+  "meta:abstract": true,
   "definitions": {
     "audience": {
       "properties": {
@@ -66,10 +66,6 @@
       }
     }
   },
-  "allOf": [
-    { "$ref": "https://ns.adobe.com/xdm/context/experienceevent" },
-    { "$ref": "https://ns.adobe.com/experience/cvf/alpha-00/cvf-common-properties" },
-    { "$ref": "#/definitions/audience" }
-  ],
+  "allOf": [{ "$ref": "#/definitions/audience" }],
   "meta:status": "experimental"
 }

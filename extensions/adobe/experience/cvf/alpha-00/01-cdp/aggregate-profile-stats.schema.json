@@ -11,7 +11,7 @@
   "description": "CDP aggregate profile statistics.",
   "type": "object",
   "meta:extensible": true,
-  "meta:abstract": false,
+  "meta:abstract": true,
   "definitions": {
     "aggregateProfileStats": {
       "properties": {
@@ -63,10 +63,6 @@
       }
     }
   },
-  "allOf": [
-    { "$ref": "https://ns.adobe.com/xdm/context/experienceevent" },
-    { "$ref": "https://ns.adobe.com/experience/cvf/alpha-00/cvf-common-properties" },
-    { "$ref": "#/definitions/aggregateProfileStats" }
-  ],
+  "allOf": [{ "$ref": "#/definitions/aggregateProfileStats" }],
   "meta:status": "experimental"
 }

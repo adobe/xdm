@@ -11,7 +11,7 @@
   "description": "CDP destination data.",
   "type": "object",
   "meta:extensible": true,
-  "meta:abstract": false,
+  "meta:abstract": true,
   "definitions": {
     "destination": {
       "properties": {
@@ -41,10 +41,6 @@
       }
     }
   },
-  "allOf": [
-    { "$ref": "https://ns.adobe.com/xdm/context/experienceevent" },
-    { "$ref": "https://ns.adobe.com/experience/cvf/alpha-00/cvf-common-properties" },
-    { "$ref": "#/definitions/destination" }
-  ],
+  "allOf": [{ "$ref": "#/definitions/destination" }],
   "meta:status": "experimental"
 }

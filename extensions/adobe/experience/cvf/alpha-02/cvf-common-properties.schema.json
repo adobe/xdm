@@ -12,7 +12,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "common": {
       "properties": {
@@ -27,7 +29,8 @@
             "snapshotTime": {
               "title": "Snapshot Time",
               "description": "Timestamp of the snapshot.",
-              "type": "number"
+              "type": "string",
+              "format": "date-time"
             },
             "sandbox": {
               "title": "Sandbox",
@@ -68,6 +71,10 @@
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/common" }],
-  "meta:status": "deprecated"
+  "allOf": [
+    {
+      "$ref": "#/definitions/common"
+    }
+  ],
+  "meta:status": "experimental"
 }

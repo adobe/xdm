@@ -12,9 +12,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "destination": {
       "properties": {
@@ -26,37 +24,16 @@
               "description": "Destination id, name, export mode, and related data.",
               "type": "object",
               "properties": {
-                "id": {
-                  "title": "ID",
-                  "description": "Destination identifier.",
-                  "type": "string"
-                },
-                "name": {
-                  "title": "Name",
-                  "type": "string"
-                },
-                "creationTime": {
-                  "title": "Creation Time",
-                  "description": "Destination creation timestamp.",
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "isActive": {
-                  "title": "Is Active",
-                  "type": "boolean"
-                },
-                "exportMode": {
-                  "title": "Export Mode",
-                  "description": "Export mode.",
-                  "type": "string"
-                },
+                "id": { "title": "ID", "description": "Destination identifier.", "type": "string" },
+                "name": { "title": "Name", "type": "string" },
+                "creationTime": { "title": "Creation Time", "description": "Destination creation timestamp.", "type": "number" },
+                "isActive": { "title": "Is Active", "type": "boolean" },
+                "exportMode": { "title": "Export Mode", "description": "Export mode.", "type": "string" },
                 "audiences": {
                   "title": "Audiences",
                   "description": "Audience names exported to this destination.",
                   "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "items": { "type": "string" }
                 }
               }
             }
@@ -65,10 +42,6 @@
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/destination"
-    }
-  ],
-  "meta:status": "experimental"
+  "allOf": [{ "$ref": "#/definitions/destination" }],
+  "meta:status": "deprecated"
 }

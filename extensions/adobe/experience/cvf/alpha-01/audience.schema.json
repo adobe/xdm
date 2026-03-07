@@ -12,9 +12,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "audience": {
       "properties": {
@@ -38,8 +36,7 @@
                 "creationTime": {
                   "title": "Creation Time",
                   "description": "Audience creation timestamp.",
-                  "type": "string",
-                  "format": "date-time"
+                  "type": "number"
                 },
                 "isActive": {
                   "title": "Is Active",
@@ -53,9 +50,7 @@
                 "numProfiles": {
                   "title": "Number of Profiles",
                   "type": "integer",
-                  "meta:xdmType": "long",
-                  "minimum": 0,
-                  "maximum": 9007199254740991
+                  "minimum": 0
                 },
                 "destinations": {
                   "title": "Destinations",
@@ -72,10 +67,6 @@
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/audience"
-    }
-  ],
-  "meta:status": "experimental"
+  "allOf": [{ "$ref": "#/definitions/audience" }],
+  "meta:status": "deprecated"
 }

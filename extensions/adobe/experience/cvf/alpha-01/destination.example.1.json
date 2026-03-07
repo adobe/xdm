@@ -9,11 +9,11 @@
         "tenantId": "Sample Value"
       }
     },
-    "snapshotTime": "2026-03-06T12:00:00.000Z",
+    "snapshotTime": 0,
     "destination": {
       "id": "Sample Value",
       "name": "Sample Value",
-      "creationTime": "2026-03-06T12:00:00.000Z",
+      "creationTime": 0,
       "isActive": false,
       "exportMode": "Sample Value",
       "audiences": [

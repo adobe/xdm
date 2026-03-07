@@ -5,14 +5,16 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/cvf/alpha-01/cdp/aggregate-profile-stats",
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-02/cdp/aggregate-profile-stats",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Cvf: Alpha01: Aggregate Profile Stats",
+  "title": "Cvf: Alpha02: Aggregate Profile Stats",
   "description": "CDP aggregate profile statistics.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "aggregateProfileStats": {
       "properties": {
@@ -29,33 +31,48 @@
                   "description": "Merge policy id and name.",
                   "type": "object",
                   "properties": {
-                    "id": { "title": "ID", "description": "Merge policy identifier (primaryId).", "type": "string" },
-                    "name": { "title": "Name", "type": "string" }
+                    "id": {
+                      "title": "ID",
+                      "description": "Merge policy identifier (primaryId).",
+                      "type": "string"
+                    },
+                    "name": {
+                      "title": "Name",
+                      "type": "string"
+                    }
                   }
                 },
                 "numAudienceActivatedProfiles": {
                   "title": "Number of Audience Activated Profiles",
                   "description": "Number of profiles activated by at least one audience.",
                   "type": "integer",
-                  "minimum": 0
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
                 },
                 "numIdentities": {
                   "title": "Number of Identities",
                   "description": "Total number of identities.",
                   "type": "integer",
-                  "minimum": 0
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
                 },
                 "numProfiles": {
                   "title": "Number of Profiles",
                   "description": "Total number of profiles.",
                   "type": "integer",
-                  "minimum": 0
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
                 },
                 "numMultiIdentityProfiles": {
                   "title": "Number of Multi-Identity Profiles",
                   "description": "Number of profiles with multiple identities.",
                   "type": "integer",
-                  "minimum": 0
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
                 }
               }
             }
@@ -64,6 +81,10 @@
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/aggregateProfileStats" }],
-  "meta:status": "deprecated"
+  "allOf": [
+    {
+      "$ref": "#/definitions/aggregateProfileStats"
+    }
+  ],
+  "meta:status": "experimental"
 }

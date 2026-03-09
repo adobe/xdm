@@ -12,6 +12,11 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/channelType": "MMS",
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profilenNumber": "12347986421",
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/origTimestamp": "2024-09-26T15:52:25+00:00",
+  "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/providerFeedbackStatus": "unknown",
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/providerStatus": "DeliveredToTerminal",
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/message": "Message delivered successfully"
+  },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/sms"
   },
@@ -19,6 +24,11 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": "marketing",
   "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": "like",
   "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": "react",
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/providerFeedbackStatus": "unknown",
+    "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/providerStatus": "read",
+    "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/message": "Message delivered successfully"
+  },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/whastApp"
   }

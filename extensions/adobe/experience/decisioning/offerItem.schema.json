@@ -159,6 +159,18 @@
             "description": "Content Reference Details supported through AJO or External Fragments",
             "$ref": "https://ns.adobe.com/experience/decisioning/fragment-metadata"
           }
+        },
+        "https://ns.adobe.com/experience/decisioning/offeritem/aemContentReferencesMap": {
+          "title": "AEM Content References",
+          "description": "Map of AEM content references (placement key to fragment reference). Same value type as contentReferencesMap but for AEM fragments only.",
+          "type": "object",
+          "xdm:type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "title": "Reference Details",
+            "description": "Fragment reference details (id, source, type, optional externalReference for AEM id, repo, model info)",
+            "$ref": "https://ns.adobe.com/experience/decisioning/fragment-metadata"
+          }
         }
       },
       "required": [

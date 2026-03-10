@@ -192,10 +192,10 @@
           "type": "object",
           "description": "Status section containing provider feedback details.",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/providerFeedbackStatus": {
-              "title": "Provider Feedback Status",
+            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/feedbackStatus": {
+              "title": "Feedback Status",
               "type": "string",
-              "description": "Raw feedback status as reported by the SMS provider before mapping to standard feedback status.",
+              "description": "Actual feedback status (mapped to standard enum).",
               "enum": [
                 "error",
                 "exclude",
@@ -219,15 +219,15 @@
                 "unknown": "Unknown feedback status"
               }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/providerStatus": {
-              "title": "Provider Status",
+            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/providerFeedbackStatus": {
+              "title": "Provider Feedback Status",
               "type": "string",
-              "description": "The exact status string or code as relayed directly from the SMS provider, without mapping or transformation."
+              "description": "Status as reported by the SMS provider (e.g. DeliveredToTerminal), before mapping."
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/message": {
               "title": "Message",
               "type": "string",
-              "description": "Message from the SMS provider."
+              "description": "Message from the SMS provider, either success or failure."
             }
           }
         },
@@ -267,10 +267,10 @@
           "type": "object",
           "description": "Status section containing provider feedback details.",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/providerFeedbackStatus": {
-              "title": "Provider Feedback Status",
+            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/feedbackStatus": {
+              "title": "Feedback Status",
               "type": "string",
-              "description": "Raw feedback status as reported by the WhatsApp provider before mapping to standard feedback status.",
+              "description": "Actual feedback status (mapped to standard enum).",
               "enum": [
                 "error",
                 "exclude",
@@ -294,15 +294,15 @@
                 "unknown": "Unknown feedback status"
               }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/providerStatus": {
-              "title": "Provider Status",
+            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/providerFeedbackStatus": {
+              "title": "Provider Feedback Status",
               "type": "string",
-              "description": "The exact status string or code as relayed directly from the WhatsApp provider, without mapping or transformation."
+              "description": "Status as reported by the WhatsApp provider (e.g. DeliveredToTerminal), before mapping."
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/message": {
               "title": "Message",
               "type": "string",
-              "description": "Message from the WhatsApp provider."
+              "description": "Message from the WhatsApp provider, either success or failure."
             }
           }
         },

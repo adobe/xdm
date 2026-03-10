@@ -68,5 +68,5 @@
     }
   },
   "allOf": [{ "$ref": "#/definitions/audience" }],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

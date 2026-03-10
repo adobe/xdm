@@ -5,14 +5,16 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/cvf/alpha-01/cvf-common-properties",
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-02/cvf-common-properties",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Cvf: Alpha01: Common Properties",
+  "title": "Cvf: Alpha02: Common Properties",
   "description": "Common CVF properties: category, snapshot time, and sandbox (and org) from which the data was collected.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "common": {
       "properties": {
@@ -27,7 +29,8 @@
             "snapshotTime": {
               "title": "Snapshot Time",
               "description": "Timestamp of the snapshot.",
-              "type": "number"
+              "type": "string",
+              "format": "date-time"
             },
             "sandbox": {
               "title": "Sandbox",
@@ -68,6 +71,10 @@
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/common" }],
-  "meta:status": "deprecated"
+  "allOf": [
+    {
+      "$ref": "#/definitions/common"
+    }
+  ],
+  "meta:status": "experimental"
 }

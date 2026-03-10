@@ -69,5 +69,5 @@
     }
   },
   "allOf": [{ "$ref": "#/definitions/common" }],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

@@ -43,5 +43,5 @@
     }
   },
   "allOf": [{ "$ref": "#/definitions/destination" }],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

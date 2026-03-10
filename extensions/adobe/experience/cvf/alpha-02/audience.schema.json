@@ -5,13 +5,16 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/cvf/alpha-00/cdp/schemas/audience",
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-02/cdp/audience",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Cvf: Alpha: Audience",
+  "title": "Cvf: Alpha02: Audience",
   "description": "CDP audience data. Each entry represents an AEP audience.",
   "type": "object",
   "meta:extensible": true,
-  "meta:abstract": false,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "audience": {
       "properties": {
@@ -35,7 +38,8 @@
                 "creationTime": {
                   "title": "Creation Time",
                   "description": "Audience creation timestamp.",
-                  "type": "number"
+                  "type": "string",
+                  "format": "date-time"
                 },
                 "isActive": {
                   "title": "Is Active",
@@ -49,7 +53,9 @@
                 "numProfiles": {
                   "title": "Number of Profiles",
                   "type": "integer",
-                  "minimum": 0
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
                 },
                 "destinations": {
                   "title": "Destinations",
@@ -67,9 +73,9 @@
     }
   },
   "allOf": [
-    { "$ref": "https://ns.adobe.com/xdm/context/experienceevent" },
-    { "$ref": "https://ns.adobe.com/experience/cvf/alpha-00/cvf-common-properties" },
-    { "$ref": "#/definitions/audience" }
+    {
+      "$ref": "#/definitions/audience"
+    }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "experimental"
 }

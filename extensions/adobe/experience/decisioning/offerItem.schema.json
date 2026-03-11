@@ -162,7 +162,7 @@
         },
         "https://ns.adobe.com/experience/decisioning/offeritem/aemContentReferencesMap": {
           "title": "AEM Content References",
-          "description": "Map of AEM content references (placement key to fragment reference). Same value type as contentReferencesMap but for AEM fragments only.",
+          "description": "AEM content references to be associated with offer.",
           "type": "object",
           "xdm:type": "object",
           "meta:xdmType": "map",

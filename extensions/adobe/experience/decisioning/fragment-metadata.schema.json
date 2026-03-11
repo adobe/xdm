@@ -56,7 +56,7 @@
         },
         "xdm:externalReference": {
           "title": "External Reference",
-          "description": "Reference details when fragment is from an external source (e.g. AEM). Contains external id, origin, and metadata (repo, model info).",
+          "description": "Reference details when fragment is from an external source. Contains external id, origin, and metadata (repo, model info).",
           "$ref": "https://ns.adobe.com/experience/decisioning/external-fragment"
         }
       },

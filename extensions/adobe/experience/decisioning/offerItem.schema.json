@@ -168,7 +168,7 @@
           "meta:xdmType": "map",
           "additionalProperties": {
             "title": "Reference Details",
-            "description": "Fragment reference details (id, source, type, optional externalReference for AEM id, repo, model info)",
+            "description": "Content Reference Details supported through AJO or External Fragment",
             "$ref": "https://ns.adobe.com/experience/decisioning/fragment-metadata"
           }
         }

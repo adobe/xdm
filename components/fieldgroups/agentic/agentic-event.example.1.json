@@ -33,6 +33,7 @@
             "xdm:name": "FAQ Retrieval",
             "xdm:version": "1.2.0",
             "xdm:score": 0.89,
+            "xdm:failed": true,
             "xdm:parameters": [
               {
                 "key": "maxResults",

@@ -25,6 +25,17 @@
           "title": "Booked Meeting in Concierge",
           "type": "object",
           "properties": {
+            "xdm:conciergeDetails": {
+              "title": "Concierge Details",
+              "type": "object",
+              "properties": {
+                "xdm:conciergeName": {
+                  "title": "Concierge Name",
+                  "type": "string",
+                  "description": "Name of the Concierge."
+                }
+              }
+            },
             "xdm:consultantDetails": {
               "title": "Consultant details",
               "type": "object",
@@ -37,12 +48,12 @@
                 "xdm:consultantEmail": {
                   "title": "Consultant Email",
                   "type": "string",
-                  "description": "Email of the Consultant"
+                  "description": "Email address of the sales representative. Enables automated notifications and calendar integration."
                 },
                 "xdm:consultantName": {
                   "title": "Consultant Name",
                   "type": "string",
-                  "description": "Name of the Consultant"
+                  "description": "Name of the sales representative with whom the meeting is scheduled. Enables sales team tracking and performance measurement."
                 }
               }
             },
@@ -65,6 +76,22 @@
                   "title": "Routing Type",
                   "type": "string",
                   "description": "Routing type used for the meeting"
+                },
+                "xdm:durationInMinutes": {
+                  "title": "Meeting Duration",
+                  "type": "integer",
+                  "description": "Duration of the scheduled meeting in minutes. Helps in calendar scheduling and time allocation."
+                },
+                "xdm:createdAt": {
+                  "title": "Created Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "ISO 8601 timestamp when the meeting was booked. Enables tracking of booking patterns and conversion timing."
+                },
+                "xdm:comments": {
+                  "title": "Meeting Comments",
+                  "type": "string",
+                  "description": "Comments from the meeting. Sales rep captures the context that can be used for other channels."
                 }
               }
             },

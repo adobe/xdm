@@ -1,0 +1,37 @@
+{
+  "xdm:paidMedia": {
+    "xdm:qualityMetrics": {
+      "xdm:relevanceScore": 9.0,
+      "xdm:engagementScore": 8.2,
+      "xdm:conversionScore": 8.8,
+      "xdm:overallQualityScore": 8.67,
+      "xdm:negativeActions": 25,
+      "xdm:negativeActionRate": 0.0005,
+      "xdm:positiveActions": 12345,
+      "xdm:positiveActionRate": 0.247,
+      "xdm:brandSafetyScore": 9.5,
+      "xdm:viewabilityScore": 8.5,
+      "xdm:fraudScore": 0.5,
+      "xdm:invalidTrafficRate": 0.02,
+      "xdm:botTrafficRate": 0.015,
+      "xdm:humanTrafficRate": 0.985,
+      "xdm:attentionScore": 7.8,
+      "xdm:dwellTime": 4.2,
+      "xdm:interactionDepth": 3.5,
+      "xdm:creativeFatigue": 2.1,
+      "xdm:frequencyFatigue": 1.8,
+      "xdm:audienceRelevance": 8.9,
+      "xdm:contextualRelevance": 8.5,
+      "xdm:emotionalResonance": 7.6,
+      "xdm:memorabilityScore": 7.2,
+      "xdm:brandLiftScore": 6.8,
+      "xdm:intentLiftScore": 7.4,
+      "xdm:qualityTrend": "improving",
+      "xdm:benchmarkComparison": {
+        "xdm:industryAverage": 7.5,
+        "xdm:percentileRank": 78,
+        "xdm:competitorAverage": 7.8
+      }
+    }
+  }
+}

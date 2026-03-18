@@ -38,6 +38,11 @@
               "type": "string",
               "description": "ID to group several turns together"
             },
+            "xdm:conversationName": {
+              "title": "Conversation Name",
+              "type": "string",
+              "description": "Name given to a conversation representing it's overall context"
+            },
             "xdm:turnID": {
               "title": "Turn ID",
               "type": "string",
@@ -303,5 +308,5 @@
       "$ref": "#/definitions/conversation"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

@@ -1,0 +1,160 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/dimensional-breakdowns",
+  "title": "Core Paid Media Dimensional Breakdowns",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Dimensional breakdown fields for paid media metrics aggregation",
+  "definitions": {
+    "dimensional-breakdowns": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:breakdownType": {
+              "type": "string",
+              "title": "Breakdown Type",
+              "description": "Indicates which dimension this metrics row is broken down by (GenStudio migration aid)"
+            },
+            "xdm:dimensionalBreakdowns": {
+              "type": "object",
+              "title": "Dimensional Breakdowns",
+              "description": "Dimensional breakdowns for metrics aggregation",
+              "properties": {
+                "xdm:deviceType": {
+                  "type": "string",
+                  "title": "Device Type",
+                  "description": "Device type for this metrics record",
+                  "enum": ["desktop", "mobile", "tablet", "tv", "other"],
+                  "meta:enum": {
+                    "desktop": "Desktop",
+                    "mobile": "Mobile",
+                    "tablet": "Tablet",
+                    "tv": "Connected TV",
+                    "other": "Other Device"
+                  }
+                },
+                "xdm:placement": {
+                  "type": "string",
+                  "title": "Placement",
+                  "description": "Ad placement for this metrics record"
+                },
+                "xdm:ageGroup": {
+                  "type": "string",
+                  "title": "Age Group",
+                  "description": "Age group demographic breakdown"
+                },
+                "xdm:age": {
+                  "type": "string",
+                  "title": "Age",
+                  "description": "Alias of ageGroup for migration"
+                },
+                "xdm:gender": {
+                  "type": "string",
+                  "title": "Gender",
+                  "description": "Gender demographic breakdown",
+                  "enum": ["male", "female", "all", "unknown"],
+                  "meta:enum": {
+                    "male": "Male",
+                    "female": "Female",
+                    "all": "All Genders",
+                    "unknown": "Unknown/Unspecified"
+                  }
+                },
+                "xdm:country": {
+                  "type": "string",
+                  "title": "Country",
+                  "description": "Country for geographic breakdown (ISO country code)"
+                },
+                "xdm:region": {
+                  "type": "string",
+                  "title": "Region",
+                  "description": "Region/state for geographic breakdown"
+                },
+                "xdm:city": {
+                  "type": "string",
+                  "title": "City",
+                  "description": "City for geographic breakdown"
+                },
+                "xdm:language": {
+                  "type": "string",
+                  "title": "Language",
+                  "description": "Language for demographic breakdown"
+                },
+                "xdm:interestCategory": {
+                  "type": "string",
+                  "title": "Interest Category",
+                  "description": "Interest category for targeting breakdown"
+                },
+                "xdm:behaviorCategory": {
+                  "type": "string",
+                  "title": "Behavior Category",
+                  "description": "Behavior category for targeting breakdown"
+                },
+                "xdm:audienceSegment": {
+                  "type": "string",
+                  "title": "Audience Segment",
+                  "description": "Custom audience segment identifier"
+                },
+                "xdm:campaignObjective": {
+                  "type": "string",
+                  "title": "Campaign Objective",
+                  "description": "Campaign objective for context in multi-level reports"
+                },
+                "xdm:optimizationGoal": {
+                  "type": "string",
+                  "title": "Optimization Goal",
+                  "description": "Optimization goal for context in multi-level reports"
+                },
+                "xdm:creativeFormat": {
+                  "type": "string",
+                  "title": "Creative Format",
+                  "description": "Creative format breakdown (image, video, carousel, etc.)"
+                },
+                "xdm:adPosition": {
+                  "type": "string",
+                  "title": "Ad Position",
+                  "description": "Position of the ad on the platform"
+                },
+                "xdm:position": {
+                  "type": "string",
+                  "title": "Position",
+                  "description": "Alias of adPosition for migration"
+                },
+                "xdm:platform": {
+                  "type": "string",
+                  "title": "Platform",
+                  "description": "Platform breakdown (e.g., facebook, instagram, search, display)"
+                },
+                "xdm:timeOfDay": {
+                  "type": "string",
+                  "title": "Time of Day",
+                  "description": "Time of day breakdown (morning, afternoon, evening, night)"
+                },
+                "xdm:dayOfWeek": {
+                  "type": "string",
+                  "title": "Day of Week",
+                  "description": "Day of week breakdown"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/dimensional-breakdowns"
+    }
+  ],
+  "meta:status": "experimental"
+}

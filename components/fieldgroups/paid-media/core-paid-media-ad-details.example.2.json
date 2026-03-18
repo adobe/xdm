@@ -1,0 +1,57 @@
+{
+  "xdm:paidMedia": {
+    "xdm:adDetails": {
+      "xdm:adType": "image",
+      "xdm:reviewStatus": "approved",
+      "xdm:reviewStatusReasons": [],
+      "xdm:deliveryStatus": "active",
+      "xdm:isPinDeleted": false,
+      "xdm:isRemovable": true,
+      "xdm:payingAdvertiserName": "Acme Corporation",
+      "xdm:socialMediaProperties": {
+        "xdm:effectiveObjectStoryID": "post_123456789_111222333",
+        "xdm:sourceInstagramMediaID": "ig_acmecorp_media_111222333",
+        "xdm:isShareable": true,
+        "xdm:favoriteDisplayMode": "default"
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_ad_id",
+          "xdm:stringValue": "23851234567891111"
+        },
+        {
+          "xdm:fieldName": "meta_adset_id",
+          "xdm:stringValue": "23851234567892222"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_id",
+          "xdm:stringValue": "23851234567893333"
+        },
+        {
+          "xdm:fieldName": "meta_image_hash",
+          "xdm:stringValue": "abc123def456ghi789jkl012"
+        },
+        {
+          "xdm:fieldName": "meta_placement_optimization",
+          "xdm:stringValue": "automatic"
+        },
+        {
+          "xdm:fieldName": "meta_objective",
+          "xdm:stringValue": "OUTCOME_SALES"
+        },
+        {
+          "xdm:fieldName": "meta_buying_type",
+          "xdm:stringValue": "AUCTION"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITH_BID_CAP"
+        },
+        {
+          "xdm:fieldName": "meta_dynamic_creative",
+          "xdm:stringValue": "true"
+        }
+      ]
+    }
+  }
+}

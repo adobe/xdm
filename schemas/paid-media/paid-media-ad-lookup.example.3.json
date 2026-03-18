@@ -1,0 +1,171 @@
+{
+  "xdm:entityType": "ad",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:campaignID": "9876543210",
+    "xdm:campaignGUID": "google_ads_1234567890_9876543210",
+    "xdm:adGroupID": "5555666677",
+    "xdm:adGroupGUID": "google_ads_1234567890_5555666677",
+    "xdm:adID": "8888999900",
+    "xdm:adGUID": "google_ads_1234567890_8888999900",
+    "xdm:experienceID": "creative_rda_111222333",
+    "xdm:experienceGUID": "google_ads_1234567890_creative_rda_111222333",
+    "xdm:hierarchyPath": "1234567890/9876543210/5555666677/8888999900",
+    "xdm:metadata": {
+      "xdm:name": "Responsive Display Ad - Tech Solutions",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/New_York",
+      "xdm:createdTime": "2025-09-20T14:00:00Z",
+      "xdm:updatedTime": "2025-11-09T08:00:00Z",
+      "xdm:startTime": "2025-10-01T00:00:00Z"
+    },
+    "xdm:adDetails": {
+      "xdm:adType": "responsive",
+      "xdm:adFormat": "responsive_display_ad",
+      "xdm:reviewStatus": "approved",
+      "xdm:deliveryStatus": "active",
+      "xdm:isPinDeleted": false,
+      "xdm:isRemovable": true,
+      "xdm:creativeDetails": {
+        "xdm:creativeID": "creative_rda_111222333",
+        "xdm:creativeName": "Responsive Display Ad - Tech Solutions",
+        "xdm:creativeType": "responsive_display",
+        "xdm:creativeFormat": "responsive_display_ad",
+        "xdm:creativeVersion": "v3.2",
+        "xdm:creativeTemplate": "responsive_display_standard",
+        "xdm:dynamicCreative": true,
+        "xdm:personalized": true,
+        "xdm:localized": true,
+        "xdm:locale": "en_US",
+        "xdm:brandID": "brand_acme_123",
+        "xdm:campaignTheme": "tech_solutions_2025"
+      },
+      "xdm:adReviewDetails": {
+        "xdm:reviewStatus": "approved",
+        "xdm:reviewDate": "2025-09-21T10:00:00Z",
+        "xdm:reviewerID": "google_reviewer_123",
+        "xdm:reviewNotes": "Approved - complies with Google Ads policies",
+        "xdm:policyViolations": [],
+        "xdm:appealStatus": "not_applicable",
+        "xdm:lastModifiedDate": "2025-09-20T16:00:00Z",
+        "xdm:autoApproved": false,
+        "xdm:requiresManualReview": true
+      },
+      "xdm:deliveryDetails": {
+        "xdm:deliveryStatus": "active",
+        "xdm:effectiveStatus": "active",
+        "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+        "xdm:pacing": "standard",
+        "xdm:deliveryEstimate": "good",
+        "xdm:learningPhase": "completed",
+        "xdm:lastDeliveryCheck": "2025-11-10T07:00:00Z",
+        "xdm:estimatedDailyReach": 95000,
+        "xdm:saturationLevel": "medium"
+      },
+      "xdm:socialMediaProperties": {
+        "xdm:postID": "",
+        "xdm:pageID": "",
+        "xdm:instagramAccountID": "",
+        "xdm:allowComments": false,
+        "xdm:allowSharing": false,
+        "xdm:allowLikes": false,
+        "xdm:commentCount": 0,
+        "xdm:shareCount": 0,
+        "xdm:likeCount": 0,
+        "xdm:reactionCount": 0,
+        "xdm:saveCount": 0,
+        "xdm:hideCount": 0,
+        "xdm:reportCount": 0,
+        "xdm:organicImpressions": 0,
+        "xdm:organicReach": 0,
+        "xdm:viralImpressions": 0,
+        "xdm:viralReach": 0
+      },
+      "xdm:callToAction": {
+        "xdm:type": "learn_more",
+        "xdm:text": "Learn More",
+        "xdm:url": "https://www.acmecorp.com/solutions?utm_source=google&utm_medium=display&utm_campaign=tech_solutions",
+        "xdm:displayUrl": "acmecorp.com/solutions",
+        "xdm:deepLink": "",
+        "xdm:trackingTemplate": "{lpurl}?ad_id={creative}&placement={placement}",
+        "xdm:utmParameters": {
+          "xdm:source": "google",
+          "xdm:medium": "display",
+          "xdm:campaign": "tech_solutions",
+          "xdm:content": "responsive_display",
+          "xdm:term": ""
+        }
+      },
+      "xdm:linkProperties": {
+        "xdm:destinationURL": "https://www.acmecorp.com/solutions",
+        "xdm:displayURL": "acmecorp.com",
+        "xdm:urlTags": "utm_source=google&utm_medium=display&utm_campaign=tech_solutions",
+        "xdm:trackingPixels": [],
+        "xdm:clickTrackers": [],
+        "xdm:conversionTracking": true,
+        "xdm:conversionPixelID": ""
+      },
+      "xdm:appProperties": {
+        "xdm:appID": "",
+        "xdm:appName": "",
+        "xdm:appPlatform": "",
+        "xdm:appStoreURL": "",
+        "xdm:appDeepLink": "",
+        "xdm:appEventTracking": false,
+        "xdm:appEventName": "",
+        "xdm:sdkVersion": ""
+      },
+      "xdm:leadGenProperties": {
+        "xdm:formID": "form_not_applicable",
+        "xdm:formType": "not_applicable",
+        "xdm:instantForm": false,
+        "xdm:privacyPolicyURL": "https://www.acmecorp.com/privacy",
+        "xdm:customDisclaimer": ""
+      },
+      "xdm:interactionProperties": {
+        "xdm:allowInteraction": true,
+        "xdm:interactionType": "click",
+        "xdm:swipeUpEnabled": false,
+        "xdm:pollEnabled": false,
+        "xdm:quizEnabled": false,
+        "xdm:gamificationEnabled": false,
+        "xdm:arEnabled": false,
+        "xdm:threeDEnabled": false
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_ad_id",
+          "xdm:stringValue": "8888999900"
+        },
+        {
+          "xdm:fieldName": "google_ad_group_id",
+          "xdm:stringValue": "5555666677"
+        },
+        {
+          "xdm:fieldName": "google_campaign_id",
+          "xdm:stringValue": "9876543210"
+        },
+        {
+          "xdm:fieldName": "google_ad_type",
+          "xdm:stringValue": "RESPONSIVE_DISPLAY_AD"
+        },
+        {
+          "xdm:fieldName": "google_ad_status",
+          "xdm:stringValue": "ENABLED"
+        },
+        {
+          "xdm:fieldName": "google_policy_summary_approval_status",
+          "xdm:stringValue": "APPROVED"
+        },
+        {
+          "xdm:fieldName": "google_ad_strength",
+          "xdm:stringValue": "EXCELLENT"
+        }
+      ]
+    }
+  }
+}

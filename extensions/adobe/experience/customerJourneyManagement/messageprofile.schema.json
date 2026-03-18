@@ -187,6 +187,50 @@
           "format": "date-time",
           "description": "Timestamp from Provider"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status": {
+          "title": "Status",
+          "type": "object",
+          "description": "Status section containing provider feedback details.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/feedbackStatus": {
+              "title": "Feedback Status",
+              "type": "string",
+              "description": "Actual feedback status (mapped to standard enum).",
+              "enum": [
+                "error",
+                "exclude",
+                "sent",
+                "bounce",
+                "delay",
+                "duplicate",
+                "denylist",
+                "delivered",
+                "unknown"
+              ],
+              "meta:enum": {
+                "error": "Message processing failed",
+                "exclude": "Message profile filtered out",
+                "sent": "Message sent",
+                "bounce": "Message bounced",
+                "delay": "Message delayed",
+                "duplicate": "Duplicate message skipped",
+                "denylist": "Invalid destination skipped",
+                "delivered": "Message Delivered",
+                "unknown": "Unknown feedback status"
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/providerFeedbackStatus": {
+              "title": "Provider Feedback Status",
+              "type": "string",
+              "description": "Status as reported by the SMS provider (e.g. DeliveredToTerminal), before mapping."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/message": {
+              "title": "Message",
+              "type": "string",
+              "description": "Message from the SMS provider, either success or failure."
+            }
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
           "title": "whatsApp Message Type",
           "type": "string",
@@ -218,20 +262,64 @@
           "format": "date-time",
           "description": "Timestamp from Meta / WhatsApp"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status": {
+          "title": "Status",
+          "type": "object",
+          "description": "Status section containing provider feedback details.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/feedbackStatus": {
+              "title": "Feedback Status",
+              "type": "string",
+              "description": "Actual feedback status (mapped to standard enum).",
+              "enum": [
+                "error",
+                "exclude",
+                "sent",
+                "bounce",
+                "delay",
+                "duplicate",
+                "denylist",
+                "delivered",
+                "unknown"
+              ],
+              "meta:enum": {
+                "error": "Message processing failed",
+                "exclude": "Message profile filtered out",
+                "sent": "Message sent",
+                "bounce": "Message bounced",
+                "delay": "Message delayed",
+                "duplicate": "Duplicate message skipped",
+                "denylist": "Invalid destination skipped",
+                "delivered": "Message Delivered",
+                "unknown": "Unknown feedback status"
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/providerFeedbackStatus": {
+              "title": "Provider Feedback Status",
+              "type": "string",
+              "description": "Status as reported by the WhatsApp provider (e.g. DeliveredToTerminal), before mapping."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/message": {
+              "title": "Message",
+              "type": "string",
+              "description": "Message from the WhatsApp provider, either success or failure."
+            }
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
-          "title": "Emoji received as a reaction from WhatsApp",
+          "title": "Response Content",
           "type": "string",
-          "description": "Emoji received as a reaction from WhatsApp"
+          "description": "Content of the user response - emoji for reactions, or message text for replies to a specific message"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionMessageID": {
-          "title": "Reaction on the mesage ID ",
+          "title": "Original Message ID",
           "type": "string",
-          "description": "Reaction on the mesage ID"
+          "description": "ID of the original message being responded to (for reactions or replies)"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": {
-          "title": "Action from WhatsApp ",
+          "title": "Response Action Type",
           "type": "string",
-          "description": "Action from WhatsApp"
+          "description": "Type of response action from WhatsApp - react, unreact, or reply"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedTitle": {
           "title": "User-selected title from WhatsApp ",

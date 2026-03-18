@@ -1,0 +1,41 @@
+{
+  "xdm:geoTargeting": {
+    "xdm:countries": ["US", "CA", "GB"],
+    "xdm:regions": ["California", "New York", "Ontario"],
+    "xdm:cities": ["San Francisco", "New York", "Toronto"]
+  },
+  "xdm:demographicTargeting": {
+    "xdm:ageRanges": [
+      {
+        "xdm:minAge": 25,
+        "xdm:maxAge": 34
+      },
+      {
+        "xdm:minAge": 35,
+        "xdm:maxAge": 44
+      }
+    ],
+    "xdm:genders": ["all"],
+    "xdm:languages": ["en-US", "en-CA", "en-GB"]
+  },
+  "xdm:interestTargeting": {
+    "xdm:interests": ["Technology", "E-commerce", "Fashion"],
+    "xdm:behaviors": ["Online Shoppers", "Frequent Travelers"],
+    "xdm:customAudiences": [
+      {
+        "xdm:audienceID": "aud-12345",
+        "xdm:audienceName": "Website Visitors - Last 30 Days",
+        "xdm:audienceType": "retargeting"
+      }
+    ]
+  },
+  "xdm:deviceTargeting": {
+    "xdm:deviceTypes": ["mobile", "desktop"],
+    "xdm:operatingSystems": ["iOS", "Android", "Windows", "macOS"],
+    "xdm:browsers": ["Chrome", "Safari", "Firefox"]
+  },
+  "xdm:placementTargeting": {
+    "xdm:placements": ["feed", "stories", "search"],
+    "xdm:publisherCategories": ["News", "Entertainment", "Technology"]
+  }
+}

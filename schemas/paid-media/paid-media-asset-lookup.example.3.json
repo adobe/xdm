@@ -1,0 +1,170 @@
+{
+  "xdm:entityType": "asset",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:assetID": "222333444555",
+    "xdm:assetGUID": "google_ads_1234567890_asset_222333444555",
+    "xdm:metadata": {
+      "xdm:name": "Tech Solutions - Product Image 1",
+      "xdm:status": "active",
+      "xdm:createdTime": "2025-09-18T11:00:00Z",
+      "xdm:updatedTime": "2025-10-05T14:00:00Z"
+    },
+    "xdm:assetDetails": {
+      "xdm:assetType": "image",
+      "xdm:assetFormat": "png",
+      "xdm:assetSubType": "marketing_image",
+      "xdm:assetCategory": "product",
+      "xdm:assetSource": "uploaded",
+      "xdm:assetLibrary": "google_ads_asset_library",
+      "xdm:assetOwner": "acme_corp",
+      "xdm:assetPermissions": "private",
+      "xdm:isStockAsset": false,
+      "xdm:stockProvider": "",
+      "xdm:stockAssetID": "",
+      "xdm:licenseType": "owned",
+      "xdm:rightsManagement": {
+        "xdm:copyrightOwner": "Acme Corporation",
+        "xdm:licenseExpiration": "",
+        "xdm:usageRights": "unlimited",
+        "xdm:geographicRestrictions": [],
+        "xdm:platformRestrictions": [],
+        "xdm:exclusivityPeriod": ""
+      },
+      "xdm:fileProperties": {
+        "xdm:fileName": "tech_solutions_product_1_1200x1200.png",
+        "xdm:fileSize": 3456789,
+        "xdm:fileSizeUnit": "bytes",
+        "xdm:fileHash": "sha256:pqr678stu901vwx234yz567abc123def456ghi789jkl012mno345",
+        "xdm:mimeType": "image/png",
+        "xdm:encoding": "",
+        "xdm:bitrate": 0,
+        "xdm:bitrateUnit": "",
+        "xdm:colorSpace": "sRGB",
+        "xdm:colorDepth": 32,
+        "xdm:compressionType": "lossless"
+      },
+      "xdm:urlProperties": {
+        "xdm:assetURL": "https://googleads.g.doubleclick.net/pagead/imgad?id=222333444555",
+        "xdm:thumbnailURL": "https://googleads.g.doubleclick.net/pagead/imgad?id=222333444555&sz=150x150",
+        "xdm:previewURL": "https://ads.google.com/aw/assets/preview/222333444555",
+        "xdm:downloadURL": "https://ads.google.com/aw/assets/download/222333444555",
+        "xdm:cdnURL": "https://cdn.acmecorp.com/assets/tech_solutions_product_1.png",
+        "xdm:streamingURL": "",
+        "xdm:embedCode": ""
+      },
+      "xdm:imageProperties": {
+        "xdm:width": 1200,
+        "xdm:height": 1200,
+        "xdm:aspectRatio": "1:1",
+        "xdm:orientation": "square",
+        "xdm:resolution": 300,
+        "xdm:resolutionUnit": "dpi",
+        "xdm:format": "png",
+        "xdm:transparency": true,
+        "xdm:animated": false,
+        "xdm:frameCount": 1,
+        "xdm:colorProfile": "sRGB IEC61966-2.1",
+        "xdm:hasAlphaChannel": true,
+        "xdm:imageQuality": "high",
+        "xdm:optimizedForWeb": true,
+        "xdm:progressive": false
+      },
+      "xdm:contentProperties": {
+        "xdm:title": "Acme Pro X - Professional Software Solution",
+        "xdm:description": "Transform your business with our cutting-edge software platform designed for modern enterprises.",
+        "xdm:headline": "Professional Software Solution",
+        "xdm:bodyText": "Streamline operations and boost productivity",
+        "xdm:callToAction": "Learn More",
+        "xdm:brandName": "Acme Corp",
+        "xdm:productName": "Acme Pro X",
+        "xdm:tagline": "Built for Excellence",
+        "xdm:keywords": [
+          "software",
+          "enterprise",
+          "productivity",
+          "business",
+          "technology"
+        ],
+        "xdm:hashtags": [],
+        "xdm:mentions": [],
+        "xdm:language": "en",
+        "xdm:locale": "en_US"
+      },
+      "xdm:creativeElements": {
+        "xdm:primaryColor": "#0066CC",
+        "xdm:secondaryColor": "#FFFFFF",
+        "xdm:accentColor": "#00CC66",
+        "xdm:backgroundColor": "transparent",
+        "xdm:textColor": "#333333",
+        "xdm:fontFamily": "Roboto",
+        "xdm:logoIncluded": true,
+        "xdm:logoPosition": "center",
+        "xdm:brandingLevel": "moderate",
+        "xdm:visualStyle": "clean",
+        "xdm:mood": "professional",
+        "xdm:tone": "informative"
+      },
+      "xdm:performanceMetadata": {
+        "xdm:assetScore": 8.2,
+        "xdm:qualityScore": 9.0,
+        "xdm:relevanceScore": 8.5,
+        "xdm:engagementScore": 7.8,
+        "xdm:creativeFatigue": 0.35,
+        "xdm:freshnessScore": 0.75,
+        "xdm:adStrength": "good",
+        "xdm:predictedPerformance": "medium_high",
+        "xdm:benchmarkComparison": "above_average"
+      },
+      "xdm:usageTracking": {
+        "xdm:timesUsed": 15,
+        "xdm:activeCampaigns": 3,
+        "xdm:activeAdGroups": 4,
+        "xdm:activeAds": 6,
+        "xdm:firstUsedDate": "2025-10-01T00:00:00Z",
+        "xdm:lastUsedDate": "2025-11-09T10:00:00Z",
+        "xdm:totalImpressions": 1850000,
+        "xdm:totalClicks": 52000,
+        "xdm:totalSpend": 18500
+      },
+      "xdm:reviewStatus": {
+        "xdm:status": "approved",
+        "xdm:reviewDate": "2025-09-19T08:00:00Z",
+        "xdm:reviewerID": "google_reviewer_456",
+        "xdm:reviewNotes": "Approved - complies with Google Ads policies",
+        "xdm:policyViolations": [],
+        "xdm:appealStatus": "not_applicable",
+        "xdm:autoApproved": false,
+        "xdm:requiresManualReview": true
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_asset_id",
+          "xdm:stringValue": "222333444555"
+        },
+        {
+          "xdm:fieldName": "google_asset_name",
+          "xdm:stringValue": "Tech Solutions - Product Image 1"
+        },
+        {
+          "xdm:fieldName": "google_asset_type",
+          "xdm:stringValue": "IMAGE"
+        },
+        {
+          "xdm:fieldName": "google_upload_date",
+          "xdm:stringValue": "2025-09-18T11:00:00Z"
+        },
+        {
+          "xdm:fieldName": "google_asset_status",
+          "xdm:stringValue": "ENABLED"
+        },
+        {
+          "xdm:fieldName": "google_asset_performance_label",
+          "xdm:stringValue": "GOOD"
+        }
+      ]
+    }
+  }
+}

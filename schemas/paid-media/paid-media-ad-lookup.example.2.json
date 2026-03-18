@@ -1,0 +1,180 @@
+{
+  "xdm:entityType": "ad",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:campaignID": "23851234567890789",
+    "xdm:campaignGUID": "meta_act_123456789012345_23851234567890789",
+    "xdm:adGroupID": "23851234567890456",
+    "xdm:adGroupGUID": "meta_act_123456789012345_23851234567890456",
+    "xdm:adID": "23851234567890124",
+    "xdm:adGUID": "meta_act_123456789012345_23851234567890124",
+    "xdm:experienceID": "creative_img_456789123",
+    "xdm:experienceGUID": "meta_act_123456789012345_creative_img_456789123",
+    "xdm:hierarchyPath": "act_123456789012345/23851234567890789/23851234567890456/23851234567890124",
+    "xdm:metadata": {
+      "xdm:name": "Holiday Sale - Hero Banner Ad",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/Los_Angeles",
+      "xdm:createdTime": "2025-11-01T10:00:00Z",
+      "xdm:updatedTime": "2025-11-09T11:00:00Z",
+      "xdm:startTime": "2025-11-01T00:00:00Z",
+      "xdm:endTime": "2025-11-30T23:59:59Z"
+    },
+    "xdm:adDetails": {
+      "xdm:adType": "image",
+      "xdm:adFormat": "single_image",
+      "xdm:reviewStatus": "approved",
+      "xdm:deliveryStatus": "active",
+      "xdm:isPinDeleted": false,
+      "xdm:isRemovable": true,
+      "xdm:creativeDetails": {
+        "xdm:creativeID": "creative_img_456789123",
+        "xdm:creativeName": "Holiday Sale - Hero Banner",
+        "xdm:creativeType": "image",
+        "xdm:creativeFormat": "feed_image",
+        "xdm:creativeVersion": "v1.0",
+        "xdm:creativeTemplate": "image_standard",
+        "xdm:dynamicCreative": false,
+        "xdm:personalized": false,
+        "xdm:localized": true,
+        "xdm:locale": "en_US",
+        "xdm:brandID": "brand_acme_123",
+        "xdm:campaignTheme": "holiday_2025"
+      },
+      "xdm:adReviewDetails": {
+        "xdm:reviewStatus": "approved",
+        "xdm:reviewDate": "2025-11-01T12:00:00Z",
+        "xdm:reviewerID": "meta_reviewer_789",
+        "xdm:reviewNotes": "Approved - meets all policy requirements",
+        "xdm:policyViolations": [],
+        "xdm:appealStatus": "not_applicable",
+        "xdm:lastModifiedDate": "2025-11-01T09:30:00Z",
+        "xdm:autoApproved": true,
+        "xdm:requiresManualReview": false
+      },
+      "xdm:deliveryDetails": {
+        "xdm:deliveryStatus": "active",
+        "xdm:effectiveStatus": "active",
+        "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+        "xdm:pacing": "standard",
+        "xdm:deliveryEstimate": "excellent",
+        "xdm:learningPhase": "completed",
+        "xdm:lastDeliveryCheck": "2025-11-10T08:00:00Z",
+        "xdm:estimatedDailyReach": 85000,
+        "xdm:saturationLevel": "low"
+      },
+      "xdm:socialMediaProperties": {
+        "xdm:postID": "post_123456789_987654322",
+        "xdm:pageID": "page_acmecorp_official",
+        "xdm:instagramAccountID": "ig_acmecorp",
+        "xdm:allowComments": true,
+        "xdm:allowSharing": true,
+        "xdm:allowLikes": true,
+        "xdm:commentCount": 856,
+        "xdm:shareCount": 623,
+        "xdm:likeCount": 6234,
+        "xdm:reactionCount": 6890,
+        "xdm:saveCount": 312,
+        "xdm:hideCount": 15,
+        "xdm:reportCount": 1,
+        "xdm:organicImpressions": 28000,
+        "xdm:organicReach": 21000,
+        "xdm:viralImpressions": 8500,
+        "xdm:viralReach": 6200
+      },
+      "xdm:callToAction": {
+        "xdm:type": "shop_now",
+        "xdm:text": "Shop Now",
+        "xdm:url": "https://shop.acmecorp.com/holiday-sale?utm_source=facebook&utm_medium=image&utm_campaign=holiday2025",
+        "xdm:displayUrl": "shop.acmecorp.com/holiday-sale",
+        "xdm:deepLink": "acmecorp://shop/holiday-sale",
+        "xdm:trackingTemplate": "https://track.acmecorp.com/click?ad={ad_id}&placement={placement}",
+        "xdm:utmParameters": {
+          "xdm:source": "facebook",
+          "xdm:medium": "image",
+          "xdm:campaign": "holiday2025",
+          "xdm:content": "hero_banner",
+          "xdm:term": "holiday_sale"
+        }
+      },
+      "xdm:linkProperties": {
+        "xdm:destinationURL": "https://shop.acmecorp.com/holiday-sale",
+        "xdm:displayURL": "shop.acmecorp.com",
+        "xdm:urlTags": "utm_source=facebook&utm_medium=image&utm_campaign=holiday2025",
+        "xdm:trackingPixels": [
+          "https://track.acmecorp.com/impression?ad=img_456789123"
+        ],
+        "xdm:clickTrackers": [
+          "https://track.acmecorp.com/click?ad=img_456789123"
+        ],
+        "xdm:conversionTracking": true,
+        "xdm:conversionPixelID": "pixel_123456789"
+      },
+      "xdm:appProperties": {
+        "xdm:appID": "app_456789123",
+        "xdm:appName": "Acme Shopping",
+        "xdm:appPlatform": "ios",
+        "xdm:appStoreURL": "https://apps.apple.com/app/acme-shopping/id123456789",
+        "xdm:appDeepLink": "acmecorp://shop/holiday-sale",
+        "xdm:appEventTracking": true,
+        "xdm:appEventName": "view_sale",
+        "xdm:sdkVersion": "9.2.1"
+      },
+      "xdm:leadGenProperties": {
+        "xdm:formID": "form_not_applicable",
+        "xdm:formType": "not_applicable",
+        "xdm:instantForm": false,
+        "xdm:privacyPolicyURL": "https://www.acmecorp.com/privacy",
+        "xdm:customDisclaimer": ""
+      },
+      "xdm:interactionProperties": {
+        "xdm:allowInteraction": true,
+        "xdm:interactionType": "click",
+        "xdm:swipeUpEnabled": false,
+        "xdm:pollEnabled": false,
+        "xdm:quizEnabled": false,
+        "xdm:gamificationEnabled": false,
+        "xdm:arEnabled": false,
+        "xdm:threeDEnabled": false
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_ad_id",
+          "xdm:stringValue": "23851234567890124"
+        },
+        {
+          "xdm:fieldName": "meta_adset_id",
+          "xdm:stringValue": "23851234567890456"
+        },
+        {
+          "xdm:fieldName": "meta_campaign_id",
+          "xdm:stringValue": "23851234567890789"
+        },
+        {
+          "xdm:fieldName": "meta_image_hash",
+          "xdm:stringValue": "abc123def456ghi789jkl012"
+        },
+        {
+          "xdm:fieldName": "meta_placement_optimization",
+          "xdm:stringValue": "automatic"
+        },
+        {
+          "xdm:fieldName": "meta_objective",
+          "xdm:stringValue": "OUTCOME_TRAFFIC"
+        },
+        {
+          "xdm:fieldName": "meta_buying_type",
+          "xdm:stringValue": "AUCTION"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        }
+      ]
+    }
+  }
+}

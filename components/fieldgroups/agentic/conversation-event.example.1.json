@@ -2,6 +2,7 @@
   "xdm:eventType": "conversation.turn",
   "xdm:conversation": {
     "xdm:conversationID": "conv-001",
+    "xdm:conversationName": "Geography of Europe",
     "xdm:turnID": "int-001",
     "xdm:signals": [
       {

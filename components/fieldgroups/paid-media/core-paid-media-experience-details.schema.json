@@ -47,6 +47,7 @@
                     "canvas",
                     "instant_experience",
                     "playable",
+                    "audio",
                     "other"
                   ],
                   "meta:enum": {
@@ -58,6 +59,7 @@
                     "canvas": "Canvas Experience",
                     "instant_experience": "Instant Experience",
                     "playable": "Playable Experience",
+                    "audio": "Audio Experience",
                     "other": "Other Experience Type"
                   }
                 },

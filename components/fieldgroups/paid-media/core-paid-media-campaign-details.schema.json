@@ -45,6 +45,14 @@
                     "sponsored_display",
                     "sponsored_tv",
                     "traffic",
+                    "performance_max",
+                    "demand_gen",
+                    "multi_channel",
+                    "local",
+                    "local_services",
+                    "hotel",
+                    "travel",
+                    "smart",
                     "other"
                   ],
                   "meta:enum": {
@@ -64,6 +72,14 @@
                     "sponsored_display": "Sponsored Display (Amazon)",
                     "sponsored_tv": "Sponsored TV (Amazon)",
                     "traffic": "Traffic Campaign",
+                    "performance_max": "Performance Max Campaign (Google)",
+                    "demand_gen": "Demand Gen Campaign (Google)",
+                    "multi_channel": "Multi-Channel Campaign",
+                    "local": "Local Campaign",
+                    "local_services": "Local Services Campaign",
+                    "hotel": "Hotel Campaign",
+                    "travel": "Travel Campaign",
+                    "smart": "Smart Campaign",
                     "other": "Other Campaign Type"
                   }
                 },

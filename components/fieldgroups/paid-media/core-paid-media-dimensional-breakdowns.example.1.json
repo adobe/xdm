@@ -21,41 +21,7 @@
       "xdm:adPosition": "feed",
       "xdm:position": "feed",
       "xdm:timeOfDay": "afternoon",
-      "xdm:dayOfWeek": "Tuesday",
-      "xdm:additionalDetails": [
-        {
-          "xdm:fieldName": "meta_platform",
-          "xdm:stringValue": "instagram"
-        },
-        {
-          "xdm:fieldName": "meta_placement",
-          "xdm:stringValue": "instagram_feed"
-        },
-        {
-          "xdm:fieldName": "meta_device_platform",
-          "xdm:stringValue": "mobile"
-        },
-        {
-          "xdm:fieldName": "meta_publisher_platform",
-          "xdm:stringValue": "instagram"
-        },
-        {
-          "xdm:fieldName": "meta_impression_device",
-          "xdm:stringValue": "mobile_iphone"
-        },
-        {
-          "xdm:fieldName": "meta_age_bucket",
-          "xdm:stringValue": "25-34"
-        },
-        {
-          "xdm:fieldName": "meta_gender",
-          "xdm:stringValue": "female"
-        },
-        {
-          "xdm:fieldName": "meta_region",
-          "xdm:stringValue": "California"
-        }
-      ]
+      "xdm:dayOfWeek": "Tuesday"
     }
   }
 }

@@ -1,178 +1,122 @@
 {
   "xdm:entityType": "ad",
   "xdm:paidMedia": {
-    "xdm:adNetwork": "meta",
-    "xdm:accountID": "act_123456789012345",
-    "xdm:accountGUID": "meta_act_123456789012345",
-    "xdm:campaignID": "23851234567890789",
-    "xdm:campaignGUID": "meta_act_123456789012345_23851234567890789",
-    "xdm:adGroupID": "23851234567890456",
-    "xdm:adGroupGUID": "meta_act_123456789012345_23851234567890456",
-    "xdm:adID": "23851234567890124",
-    "xdm:adGUID": "meta_act_123456789012345_23851234567890124",
-    "xdm:experienceID": "creative_img_456789123",
-    "xdm:experienceGUID": "meta_act_123456789012345_creative_img_456789123",
-    "xdm:hierarchyPath": "act_123456789012345/23851234567890789/23851234567890456/23851234567890124",
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:campaignID": "9876543210",
+    "xdm:campaignGUID": "google_ads_1234567890_9876543210",
+    "xdm:adGroupID": "5555666677",
+    "xdm:adGroupGUID": "google_ads_1234567890_5555666677",
+    "xdm:adID": "8888999900",
+    "xdm:adGUID": "google_ads_1234567890_8888999900",
+    "xdm:hierarchyPath": "1234567890/9876543210/5555666677/8888999900",
     "xdm:metadata": {
-      "xdm:name": "Holiday Sale - Hero Banner Ad",
+      "xdm:name": "Responsive Search Ad - Enterprise Cloud Solutions",
       "xdm:status": "active",
       "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
       "xdm:currency": "USD",
-      "xdm:timezone": "America/Los_Angeles",
-      "xdm:createdTime": "2025-11-01T10:00:00Z",
-      "xdm:updatedTime": "2025-11-09T11:00:00Z",
-      "xdm:startTime": "2025-11-01T00:00:00Z",
-      "xdm:endTime": "2025-11-30T23:59:59Z"
+      "xdm:timezone": "America/New_York",
+      "xdm:createdTime": "2025-09-20T14:00:00Z",
+      "xdm:updatedTime": "2025-11-09T08:00:00Z",
+      "xdm:startTime": "2025-10-01T00:00:00Z",
+      "xdm:biddingStrategy": "target_cpa",
+      "xdm:optimizationGoal": "conversions"
     },
     "xdm:adDetails": {
-      "xdm:adType": "image",
-      "xdm:adFormat": "single_image",
+      "xdm:adType": "responsive",
+      "xdm:creative": {
+        "xdm:paidMediaCreative": {
+          "xdm:creativeID": "rsa_111222333",
+          "xdm:creativeType": "text",
+          "xdm:title": "Enterprise Cloud Solutions | Acme Corp",
+          "xdm:body": "Scalable cloud infrastructure trusted by Fortune 500 companies. Start your free trial today.",
+          "xdm:callToAction": "Get Started",
+          "xdm:destinationURL": "https://www.acmecorp.com/cloud-solutions?utm_source=google&utm_medium=search&utm_campaign=enterprise_cloud",
+          "xdm:displayURL": "https://www.acmecorp.com/cloud-solutions",
+          "xdm:assets": [
+            {
+              "xdm:assetID": "headline_1",
+              "xdm:assetType": "other",
+              "xdm:name": "Enterprise Cloud Solutions"
+            },
+            {
+              "xdm:assetID": "headline_2",
+              "xdm:assetType": "other",
+              "xdm:name": "Scalable Cloud Infrastructure"
+            },
+            {
+              "xdm:assetID": "headline_3",
+              "xdm:assetType": "other",
+              "xdm:name": "Free Trial - Get Started Today"
+            },
+            {
+              "xdm:assetID": "description_1",
+              "xdm:assetType": "other",
+              "xdm:name": "Trusted by Fortune 500 companies. 99.99% uptime SLA. 24/7 support included."
+            },
+            {
+              "xdm:assetID": "description_2",
+              "xdm:assetType": "other",
+              "xdm:name": "Deploy in minutes. Scale instantly. Pay only for what you use. Start free."
+            }
+          ]
+        }
+      },
       "xdm:reviewStatus": "approved",
       "xdm:deliveryStatus": "active",
       "xdm:isPinDeleted": false,
       "xdm:isRemovable": true,
-      "xdm:creativeDetails": {
-        "xdm:creativeID": "creative_img_456789123",
-        "xdm:creativeName": "Holiday Sale - Hero Banner",
-        "xdm:creativeType": "image",
-        "xdm:creativeFormat": "feed_image",
-        "xdm:creativeVersion": "v1.0",
-        "xdm:creativeTemplate": "image_standard",
-        "xdm:dynamicCreative": false,
-        "xdm:personalized": false,
-        "xdm:localized": true,
-        "xdm:locale": "en_US",
-        "xdm:brandID": "brand_acme_123",
-        "xdm:campaignTheme": "holiday_2025"
+      "xdm:degreesOfFreedomSpec": {
+        "xdm:enabled": true,
+        "xdm:features": ["auto_generated_assets", "text_optimization"]
       },
-      "xdm:adReviewDetails": {
-        "xdm:reviewStatus": "approved",
-        "xdm:reviewDate": "2025-11-01T12:00:00Z",
-        "xdm:reviewerID": "meta_reviewer_789",
-        "xdm:reviewNotes": "Approved - meets all policy requirements",
-        "xdm:policyViolations": [],
-        "xdm:appealStatus": "not_applicable",
-        "xdm:lastModifiedDate": "2025-11-01T09:30:00Z",
-        "xdm:autoApproved": true,
-        "xdm:requiresManualReview": false
-      },
-      "xdm:deliveryDetails": {
-        "xdm:deliveryStatus": "active",
-        "xdm:effectiveStatus": "active",
-        "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
-        "xdm:pacing": "standard",
-        "xdm:deliveryEstimate": "excellent",
-        "xdm:learningPhase": "completed",
-        "xdm:lastDeliveryCheck": "2025-11-10T08:00:00Z",
-        "xdm:estimatedDailyReach": 85000,
-        "xdm:saturationLevel": "low"
-      },
-      "xdm:socialMediaProperties": {
-        "xdm:postID": "post_123456789_987654322",
-        "xdm:pageID": "page_acmecorp_official",
-        "xdm:instagramAccountID": "ig_acmecorp",
-        "xdm:allowComments": true,
-        "xdm:allowSharing": true,
-        "xdm:allowLikes": true,
-        "xdm:commentCount": 856,
-        "xdm:shareCount": 623,
-        "xdm:likeCount": 6234,
-        "xdm:reactionCount": 6890,
-        "xdm:saveCount": 312,
-        "xdm:hideCount": 15,
-        "xdm:reportCount": 1,
-        "xdm:organicImpressions": 28000,
-        "xdm:organicReach": 21000,
-        "xdm:viralImpressions": 8500,
-        "xdm:viralReach": 6200
-      },
-      "xdm:callToAction": {
-        "xdm:type": "shop_now",
-        "xdm:text": "Shop Now",
-        "xdm:url": "https://shop.acmecorp.com/holiday-sale?utm_source=facebook&utm_medium=image&utm_campaign=holiday2025",
-        "xdm:displayUrl": "shop.acmecorp.com/holiday-sale",
-        "xdm:deepLink": "acmecorp://shop/holiday-sale",
-        "xdm:trackingTemplate": "https://track.acmecorp.com/click?ad={ad_id}&placement={placement}",
-        "xdm:utmParameters": {
-          "xdm:source": "facebook",
-          "xdm:medium": "image",
-          "xdm:campaign": "holiday2025",
-          "xdm:content": "hero_banner",
-          "xdm:term": "holiday_sale"
-        }
-      },
-      "xdm:linkProperties": {
-        "xdm:destinationURL": "https://shop.acmecorp.com/holiday-sale",
-        "xdm:displayURL": "shop.acmecorp.com",
-        "xdm:urlTags": "utm_source=facebook&utm_medium=image&utm_campaign=holiday2025",
-        "xdm:trackingPixels": [
-          "https://track.acmecorp.com/impression?ad=img_456789123"
-        ],
-        "xdm:clickTrackers": [
-          "https://track.acmecorp.com/click?ad=img_456789123"
-        ],
-        "xdm:conversionTracking": true,
-        "xdm:conversionPixelID": "pixel_123456789"
-      },
-      "xdm:appProperties": {
-        "xdm:appID": "app_456789123",
-        "xdm:appName": "Acme Shopping",
-        "xdm:appPlatform": "ios",
-        "xdm:appStoreURL": "https://apps.apple.com/app/acme-shopping/id123456789",
-        "xdm:appDeepLink": "acmecorp://shop/holiday-sale",
-        "xdm:appEventTracking": true,
-        "xdm:appEventName": "view_sale",
-        "xdm:sdkVersion": "9.2.1"
-      },
-      "xdm:leadGenProperties": {
-        "xdm:formID": "form_not_applicable",
-        "xdm:formType": "not_applicable",
-        "xdm:instantForm": false,
-        "xdm:privacyPolicyURL": "https://www.acmecorp.com/privacy",
-        "xdm:customDisclaimer": ""
-      },
-      "xdm:interactionProperties": {
-        "xdm:allowInteraction": true,
-        "xdm:interactionType": "click",
-        "xdm:swipeUpEnabled": false,
-        "xdm:pollEnabled": false,
-        "xdm:quizEnabled": false,
-        "xdm:gamificationEnabled": false,
-        "xdm:arEnabled": false,
-        "xdm:threeDEnabled": false
+      "xdm:urlTracking": {
+        "xdm:trackingTemplate": "{lpurl}?s_kwcid=AL!{userid}!3!{creative}!{matchtype}!{placement}!{network}",
+        "xdm:finalUrlSuffix": "gclid={gclid}&utm_source=google&utm_medium=search",
+        "xdm:customParameters": [
+          {
+            "xdm:key": "campaignid",
+            "xdm:value": "{campaignid}"
+          },
+          {
+            "xdm:key": "adgroupid",
+            "xdm:value": "{adgroupid}"
+          },
+          {
+            "xdm:key": "keyword",
+            "xdm:value": "{keyword}"
+          }
+        ]
       },
       "xdm:additionalDetails": [
         {
-          "xdm:fieldName": "meta_ad_id",
-          "xdm:stringValue": "23851234567890124"
+          "xdm:fieldName": "google_ad_type",
+          "xdm:stringValue": "RESPONSIVE_SEARCH_AD"
         },
         {
-          "xdm:fieldName": "meta_adset_id",
-          "xdm:stringValue": "23851234567890456"
+          "xdm:fieldName": "google_ad_status",
+          "xdm:stringValue": "ENABLED"
         },
         {
-          "xdm:fieldName": "meta_campaign_id",
-          "xdm:stringValue": "23851234567890789"
+          "xdm:fieldName": "google_policy_summary_approval_status",
+          "xdm:stringValue": "APPROVED"
         },
         {
-          "xdm:fieldName": "meta_image_hash",
-          "xdm:stringValue": "abc123def456ghi789jkl012"
+          "xdm:fieldName": "google_ad_strength",
+          "xdm:stringValue": "EXCELLENT"
         },
         {
-          "xdm:fieldName": "meta_placement_optimization",
-          "xdm:stringValue": "automatic"
+          "xdm:fieldName": "google_pinned_headline_position_1",
+          "xdm:stringValue": "Enterprise Cloud Solutions"
         },
         {
-          "xdm:fieldName": "meta_objective",
-          "xdm:stringValue": "OUTCOME_TRAFFIC"
+          "xdm:fieldName": "google_responsive_search_ad_path1",
+          "xdm:stringValue": "cloud"
         },
         {
-          "xdm:fieldName": "meta_buying_type",
-          "xdm:stringValue": "AUCTION"
-        },
-        {
-          "xdm:fieldName": "meta_bid_strategy",
-          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+          "xdm:fieldName": "google_responsive_search_ad_path2",
+          "xdm:stringValue": "solutions"
         }
       ]
     }

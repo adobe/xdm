@@ -4,172 +4,107 @@
     "xdm:adNetwork": "meta",
     "xdm:accountID": "act_123456789012345",
     "xdm:accountGUID": "meta_act_123456789012345",
-    "xdm:experienceID": "creative_vid_987654321",
-    "xdm:experienceGUID": "meta_act_123456789012345_creative_vid_987654321",
+    "xdm:campaignID": "120345678901234",
+    "xdm:campaignGUID": "meta_act_123456789012345_camp_120345678901234",
+    "xdm:adGroupID": "120567890123456",
+    "xdm:adGroupGUID": "meta_act_123456789012345_adset_120567890123456",
+    "xdm:experienceID": "dyn_carousel_998877665",
+    "xdm:experienceGUID": "meta_act_123456789012345_exp_dyn_carousel_998877665",
+    "xdm:hierarchyPath": "act_123456789012345/120345678901234/120567890123456/dyn_carousel_998877665",
     "xdm:metadata": {
-      "xdm:name": "Fall Product Launch - 30s Video Creative",
+      "xdm:name": "Fall Collection - Dynamic Carousel Experience",
       "xdm:status": "active",
-      "xdm:createdTime": "2025-10-28T15:00:00Z",
-      "xdm:updatedTime": "2025-11-05T11:00:00Z"
+      "xdm:createdTime": "2025-10-15T09:30:00Z",
+      "xdm:updatedTime": "2025-11-02T14:20:00Z",
+      "xdm:startTime": "2025-10-20T00:00:00Z",
+      "xdm:endTime": "2025-12-31T23:59:59Z",
+      "xdm:objective": "conversions",
+      "xdm:currency": "USD"
     },
     "xdm:experienceDetails": {
-      "xdm:experienceType": "single_video",
-      "xdm:experienceFormat": "single_video",
-      "xdm:experienceTemplate": "video_standard",
-      "xdm:experienceVersion": "v2.1",
-      "xdm:isDynamic": false,
-      "xdm:isPersonalized": true,
-      "xdm:isLocalized": true,
-      "xdm:locale": "en_US",
-      "xdm:primaryAssetID": "987654321012345",
-      "xdm:primaryAssetGUID": "meta_act_123456789012345_asset_987654321012345",
-      "xdm:primaryAssetType": "video",
-      "xdm:assetIDs": ["987654321012345"],
-      "xdm:assetGUIDs": ["meta_act_123456789012345_asset_987654321012345"],
-      "xdm:assetCount": 1,
-      "xdm:assetTypes": ["video"],
-      "xdm:contentDetails": {
-        "xdm:primaryText": "Introducing our revolutionary new product that will transform the way you work. Experience innovation like never before.",
-        "xdm:headline": "Revolutionary Innovation",
-        "xdm:description": "Transform your workflow with cutting-edge features designed for modern professionals. Available now for a limited time.",
-        "xdm:callToActionType": "learn_more",
-        "xdm:callToActionText": "Learn More",
-        "xdm:destinationURL": "https://www.acmecorp.com/fall-launch?utm_source=facebook&utm_medium=video&utm_campaign=fall2025",
-        "xdm:displayURL": "acmecorp.com/fall-launch",
-        "xdm:linkDescription": "Discover the future of productivity",
-        "xdm:brandName": "Acme Corp",
-        "xdm:productName": "Acme Pro X",
-        "xdm:tagline": "Innovation Meets Excellence",
-        "xdm:additionalText": "Limited time offer - Learn more today"
+      "xdm:experienceName": "Fall Collection - Dynamic Carousel Experience",
+      "xdm:experienceDescription": "Dynamic carousel showcasing top fall collection products with personalized card ordering",
+      "xdm:experienceType": "carousel",
+      "xdm:thumbnailURL": "https://cdn.meta.com/creatives/act_123456789012345/dyn_carousel_998877665/thumb.jpg",
+      "xdm:landingPageURL": "https://www.acmefashion.com/fall-collection?utm_source=meta&utm_medium=paid&utm_campaign=fall2025",
+      "xdm:headingText": "New Fall Arrivals",
+      "xdm:bodyText": "Discover our curated fall collection. Handcrafted styles designed for the modern wardrobe. Shop now and get free shipping on orders over $75.",
+      "xdm:callToAction": "Shop Now",
+      "xdm:assetIDs": [
+        "img_101010101",
+        "img_202020202",
+        "img_303030303",
+        "img_404040404"
+      ],
+      "xdm:assetGUIDs": [
+        "meta_act_123456789012345_asset_img_101010101",
+        "meta_act_123456789012345_asset_img_202020202",
+        "meta_act_123456789012345_asset_img_303030303",
+        "meta_act_123456789012345_asset_img_404040404"
+      ],
+      "xdm:carouselProperties": {
+        "xdm:cardCount": 4,
+        "xdm:cards": [
+          {
+            "xdm:cardIndex": 0,
+            "xdm:assetID": "img_101010101",
+            "xdm:assetGUID": "meta_act_123456789012345_asset_img_101010101",
+            "xdm:heading": "Wool Blend Overcoat",
+            "xdm:description": "Premium wool blend in charcoal grey - $189",
+            "xdm:destinationURL": "https://www.acmefashion.com/products/wool-overcoat?utm_source=meta&utm_content=card1"
+          },
+          {
+            "xdm:cardIndex": 1,
+            "xdm:assetID": "img_202020202",
+            "xdm:assetGUID": "meta_act_123456789012345_asset_img_202020202",
+            "xdm:heading": "Cashmere Scarf Set",
+            "xdm:description": "100% cashmere in autumn tones - $95",
+            "xdm:destinationURL": "https://www.acmefashion.com/products/cashmere-scarf?utm_source=meta&utm_content=card2"
+          },
+          {
+            "xdm:cardIndex": 2,
+            "xdm:assetID": "img_303030303",
+            "xdm:assetGUID": "meta_act_123456789012345_asset_img_303030303",
+            "xdm:heading": "Leather Ankle Boots",
+            "xdm:description": "Handcrafted Italian leather - $245",
+            "xdm:destinationURL": "https://www.acmefashion.com/products/ankle-boots?utm_source=meta&utm_content=card3"
+          },
+          {
+            "xdm:cardIndex": 3,
+            "xdm:assetID": "img_404040404",
+            "xdm:assetGUID": "meta_act_123456789012345_asset_img_404040404",
+            "xdm:heading": "Merino Turtleneck",
+            "xdm:description": "Soft merino wool in 6 colors - $120",
+            "xdm:destinationURL": "https://www.acmefashion.com/products/merino-turtleneck?utm_source=meta&utm_content=card4"
+          }
+        ]
       },
-      "xdm:visualElements": {
-        "xdm:primaryColor": "#0066CC",
-        "xdm:secondaryColor": "#FFFFFF",
-        "xdm:accentColor": "#FF6600",
-        "xdm:backgroundColor": "#F5F5F5",
-        "xdm:textColor": "#333333",
-        "xdm:fontFamily": "Helvetica Neue",
-        "xdm:logoIncluded": true,
-        "xdm:logoPosition": "top_left",
-        "xdm:brandingLevel": "prominent",
-        "xdm:visualStyle": "modern",
-        "xdm:mood": "professional",
-        "xdm:tone": "confident",
-        "xdm:overlayText": true,
-        "xdm:overlayPosition": "bottom_third",
-        "xdm:animationStyle": "smooth",
-        "xdm:transitionType": "fade"
+      "xdm:interactionProperties": {
+        "xdm:isInteractive": true,
+        "xdm:interactionType": "swipe"
       },
-      "xdm:targetingContext": {
-        "xdm:campaignTheme": "fall_2025_launch",
-        "xdm:audienceSegment": "tech_enthusiasts",
-        "xdm:ageRange": "25-54",
-        "xdm:genderTarget": "all",
-        "xdm:geographicFocus": "US_major_metros",
-        "xdm:deviceOptimization": "mobile_first",
-        "xdm:placementOptimization": "feed_optimized",
-        "xdm:seasonality": "fall",
-        "xdm:productCategory": "technology",
-        "xdm:customerJourneyStage": "awareness"
-      },
-      "xdm:performanceAttributes": {
-        "xdm:creativeConcept": "product_demo",
-        "xdm:messageStrategy": "problem_solution",
-        "xdm:emotionalAppeal": "aspiration",
-        "xdm:valueProposition": "innovation",
-        "xdm:urgency": "limited_time",
-        "xdm:socialProof": false,
-        "xdm:testimonials": false,
-        "xdm:demonstration": true,
-        "xdm:comparison": false,
-        "xdm:educationalContent": true
-      },
-      "xdm:technicalSpecs": {
-        "xdm:aspectRatios": ["16:9"],
-        "xdm:dimensions": ["1920x1080"],
-        "xdm:fileSizes": [45678912],
-        "xdm:durations": [30.5],
-        "xdm:formats": ["mp4"],
-        "xdm:codecs": ["h264"],
-        "xdm:bitrates": [5000],
-        "xdm:frameRates": [30],
-        "xdm:hasAudio": true,
-        "xdm:hasSubtitles": true,
-        "xdm:subtitleLanguages": ["en", "es", "fr"],
-        "xdm:closedCaptions": true,
-        "xdm:hdrEnabled": false,
-        "xdm:is360": false
-      },
-      "xdm:usageMetrics": {
-        "xdm:timesUsed": 12,
-        "xdm:activeCampaigns": 3,
-        "xdm:activeAdGroups": 5,
-        "xdm:activeAds": 8,
-        "xdm:firstUsedDate": "2025-11-01T00:00:00Z",
+      "xdm:performanceMetadata": {
+        "xdm:usageCount": 8,
         "xdm:lastUsedDate": "2025-11-09T15:00:00Z",
-        "xdm:totalImpressions": 1250000,
-        "xdm:totalClicks": 45000,
-        "xdm:totalConversions": 2250,
-        "xdm:totalSpend": 12500,
-        "xdm:averageCTR": 0.036,
-        "xdm:averageCPC": 0.278,
-        "xdm:averageCPA": 5.56,
-        "xdm:averageROAS": 4.5
-      },
-      "xdm:qualityMetrics": {
-        "xdm:creativeScore": 8.5,
-        "xdm:qualityScore": 9.2,
-        "xdm:relevanceScore": 8.8,
-        "xdm:engagementScore": 8.3,
-        "xdm:adStrength": "excellent",
-        "xdm:creativeFatigue": 0.15,
-        "xdm:freshnessScore": 0.95,
-        "xdm:predictedPerformance": "high",
-        "xdm:benchmarkComparison": "above_average",
-        "xdm:policyCompliance": "compliant"
-      },
-      "xdm:reviewStatus": {
-        "xdm:status": "approved",
-        "xdm:reviewDate": "2025-10-29T10:00:00Z",
-        "xdm:reviewerID": "meta_reviewer_456",
-        "xdm:reviewNotes": "Approved - high quality video creative",
-        "xdm:policyViolations": [],
-        "xdm:appealStatus": "not_applicable",
-        "xdm:autoApproved": false,
-        "xdm:requiresManualReview": true
+        "xdm:associatedCampaigns": ["120345678901234", "120345678905678"],
+        "xdm:associatedAds": ["ad_550011", "ad_550022", "ad_550033"]
       },
       "xdm:additionalDetails": [
         {
-          "xdm:fieldName": "meta_creative_id",
-          "xdm:stringValue": "creative_vid_987654321"
-        },
-        {
-          "xdm:fieldName": "meta_creative_name",
-          "xdm:stringValue": "Fall Product Launch - 30s Video Creative"
-        },
-        {
-          "xdm:fieldName": "meta_creative_type",
-          "xdm:stringValue": "video"
-        },
-        {
-          "xdm:fieldName": "meta_video_id",
-          "xdm:stringValue": "987654321012345"
-        },
-        {
-          "xdm:fieldName": "meta_creative_status",
-          "xdm:stringValue": "active"
+          "xdm:fieldName": "meta_dynamic_creative",
+          "xdm:booleanValue": true
         },
         {
           "xdm:fieldName": "meta_objective_type",
-          "xdm:stringValue": "OUTCOME_TRAFFIC"
+          "xdm:stringValue": "OUTCOME_SALES"
         },
         {
           "xdm:fieldName": "meta_placement_optimization",
           "xdm:stringValue": "automatic"
         },
         {
-          "xdm:fieldName": "meta_dynamic_creative",
-          "xdm:stringValue": "false"
+          "xdm:fieldName": "meta_catalog_id",
+          "xdm:stringValue": "catalog_778899001122"
         }
       ]
     }

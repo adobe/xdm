@@ -27,7 +27,7 @@
                 "xdm:campaignType": {
                   "type": "string",
                   "title": "Campaign Type",
-                  "description": "Type of campaign",
+                  "description": "Primary campaign channel type. Maps to Google Ads advertising_channel_type. For automation-specific classification, see automatedCampaignType.",
                   "enum": [
                     "search",
                     "display",
@@ -86,7 +86,7 @@
                 "xdm:subType": {
                   "type": "string",
                   "title": "Campaign Sub-type",
-                  "description": "More specific campaign sub-type or format"
+                  "description": "More specific campaign sub-type or format. Maps to Google Ads advertising_channel_sub_type for non-automated variants (e.g., VIDEO_NON_SKIPPABLE, VIDEO_SEQUENCE)."
                 },
                 "xdm:promotedObject": {
                   "type": "object",
@@ -402,16 +402,15 @@
                 "xdm:isAutomatedCampaign": {
                   "type": "boolean",
                   "title": "Is Automated Campaign",
-                  "description": "Whether this is an automated/smart campaign with machine learning optimization"
+                  "description": "Whether this campaign uses platform-level automation with machine learning optimization. Should be true for inherently automated campaign types (e.g., performance_max, smart, demand_gen) and platform automation features (e.g., TikTok Smart+, Meta Advantage+)."
                 },
                 "xdm:automatedCampaignType": {
                   "type": "string",
                   "title": "Automated Campaign Type",
-                  "description": "Specific type of automated campaign",
+                  "description": "Cross-platform automation product classification. Only populated when isAutomatedCampaign is true. Normalizes automation approaches across platforms. Not a direct 1:1 mapping of any single platform field. For Google Ads, automated sub-types from advertising_channel_sub_type (e.g., SMART_CAMPAIGN, APP_CAMPAIGN) map here.",
                   "enum": [
                     "SMART_PLUS",
                     "SMART_PERFORMANCE_WEB",
-                    "PERFORMANCE_MAX",
                     "MAXIMUM_DELIVERY",
                     "AUTO_CAMPAIGN",
                     "DYNAMIC_CREATIVE",
@@ -421,9 +420,8 @@
                   "meta:enum": {
                     "SMART_PLUS": "Smart+ Campaign (TikTok)",
                     "SMART_PERFORMANCE_WEB": "Smart Performance Web Campaign (TikTok)",
-                    "PERFORMANCE_MAX": "Performance Max (Google)",
                     "MAXIMUM_DELIVERY": "Maximum Delivery (LinkedIn)",
-                    "AUTO_CAMPAIGN": "Auto Campaign (Amazon)",
+                    "AUTO_CAMPAIGN": "Auto Campaign (Amazon, Google App Campaigns)",
                     "DYNAMIC_CREATIVE": "Dynamic Creative Optimization",
                     "GMV_MAX": "GMV Max Campaign (TikTok)",
                     "OTHER": "Other Automated Type"
@@ -446,6 +444,7 @@
                   "enum": [
                     "CATALOG",
                     "STORE",
+                    "GOOGLE_MERCHANT_CENTER",
                     "TIKTOK_SHOP",
                     "AMAZON",
                     "SHOPIFY",
@@ -455,6 +454,7 @@
                   "meta:enum": {
                     "CATALOG": "Product Catalog",
                     "STORE": "Online Store",
+                    "GOOGLE_MERCHANT_CENTER": "Google Merchant Center",
                     "TIKTOK_SHOP": "TikTok Shop",
                     "AMAZON": "Amazon Store",
                     "SHOPIFY": "Shopify Store",

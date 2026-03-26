@@ -159,12 +159,23 @@
                   "xdm:audienceType": {
                     "type": "string",
                     "title": "Audience Type",
-                    "enum": ["custom", "lookalike", "retargeting", "similar"],
+                    "enum": [
+                      "custom",
+                      "lookalike",
+                      "retargeting",
+                      "similar",
+                      "logical",
+                      "rule_based",
+                      "crm_based"
+                    ],
                     "meta:enum": {
                       "custom": "Custom Audience",
                       "lookalike": "Lookalike Audience",
-                      "retargeting": "Retargeting Audience",
-                      "similar": "Similar Audience"
+                      "retargeting": "Retargeting Audience (includes Google Ads REMARKETING and EXTERNAL_REMARKETING)",
+                      "similar": "Similar Audience",
+                      "logical": "Logical Combination Audience (Google Ads)",
+                      "rule_based": "Rule-Based Audience (Google Ads)",
+                      "crm_based": "CRM-Based Audience (first-party customer data)"
                     }
                   }
                 }

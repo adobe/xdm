@@ -40,6 +40,14 @@
                     "type": "string",
                     "format": "email"
                   }
+                },
+                "xdm:cc": {
+                  "type": "array",
+                  "description": "CC email address",
+                  "items": {
+                    "type": "string",
+                    "format": "email"
+                  }
                 }
               },
               "required": ["xdm:email"]
@@ -123,5 +131,5 @@
       "$ref": "#/definitions/messageDeliveryMetadata"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

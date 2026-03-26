@@ -1,0 +1,40 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP AI Agent Trace Class",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "description": "AEP AI Agent Trace Class",
+  "definitions": {
+    "aep-ai-agent-trace-class": {
+      "properties": {
+        "xdm:eventType": {
+          "title": "Event Type",
+          "type": "string",
+          "description": "The primary event type for this time-series record.",
+          "meta:enum": {
+            "aep.ai.agent.trace": "AEP AI Agent Trace"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+    },
+    {
+      "$ref": "#/definitions/aep-ai-agent-trace-class"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -2,8 +2,9 @@
   "sourceSettings": {
     "snowflakeSettings": {
       "cleanRoomName": "Sample value",
-      "database": "Sample value",
-      "schema": "Sample value"
+      "databaseName": "Sample value",
+      "schemaName": "Sample value",
+      "tableName": "Sample value"
     }
   }
 }

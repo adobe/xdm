@@ -1,5 +1,6 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf95",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID": "2218c775-def4-46b2-aee2-7caae052cf96",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/email"
   },
@@ -11,6 +12,11 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/channelType": "MMS",
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profilenNumber": "12347986421",
   "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/origTimestamp": "2024-09-26T15:52:25+00:00",
+  "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/feedbackStatus": "delivered",
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/providerFeedbackStatus": "DeliveredToTerminal",
+    "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/message": "Message delivered successfully"
+  },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/sms"
   },
@@ -18,6 +24,11 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": "marketing",
   "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": "like",
   "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": "react",
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/feedbackStatus": "delivered",
+    "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/providerFeedbackStatus": "READ",
+    "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/message": "Message delivered successfully"
+  },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/whastApp"
   }

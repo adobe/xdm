@@ -1,6 +1,8 @@
 {
-  "xdm:factorName": "Market Share",
-  "xdm:factorValue": 0.35,
-  "xdm:factorType": "External",
-  "xdm:valueType": "Forecasted"
+  "xdm:factor": {
+    "xdm:factorName": "Market Share",
+    "xdm:factorValue": 0.35,
+    "xdm:factorType": "External",
+    "xdm:valueType": "Forecasted"
+  }
 }

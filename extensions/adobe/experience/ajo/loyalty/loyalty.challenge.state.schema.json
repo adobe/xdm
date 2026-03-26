@@ -1,0 +1,267 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/stateChange",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Challenge State",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Captures the state and progress of loyalty challenges for a customer, including tasks, dependencies, and completion tracking.",
+  "definitions": {
+    "loyaltyChallengeStateChange": {
+      "properties": {
+        "https://ns.adobe.com/experience/ajo/loyalty": {
+          "type": "object",
+          "properties": {
+            "xdm:challenge": {
+              "type": "object",
+              "title": "Challenge",
+              "description": "Loyalty challenge details and state",
+              "properties": {
+                "xdm:id": {
+                  "title": "Challenge ID",
+                  "type": "string",
+                  "description": "Unique identifier for the loyalty challenge.",
+                  "minLength": 1
+                },
+                "xdm:name": {
+                  "title": "Challenge Name",
+                  "type": "string",
+                  "description": "Human-readable name of the loyalty challenge.",
+                  "minLength": 1
+                },
+                "xdm:description": {
+                  "title": "Description",
+                  "type": "string",
+                  "description": "Description of the challenge.",
+                  "minLength": 1
+                },
+                "xdm:state": {
+                  "title": "State",
+                  "type": "string",
+                  "description": "Current state of the challenge.",
+                  "minLength": 1
+                },
+                "xdm:startDate": {
+                  "title": "Start Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Date and time when the challenge started or became available."
+                },
+                "xdm:endDate": {
+                  "title": "End Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Date and time when the challenge expires or ended."
+                },
+                "xdm:completionDate": {
+                  "title": "Completion Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Date and time when the challenge was completed."
+                },
+                "xdm:signupDate": {
+                  "title": "Signup Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Date and time when the customer signed up for the challenge."
+                },
+                "xdm:optedIn": {
+                  "title": "Opted In",
+                  "type": "boolean",
+                  "description": "Indicates whether the customer has opted into the challenge."
+                },
+                "xdm:tasksToComplete": {
+                  "title": "Tasks to Complete",
+                  "type": "integer",
+                  "description": "Number of tasks required to complete the challenge.",
+                  "minimum": 0,
+                  "maximum": 2147483647
+                },
+                "dependsOn": {
+                  "title": "Depends On",
+                  "type": "object",
+                  "description": "Challenge dependency information.",
+                  "properties": {
+                    "challengeId": {
+                      "title": "Challenge ID",
+                      "type": "string",
+                      "description": "ID of the challenge that this challenge depends on.",
+                      "minLength": 1
+                    },
+                    "state": {
+                      "title": "State",
+                      "type": "string",
+                      "description": "Required state of the dependent challenge.",
+                      "minLength": 1
+                    }
+                  }
+                },
+                "xdm:reward": {
+                  "title": "Reward",
+                  "type": "object",
+                  "description": "Reward configuration for the challenge.",
+                  "properties": {
+                    "xdm:endpoint": {
+                      "title": "Endpoint",
+                      "type": "string",
+                      "description": "Endpoint identifier for the reward."
+                    },
+                    "xdm:definition": {
+                      "title": "Definition",
+                      "type": "string",
+                      "description": "Definition identifier for the reward."
+                    },
+                    "xdm:rewardValue": {
+                      "title": "Reward Value",
+                      "type": "string",
+                      "description": "Value of the reward."
+                    },
+                    "xdm:rewardDefinition": {
+                      "title": "Reward Definition",
+                      "type": "object",
+                      "description": "Reward definition details.",
+                      "properties": {
+                        "xdm:denomination": {
+                          "title": "Denomination",
+                          "type": "string",
+                          "description": "Denomination of the reward."
+                        },
+                        "xdm:enabled": {
+                          "title": "Enabled",
+                          "type": "boolean",
+                          "description": "Whether the reward is enabled."
+                        }
+                      }
+                    },
+                    "xdm:source": {
+                      "title": "Source",
+                      "type": "string",
+                      "description": "Source of the reward."
+                    }
+                  }
+                },
+                "xdm:metadata": {
+                  "title": "Metadata",
+                  "type": "object",
+                  "description": "Freeform string key-value metadata for the challenge.",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                },
+                "xdm:singleTrans": {
+                  "title": "Single Transaction",
+                  "type": "boolean",
+                  "description": "Whether the challenge must be completed in a single transaction."
+                },
+                "xdm:dayPart": {
+                  "title": "Day Part",
+                  "type": "object",
+                  "description": "Time-of-day window for the challenge.",
+                  "properties": {
+                    "xdm:startMinute": {
+                      "title": "Start Minute",
+                      "type": "integer",
+                      "description": "Start minute of the day (0-1439)."
+                    },
+                    "xdm:endMinute": {
+                      "title": "End Minute",
+                      "type": "integer",
+                      "description": "End minute of the day (0-1439)."
+                    }
+                  }
+                },
+                "xdm:pickYourTask": {
+                  "title": "Pick Your Task",
+                  "type": "boolean",
+                  "description": "Whether this is a pick your task challenge, where the end user picks which task to complete at signup time."
+                },
+                "xdm:milestones": {
+                  "title": "Milestones",
+                  "type": "object",
+                  "description": "Milestone configuration and completion state for the challenge.",
+                  "properties": {
+                    "xdm:contiguous": {
+                      "title": "Contiguous",
+                      "type": "boolean",
+                      "description": "Whether milestones must be completed in contiguous order."
+                    },
+                    "xdm:interval": {
+                      "title": "Interval",
+                      "type": "string",
+                      "description": "Interval type for milestones (e.g. task).",
+                      "minLength": 1
+                    },
+                    "xdm:completions": {
+                      "title": "Completions",
+                      "type": "array",
+                      "description": "List of milestone completion states.",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:state": {
+                            "title": "State",
+                            "type": "string",
+                            "description": "State of this milestone (e.g. sent, incomplete).",
+                            "minLength": 1
+                          },
+                          "xdm:count": {
+                            "title": "Count",
+                            "type": "number",
+                            "description": "Count threshold for this milestone."
+                          },
+                          "xdm:reward": {
+                            "title": "Reward",
+                            "type": "object",
+                            "description": "Reward for this milestone.",
+                            "properties": {
+                              "xdm:rewardValue": {
+                                "title": "Reward Value",
+                                "type": "string",
+                                "description": "Value of the reward."
+                              },
+                              "xdm:source": {
+                                "title": "Source",
+                                "type": "string",
+                                "description": "Source of the reward (e.g. milestone)."
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "tasks": {
+                  "title": "Tasks",
+                  "type": "array",
+                  "description": "List of tasks within the challenge.",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/experience/ajo/loyalty/challenge/task"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/loyaltyChallengeStateChange"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,7 +1,9 @@
 {
-  "xdm:factorName": "Humidity",
-  "xdm:factorValue": 0.75,
-  "xdm:factorType": "External",
-  "xdm:valueType": "Actual",
-  "xdm:granularity": "Weekly"
+  "xdm:factor": {
+    "xdm:factorName": "Humidity",
+    "xdm:factorValue": 0.75,
+    "xdm:factorType": "External",
+    "xdm:valueType": "Actual",
+    "xdm:granularity": "Weekly"
+  }
 }

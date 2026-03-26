@@ -19,6 +19,7 @@ This event is in relation with journey and dispatcher service event fields
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "error",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_SERVICE_INTERNAL",
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCodeReason": "500_INTERNAL_SERVER_ERROR",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID": "f3485959-0a9e-4004-82d9-f11bd6c4585b"
   }
 }
@@ -45,13 +46,14 @@ This event is in relation with journey and dispatcher service event fields
 `object` with following properties:
 
 
-| Property | Type | Required |
-|----------|------|----------|
-| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode`| string | Optional |
-| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID`| string | Optional |
-| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType`| string | Optional |
-| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID`| string | Optional |
-| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID`| string | Optional |
+| Property                                                                             | Type | Required |
+|--------------------------------------------------------------------------------------|------|----------|
+| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode`       | string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCodeReason` | string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID`         | string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType`       | string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID`    | string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID`       | string | Optional |
 
 
 
@@ -65,6 +67,27 @@ The error code indicating the reason for corresponding eventType
 * type: `string`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCodeReason
+##### Event Code Reason
+
+The reason for the corresponding eventCode, if any, so that it can be used for debugging or informational purposes.
+
+`https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCodeReason`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCodeReason Type
 
 
 `string`

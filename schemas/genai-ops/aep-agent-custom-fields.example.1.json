@@ -1,0 +1,9 @@
+{
+  "xdm:adobe": {
+    "xdm:gen_ai": {
+      "xdm:agent": {
+        "xdm:customAttributes": "{\"userId\": \"user123\", \"sessionId\": \"session456\", \"experimentGroup\": \"A\", \"featureFlags\": [\"newUI\", \"betaFeature\"], \"metadata\": {\"source\": \"web\", \"version\": \"1.2.3\"}}"
+      }
+    }
+  }
+}

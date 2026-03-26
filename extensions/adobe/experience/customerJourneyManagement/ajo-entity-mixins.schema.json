@@ -235,7 +235,34 @@
                 "title": "Decision Policy Type",
                 "type": "string",
                 "description": "Decision Policy Type"
+              },
+              "xdm:rankingType": {
+                "title": "Ranking Type",
+                "type": "string",
+                "description": "Ranking Type of the decision policy"
+              },
+              "xdm:formulaId": {
+                "title": "Formula ID",
+                "type": "string",
+                "description": "ID of the formula used for ranking"
               }
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet": {
+          "title": "AJO Rule Set Entity",
+          "type": "object",
+          "description": "AJO Rule Set Entity Specific Fields",
+          "properties": {
+            "xdm:id": {
+              "title": "Rule Set ID",
+              "type": "string",
+              "description": "ID for the rule set"
+            },
+            "xdm:name": {
+              "title": "Rule Set Name",
+              "type": "string",
+              "description": "Name for the rule set"
             }
           }
         },

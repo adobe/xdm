@@ -1,0 +1,66 @@
+{
+  "xdm:paidMedia": {
+    "xdm:accountDetails": {
+      "xdm:accountName": "Acme Corp - Meta Business Account",
+      "xdm:accountType": "business",
+      "xdm:businessName": "Acme Corporation",
+      "xdm:industry": "Technology",
+      "xdm:country": "US",
+      "xdm:isTestAccount": false,
+      "xdm:parentAccountID": "parent_account_987654321",
+      "xdm:agencyID": "agency_456789123",
+      "xdm:permissions": ["owner", "admin"],
+      "xdm:spendingLimits": {
+        "xdm:dailyLimit": 5000,
+        "xdm:monthlyLimit": 150000,
+        "xdm:totalLimit": 1000000
+      },
+      "xdm:billingInfo": {
+        "xdm:billingType": "credit_card",
+        "xdm:paymentMethod": "Visa ending in 1234",
+        "xdm:creditLimit": 500000,
+        "xdm:currentBalance": 125000
+      },
+      "xdm:contactInfo": {
+        "xdm:primaryEmail": "john.doe@acmecorp.com",
+        "xdm:phone": "+1-415-555-0120",
+        "xdm:website": "https://www.acmecorp.com",
+        "xdm:address": {
+          "xdm:street1": "123 Innovation Drive",
+          "xdm:street2": "Suite 500",
+          "xdm:city": "San Francisco",
+          "xdm:state": "California",
+          "xdm:region": "CA",
+          "xdm:postalCode": "94105",
+          "xdm:country": "US"
+        }
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_business_verification_status",
+          "xdm:stringValue": "verified"
+        },
+        {
+          "xdm:fieldName": "meta_ad_account_id",
+          "xdm:stringValue": "act_123456789012345"
+        },
+        {
+          "xdm:fieldName": "meta_business_manager_name",
+          "xdm:stringValue": "Acme Corp Business Manager"
+        },
+        {
+          "xdm:fieldName": "meta_account_creation_date",
+          "xdm:stringValue": "2020-03-15T08:00:00Z"
+        },
+        {
+          "xdm:fieldName": "meta_two_factor_enabled",
+          "xdm:stringValue": "true"
+        },
+        {
+          "xdm:fieldName": "meta_agency_relationship",
+          "xdm:stringValue": "direct"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/cost-metrics",
+  "title": "Core Paid Media Cost Metrics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Detailed cost and bidding metrics for paid media campaigns",
+  "definitions": {
+    "cost-metrics": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:costMetrics": {
+              "type": "object",
+              "title": "Cost Metrics",
+              "description": "Detailed cost and bidding metrics",
+              "properties": {
+                "xdm:spendInMicroCurrency": {
+                  "type": "integer",
+                  "title": "Spend (Micro Currency)",
+                  "description": "Amount spent in micro currency units",
+                  "minimum": 0
+                },
+                "xdm:averageCpm": {
+                  "type": "number",
+                  "title": "Average CPM",
+                  "description": "Average cost per thousand impressions",
+                  "minimum": 0
+                },
+                "xdm:averageCpc": {
+                  "type": "number",
+                  "title": "Average CPC",
+                  "description": "Average cost per click",
+                  "minimum": 0
+                },
+                "xdm:averageCpe": {
+                  "type": "number",
+                  "title": "Average CPE",
+                  "description": "Average cost per engagement",
+                  "minimum": 0
+                },
+                "xdm:averageCpv": {
+                  "type": "number",
+                  "title": "Average CPV",
+                  "description": "Average cost per video view",
+                  "minimum": 0
+                },
+                "xdm:averageCpa": {
+                  "type": "number",
+                  "title": "Average CPA",
+                  "description": "Average cost per acquisition/action",
+                  "minimum": 0
+                },
+                "xdm:averageCpl": {
+                  "type": "number",
+                  "title": "Average CPL",
+                  "description": "Average cost per lead",
+                  "minimum": 0
+                },
+                "xdm:bidAmount": {
+                  "type": "number",
+                  "title": "Bid Amount",
+                  "description": "Average bid amount",
+                  "minimum": 0
+                },
+                "xdm:bidAmountMicro": {
+                  "type": "integer",
+                  "title": "Bid Amount (Micro Currency)",
+                  "description": "Bid amount in micro currency units",
+                  "minimum": 0
+                },
+                "xdm:maxBid": {
+                  "type": "number",
+                  "title": "Maximum Bid",
+                  "description": "Maximum bid amount set",
+                  "minimum": 0
+                },
+                "xdm:minBid": {
+                  "type": "number",
+                  "title": "Minimum Bid",
+                  "description": "Minimum bid amount set",
+                  "minimum": 0
+                },
+                "xdm:targetBid": {
+                  "type": "number",
+                  "title": "Target Bid",
+                  "description": "Target bid amount for automated bidding",
+                  "minimum": 0
+                },
+                "xdm:actualBid": {
+                  "type": "number",
+                  "title": "Actual Bid",
+                  "description": "Actual bid amount used in auctions",
+                  "minimum": 0
+                },
+                "xdm:qualityScore": {
+                  "type": "number",
+                  "title": "Quality Score",
+                  "description": "Ad quality score (platform-specific)",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "xdm:adRank": {
+                  "type": "number",
+                  "title": "Ad Rank",
+                  "description": "Ad rank score used for auction positioning",
+                  "minimum": 0
+                },
+                "xdm:competitionIndex": {
+                  "type": "number",
+                  "title": "Competition Index",
+                  "description": "Competition level index for the auction",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:impressionShare": {
+                  "type": "object",
+                  "title": "Impression Share Metrics",
+                  "description": "Detailed impression share metrics",
+                  "properties": {
+                    "xdm:impressionShare": {
+                      "type": "number",
+                      "title": "Impression Share",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:impressionShareRank": {
+                      "type": "number",
+                      "title": "Impression Share Rank",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:impressionShareBudget": {
+                      "type": "number",
+                      "title": "Impression Share Budget",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:lostImpressionShareRank": {
+                      "type": "number",
+                      "title": "Lost Impression Share Rank",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:lostImpressionShareBudget": {
+                      "type": "number",
+                      "title": "Lost Impression Share Budget",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:exactMatchImpressionShare": {
+                      "type": "number",
+                      "title": "Exact Match Impression Share",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:topImpressionShare": {
+                      "type": "number",
+                      "title": "Top Impression Share",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:absoluteTopImpressionShare": {
+                      "type": "number",
+                      "title": "Absolute Top Impression Share",
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                },
+                "xdm:lostImpressionShareRank": {
+                  "type": "number",
+                  "title": "Lost Impression Share (Rank)",
+                  "description": "Impression share lost due to ad rank",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:lostImpressionShareBudget": {
+                  "type": "number",
+                  "title": "Lost Impression Share (Budget)",
+                  "description": "Impression share lost due to budget constraints",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:budgetUtilization": {
+                  "type": "object",
+                  "title": "Budget Utilization Metrics",
+                  "description": "Detailed budget utilization metrics",
+                  "properties": {
+                    "xdm:budgetAllocated": {
+                      "type": "number",
+                      "title": "Budget Allocated",
+                      "minimum": 0
+                    },
+                    "xdm:budgetSpent": {
+                      "type": "number",
+                      "title": "Budget Spent",
+                      "minimum": 0
+                    },
+                    "xdm:budgetRemaining": {
+                      "type": "number",
+                      "title": "Budget Remaining",
+                      "minimum": 0
+                    },
+                    "xdm:budgetUtilization": {
+                      "type": "number",
+                      "title": "Budget Utilization",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:dailyBudget": {
+                      "type": "number",
+                      "title": "Daily Budget",
+                      "minimum": 0
+                    },
+                    "xdm:dailySpend": {
+                      "type": "number",
+                      "title": "Daily Spend",
+                      "minimum": 0
+                    },
+                    "xdm:dailyBudgetUtilization": {
+                      "type": "number",
+                      "title": "Daily Budget Utilization",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "xdm:pacingStatus": {
+                      "type": "string",
+                      "title": "Pacing Status",
+                      "enum": ["on_track", "ahead", "behind", "paused"],
+                      "meta:enum": {
+                        "on_track": "On Track",
+                        "ahead": "Ahead",
+                        "behind": "Behind",
+                        "paused": "Paused"
+                      }
+                    },
+                    "xdm:projectedSpend": {
+                      "type": "number",
+                      "title": "Projected Spend",
+                      "minimum": 0
+                    },
+                    "xdm:budgetOverrun": {
+                      "type": "number",
+                      "title": "Budget Overrun",
+                      "minimum": 0
+                    },
+                    "xdm:budgetUnderrun": {
+                      "type": "number",
+                      "title": "Budget Underrun",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "xdm:budgetRemaining": {
+                  "type": "number",
+                  "title": "Budget Remaining",
+                  "description": "Remaining budget amount",
+                  "minimum": 0
+                },
+                "xdm:budgetPacing": {
+                  "type": "number",
+                  "title": "Budget Pacing",
+                  "description": "Budget pacing percentage (actual vs. planned)",
+                  "minimum": 0
+                },
+                "xdm:costEfficiency": {
+                  "type": "number",
+                  "title": "Cost Efficiency",
+                  "description": "Cost efficiency score compared to benchmarks",
+                  "minimum": 0
+                },
+                "xdm:marginOfError": {
+                  "type": "number",
+                  "title": "Margin of Error",
+                  "description": "Statistical margin of error for cost metrics",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:confidenceLevel": {
+                  "type": "number",
+                  "title": "Confidence Level",
+                  "description": "Statistical confidence level for cost metrics",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:costTrend": {
+                  "type": "string",
+                  "title": "Cost Trend",
+                  "description": "Trend direction for costs",
+                  "enum": ["increasing", "decreasing", "stable", "volatile"],
+                  "meta:enum": {
+                    "increasing": "Costs are increasing",
+                    "decreasing": "Costs are decreasing",
+                    "stable": "Costs are stable",
+                    "volatile": "Costs are volatile"
+                  }
+                },
+                "xdm:costVariance": {
+                  "type": "number",
+                  "title": "Cost Variance",
+                  "description": "Variance in cost metrics",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/cost-metrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

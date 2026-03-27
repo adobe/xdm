@@ -6,10 +6,18 @@
     "braze:userID": "639a35d192b0df004d06514c",
     "braze:externalUserID": "external_user_id"
   },
+  "braze:device": {
+    "braze:deviceID": "device_id"
+  },
   "braze:canvas": {
     "braze:canvasID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
     "braze:canvasVariationID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
     "braze:canvasStepID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:progressionType": "progression_type",
+    "braze:isCanvasEntry": true,
+    "braze:exitReason": "exit_reason",
+    "braze:canvasEntryID": "canvas_entry_id",
+    "braze:nextStepID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
     "braze:canvasName": "CANVAS_NAME",
     "braze:canvasVariationName": "CANVAS_VARIATION_NAME",
     "braze:canvasStepName": "CANVAS_STEP_NAME"

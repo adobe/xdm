@@ -75,6 +75,9 @@
                     "PAYMENT_FAILURE",
                     "BILLING_HOLD",
                     "POLICING_SUSPENDED",
+                    "LIMITED",
+                    "LEARNING",
+                    "NOT_ELIGIBLE",
                     "OTHER"
                   ],
                   "meta:enum": {
@@ -92,6 +95,9 @@
                     "PAYMENT_FAILURE": "Payment Method Failed",
                     "BILLING_HOLD": "Billing Hold",
                     "POLICING_SUSPENDED": "Suspended for Policy Violation",
+                    "LIMITED": "Limited Delivery",
+                    "LEARNING": "In Learning Phase",
+                    "NOT_ELIGIBLE": "Not Eligible to Serve",
                     "OTHER": "Other Status"
                   }
                 },

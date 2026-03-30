@@ -26,7 +26,9 @@
       "@id": "https://ns.adobe.com/xdm/channels/email"
     },
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": "Hi {{person.firstName}}",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublishedAt": "2021-06-25T15:52:25+00:00"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublishedAt": "2021-06-25T15:52:25+00:00",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigName": "Push Configuration Name",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigID": "07455ee5-51ff-4706-af8a-a8ff6756308b"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID": "123456",

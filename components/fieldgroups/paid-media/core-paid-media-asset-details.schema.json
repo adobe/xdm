@@ -38,6 +38,13 @@
                     "lead_form",
                     "dynamic_education",
                     "youtube_video",
+                    "dynamic",
+                    "call",
+                    "app_link",
+                    "booking",
+                    "location",
+                    "hotel_property",
+                    "message",
                     "other"
                   ],
                   "meta:enum": {
@@ -50,6 +57,13 @@
                     "lead_form": "Lead Form Asset",
                     "dynamic_education": "Dynamic Education Asset",
                     "youtube_video": "YouTube Video Asset",
+                    "dynamic": "Dynamic Asset",
+                    "call": "Call Asset",
+                    "app_link": "App Link Asset",
+                    "booking": "Booking Asset",
+                    "location": "Location Asset",
+                    "hotel_property": "Hotel Property Asset",
+                    "message": "Message Asset",
                     "other": "Other Asset Type"
                   }
                 },

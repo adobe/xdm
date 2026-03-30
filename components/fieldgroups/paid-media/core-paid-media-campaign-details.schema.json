@@ -27,7 +27,7 @@
                 "xdm:campaignType": {
                   "type": "string",
                   "title": "Campaign Type",
-                  "description": "Type of campaign",
+                  "description": "Primary campaign channel type. Maps to Google Ads advertising_channel_type. For automation-specific classification, see automatedCampaignType.",
                   "enum": [
                     "search",
                     "display",
@@ -45,6 +45,14 @@
                     "sponsored_display",
                     "sponsored_tv",
                     "traffic",
+                    "performance_max",
+                    "demand_gen",
+                    "multi_channel",
+                    "local",
+                    "local_services",
+                    "hotel",
+                    "travel",
+                    "smart",
                     "other"
                   ],
                   "meta:enum": {
@@ -64,13 +72,21 @@
                     "sponsored_display": "Sponsored Display (Amazon)",
                     "sponsored_tv": "Sponsored TV (Amazon)",
                     "traffic": "Traffic Campaign",
+                    "performance_max": "Performance Max Campaign (Google)",
+                    "demand_gen": "Demand Gen Campaign (Google)",
+                    "multi_channel": "Multi-Channel Campaign",
+                    "local": "Local Campaign",
+                    "local_services": "Local Services Campaign",
+                    "hotel": "Hotel Campaign",
+                    "travel": "Travel Campaign",
+                    "smart": "Smart Campaign",
                     "other": "Other Campaign Type"
                   }
                 },
                 "xdm:subType": {
                   "type": "string",
                   "title": "Campaign Sub-type",
-                  "description": "More specific campaign sub-type or format"
+                  "description": "More specific campaign sub-type or format. Maps to Google Ads advertising_channel_sub_type for non-automated variants (e.g., VIDEO_NON_SKIPPABLE, VIDEO_SEQUENCE)."
                 },
                 "xdm:promotedObject": {
                   "type": "object",
@@ -135,7 +151,55 @@
                     "xdm:bidStrategy": {
                       "type": "string",
                       "title": "Bid Strategy",
-                      "description": "Bidding strategy for the campaign"
+                      "description": "Bidding strategy for the campaign",
+                      "enum": [
+                        "manual_cpc",
+                        "enhanced_cpc",
+                        "maximize_clicks",
+                        "maximize_conversions",
+                        "maximize_conversion_value",
+                        "target_cpa",
+                        "target_roas",
+                        "target_impression_share",
+                        "automatic",
+                        "lowest_cost",
+                        "cost_cap",
+                        "bid_cap",
+                        "min_roas",
+                        "manual_cpm",
+                        "manual_cpv",
+                        "target_cpm",
+                        "target_cpv",
+                        "target_cpc",
+                        "percent_cpc",
+                        "commission",
+                        "manual_cpa",
+                        "fixed_cpm"
+                      ],
+                      "meta:enum": {
+                        "manual_cpc": "Manual CPC",
+                        "enhanced_cpc": "Enhanced CPC",
+                        "maximize_clicks": "Maximize Clicks",
+                        "maximize_conversions": "Maximize Conversions",
+                        "maximize_conversion_value": "Maximize Conversion Value",
+                        "target_cpa": "Target CPA",
+                        "target_roas": "Target ROAS",
+                        "target_impression_share": "Target Impression Share",
+                        "automatic": "Automatic Bidding",
+                        "lowest_cost": "Lowest Cost",
+                        "cost_cap": "Cost Cap",
+                        "bid_cap": "Bid Cap",
+                        "min_roas": "Minimum ROAS",
+                        "manual_cpm": "Manual CPM",
+                        "manual_cpv": "Manual CPV",
+                        "target_cpm": "Target CPM",
+                        "target_cpv": "Target CPV",
+                        "target_cpc": "Target CPC",
+                        "percent_cpc": "Percent CPC",
+                        "commission": "Commission Bidding",
+                        "manual_cpa": "Manual CPA",
+                        "fixed_cpm": "Fixed CPM"
+                      }
                     },
                     "xdm:bidAmount": {
                       "type": "number",
@@ -338,16 +402,15 @@
                 "xdm:isAutomatedCampaign": {
                   "type": "boolean",
                   "title": "Is Automated Campaign",
-                  "description": "Whether this is an automated/smart campaign with machine learning optimization"
+                  "description": "Whether this campaign uses platform-level automation with machine learning optimization. Should be true for inherently automated campaign types (e.g., performance_max, smart, demand_gen) and platform automation features (e.g., TikTok Smart+, Meta Advantage+)."
                 },
                 "xdm:automatedCampaignType": {
                   "type": "string",
                   "title": "Automated Campaign Type",
-                  "description": "Specific type of automated campaign",
+                  "description": "Cross-platform automation product classification. Only populated when isAutomatedCampaign is true. Normalizes automation approaches across platforms. Not a direct 1:1 mapping of any single platform field. For Google Ads, automated sub-types from advertising_channel_sub_type (e.g., SMART_CAMPAIGN, APP_CAMPAIGN) map here.",
                   "enum": [
                     "SMART_PLUS",
                     "SMART_PERFORMANCE_WEB",
-                    "PERFORMANCE_MAX",
                     "MAXIMUM_DELIVERY",
                     "AUTO_CAMPAIGN",
                     "DYNAMIC_CREATIVE",
@@ -357,9 +420,8 @@
                   "meta:enum": {
                     "SMART_PLUS": "Smart+ Campaign (TikTok)",
                     "SMART_PERFORMANCE_WEB": "Smart Performance Web Campaign (TikTok)",
-                    "PERFORMANCE_MAX": "Performance Max (Google)",
                     "MAXIMUM_DELIVERY": "Maximum Delivery (LinkedIn)",
-                    "AUTO_CAMPAIGN": "Auto Campaign (Amazon)",
+                    "AUTO_CAMPAIGN": "Auto Campaign (Amazon, Google App Campaigns)",
                     "DYNAMIC_CREATIVE": "Dynamic Creative Optimization",
                     "GMV_MAX": "GMV Max Campaign (TikTok)",
                     "OTHER": "Other Automated Type"
@@ -382,6 +444,7 @@
                   "enum": [
                     "CATALOG",
                     "STORE",
+                    "GOOGLE_MERCHANT_CENTER",
                     "TIKTOK_SHOP",
                     "AMAZON",
                     "SHOPIFY",
@@ -391,6 +454,7 @@
                   "meta:enum": {
                     "CATALOG": "Product Catalog",
                     "STORE": "Online Store",
+                    "GOOGLE_MERCHANT_CENTER": "Google Merchant Center",
                     "TIKTOK_SHOP": "TikTok Shop",
                     "AMAZON": "Amazon Store",
                     "SHOPIFY": "Shopify Store",

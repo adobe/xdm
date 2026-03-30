@@ -13,7 +13,7 @@
       "xdm:budgetSettings": {
         "xdm:isCampaignBudgetOptimization": true,
         "xdm:spendCap": 2500,
-        "xdm:bidStrategy": "LOWEST_COST_WITHOUT_CAP",
+        "xdm:bidStrategy": "lowest_cost",
         "xdm:bidAmount": 0
       },
       "xdm:scheduling": {

@@ -8,7 +8,7 @@
     "xdm:campaignGUID": "google_ads_1234567890_9876543210",
     "xdm:hierarchyPath": "1234567890/9876543210",
     "xdm:metadata": {
-      "xdm:name": "Brand Awareness - Display Network",
+      "xdm:name": "Holiday 2025 - Search Campaign",
       "xdm:status": "active",
       "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
       "xdm:currency": "USD",
@@ -16,183 +16,152 @@
       "xdm:createdTime": "2025-09-10T08:00:00Z",
       "xdm:updatedTime": "2025-11-09T10:00:00Z",
       "xdm:startTime": "2025-10-01T00:00:00Z",
-      "xdm:objective": "awareness",
+      "xdm:objective": "conversions",
       "xdm:budgetType": "daily",
       "xdm:dailyBudget": 1500,
-      "xdm:lifetimeBudget": 0,
-      "xdm:biddingStrategy": "target_cpm",
-      "xdm:optimizationGoal": "impressions"
+      "xdm:biddingStrategy": "target_cpa",
+      "xdm:optimizationGoal": "conversions"
     },
     "xdm:campaignDetails": {
-      "xdm:campaignType": "display",
-      "xdm:subType": "display",
+      "xdm:campaignType": "search",
+      "xdm:subType": "standard_search",
       "xdm:isAutomatedCampaign": false,
       "xdm:promotedObject": {
         "xdm:objectType": "website",
-        "xdm:objectID": "",
-        "xdm:pageID": "",
-        "xdm:pixelID": "",
-        "xdm:customEventType": "",
-        "xdm:applicationID": "",
-        "xdm:productCatalogID": "",
-        "xdm:productSetID": "",
-        "xdm:offlineConversionDataSetID": "",
-        "xdm:destinationURL": "https://www.acmecorp.com"
+        "xdm:objectName": "ACME Corp Website",
+        "xdm:objectURL": "https://www.acmecorp.com"
       },
       "xdm:budgetSettings": {
-        "xdm:budgetType": "daily",
-        "xdm:dailyBudget": 1500,
-        "xdm:lifetimeBudget": 0,
-        "xdm:totalBudget": 0,
-        "xdm:budgetRemaining": 0,
-        "xdm:budgetSpent": 52500,
-        "xdm:budgetUtilization": 0,
-        "xdm:pacing": "standard",
-        "xdm:pacingType": "standard",
-        "xdm:campaignBudgetOptimization": false,
-        "xdm:cboEnabled": false,
-        "xdm:budgetRebalancing": false,
-        "xdm:spendCap": 0,
-        "xdm:bidCap": 0,
-        "xdm:costCap": 0
+        "xdm:isCampaignBudgetOptimization": false,
+        "xdm:spendCap": 50000,
+        "xdm:bidStrategy": "target_cpa",
+        "xdm:bidAmount": 25.5
       },
-      "xdm:targetingStrategy": {
-        "xdm:targetingExpansion": true,
-        "xdm:detailedTargetingExpansion": "",
-        "xdm:advantagePlusAudience": false,
-        "xdm:advantagePlusCreative": false,
-        "xdm:advantagePlusCatalog": false,
-        "xdm:lookalikExpansion": false,
-        "xdm:automaticPlacements": true,
-        "xdm:dynamicCreative": false
+      "xdm:targeting": {
+        "xdm:geoTargeting": {
+          "xdm:countries": ["US"],
+          "xdm:regions": [
+            "New York",
+            "New Jersey",
+            "Connecticut",
+            "Pennsylvania"
+          ]
+        },
+        "xdm:demographicTargeting": {
+          "xdm:ageRanges": [
+            {
+              "xdm:minAge": 18,
+              "xdm:maxAge": 65
+            }
+          ],
+          "xdm:genders": ["all"],
+          "xdm:languages": ["en"]
+        },
+        "xdm:deviceTargeting": {
+          "xdm:deviceTypes": ["desktop", "mobile", "tablet"]
+        }
       },
-      "xdm:schedulingSettings": {
-        "xdm:startDate": "2025-10-01T00:00:00Z",
-        "xdm:endDate": "",
-        "xdm:scheduleType": "continuous",
-        "xdm:runContinuously": true,
-        "xdm:dayParting": true,
-        "xdm:dayPartingSchedule": [
-          {
-            "xdm:dayOfWeek": "monday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          },
-          {
-            "xdm:dayOfWeek": "tuesday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          },
-          {
-            "xdm:dayOfWeek": "wednesday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          },
-          {
-            "xdm:dayOfWeek": "thursday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          },
-          {
-            "xdm:dayOfWeek": "friday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          }
-        ],
-        "xdm:timezone": "America/New_York",
-        "xdm:flightDates": []
+      "xdm:scheduling": {
+        "xdm:isAlwaysOn": true,
+        "xdm:dayParting": {
+          "xdm:enabled": true,
+          "xdm:schedule": [
+            {
+              "xdm:dayOfWeek": "monday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "tuesday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "wednesday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "thursday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "friday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "saturday",
+              "xdm:startHour": 10,
+              "xdm:endHour": 20
+            },
+            {
+              "xdm:dayOfWeek": "sunday",
+              "xdm:startHour": 10,
+              "xdm:endHour": 20
+            }
+          ]
+        }
       },
       "xdm:frequencyCapping": {
-        "xdm:enabled": true,
-        "xdm:impressionCap": 3,
-        "xdm:timePeriod": "day",
-        "xdm:timePeriodDays": 1,
-        "xdm:applyToAllAdSets": true,
-        "xdm:resetFrequency": "daily"
+        "xdm:enabled": false
       },
       "xdm:conversionTracking": {
-        "xdm:pixelID": "",
-        "xdm:conversionEvents": [],
-        "xdm:customConversions": [],
-        "xdm:offlineConversions": false,
-        "xdm:serverSideTracking": false,
-        "xdm:conversionAPI": false,
-        "xdm:deduplication": false,
-        "xdm:attributionWindow": "30d_click"
-      },
-      "xdm:optimizationSettings": {
-        "xdm:objective": "BRAND_AWARENESS",
-        "xdm:optimizationGoal": "IMPRESSIONS",
-        "xdm:billingEvent": "IMPRESSIONS",
-        "xdm:bidStrategy": "TARGET_CPM",
-        "xdm:pacing": "standard",
-        "xdm:deliveryType": "standard",
-        "xdm:learningPhase": "completed",
-        "xdm:autoOptimization": true
-      },
-      "xdm:ios14Settings": {
-        "xdm:campaignOptedIn": false,
-        "xdm:attOptimization": false,
-        "xdm:aggregatedEventMeasurement": false,
-        "xdm:prioritizedEvents": [],
-        "xdm:domainVerification": false,
-        "xdm:verifiedDomain": "",
-        "xdm:skadnetworkEnabled": false,
-        "xdm:conversionValueSchema": ""
-      },
-      "xdm:brandSafety": {
-        "xdm:inventoryFilter": "expanded",
-        "xdm:blockLists": [],
-        "xdm:contentCategories": [
-          "news",
-          "entertainment",
-          "technology",
-          "business",
-          "sports",
-          "lifestyle"
+        "xdm:pixelIDs": ["AW-987654321"],
+        "xdm:conversionEvents": [
+          "purchase",
+          "add_to_cart",
+          "begin_checkout",
+          "sign_up"
         ],
-        "xdm:excludedCategories": ["mature_content", "gambling"],
-        "xdm:publisherBlockLists": [],
-        "xdm:appBlockLists": [],
-        "xdm:brandSuitability": "expanded"
+        "xdm:attributionWindow": "30d_click",
+        "xdm:urlTracking": {
+          "xdm:trackingTemplate": "{lpurl}?s_kwcid=AL!{userid}!3!{creative}!{matchtype}!{placement}!{network}!{keyword}",
+          "xdm:finalUrlSuffix": "gclid={gclid}&gclsrc=aw.ds",
+          "xdm:customParameters": [
+            {
+              "xdm:key": "utm_source",
+              "xdm:value": "google"
+            },
+            {
+              "xdm:key": "utm_medium",
+              "xdm:value": "cpc"
+            },
+            {
+              "xdm:key": "utm_campaign",
+              "xdm:value": "{_campaign}"
+            }
+          ]
+        }
       },
-      "xdm:creativeSettings": {
-        "xdm:dynamicCreative": false,
-        "xdm:multiAdvertiserAds": false,
-        "xdm:catalogAds": false,
-        "xdm:collectionAds": false,
-        "xdm:instantExperience": false,
-        "xdm:videoPolling": false,
-        "xdm:playableAds": false
-      },
+      "xdm:placementBidAdjustments": [
+        {
+          "xdm:placement": "TOP_OF_SEARCH",
+          "xdm:placementType": "SEARCH",
+          "xdm:adjustmentPercentage": 25
+        }
+      ],
       "xdm:additionalDetails": [
         {
-          "xdm:fieldName": "google_campaign_id",
-          "xdm:stringValue": "9876543210"
-        },
-        {
-          "xdm:fieldName": "google_campaign_name",
-          "xdm:stringValue": "Brand Awareness - Display Network"
-        },
-        {
-          "xdm:fieldName": "google_campaign_type",
-          "xdm:stringValue": "DISPLAY"
-        },
-        {
           "xdm:fieldName": "google_advertising_channel_type",
-          "xdm:stringValue": "DISPLAY"
+          "xdm:stringValue": "SEARCH"
         },
         {
           "xdm:fieldName": "google_bidding_strategy_type",
-          "xdm:stringValue": "TARGET_CPM"
-        },
-        {
-          "xdm:fieldName": "google_campaign_status",
-          "xdm:stringValue": "ENABLED"
+          "xdm:stringValue": "TARGET_CPA"
         },
         {
           "xdm:fieldName": "google_serving_status",
           "xdm:stringValue": "SERVING"
+        },
+        {
+          "xdm:fieldName": "google_network_settings_target_search_network",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_network_settings_target_content_network",
+          "xdm:booleanValue": false
         }
       ]
     }

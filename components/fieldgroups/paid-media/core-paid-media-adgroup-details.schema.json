@@ -37,6 +37,9 @@
                     "app_install",
                     "lead_generation",
                     "reach_frequency",
+                    "hotel",
+                    "travel",
+                    "audio",
                     "other"
                   ],
                   "meta:enum": {
@@ -48,6 +51,9 @@
                     "app_install": "App Install Ad Group",
                     "lead_generation": "Lead Generation Ad Group",
                     "reach_frequency": "Reach & Frequency Ad Group",
+                    "hotel": "Hotel Ad Group",
+                    "travel": "Travel Ad Group",
+                    "audio": "Audio Ad Group",
                     "other": "Other Ad Group Type"
                   }
                 },
@@ -99,6 +105,7 @@
                         "enhanced_cpc",
                         "maximize_clicks",
                         "maximize_conversions",
+                        "maximize_conversion_value",
                         "target_cpa",
                         "target_roas",
                         "target_impression_share",
@@ -106,13 +113,23 @@
                         "lowest_cost",
                         "cost_cap",
                         "bid_cap",
-                        "min_roas"
+                        "min_roas",
+                        "manual_cpm",
+                        "manual_cpv",
+                        "target_cpm",
+                        "target_cpv",
+                        "target_cpc",
+                        "percent_cpc",
+                        "commission",
+                        "manual_cpa",
+                        "fixed_cpm"
                       ],
                       "meta:enum": {
                         "manual_cpc": "Manual CPC",
                         "enhanced_cpc": "Enhanced CPC",
                         "maximize_clicks": "Maximize Clicks",
                         "maximize_conversions": "Maximize Conversions",
+                        "maximize_conversion_value": "Maximize Conversion Value",
                         "target_cpa": "Target CPA",
                         "target_roas": "Target ROAS",
                         "target_impression_share": "Target Impression Share",
@@ -120,7 +137,16 @@
                         "lowest_cost": "Lowest Cost",
                         "cost_cap": "Cost Cap",
                         "bid_cap": "Bid Cap",
-                        "min_roas": "Minimum ROAS"
+                        "min_roas": "Minimum ROAS",
+                        "manual_cpm": "Manual CPM",
+                        "manual_cpv": "Manual CPV",
+                        "target_cpm": "Target CPM",
+                        "target_cpv": "Target CPV",
+                        "target_cpc": "Target CPC",
+                        "percent_cpc": "Percent CPC",
+                        "commission": "Commission Bidding",
+                        "manual_cpa": "Manual CPA",
+                        "fixed_cpm": "Fixed CPM"
                       }
                     },
                     "xdm:targetCpa": {

@@ -60,29 +60,7 @@
           }
         ],
         "xdm:dominantChannel": "paid_social"
-      },
-      "xdm:additionalDetails": [
-        {
-          "xdm:fieldName": "meta_attribution_setting",
-          "xdm:stringValue": "7_day_click_1_day_view"
-        },
-        {
-          "xdm:fieldName": "meta_conversion_tracking_pixel",
-          "xdm:stringValue": "pixel_123456789"
-        },
-        {
-          "xdm:fieldName": "meta_attribution_model_version",
-          "xdm:stringValue": "v3.2"
-        },
-        {
-          "xdm:fieldName": "meta_cross_device_enabled",
-          "xdm:stringValue": "true"
-        },
-        {
-          "xdm:fieldName": "meta_attribution_data_freshness",
-          "xdm:stringValue": "2025-11-10T08:00:00Z"
-        }
-      ]
+      }
     }
   }
 }

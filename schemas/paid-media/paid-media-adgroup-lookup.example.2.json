@@ -2,7 +2,6 @@
   "xdm:entityType": "adgroup",
   "xdm:paidMedia": {
     "xdm:adNetwork": "google_ads",
-    "xdm:entityType": "adGroup",
     "xdm:accountID": "1234567890",
     "xdm:accountGUID": "google_ads_1234567890",
     "xdm:campaignID": "9876543210",
@@ -11,7 +10,7 @@
     "xdm:adGroupGUID": "google_ads_1234567890_5555666677",
     "xdm:hierarchyPath": "1234567890/9876543210/5555666677",
     "xdm:metadata": {
-      "xdm:name": "Tech Professionals - Responsive Display",
+      "xdm:name": "Tech Professionals - Responsive Search",
       "xdm:status": "active",
       "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
       "xdm:currency": "USD",
@@ -19,31 +18,19 @@
       "xdm:createdTime": "2025-09-15T10:00:00Z",
       "xdm:updatedTime": "2025-11-09T09:00:00Z",
       "xdm:startTime": "2025-10-01T00:00:00Z",
-      "xdm:objective": "awareness",
-      "xdm:budgetType": "daily",
-      "xdm:dailyBudget": 0,
-      "xdm:lifetimeBudget": 0,
-      "xdm:biddingStrategy": "target_cpm",
-      "xdm:optimizationGoal": "impressions"
+      "xdm:objective": "conversions",
+      "xdm:biddingStrategy": "target_cpa",
+      "xdm:optimizationGoal": "conversions"
     },
     "xdm:adGroupDetails": {
       "xdm:adGroupType": "standard",
-      "xdm:childAdType": "responsive_display",
+      "xdm:childAdType": "responsive_search",
       "xdm:budgetSettings": {
-        "xdm:budgetType": "campaign",
-        "xdm:dailyBudget": 0,
-        "xdm:lifetimeBudget": 0,
-        "xdm:budgetRemaining": 0,
-        "xdm:budgetSpent": 18500,
-        "xdm:budgetUtilization": 0,
-        "xdm:pacing": "standard",
-        "xdm:pacingType": "standard",
-        "xdm:budgetOptimization": false,
-        "xdm:sharedBudget": false,
-        "xdm:budgetResetTime": "00:00:00",
-        "xdm:budgetTimezone": "America/New_York"
+        "xdm:bidInMicroCurrency": 5000000,
+        "xdm:bidStrategyType": "target_cpa",
+        "xdm:targetCpa": 25.0
       },
-      "xdm:targetingSettings": {
+      "xdm:targeting": {
         "xdm:geoTargeting": {
           "xdm:countries": ["US"],
           "xdm:regions": [
@@ -52,22 +39,17 @@
             "Massachusetts",
             "Washington"
           ],
-          "xdm:cities": ["New York", "San Francisco", "Boston", "Seattle"],
-          "xdm:postalCodes": [],
-          "xdm:dmas": [],
-          "xdm:radius": 0,
-          "xdm:radiusUnit": "mile",
-          "xdm:locationType": "presence"
+          "xdm:cities": ["New York", "San Francisco", "Boston", "Seattle"]
         },
         "xdm:demographicTargeting": {
-          "xdm:ageMin": 25,
-          "xdm:ageMax": 65,
-          "xdm:genders": ["male", "female"],
-          "xdm:languages": ["en"],
-          "xdm:education": [],
-          "xdm:relationshipStatus": [],
-          "xdm:workEmployers": [],
-          "xdm:workPositions": []
+          "xdm:ageRanges": [
+            {
+              "xdm:minAge": 25,
+              "xdm:maxAge": 65
+            }
+          ],
+          "xdm:genders": ["all"],
+          "xdm:languages": ["en"]
         },
         "xdm:interestTargeting": {
           "xdm:interests": [
@@ -75,113 +57,62 @@
             "Business & Industrial",
             "Software"
           ],
-          "xdm:behaviors": [],
-          "xdm:lifeEvents": []
-        },
-        "xdm:audienceTargeting": {
           "xdm:customAudiences": [
-            "remarketing_website_visitors",
-            "customer_match_list"
-          ],
-          "xdm:lookalikeSources": [],
-          "xdm:lookalikeSimilarity": 0,
-          "xdm:excludedAudiences": ["converters_last_30d"],
-          "xdm:audienceExpansion": true,
-          "xdm:detailedTargeting": ""
+            {
+              "xdm:audienceID": "remarketing_website_visitors",
+              "xdm:audienceName": "Remarketing - Website Visitors",
+              "xdm:audienceType": "retargeting"
+            },
+            {
+              "xdm:audienceID": "customer_match_list",
+              "xdm:audienceName": "Customer Match - CRM List",
+              "xdm:audienceType": "custom"
+            }
+          ]
         },
         "xdm:deviceTargeting": {
-          "xdm:devices": ["mobile", "desktop", "tablet"],
-          "xdm:platforms": [],
-          "xdm:osVersions": [],
-          "xdm:deviceModels": [],
-          "xdm:connectionTypes": []
+          "xdm:deviceTypes": ["mobile", "desktop", "tablet"]
         }
       },
       "xdm:optimizationSettings": {
-        "xdm:optimizationGoal": "impressions",
-        "xdm:billingEvent": "impressions",
-        "xdm:bidStrategy": "target_cpm",
-        "xdm:bidAmount": 5.0,
-        "xdm:bidCap": 0,
-        "xdm:costCap": 0,
-        "xdm:roas": 0,
-        "xdm:optimizationEvent": "",
-        "xdm:conversionWindow": "",
-        "xdm:attributionSetting": "",
-        "xdm:deliveryType": "standard",
-        "xdm:campaignBudgetOptimization": false
+        "xdm:conversionWindow": "30d_click",
+        "xdm:isAutoTargetingEnabled": true,
+        "xdm:isCampaignOptimization": false
       },
       "xdm:placementSettings": {
-        "xdm:placementType": "automatic",
-        "xdm:placements": [
-          "google_display_network",
-          "youtube",
-          "gmail",
-          "discover"
-        ],
-        "xdm:excludedPlacements": [],
-        "xdm:publisherPlatforms": [],
-        "xdm:devicePlatforms": ["mobile", "desktop", "tablet"],
-        "xdm:facebookPositions": [],
-        "xdm:instagramPositions": [],
-        "xdm:messengerPositions": [],
-        "xdm:audienceNetworkPositions": []
+        "xdm:placementGroup": "search_network",
+        "xdm:placements": ["google_search", "search_partners"],
+        "xdm:deviceTypes": ["mobile", "desktop", "tablet"]
       },
       "xdm:deliverySettings": {
-        "xdm:startTime": "2025-10-01T00:00:00Z",
-        "xdm:scheduleType": "continuous",
-        "xdm:dayParting": true,
-        "xdm:dayPartingSchedule": [
-          {
-            "xdm:dayOfWeek": "monday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          },
-          {
-            "xdm:dayOfWeek": "tuesday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          },
-          {
-            "xdm:dayOfWeek": "wednesday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          },
-          {
-            "xdm:dayOfWeek": "thursday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          },
-          {
-            "xdm:dayOfWeek": "friday",
-            "xdm:startHour": 9,
-            "xdm:endHour": 21
-          }
-        ],
-        "xdm:frequencyCap": {
-          "xdm:enabled": true,
-          "xdm:impressions": 3,
-          "xdm:period": "day"
-        },
-        "xdm:deliveryEstimate": "good",
-        "xdm:learningPhase": "completed",
-        "xdm:minimumRoas": 0
+        "xdm:pacingDeliveryType": "standard",
+        "xdm:deliveryStatus": "active"
       },
       "xdm:trackingSettings": {
-        "xdm:pixelID": "",
-        "xdm:conversionTracking": true,
-        "xdm:offlineConversionTracking": false,
-        "xdm:appEventTracking": false,
-        "xdm:urlParameters": "utm_source=google&utm_medium=display&utm_campaign=brand_awareness&utm_content=tech_professionals",
-        "xdm:trackingSpecs": []
+        "xdm:measurementProviderNames": ["Google Analytics"],
+        "xdm:eventSources": ["google_ads_conversion_tag"],
+        "xdm:urlTracking": {
+          "xdm:trackingTemplate": "{lpurl}?s_kwcid=AL!{userid}!3!{creative}!{matchtype}!{placement}!{network}",
+          "xdm:finalUrlSuffix": "gclid={gclid}&utm_source=google&utm_medium=search",
+          "xdm:customParameters": [
+            {
+              "xdm:key": "campaignid",
+              "xdm:value": "{campaignid}"
+            },
+            {
+              "xdm:key": "adgroupid",
+              "xdm:value": "{adgroupid}"
+            },
+            {
+              "xdm:key": "keyword",
+              "xdm:value": "{keyword}"
+            }
+          ]
+        }
       },
-      "xdm:brandSafetySettings": {
-        "xdm:blockLists": [],
-        "xdm:inventoryFilter": "expanded",
-        "xdm:contentCategories": [],
-        "xdm:excludedCategories": ["mature_content"],
-        "xdm:publisherBlockLists": [],
-        "xdm:appBlockLists": []
+      "xdm:brandSafetyConfig": {
+        "xdm:inventoryFilter": "standard",
+        "xdm:blockedCategories": ["mature_content"]
       },
       "xdm:additionalDetails": [
         {
@@ -189,24 +120,24 @@
           "xdm:stringValue": "5555666677"
         },
         {
-          "xdm:fieldName": "google_campaign_id",
-          "xdm:stringValue": "9876543210"
-        },
-        {
-          "xdm:fieldName": "google_ad_group_name",
-          "xdm:stringValue": "Tech Professionals - Responsive Display"
-        },
-        {
           "xdm:fieldName": "google_ad_group_type",
-          "xdm:stringValue": "DISPLAY_STANDARD"
+          "xdm:stringValue": "SEARCH_STANDARD"
         },
         {
           "xdm:fieldName": "google_ad_group_status",
           "xdm:stringValue": "ENABLED"
         },
         {
-          "xdm:fieldName": "google_target_cpm_micros",
-          "xdm:stringValue": "5000000"
+          "xdm:fieldName": "google_target_cpa_micros",
+          "xdm:stringValue": "25000000"
+        },
+        {
+          "xdm:fieldName": "google_ad_rotation_mode",
+          "xdm:stringValue": "OPTIMIZE"
+        },
+        {
+          "xdm:fieldName": "google_effective_target_cpa_source",
+          "xdm:stringValue": "AD_GROUP"
         }
       ]
     }

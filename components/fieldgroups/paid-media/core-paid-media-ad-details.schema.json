@@ -41,6 +41,12 @@
                     "lead_form",
                     "playable",
                     "interactive",
+                    "audio",
+                    "call",
+                    "smart",
+                    "local",
+                    "hotel",
+                    "travel",
                     "other"
                   ],
                   "meta:enum": {
@@ -56,6 +62,12 @@
                     "lead_form": "Lead Form Ad",
                     "playable": "Playable Ad",
                     "interactive": "Interactive Ad",
+                    "audio": "Audio Ad",
+                    "call": "Call Ad",
+                    "smart": "Smart Campaign Ad",
+                    "local": "Local Ad",
+                    "hotel": "Hotel Ad",
+                    "travel": "Travel Ad",
                     "other": "Other Ad Type"
                   }
                 },

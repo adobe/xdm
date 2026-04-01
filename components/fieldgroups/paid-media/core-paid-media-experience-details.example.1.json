@@ -32,7 +32,7 @@
             "xdm:assetID": "asset_001",
             "xdm:assetGUID": "meta_act_123_asset_001",
             "xdm:heading": "Premium Wireless Headphones",
-            "description": "Experience crystal-clear sound with 40-hour battery life",
+            "xdm:description": "Experience crystal-clear sound with 40-hour battery life",
             "xdm:destinationURL": "https://shop.acmecorp.com/products/headphones-premium"
           },
           {
@@ -40,7 +40,7 @@
             "xdm:assetID": "asset_002",
             "xdm:assetGUID": "meta_act_123_asset_002",
             "xdm:heading": "Smart Fitness Watch",
-            "description": "Track your health and fitness goals with precision",
+            "xdm:description": "Track your health and fitness goals with precision",
             "xdm:destinationURL": "https://shop.acmecorp.com/products/watch-fitness"
           },
           {
@@ -48,7 +48,7 @@
             "xdm:assetID": "asset_003",
             "xdm:assetGUID": "meta_act_123_asset_003",
             "xdm:heading": "Portable Bluetooth Speaker",
-            "description": "Powerful sound in a compact, waterproof design",
+            "xdm:description": "Powerful sound in a compact, waterproof design",
             "xdm:destinationURL": "https://shop.acmecorp.com/products/speaker-portable"
           },
           {
@@ -56,7 +56,7 @@
             "xdm:assetID": "asset_004",
             "xdm:assetGUID": "meta_act_123_asset_004",
             "xdm:heading": "Wireless Charging Pad",
-            "description": "Fast wireless charging for all your devices",
+            "xdm:description": "Fast wireless charging for all your devices",
             "xdm:destinationURL": "https://shop.acmecorp.com/products/charger-wireless"
           },
           {
@@ -64,7 +64,7 @@
             "xdm:assetID": "asset_005",
             "xdm:assetGUID": "meta_act_123_asset_005",
             "xdm:heading": "USB-C Hub Adapter",
-            "description": "Connect all your devices with this versatile hub",
+            "xdm:description": "Connect all your devices with this versatile hub",
             "xdm:destinationURL": "https://shop.acmecorp.com/products/hub-usbc"
           }
         ]

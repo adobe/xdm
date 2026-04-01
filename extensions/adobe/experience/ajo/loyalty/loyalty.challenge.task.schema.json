@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/task",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Loyalty Challenge Task",
-  "description": "Details about a task within a loyalty challenge, including state, dates, variables, and completion tracking.",
+  "description": "Details about a task within a loyalty challenge, including state, dates, variables, accumulators, and completion tracking.",
   "type": "object",
   "meta:extensible": true,
   "definitions": {
@@ -196,6 +196,38 @@
                     "minLength": 1
                   }
                 }
+              },
+              "meta:xdmType": "array"
+            }
+          }
+        },
+        "xdm:accumulators": {
+          "title": "Accumulators",
+          "type": "object",
+          "description": "Accumulated quantity, spend, qualified days, and item-level entries toward this task.",
+          "properties": {
+            "xdm:qty": {
+              "title": "Quantity",
+              "type": "number",
+              "description": "Total quantity accumulated."
+            },
+            "xdm:spend": {
+              "title": "Spend",
+              "type": "number",
+              "description": "Total spend accumulated."
+            },
+            "xdm:days": {
+              "title": "Days",
+              "type": "integer",
+              "description": "Number of qualified days accumulated.",
+              "meta:xdmType": "int"
+            },
+            "xdm:items": {
+              "title": "Items",
+              "type": "array",
+              "description": "Item-level contributions that counted toward this task.",
+              "items": {
+                "$ref": "https://ns.adobe.com/experience/ajo/loyalty/challenge/accumulatorItemEntry"
               },
               "meta:xdmType": "array"
             }

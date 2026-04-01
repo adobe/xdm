@@ -22,7 +22,30 @@
     },
     "singleTrans": false,
     "spendMin": 0,
-    "qtyMin": 1,
+    "qtyMin": 3,
     "maxTrans": 0
+  },
+  "accumulators": {
+    "qty": 1,
+    "spend": 6,
+    "days": 1,
+    "items": [
+      {
+        "item": {
+          "itemSet": [
+            "FRAP"
+          ],
+          "itemName": "Frozen Caramel Latte",
+          "qty": 1,
+          "unitPrice": 6,
+          "subTotal": 6
+        },
+        "id": "16e46e10-eff6-4e8d-8c9d-a635d9d89c17",
+        "timestamp": "2026-03-03T00:44:00.000+00:00",
+        "timestampApplied": "2026-04-01T19:52:55.626+00:00",
+        "utcOffset": "-08:00",
+        "transactionId": "f2b19a13-02ec-41ab-9b85-2a24d8b05c7c"
+      }
+    ]
   }
 }

@@ -1,0 +1,101 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/accumulatorItemEntry",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Challenge Accumulator Item Entry",
+  "description": "A single item-level contribution in an accumulators items list for a loyalty challenge task or completion, including item details, identifiers, and timestamps.",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "accumulatorItemEntry": {
+      "type": "object",
+      "properties": {
+        "xdm:item": {
+          "title": "Item",
+          "type": "object",
+          "description": "Item details for this accumulator entry.",
+          "properties": {
+            "xdm:itemSet": {
+              "title": "Item Set",
+              "type": "array",
+              "description": "Properties or tags of the item.",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "xdm:itemName": {
+              "title": "Item Name",
+              "type": "string",
+              "description": "Name of the item."
+            },
+            "xdm:qty": {
+              "title": "Quantity",
+              "type": "number",
+              "description": "Quantity of the item."
+            },
+            "xdm:unitPrice": {
+              "title": "Unit Price",
+              "type": "number",
+              "description": "Price per unit of the item."
+            },
+            "xdm:subTotal": {
+              "title": "Subtotal",
+              "type": "number",
+              "description": "Subtotal for this line (for example quantity multiplied by unit price)."
+            }
+          }
+        },
+        "xdm:id": {
+          "title": "Identifier",
+          "type": "string",
+          "description": "Unique identifier for this accumulator list entry.",
+          "minLength": 1
+        },
+        "xdm:timestamp": {
+          "title": "Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "When the contributing event occurred."
+        },
+        "xdm:timestampApplied": {
+          "title": "Timestamp Applied",
+          "type": "string",
+          "format": "date-time",
+          "description": "When this entry was applied to accumulators."
+        },
+        "xdm:utcOffset": {
+          "title": "UTC Offset",
+          "type": "string",
+          "description": "Local UTC offset for the contributing event (for example -08:00)."
+        },
+        "xdm:locationId": {
+          "title": "Location ID",
+          "type": "string",
+          "description": "Identifier for the location where the contributing transaction occurred."
+        },
+        "xdm:transactionId": {
+          "title": "Transaction ID",
+          "type": "string",
+          "description": "Transaction associated with this accumulator entry.",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/accumulatorItemEntry"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -23,7 +23,7 @@
         "xdm:accumulators": {
           "title": "Accumulators",
           "type": "object",
-          "description": "Accumulated quantity and spend for this task completion.",
+          "description": "Accumulated quantity, spend, days, and item-level entries for this task completion.",
           "properties": {
             "xdm:qty": {
               "title": "Quantity",
@@ -34,6 +34,20 @@
               "title": "Spend",
               "type": "number",
               "description": "Total spend accumulated."
+            },
+            "xdm:days": {
+              "title": "Days",
+              "type": "integer",
+              "description": "Number of qualified days accumulated."
+            },
+            "xdm:items": {
+              "title": "Items",
+              "type": "array",
+              "description": "Item-level contributions that counted toward this task completion.",
+              "items": {
+                "$ref": "https://ns.adobe.com/experience/ajo/loyalty/challenge/accumulatorItemEntry"
+              },
+              "meta:xdmType": "array"
             }
           }
         },

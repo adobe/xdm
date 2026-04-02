@@ -147,12 +147,7 @@
                 "xdm:channel": {
                   "type": "string",
                   "title": "Channel",
-                  "description": "Content channel indicating the source of the data (e.g., Web, Mobile, PaidMedia). Used as a reporting dimension for cross-channel breakdowns.",
-                  "meta:enum": {
-                    "Web": "Web channel",
-                    "Mobile": "Mobile channel",
-                    "PaidMedia": "Paid media channel"
-                  }
+                  "description": "Content channel indicating the source of the data (e.g., Web, Mobile, PaidMedia). Used as a reporting dimension for cross-channel breakdowns."
                 }
               }
             }

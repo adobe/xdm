@@ -191,7 +191,11 @@
                       "type": "string",
                       "title": "Budget Type",
                       "description": "Type of budget allocation",
-                      "enum": ["daily", "lifetime", "campaign_budget_optimization"],
+                      "enum": [
+                        "daily",
+                        "lifetime",
+                        "campaign_budget_optimization"
+                      ],
                       "meta:enum": {
                         "daily": "Daily Budget",
                         "lifetime": "Lifetime Budget",

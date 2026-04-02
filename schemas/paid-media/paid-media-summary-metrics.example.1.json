@@ -31,7 +31,8 @@
       "xdm:gender": "all",
       "xdm:country": "US",
       "xdm:campaignObjective": "CONVERSIONS",
-      "xdm:creativeFormat": "image"
+      "xdm:creativeFormat": "image",
+      "xdm:channel": "PaidMedia"
     },
     "xdm:extendedMetrics": {
       "xdm:likes": 3375,

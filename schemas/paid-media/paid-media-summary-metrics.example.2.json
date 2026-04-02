@@ -30,7 +30,8 @@
       "xdm:region": "California",
       "xdm:language": "en",
       "xdm:campaignObjective": "SEARCH",
-      "xdm:optimizationGoal": "MAXIMIZE_CONVERSIONS"
+      "xdm:optimizationGoal": "MAXIMIZE_CONVERSIONS",
+      "xdm:channel": "PaidMedia"
     },
     "xdm:extendedMetrics": {
       "xdm:uniqueClicks": 2584,

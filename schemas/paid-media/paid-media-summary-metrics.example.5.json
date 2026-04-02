@@ -30,7 +30,8 @@
       "xdm:region": "New York",
       "xdm:language": "en",
       "xdm:campaignObjective": "SEARCH",
-      "xdm:optimizationGoal": "TARGET_CPA"
+      "xdm:optimizationGoal": "TARGET_CPA",
+      "xdm:channel": "PaidMedia"
     },
     "xdm:conversionMetrics": {
       "xdm:postClickConversions": 284,

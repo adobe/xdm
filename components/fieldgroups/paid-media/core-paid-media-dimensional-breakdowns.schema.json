@@ -143,6 +143,32 @@
                   "type": "string",
                   "title": "Day of Week",
                   "description": "Day of week breakdown"
+                },
+                "xdm:adNetworkType": {
+                  "type": "string",
+                  "title": "Ad Network Type",
+                  "description": "Ad network type breakdown. Primarily used for Google Ads campaigns that serve across multiple networks. Null for platforms that do not support network-level breakdowns (e.g., Meta).",
+                  "meta:enum": {
+                    "search": "Search Network",
+                    "display": "Display Network",
+                    "youtube": "YouTube",
+                    "shopping": "Shopping",
+                    "discover": "Discover",
+                    "gmail": "Gmail",
+                    "maps": "Maps",
+                    "search_partners": "Search Partners",
+                    "other": "Other Network"
+                  }
+                },
+                "xdm:adSlot": {
+                  "type": "string",
+                  "title": "Ad Slot",
+                  "description": "Position of the ad on the page. Primarily used for Google Search campaigns. Null for platforms that do not support slot-level breakdowns (e.g., Meta).",
+                  "meta:enum": {
+                    "top": "Top of Page",
+                    "absolute_top": "Absolute Top of Page (position 1)",
+                    "other": "Other Position (e.g., side, bottom)"
+                  }
                 }
               }
             }

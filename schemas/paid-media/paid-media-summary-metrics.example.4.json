@@ -11,6 +11,7 @@
     "xdm:adID": "23859876543210123",
     "xdm:adGUID": "meta_23859876543210123",
     "xdm:hierarchyPath": "act_987654321098765/23859876543210456/23859876543210789/23859876543210123",
+    "xdm:channel": "PaidMedia",
     "xdm:metrics": {
       "xdm:impressions": 85000,
       "xdm:clicks": 2550,
@@ -53,8 +54,7 @@
       "xdm:ageGroup": "18-34",
       "xdm:gender": "all",
       "xdm:country": "US",
-      "xdm:creativeFormat": "video",
-      "xdm:channel": "PaidMedia"
+      "xdm:creativeFormat": "video"
     },
     "xdm:extendedMetrics": {
       "xdm:likes": 5100,

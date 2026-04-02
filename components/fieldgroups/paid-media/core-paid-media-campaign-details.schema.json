@@ -24,6 +24,51 @@
               "title": "Campaign Details",
               "description": "Specific details for paid media campaigns",
               "properties": {
+                "xdm:objective": {
+                  "type": "string",
+                  "title": "Objective",
+                  "description": "Campaign objective/goal",
+                  "enum": [
+                    "awareness",
+                    "consideration",
+                    "conversions",
+                    "reach",
+                    "traffic",
+                    "engagement",
+                    "app_installs",
+                    "video_views",
+                    "lead_generation",
+                    "catalog_sales",
+                    "store_visits",
+                    "other"
+                  ],
+                  "meta:enum": {
+                    "awareness": "Brand Awareness",
+                    "consideration": "Consideration",
+                    "conversions": "Conversions",
+                    "reach": "Reach",
+                    "traffic": "Traffic/Link Clicks",
+                    "engagement": "Engagement",
+                    "app_installs": "App Installs",
+                    "video_views": "Video Views",
+                    "lead_generation": "Lead Generation",
+                    "catalog_sales": "Catalog Sales",
+                    "store_visits": "Store Visits",
+                    "other": "Other Objective"
+                  }
+                },
+                "xdm:startTime": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "Start Time",
+                  "description": "When the campaign becomes active/starts running"
+                },
+                "xdm:endTime": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "End Time",
+                  "description": "When the campaign stops running/expires"
+                },
                 "xdm:campaignType": {
                   "type": "string",
                   "title": "Campaign Type",
@@ -141,6 +186,29 @@
                       "type": "boolean",
                       "title": "Campaign Budget Optimization",
                       "description": "Whether campaign uses automatic budget optimization"
+                    },
+                    "xdm:budgetType": {
+                      "type": "string",
+                      "title": "Budget Type",
+                      "description": "Type of budget allocation",
+                      "enum": ["daily", "lifetime", "campaign_budget_optimization"],
+                      "meta:enum": {
+                        "daily": "Daily Budget",
+                        "lifetime": "Lifetime Budget",
+                        "campaign_budget_optimization": "Campaign Budget Optimization"
+                      }
+                    },
+                    "xdm:dailyBudget": {
+                      "type": "number",
+                      "title": "Daily Budget",
+                      "description": "Daily budget amount in account currency",
+                      "minimum": 0
+                    },
+                    "xdm:lifetimeBudget": {
+                      "type": "number",
+                      "title": "Lifetime Budget",
+                      "description": "Total lifetime budget amount in account currency",
+                      "minimum": 0
                     },
                     "xdm:spendCap": {
                       "type": "number",

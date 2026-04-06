@@ -1,4 +1,4 @@
 {
   "https://ns.adobe.com/experience/decisioning/contentType": "html",
-  "https://ns.adobe.com/experience/decisioning/expression": "<div class=\"banner\"><h1>Special Offer</h1><p>Get 20% off your next purchase, {{profile.person.firstName}}!</p></div>"
+  "https://ns.adobe.com/experience/decisioning/content": "<div class=\"banner\"><h1>Special Offer</h1><p>Get 20% off your next purchase, {{profile.person.firstName}}!</p></div>"
 }

@@ -10,14 +10,14 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Decisioning Content",
-  "description": "A content field used in decisioning, containing a content type and an expression.",
+  "description": "A content field used in decisioning, containing a content type and content value.",
   "definitions": {
     "decisioning-content": {
       "properties": {
         "https://ns.adobe.com/experience/decisioning/contentType": {
           "type": "string",
           "title": "Content Type",
-          "description": "The media type of the content field expression. Indicates how the expression value should be interpreted.",
+          "description": "The media type of the content. Indicates how the content value should be interpreted.",
           "enum": ["text", "json", "html"],
           "meta:enum": {
             "text": "Text",
@@ -25,10 +25,10 @@
             "html": "HTML"
           }
         },
-        "https://ns.adobe.com/experience/decisioning/expression": {
+        "https://ns.adobe.com/experience/decisioning/content": {
           "type": "string",
-          "title": "Expression",
-          "description": "The expression string representing the content. The format is determined by the contentType property."
+          "title": "Content",
+          "description": "The content string. The format is determined by the contentType property."
         }
       }
     }
@@ -40,7 +40,7 @@
     {
       "required": [
         "https://ns.adobe.com/experience/decisioning/contentType",
-        "https://ns.adobe.com/experience/decisioning/expression"
+        "https://ns.adobe.com/experience/decisioning/content"
       ]
     }
   ],

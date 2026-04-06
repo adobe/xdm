@@ -27,7 +27,6 @@
             "xdm:host": {
               "title": "Host",
               "type": "string",
-              "format": "hostname",
               "description": "Requested host/domain; base join key for site correlation"
             },
             "xdm:url": {

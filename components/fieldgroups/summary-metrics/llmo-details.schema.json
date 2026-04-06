@@ -1,0 +1,99 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/llmo-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "LLMO Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Aggregated CDN log metrics for LLM Optimization (LLMO) tracking, including bot classification, HTTP request patterns, response codes, and request latencies.",
+  "definitions": {
+    "llmoDetails": {
+      "properties": {
+        "xdm:llmo": {
+          "title": "LLMO Metrics",
+          "type": "object",
+          "description": "LLMO Metrics",
+          "properties": {
+            "xdm:host": {
+              "title": "Host",
+              "type": "string",
+              "format": "hostname",
+              "description": "Requested host/domain; base join key for site correlation"
+            },
+            "xdm:url": {
+              "title": "URL",
+              "type": "string",
+              "description": "CDN path (excluding domain) - used to derive content taxonomy (e.g., /products/analytics)"
+            },
+            "xdm:botType": {
+              "title": "Bot Type",
+              "type": "string",
+              "description": "Bot type dimension aligned 1-to-1 with LLMO classifications"
+            },
+            "xdm:userAgent": {
+              "title": "User Agent",
+              "type": "string",
+              "description": "Full user agent string; pattern-matched for LLMO bot classification"
+            },
+            "xdm:cdnProvider": {
+              "title": "CDN Provider",
+              "type": "string",
+              "description": "CDN service provider identifier for source lineage",
+              "meta:enum": {
+                "fastly": "Fastly",
+                "akamai": "Akamai",
+                "cloudfront": "Amazon CloudFront",
+                "cloudflare": "Cloudflare",
+                "frontdoor": "Azure Front Door"
+              }
+            },
+            "xdm:status": {
+              "title": "HTTP Status",
+              "type": "integer",
+              "description": "HTTP response status code; used to compute success/error ratios",
+              "minimum": 100,
+              "maximum": 599
+            },
+            "xdm:referer": {
+              "title": "Referer",
+              "type": "string",
+              "description": "External referer domain"
+            },
+            "xdm:xForwardedHost": {
+              "title": "X-Forwarded-Host",
+              "type": "string",
+              "description": "X-Forwarded-Host header value from CDN or proxy"
+            },
+            "xdm:timeToFirstByte": {
+              "title": "Time to First Byte",
+              "type": "number",
+              "description": "Latency metric in milliseconds; feeds LLMO Performance Latency metrics"
+            },
+            "xdm:requests": {
+              "title": "Request Count",
+              "type": "integer",
+              "description": "Aggregated request count grouping identical signatures",
+              "minimum": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/llmoDetails"
+    }
+  ],
+  "meta:status": "experimental"
+}

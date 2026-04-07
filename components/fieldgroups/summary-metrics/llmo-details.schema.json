@@ -27,27 +27,27 @@
             "xdm:host": {
               "title": "Host",
               "type": "string",
-              "description": "Requested host/domain; base join key for site correlation"
+              "description": "Requested host/domain"
             },
             "xdm:url": {
               "title": "URL",
               "type": "string",
-              "description": "CDN path (excluding domain) - used to derive content taxonomy (e.g., /products/analytics)"
+              "description": "URL path portion of the request, excluding the domain"
             },
             "xdm:botType": {
               "title": "Bot Type",
               "type": "string",
-              "description": "Bot type dimension aligned 1-to-1 with LLMO classifications"
+              "description": "Bot type identifier (e.g., ChatGPT-User, Claude-Web, Perplexity)"
             },
             "xdm:userAgent": {
               "title": "User Agent",
               "type": "string",
-              "description": "Full user agent string; pattern-matched for LLMO bot classification"
+              "description": "Full user agent string of the requesting client (e.g., Mozilla/5.0 compatible; ChatGPT-User/1.0)"
             },
             "xdm:cdnProvider": {
               "title": "CDN Provider",
               "type": "string",
-              "description": "CDN service provider identifier for source lineage",
+              "description": "Service provider identifier",
               "meta:enum": {
                 "fastly": "Fastly",
                 "akamai": "Akamai",
@@ -59,29 +59,29 @@
             "xdm:status": {
               "title": "HTTP Status",
               "type": "integer",
-              "description": "HTTP response status code; used to compute success/error ratios",
+              "description": "HTTP response status code",
               "minimum": 100,
               "maximum": 599
             },
             "xdm:referer": {
               "title": "Referer",
               "type": "string",
-              "description": "External referer domain"
+              "description": "Hostname of the referring URL (domain only, not full URL)"
             },
             "xdm:xForwardedHost": {
               "title": "X-Forwarded-Host",
               "type": "string",
-              "description": "X-Forwarded-Host header value from CDN or proxy"
+              "description": "X-Forwarded-Host header value from CDN or proxy (or host equivalent)"
             },
             "xdm:timeToFirstByte": {
               "title": "Time to First Byte",
               "type": "number",
-              "description": "Latency metric in milliseconds; feeds LLMO Performance Latency metrics"
+              "description": "Time to first byte (TTFB) for the HTTP request, in milliseconds"
             },
             "xdm:requests": {
               "title": "Request Count",
               "type": "integer",
-              "description": "Aggregated request count grouping identical signatures",
+              "description": "Aggregated request count for this unique combination of attributes",
               "minimum": 1
             }
           }

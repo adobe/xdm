@@ -53,7 +53,10 @@
                 "akamai": "Akamai",
                 "cloudfront": "Amazon CloudFront",
                 "cloudflare": "Cloudflare",
-                "frontdoor": "Azure Front Door"
+                "frontdoor": "Azure Front Door",
+                "googlecdn": "Google Cloud CDN",
+                "bunnycdn": "BunnyCDN",
+                "gcore": "Gcore"
               }
             },
             "xdm:status": {

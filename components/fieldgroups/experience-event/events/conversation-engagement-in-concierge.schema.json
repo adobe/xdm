@@ -1,0 +1,141 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/conversation-engagement-concierge",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Conversation engagement in Brand Concierge",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "engagement.conversation.concierge",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Captures metadata for a conversation session with Brand Concierge, including engagement quality, topics discussed, and conversation outcomes.",
+  "definitions": {
+    "brandconciergeconversation": {
+      "properties": {
+        "xdm:engagement": {
+          "title": "Engagement",
+          "type": "object",
+          "properties": {
+            "xdm:brandConciergeConversation": {
+              "title": "Brand Concierge conversation",
+              "type": "object",
+              "properties": {
+                "xdm:conciergeDetails": {
+                  "title": "Concierge Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:conciergeName": {
+                      "title": "Concierge Name",
+                      "type": "string",
+                      "description": "Name of the Concierge."
+                    },
+                    "xdm:pageURL": {
+                      "title": "Page URL",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "The webpage where the conversation was initiated. Enables tracking of page-specific engagement and identifying high-performing content."
+                    }
+                  }
+                },
+                "xdm:conversationDetails": {
+                  "title": "Conversation Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:createdAt": {
+                      "title": "Created At",
+                      "type": "string",
+                      "format": "date-time",
+                      "description": "ISO 8601 timestamp when the conversation started. Useful for understanding peak engagement times."
+                    },
+                    "xdm:durationInSeconds": {
+                      "title": "Duration",
+                      "type": "integer",
+                      "description": "Total conversation duration in seconds. Quantifies engagement depth and helps prioritize high-engagement leads."
+                    },
+                    "xdm:conversationStatus": {
+                      "title": "Conversation Status",
+                      "type": "string",
+                      "description": "Whether the conversation was initiated, dropped, or completed. Helps in identifying drop-off points and optimizing interactions.",
+                      "enum": ["INITIATED", "DROPPED", "COMPLETED"],
+                      "meta:enum": {
+                        "INITIATED": "Conversation was initiated",
+                        "DROPPED": "Visitor dropped off before completion",
+                        "COMPLETED": "Conversation completed"
+                      }
+                    },
+                    "xdm:conversationTranscript": {
+                      "title": "Conversation Transcript",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL link to the full transcript of the conversation. Enables sales reps to review past interactions for better follow-ups."
+                    },
+                    "xdm:summary": {
+                      "title": "Conversation Summary",
+                      "type": "string",
+                      "description": "AI-generated summary of key discussion points. Saves sales reps time by highlighting important details quickly."
+                    },
+                    "xdm:discussedTopics": {
+                      "title": "Topics Discussed",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Key topics extracted from the conversation (e.g., pricing, demo request, product features). Enables segmentation, nurturing, and intent-based scoring."
+                    },
+                    "xdm:productsOrServices": {
+                      "title": "Products or Services",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Products or services discussed during the conversation. Helps align follow-up content and sales pitches to customer interest."
+                    },
+                    "xdm:engagementScore": {
+                      "title": "Engagement Score",
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100,
+                      "description": "A numerical score from 0 to 100 representing engagement or lead quality based on conversation depth, duration, and intent signals."
+                    },
+                    "xdm:language": {
+                      "title": "Language",
+                      "type": "string",
+                      "description": "The language in which the conversation took place, typically as a BCP 47 language tag. Enables localized engagement and personalization."
+                    },
+                    "xdm:chatTranscript": {
+                      "title": "Chat Transcript",
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL link to the full transcript of the chat conversation. Enables sales reps to review past interactions; marketers can analyze chat patterns."
+                    }
+                  }
+                },
+                "xdm:conciergeKey": {
+                  "title": "Concierge Key",
+                  "description": "Source key of the Concierge.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/brandconciergeconversation"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2026-04-07"
+}

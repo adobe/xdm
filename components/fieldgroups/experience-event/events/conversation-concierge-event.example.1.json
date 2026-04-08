@@ -1,0 +1,16 @@
+{
+  "xdm:eventType": "session_expiration",
+  "xdm:timestamp": "2026-04-06T12:00:00Z",
+  "xdm:engagement": {
+    "xdm:conversationConciergeEvent": {
+      "xdm:conciergeDetails": {
+        "xdm:conciergeName": "Concierge display name"
+      },
+      "xdm:sessionExpirationDetails": {
+        "xdm:createdAt": "2026-04-06T12:00:00Z",
+        "xdm:duration": "PT15M",
+        "xdm:conversationStatus": "COMPLETED"
+      }
+    }
+  }
+}

@@ -222,8 +222,8 @@
               "description": "Number of qualified days accumulated.",
               "meta:xdmType": "int"
             },
-            "xdm:items": {
-              "title": "Items",
+            "xdm:item_list": {
+              "title": "Item List",
               "type": "array",
               "description": "Item-level contributions that counted toward this task.",
               "items": {

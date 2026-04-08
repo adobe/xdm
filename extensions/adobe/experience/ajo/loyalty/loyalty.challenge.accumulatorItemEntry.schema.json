@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/accumulatorItemEntry",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Loyalty Challenge Accumulator Item Entry",
-  "description": "A single item-level contribution in an accumulators items list for a loyalty challenge task or completion, including item details, identifiers, and timestamps.",
+  "description": "A single element in accumulators item_list for a loyalty challenge task or completion, including item details, identifiers, and timestamps.",
   "type": "object",
   "meta:extensible": true,
   "definitions": {
@@ -20,7 +20,7 @@
           "type": "object",
           "description": "Item details for this accumulator entry.",
           "properties": {
-            "xdm:itemSet": {
+            "xdm:item_set": {
               "title": "Item Set",
               "type": "array",
               "description": "Properties or tags of the item.",
@@ -30,29 +30,29 @@
                 "minLength": 1
               }
             },
-            "xdm:itemName": {
+            "xdm:item_name": {
               "title": "Item Name",
               "type": "string",
               "description": "Name of the item."
             },
-            "xdm:qty": {
+            "xdm:quantity": {
               "title": "Quantity",
               "type": "number",
               "description": "Quantity of the item."
             },
-            "xdm:unitPrice": {
+            "xdm:unit_price": {
               "title": "Unit Price",
               "type": "number",
               "description": "Price per unit of the item."
             },
-            "xdm:subTotal": {
+            "xdm:sub_total": {
               "title": "Subtotal",
               "type": "number",
               "description": "Subtotal for this line (for example quantity multiplied by unit price)."
             }
           }
         },
-        "xdm:id": {
+        "xdm:_id": {
           "title": "Identifier",
           "type": "string",
           "description": "Unique identifier for this accumulator list entry.",

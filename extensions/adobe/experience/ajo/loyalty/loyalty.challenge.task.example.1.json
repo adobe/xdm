@@ -26,25 +26,27 @@
     "maxTrans": 0
   },
   "accumulators": {
-    "qty": 1,
-    "spend": 6,
-    "days": 1,
-    "items": [
+    "qty": 2.0,
+    "spend": 12.49,
+    "days": 3,
+    "item_list": [
       {
         "item": {
-          "itemSet": [
-            "FRAP"
+          "item_set": [
+            "sku:latte-grande",
+            "category:beverages"
           ],
-          "itemName": "Frozen Caramel Latte",
-          "qty": 1,
-          "unitPrice": 6,
-          "subTotal": 6
+          "item_name": "Caffè Latte",
+          "quantity": 2,
+          "unit_price": 6.25,
+          "sub_total": 12.5
         },
-        "id": "16e46e10-eff6-4e8d-8c9d-a635d9d89c17",
-        "timestamp": "2026-03-03T00:44:00.000+00:00",
-        "timestampApplied": "2026-04-01T19:52:55.626+00:00",
+        "_id": "7b555a5a-d429-4a46-aeec-c7b261c008c0",
+        "timestamp": "2026-01-06T00:13:00.000+00:00",
+        "timestampApplied": "2026-01-21T01:57:04.659+00:00",
         "utcOffset": "-08:00",
-        "transactionId": "f2b19a13-02ec-41ab-9b85-2a24d8b05c7c"
+        "locationId": "store-1042",
+        "transactionId": "b4fa0e89-f4bb-41ce-b370-fb97f9c52f1a"
       }
     ]
   }

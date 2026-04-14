@@ -38,9 +38,7 @@
       "$ref": "#/definitions/decisioning-content"
     },
     {
-      "required": [
-        "https://ns.adobe.com/experience/decisioning/content"
-      ]
+      "required": ["https://ns.adobe.com/experience/decisioning/content"]
     }
   ],
   "meta:status": "stable"

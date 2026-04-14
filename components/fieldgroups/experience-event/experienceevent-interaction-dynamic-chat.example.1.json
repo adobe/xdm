@@ -9,16 +9,16 @@
         "xdm:identityMap": {
           "Email": [
             {
-              "id": "jane.doe@example.com",
-              "primary": true,
-              "authenticatedState": "authenticated"
+              "xdm:id": "jane.doe@example.com",
+              "xdm:primary": true,
+              "xdm:authenticatedState": "authenticated"
             }
           ],
           "MKTO": [
             {
-              "id": "lead-789",
-              "primary": false,
-              "authenticatedState": "authenticated"
+              "xdm:id": "lead-789",
+              "xdm:primary": false,
+              "xdm:authenticatedState": "authenticated"
             }
           ]
         },
@@ -29,9 +29,9 @@
         "xdm:identityMap": {
           "system_agent_id": [
             {
-              "id": "instance-xyz-456",
-              "primary": false,
-              "authenticatedState": "ambiguous"
+              "xdm:id": "instance-xyz-456",
+              "xdm:primary": false,
+              "xdm:authenticatedState": "ambiguous"
             }
           ]
         },
@@ -42,9 +42,9 @@
         "xdm:identityMap": {
           "system_agent_id": [
             {
-              "id": "org-001@AdobeOrg",
-              "primary": false,
-              "authenticatedState": "ambiguous"
+              "xdm:id": "org-001@AdobeOrg",
+              "xdm:primary": false,
+              "xdm:authenticatedState": "ambiguous"
             }
           ]
         },
@@ -55,9 +55,9 @@
         "xdm:identityMap": {
           "brand_agent_id": [
             {
-              "id": "profile-john-smith-001",
-              "primary": false,
-              "authenticatedState": "authenticated"
+              "xdm:id": "profile-john-smith-001",
+              "xdm:primary": false,
+              "xdm:authenticatedState": "authenticated"
             }
           ]
         },

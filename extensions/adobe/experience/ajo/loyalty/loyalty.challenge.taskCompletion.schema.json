@@ -23,7 +23,7 @@
         "xdm:accumulators": {
           "title": "Accumulators",
           "type": "object",
-          "description": "Accumulated quantity, spend, days, and item-level entries for this task completion.",
+          "description": "Accumulated quantity, spend on qualifying items only, days, and item-level entries for this task completion.",
           "properties": {
             "xdm:qty": {
               "title": "Quantity",
@@ -33,7 +33,7 @@
             "xdm:spend": {
               "title": "Spend",
               "type": "number",
-              "description": "Total spend accumulated."
+              "description": "Spend from items that satisfied this task only, excluding other line items in the same transactions."
             },
             "xdm:days": {
               "title": "Days",
@@ -60,7 +60,7 @@
         "xdm:spend": {
           "title": "Spend",
           "type": "number",
-          "description": "Total spend accumulated for this task completion.",
+          "description": "Spend from items that satisfied this task only, excluding other line items in the same transactions.",
           "meta:status": "deprecated"
         },
         "xdm:days": {

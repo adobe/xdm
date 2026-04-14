@@ -86,6 +86,18 @@
                   "minimum": 0,
                   "maximum": 2147483647
                 },
+                "xdm:accumSpend": {
+                  "title": "Accumulated Spend",
+                  "type": "number",
+                  "description": "Sum of full transaction totals for transactions that contributed progress toward this challenge, including line items that did not satisfy the challenge (for example breakfast items in the same purchase as qualifying lattes). Use this for total revenue attributed to the challenge. Contrast with spend fields that count only items that satisfied the challenge or task.",
+                  "minimum": 0
+                },
+                "xdm:accumReward": {
+                  "title": "Accumulated Reward",
+                  "type": "number",
+                  "description": "Total sum of rewards given out so far in this challenge.",
+                  "minimum": 0
+                },
                 "dependsOn": {
                   "title": "Depends On",
                   "type": "object",

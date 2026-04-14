@@ -168,7 +168,7 @@
             "xdm:spend": {
               "title": "Spend",
               "type": "number",
-              "description": "Current spend accumulated."
+              "description": "Spend from items that satisfied this task only, excluding other line items in the same transactions."
             },
             "xdm:days": {
               "title": "days",
@@ -204,17 +204,17 @@
         "xdm:accumulators": {
           "title": "Accumulators",
           "type": "object",
-          "description": "Accumulated quantity, spend, qualified days, and item-level entries toward this task.",
+          "description": "Accumulated quantity, spend on qualifying items only, qualified days, and item-level entries toward this task.",
           "properties": {
             "xdm:qty": {
               "title": "Quantity",
               "type": "number",
-              "description": "Total quantity accumulated."
+              "description": "Total quantity of qualified items accumulated."
             },
             "xdm:spend": {
               "title": "Spend",
               "type": "number",
-              "description": "Total spend accumulated."
+              "description": "Spend from items that satisfied this task only (for example the price of qualifying lattes), excluding other line items in the same transactions."
             },
             "xdm:days": {
               "title": "Days",
@@ -232,6 +232,12 @@
               "meta:xdmType": "array"
             }
           }
+        },
+        "xdm:accumSpend": {
+          "title": "Accumulated Spend",
+          "type": "number",
+          "description": "Sum of full transaction totals for transactions that contributed progress toward this task, including line items that did not satisfy the task. Use this for total revenue attributed to the task. Contrast with spend under accumulators, which includes only items that satisfied this task.",
+          "minimum": 0
         },
         "xdm:taskCompletions": {
           "title": "Task Completions",

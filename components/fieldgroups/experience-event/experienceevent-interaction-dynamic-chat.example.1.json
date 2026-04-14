@@ -1,0 +1,180 @@
+{
+  "xdm:interaction": {
+    "xdm:channelType": "dynamic_chat",
+    "xdm:conversationId": "transcript-abc-123",
+    "xdm:crossChannelCorrelationId": "550e8400-e29b-41d4-a716-446655440000",
+    "xdm:authorRole": "person",
+    "xdm:participants": [
+      {
+        "xdm:identityMap": {
+          "Email": [
+            {
+              "id": "jane.doe@example.com",
+              "primary": true,
+              "authenticatedState": "authenticated"
+            }
+          ],
+          "MKTO": [
+            {
+              "id": "lead-789",
+              "primary": false,
+              "authenticatedState": "authenticated"
+            }
+          ]
+        },
+        "xdm:role": "person",
+        "xdm:isAuthor": true
+      },
+      {
+        "xdm:identityMap": {
+          "system_agent_id": [
+            {
+              "id": "instance-xyz-456",
+              "primary": false,
+              "authenticatedState": "ambiguous"
+            }
+          ]
+        },
+        "xdm:role": "bot",
+        "xdm:isAuthor": false
+      },
+      {
+        "xdm:identityMap": {
+          "system_agent_id": [
+            {
+              "id": "org-001@AdobeOrg",
+              "primary": false,
+              "authenticatedState": "ambiguous"
+            }
+          ]
+        },
+        "xdm:role": "system",
+        "xdm:isAuthor": false
+      },
+      {
+        "xdm:identityMap": {
+          "brand_agent_id": [
+            {
+              "id": "profile-john-smith-001",
+              "primary": false,
+              "authenticatedState": "authenticated"
+            }
+          ]
+        },
+        "xdm:role": "agent",
+        "xdm:isAuthor": false
+      }
+    ],
+    "xdm:content": [
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"message\",\"timestamp\":\"2026-02-17T10:00:00\",\"sender\":\"bot\",\"payload\":{\"text\":\"Hi! Welcome to our site. How can I help you today?\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"question\",\"timestamp\":\"2026-02-17T10:00:05\",\"sender\":\"bot\",\"payload\":{\"text\":\"What product are you interested in?\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"question_answer\",\"timestamp\":\"2026-02-17T10:00:15\",\"sender\":\"visitor\",\"payload\":{\"text\":\"Marketo Engage\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"info\",\"timestamp\":\"2026-02-17T10:00:20\",\"sender\":\"bot\",\"payload\":{\"text\":\"Great! Can I get your email address?\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"info_answer\",\"timestamp\":\"2026-02-17T10:00:30\",\"sender\":\"visitor\",\"payload\":{\"inputVal\":\"jane.doe@example.com\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"document\",\"timestamp\":\"2026-02-17T10:00:35\",\"sender\":\"bot\",\"payload\":{\"text\":\"Here's our product brochure:\",\"documentUrl\":\"https://cdn.example.com/docs/brochure.pdf\",\"documentClient\":{\"clientId\":\"client-abc-123\"}}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"milestone\",\"timestamp\":\"2026-02-17T10:01:00\",\"sender\":\"system\",\"payload\":{\"milestoneName\":\"Engaged\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"action\",\"timestamp\":\"2026-02-17T10:01:05\",\"sender\":\"system\",\"payload\":{\"actionType\":\"mapAttribute\",\"text\":\"Mapped lead attributes\",\"attributes\":[{\"key\":\"email\",\"name\":\"Email Address\",\"value\":\"jane.doe@example.com\",\"dataType\":\"string\"},{\"key\":\"product_interest\",\"name\":\"Product Interest\",\"value\":\"Marketo Engage\",\"dataType\":\"string\"}]}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"calendar_get\",\"timestamp\":\"2026-02-17T10:01:10\",\"sender\":\"bot\"}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"calendar_info\",\"timestamp\":\"2026-02-17T10:01:15\",\"sender\":\"bot\",\"payload\":{\"isSuccess\":true,\"response\":{\"profile\":{\"name\":\"John Smith\",\"avatar\":\"https://cdn.example.com/avatars/john.jpg\"}}}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"meeting_email_request\",\"timestamp\":\"2026-02-17T10:01:20\",\"sender\":\"bot\",\"payload\":{\"restrictedEmailDomains\":[\"gmail.com\",\"yahoo.com\"]}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"meeting_email\",\"timestamp\":\"2026-02-17T10:01:30\",\"sender\":\"visitor\",\"payload\":{\"type\":\"email\",\"inputVal\":\"jane.doe@acme.com\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"meeting_email_response\",\"timestamp\":\"2026-02-17T10:01:35\",\"sender\":\"system\",\"payload\":{\"type\":\"email\",\"inputVal\":\"jane.doe@acme.com\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"meeting_booking_request\",\"timestamp\":\"2026-02-17T10:02:00\",\"sender\":\"visitor\",\"payload\":{\"profileId\":\"profile-john-smith-001\",\"date\":\"2026-02-20\",\"time\":\"14:00\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"meeting_booking_response\",\"timestamp\":\"2026-02-17T10:02:05\",\"sender\":\"system\",\"payload\":{\"isSuccess\":true,\"response\":{\"attributes\":[{\"key\":\"meetingDate\",\"name\":\"Meeting Date\",\"value\":\"2026-02-20\",\"dataType\":\"date\"},{\"key\":\"meetingTime\",\"name\":\"Meeting Time\",\"value\":\"14:00\",\"dataType\":\"time\"}]}}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"live_chat\",\"timestamp\":\"2026-02-17T10:03:00\",\"sender\":\"system\",\"payload\":{\"status\":\"connected\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"live_chat_message\",\"timestamp\":\"2026-02-17T10:03:10\",\"sender\":\"agent\",\"payload\":{\"type\":\"text\",\"content\":\"Hi Jane, I'm John. Let me help you with Marketo.\",\"agentFirstName\":\"John\",\"agentAvatarUrl\":\"https://cdn.example.com/avatars/john.jpg\",\"date\":\"2026-02-17\",\"time\":\"10:03\",\"timezone\":\"America/Los_Angeles\",\"isSuccess\":true}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"assisted_response_prompt\",\"timestamp\":\"2026-02-17T10:04:00\",\"sender\":\"bot\",\"payload\":{\"text\":\"I can answer questions about our products using AI. What would you like to know?\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"assisted_response_question\",\"timestamp\":\"2026-02-17T10:04:10\",\"sender\":\"visitor\",\"payload\":{\"inputVal\":\"What is the pricing for Marketo Engage?\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"assisted_response_answer\",\"timestamp\":\"2026-02-17T10:04:15\",\"sender\":\"bot\",\"payload\":{\"text\":\"Marketo Engage pricing depends on your database size and selected modules. I'd recommend speaking with a sales rep for a custom quote.\",\"nudgeQuestion\":{\"text\":\"Would you like to know more about:\",\"choices\":[{\"id\":\"choice-1\",\"text\":\"Feature comparison\"},{\"id\":\"choice-2\",\"text\":\"Implementation timeline\"}]}}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"assisted_response_nudge_choice\",\"timestamp\":\"2026-02-17T10:04:25\",\"sender\":\"visitor\",\"payload\":{\"id\":\"choice-1\",\"text\":\"Feature comparison\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"assisted_response_feedback\",\"timestamp\":\"2026-02-17T10:04:30\",\"sender\":\"visitor\",\"payload\":{\"helpful\":true}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"assisted_response_affirmations_list\",\"timestamp\":\"2026-02-17T10:04:35\",\"sender\":\"bot\",\"payload\":{\"suggestedQuestions\":[{\"id\":\"sq-1\",\"text\":\"Tell me about integrations\"},{\"id\":\"sq-2\",\"text\":\"What support plans are available?\"}]}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"assisted_response_affirmation_choice\",\"timestamp\":\"2026-02-17T10:04:40\",\"sender\":\"visitor\",\"payload\":{\"questionId\":\"sq-1\"}}"
+      },
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "{\"type\":\"assisted_response_end\",\"timestamp\":\"2026-02-17T10:05:00\",\"sender\":\"bot\",\"payload\":{\"text\":\"Thanks for chatting! Let me connect you with a specialist.\"}}"
+      }
+    ],
+    "xdm:sourceMessageId": "transcript-abc-123"
+  },
+  "xdm:dynamicChatInteraction": {
+    "xdm:imsOrgId": "org-001@AdobeOrg",
+    "xdm:instanceId": "instance-xyz-456",
+    "xdm:playbookId": "playbook-101",
+    "xdm:pageUrl": "https://example.com/landing-page",
+    "xdm:dialogueName": "Product Demo Dialogue",
+    "xdm:leadTimeZone": "America/Los_Angeles"
+  }
+}

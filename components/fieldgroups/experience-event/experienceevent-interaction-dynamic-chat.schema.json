@@ -1,0 +1,66 @@
+{
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-interaction-dynamic-chat",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Dynamic Chat Interaction Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Adobe Dynamic Chat (DC) transcript fields present on the raw transcript payload only (no fields invented beyond the connector sample). Apply alongside the base Interaction field group. Transcript-level keys id, leadId, leadEmail, and messages[] map to the base field group (conversationId, sourceMessageId, ExperienceEvent identityMap, interaction.content[]); this mixin carries the remaining top-level scalar attributes from the sample. Media and URLs embedded inside messages[] may be surfaced later via xdm:interaction.asset[] through post-ingestion ETL if the connector does not populate assets. For a full ExperienceEvent payload that composes the ExperienceEvent class with implementation-details, environment-details, web, interaction, and this field group, see experienceevent-interaction-dynamic-chat.example.full-experienceevent.json.",
+  "definitions": {
+    "dynamic-chat-interaction": {
+      "properties": {
+        "xdm:dynamicChatInteraction": {
+          "title": "Dynamic Chat Interaction",
+          "description": "Transcript envelope fields from the Dynamic Chat source payload. Property names align with the sample JSON keys (xdm-prefixed).",
+          "type": "object",
+          "properties": {
+            "xdm:imsOrgId": {
+              "title": "IMS Organization ID",
+              "description": "Adobe IMS organization identifier from the transcript payload.",
+              "type": "string"
+            },
+            "xdm:instanceId": {
+              "title": "Instance ID",
+              "description": "Dynamic Chat / Marketo instance identifier from the transcript payload.",
+              "type": "string"
+            },
+            "xdm:playbookId": {
+              "title": "Playbook ID",
+              "description": "Playbook identifier associated with the dialogue session.",
+              "type": "string"
+            },
+            "xdm:pageUrl": {
+              "title": "Page URL",
+              "description": "URL of the page where the chat widget was hosted when the session occurred.",
+              "type": "string",
+              "format": "uri"
+            },
+            "xdm:dialogueName": {
+              "title": "Dialogue Name",
+              "description": "Human-readable name of the active dialogue.",
+              "type": "string"
+            },
+            "xdm:leadTimeZone": {
+              "title": "Lead Time Zone",
+              "description": "IANA time zone name for the lead (e.g. America/Los_Angeles).",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/dynamic-chat-interaction"
+    }
+  ],
+  "meta:status": "proposed"
+}

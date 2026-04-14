@@ -1,0 +1,49 @@
+{
+  "xdm:interaction": {
+    "xdm:channelType": "whatsapp",
+    "xdm:conversationId": "6ceb9d929c9bdc4f90e967a32f8639b4",
+    "xdm:crossChannelCorrelationId": "550e8400-e29b-41d4-a716-446655440000",
+    "xdm:authorRole": "person",
+    "xdm:participants": [
+      {
+        "xdm:identityMap": {
+          "Phone": [
+            {
+              "id": "16505551234",
+              "primary": true,
+              "authenticatedState": "ambiguous"
+            }
+          ]
+        },
+        "xdm:role": "person",
+        "xdm:isAuthor": true
+      },
+      {
+        "xdm:identityMap": {
+          "system_agent_id": [
+            {
+              "id": "106540352242922",
+              "primary": false,
+              "authenticatedState": "ambiguous"
+            }
+          ]
+        },
+        "xdm:role": "system",
+        "xdm:isAuthor": false
+      }
+    ],
+    "xdm:content": [
+      {
+        "xdm:contentType": "text",
+        "xdm:value": "Does it come in another color?"
+      }
+    ],
+    "xdm:sourceMessageId": "wamid.HBgLMTY1MDM4Nzk0MzkVAgASGBQzQTRBNjU5OUFFRTAzODEwMTQ0RgA="
+  },
+  "xdm:whatsappInteraction": {
+    "xdm:wabaId": "102290129340398",
+    "xdm:phoneNumberId": "106540352242922",
+    "xdm:displayPhoneNumber": "15550025839",
+    "xdm:messageType": "text"
+  }
+}

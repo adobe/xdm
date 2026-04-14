@@ -18,7 +18,6 @@
           "description": "Core fields describing a participant interaction on a messaging or conversation channel. Participants carry full xdm:identityMap per party; media and file payloads are modeled in xdm:asset[] separate from xdm:content[].",
           "type": "object",
           "properties": {
-
             "xdm:channelType": {
               "title": "Channel Type",
               "description": "The application or platform where the interaction took place. A controlled extensible enum. Distinct from the existing xdm:channel Experience Channel datatype, which is web-analytics-oriented. Use meta:enum values for known surfaces; channel-specific field groups carry the deeper platform detail.",
@@ -282,7 +281,6 @@
               "description": "Platform-native identifier for this interaction. Distinct from @id. Examples: WhatsApp wamid, BC turnID, DC transcriptId, email Message-ID.",
               "type": "string"
             }
-
           }
         }
       }

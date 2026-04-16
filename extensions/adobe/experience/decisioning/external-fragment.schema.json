@@ -30,6 +30,11 @@
           "type": "string",
           "description": "Id as referenced in the external system"
         },
+        "xdm:variant": {
+          "title": "Variant",
+          "type": "string",
+          "description": "Variant of the external fragment (e.g. language or locale specific variant)"
+        },
         "xdm:metadata": {
           "title": "Metadata",
           "type": "object",

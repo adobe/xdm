@@ -1,212 +1,97 @@
 {
   "xdm:timestamp": "2025-11-09T00:00:00Z",
   "xdm:paidMedia": {
-    "xdm:adNetwork": "meta",
-    "xdm:entityType": "asset",
-    "xdm:accountID": "act_123456789012345",
-    "xdm:accountGUID": "meta_act_123456789012345",
-    "xdm:assetID": "987654321012345",
-    "xdm:assetGUID": "meta_act_123456789012345_asset_987654321012345",
-    "xdm:timestamp": "2025-11-09T00:00:00Z",
-    "xdm:date": "2025-11-09",
-    "xdm:granularity": "daily",
-    "xdm:coreMetrics": {
-      "xdm:impressions": 21250,
-      "xdm:clicks": 765,
-      "xdm:reach": 16125,
-      "xdm:frequency": 1.32,
-      "xdm:spend": 552.5,
-      "xdm:conversions": 38,
-      "xdm:conversionValue": 1912.5,
-      "xdm:ctr": 0.036,
-      "xdm:cpc": 0.722,
-      "xdm:cpm": 26.0,
-      "xdm:cpa": 14.54,
-      "xdm:roas": 3.46,
-      "xdm:roi": 2.46
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "987-654-3210",
+    "xdm:accountGUID": "gads_987_654_3210",
+    "xdm:campaignID": "20987654321",
+    "xdm:campaignGUID": "gads_20987654321",
+    "xdm:adGroupID": "30987654321",
+    "xdm:adGroupGUID": "gads_30987654321",
+    "xdm:adID": "40987654321",
+    "xdm:adGUID": "gads_40987654321",
+    "xdm:hierarchyPath": "987-654-3210/20987654321/30987654321/40987654321",
+    "xdm:metrics": {
+      "xdm:impressions": 45000,
+      "xdm:clicks": 3150,
+      "xdm:spend": 6300.0,
+      "xdm:conversions": 315,
+      "xdm:conversionValue": 31500.0,
+      "xdm:ctr": 0.07,
+      "xdm:cpc": 2.0,
+      "xdm:cpm": 140.0,
+      "xdm:costPerConversion": 20.0,
+      "xdm:roas": 5.0
     },
     "xdm:dimensionalBreakdowns": {
-      "xdm:deviceBreakdown": {
-        "xdm:mobile": {
-          "xdm:impressions": 14875,
-          "xdm:clicks": 574,
-          "xdm:spend": 386.75,
-          "xdm:conversions": 29
-        },
-        "xdm:desktop": {
-          "xdm:impressions": 5313,
-          "xdm:clicks": 160,
-          "xdm:spend": 138.13,
-          "xdm:conversions": 8
-        },
-        "xdm:tablet": {
-          "xdm:impressions": 1062,
-          "xdm:clicks": 31,
-          "xdm:spend": 27.62,
-          "xdm:conversions": 1
-        }
-      },
-      "xdm:platformBreakdown": {
-        "xdm:facebook": {
-          "xdm:impressions": 12750,
-          "xdm:clicks": 459,
-          "xdm:spend": 331.5,
-          "xdm:conversions": 23
-        },
-        "xdm:instagram": {
-          "xdm:impressions": 6375,
-          "xdm:clicks": 230,
-          "xdm:spend": 165.75,
-          "xdm:conversions": 12
-        },
-        "xdm:messenger": {
-          "xdm:impressions": 1275,
-          "xdm:clicks": 46,
-          "xdm:spend": 33.15,
-          "xdm:conversions": 2
-        },
-        "xdm:audience_network": {
-          "xdm:impressions": 850,
-          "xdm:clicks": 30,
-          "xdm:spend": 22.1,
-          "xdm:conversions": 1
-        }
-      },
-      "xdm:placementBreakdown": {
-        "xdm:feed": {
-          "xdm:impressions": 10625,
-          "xdm:clicks": 383,
-          "xdm:spend": 276.25,
-          "xdm:conversions": 19
-        },
-        "xdm:stories": {
-          "xdm:impressions": 5313,
-          "xdm:clicks": 191,
-          "xdm:spend": 138.13,
-          "xdm:conversions": 10
-        },
-        "xdm:reels": {
-          "xdm:impressions": 3188,
-          "xdm:clicks": 115,
-          "xdm:spend": 82.88,
-          "xdm:conversions": 6
-        },
-        "xdm:other": {
-          "xdm:impressions": 2124,
-          "xdm:clicks": 76,
-          "xdm:spend": 55.24,
-          "xdm:conversions": 3
-        }
-      },
-      "xdm:ageBreakdown": {
-        "xdm:age_18_24": {
-          "xdm:impressions": 3188,
-          "xdm:clicks": 115,
-          "xdm:spend": 82.88,
-          "xdm:conversions": 6
-        },
-        "xdm:age_25_34": {
-          "xdm:impressions": 7438,
-          "xdm:clicks": 268,
-          "xdm:spend": 193.38,
-          "xdm:conversions": 13
-        },
-        "xdm:age_35_44": {
-          "xdm:impressions": 6375,
-          "xdm:clicks": 230,
-          "xdm:spend": 165.75,
-          "xdm:conversions": 12
-        },
-        "xdm:age_45_54": {
-          "xdm:impressions": 3188,
-          "xdm:clicks": 115,
-          "xdm:spend": 82.88,
-          "xdm:conversions": 6
-        },
-        "xdm:age_55_64": {
-          "xdm:impressions": 1061,
-          "xdm:clicks": 37,
-          "xdm:spend": 27.61,
-          "xdm:conversions": 1
-        }
-      },
-      "xdm:genderBreakdown": {
-        "xdm:male": {
-          "xdm:impressions": 11688,
-          "xdm:clicks": 421,
-          "xdm:spend": 303.88,
-          "xdm:conversions": 21
-        },
-        "xdm:female": {
-          "xdm:impressions": 9562,
-          "xdm:clicks": 344,
-          "xdm:spend": 248.62,
-          "xdm:conversions": 17
-        }
-      }
-    },
-    "xdm:extendedMetrics": {
-      "xdm:likes": 574,
-      "xdm:comments": 115,
-      "xdm:shares": 191,
-      "xdm:saves": 268,
-      "xdm:linkClicks": 765,
-      "xdm:outboundClicks": 727,
-      "xdm:uniqueClicks": 689
-    },
-    "xdm:videoMetrics": {
-      "xdm:videoPlays": 21250,
-      "xdm:videoCompletionRate": 0.375,
-      "xdm:videoReplays": 850,
-      "xdm:videoPauses": 2125,
-      "xdm:videoResumes": 1700,
-      "xdm:videoSkips": 4250,
-      "xdm:videoMutes": 1063,
-      "xdm:videoUnmutes": 425
+      "xdm:deviceType": "desktop",
+      "xdm:platform": "search",
+      "xdm:country": "US",
+      "xdm:region": "New York",
+      "xdm:language": "en",
+      "xdm:campaignObjective": "SEARCH",
+      "xdm:optimizationGoal": "TARGET_CPA"
     },
     "xdm:conversionMetrics": {
-      "xdm:postViewConversions": 8,
-      "xdm:postClickConversions": 30,
-      "xdm:conversionRate": 0.055,
-      "xdm:costPerAction": 14.54,
-      "xdm:actionValue": 1912.5,
+      "xdm:postClickConversions": 284,
+      "xdm:postViewConversions": 31,
+      "xdm:conversionRate": 0.089,
+      "xdm:costPerAction": 20.0,
       "xdm:conversionsByType": {
-        "xdm:purchases": 30,
-        "xdm:addToCart": 77,
-        "xdm:initiateCheckout": 46,
-        "xdm:leads": 8,
-        "xdm:downloads": 23
+        "xdm:purchases": 189,
+        "xdm:addToCart": 567,
+        "xdm:initiateCheckout": 378,
+        "xdm:leads": 63,
+        "xdm:viewContent": 1260,
+        "xdm:landingPageView": 2835
       },
-      "xdm:leads": 8,
-      "xdm:costPerLead": 69.06
+      "xdm:conversionLag": 18.5,
+      "xdm:conversionPath": {
+        "xdm:averagePathLength": 3.2,
+        "xdm:singleTouchConversions": 126,
+        "xdm:multiTouchConversions": 189,
+        "xdm:averageTouchpoints": 2.8,
+        "xdm:assistedConversions": 95,
+        "xdm:directConversions": 220
+      },
+      "xdm:newCustomerConversions": 201,
+      "xdm:returningCustomerConversions": 114,
+      "xdm:averageOrderValue": 100.0,
+      "xdm:totalOrderValue": 31500.0,
+      "xdm:leads": 63,
+      "xdm:qualifiedLeads": 38,
+      "xdm:costPerLead": 100.0
     },
     "xdm:costMetrics": {
-      "xdm:averageCpc": 0.722,
-      "xdm:averageCpm": 26.0,
-      "xdm:averageCpa": 14.54,
-      "xdm:averageCpe": 0.481,
-      "xdm:budgetUtilization": {
-        "xdm:budgetAllocated": 0,
-        "xdm:budgetSpent": 552.5,
-        "xdm:budgetRemaining": 0,
-        "xdm:budgetUtilization": 0,
-        "xdm:dailyBudget": 0
+      "xdm:averageCpc": 2.0,
+      "xdm:averageCpm": 140.0,
+      "xdm:averageCpa": 20.0,
+      "xdm:qualityScore": 8,
+      "xdm:adRank": 5.1,
+      "xdm:impressionShare": {
+        "xdm:impressionShare": 0.85,
+        "xdm:lostImpressionShareRank": 0.08,
+        "xdm:lostImpressionShareBudget": 0.07,
+        "xdm:topImpressionShare": 0.72,
+        "xdm:absoluteTopImpressionShare": 0.45
       }
     },
     "xdm:attributionMetrics": {
-      "xdm:attributionModel": "LAST_CLICK",
-      "xdm:clickAttributionWindow": "7_DAY",
-      "xdm:viewAttributionWindow": "1_DAY"
+      "xdm:attributionModel": "DATA_DRIVEN",
+      "xdm:clickAttributionWindow": "30_DAY",
+      "xdm:viewAttributionWindow": "1_DAY",
+      "xdm:crossDeviceAttribution": {
+        "xdm:enabled": true,
+        "xdm:crossDeviceConversions": 47,
+        "xdm:crossDeviceConversionRate": 0.15,
+        "xdm:averageDevicesPerPath": 1.8
+      }
     },
     "xdm:qualityMetrics": {
-      "xdm:qualityScore": 8.5,
-      "xdm:relevanceScore": 8.8,
-      "xdm:engagementRateRanking": "above_average",
-      "xdm:conversionRateRanking": "above_average",
-      "xdm:qualityRanking": "above_average",
-      "xdm:adRelevanceDiagnostics": "above_average",
-      "xdm:engagementRateDiagnostics": "above_average",
-      "xdm:conversionRateDiagnostics": "above_average"
+      "xdm:overallQualityScore": 8.0,
+      "xdm:relevanceScore": 8.5,
+      "xdm:conversionScore": 9.0,
+      "xdm:qualityTrend": "stable"
     }
   }
 }

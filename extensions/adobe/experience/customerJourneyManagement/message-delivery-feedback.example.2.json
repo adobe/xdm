@@ -1,0 +1,11 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": "exclude",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": "050109",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": "personalizedDomainNotValid",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/details": {
+      "invalidDomains": ["example.com", "test-domain.org"]
+    }
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 0
+}

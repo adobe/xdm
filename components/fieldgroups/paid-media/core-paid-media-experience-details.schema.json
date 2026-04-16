@@ -47,6 +47,10 @@
                     "canvas",
                     "instant_experience",
                     "playable",
+                    "audio",
+                    "responsive_search",
+                    "responsive_display",
+                    "dynamic_assembly",
                     "other"
                   ],
                   "meta:enum": {
@@ -58,6 +62,10 @@
                     "canvas": "Canvas Experience",
                     "instant_experience": "Instant Experience",
                     "playable": "Playable Experience",
+                    "audio": "Audio Experience",
+                    "responsive_search": "Responsive Search Experience (Google Ads RSA - multiple headlines/descriptions dynamically combined)",
+                    "responsive_display": "Responsive Display Experience (Google Ads RDA - multiple headlines/descriptions/images dynamically combined)",
+                    "dynamic_assembly": "Dynamic Assembly Experience (e.g., Performance Max - platform dynamically assembles ads from asset pool)",
                     "other": "Other Experience Type"
                   }
                 },

@@ -192,7 +192,7 @@
           "type": "object",
           "description": "Status section containing provider feedback details.",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/feedbackStatus": {
+            "xdm:feedbackStatus": {
               "title": "Feedback Status",
               "type": "string",
               "description": "Actual feedback status (mapped to standard enum).",
@@ -219,12 +219,12 @@
                 "unknown": "Unknown feedback status"
               }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/providerFeedbackStatus": {
+            "xdm:providerFeedbackStatus": {
               "title": "Provider Feedback Status",
               "type": "string",
               "description": "Status as reported by the SMS provider (e.g. DeliveredToTerminal), before mapping."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status/message": {
+            "xdm:message": {
               "title": "Message",
               "type": "string",
               "description": "Message from the SMS provider, either success or failure."
@@ -267,10 +267,10 @@
           "type": "object",
           "description": "Status section containing provider feedback details.",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/feedbackStatus": {
+            "xdm:feedbackStatus": {
               "title": "Feedback Status",
               "type": "string",
-              "description": "Actual feedback status (mapped to standard enum).",
+              "description": "Actual feedback status (mapped to standard enum). Not the raw provider status.",
               "enum": [
                 "error",
                 "exclude",
@@ -294,12 +294,12 @@
                 "unknown": "Unknown feedback status"
               }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/providerFeedbackStatus": {
+            "xdm:providerFeedbackStatus": {
               "title": "Provider Feedback Status",
               "type": "string",
               "description": "Status as reported by the WhatsApp provider (e.g. DeliveredToTerminal), before mapping."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status/message": {
+            "xdm:message": {
               "title": "Message",
               "type": "string",
               "description": "Message from the WhatsApp provider, either success or failure."

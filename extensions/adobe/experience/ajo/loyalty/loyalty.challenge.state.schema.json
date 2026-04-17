@@ -50,6 +50,12 @@
                   "description": "Current state of the challenge.",
                   "minLength": 1
                 },
+                "xdm:eventType": {
+                  "title": "Event Type",
+                  "type": "string",
+                  "description": "Type of loyalty challenge state change event (e.g. 'challenge_signup', 'task_complete', 'challenge_complete', 'milestone_complete').",
+                  "minLength": 1
+                },
                 "xdm:startDate": {
                   "title": "Start Date",
                   "type": "string",

@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/fieldgroups/llmo-details",
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/cdn-requests-summary",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "LLMO Details",
+  "title": "CDN Requests Summary",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -15,14 +15,14 @@
     "industry": ["all"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
-  "description": "Aggregated CDN log metrics for LLM Optimization (LLMO) tracking, including bot classification, HTTP request patterns, response codes, and request latencies.",
+  "description": "Aggregate CDN requests properties and metrics including bot classification, HTTP request patterns, response codes, and request latencies",
   "definitions": {
-    "llmoDetails": {
+    "cdnRequestsSummary": {
       "properties": {
-        "xdm:llmo": {
-          "title": "LLMO Metrics",
+        "xdm:cdn": {
+          "title": "CDN Requests Summary",
           "type": "object",
-          "description": "LLMO Metrics",
+          "description": "Summary of CDN requests with properties and metrics",
           "properties": {
             "xdm:host": {
               "title": "Host",
@@ -32,22 +32,22 @@
             "xdm:url": {
               "title": "URL",
               "type": "string",
-              "description": "URL path portion of the request, excluding the domain"
+              "description": "URL path excluding domain"
             },
             "xdm:botType": {
               "title": "Bot Type",
               "type": "string",
-              "description": "Bot type identifier (e.g., ChatGPT-User, Claude-Web, Perplexity)"
+              "description": "Bot type classification"
             },
             "xdm:userAgent": {
               "title": "User Agent",
               "type": "string",
-              "description": "Full user agent string of the requesting client (e.g., Mozilla/5.0 compatible; ChatGPT-User/1.0)"
+              "description": "Complete user agent string sent by the client"
             },
             "xdm:cdnProvider": {
               "title": "CDN Provider",
               "type": "string",
-              "description": "Service provider identifier",
+              "description": "CDN service provider identifier for source lineage",
               "meta:enum": {
                 "fastly": "Fastly",
                 "akamai": "Akamai",
@@ -69,22 +69,22 @@
             "xdm:referer": {
               "title": "Referer",
               "type": "string",
-              "description": "Hostname of the referring URL (domain only, not full URL)"
+              "description": "External referer domain"
             },
             "xdm:xForwardedHost": {
               "title": "X-Forwarded-Host",
               "type": "string",
-              "description": "X-Forwarded-Host header value from CDN or proxy (or host equivalent)"
+              "description": "X-Forwarded-Host header value from CDN or proxy"
             },
             "xdm:timeToFirstByte": {
               "title": "Time to First Byte",
               "type": "number",
-              "description": "Time to first byte (TTFB) for the HTTP request, in milliseconds"
+              "description": "Latency metric in milliseconds"
             },
             "xdm:requests": {
               "title": "Request Count",
               "type": "integer",
-              "description": "Aggregated request count for this unique combination of attributes",
+              "description": "Total number of aggregated requests",
               "minimum": 1
             }
           }
@@ -94,7 +94,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/llmoDetails"
+      "$ref": "#/definitions/cdnRequestsSummary"
     }
   ],
   "meta:status": "experimental"

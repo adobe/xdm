@@ -71,6 +71,34 @@
           "description": "Optional url from where this content is located.",
           "type": "string",
           "format": "uri"
+        },
+        "xdm:title": {
+          "title": "Title",
+          "description": "Human-readable title or display name for this content.",
+          "type": "string"
+        },
+        "xdm:metaDataModificationTime": {
+          "title": "Metadata Modification Time",
+          "description": "The date and time when metadata for this content was last modified.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:versionTimestamp": {
+          "title": "Version Timestamp",
+          "description": "Optional timestamp representing the version or snapshot boundary for this content record.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:assetUrl": {
+          "title": "Asset URL",
+          "description": "URL of the asset associated with this content.",
+          "type": "string",
+          "format": "uri"
+        },
+        "xdm:assetType": {
+          "title": "Asset Type",
+          "description": "Type or classification of the asset.",
+          "type": "string"
         }
       }
     }

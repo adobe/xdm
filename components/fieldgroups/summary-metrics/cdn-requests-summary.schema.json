@@ -37,7 +37,7 @@
             "xdm:botType": {
               "title": "Bot Type",
               "type": "string",
-              "description": "Bot type classification"
+              "description": "Bot type identifier"
             },
             "xdm:userAgent": {
               "title": "User Agent",
@@ -47,7 +47,7 @@
             "xdm:cdnProvider": {
               "title": "CDN Provider",
               "type": "string",
-              "description": "CDN service provider identifier for source lineage",
+              "description": "CDN service provider identifier",
               "meta:enum": {
                 "fastly": "Fastly",
                 "akamai": "Akamai",
@@ -69,7 +69,7 @@
             "xdm:referer": {
               "title": "Referer",
               "type": "string",
-              "description": "External referer domain"
+              "description": "Hostname of the referring URL"
             },
             "xdm:xForwardedHost": {
               "title": "X-Forwarded-Host",
@@ -79,7 +79,7 @@
             "xdm:timeToFirstByte": {
               "title": "Time to First Byte",
               "type": "number",
-              "description": "Latency metric in milliseconds"
+              "description": "Time to first byte (TTFB) for the HTTP request, in milliseconds"
             },
             "xdm:requests": {
               "title": "Request Count",

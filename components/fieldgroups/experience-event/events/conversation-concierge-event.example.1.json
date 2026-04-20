@@ -3,6 +3,8 @@
   "xdm:timestamp": "2026-04-06T12:00:00Z",
   "xdm:engagement": {
     "xdm:conversationConciergeEvent": {
+      "xdm:sessionId": "session-1234567890",
+      "xdm:conversationId": "conversation-abcdef1234",
       "xdm:conciergeDetails": {
         "xdm:conciergeName": "Concierge display name"
       },

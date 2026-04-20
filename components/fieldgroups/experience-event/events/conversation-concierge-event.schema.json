@@ -29,6 +29,16 @@
               "title": "Conversation Concierge event",
               "type": "object",
               "properties": {
+                "xdm:sessionId": {
+                  "title": "Session ID",
+                  "type": "string",
+                  "description": "Unique identifier for the Brand Concierge session."
+                },
+                "xdm:conversationId": {
+                  "title": "Conversation ID",
+                  "type": "string",
+                  "description": "Unique identifier for the conversation within the Brand Concierge session."
+                },
                 "xdm:conciergeDetails": {
                   "title": "Concierge Details",
                   "type": "object",

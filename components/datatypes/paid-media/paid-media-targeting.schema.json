@@ -21,19 +21,17 @@
             "xdm:countries": {
               "type": "array",
               "title": "Countries",
-              "description": "Targeted countries as ISO 3166-1 alpha-2 codes (e.g. US, CA, GB, DE).",
+              "description": "Targeted countries. New integrations SHOULD emit ISO 3166-1 alpha-2 codes (e.g. US, CA, GB, DE) to enable cross-network analytics in downstream datasets. Free-form country names are accepted for backwards compatibility but are deprecated and may be rejected once this datatype transitions from experimental to stable.",
               "items": {
-                "type": "string",
-                "pattern": "^[A-Z]{2}$"
+                "type": "string"
               }
             },
             "xdm:regions": {
               "type": "array",
               "title": "Regions/States",
-              "description": "Targeted regions or states as ISO 3166-2 codes (e.g. US-CA, DE-BB, JP-13).",
+              "description": "Targeted regions or states. New integrations SHOULD emit ISO 3166-2 codes (e.g. US-CA, DE-BB, JP-13) matching the convention in `components/datatypes/demographic/geo.schema.json` stateProvince. Free-form region/state names are accepted for backwards compatibility but are deprecated and may be rejected once this datatype transitions from experimental to stable.",
               "items": {
                 "type": "string",
-                "pattern": "^[A-Z]{2}-[A-Z0-9]{1,3}$",
                 "examples": ["US-CA", "DE-BB", "JP-13"]
               }
             },

@@ -16,7 +16,7 @@
         "xdm:geoTargeting": {
           "type": "object",
           "title": "Geographic Targeting",
-          "description": "Geographic targeting specifications. Values are normalized across ad networks: ISO codes for countries and regions, canonical names for cities. Network-native geo IDs (e.g. Google Ads geoTargetConstant criterion IDs, Meta adgeolocation keys) belong in `xdm:networkGeoTargets` for round-trip to the source API.",
+          "description": "Geographic targeting specifications. Values should be normalized across ad networks: ISO codes for countries and regions, canonical names for cities. Ingestion pipelines SHOULD resolve network-native geo IDs (e.g. Google Ads geoTargetConstant criterion IDs, Meta adgeolocation keys) to ISO codes before populating these fields, so cross-network analytics can join on a common namespace.",
           "properties": {
             "xdm:countries": {
               "type": "array",

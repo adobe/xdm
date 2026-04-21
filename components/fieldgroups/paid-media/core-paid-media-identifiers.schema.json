@@ -34,6 +34,7 @@
                 "amazon",
                 "reddit",
                 "twitter",
+                "adobe_dsp",
                 "other"
               ],
               "meta:enum": {
@@ -47,6 +48,7 @@
                 "amazon": "Amazon Ads",
                 "reddit": "Reddit Ads",
                 "twitter": "Twitter/X Ads",
+                "adobe_dsp": "Adobe DSP",
                 "other": "Other ad network"
               }
             },

@@ -1,8 +1,31 @@
 {
   "xdm:geoTargeting": {
     "xdm:countries": ["US", "CA", "GB"],
-    "xdm:regions": ["California", "New York", "Ontario"],
-    "xdm:cities": ["San Francisco", "New York", "Toronto"]
+    "xdm:regions": ["US-CA", "US-NY", "CA-ON"],
+    "xdm:cities": ["San Francisco", "New York", "Toronto"],
+    "xdm:networkGeoTargets": [
+      {
+        "xdm:geoType": "country",
+        "xdm:networkID": "2840",
+        "xdm:resourceName": "geoTargetConstants/2840",
+        "xdm:canonicalName": "United States",
+        "xdm:resolvedCode": "US"
+      },
+      {
+        "xdm:geoType": "region",
+        "xdm:networkID": "21137",
+        "xdm:resourceName": "geoTargetConstants/21137",
+        "xdm:canonicalName": "California, United States",
+        "xdm:resolvedCode": "US-CA"
+      },
+      {
+        "xdm:geoType": "city",
+        "xdm:networkID": "1014044",
+        "xdm:resourceName": "geoTargetConstants/1014044",
+        "xdm:canonicalName": "San Francisco, California, United States",
+        "xdm:resolvedCode": "San Francisco"
+      }
+    ]
   },
   "xdm:demographicTargeting": {
     "xdm:ageRanges": [

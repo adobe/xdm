@@ -29,6 +29,21 @@
                   "title": "Account Name",
                   "description": "Display name of the ad account"
                 },
+                "xdm:currency": {
+                  "type": "string",
+                  "title": "Currency",
+                  "description": "Currency code (ISO 4217) for monetary values associated with this account"
+                },
+                "xdm:currencyCode": {
+                  "type": "string",
+                  "title": "Currency Code",
+                  "description": "Alias of currency (ISO 4217) for migration from GenStudio templates"
+                },
+                "xdm:timezone": {
+                  "type": "string",
+                  "title": "Timezone",
+                  "description": "Timezone for the account (e.g., America/New_York)"
+                },
                 "xdm:accountType": {
                   "type": "string",
                   "title": "Account Type",

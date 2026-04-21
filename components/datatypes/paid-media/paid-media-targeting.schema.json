@@ -70,61 +70,6 @@
                   "description": "Radius in kilometers"
                 }
               }
-            },
-            "xdm:networkGeoTargets": {
-              "type": "array",
-              "title": "Network-Native Geo Targets",
-              "description": "Platform-native geo target references preserved alongside the normalized values in `xdm:countries`, `xdm:regions`, `xdm:cities`, and `xdm:postalCodes`. Use this to round-trip geo selections back to the source ad network API (e.g. Google Ads `geoTargetConstants/{id}`, Meta adgeolocation `key`) without losing fidelity. The `xdm:adNetwork` on the parent paid-media object identifies which network these IDs belong to.",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "xdm:geoType": {
-                    "type": "string",
-                    "title": "Geo Type",
-                    "description": "The kind of geographic entity this network-native ID refers to.",
-                    "enum": [
-                      "country",
-                      "region",
-                      "city",
-                      "postal_code",
-                      "dma",
-                      "msa",
-                      "neighborhood",
-                      "other"
-                    ],
-                    "meta:enum": {
-                      "country": "Country",
-                      "region": "Region, state, or province",
-                      "city": "City",
-                      "postal_code": "Postal code",
-                      "dma": "Designated market area (Nielsen)",
-                      "msa": "Metropolitan statistical area",
-                      "neighborhood": "Neighborhood or sub-city area",
-                      "other": "Other geographic entity type"
-                    }
-                  },
-                  "xdm:networkID": {
-                    "type": "string",
-                    "title": "Network Geo ID",
-                    "description": "The raw network-native identifier for this geo target (e.g. Google Ads criterion ID \"21137\", Meta adgeolocation key \"3847\")."
-                  },
-                  "xdm:resourceName": {
-                    "type": "string",
-                    "title": "Resource Name",
-                    "description": "Fully qualified resource name where applicable (e.g. Google Ads \"geoTargetConstants/21137\")."
-                  },
-                  "xdm:canonicalName": {
-                    "type": "string",
-                    "title": "Canonical Name",
-                    "description": "Human-readable canonical name as returned by the source network (e.g. \"California, United States\")."
-                  },
-                  "xdm:resolvedCode": {
-                    "type": "string",
-                    "title": "Resolved Code",
-                    "description": "The normalized ISO code or canonical name this network-native ID was resolved to, cross-referencing an entry in `xdm:countries`, `xdm:regions`, `xdm:cities`, or `xdm:postalCodes`. Omit when resolution is not available."
-                  }
-                }
-              }
             }
           }
         },

@@ -27,8 +27,9 @@
                 "xdm:spendInMicroCurrency": {
                   "type": "integer",
                   "title": "Spend (Micro Currency)",
-                  "description": "Amount spent in micro currency units",
-                  "minimum": 0
+                  "description": "Amount spent in micro currency units (spend * 1,000,000). Use a 64-bit long to avoid overflow for large spend values.",
+                  "minimum": 0,
+                  "meta:xdmType": "long"
                 },
                 "xdm:averageCpm": {
                   "type": "number",
@@ -75,8 +76,9 @@
                 "xdm:bidAmountMicro": {
                   "type": "integer",
                   "title": "Bid Amount (Micro Currency)",
-                  "description": "Bid amount in micro currency units",
-                  "minimum": 0
+                  "description": "Bid amount in micro currency units (bid * 1,000,000). Use a 64-bit long to avoid overflow for large bid values.",
+                  "minimum": 0,
+                  "meta:xdmType": "long"
                 },
                 "xdm:maxBid": {
                   "type": "number",

@@ -1,0 +1,29 @@
+{
+  "xdm:eventType": "engagement.conversation.concierge",
+  "xdm:timestamp": "2026-04-07T14:22:00Z",
+  "xdm:engagement": {
+    "xdm:brandConciergeConversation": {
+      "xdm:conciergeDetails": {
+        "xdm:conciergeName": "Product Discovery Assistant",
+        "xdm:pageURL": "https://www.example.com/products/analytics-suite"
+      },
+      "xdm:conversationDetails": {
+        "xdm:createdAt": "2026-04-07T14:15:00Z",
+        "xdm:durationInSeconds": 420,
+        "xdm:conversationStatus": "COMPLETED",
+        "xdm:conversationTranscript": "https://storage.example.com/transcripts/conv-abc123.json",
+        "xdm:summary": "Visitor asked about enterprise pricing, requested a demo, and showed interest in analytics integrations.",
+        "xdm:discussedTopics": ["pricing", "demo request", "product features", "integrations"],
+        "xdm:productsOrServices": ["Analytics Suite", "Data Connectors"],
+        "xdm:engagementScore": 78,
+        "xdm:language": "en-US",
+        "xdm:chatTranscript": "https://storage.example.com/transcripts/chat-abc123.txt"
+      },
+      "xdm:conciergeKey": {
+        "xdm:sourceID": "b2b-platform",
+        "xdm:sourceType": "CRM",
+        "xdm:sourceInstanceID": "crm-instance-42"
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+name: PR review-ready label
+
+# Applies or removes the `needs review` label on a PR based on /ready and /wip
+# slash commands posted by the PR author (or any commenter with triage+ access).
+#
+# This exists because external contributors on fork PRs cannot add labels
+# directly — only users with write access to adobe/xdm can. This workflow
+# runs in the base-repo context with GITHUB_TOKEN, which has the needed scopes.
+#
+# See issue #2150 and parent proposal #2148 for design discussion.
+
+on:
+  pull_request_target:
+    types: [opened]
+  issue_comment:
+    types: [created]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  onboarding-comment:
+    if: github.event_name == 'pull_request_target'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                "👋 Thanks for opening a PR.",
+                "",
+                "When this change is ready for review, please post `/ready` as a new comment on this PR.",
+                "That will add the `needs review` label, which is how reviewers filter the open-PR list.",
+                "",
+                "If you need to mark the PR not-ready again later, post `/wip` to remove the label.",
+                "",
+                "You can re-run these commands as many times as needed."
+              ].join("\n")
+            });
+
+  slash-command:
+    if: github.event_name == 'issue_comment' && github.event.issue.pull_request
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.comment.body || "";
+            const isReady = /^\s*\/ready\b/m.test(body);
+            const isWip = /^\s*\/wip\b/m.test(body);
+            if (!isReady && !isWip) return;
+            if (isReady && isWip) {
+              core.info("Both /ready and /wip present in the same comment — ignoring.");
+              return;
+            }
+
+            const args = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            };
+            const commentId = context.payload.comment.id;
+
+            if (isReady) {
+              await github.rest.issues.addLabels({ ...args, labels: ["needs review"] });
+              await github.rest.reactions.createForIssueComment({
+                ...args, comment_id: commentId, content: "+1",
+              });
+              core.info(`Added 'needs review' label to PR #${context.issue.number}.`);
+            } else {
+              try {
+                await github.rest.issues.removeLabel({ ...args, name: "needs review" });
+              } catch (e) {
+                if (e.status !== 404) throw e;
+              }
+              await github.rest.reactions.createForIssueComment({
+                ...args, comment_id: commentId, content: "eyes",
+              });
+              core.info(`Removed 'needs review' label from PR #${context.issue.number}.`);
+            }

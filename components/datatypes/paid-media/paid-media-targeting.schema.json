@@ -16,7 +16,7 @@
         "xdm:geoTargeting": {
           "type": "object",
           "title": "Geographic Targeting",
-          "description": "Geographic targeting specifications. Values should be normalized across ad networks: ISO codes for countries and regions, canonical names for cities. Ingestion pipelines SHOULD resolve network-native geo IDs (e.g. Google Ads geoTargetConstant criterion IDs, Meta adgeolocation keys) to ISO codes before populating these fields, so cross-network analytics can join on a common namespace.",
+          "description": "Geographic targeting specifications. Values should be normalized across ad networks: ISO codes for countries and regions, canonical names for cities, Nielsen DMA / MSA codes for US media markets. Ingestion pipelines SHOULD resolve network-native geo IDs (e.g. Google Ads geoTargetConstant criterion IDs, Meta adgeolocation keys) to these normalized forms before populating these fields, so cross-network analytics can join on a common namespace. Only the primary targeting axes are modeled here (country / region / state / city / postal code / DMA / MSA / lat-lon radius); rarer ad-network-specific targeting types (e.g. Google Ads airport, university, congressional district, neighborhood) are out of scope for this datatype and should be dropped or captured in an extension at the ingestion layer.",
           "properties": {
             "xdm:countries": {
               "type": "array",
@@ -49,6 +49,22 @@
               "description": "Targeted postal codes. Format varies by country; callers should scope postal codes by the entries in `xdm:countries`.",
               "items": {
                 "type": "string"
+              }
+            },
+            "xdm:dmaIDs": {
+              "type": "array",
+              "title": "Designated Market Areas",
+              "description": "Targeted Nielsen designated market area (DMA) codes. US-specific. Matches the `xdm:dmaID` convention in `components/datatypes/demographic/geo.schema.json`. Source networks map their native DMA criterion IDs (e.g. Google Ads `geoTargetConstant` entries with `Target Type = DMA Region`) to Nielsen DMA codes at ingestion.",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "xdm:msaIDs": {
+              "type": "array",
+              "title": "Metropolitan Statistical Areas",
+              "description": "Targeted metropolitan statistical area (MSA) codes. US-specific. Matches the `xdm:msaID` convention in `components/datatypes/demographic/geo.schema.json`.",
+              "items": {
+                "type": "integer"
               }
             },
             "xdm:radius": {

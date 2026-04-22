@@ -104,17 +104,20 @@
                 "xdm:currency": {
                   "type": "string",
                   "title": "Currency",
-                  "description": "Currency code (ISO 4217) for monetary values"
+                  "description": "Deprecated: Use accountDetails.currency in core-paid-media-account-details instead. Currency code (ISO 4217) for monetary values.",
+                  "meta:status": "deprecated"
                 },
                 "xdm:currencyCode": {
                   "type": "string",
                   "title": "Currency Code",
-                  "description": "Alias of currency (ISO 4217) for migration from GenStudio templates"
+                  "description": "Deprecated: Use accountDetails.currencyCode in core-paid-media-account-details instead. Alias of currency (ISO 4217) for migration from GenStudio templates.",
+                  "meta:status": "deprecated"
                 },
                 "xdm:timezone": {
                   "type": "string",
                   "title": "Timezone",
-                  "description": "Timezone for the entity (e.g., America/New_York)"
+                  "description": "Deprecated: Use accountDetails.timezone in core-paid-media-account-details instead. Timezone for the entity (e.g., America/New_York).",
+                  "meta:status": "deprecated"
                 },
                 "xdm:createdTime": {
                   "type": "string",
@@ -132,18 +135,21 @@
                   "type": "string",
                   "format": "date-time",
                   "title": "Start Time",
-                  "description": "When the entity becomes active/starts running"
+                  "description": "Deprecated: Use campaignDetails.startTime or adGroupDetails.startTime instead. When the entity becomes active/starts running.",
+                  "meta:status": "deprecated"
                 },
                 "xdm:endTime": {
                   "type": "string",
                   "format": "date-time",
                   "title": "End Time",
-                  "description": "When the entity stops running/expires"
+                  "description": "Deprecated: Use campaignDetails.endTime or adGroupDetails.endTime instead. When the entity stops running/expires.",
+                  "meta:status": "deprecated"
                 },
                 "xdm:objective": {
                   "type": "string",
                   "title": "Objective",
-                  "description": "Campaign or ad group objective/goal",
+                  "description": "Deprecated: Use campaignDetails.objective instead. Campaign or ad group objective/goal.",
+                  "meta:status": "deprecated",
                   "enum": [
                     "awareness",
                     "consideration",
@@ -176,7 +182,8 @@
                 "xdm:budgetType": {
                   "type": "string",
                   "title": "Budget Type",
-                  "description": "Type of budget allocation",
+                  "description": "Deprecated: Use campaignDetails.budgetSettings.budgetType or adGroupDetails.budgetSettings.budgetType instead. Type of budget allocation.",
+                  "meta:status": "deprecated",
                   "enum": ["daily", "lifetime", "campaign_budget_optimization"],
                   "meta:enum": {
                     "daily": "Daily Budget",
@@ -187,24 +194,28 @@
                 "xdm:dailyBudget": {
                   "type": "number",
                   "title": "Daily Budget",
-                  "description": "Daily budget amount in account currency",
+                  "description": "Deprecated: Use campaignDetails.budgetSettings.dailyBudget or adGroupDetails.budgetSettings.dailyBudget instead. Daily budget amount in account currency.",
+                  "meta:status": "deprecated",
                   "minimum": 0
                 },
                 "xdm:lifetimeBudget": {
                   "type": "number",
                   "title": "Lifetime Budget",
-                  "description": "Total lifetime budget amount in account currency",
+                  "description": "Deprecated: Use campaignDetails.budgetSettings.lifetimeBudget or adGroupDetails.budgetSettings.lifetimeBudget instead. Total lifetime budget amount in account currency.",
+                  "meta:status": "deprecated",
                   "minimum": 0
                 },
                 "xdm:biddingStrategy": {
                   "type": "string",
                   "title": "Bidding Strategy",
-                  "description": "Bidding strategy used for the entity"
+                  "description": "Deprecated: Use campaignDetails.budgetSettings.bidStrategy or adGroupDetails.budgetSettings.bidStrategyType instead. Bidding strategy used for the entity.",
+                  "meta:status": "deprecated"
                 },
                 "xdm:optimizationGoal": {
                   "type": "string",
                   "title": "Optimization Goal",
-                  "description": "What the ad delivery is optimized for"
+                  "description": "Deprecated: Use adGroupDetails.optimizationSettings.optimizationGoal instead. What the ad delivery is optimized for.",
+                  "meta:status": "deprecated"
                 }
               }
             }

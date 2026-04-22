@@ -1,8 +1,10 @@
 {
   "xdm:geoTargeting": {
     "xdm:countries": ["US", "CA", "GB"],
-    "xdm:regions": ["California", "New York", "Ontario"],
-    "xdm:cities": ["San Francisco", "New York", "Toronto"]
+    "xdm:regions": ["US-CA", "US-NY", "CA-ON"],
+    "xdm:cities": ["San Francisco", "New York", "Toronto"],
+    "xdm:dmaIDs": [807, 501],
+    "xdm:msaIDs": [41860, 35620]
   },
   "xdm:demographicTargeting": {
     "xdm:ageRanges": [

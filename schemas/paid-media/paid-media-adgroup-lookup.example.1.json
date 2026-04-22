@@ -30,7 +30,7 @@
       "xdm:targeting": {
         "xdm:geoTargeting": {
           "xdm:countries": ["US"],
-          "xdm:regions": ["California", "New York", "Texas", "Florida"],
+          "xdm:regions": ["US-CA", "US-NY", "US-TX", "US-FL"],
           "xdm:cities": [
             "San Francisco",
             "Los Angeles",

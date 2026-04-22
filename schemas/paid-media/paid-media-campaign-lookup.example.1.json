@@ -33,7 +33,7 @@
       "xdm:targeting": {
         "xdm:geoTargeting": {
           "xdm:countries": ["US"],
-          "xdm:regions": ["California", "New York", "Texas"]
+          "xdm:regions": ["US-CA", "US-NY", "US-TX"]
         },
         "xdm:demographicTargeting": {
           "xdm:ageRanges": [

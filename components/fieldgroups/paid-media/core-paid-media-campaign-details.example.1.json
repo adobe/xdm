@@ -1,6 +1,9 @@
 {
   "xdm:paidMedia": {
     "xdm:campaignDetails": {
+      "xdm:objective": "traffic",
+      "xdm:startTime": "2025-11-01T00:00:00Z",
+      "xdm:endTime": "2025-11-30T23:59:59Z",
       "xdm:campaignType": "traffic",
       "xdm:subType": "link_clicks",
       "xdm:isAutomatedCampaign": false,
@@ -12,6 +15,9 @@
       },
       "xdm:budgetSettings": {
         "xdm:isCampaignBudgetOptimization": true,
+        "xdm:budgetType": "daily",
+        "xdm:dailyBudget": 2000,
+        "xdm:lifetimeBudget": 0,
         "xdm:spendCap": 2500,
         "xdm:bidStrategy": "lowest_cost",
         "xdm:bidAmount": 0

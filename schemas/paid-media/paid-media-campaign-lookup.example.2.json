@@ -32,7 +32,12 @@
       "xdm:targeting": {
         "xdm:geoTargeting": {
           "xdm:countries": ["US"],
-          "xdm:regions": ["US-NY", "US-NJ", "US-CT", "US-PA"]
+          "xdm:regions": [
+            "New York",
+            "New Jersey",
+            "Connecticut",
+            "Pennsylvania"
+          ]
         },
         "xdm:demographicTargeting": {
           "xdm:ageRanges": [

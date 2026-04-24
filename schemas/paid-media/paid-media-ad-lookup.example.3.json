@@ -15,8 +15,17 @@
       "xdm:name": "Summer Collection - 15s In-Feed Video",
       "xdm:status": "active",
       "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/Chicago",
       "xdm:createdTime": "2025-06-01T09:00:00Z",
-      "xdm:updatedTime": "2025-06-15T14:30:00Z"
+      "xdm:updatedTime": "2025-06-15T14:30:00Z",
+      "xdm:startTime": "2025-06-05T00:00:00Z",
+      "xdm:endTime": "2025-07-31T23:59:59Z",
+      "xdm:objective": "conversions",
+      "xdm:budgetType": "daily",
+      "xdm:dailyBudget": 300,
+      "xdm:biddingStrategy": "cost_cap",
+      "xdm:optimizationGoal": "conversions"
     },
     "xdm:adDetails": {
       "xdm:adType": "video",

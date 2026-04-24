@@ -13,8 +13,14 @@
       "xdm:name": "Tech Professionals - Responsive Search",
       "xdm:status": "active",
       "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/New_York",
       "xdm:createdTime": "2025-09-15T10:00:00Z",
-      "xdm:updatedTime": "2025-11-09T09:00:00Z"
+      "xdm:updatedTime": "2025-11-09T09:00:00Z",
+      "xdm:startTime": "2025-10-01T00:00:00Z",
+      "xdm:objective": "conversions",
+      "xdm:biddingStrategy": "target_cpa",
+      "xdm:optimizationGoal": "conversions"
     },
     "xdm:adGroupDetails": {
       "xdm:adGroupType": "standard",

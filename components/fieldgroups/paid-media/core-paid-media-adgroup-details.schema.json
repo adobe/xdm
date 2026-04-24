@@ -52,7 +52,6 @@
                     "hotel",
                     "travel",
                     "audio",
-                    "performance_max_asset_group",
                     "other"
                   ],
                   "meta:enum": {
@@ -67,7 +66,6 @@
                     "hotel": "Hotel Ad Group",
                     "travel": "Travel Ad Group",
                     "audio": "Audio Ad Group",
-                    "performance_max_asset_group": "Performance Max Asset Group (Google Ads PMax - asset pool from which ads are dynamically assembled)",
                     "other": "Other Ad Group Type"
                   }
                 },

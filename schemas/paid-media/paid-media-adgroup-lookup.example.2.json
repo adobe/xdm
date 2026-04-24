@@ -27,12 +27,7 @@
       "xdm:targeting": {
         "xdm:geoTargeting": {
           "xdm:countries": ["US"],
-          "xdm:regions": [
-            "New York",
-            "California",
-            "Massachusetts",
-            "Washington"
-          ],
+          "xdm:regions": ["US-NY", "US-CA", "US-MA", "US-WA"],
           "xdm:cities": ["New York", "San Francisco", "Boston", "Seattle"]
         },
         "xdm:demographicTargeting": {

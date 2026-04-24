@@ -16,12 +16,12 @@
         "xdm:geoTargeting": {
           "type": "object",
           "title": "Geographic Targeting",
-          "description": "Geographic targeting specifications",
+          "description": "Geographic targeting specifications. Values should be normalized across ad networks: ISO codes for countries and regions, canonical names for cities, Nielsen DMA / MSA codes for US media markets. Ingestion pipelines SHOULD resolve network-native geo IDs (e.g. Google Ads geoTargetConstant criterion IDs, Meta adgeolocation keys) to these normalized forms before populating these fields, so cross-network analytics can join on a common namespace. Only the primary targeting axes are modeled here (country / region / state / city / postal code / DMA / MSA / lat-lon radius); rarer ad-network-specific targeting types (e.g. Google Ads airport, university, congressional district, neighborhood) are out of scope for this datatype and should be dropped or captured in an extension at the ingestion layer.",
           "properties": {
             "xdm:countries": {
               "type": "array",
               "title": "Countries",
-              "description": "Targeted countries (ISO country codes)",
+              "description": "Targeted countries. New integrations SHOULD emit ISO 3166-1 alpha-2 codes (e.g. US, CA, GB, DE) to enable cross-network analytics in downstream datasets. Free-form country names are accepted for backwards compatibility but are deprecated and may be rejected once this datatype transitions from experimental to stable.",
               "items": {
                 "type": "string"
               }
@@ -29,15 +29,16 @@
             "xdm:regions": {
               "type": "array",
               "title": "Regions/States",
-              "description": "Targeted regions or states",
+              "description": "Targeted regions or states. New integrations SHOULD emit ISO 3166-2 codes (e.g. US-CA, DE-BB, JP-13) matching the convention in `components/datatypes/demographic/geo.schema.json` stateProvince. Free-form region/state names are accepted for backwards compatibility but are deprecated and may be rejected once this datatype transitions from experimental to stable.",
               "items": {
-                "type": "string"
+                "type": "string",
+                "examples": ["US-CA", "DE-BB", "JP-13"]
               }
             },
             "xdm:cities": {
               "type": "array",
               "title": "Cities",
-              "description": "Targeted cities",
+              "description": "Targeted cities as canonical city names. ISO/UN-LOCODE is sparse for cities, so canonical names are used; callers should scope cities by the entries in `xdm:regions` and `xdm:countries` to disambiguate (e.g. \"Springfield\" under US-IL vs US-MA).",
               "items": {
                 "type": "string"
               }
@@ -45,9 +46,25 @@
             "xdm:postalCodes": {
               "type": "array",
               "title": "Postal Codes",
-              "description": "Targeted postal codes",
+              "description": "Targeted postal codes. Format varies by country; callers should scope postal codes by the entries in `xdm:countries`.",
               "items": {
                 "type": "string"
+              }
+            },
+            "xdm:dmaIDs": {
+              "type": "array",
+              "title": "Designated Market Areas",
+              "description": "Targeted Nielsen designated market area (DMA) codes. US-specific. Matches the `xdm:dmaID` convention in `components/datatypes/demographic/geo.schema.json`. Source networks map their native DMA criterion IDs (e.g. Google Ads `geoTargetConstant` entries with `Target Type = DMA Region`) to Nielsen DMA codes at ingestion.",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "xdm:msaIDs": {
+              "type": "array",
+              "title": "Metropolitan Statistical Areas",
+              "description": "Targeted metropolitan statistical area (MSA) codes. US-specific. Matches the `xdm:msaID` convention in `components/datatypes/demographic/geo.schema.json`.",
+              "items": {
+                "type": "integer"
               }
             },
             "xdm:radius": {

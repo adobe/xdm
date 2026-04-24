@@ -16,7 +16,10 @@
       "xdm:status": "active",
       "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
       "xdm:createdTime": "2025-09-20T13:00:00Z",
-      "xdm:updatedTime": "2025-11-05T09:00:00Z"
+      "xdm:updatedTime": "2025-11-05T09:00:00Z",
+      "xdm:objective": "conversions",
+      "xdm:currency": "USD",
+      "xdm:optimizationGoal": "MAXIMIZE_CONVERSIONS"
     },
     "xdm:experienceDetails": {
       "xdm:experienceName": "Responsive Display - Enterprise Software Solutions",

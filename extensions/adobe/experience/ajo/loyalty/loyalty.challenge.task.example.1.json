@@ -22,32 +22,7 @@
     },
     "singleTrans": false,
     "spendMin": 0,
-    "qtyMin": 3,
+    "qtyMin": 1,
     "maxTrans": 0
-  },
-  "accumulators": {
-    "qty": 2.0,
-    "spend": 12.49,
-    "days": 3,
-    "item_list": [
-      {
-        "item": {
-          "item_set": [
-            "sku:latte-grande",
-            "category:beverages"
-          ],
-          "item_name": "Caffè Latte",
-          "quantity": 2,
-          "unit_price": 6.25,
-          "sub_total": 12.5
-        },
-        "_id": "7b555a5a-d429-4a46-aeec-c7b261c008c0",
-        "timestamp": "2026-01-06T00:13:00.000+00:00",
-        "timestampApplied": "2026-01-21T01:57:04.659+00:00",
-        "utcOffset": "-08:00",
-        "locationId": "store-1042",
-        "transactionId": "b4fa0e89-f4bb-41ce-b370-fb97f9c52f1a"
-      }
-    ]
   }
 }

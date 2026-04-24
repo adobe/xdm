@@ -131,11 +131,6 @@
               "type": "string",
               "title": "Hierarchy Path",
               "description": "Full hierarchical path showing parent-child relationships (e.g., account_id/campaign_id/adgroup_id/ad_id)"
-            },
-            "xdm:channel": {
-              "type": "string",
-              "title": "Channel",
-              "description": "Content channel indicating the source of the data (e.g., Web, Mobile, PaidMedia). Used as a reporting dimension for cross-channel breakdowns."
             }
           },
           "required": ["xdm:adNetwork"]

@@ -72,7 +72,6 @@
               "meta:xdmType": "map",
               "description": "Dynamic map of additional details about the exclusion. Keys and value shapes depend on the exclusion reason.",
               "additionalProperties": {
-                "type": ["object", "array", "string", "number", "boolean"],
                 "description": "Dynamic exclusion detail value. For example, when the exclusion reason is personalizedDomainNotValid, this map can include invalidDomains with an array of strings."
               }
             }

@@ -67,23 +67,26 @@
                 "type": "integer"
               }
             },
-            "xdm:radius": {
-              "type": "object",
+            "xdm:radii": {
+              "type": "array",
               "title": "Radius Targeting",
-              "description": "Location radius targeting",
-              "properties": {
-                "xdm:latitude": {
-                  "type": "number",
-                  "title": "Latitude"
-                },
-                "xdm:longitude": {
-                  "type": "number",
-                  "title": "Longitude"
-                },
-                "xdm:radiusKm": {
-                  "type": "number",
-                  "title": "Radius (km)",
-                  "description": "Radius in kilometers"
+              "description": "Location radius (proximity) targets. Modeled as an array because source networks support multiple radius circles per ad set/campaign: Meta `geo_locations.custom_locations` is an array of `{latitude, longitude, radius, distance_unit}`; Google Ads `ProximityInfo` is one criterion per location with multiple criteria allowed per campaign. Ingestion pipelines SHOULD normalize the source radius to kilometers (Meta `distance_unit=mile` → multiply by 1.609344) before populating `xdm:radiusKm`, consistent with the country/region ISO normalization elsewhere in this datatype.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:latitude": {
+                    "type": "number",
+                    "title": "Latitude"
+                  },
+                  "xdm:longitude": {
+                    "type": "number",
+                    "title": "Longitude"
+                  },
+                  "xdm:radiusKm": {
+                    "type": "number",
+                    "title": "Radius (km)",
+                    "description": "Radius in kilometers"
+                  }
                 }
               }
             }

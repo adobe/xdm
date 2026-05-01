@@ -126,12 +126,16 @@
                     "xdm:budgetInMicroCurrency": {
                       "type": "integer",
                       "title": "Budget (Micro Currency)",
-                      "description": "Budget amount in micro currency units"
+                      "description": "Budget amount in micro currency units",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
                     },
                     "xdm:bidInMicroCurrency": {
                       "type": "integer",
                       "title": "Bid (Micro Currency)",
-                      "description": "Bid amount in micro currency units"
+                      "description": "Bid amount in micro currency units",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
                     },
                     "xdm:bidStrategyType": {
                       "type": "string",

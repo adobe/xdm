@@ -205,7 +205,8 @@
                 "duplicate",
                 "denylist",
                 "delivered",
-                "unknown"
+                "unknown",
+                "read"
               ],
               "meta:enum": {
                 "error": "Message processing failed",
@@ -229,6 +230,15 @@
               "type": "string",
               "description": "Message from the SMS provider, either success or failure."
             }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/metadata": {
+          "title": "SMS Metadata",
+          "type": "object",
+          "description": "A dynamic map of additional metadata key/value pairs associated with the SMS channel context.",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
@@ -280,7 +290,8 @@
                 "duplicate",
                 "denylist",
                 "delivered",
-                "unknown"
+                "unknown",
+                "read"
               ],
               "meta:enum": {
                 "error": "Message processing failed",
@@ -340,6 +351,15 @@
           "title": "ID of the selected option from WhatsApp ",
           "type": "string",
           "description": "ID of the selected option from WhatsApp "
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/metadata": {
+          "title": "WhatsApp Metadata",
+          "type": "object",
+          "description": "A dynamic map of additional metadata key/value pairs associated with the WhatsApp channel context.",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       }
     }

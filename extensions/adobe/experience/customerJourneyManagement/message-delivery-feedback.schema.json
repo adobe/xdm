@@ -43,7 +43,7 @@
             "denylist": "Invalid destination skipped",
             "delivered": "Message Delivered",
             "read": "Message read",
-            "unknown": "Message status is unknown"
+            "unknown": "Unknown feedback status"
           },
           "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##title##21101",
           "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##description##54571"
@@ -65,6 +65,16 @@
               "description": "Provide exclusion subcode, like exact typology rule-id.",
               "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##title##95631",
               "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##description##90041"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/details": {
+              "title": "Exclusion Details",
+              "type": "object",
+              "meta:xdmType": "map",
+              "description": "Dynamic map of additional details about the exclusion. Keys depend on the exclusion reason.",
+              "additionalProperties": {
+                "type": "string",
+                "description": "Dynamic exclusion detail value. For example, when the exclusion reason is personalizedDomainNotValid, this map can include invalidDomains."
+              }
             }
           },
           "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion##title##32491"

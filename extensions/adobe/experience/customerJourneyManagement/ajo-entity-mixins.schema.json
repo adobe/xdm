@@ -139,6 +139,16 @@
               "type": "string",
               "format": "date-time",
               "description": "Time at which message was published"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigName": {
+              "title": "Channel Configuration Name",
+              "type": "string",
+              "description": "The name of the configuration used during creation of the journey or campaign"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigID": {
+              "title": "Channel Configuration ID",
+              "type": "string",
+              "description": "The ID of the configuration used during creation of the journey or campaign"
             }
           }
         },

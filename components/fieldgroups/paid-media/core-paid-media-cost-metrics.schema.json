@@ -27,8 +27,9 @@
                 "xdm:spendInMicroCurrency": {
                   "type": "integer",
                   "title": "Spend (Micro Currency)",
-                  "description": "Amount spent in micro currency units",
-                  "minimum": 0
+                  "description": "Amount spent in micro currency units (spend * 1,000,000).",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
                 },
                 "xdm:averageCpm": {
                   "type": "number",
@@ -75,8 +76,9 @@
                 "xdm:bidAmountMicro": {
                   "type": "integer",
                   "title": "Bid Amount (Micro Currency)",
-                  "description": "Bid amount in micro currency units",
-                  "minimum": 0
+                  "description": "Bid amount in micro currency units (bid * 1,000,000).",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
                 },
                 "xdm:maxBid": {
                   "type": "number",
@@ -125,7 +127,7 @@
                 "xdm:impressionShare": {
                   "type": "object",
                   "title": "Impression Share Metrics",
-                  "description": "Detailed impression share metrics",
+                  "description": "Detailed impression share metrics. Available at Campaign and Ad Group levels only. Not populated at Ad, Experience, or Asset levels. These are competitive intelligence metrics specific to search/shopping advertising (primarily Google Ads, Microsoft Ads). Null for platforms without impression share equivalents (e.g., Meta).",
                   "properties": {
                     "xdm:impressionShare": {
                       "type": "number",
@@ -180,14 +182,14 @@
                 "xdm:lostImpressionShareRank": {
                   "type": "number",
                   "title": "Lost Impression Share (Rank)",
-                  "description": "Impression share lost due to ad rank",
+                  "description": "Impression share lost due to ad rank. Available at Campaign and Ad Group levels only.",
                   "minimum": 0,
                   "maximum": 1
                 },
                 "xdm:lostImpressionShareBudget": {
                   "type": "number",
                   "title": "Lost Impression Share (Budget)",
-                  "description": "Impression share lost due to budget constraints",
+                  "description": "Impression share lost due to budget constraints. Available at Campaign and Ad Group levels only.",
                   "minimum": 0,
                   "maximum": 1
                 },

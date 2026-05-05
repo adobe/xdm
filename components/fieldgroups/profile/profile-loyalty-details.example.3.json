@@ -1,0 +1,108 @@
+{
+  "xdm:loyalty": {
+    "xdm:joinDate": "2019-03-12T14:22:00Z",
+    "xdm:loyaltyID": ["NRD-LOY-7K2M9P"],
+    "xdm:program": "Nordhaven Rewards",
+    "xdm:status": "active",
+    "xdm:tier": "Gold",
+    "xdm:nextTier": "Platinum",
+    "xdm:pointsToNextTier": 4200,
+    "xdm:tierUpgradeDate": "2024-11-02T09:15:30Z",
+    "xdm:tierExpiryDate": "2026-12-31T23:59:59Z",
+    "xdm:points": 15800,
+    "xdm:pointsRedeemed": 6200,
+    "xdm:adjustedPoints": -150,
+    "xdm:expiredPoints": 400,
+    "xdm:lifetimePoints": 28550,
+    "xdm:lifetimePurchases": 12430.67,
+    "xdm:promisedPoints": 500,
+    "xdm:returnedPoints": 75,
+    "xdm:pointsExpiration": [
+      {
+        "xdm:pointsExpiring": 1200,
+        "xdm:pointsExpirationDate": "2026-06-30T23:59:59Z"
+      }
+    ],
+    "xdm:cardsDetails": [
+      {
+        "xdm:number": "4532-8810-0044-9921",
+        "xdm:series": "2024 physical card",
+        "xdm:status": "active"
+      }
+    ],
+    "xdm:challenges": [
+      {
+        "xdm:id": "ch_winter_browse_2026",
+        "xdm:name": "Winter Browse Streak",
+        "xdm:description": "Visit the app or site on 5 separate days before the campaign ends.",
+        "xdm:series": "seasonal_engagement",
+        "xdm:frequencyType": "daily",
+        "xdm:startDate": "2026-01-01T00:00:00Z",
+        "xdm:endDate": "2026-01-31T23:59:59Z",
+        "xdm:state": "active",
+        "xdm:tasks": [
+          {
+            "xdm:name": "Log a qualifying session",
+            "xdm:type": "digital_visit",
+            "xdm:entity": "mobile_app",
+            "xdm:goal": 5,
+            "xdm:progress": 2,
+            "xdm:startDate": "2026-01-01T00:00:00Z",
+            "xdm:endDate": "2026-01-31T23:59:59Z",
+            "xdm:state": "inProgress"
+          }
+        ]
+      }
+    ],
+    "xdm:rewards": {
+      "xdm:badges": [
+        {
+          "xdm:id": "bdg_early_adopter",
+          "xdm:name": "Early Adopter",
+          "xdm:series": "founders",
+          "xdm:startDate": "2019-03-12T14:22:00Z",
+          "xdm:endDate": "2029-12-31T23:59:59Z",
+          "xdm:state": "active"
+        }
+      ],
+      "xdm:coupons": [
+        {
+          "xdm:id": "cpn_gold_double_2026q1",
+          "xdm:name": "Gold member double points weekend",
+          "xdm:series": "tier_perks",
+          "xdm:discountValue": 0,
+          "xdm:startDate": "2026-02-14T00:00:00Z",
+          "xdm:endDate": "2026-02-16T23:59:59Z",
+          "xdm:state": "active",
+          "xdm:redemptionCount": 0,
+          "xdm:redemptionLimit": 1,
+          "xdm:storeName": "Nordhaven Online"
+        }
+      ],
+      "xdm:giveaways": [
+        {
+          "xdm:id": "gw_ski_weekend_2026",
+          "xdm:name": "Ski weekend for two",
+          "xdm:series": "travel_partner_q1",
+          "xdm:type": "sweepstakes",
+          "xdm:partnerId": "PRT-AlpineEscapes",
+          "xdm:partnerName": "Alpine Escapes Ltd.",
+          "xdm:startDate": "2026-01-05T00:00:00Z",
+          "xdm:endDate": "2026-02-28T23:59:59Z",
+          "xdm:state": "active"
+        }
+      ],
+      "xdm:referrals": [
+        {
+          "xdm:id": "ref_8f3c21a",
+          "xdm:name": "Refer-a-friend bonus",
+          "xdm:series": "member_get_member",
+          "xdm:recipient": "sam.lee@example.com",
+          "xdm:startDate": "2025-11-01T00:00:00Z",
+          "xdm:endDate": "2026-05-01T23:59:59Z",
+          "xdm:state": "completed"
+        }
+      ]
+    }
+  }
+}

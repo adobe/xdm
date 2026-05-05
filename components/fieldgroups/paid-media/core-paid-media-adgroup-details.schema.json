@@ -24,6 +24,18 @@
               "title": "Ad Group Details",
               "description": "Specific details for paid media ad groups/ad sets/ad squads",
               "properties": {
+                "xdm:startTime": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "Start Time",
+                  "description": "When the ad group becomes active/starts running. On platforms like Meta and TikTok, start/end times are set at the ad set/ad group level."
+                },
+                "xdm:endTime": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "End Time",
+                  "description": "When the ad group stops running/expires"
+                },
                 "xdm:adGroupType": {
                   "type": "string",
                   "title": "Ad Group Type",
@@ -37,6 +49,10 @@
                     "app_install",
                     "lead_generation",
                     "reach_frequency",
+                    "hotel",
+                    "travel",
+                    "audio",
+                    "performance_max_asset_group",
                     "other"
                   ],
                   "meta:enum": {
@@ -48,6 +64,10 @@
                     "app_install": "App Install Ad Group",
                     "lead_generation": "Lead Generation Ad Group",
                     "reach_frequency": "Reach & Frequency Ad Group",
+                    "hotel": "Hotel Ad Group",
+                    "travel": "Travel Ad Group",
+                    "audio": "Audio Ad Group",
+                    "performance_max_asset_group": "Performance Max Asset Group (Google Ads PMax - asset pool from which ads are dynamically assembled)",
                     "other": "Other Ad Group Type"
                   }
                 },
@@ -81,15 +101,41 @@
                   "title": "Budget Settings",
                   "description": "Ad group budget configuration",
                   "properties": {
+                    "xdm:budgetType": {
+                      "type": "string",
+                      "title": "Budget Type",
+                      "description": "Type of budget allocation at ad group level",
+                      "enum": ["daily", "lifetime"],
+                      "meta:enum": {
+                        "daily": "Daily Budget",
+                        "lifetime": "Lifetime Budget"
+                      }
+                    },
+                    "xdm:dailyBudget": {
+                      "type": "number",
+                      "title": "Daily Budget",
+                      "description": "Daily budget amount in account currency. Used on platforms like Meta and TikTok where budget is set at the ad set/ad group level.",
+                      "minimum": 0
+                    },
+                    "xdm:lifetimeBudget": {
+                      "type": "number",
+                      "title": "Lifetime Budget",
+                      "description": "Total lifetime budget amount in account currency. Used on platforms like Meta and TikTok where budget is set at the ad set/ad group level.",
+                      "minimum": 0
+                    },
                     "xdm:budgetInMicroCurrency": {
                       "type": "integer",
                       "title": "Budget (Micro Currency)",
-                      "description": "Budget amount in micro currency units"
+                      "description": "Budget amount in micro currency units",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
                     },
                     "xdm:bidInMicroCurrency": {
                       "type": "integer",
                       "title": "Bid (Micro Currency)",
-                      "description": "Bid amount in micro currency units"
+                      "description": "Bid amount in micro currency units",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
                     },
                     "xdm:bidStrategyType": {
                       "type": "string",
@@ -99,6 +145,7 @@
                         "enhanced_cpc",
                         "maximize_clicks",
                         "maximize_conversions",
+                        "maximize_conversion_value",
                         "target_cpa",
                         "target_roas",
                         "target_impression_share",
@@ -106,13 +153,23 @@
                         "lowest_cost",
                         "cost_cap",
                         "bid_cap",
-                        "min_roas"
+                        "min_roas",
+                        "manual_cpm",
+                        "manual_cpv",
+                        "target_cpm",
+                        "target_cpv",
+                        "target_cpc",
+                        "percent_cpc",
+                        "commission",
+                        "manual_cpa",
+                        "fixed_cpm"
                       ],
                       "meta:enum": {
                         "manual_cpc": "Manual CPC",
                         "enhanced_cpc": "Enhanced CPC",
                         "maximize_clicks": "Maximize Clicks",
                         "maximize_conversions": "Maximize Conversions",
+                        "maximize_conversion_value": "Maximize Conversion Value",
                         "target_cpa": "Target CPA",
                         "target_roas": "Target ROAS",
                         "target_impression_share": "Target Impression Share",
@@ -120,7 +177,16 @@
                         "lowest_cost": "Lowest Cost",
                         "cost_cap": "Cost Cap",
                         "bid_cap": "Bid Cap",
-                        "min_roas": "Minimum ROAS"
+                        "min_roas": "Minimum ROAS",
+                        "manual_cpm": "Manual CPM",
+                        "manual_cpv": "Manual CPV",
+                        "target_cpm": "Target CPM",
+                        "target_cpv": "Target CPV",
+                        "target_cpc": "Target CPC",
+                        "percent_cpc": "Percent CPC",
+                        "commission": "Commission Bidding",
+                        "manual_cpa": "Manual CPA",
+                        "fixed_cpm": "Fixed CPM"
                       }
                     },
                     "xdm:targetCpa": {
@@ -150,6 +216,11 @@
                   "title": "Optimization Settings",
                   "description": "Ad group optimization configuration",
                   "properties": {
+                    "xdm:optimizationGoal": {
+                      "type": "string",
+                      "title": "Optimization Goal",
+                      "description": "What the ad delivery is optimized for (e.g., link_clicks, impressions, conversions). On platforms like Meta and TikTok, optimization goal is set at the ad set/ad group level."
+                    },
                     "xdm:optimizationGoalMetadata": {
                       "type": "object",
                       "title": "Optimization Goal Metadata",

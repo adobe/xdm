@@ -71,5 +71,5 @@
     { "$ref": "https://ns.adobe.com/experience/cvf/alpha-00/cvf-common-properties" },
     { "$ref": "#/definitions/audience" }
   ],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

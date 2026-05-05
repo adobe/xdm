@@ -1,9 +1,14 @@
 {
   "xdm:paidMedia": {
     "xdm:adGroupDetails": {
+      "xdm:startTime": "2025-11-01T00:00:00Z",
+      "xdm:endTime": "2025-11-30T23:59:59Z",
       "xdm:adGroupType": "standard",
       "xdm:childAdType": "video",
       "xdm:budgetSettings": {
+        "xdm:budgetType": "daily",
+        "xdm:dailyBudget": 500,
+        "xdm:lifetimeBudget": 0,
         "xdm:budgetInMicroCurrency": 500000000,
         "xdm:bidInMicroCurrency": 1250000,
         "xdm:bidStrategyType": "lowest_cost",
@@ -12,6 +17,7 @@
         "xdm:roasValueMicro": 3500000
       },
       "xdm:optimizationSettings": {
+        "xdm:optimizationGoal": "link_clicks",
         "xdm:conversionWindow": "7d_click_1d_view",
         "xdm:isAutoTargetingEnabled": true,
         "xdm:isCampaignOptimization": false

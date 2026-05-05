@@ -29,6 +29,7 @@
             "submit",
             "visit",
             "bot_open",
+            "bot_click",
             "reply"
           ],
           "meta:enum": {
@@ -40,6 +41,7 @@
             "submit": "Submit message.",
             "visit": "Message visited.",
             "bot_open": "Message opened by a bot.",
+            "bot_click": "Message link clicked by a bot.",
             "reply": "Message replied to by recipient."
           },
           "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",

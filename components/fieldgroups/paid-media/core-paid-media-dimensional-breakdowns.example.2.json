@@ -1,0 +1,14 @@
+{
+  "xdm:paidMedia": {
+    "xdm:breakdownType": "network_device_slot",
+    "xdm:dimensionalBreakdowns": {
+      "xdm:deviceType": "desktop",
+      "xdm:adNetworkType": "search",
+      "xdm:adSlot": "top",
+      "xdm:country": "US",
+      "xdm:language": "en",
+      "xdm:campaignObjective": "SEARCH",
+      "xdm:optimizationGoal": "TARGET_CPA"
+    }
+  }
+}

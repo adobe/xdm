@@ -7,12 +7,15 @@
           "name": "c69b_buy3snacks_202503",
           "description": "Buy 3 snacks challenge for March 2025",
           "state": "sent",
+          "eventType": "challenge_complete",
           "startDate": "2025-07-15T05:00:00.000+00:00",
           "endDate": "2025-12-31T04:59:59.000+00:00",
           "completionDate": "2025-08-28T23:53:25.682+00:00",
           "signupDate": "2025-08-28T23:45:30.044+00:00",
           "optedIn": true,
           "tasksToComplete": 0,
+          "accumSpend": 30.0,
+          "accumReward": 30.0,
           "dependsOn": {
             "challengeId": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
             "state": "sent"
@@ -62,7 +65,8 @@
                   "completionDate": "2025-08-24T19:46:05.000+00:00",
                   "accumulators": {
                     "qty": 1,
-                    "spend": 2.5
+                    "spend": 2.5,
+                    "item_list": []
                   }
                 }
               ]
@@ -103,7 +107,8 @@
                   "completionDate": "2025-08-24T19:46:05.000+00:00",
                   "accumulators": {
                     "qty": 2,
-                    "spend": 5
+                    "spend": 5,
+                    "item_list": []
                   }
                 }
               ]
@@ -144,7 +149,8 @@
                   "completionDate": "2025-08-24T19:46:05.000+00:00",
                   "accumulators": {
                     "qty": 3,
-                    "spend": 7.5
+                    "spend": 7.5,
+                    "item_list": []
                   }
                 }
               ]

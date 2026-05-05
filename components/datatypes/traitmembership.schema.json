@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Trait Membership Details",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Details about trait membership for a profile, including qualification time and expiration information.",

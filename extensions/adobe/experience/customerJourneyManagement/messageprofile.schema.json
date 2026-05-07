@@ -217,7 +217,8 @@
                 "duplicate": "Duplicate message skipped",
                 "denylist": "Invalid destination skipped",
                 "delivered": "Message Delivered",
-                "unknown": "Unknown feedback status"
+                "unknown": "Unknown feedback status",
+                "read": "Message read"
               }
             },
             "xdm:providerFeedbackStatus": {
@@ -302,7 +303,8 @@
                 "duplicate": "Duplicate message skipped",
                 "denylist": "Invalid destination skipped",
                 "delivered": "Message Delivered",
-                "unknown": "Unknown feedback status"
+                "unknown": "Unknown feedback status",
+                "read": "Message read"
               }
             },
             "xdm:providerFeedbackStatus": {

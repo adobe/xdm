@@ -39,8 +39,8 @@
         },
         "xdm:entityIDs": {
           "type": "object",
-          "title": "Entity IDs",
-          "description": "Nested platform entity identifiers to ease migration from GenStudio templates",
+          "title": "Entity IDs (deprecated)",
+          "description": "Nested platform entity identifiers grouped by entity type. **Deprecated** — use the flat top-level `xdm:accountID`/`xdm:accountGUID`/`xdm:campaignID`/`xdm:campaignGUID`/`xdm:adGroupID`/`xdm:adGroupGUID`/`xdm:adID`/`xdm:adGUID`/`xdm:experienceID`/`xdm:experienceGUID`/`xdm:assetID`/`xdm:assetGUID` fields from the `core-paid-media-identifiers` field group instead, which fully cover the same identifiers without nesting. Originally added to ease migration from GenStudio templates; that migration is no longer planned. Retained for backwards compatibility with existing downstream consumers; new integrations SHOULD populate the flat identifier fields. When both shapes are present, the flat identifier fields take precedence.",
           "properties": {
             "xdm:account": {
               "type": "object",

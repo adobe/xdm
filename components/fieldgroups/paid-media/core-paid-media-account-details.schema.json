@@ -36,8 +36,8 @@
                 },
                 "xdm:currencyCode": {
                   "type": "string",
-                  "title": "Currency Code",
-                  "description": "Alias of currency (ISO 4217) for migration from GenStudio templates"
+                  "title": "Currency Code (deprecated)",
+                  "description": "Alias of `xdm:currency` (ISO 4217). **Deprecated** — use `xdm:currency` instead. Originally added to ease migration from GenStudio templates; that migration is no longer planned. Retained for backwards compatibility with existing downstream consumers; new integrations SHOULD populate `xdm:currency`. When both are present, `xdm:currency` takes precedence."
                 },
                 "xdm:timezone": {
                   "type": "string",

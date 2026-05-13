@@ -141,8 +141,8 @@
                 },
                 "xdm:averageDwellTime": {
                   "type": "number",
-                  "title": "Average Dwell Time",
-                  "description": "Average dwell time (seconds) (alias for qualityMetrics.dwellTime to ease migration)",
+                  "title": "Average Dwell Time (deprecated)",
+                  "description": "Average dwell time (seconds). **Deprecated** — use `xdm:qualityMetrics.xdm:dwellTime` from the `core-paid-media-quality-metrics` field group instead. Originally added as an alias to ease migration from GenStudio templates; that migration is no longer planned. Retained for backwards compatibility with existing downstream consumers; new integrations SHOULD populate `xdm:qualityMetrics.xdm:dwellTime`. When both are present, `xdm:qualityMetrics.xdm:dwellTime` takes precedence.",
                   "minimum": 0
                 },
                 "xdm:appInstalls": {

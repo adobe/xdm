@@ -1,12 +1,10 @@
 {
   "xdm:paidMedia": {
-    "xdm:breakdownType": "device_platform_demographic",
     "xdm:dimensionalBreakdowns": {
       "xdm:deviceType": "mobile",
       "xdm:platform": "instagram",
       "xdm:placement": "instagram_feed",
       "xdm:ageGroup": "25-34",
-      "xdm:age": "25-34",
       "xdm:gender": "female",
       "xdm:country": "US",
       "xdm:region": "California",
@@ -19,7 +17,6 @@
       "xdm:optimizationGoal": "link_clicks",
       "xdm:creativeFormat": "single_image",
       "xdm:adPosition": "feed",
-      "xdm:position": "feed",
       "xdm:timeOfDay": "afternoon",
       "xdm:dayOfWeek": "Tuesday"
     }

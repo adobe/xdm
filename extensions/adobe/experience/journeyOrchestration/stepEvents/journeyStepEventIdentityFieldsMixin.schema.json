@@ -40,11 +40,6 @@
               "title": "Supplemental ID",
               "type": "string",
               "description": "Identity value corresponding to the supplemental namespace"
-            },
-            "https://ns.adobe.com/experience/journeyOrchestration/supplementalNamespace": {
-              "title": "Supplemental Namespace",
-              "type": "string",
-              "description": "Value of the supplemental namespace as part of the journey property"
             }
           },
           "meta:titleId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##92061"

@@ -1,11 +1,18 @@
 {
   "xdm:geoTargeting": {
     "xdm:countries": ["US"],
-    "xdm:radius": {
-      "xdm:latitude": 37.7749,
-      "xdm:longitude": -122.4194,
-      "xdm:radiusKm": 25
-    }
+    "xdm:radii": [
+      {
+        "xdm:latitude": 37.7749,
+        "xdm:longitude": -122.4194,
+        "xdm:radiusKm": 25
+      },
+      {
+        "xdm:latitude": 40.7128,
+        "xdm:longitude": -74.006,
+        "xdm:radiusKm": 15
+      }
+    ]
   },
   "xdm:demographicTargeting": {
     "xdm:ageRanges": [

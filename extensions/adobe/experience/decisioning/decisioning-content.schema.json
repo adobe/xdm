@@ -14,7 +14,7 @@
   "definitions": {
     "decisioning-content": {
       "properties": {
-        "https://ns.adobe.com/experience/decisioning/contentType": {
+        "xdm:contentType": {
           "type": "string",
           "title": "Content Type",
           "description": "The media type of the content. Indicates how the content value should be interpreted.",
@@ -25,7 +25,7 @@
             "html": "HTML"
           }
         },
-        "https://ns.adobe.com/experience/decisioning/content": {
+        "xdm:content": {
           "type": "string",
           "title": "Content",
           "description": "The content string. The format is determined by the contentType property."
@@ -38,7 +38,7 @@
       "$ref": "#/definitions/decisioning-content"
     },
     {
-      "required": ["https://ns.adobe.com/experience/decisioning/content"]
+      "required": ["xdm:content"]
     }
   ],
   "meta:status": "stable"

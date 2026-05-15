@@ -1,0 +1,90 @@
+{
+  "xdm:paidMediaCreative": {
+    "xdm:creativeID": "creative-multilang-001",
+    "xdm:creativeType": "image",
+    "xdm:title": "Discover Our New Collection",
+    "xdm:body": "Shop the latest arrivals and find your next favorite piece.",
+    "xdm:callToAction": "Shop Now",
+    "xdm:destinationURL": "https://example.com/collection?adid=creative-multilang-001&campaignid=fall2025",
+    "xdm:displayURL": "https://example.com/collection",
+    "xdm:assets": [
+      {
+        "xdm:assetID": "asset-multilang-default",
+        "xdm:assetType": "image",
+        "xdm:name": "collection-hero-default.jpg",
+        "xdm:url": "https://cdn.example.com/images/collection-hero-default.jpg",
+        "xdm:dimensions": {
+          "xdm:width": 1200,
+          "xdm:height": 628
+        },
+        "xdm:fileSize": 245760,
+        "xdm:hash": "default0123456789abcdef0123456789"
+      }
+    ],
+    "xdm:localeVariants": [
+      {
+        "xdm:language": "en-US",
+        "xdm:title": "Discover Our New Collection",
+        "xdm:body": "Shop the latest arrivals and find your next favorite piece.",
+        "xdm:callToAction": "Shop Now",
+        "xdm:destinationURL": "https://example.com/collection?adid=creative-multilang-001&campaignid=fall2025&lang=en-US",
+        "xdm:assets": [
+          {
+            "xdm:assetID": "asset-multilang-en",
+            "xdm:assetType": "image",
+            "xdm:name": "collection-hero-en.jpg",
+            "xdm:url": "https://cdn.example.com/images/collection-hero-en.jpg",
+            "xdm:dimensions": {
+              "xdm:width": 1200,
+              "xdm:height": 628
+            },
+            "xdm:fileSize": 245760,
+            "xdm:hash": "en0000000000000000000000000000ab"
+          }
+        ]
+      },
+      {
+        "xdm:language": "ar-AR",
+        "xdm:title": "اكتشف مجموعتنا الجديدة",
+        "xdm:body": "تسوق أحدث وصولاتنا وابحث عن قطعتك المفضلة التالية.",
+        "xdm:callToAction": "تسوق الآن",
+        "xdm:destinationURL": "https://example.com/collection?adid=creative-multilang-001&campaignid=fall2025&lang=ar-AR",
+        "xdm:assets": [
+          {
+            "xdm:assetID": "asset-multilang-ar",
+            "xdm:assetType": "image",
+            "xdm:name": "collection-hero-ar.jpg",
+            "xdm:url": "https://cdn.example.com/images/collection-hero-ar.jpg",
+            "xdm:dimensions": {
+              "xdm:width": 1200,
+              "xdm:height": 628
+            },
+            "xdm:fileSize": 251904,
+            "xdm:hash": "ar0000000000000000000000000000cd"
+          }
+        ]
+      },
+      {
+        "xdm:language": "fr-FR",
+        "xdm:title": "Découvrez notre nouvelle collection",
+        "xdm:body": "Achetez les dernières nouveautés et trouvez votre prochaine pièce préférée.",
+        "xdm:callToAction": "Achetez maintenant",
+        "xdm:destinationURL": "https://example.com/collection?adid=creative-multilang-001&campaignid=fall2025&lang=fr-FR",
+        "xdm:assets": [
+          {
+            "xdm:assetID": "asset-multilang-fr",
+            "xdm:assetType": "image",
+            "xdm:name": "collection-hero-fr.jpg",
+            "xdm:url": "https://cdn.example.com/images/collection-hero-fr.jpg",
+            "xdm:dimensions": {
+              "xdm:width": 1200,
+              "xdm:height": 628
+            },
+            "xdm:fileSize": 248832,
+            "xdm:hash": "fr0000000000000000000000000000ef"
+          }
+        ]
+      }
+    ]
+  }
+}

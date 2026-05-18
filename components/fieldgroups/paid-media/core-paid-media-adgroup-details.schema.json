@@ -74,7 +74,8 @@
                 "xdm:childAdType": {
                   "type": "string",
                   "title": "Child Ad Type",
-                  "description": "Type of ads contained in this ad group"
+                  "description": "Deprecated: Use adDetails.adType on each individual ad in the Ad Lookup instead. A single ad group can contain mixed ad types, making this field inaccurate for heterogeneous groups.",
+                  "meta:status": "deprecated"
                 },
                 "xdm:promotedObject": {
                   "type": "object",

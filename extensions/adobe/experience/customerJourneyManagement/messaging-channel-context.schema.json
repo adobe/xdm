@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -81,6 +81,7 @@
                 "duplicate",
                 "denylist",
                 "delivered",
+                "read",
                 "unknown"
               ],
               "meta:enum": {
@@ -92,6 +93,7 @@
                 "duplicate": "Duplicate message skipped",
                 "denylist": "Invalid destination skipped",
                 "delivered": "Message delivered",
+                "read": "Message read",
                 "unknown": "Unknown feedback status"
               }
             },
@@ -105,6 +107,14 @@
               "type": "string",
               "description": "Message from the SMS provider, either success or failure."
             }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/metadata": {
+          "title": "SMS Metadata",
+          "type": "object",
+          "description": "A dynamic map of additional metadata key/value pairs associated with the SMS channel context",
+          "additionalProperties": {
+            "type": "string"
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
@@ -156,6 +166,7 @@
                 "duplicate",
                 "denylist",
                 "delivered",
+                "read",
                 "unknown"
               ],
               "meta:enum": {
@@ -167,6 +178,7 @@
                 "duplicate": "Duplicate message skipped",
                 "denylist": "Invalid destination skipped",
                 "delivered": "Message delivered",
+                "read": "Message read",
                 "unknown": "Unknown feedback status"
               }
             },
@@ -180,6 +192,14 @@
               "type": "string",
               "description": "Message from the WhatsApp provider, either success or failure."
             }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/metadata": {
+          "title": "WhatsApp Metadata",
+          "type": "object",
+          "description": "A dynamic map of additional metadata key/value pairs associated with the WhatsApp channel context",
+          "additionalProperties": {
+            "type": "string"
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
@@ -218,9 +238,9 @@
           "description": "ID of the option selected by the user in a WhatsApp list or button reply"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/flowResponseJson": {
-          "title": "Flow Response JSON",
+          "title": "Flow Response",
           "type": "string",
-          "description": "URL-decoded JSON string containing the form field values submitted by the user through a WhatsApp Flow, sourced from interactive.nfm_reply.response_json in the Meta webhook payload"
+          "description": "JSON string containing the form field values submitted by the user through a WhatsApp Flow"
         }
       }
     }

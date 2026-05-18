@@ -1,0 +1,12 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+    "_id": "https://ns.adobe.com/xdm/channels/whatsApp",
+    "_type": "https://ns.adobe.com/xdm/channel-types/whatsApp"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": "text",
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundMessage": "I am interested in this offer",
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundNumber": "51993119957",
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": "whatsApp",
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/origTimestamp": "2026-05-18T17:29:25Z",
+  "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/profileNumber": "51952837806"
+}

@@ -150,17 +150,24 @@
                     "xdm:devicePathBreakdown": {
                       "type": "object",
                       "title": "Device Path Breakdown",
+                      "description": "Conversion counts grouped by the device transition path leading up to the conversion",
                       "properties": {
                         "xdm:mobileToDesktop": {
                           "type": "number",
+                          "title": "Mobile to Desktop Conversions",
+                          "description": "Conversions where the user transitioned from a mobile device to a desktop device along the conversion path",
                           "minimum": 0
                         },
                         "xdm:desktopToMobile": {
                           "type": "number",
+                          "title": "Desktop to Mobile Conversions",
+                          "description": "Conversions where the user transitioned from a desktop device to a mobile device along the conversion path",
                           "minimum": 0
                         },
                         "xdm:mobileToMobileApp": {
                           "type": "number",
+                          "title": "Mobile Web to Mobile App Conversions",
+                          "description": "Conversions where the user transitioned from a mobile web experience to a mobile app along the conversion path",
                           "minimum": 0
                         }
                       }
@@ -297,13 +304,19 @@
                         "type": "object",
                         "properties": {
                           "xdm:channel": {
-                            "type": "string"
+                            "type": "string",
+                            "title": "Channel",
+                            "description": "Marketing channel for this step in the conversion path"
                           },
                           "xdm:position": {
-                            "type": "integer"
+                            "type": "integer",
+                            "title": "Position",
+                            "description": "Ordered position of this channel within the conversion path (1-based)"
                           },
                           "xdm:weight": {
-                            "type": "number"
+                            "type": "number",
+                            "title": "Weight",
+                            "description": "Attribution weight assigned to this channel within the conversion path"
                           }
                         }
                       }

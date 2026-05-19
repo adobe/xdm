@@ -1,0 +1,80 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/custom-channel-execution-metrics",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Custom Channel Execution Metrics",
+  "description": "Per-call execution metrics for custom-channel deliveries. Populated only by MSW for custom-channel sends. Email/SMS/Push paths leave this block absent. See wiki 3886615741 for design rationale.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+
+  "definitions": {
+    "customChannelExecutionMetrics": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/endpoint": {
+          "title": "Endpoint",
+          "type": "string",
+          "description": "Full URL of the custom-channel customer endpoint. Query parameters are stripped before storage to prevent PII/secrets in the dataset (matches CJM-124474 pattern). Null when the call was skipped before HTTP was attempted (errorCode set to AUTH_* / INTEGRATION_CACHE_IO / REQUEST_GENERATION_ERROR)."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/method": {
+          "title": "HTTP Method",
+          "type": "string",
+          "description": "HTTP method used for the call (POST, GET, PUT, etc.). Null when the call was skipped."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/requestTimestamp": {
+          "title": "Request Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "Wall-clock timestamp (UTC) captured immediately before the customer-endpoint HTTP request is sent on the wire. Null when the call was skipped."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/responseTime": {
+          "title": "Response Time",
+          "type": "integer",
+          "description": "Server HTTP response time in milliseconds. Measured around the customer-endpoint HTTP exchange only - excludes auth latency, connection acquisition, throttle wait, and pool wait. Matches Custom Action XDM actionExecutionOriginTime semantics. For HTTP_TIMEOUT: equals the configured timeout duration. Null when the call was skipped."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/httpStatusCode": {
+          "title": "HTTP Status Code",
+          "type": "integer",
+          "description": "HTTP response status code from the customer endpoint. Null when the call was skipped (no HTTP attempt) or timed out without a response."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/isThrottled": {
+          "title": "Is Throttled",
+          "type": "boolean",
+          "description": "Phase 1: config-enabled flag indicating whether throttling configuration was applied to this endpoint/channel at the time of dispatch. Does not indicate this specific call actually waited in a queue. Matches Custom Action XDM actionIsThrottled literal meaning."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/errorCode": {
+          "title": "Error Code",
+          "type": "string",
+          "description": "Unified error envelope covering both skip-stage (auth/cache) and HTTP-stage (4xx/5xx/timeout) failures. Null on success. Controlled vocabulary: AUTH_CACHE_IO, AUTH_HTTP_ERROR, AUTH_TOKEN_PARSE, AUTH_TOKEN_EXPIRED, REQUEST_GENERATION_ERROR, HTTP_4XX, HTTP_5XX, HTTP_TIMEOUT, HTTP_PARSE_ERROR.",
+          "enum": [
+            "AUTH_CACHE_IO",
+            "AUTH_HTTP_ERROR",
+            "AUTH_TOKEN_PARSE",
+            "AUTH_TOKEN_EXPIRED",
+            "REQUEST_GENERATION_ERROR",
+            "HTTP_4XX",
+            "HTTP_5XX",
+            "HTTP_TIMEOUT",
+            "HTTP_PARSE_ERROR"
+          ]
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/errorReason": {
+          "title": "Error Reason",
+          "type": "string",
+          "description": "Human-readable detail of the failure (exception message, parsed error body, etc.). Used for drilldown tooltips and debugging. Not intended for aggregation - use errorCode for grouping. Null on success."
+        }
+      }
+    }
+  },
+  "allOf": [
+    { "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context" },
+    { "$ref": "#/definitions/customChannelExecutionMetrics" }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,13 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/integrationId": "int-loyalty-001",
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/integrationName": "Loyalty Lookup",
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/messageExecutionID": "mexec-multi-integ-001",
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/cacheHit": true,
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/cacheApplicable": true,
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/endpoint": "https://api.loyalty.acme.com/v1/tier",
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/method": "GET",
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/requestTimestamp": "2026-05-20T14:38:55.000Z",
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/responseTime": 86,
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/httpStatusCode": 200,
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/isThrottled": false
+}

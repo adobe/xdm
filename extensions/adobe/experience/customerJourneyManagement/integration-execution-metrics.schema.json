@@ -1,0 +1,111 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/integration-execution-metrics",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Integration Execution Metrics",
+  "description": "Per-call execution metrics for externalDataLookup integration calls. Emitted as a separate integration.execution event - one per integration invocation during message render. See wiki 3886615741 for design rationale.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+
+  "definitions": {
+    "integrationExecutionMetrics": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/integrationId": {
+          "title": "Integration ID",
+          "type": "string",
+          "description": "Unique integration identifier from the channel-configuration registry. Required."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/integrationName": {
+          "title": "Integration Name",
+          "type": "string",
+          "description": "Human-readable name for dashboard display (e.g., 'Weather API', 'Loyalty Lookup'). Required."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/messageExecutionID": {
+          "title": "Message Execution ID",
+          "type": "string",
+          "description": "Foreign key linking each integration.execution event back to the parent message.feedback event for multi-integration correlation. Required."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/cacheHit": {
+          "title": "Cache Hit",
+          "type": "boolean",
+          "description": "True if the integration response was served from the in-memory response cache - no HTTP call was made. When true, all external-call fields (endpoint, method, responseTime, httpStatusCode) are populated from the cached entry's metadata, not a fresh measurement."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/cacheApplicable": {
+          "title": "Cache Applicable",
+          "type": "boolean",
+          "description": "False when the caller was not a service user (per Caveat A); response cache was skipped entirely. Disambiguates cacheHit=false (real miss, cache was consulted) from cacheApplicable=false (cache was never consulted)."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/endpoint": {
+          "title": "Endpoint",
+          "type": "string",
+          "description": "Full URL of the integration endpoint. Query parameters stripped before storage. Null when the call was skipped before HTTP was attempted."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/method": {
+          "title": "HTTP Method",
+          "type": "string",
+          "description": "HTTP method (POST, GET, PUT, etc.). Null when the call was skipped."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/requestTimestamp": {
+          "title": "Request Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "Wall-clock timestamp (UTC) captured immediately before the integration HTTP request is sent. Null when the call was skipped."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/responseTime": {
+          "title": "Response Time",
+          "type": "integer",
+          "description": "Server HTTP response time in milliseconds. Measured around the integration HTTP exchange only. For cacheHit=true: populated from the original cache-population measurement. For HTTP_TIMEOUT: equals the configured timeout duration. Null when the call was skipped."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/httpStatusCode": {
+          "title": "HTTP Status Code",
+          "type": "integer",
+          "description": "HTTP response status code from the integration endpoint. Null when the call was skipped or timed out."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/isThrottled": {
+          "title": "Is Throttled",
+          "type": "boolean",
+          "description": "Phase 1: config-enabled flag. See customChannelExecutionMetrics.isThrottled for full semantics."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/errorCode": {
+          "title": "Error Code",
+          "type": "string",
+          "description": "Unified error envelope covering skip-stage, integration-cache, and HTTP-stage failures. Null on success. Adds INTEGRATION_CACHE_IO to the customChannelExecutionMetrics vocabulary.",
+          "enum": [
+            "AUTH_CACHE_IO",
+            "AUTH_HTTP_ERROR",
+            "AUTH_TOKEN_PARSE",
+            "AUTH_TOKEN_EXPIRED",
+            "INTEGRATION_CACHE_IO",
+            "REQUEST_GENERATION_ERROR",
+            "HTTP_4XX",
+            "HTTP_5XX",
+            "HTTP_TIMEOUT",
+            "HTTP_PARSE_ERROR"
+          ]
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/errorReason": {
+          "title": "Error Reason",
+          "type": "string",
+          "description": "Human-readable detail of the failure. Null on success."
+        }
+      },
+      "required": [
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/integrationId",
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/integrationName",
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/messageExecutionID"
+      ]
+    }
+  },
+  "allOf": [
+    { "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context" },
+    { "$ref": "#/definitions/integrationExecutionMetrics" }
+  ],
+  "meta:status": "experimental"
+}

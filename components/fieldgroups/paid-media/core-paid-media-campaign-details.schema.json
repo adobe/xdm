@@ -332,11 +332,14 @@
                         "xdm:schedule": {
                           "type": "array",
                           "title": "Schedule",
+                          "description": "Day-of-week and time-of-day windows during which the campaign is eligible to serve",
                           "items": {
                             "type": "object",
                             "properties": {
                               "xdm:dayOfWeek": {
                                 "type": "string",
+                                "title": "Day of Week",
+                                "description": "Day of the week this schedule entry applies to",
                                 "enum": [
                                   "monday",
                                   "tuesday",
@@ -358,11 +361,15 @@
                               },
                               "xdm:startHour": {
                                 "type": "integer",
+                                "title": "Start Hour",
+                                "description": "Hour of the day the schedule window opens, expressed in 24-hour format (0-23)",
                                 "minimum": 0,
                                 "maximum": 23
                               },
                               "xdm:endHour": {
                                 "type": "integer",
+                                "title": "End Hour",
+                                "description": "Hour of the day the schedule window closes, expressed in 24-hour format (0-23)",
                                 "minimum": 0,
                                 "maximum": 23
                               }

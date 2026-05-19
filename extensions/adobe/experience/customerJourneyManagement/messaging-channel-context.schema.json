@@ -1,0 +1,260 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/messagingChannelContext",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Messaging Channel Context",
+  "description": "SMS and WhatsApp channel context for inbound and tracking events. Captures channel-specific fields including inbound message details, delivery feedback status, and WhatsApp-specific interaction and Flows submission data.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "messagingChannelContext": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+          "title": "Experience channel",
+          "description": "Experience channel related to the ExperienceEvent.",
+          "$ref": "https://ns.adobe.com/xdm/channels/channel"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": {
+          "title": "SMS Provider",
+          "type": "string",
+          "description": "SMS provider, e.g. sinch or twilio",
+          "meta:enum": {
+            "sinch": "Sinch sms provider",
+            "infobip": "Infobip sms provider",
+            "twilio": "Twilio sms provider",
+            "vibes": "Vibes sms provider"
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType": {
+          "title": "SMS Message Type",
+          "type": "string",
+          "description": "SMS message type, e.g. inbound, inboundReply or send"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundMessage": {
+          "title": "SMS Inbound Message",
+          "type": "string",
+          "description": "SMS inbound reply, e.g. stop, start, subscribe, etc."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundNumber": {
+          "title": "SMS Inbound Number",
+          "type": "string",
+          "description": "SMS inbound number: sender ID where the MO message was received"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/channelType": {
+          "title": "Channel Type",
+          "type": "string",
+          "description": "Channel sub-type, e.g. SMS, MMS, RCS"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/profileNumber": {
+          "title": "Profile Phone Number",
+          "type": "string",
+          "description": "Phone number of the profile that sent the inbound message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/origTimestamp": {
+          "title": "Original Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the event as reported by the SMS provider"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status": {
+          "title": "Status",
+          "type": "object",
+          "description": "Status section containing provider feedback details.",
+          "properties": {
+            "xdm:feedbackStatus": {
+              "title": "Feedback Status",
+              "type": "string",
+              "description": "Actual feedback status mapped to a standard enum.",
+              "enum": [
+                "error",
+                "exclude",
+                "sent",
+                "bounce",
+                "delay",
+                "duplicate",
+                "denylist",
+                "delivered",
+                "read",
+                "unknown"
+              ],
+              "meta:enum": {
+                "error": "Message processing failed",
+                "exclude": "Message profile filtered out",
+                "sent": "Message sent",
+                "bounce": "Message bounced",
+                "delay": "Message delayed",
+                "duplicate": "Duplicate message skipped",
+                "denylist": "Invalid destination skipped",
+                "delivered": "Message delivered",
+                "read": "Message read",
+                "unknown": "Unknown feedback status"
+              }
+            },
+            "xdm:providerFeedbackStatus": {
+              "title": "Provider Feedback Status",
+              "type": "string",
+              "description": "Status as reported by the SMS provider before mapping, e.g. DeliveredToTerminal."
+            },
+            "xdm:message": {
+              "title": "Message",
+              "type": "string",
+              "description": "Message from the SMS provider, either success or failure."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/metadata": {
+          "title": "SMS Metadata",
+          "type": "object",
+          "description": "A dynamic map of additional metadata key/value pairs associated with the SMS channel context",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
+          "title": "WhatsApp Message Type",
+          "type": "string",
+          "description": "WhatsApp message type, e.g. templateBased, response, reaction, nfm_reply"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundMessage": {
+          "title": "WhatsApp Inbound Message",
+          "type": "string",
+          "description": "Text body of the inbound WhatsApp message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/inboundNumber": {
+          "title": "WhatsApp Inbound Number",
+          "type": "string",
+          "description": "WABA phone number on which the inbound message was received"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/channelType": {
+          "title": "Channel Type",
+          "type": "string",
+          "description": "WhatsApp channel category, e.g. Utility, Marketing, Promotional"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/profileNumber": {
+          "title": "Profile Phone Number",
+          "type": "string",
+          "description": "Phone number of the end-user profile that sent the inbound message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/origTimestamp": {
+          "title": "Original Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the event as reported by Meta"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status": {
+          "title": "Status",
+          "type": "object",
+          "description": "Status section containing provider feedback details.",
+          "properties": {
+            "xdm:feedbackStatus": {
+              "title": "Feedback Status",
+              "type": "string",
+              "description": "Actual feedback status mapped to a standard enum. Not the raw provider status.",
+              "enum": [
+                "error",
+                "exclude",
+                "sent",
+                "bounce",
+                "delay",
+                "duplicate",
+                "denylist",
+                "delivered",
+                "read",
+                "unknown"
+              ],
+              "meta:enum": {
+                "error": "Message processing failed",
+                "exclude": "Message profile filtered out",
+                "sent": "Message sent",
+                "bounce": "Message bounced",
+                "delay": "Message delayed",
+                "duplicate": "Duplicate message skipped",
+                "denylist": "Invalid destination skipped",
+                "delivered": "Message delivered",
+                "read": "Message read",
+                "unknown": "Unknown feedback status"
+              }
+            },
+            "xdm:providerFeedbackStatus": {
+              "title": "Provider Feedback Status",
+              "type": "string",
+              "description": "Status as reported by the WhatsApp provider before mapping, e.g. DeliveredToTerminal."
+            },
+            "xdm:message": {
+              "title": "Message",
+              "type": "string",
+              "description": "Message from the WhatsApp provider, either success or failure."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/metadata": {
+          "title": "WhatsApp Metadata",
+          "type": "object",
+          "description": "A dynamic map of additional metadata key/value pairs associated with the WhatsApp channel context",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
+          "title": "Response Content",
+          "type": "string",
+          "description": "Content of the user response - emoji for reactions, or message text for replies to a specific message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionMessageID": {
+          "title": "Original Message ID",
+          "type": "string",
+          "description": "ID of the original message being responded to (for reactions or replies)"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": {
+          "title": "Response Action Type",
+          "type": "string",
+          "description": "Type of response action from WhatsApp - react, unreact, or reply"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedTitle": {
+          "title": "Interactive Selected Title",
+          "type": "string",
+          "description": "Title of the option selected by the user in a WhatsApp list or button reply"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveType": {
+          "title": "Interactive Type",
+          "type": "string",
+          "description": "Type of WhatsApp interactive message response, e.g. list_reply, button_reply, nfm_reply"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedDescription": {
+          "title": "Interactive Selected Description",
+          "type": "string",
+          "description": "Description of the selected option in a WhatsApp interactive message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedID": {
+          "title": "Interactive Selected ID",
+          "type": "string",
+          "description": "ID of the option selected by the user in a WhatsApp list or button reply"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/flowResponseJson": {
+          "title": "Flow Response",
+          "type": "string",
+          "description": "JSON string containing the form field values submitted by the user through a WhatsApp Flow"
+        }
+      }
+    }
+  },
+  "required": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel"
+  ],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messagingChannelContext"
+    }
+  ],
+  "meta:status": "experimental"
+}

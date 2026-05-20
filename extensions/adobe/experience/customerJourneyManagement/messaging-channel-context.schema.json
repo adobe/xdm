@@ -241,6 +241,19 @@
           "title": "Flow Response",
           "type": "string",
           "description": "JSON string containing the form field values submitted by the user through a WhatsApp Flow"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": {
+          "title": "Tags",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Tags associated with the inbound messaging interaction, e.g. inbound message text, keyword category, and source"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": {
+          "title": "Label",
+          "type": "string",
+          "description": "Label identifying the category of the inbound interaction, e.g. the matched keyword type"
         }
       }
     }

@@ -76,7 +76,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/errorCode": {
           "title": "Error Code",
           "type": "string",
-          "description": "Unified error envelope covering skip-stage, integration-cache, and HTTP-stage failures. Null on success. Adds INTEGRATION_CACHE_IO to the customChannelExecutionMetrics vocabulary.",
+          "description": "Unified error envelope covering skip-stage, integration-cache, and HTTP-stage failures. Null on success. Adds INTEGRATION_CACHE_IO to the customChannelExecutionMetrics vocabulary. NETWORK_ERROR is for network/client failures without an endpoint status code. CAPPED and VALIDITY_EXPIRED are reserved for future producer support.",
           "enum": [
             "AUTH_CACHE_IO",
             "AUTH_HTTP_ERROR",
@@ -87,7 +87,10 @@
             "HTTP_4XX",
             "HTTP_5XX",
             "HTTP_TIMEOUT",
-            "HTTP_PARSE_ERROR"
+            "HTTP_PARSE_ERROR",
+            "NETWORK_ERROR",
+            "CAPPED",
+            "VALIDITY_EXPIRED"
           ]
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/errorReason": {

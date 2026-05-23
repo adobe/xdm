@@ -3,6 +3,6 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/method": "POST",
   "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/requestTimestamp": "2026-05-20T14:35:22.264Z",
   "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/responseTime": 187,
-  "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/httpStatusCode": 200,
-  "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/isThrottled": false
+  "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/statusCode": 200,
+  "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/throttleApplicable": false
 }

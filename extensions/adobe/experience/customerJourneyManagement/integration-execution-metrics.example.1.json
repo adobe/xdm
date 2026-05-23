@@ -8,6 +8,6 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/method": "GET",
   "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/requestTimestamp": "2026-05-20T14:42:00.000Z",
   "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/responseTime": 245,
-  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/httpStatusCode": 200,
-  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/isThrottled": false
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/statusCode": 200,
+  "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/throttleApplicable": false
 }

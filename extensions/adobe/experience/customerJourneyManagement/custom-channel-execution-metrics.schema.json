@@ -20,7 +20,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/endpoint": {
           "title": "Endpoint",
           "type": "string",
-          "description": "Full URL of the custom-channel customer endpoint. Query parameters are stripped before storage to prevent PII/secrets in the dataset (matches CJM-124474 pattern). Null when the call was skipped before HTTP was attempted (errorCode set to AUTH_* / REQUEST_GENERATION_ERROR)."
+          "description": "URL template of the custom-channel customer endpoint, with placeholders un-substituted (e.g. `https://api.viber.com/v1/{{profile.id}}/send`). Stored as the template form — NOT the runtime-interpolated URL — to prevent per-user / per-record cardinality explosion in live reporting (confirmed with reporting team 2026-05-22; precedent is AJO's existing email `domain` derived field that truncates the link URL). Query parameters are stripped before storage. Live reporting derives a coarser `endpointHost` tag from this for Cortex tagging; all-time CJA can use the full template for endpoint-level drilldown. Null when the call was skipped before HTTP was attempted (errorCode set to AUTH_* / REQUEST_GENERATION_ERROR)."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/customChannelExecutionMetrics/method": {
           "title": "HTTP Method",

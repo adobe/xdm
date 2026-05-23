@@ -45,7 +45,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/endpoint": {
           "title": "Endpoint",
           "type": "string",
-          "description": "Full URL of the integration endpoint. Query parameters stripped before storage. Null when the call was skipped before HTTP was attempted."
+          "description": "URL template of the integration endpoint, with placeholders un-substituted (e.g. `https://api.weather.com/v1/{{profile.city}}/forecast`). Stored as the template form — NOT the runtime-interpolated URL — to prevent per-user / per-record cardinality explosion in live reporting (confirmed with reporting team 2026-05-22). Query parameters stripped. Null when the call was skipped before HTTP was attempted."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/integrationExecutionMetrics/method": {
           "title": "HTTP Method",

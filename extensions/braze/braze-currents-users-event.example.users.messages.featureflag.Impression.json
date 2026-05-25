@@ -1,36 +1,42 @@
 {
-  "braze:appGroupID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-  "braze:appID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "@id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "braze:appID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "braze:appGroupID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "timestamp": "2034-06-13T09:08:24+00:00",
   "braze:timezone": "America/New_York",
   "braze:user": {
     "braze:externalUserID": "external_user_id",
+    "braze:gender": "F",
+    "braze:country": "country",
+    "braze:language": "en",
     "braze:userID": "639a35d192b0df004d06514c"
   },
   "braze:device": {
     "braze:deviceID": "device_id",
-    "braze:platform": "android"
+    "braze:browser": "Chrome Mobile iOS",
+    "braze:carrier": "carrier",
+    "braze:deviceModel": "device_model",
+    "braze:OSVersion": "17.6.1",
+    "braze:platform": "android",
+    "braze:resolution": "resolution",
+    "braze:SDKVersion": "sdk_version"
   },
   "braze:campaign": {
     "braze:campaignID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-    "braze:campaignName": "CAMPAIGN_NAME",
     "braze:messageVariationID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:campaignName": "CAMPAIGN_NAME",
     "braze:messageVariationName": "MESSAGE_VARIATION_NAME"
   },
   "braze:canvas": {
     "braze:canvasID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-    "braze:canvasName": "CANVAS_NAME",
     "braze:canvasStepID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
     "braze:canvasStepMessageVariationID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-    "braze:canvasStepName": "CANVAS_STEP_NAME",
     "braze:canvasVariationID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:canvasName": "CANVAS_NAME",
+    "braze:canvasStepName": "CANVAS_STEP_NAME",
     "braze:canvasVariationName": "CANVAS_VARIATION_NAME"
   },
-  "braze:messaging": {
-    "braze:abortLog": "abort_log",
-    "braze:abortType": "liquid_abort_message",
-    "braze:dispatchID": "639a35d192b0df004d06514c",
-    "braze:sendID": "send_id"
+  "braze:featureflag": {
+    "braze:featureFlagIDName": "feature_flag_id_name"
   }
 }

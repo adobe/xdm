@@ -1,35 +1,44 @@
 {
-  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
-  "timestamp": "2016-10-26T17:26:23+00:00",
-  "braze:timezone": "America/Chicago",
+  "@id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "timestamp": "2034-06-13T09:08:24+00:00",
+  "braze:timezone": "America/New_York",
+  "braze:appGroupID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "braze:user": {
-    "braze:userID": "0123456789abcdef01234567",
-    "braze:externalUserID": "user_id",
-    "braze:emailAddress": "test@test.com"
+    "braze:userID": "639a35d192b0df004d06514c",
+    "braze:externalUserID": "external_user_id",
+    "braze:emailAddress": "example@braze.com"
   },
   "braze:device": {
-    "braze:deviceOS": "device_os_value",
-    "braze:deviceModel": "device_model_value",
-    "braze:deviceClass": "device_class_value",
-    "braze:browser": "browser_value"
+    "braze:deviceClass": "desktop",
+    "braze:deviceOS": "Android",
+    "braze:deviceModel": "device_model",
+    "braze:browser": "Chrome Mobile iOS"
   },
   "braze:campaign": {
-    "braze:campaignID": "11234567-89ab-cdef-0123-456789abcdef",
-    "braze:campaignName": "Test Campaign",
-    "braze:messageVariationID": "c1234567-89ab-cdef-0123-456789abcdef",
-    "braze:messageVariationName": "Test Message Variation"
+    "braze:campaignID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:campaignName": "CAMPAIGN_NAME",
+    "braze:messageVariationID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:messageVariationName": "MESSAGE_VARIATION_NAME"
+  },
+  "braze:canvas": {
+    "braze:canvasID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:canvasName": "CANVAS_NAME",
+    "braze:canvasVariationID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:canvasVariationName": "CANVAS_VARIATION_NAME",
+    "braze:canvasStepID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:canvasStepName": "CANVAS_STEP_NAME"
   },
   "braze:messaging": {
-    "braze:dispatchID": "12345qwert",
-    "braze:sendID": "f123456789abcdef01234567",
+    "braze:dispatchID": "639a35d192b0df004d06514c",
+    "braze:sendID": "send_id",
     "braze:email": {
-      "braze:mailboxProvider": "mailbox_provider_value",
-      "braze:userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36",
-      "braze:IPPool": "braze_transactional",
+      "braze:userAgent": "Mozilla/5.0",
+      "braze:IPPool": "ip_pool",
       "braze:machineOpen": "true",
       "braze:ESP": "SparkPost",
-      "braze:fromDomain": "some.com",
-      "braze:isAMP": false
+      "braze:fromDomain": "braze.com",
+      "braze:isAMP": true,
+      "braze:mailboxProvider": "mailbox_provider"
     }
   }
 }

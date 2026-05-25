@@ -28,6 +28,63 @@
           "type": "string",
           "format": "uri",
           "description": "The URL for the primary product image of the product."
+        },
+        "xdm:productLogoURL": {
+          "title": "Product Logo URL",
+          "type": "string",
+          "format": "uri",
+          "description": "The URL for the product logo associated with the product."
+        },
+        "xdm:productCardBackgroundColor": {
+          "title": "Product Card Background Color",
+          "type": "string",
+          "description": "The primary product card background color, typically in hex format."
+        },
+        "xdm:learningResourceURL": {
+          "title": "Learning Resource URL",
+          "type": "string",
+          "format": "uri",
+          "description": "The URL for educational or training resources related to the product."
+        },
+        "xdm:productDetails": {
+          "title": "Product Details",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Additional descriptive details about the product, such as pricing, features, or specifications."
+        },
+        "xdm:actions": {
+          "title": "Product Actions",
+          "description": "Array of actions available for the product",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:name": {
+                "title": "Action Name",
+                "type": "string",
+                "description": "Internal identifier for the action."
+              },
+              "xdm:type": {
+                "title": "Action Type",
+                "type": "string",
+                "description": "Action type (e.g., 'Primary', 'Secondary')."
+              },
+              "xdm:title": {
+                "title": "Action Title",
+                "type": "string",
+                "description": "Display text shown to users."
+              },
+              "xdm:url": {
+                "title": "Action URL",
+                "type": "string",
+                "format": "uri",
+                "description": "The URL for the action."
+              }
+            },
+            "required": ["xdm:name", "xdm:type", "xdm:title", "xdm:url"]
+          }
         }
       }
     }

@@ -1,0 +1,304 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-interaction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Interaction",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "A logical unit of exchange between one or more participants on a single channel, recorded as an XDM ExperienceEvent timeseries record. What constitutes one interaction depends on the channel: a single WhatsApp message, a single email, a Brand Concierge turn (prompt + response + optional feedback), or a complete Dynamic Chat transcript. Textual and simple payload parts use xdm:content[]; binary, media, document, and rich link metadata use xdm:asset[] at the same level. Optional xdm:crossChannelCorrelationId is a caller-supplied opaque key repeated on every related event across channels for analytics joins (distinct from xdm:conversationId, which is often channel-native). Fields inherited from ExperienceEvent — @id (dedup key), xdm:timestamp, xdm:eventType, xdm:identityMap (author's primary identity for UIS stitching), xdm:producedBy — are not repeated here. Channel-specific field groups extend this with platform-native metadata.",
+  "definitions": {
+    "interaction": {
+      "properties": {
+        "xdm:interaction": {
+          "title": "Interaction",
+          "description": "Core fields describing a participant interaction on a messaging or conversation channel. Participants carry full xdm:identityMap per party; media and file payloads are modeled in xdm:asset[] separate from xdm:content[].",
+          "type": "object",
+          "properties": {
+            "xdm:channelType": {
+              "title": "Channel Type",
+              "description": "The application or platform where the interaction took place. A controlled extensible enum. Distinct from the existing xdm:channel Experience Channel datatype, which is web-analytics-oriented. Use meta:enum values for known surfaces; channel-specific field groups carry the deeper platform detail.",
+              "type": "string",
+              "meta:enum": {
+                "whatsapp": "WhatsApp",
+                "sms": "SMS",
+                "email": "Email",
+                "chat": "Web or App Chat",
+                "brand_concierge": "Adobe Brand Concierge",
+                "dynamic_chat": "Adobe Dynamic Chat",
+                "phone": "Phone or Voice Call",
+                "video": "Video Conference",
+                "slack": "Slack",
+                "social": "Social Media",
+                "in_app": "In-App Messaging",
+                "push": "Push Notification"
+              }
+            },
+
+            "xdm:conversationId": {
+              "title": "Conversation ID",
+              "description": "The identifier of the containing conversation that groups related interactions. Semantics differ by channel: WhatsApp — conversation.id from the webhook (system-derived when absent); Brand Concierge — conversationID; Dynamic Chat — transcriptId (may equal @id for a transcript-as-single-event model); Email — thread ID or RFC References chain.",
+              "type": "string"
+            },
+
+            "xdm:crossChannelCorrelationId": {
+              "title": "Cross-channel correlation ID",
+              "description": "Optional. A stable, opaque identifier assigned by the brand or integration layer and emitted on every ExperienceEvent that should be joined across channels for reporting, journey analytics, or case context. Use the same value on WhatsApp, email, chat, Brand Concierge, Dynamic Chat, and other surfaces when those touches belong to one logical omnichannel thread, case, or journey instance. Format is implementation-defined (UUID, ULID, or namespaced string such as case:12345); keep values non-PII unless governed like other identifiers. Distinct from xdm:conversationId (often source-native per channel), from @id (AEP event dedup), and from xdm:identityMap (UIS person stitching). Omit when no cross-channel correlation is supplied.",
+              "type": "string",
+              "examples": [
+                "550e8400-e29b-41d4-a716-446655440000",
+                "case:ACME-2026-88421",
+                "journey_ctx_7f3c9a2b1d8e4f60"
+              ]
+            },
+
+            "xdm:parentInteractionId": {
+              "title": "Parent Interaction ID",
+              "description": "Optional. The @id of the parent interaction that this fragment directly replies to or is threaded under (quoted reply, email In-Reply-To, Slack thread reply). Distinct from conversationId.",
+              "type": "string"
+            },
+
+            "xdm:authorRole": {
+              "title": "Author Role",
+              "description": "The functional role of the participant whose identity is in the ExperienceEvent xdm:identityMap (the author or sender of this interaction). Agent and bot identities MUST use non-UIS namespaces (brand_agent_id, system_agent_id) in identityMap to avoid unintended UIS stitching.",
+              "type": "string",
+              "meta:enum": {
+                "person": "Human end-user or consumer (visitor, customer, lead).",
+                "agent": "Human brand representative (support rep, sales agent).",
+                "bot": "Automated chatbot or scripted AI agent (DC bot).",
+                "concierge": "Generative AI-powered brand assistant (BC concierge).",
+                "system": "Platform or source system emitting a status or lifecycle event."
+              }
+            },
+
+            "xdm:participants": {
+              "title": "Participants",
+              "description": "All parties active in this interaction: author and direct recipients. Each entry carries the same xdm:identityMap shape as ExperienceEvent (namespace keys to arrays of identity items). The author is marked with isAuthor:true; that participant's identityMap MUST be consistent with the event-level xdm:identityMap primary author identity. Agent and bot entries MUST use brand_agent_id or system_agent_id namespaces.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:identityMap": {
+                    "title": "Identity Map",
+                    "description": "Identities for this participant, keyed by namespace integration code. Same structure as ExperienceEvent xdm:identityMap.",
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/identityitem"
+                      }
+                    }
+                  },
+                  "xdm:role": {
+                    "title": "Role",
+                    "description": "The functional role of this participant in the interaction.",
+                    "type": "string",
+                    "meta:enum": {
+                      "person": "Human end-user or consumer.",
+                      "agent": "Human brand representative.",
+                      "bot": "Automated chatbot or scripted AI agent.",
+                      "concierge": "Generative AI-powered brand assistant.",
+                      "system": "Platform or system endpoint."
+                    }
+                  },
+                  "xdm:isAuthor": {
+                    "title": "Is Author",
+                    "description": "True if this participant is the sender or author of this interaction. Exactly one entry should have isAuthor:true; its xdm:identityMap MUST match the author identity represented in the parent ExperienceEvent xdm:identityMap.",
+                    "type": "boolean"
+                  }
+                },
+                "required": ["xdm:identityMap", "xdm:role"]
+              }
+            },
+
+            "xdm:content": {
+              "title": "Content",
+              "description": "Ordered array of lightweight content parts: text, HTML, serialized location/structured JSON, or simple URL strings in value. Use xdm:asset[] for images, video, audio, documents, and link preview metadata. Multi-part messages interleave content[] and asset[] by emission order as defined by the connector.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:contentType": {
+                    "title": "Content Type",
+                    "description": "Discriminator for this content part.",
+                    "type": "string",
+                    "meta:enum": {
+                      "text": "Plain text. Use xdm:value for the string.",
+                      "html": "HTML markup. Use xdm:value for the HTML string.",
+                      "image": "Image reference when only a simple URL is needed; prefer xdm:asset[] with xdm:mediaRef for full metadata.",
+                      "video": "Video reference when only a simple URL is needed; prefer xdm:asset[] with xdm:videoRef.",
+                      "audio": "Audio reference when only a simple URL is needed; prefer xdm:asset[] with xdm:audioRef.",
+                      "document": "Document reference when only a simple URL is needed; prefer xdm:asset[] with xdm:attachment.",
+                      "link": "Hyperlink when only a URL string is needed; prefer xdm:asset[] with xdm:linkRef for previews.",
+                      "location": "Geographic or place data as serialized JSON in xdm:value.",
+                      "structured": "Channel-defined payload (buttons, carousels, forms) as serialized JSON in xdm:value."
+                    }
+                  },
+                  "xdm:value": {
+                    "title": "Value",
+                    "description": "Body text, URL, or serialized JSON depending on contentType.",
+                    "type": "string"
+                  }
+                },
+                "required": ["xdm:contentType"]
+              }
+            },
+
+            "xdm:asset": {
+              "title": "Assets",
+              "description": "Ordered array of media, file, and rich link parts. Each item has a content type discriminator and optional AEP Assets ID after ingestion. Pair with xdm:content[] to represent captions, citations, and multi-part message ordering.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:contentType": {
+                    "title": "Asset Content Type",
+                    "description": "Which type-specific sub-object is populated for this asset part.",
+                    "type": "string",
+                    "meta:enum": {
+                      "image": "Image. Use xdm:mediaRef.",
+                      "video": "Video. Use xdm:videoRef.",
+                      "audio": "Audio or voice note. Use xdm:audioRef.",
+                      "document": "File attachment. Use xdm:attachment.",
+                      "link": "Hyperlink with optional preview. Use xdm:linkRef."
+                    }
+                  },
+                  "xdm:assetId": {
+                    "title": "AEP Asset ID",
+                    "description": "Adobe Experience Platform Assets (DAM) identifier after connector ingestion. Omit until ingested.",
+                    "type": "string"
+                  },
+                  "xdm:mimeType": {
+                    "title": "MIME Type",
+                    "description": "IANA MIME type, e.g. image/jpeg, video/mp4, application/pdf.",
+                    "type": "string"
+                  },
+                  "xdm:mediaRef": {
+                    "title": "Image Media Reference",
+                    "description": "Present when contentType = image.",
+                    "type": "object",
+                    "properties": {
+                      "xdm:url": {
+                        "title": "URL",
+                        "type": "string",
+                        "format": "uri"
+                      },
+                      "xdm:altText": {
+                        "title": "Alt Text",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "xdm:videoRef": {
+                    "title": "Video Reference",
+                    "description": "Present when contentType = video.",
+                    "type": "object",
+                    "properties": {
+                      "xdm:url": {
+                        "title": "URL",
+                        "type": "string",
+                        "format": "uri"
+                      },
+                      "xdm:thumbnailUrl": {
+                        "title": "Thumbnail URL",
+                        "type": "string",
+                        "format": "uri"
+                      }
+                    }
+                  },
+                  "xdm:audioRef": {
+                    "title": "Audio Reference",
+                    "description": "Present when contentType = audio.",
+                    "type": "object",
+                    "properties": {
+                      "xdm:url": {
+                        "title": "URL",
+                        "type": "string",
+                        "format": "uri"
+                      }
+                    }
+                  },
+                  "xdm:attachment": {
+                    "title": "Document / File Attachment",
+                    "description": "Present when contentType = document.",
+                    "type": "object",
+                    "properties": {
+                      "xdm:url": {
+                        "title": "URL",
+                        "type": "string",
+                        "format": "uri"
+                      },
+                      "xdm:filename": {
+                        "title": "Filename",
+                        "type": "string"
+                      },
+                      "xdm:contentId": {
+                        "title": "Content-ID",
+                        "description": "MIME Content-ID (cid:) for inline email parts (RFC 2392).",
+                        "type": "string"
+                      },
+                      "xdm:isInline": {
+                        "title": "Is Inline",
+                        "description": "True when embedded inline (e.g. cid: in HTML email).",
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  "xdm:linkRef": {
+                    "title": "Link Reference",
+                    "description": "Present when contentType = link. xdm:url is required when this object is used.",
+                    "type": "object",
+                    "properties": {
+                      "xdm:url": {
+                        "title": "URL",
+                        "type": "string",
+                        "format": "uri"
+                      },
+                      "xdm:displayText": {
+                        "title": "Display Text",
+                        "description": "Anchor text or human-readable label.",
+                        "type": "string"
+                      },
+                      "xdm:previewImageUrl": {
+                        "title": "Preview Image URL",
+                        "type": "string",
+                        "format": "uri"
+                      }
+                    },
+                    "required": ["xdm:url"]
+                  }
+                },
+                "required": ["xdm:contentType"]
+              }
+            },
+
+            "xdm:sourceMessageId": {
+              "title": "Source Message ID",
+              "description": "Platform-native identifier for this interaction. Distinct from @id. Examples: WhatsApp wamid, BC turnID, DC transcriptId, email Message-ID.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/interaction"
+    }
+  ],
+  "meta:status": "proposed"
+}

@@ -1,0 +1,24 @@
+{
+  "cvf": {
+    "category": "campaign",
+    "sandbox": {
+      "name": "Sample Value",
+      "type": "Sample Value",
+      "org": {
+        "id": "Sample Value",
+        "tenantId": "Sample Value"
+      }
+    },
+    "snapshotTime": "2026-03-06T12:00:00.000Z",
+    "campaign": {
+      "id": "Sample Value",
+      "name": "Sample Value",
+      "numProfiles": 3,
+      "clickThroughRate": 0.3333333333333333,
+      "numSent": 3,
+      "numDelivered": 3,
+      "numDisplayed": 0,
+      "numClicked": 1
+    }
+  }
+}

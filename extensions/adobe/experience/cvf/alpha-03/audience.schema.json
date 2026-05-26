@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/cvf/alpha-02/cdp/audience",
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-03/cdp/audience",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Cvf: Alpha02: Audience",
+  "title": "Cvf: Alpha03: Audience",
   "description": "CDP audience data. Each entry represents an AEP audience.",
   "type": "object",
   "meta:extensible": true,
@@ -41,8 +41,8 @@
                   "type": "string",
                   "format": "date-time"
                 },
-                "isActive": {
-                  "title": "Is Active",
+                "isPublished": {
+                  "title": "Is Published",
                   "type": "boolean"
                 },
                 "evaluationMode": {
@@ -61,8 +61,16 @@
                   "title": "Destinations",
                   "description": "Destination names this audience is sent to.",
                   "type": "array",
+                  "meta:xdmType": "array",
                   "items": {
-                    "type": "string"
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                      "name": {
+                        "title": "Name",
+                        "type": "string"
+                      }
+                    }
                   }
                 }
               }
@@ -77,5 +85,5 @@
       "$ref": "#/definitions/audience"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "experimental"
 }

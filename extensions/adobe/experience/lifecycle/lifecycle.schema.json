@@ -43,6 +43,11 @@
                     "type": "string",
                     "description": "Identifier for the AJO entity (e.g., journey ID, campaign ID)."
                 },
+                "https://ns.adobe.com/experience/lifecycle/sourceVersionId": {
+                    "title": "Source Version ID",
+                    "type": "string",
+                    "description": "Identifier for the version of the AJO entity (e.g., journey version ID, campaign version ID)."
+                },
                 "https://ns.adobe.com/experience/lifecycle/sourceType": {
                     "title": "Source Type",
                     "type": "string",

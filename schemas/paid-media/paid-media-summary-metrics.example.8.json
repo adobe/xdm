@@ -1,0 +1,41 @@
+{
+  "xdm:timestamp": "2026-05-15T00:00:00Z",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "other",
+    "xdm:accountID": "mca_account_abc123",
+    "xdm:accountGUID": "mca_act_abc123",
+    "xdm:campaignID": "mca_campaign_990011",
+    "xdm:campaignGUID": "mca_cmp_990011",
+    "xdm:adGroupID": "mca_adgroup_445566",
+    "xdm:adGroupGUID": "mca_adg_445566",
+    "xdm:adID": "mca_ad_778899",
+    "xdm:adGUID": "mca_ad_778899",
+    "xdm:hierarchyPath": "mca_account_abc123/mca_campaign_990011/mca_adgroup_445566/mca_ad_778899",
+    "xdm:channel": "PaidMedia",
+    "xdm:denormalizedNames": {
+      "xdm:accountName": "Acme Corp - MCA Paid Media Feed",
+      "xdm:campaignName": "Spring 2026 Brand Awareness - US",
+      "xdm:adGroupName": "Lookalike 1% - Tech Enthusiasts",
+      "xdm:adName": "Hero Video 15s - Variant B",
+      "xdm:experienceName": "Multi-Asset Carousel - Spring Launch",
+      "xdm:assetName": "spring_hero_15s_v2.mp4",
+      "xdm:portfolioName": "Brand Awareness Q2"
+    },
+    "xdm:metrics": {
+      "xdm:impressions": 87000,
+      "xdm:clicks": 2900,
+      "xdm:spend": 2175.5,
+      "xdm:conversions": 142,
+      "xdm:conversionValue": 7820.0,
+      "xdm:ctr": 0.0333,
+      "xdm:cpc": 0.75,
+      "xdm:cpm": 25.0,
+      "xdm:costPerConversion": 15.32,
+      "xdm:roas": 3.59
+    },
+    "xdm:dimensionalBreakdowns": {
+      "xdm:deviceType": "desktop",
+      "xdm:country": "US"
+    }
+  }
+}

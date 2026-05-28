@@ -43,6 +43,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/mixins/paid-media/quality-metrics"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/paid-media/denormalized-names"
     }
   ],
   "meta:status": "experimental"

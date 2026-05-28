@@ -1,0 +1,75 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/denormalized-names",
+  "title": "Core Paid Media Denormalized Names",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/paid-media"],
+  "description": "Optional denormalized entity names for paid media summary datasets. Intended for ingestion shapes where lookup datasets are not available (e.g., MCA single-dataset feeds) and entity names must be carried inline on each summary row. Lookup-driven ingestions should leave these fields null and resolve names via the corresponding lookup datasets.",
+  "definitions": {
+    "denormalized-names": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:denormalizedNames": {
+              "type": "object",
+              "title": "Denormalized Names",
+              "description": "Entity display names carried inline on the summary row when lookup datasets are not available.",
+              "properties": {
+                "xdm:accountName": {
+                  "type": "string",
+                  "title": "Account Name",
+                  "description": "Display name of the ad account. Mirrors accountDetails.accountName from the account lookup."
+                },
+                "xdm:campaignName": {
+                  "type": "string",
+                  "title": "Campaign Name",
+                  "description": "Display name of the campaign. Mirrors metadata.name from the campaign lookup."
+                },
+                "xdm:adGroupName": {
+                  "type": "string",
+                  "title": "Ad Group Name",
+                  "description": "Display name of the ad group/ad set/ad squad. Mirrors metadata.name from the ad group lookup."
+                },
+                "xdm:adName": {
+                  "type": "string",
+                  "title": "Ad Name",
+                  "description": "Display name of the individual ad. Mirrors metadata.name from the ad lookup."
+                },
+                "xdm:experienceName": {
+                  "type": "string",
+                  "title": "Experience Name",
+                  "description": "Display name of the creative experience. Mirrors metadata.name from the experience lookup."
+                },
+                "xdm:assetName": {
+                  "type": "string",
+                  "title": "Asset Name",
+                  "description": "Display name of the creative asset. Mirrors metadata.name from the asset lookup."
+                },
+                "xdm:portfolioName": {
+                  "type": "string",
+                  "title": "Portfolio Name",
+                  "description": "Display name of the portfolio (Amazon Ads and similar platforms)."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/denormalized-names"
+    }
+  ],
+  "meta:status": "experimental"
+}

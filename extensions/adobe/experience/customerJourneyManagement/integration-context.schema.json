@@ -1,0 +1,41 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/integrationContext",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Integration Context",
+  "description": "Per-event integration identity for outbound integration (Data Integration / DI) executions. Populated by Message Streaming Worker (MSW) alongside `customExecutionMetrics` when `customExecutionMetrics.executionType=integration`. Integrations are a flat (single-layer) entity in contrast to the 3-layer Custom Channel model: a single `integrationID` + `integrationName` pair fully identifies the integration definition that this execution invoked. Other execution types (e.g. `channel`) populate their own context field group (`customChannelContext`) and leave this absent.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "integrationContext": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationContext/integrationID": {
+          "title": "Integration ID",
+          "type": "string",
+          "description": "Integration definition identifier — the UUID of the customer-configured integration that this execution invoked. Used as the PRIMARY reporting filter for the Integrations Monitoring page in cjm-config-ui (each listing-page row maps to exactly one value here). Stable for the lifetime of the integration definition."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/integrationContext/integrationName": {
+          "title": "Integration Name",
+          "type": "string",
+          "description": "Integration definition display name (e.g. `My CRM Sync`, `Salesforce Lead Push`). Customer-chosen at integration creation. Surfaced as the row label on the Integrations Monitoring listing page."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/integrationContext"
+    }
+  ],
+  "meta:status": "experimental"
+}

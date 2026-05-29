@@ -1,0 +1,92 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Custom Execution Metrics",
+  "description": "Per-call HTTP-dispatch execution telemetry for customer-configured outbound HTTP integrations. Populated by Message Streaming Worker (MSW) for any send routed through the customer-defined HTTP execution path: Custom Channels (Viber, Kakao, customer-created) and Adobe-provided open channels (LINE). Email / SMS / Push / Web / InApp / DirectMail / Inbox / MessageFeed paths use their own delivery infrastructure and leave this field group absent. Validity-expired events also leave this block absent (handled via messageDeliveryfeedback.messageExclusion). The companion field group `customChannelContext` carries the channel-specific identity (customChannelID, customChannelAuthID, customChannelConfigurationID) when `executionType=channel`. See wiki 3886615741 for design rationale and Appendix A for the 3-layer Open Message model.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "customExecutionMetrics": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/executionType": {
+          "title": "Execution Type",
+          "type": "string",
+          "description": "Discriminator describing which kind of customer-configured HTTP execution this event represents. Lets consumers select the appropriate context field group. Free-form string (no enum constraint) so producers can introduce new values without a schema update. Phase-1 known value: `channel` — Custom Channels and Adobe-provided open channels (LINE). The companion identity field group `customChannelContext` carries channel-family identity when this value is `channel`. Future producer-defined values may emerge for other customer-configured HTTP execution paths."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/endpoint": {
+          "title": "Endpoint",
+          "type": "string",
+          "description": "URL template of the customer-configured endpoint, with placeholders un-substituted (e.g. `https://api.viber.com/v1/{{profile.id}}/send`). Stored as the template form — NOT the runtime-interpolated URL — to prevent per-user / per-record cardinality explosion in live reporting (confirmed with reporting team 2026-05-22; precedent is AJO's existing email `domain` derived field that truncates the link URL). Query parameters are stripped before storage. Live reporting derives a coarser `endpointHost` tag from this for Cortex tagging; all-time CJA can use the full template for endpoint-level drilldown. Null when the call was skipped before HTTP was attempted (errorCode set to AUTH_* / REQUEST_GENERATION_ERROR)."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/method": {
+          "title": "HTTP Method",
+          "type": "string",
+          "description": "HTTP method used for the call (POST, GET, PUT, etc.). Null when the call was skipped."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/requestTimestamp": {
+          "title": "Request Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "Wall-clock timestamp (UTC) captured immediately before the customer-endpoint HTTP request is sent on the wire. Null when the call was skipped."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/responseTime": {
+          "title": "Response Time",
+          "type": "integer",
+          "description": "Server HTTP response time in milliseconds. Measured around the customer-endpoint HTTP exchange only - excludes auth latency, connection acquisition, throttle wait (see waitTime), and pool wait. Matches Custom Action XDM actionExecutionOriginTime semantics. For HTTP_TIMEOUT: equals the configured timeout duration. Null when the call was skipped."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/waitTime": {
+          "title": "Wait Time",
+          "type": "integer",
+          "description": "Time in milliseconds the call waited in the throttle queue before the HTTP exchange started. Phase 2: populated when per-call throttle wait instrumentation lands. Phase 1: null/absent (not yet populated by MSW). When populated, total wall-clock latency = waitTime + responseTime + auth/cache overhead."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/statusCode": {
+          "title": "Status Code",
+          "type": "integer",
+          "description": "HTTP response status code from the customer endpoint, preserved as the raw integer (e.g. 401, 503) for finer-grained drilldown and manual debugging. The HTTP_4XX / HTTP_5XX classification in errorCode is a producer-side convenience for bucket gating; consumers SHOULD use statusCode for exact-code analysis. Null when the call was skipped (no HTTP attempt) or timed out without a response."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/throttleApplicable": {
+          "title": "Throttle Applicable",
+          "type": "boolean",
+          "description": "Config-level flag: whether throttling configuration is applied to this endpoint at the time of dispatch. Mirrors the cacheApplicable pattern (config-level vs runtime-level). Does NOT indicate this specific call actually waited in a queue - that signal would require per-call instrumentation (Phase 2; reserved for a separate runtime field). Matches Custom Action XDM actionIsThrottled literal meaning."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/cacheApplicable": {
+          "title": "Cache Applicable",
+          "type": "boolean",
+          "description": "Config-level flag: whether response caching is enabled for this endpoint at the time of dispatch. Mirrors the `throttleApplicable` pattern. Custom Channels and Adobe-provided open channels (LINE) never enable response caching (Caveat E: `responseCacheConfig` default disabled), so this will be `false` for `executionType=channel`. Future Data Integration producers may enable response caching and populate this as `true`. Null when not applicable."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/cacheHit": {
+          "title": "Cache Hit",
+          "type": "boolean",
+          "description": "Runtime indicator: whether this specific call was served from the response cache without hitting the customer endpoint. Only meaningful when `cacheApplicable=true`. Always null for Custom Channels and open channels (caching disabled). Future Data Integration producers populate when applicable. Per Caveat A, response cache only applies for service-user calls; user-initiated calls always skip the cache and populate `cacheHit=false`."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/errorCode": {
+          "title": "Error Code",
+          "type": "string",
+          "description": "Unified error envelope covering both skip-stage (auth/cache) and HTTP-stage (4xx/5xx/timeout) failures. Null on success. Producers SHOULD use the controlled vocabulary documented in wiki 3886615741 section 7 - example values: AUTH_CACHE_IO, AUTH_HTTP_ERROR, AUTH_TOKEN_PARSE, AUTH_TOKEN_EXPIRED, REQUEST_GENERATION_ERROR, HTTP_4XX, HTTP_5XX, HTTP_TIMEOUT, HTTP_PARSE_ERROR. Schema does NOT enum-constrain the value so producer code can evolve the vocabulary without an XDM schema update."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/errorReason": {
+          "title": "Error Reason",
+          "type": "string",
+          "description": "Human-readable detail of the failure (exception message, parsed error body, etc.). Used for drilldown tooltips and debugging. Not intended for aggregation - use errorCode for grouping. Null on success."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/customExecutionMetrics"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,61 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Custom Channel Context",
+  "description": "Per-event channel-family identity for outbound open-channel deliveries (Custom Channels — Viber, Kakao, customer-created — and Adobe-provided open channels like LINE). Populated by Message Streaming Worker (MSW) alongside `customExecutionMetrics` when `customExecutionMetrics.executionType=channel`. Carries identifiers for the three Open Message architecture layers: the Custom Channel template (Layer 1 — `customChannelID` / `customChannelVersion`), the API Credentials credential bundle (Layer 2 — `customChannelAuthID` / `customChannelAuthName`), and the Custom Channel Configuration usage policy (Layer 3 — `customChannelConfigurationID` / `customChannelConfigurationName`). See wiki 3886615741 Appendix A for the 3-layer Open Message model. Other channel families (email, SMS, push) use their own dedicated channel-context field groups and leave this absent.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "customChannelContext": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelID": {
+          "title": "Custom Channel ID",
+          "type": "string",
+          "description": "Layer-1 Custom Channel identifier — the slug that identifies the channel TEMPLATE this send is for. For Adobe-provided channels: stable slug like `line`, `whatsApp`. For customer-created Custom Channels: the customer-chosen slug (e.g. `viber`, `kakao`, `myCustomChannel`). Stable for the lifetime of the registered Custom Channel. Used as the PRIMARY reporting filter for the Custom Channels Monitoring page in cjm-config-ui (each listing-page row maps to exactly one value here). Slug doubles as the human-readable display name in reports; a separate display field is not provided."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelVersion": {
+          "title": "Custom Channel Version",
+          "type": "string",
+          "description": "Layer-1 Custom Channel template version identifier (e.g. `v1_line`, `v1_viber`). Used to distinguish reports across template evolution; e.g., separating pre-template-bump and post-template-bump metrics. Stable for a given publication of the Custom Channel template."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelAuthID": {
+          "title": "API Credentials ID",
+          "type": "string",
+          "description": "Layer-2 API Credentials identifier — the UUID of the specific credential bundle used for this send. Distinct from `customChannelID` (Layer 1 template). One Layer-2 entity per credential bundle; many Layer-2 per Layer-1. Reserved for future support drilldown reports (\"which credentials produced this failure?\"). Phase-1 reporting does not surface this as a filter dimension. May be empty if upstream did not populate (e.g. headless / API-triggered paths that bypass the API Credentials layer)."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelAuthName": {
+          "title": "API Credentials Name",
+          "type": "string",
+          "description": "Layer-2 API Credentials display name (e.g. `Line Test Bot 2`, `Viber Marketing Bot — APAC`). Customer-chosen at API Credentials creation. Reserved for future support drilldown reports. Phase-1 may emit as empty string when upstream wiring (lazy-fetch of API-Credentials entity by id) has not yet landed; populated when the upstream wiring lands in a follow-up phase."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelConfigurationID": {
+          "title": "Custom Channel Configuration ID",
+          "type": "string",
+          "description": "Layer-3 Custom Channel Configuration identifier — the UUID of the marketer-facing usage policy that this campaign/journey selected. Distinct from `customChannelAuthID` (Layer 2 credentials). Many Layer-3 configurations CAN reference the same Layer-2 credentials. Reserved for future marketer-facing drilldown reports (\"how is my Halloween marketing config performing?\"). Phase-1 reporting does not surface this as a filter dimension. May be empty for headless / API-triggered paths that bypass the Custom Channel Configuration layer (per wiki 3598294946)."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelConfigurationName": {
+          "title": "Custom Channel Configuration Name",
+          "type": "string",
+          "description": "Layer-3 Custom Channel Configuration display name (e.g. `Viber Holiday Marketing Config`, `Line Order Confirmation Config`). Customer-chosen at Custom Channel Configuration creation. Reserved for future marketer-facing drilldown reports. May be empty for headless / API-triggered paths."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/customChannelContext"
+    }
+  ],
+  "meta:status": "experimental"
+}

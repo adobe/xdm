@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/experience/customerJourneyManagement/integrationContext",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent - Integration Context",
-  "description": "Per-event integration identity for outbound integration (Data Integration / DI) executions. Populated by Message Streaming Worker (MSW) alongside `customExecutionMetrics` when `customExecutionMetrics.executionType=integration`. Integrations are a flat (single-layer) entity in contrast to the 3-layer Custom Channel model: a single `integrationID` + `integrationName` pair fully identifies the integration definition that this execution invoked. Other execution types (e.g. `channel`) populate their own context field group (`customChannelContext`) and leave this absent.",
+  "description": "Per-event integration identity for outbound integration (Data Integration) executions. Present alongside `customExecutionMetrics` when `customExecutionMetrics.executionType` is `integration`. Integrations are a flat (single-layer) entity, in contrast to the three-layer custom-channel model: a single `integrationID` + `integrationName` pair fully identifies the integration definition that this execution invoked. Other execution types (such as `channel`) populate their own context field group (`customChannelContext`) and leave this absent.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -19,12 +19,12 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/integrationContext/integrationID": {
           "title": "Integration ID",
           "type": "string",
-          "description": "Integration definition identifier — the UUID of the customer-configured integration that this execution invoked. Used as the PRIMARY reporting filter for the Integrations Monitoring page in cjm-config-ui (each listing-page row maps to exactly one value here). Stable for the lifetime of the integration definition."
+          "description": "Identifier — the unique ID of the customer-configured integration that this execution invoked. Used as the primary identifier for filtering integration monitoring. Stable for the lifetime of the integration definition."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/integrationContext/integrationName": {
           "title": "Integration Name",
           "type": "string",
-          "description": "Integration definition display name (e.g. `My CRM Sync`, `Salesforce Lead Push`). Customer-chosen at integration creation. Surfaced as the row label on the Integrations Monitoring listing page."
+          "description": "Display name of the integration definition (for example, `My CRM Sync` or `Salesforce Lead Push`), chosen when the integration was created. Used as the row label in integration monitoring."
         }
       }
     }

@@ -1,0 +1,827 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/whatsapp-webhook",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "WhatsApp Business Messaging Webhook",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Raw landing field group for WhatsApp Business Messaging webhook payloads. Preserves the original webhook structure including entry, changes, contacts, and messages arrays without upstream transformation.",
+  "definitions": {
+    "whatsapp-webhook": {
+      "properties": {
+        "xdm:whatsappWebhook": {
+          "title": "WhatsApp Webhook Payload",
+          "description": "The top-level WhatsApp Business API webhook payload.",
+          "type": "object",
+          "properties": {
+            "xdm:object": {
+              "title": "Object",
+              "description": "Always 'whatsapp_business_account'.",
+              "type": "string",
+              "const": "whatsapp_business_account"
+            },
+            "xdm:entry": {
+              "title": "Entry",
+              "description": "Array of WhatsApp Business Account entries. Typically one entry per webhook delivery.",
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "title": "WABA Entry",
+                "description": "A WhatsApp Business Account entry. One entry per WABA that received a message.",
+                "type": "object",
+                "properties": {
+                  "xdm:id": {
+                    "title": "WABA ID",
+                    "description": "WhatsApp Business Account ID.",
+                    "type": "string"
+                  },
+                  "xdm:changes": {
+                    "title": "Changes",
+                    "description": "Array of change events for this WABA.",
+                    "type": "array",
+                    "items": {
+                      "title": "Change",
+                      "description": "A single change event — either incoming messages or delivery statuses.",
+                      "type": "object",
+                      "properties": {
+                        "xdm:field": {
+                          "title": "Field",
+                          "description": "The type of change. 'messages' for inbound messages; 'statuses' for delivery receipts.",
+                          "type": "string",
+                          "enum": [
+                            "messages",
+                            "statuses"
+                          ],
+                          "meta:enum": {
+                            "messages": "Messages",
+                            "statuses": "Statuses"
+                          }
+                        },
+                        "xdm:value": {
+                          "title": "Change Value",
+                          "description": "The payload of a change event, containing metadata, sender contacts, messages, and statuses.",
+                          "type": "object",
+                          "properties": {
+                            "xdm:messagingProduct": {
+                              "title": "Messaging Product",
+                              "description": "Always 'whatsapp'.",
+                              "type": "string"
+                            },
+                            "xdm:metadata": {
+                              "title": "Metadata",
+                              "description": "Information about the business phone number that received the message.",
+                              "type": "object",
+                              "properties": {
+                                "xdm:displayPhoneNumber": {
+                                  "title": "Display Phone Number",
+                                  "description": "The business phone number displayed to customers.",
+                                  "type": "string"
+                                },
+                                "xdm:phoneNumberId": {
+                                  "title": "Phone Number ID",
+                                  "description": "The WhatsApp business phone number ID.",
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "xdm:contacts": {
+                              "title": "Sender Contacts",
+                              "description": "Profile information for the senders in this batch. Join to messages on contacts.waId === messages.from.",
+                              "type": "array",
+                              "items": {
+                                "title": "Sender Contact",
+                                "type": "object",
+                                "properties": {
+                                  "xdm:waId": {
+                                    "title": "WhatsApp ID",
+                                    "description": "The sender's WhatsApp ID (typically their phone number without +).",
+                                    "type": "string"
+                                  },
+                                  "xdm:profile": {
+                                    "title": "Profile",
+                                    "description": "The sender's WhatsApp profile.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:name": {
+                                        "title": "Name",
+                                        "description": "The sender's WhatsApp display name.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "xdm:messages": {
+                              "title": "Messages",
+                              "description": "Inbound messages received in this webhook delivery.",
+                              "type": "array",
+                              "items": {
+                                "title": "WhatsApp Message",
+                                "description": "An inbound WhatsApp message. The type field determines which type-specific object is present.",
+                                "type": "object",
+                                "properties": {
+                                  "xdm:id": {
+                                    "title": "Message ID",
+                                    "description": "Unique WhatsApp message ID (wamid). Stable and unique across all messages.",
+                                    "type": "string"
+                                  },
+                                  "xdm:from": {
+                                    "title": "From",
+                                    "description": "The sender's phone number in E.164 format (without +). Matches senderContact.waId.",
+                                    "type": "string"
+                                  },
+                                  "xdm:timestamp": {
+                                    "title": "Timestamp",
+                                    "description": "Unix epoch timestamp (seconds) when the message was sent.",
+                                    "type": "string"
+                                  },
+                                  "xdm:type": {
+                                    "title": "Message Type",
+                                    "description": "The type of message received. Determines which type-specific object is populated.",
+                                    "type": "string",
+                                    "enum": [
+                                      "text",
+                                      "audio",
+                                      "image",
+                                      "video",
+                                      "document",
+                                      "sticker",
+                                      "location",
+                                      "contacts",
+                                      "interactive",
+                                      "button",
+                                      "order",
+                                      "reaction",
+                                      "unsupported"
+                                    ],
+                                    "meta:enum": {
+                                      "text": "Text",
+                                      "audio": "Audio",
+                                      "image": "Image",
+                                      "video": "Video",
+                                      "document": "Document",
+                                      "sticker": "Sticker",
+                                      "location": "Location",
+                                      "contacts": "Contacts",
+                                      "interactive": "Interactive",
+                                      "button": "Button",
+                                      "order": "Order",
+                                      "reaction": "Reaction",
+                                      "unsupported": "Unsupported"
+                                    }
+                                  },
+                                  "xdm:context": {
+                                    "title": "Context",
+                                    "description": "Present when the message is a reply to a previous message.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:messageId": {
+                                        "title": "Replied-To Message ID",
+                                        "description": "The wamid of the message being replied to.",
+                                        "type": "string"
+                                      },
+                                      "xdm:from": {
+                                        "title": "Replied-To From",
+                                        "description": "Phone number of the sender of the original message.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xdm:text": {
+                                    "title": "Text Content",
+                                    "description": "Present when type = 'text'.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:body": {
+                                        "title": "Body",
+                                        "description": "The text of the message.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xdm:audio": {
+                                    "title": "Audio",
+                                    "description": "Present when type = 'audio'.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:id": {
+                                        "title": "Media ID",
+                                        "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
+                                        "type": "string"
+                                      },
+                                      "xdm:mimeType": {
+                                        "title": "MIME Type",
+                                        "description": "MIME type of the audio file, e.g. 'audio/ogg; codecs=opus'.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xdm:image": {
+                                    "title": "Image",
+                                    "description": "Present when type = 'image'.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:id": {
+                                        "title": "Media ID",
+                                        "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
+                                        "type": "string"
+                                      },
+                                      "xdm:mimeType": {
+                                        "title": "MIME Type",
+                                        "description": "MIME type of the image, e.g. 'image/jpeg'.",
+                                        "type": "string"
+                                      },
+                                      "xdm:sha256": {
+                                        "title": "SHA-256",
+                                        "description": "SHA-256 hash of the image file for integrity verification.",
+                                        "type": "string"
+                                      },
+                                      "xdm:caption": {
+                                        "title": "Caption",
+                                        "description": "Optional caption sent with the image.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xdm:video": {
+                                    "title": "Video",
+                                    "description": "Present when type = 'video'.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:id": {
+                                        "title": "Media ID",
+                                        "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
+                                        "type": "string"
+                                      },
+                                      "xdm:mimeType": {
+                                        "title": "MIME Type",
+                                        "description": "MIME type of the video, e.g. 'video/mp4'.",
+                                        "type": "string"
+                                      },
+                                      "xdm:sha256": {
+                                        "title": "SHA-256",
+                                        "description": "SHA-256 hash of the video file for integrity verification.",
+                                        "type": "string"
+                                      },
+                                      "xdm:caption": {
+                                        "title": "Caption",
+                                        "description": "Optional caption sent with the video.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xdm:document": {
+                                    "title": "Document",
+                                    "description": "Present when type = 'document'.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:id": {
+                                        "title": "Media ID",
+                                        "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
+                                        "type": "string"
+                                      },
+                                      "xdm:mimeType": {
+                                        "title": "MIME Type",
+                                        "description": "MIME type of the document, e.g. 'application/pdf'.",
+                                        "type": "string"
+                                      },
+                                      "xdm:sha256": {
+                                        "title": "SHA-256",
+                                        "description": "SHA-256 hash of the document file for integrity verification.",
+                                        "type": "string"
+                                      },
+                                      "xdm:filename": {
+                                        "title": "Filename",
+                                        "description": "Original filename of the document as sent by the user.",
+                                        "type": "string"
+                                      },
+                                      "xdm:caption": {
+                                        "title": "Caption",
+                                        "description": "Optional caption sent with the document.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xdm:sticker": {
+                                    "title": "Sticker",
+                                    "description": "Present when type = 'sticker'.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:id": {
+                                        "title": "Media ID",
+                                        "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
+                                        "type": "string"
+                                      },
+                                      "xdm:mimeType": {
+                                        "title": "MIME Type",
+                                        "description": "MIME type of the sticker. Always 'image/webp'.",
+                                        "type": "string"
+                                      },
+                                      "xdm:sha256": {
+                                        "title": "SHA-256",
+                                        "description": "SHA-256 hash of the sticker file for integrity verification.",
+                                        "type": "string"
+                                      },
+                                      "xdm:animated": {
+                                        "title": "Animated",
+                                        "description": "True if the sticker is animated.",
+                                        "type": "boolean"
+                                      }
+                                    }
+                                  },
+                                  "xdm:location": {
+                                    "title": "Location",
+                                    "description": "Present when type = 'location'.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:latitude": {
+                                        "title": "Latitude",
+                                        "description": "Latitude of the location in decimal degrees.",
+                                        "type": "number",
+                                        "minimum": -90,
+                                        "maximum": 90
+                                      },
+                                      "xdm:longitude": {
+                                        "title": "Longitude",
+                                        "description": "Longitude of the location in decimal degrees.",
+                                        "type": "number",
+                                        "minimum": -180,
+                                        "maximum": 180
+                                      },
+                                      "xdm:name": {
+                                        "title": "Name",
+                                        "description": "Name of the location, if provided by the sender.",
+                                        "type": "string"
+                                      },
+                                      "xdm:address": {
+                                        "title": "Address",
+                                        "description": "Street address of the location, if provided by the sender.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xdm:contactCards": {
+                                    "title": "Contact Cards",
+                                    "description": "Present when type = 'contacts'. An array of vCard-like contact objects shared by the sender.",
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "xdm:name": {
+                                          "title": "Name",
+                                          "type": "object",
+                                          "properties": {
+                                            "xdm:formattedName": {
+                                              "title": "Formatted Name",
+                                              "type": "string"
+                                            },
+                                            "xdm:firstName": {
+                                              "title": "First Name",
+                                              "type": "string"
+                                            },
+                                            "xdm:lastName": {
+                                              "title": "Last Name",
+                                              "type": "string"
+                                            },
+                                            "xdm:middleName": {
+                                              "title": "Middle Name",
+                                              "type": "string"
+                                            },
+                                            "xdm:suffix": {
+                                              "title": "Suffix",
+                                              "type": "string"
+                                            },
+                                            "xdm:prefix": {
+                                              "title": "Prefix",
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "xdm:formattedName"
+                                          ]
+                                        },
+                                        "xdm:phones": {
+                                          "title": "Phone Numbers",
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "xdm:phone": {
+                                                "title": "Phone",
+                                                "type": "string"
+                                              },
+                                              "xdm:type": {
+                                                "title": "Type",
+                                                "type": "string"
+                                              },
+                                              "xdm:waId": {
+                                                "title": "WhatsApp ID",
+                                                "type": "string"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "xdm:emails": {
+                                          "title": "Email Addresses",
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "xdm:email": {
+                                                "title": "Email",
+                                                "type": "string"
+                                              },
+                                              "xdm:type": {
+                                                "title": "Type",
+                                                "type": "string"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "xdm:addresses": {
+                                          "title": "Addresses",
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "xdm:street": {
+                                                "title": "Street",
+                                                "type": "string"
+                                              },
+                                              "xdm:city": {
+                                                "title": "City",
+                                                "type": "string"
+                                              },
+                                              "xdm:state": {
+                                                "title": "State",
+                                                "type": "string"
+                                              },
+                                              "xdm:zip": {
+                                                "title": "ZIP",
+                                                "type": "string"
+                                              },
+                                              "xdm:country": {
+                                                "title": "Country",
+                                                "type": "string"
+                                              },
+                                              "xdm:countryCode": {
+                                                "title": "Country Code",
+                                                "type": "string"
+                                              },
+                                              "xdm:type": {
+                                                "title": "Type",
+                                                "type": "string"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "xdm:urls": {
+                                          "title": "URLs",
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "xdm:url": {
+                                                "title": "URL",
+                                                "type": "string",
+                                                "format": "uri"
+                                              },
+                                              "xdm:type": {
+                                                "title": "Type",
+                                                "type": "string"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "xdm:org": {
+                                          "title": "Organization",
+                                          "type": "object",
+                                          "properties": {
+                                            "xdm:company": {
+                                              "title": "Company",
+                                              "type": "string"
+                                            },
+                                            "xdm:department": {
+                                              "title": "Department",
+                                              "type": "string"
+                                            },
+                                            "xdm:title": {
+                                              "title": "Title",
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "xdm:interactive": {
+                                    "title": "Interactive Reply",
+                                    "description": "Present when type = 'interactive'. Sent when a user taps a button or selects a list item.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:type": {
+                                        "title": "Interactive Type",
+                                        "description": "'button_reply' when a quick-reply button is tapped; 'list_reply' when a list item is selected.",
+                                        "type": "string",
+                                        "enum": [
+                                          "button_reply",
+                                          "list_reply"
+                                        ],
+                                        "meta:enum": {
+                                          "button_reply": "Button Reply",
+                                          "list_reply": "List Reply"
+                                        }
+                                      },
+                                      "xdm:buttonReply": {
+                                        "title": "Button Reply",
+                                        "description": "Present when interactive.type = 'button_reply'.",
+                                        "type": "object",
+                                        "properties": {
+                                          "xdm:id": {
+                                            "title": "Button ID",
+                                            "type": "string"
+                                          },
+                                          "xdm:title": {
+                                            "title": "Button Title",
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "xdm:id",
+                                          "xdm:title"
+                                        ]
+                                      },
+                                      "xdm:listReply": {
+                                        "title": "List Reply",
+                                        "description": "Present when interactive.type = 'list_reply'.",
+                                        "type": "object",
+                                        "properties": {
+                                          "xdm:id": {
+                                            "title": "Row ID",
+                                            "type": "string"
+                                          },
+                                          "xdm:title": {
+                                            "title": "Row Title",
+                                            "type": "string"
+                                          },
+                                          "xdm:description": {
+                                            "title": "Row Description",
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "xdm:id",
+                                          "xdm:title"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "xdm:button": {
+                                    "title": "Button",
+                                    "description": "Present when type = 'button'. Sent when a user taps a button in a template message.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:payload": {
+                                        "title": "Payload",
+                                        "description": "Developer-defined payload for the button.",
+                                        "type": "string"
+                                      },
+                                      "xdm:text": {
+                                        "title": "Text",
+                                        "description": "The button label text.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xdm:order": {
+                                    "title": "Order",
+                                    "description": "Present when type = 'order'. Sent when a user places an order from a catalog.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:catalogId": {
+                                        "title": "Catalog ID",
+                                        "description": "ID of the WhatsApp catalog the order was placed from.",
+                                        "type": "string"
+                                      },
+                                      "xdm:text": {
+                                        "title": "Order Note",
+                                        "description": "Optional note from the customer accompanying the order.",
+                                        "type": "string"
+                                      },
+                                      "xdm:productItems": {
+                                        "title": "Product Items",
+                                        "description": "Line items in the order.",
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "xdm:productRetailerId": {
+                                              "title": "Product Retailer ID",
+                                              "description": "The retailer's SKU/product ID from the catalog.",
+                                              "type": "string"
+                                            },
+                                            "xdm:quantity": {
+                                              "title": "Quantity",
+                                              "description": "Number of units ordered.",
+                                              "type": "integer",
+                                              "minimum": 1
+                                            },
+                                            "xdm:itemPrice": {
+                                              "title": "Item Price",
+                                              "description": "Unit price of the product at time of order.",
+                                              "type": "number"
+                                            },
+                                            "xdm:currency": {
+                                              "title": "Currency",
+                                              "description": "ISO 4217 currency code.",
+                                              "type": "string",
+                                              "pattern": "^[A-Z]{3}$"
+                                            }
+                                          },
+                                          "required": [
+                                            "xdm:productRetailerId",
+                                            "xdm:quantity",
+                                            "xdm:itemPrice",
+                                            "xdm:currency"
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "xdm:reaction": {
+                                    "title": "Reaction",
+                                    "description": "Present when type = 'reaction'. Sent when a user reacts to a message with an emoji.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:messageId": {
+                                        "title": "Reacted-To Message ID",
+                                        "description": "The wamid of the message that was reacted to.",
+                                        "type": "string"
+                                      },
+                                      "xdm:emoji": {
+                                        "title": "Emoji",
+                                        "description": "The emoji used as the reaction. Empty string means the reaction was removed.",
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "xdm:statuses": {
+                              "title": "Statuses",
+                              "description": "Delivery and read receipt status updates.",
+                              "type": "array",
+                              "items": {
+                                "title": "Message Status",
+                                "description": "Delivery and read receipt for an outbound message.",
+                                "type": "object",
+                                "properties": {
+                                  "xdm:id": {
+                                    "title": "Message ID",
+                                    "description": "The wamid of the outbound message this status refers to.",
+                                    "type": "string"
+                                  },
+                                  "xdm:status": {
+                                    "title": "Status",
+                                    "description": "Current delivery state of the message.",
+                                    "type": "string",
+                                    "enum": [
+                                      "sent",
+                                      "delivered",
+                                      "read",
+                                      "failed"
+                                    ],
+                                    "meta:enum": {
+                                      "sent": "Sent",
+                                      "delivered": "Delivered",
+                                      "read": "Read",
+                                      "failed": "Failed"
+                                    }
+                                  },
+                                  "xdm:timestamp": {
+                                    "title": "Timestamp",
+                                    "description": "Unix epoch timestamp when this status was recorded.",
+                                    "type": "string"
+                                  },
+                                  "xdm:recipientId": {
+                                    "title": "Recipient ID",
+                                    "description": "Phone number of the message recipient.",
+                                    "type": "string"
+                                  },
+                                  "xdm:conversation": {
+                                    "title": "Conversation",
+                                    "description": "WhatsApp conversation window context.",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:id": {
+                                        "title": "Conversation ID",
+                                        "type": "string"
+                                      },
+                                      "xdm:origin": {
+                                        "title": "Origin",
+                                        "type": "object",
+                                        "properties": {
+                                          "xdm:type": {
+                                            "title": "Origin Type",
+                                            "description": "Billing category: 'business_initiated', 'user_initiated', or 'referral_conversion'.",
+                                            "type": "string"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "xdm:pricing": {
+                                    "title": "Pricing",
+                                    "type": "object",
+                                    "properties": {
+                                      "xdm:billable": {
+                                        "title": "Billable",
+                                        "description": "Whether this message is billable.",
+                                        "type": "boolean"
+                                      },
+                                      "xdm:pricingModel": {
+                                        "title": "Pricing Model",
+                                        "type": "string"
+                                      },
+                                      "xdm:category": {
+                                        "title": "Category",
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xdm:errors": {
+                                    "title": "Errors",
+                                    "description": "Present when status = 'failed'.",
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "xdm:code": {
+                                          "title": "Error Code",
+                                          "type": "integer"
+                                        },
+                                        "xdm:title": {
+                                          "title": "Error Title",
+                                          "type": "string"
+                                        },
+                                        "xdm:message": {
+                                          "title": "Error Message",
+                                          "type": "string"
+                                        },
+                                        "xdm:errorData": {
+                                          "type": "object",
+                                          "properties": {
+                                            "xdm:details": {
+                                              "title": "Details",
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "required": [
+                            "xdm:messagingProduct",
+                            "xdm:metadata"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "xdm:id",
+                  "xdm:changes"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/whatsapp-webhook"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2026-06-01"
+}

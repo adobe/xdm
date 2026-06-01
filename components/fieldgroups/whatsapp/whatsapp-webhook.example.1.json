@@ -1,0 +1,85 @@
+{
+  "xdm:whatsappWebhook": {
+    "xdm:object": "whatsapp_business_account",
+    "xdm:entry": [
+      {
+        "xdm:id": "123456789",
+        "xdm:changes": [
+          {
+            "xdm:field": "messages",
+            "xdm:value": {
+              "xdm:messagingProduct": "whatsapp",
+              "xdm:metadata": {
+                "xdm:displayPhoneNumber": "+15551234567",
+                "xdm:phoneNumberId": "987654321"
+              },
+              "xdm:contacts": [
+                {
+                  "xdm:waId": "15559876543",
+                  "xdm:profile": {
+                    "xdm:name": "Jane Doe"
+                  }
+                }
+              ],
+              "xdm:messages": [
+                {
+                  "xdm:id": "wamid.ABC123",
+                  "xdm:from": "15559876543",
+                  "xdm:timestamp": "1716825600",
+                  "xdm:type": "text",
+                  "xdm:text": {
+                    "xdm:body": "Hello, I need help with my order."
+                  }
+                },
+                {
+                  "xdm:id": "wamid.DEF456",
+                  "xdm:from": "15559876543",
+                  "xdm:timestamp": "1716825700",
+                  "xdm:type": "image",
+                  "xdm:image": {
+                    "xdm:id": "media.IMG001",
+                    "xdm:mimeType": "image/jpeg",
+                    "xdm:sha256": "abc123def456",
+                    "xdm:caption": "Here is a photo of the issue."
+                  }
+                },
+                {
+                  "xdm:id": "wamid.GHI789",
+                  "xdm:from": "15559876543",
+                  "xdm:timestamp": "1716825800",
+                  "xdm:type": "interactive",
+                  "xdm:interactive": {
+                    "xdm:type": "button_reply",
+                    "xdm:buttonReply": {
+                      "xdm:id": "btn_confirm",
+                      "xdm:title": "Confirm Order"
+                    }
+                  }
+                }
+              ],
+              "xdm:statuses": [
+                {
+                  "xdm:id": "wamid.OUT001",
+                  "xdm:status": "delivered",
+                  "xdm:timestamp": "1716825650",
+                  "xdm:recipientId": "15559876543",
+                  "xdm:conversation": {
+                    "xdm:id": "conv.XYZ999",
+                    "xdm:origin": {
+                      "xdm:type": "business_initiated"
+                    }
+                  },
+                  "xdm:pricing": {
+                    "xdm:billable": true,
+                    "xdm:pricingModel": "CBP",
+                    "xdm:category": "utility"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

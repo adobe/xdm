@@ -10,9 +10,7 @@
   "title": "WhatsApp Business Messaging Webhook",
   "type": "object",
   "meta:extensible": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Raw landing field group for WhatsApp Business Messaging webhook payloads. Preserves the original webhook structure including entry, changes, contacts, and messages arrays without upstream transformation.",
   "definitions": {
     "whatsapp-webhook": {
@@ -56,10 +54,7 @@
                           "title": "Field",
                           "description": "The type of change. 'messages' for inbound messages; 'statuses' for delivery receipts.",
                           "type": "string",
-                          "enum": [
-                            "messages",
-                            "statuses"
-                          ],
+                          "enum": ["messages", "statuses"],
                           "meta:enum": {
                             "messages": "Messages",
                             "statuses": "Statuses"
@@ -405,9 +400,7 @@
                                               "type": "string"
                                             }
                                           },
-                                          "required": [
-                                            "xdm:formattedName"
-                                          ]
+                                          "required": ["xdm:formattedName"]
                                         },
                                         "xdm:phones": {
                                           "title": "Phone Numbers",
@@ -532,10 +525,7 @@
                                         "title": "Interactive Type",
                                         "description": "'button_reply' when a quick-reply button is tapped; 'list_reply' when a list item is selected.",
                                         "type": "string",
-                                        "enum": [
-                                          "button_reply",
-                                          "list_reply"
-                                        ],
+                                        "enum": ["button_reply", "list_reply"],
                                         "meta:enum": {
                                           "button_reply": "Button Reply",
                                           "list_reply": "List Reply"
@@ -555,10 +545,7 @@
                                             "type": "string"
                                           }
                                         },
-                                        "required": [
-                                          "xdm:id",
-                                          "xdm:title"
-                                        ]
+                                        "required": ["xdm:id", "xdm:title"]
                                       },
                                       "xdm:listReply": {
                                         "title": "List Reply",
@@ -578,10 +565,7 @@
                                             "type": "string"
                                           }
                                         },
-                                        "required": [
-                                          "xdm:id",
-                                          "xdm:title"
-                                        ]
+                                        "required": ["xdm:id", "xdm:title"]
                                       }
                                     }
                                   },
@@ -794,19 +778,13 @@
                               }
                             }
                           },
-                          "required": [
-                            "xdm:messagingProduct",
-                            "xdm:metadata"
-                          ]
+                          "required": ["xdm:messagingProduct", "xdm:metadata"]
                         }
                       }
                     }
                   }
                 },
-                "required": [
-                  "xdm:id",
-                  "xdm:changes"
-                ]
+                "required": ["xdm:id", "xdm:changes"]
               }
             }
           }

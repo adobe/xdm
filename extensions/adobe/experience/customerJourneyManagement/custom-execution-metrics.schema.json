@@ -19,10 +19,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/executionType": {
           "title": "Execution Type",
           "type": "string",
-          "description": "The kind of execution this event represents.",
-          "meta:enum": {
-            "channel": "Outbound delivery through a customer-configured channel"
-          }
+          "description": "The kind of execution this event represents. Open string; see examples for sample values."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/endpoint": {
           "title": "Endpoint",
@@ -73,18 +70,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/errorCode": {
           "title": "Error Code",
           "type": "string",
-          "description": "A code describing the failure. Absent on success.",
-          "meta:enum": {
-            "AUTH_CACHE_IO": "Authentication step failed reading or writing its token cache",
-            "AUTH_HTTP_ERROR": "Authentication request returned an HTTP error",
-            "AUTH_TOKEN_PARSE": "Authentication token response could not be parsed",
-            "AUTH_TOKEN_EXPIRED": "Authentication token was expired and could not be refreshed",
-            "REQUEST_GENERATION_ERROR": "The request could not be constructed before sending",
-            "HTTP_4XX": "The endpoint returned a 4xx client error",
-            "HTTP_5XX": "The endpoint returned a 5xx server error",
-            "HTTP_TIMEOUT": "The call exceeded the configured timeout",
-            "HTTP_PARSE_ERROR": "The endpoint response could not be parsed"
-          }
+          "description": "A code describing the failure, carrying the raw HTTP status for endpoint errors (for example, `HTTP_404`). Open string; see examples for sample values. Absent on success."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/errorReason": {
           "title": "Error Reason",

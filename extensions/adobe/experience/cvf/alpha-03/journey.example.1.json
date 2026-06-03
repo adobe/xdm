@@ -1,0 +1,33 @@
+{
+  "cvf": {
+    "category": "journey",
+    "sandbox": {
+      "name": "Sample Value",
+      "type": "Sample Value",
+      "org": {
+        "id": "Sample Value",
+        "tenantId": "Sample Value"
+      }
+    },
+    "snapshotTime": "2026-03-06T12:00:00.000Z",
+    "journey": {
+      "id": "Sample Value",
+      "name": "Sample Value",
+      "state": "active",
+      "numEnters": 1,
+      "numExits": 0,
+      "numFailures": 0,
+      "numEngagements": 0,
+      "nodes": [
+        {
+          "name": "Enter Node",
+          "numEnters": 1
+        },
+        {
+          "name": "Exit Node",
+          "numEnters": 1
+        }
+      ]
+    }
+  }
+}

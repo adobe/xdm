@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/experience/customerJourneyManagement/messagingChannelContext",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent - Messaging Channel Context",
-  "description": "SMS and WhatsApp channel context for inbound and tracking events. Captures channel-specific fields including inbound message details, delivery feedback status, and WhatsApp-specific interaction and Flows submission data.",
+  "description": "SMS and WhatsApp channel context for inbound and tracking events. Captures channel-specific fields including inbound message details and WhatsApp-specific interaction.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -241,6 +241,19 @@
           "title": "Flow Response",
           "type": "string",
           "description": "JSON string containing the form field values submitted by the user through a WhatsApp Flow"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": {
+          "title": "Tags",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Tags associated with the inbound messaging interaction, e.g. inbound message text, keyword category, and source"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": {
+          "title": "Label",
+          "type": "string",
+          "description": "Label identifying the category of the inbound interaction, e.g. the matched keyword type"
         }
       }
     }

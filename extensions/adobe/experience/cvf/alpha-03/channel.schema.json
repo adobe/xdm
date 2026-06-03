@@ -1,0 +1,109 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-03/cdp/channel",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Cvf: Alpha03: Aggregate Channel Stats",
+  "description": "AJO aggregate channel stats.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "definitions": {
+    "channel": {
+      "properties": {
+        "cvf": {
+          "type": "object",
+          "properties": {
+            "channel": {
+              "title": "Channel",
+              "description": "Channel name and delivery and engagement metrics.",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "title": "Name",
+                  "description": "Channel name (e.g. sms, email).",
+                  "type": "string"
+                },
+                "clickThroughRate": {
+                  "title": "Click-Through Rate",
+                  "description": "Ratio of clicks to deliveries.",
+                  "type": "number",
+                  "meta:xdmType": "number"
+                },
+                "numSent": {
+                  "title": "Number Sent",
+                  "description": "Number of messages sent.",
+                  "type": "integer",
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "numDelivered": {
+                  "title": "Number Delivered",
+                  "description": "Number of messages delivered.",
+                  "type": "integer",
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "numDisplayed": {
+                  "title": "Number Displayed",
+                  "description": "Number of messages displayed.",
+                  "type": "integer",
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "numClicked": {
+                  "title": "Number Clicked",
+                  "description": "Number of messages clicked.",
+                  "type": "integer",
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "numBounced": {
+                  "title": "Number Bounced",
+                  "description": "Number of messages bounced.",
+                  "type": "integer",
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "numUnsubscribed": {
+                  "title": "Number Unsubscribed",
+                  "description": "Number of unsubscribe events.",
+                  "type": "integer",
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "numReported": {
+                  "title": "Number Reported",
+                  "description": "Number of spam or abuse reports.",
+                  "type": "integer",
+                  "meta:xdmType": "long",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/channel"
+    }
+  ],
+  "meta:status": "experimental"
+}

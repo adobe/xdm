@@ -104,9 +104,130 @@
         }
       }
     },
+    "creativeCustomizer": {
+      "type": "object",
+      "description": "A resolved ad customizer / template attribute that produced one of the rendered text or asset values in a creative variant. Captures Google Ads CustomizerAttribute resolution (see https://developers.google.com/google-ads/api/docs/ads/customize-responsive-search-ads) as well as equivalent template-substitution mechanisms on other ad networks (e.g., Meta Marketing API URL parameter macros, TikTok dynamic product ads attribute substitution).",
+      "properties": {
+        "xdm:name": {
+          "type": "string",
+          "title": "Customizer Name",
+          "description": "Name of the customizer attribute as defined in the ad network (e.g., Google Ads CustomizerAttribute.name such as 'discount' or 'price')."
+        },
+        "xdm:type": {
+          "type": "string",
+          "title": "Customizer Type",
+          "description": "Data type of the customizer value as defined by the ad network.",
+          "enum": ["text", "number", "price", "percent"],
+          "meta:enum": {
+            "text": "Free-form text",
+            "number": "Numeric value",
+            "price": "Monetary price",
+            "percent": "Percentage"
+          }
+        },
+        "xdm:value": {
+          "type": "string",
+          "title": "Customizer Value",
+          "description": "The resolved string value substituted into the rendered creative content for this variant."
+        },
+        "xdm:scope": {
+          "type": "string",
+          "title": "Customizer Scope",
+          "description": "Level in the ad-network hierarchy where this customizer value was linked. Google Ads supports customer, campaign, adGroup, and adGroupCriterion scopes with most-specific-wins resolution.",
+          "enum": [
+            "customer",
+            "account",
+            "campaign",
+            "adGroup",
+            "adGroupCriterion",
+            "asset",
+            "other"
+          ],
+          "meta:enum": {
+            "customer": "Customer (Google Ads) / Business (Meta) level",
+            "account": "Ad account level",
+            "campaign": "Campaign level",
+            "adGroup": "Ad group / ad set / ad squad level",
+            "adGroupCriterion": "Ad group criterion (keyword/audience) level",
+            "asset": "Asset / asset group level",
+            "other": "Other / network-specific scope"
+          }
+        }
+      }
+    },
+    "creativeVariant": {
+      "type": "object",
+      "description": "A single distinct rendered version of a paid media creative. Variants enumerate every materially different rendering that the ad network may serve from one creative ID, whether driven by language localization (e.g., Meta Marketing API asset_feed_spec language_label, see https://developers.facebook.com/docs/marketing-api/multi-language-ads/), template/customizer substitution (e.g., Google Ads CustomizerAttribute resolution, see https://developers.google.com/google-ads/api/docs/ads/customize-responsive-search-ads), or both. Each variant carries its own resolved text and asset overrides plus optional metadata identifying why it differs from its siblings (xdm:language, xdm:customizers).",
+      "properties": {
+        "xdm:variantID": {
+          "type": "string",
+          "title": "Variant ID",
+          "description": "Stable identifier for the variant within the parent creative. Use the ad-network's own identifier when one exists; otherwise the connector should mint a deterministic value (for example, a hash of the variant's discriminator fields)."
+        },
+        "xdm:language": {
+          "type": "string",
+          "title": "Language",
+          "description": "BCP 47 language tag identifying the locale this variant targets, when the variant differs by language. Languages are specified in language code as defined in [IETF BCP 47](https://tools.ietf.org/html/bcp47).",
+          "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
+          "examples": ["en-US", "ar-AR", "fr-FR", "ja-JP", "es-ES"]
+        },
+        "xdm:customizers": {
+          "type": "array",
+          "title": "Customizers",
+          "description": "Resolved ad-network customizer / template attributes whose substitution produced this variant's rendered text and assets. Each entry captures one (name, type, value, scope) tuple. Absent when the variant differs only by language or when no customizer was used.",
+          "items": {
+            "$ref": "#/definitions/creativeCustomizer"
+          }
+        },
+        "xdm:title": {
+          "type": "string",
+          "title": "Title",
+          "description": "Resolved creative title or headline for this variant. Overrides the creative-level title."
+        },
+        "xdm:body": {
+          "type": "string",
+          "title": "Body Text",
+          "description": "Resolved body text or description for this variant. Overrides the creative-level body."
+        },
+        "xdm:callToAction": {
+          "type": "string",
+          "title": "Call to Action",
+          "description": "Resolved call to action text or type for this variant. Overrides the creative-level call to action."
+        },
+        "xdm:destinationURL": {
+          "type": "string",
+          "format": "uri",
+          "title": "Destination URL",
+          "description": "Resolved landing page URL for this variant. Overrides the creative-level destination URL."
+        },
+        "xdm:displayURL": {
+          "type": "string",
+          "format": "uri",
+          "title": "Display URL",
+          "description": "Resolved display URL for this variant. Overrides the creative-level display URL."
+        },
+        "xdm:trackingURLs": {
+          "type": "array",
+          "title": "Tracking URLs",
+          "description": "Variant-specific third-party tracking URLs. Overrides the creative-level tracking URLs.",
+          "items": {
+            "$ref": "#/definitions/creativeTrackingURL"
+          }
+        },
+        "xdm:assets": {
+          "type": "array",
+          "title": "Creative Assets",
+          "description": "Variant-specific media assets used in the rendered creative. Overrides the creative-level assets.",
+          "items": {
+            "$ref": "#/definitions/creativeAsset"
+          }
+        }
+      }
+    },
     "creativeLocaleVariant": {
       "type": "object",
-      "description": "A locale-specific variant of creative content. When the creative is delivered to a user matching this variant's language, the variant's fields override the creative's top-level fields. Modeled after Meta Marketing API asset_feed_spec language_label customization (see https://developers.facebook.com/docs/marketing-api/multi-language-ads/) and is also intended to capture equivalent localization concepts from other ad networks such as Google Ads, TikTok, and Snapchat.",
+      "description": "Deprecated: Use the more general creativeVariant definition instead, which captures both language and template-customizer driven renditions. A locale-specific variant of creative content. When the creative is delivered to a user matching this variant's language, the variant's fields override the creative's top-level fields. Modeled after Meta Marketing API asset_feed_spec language_label customization (see https://developers.facebook.com/docs/marketing-api/multi-language-ads/) and is also intended to capture equivalent localization concepts from other ad networks such as Google Ads, TikTok, and Snapchat.",
+      "meta:status": "deprecated",
       "properties": {
         "xdm:language": {
           "type": "string",
@@ -202,34 +323,34 @@
             "xdm:title": {
               "type": "string",
               "title": "Title",
-              "description": "Creative title or headline. When the creative defines locale variants, this is the default value used for locales that do not match any entry in xdm:localeVariants."
+              "description": "Creative title or headline. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
             },
             "xdm:body": {
               "type": "string",
               "title": "Body Text",
-              "description": "Main body text or description. When the creative defines locale variants, this is the default value used for locales that do not match any entry in xdm:localeVariants."
+              "description": "Main body text or description. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
             },
             "xdm:callToAction": {
               "type": "string",
               "title": "Call to Action",
-              "description": "Call to action text or type. When the creative defines locale variants, this is the default value used for locales that do not match any entry in xdm:localeVariants."
+              "description": "Call to action text or type. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
             },
             "xdm:destinationURL": {
               "type": "string",
               "format": "uri",
               "title": "Destination URL",
-              "description": "Landing page URL where users are directed. When the creative defines locale variants, this is the default value used for locales that do not match any entry in xdm:localeVariants."
+              "description": "Landing page URL where users are directed. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
             },
             "xdm:displayURL": {
               "type": "string",
               "format": "uri",
               "title": "Display URL",
-              "description": "URL displayed in the ad. When the creative defines locale variants, this is the default value used for locales that do not match any entry in xdm:localeVariants."
+              "description": "URL displayed in the ad. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
             },
             "xdm:trackingURLs": {
               "type": "array",
               "title": "Tracking URLs",
-              "description": "Third-party tracking URLs. When the creative defines locale variants, this is the default value used for locales that do not match any entry in xdm:localeVariants.",
+              "description": "Third-party tracking URLs. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants.",
               "items": {
                 "$ref": "#/definitions/creativeTrackingURL"
               }
@@ -237,15 +358,24 @@
             "xdm:assets": {
               "type": "array",
               "title": "Creative Assets",
-              "description": "Media assets used in the creative. When the creative defines locale variants, this is the default value used for locales that do not match any entry in xdm:localeVariants.",
+              "description": "Media assets used in the creative. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants.",
               "items": {
                 "$ref": "#/definitions/creativeAsset"
+              }
+            },
+            "xdm:variants": {
+              "type": "array",
+              "title": "Creative Variants",
+              "description": "Enumerates every materially different rendered version that the ad network may serve from this single creative. Use one entry per distinct combination of language and resolved customizer values. Captures Meta Marketing API multi-language ads (asset_feed_spec language_label, see https://developers.facebook.com/docs/marketing-api/multi-language-ads/), Google Ads CustomizerAttribute substitution (see https://developers.google.com/google-ads/api/docs/ads/customize-responsive-search-ads), and equivalent localization or template-substitution mechanisms on other ad networks (TikTok, Snapchat, LinkedIn). Consumers should iterate this array to obtain the full set of rendered impressions for downstream snapshotting, feature extraction, or analytics. When a delivery context does not match any variant, fall back to the creative-level fields.",
+              "items": {
+                "$ref": "#/definitions/creativeVariant"
               }
             },
             "xdm:localeVariants": {
               "type": "array",
               "title": "Locale Variants",
-              "description": "Per-language variants of the creative. Each variant overrides creative-level fields (title, body, call to action, destination URL, display URL, tracking URLs, assets) for users matched to that locale. When a single creative is delivered with locale-specific content (as produced by Meta Marketing API multi-language ads, Google Ads ad customizers, or equivalent ad-network localization features), each language version is represented as one item in this array. Consumers should look up the appropriate variant by xdm:language and fall back to the creative-level fields when no variant matches.",
+              "description": "Deprecated: Use xdm:variants instead, which generalizes locale-keyed variants to also cover template/customizer-driven renditions used by ad networks such as Google Ads. Per-language variants of the creative. Each variant overrides creative-level fields (title, body, call to action, destination URL, display URL, tracking URLs, assets) for users matched to that locale. When a single creative is delivered with locale-specific content (as produced by Meta Marketing API multi-language ads, Google Ads ad customizers, or equivalent ad-network localization features), each language version is represented as one item in this array. Consumers should look up the appropriate variant by xdm:language and fall back to the creative-level fields when no variant matches.",
+              "meta:status": "deprecated",
               "items": {
                 "$ref": "#/definitions/creativeLocaleVariant"
               }

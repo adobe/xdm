@@ -1,0 +1,61 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Custom Channel Context",
+  "description": "Per-event channel identity for outbound custom-channel deliveries (such as Viber, Kakao, and other customer-created channels). Present alongside `customExecutionMetrics` when `customExecutionMetrics.executionType` is `channel`. Carries identifiers for the three layers of a custom channel's setup: the channel template (Layer 1 — `customChannelID` / `customChannelVersion`), the API credentials (Layer 2 — `customChannelAuthID` / `customChannelAuthName`), and the channel configuration (Layer 3 — `customChannelConfigurationID` / `customChannelConfigurationName`). Other channel families (email, SMS, push) use their own channel-context field groups and leave this absent.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "customChannelContext": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelID": {
+          "title": "Custom Channel ID",
+          "type": "string",
+          "description": "Layer-1 identifier — the slug that identifies the channel template this delivery used (for example, `viber`, `kakao`, or another customer-chosen slug). Stable for the lifetime of the registered custom channel. Used as the primary identifier for filtering custom-channel reporting; the slug also serves as the human-readable display name in reports."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelVersion": {
+          "title": "Custom Channel Version",
+          "type": "string",
+          "description": "Layer-1 Custom Channel template version identifier (e.g. `v1_line`, `v1_viber`). Used to distinguish reports across template evolution; e.g., separating pre-template-bump and post-template-bump metrics. Stable for a given publication of the Custom Channel template."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelAuthID": {
+          "title": "API Credentials ID",
+          "type": "string",
+          "description": "Layer-2 identifier — the unique ID of the specific API credentials used for this delivery. Distinct from `customChannelID` (the Layer-1 template); many credential entries can exist for one channel template. Intended for future support drilldown (for example, identifying which credentials produced a failure) and is not currently surfaced as a reporting filter. May be empty when the delivery path did not involve the API-credentials layer."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelAuthName": {
+          "title": "API Credentials Name",
+          "type": "string",
+          "description": "Layer-2 display name for the API credentials (for example, `Viber Marketing Bot — APAC`), chosen when the credentials were created. Intended for future support drilldown and is not currently surfaced as a reporting filter; may be empty until the upstream name lookup is available."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelConfigurationID": {
+          "title": "Custom Channel Configuration ID",
+          "type": "string",
+          "description": "Layer-3 identifier — the unique ID of the channel configuration (the marketer-facing usage policy) selected for this campaign or journey. Distinct from `customChannelAuthID` (Layer-2 credentials); many configurations can reference the same credentials. Intended for future marketer-facing drilldown and is not currently surfaced as a reporting filter. May be empty when the delivery path did not involve the channel-configuration layer."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/customChannelContext/customChannelConfigurationName": {
+          "title": "Custom Channel Configuration Name",
+          "type": "string",
+          "description": "Layer-3 display name for the channel configuration (for example, `Viber Holiday Marketing Config`), chosen when the configuration was created. Intended for future marketer-facing drilldown. May be empty when the delivery path did not involve the channel-configuration layer."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/customChannelContext"
+    }
+  ],
+  "meta:status": "experimental"
+}

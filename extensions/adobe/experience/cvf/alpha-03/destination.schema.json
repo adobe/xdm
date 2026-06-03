@@ -5,10 +5,10 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/cvf/alpha-02/cdp/audience",
+  "$id": "https://ns.adobe.com/experience/cvf/alpha-03/cdp/destination",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Cvf: Alpha02: Audience",
-  "description": "CDP audience data. Each entry represents an AEP audience.",
+  "title": "Cvf: Alpha03: Destination",
+  "description": "CDP destination data.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -16,19 +16,19 @@
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "definitions": {
-    "audience": {
+    "destination": {
       "properties": {
         "cvf": {
           "type": "object",
           "properties": {
-            "audience": {
-              "title": "Audience",
-              "description": "Audience id, name, evaluation mode, and related data.",
+            "destination": {
+              "title": "Destination",
+              "description": "Destination id, name, export mode, and related data.",
               "type": "object",
               "properties": {
                 "id": {
                   "title": "ID",
-                  "description": "Audience identifier.",
+                  "description": "Destination identifier.",
                   "type": "string"
                 },
                 "name": {
@@ -37,7 +37,7 @@
                 },
                 "creationTime": {
                   "title": "Creation Time",
-                  "description": "Audience creation timestamp.",
+                  "description": "Destination creation timestamp.",
                   "type": "string",
                   "format": "date-time"
                 },
@@ -45,9 +45,9 @@
                   "title": "Is Active",
                   "type": "boolean"
                 },
-                "evaluationMode": {
-                  "title": "Evaluation Mode",
-                  "description": "Evaluation mode (e.g. streaming, batch).",
+                "exportMode": {
+                  "title": "Export Mode",
+                  "description": "Export mode.",
                   "type": "string"
                 },
                 "numProfiles": {
@@ -57,12 +57,20 @@
                   "minimum": 0,
                   "maximum": 9007199254740991
                 },
-                "destinations": {
-                  "title": "Destinations",
-                  "description": "Destination names this audience is sent to.",
+                "audiences": {
+                  "title": "Audiences",
+                  "description": "Audience names exported to this destination.",
                   "type": "array",
+                  "meta:xdmType": "array",
                   "items": {
-                    "type": "string"
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                      "name": {
+                        "title": "Name",
+                        "type": "string"
+                      }
+                    }
                   }
                 }
               }
@@ -74,8 +82,8 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/audience"
+      "$ref": "#/definitions/destination"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "experimental"
 }

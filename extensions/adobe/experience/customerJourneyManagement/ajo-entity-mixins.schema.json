@@ -129,6 +129,11 @@
               "$ref": "https://ns.adobe.com/xdm/channels/channel",
               "description": "Each specific experience channel defines a constant `@id`."
             },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelName": {
+              "title": "Channel Name",
+              "type": "string",
+              "description": "Human-readable display name of the channel instance — for customer-created custom channels, the configured channel name (for example, the name a customer gives their Viber channel). The name is user-editable, so reporting aggregates on the immutable channel id (`channel.@id`) and renders this denormalized name for display only; it is resolved when the entity row is emitted."
+            },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": {
               "title": "The json template used in the message",
               "type": "string",

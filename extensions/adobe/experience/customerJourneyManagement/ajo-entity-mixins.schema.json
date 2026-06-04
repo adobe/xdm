@@ -144,11 +144,6 @@
               "type": "string",
               "description": "For customer-created custom channels, the HTTP method used to call the endpoint (for example, POST)."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/throttleRate": {
-              "title": "Throttle Rate",
-              "type": "integer",
-              "description": "For customer-created custom channels, the configured throttling rate as requests admitted per refill interval. Absent when the channel is not throttled."
-            },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": {
               "title": "The json template used in the message",
               "type": "string",

@@ -21,20 +21,10 @@
           "type": "integer",
           "description": "Time in milliseconds for the request/response exchange with the endpoint. Equals the configured timeout for a timed-out request. Absent when no request was attempted."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/waitTime": {
-          "title": "Wait Time",
-          "type": "integer",
-          "description": "Time in milliseconds the request waited in the dispatch queue before the exchange began."
-        },
         "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/statusCode": {
           "title": "Status Code",
           "type": "integer",
           "description": "The HTTP response status code returned by the endpoint. Absent when no response was received."
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/cacheHit": {
-          "title": "Cache Hit",
-          "type": "boolean",
-          "description": "Whether the response was served from a response cache instead of reaching the endpoint."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/errorCode": {
           "title": "Error Code",

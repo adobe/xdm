@@ -1,0 +1,77 @@
+{
+  "xdm:paidMediaCreative": {
+    "xdm:creativeID": "creative-googleads-customizer-001",
+    "xdm:creativeType": "text",
+    "xdm:title": "Get {CUSTOMIZER.discount} on Adobe Creative Cloud Subscription",
+    "xdm:body": "Subscribe today and unlock our full app suite at a limited-time price.",
+    "xdm:callToAction": "Buy Now",
+    "xdm:destinationURL": "https://www.adobe.com/creativecloud/buy/students.html",
+    "xdm:displayURL": "adobe.com/creativecloud",
+    "xdm:variants": [
+      {
+        "xdm:variantID": "v-discount-5",
+        "xdm:language": "en-US",
+        "xdm:customizers": [
+          {
+            "xdm:name": "discount",
+            "xdm:type": "percent",
+            "xdm:value": "5%",
+            "xdm:scope": "adGroupCriterion"
+          }
+        ],
+        "xdm:title": "Get 5% on Adobe Creative Cloud Subscription",
+        "xdm:body": "Subscribe today and unlock our full app suite at a limited-time price.",
+        "xdm:callToAction": "Buy Now",
+        "xdm:destinationURL": "https://www.adobe.com/creativecloud/buy/students.html?promo=5pct"
+      },
+      {
+        "xdm:variantID": "v-discount-10",
+        "xdm:language": "en-US",
+        "xdm:customizers": [
+          {
+            "xdm:name": "discount",
+            "xdm:type": "percent",
+            "xdm:value": "10%",
+            "xdm:scope": "adGroupCriterion"
+          }
+        ],
+        "xdm:title": "Get 10% on Adobe Creative Cloud Subscription",
+        "xdm:body": "Subscribe today and unlock our full app suite at a limited-time price.",
+        "xdm:callToAction": "Buy Now",
+        "xdm:destinationURL": "https://www.adobe.com/creativecloud/buy/students.html?promo=10pct"
+      },
+      {
+        "xdm:variantID": "v-discount-15",
+        "xdm:language": "en-US",
+        "xdm:customizers": [
+          {
+            "xdm:name": "discount",
+            "xdm:type": "percent",
+            "xdm:value": "15%",
+            "xdm:scope": "adGroupCriterion"
+          }
+        ],
+        "xdm:title": "Get 15% on Adobe Creative Cloud Subscription",
+        "xdm:body": "Subscribe today and unlock our full app suite at a limited-time price.",
+        "xdm:callToAction": "Buy Now",
+        "xdm:destinationURL": "https://www.adobe.com/creativecloud/buy/students.html?promo=15pct"
+      },
+      {
+        "xdm:variantID": "v-discount-20",
+        "xdm:language": "en-US",
+        "xdm:customizers": [
+          {
+            "xdm:name": "discount",
+            "xdm:type": "percent",
+            "xdm:value": "20%",
+            "xdm:scope": "adGroupCriterion"
+          }
+        ],
+        "xdm:title": "Get 20% on Adobe Creative Cloud Subscription",
+        "xdm:body": "Subscribe today and unlock our full app suite at a limited-time price.",
+        "xdm:callToAction": "Buy Now",
+        "xdm:destinationURL": "https://www.adobe.com/creativecloud/buy/students.html?promo=20pct"
+      }
+    ]
+  }
+}

@@ -21,8 +21,9 @@
         "xdm:hash": "default0123456789abcdef0123456789"
       }
     ],
-    "xdm:localeVariants": [
+    "xdm:variants": [
       {
+        "xdm:variantID": "v-en-US",
         "xdm:language": "en-US",
         "xdm:title": "Discover Our New Collection",
         "xdm:body": "Shop the latest arrivals and find your next favorite piece.",
@@ -44,6 +45,7 @@
         ]
       },
       {
+        "xdm:variantID": "v-ar-AR",
         "xdm:language": "ar-AR",
         "xdm:title": "اكتشف مجموعتنا الجديدة",
         "xdm:body": "تسوق أحدث وصولاتنا وابحث عن قطعتك المفضلة التالية.",
@@ -65,6 +67,7 @@
         ]
       },
       {
+        "xdm:variantID": "v-fr-FR",
         "xdm:language": "fr-FR",
         "xdm:title": "Découvrez notre nouvelle collection",
         "xdm:body": "Achetez les dernières nouveautés et trouvez votre prochaine pièce préférée.",

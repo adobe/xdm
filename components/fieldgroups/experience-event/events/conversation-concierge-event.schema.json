@@ -43,6 +43,11 @@
                   "title": "Concierge Details",
                   "type": "object",
                   "properties": {
+                    "xdm:conciergeId": {
+                      "title": "Concierge ID",
+                      "type": "string",
+                      "description": "Unique identifier for the Concierge."
+                    },
                     "xdm:conciergeName": {
                       "title": "Concierge Name",
                       "type": "string",
@@ -60,10 +65,17 @@
                       "format": "date-time",
                       "description": "ISO 8601 timestamp for when the session or conversation context was created."
                     },
+                    "xdm:endedAt": {
+                      "title": "Ended At",
+                      "type": "string",
+                      "format": "date-time",
+                      "description": "ISO 8601 timestamp for when the session or conversation context ended."
+                    },
                     "xdm:duration": {
                       "title": "Duration",
                       "type": "string",
-                      "description": "Elapsed duration as an ISO 8601 duration (for example PT15M for 15 minutes)."
+                      "description": "Elapsed duration as an ISO 8601 duration (for example PT15M for 15 minutes).",
+                      "meta:status": "deprecated"
                     },
                     "xdm:conversationStatus": {
                       "title": "Conversation Status",

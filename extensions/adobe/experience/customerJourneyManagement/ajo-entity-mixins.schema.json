@@ -132,7 +132,7 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelName": {
               "title": "Channel Name",
               "type": "string",
-              "description": "Human-readable display name of the channel instance — for customer-created custom channels, the configured channel name (for example, the name a customer gives their Viber channel). The name is user-editable, so reporting aggregates on the immutable channel id (`channel.@id`) and renders this denormalized name for display only; it is resolved when the entity row is emitted."
+              "description": "The display name of the channel. For customer-created custom channels, this is the channel name configured by the customer."
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": {
               "title": "The json template used in the message",

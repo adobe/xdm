@@ -134,6 +134,16 @@
               "type": "string",
               "description": "The display name of the channel. For customer-created custom channels, this is the channel name configured by the customer."
             },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/endpoint": {
+              "title": "Endpoint",
+              "type": "string",
+              "description": "For customer-created custom channels, the configured endpoint URL in template form, with placeholders left un-substituted and query parameters removed."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/httpMethod": {
+              "title": "HTTP Method",
+              "type": "string",
+              "description": "For customer-created custom channels, the HTTP method used to call the endpoint (for example, POST)."
+            },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": {
               "title": "The json template used in the message",
               "type": "string",

@@ -1,11 +1,6 @@
 {
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/executionType": "channel",
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/endpoint": "https://api.example.com/v1/messages",
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/method": "POST",
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/requestTimestamp": "2026-05-20T14:36:06.450Z",
   "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/responseTime": 2462,
   "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/statusCode": 503,
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/throttleApplicable": false,
   "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/errorCode": "HTTP_503",
   "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/errorReason": "503 Service Unavailable after 3 retries"
 }

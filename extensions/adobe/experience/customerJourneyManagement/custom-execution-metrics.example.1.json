@@ -1,9 +1,4 @@
 {
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/executionType": "channel",
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/endpoint": "https://api.example.com/v1/messages",
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/method": "POST",
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/requestTimestamp": "2026-05-20T14:35:22.264Z",
   "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/responseTime": 187,
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/statusCode": 200,
-  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/throttleApplicable": false
+  "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/statusCode": 200
 }

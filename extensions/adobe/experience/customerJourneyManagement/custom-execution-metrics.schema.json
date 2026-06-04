@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent - Custom Execution Metrics",
-  "description": "Per-call execution telemetry for outbound HTTP deliveries through customer-configured channels in Adobe Journey Optimizer.",
+  "description": "Per-recipient HTTP delivery results — status, latency, and error — for outbound deliveries through customer-configured channels in Adobe Journey Optimizer. These vary by recipient and delivery attempt. Execution-level configuration that is constant across recipients (endpoint, method, throttling, channel name) is carried on the AJO entity, not here.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -16,27 +16,6 @@
   "definitions": {
     "customExecutionMetrics": {
       "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/executionType": {
-          "title": "Execution Type",
-          "type": "string",
-          "description": "The kind of execution this event represents. Open string; see examples for sample values."
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/endpoint": {
-          "title": "Endpoint",
-          "type": "string",
-          "description": "The configured endpoint URL in template form, with query parameters removed. Absent when no request was attempted."
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/method": {
-          "title": "HTTP Method",
-          "type": "string",
-          "description": "The HTTP method used for the call. Absent when no request was attempted."
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/requestTimestamp": {
-          "title": "Request Timestamp",
-          "type": "string",
-          "format": "date-time",
-          "description": "Timestamp captured immediately before the request is sent. Absent when no request was attempted."
-        },
         "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/responseTime": {
           "title": "Response Time",
           "type": "integer",
@@ -52,20 +31,10 @@
           "type": "integer",
           "description": "The HTTP response status code returned by the endpoint. Absent when no response was received."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/throttleApplicable": {
-          "title": "Throttle Applicable",
-          "type": "boolean",
-          "description": "Whether a throttling configuration applies to this delivery."
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/cacheApplicable": {
-          "title": "Cache Applicable",
-          "type": "boolean",
-          "description": "Whether a response-cache configuration applies to this delivery."
-        },
         "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/cacheHit": {
           "title": "Cache Hit",
           "type": "boolean",
-          "description": "Whether the response was served from the response cache."
+          "description": "Whether the response was served from a response cache instead of reaching the endpoint."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/customExecutionMetrics/errorCode": {
           "title": "Error Code",

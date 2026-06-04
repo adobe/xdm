@@ -25,6 +25,7 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
       "@id": "https://ns.adobe.com/xdm/channels/email"
     },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelName": "Acme Marketing Channel",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": "Hi {{person.firstName}}",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublishedAt": "2021-06-25T15:52:25+00:00",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigName": "Push Configuration Name",

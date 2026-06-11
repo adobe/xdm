@@ -145,6 +145,16 @@
           "title": "Offer details",
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
           "description": "Describes offer(s) involved in a message feedback."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/responseCode": {
+          "title": "Response Code",
+          "type": "integer",
+          "description": "The HTTP response status code returned by the external endpoint. Applicable to channels that deliver via outbound HTTP calls. Absent when no HTTP response was received."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/responseDurationMillis": {
+          "title": "Response Duration",
+          "type": "integer",
+          "description": "Time in milliseconds for the outbound HTTP request/response exchange with the external endpoint. Absent when no outbound HTTP call was attempted."
         }
       }
     }

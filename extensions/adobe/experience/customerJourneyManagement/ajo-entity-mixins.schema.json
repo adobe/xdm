@@ -129,20 +129,27 @@
               "$ref": "https://ns.adobe.com/xdm/channels/channel",
               "description": "Each specific experience channel defines a constant `@id`."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelName": {
-              "title": "Channel Name",
-              "type": "string",
-              "description": "The display name of the channel. For customer-created custom channels, this is the channel name configured by the customer."
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/endpoint": {
-              "title": "Endpoint",
-              "type": "string",
-              "description": "For customer-created custom channels, the configured endpoint URL in template form, with placeholders left un-substituted and query parameters removed."
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/httpMethod": {
-              "title": "HTTP Method",
-              "type": "string",
-              "description": "For customer-created custom channels, the HTTP method used to call the endpoint (for example, POST)."
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/customChannel": {
+              "title": "Custom Channel Specific Fields",
+              "type": "object",
+              "description": "Fields specific to customer-created custom channels delivered via outbound HTTP calls.",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": {
+                  "title": "Custom Channel Name",
+                  "type": "string",
+                  "description": "The display name of the custom channel as configured by the customer."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/endpoint": {
+                  "title": "Custom Channel Endpoint",
+                  "type": "string",
+                  "description": "The configured endpoint URL in template form."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/httpMethod": {
+                  "title": "Custom Channel HTTP Method",
+                  "type": "string",
+                  "description": "The HTTP method used to call the endpoint (for example, POST)."
+                }
+              }
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": {
               "title": "The json template used in the message",

@@ -5,16 +5,16 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/messagingChannelContext",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/channelContext",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe CJM ExperienceEvent - Messaging Channel Context",
-  "description": "SMS and WhatsApp channel context for inbound and tracking events. Captures channel-specific fields including inbound message details and WhatsApp-specific interaction.",
+  "title": "Adobe CJM ExperienceEvent - Channel Context",
+  "description": "Channel context for inbound and tracking events across SMS, WhatsApp, RCS, and custom channels. Captures channel-specific fields including inbound message details, interaction, and flow submission data.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
-    "messagingChannelContext": {
+    "channelContext": {
       "properties": {
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
           "title": "Experience channel",
@@ -266,8 +266,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/messagingChannelContext"
+      "$ref": "#/definitions/channelContext"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

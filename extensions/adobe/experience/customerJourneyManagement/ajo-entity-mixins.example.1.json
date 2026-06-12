@@ -25,9 +25,11 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
       "@id": "https://ns.adobe.com/xdm/channels/email"
     },
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelName": "Acme Marketing Channel",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/endpoint": "https://api.example.com/v1/messages",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/httpMethod": "POST",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/customChannel": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Acme Marketing Channel",
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/endpoint": "https://api.example.com/v1/messages",
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/httpMethod": "POST"
+    },
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": "Hi {{person.firstName}}",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublishedAt": "2021-06-25T15:52:25+00:00",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigName": "Push Configuration Name",

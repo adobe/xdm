@@ -1,4 +1,22 @@
 {
   "xdm:brandPageURL": "https://www.adobe.com/acrobat.html",
-  "xdm:brandImageURL": "video products"
+  "xdm:brandImageURL": "video products",
+  "xdm:brandLogoURL": "https://www.adobe.com/acrobat.html",
+  "xdm:brandCardBackgroundColor": "red",
+  "xdm:learningResourceURL": "https://www.adobe.com/acrobat.html",
+  "xdm:brandDetails": ["video products"],
+  "xdm:actions": [
+    {
+      "xdm:name": "buy",
+      "xdm:type": "primary",
+      "xdm:title": "Buy Now",
+      "xdm:url": "https://www.adobe.com/acrobat.html"
+    },
+    {
+      "xdm:name": "learn",
+      "xdm:type": "secondary",
+      "xdm:title": "Learn More",
+      "xdm:url": "https://www.adobe.com/acrobat.html"
+    }
+  ]
 }

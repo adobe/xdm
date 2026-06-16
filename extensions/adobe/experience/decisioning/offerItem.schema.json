@@ -137,6 +137,25 @@
                 "title": "PQL Query for Dynamic Capping Threshold",
                 "description": "PQL query to determine the capping threshold.",
                 "type": "string"
+              },
+              "xdm:entity": {
+                "title": "Entity",
+                "description": "Entity to comply with.  It will be Offer or Placement.",
+                "type": "string",
+                "default": "offer",
+                "enum": ["offer", "placement"],
+                "meta:enum": {
+                  "offer": "To comply with offer.",
+                  "placement": "To comply with offer placement."
+                }
+              },
+              "xdm:placements": {
+                "title": "Placements",
+                "description": "Placements for specific placement capping",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             },
             "required": ["xdm:scope"]

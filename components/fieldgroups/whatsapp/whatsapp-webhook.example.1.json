@@ -8,14 +8,14 @@
           {
             "xdm:field": "messages",
             "xdm:value": {
-              "xdm:messagingProduct": "whatsapp",
+              "xdm:messaging_product": "whatsapp",
               "xdm:metadata": {
-                "xdm:displayPhoneNumber": "+15551234567",
-                "xdm:phoneNumberId": "987654321"
+                "xdm:display_phone_number": "+15551234567",
+                "xdm:phone_number_id": "987654321"
               },
               "xdm:contacts": [
                 {
-                  "xdm:waId": "15559876543",
+                  "xdm:wa_id": "15559876543",
                   "xdm:profile": {
                     "xdm:name": "Jane Doe"
                   }
@@ -38,7 +38,7 @@
                   "xdm:type": "image",
                   "xdm:image": {
                     "xdm:id": "media.IMG001",
-                    "xdm:mimeType": "image/jpeg",
+                    "xdm:mime_type": "image/jpeg",
                     "xdm:sha256": "abc123def456",
                     "xdm:caption": "Here is a photo of the issue."
                   }
@@ -50,7 +50,7 @@
                   "xdm:type": "interactive",
                   "xdm:interactive": {
                     "xdm:type": "button_reply",
-                    "xdm:buttonReply": {
+                    "xdm:button_reply": {
                       "xdm:id": "btn_confirm",
                       "xdm:title": "Confirm Order"
                     }
@@ -62,7 +62,7 @@
                   "xdm:id": "wamid.OUT001",
                   "xdm:status": "delivered",
                   "xdm:timestamp": "1716825650",
-                  "xdm:recipientId": "15559876543",
+                  "xdm:recipient_id": "15559876543",
                   "xdm:conversation": {
                     "xdm:id": "conv.XYZ999",
                     "xdm:origin": {
@@ -71,7 +71,7 @@
                   },
                   "xdm:pricing": {
                     "xdm:billable": true,
-                    "xdm:pricingModel": "CBP",
+                    "xdm:pricing_model": "CBP",
                     "xdm:category": "utility"
                   }
                 }

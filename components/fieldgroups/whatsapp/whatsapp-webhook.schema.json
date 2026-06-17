@@ -65,7 +65,7 @@
                           "description": "The payload of a change event, containing metadata, sender contacts, messages, and statuses.",
                           "type": "object",
                           "properties": {
-                            "xdm:messagingProduct": {
+                            "xdm:messaging_product": {
                               "title": "Messaging Product",
                               "description": "Always 'whatsapp'.",
                               "type": "string"
@@ -75,12 +75,12 @@
                               "description": "Information about the business phone number that received the message.",
                               "type": "object",
                               "properties": {
-                                "xdm:displayPhoneNumber": {
+                                "xdm:display_phone_number": {
                                   "title": "Display Phone Number",
                                   "description": "The business phone number displayed to customers.",
                                   "type": "string"
                                 },
-                                "xdm:phoneNumberId": {
+                                "xdm:phone_number_id": {
                                   "title": "Phone Number ID",
                                   "description": "The WhatsApp business phone number ID.",
                                   "type": "string"
@@ -89,13 +89,13 @@
                             },
                             "xdm:contacts": {
                               "title": "Sender Contacts",
-                              "description": "Profile information for the senders in this batch. Join to messages on contacts.waId === messages.from.",
+                              "description": "Profile information for the senders in this batch. Join to messages on contacts.wa_id === messages.from.",
                               "type": "array",
                               "items": {
                                 "title": "Sender Contact",
                                 "type": "object",
                                 "properties": {
-                                  "xdm:waId": {
+                                  "xdm:wa_id": {
                                     "title": "WhatsApp ID",
                                     "description": "The sender's WhatsApp ID (typically their phone number without +).",
                                     "type": "string"
@@ -131,7 +131,7 @@
                                   },
                                   "xdm:from": {
                                     "title": "From",
-                                    "description": "The sender's phone number in E.164 format (without +). Matches senderContact.waId.",
+                                    "description": "The sender's phone number in E.164 format (without +). Matches senderContact.wa_id.",
                                     "type": "string"
                                   },
                                   "xdm:timestamp": {
@@ -179,7 +179,7 @@
                                     "description": "Present when the message is a reply to a previous message.",
                                     "type": "object",
                                     "properties": {
-                                      "xdm:messageId": {
+                                      "xdm:id": {
                                         "title": "Replied-To Message ID",
                                         "description": "The wamid of the message being replied to.",
                                         "type": "string"
@@ -213,7 +213,7 @@
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
                                         "type": "string"
                                       },
-                                      "xdm:mimeType": {
+                                      "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the audio file, e.g. 'audio/ogg; codecs=opus'.",
                                         "type": "string"
@@ -230,7 +230,7 @@
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
                                         "type": "string"
                                       },
-                                      "xdm:mimeType": {
+                                      "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the image, e.g. 'image/jpeg'.",
                                         "type": "string"
@@ -257,7 +257,7 @@
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
                                         "type": "string"
                                       },
-                                      "xdm:mimeType": {
+                                      "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the video, e.g. 'video/mp4'.",
                                         "type": "string"
@@ -284,7 +284,7 @@
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
                                         "type": "string"
                                       },
-                                      "xdm:mimeType": {
+                                      "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the document, e.g. 'application/pdf'.",
                                         "type": "string"
@@ -316,7 +316,7 @@
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
                                         "type": "string"
                                       },
-                                      "xdm:mimeType": {
+                                      "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the sticker. Always 'image/webp'.",
                                         "type": "string"
@@ -364,7 +364,7 @@
                                       }
                                     }
                                   },
-                                  "xdm:contactCards": {
+                                  "xdm:contact_cards": {
                                     "title": "Contact Cards",
                                     "description": "Present when type = 'contacts'. An array of vCard-like contact objects shared by the sender.",
                                     "type": "array",
@@ -375,19 +375,19 @@
                                           "title": "Name",
                                           "type": "object",
                                           "properties": {
-                                            "xdm:formattedName": {
+                                            "xdm:formatted_name": {
                                               "title": "Formatted Name",
                                               "type": "string"
                                             },
-                                            "xdm:firstName": {
+                                            "xdm:first_name": {
                                               "title": "First Name",
                                               "type": "string"
                                             },
-                                            "xdm:lastName": {
+                                            "xdm:last_name": {
                                               "title": "Last Name",
                                               "type": "string"
                                             },
-                                            "xdm:middleName": {
+                                            "xdm:middle_name": {
                                               "title": "Middle Name",
                                               "type": "string"
                                             },
@@ -399,8 +399,7 @@
                                               "title": "Prefix",
                                               "type": "string"
                                             }
-                                          },
-                                          "required": ["xdm:formattedName"]
+                                          }
                                         },
                                         "xdm:phones": {
                                           "title": "Phone Numbers",
@@ -416,7 +415,7 @@
                                                 "title": "Type",
                                                 "type": "string"
                                               },
-                                              "xdm:waId": {
+                                              "xdm:wa_id": {
                                                 "title": "WhatsApp ID",
                                                 "type": "string"
                                               }
@@ -466,7 +465,7 @@
                                                 "title": "Country",
                                                 "type": "string"
                                               },
-                                              "xdm:countryCode": {
+                                              "xdm:country_code": {
                                                 "title": "Country Code",
                                                 "type": "string"
                                               },
@@ -531,7 +530,7 @@
                                           "list_reply": "List Reply"
                                         }
                                       },
-                                      "xdm:buttonReply": {
+                                      "xdm:button_reply": {
                                         "title": "Button Reply",
                                         "description": "Present when interactive.type = 'button_reply'.",
                                         "type": "object",
@@ -544,10 +543,9 @@
                                             "title": "Button Title",
                                             "type": "string"
                                           }
-                                        },
-                                        "required": ["xdm:id", "xdm:title"]
+                                        }
                                       },
-                                      "xdm:listReply": {
+                                      "xdm:list_reply": {
                                         "title": "List Reply",
                                         "description": "Present when interactive.type = 'list_reply'.",
                                         "type": "object",
@@ -564,8 +562,7 @@
                                             "title": "Row Description",
                                             "type": "string"
                                           }
-                                        },
-                                        "required": ["xdm:id", "xdm:title"]
+                                        }
                                       }
                                     }
                                   },
@@ -591,7 +588,7 @@
                                     "description": "Present when type = 'order'. Sent when a user places an order from a catalog.",
                                     "type": "object",
                                     "properties": {
-                                      "xdm:catalogId": {
+                                      "xdm:catalog_id": {
                                         "title": "Catalog ID",
                                         "description": "ID of the WhatsApp catalog the order was placed from.",
                                         "type": "string"
@@ -601,14 +598,14 @@
                                         "description": "Optional note from the customer accompanying the order.",
                                         "type": "string"
                                       },
-                                      "xdm:productItems": {
+                                      "xdm:product_items": {
                                         "title": "Product Items",
                                         "description": "Line items in the order.",
                                         "type": "array",
                                         "items": {
                                           "type": "object",
                                           "properties": {
-                                            "xdm:productRetailerId": {
+                                            "xdm:product_retailer_id": {
                                               "title": "Product Retailer ID",
                                               "description": "The retailer's SKU/product ID from the catalog.",
                                               "type": "string"
@@ -619,7 +616,7 @@
                                               "type": "integer",
                                               "minimum": 1
                                             },
-                                            "xdm:itemPrice": {
+                                            "xdm:item_price": {
                                               "title": "Item Price",
                                               "description": "Unit price of the product at time of order.",
                                               "type": "number"
@@ -630,13 +627,7 @@
                                               "type": "string",
                                               "pattern": "^[A-Z]{3}$"
                                             }
-                                          },
-                                          "required": [
-                                            "xdm:productRetailerId",
-                                            "xdm:quantity",
-                                            "xdm:itemPrice",
-                                            "xdm:currency"
-                                          ]
+                                          }
                                         }
                                       }
                                     }
@@ -646,7 +637,7 @@
                                     "description": "Present when type = 'reaction'. Sent when a user reacts to a message with an emoji.",
                                     "type": "object",
                                     "properties": {
-                                      "xdm:messageId": {
+                                      "xdm:message_id": {
                                         "title": "Reacted-To Message ID",
                                         "description": "The wamid of the message that was reacted to.",
                                         "type": "string"
@@ -697,7 +688,7 @@
                                     "description": "Unix epoch timestamp when this status was recorded.",
                                     "type": "string"
                                   },
-                                  "xdm:recipientId": {
+                                  "xdm:recipient_id": {
                                     "title": "Recipient ID",
                                     "description": "Phone number of the message recipient.",
                                     "type": "string"
@@ -733,7 +724,7 @@
                                         "description": "Whether this message is billable.",
                                         "type": "boolean"
                                       },
-                                      "xdm:pricingModel": {
+                                      "xdm:pricing_model": {
                                         "title": "Pricing Model",
                                         "type": "string"
                                       },
@@ -762,7 +753,7 @@
                                           "title": "Error Message",
                                           "type": "string"
                                         },
-                                        "xdm:errorData": {
+                                        "xdm:error_data": {
                                           "type": "object",
                                           "properties": {
                                             "xdm:details": {
@@ -777,14 +768,12 @@
                                 }
                               }
                             }
-                          },
-                          "required": ["xdm:messagingProduct", "xdm:metadata"]
+                          }
                         }
                       }
                     }
                   }
-                },
-                "required": ["xdm:id", "xdm:changes"]
+                }
               }
             }
           }

@@ -1,21 +1,23 @@
 {
-  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
-  "timestamp": "2016-10-26T17:26:23+00:00",
-  "braze:timezone": "America/Chicago",
+  "@id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "braze:appID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "timestamp": "2034-06-13T09:08:24+00:00",
+  "braze:timezone": "America/New_York",
+  "braze:appGroupID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "braze:user": {
-    "braze:userID": "0123456789abcdef01234567",
-    "braze:externalUserID": "user_id"
+    "braze:userID": "639a35d192b0df004d06514c",
+    "braze:externalUserID": "external_user_id"
   },
   "braze:canvas": {
-    "braze:canvasID": "21234567-89ab-cdef-0123-456789abcdef",
-    "braze:canvasName": "Test Canvas",
-    "braze:canvasVariationID": "31234567-89ab-cdef-0123-456789abcdef",
-    "braze:canvasStepID": "41234567-89ab-cdef-0123-456789abcdef",
-    "braze:canvasVariationName": "Test Canvas Variation Name",
-    "braze:canvasStepName": "Test Canvas Step Name"
+    "braze:canvasID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:canvasName": "CANVAS_NAME",
+    "braze:canvasVariationID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:canvasVariationName": "CANVAS_VARIATION_NAME",
+    "braze:canvasStepID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "braze:canvasStepName": "CANVAS_STEP_NAME"
   },
   "braze:conversion": {
     "braze:conversionBehaviorIndex": 1,
-    "braze:conversionBehavior": "{\"type\":\"Performs Custom Events\",\"window\":3600,\"custom_event_name\":\"Test Custom Event\"}"
+    "braze:conversionBehavior": "CONVERSION_BEHAVIOR"
   }
 }

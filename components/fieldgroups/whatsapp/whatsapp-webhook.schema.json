@@ -217,6 +217,22 @@
                                         "title": "MIME Type",
                                         "description": "MIME type of the audio file, e.g. 'audio/ogg; codecs=opus'.",
                                         "type": "string"
+                                      },
+                                      "xdm:sha256": {
+                                        "title": "SHA-256",
+                                        "description": "SHA-256 hash of the audio file for integrity verification.",
+                                        "type": "string"
+                                      },
+                                      "xdm:url": {
+                                        "title": "Media URL",
+                                        "description": "URL to download the audio file directly from Meta's CDN.",
+                                        "type": "string",
+                                        "format": "uri"
+                                      },
+                                      "xdm:voice": {
+                                        "title": "Voice",
+                                        "description": "True if the audio was recorded using the WhatsApp in-app voice recorder.",
+                                        "type": "boolean"
                                       }
                                     }
                                   },
@@ -244,6 +260,12 @@
                                         "title": "Caption",
                                         "description": "Optional caption sent with the image.",
                                         "type": "string"
+                                      },
+                                      "xdm:url": {
+                                        "title": "Media URL",
+                                        "description": "URL to download the image file directly from Meta's CDN.",
+                                        "type": "string",
+                                        "format": "uri"
                                       }
                                     }
                                   },
@@ -271,6 +293,12 @@
                                         "title": "Caption",
                                         "description": "Optional caption sent with the video.",
                                         "type": "string"
+                                      },
+                                      "xdm:url": {
+                                        "title": "Media URL",
+                                        "description": "URL to download the video file directly from Meta's CDN.",
+                                        "type": "string",
+                                        "format": "uri"
                                       }
                                     }
                                   },
@@ -303,6 +331,12 @@
                                         "title": "Caption",
                                         "description": "Optional caption sent with the document.",
                                         "type": "string"
+                                      },
+                                      "xdm:url": {
+                                        "title": "Media URL",
+                                        "description": "URL to download the document file directly from Meta's CDN.",
+                                        "type": "string",
+                                        "format": "uri"
                                       }
                                     }
                                   },
@@ -330,6 +364,12 @@
                                         "title": "Animated",
                                         "description": "True if the sticker is animated.",
                                         "type": "boolean"
+                                      },
+                                      "xdm:url": {
+                                        "title": "Media URL",
+                                        "description": "URL to download the sticker file directly from Meta's CDN.",
+                                        "type": "string",
+                                        "format": "uri"
                                       }
                                     }
                                   },

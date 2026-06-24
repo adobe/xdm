@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+Fixed Issues
+
+- #2213 Repository (`repo:`) namespace under-specified the properties used by AEM's repository API. Added the full set of `repo:` properties to the `core/1.0` Common Properties datatype and clarified that `repo:id` is a generic addressable-entity identifier, distinct from the asset-scoped `repo:assetId`.
+
 ## Release 0.9.9
 
 [Planned February, 2019](https://github.com/adobe/xdm/releases/tag/v0.9.9)

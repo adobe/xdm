@@ -12,13 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "all"
-    ]
+    "industry": ["all"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/summarymetrics"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
   "description": "Aggregate CDN requests properties and metrics including bot classification, HTTP request patterns, response codes, and request latencies",
   "definitions": {
     "cdnRequestsSummary": {

@@ -212,6 +212,17 @@
                                 "items": {
                                   "type": "string"
                                 }
+                              },
+                              "xdm:metadata": {
+                                "title": "Metadata",
+                                "type": "object",
+                                "description": "Producer-defined metadata for this value as a map of string key to string value (for example the context around a signal value).",
+                                "meta:xdmType": "map",
+                                "additionalProperties": {
+                                  "title": "Metadata Value",
+                                  "type": "string",
+                                  "description": "Metadata value for the associated key."
+                                }
                               }
                             }
                           }

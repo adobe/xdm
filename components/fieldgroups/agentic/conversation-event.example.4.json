@@ -54,8 +54,18 @@
           "topics": {
             "xdm:type": "string",
             "xdm:values": [
-              { "xdm:stringValue": "Questions about European Geography" },
-              { "xdm:stringValue": "Questions about Countries and Capitals" }
+              {
+                "xdm:stringValue": "Questions about European Geography",
+                "xdm:metadata": {
+                  "context": "There is a question about the capital of France"
+                }
+              },
+              {
+                "xdm:stringValue": "Questions about Countries and Capitals",
+                "xdm:metadata": {
+                  "context": "Specific question about the capital of France which is Paris"
+                }
+              }
             ]
           }
         }

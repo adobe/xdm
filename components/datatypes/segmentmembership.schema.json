@@ -114,6 +114,11 @@
         },
         "xdm:profileStitchID": {
           "$ref": "https://ns.adobe.com/xdm/context/profileStitchIdentity"
+        },
+        "xdm:timerSpec": {
+          "title": "timerSpec",
+          "type": "string",
+          "description": "The time graph specification of the segment qualification."
         }
       }
     }

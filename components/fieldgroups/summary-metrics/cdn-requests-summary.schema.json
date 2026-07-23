@@ -29,10 +29,15 @@
               "type": "string",
               "description": "Requested host/domain"
             },
+            "xdm:path": {
+              "title": "Path",
+              "type": "string",
+              "description": "Requested path, excluding domain"
+            },
             "xdm:url": {
               "title": "URL",
               "type": "string",
-              "description": "URL path excluding domain"
+              "description": "Requested URL, including host and path"
             },
             "xdm:botType": {
               "title": "Bot Type",
@@ -97,5 +102,5 @@
       "$ref": "#/definitions/cdnRequestsSummary"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

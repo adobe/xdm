@@ -69,6 +69,8 @@
                   "xdm:attributes": {
                     "title": "Attributes",
                     "type": "object",
+                    "description": "(DEPRECATED — use xdm:attributesMap) The set of derived signals for this scope. Superseded by xdm:attributesMap, which models signals as an extensible map keyed by signal id.",
+                    "meta:status": "deprecated",
                     "properties": {
                       "xdm:subjects": {
                         "type": "object",
@@ -147,6 +149,82 @@
                             "minimum": -1.0,
                             "maximum": 1.0,
                             "examples": [-1.0, -0.34, 0, 0.7, 1.0]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "xdm:attributesMap": {
+                    "title": "Signal Attributes Map",
+                    "type": "object",
+                    "description": "Map of signal id to signal value. The key is the signal identifier (for example 'subjects', 'intents', 'tones', 'sentiment', or any producer-defined signal). Supersedes xdm:attributes; new signal types require no schema change.",
+                    "meta:xdmType": "map",
+                    "meta:status": "experimental",
+                    "additionalProperties": {
+                      "type": "object",
+                      "title": "Conversation Signal",
+                      "description": "A single derived conversation signal. The xdm:type discriminator indicates which typed value field (xdm:stringValue, xdm:numberValue, or xdm:booleanValue) is populated on each entry of xdm:values.",
+                      "properties": {
+                        "xdm:type": {
+                          "title": "Signal Value Type",
+                          "type": "string",
+                          "description": "Data type of this signal's values; tells consumers which typed value field is populated on each entry of xdm:values.",
+                          "enum": ["string", "number", "boolean"],
+                          "meta:enum": {
+                            "string": "Values carry xdm:stringValue (e.g. an intent, tone, or extracted phrase)",
+                            "number": "Values carry xdm:numberValue (e.g. a sentiment score or intensity)",
+                            "boolean": "Values carry xdm:booleanValue (a true/false flag)"
+                          }
+                        },
+                        "xdm:values": {
+                          "title": "Signal Values",
+                          "type": "array",
+                          "description": "One or more values for this signal.",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "xdm:stringValue": {
+                                "title": "String Value",
+                                "type": "string",
+                                "description": "Populated when xdm:type is 'string'. A categorical value such as an intent, tone, or extracted phrase."
+                              },
+                              "xdm:numberValue": {
+                                "title": "Number Value",
+                                "type": "number",
+                                "description": "Populated when xdm:type is 'number'. For example a sentiment score from -1 to 1, or an intensity."
+                              },
+                              "xdm:booleanValue": {
+                                "title": "Boolean Value",
+                                "type": "boolean",
+                                "description": "Populated when xdm:type is 'boolean'. A true or false flag."
+                              },
+                              "xdm:confidence": {
+                                "title": "Confidence",
+                                "type": "number",
+                                "description": "Confidence the producer assigns to this value, from 0 to 1.",
+                                "minimum": 0,
+                                "maximum": 1
+                              },
+                              "xdm:qualifiers": {
+                                "title": "Qualifiers",
+                                "type": "array",
+                                "description": "Additional descriptors for this value, similar to keywords but more meaningful.",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "xdm:metadata": {
+                                "title": "Metadata",
+                                "type": "object",
+                                "description": "Producer-defined metadata for this value as a map of string key to string value (for example the context around a signal value).",
+                                "meta:xdmType": "map",
+                                "additionalProperties": {
+                                  "title": "Metadata Value",
+                                  "type": "string",
+                                  "description": "Metadata value for the associated key."
+                                }
+                              }
+                            }
                           }
                         }
                       }

@@ -1,0 +1,44 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/subtenant",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Sub-Tenant Context",
+  "description": "Sub-tenant identification context for multi-tenant message delivery scenarios inside a sandbox.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+
+  "definitions": {
+    "subtenant": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/subtenant": {
+          "title": "Sub-Tenant",
+          "type": "object",
+          "description": "Sub-tenant context for partitioning message delivery feedback data within a multi-tenant sandbox.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/subtenant/id": {
+              "title": "Sub-Tenant Identifier",
+              "type": "string",
+              "description": "Identifies the sub-tenant within a multi-tenant sandbox. Used to partition message delivery feedback data across logical tenant boundaries."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/subtenant"
+    }
+  ],
+  "meta:status": "stable"
+}

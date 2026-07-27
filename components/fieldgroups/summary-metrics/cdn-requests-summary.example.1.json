@@ -1,7 +1,8 @@
 {
   "xdm:cdn": {
     "xdm:host": "www.host-example.com",
-    "xdm:url": "/products/analytics",
+    "xdm:path": "/products/analytics",
+    "xdm:url": "www.host-example.com/products/analytics",
     "xdm:botType": "ChatGPT-User",
     "xdm:userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
     "xdm:cdnProvider": "cloudflare",

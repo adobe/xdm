@@ -9,6 +9,7 @@
         "xdm:enabled": true,
         "xdm:crossDeviceConversions": 425,
         "xdm:crossDeviceConversionRate": 0.34,
+        "xdm:crossDeviceConversionRateUncapped": 1.27,
         "xdm:deviceSwitchRate": 0.42,
         "xdm:averageDevicesPerPath": 1.8,
         "xdm:devicePathBreakdown": {

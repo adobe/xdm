@@ -133,8 +133,17 @@
                     "xdm:crossDeviceConversionRate": {
                       "type": "number",
                       "title": "Cross Device Conversion Rate",
+                      "description": "(DEPRECATED — use xdm:crossDeviceConversionRateUncapped instead. Capped at 1.0 and cannot represent rates >1.0 where conversions outnumber the interactions used as the denominator.) Cross-device conversion rate.",
+                      "meta:status": "deprecated",
                       "minimum": 0,
                       "maximum": 1
+                    },
+                    "xdm:crossDeviceConversionRateUncapped": {
+                      "type": "number",
+                      "title": "Cross Device Conversion Rate (Uncapped)",
+                      "description": "Cross-device conversion rate. Can exceed 1.0 because conversions can outnumber the interactions used as the denominator.",
+                      "meta:status": "stable",
+                      "minimum": 0
                     },
                     "xdm:deviceSwitchRate": {
                       "type": "number",

@@ -216,8 +216,17 @@
                     "xdm:budgetUtilization": {
                       "type": "number",
                       "title": "Budget Utilization",
+                      "description": "(DEPRECATED — use xdm:budgetUtilizationUncapped instead. Capped at 1.0 and cannot represent over-spend where spend exceeds the allocated budget.) Ratio of budget spent to budget allocated.",
+                      "meta:status": "deprecated",
                       "minimum": 0,
                       "maximum": 1
+                    },
+                    "xdm:budgetUtilizationUncapped": {
+                      "type": "number",
+                      "title": "Budget Utilization (Uncapped)",
+                      "description": "Ratio of budget spent to budget allocated. Can exceed 1.0 when spend overruns the allocated budget.",
+                      "meta:status": "stable",
+                      "minimum": 0
                     },
                     "xdm:dailyBudget": {
                       "type": "number",
@@ -232,8 +241,17 @@
                     "xdm:dailyBudgetUtilization": {
                       "type": "number",
                       "title": "Daily Budget Utilization",
+                      "description": "(DEPRECATED — use xdm:dailyBudgetUtilizationUncapped instead. Capped at 1.0 and cannot represent over-spend where daily spend exceeds the daily budget.) Ratio of daily spend to daily budget.",
+                      "meta:status": "deprecated",
                       "minimum": 0,
                       "maximum": 1
+                    },
+                    "xdm:dailyBudgetUtilizationUncapped": {
+                      "type": "number",
+                      "title": "Daily Budget Utilization (Uncapped)",
+                      "description": "Ratio of daily spend to daily budget. Can exceed 1.0 when daily spend overruns the daily budget.",
+                      "meta:status": "stable",
+                      "minimum": 0
                     },
                     "xdm:pacingStatus": {
                       "type": "string",

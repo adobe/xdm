@@ -61,9 +61,17 @@
                 "xdm:negativeActionRate": {
                   "type": "number",
                   "title": "Negative Action Rate",
-                  "description": "Rate of negative actions",
+                  "description": "(DEPRECATED — use xdm:negativeActionRateUncapped instead. Capped at 1.0 and cannot represent rates >1.0 where a single impression yields multiple negative actions.) Rate of negative actions (negative actions/impressions).",
+                  "meta:status": "deprecated",
                   "minimum": 0,
                   "maximum": 1
+                },
+                "xdm:negativeActionRateUncapped": {
+                  "type": "number",
+                  "title": "Negative Action Rate (Uncapped)",
+                  "description": "Rate of negative actions (negative actions/impressions). Can exceed 1.0 because a single impression can yield multiple negative actions.",
+                  "meta:status": "stable",
+                  "minimum": 0
                 },
                 "xdm:positiveActions": {
                   "type": "integer",
@@ -74,9 +82,17 @@
                 "xdm:positiveActionRate": {
                   "type": "number",
                   "title": "Positive Action Rate",
-                  "description": "Rate of positive actions",
+                  "description": "(DEPRECATED — use xdm:positiveActionRateUncapped instead. Capped at 1.0 and cannot represent rates >1.0 where a single impression yields multiple positive actions.) Rate of positive actions (positive actions/impressions).",
+                  "meta:status": "deprecated",
                   "minimum": 0,
                   "maximum": 1
+                },
+                "xdm:positiveActionRateUncapped": {
+                  "type": "number",
+                  "title": "Positive Action Rate (Uncapped)",
+                  "description": "Rate of positive actions (positive actions/impressions). Can exceed 1.0 because a single impression can yield multiple positive actions.",
+                  "meta:status": "stable",
+                  "minimum": 0
                 },
                 "xdm:brandSafetyScore": {
                   "type": "number",

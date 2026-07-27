@@ -57,9 +57,17 @@
                 "xdm:ctr": {
                   "type": "number",
                   "title": "Click-Through Rate",
-                  "description": "Click-through rate (clicks/impressions)",
+                  "description": "(DEPRECATED — use xdm:ctrUncapped instead. Capped at 1.0 and cannot represent rates >1.0 reported by networks that count more tracked clicks than impressions.) Click-through rate (clicks/impressions).",
+                  "meta:status": "deprecated",
                   "minimum": 0,
                   "maximum": 1
+                },
+                "xdm:ctrUncapped": {
+                  "type": "number",
+                  "title": "Click-Through Rate (Uncapped)",
+                  "description": "Click-through rate (clicks/impressions). Can exceed 1.0 because networks may report more tracked clicks than impressions or inflate reported counts.",
+                  "meta:status": "stable",
+                  "minimum": 0
                 },
                 "xdm:cpm": {
                   "type": "number",
@@ -118,9 +126,17 @@
                 "xdm:engagementRate": {
                   "type": "number",
                   "title": "Engagement Rate",
-                  "description": "Engagement rate (engagements/impressions)",
+                  "description": "(DEPRECATED — use xdm:engagementRateUncapped instead. Capped at 1.0 and cannot represent rates >1.0 where a single impression yields multiple engagements.) Engagement rate (engagements/impressions).",
+                  "meta:status": "deprecated",
                   "minimum": 0,
                   "maximum": 1
+                },
+                "xdm:engagementRateUncapped": {
+                  "type": "number",
+                  "title": "Engagement Rate (Uncapped)",
+                  "description": "Engagement rate (engagements/impressions). Can exceed 1.0 because a single impression can yield multiple engagements (e.g. like, share, and comment).",
+                  "meta:status": "stable",
+                  "minimum": 0
                 },
                 "xdm:additionalMetrics": {
                   "title": "Additional Metrics",

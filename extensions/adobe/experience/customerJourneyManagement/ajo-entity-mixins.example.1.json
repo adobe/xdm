@@ -104,6 +104,12 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/versionID": "inline campaign -1-2",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/actionID": "inline campaign -1-2-3"
   },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/parentSourceMeta": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceID": "123-1234-8989",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceType": "smbCampaign",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceVersionID": "676-23-1234-8989",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceActionID": "235-898798-989"
+  },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/tags": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/values": [
       "NewsLetter",

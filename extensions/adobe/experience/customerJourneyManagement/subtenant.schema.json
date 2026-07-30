@@ -12,7 +12,10 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajoEntity"
+  ],
 
   "definitions": {
     "subtenant": {
@@ -22,7 +25,7 @@
           "type": "object",
           "description": "Sub-tenant context for partitioning message delivery feedback data within a multi-tenant sandbox.",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/subtenant/id": {
+            "xdm:id": {
               "title": "Sub-Tenant Identifier",
               "type": "string",
               "description": "Identifies the sub-tenant within a multi-tenant sandbox. Used to partition message delivery feedback data across logical tenant boundaries."

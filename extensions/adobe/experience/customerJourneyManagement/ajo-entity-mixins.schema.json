@@ -298,6 +298,63 @@
             }
           }
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/holdout": {
+          "title": "AJO Holdout Entity",
+          "type": "object",
+          "description": "AJO Holdout (control group) Entity Specific Fields. A first-class holdout entity, symmetric to the entry-arm entities (journey/campaign), used to report the control group a profile was held out into. The same shape represents journey-level holdouts, engagement-strategy-level shared control groups, and sandbox-level global control groups; the tier and the artifact it is anchored to are given by holdoutType and scopeType/scopeID. The record is keyed by the backing decision policy id.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/holdoutType": {
+              "title": "Holdout Type",
+              "type": "string",
+              "description": "The tier of holdout this entity represents.",
+              "meta:enum": {
+                "journeyHoldout": "Journey-level holdout",
+                "sharedControlGroup": "Engagement-strategy-level shared control group",
+                "globalControlGroup": "Sandbox-level global control group"
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/scopeType": {
+              "title": "Holdout Scope Type",
+              "type": "string",
+              "description": "The artifact scope this holdout is anchored to. Open enum; additional scopes may be added as further holdout tiers ship.",
+              "meta:enum": {
+                "journey": "Journey (journey-level holdout)",
+                "engagementStrategy": "Engagement strategy (shared control group)",
+                "sandbox": "Sandbox (global control group)"
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/scopeID": {
+              "title": "Holdout Scope ID",
+              "type": "string",
+              "description": "Identifier of the scoped artifact: the journey version id for journey scope, the engagement strategy id for engagement-strategy scope, or the sandbox id for sandbox scope."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/scopeName": {
+              "title": "Holdout Scope Name",
+              "type": "string",
+              "description": "Human-readable name of the scoped artifact."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/holdoutID": {
+              "title": "Holdout ID",
+              "type": "string",
+              "description": "Stable business identifier of the holdout. Remains unchanged across republishing of the scoped artifact."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": {
+              "title": "Holdout Name",
+              "type": "string",
+              "description": "Holdout / control group name."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyID": {
+              "title": "Holdout Decision Policy ID",
+              "type": "string",
+              "description": "Identifier of the Unified Decisioning decision policy backing this holdout. The entity record id is derived from this value, and step-event propositions reference the entity by it."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/holdoutPercentage": {
+              "title": "Holdout Percentage",
+              "type": "number",
+              "description": "Percentage of the eligible population held out for this scope."
+            }
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
           "title": "AJO Journey Entity",
           "type": "object",

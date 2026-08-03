@@ -75,6 +75,16 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/id": "a2YioO",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Rule Set Name"
   },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/holdout": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/holdoutType": "journeyHoldout",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/scopeType": "journey",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/scopeID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/scopeName": "Marketing Test Journey",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/holdoutID": "8f14e45f-ceea-467d-9c9d-4f7a2b6c1a20",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Journey Holdout",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicyID": "8f14e45f-ceea-467d-9c9d-4f7a2b6c1a20",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/holdoutPercentage": 10
+  },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName": "Marketing Test Journey",

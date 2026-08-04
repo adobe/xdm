@@ -306,12 +306,22 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/holdoutType": {
               "title": "Holdout Type",
               "type": "string",
-              "description": "The tier of holdout this entity represents, e.g. journeyHoldout (journey-level), sharedControlGroup (engagement-strategy-level), or globalControlGroup (sandbox-level)."
+              "description": "The tier of holdout this entity represents. Open (soft) enum; additional tiers may be added over time.",
+              "meta:enum": {
+                "journeyHoldout": "Journey-level holdout",
+                "sharedControlGroup": "Engagement-strategy-level shared control group",
+                "globalControlGroup": "Sandbox-level global control group"
+              }
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/scopeType": {
               "title": "Holdout Scope Type",
               "type": "string",
-              "description": "The artifact scope this holdout is anchored to, e.g. journey, engagementStrategy, or sandbox. Additional scopes may be added as further holdout tiers ship."
+              "description": "The artifact scope this holdout is anchored to. Open (soft) enum; additional scopes may be added as further holdout tiers ship.",
+              "meta:enum": {
+                "journey": "Journey (journey-level holdout)",
+                "engagementStrategy": "Engagement strategy (shared control group)",
+                "sandbox": "Sandbox (global control group)"
+              }
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/scopeID": {
               "title": "Holdout Scope ID",

@@ -183,18 +183,6 @@
               "description": "Action id of the source from where message originate"
             }
           }
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/systemMetadata": {
-          "title": "System Metadata",
-          "type": "object",
-          "description": "System-generated per-lead metadata for journey re-entry reporting.",
-          "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/entryCount": {
-              "title": "Journey Entry Count",
-              "type": "integer",
-              "description": "Number of times the lead has entered the journey."
-            }
-          }
         }
       }
     }

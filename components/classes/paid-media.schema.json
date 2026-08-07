@@ -11,6 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Base class for paid media advertising entities including accounts, campaigns, ad groups, ads, experiences, and assets.",
   "definitions": {

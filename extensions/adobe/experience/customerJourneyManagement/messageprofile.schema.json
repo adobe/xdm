@@ -56,6 +56,23 @@
           "type": "boolean",
           "description": "True if the message execution is send time optimized."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/sendTimeOptimizationType": {
+          "title": "Send Time Optimization Type",
+          "type": "integer",
+          "description": "The Send Time Optimization result type for this lead.",
+          "meta:enum": {
+            "1": "STO Optimized",
+            "2": "Control Group",
+            "3": "No Result",
+            "4": "Not Tried"
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/optimizedSendTime": {
+          "title": "Optimized Send Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "The optimized send time computed by Send Time Optimization for this lead."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionName": {
           "title": "Secondary Dimension Name",
           "type": "string",

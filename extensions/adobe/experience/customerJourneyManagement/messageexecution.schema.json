@@ -187,34 +187,12 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/systemMetadata": {
           "title": "System Metadata",
           "type": "object",
-          "description": "System-generated per-lead metadata for STO and journey re-entry reporting.",
+          "description": "System-generated per-lead metadata for journey re-entry reporting.",
           "properties": {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/entryCount": {
               "title": "Journey Entry Count",
               "type": "integer",
               "description": "Number of times the lead has entered the journey."
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/stoEnabled": {
-              "title": "STO Enabled",
-              "type": "boolean",
-              "description": "Indicates whether Send Time Optimization (STO) was enabled for this message execution."
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/stoOptimizationType": {
-              "title": "STO Optimization Type",
-              "type": "integer",
-              "description": "The Send Time Optimization result type for this lead.",
-              "meta:enum": {
-                "1": "STO Optimized",
-                "2": "Control Group",
-                "3": "No Result",
-                "4": "Not Tried"
-              }
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/stoSentTime": {
-              "title": "STO Sent Time",
-              "type": "string",
-              "format": "date-time",
-              "description": "The optimized send time computed by Send Time Optimization for this lead."
             }
           }
         }

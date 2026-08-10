@@ -1,23 +1,24 @@
 {
-  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
-  "timestamp": "2016-10-26T17:26:23+00:00",
-  "braze:timezone": "America/Chicago",
-  "braze:appID": "01234567-89ab-cdef-0123-456789abcdef",
+  "@id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "braze:appID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "timestamp": "2034-06-13T09:08:24+00:00",
+  "braze:timezone": "America/New_York",
+  "braze:appGroupID": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "braze:user": {
-    "braze:userID": "0123456789abcdef01234567",
-    "braze:externalUserID": "user_id",
-    "braze:language": null,
+    "braze:userID": "639a35d192b0df004d06514c",
+    "braze:externalUserID": "external_user_id",
+    "braze:gender": "F",
     "braze:country": null,
-    "braze:gender": "F"
+    "braze:language": null
   },
   "braze:device": {
-    "braze:deviceID": "fedcba87-6543-210f-fedc-ba9876543210",
+    "braze:deviceID": "device_id",
     "braze:SDKVersion": null,
-    "braze:platform": "ios",
-    "braze:OSVersion": "iOS 10.3.1",
-    "braze:deviceModel": "iPhone 7 Plus"
+    "braze:platform": "android",
+    "braze:OSVersion": "17.6.1",
+    "braze:deviceModel": "device_model"
   },
   "braze:session": {
-    "braze:sessionID": "b1234567-89ab-cdef-0123-456789abcdef"
+    "braze:sessionID": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
   }
 }

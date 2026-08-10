@@ -73,6 +73,11 @@
           "format": "date-time",
           "description": "The optimized send time computed by Send Time Optimization for this lead."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/entryCount": {
+          "title": "Entry Count",
+          "type": "integer",
+          "description": "The number of times this lead has entered or re-entered the source (e.g. journey, campaign) that produced this message execution. This is per-lead and varies across leads in the same execution, so it cannot be resolved from journey- or campaign-level identifiers."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionName": {
           "title": "Secondary Dimension Name",
           "type": "string",

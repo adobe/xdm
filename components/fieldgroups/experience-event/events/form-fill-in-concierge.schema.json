@@ -70,6 +70,11 @@
                           }
                         }
                       }
+                    },
+                    "xdm:leadMlmId": {
+                      "title": "Resolved Lead ID",
+                      "type": "string",
+                      "description": "Marketo lead id resolved by the producer's synchronous upsert. Optional: when present, the consumer trusts it and skips its own upsert; when absent, the consumer resolves the lead itself. Removable once the producer no longer resolves leads."
                     }
                   }
                 }

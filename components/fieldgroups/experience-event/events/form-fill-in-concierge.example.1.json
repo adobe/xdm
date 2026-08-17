@@ -17,7 +17,8 @@
         "xdm:attributes": [
           { "xdm:name": "firstName", "xdm:value": "Jane" },
           { "xdm:name": "company", "xdm:value": "Acme Corp" }
-        ]
+        ],
+        "xdm:leadMlmId": "mlm-987654321"
       }
     }
   }

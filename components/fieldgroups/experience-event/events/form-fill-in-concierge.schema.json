@@ -1,0 +1,90 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/form-fill-concierge",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Form fill in Brand Concierge",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "form.filled",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Emitted when a visitor submits a lead-capture form during a Brand Concierge session.",
+  "definitions": {
+    "formfillinconcierge": {
+      "properties": {
+        "xdm:engagement": {
+          "title": "Engagement",
+          "type": "object",
+          "properties": {
+            "xdm:formFillInConcierge": {
+              "title": "Form fill in Concierge",
+              "type": "object",
+              "properties": {
+                "xdm:source": {
+                  "title": "Source",
+                  "type": "string",
+                  "description": "Producing service for this form fill. Selects the downstream lead-resolution path.",
+                  "enum": ["LAS"],
+                  "meta:enum": {
+                    "LAS": "Live Agent Service — consumer resolves the lead via the Marketo Integration Service upsert-lead call"
+                  }
+                },
+                "xdm:bcSessionId": {
+                  "title": "BC Session ID",
+                  "type": "string",
+                  "description": "Brand Concierge session in which the form was submitted. Correlates the upserted lead to its session in the consumer."
+                },
+                "xdm:leadDetails": {
+                  "title": "Lead Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:leadEmail": {
+                      "title": "Lead Email",
+                      "type": "string",
+                      "format": "email",
+                      "description": "Email address submitted on the form."
+                    },
+                    "xdm:attributes": {
+                      "title": "Form Attributes",
+                      "type": "array",
+                      "description": "Tenant-configured form fields as name/value pairs. Field names are tenant-defined and therefore not individually modelled.",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:name": {
+                            "title": "Attribute Name",
+                            "type": "string"
+                          },
+                          "xdm:value": {
+                            "title": "Attribute Value",
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/formfillinconcierge"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2026-08-17"
+}

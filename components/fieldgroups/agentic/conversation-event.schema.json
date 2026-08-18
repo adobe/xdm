@@ -51,11 +51,11 @@
             "xdm:signals": {
               "type": "array",
               "title": "Conversation Signals",
-              "description": "Derived signals based on this event and the conversation to date. Each entry is a single signal with its own xdm:scope.",
+              "description": "Derived signals based on this event and the conversation to date. Each entry is a single signal with its own scope.",
               "items": {
                 "type": "object",
                 "title": "Conversation Signal",
-                "description": "A single derived conversation signal for a given scope. The xdm:type discriminator indicates which typed value field (xdm:stringValue, xdm:numberValue, or xdm:booleanValue) is populated on each entry of xdm:values.",
+                "description": "A single derived conversation signal for a given scope. The type discriminator indicates which typed value field (stringValue, numberValue, or booleanValue) is populated on each entry of values.",
                 "properties": {
                   "xdm:scope": {
                     "title": "Scope",
@@ -78,12 +78,12 @@
                     "title": "Signal Value Type",
                     "meta:status": "experimental",
                     "type": "string",
-                    "description": "Data type of this signal's values; tells consumers which typed value field is populated on each entry of xdm:values.",
+                    "description": "Data type of this signal's values; tells consumers which typed value field is populated on each entry of values.",
                     "enum": ["string", "number", "boolean"],
                     "meta:enum": {
-                      "string": "Values carry xdm:stringValue (e.g. an intent, tone, or extracted phrase)",
-                      "number": "Values carry xdm:numberValue (e.g. a sentiment score or intensity)",
-                      "boolean": "Values carry xdm:booleanValue (a true/false flag)"
+                      "string": "Values carry stringValue (e.g. an intent, tone, or extracted phrase)",
+                      "number": "Values carry numberValue (e.g. a sentiment score or intensity)",
+                      "boolean": "Values carry booleanValue (a true/false flag)"
                     }
                   },
                   "xdm:values": {
@@ -97,17 +97,17 @@
                         "xdm:stringValue": {
                           "title": "String Value",
                           "type": "string",
-                          "description": "Populated when xdm:type is 'string'. A categorical value such as an intent, tone, or extracted phrase."
+                          "description": "Populated when type is 'string'. A categorical value such as an intent, tone, or extracted phrase."
                         },
                         "xdm:numberValue": {
                           "title": "Number Value",
                           "type": "number",
-                          "description": "Populated when xdm:type is 'number'. For example a sentiment score from -1 to 1, or an intensity."
+                          "description": "Populated when type is 'number'. For example a sentiment score from -1 to 1, or an intensity."
                         },
                         "xdm:booleanValue": {
                           "title": "Boolean Value",
                           "type": "boolean",
-                          "description": "Populated when xdm:type is 'boolean'. A true or false flag."
+                          "description": "Populated when type is 'boolean'. A true or false flag."
                         },
                         "xdm:confidence": {
                           "title": "Confidence",
@@ -138,7 +138,7 @@
                   "xdm:attributes": {
                     "title": "Attributes",
                     "type": "object",
-                    "description": "(DEPRECATED — emit one xdm:signals[] entry per signal, populating xdm:name, xdm:type, and xdm:values.) The set of derived signals for this scope. Superseded by the flat per-signal fields on each xdm:signals[] entry.",
+                    "description": "(DEPRECATED — emit one signals[] entry per signal, populating name, type, and values.) The set of derived signals for this scope. Superseded by the flat per-signal fields on each signals[] entry.",
                     "meta:status": "deprecated",
                     "properties": {
                       "xdm:subjects": {

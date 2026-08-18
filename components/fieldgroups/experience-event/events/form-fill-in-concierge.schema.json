@@ -14,9 +14,7 @@
   },
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "form.filled",
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Emitted when a visitor submits a lead-capture form during a Brand Concierge session.",
   "definitions": {
     "formfillinconcierge": {
@@ -33,9 +31,9 @@
                   "title": "Source",
                   "type": "string",
                   "description": "Producing service for this form fill. Selects the downstream lead-resolution path.",
-                  "enum": ["LAS"],
+                  "enum": ["live_agent_service"],
                   "meta:enum": {
-                    "LAS": "Live Agent Service — consumer resolves the lead via the Marketo Integration Service upsert-lead call"
+                    "live_agent_service": "Live Agent Service — consumer resolves the lead via the Marketo Integration Service upsert-lead call"
                   }
                 },
                 "xdm:bcSessionId": {
@@ -71,10 +69,10 @@
                         }
                       }
                     },
-                    "xdm:leadMlmId": {
-                      "title": "Resolved Lead ID",
+                    "xdm:leadPrimaryIdentifier": {
+                      "title": "Lead Primary Identifier",
                       "type": "string",
-                      "description": "Marketo lead id resolved by the producer's synchronous upsert. Optional: when present, the consumer trusts it and skips its own upsert; when absent, the consumer resolves the lead itself. Removable once the producer no longer resolves leads."
+                      "description": "Primary identifier for the lead as resolved by the producer's synchronous upsert against the downstream lead system (for example, Marketo). Optional: when present, the consumer trusts it and skips its own upsert; when absent, the consumer resolves the lead itself."
                     }
                   }
                 }

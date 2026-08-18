@@ -10,7 +10,7 @@
   },
   "xdm:engagement": {
     "xdm:formFillInConcierge": {
-      "xdm:source": "LAS",
+      "xdm:source": "live_agent_service",
       "xdm:bcSessionId": "session-1234567890",
       "xdm:leadDetails": {
         "xdm:leadEmail": "jane@acme.com",
@@ -18,7 +18,7 @@
           { "xdm:name": "firstName", "xdm:value": "Jane" },
           { "xdm:name": "company", "xdm:value": "Acme Corp" }
         ],
-        "xdm:leadMlmId": "mlm-987654321"
+        "xdm:leadPrimaryIdentifier": "mlm-987654321"
       }
     }
   }

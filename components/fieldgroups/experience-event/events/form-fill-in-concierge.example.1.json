@@ -8,6 +8,11 @@
       }
     ]
   },
+  "xdm:tenant": {
+    "xdm:imsOrgId": "1234567890ABCDEF12345678@AdobeOrg",
+    "xdm:sandboxName": "prod",
+    "xdm:instanceId": "0f6d4fbd614a23bc0a49412a"
+  },
   "xdm:engagement": {
     "xdm:formFillInConcierge": {
       "xdm:source": "live_agent_service",

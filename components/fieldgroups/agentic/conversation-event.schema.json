@@ -56,7 +56,6 @@
                 "type": "object",
                 "title": "Conversation Signal",
                 "description": "A single derived conversation signal for a given scope. The xdm:type discriminator indicates which typed value field (xdm:stringValue, xdm:numberValue, or xdm:booleanValue) is populated on each entry of xdm:values.",
-                "required": ["xdm:scope"],
                 "properties": {
                   "xdm:scope": {
                     "title": "Scope",

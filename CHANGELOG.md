@@ -4,7 +4,7 @@
 
 Breaking Changes
 
-- #2237 Conversation Event field group: reworked the extensible conversation signals into a flat array. Each `xdm:signals[]` entry is now a single signal carrying a required `xdm:scope` plus `xdm:name`, `xdm:type`, and `xdm:values` — replacing both the experimental `xdm:attributesMap` (a `map` keyed by signal id) and the intermediate per-scope grouping layer. A flat array of one uniform shape ingests cleanly from JSON and Parquet, avoiding the struct→map conversion and single-level map-depth limits the map incurred. `xdm:attributesMap` is removed; the legacy `xdm:attributes` object is retained as `deprecated`.
+- #2237 Conversation Event field group: reworked the extensible conversation signals into a flat array. Each `xdm:signals[]` entry is now a single signal carrying `xdm:scope`, `xdm:name`, `xdm:type`, and `xdm:values` — replacing both the experimental `xdm:attributesMap` (a `map` keyed by signal id) and the intermediate per-scope grouping layer. A flat array of one uniform shape ingests cleanly from JSON and Parquet, avoiding the struct→map conversion and single-level map-depth limits the map incurred. `xdm:attributesMap` is removed; the legacy `xdm:attributes` object is retained as `deprecated`.
 
 Fixed Issues
 

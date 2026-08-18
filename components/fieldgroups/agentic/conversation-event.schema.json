@@ -154,17 +154,21 @@
                       }
                     }
                   },
-                  "xdm:attributesMap": {
-                    "title": "Signal Attributes Map",
-                    "type": "object",
-                    "description": "Map of signal id to signal value. The key is the signal identifier (for example 'subjects', 'intents', 'tones', 'sentiment', or any producer-defined signal). Supersedes xdm:attributes; new signal types require no schema change.",
-                    "meta:xdmType": "map",
+                  "xdm:signalAttributes": {
+                    "title": "Signal Attributes",
+                    "type": "array",
+                    "description": "List of derived signals for this scope. Each entry is a single signal identified by xdm:name (for example 'subjects', 'intents', 'tones', 'sentiment', or any producer-defined signal). Modeled as an array of named signals rather than a map so producers can add new signal types without a schema change, while keeping one uniform value shape that ingests cleanly from JSON and Parquet. Supersedes xdm:attributes.",
                     "meta:status": "experimental",
-                    "additionalProperties": {
+                    "items": {
                       "type": "object",
                       "title": "Conversation Signal",
                       "description": "A single derived conversation signal. The xdm:type discriminator indicates which typed value field (xdm:stringValue, xdm:numberValue, or xdm:booleanValue) is populated on each entry of xdm:values.",
                       "properties": {
+                        "xdm:name": {
+                          "title": "Signal Name",
+                          "type": "string",
+                          "description": "Identifier for this signal (for example 'subjects', 'intents', 'tones', 'sentiment', or any producer-defined signal). Replaces the key of the former xdm:attributesMap map."
+                        },
                         "xdm:type": {
                           "title": "Signal Value Type",
                           "type": "string",
@@ -216,7 +220,7 @@
                               "xdm:metadata": {
                                 "title": "Metadata",
                                 "type": "array",
-                                "description": "Producer-defined metadata for this value as key/value pairs (for example the context around a signal value). Modeled as an array of key/value pairs rather than a nested map so the enclosing xdm:attributesMap stays within the single-level map-depth limit.",
+                                "description": "Producer-defined metadata for this value as key/value pairs (for example the context around a signal value).",
                                 "items": {
                                   "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
                                 }

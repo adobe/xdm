@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+Breaking Changes
+
+- #2206 Conversation Event field group: replaced the experimental `xdm:attributesMap` (a `map` of signal id → signal value) with `xdm:signalAttributes`, an array of named signal objects where `xdm:name` carries the value that used to be the map key. An array of a single uniform value shape ingests cleanly from JSON and Parquet, avoiding the struct→map conversion and single-level map-depth limits the map incurred. `xdm:attributesMap` was removed rather than deprecated.
+
 Fixed Issues
 
 - #2213 Repository (`repo:`) namespace under-specified the properties used by AEM's repository API. Added the full set of `repo:` properties to the `core/1.0` Common Properties datatype and clarified that `repo:id` is a generic addressable-entity identifier, distinct from the asset-scoped `repo:assetId`.

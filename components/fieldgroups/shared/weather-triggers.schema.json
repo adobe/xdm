@@ -29,7 +29,8 @@
                 "type": "integer"
               },
               "type": "array",
-              "title": "Weather Triggers"
+              "title": "Weather Triggers",
+              "meta:titleId": "weather-triggers##triggersWeather##title##24741"
             }
           }
         },
@@ -41,7 +42,8 @@
                 "type": "integer"
               },
               "type": "array",
-              "title": "Weather Triggers"
+              "title": "Weather Triggers",
+              "meta:titleId": "weather-triggers##xdm:weatherTriggers##title##14591"
             }
           }
         }
@@ -52,5 +54,7 @@
     {
       "$ref": "#/definitions/customFields"
     }
-  ]
+  ],
+  "meta:titleId": "weather-triggers##title##51501",
+  "meta:descriptionId": "weather-triggers##description##82321"
 }

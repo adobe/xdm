@@ -18,13 +18,17 @@
         "xdm:mediaCollection": {
           "title": "Media Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
-          "description": "Media details information related to the experience event."
+          "description": "Media details information related to the experience event.",
+          "meta:titleId": "mediaEvent##xdm:mediaCollection##title##98921",
+          "meta:descriptionId": "mediaEvent##xdm:mediaCollection##description##12431"
         },
         "xdm:mediaEventTimestamp": {
           "title": "Media Timestamp",
           "type": "string",
           "format": "date-time",
-          "description": "The time when an event or observation occurred."
+          "description": "The time when an event or observation occurred.",
+          "meta:titleId": "mediaEvent##xdm:mediaEventTimestamp##title##20841",
+          "meta:descriptionId": "mediaEvent##xdm:mediaEventTimestamp##description##83301"
         },
         "xdm:mediaEventType": {
           "title": "Media Event Type",
@@ -50,6 +54,29 @@
             "media.sessionEnd": "Media sessionEnd",
             "media.statesUpdate": "Media statesUpdate",
             "media.scheduleStart": "Media scheduleStart"
+          },
+          "meta:titleId": "mediaEvent##xdm:mediaEventType##title##35141",
+          "meta:descriptionId": "mediaEvent##xdm:mediaEventType##description##80351",
+          "meta:enumId": {
+            "media.ping": "mediaEvent##xdm:mediaEventType##meta:enum##media.ping##9001",
+            "media.sessionStart": "mediaEvent##xdm:mediaEventType##meta:enum##media.sessionStart##21341",
+            "media.play": "mediaEvent##xdm:mediaEventType##meta:enum##media.play##76301",
+            "media.bufferStart": "mediaEvent##xdm:mediaEventType##meta:enum##media.bufferStart##55901",
+            "media.pauseStart": "mediaEvent##xdm:mediaEventType##meta:enum##media.pauseStart##36661",
+            "media.chapterStart": "mediaEvent##xdm:mediaEventType##meta:enum##media.chapterStart##56281",
+            "media.chapterSkip": "mediaEvent##xdm:mediaEventType##meta:enum##media.chapterSkip##13121",
+            "media.chapterComplete": "mediaEvent##xdm:mediaEventType##meta:enum##media.chapterComplete##32281",
+            "media.adStart": "mediaEvent##xdm:mediaEventType##meta:enum##media.adStart##47091",
+            "media.adSkip": "mediaEvent##xdm:mediaEventType##meta:enum##media.adSkip##50691",
+            "media.adComplete": "mediaEvent##xdm:mediaEventType##meta:enum##media.adComplete##71541",
+            "media.adBreakStart": "mediaEvent##xdm:mediaEventType##meta:enum##media.adBreakStart##14811",
+            "media.adBreakComplete": "mediaEvent##xdm:mediaEventType##meta:enum##media.adBreakComplete##10651",
+            "media.bitrateChange": "mediaEvent##xdm:mediaEventType##meta:enum##media.bitrateChange##47541",
+            "media.error": "mediaEvent##xdm:mediaEventType##meta:enum##media.error##42181",
+            "media.sessionComplete": "mediaEvent##xdm:mediaEventType##meta:enum##media.sessionComplete##46151",
+            "media.sessionEnd": "mediaEvent##xdm:mediaEventType##meta:enum##media.sessionEnd##321",
+            "media.statesUpdate": "mediaEvent##xdm:mediaEventType##meta:enum##media.statesUpdate##52651",
+            "media.scheduleStart": "mediaEvent##xdm:mediaEventType##meta:enum##media.scheduleStart##78301"
           }
         }
       }
@@ -59,5 +86,7 @@
     {
       "$ref": "#/definitions/mediaEvent"
     }
-  ]
+  ],
+  "meta:titleId": "mediaEvent##title##99281",
+  "meta:descriptionId": "mediaEvent##description##71531"
 }

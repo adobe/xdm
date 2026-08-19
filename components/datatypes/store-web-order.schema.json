@@ -16,18 +16,24 @@
         "xdm:orderID": {
           "title": "Order ID",
           "type": "string",
-          "description": "Unique identifier assigned by the seller for this order. There is no guarantee that the ID is unique."
+          "description": "Unique identifier assigned by the seller for this order. There is no guarantee that the ID is unique.",
+          "meta:titleId": "store-web-order##xdm:orderID##title##67211",
+          "meta:descriptionId": "store-web-order##xdm:orderID##description##50371"
         },
         "xdm:orderDate": {
           "title": "Order Date",
           "type": "string",
           "format": "date-time",
-          "description": "The date and time when the order was placed."
+          "description": "The date and time when the order was placed.",
+          "meta:titleId": "store-web-order##xdm:orderDate##title##62211",
+          "meta:descriptionId": "store-web-order##xdm:orderDate##description##73671"
         },
         "xdm:priceTotal": {
           "title": "Price Total",
           "type": "number",
-          "description": "The total price of this order after all discounts and taxes have been applied."
+          "description": "The total price of this order after all discounts and taxes have been applied.",
+          "meta:titleId": "store-web-order##xdm:priceTotal##title##39921",
+          "meta:descriptionId": "store-web-order##xdm:priceTotal##description##59111"
         },
         "xdm:payment": {
           "title": "Payment Details",
@@ -37,7 +43,9 @@
             "xdm:transactionID": {
               "title": "Transaction ID",
               "type": "string",
-              "description": "Unique identifier assigned by the payment system."
+              "description": "Unique identifier assigned by the payment system.",
+              "meta:titleId": "store-web-order##xdm:transactionID##title##2061",
+              "meta:descriptionId": "store-web-order##xdm:transactionID##description##96991"
             },
             "xdm:paymentType": {
               "title": "Payment Type",
@@ -49,21 +57,35 @@
                 "debit": "Debit",
                 "gift": "Gift",
                 "cash": "Cash"
+              },
+              "meta:titleId": "store-web-order##xdm:paymentType##title##72871",
+              "meta:descriptionId": "store-web-order##xdm:paymentType##description##95051",
+              "meta:enumId": {
+                "credit": "store-web-order##xdm:paymentType##meta:enum##credit##8671",
+                "debit": "store-web-order##xdm:paymentType##meta:enum##debit##24601",
+                "gift": "store-web-order##xdm:paymentType##meta:enum##gift##94531",
+                "cash": "store-web-order##xdm:paymentType##meta:enum##cash##95381"
               }
             },
             "xdm:paymentAmount": {
               "title": "Payment Amount",
               "type": "number",
-              "description": "Unique identifier assigned by the payment system."
+              "description": "Unique identifier assigned by the payment system.",
+              "meta:titleId": "store-web-order##xdm:paymentAmount##title##96871",
+              "meta:descriptionId": "store-web-order##xdm:paymentAmount##description##39721"
             },
             "xdm:currencyCode": {
               "title": "Currency",
               "type": "string",
               "examples": ["USD", "EUR"],
               "pattern": "^[A-Z]{3}$",
-              "description": "The ISO 4217 currency code used for the order totals."
+              "description": "The ISO 4217 currency code used for the order totals.",
+              "meta:titleId": "store-web-order##xdm:currencyCode##title##53811",
+              "meta:descriptionId": "store-web-order##xdm:currencyCode##description##56641"
             }
-          }
+          },
+          "meta:titleId": "store-web-order##xdm:payment##title##32511",
+          "meta:descriptionId": "store-web-order##xdm:payment##description##22571"
         }
       }
     }
@@ -73,5 +95,7 @@
       "$ref": "#/definitions/store-web-order"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "store-web-order##title##12301",
+  "meta:descriptionId": "store-web-order##description##75621"
 }

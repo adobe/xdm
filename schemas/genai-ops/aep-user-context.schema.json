@@ -24,7 +24,8 @@
           "properties": {
             "xdm:id": {
               "type": "string",
-              "description": "The ID of the user."
+              "description": "The ID of the user.",
+              "meta:descriptionId": "aep-user-context##xdm:id##description##63781"
             }
           }
         },
@@ -48,5 +49,7 @@
       "$ref": "#/definitions/aep-user-context"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "aep-user-context##title##54231",
+  "meta:descriptionId": "aep-user-context##description##86891"
 }

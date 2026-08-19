@@ -59,7 +59,11 @@
             "side": "Side of the page"
           },
           "meta:titleId": "search##xdm:slot##title##4271",
-          "meta:descriptionId": "search##xdm:slot##description##19671"
+          "meta:descriptionId": "search##xdm:slot##description##19671",
+          "meta:enumId": {
+            "top": "search##xdm:slot##meta:enum##top##4141",
+            "side": "search##xdm:slot##meta:enum##side##96861"
+          }
         },
         "xdm:position": {
           "title": "Listing position",

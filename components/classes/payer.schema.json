@@ -22,12 +22,16 @@
         "xdm:payerID": {
           "title": "Payer ID",
           "type": "string",
-          "description": "Unique identifier of the payer."
+          "description": "Unique identifier of the payer.",
+          "meta:titleId": "payer##xdm:payerID##title##29411",
+          "meta:descriptionId": "payer##xdm:payerID##description##6091"
         },
         "xdm:payerName": {
           "title": "Payer Name",
           "description": "Name of the payer.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "payer##xdm:payerName##title##28741",
+          "meta:descriptionId": "payer##xdm:payerName##description##25671"
         }
       }
     }
@@ -40,5 +44,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "payer##title##79231",
+  "meta:descriptionId": "payer##description##28991"
 }

@@ -27,27 +27,37 @@
             "xdm:host": {
               "title": "Host",
               "type": "string",
-              "description": "Requested host/domain"
+              "description": "Requested host/domain",
+              "meta:titleId": "cdn-requests-summary##xdm:host##title##94011",
+              "meta:descriptionId": "cdn-requests-summary##xdm:host##description##131"
             },
             "xdm:path": {
               "title": "Path",
               "type": "string",
-              "description": "Requested path, excluding domain"
+              "description": "Requested path, excluding domain",
+              "meta:titleId": "cdn-requests-summary##xdm:path##title##92571",
+              "meta:descriptionId": "cdn-requests-summary##xdm:path##description##78741"
             },
             "xdm:url": {
               "title": "URL",
               "type": "string",
-              "description": "Requested URL, including host and path"
+              "description": "Requested URL, including host and path",
+              "meta:titleId": "cdn-requests-summary##xdm:url##title##34421",
+              "meta:descriptionId": "cdn-requests-summary##xdm:url##description##27631"
             },
             "xdm:botType": {
               "title": "Bot Type",
               "type": "string",
-              "description": "Bot type identifier"
+              "description": "Bot type identifier",
+              "meta:titleId": "cdn-requests-summary##xdm:botType##title##24041",
+              "meta:descriptionId": "cdn-requests-summary##xdm:botType##description##91011"
             },
             "xdm:userAgent": {
               "title": "User Agent",
               "type": "string",
-              "description": "Complete user agent string sent by the client"
+              "description": "Complete user agent string sent by the client",
+              "meta:titleId": "cdn-requests-summary##xdm:userAgent##title##27421",
+              "meta:descriptionId": "cdn-requests-summary##xdm:userAgent##description##69201"
             },
             "xdm:cdnProvider": {
               "title": "CDN Provider",
@@ -62,6 +72,18 @@
                 "googlecdn": "Google Cloud CDN",
                 "bunnycdn": "BunnyCDN",
                 "gcore": "Gcore"
+              },
+              "meta:titleId": "cdn-requests-summary##xdm:cdnProvider##title##93741",
+              "meta:descriptionId": "cdn-requests-summary##xdm:cdnProvider##description##44141",
+              "meta:enumId": {
+                "fastly": "cdn-requests-summary##xdm:cdnProvider##meta:enum##fastly##7071",
+                "akamai": "cdn-requests-summary##xdm:cdnProvider##meta:enum##akamai##58691",
+                "cloudfront": "cdn-requests-summary##xdm:cdnProvider##meta:enum##cloudfront##93171",
+                "cloudflare": "cdn-requests-summary##xdm:cdnProvider##meta:enum##cloudflare##47861",
+                "frontdoor": "cdn-requests-summary##xdm:cdnProvider##meta:enum##frontdoor##4951",
+                "googlecdn": "cdn-requests-summary##xdm:cdnProvider##meta:enum##googlecdn##6041",
+                "bunnycdn": "cdn-requests-summary##xdm:cdnProvider##meta:enum##bunnycdn##68091",
+                "gcore": "cdn-requests-summary##xdm:cdnProvider##meta:enum##gcore##25371"
               }
             },
             "xdm:status": {
@@ -69,30 +91,42 @@
               "type": "integer",
               "description": "HTTP response status code",
               "minimum": 100,
-              "maximum": 599
+              "maximum": 599,
+              "meta:titleId": "cdn-requests-summary##xdm:status##title##86221",
+              "meta:descriptionId": "cdn-requests-summary##xdm:status##description##79141"
             },
             "xdm:referer": {
               "title": "Referer",
               "type": "string",
-              "description": "Hostname of the referring URL"
+              "description": "Hostname of the referring URL",
+              "meta:titleId": "cdn-requests-summary##xdm:referer##title##17291",
+              "meta:descriptionId": "cdn-requests-summary##xdm:referer##description##23441"
             },
             "xdm:xForwardedHost": {
               "title": "X-Forwarded-Host",
               "type": "string",
-              "description": "X-Forwarded-Host header value from CDN or proxy"
+              "description": "X-Forwarded-Host header value from CDN or proxy",
+              "meta:titleId": "cdn-requests-summary##xdm:xForwardedHost##title##13341",
+              "meta:descriptionId": "cdn-requests-summary##xdm:xForwardedHost##description##29911"
             },
             "xdm:timeToFirstByte": {
               "title": "Time to First Byte",
               "type": "number",
-              "description": "Time to first byte (TTFB) for the HTTP request, in milliseconds"
+              "description": "Time to first byte (TTFB) for the HTTP request, in milliseconds",
+              "meta:titleId": "cdn-requests-summary##xdm:timeToFirstByte##title##88351",
+              "meta:descriptionId": "cdn-requests-summary##xdm:timeToFirstByte##description##18541"
             },
             "xdm:requests": {
               "title": "Request Count",
               "type": "integer",
               "description": "Total number of aggregated requests",
-              "minimum": 1
+              "minimum": 1,
+              "meta:titleId": "cdn-requests-summary##xdm:requests##title##42151",
+              "meta:descriptionId": "cdn-requests-summary##xdm:requests##description##95931"
             }
-          }
+          },
+          "meta:titleId": "cdn-requests-summary##xdm:cdn##title##9641",
+          "meta:descriptionId": "cdn-requests-summary##xdm:cdn##description##19261"
         }
       }
     }
@@ -102,5 +136,7 @@
       "$ref": "#/definitions/cdnRequestsSummary"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "cdn-requests-summary##title##11421",
+  "meta:descriptionId": "cdn-requests-summary##description##14781"
 }

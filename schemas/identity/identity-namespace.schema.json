@@ -65,7 +65,15 @@
             "NON_PEOPLE": "Non-people identifier"
           },
           "meta:titleId": "identity-namespace##xdm:namespaceIdType##title##21181",
-          "meta:descriptionId": "identity-namespace##xdm:namespaceIdType##description##84281"
+          "meta:descriptionId": "identity-namespace##xdm:namespaceIdType##description##84281",
+          "meta:enumId": {
+            "EMAIL": "identity-namespace##xdm:namespaceIdType##meta:enum##EMAIL##67411",
+            "PHONE_NUMBER": "identity-namespace##xdm:namespaceIdType##meta:enum##PHONE_NUMBER##48881",
+            "DEVICE": "identity-namespace##xdm:namespaceIdType##meta:enum##DEVICE##16191",
+            "COOKIE": "identity-namespace##xdm:namespaceIdType##meta:enum##COOKIE##93541",
+            "CROSS_DEVICE": "identity-namespace##xdm:namespaceIdType##meta:enum##CROSS_DEVICE##93561",
+            "NON_PEOPLE": "identity-namespace##xdm:namespaceIdType##meta:enum##NON_PEOPLE##79691"
+          }
         },
         "xdm:createDate": {
           "title": "Create Date Time",

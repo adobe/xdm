@@ -26,7 +26,14 @@
         "not_applicable": "Not Applicable"
       },
       "meta:titleId": "consent-preferences##choice-value##title##46181",
-      "meta:descriptionId": "consent-preferences##choice-value##description##96041"
+      "meta:descriptionId": "consent-preferences##choice-value##description##96041",
+      "meta:enumId": {
+        "yes": "consent-preferences##choice-value##meta:enum##yes##89701",
+        "no": "consent-preferences##choice-value##meta:enum##no##64311",
+        "pending": "consent-preferences##choice-value##meta:enum##pending##51661",
+        "unknown": "consent-preferences##choice-value##meta:enum##unknown##7181",
+        "not_applicable": "consent-preferences##choice-value##meta:enum##not_applicable##55061"
+      }
     },
     "basis-of-processing": {
       "title": "Basis Of Processing",
@@ -49,7 +56,15 @@
         "public_interest": "Public Interest"
       },
       "meta:titleId": "consent-preferences##basis-of-processing##title##53491",
-      "meta:descriptionId": "consent-preferences##basis-of-processing##description##93661"
+      "meta:descriptionId": "consent-preferences##basis-of-processing##description##93661",
+      "meta:enumId": {
+        "consent": "consent-preferences##basis-of-processing##meta:enum##consent##16361",
+        "legitimate_interest": "consent-preferences##basis-of-processing##meta:enum##legitimate_interest##79451",
+        "contract": "consent-preferences##basis-of-processing##meta:enum##contract##31701",
+        "compliance": "consent-preferences##basis-of-processing##meta:enum##compliance##13201",
+        "vital_interest": "consent-preferences##basis-of-processing##meta:enum##vital_interest##74551",
+        "public_interest": "consent-preferences##basis-of-processing##meta:enum##public_interest##34421"
+      }
     },
     "timestamp": {
       "title": "Preference timestamp",
@@ -357,7 +372,22 @@
                 "unknown": "Unknown"
               },
               "meta:titleId": "consent-preferences##xdm:preferredChannel##title##9111",
-              "meta:descriptionId": "consent-preferences##xdm:preferredChannel##description##71381"
+              "meta:descriptionId": "consent-preferences##xdm:preferredChannel##description##71381",
+              "meta:enumId": {
+                "email": "consent-preferences##xdm:preferredChannel##meta:enum##email##81441",
+                "push_notifications": "consent-preferences##xdm:preferredChannel##meta:enum##push_notifications##7651",
+                "in_app_messages": "consent-preferences##xdm:preferredChannel##meta:enum##in_app_messages##68161",
+                "sms": "consent-preferences##xdm:preferredChannel##meta:enum##sms##27271",
+                "phone_calls": "consent-preferences##xdm:preferredChannel##meta:enum##phone_calls##77071",
+                "physical_mail": "consent-preferences##xdm:preferredChannel##meta:enum##physical_mail##54721",
+                "inVehicle_messages": "consent-preferences##xdm:preferredChannel##meta:enum##inVehicle_messages##74031",
+                "in_home_messages": "consent-preferences##xdm:preferredChannel##meta:enum##in_home_messages##80801",
+                "iot_messages": "consent-preferences##xdm:preferredChannel##meta:enum##iot_messages##32961",
+                "social_media": "consent-preferences##xdm:preferredChannel##meta:enum##social_media##39821",
+                "other": "consent-preferences##xdm:preferredChannel##meta:enum##other##76211",
+                "none": "consent-preferences##xdm:preferredChannel##meta:enum##none##99081",
+                "unknown": "consent-preferences##xdm:preferredChannel##meta:enum##unknown##24291"
+              }
             },
             "xdm:anyMarketing": {
               "title": "General Direct Marketing Preference",
@@ -506,7 +536,15 @@
             "other": "Other"
           },
           "meta:titleId": "consent-preferences##xdm:countryRegionSource##title##49921",
-          "meta:descriptionId": "consent-preferences##xdm:countryRegionSource##description##48111"
+          "meta:descriptionId": "consent-preferences##xdm:countryRegionSource##description##48111",
+          "meta:enumId": {
+            "ip": "consent-preferences##xdm:countryRegionSource##meta:enum##ip##24371",
+            "gps": "consent-preferences##xdm:countryRegionSource##meta:enum##gps##1771",
+            "user_provided": "consent-preferences##xdm:countryRegionSource##meta:enum##user_provided##88281",
+            "website_location": "consent-preferences##xdm:countryRegionSource##meta:enum##website_location##23371",
+            "inferred": "consent-preferences##xdm:countryRegionSource##meta:enum##inferred##47221",
+            "other": "consent-preferences##xdm:countryRegionSource##meta:enum##other##24131"
+          }
         }
       }
     },

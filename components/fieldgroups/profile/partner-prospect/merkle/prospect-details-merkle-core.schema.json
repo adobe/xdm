@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/prospect-profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/prospect-profile"
+  ],
   "description": "Prospect Profile extensions by Merkle. This is for the Core industry",
   "definitions": {
     "merkle-core": {
@@ -30,23 +32,31 @@
                     "xdm:ageRangeInHousehold": {
                       "type": "integer",
                       "title": "AU004-Age Range In Household",
-                      "description": "The age range between the oldest and youngest persons in the household (with 0 meaning either 0 range, or not enough information to determine (i.e. missing age or 1 person Household)).  Ranges from 0-99."
+                      "description": "The age range between the oldest and youngest persons in the household (with 0 meaning either 0 range, or not enough information to determine (i.e. missing age or 1 person Household)).  Ranges from 0-99.",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:ageRangeInHousehold##title##59811",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:ageRangeInHousehold##description##58591"
                     },
                     "xdm:birthdate": {
                       "type": "string",
                       "format": "date-time",
                       "title": "MS073-Birthdate",
-                      "description": "Month and year of birth for individual."
+                      "description": "Month and year of birth for individual.",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:birthdate##title##77631",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:birthdate##description##72241"
                     },
                     "xdm:age": {
                       "type": "integer",
                       "title": "MS074-Age",
-                      "description": "Age of individual."
+                      "description": "Age of individual.",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:age##title##45341",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:age##description##3181"
                     },
                     "xdm:inferredAge": {
                       "type": "integer",
                       "title": "MS080-Inferred Age",
-                      "description": "Estimates the age of the individual using both individual and area level data. Present only when exact age is not present."
+                      "description": "Estimates the age of the individual using both individual and area level data. Present only when exact age is not present.",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:inferredAge##title##78721",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:inferredAge##description##46701"
                     }
                   }
                 },
@@ -56,12 +66,16 @@
                     "xdm:edication": {
                       "type": "string",
                       "title": "MS112-Education",
-                      "description": "Educational attainment of individual."
+                      "description": "Educational attainment of individual.",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:edication##title##22861",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:edication##description##70321"
                     },
                     "xdm:inferredEducation": {
                       "type": "string",
                       "title": "MS127-Inferred Education",
-                      "description": "Estimates educational attainment of individual"
+                      "description": "Estimates educational attainment of individual",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:inferredEducation##title##38081",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:inferredEducation##description##48131"
                     }
                   }
                 },
@@ -71,7 +85,9 @@
                     "xdm:gender": {
                       "type": "string",
                       "title": "MS195-Gender",
-                      "description": "Gender of individual."
+                      "description": "Gender of individual.",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:gender##title##36891",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:gender##description##89311"
                     }
                   }
                 },
@@ -81,12 +97,16 @@
                     "xdm:individualCount": {
                       "type": "integer",
                       "title": "MS518-Individual Count",
-                      "description": "Number of individual adults in household"
+                      "description": "Number of individual adults in household",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:individualCount##title##18831",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:individualCount##description##13411"
                     },
                     "xdm:numberOfPersonsLivingInUnit": {
                       "type": "integer",
                       "title": "MS947-Number of Persons In Living Unit",
-                      "description": "Indicates the number of persons including children in the household.  Ranges from 0-9."
+                      "description": "Indicates the number of persons including children in the household.  Ranges from 0-9.",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:numberOfPersonsLivingInUnit##title##71261",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:numberOfPersonsLivingInUnit##description##591"
                     }
                   }
                 },
@@ -96,12 +116,16 @@
                     "xdm:maritalStatus": {
                       "type": "string",
                       "title": "MS139-Marital Status",
-                      "description": "Marital status for individual."
+                      "description": "Marital status for individual.",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:maritalStatus##title##19911",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:maritalStatus##description##62921"
                     },
                     "xdm:inferredMaritalStatus": {
                       "type": "string",
                       "title": "MS186-Inferred Marital Status",
-                      "description": "Estimates marital status of individual"
+                      "description": "Estimates marital status of individual",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:inferredMaritalStatus##title##88251",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:inferredMaritalStatus##description##7631"
                     }
                   }
                 },
@@ -111,13 +135,17 @@
                     "xdm:occupation": {
                       "type": "string",
                       "title": "MS113-Occupation",
-                      "description": "Occupation of individual."
+                      "description": "Occupation of individual.",
+                      "meta:titleId": "prospect-details-merkle-core##xdm:occupation##title##76341",
+                      "meta:descriptionId": "prospect-details-merkle-core##xdm:occupation##description##56771"
                     }
                   }
                 }
               }
             }
-          }
+          },
+          "meta:titleId": "prospect-details-merkle-core##xdm:merkle##title##36971",
+          "meta:descriptionId": "prospect-details-merkle-core##xdm:merkle##description##53841"
         }
       }
     }
@@ -127,5 +155,7 @@
       "$ref": "#/definitions/merkle-core"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "prospect-details-merkle-core##title##39771",
+  "meta:descriptionId": "prospect-details-merkle-core##description##8401"
 }

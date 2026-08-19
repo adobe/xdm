@@ -28,7 +28,9 @@
               "title": "Date Age Collected",
               "type": "string",
               "format": "date-time",
-              "description": "The date the patient age was collected."
+              "description": "The date the patient age was collected.",
+              "meta:titleId": "profile-healthcare-member##xdm:dateAgeCollected##title##381",
+              "meta:descriptionId": "profile-healthcare-member##xdm:dateAgeCollected##description##41211"
             },
             "xdm:primaryCarePhysicians": {
               "type": "array",
@@ -39,17 +41,23 @@
                   "xdm:providerID": {
                     "title": "Provider ID",
                     "type": "string",
-                    "description": "Unique identifier of the physician."
+                    "description": "Unique identifier of the physician.",
+                    "meta:titleId": "profile-healthcare-member##xdm:providerID##title##87721",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:providerID##description##85801"
                   },
                   "xdm:firstName": {
                     "title": "First Name",
                     "type": "string",
-                    "description": "Primary care physician's first name."
+                    "description": "Primary care physician's first name.",
+                    "meta:titleId": "profile-healthcare-member##xdm:firstName##title##79331",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:firstName##description##55791"
                   },
                   "xdm:lastName": {
                     "title": "Last Name",
                     "type": "string",
-                    "description": "Primary care physician's last name."
+                    "description": "Primary care physician's last name.",
+                    "meta:titleId": "profile-healthcare-member##xdm:lastName##title##511",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:lastName##description##86081"
                   },
                   "xdm:healthNetworkAffiliation": {
                     "title": "Health Network Affiliation",
@@ -57,19 +65,25 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "Name of the health network to which the Primary Care Provider is affiliated."
+                    "description": "Name of the health network to which the Primary Care Provider is affiliated.",
+                    "meta:titleId": "profile-healthcare-member##xdm:healthNetworkAffiliation##title##56771",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:healthNetworkAffiliation##description##93741"
                   },
                   "xdm:startDate": {
                     "title": "Start Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which the primary care provider began care for the member."
+                    "description": "Date on which the primary care provider began care for the member.",
+                    "meta:titleId": "profile-healthcare-member##xdm:startDate##title##67621",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:startDate##description##61781"
                   },
                   "xdm:endDate": {
                     "title": "End Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which the PCP ended care for the member."
+                    "description": "Date on which the PCP ended care for the member.",
+                    "meta:titleId": "profile-healthcare-member##xdm:endDate##title##76791",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:endDate##description##80151"
                   }
                 }
               }
@@ -77,7 +91,9 @@
             "xdm:preferredAvailability": {
               "title": "Preferred Availability",
               "type": "string",
-              "description": "Patient's preferred day and time availability for an appointment."
+              "description": "Patient's preferred day and time availability for an appointment.",
+              "meta:titleId": "profile-healthcare-member##xdm:preferredAvailability##title##93861",
+              "meta:descriptionId": "profile-healthcare-member##xdm:preferredAvailability##description##51731"
             },
             "xdm:prescriptions": {
               "title": "Prescriptions",
@@ -90,22 +106,30 @@
                   "xdm:ID": {
                     "title": "Prescription ID",
                     "type": "string",
-                    "description": "Unique identifier for the prescription."
+                    "description": "Unique identifier for the prescription.",
+                    "meta:titleId": "profile-healthcare-member##xdm:ID##title##88251",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:ID##description##2621"
                   },
                   "xdm:name": {
                     "title": "Prescription Name",
                     "type": "string",
-                    "description": "Name of the prescription."
+                    "description": "Name of the prescription.",
+                    "meta:titleId": "profile-healthcare-member##xdm:name##title##59491",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:name##description##47241"
                   },
                   "xdm:numberOfRefills": {
                     "title": "Number Of Refills",
                     "type": "integer",
-                    "description": "Number of refills prescribed by the provider for this prescription."
+                    "description": "Number of refills prescribed by the provider for this prescription.",
+                    "meta:titleId": "profile-healthcare-member##xdm:numberOfRefills##title##30271",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:numberOfRefills##description##79801"
                   },
                   "xdm:refillLocation": {
                     "title": "Prescription Refill Location",
                     "$ref": "https://ns.adobe.com/xdm/common/address",
-                    "description": "Address at which the prescription will be filled."
+                    "description": "Address at which the prescription will be filled.",
+                    "meta:titleId": "profile-healthcare-member##xdm:refillLocation##title##67881",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:refillLocation##description##33301"
                   },
                   "xdm:refillType": {
                     "title": "Refill Type",
@@ -114,27 +138,41 @@
                       "Retail Pharmacy": "Retail Pharmacy",
                       "Mail Order": "Mail Order"
                     },
-                    "description": "Type of prescription refill."
+                    "description": "Type of prescription refill.",
+                    "meta:titleId": "profile-healthcare-member##xdm:refillType##title##92281",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:refillType##description##6341",
+                    "meta:enumId": {
+                      "Retail Pharmacy": "profile-healthcare-member##xdm:refillType##meta:enum##Retail Pharmacy##76671",
+                      "Mail Order": "profile-healthcare-member##xdm:refillType##meta:enum##Mail Order##27191"
+                    }
                   },
                   "xdm:startDate": {
                     "title": "Prescription Start Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which the patient began taking the prescription."
+                    "description": "Date on which the patient began taking the prescription.",
+                    "meta:titleId": "profile-healthcare-member##xdm:startDate##title##24461",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:startDate##description##50441"
                   },
                   "xdm:endDate": {
                     "title": "Prescription End Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which the patient stops taking the prescription."
+                    "description": "Date on which the patient stops taking the prescription.",
+                    "meta:titleId": "profile-healthcare-member##xdm:endDate##title##75451",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:endDate##description##43091"
                   },
                   "xdm:isCurrent": {
                     "title": "Is Current",
                     "type": "boolean",
-                    "description": "Indicates whether the prescription is current or past."
+                    "description": "Indicates whether the prescription is current or past.",
+                    "meta:titleId": "profile-healthcare-member##xdm:isCurrent##title##13711",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:isCurrent##description##38091"
                   }
                 }
-              }
+              },
+              "meta:titleId": "profile-healthcare-member##xdm:prescriptions##title##93251",
+              "meta:descriptionId": "profile-healthcare-member##xdm:prescriptions##description##82381"
             },
             "xdm:specialists": {
               "title": "Specialist",
@@ -146,12 +184,16 @@
                   "xdm:firstName": {
                     "title": "first Name",
                     "type": "string",
-                    "description": "First name of the specialist provider."
+                    "description": "First name of the specialist provider.",
+                    "meta:titleId": "profile-healthcare-member##xdm:firstName##title##62611",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:firstName##description##28991"
                   },
                   "xdm:lastName": {
                     "title": "last Name",
                     "type": "string",
-                    "description": "Last name of the specialist provider."
+                    "description": "Last name of the specialist provider.",
+                    "meta:titleId": "profile-healthcare-member##xdm:lastName##title##71001",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:lastName##description##16981"
                   },
                   "xdm:specialty": {
                     "title": "Specialty",
@@ -159,15 +201,20 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "Specialty of the provider (anesthesiology, urology, radiology, dermatology, etc)."
+                    "description": "Specialty of the provider (anesthesiology, urology, radiology, dermatology, etc).",
+                    "meta:titleId": "profile-healthcare-member##xdm:specialty##title##90951",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:specialty##description##55391"
                   },
                   "xdm:providerID": {
                     "title": "Provider ID",
                     "type": "string",
-                    "description": "Unique identifier of the specialist."
+                    "description": "Unique identifier of the specialist.",
+                    "meta:titleId": "profile-healthcare-member##xdm:providerID##title##72941",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:providerID##description##41021"
                   }
                 }
-              }
+              },
+              "meta:titleId": "profile-healthcare-member##xdm:specialists##title##68911"
             },
             "xdm:healthConcerns": {
               "title": "Health Concerns",
@@ -175,18 +222,24 @@
               "items": {
                 "type": "string"
               },
-              "description": "Array list of all health concerns"
+              "description": "Array list of all health concerns",
+              "meta:titleId": "profile-healthcare-member##xdm:healthConcerns##title##93631",
+              "meta:descriptionId": "profile-healthcare-member##xdm:healthConcerns##description##49611"
             },
             "xdm:isDeceased": {
               "title": "Deceased Indicator",
               "type": "boolean",
-              "description": "Boolean flag indicating if the member is deceased."
+              "description": "Boolean flag indicating if the member is deceased.",
+              "meta:titleId": "profile-healthcare-member##xdm:isDeceased##title##26881",
+              "meta:descriptionId": "profile-healthcare-member##xdm:isDeceased##description##51031"
             },
             "xdm:deceasedDate": {
               "title": "Deceased Date",
               "type": "string",
               "format": "date-time",
-              "description": "Deceased date if the patient is deceased."
+              "description": "Deceased date if the patient is deceased.",
+              "meta:titleId": "profile-healthcare-member##xdm:deceasedDate##title##67111",
+              "meta:descriptionId": "profile-healthcare-member##xdm:deceasedDate##description##87881"
             },
             "xdm:plans": {
               "title": "Enrolled Plans",
@@ -198,34 +251,46 @@
                   "xdm:planID": {
                     "title": "Plan Identifier",
                     "type": "string",
-                    "description": "Unique identifier for the plan enrolled in by the member."
+                    "description": "Unique identifier for the plan enrolled in by the member.",
+                    "meta:titleId": "profile-healthcare-member##xdm:planID##title##88421",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:planID##description##82281"
                   },
                   "xdm:coverageStartDate": {
                     "title": "Coverage Start Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Coverage start date."
+                    "description": "Coverage start date.",
+                    "meta:titleId": "profile-healthcare-member##xdm:coverageStartDate##title##63061",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:coverageStartDate##description##99131"
                   },
                   "xdm:coverageEndDate": {
                     "title": "Coverage End Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Coverage end date."
+                    "description": "Coverage end date.",
+                    "meta:titleId": "profile-healthcare-member##xdm:coverageEndDate##title##31341",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:coverageEndDate##description##77871"
                   },
                   "xdm:isActive": {
                     "title": "Is Active",
                     "type": "boolean",
-                    "description": "Boolean flag indicates whether the plan is active."
+                    "description": "Boolean flag indicates whether the plan is active.",
+                    "meta:titleId": "profile-healthcare-member##xdm:isActive##title##12251",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:isActive##description##20011"
                   },
                   "xdm:isDependent": {
                     "title": "Is Dependent",
                     "type": "boolean",
-                    "description": "Indicates whether this member is a dependent."
+                    "description": "Indicates whether this member is a dependent.",
+                    "meta:titleId": "profile-healthcare-member##xdm:isDependent##title##45771",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:isDependent##description##29141"
                   },
                   "xdm:primaryMemberID": {
                     "title": "Primary Member ID",
                     "type": "string",
-                    "description": "Unique identifier of the primary subscriber if the member is a dependent."
+                    "description": "Unique identifier of the primary subscriber if the member is a dependent.",
+                    "meta:titleId": "profile-healthcare-member##xdm:primaryMemberID##title##24811",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:primaryMemberID##description##29391"
                   },
                   "xdm:beneficiaryRelationship": {
                     "title": "Beneficiary Relationship",
@@ -236,17 +301,30 @@
                       "child": "Child",
                       "parent": "Parent"
                     },
-                    "description": "Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc)."
+                    "description": "Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc).",
+                    "meta:titleId": "profile-healthcare-member##xdm:beneficiaryRelationship##title##58691",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:beneficiaryRelationship##description##78901",
+                    "meta:enumId": {
+                      "self": "profile-healthcare-member##xdm:beneficiaryRelationship##meta:enum##self##19221",
+                      "spouse": "profile-healthcare-member##xdm:beneficiaryRelationship##meta:enum##spouse##25791",
+                      "child": "profile-healthcare-member##xdm:beneficiaryRelationship##meta:enum##child##84601",
+                      "parent": "profile-healthcare-member##xdm:beneficiaryRelationship##meta:enum##parent##12401"
+                    }
                   },
                   "xdm:billingAccountID": {
                     "title": "Billing Account ID",
                     "type": "string",
-                    "description": "Unique identifier of the billing account."
+                    "description": "Unique identifier of the billing account.",
+                    "meta:titleId": "profile-healthcare-member##xdm:billingAccountID##title##37561",
+                    "meta:descriptionId": "profile-healthcare-member##xdm:billingAccountID##description##91311"
                   }
                 }
-              }
+              },
+              "meta:titleId": "profile-healthcare-member##xdm:plans##title##28381"
             }
-          }
+          },
+          "meta:titleId": "profile-healthcare-member##xdm:memberDetails##title##80911",
+          "meta:descriptionId": "profile-healthcare-member##xdm:memberDetails##description##29771"
         }
       }
     }
@@ -262,5 +340,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-healthcare-member##title##29081",
+  "meta:descriptionId": "profile-healthcare-member##description##78921"
 }

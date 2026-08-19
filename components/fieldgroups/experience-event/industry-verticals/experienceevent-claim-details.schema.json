@@ -61,6 +61,12 @@
                 "in progress": "In Progress",
                 "approved": "Approved",
                 "declined": "Declined"
+              },
+              "meta:enumId": {
+                "initiated": "experienceevent-claim-details##xdm:status##meta:enum##initiated##88161",
+                "in progress": "experienceevent-claim-details##xdm:status##meta:enum##in progress##51541",
+                "approved": "experienceevent-claim-details##xdm:status##meta:enum##approved##1461",
+                "declined": "experienceevent-claim-details##xdm:status##meta:enum##declined##32331"
               }
             },
             "xdm:type": {
@@ -92,13 +98,25 @@
                 "dental": "Dental",
                 "flood": "Flood",
                 "earthquake": "Earthquake"
+              },
+              "meta:enumId": {
+                "homeowners": "experienceevent-claim-details##xdm:type##meta:enum##homeowners##56841",
+                "automobile": "experienceevent-claim-details##xdm:type##meta:enum##automobile##2011",
+                "renters": "experienceevent-claim-details##xdm:type##meta:enum##renters##89451",
+                "third party automobile": "experienceevent-claim-details##xdm:type##meta:enum##third party automobile##76861",
+                "third party home": "experienceevent-claim-details##xdm:type##meta:enum##third party home##19821",
+                "life": "experienceevent-claim-details##xdm:type##meta:enum##life##18491",
+                "health": "experienceevent-claim-details##xdm:type##meta:enum##health##6971",
+                "dental": "experienceevent-claim-details##xdm:type##meta:enum##dental##78621",
+                "flood": "experienceevent-claim-details##xdm:type##meta:enum##flood##30081",
+                "earthquake": "experienceevent-claim-details##xdm:type##meta:enum##earthquake##19701"
               }
             },
             "xdm:policyID": {
               "title": "Policy ID",
               "type": "string",
               "description": "Policy Identifier.",
-			  "meta:status": "deprecated",
+              "meta:status": "deprecated",
               "meta:titleId": "experienceevent-claim-details##xdm:policyID##title##9171",
               "meta:descriptionId": "experienceevent-claim-details##xdm:policyID##description##73051"
             },

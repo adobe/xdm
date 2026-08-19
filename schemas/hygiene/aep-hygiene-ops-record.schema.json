@@ -40,6 +40,12 @@
             "updateField": "Update Field",
             "privacyDelete": "Identity Delete Request Inititiated by Privacy Service",
             "privacyAccess": "Data Access Request Inititiated by Privacy Service"
+          },
+          "meta:enumId": {
+            "deleteIdentity": "aep-hygiene-ops##xdm:action##meta:enum##deleteIdentity##35911",
+            "updateField": "aep-hygiene-ops##xdm:action##meta:enum##updateField##61691",
+            "privacyDelete": "aep-hygiene-ops##xdm:action##meta:enum##privacyDelete##17821",
+            "privacyAccess": "aep-hygiene-ops##xdm:action##meta:enum##privacyAccess##12921"
           }
         },
         "xdm:targetDatasetID": {
@@ -63,8 +69,12 @@
           "items": {
             "title": "Service Name",
             "description": "A service name, such as \"datalake\", \"identity\", or \"profile\".",
-            "type": "string"
-          }
+            "type": "string",
+            "meta:titleId": "aep-hygiene-ops##items##title##1091",
+            "meta:descriptionId": "aep-hygiene-ops##items##description##92121"
+          },
+          "meta:titleId": "aep-hygiene-ops##xdm:targetServices##title##99041",
+          "meta:descriptionId": "aep-hygiene-ops##xdm:targetServices##description##88331"
         },
         "xdm:operation": {
           "title": "Payload of the hygiene op request",
@@ -144,17 +154,23 @@
                       "xdm:namespace": {
                         "title": "The identity namespace",
                         "description": "The namespace associated with the xdm:id attribute.",
-                        "$ref": "https://ns.adobe.com/xdm/context/namespace"
+                        "$ref": "https://ns.adobe.com/xdm/context/namespace",
+                        "meta:titleId": "aep-hygiene-ops##xdm:namespace##title##91191",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:namespace##description##46791"
                       },
                       "xdm:ID": {
                         "title": "Identifier",
                         "description": "An identifier belonging to the namespace",
-                        "type": "string"
+                        "type": "string",
+                        "meta:titleId": "aep-hygiene-ops##xdm:ID##title##15821",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:ID##description##42931"
                       },
                       "xdm:jobID": {
                         "title": "Privacy Service Job ID for tracking purposes.",
                         "description": "An identifier assigned by Privacy Service for the purpose of tracking and reporting of customer requests.",
-                        "type": "string"
+                        "type": "string",
+                        "meta:titleId": "aep-hygiene-ops##xdm:jobID##title##24771",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:jobID##description##71871"
                       },
                       "xdm:dataSets": {
                         "title": "Applicable Datasets",
@@ -166,7 +182,9 @@
                             "xdm:datasetID": {
                               "title": "Dataset ID",
                               "description": "The ID of a dataset",
-                              "type": "string"
+                              "type": "string",
+                              "meta:titleId": "aep-hygiene-ops##xdm:datasetID##title##86651",
+                              "meta:descriptionId": "aep-hygiene-ops##xdm:datasetID##description##88771"
                             },
                             "xdm:searchFields": {
                               "title": "Search Fields",
@@ -178,7 +196,9 @@
                                   "xdm:fieldName": {
                                     "title": "Field Name",
                                     "description": "A field name of the dataset",
-                                    "type": "string"
+                                    "type": "string",
+                                    "meta:titleId": "aep-hygiene-ops##xdm:fieldName##title##87871",
+                                    "meta:descriptionId": "aep-hygiene-ops##xdm:fieldName##description##58061"
                                   },
                                   "xdm:values": {
                                     "title": "Search Values",
@@ -187,29 +207,45 @@
                                     "items": {
                                       "title": "Search Value",
                                       "description": "A value to be sought in this field of the dataset",
-                                      "type": "string"
-                                    }
+                                      "type": "string",
+                                      "meta:titleId": "aep-hygiene-ops##items##title##25231",
+                                      "meta:descriptionId": "aep-hygiene-ops##items##description##64911"
+                                    },
+                                    "meta:titleId": "aep-hygiene-ops##xdm:values##title##24641",
+                                    "meta:descriptionId": "aep-hygiene-ops##xdm:values##description##68121"
                                   }
                                 }
-                              }
+                              },
+                              "meta:titleId": "aep-hygiene-ops##xdm:searchFields##title##83591",
+                              "meta:descriptionId": "aep-hygiene-ops##xdm:searchFields##description##78161"
                             },
                             "xdm:sandboxID": {
                               "title": "Sandbox ID",
                               "description": "ID of the sandbox containing these datasets",
-                              "type": "string"
+                              "type": "string",
+                              "meta:titleId": "aep-hygiene-ops##xdm:sandboxID##title##38391",
+                              "meta:descriptionId": "aep-hygiene-ops##xdm:sandboxID##description##42621"
                             },
                             "xdm:sandboxName": {
                               "title": "Sandbox Name",
                               "description": "Name of the sandbox containing these datasets",
-                              "type": "string"
+                              "type": "string",
+                              "meta:titleId": "aep-hygiene-ops##xdm:sandboxName##title##66731",
+                              "meta:descriptionId": "aep-hygiene-ops##xdm:sandboxName##description##10391"
                             }
                           }
-                        }
+                        },
+                        "meta:titleId": "aep-hygiene-ops##xdm:dataSets##title##60621",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:dataSets##description##59201"
                       }
                     }
-                  }
+                  },
+                  "meta:titleId": "aep-hygiene-ops##xdm:identities##title##2081",
+                  "meta:descriptionId": "aep-hygiene-ops##xdm:identities##description##32181"
                 }
-              }
+              },
+              "meta:titleId": "aep-hygiene-ops##xdm:privacyDelete##title##17871",
+              "meta:descriptionId": "aep-hygiene-ops##xdm:privacyDelete##description##38861"
             },
             "xdm:privacyAccess": {
               "title": "Privacy Data Access Request",
@@ -226,17 +262,23 @@
                       "xdm:namespace": {
                         "title": "The identity namespace",
                         "description": "The namespace associated with the xdm:id attribute.",
-                        "$ref": "https://ns.adobe.com/xdm/context/namespace"
+                        "$ref": "https://ns.adobe.com/xdm/context/namespace",
+                        "meta:titleId": "aep-hygiene-ops##xdm:namespace##title##40891",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:namespace##description##50191"
                       },
                       "xdm:ID": {
                         "title": "Identifier",
                         "description": "An identifier belonging to the namespace",
-                        "type": "string"
+                        "type": "string",
+                        "meta:titleId": "aep-hygiene-ops##xdm:ID##title##75071",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:ID##description##67151"
                       },
                       "xdm:jobID": {
                         "title": "Privacy Service Job ID for tracking purposes.",
                         "description": "An identifier assigned by Privacy Service for the purpose of tracking and reporting of customer requests.",
-                        "type": "string"
+                        "type": "string",
+                        "meta:titleId": "aep-hygiene-ops##xdm:jobID##title##13741",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:jobID##description##20201"
                       },
                       "xdm:attachmentInfo": {
                         "title": "Attachment Information",
@@ -246,19 +288,27 @@
                           "xdm:region": {
                             "title": "Region",
                             "description": "Datacenter region for data upload",
-                            "type": "string"
+                            "type": "string",
+                            "meta:titleId": "aep-hygiene-ops##xdm:region##title##48621",
+                            "meta:descriptionId": "aep-hygiene-ops##xdm:region##description##51001"
                           },
                           "xdm:containerName": {
                             "title": "Container Name",
                             "description": "Datacenter blob container for data upload",
-                            "type": "string"
+                            "type": "string",
+                            "meta:titleId": "aep-hygiene-ops##xdm:containerName##title##87901",
+                            "meta:descriptionId": "aep-hygiene-ops##xdm:containerName##description##76311"
                           },
                           "xdm:uploadPath": {
                             "title": "Upload Path",
                             "description": "Pathname of folder for data upload",
-                            "type": "string"
+                            "type": "string",
+                            "meta:titleId": "aep-hygiene-ops##xdm:uploadPath##title##25891",
+                            "meta:descriptionId": "aep-hygiene-ops##xdm:uploadPath##description##23291"
                           }
-                        }
+                        },
+                        "meta:titleId": "aep-hygiene-ops##xdm:attachmentInfo##title##14781",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:attachmentInfo##description##60271"
                       },
                       "xdm:dataSets": {
                         "title": "Applicable Datasets",
@@ -270,7 +320,9 @@
                             "xdm:datasetID": {
                               "title": "Dataset ID",
                               "description": "The ID of a dataset",
-                              "type": "string"
+                              "type": "string",
+                              "meta:titleId": "aep-hygiene-ops##xdm:datasetID##title##37701",
+                              "meta:descriptionId": "aep-hygiene-ops##xdm:datasetID##description##26441"
                             },
                             "xdm:searchFields": {
                               "title": "Search Fields",
@@ -282,7 +334,9 @@
                                   "xdm:fieldName": {
                                     "title": "Field Name",
                                     "description": "A field name of the dataset",
-                                    "type": "string"
+                                    "type": "string",
+                                    "meta:titleId": "aep-hygiene-ops##xdm:fieldName##title##87191",
+                                    "meta:descriptionId": "aep-hygiene-ops##xdm:fieldName##description##4371"
                                   },
                                   "xdm:values": {
                                     "title": "Search Values",
@@ -291,31 +345,49 @@
                                     "items": {
                                       "title": "Search Value",
                                       "description": "A value to be sought in this field of the dataset",
-                                      "type": "string"
-                                    }
+                                      "type": "string",
+                                      "meta:titleId": "aep-hygiene-ops##items##title##9341",
+                                      "meta:descriptionId": "aep-hygiene-ops##items##description##25531"
+                                    },
+                                    "meta:titleId": "aep-hygiene-ops##xdm:values##title##59301",
+                                    "meta:descriptionId": "aep-hygiene-ops##xdm:values##description##96201"
                                   }
                                 }
-                              }
+                              },
+                              "meta:titleId": "aep-hygiene-ops##xdm:searchFields##title##62381",
+                              "meta:descriptionId": "aep-hygiene-ops##xdm:searchFields##description##45561"
                             },
                             "xdm:sandboxID": {
                               "title": "Sandbox ID",
                               "description": "ID of the sandbox containing these datasets",
-                              "type": "string"
+                              "type": "string",
+                              "meta:titleId": "aep-hygiene-ops##xdm:sandboxID##title##4941",
+                              "meta:descriptionId": "aep-hygiene-ops##xdm:sandboxID##description##50591"
                             },
                             "xdm:sandboxName": {
                               "title": "Sandbox Name",
                               "description": "Name of the sandbox containing these datasets",
-                              "type": "string"
+                              "type": "string",
+                              "meta:titleId": "aep-hygiene-ops##xdm:sandboxName##title##70071",
+                              "meta:descriptionId": "aep-hygiene-ops##xdm:sandboxName##description##14181"
                             }
                           }
-                        }
+                        },
+                        "meta:titleId": "aep-hygiene-ops##xdm:dataSets##title##71501",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:dataSets##description##79301"
                       }
                     }
-                  }
+                  },
+                  "meta:titleId": "aep-hygiene-ops##xdm:identities##title##56911",
+                  "meta:descriptionId": "aep-hygiene-ops##xdm:identities##description##58081"
                 }
-              }
+              },
+              "meta:titleId": "aep-hygiene-ops##xdm:privacyAccess##title##86201",
+              "meta:descriptionId": "aep-hygiene-ops##xdm:privacyAccess##description##3471"
             }
-          }
+          },
+          "meta:titleId": "aep-hygiene-ops##xdm:operation##title##18901",
+          "meta:descriptionId": "aep-hygiene-ops##xdm:operation##description##56581"
         }
       }
     }

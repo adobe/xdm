@@ -48,6 +48,12 @@
             "savings": "Savings",
             "retirement": "Retirement",
             "investment": "Investment"
+          },
+          "meta:enumId": {
+            "checking": "financial-account##xdm:financialAccountType##meta:enum##checking##16101",
+            "savings": "financial-account##xdm:financialAccountType##meta:enum##savings##96161",
+            "retirement": "financial-account##xdm:financialAccountType##meta:enum##retirement##4711",
+            "investment": "financial-account##xdm:financialAccountType##meta:enum##investment##89531"
           }
         }
       }

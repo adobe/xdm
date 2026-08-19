@@ -24,25 +24,35 @@
               "xdm:version": {
                 "title": "Feature Version",
                 "type": "string",
-                "description": "Feature version."
+                "description": "Feature version.",
+                "meta:titleId": "featurizationattributes##xdm:version##title##16101",
+                "meta:descriptionId": "featurizationattributes##xdm:version##description##50211"
               },
               "xdm:category": {
                 "title": "Feature Category",
                 "type": "string",
-                "description": "Attribute Category such as scenes, tones, orientation, etc."
+                "description": "Attribute Category such as scenes, tones, orientation, etc.",
+                "meta:titleId": "featurizationattributes##xdm:category##title##24311",
+                "meta:descriptionId": "featurizationattributes##xdm:category##description##31561"
               },
               "xdm:stringValue": {
                 "title": "Feature String Value",
                 "type": "string",
-                "description": "String value of the featurized attribute."
+                "description": "String value of the featurized attribute.",
+                "meta:titleId": "featurizationattributes##xdm:stringValue##title##24551",
+                "meta:descriptionId": "featurizationattributes##xdm:stringValue##description##26701"
               },
               "xdm:numberValue": {
                 "title": "Feature Number Value",
                 "type": "number",
-                "description": "Number value of the featurized attribute."
+                "description": "Number value of the featurized attribute.",
+                "meta:titleId": "featurizationattributes##xdm:numberValue##title##14731",
+                "meta:descriptionId": "featurizationattributes##xdm:numberValue##description##53651"
               }
             }
-          }
+          },
+          "meta:titleId": "featurizationattributes##xdm:featurizationAttributes##title##5081",
+          "meta:descriptionId": "featurizationattributes##xdm:featurizationAttributes##description##29831"
         }
       }
     }
@@ -52,5 +62,7 @@
       "$ref": "#/definitions/featurization-attributes"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "featurizationattributes##title##87211",
+  "meta:descriptionId": "featurizationattributes##description##35491"
 }

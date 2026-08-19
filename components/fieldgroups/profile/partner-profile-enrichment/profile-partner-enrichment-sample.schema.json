@@ -14,7 +14,9 @@
   },
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Profile Partner enrichment. This is a sample FG.",
   "definitions": {
     "partner-profile": {
@@ -25,142 +27,198 @@
             "xdm:ageRangeInHousehold": {
               "type": "string",
               "title": "ageRangeInHousehold",
-              "description": "ageRangeInHousehold"
+              "description": "ageRangeInHousehold",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:ageRangeInHousehold##title##68381",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:ageRangeInHousehold##description##35591"
             },
             "xdm:apparelAccessories": {
               "type": "string",
               "title": "apparelAccessories",
-              "description": "apparelAccessories"
+              "description": "apparelAccessories",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:apparelAccessories##title##25931",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:apparelAccessories##description##55901"
             },
             "xdm:bicycling": {
               "type": "string",
               "title": "bicycling",
-              "description": "bicycling"
+              "description": "bicycling",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:bicycling##title##43211",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:bicycling##description##53621"
             },
             "xdm:cableTv": {
               "type": "string",
               "title": "cableTv",
-              "description": "cableTv"
+              "description": "cableTv",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:cableTv##title##77551",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:cableTv##description##23671"
             },
             "xdm:domestics": {
               "type": "string",
               "title": "domestics",
-              "description": "domestics"
+              "description": "domestics",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:domestics##title##4691",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:domestics##description##47741"
             },
             "xdm:electronics": {
               "type": "string",
               "title": "electronics",
-              "description": "electronics"
+              "description": "electronics",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:electronics##title##9931",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:electronics##description##9801"
             },
             "xdm:foodAndBeverage": {
               "type": "string",
               "title": "foodAndBeverage",
-              "description": "foodAndBeverage"
+              "description": "foodAndBeverage",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:foodAndBeverage##title##64231",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:foodAndBeverage##description##11411"
             },
             "xdm:footwear": {
               "type": "string",
               "title": "footwear",
-              "description": "footwear"
+              "description": "footwear",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:footwear##title##15291",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:footwear##description##26711"
             },
             "xdm:healthFoods": {
               "type": "string",
               "title": "healthFoods",
-              "description": "healthFoods"
+              "description": "healthFoods",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:healthFoods##title##66561",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:healthFoods##description##8081"
             },
             "xdm:hiking": {
               "type": "string",
               "title": "hiking",
-              "description": "hiking"
+              "description": "hiking",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:hiking##title##49021",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:hiking##description##77871"
             },
             "xdm:householdID": {
               "type": "string",
               "title": "householdId",
-              "description": "householdId"
+              "description": "householdId",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:householdID##title##26651",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:householdID##description##9491"
             },
             "xdm:individualID": {
               "type": "string",
               "title": "individualId",
-              "description": "individualId"
+              "description": "individualId",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:individualID##title##88131",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:individualID##description##31941"
             },
             "xdm:inferredCardHolder": {
               "type": "string",
               "title": "inferredCardHolder",
-              "description": "inferredCardHolder"
+              "description": "inferredCardHolder",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:inferredCardHolder##title##92251",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:inferredCardHolder##description##40931"
             },
             "xdm:inferredPremiumCardholder": {
               "type": "string",
               "title": "inferredPremiumCardholder",
-              "description": "inferredPremiumCardholder"
+              "description": "inferredPremiumCardholder",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:inferredPremiumCardholder##title##65261",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:inferredPremiumCardholder##description##87981"
             },
             "xdm:matchLevelFlag": {
               "type": "string",
               "title": "matchLevelFlag",
-              "description": "matchLevelFlag"
+              "description": "matchLevelFlag",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:matchLevelFlag##title##37561",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:matchLevelFlag##description##78181"
             },
             "xdm:buyerRating": {
               "type": "string",
               "title": "BuyerRating",
-              "description": "BuyerRating"
+              "description": "BuyerRating",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:buyerRating##title##91951",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:buyerRating##description##72361"
             },
             "xdm:donorRating": {
               "type": "string",
               "title": "DonorRating",
-              "description": "DonorRating"
+              "description": "DonorRating",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:donorRating##title##84451",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:donorRating##description##42441"
             },
             "xdm:investmentRating": {
               "type": "string",
               "title": "InvestmentRating",
-              "description": "InvestmentRating"
+              "description": "InvestmentRating",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:investmentRating##title##63651",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:investmentRating##description##36021"
             },
             "xdm:responderRating": {
               "type": "string",
               "title": "ResponderRating",
-              "description": "ResponderRating"
+              "description": "ResponderRating",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:responderRating##title##98941",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:responderRating##description##57571"
             },
             "xdm:spendingVelocity": {
               "type": "string",
               "title": "SpendingVelocity",
-              "description": "SpendingVelocity"
+              "description": "SpendingVelocity",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:spendingVelocity##title##88301",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:spendingVelocity##description##82181"
             },
             "xdm:spendingVolume": {
               "type": "string",
               "title": "SpendingVolume",
-              "description": "SpendingVolume"
+              "description": "SpendingVolume",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:spendingVolume##title##22591",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:spendingVolume##description##80901"
             },
             "xdm:recordID": {
               "type": "string",
               "title": "recordId",
-              "description": "recordId"
+              "description": "recordId",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:recordID##title##83571",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:recordID##description##32771"
             },
             "xdm:residenceID": {
               "type": "string",
               "title": "residenceId",
-              "description": "residenceId"
+              "description": "residenceId",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:residenceID##title##46901",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:residenceID##description##60351"
             },
             "xdm:sailing": {
               "type": "string",
               "title": "sailing",
-              "description": "sailing"
+              "description": "sailing",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:sailing##title##85071",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:sailing##description##82891"
             },
             "xdm:seasonalHolidayProducts": {
               "type": "string",
               "title": "seasonalHolidayProducts",
-              "description": "seasonalHolidayProducts"
+              "description": "seasonalHolidayProducts",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:seasonalHolidayProducts##title##4851",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:seasonalHolidayProducts##description##38831"
             },
             "xdm:skiing": {
               "type": "string",
               "title": "skiing",
-              "description": "skiing"
+              "description": "skiing",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:skiing##title##43981",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:skiing##description##82101"
             },
             "xdm:tennis": {
               "type": "string",
               "title": "tennis",
-              "description": "tennis"
+              "description": "tennis",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:tennis##title##84581",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:tennis##description##31541"
             },
             "xdm:tvShoppers": {
               "type": "string",
               "title": "tvShoppers",
-              "description": "tvShoppers"
+              "description": "tvShoppers",
+              "meta:titleId": "profile-partner-enrichment-sample##xdm:tvShoppers##title##96071",
+              "meta:descriptionId": "profile-partner-enrichment-sample##xdm:tvShoppers##description##14981"
             }
           }
         }
@@ -172,5 +230,7 @@
       "$ref": "#/definitions/partner-profile"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-partner-enrichment-sample##title##96051",
+  "meta:descriptionId": "profile-partner-enrichment-sample##description##14071"
 }

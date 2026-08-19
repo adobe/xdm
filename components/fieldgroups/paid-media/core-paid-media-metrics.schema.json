@@ -28,31 +28,41 @@
                   "type": "integer",
                   "title": "Impressions",
                   "description": "Number of times ads were displayed",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:impressions##title##26291",
+                  "meta:descriptionId": "core-metrics##xdm:impressions##description##86541"
                 },
                 "xdm:clicks": {
                   "type": "integer",
                   "title": "Clicks",
                   "description": "Number of clicks on ads",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:clicks##title##67071",
+                  "meta:descriptionId": "core-metrics##xdm:clicks##description##91101"
                 },
                 "xdm:spend": {
                   "type": "number",
                   "title": "Spend",
                   "description": "Amount spent in account currency",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:spend##title##77141",
+                  "meta:descriptionId": "core-metrics##xdm:spend##description##46411"
                 },
                 "xdm:reach": {
                   "type": "integer",
                   "title": "Reach",
                   "description": "Number of unique users who saw the ads",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:reach##title##37551",
+                  "meta:descriptionId": "core-metrics##xdm:reach##description##11071"
                 },
                 "xdm:frequency": {
                   "type": "number",
                   "title": "Frequency",
                   "description": "Average number of times each user saw the ads",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:frequency##title##46801",
+                  "meta:descriptionId": "core-metrics##xdm:frequency##description##50041"
                 },
                 "xdm:ctr": {
                   "type": "number",
@@ -60,68 +70,90 @@
                   "description": "(DEPRECATED — use xdm:ctrUncapped instead. Capped at 1.0 and cannot represent rates >1.0 reported by networks that count more tracked clicks than impressions.) Click-through rate (clicks/impressions).",
                   "meta:status": "deprecated",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "core-metrics##xdm:ctr##title##94541",
+                  "meta:descriptionId": "core-metrics##xdm:ctr##description##52981"
                 },
                 "xdm:ctrUncapped": {
                   "type": "number",
                   "title": "Click-Through Rate (Uncapped)",
                   "description": "Click-through rate (clicks/impressions). Can exceed 1.0 because networks may report more tracked clicks than impressions or inflate reported counts.",
                   "meta:status": "stable",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:ctrUncapped##title##50591",
+                  "meta:descriptionId": "core-metrics##xdm:ctrUncapped##description##84641"
                 },
                 "xdm:cpm": {
                   "type": "number",
                   "title": "Cost Per Mille",
                   "description": "Cost per thousand impressions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:cpm##title##98631",
+                  "meta:descriptionId": "core-metrics##xdm:cpm##description##34031"
                 },
                 "xdm:cpc": {
                   "type": "number",
                   "title": "Cost Per Click",
                   "description": "Average cost per click",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:cpc##title##37901",
+                  "meta:descriptionId": "core-metrics##xdm:cpc##description##78931"
                 },
                 "xdm:conversions": {
                   "type": "number",
                   "title": "Conversions",
                   "description": "Total number of conversions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:conversions##title##35941",
+                  "meta:descriptionId": "core-metrics##xdm:conversions##description##52791"
                 },
                 "xdm:conversionValue": {
                   "type": "number",
                   "title": "Conversion Value",
                   "description": "Total value of conversions in account currency",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:conversionValue##title##51581",
+                  "meta:descriptionId": "core-metrics##xdm:conversionValue##description##57331"
                 },
                 "xdm:costPerConversion": {
                   "type": "number",
                   "title": "Cost Per Conversion",
                   "description": "Average cost per conversion",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:costPerConversion##title##32821",
+                  "meta:descriptionId": "core-metrics##xdm:costPerConversion##description##70461"
                 },
                 "xdm:roas": {
                   "type": "number",
                   "title": "Return on Ad Spend",
                   "description": "Return on ad spend (conversion value / spend)",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:roas##title##88761",
+                  "meta:descriptionId": "core-metrics##xdm:roas##description##62421"
                 },
                 "xdm:videoViews": {
                   "type": "integer",
                   "title": "Video Views",
                   "description": "Number of video views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:videoViews##title##79441",
+                  "meta:descriptionId": "core-metrics##xdm:videoViews##description##88161"
                 },
                 "xdm:videoCompletions": {
                   "type": "integer",
                   "title": "Video Completions",
                   "description": "Number of video completions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:videoCompletions##title##48091",
+                  "meta:descriptionId": "core-metrics##xdm:videoCompletions##description##8591"
                 },
                 "xdm:engagements": {
                   "type": "integer",
                   "title": "Engagements",
                   "description": "Total engagement actions (likes, shares, comments, etc.)",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:engagements##title##32571",
+                  "meta:descriptionId": "core-metrics##xdm:engagements##description##88091"
                 },
                 "xdm:engagementRate": {
                   "type": "number",
@@ -129,14 +161,18 @@
                   "description": "(DEPRECATED — use xdm:engagementRateUncapped instead. Capped at 1.0 and cannot represent rates >1.0 where a single impression yields multiple engagements.) Engagement rate (engagements/impressions).",
                   "meta:status": "deprecated",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "core-metrics##xdm:engagementRate##title##34421",
+                  "meta:descriptionId": "core-metrics##xdm:engagementRate##description##41671"
                 },
                 "xdm:engagementRateUncapped": {
                   "type": "number",
                   "title": "Engagement Rate (Uncapped)",
                   "description": "Engagement rate (engagements/impressions). Can exceed 1.0 because a single impression can yield multiple engagements (e.g. like, share, and comment).",
                   "meta:status": "stable",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metrics##xdm:engagementRateUncapped##title##24471",
+                  "meta:descriptionId": "core-metrics##xdm:engagementRateUncapped##description##41711"
                 },
                 "xdm:additionalMetrics": {
                   "title": "Additional Metrics",
@@ -148,28 +184,40 @@
                       "xdm:metricName": {
                         "title": "Metric Name",
                         "type": "string",
-                        "description": "Name of the metric (e.g. 'video_30_sec_watched_actions', 'video_p95_watched_actions', 'outbound_click_rate', 'purchases_1d_click', 'purchases_7d_click', 'purchases_1d_view' for attribution windows)"
+                        "description": "Name of the metric (e.g. 'video_30_sec_watched_actions', 'video_p95_watched_actions', 'outbound_click_rate', 'purchases_1d_click', 'purchases_7d_click', 'purchases_1d_view' for attribution windows)",
+                        "meta:titleId": "core-metrics##xdm:metricName##title##29281",
+                        "meta:descriptionId": "core-metrics##xdm:metricName##description##58331"
                       },
                       "xdm:metricValue": {
                         "title": "Metric Value",
                         "type": "number",
-                        "description": "Numeric value of the metric"
+                        "description": "Numeric value of the metric",
+                        "meta:titleId": "core-metrics##xdm:metricValue##title##2831",
+                        "meta:descriptionId": "core-metrics##xdm:metricValue##description##3151"
                       },
                       "xdm:metricType": {
                         "title": "Metric Type",
                         "type": "string",
-                        "description": "Type/category of metric (e.g., 'video', 'conversion', 'engagement', 'attribution')"
+                        "description": "Type/category of metric (e.g., 'video', 'conversion', 'engagement', 'attribution')",
+                        "meta:titleId": "core-metrics##xdm:metricType##title##17571",
+                        "meta:descriptionId": "core-metrics##xdm:metricType##description##76661"
                       },
                       "xdm:metricUnit": {
                         "title": "Metric Unit",
                         "type": "string",
-                        "description": "Unit of measurement (e.g., 'count', 'percentage', 'currency', 'seconds')"
+                        "description": "Unit of measurement (e.g., 'count', 'percentage', 'currency', 'seconds')",
+                        "meta:titleId": "core-metrics##xdm:metricUnit##title##15791",
+                        "meta:descriptionId": "core-metrics##xdm:metricUnit##description##30491"
                       }
                     },
                     "required": ["xdm:metricName", "xdm:metricValue"]
-                  }
+                  },
+                  "meta:titleId": "core-metrics##xdm:additionalMetrics##title##32011",
+                  "meta:descriptionId": "core-metrics##xdm:additionalMetrics##description##42271"
                 }
-              }
+              },
+              "meta:titleId": "core-metrics##xdm:metrics##title##19091",
+              "meta:descriptionId": "core-metrics##xdm:metrics##description##76691"
             }
           }
         }
@@ -181,5 +229,7 @@
       "$ref": "#/definitions/core-metrics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "core-metrics##title##76591",
+  "meta:descriptionId": "core-metrics##description##33101"
 }

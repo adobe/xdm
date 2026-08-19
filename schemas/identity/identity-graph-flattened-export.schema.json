@@ -52,7 +52,12 @@
             "DETERMINISTIC": "Deterministic"
           },
           "meta:titleId": "identity-graph-flattened-export##xdm:algorithm##title##77061",
-          "meta:descriptionId": "identity-graph-flattened-export##xdm:algorithm##description##32801"
+          "meta:descriptionId": "identity-graph-flattened-export##xdm:algorithm##description##32801",
+          "meta:enumId": {
+            "SHARED_DEVICE_DETECTION_SESSIONIZATION": "identity-graph-flattened-export##xdm:algorithm##meta:enum##SHARED_DEVICE_DETECTION_SESSIONIZATION##69661",
+            "FREQ_RECENCY_BASED_SHARED_DEVICES": "identity-graph-flattened-export##xdm:algorithm##meta:enum##FREQ_RECENCY_BASED_SHARED_DEVICES##43751",
+            "DETERMINISTIC": "identity-graph-flattened-export##xdm:algorithm##meta:enum##DETERMINISTIC##17701"
+          }
         },
         "xdm:membersByTimeRange": {
           "type": "array",

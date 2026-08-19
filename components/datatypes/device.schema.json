@@ -31,7 +31,11 @@
             "https://ns.adobe.com/xdm/external/adobecampaign": "Adobe Campaign"
           },
           "meta:titleId": "device##xdm:typeIDService##title##13371",
-          "meta:descriptionId": "device##xdm:typeIDService##description##9701"
+          "meta:descriptionId": "device##xdm:typeIDService##description##9701",
+          "meta:enumId": {
+            "https://ns.adobe.com/xdm/external/deviceatlas": "device##xdm:typeIDService##meta:enum##https://ns.adobe.com/xdm/external/deviceatlas##40331",
+            "https://ns.adobe.com/xdm/external/adobecampaign": "device##xdm:typeIDService##meta:enum##https://ns.adobe.com/xdm/external/adobecampaign##81041"
+          }
         }
       }
     },
@@ -54,7 +58,19 @@
             "tv screens": "TV screens"
           },
           "meta:titleId": "device##xdm:type##title##28851",
-          "meta:descriptionId": "device##xdm:type##description##29801"
+          "meta:descriptionId": "device##xdm:type##description##29801",
+          "meta:enumId": {
+            "mobile": "device##xdm:type##meta:enum##mobile##46631",
+            "tablet": "device##xdm:type##meta:enum##tablet##30941",
+            "desktop": "device##xdm:type##meta:enum##desktop##22701",
+            "ereader": "device##xdm:type##meta:enum##ereader##66001",
+            "gaming": "device##xdm:type##meta:enum##gaming##57621",
+            "television": "device##xdm:type##meta:enum##television##57631",
+            "settop": "device##xdm:type##meta:enum##settop##80791",
+            "mediaplayer": "device##xdm:type##meta:enum##mediaplayer##62711",
+            "computers": "device##xdm:type##meta:enum##computers##84831",
+            "tv screens": "device##xdm:type##meta:enum##tv screens##10971"
+          }
         }
       }
     },
@@ -128,7 +144,11 @@
             "landscape": "Landscape"
           },
           "meta:titleId": "device##xdm:screenOrientation##title##87341",
-          "meta:descriptionId": "device##xdm:screenOrientation##description##5211"
+          "meta:descriptionId": "device##xdm:screenOrientation##description##5211",
+          "meta:enumId": {
+            "portrait": "device##xdm:screenOrientation##meta:enum##portrait##48761",
+            "landscape": "device##xdm:screenOrientation##meta:enum##landscape##4061"
+          }
         }
       }
     },
@@ -175,6 +195,13 @@
             "ALWAYS_ALLOWED": "Always Allowed",
             "FOREGROUND_ALLOWED": "Foreground Allowed",
             "UNPROMPTED": "Unprompted"
+          },
+          "meta:enumId": {
+            "SYSTEM_LOCATION_DISABLED": "device##xdm:locationPermission##meta:enum##SYSTEM_LOCATION_DISABLED##90881",
+            "NOT_ALLOWED": "device##xdm:locationPermission##meta:enum##NOT_ALLOWED##74461",
+            "ALWAYS_ALLOWED": "device##xdm:locationPermission##meta:enum##ALWAYS_ALLOWED##43301",
+            "FOREGROUND_ALLOWED": "device##xdm:locationPermission##meta:enum##FOREGROUND_ALLOWED##70451",
+            "UNPROMPTED": "device##xdm:locationPermission##meta:enum##UNPROMPTED##89261"
           }
         }
       }

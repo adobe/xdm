@@ -150,7 +150,13 @@
             "unknown": "Unknown"
           },
           "meta:titleId": "product##xdm:gender##title##93811",
-          "meta:descriptionId": "product##xdm:gender##description##7941"
+          "meta:descriptionId": "product##xdm:gender##description##7941",
+          "meta:enumId": {
+            "male": "product##xdm:gender##meta:enum##male##18091",
+            "female": "product##xdm:gender##meta:enum##female##26071",
+            "unisex": "product##xdm:gender##meta:enum##unisex##65051",
+            "unknown": "product##xdm:gender##meta:enum##unknown##28351"
+          }
         },
         "xdm:size": {
           "title": "Size",

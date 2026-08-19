@@ -73,6 +73,13 @@
                 "senior": "Senior",
                 "government": "Government",
                 "corporate": "Corporate"
+              },
+              "meta:enumId": {
+                "aaa": "experienceevent-reservation-search##xdm:rateType##meta:enum##aaa##26611",
+                "aarp": "experienceevent-reservation-search##xdm:rateType##meta:enum##aarp##62221",
+                "senior": "experienceevent-reservation-search##xdm:rateType##meta:enum##senior##7321",
+                "government": "experienceevent-reservation-search##xdm:rateType##meta:enum##government##12961",
+                "corporate": "experienceevent-reservation-search##xdm:rateType##meta:enum##corporate##41451"
               }
             },
             "xdm:startDate": {

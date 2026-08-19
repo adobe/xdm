@@ -29,7 +29,8 @@
                 "type": "integer"
               },
               "type": "array",
-              "title": "Product Triggers"
+              "title": "Product Triggers",
+              "meta:titleId": "product-triggers##xdm:triggersProduct##title##57751"
             }
           }
         },
@@ -41,7 +42,8 @@
                 "type": "integer"
               },
               "type": "array",
-              "title": "Product Triggers"
+              "title": "Product Triggers",
+              "meta:titleId": "product-triggers##xdm:productTriggers##title##24421"
             }
           }
         }
@@ -52,5 +54,7 @@
     {
       "$ref": "#/definitions/customFields"
     }
-  ]
+  ],
+  "meta:titleId": "product-triggers##title##63471",
+  "meta:descriptionId": "product-triggers##description##591"
 }

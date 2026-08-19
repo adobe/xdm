@@ -83,7 +83,13 @@
               },
               "description": "The type of payload.",
               "meta:titleId": "segmentmembership##xdm:payloadType##title##41541",
-              "meta:descriptionId": "segmentmembership##xdm:payloadType##description##2701"
+              "meta:descriptionId": "segmentmembership##xdm:payloadType##description##2701",
+              "meta:enumId": {
+                "boolean": "segmentmembership##xdm:payloadType##meta:enum##boolean##83631",
+                "number": "segmentmembership##xdm:payloadType##meta:enum##number##1471",
+                "propensity": "segmentmembership##xdm:payloadType##meta:enum##propensity##11981",
+                "string": "segmentmembership##xdm:payloadType##meta:enum##string##15211"
+              }
             }
           },
           "required": ["xdm:payloadType"],
@@ -110,7 +116,12 @@
             "exited": "Entity is exiting the segment."
           },
           "meta:titleId": "segmentmembership##xdm:status##title##9241",
-          "meta:descriptionId": "segmentmembership##xdm:status##description##78961"
+          "meta:descriptionId": "segmentmembership##xdm:status##description##78961",
+          "meta:enumId": {
+            "existing": "segmentmembership##xdm:status##meta:enum##existing##74341",
+            "realized": "segmentmembership##xdm:status##meta:enum##realized##1941",
+            "exited": "segmentmembership##xdm:status##meta:enum##exited##30281"
+          }
         },
         "xdm:profileStitchID": {
           "$ref": "https://ns.adobe.com/xdm/context/profileStitchIdentity"
@@ -118,7 +129,9 @@
         "xdm:timerSpec": {
           "title": "timerSpec",
           "type": "string",
-          "description": "The time graph specification of the segment qualification."
+          "description": "The time graph specification of the segment qualification.",
+          "meta:titleId": "segmentmembership##xdm:timerSpec##title##76511",
+          "meta:descriptionId": "segmentmembership##xdm:timerSpec##description##74791"
         }
       }
     }

@@ -41,6 +41,12 @@
             "in progress": "In Progress",
             "approved": "Approved",
             "declined": "Declined"
+          },
+          "meta:enumId": {
+            "initiated": "claim##xdm:status##meta:enum##initiated##83141",
+            "in progress": "claim##xdm:status##meta:enum##in progress##23721",
+            "approved": "claim##xdm:status##meta:enum##approved##8021",
+            "declined": "claim##xdm:status##meta:enum##declined##75231"
           }
         },
         "xdm:policyID": {

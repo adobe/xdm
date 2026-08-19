@@ -21,7 +21,8 @@
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:descriptorTimestamp"
+          "const": "xdm:descriptorTimestamp",
+          "meta:titleId": "descriptorTimestamp##@type##title##32521"
         }
       }
     }
@@ -35,5 +36,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "descriptorTimestamp##title##23881",
+  "meta:descriptionId": "descriptorTimestamp##description##97771"
 }

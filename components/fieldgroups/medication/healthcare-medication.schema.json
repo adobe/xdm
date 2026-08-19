@@ -32,42 +32,63 @@
                 "active": "Active",
                 "inactive": "Inactive",
                 "entered-in-error": "Entered-in-error"
+              },
+              "meta:titleId": "healthcare-medication##xdm:status##title##45161",
+              "meta:descriptionId": "healthcare-medication##xdm:status##description##14701",
+              "meta:enumId": {
+                "active": "healthcare-medication##xdm:status##meta:enum##active##2151",
+                "inactive": "healthcare-medication##xdm:status##meta:enum##inactive##71171",
+                "entered-in-error": "healthcare-medication##xdm:status##meta:enum##entered-in-error##87901"
               }
             },
             "xdm:brandName": {
               "title": "Brand Name",
               "description": "Brand name of the drug.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "healthcare-medication##xdm:brandName##title##32851",
+              "meta:descriptionId": "healthcare-medication##xdm:brandName##description##5501"
             },
             "xdm:genericName": {
               "title": "Generic Name",
               "description": "Generic name of the drug.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "healthcare-medication##xdm:genericName##title##83281",
+              "meta:descriptionId": "healthcare-medication##xdm:genericName##description##9681"
             },
             "xdm:manufacturerName": {
               "title": "Manufacturer Name",
               "description": "Manufacturer of the medication.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "healthcare-medication##xdm:manufacturerName##title##46201",
+              "meta:descriptionId": "healthcare-medication##xdm:manufacturerName##description##67651"
             },
             "xdm:form": {
               "title": "Medication Form",
               "type": "string",
-              "description": "Form that the medication comes in such as tablet, capsule, or liquid."
+              "description": "Form that the medication comes in such as tablet, capsule, or liquid.",
+              "meta:titleId": "healthcare-medication##xdm:form##title##51791",
+              "meta:descriptionId": "healthcare-medication##xdm:form##description##68451"
             },
             "xdm:dosageUnitNumber": {
               "title": "Dosage Unit Number",
               "type": "number",
-              "description": "Dosage unit number."
+              "description": "Dosage unit number.",
+              "meta:titleId": "healthcare-medication##xdm:dosageUnitNumber##title##75781",
+              "meta:descriptionId": "healthcare-medication##xdm:dosageUnitNumber##description##62631"
             },
             "xdm:dosageUnitOfMeasurement": {
               "title": "Dosage Unit Of measurement",
               "type": "string",
-              "description": "Dosage unit of measurement."
+              "description": "Dosage unit of measurement.",
+              "meta:titleId": "healthcare-medication##xdm:dosageUnitOfMeasurement##title##51131",
+              "meta:descriptionId": "healthcare-medication##xdm:dosageUnitOfMeasurement##description##16031"
             },
             "xdm:quantity": {
               "title": "Drug Quantity",
               "type": "number",
-              "description": "Amount of drug in the package."
+              "description": "Amount of drug in the package.",
+              "meta:titleId": "healthcare-medication##xdm:quantity##title##30131",
+              "meta:descriptionId": "healthcare-medication##xdm:quantity##description##19971"
             },
             "xdm:ingredients": {
               "title": "ingredients",
@@ -80,17 +101,25 @@
                   "xdm:name": {
                     "title": "Name",
                     "type": "string",
-                    "description": "Name of the ingredient."
+                    "description": "Name of the ingredient.",
+                    "meta:titleId": "healthcare-medication##xdm:name##title##78781",
+                    "meta:descriptionId": "healthcare-medication##xdm:name##description##18111"
                   },
                   "xdm:isActive": {
                     "title": "Is Active",
                     "type": "boolean",
-                    "description": "Indicates if this ingredient is active in the medication."
+                    "description": "Indicates if this ingredient is active in the medication.",
+                    "meta:titleId": "healthcare-medication##xdm:isActive##title##6151",
+                    "meta:descriptionId": "healthcare-medication##xdm:isActive##description##43281"
                   }
                 }
-              }
+              },
+              "meta:titleId": "healthcare-medication##xdm:ingredients##title##39831",
+              "meta:descriptionId": "healthcare-medication##xdm:ingredients##description##79891"
             }
-          }
+          },
+          "meta:titleId": "healthcare-medication##xdm:medication##title##56501",
+          "meta:descriptionId": "healthcare-medication##xdm:medication##description##76211"
         }
       }
     }
@@ -100,5 +129,7 @@
       "$ref": "#/definitions/medication-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "healthcare-medication##title##10931",
+  "meta:descriptionId": "healthcare-medication##description##33481"
 }

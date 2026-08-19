@@ -27,7 +27,9 @@
                 "xdm:name": {
                   "type": "string",
                   "title": "Name",
-                  "description": "Display name of the entity (campaign name, ad name, etc.)"
+                  "description": "Display name of the entity (campaign name, ad name, etc.)",
+                  "meta:titleId": "core-metadata##xdm:name##title##89501",
+                  "meta:descriptionId": "core-metadata##xdm:name##description##37211"
                 },
                 "xdm:status": {
                   "type": "string",
@@ -54,6 +56,19 @@
                     "pending_review": "Pending Review",
                     "rejected": "Rejected",
                     "unknown": "Unknown Status"
+                  },
+                  "meta:titleId": "core-metadata##xdm:status##title##56071",
+                  "meta:descriptionId": "core-metadata##xdm:status##description##19431",
+                  "meta:enumId": {
+                    "active": "core-metadata##xdm:status##meta:enum##active##75411",
+                    "paused": "core-metadata##xdm:status##meta:enum##paused##50551",
+                    "deleted": "core-metadata##xdm:status##meta:enum##deleted##67991",
+                    "archived": "core-metadata##xdm:status##meta:enum##archived##28091",
+                    "draft": "core-metadata##xdm:status##meta:enum##draft##48961",
+                    "completed": "core-metadata##xdm:status##meta:enum##completed##20301",
+                    "pending_review": "core-metadata##xdm:status##meta:enum##pending_review##78861",
+                    "rejected": "core-metadata##xdm:status##meta:enum##rejected##12131",
+                    "unknown": "core-metadata##xdm:status##meta:enum##unknown##81081"
                   }
                 },
                 "xdm:servingStatus": {
@@ -99,51 +114,87 @@
                     "LEARNING": "In Learning Phase",
                     "NOT_ELIGIBLE": "Not Eligible to Serve",
                     "OTHER": "Other Status"
+                  },
+                  "meta:titleId": "core-metadata##xdm:servingStatus##title##28141",
+                  "meta:descriptionId": "core-metadata##xdm:servingStatus##description##51471",
+                  "meta:enumId": {
+                    "CAMPAIGN_STATUS_ENABLED": "core-metadata##xdm:servingStatus##meta:enum##CAMPAIGN_STATUS_ENABLED##58041",
+                    "PENDING_START_DATE": "core-metadata##xdm:servingStatus##meta:enum##PENDING_START_DATE##13011",
+                    "ENDED": "core-metadata##xdm:servingStatus##meta:enum##ENDED##60551",
+                    "CAMPAIGN_OUT_OF_BUDGET": "core-metadata##xdm:servingStatus##meta:enum##CAMPAIGN_OUT_OF_BUDGET##34161",
+                    "ACCOUNT_OUT_OF_BUDGET": "core-metadata##xdm:servingStatus##meta:enum##ACCOUNT_OUT_OF_BUDGET##55731",
+                    "CAMPAIGN_PAUSED": "core-metadata##xdm:servingStatus##meta:enum##CAMPAIGN_PAUSED##82891",
+                    "ADVERTISER_PAUSED": "core-metadata##xdm:servingStatus##meta:enum##ADVERTISER_PAUSED##59461",
+                    "PENDING_REVIEW": "core-metadata##xdm:servingStatus##meta:enum##PENDING_REVIEW##19401",
+                    "PENDING_MODERATION": "core-metadata##xdm:servingStatus##meta:enum##PENDING_MODERATION##1651",
+                    "REJECTED": "core-metadata##xdm:servingStatus##meta:enum##REJECTED##40301",
+                    "CAMPAIGN_INCOMPLETE": "core-metadata##xdm:servingStatus##meta:enum##CAMPAIGN_INCOMPLETE##29781",
+                    "PAYMENT_FAILURE": "core-metadata##xdm:servingStatus##meta:enum##PAYMENT_FAILURE##63731",
+                    "BILLING_HOLD": "core-metadata##xdm:servingStatus##meta:enum##BILLING_HOLD##14401",
+                    "POLICING_SUSPENDED": "core-metadata##xdm:servingStatus##meta:enum##POLICING_SUSPENDED##27881",
+                    "LIMITED": "core-metadata##xdm:servingStatus##meta:enum##LIMITED##18881",
+                    "LEARNING": "core-metadata##xdm:servingStatus##meta:enum##LEARNING##88721",
+                    "NOT_ELIGIBLE": "core-metadata##xdm:servingStatus##meta:enum##NOT_ELIGIBLE##64931",
+                    "OTHER": "core-metadata##xdm:servingStatus##meta:enum##OTHER##91171"
                   }
                 },
                 "xdm:currency": {
                   "type": "string",
                   "title": "Currency",
                   "description": "Deprecated: Use accountDetails.currency in core-paid-media-account-details instead. Currency code (ISO 4217) for monetary values.",
-                  "meta:status": "deprecated"
+                  "meta:status": "deprecated",
+                  "meta:titleId": "core-metadata##xdm:currency##title##5351",
+                  "meta:descriptionId": "core-metadata##xdm:currency##description##92601"
                 },
                 "xdm:currencyCode": {
                   "type": "string",
                   "title": "Currency Code",
                   "description": "Deprecated: Use accountDetails.currencyCode in core-paid-media-account-details instead. Alias of currency (ISO 4217) for migration from GenStudio templates.",
-                  "meta:status": "deprecated"
+                  "meta:status": "deprecated",
+                  "meta:titleId": "core-metadata##xdm:currencyCode##title##4491",
+                  "meta:descriptionId": "core-metadata##xdm:currencyCode##description##49331"
                 },
                 "xdm:timezone": {
                   "type": "string",
                   "title": "Timezone",
                   "description": "Deprecated: Use accountDetails.timezone in core-paid-media-account-details instead. Timezone for the entity (e.g., America/New_York).",
-                  "meta:status": "deprecated"
+                  "meta:status": "deprecated",
+                  "meta:titleId": "core-metadata##xdm:timezone##title##83821",
+                  "meta:descriptionId": "core-metadata##xdm:timezone##description##13211"
                 },
                 "xdm:createdTime": {
                   "type": "string",
                   "format": "date-time",
                   "title": "Created Time",
-                  "description": "When the entity was created"
+                  "description": "When the entity was created",
+                  "meta:titleId": "core-metadata##xdm:createdTime##title##31471",
+                  "meta:descriptionId": "core-metadata##xdm:createdTime##description##31001"
                 },
                 "xdm:updatedTime": {
                   "type": "string",
                   "format": "date-time",
                   "title": "Updated Time",
-                  "description": "When the entity was last updated"
+                  "description": "When the entity was last updated",
+                  "meta:titleId": "core-metadata##xdm:updatedTime##title##70531",
+                  "meta:descriptionId": "core-metadata##xdm:updatedTime##description##36251"
                 },
                 "xdm:startTime": {
                   "type": "string",
                   "format": "date-time",
                   "title": "Start Time",
                   "description": "Deprecated: Use campaignDetails.startTime or adGroupDetails.startTime instead. When the entity becomes active/starts running.",
-                  "meta:status": "deprecated"
+                  "meta:status": "deprecated",
+                  "meta:titleId": "core-metadata##xdm:startTime##title##48171",
+                  "meta:descriptionId": "core-metadata##xdm:startTime##description##84471"
                 },
                 "xdm:endTime": {
                   "type": "string",
                   "format": "date-time",
                   "title": "End Time",
                   "description": "Deprecated: Use campaignDetails.endTime or adGroupDetails.endTime instead. When the entity stops running/expires.",
-                  "meta:status": "deprecated"
+                  "meta:status": "deprecated",
+                  "meta:titleId": "core-metadata##xdm:endTime##title##76171",
+                  "meta:descriptionId": "core-metadata##xdm:endTime##description##98621"
                 },
                 "xdm:objective": {
                   "type": "string",
@@ -177,6 +228,22 @@
                     "catalog_sales": "Catalog Sales",
                     "store_visits": "Store Visits",
                     "other": "Other Objective"
+                  },
+                  "meta:titleId": "core-metadata##xdm:objective##title##20421",
+                  "meta:descriptionId": "core-metadata##xdm:objective##description##40961",
+                  "meta:enumId": {
+                    "awareness": "core-metadata##xdm:objective##meta:enum##awareness##64361",
+                    "consideration": "core-metadata##xdm:objective##meta:enum##consideration##15231",
+                    "conversions": "core-metadata##xdm:objective##meta:enum##conversions##67451",
+                    "reach": "core-metadata##xdm:objective##meta:enum##reach##14311",
+                    "traffic": "core-metadata##xdm:objective##meta:enum##traffic##78531",
+                    "engagement": "core-metadata##xdm:objective##meta:enum##engagement##74491",
+                    "app_installs": "core-metadata##xdm:objective##meta:enum##app_installs##57161",
+                    "video_views": "core-metadata##xdm:objective##meta:enum##video_views##20741",
+                    "lead_generation": "core-metadata##xdm:objective##meta:enum##lead_generation##4321",
+                    "catalog_sales": "core-metadata##xdm:objective##meta:enum##catalog_sales##55171",
+                    "store_visits": "core-metadata##xdm:objective##meta:enum##store_visits##12521",
+                    "other": "core-metadata##xdm:objective##meta:enum##other##75191"
                   }
                 },
                 "xdm:budgetType": {
@@ -189,6 +256,13 @@
                     "daily": "Daily Budget",
                     "lifetime": "Lifetime Budget",
                     "campaign_budget_optimization": "Campaign Budget Optimization"
+                  },
+                  "meta:titleId": "core-metadata##xdm:budgetType##title##60261",
+                  "meta:descriptionId": "core-metadata##xdm:budgetType##description##59341",
+                  "meta:enumId": {
+                    "daily": "core-metadata##xdm:budgetType##meta:enum##daily##98081",
+                    "lifetime": "core-metadata##xdm:budgetType##meta:enum##lifetime##29061",
+                    "campaign_budget_optimization": "core-metadata##xdm:budgetType##meta:enum##campaign_budget_optimization##97601"
                   }
                 },
                 "xdm:dailyBudget": {
@@ -196,28 +270,38 @@
                   "title": "Daily Budget",
                   "description": "Deprecated: Use campaignDetails.budgetSettings.dailyBudget or adGroupDetails.budgetSettings.dailyBudget instead. Daily budget amount in account currency.",
                   "meta:status": "deprecated",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metadata##xdm:dailyBudget##title##41231",
+                  "meta:descriptionId": "core-metadata##xdm:dailyBudget##description##47051"
                 },
                 "xdm:lifetimeBudget": {
                   "type": "number",
                   "title": "Lifetime Budget",
                   "description": "Deprecated: Use campaignDetails.budgetSettings.lifetimeBudget or adGroupDetails.budgetSettings.lifetimeBudget instead. Total lifetime budget amount in account currency.",
                   "meta:status": "deprecated",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "core-metadata##xdm:lifetimeBudget##title##83591",
+                  "meta:descriptionId": "core-metadata##xdm:lifetimeBudget##description##12671"
                 },
                 "xdm:biddingStrategy": {
                   "type": "string",
                   "title": "Bidding Strategy",
                   "description": "Deprecated: Use campaignDetails.budgetSettings.bidStrategy or adGroupDetails.budgetSettings.bidStrategyType instead. Bidding strategy used for the entity.",
-                  "meta:status": "deprecated"
+                  "meta:status": "deprecated",
+                  "meta:titleId": "core-metadata##xdm:biddingStrategy##title##44401",
+                  "meta:descriptionId": "core-metadata##xdm:biddingStrategy##description##9681"
                 },
                 "xdm:optimizationGoal": {
                   "type": "string",
                   "title": "Optimization Goal",
                   "description": "Deprecated: Use adGroupDetails.optimizationSettings.optimizationGoal instead. What the ad delivery is optimized for.",
-                  "meta:status": "deprecated"
+                  "meta:status": "deprecated",
+                  "meta:titleId": "core-metadata##xdm:optimizationGoal##title##76151",
+                  "meta:descriptionId": "core-metadata##xdm:optimizationGoal##description##71641"
                 }
-              }
+              },
+              "meta:titleId": "core-metadata##xdm:metadata##title##48621",
+              "meta:descriptionId": "core-metadata##xdm:metadata##description##4621"
             }
           }
         }
@@ -229,5 +313,7 @@
       "$ref": "#/definitions/core-metadata"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "core-metadata##title##38231",
+  "meta:descriptionId": "core-metadata##description##3391"
 }

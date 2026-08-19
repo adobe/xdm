@@ -102,7 +102,14 @@
             "blocked": "Blocked"
           },
           "meta:titleId": "address##xdm:status##title##64131",
-          "meta:descriptionId": "address##xdm:status##description##851"
+          "meta:descriptionId": "address##xdm:status##description##851",
+          "meta:enumId": {
+            "active": "address##xdm:status##meta:enum##active##92411",
+            "incomplete": "address##xdm:status##meta:enum##incomplete##59301",
+            "pending_verification": "address##xdm:status##meta:enum##pending_verification##54811",
+            "blacklisted": "address##xdm:status##meta:enum##blacklisted##53331",
+            "blocked": "address##xdm:status##meta:enum##blocked##2671"
+          }
         },
         "xdm:statusReason": {
           "title": "Status reason",

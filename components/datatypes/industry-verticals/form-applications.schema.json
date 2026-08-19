@@ -61,6 +61,12 @@
             "in progress": "In Progress",
             "approved": "Approved",
             "declined": "Declined"
+          },
+          "meta:enumId": {
+            "initiated": "form-applications##xdm:status##meta:enum##initiated##66221",
+            "in progress": "form-applications##xdm:status##meta:enum##in progress##81661",
+            "approved": "form-applications##xdm:status##meta:enum##approved##17441",
+            "declined": "form-applications##xdm:status##meta:enum##declined##50141"
           }
         },
         "xdm:statusUpdate": {

@@ -28,19 +28,25 @@
                   "type": "number",
                   "title": "Post-Click Conversions",
                   "description": "Conversions attributed to clicks",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:postClickConversions##title##80881",
+                  "meta:descriptionId": "conversion-metrics##xdm:postClickConversions##description##91501"
                 },
                 "xdm:postViewConversions": {
                   "type": "number",
                   "title": "Post-View Conversions",
                   "description": "Conversions attributed to views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:postViewConversions##title##46401",
+                  "meta:descriptionId": "conversion-metrics##xdm:postViewConversions##description##17911"
                 },
                 "xdm:postEngagementConversions": {
                   "type": "number",
                   "title": "Post-Engagement Conversions",
                   "description": "Conversions attributed to engagements",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:postEngagementConversions##title##71401",
+                  "meta:descriptionId": "conversion-metrics##xdm:postEngagementConversions##description##87691"
                 },
                 "xdm:conversionsByType": {
                   "type": "object",
@@ -50,64 +56,78 @@
                     "xdm:purchases": {
                       "type": "number",
                       "title": "Purchases",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:purchases##title##93831"
                     },
                     "xdm:addToCart": {
                       "type": "number",
                       "title": "Add to Cart",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:addToCart##title##15101"
                     },
                     "xdm:initiateCheckout": {
                       "type": "number",
                       "title": "Initiate Checkout",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:initiateCheckout##title##76531"
                     },
                     "xdm:leads": {
                       "type": "number",
                       "title": "Leads",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:leads##title##42071"
                     },
                     "xdm:registrations": {
                       "type": "number",
                       "title": "Registrations",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:registrations##title##92751"
                     },
                     "xdm:downloads": {
                       "type": "number",
                       "title": "Downloads",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:downloads##title##291"
                     },
                     "xdm:subscriptions": {
                       "type": "number",
                       "title": "Subscriptions",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:subscriptions##title##74801"
                     },
                     "xdm:customEvents": {
                       "type": "number",
                       "title": "Custom Events",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:customEvents##title##69431"
                     },
                     "xdm:addPaymentInfo": {
                       "type": "number",
                       "title": "Add Payment Info",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:addPaymentInfo##title##57901"
                     },
                     "xdm:search": {
                       "type": "number",
                       "title": "Search",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:search##title##25521"
                     },
                     "xdm:viewContent": {
                       "type": "number",
                       "title": "View Content",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:viewContent##title##54641"
                     },
                     "xdm:landingPageView": {
                       "type": "number",
                       "title": "Landing Page View",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:landingPageView##title##89411"
                     }
-                  }
+                  },
+                  "meta:titleId": "conversion-metrics##xdm:conversionsByType##title##68971",
+                  "meta:descriptionId": "conversion-metrics##xdm:conversionsByType##description##34881"
                 },
                 "xdm:conversionRate": {
                   "type": "number",
@@ -115,26 +135,34 @@
                   "description": "(DEPRECATED — use xdm:conversionRateUncapped instead. Capped at 1.0 and cannot represent rates >1.0 where all-conversions counts include multiple conversions per click.) Overall conversion rate (conversions/clicks).",
                   "meta:status": "deprecated",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "conversion-metrics##xdm:conversionRate##title##75511",
+                  "meta:descriptionId": "conversion-metrics##xdm:conversionRate##description##79261"
                 },
                 "xdm:conversionRateUncapped": {
                   "type": "number",
                   "title": "Conversion Rate (Uncapped)",
                   "description": "Overall conversion rate (conversions/clicks). Can exceed 1.0 because all-conversions counts can include multiple conversions per click.",
                   "meta:status": "stable",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:conversionRateUncapped##title##3081",
+                  "meta:descriptionId": "conversion-metrics##xdm:conversionRateUncapped##description##75971"
                 },
                 "xdm:costPerAction": {
                   "type": "number",
                   "title": "Cost Per Action",
                   "description": "Average cost per conversion action",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:costPerAction##title##4711",
+                  "meta:descriptionId": "conversion-metrics##xdm:costPerAction##description##40801"
                 },
                 "xdm:conversionLag": {
                   "type": "number",
                   "title": "Conversion Lag",
                   "description": "Average time from ad interaction to conversion (in hours)",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:conversionLag##title##40371",
+                  "meta:descriptionId": "conversion-metrics##xdm:conversionLag##description##12521"
                 },
                 "xdm:conversionPath": {
                   "type": "object",
@@ -144,75 +172,96 @@
                     "xdm:averagePathLength": {
                       "type": "number",
                       "title": "Average Path Length",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:averagePathLength##title##36431"
                     },
                     "xdm:medianPathLength": {
                       "type": "number",
                       "title": "Median Path Length",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:medianPathLength##title##72361"
                     },
                     "xdm:singleTouchConversions": {
                       "type": "number",
                       "title": "Single Touch Conversions",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:singleTouchConversions##title##17491"
                     },
                     "xdm:multiTouchConversions": {
                       "type": "number",
                       "title": "Multi Touch Conversions",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:multiTouchConversions##title##51291"
                     },
                     "xdm:averageTouchpoints": {
                       "type": "number",
                       "title": "Average Touchpoints",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:averageTouchpoints##title##56471"
                     },
                     "xdm:assistedConversions": {
                       "type": "number",
                       "title": "Assisted Conversions",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:assistedConversions##title##4531"
                     },
                     "xdm:directConversions": {
                       "type": "number",
                       "title": "Direct Conversions",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "conversion-metrics##xdm:directConversions##title##48041"
                     }
-                  }
+                  },
+                  "meta:titleId": "conversion-metrics##xdm:conversionPath##title##8061",
+                  "meta:descriptionId": "conversion-metrics##xdm:conversionPath##description##12161"
                 },
                 "xdm:assistedConversions": {
                   "type": "number",
                   "title": "Assisted Conversions",
                   "description": "Conversions where this ad assisted but wasn't the last touch",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:assistedConversions##title##86901",
+                  "meta:descriptionId": "conversion-metrics##xdm:assistedConversions##description##46541"
                 },
                 "xdm:directConversions": {
                   "type": "number",
                   "title": "Direct Conversions",
                   "description": "Conversions where this ad was the last touch",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:directConversions##title##57371",
+                  "meta:descriptionId": "conversion-metrics##xdm:directConversions##description##20111"
                 },
                 "xdm:newCustomerConversions": {
                   "type": "number",
                   "title": "New Customer Conversions",
                   "description": "Conversions from new customers",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:newCustomerConversions##title##4811",
+                  "meta:descriptionId": "conversion-metrics##xdm:newCustomerConversions##description##66611"
                 },
                 "xdm:returningCustomerConversions": {
                   "type": "number",
                   "title": "Returning Customer Conversions",
                   "description": "Conversions from returning customers",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:returningCustomerConversions##title##77771",
+                  "meta:descriptionId": "conversion-metrics##xdm:returningCustomerConversions##description##65041"
                 },
                 "xdm:averageOrderValue": {
                   "type": "number",
                   "title": "Average Order Value",
                   "description": "Average value per conversion",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:averageOrderValue##title##95881",
+                  "meta:descriptionId": "conversion-metrics##xdm:averageOrderValue##description##34721"
                 },
                 "xdm:totalOrderValue": {
                   "type": "number",
                   "title": "Total Order Value",
                   "description": "Total value of all conversions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:totalOrderValue##title##74651",
+                  "meta:descriptionId": "conversion-metrics##xdm:totalOrderValue##description##31881"
                 },
                 "xdm:conversionQuality": {
                   "type": "object",
@@ -224,62 +273,84 @@
                       "title": "Quality Score",
                       "description": "Overall conversion quality score",
                       "minimum": 0,
-                      "maximum": 10
+                      "maximum": 10,
+                      "meta:titleId": "conversion-metrics##xdm:qualityScore##title##79391",
+                      "meta:descriptionId": "conversion-metrics##xdm:qualityScore##description##77571"
                     },
                     "xdm:fraudRate": {
                       "type": "number",
                       "title": "Fraud Rate",
                       "description": "Percentage of conversions flagged as fraudulent",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "conversion-metrics##xdm:fraudRate##title##81201",
+                      "meta:descriptionId": "conversion-metrics##xdm:fraudRate##description##33541"
                     },
                     "xdm:validationRate": {
                       "type": "number",
                       "title": "Validation Rate",
                       "description": "Percentage of conversions that passed validation",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "conversion-metrics##xdm:validationRate##title##66031",
+                      "meta:descriptionId": "conversion-metrics##xdm:validationRate##description##36411"
                     }
-                  }
+                  },
+                  "meta:titleId": "conversion-metrics##xdm:conversionQuality##title##95711",
+                  "meta:descriptionId": "conversion-metrics##xdm:conversionQuality##description##4251"
                 },
                 "xdm:leads": {
                   "type": "integer",
                   "title": "Leads",
                   "description": "Total number of leads generated",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:leads##title##42771",
+                  "meta:descriptionId": "conversion-metrics##xdm:leads##description##24421"
                 },
                 "xdm:qualifiedLeads": {
                   "type": "integer",
                   "title": "Qualified Leads",
                   "description": "Number of qualified/validated leads",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:qualifiedLeads##title##12911",
+                  "meta:descriptionId": "conversion-metrics##xdm:qualifiedLeads##description##68191"
                 },
                 "xdm:costPerLead": {
                   "type": "number",
                   "title": "Cost Per Lead",
                   "description": "Average cost per lead",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:costPerLead##title##53461",
+                  "meta:descriptionId": "conversion-metrics##xdm:costPerLead##description##80381"
                 },
                 "xdm:leadFormOpens": {
                   "type": "integer",
                   "title": "Lead Form Opens",
                   "description": "Number of times lead form was opened",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:leadFormOpens##title##71371",
+                  "meta:descriptionId": "conversion-metrics##xdm:leadFormOpens##description##28651"
                 },
                 "xdm:leadFormSubmissions": {
                   "type": "integer",
                   "title": "Lead Form Submissions",
                   "description": "Number of lead form submissions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "conversion-metrics##xdm:leadFormSubmissions##title##17981",
+                  "meta:descriptionId": "conversion-metrics##xdm:leadFormSubmissions##description##67301"
                 },
                 "xdm:leadFormCompletionRate": {
                   "type": "number",
                   "title": "Lead Form Completion Rate",
                   "description": "Percentage of opened forms that were submitted",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "conversion-metrics##xdm:leadFormCompletionRate##title##39241",
+                  "meta:descriptionId": "conversion-metrics##xdm:leadFormCompletionRate##description##20421"
                 }
-              }
+              },
+              "meta:titleId": "conversion-metrics##xdm:conversionMetrics##title##78431",
+              "meta:descriptionId": "conversion-metrics##xdm:conversionMetrics##description##17131"
             }
           }
         }
@@ -291,5 +362,7 @@
       "$ref": "#/definitions/conversion-metrics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "conversion-metrics##title##89161",
+  "meta:descriptionId": "conversion-metrics##description##93491"
 }

@@ -30,17 +30,20 @@
                   "properties": {
                     "xdm:id": {
                       "type": "string",
-                      "description": "The tool call identifier."
+                      "description": "The tool call identifier.",
+                      "meta:descriptionId": "genai-execute-tool-span##xdm:id##description##35231"
                     }
                   }
                 },
                 "xdm:description": {
                   "type": "string",
-                  "description": "The tool description."
+                  "description": "The tool description.",
+                  "meta:descriptionId": "genai-execute-tool-span##xdm:description##description##44951"
                 },
                 "xdm:name": {
                   "type": "string",
-                  "description": "Name of the tool utilized by the agent."
+                  "description": "Name of the tool utilized by the agent.",
+                  "meta:descriptionId": "genai-execute-tool-span##xdm:name##description##19771"
                 }
               }
             }
@@ -51,7 +54,8 @@
           "properties": {
             "xdm:type": {
               "type": "string",
-              "description": "Describes a class of error the operation ended with."
+              "description": "Describes a class of error the operation ended with.",
+              "meta:descriptionId": "genai-execute-tool-span##xdm:type##description##92711"
             }
           }
         }
@@ -63,5 +67,7 @@
       "$ref": "#/definitions/genai-execute-tool-span"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "genai-execute-tool-span##title##73051",
+  "meta:descriptionId": "genai-execute-tool-span##description##89351"
 }

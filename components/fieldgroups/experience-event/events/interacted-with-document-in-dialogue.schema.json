@@ -36,20 +36,27 @@
                     "xdm:dialogueID": {
                       "title": "Dialogue ID",
                       "type": "string",
-                      "description": "Unique identifier of the dialogue."
+                      "description": "Unique identifier of the dialogue.",
+                      "meta:titleId": "interacted-with-document-in-dialogue##xdm:dialogueID##title##28021",
+                      "meta:descriptionId": "interacted-with-document-in-dialogue##xdm:dialogueID##description##92131"
                     },
                     "xdm:dialogueName": {
                       "title": "Dialogue Name",
                       "type": "string",
-                      "description": "The name of the dialogue session."
+                      "description": "The name of the dialogue session.",
+                      "meta:titleId": "interacted-with-document-in-dialogue##xdm:dialogueName##title##51681",
+                      "meta:descriptionId": "interacted-with-document-in-dialogue##xdm:dialogueName##description##14991"
                     },
                     "xdm:pageURL": {
                       "title": "Page URL",
                       "type": "string",
                       "format": "uri",
-                      "description": "URL where the dialogue was initiated."
+                      "description": "URL where the dialogue was initiated.",
+                      "meta:titleId": "interacted-with-document-in-dialogue##xdm:pageURL##title##20901",
+                      "meta:descriptionId": "interacted-with-document-in-dialogue##xdm:pageURL##description##78341"
                     }
-                  }
+                  },
+                  "meta:titleId": "interacted-with-document-in-dialogue##xdm:dialogueDetails##title##52041"
                 },
                 "xdm:documentDetails": {
                   "title": "Document Details",
@@ -58,39 +65,54 @@
                     "xdm:documentID": {
                       "title": "Document ID",
                       "type": "string",
-                      "description": "Unique identifier of the document."
+                      "description": "Unique identifier of the document.",
+                      "meta:titleId": "interacted-with-document-in-dialogue##xdm:documentID##title##99431",
+                      "meta:descriptionId": "interacted-with-document-in-dialogue##xdm:documentID##description##76401"
                     },
                     "xdm:documentName": {
                       "title": "Document Name",
                       "type": "string",
-                      "description": "The name of the document."
+                      "description": "The name of the document.",
+                      "meta:titleId": "interacted-with-document-in-dialogue##xdm:documentName##title##21741",
+                      "meta:descriptionId": "interacted-with-document-in-dialogue##xdm:documentName##description##2761"
                     },
                     "xdm:documentURL": {
                       "title": "Document URL",
                       "type": "string",
                       "format": "uri",
-                      "description": "URL of the document."
+                      "description": "URL of the document.",
+                      "meta:titleId": "interacted-with-document-in-dialogue##xdm:documentURL##title##76701",
+                      "meta:descriptionId": "interacted-with-document-in-dialogue##xdm:documentURL##description##4731"
                     },
                     "xdm:isDownloaded": {
                       "title": "Is Document Downloaded",
                       "type": "boolean",
-                      "description": "Indicates if the document was downloaded."
+                      "description": "Indicates if the document was downloaded.",
+                      "meta:titleId": "interacted-with-document-in-dialogue##xdm:isDownloaded##title##79781",
+                      "meta:descriptionId": "interacted-with-document-in-dialogue##xdm:isDownloaded##description##9641"
                     },
                     "xdm:isOpened": {
                       "title": "Is Document Opened",
                       "type": "boolean",
-                      "description": "Indicates if the document was opened."
+                      "description": "Indicates if the document was opened.",
+                      "meta:titleId": "interacted-with-document-in-dialogue##xdm:isOpened##title##20341",
+                      "meta:descriptionId": "interacted-with-document-in-dialogue##xdm:isOpened##description##9551"
                     }
-                  }
+                  },
+                  "meta:titleId": "interacted-with-document-in-dialogue##xdm:documentDetails##title##89211"
                 },
                 "xdm:documentKey": {
                   "title": "Document Key",
                   "description": "Unique key of the document.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "interacted-with-document-in-dialogue##xdm:documentKey##title##11821",
+                  "meta:descriptionId": "interacted-with-document-in-dialogue##xdm:documentKey##description##8701"
                 }
-              }
+              },
+              "meta:titleId": "interacted-with-document-in-dialogue##xdm:documentInDialogue##title##99391"
             }
-          }
+          },
+          "meta:titleId": "interacted-with-document-in-dialogue##xdm:interaction##title##75231"
         }
       }
     }
@@ -101,5 +123,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-10"
+  "meta:createdDate": "2025-01-10",
+  "meta:titleId": "interacted-with-document-in-dialogue##title##45971",
+  "meta:descriptionId": "interacted-with-document-in-dialogue##description##4541"
 }

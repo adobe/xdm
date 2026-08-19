@@ -19,18 +19,24 @@
         "xdm:datasetID": {
           "title": "Dataset ID",
           "description": "Dataset ID.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "computed-attributes##xdm:datasetID##title##771",
+          "meta:descriptionId": "computed-attributes##xdm:datasetID##description##69431"
         },
         "xdm:fragmentID": {
           "title": "Fragment ID",
           "description": "Fragment ID.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "computed-attributes##xdm:fragmentID##title##17441",
+          "meta:descriptionId": "computed-attributes##xdm:fragmentID##description##91441"
         },
         "xdm:lastUpdatedAt": {
           "title": "Last Updated At",
           "description": "Last updated at..",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "computed-attributes##xdm:lastUpdatedAt##title##74391",
+          "meta:descriptionId": "computed-attributes##xdm:lastUpdatedAt##description##98201"
         },
         "xdm:window": {
           "title": "Window",
@@ -41,15 +47,21 @@
               "title": "Start Date Time",
               "description": "Start date time.",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "computed-attributes##xdm:start##title##28401",
+              "meta:descriptionId": "computed-attributes##xdm:start##description##84451"
             },
             "xdm:end": {
               "title": "End Date Time",
               "description": "End date time.",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "computed-attributes##xdm:end##title##91801",
+              "meta:descriptionId": "computed-attributes##xdm:end##description##59911"
             }
-          }
+          },
+          "meta:titleId": "computed-attributes##xdm:window##title##10381",
+          "meta:descriptionId": "computed-attributes##xdm:window##description##12461"
         }
       }
     }
@@ -65,5 +77,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "computed-attributes##title##34521",
+  "meta:descriptionId": "computed-attributes##description##59181"
 }

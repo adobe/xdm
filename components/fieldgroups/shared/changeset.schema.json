@@ -33,7 +33,13 @@
                 "m": "merge"
               },
               "meta:titleId": "changeset##xdm:type##title##98201",
-              "meta:descriptionId": "changeset##xdm:type##description##43531"
+              "meta:descriptionId": "changeset##xdm:type##description##43531",
+              "meta:enumId": {
+                "i": "changeset##xdm:type##meta:enum##i##87591",
+                "u": "changeset##xdm:type##meta:enum##u##63641",
+                "d": "changeset##xdm:type##meta:enum##d##601",
+                "m": "changeset##xdm:type##meta:enum##m##17351"
+              }
             },
             "xdm:reason": {
               "title": "Change Request Reason",

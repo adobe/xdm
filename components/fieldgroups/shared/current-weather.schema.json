@@ -31,104 +31,146 @@
                 "xdm:temperature": {
                   "title": "Temperature",
                   "description": "Temperature in defined unit of measure. Range -140 to 140.",
-                  "$ref": "#/definitions/temperature"
+                  "$ref": "#/definitions/temperature",
+                  "meta:titleId": "current-weather##xdm:temperature##title##12361",
+                  "meta:descriptionId": "current-weather##xdm:temperature##description##86741"
                 },
                 "xdm:temperatureChange24Hour": {
                   "title": "Temperature Change 24 hour",
                   "description": "Change in temperature compared to the report 24 hours ago.",
-                  "$ref": "#/definitions/temperature"
+                  "$ref": "#/definitions/temperature",
+                  "meta:titleId": "current-weather##xdm:temperatureChange24Hour##title##1131",
+                  "meta:descriptionId": "current-weather##xdm:temperatureChange24Hour##description##39921"
                 },
                 "xdm:temperatureFeelsLike": {
                   "title": "Temperature Feels Like",
                   "description": "An apparent temperature. It represents what the air temperature “feels like” on exposed human skin due to the combined effect of the wind chill or heat index.\nWhen the temperature is 65°F or higher, the Feels Like value represents the computed Heat Index.  When the temperature is below 65°F, the Feels Like value represents the computed Wind Chill.\nRange -140 to 140.",
-                  "$ref": "#/definitions/temperature"
+                  "$ref": "#/definitions/temperature",
+                  "meta:titleId": "current-weather##xdm:temperatureFeelsLike##title##87341",
+                  "meta:descriptionId": "current-weather##xdm:temperatureFeelsLike##description##19701"
                 },
                 "xdm:precip1Hour": {
                   "title": "Precipitation Last Hour",
                   "description": "Rolling hour liquid precipitation amount. The amounts presented are a rolling time through the request time (now).",
-                  "$ref": "#/definitions/precipitation"
+                  "$ref": "#/definitions/precipitation",
+                  "meta:titleId": "current-weather##xdm:precip1Hour##title##84791",
+                  "meta:descriptionId": "current-weather##xdm:precip1Hour##description##15171"
                 },
                 "xdm:precip6Hour": {
                   "title": "Precipitation Last 6 Hours",
                   "description": "Rolling six hour liquid precipitation amount. The amounts presented are a rolling time through the request time (now).",
-                  "$ref": "#/definitions/precipitation"
+                  "$ref": "#/definitions/precipitation",
+                  "meta:titleId": "current-weather##xdm:precip6Hour##title##22781",
+                  "meta:descriptionId": "current-weather##xdm:precip6Hour##description##66561"
                 },
                 "xdm:precip24Hour": {
                   "title": "Precipitation Last 24 Hours",
                   "description": "Rolling twenty four hour liquid precipitation amount. The amounts presented are a rolling time through the request time (now).",
-                  "$ref": "#/definitions/precipitation"
+                  "$ref": "#/definitions/precipitation",
+                  "meta:titleId": "current-weather##xdm:precip24Hour##title##64761",
+                  "meta:descriptionId": "current-weather##xdm:precip24Hour##description##14161"
                 },
                 "xdm:pressureChange": {
                   "title": "Pressure Change ",
                   "description": "Change in pressure in the last three hours in Millibars.",
-                  "type": "number"
+                  "type": "number",
+                  "meta:titleId": "current-weather##xdm:pressureChange##title##90111",
+                  "meta:descriptionId": "current-weather##xdm:pressureChange##description##51751"
                 },
                 "xdm:pressureMeanSeaLevel": {
                   "title": "Pressure Mean Sea Level",
                   "description": "Mean sea level pressure in millibars.  In other words, the average barometric pressure at sea level.\nRange - Millibars precise to 1/10th mb.",
-                  "type": "number"
+                  "type": "number",
+                  "meta:titleId": "current-weather##xdm:pressureMeanSeaLevel##title##66851",
+                  "meta:descriptionId": "current-weather##xdm:pressureMeanSeaLevel##description##55101"
                 },
                 "xdm:relativeHumidity": {
                   "title": "Relative Humidity",
                   "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
-                  "type": "integer"
+                  "type": "integer",
+                  "meta:titleId": "current-weather##xdm:relativeHumidity##title##86361",
+                  "meta:descriptionId": "current-weather##xdm:relativeHumidity##description##541"
                 },
                 "xdm:snow1Hour": {
                   "title": "Snow Last Hour",
                   "description": "One hour snowfall amount.  The amounts presented are a rolling time through the request time (now).",
-                  "$ref": "#/definitions/snowfall"
+                  "$ref": "#/definitions/snowfall",
+                  "meta:titleId": "current-weather##xdm:snow1Hour##title##84071",
+                  "meta:descriptionId": "current-weather##xdm:snow1Hour##description##49931"
                 },
                 "xdm:snow6Hour": {
                   "title": "Snow Last 6 Hours",
                   "description": "One hour snowfall amount.  The amounts presented are a rolling time through the request time (now).",
-                  "$ref": "#/definitions/snowfall"
+                  "$ref": "#/definitions/snowfall",
+                  "meta:titleId": "current-weather##xdm:snow6Hour##title##89971",
+                  "meta:descriptionId": "current-weather##xdm:snow6Hour##description##87531"
                 },
                 "xdm:snow24Hour": {
                   "title": "Snow 24 Hour",
                   "description": "Twenty four hour snowfall amount.  The amounts presented are a rolling time through the request time (now).",
-                  "$ref": "#/definitions/snowfall"
+                  "$ref": "#/definitions/snowfall",
+                  "meta:titleId": "current-weather##xdm:snow24Hour##title##16051",
+                  "meta:descriptionId": "current-weather##xdm:snow24Hour##description##37681"
                 },
                 "temperatureDewPoint": {
                   "title": "Temperature Dew Point",
                   "description": "The temperature which air must be cooled at constant pressure to reach saturation. The Dew Point is also an indirect measure of the humidity of the air. The Dew Point will never exceed the Temperature. When the Dewpoint and Temperature are equal, clouds or fog will typically form. The closer the values of Temperature and Dew Point, the higher the relative humidity. Range - -80 to 100 (°F) or -62 to 37 (°C).",
-                  "$ref": "#/definitions/temperature"
+                  "$ref": "#/definitions/temperature",
+                  "meta:titleId": "current-weather##temperatureDewPoint##title##47621",
+                  "meta:descriptionId": "current-weather##temperatureDewPoint##description##20051"
                 },
                 "xdm:temperatureMaxSince7Am": {
                   "title": "Temperature Max Since 7 AM",
                   "description": "The maximum temperature since 7 A.M. local time.",
-                  "$ref": "#/definitions/temperature"
+                  "$ref": "#/definitions/temperature",
+                  "meta:titleId": "current-weather##xdm:temperatureMaxSince7Am##title##76161",
+                  "meta:descriptionId": "current-weather##xdm:temperatureMaxSince7Am##description##80901"
                 },
                 "xdm:temperatureMin24Hour": {
                   "title": "Temperature Min Last 24 Hours",
                   "description": "The minimum temperature in the last 24 hours.  The 24 hour period is in reference to the request time (now). ",
-                  "$ref": "#/definitions/temperature"
+                  "$ref": "#/definitions/temperature",
+                  "meta:titleId": "current-weather##xdm:temperatureMin24Hour##title##17471",
+                  "meta:descriptionId": "current-weather##xdm:temperatureMin24Hour##description##81651"
                 },
                 "xdm:uvIndex": {
                   "title": "UV Index",
                   "description": "The Weather Channel's proprietary UV index.  The UV Index provides indices of the intensity of the solar radiation level and risk of skin damage due to exposure.\nRange - -2=Not Available, -1=No Report, 0-2=Low, 3-5=Moderate, 6-7=High, 8-10= Very High, 11-16=Extreme.",
-                  "$ref": "#/definitions/uvIndex"
+                  "$ref": "#/definitions/uvIndex",
+                  "meta:titleId": "current-weather##xdm:uvIndex##title##76031",
+                  "meta:descriptionId": "current-weather##xdm:uvIndex##description##37361"
                 },
                 "xdm:windDirection": {
                   "title": "Wind Direction",
                   "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
-                  "type": "integer"
+                  "type": "integer",
+                  "meta:titleId": "current-weather##xdm:windDirection##title##98521",
+                  "meta:descriptionId": "current-weather##xdm:windDirection##description##10451"
                 },
                 "xdm:windGust": {
                   "title": "Wind Gust",
                   "description": "This data field contains information about sudden and temporary variations of the average Wind Speed. The report always shows the maximum wind gust speed recorded during the observation period. It is a required display field if Wind Speed is shown. The speed of the gust can be expressed in miles per hour or kilometers per hour.",
-                  "$ref": "#/definitions/speed"
+                  "$ref": "#/definitions/speed",
+                  "meta:titleId": "current-weather##xdm:windGust##title##72941",
+                  "meta:descriptionId": "current-weather##xdm:windGust##description##97931"
                 },
                 "xdm:windSpeed": {
                   "title": "Wind Speed",
                   "description": "The wind is treated as a vector; hence, winds must have direction and magnitude (speed). The wind information reported in the current conditions corresponds to a 10-minute average called the sustained wind speed. Sudden or brief variations in the wind speed are known as “wind gusts” and are reported in a separate data field. Wind directions are always expressed as \"from whence the wind blows\" meaning that a North wind blows from North to South. If you face North in a North wind the wind is at your face. Face southward and the North wind is at your back.",
-                  "$ref": "#/definitions/speed"
+                  "$ref": "#/definitions/speed",
+                  "meta:titleId": "current-weather##xdm:windSpeed##title##22091",
+                  "meta:descriptionId": "current-weather##xdm:windSpeed##description##56021"
                 },
                 "xdm:sunsetTime": {
                   "type": "integer",
                   "description": "Sunset time in UTC.",
-                  "title": "Sunset Time"
+                  "title": "Sunset Time",
+                  "meta:titleId": "current-weather##xdm:sunsetTime##title##52201",
+                  "meta:descriptionId": "current-weather##xdm:sunsetTime##description##37131"
                 }
-              }
+              },
+              "meta:titleId": "current-weather##xdm:current##title##9371",
+              "meta:descriptionId": "current-weather##xdm:current##description##60121"
             }
           }
         }
@@ -139,12 +181,16 @@
         "xdm:centimeters": {
           "title": "Centimeters",
           "type": "number",
-          "description": "Snowfall in centimeters"
+          "description": "Snowfall in centimeters",
+          "meta:titleId": "current-weather##xdm:centimeters##title##1901",
+          "meta:descriptionId": "current-weather##xdm:centimeters##description##85621"
         },
         "xdm:inches": {
           "title": "Inches",
           "type": "number",
-          "description": "Snowfall in inches"
+          "description": "Snowfall in inches",
+          "meta:titleId": "current-weather##xdm:inches##title##89491",
+          "meta:descriptionId": "current-weather##xdm:inches##description##79721"
         }
       }
     },
@@ -153,12 +199,16 @@
         "xdm:millimeters": {
           "title": "Millimeters",
           "type": "number",
-          "description": "Precipitation in millimeters"
+          "description": "Precipitation in millimeters",
+          "meta:titleId": "current-weather##xdm:millimeters##title##73551",
+          "meta:descriptionId": "current-weather##xdm:millimeters##description##49181"
         },
         "xdm:inches": {
           "title": "Inches",
           "type": "number",
-          "description": "Precipitation in inches"
+          "description": "Precipitation in inches",
+          "meta:titleId": "current-weather##xdm:inches##title##29241",
+          "meta:descriptionId": "current-weather##xdm:inches##description##2591"
         }
       }
     },
@@ -167,12 +217,16 @@
         "xdm:kilometers": {
           "title": "Kilometers",
           "type": "number",
-          "description": "Distance in kilometers"
+          "description": "Distance in kilometers",
+          "meta:titleId": "current-weather##xdm:kilometers##title##15691",
+          "meta:descriptionId": "current-weather##xdm:kilometers##description##78931"
         },
         "xdm:inches": {
           "title": "Miles",
           "type": "number",
-          "description": "Distance in miles"
+          "description": "Distance in miles",
+          "meta:titleId": "current-weather##xdm:inches##title##5211",
+          "meta:descriptionId": "current-weather##xdm:inches##description##95031"
         }
       }
     },
@@ -181,12 +235,16 @@
         "xdm:kilometersPerHour": {
           "title": "Kilometers per Hour",
           "type": "integer",
-          "description": "Wind speed in kilometers per hour"
+          "description": "Wind speed in kilometers per hour",
+          "meta:titleId": "current-weather##xdm:kilometersPerHour##title##15761",
+          "meta:descriptionId": "current-weather##xdm:kilometersPerHour##description##11101"
         },
         "xdm:milesPerHour": {
           "title": "Miles per Hour",
           "type": "integer",
-          "description": "Wind speed in miles per hour"
+          "description": "Wind speed in miles per hour",
+          "meta:titleId": "current-weather##xdm:milesPerHour##title##82701",
+          "meta:descriptionId": "current-weather##xdm:milesPerHour##description##25611"
         }
       }
     },
@@ -195,12 +253,16 @@
         "xdm:celsius": {
           "title": "Celsius",
           "type": "integer",
-          "description": "Temperature in degrees Celsius"
+          "description": "Temperature in degrees Celsius",
+          "meta:titleId": "current-weather##xdm:celsius##title##97561",
+          "meta:descriptionId": "current-weather##xdm:celsius##description##70511"
         },
         "xdm:fahrenheit": {
           "title": "Fahrenheit",
           "type": "integer",
-          "description": "Temperature in degrees Fahrenheit"
+          "description": "Temperature in degrees Fahrenheit",
+          "meta:titleId": "current-weather##xdm:fahrenheit##title##71491",
+          "meta:descriptionId": "current-weather##xdm:fahrenheit##description##78141"
         }
       }
     },
@@ -208,11 +270,13 @@
       "properties": {
         "xdm:_name": {
           "type": "string",
-          "description": "Index name"
+          "description": "Index name",
+          "meta:descriptionId": "current-weather##xdm:_name##description##83591"
         },
         "xdm:value": {
           "type": "string",
-          "description": "Index value"
+          "description": "Index value",
+          "meta:descriptionId": "current-weather##xdm:value##description##94941"
         }
       }
     }
@@ -221,5 +285,7 @@
     {
       "$ref": "#/definitions/customFields"
     }
-  ]
+  ],
+  "meta:titleId": "current-weather##title##55881",
+  "meta:descriptionId": "current-weather##description##17151"
 }

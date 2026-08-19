@@ -29,100 +29,132 @@
                   "title": "Spend (Micro Currency)",
                   "description": "Amount spent in micro currency units (spend * 1,000,000).",
                   "minimum": 0,
-                  "maximum": 9007199254740991
+                  "maximum": 9007199254740991,
+                  "meta:titleId": "cost-metrics##xdm:spendInMicroCurrency##title##18611",
+                  "meta:descriptionId": "cost-metrics##xdm:spendInMicroCurrency##description##65361"
                 },
                 "xdm:averageCpm": {
                   "type": "number",
                   "title": "Average CPM",
                   "description": "Average cost per thousand impressions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:averageCpm##title##76061",
+                  "meta:descriptionId": "cost-metrics##xdm:averageCpm##description##2851"
                 },
                 "xdm:averageCpc": {
                   "type": "number",
                   "title": "Average CPC",
                   "description": "Average cost per click",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:averageCpc##title##57301",
+                  "meta:descriptionId": "cost-metrics##xdm:averageCpc##description##57561"
                 },
                 "xdm:averageCpe": {
                   "type": "number",
                   "title": "Average CPE",
                   "description": "Average cost per engagement",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:averageCpe##title##72171",
+                  "meta:descriptionId": "cost-metrics##xdm:averageCpe##description##94961"
                 },
                 "xdm:averageCpv": {
                   "type": "number",
                   "title": "Average CPV",
                   "description": "Average cost per video view",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:averageCpv##title##15291",
+                  "meta:descriptionId": "cost-metrics##xdm:averageCpv##description##36551"
                 },
                 "xdm:averageCpa": {
                   "type": "number",
                   "title": "Average CPA",
                   "description": "Average cost per acquisition/action",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:averageCpa##title##28501",
+                  "meta:descriptionId": "cost-metrics##xdm:averageCpa##description##93351"
                 },
                 "xdm:averageCpl": {
                   "type": "number",
                   "title": "Average CPL",
                   "description": "Average cost per lead",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:averageCpl##title##39591",
+                  "meta:descriptionId": "cost-metrics##xdm:averageCpl##description##11"
                 },
                 "xdm:bidAmount": {
                   "type": "number",
                   "title": "Bid Amount",
                   "description": "Average bid amount",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:bidAmount##title##18571",
+                  "meta:descriptionId": "cost-metrics##xdm:bidAmount##description##17591"
                 },
                 "xdm:bidAmountMicro": {
                   "type": "integer",
                   "title": "Bid Amount (Micro Currency)",
                   "description": "Bid amount in micro currency units (bid * 1,000,000).",
                   "minimum": 0,
-                  "maximum": 9007199254740991
+                  "maximum": 9007199254740991,
+                  "meta:titleId": "cost-metrics##xdm:bidAmountMicro##title##63991",
+                  "meta:descriptionId": "cost-metrics##xdm:bidAmountMicro##description##81411"
                 },
                 "xdm:maxBid": {
                   "type": "number",
                   "title": "Maximum Bid",
                   "description": "Maximum bid amount set",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:maxBid##title##63101",
+                  "meta:descriptionId": "cost-metrics##xdm:maxBid##description##98151"
                 },
                 "xdm:minBid": {
                   "type": "number",
                   "title": "Minimum Bid",
                   "description": "Minimum bid amount set",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:minBid##title##37861",
+                  "meta:descriptionId": "cost-metrics##xdm:minBid##description##12131"
                 },
                 "xdm:targetBid": {
                   "type": "number",
                   "title": "Target Bid",
                   "description": "Target bid amount for automated bidding",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:targetBid##title##93891",
+                  "meta:descriptionId": "cost-metrics##xdm:targetBid##description##1941"
                 },
                 "xdm:actualBid": {
                   "type": "number",
                   "title": "Actual Bid",
                   "description": "Actual bid amount used in auctions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:actualBid##title##2001",
+                  "meta:descriptionId": "cost-metrics##xdm:actualBid##description##21671"
                 },
                 "xdm:qualityScore": {
                   "type": "number",
                   "title": "Quality Score",
                   "description": "Ad quality score (platform-specific)",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "cost-metrics##xdm:qualityScore##title##78801",
+                  "meta:descriptionId": "cost-metrics##xdm:qualityScore##description##68511"
                 },
                 "xdm:adRank": {
                   "type": "number",
                   "title": "Ad Rank",
                   "description": "Ad rank score used for auction positioning",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:adRank##title##2211",
+                  "meta:descriptionId": "cost-metrics##xdm:adRank##description##53131"
                 },
                 "xdm:competitionIndex": {
                   "type": "number",
                   "title": "Competition Index",
                   "description": "Competition level index for the auction",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "cost-metrics##xdm:competitionIndex##title##40691",
+                  "meta:descriptionId": "cost-metrics##xdm:competitionIndex##description##45781"
                 },
                 "xdm:impressionShare": {
                   "type": "object",
@@ -133,65 +165,79 @@
                       "type": "number",
                       "title": "Impression Share",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:impressionShare##title##36841"
                     },
                     "xdm:impressionShareRank": {
                       "type": "number",
                       "title": "Impression Share Rank",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:impressionShareRank##title##39821"
                     },
                     "xdm:impressionShareBudget": {
                       "type": "number",
                       "title": "Impression Share Budget",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:impressionShareBudget##title##99551"
                     },
                     "xdm:lostImpressionShareRank": {
                       "type": "number",
                       "title": "Lost Impression Share Rank",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:lostImpressionShareRank##title##29801"
                     },
                     "xdm:lostImpressionShareBudget": {
                       "type": "number",
                       "title": "Lost Impression Share Budget",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:lostImpressionShareBudget##title##92011"
                     },
                     "xdm:exactMatchImpressionShare": {
                       "type": "number",
                       "title": "Exact Match Impression Share",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:exactMatchImpressionShare##title##39221"
                     },
                     "xdm:topImpressionShare": {
                       "type": "number",
                       "title": "Top Impression Share",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:topImpressionShare##title##49951"
                     },
                     "xdm:absoluteTopImpressionShare": {
                       "type": "number",
                       "title": "Absolute Top Impression Share",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:absoluteTopImpressionShare##title##94101"
                     }
-                  }
+                  },
+                  "meta:titleId": "cost-metrics##xdm:impressionShare##title##35051",
+                  "meta:descriptionId": "cost-metrics##xdm:impressionShare##description##33281"
                 },
                 "xdm:lostImpressionShareRank": {
                   "type": "number",
                   "title": "Lost Impression Share (Rank)",
                   "description": "Impression share lost due to ad rank. Available at Campaign and Ad Group levels only.",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "cost-metrics##xdm:lostImpressionShareRank##title##80821",
+                  "meta:descriptionId": "cost-metrics##xdm:lostImpressionShareRank##description##72791"
                 },
                 "xdm:lostImpressionShareBudget": {
                   "type": "number",
                   "title": "Lost Impression Share (Budget)",
                   "description": "Impression share lost due to budget constraints. Available at Campaign and Ad Group levels only.",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "cost-metrics##xdm:lostImpressionShareBudget##title##25931",
+                  "meta:descriptionId": "cost-metrics##xdm:lostImpressionShareBudget##description##5791"
                 },
                 "xdm:budgetUtilization": {
                   "type": "object",
@@ -201,17 +247,20 @@
                     "xdm:budgetAllocated": {
                       "type": "number",
                       "title": "Budget Allocated",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:budgetAllocated##title##80911"
                     },
                     "xdm:budgetSpent": {
                       "type": "number",
                       "title": "Budget Spent",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:budgetSpent##title##23361"
                     },
                     "xdm:budgetRemaining": {
                       "type": "number",
                       "title": "Budget Remaining",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:budgetRemaining##title##92751"
                     },
                     "xdm:budgetUtilization": {
                       "type": "number",
@@ -219,24 +268,30 @@
                       "description": "(DEPRECATED — use xdm:budgetUtilizationUncapped instead. Capped at 1.0 and cannot represent over-spend where spend exceeds the allocated budget.) Ratio of budget spent to budget allocated.",
                       "meta:status": "deprecated",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:budgetUtilization##title##93531",
+                      "meta:descriptionId": "cost-metrics##xdm:budgetUtilization##description##91001"
                     },
                     "xdm:budgetUtilizationUncapped": {
                       "type": "number",
                       "title": "Budget Utilization (Uncapped)",
                       "description": "Ratio of budget spent to budget allocated. Can exceed 1.0 when spend overruns the allocated budget.",
                       "meta:status": "stable",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:budgetUtilizationUncapped##title##8121",
+                      "meta:descriptionId": "cost-metrics##xdm:budgetUtilizationUncapped##description##27661"
                     },
                     "xdm:dailyBudget": {
                       "type": "number",
                       "title": "Daily Budget",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:dailyBudget##title##60851"
                     },
                     "xdm:dailySpend": {
                       "type": "number",
                       "title": "Daily Spend",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:dailySpend##title##93281"
                     },
                     "xdm:dailyBudgetUtilization": {
                       "type": "number",
@@ -244,14 +299,18 @@
                       "description": "(DEPRECATED — use xdm:dailyBudgetUtilizationUncapped instead. Capped at 1.0 and cannot represent over-spend where daily spend exceeds the daily budget.) Ratio of daily spend to daily budget.",
                       "meta:status": "deprecated",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "cost-metrics##xdm:dailyBudgetUtilization##title##27551",
+                      "meta:descriptionId": "cost-metrics##xdm:dailyBudgetUtilization##description##89141"
                     },
                     "xdm:dailyBudgetUtilizationUncapped": {
                       "type": "number",
                       "title": "Daily Budget Utilization (Uncapped)",
                       "description": "Ratio of daily spend to daily budget. Can exceed 1.0 when daily spend overruns the daily budget.",
                       "meta:status": "stable",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:dailyBudgetUtilizationUncapped##title##84411",
+                      "meta:descriptionId": "cost-metrics##xdm:dailyBudgetUtilizationUncapped##description##29531"
                     },
                     "xdm:pacingStatus": {
                       "type": "string",
@@ -262,56 +321,78 @@
                         "ahead": "Ahead",
                         "behind": "Behind",
                         "paused": "Paused"
+                      },
+                      "meta:titleId": "cost-metrics##xdm:pacingStatus##title##43151",
+                      "meta:enumId": {
+                        "on_track": "cost-metrics##xdm:pacingStatus##meta:enum##on_track##32981",
+                        "ahead": "cost-metrics##xdm:pacingStatus##meta:enum##ahead##73721",
+                        "behind": "cost-metrics##xdm:pacingStatus##meta:enum##behind##87711",
+                        "paused": "cost-metrics##xdm:pacingStatus##meta:enum##paused##12161"
                       }
                     },
                     "xdm:projectedSpend": {
                       "type": "number",
                       "title": "Projected Spend",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:projectedSpend##title##2711"
                     },
                     "xdm:budgetOverrun": {
                       "type": "number",
                       "title": "Budget Overrun",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:budgetOverrun##title##78281"
                     },
                     "xdm:budgetUnderrun": {
                       "type": "number",
                       "title": "Budget Underrun",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "cost-metrics##xdm:budgetUnderrun##title##97371"
                     }
-                  }
+                  },
+                  "meta:titleId": "cost-metrics##xdm:budgetUtilization##title##83191",
+                  "meta:descriptionId": "cost-metrics##xdm:budgetUtilization##description##18381"
                 },
                 "xdm:budgetRemaining": {
                   "type": "number",
                   "title": "Budget Remaining",
                   "description": "Remaining budget amount",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:budgetRemaining##title##14101",
+                  "meta:descriptionId": "cost-metrics##xdm:budgetRemaining##description##70281"
                 },
                 "xdm:budgetPacing": {
                   "type": "number",
                   "title": "Budget Pacing",
                   "description": "Budget pacing percentage (actual vs. planned)",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:budgetPacing##title##26401",
+                  "meta:descriptionId": "cost-metrics##xdm:budgetPacing##description##63021"
                 },
                 "xdm:costEfficiency": {
                   "type": "number",
                   "title": "Cost Efficiency",
                   "description": "Cost efficiency score compared to benchmarks",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:costEfficiency##title##70301",
+                  "meta:descriptionId": "cost-metrics##xdm:costEfficiency##description##71301"
                 },
                 "xdm:marginOfError": {
                   "type": "number",
                   "title": "Margin of Error",
                   "description": "Statistical margin of error for cost metrics",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "cost-metrics##xdm:marginOfError##title##32241",
+                  "meta:descriptionId": "cost-metrics##xdm:marginOfError##description##26001"
                 },
                 "xdm:confidenceLevel": {
                   "type": "number",
                   "title": "Confidence Level",
                   "description": "Statistical confidence level for cost metrics",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "cost-metrics##xdm:confidenceLevel##title##75981",
+                  "meta:descriptionId": "cost-metrics##xdm:confidenceLevel##description##28581"
                 },
                 "xdm:costTrend": {
                   "type": "string",
@@ -323,15 +404,27 @@
                     "decreasing": "Costs are decreasing",
                     "stable": "Costs are stable",
                     "volatile": "Costs are volatile"
+                  },
+                  "meta:titleId": "cost-metrics##xdm:costTrend##title##53241",
+                  "meta:descriptionId": "cost-metrics##xdm:costTrend##description##90441",
+                  "meta:enumId": {
+                    "increasing": "cost-metrics##xdm:costTrend##meta:enum##increasing##77431",
+                    "decreasing": "cost-metrics##xdm:costTrend##meta:enum##decreasing##37921",
+                    "stable": "cost-metrics##xdm:costTrend##meta:enum##stable##68501",
+                    "volatile": "cost-metrics##xdm:costTrend##meta:enum##volatile##44451"
                   }
                 },
                 "xdm:costVariance": {
                   "type": "number",
                   "title": "Cost Variance",
                   "description": "Variance in cost metrics",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "cost-metrics##xdm:costVariance##title##97711",
+                  "meta:descriptionId": "cost-metrics##xdm:costVariance##description##64261"
                 }
-              }
+              },
+              "meta:titleId": "cost-metrics##xdm:costMetrics##title##99121",
+              "meta:descriptionId": "cost-metrics##xdm:costMetrics##description##25281"
             }
           }
         }
@@ -343,5 +436,7 @@
       "$ref": "#/definitions/cost-metrics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "cost-metrics##title##11571",
+  "meta:descriptionId": "cost-metrics##description##64221"
 }

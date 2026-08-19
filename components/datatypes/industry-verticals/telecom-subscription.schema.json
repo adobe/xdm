@@ -241,7 +241,14 @@
                 },
                 "description": "Captures the device operating system.",
                 "meta:titleId": "telecom-subscription##xdm:OS##title##33971",
-                "meta:descriptionId": "telecom-subscription##xdm:OS##description##10491"
+                "meta:descriptionId": "telecom-subscription##xdm:OS##description##10491",
+                "meta:enumId": {
+                  "android": "telecom-subscription##xdm:OS##meta:enum##android##31961",
+                  "ios": "telecom-subscription##xdm:OS##meta:enum##ios##23621",
+                  "windows": "telecom-subscription##xdm:OS##meta:enum##windows##43301",
+                  "blackberry": "telecom-subscription##xdm:OS##meta:enum##blackberry##95931",
+                  "symbian": "telecom-subscription##xdm:OS##meta:enum##symbian##50341"
+                }
               },
               "xdm:status": {
                 "title": "Status",
@@ -253,7 +260,11 @@
                 },
                 "description": "Captures the device status.",
                 "meta:titleId": "telecom-subscription##xdm:status##title##41921",
-                "meta:descriptionId": "telecom-subscription##xdm:status##description##47351"
+                "meta:descriptionId": "telecom-subscription##xdm:status##description##47351",
+                "meta:enumId": {
+                  "active": "telecom-subscription##xdm:status##meta:enum##active##2071",
+                  "inactive": "telecom-subscription##xdm:status##meta:enum##inactive##75311"
+                }
               },
               "xdm:storageCapacity": {
                 "title": "Storage Capacity",
@@ -272,7 +283,11 @@
                 },
                 "description": "Captures if the device will be paid for in installments or full retail price.",
                 "meta:titleId": "telecom-subscription##xdm:paymentOptions##title##5871",
-                "meta:descriptionId": "telecom-subscription##xdm:paymentOptions##description##10581"
+                "meta:descriptionId": "telecom-subscription##xdm:paymentOptions##description##10581",
+                "meta:enumId": {
+                  "installmentPlan": "telecom-subscription##xdm:paymentOptions##meta:enum##installmentPlan##67921",
+                  "retailPrice": "telecom-subscription##xdm:paymentOptions##meta:enum##retailPrice##49261"
+                }
               }
             }
           },

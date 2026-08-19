@@ -18,29 +18,39 @@
         "xdm:path": {
           "title": "Path",
           "description": "Logical location of the file relative to the Volume root (Primary Key)",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-content##xdm:path##title##13191",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:path##description##60501"
         },
         "xdm:absolutePath": {
           "title": "AbsolutePath",
           "description": "Location of the file in absolute terms, including the storage provider prefix.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-content##xdm:absolutePath##title##69621",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:absolutePath##description##40651"
         },
         "xdm:name": {
           "title": "Name",
           "description": "File name",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-content##xdm:name##title##83201",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:name##description##67231"
         },
         "xdm:type": {
           "title": "Type",
           "description": "File type",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-content##xdm:type##title##57191",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:type##description##601"
         },
         "xdm:size": {
           "title": "Size",
           "description": "File size in bytes",
           "type": "integer",
           "minimum": -9007199254740991,
-          "maximum": 9007199254740991
+          "maximum": 9007199254740991,
+          "meta:titleId": "aep-lakehouse-content##xdm:size##title##88281",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:size##description##98451"
         },
         "xdm:createTime": {
           "title": "Create Time",
@@ -64,41 +74,55 @@
           "type": "object",
           "additionalProperties": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "aep-lakehouse-content##xdm:tags##title##69711",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:tags##description##25331"
         },
         "xdm:webUrl": {
           "title": "WebURL",
           "description": "Optional url from where this content is located.",
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "meta:titleId": "aep-lakehouse-content##xdm:webUrl##title##70471",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:webUrl##description##18191"
         },
         "xdm:title": {
           "title": "Title",
           "description": "Human-readable title or display name for this content.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-content##xdm:title##title##89551",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:title##description##62781"
         },
         "xdm:metaDataModificationTime": {
           "title": "Metadata Modification Time",
           "description": "The date and time when metadata for this content was last modified.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "aep-lakehouse-content##xdm:metaDataModificationTime##title##83941",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:metaDataModificationTime##description##45611"
         },
         "xdm:versionTimestamp": {
           "title": "Version Timestamp",
           "description": "Optional timestamp representing the version or snapshot boundary for this content record.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "aep-lakehouse-content##xdm:versionTimestamp##title##26011",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:versionTimestamp##description##59991"
         },
         "xdm:assetUrl": {
           "title": "Asset URL",
           "description": "URL of the asset associated with this content.",
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "meta:titleId": "aep-lakehouse-content##xdm:assetUrl##title##44791",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:assetUrl##description##44961"
         },
         "xdm:assetType": {
           "title": "Asset Type",
           "description": "Type or classification of the asset.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-content##xdm:assetType##title##22881",
+          "meta:descriptionId": "aep-lakehouse-content##xdm:assetType##description##14151"
         }
       }
     }
@@ -111,5 +135,7 @@
       "$ref": "#/definitions/content"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "aep-lakehouse-content##title##99001",
+  "meta:descriptionId": "aep-lakehouse-content##description##81931"
 }

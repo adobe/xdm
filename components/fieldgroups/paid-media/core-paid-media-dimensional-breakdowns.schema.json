@@ -22,7 +22,9 @@
             "xdm:breakdownType": {
               "type": "string",
               "title": "Breakdown Type",
-              "description": "Indicates which dimension this metrics row is broken down by (GenStudio migration aid)"
+              "description": "Indicates which dimension this metrics row is broken down by (GenStudio migration aid)",
+              "meta:titleId": "dimensional-breakdowns##xdm:breakdownType##title##22481",
+              "meta:descriptionId": "dimensional-breakdowns##xdm:breakdownType##description##721"
             },
             "xdm:dimensionalBreakdowns": {
               "type": "object",
@@ -40,22 +42,37 @@
                     "tablet": "Tablet",
                     "tv": "Connected TV",
                     "other": "Other Device"
+                  },
+                  "meta:titleId": "dimensional-breakdowns##xdm:deviceType##title##69131",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:deviceType##description##96761",
+                  "meta:enumId": {
+                    "desktop": "dimensional-breakdowns##xdm:deviceType##meta:enum##desktop##59091",
+                    "mobile": "dimensional-breakdowns##xdm:deviceType##meta:enum##mobile##84701",
+                    "tablet": "dimensional-breakdowns##xdm:deviceType##meta:enum##tablet##62381",
+                    "tv": "dimensional-breakdowns##xdm:deviceType##meta:enum##tv##9851",
+                    "other": "dimensional-breakdowns##xdm:deviceType##meta:enum##other##32131"
                   }
                 },
                 "xdm:placement": {
                   "type": "string",
                   "title": "Placement",
-                  "description": "Ad placement for this metrics record"
+                  "description": "Ad placement for this metrics record",
+                  "meta:titleId": "dimensional-breakdowns##xdm:placement##title##73001",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:placement##description##2701"
                 },
                 "xdm:ageGroup": {
                   "type": "string",
                   "title": "Age Group",
-                  "description": "Age group demographic breakdown"
+                  "description": "Age group demographic breakdown",
+                  "meta:titleId": "dimensional-breakdowns##xdm:ageGroup##title##22161",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:ageGroup##description##16311"
                 },
                 "xdm:age": {
                   "type": "string",
                   "title": "Age",
-                  "description": "Alias of ageGroup for migration"
+                  "description": "Alias of ageGroup for migration",
+                  "meta:titleId": "dimensional-breakdowns##xdm:age##title##47781",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:age##description##50971"
                 },
                 "xdm:gender": {
                   "type": "string",
@@ -67,82 +84,120 @@
                     "female": "Female",
                     "all": "All Genders",
                     "unknown": "Unknown/Unspecified"
+                  },
+                  "meta:titleId": "dimensional-breakdowns##xdm:gender##title##24351",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:gender##description##93321",
+                  "meta:enumId": {
+                    "male": "dimensional-breakdowns##xdm:gender##meta:enum##male##26641",
+                    "female": "dimensional-breakdowns##xdm:gender##meta:enum##female##85611",
+                    "all": "dimensional-breakdowns##xdm:gender##meta:enum##all##60651",
+                    "unknown": "dimensional-breakdowns##xdm:gender##meta:enum##unknown##94261"
                   }
                 },
                 "xdm:country": {
                   "type": "string",
                   "title": "Country",
-                  "description": "Country for geographic breakdown (ISO country code)"
+                  "description": "Country for geographic breakdown (ISO country code)",
+                  "meta:titleId": "dimensional-breakdowns##xdm:country##title##72031",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:country##description##14221"
                 },
                 "xdm:region": {
                   "type": "string",
                   "title": "Region",
-                  "description": "Region/state for geographic breakdown"
+                  "description": "Region/state for geographic breakdown",
+                  "meta:titleId": "dimensional-breakdowns##xdm:region##title##8451",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:region##description##43051"
                 },
                 "xdm:city": {
                   "type": "string",
                   "title": "City",
-                  "description": "City for geographic breakdown"
+                  "description": "City for geographic breakdown",
+                  "meta:titleId": "dimensional-breakdowns##xdm:city##title##89791",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:city##description##85201"
                 },
                 "xdm:language": {
                   "type": "string",
                   "title": "Language",
-                  "description": "Language for demographic breakdown"
+                  "description": "Language for demographic breakdown",
+                  "meta:titleId": "dimensional-breakdowns##xdm:language##title##81421",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:language##description##70481"
                 },
                 "xdm:interestCategory": {
                   "type": "string",
                   "title": "Interest Category",
-                  "description": "Interest category for targeting breakdown"
+                  "description": "Interest category for targeting breakdown",
+                  "meta:titleId": "dimensional-breakdowns##xdm:interestCategory##title##48091",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:interestCategory##description##21661"
                 },
                 "xdm:behaviorCategory": {
                   "type": "string",
                   "title": "Behavior Category",
-                  "description": "Behavior category for targeting breakdown"
+                  "description": "Behavior category for targeting breakdown",
+                  "meta:titleId": "dimensional-breakdowns##xdm:behaviorCategory##title##47391",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:behaviorCategory##description##41231"
                 },
                 "xdm:audienceSegment": {
                   "type": "string",
                   "title": "Audience Segment",
-                  "description": "Custom audience segment identifier"
+                  "description": "Custom audience segment identifier",
+                  "meta:titleId": "dimensional-breakdowns##xdm:audienceSegment##title##45331",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:audienceSegment##description##33861"
                 },
                 "xdm:campaignObjective": {
                   "type": "string",
                   "title": "Campaign Objective",
-                  "description": "Campaign objective for context in multi-level reports"
+                  "description": "Campaign objective for context in multi-level reports",
+                  "meta:titleId": "dimensional-breakdowns##xdm:campaignObjective##title##58161",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:campaignObjective##description##40061"
                 },
                 "xdm:optimizationGoal": {
                   "type": "string",
                   "title": "Optimization Goal",
-                  "description": "Optimization goal for context in multi-level reports"
+                  "description": "Optimization goal for context in multi-level reports",
+                  "meta:titleId": "dimensional-breakdowns##xdm:optimizationGoal##title##14681",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:optimizationGoal##description##24161"
                 },
                 "xdm:creativeFormat": {
                   "type": "string",
                   "title": "Creative Format",
-                  "description": "Creative format breakdown (image, video, carousel, etc.)"
+                  "description": "Creative format breakdown (image, video, carousel, etc.)",
+                  "meta:titleId": "dimensional-breakdowns##xdm:creativeFormat##title##30221",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:creativeFormat##description##41101"
                 },
                 "xdm:adPosition": {
                   "type": "string",
                   "title": "Ad Position",
-                  "description": "Position of the ad on the platform"
+                  "description": "Position of the ad on the platform",
+                  "meta:titleId": "dimensional-breakdowns##xdm:adPosition##title##10091",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:adPosition##description##99981"
                 },
                 "xdm:position": {
                   "type": "string",
                   "title": "Position",
-                  "description": "Alias of adPosition for migration"
+                  "description": "Alias of adPosition for migration",
+                  "meta:titleId": "dimensional-breakdowns##xdm:position##title##16701",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:position##description##10601"
                 },
                 "xdm:platform": {
                   "type": "string",
                   "title": "Platform",
-                  "description": "Platform breakdown (e.g., facebook, instagram, search, display)"
+                  "description": "Platform breakdown (e.g., facebook, instagram, search, display)",
+                  "meta:titleId": "dimensional-breakdowns##xdm:platform##title##58101",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:platform##description##32681"
                 },
                 "xdm:timeOfDay": {
                   "type": "string",
                   "title": "Time of Day",
-                  "description": "Time of day breakdown (morning, afternoon, evening, night)"
+                  "description": "Time of day breakdown (morning, afternoon, evening, night)",
+                  "meta:titleId": "dimensional-breakdowns##xdm:timeOfDay##title##92621",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:timeOfDay##description##9881"
                 },
                 "xdm:dayOfWeek": {
                   "type": "string",
                   "title": "Day of Week",
-                  "description": "Day of week breakdown"
+                  "description": "Day of week breakdown",
+                  "meta:titleId": "dimensional-breakdowns##xdm:dayOfWeek##title##40341",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:dayOfWeek##description##25881"
                 },
                 "xdm:adNetworkType": {
                   "type": "string",
@@ -169,6 +224,19 @@
                     "maps": "Maps",
                     "search_partners": "Search Partners",
                     "other": "Other Network"
+                  },
+                  "meta:titleId": "dimensional-breakdowns##xdm:adNetworkType##title##84361",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:adNetworkType##description##95591",
+                  "meta:enumId": {
+                    "search": "dimensional-breakdowns##xdm:adNetworkType##meta:enum##search##63671",
+                    "display": "dimensional-breakdowns##xdm:adNetworkType##meta:enum##display##80271",
+                    "youtube": "dimensional-breakdowns##xdm:adNetworkType##meta:enum##youtube##21751",
+                    "shopping": "dimensional-breakdowns##xdm:adNetworkType##meta:enum##shopping##59631",
+                    "discover": "dimensional-breakdowns##xdm:adNetworkType##meta:enum##discover##24891",
+                    "gmail": "dimensional-breakdowns##xdm:adNetworkType##meta:enum##gmail##21381",
+                    "maps": "dimensional-breakdowns##xdm:adNetworkType##meta:enum##maps##76411",
+                    "search_partners": "dimensional-breakdowns##xdm:adNetworkType##meta:enum##search_partners##91221",
+                    "other": "dimensional-breakdowns##xdm:adNetworkType##meta:enum##other##83291"
                   }
                 },
                 "xdm:adSlot": {
@@ -180,9 +248,18 @@
                     "top": "Top of Page",
                     "absolute_top": "Absolute Top of Page (position 1)",
                     "other": "Other Position (e.g., side, bottom)"
+                  },
+                  "meta:titleId": "dimensional-breakdowns##xdm:adSlot##title##44891",
+                  "meta:descriptionId": "dimensional-breakdowns##xdm:adSlot##description##27211",
+                  "meta:enumId": {
+                    "top": "dimensional-breakdowns##xdm:adSlot##meta:enum##top##77691",
+                    "absolute_top": "dimensional-breakdowns##xdm:adSlot##meta:enum##absolute_top##66091",
+                    "other": "dimensional-breakdowns##xdm:adSlot##meta:enum##other##45841"
                   }
                 }
-              }
+              },
+              "meta:titleId": "dimensional-breakdowns##xdm:dimensionalBreakdowns##title##56741",
+              "meta:descriptionId": "dimensional-breakdowns##xdm:dimensionalBreakdowns##description##49421"
             }
           }
         }
@@ -194,5 +271,7 @@
       "$ref": "#/definitions/dimensional-breakdowns"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "dimensional-breakdowns##title##36781",
+  "meta:descriptionId": "dimensional-breakdowns##description##82941"
 }

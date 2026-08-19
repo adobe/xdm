@@ -27,12 +27,16 @@
                 "xdm:experienceName": {
                   "type": "string",
                   "title": "Experience Name",
-                  "description": "Name of the creative experience"
+                  "description": "Name of the creative experience",
+                  "meta:titleId": "experience-details##xdm:experienceName##title##72301",
+                  "meta:descriptionId": "experience-details##xdm:experienceName##description##92781"
                 },
                 "xdm:experienceDescription": {
                   "type": "string",
                   "title": "Experience Description",
-                  "description": "Description of the creative experience"
+                  "description": "Description of the creative experience",
+                  "meta:titleId": "experience-details##xdm:experienceDescription##title##53881",
+                  "meta:descriptionId": "experience-details##xdm:experienceDescription##description##75201"
                 },
                 "xdm:experienceType": {
                   "type": "string",
@@ -67,37 +71,66 @@
                     "responsive_display": "Responsive Display Experience (Google Ads RDA - multiple headlines/descriptions/images dynamically combined)",
                     "dynamic_assembly": "Dynamic Assembly Experience (e.g., Performance Max - platform dynamically assembles ads from asset pool)",
                     "other": "Other Experience Type"
+                  },
+                  "meta:titleId": "experience-details##xdm:experienceType##title##41611",
+                  "meta:descriptionId": "experience-details##xdm:experienceType##description##61731",
+                  "meta:enumId": {
+                    "single_image": "experience-details##xdm:experienceType##meta:enum##single_image##81321",
+                    "single_video": "experience-details##xdm:experienceType##meta:enum##single_video##97801",
+                    "carousel": "experience-details##xdm:experienceType##meta:enum##carousel##7331",
+                    "collection": "experience-details##xdm:experienceType##meta:enum##collection##28411",
+                    "slideshow": "experience-details##xdm:experienceType##meta:enum##slideshow##89521",
+                    "canvas": "experience-details##xdm:experienceType##meta:enum##canvas##85951",
+                    "instant_experience": "experience-details##xdm:experienceType##meta:enum##instant_experience##33691",
+                    "playable": "experience-details##xdm:experienceType##meta:enum##playable##20371",
+                    "audio": "experience-details##xdm:experienceType##meta:enum##audio##75011",
+                    "responsive_search": "experience-details##xdm:experienceType##meta:enum##responsive_search##39291",
+                    "responsive_display": "experience-details##xdm:experienceType##meta:enum##responsive_display##33031",
+                    "dynamic_assembly": "experience-details##xdm:experienceType##meta:enum##dynamic_assembly##6981",
+                    "other": "experience-details##xdm:experienceType##meta:enum##other##69481"
                   }
                 },
                 "xdm:sourceURL": {
                   "type": "string",
                   "title": "Source URL",
-                  "description": "Source URL of the experience"
+                  "description": "Source URL of the experience",
+                  "meta:titleId": "experience-details##xdm:sourceURL##title##49441",
+                  "meta:descriptionId": "experience-details##xdm:sourceURL##description##57631"
                 },
                 "xdm:thumbnailURL": {
                   "type": "string",
                   "title": "Thumbnail URL",
-                  "description": "Thumbnail URL for the experience"
+                  "description": "Thumbnail URL for the experience",
+                  "meta:titleId": "experience-details##xdm:thumbnailURL##title##36521",
+                  "meta:descriptionId": "experience-details##xdm:thumbnailURL##description##35131"
                 },
                 "xdm:landingPageURL": {
                   "type": "string",
                   "title": "Landing Page URL",
-                  "description": "Landing page URL for the experience"
+                  "description": "Landing page URL for the experience",
+                  "meta:titleId": "experience-details##xdm:landingPageURL##title##9521",
+                  "meta:descriptionId": "experience-details##xdm:landingPageURL##description##38771"
                 },
                 "xdm:headingText": {
                   "type": "string",
                   "title": "Heading Text",
-                  "description": "Main heading or title text displayed in the experience"
+                  "description": "Main heading or title text displayed in the experience",
+                  "meta:titleId": "experience-details##xdm:headingText##title##33821",
+                  "meta:descriptionId": "experience-details##xdm:headingText##description##9371"
                 },
                 "xdm:bodyText": {
                   "type": "string",
                   "title": "Body Text",
-                  "description": "Body or description text displayed in the experience"
+                  "description": "Body or description text displayed in the experience",
+                  "meta:titleId": "experience-details##xdm:bodyText##title##2531",
+                  "meta:descriptionId": "experience-details##xdm:bodyText##description##49451"
                 },
                 "xdm:callToAction": {
                   "type": "string",
                   "title": "Call To Action",
-                  "description": "Call to action text or button label"
+                  "description": "Call to action text or button label",
+                  "meta:titleId": "experience-details##xdm:callToAction##title##72011",
+                  "meta:descriptionId": "experience-details##xdm:callToAction##description##50331"
                 },
                 "xdm:assetIDs": {
                   "type": "array",
@@ -105,7 +138,9 @@
                   "description": "Array of asset IDs used in this experience",
                   "items": {
                     "type": "string"
-                  }
+                  },
+                  "meta:titleId": "experience-details##xdm:assetIDs##title##15431",
+                  "meta:descriptionId": "experience-details##xdm:assetIDs##description##26591"
                 },
                 "xdm:assetGUIDs": {
                   "type": "array",
@@ -113,7 +148,9 @@
                   "description": "Array of asset GUIDs used in this experience",
                   "items": {
                     "type": "string"
-                  }
+                  },
+                  "meta:titleId": "experience-details##xdm:assetGUIDs##title##63641",
+                  "meta:descriptionId": "experience-details##xdm:assetGUIDs##description##45431"
                 },
                 "xdm:carouselProperties": {
                   "type": "object",
@@ -124,7 +161,9 @@
                       "type": "integer",
                       "title": "Card Count",
                       "description": "Number of cards in the carousel",
-                      "minimum": 1
+                      "minimum": 1,
+                      "meta:titleId": "experience-details##xdm:cardCount##title##24491",
+                      "meta:descriptionId": "experience-details##xdm:cardCount##description##53831"
                     },
                     "xdm:cards": {
                       "type": "array",
@@ -136,37 +175,53 @@
                           "xdm:cardIndex": {
                             "type": "integer",
                             "title": "Card Index",
-                            "description": "Position of the card in the carousel"
+                            "description": "Position of the card in the carousel",
+                            "meta:titleId": "experience-details##xdm:cardIndex##title##7431",
+                            "meta:descriptionId": "experience-details##xdm:cardIndex##description##25941"
                           },
                           "xdm:assetID": {
                             "type": "string",
                             "title": "Asset ID",
-                            "description": "Asset ID for this card"
+                            "description": "Asset ID for this card",
+                            "meta:titleId": "experience-details##xdm:assetID##title##86891",
+                            "meta:descriptionId": "experience-details##xdm:assetID##description##27141"
                           },
                           "xdm:assetGUID": {
                             "type": "string",
                             "title": "Asset GUID",
-                            "description": "Asset GUID for this card"
+                            "description": "Asset GUID for this card",
+                            "meta:titleId": "experience-details##xdm:assetGUID##title##7851",
+                            "meta:descriptionId": "experience-details##xdm:assetGUID##description##41891"
                           },
                           "xdm:heading": {
                             "type": "string",
                             "title": "Card Heading",
-                            "description": "Heading text for this card"
+                            "description": "Heading text for this card",
+                            "meta:titleId": "experience-details##xdm:heading##title##5741",
+                            "meta:descriptionId": "experience-details##xdm:heading##description##56561"
                           },
                           "xdm:description": {
                             "type": "string",
                             "title": "Card Description",
-                            "description": "Description text for this card"
+                            "description": "Description text for this card",
+                            "meta:titleId": "experience-details##xdm:description##title##36701",
+                            "meta:descriptionId": "experience-details##xdm:description##description##49541"
                           },
                           "xdm:destinationURL": {
                             "type": "string",
                             "title": "Destination URL",
-                            "description": "Destination URL for this card"
+                            "description": "Destination URL for this card",
+                            "meta:titleId": "experience-details##xdm:destinationURL##title##15871",
+                            "meta:descriptionId": "experience-details##xdm:destinationURL##description##32441"
                           }
                         }
-                      }
+                      },
+                      "meta:titleId": "experience-details##xdm:cards##title##78391",
+                      "meta:descriptionId": "experience-details##xdm:cards##description##43411"
                     }
-                  }
+                  },
+                  "meta:titleId": "experience-details##xdm:carouselProperties##title##92981",
+                  "meta:descriptionId": "experience-details##xdm:carouselProperties##description##55781"
                 },
                 "xdm:collectionProperties": {
                   "type": "object",
@@ -176,20 +231,28 @@
                     "xdm:coverAssetID": {
                       "type": "string",
                       "title": "Cover Asset ID",
-                      "description": "Asset ID for the collection cover"
+                      "description": "Asset ID for the collection cover",
+                      "meta:titleId": "experience-details##xdm:coverAssetID##title##16401",
+                      "meta:descriptionId": "experience-details##xdm:coverAssetID##description##98501"
                     },
                     "xdm:coverAssetGUID": {
                       "type": "string",
                       "title": "Cover Asset GUID",
-                      "description": "Asset GUID for the collection cover"
+                      "description": "Asset GUID for the collection cover",
+                      "meta:titleId": "experience-details##xdm:coverAssetGUID##title##20651",
+                      "meta:descriptionId": "experience-details##xdm:coverAssetGUID##description##39721"
                     },
                     "xdm:itemCount": {
                       "type": "integer",
                       "title": "Item Count",
                       "description": "Number of items in the collection",
-                      "minimum": 1
+                      "minimum": 1,
+                      "meta:titleId": "experience-details##xdm:itemCount##title##58871",
+                      "meta:descriptionId": "experience-details##xdm:itemCount##description##98711"
                     }
-                  }
+                  },
+                  "meta:titleId": "experience-details##xdm:collectionProperties##title##45741",
+                  "meta:descriptionId": "experience-details##xdm:collectionProperties##description##91451"
                 },
                 "xdm:videoProperties": {
                   "type": "object",
@@ -199,19 +262,27 @@
                     "xdm:duration": {
                       "type": "number",
                       "title": "Duration",
-                      "description": "Video duration in seconds"
+                      "description": "Video duration in seconds",
+                      "meta:titleId": "experience-details##xdm:duration##title##49441",
+                      "meta:descriptionId": "experience-details##xdm:duration##description##501"
                     },
                     "xdm:hasSound": {
                       "type": "boolean",
                       "title": "Has Sound",
-                      "description": "Whether the video experience includes sound"
+                      "description": "Whether the video experience includes sound",
+                      "meta:titleId": "experience-details##xdm:hasSound##title##33581",
+                      "meta:descriptionId": "experience-details##xdm:hasSound##description##53851"
                     },
                     "xdm:autoplay": {
                       "type": "boolean",
                       "title": "Autoplay",
-                      "description": "Whether the video autoplays"
+                      "description": "Whether the video autoplays",
+                      "meta:titleId": "experience-details##xdm:autoplay##title##3011",
+                      "meta:descriptionId": "experience-details##xdm:autoplay##description##8501"
                     }
-                  }
+                  },
+                  "meta:titleId": "experience-details##xdm:videoProperties##title##8011",
+                  "meta:descriptionId": "experience-details##xdm:videoProperties##description##5811"
                 },
                 "xdm:interactionProperties": {
                   "type": "object",
@@ -221,7 +292,9 @@
                     "xdm:isInteractive": {
                       "type": "boolean",
                       "title": "Is Interactive",
-                      "description": "Whether the experience is interactive"
+                      "description": "Whether the experience is interactive",
+                      "meta:titleId": "experience-details##xdm:isInteractive##title##44431",
+                      "meta:descriptionId": "experience-details##xdm:isInteractive##description##18471"
                     },
                     "xdm:interactionType": {
                       "type": "string",
@@ -244,9 +317,22 @@
                         "playable": "Playable Interaction",
                         "form": "Form Interaction",
                         "other": "Other Interaction Type"
+                      },
+                      "meta:titleId": "experience-details##xdm:interactionType##title##38081",
+                      "meta:descriptionId": "experience-details##xdm:interactionType##description##46631",
+                      "meta:enumId": {
+                        "swipe": "experience-details##xdm:interactionType##meta:enum##swipe##65141",
+                        "tap": "experience-details##xdm:interactionType##meta:enum##tap##91511",
+                        "click": "experience-details##xdm:interactionType##meta:enum##click##43511",
+                        "scroll": "experience-details##xdm:interactionType##meta:enum##scroll##30911",
+                        "playable": "experience-details##xdm:interactionType##meta:enum##playable##87561",
+                        "form": "experience-details##xdm:interactionType##meta:enum##form##8821",
+                        "other": "experience-details##xdm:interactionType##meta:enum##other##14391"
                       }
                     }
-                  }
+                  },
+                  "meta:titleId": "experience-details##xdm:interactionProperties##title##30491",
+                  "meta:descriptionId": "experience-details##xdm:interactionProperties##description##37171"
                 },
                 "xdm:instantExperienceProperties": {
                   "type": "object",
@@ -256,14 +342,20 @@
                     "xdm:templateType": {
                       "type": "string",
                       "title": "Template Type",
-                      "description": "Type of instant experience template used"
+                      "description": "Type of instant experience template used",
+                      "meta:titleId": "experience-details##xdm:templateType##title##77451",
+                      "meta:descriptionId": "experience-details##xdm:templateType##description##33251"
                     },
                     "xdm:componentCount": {
                       "type": "integer",
                       "title": "Component Count",
-                      "description": "Number of components in the instant experience"
+                      "description": "Number of components in the instant experience",
+                      "meta:titleId": "experience-details##xdm:componentCount##title##4411",
+                      "meta:descriptionId": "experience-details##xdm:componentCount##description##37471"
                     }
-                  }
+                  },
+                  "meta:titleId": "experience-details##xdm:instantExperienceProperties##title##75571",
+                  "meta:descriptionId": "experience-details##xdm:instantExperienceProperties##description##57091"
                 },
                 "xdm:performanceMetadata": {
                   "type": "object",
@@ -273,13 +365,17 @@
                     "xdm:usageCount": {
                       "type": "integer",
                       "title": "Usage Count",
-                      "description": "Number of times this experience has been used"
+                      "description": "Number of times this experience has been used",
+                      "meta:titleId": "experience-details##xdm:usageCount##title##10831",
+                      "meta:descriptionId": "experience-details##xdm:usageCount##description##54751"
                     },
                     "xdm:lastUsedDate": {
                       "type": "string",
                       "format": "date-time",
                       "title": "Last Used Date",
-                      "description": "When the experience was last used"
+                      "description": "When the experience was last used",
+                      "meta:titleId": "experience-details##xdm:lastUsedDate##title##59891",
+                      "meta:descriptionId": "experience-details##xdm:lastUsedDate##description##13381"
                     },
                     "xdm:associatedCampaigns": {
                       "type": "array",
@@ -287,7 +383,9 @@
                       "description": "Campaigns that use this experience",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "experience-details##xdm:associatedCampaigns##title##88741",
+                      "meta:descriptionId": "experience-details##xdm:associatedCampaigns##description##72411"
                     },
                     "xdm:associatedAds": {
                       "type": "array",
@@ -295,9 +393,13 @@
                       "description": "Ads that use this experience",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "experience-details##xdm:associatedAds##title##95611",
+                      "meta:descriptionId": "experience-details##xdm:associatedAds##description##17581"
                     }
-                  }
+                  },
+                  "meta:titleId": "experience-details##xdm:performanceMetadata##title##75001",
+                  "meta:descriptionId": "experience-details##xdm:performanceMetadata##description##20391"
                 },
                 "xdm:additionalDetails": {
                   "title": "Additional Experience Details",
@@ -305,9 +407,13 @@
                   "type": "array",
                   "items": {
                     "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                  }
+                  },
+                  "meta:titleId": "experience-details##xdm:additionalDetails##title##89981",
+                  "meta:descriptionId": "experience-details##xdm:additionalDetails##description##78531"
                 }
-              }
+              },
+              "meta:titleId": "experience-details##xdm:experienceDetails##title##15161",
+              "meta:descriptionId": "experience-details##xdm:experienceDetails##description##89991"
             }
           }
         }
@@ -319,5 +425,7 @@
       "$ref": "#/definitions/experience-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experience-details##title##1531",
+  "meta:descriptionId": "experience-details##description##39851"
 }

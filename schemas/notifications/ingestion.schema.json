@@ -37,7 +37,15 @@
             "ig_load_failure": "Ig Load Failure"
           },
           "meta:titleId": "ingestion##xdm:eventType##title##43551",
-          "meta:descriptionId": "ingestion##xdm:eventType##description##3441"
+          "meta:descriptionId": "ingestion##xdm:eventType##description##3441",
+          "meta:enumId": {
+            "ing_load_success": "ingestion##xdm:eventType##meta:enum##ing_load_success##89251",
+            "ing_load_failure": "ingestion##xdm:eventType##meta:enum##ing_load_failure##68601",
+            "ps_load_success": "ingestion##xdm:eventType##meta:enum##ps_load_success##37071",
+            "ps_load_failure": "ingestion##xdm:eventType##meta:enum##ps_load_failure##18891",
+            "ig_load_success": "ingestion##xdm:eventType##meta:enum##ig_load_success##20561",
+            "ig_load_failure": "ingestion##xdm:eventType##meta:enum##ig_load_failure##13561"
+          }
         },
         "xdm:status": {
           "title": "Ingestion Status",
@@ -49,7 +57,11 @@
             "failure": "Failure Status"
           },
           "meta:titleId": "ingestion##xdm:status##title##10071",
-          "meta:descriptionId": "ingestion##xdm:status##description##76961"
+          "meta:descriptionId": "ingestion##xdm:status##description##76961",
+          "meta:enumId": {
+            "success": "ingestion##xdm:status##meta:enum##success##18001",
+            "failure": "ingestion##xdm:status##meta:enum##failure##53031"
+          }
         },
         "xdm:ingestionId": {
           "title": "Ingestion ID",
@@ -97,7 +109,12 @@
             "json": "JSON format of the file"
           },
           "meta:titleId": "ingestion##xdm:inputFormat##title##16971",
-          "meta:descriptionId": "ingestion##xdm:inputFormat##description##86541"
+          "meta:descriptionId": "ingestion##xdm:inputFormat##description##86541",
+          "meta:enumId": {
+            "csv": "ingestion##xdm:inputFormat##meta:enum##csv##10081",
+            "parquet": "ingestion##xdm:inputFormat##meta:enum##parquet##7741",
+            "json": "ingestion##xdm:inputFormat##meta:enum##json##97491"
+          }
         },
         "xdm:imsOrg": {
           "description": "The owning IMS organization identifier.",

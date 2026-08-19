@@ -25,7 +25,12 @@
             "other": "Other"
           },
           "meta:titleId": "webinteraction##xdm:type##title##46731",
-          "meta:descriptionId": "webinteraction##xdm:type##description##27171"
+          "meta:descriptionId": "webinteraction##xdm:type##description##27171",
+          "meta:enumId": {
+            "download": "webinteraction##xdm:type##meta:enum##download##171",
+            "exit": "webinteraction##xdm:type##meta:enum##exit##93211",
+            "other": "webinteraction##xdm:type##meta:enum##other##71571"
+          }
         },
         "xdm:URL": {
           "title": "URL",

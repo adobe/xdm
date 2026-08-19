@@ -46,7 +46,9 @@
         "xdm:productImageUrl": {
           "title": "Product Image URL",
           "type": "string",
-          "description": "Product main image URL."
+          "description": "Product main image URL.",
+          "meta:titleId": "productlistitem##xdm:productImageUrl##title##70321",
+          "meta:descriptionId": "productlistitem##xdm:productImageUrl##description##45401"
         },
         "xdm:productAddMethod": {
           "title": "Product add method",
@@ -98,7 +100,9 @@
         "xdm:refundAmount": {
           "title": "Refund Amount",
           "type": "number",
-          "description": "Amount refunded for item, if any."
+          "description": "Amount refunded for item, if any.",
+          "meta:titleId": "productlistitem##xdm:refundAmount##title##59171",
+          "meta:descriptionId": "productlistitem##xdm:refundAmount##description##97131"
         },
         "xdm:productCategories": {
           "title": "Product categories",
@@ -106,12 +110,16 @@
           "description": "List of category data this product falls under",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/categorydata"
-          }
+          },
+          "meta:titleId": "productlistitem##xdm:productCategories##title##15981",
+          "meta:descriptionId": "productlistitem##xdm:productCategories##description##62801"
         },
         "xdm:returnItem": {
           "title": "Return Item",
           "$ref": "https://ns.adobe.com/xdm/datatypes/returnitem",
-          "description": "RMA (Return Merchandise Authorization) information for this item."
+          "description": "RMA (Return Merchandise Authorization) information for this item.",
+          "meta:titleId": "productlistitem##xdm:returnItem##title##47771",
+          "meta:descriptionId": "productlistitem##xdm:returnItem##description##78061"
         }
       },
       "required": ["xdm:SKU"]

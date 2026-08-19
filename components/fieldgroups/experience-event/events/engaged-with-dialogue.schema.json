@@ -32,25 +32,34 @@
                 "xdm:dialogueID": {
                   "title": "Dialogue ID",
                   "type": "string",
-                  "description": "Unique identifier of the dialogue."
+                  "description": "Unique identifier of the dialogue.",
+                  "meta:titleId": "engaged-with-dialogue##xdm:dialogueID##title##66901",
+                  "meta:descriptionId": "engaged-with-dialogue##xdm:dialogueID##description##51411"
                 },
                 "xdm:dialogueKey": {
                   "title": "Dialogue Key",
                   "description": "Unique key of the dialogue.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "engaged-with-dialogue##xdm:dialogueKey##title##44101",
+                  "meta:descriptionId": "engaged-with-dialogue##xdm:dialogueKey##description##88601"
                 },
                 "xdm:dialogueName": {
                   "title": "Dialogue Name",
                   "type": "string",
-                  "description": "The name of the dialogue session."
+                  "description": "The name of the dialogue session.",
+                  "meta:titleId": "engaged-with-dialogue##xdm:dialogueName##title##66241",
+                  "meta:descriptionId": "engaged-with-dialogue##xdm:dialogueName##description##15921"
                 },
                 "xdm:pageURL": {
                   "title": "Page URL",
                   "type": "string",
                   "format": "uri",
-                  "description": "URL where the dialogue was initiated."
+                  "description": "URL where the dialogue was initiated.",
+                  "meta:titleId": "engaged-with-dialogue##xdm:pageURL##title##16241",
+                  "meta:descriptionId": "engaged-with-dialogue##xdm:pageURL##description##29491"
                 }
-              }
+              },
+              "meta:titleId": "engaged-with-dialogue##xdm:dialogue##title##31191"
             },
             "xdm:conversationDetails": {
               "title": "Conversation Details",
@@ -59,17 +68,23 @@
                 "xdm:status": {
                   "title": "Status",
                   "type": "string",
-                  "description": "The status of the dialogue session (e.g., Completed)."
+                  "description": "The status of the dialogue session (e.g., Completed).",
+                  "meta:titleId": "engaged-with-dialogue##xdm:status##title##19851",
+                  "meta:descriptionId": "engaged-with-dialogue##xdm:status##description##30701"
                 },
                 "xdm:summary": {
                   "title": "Summary",
                   "type": "string",
-                  "description": "A brief summary of the dialogue conversation."
+                  "description": "A brief summary of the dialogue conversation.",
+                  "meta:titleId": "engaged-with-dialogue##xdm:summary##title##94481",
+                  "meta:descriptionId": "engaged-with-dialogue##xdm:summary##description##23791"
                 },
                 "xdm:transcript": {
                   "title": "Transcript",
                   "type": "string",
-                  "description": "Transcript of the chat conversation."
+                  "description": "Transcript of the chat conversation.",
+                  "meta:titleId": "engaged-with-dialogue##xdm:transcript##title##49381",
+                  "meta:descriptionId": "engaged-with-dialogue##xdm:transcript##description##6181"
                 },
                 "xdm:discussedTopics": {
                   "title": "Discussed Topics",
@@ -77,11 +92,15 @@
                   "items": {
                     "type": "string"
                   },
-                  "description": "Topics discussed during the dialogue session."
+                  "description": "Topics discussed during the dialogue session.",
+                  "meta:titleId": "engaged-with-dialogue##xdm:discussedTopics##title##34851",
+                  "meta:descriptionId": "engaged-with-dialogue##xdm:discussedTopics##description##98861"
                 }
-              }
+              },
+              "meta:titleId": "engaged-with-dialogue##xdm:conversationDetails##title##74471"
             }
-          }
+          },
+          "meta:titleId": "engaged-with-dialogue##xdm:engagement##title##29521"
         }
       }
     }
@@ -92,5 +111,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-10"
+  "meta:createdDate": "2025-01-10",
+  "meta:titleId": "engaged-with-dialogue##title##39631",
+  "meta:descriptionId": "engaged-with-dialogue##description##45111"
 }

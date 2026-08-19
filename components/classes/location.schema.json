@@ -22,12 +22,16 @@
         "xdm:locationID": {
           "description": "Unique identifier for the Location.",
           "title": "Location Identifier",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "location##xdm:locationID##title##62121",
+          "meta:descriptionId": "location##xdm:locationID##description##23211"
         },
         "xdm:locationName": {
           "description": "Name of the location.",
           "title": "Location Name",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "location##xdm:locationName##title##69191",
+          "meta:descriptionId": "location##xdm:locationName##description##9041"
         }
       }
     }
@@ -40,5 +44,7 @@
       "$ref": "#/definitions/location"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "location##title##18041",
+  "meta:descriptionId": "location##description##63241"
 }

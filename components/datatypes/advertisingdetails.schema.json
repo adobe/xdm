@@ -18,75 +18,103 @@
         "xdm:friendlyName": {
           "title": "Ad Name",
           "type": "string",
-          "description": "Friendly name of the ad. In reporting, “Ad Name” is the classification and “Ad Name (variable)” is the eVar."
+          "description": "Friendly name of the ad. In reporting, “Ad Name” is the classification and “Ad Name (variable)” is the eVar.",
+          "meta:titleId": "advertisingDetails##xdm:friendlyName##title##95411",
+          "meta:descriptionId": "advertisingDetails##xdm:friendlyName##description##4551"
         },
         "xdm:name": {
           "title": "Ad ID",
           "type": "string",
           "pattern": "^.{1,}$",
-          "description": "ID of the ad. Any integer and/or letter combination."
+          "description": "ID of the ad. Any integer and/or letter combination.",
+          "meta:titleId": "advertisingDetails##xdm:name##title##86741",
+          "meta:descriptionId": "advertisingDetails##xdm:name##description##35941"
         },
         "xdm:length": {
           "title": "Ad Length Or Duration",
           "type": "integer",
-          "description": "Length of video ad in seconds."
+          "description": "Length of video ad in seconds.",
+          "meta:titleId": "advertisingDetails##xdm:length##title##57191",
+          "meta:descriptionId": "advertisingDetails##xdm:length##description##97271"
         },
         "xdm:podPosition": {
           "title": "Ad In Pod Position (Ad Start)",
           "type": "integer",
           "minimum": 0,
-          "description": "The index of the ad inside the parent ad start, for example, the first ad has index 0 and the second ad has index 1."
+          "description": "The index of the ad inside the parent ad start, for example, the first ad has index 0 and the second ad has index 1.",
+          "meta:titleId": "advertisingDetails##xdm:podPosition##title##88921",
+          "meta:descriptionId": "advertisingDetails##xdm:podPosition##description##93191"
         },
         "xdm:playerName": {
           "title": "Ad Player Name",
           "type": "string",
-          "description": "The name of the player responsible for rendering the ad."
+          "description": "The name of the player responsible for rendering the ad.",
+          "meta:titleId": "advertisingDetails##xdm:playerName##title##80541",
+          "meta:descriptionId": "advertisingDetails##xdm:playerName##description##56291"
         },
         "xdm:advertiser": {
           "title": "Ad Advertiser",
           "type": "string",
-          "description": "Company/Brand whose product is featured in the ad."
+          "description": "Company/Brand whose product is featured in the ad.",
+          "meta:titleId": "advertisingDetails##xdm:advertiser##title##40141",
+          "meta:descriptionId": "advertisingDetails##xdm:advertiser##description##15311"
         },
         "xdm:campaignID": {
           "title": "Ad Campaign",
           "type": "string",
-          "description": "ID of the ad campaign."
+          "description": "ID of the ad campaign.",
+          "meta:titleId": "advertisingDetails##xdm:campaignID##title##88371",
+          "meta:descriptionId": "advertisingDetails##xdm:campaignID##description##34961"
         },
         "xdm:creativeID": {
           "title": "Ad Creative ID",
           "type": "string",
-          "description": "ID of the ad creative."
+          "description": "ID of the ad creative.",
+          "meta:titleId": "advertisingDetails##xdm:creativeID##title##17661",
+          "meta:descriptionId": "advertisingDetails##xdm:creativeID##description##65761"
         },
         "xdm:siteID": {
           "title": "Ad Site ID",
           "type": "string",
-          "description": "ID of the ad site."
+          "description": "ID of the ad site.",
+          "meta:titleId": "advertisingDetails##xdm:siteID##title##74951",
+          "meta:descriptionId": "advertisingDetails##xdm:siteID##description##47491"
         },
         "xdm:creativeURL": {
           "title": "Ad Creative URL",
           "type": "string",
           "format": "uri",
-          "description": "URL of the ad creative."
+          "description": "URL of the ad creative.",
+          "meta:titleId": "advertisingDetails##xdm:creativeURL##title##86671",
+          "meta:descriptionId": "advertisingDetails##xdm:creativeURL##description##45641"
         },
         "xdm:placementID": {
           "title": "Ad Placement ID",
           "type": "string",
-          "description": "Placement ID of the ad."
+          "description": "Placement ID of the ad.",
+          "meta:titleId": "advertisingDetails##xdm:placementID##title##74121",
+          "meta:descriptionId": "advertisingDetails##xdm:placementID##description##27531"
         },
         "xdm:isCompleted": {
           "title": "Ad Completed",
           "type": "boolean",
-          "description": "Ad is completed."
+          "description": "Ad is completed.",
+          "meta:titleId": "advertisingDetails##xdm:isCompleted##title##6921",
+          "meta:descriptionId": "advertisingDetails##xdm:isCompleted##description##32901"
         },
         "xdm:isStarted": {
           "title": "Ad Started",
           "type": "boolean",
-          "description": "Ad is started."
+          "description": "Ad is started.",
+          "meta:titleId": "advertisingDetails##xdm:isStarted##title##63701",
+          "meta:descriptionId": "advertisingDetails##xdm:isStarted##description##9451"
         },
         "xdm:timePlayed": {
           "title": "Ad Time Played",
           "type": "integer",
-          "description": "The total amount of time, in seconds, spent watching the ad (i.e., the number of seconds played)."
+          "description": "The total amount of time, in seconds, spent watching the ad (i.e., the number of seconds played).",
+          "meta:titleId": "advertisingDetails##xdm:timePlayed##title##51711",
+          "meta:descriptionId": "advertisingDetails##xdm:timePlayed##description##20281"
         }
       },
       "required": ["xdm:name", "xdm:length", "xdm:podPosition"]
@@ -96,5 +124,7 @@
     {
       "$ref": "#/definitions/advertisingDetails"
     }
-  ]
+  ],
+  "meta:titleId": "advertisingDetails##title##55781",
+  "meta:descriptionId": "advertisingDetails##description##59151"
 }

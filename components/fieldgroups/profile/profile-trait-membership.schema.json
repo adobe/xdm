@@ -23,12 +23,16 @@
           "description": "Map of trait IDs to their membership details. Each key is a trait ID, and the value contains qualification and expiration information.",
           "additionalProperties": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/traitMembership"
-          }
+          },
+          "meta:titleId": "profile-trait-membership##xdm:traitMembership##title##15451",
+          "meta:descriptionId": "profile-trait-membership##xdm:traitMembership##description##25661"
         },
         "xdm:system__traitMembership": {
           "title": "System Trait Membership",
           "type": "string",
-          "description": "Binary encoded system representation of trait membership for optimized storage and processing. This field is managed by the system and contains compressed trait membership data."
+          "description": "Binary encoded system representation of trait membership for optimized storage and processing. This field is managed by the system and contains compressed trait membership data.",
+          "meta:titleId": "profile-trait-membership##xdm:system__traitMembership##title##12281",
+          "meta:descriptionId": "profile-trait-membership##xdm:system__traitMembership##description##7791"
         }
       }
     }
@@ -41,5 +45,7 @@
       "$ref": "#/definitions/profile-trait-membership"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-trait-membership##title##42621",
+  "meta:descriptionId": "profile-trait-membership##description##57191"
 }

@@ -32,7 +32,9 @@
                 "xdm:visitorProfileID": {
                   "title": "Visitor Profile ID",
                   "type": "string",
-                  "description": "Unique identifier for the visitor/lead from RT-CDP unified profile. Essential for lead tracking and chat attribution."
+                  "description": "Unique identifier for the visitor/lead from RT-CDP unified profile. Essential for lead tracking and chat attribution.",
+                  "meta:titleId": "engagement-business-representative-concierge##xdm:visitorProfileID##title##18731",
+                  "meta:descriptionId": "engagement-business-representative-concierge##xdm:visitorProfileID##description##38691"
                 },
                 "xdm:businessRepresentativeDetails": {
                   "title": "Business representative Details",
@@ -41,19 +43,26 @@
                     "xdm:businessRepresentativeID": {
                       "title": "Business representative ID",
                       "type": "string",
-                      "description": "Unique Identifier for a Business representative."
+                      "description": "Unique Identifier for a Business representative.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:businessRepresentativeID##title##17921",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:businessRepresentativeID##description##72861"
                     },
                     "xdm:businessRepresentativeEmail": {
                       "title": "Business representative Email",
                       "type": "string",
-                      "description": "Email of the Business representative."
+                      "description": "Email of the Business representative.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:businessRepresentativeEmail##title##59701",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:businessRepresentativeEmail##description##12361"
                     },
                     "xdm:businessRepresentativeName": {
                       "title": "Business representative Name",
                       "type": "string",
-                      "description": "Name of the Business representative."
+                      "description": "Name of the Business representative.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:businessRepresentativeName##title##27941",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:businessRepresentativeName##description##801"
                     }
-                  }
+                  },
+                  "meta:titleId": "engagement-business-representative-concierge##xdm:businessRepresentativeDetails##title##47761"
                 },
                 "xdm:conciergeConversationDetails": {
                   "title": "Concierge Session Details",
@@ -62,7 +71,9 @@
                     "xdm:sessionID": {
                       "title": "Session ID",
                       "type": "string",
-                      "description": "Unique identifier for the session. Used to link lifecycle events."
+                      "description": "Unique identifier for the session. Used to link lifecycle events.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:sessionID##title##26071",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:sessionID##description##91181"
                     },
                     "xdm:status": {
                       "title": "Status",
@@ -87,13 +98,27 @@
                         "SYSTEM_ERROR": "System error occurred",
                         "COMPLETED": "Session completed",
                         "EXPIRED": "Session expired"
+                      },
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:status##title##31541",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:status##description##33861",
+                      "meta:enumId": {
+                        "INITIATED": "engagement-business-representative-concierge##xdm:status##meta:enum##INITIATED##47061",
+                        "REPRESENTATIVES_NOT_AVAILABLE": "engagement-business-representative-concierge##xdm:status##meta:enum##REPRESENTATIVES_NOT_AVAILABLE##57611",
+                        "REPRESENTATIVES_FULLY_OCCUPIED": "engagement-business-representative-concierge##xdm:status##meta:enum##REPRESENTATIVES_FULLY_OCCUPIED##33031",
+                        "ACCEPTED": "engagement-business-representative-concierge##xdm:status##meta:enum##ACCEPTED##55961",
+                        "REPRESENTATIVES_NOT_ACCEPTED": "engagement-business-representative-concierge##xdm:status##meta:enum##REPRESENTATIVES_NOT_ACCEPTED##76191",
+                        "SYSTEM_ERROR": "engagement-business-representative-concierge##xdm:status##meta:enum##SYSTEM_ERROR##43991",
+                        "COMPLETED": "engagement-business-representative-concierge##xdm:status##meta:enum##COMPLETED##27151",
+                        "EXPIRED": "engagement-business-representative-concierge##xdm:status##meta:enum##EXPIRED##65381"
                       }
                     },
                     "xdm:initiatedAt": {
                       "title": "Initiated At",
                       "type": "string",
                       "format": "date-time",
-                      "description": "ISO 8601 timestamp when the session was initiated by the visitor."
+                      "description": "ISO 8601 timestamp when the session was initiated by the visitor.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:initiatedAt##title##17581",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:initiatedAt##description##64851"
                     },
                     "xdm:notifiedAgents": {
                       "title": "Notified Agents",
@@ -101,46 +126,71 @@
                       "items": {
                         "type": "string"
                       },
-                      "description": "List of business representative IDs who were notified about this session."
+                      "description": "List of business representative IDs who were notified about this session.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:notifiedAgents##title##10881",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:notifiedAgents##description##75091"
                     },
                     "xdm:acceptedAt": {
                       "title": "Accepted At",
                       "type": "string",
                       "format": "date-time",
-                      "description": "ISO 8601 timestamp when an agent accepted the session. Used to calculate response time."
+                      "description": "ISO 8601 timestamp when an agent accepted the session. Used to calculate response time.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:acceptedAt##title##25551",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:acceptedAt##description##89151"
                     },
                     "xdm:completedAt": {
                       "title": "Completed At",
                       "type": "string",
                       "format": "date-time",
-                      "description": "ISO 8601 timestamp when the session was completed or marked as missed."
+                      "description": "ISO 8601 timestamp when the session was completed or marked as missed.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:completedAt##title##66311",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:completedAt##description##98961"
                     },
                     "xdm:durationInSeconds": {
                       "title": "Duration",
                       "type": "integer",
-                      "description": "Total chat conversation duration in seconds. Quantifies engagement depth and helps prioritize follow-ups."
+                      "description": "Total chat conversation duration in seconds. Quantifies engagement depth and helps prioritize follow-ups.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:durationInSeconds##title##711",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:durationInSeconds##description##8121"
                     },
                     "xdm:completedBy": {
                       "title": "Completed By",
                       "type": "string",
                       "description": "How the conversation ended: entity that ended the session or visitor dropped off.",
-                      "enum": ["REPRESENTATIVE", "VISITOR", "VISITOR_DROPPED_OFF", "SYSTEM"],
+                      "enum": [
+                        "REPRESENTATIVE",
+                        "VISITOR",
+                        "VISITOR_DROPPED_OFF",
+                        "SYSTEM"
+                      ],
                       "meta:enum": {
                         "REPRESENTATIVE": "Session ended by the representative",
                         "VISITOR": "Session ended by the visitor",
                         "VISITOR_DROPPED_OFF": "Visitor dropped off before conversation ended",
                         "SYSTEM": "Session ended automatically (timeout/error)"
+                      },
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:completedBy##title##80261",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:completedBy##description##64521",
+                      "meta:enumId": {
+                        "REPRESENTATIVE": "engagement-business-representative-concierge##xdm:completedBy##meta:enum##REPRESENTATIVE##46161",
+                        "VISITOR": "engagement-business-representative-concierge##xdm:completedBy##meta:enum##VISITOR##83581",
+                        "VISITOR_DROPPED_OFF": "engagement-business-representative-concierge##xdm:completedBy##meta:enum##VISITOR_DROPPED_OFF##55461",
+                        "SYSTEM": "engagement-business-representative-concierge##xdm:completedBy##meta:enum##SYSTEM##28451"
                       }
                     },
                     "xdm:summary": {
                       "title": "Summary",
                       "type": "string",
-                      "description": "AI-generated summary of key discussion points in the chat. Saves sales reps time by highlighting important details quickly."
+                      "description": "AI-generated summary of key discussion points in the chat. Saves sales reps time by highlighting important details quickly.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:summary##title##7561",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:summary##description##74381"
                     },
                     "xdm:transcript": {
                       "title": "Transcript",
                       "type": "string",
-                      "description": "URL link to the full transcript of the chat conversation, or the transcript content. Enables sales reps to review past interactions for better follow-ups."
+                      "description": "URL link to the full transcript of the chat conversation, or the transcript content. Enables sales reps to review past interactions for better follow-ups.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:transcript##title##2101",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:transcript##description##84561"
                     },
                     "xdm:discussedTopics": {
                       "title": "Discussed Topics",
@@ -148,9 +198,12 @@
                       "items": {
                         "type": "string"
                       },
-                      "description": "Topics discussed during the Concierge session."
+                      "description": "Topics discussed during the Concierge session.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:discussedTopics##title##42431",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:discussedTopics##description##31781"
                     }
-                  }
+                  },
+                  "meta:titleId": "engagement-business-representative-concierge##xdm:conciergeConversationDetails##title##15801"
                 },
                 "xdm:conciergeDetails": {
                   "title": "Concierge Details",
@@ -159,28 +212,39 @@
                     "xdm:conciergeID": {
                       "title": "Concierge ID",
                       "type": "string",
-                      "description": "Unique Identifier for a Concierge."
+                      "description": "Unique Identifier for a Concierge.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:conciergeID##title##7751",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:conciergeID##description##5201"
                     },
                     "xdm:conciergeName": {
                       "title": "Concierge Name",
                       "type": "string",
-                      "description": "Name of the Concierge."
+                      "description": "Name of the Concierge.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:conciergeName##title##72921",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:conciergeName##description##68521"
                     },
                     "xdm:pageURL": {
                       "title": "Page URL",
                       "type": "string",
-                      "description": "URL of the page where the Concierge is initiated."
+                      "description": "URL of the page where the Concierge is initiated.",
+                      "meta:titleId": "engagement-business-representative-concierge##xdm:pageURL##title##34691",
+                      "meta:descriptionId": "engagement-business-representative-concierge##xdm:pageURL##description##47391"
                     }
-                  }
+                  },
+                  "meta:titleId": "engagement-business-representative-concierge##xdm:conciergeDetails##title##53941"
                 },
                 "xdm:conciergeKey": {
                   "title": "Concierge Key",
                   "description": "Key of the Concierge.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "engagement-business-representative-concierge##xdm:conciergeKey##title##36231",
+                  "meta:descriptionId": "engagement-business-representative-concierge##xdm:conciergeKey##description##87801"
                 }
-              }
+              },
+              "meta:titleId": "engagement-business-representative-concierge##xdm:businessRepresentativeInConcierge##title##31801"
             }
-          }
+          },
+          "meta:titleId": "engagement-business-representative-concierge##xdm:engagement##title##90991"
         }
       }
     }
@@ -191,5 +255,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-08-04"
+  "meta:createdDate": "2025-08-04",
+  "meta:titleId": "engagement-business-representative-concierge##title##97951",
+  "meta:descriptionId": "engagement-business-representative-concierge##description##22771"
 }

@@ -36,6 +36,11 @@
             "new": "New",
             "used": "Used",
             "certified preowned": "certified preowned"
+          },
+          "meta:enumId": {
+            "new": "vehicle-product##xdm:inventoryType##meta:enum##new##60321",
+            "used": "vehicle-product##xdm:inventoryType##meta:enum##used##79411",
+            "certified preowned": "vehicle-product##xdm:inventoryType##meta:enum##certified preowned##17841"
           }
         },
         "xdm:luggageCapacity": {

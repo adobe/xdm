@@ -41,33 +41,48 @@
                           "properties": {
                             "xdm:strategy": {
                               "type": "string",
-                              "description": "Planning approach or methodology used."
+                              "description": "Planning approach or methodology used.",
+                              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:strategy##description##66961"
                             },
                             "xdm:taskCount": {
                               "type": "integer",
-                              "description": "Number of subtasks or components created."
+                              "description": "Number of subtasks or components created.",
+                              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:taskCount##description##25411"
                             },
                             "xdm:complexity": {
                               "type": "string",
-                              "description": "Assessment of task complexity level."
+                              "description": "Assessment of task complexity level.",
+                              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:complexity##description##16581"
                             },
                             "xdm:dependencies": {
                               "type": "string",
-                              "description": "JSON array of task dependencies identified."
+                              "description": "JSON array of task dependencies identified.",
+                              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:dependencies##description##71571"
                             }
-                          }
+                          },
+                          "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:planning##description##53041"
                         }
-                      }
+                      },
+                      "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:execution##description##22621"
                     }
-                  }
+                  },
+                  "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:agent##description##30951"
                 }
-              }
+              },
+              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:gen_ai##description##66071"
             }
-          }
+          },
+          "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:adobe##description##74421"
         }
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/aep-agent-planning-task-decomposition" }],
-  "meta:status": "experimental"
+  "allOf": [
+    {
+      "$ref": "#/definitions/aep-agent-planning-task-decomposition"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "aep-agent-planning-task-decomposition##title##38851",
+  "meta:descriptionId": "aep-agent-planning-task-decomposition##description##86081"
 }

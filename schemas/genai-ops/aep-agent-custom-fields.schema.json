@@ -34,17 +34,28 @@
                     "xdm:customAttributes": {
                       "type": "string",
                       "title": "Custom Attributes",
-                      "description": "This field contains stringified JSON object of custom attributes."
+                      "description": "This field contains stringified JSON object of custom attributes.",
+                      "meta:titleId": "aep-agent-custom-fields##xdm:customAttributes##title##24501",
+                      "meta:descriptionId": "aep-agent-custom-fields##xdm:customAttributes##description##57721"
                     }
-                  }
+                  },
+                  "meta:descriptionId": "aep-agent-custom-fields##xdm:agent##description##71951"
                 }
-              }
+              },
+              "meta:descriptionId": "aep-agent-custom-fields##xdm:gen_ai##description##73341"
             }
-          }
+          },
+          "meta:descriptionId": "aep-agent-custom-fields##xdm:adobe##description##98591"
         }
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/aep-agent-custom-fields" }],
-  "meta:status": "experimental"
+  "allOf": [
+    {
+      "$ref": "#/definitions/aep-agent-custom-fields"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "aep-agent-custom-fields##title##66481",
+  "meta:descriptionId": "aep-agent-custom-fields##description##92071"
 }

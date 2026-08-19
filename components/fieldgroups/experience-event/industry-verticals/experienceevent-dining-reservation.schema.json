@@ -61,7 +61,29 @@
                     },
                     "description": "Type of restaurant cuisine.",
                     "meta:titleId": "experienceevent-dining-reservation##xdm:cuisine##title##9211",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:cuisine##description##92761"
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:cuisine##description##92761",
+                    "meta:enumId": {
+                      "chinese": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##chinese##26851",
+                      "steak": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##steak##35551",
+                      "sushi": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##sushi##57891",
+                      "asian": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##asian##22731",
+                      "vietnamese": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##vietnamese##89151",
+                      "european": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##european##72991",
+                      "french": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##french##70181",
+                      "italian": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##italian##84191",
+                      "burgers": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##burgers##50691",
+                      "japanese": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##japanese##46871",
+                      "barbecue": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##barbecue##3261",
+                      "mediterranean": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##mediterranean##76361",
+                      "indian": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##indian##41621",
+                      "grill": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##grill##73711",
+                      "seafood": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##seafood##81831",
+                      "steakhouse": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##steakhouse##10241",
+                      "mexican": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##mexican##21591",
+                      "greek": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##greek##57581",
+                      "american": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##american##2171",
+                      "thai": "experienceevent-dining-reservation##xdm:cuisine##meta:enum##thai##20621"
+                    }
                   },
                   "xdm:restaurantID": {
                     "title": "Restaurant ID",
@@ -81,7 +103,13 @@
                     },
                     "description": "Delivery partners available from the restaurant.",
                     "meta:titleId": "experienceevent-dining-reservation##xdm:deliveryPartners##title##97261",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:deliveryPartners##description##85801"
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:deliveryPartners##description##85801",
+                    "meta:enumId": {
+                      "grubhub": "experienceevent-dining-reservation##xdm:deliveryPartners##meta:enum##grubhub##38851",
+                      "ubereats": "experienceevent-dining-reservation##xdm:deliveryPartners##meta:enum##ubereats##39081",
+                      "doordash": "experienceevent-dining-reservation##xdm:deliveryPartners##meta:enum##doordash##74901",
+                      "other": "experienceevent-dining-reservation##xdm:deliveryPartners##meta:enum##other##54461"
+                    }
                   },
                   "xdm:diningOptions": {
                     "title": "Dining Options",
@@ -94,7 +122,13 @@
                     },
                     "description": "Delivery and dining options available from the restaurant.",
                     "meta:titleId": "experienceevent-dining-reservation##xdm:diningOptions##title##19861",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:diningOptions##description##6811"
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:diningOptions##description##6811",
+                    "meta:enumId": {
+                      "outdoorSeating": "experienceevent-dining-reservation##xdm:diningOptions##meta:enum##outdoorSeating##13051",
+                      "delivery": "experienceevent-dining-reservation##xdm:diningOptions##meta:enum##delivery##50941",
+                      "curbside": "experienceevent-dining-reservation##xdm:diningOptions##meta:enum##curbside##54451",
+                      "takeout": "experienceevent-dining-reservation##xdm:diningOptions##meta:enum##takeout##10471"
+                    }
                   },
                   "xdm:groupReservation": {
                     "title": "Group Reservation",
@@ -128,7 +162,13 @@
                     },
                     "description": "Price category for the reservation being made.",
                     "meta:titleId": "experienceevent-dining-reservation##xdm:priceCategory##title##38961",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:priceCategory##description##50951"
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:priceCategory##description##50951",
+                    "meta:enumId": {
+                      "$": "experienceevent-dining-reservation##xdm:priceCategory##meta:enum##$##83661",
+                      "$$": "experienceevent-dining-reservation##xdm:priceCategory##meta:enum##$$##72521",
+                      "$$$": "experienceevent-dining-reservation##xdm:priceCategory##meta:enum##$$$##46961",
+                      "$$$$": "experienceevent-dining-reservation##xdm:priceCategory##meta:enum##$$$$##31641"
+                    }
                   },
                   "xdm:reservationTime": {
                     "title": "Reservation Time",
@@ -156,7 +196,13 @@
                     },
                     "description": "The status of the dining reservation.",
                     "meta:titleId": "experienceevent-dining-reservation##xdm:status##title##68381",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:status##description##83591"
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:status##description##83591",
+                    "meta:enumId": {
+                      "cancelled": "experienceevent-dining-reservation##xdm:status##meta:enum##cancelled##31511",
+                      "confirmed": "experienceevent-dining-reservation##xdm:status##meta:enum##confirmed##79831",
+                      "hold": "experienceevent-dining-reservation##xdm:status##meta:enum##hold##69781",
+                      "pending": "experienceevent-dining-reservation##xdm:status##meta:enum##pending##1181"
+                    }
                   },
                   "xdm:cancellation": {
                     "title": "Cancellation",
@@ -239,7 +285,11 @@
                     },
                     "description": "Tracks the purpose of the reservation, typically either business or personal.",
                     "meta:titleId": "experienceevent-dining-reservation##xdm:purpose##title##50481",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:purpose##description##35601"
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:purpose##description##35601",
+                    "meta:enumId": {
+                      "business": "experienceevent-dining-reservation##xdm:purpose##meta:enum##business##15451",
+                      "personal": "experienceevent-dining-reservation##xdm:purpose##meta:enum##personal##12261"
+                    }
                   }
                 }
               }

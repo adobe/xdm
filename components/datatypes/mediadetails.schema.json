@@ -19,42 +19,58 @@
           "title": "Playhead",
           "type": "integer",
           "minimum": 0,
-          "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length."
+          "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length.",
+          "meta:titleId": "mediaDetails##xdm:playhead##title##82951",
+          "meta:descriptionId": "mediaDetails##xdm:playhead##description##9861"
         },
         "xdm:sessionID": {
           "title": "Media Session ID",
           "type": "string",
-          "description": "Identifies an instance of a content stream unique to an individual playback."
+          "description": "Identifies an instance of a content stream unique to an individual playback.",
+          "meta:titleId": "mediaDetails##xdm:sessionID##title##93751",
+          "meta:descriptionId": "mediaDetails##xdm:sessionID##description##60891"
         },
         "xdm:sessionDetails": {
           "title": "Session Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
-          "description": "Session details information related to the experience event."
+          "description": "Session details information related to the experience event.",
+          "meta:titleId": "mediaDetails##xdm:sessionDetails##title##62811",
+          "meta:descriptionId": "mediaDetails##xdm:sessionDetails##description##96631"
         },
         "xdm:advertisingDetails": {
           "title": "Advertising Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
-          "description": "Advertising details information related to the experience event."
+          "description": "Advertising details information related to the experience event.",
+          "meta:titleId": "mediaDetails##xdm:advertisingDetails##title##73041",
+          "meta:descriptionId": "mediaDetails##xdm:advertisingDetails##description##2691"
         },
         "xdm:advertisingPodDetails": {
           "title": "Advertising Pod Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
-          "description": "Advertising pod details information related to the experience event."
+          "description": "Advertising pod details information related to the experience event.",
+          "meta:titleId": "mediaDetails##xdm:advertisingPodDetails##title##29061",
+          "meta:descriptionId": "mediaDetails##xdm:advertisingPodDetails##description##22071"
         },
         "xdm:chapterDetails": {
           "title": "Chapter Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
-          "description": "Chapter details information related to the experience event."
+          "description": "Chapter details information related to the experience event.",
+          "meta:titleId": "mediaDetails##xdm:chapterDetails##title##9081",
+          "meta:descriptionId": "mediaDetails##xdm:chapterDetails##description##23231"
         },
         "xdm:errorDetails": {
           "title": "Error Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/errorDetails",
-          "description": "Error details information related to the experience event."
+          "description": "Error details information related to the experience event.",
+          "meta:titleId": "mediaDetails##xdm:errorDetails##title##80691",
+          "meta:descriptionId": "mediaDetails##xdm:errorDetails##description##47651"
         },
         "xdm:qoeDataDetails": {
           "title": "Qoe Data Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetails",
-          "description": "Qoe data details information related to the experience event."
+          "description": "Qoe data details information related to the experience event.",
+          "meta:titleId": "mediaDetails##xdm:qoeDataDetails##title##64671",
+          "meta:descriptionId": "mediaDetails##xdm:qoeDataDetails##description##61271"
         },
         "xdm:statesStart": {
           "title": "List Of States Start",
@@ -62,7 +78,9 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
           },
-          "description": "The list of states start."
+          "description": "The list of states start.",
+          "meta:titleId": "mediaDetails##xdm:statesStart##title##16281",
+          "meta:descriptionId": "mediaDetails##xdm:statesStart##description##91391"
         },
         "xdm:statesEnd": {
           "title": "List Of States End",
@@ -70,7 +88,9 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
           },
-          "description": "The list of states end."
+          "description": "The list of states end.",
+          "meta:titleId": "mediaDetails##xdm:statesEnd##title##3511",
+          "meta:descriptionId": "mediaDetails##xdm:statesEnd##description##36171"
         },
         "xdm:states": {
           "title": "List Of States",
@@ -78,7 +98,9 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
           },
-          "description": "The list of states."
+          "description": "The list of states.",
+          "meta:titleId": "mediaDetails##xdm:states##title##38881",
+          "meta:descriptionId": "mediaDetails##xdm:states##description##7051"
         },
         "xdm:customMetadata": {
           "title": "The Custom Metadata",
@@ -86,7 +108,9 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/customMetadataDetails"
           },
-          "description": "The list of custom metadata."
+          "description": "The list of custom metadata.",
+          "meta:titleId": "mediaDetails##xdm:customMetadata##title##53561",
+          "meta:descriptionId": "mediaDetails##xdm:customMetadata##description##18381"
         }
       }
     }
@@ -95,5 +119,7 @@
     {
       "$ref": "#/definitions/mediaDetails"
     }
-  ]
+  ],
+  "meta:titleId": "mediaDetails##title##64281",
+  "meta:descriptionId": "mediaDetails##description##72751"
 }

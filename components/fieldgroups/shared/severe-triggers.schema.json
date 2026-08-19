@@ -29,7 +29,8 @@
                 "type": "integer"
               },
               "type": "array",
-              "title": "Severe Triggers"
+              "title": "Severe Triggers",
+              "meta:titleId": "severe-triggers##triggersSevere##title##91201"
             }
           }
         },
@@ -41,7 +42,8 @@
                 "type": "integer"
               },
               "type": "array",
-              "title": "Severe Triggers"
+              "title": "Severe Triggers",
+              "meta:titleId": "severe-triggers##xdm:severeTriggers##title##18621"
             }
           }
         }
@@ -52,5 +54,7 @@
     {
       "$ref": "#/definitions/customFields"
     }
-  ]
+  ],
+  "meta:titleId": "severe-triggers##title##24111",
+  "meta:descriptionId": "severe-triggers##description##46321"
 }

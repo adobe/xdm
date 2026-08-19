@@ -193,7 +193,15 @@
                     },
                     "description": "Sales channel from which the reservation was booked.",
                     "meta:titleId": "experienceevent-vehicle-reservation##xdm:salesChannel##title##68741",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:salesChannel##description##35101"
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:salesChannel##description##35101",
+                    "meta:enumId": {
+                      "web": "experienceevent-vehicle-reservation##xdm:salesChannel##meta:enum##web##20431",
+                      "mobile": "experienceevent-vehicle-reservation##xdm:salesChannel##meta:enum##mobile##89301",
+                      "mobileApp": "experienceevent-vehicle-reservation##xdm:salesChannel##meta:enum##mobileApp##19461",
+                      "callCenter": "experienceevent-vehicle-reservation##xdm:salesChannel##meta:enum##callCenter##58791",
+                      "agent": "experienceevent-vehicle-reservation##xdm:salesChannel##meta:enum##agent##15561",
+                      "thirdParty": "experienceevent-vehicle-reservation##xdm:salesChannel##meta:enum##thirdParty##40831"
+                    }
                   },
                   "xdm:status": {
                     "title": "Status",
@@ -206,7 +214,13 @@
                     },
                     "description": "The status of the vehicle reservation.",
                     "meta:titleId": "experienceevent-vehicle-reservation##xdm:status##title##25001",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:status##description##14821"
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:status##description##14821",
+                    "meta:enumId": {
+                      "cancelled": "experienceevent-vehicle-reservation##xdm:status##meta:enum##cancelled##83491",
+                      "confirmed": "experienceevent-vehicle-reservation##xdm:status##meta:enum##confirmed##32721",
+                      "hold": "experienceevent-vehicle-reservation##xdm:status##meta:enum##hold##45021",
+                      "pending": "experienceevent-vehicle-reservation##xdm:status##meta:enum##pending##94931"
+                    }
                   },
                   "xdm:vehicleClass": {
                     "title": "Vehicle Class",
@@ -223,7 +237,17 @@
                     },
                     "description": "The class/category of vehicle being reserved.",
                     "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehicleClass##title##8891",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleClass##description##47921"
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleClass##description##47921",
+                    "meta:enumId": {
+                      "economy": "experienceevent-vehicle-reservation##xdm:vehicleClass##meta:enum##economy##11601",
+                      "compact": "experienceevent-vehicle-reservation##xdm:vehicleClass##meta:enum##compact##68241",
+                      "midsize": "experienceevent-vehicle-reservation##xdm:vehicleClass##meta:enum##midsize##21951",
+                      "fullsize": "experienceevent-vehicle-reservation##xdm:vehicleClass##meta:enum##fullsize##11811",
+                      "standard": "experienceevent-vehicle-reservation##xdm:vehicleClass##meta:enum##standard##72441",
+                      "suv": "experienceevent-vehicle-reservation##xdm:vehicleClass##meta:enum##suv##14511",
+                      "premium": "experienceevent-vehicle-reservation##xdm:vehicleClass##meta:enum##premium##85631",
+                      "minivan": "experienceevent-vehicle-reservation##xdm:vehicleClass##meta:enum##minivan##75641"
+                    }
                   },
                   "xdm:cancellation": {
                     "title": "Cancellation",
@@ -299,7 +323,11 @@
                     },
                     "description": "Tracks the purpose of the reservation, typically either business or personal.",
                     "meta:titleId": "experienceevent-vehicle-reservation##xdm:purpose##title##6481",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:purpose##description##7471"
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:purpose##description##7471",
+                    "meta:enumId": {
+                      "business": "experienceevent-vehicle-reservation##xdm:purpose##meta:enum##business##26351",
+                      "personal": "experienceevent-vehicle-reservation##xdm:purpose##meta:enum##personal##79661"
+                    }
                   },
                   "xdm:tripType": {
                     "title": "Trip Type",
@@ -311,7 +339,12 @@
                     },
                     "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
                     "meta:titleId": "experienceevent-vehicle-reservation##xdm:tripType##title##9531",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:tripType##description##61051"
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:tripType##description##61051",
+                    "meta:enumId": {
+                      "roundtrip": "experienceevent-vehicle-reservation##xdm:tripType##meta:enum##roundtrip##85331",
+                      "oneWay": "experienceevent-vehicle-reservation##xdm:tripType##meta:enum##oneWay##64861",
+                      "multiCity": "experienceevent-vehicle-reservation##xdm:tripType##meta:enum##multiCity##26561"
+                    }
                   }
                 },
                 "meta:descriptionId": "experienceevent-vehicle-reservation##items##description##94941"

@@ -41,7 +41,13 @@
             "customerRep": "Customer Representative"
           },
           "meta:titleId": "experienceevent##xdm:producedBy##title##22021",
-          "meta:descriptionId": "experienceevent##xdm:producedBy##description##23981"
+          "meta:descriptionId": "experienceevent##xdm:producedBy##description##23981",
+          "meta:enumId": {
+            "self": "experienceevent##xdm:producedBy##meta:enum##self##97341",
+            "system": "experienceevent##xdm:producedBy##meta:enum##system##40471",
+            "salesRef": "experienceevent##xdm:producedBy##meta:enum##salesRef##77361",
+            "customerRep": "experienceevent##xdm:producedBy##meta:enum##customerRep##29011"
+          }
         }
       }
     }

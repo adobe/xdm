@@ -16,17 +16,23 @@
         "xdm:returnID": {
           "title": "Return ID",
           "type": "string",
-          "description": "The unique identifier for this RMA."
+          "description": "The unique identifier for this RMA.",
+          "meta:titleId": "return##xdm:returnID##title##77471",
+          "meta:descriptionId": "return##xdm:returnID##description##76841"
         },
         "xdm:returnStatus": {
           "title": "Return Status",
           "type": "string",
-          "description": "The current status of the RMA (e.g. Pending, Closed)."
+          "description": "The current status of the RMA (e.g. Pending, Closed).",
+          "meta:titleId": "return##xdm:returnStatus##title##75171",
+          "meta:descriptionId": "return##xdm:returnStatus##description##90801"
         },
         "xdm:purchaseID": {
           "title": "Order Purchase ID",
           "type": "string",
-          "description": "The unique identifier of the order/purchase that the RMA pertains to."
+          "description": "The unique identifier of the order/purchase that the RMA pertains to.",
+          "meta:titleId": "return##xdm:purchaseID##title##43121",
+          "meta:descriptionId": "return##xdm:purchaseID##description##67581"
         }
       }
     }
@@ -36,5 +42,7 @@
       "$ref": "#/definitions/return"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "return##title##12681",
+  "meta:descriptionId": "return##description##77181"
 }

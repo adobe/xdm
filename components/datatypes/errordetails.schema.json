@@ -19,7 +19,9 @@
           "title": "Error ID",
           "type": "string",
           "pattern": "^.{1,}$",
-          "description": "The error ID."
+          "description": "The error ID.",
+          "meta:titleId": "errorDetails##xdm:name##title##24961",
+          "meta:descriptionId": "errorDetails##xdm:name##description##44251"
         },
         "xdm:source": {
           "title": "Error Source",
@@ -29,6 +31,12 @@
           "meta:enum": {
             "player": "Player source.",
             "external": "External source."
+          },
+          "meta:titleId": "errorDetails##xdm:source##title##10431",
+          "meta:descriptionId": "errorDetails##xdm:source##description##49041",
+          "meta:enumId": {
+            "player": "errorDetails##xdm:source##meta:enum##player##62981",
+            "external": "errorDetails##xdm:source##meta:enum##external##3841"
           }
         }
       },
@@ -39,5 +47,7 @@
     {
       "$ref": "#/definitions/errorDetails"
     }
-  ]
+  ],
+  "meta:titleId": "errorDetails##title##36991",
+  "meta:descriptionId": "errorDetails##description##37251"
 }

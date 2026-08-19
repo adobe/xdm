@@ -16,7 +16,9 @@
         "xdm:address": {
           "title": "Billing Address",
           "description": "Billing Address.",
-          "$ref": "https://ns.adobe.com/xdm/common/address"
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "meta:titleId": "billing##xdm:address##title##73911",
+          "meta:descriptionId": "billing##xdm:address##description##75481"
         }
       }
     }
@@ -26,5 +28,7 @@
       "$ref": "#/definitions/billing"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "billing##title##51711",
+  "meta:descriptionId": "billing##description##69881"
 }

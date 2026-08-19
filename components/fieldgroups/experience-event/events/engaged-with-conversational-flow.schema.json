@@ -36,14 +36,19 @@
                     "xdm:flowID": {
                       "title": "Flow ID",
                       "type": "string",
-                      "description": "Unique identifier of the flow."
+                      "description": "Unique identifier of the flow.",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:flowID##title##80851",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:flowID##description##55051"
                     },
                     "xdm:flowName": {
                       "title": "Flow Name",
                       "type": "string",
-                      "description": "The name of the flow."
+                      "description": "The name of the flow.",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:flowName##title##34941",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:flowName##description##85171"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-conversational-flow##xdm:flowDetails##title##97821"
                 },
                 "xdm:interactionDetails": {
                   "title": "Interaction Details",
@@ -52,19 +57,26 @@
                     "xdm:interactedUIType": {
                       "title": "Interacted UI Type",
                       "type": "string",
-                      "description": "The type of interaction."
+                      "description": "The type of interaction.",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:interactedUIType##title##85311",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:interactedUIType##description##60101"
                     },
                     "xdm:sourceName": {
                       "title": "Source Name",
                       "type": "string",
-                      "description": "The name of the source."
+                      "description": "The name of the source.",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:sourceName##title##74891",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:sourceName##description##65061"
                     },
                     "xdm:sourceType": {
                       "title": "Source Type",
                       "type": "string",
-                      "description": "The type of source."
+                      "description": "The type of source.",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:sourceType##title##92521",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:sourceType##description##87781"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-conversational-flow##xdm:interactionDetails##title##48911"
                 },
                 "xdm:conversationDetails": {
                   "title": "Conversation Details",
@@ -73,17 +85,23 @@
                     "xdm:status": {
                       "title": "Status",
                       "type": "string",
-                      "description": "The status of the dialogue session (e.g., Completed)."
+                      "description": "The status of the dialogue session (e.g., Completed).",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:status##title##41791",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:status##description##29691"
                     },
                     "xdm:summary": {
                       "title": "Summary",
                       "type": "string",
-                      "description": "A brief summary of the dialogue conversation."
+                      "description": "A brief summary of the dialogue conversation.",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:summary##title##34331",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:summary##description##52211"
                     },
                     "xdm:transcript": {
                       "title": "Transcript",
                       "type": "string",
-                      "description": "Transcript of the chat conversation."
+                      "description": "Transcript of the chat conversation.",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:transcript##title##5151",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:transcript##description##77531"
                     },
                     "xdm:discussedTopics": {
                       "title": "Discussed Topics",
@@ -91,9 +109,12 @@
                       "items": {
                         "type": "string"
                       },
-                      "description": "Topics discussed during the dialogue session."
+                      "description": "Topics discussed during the dialogue session.",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:discussedTopics##title##76531",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:discussedTopics##description##56191"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-conversational-flow##xdm:conversationDetails##title##82881"
                 },
                 "xdm:pageDetails": {
                   "title": "Page Details",
@@ -103,18 +124,25 @@
                       "title": "Page URL",
                       "type": "string",
                       "format": "uri",
-                      "description": "URL of the page."
+                      "description": "URL of the page.",
+                      "meta:titleId": "engaged-with-conversational-flow##xdm:pageURL##title##46091",
+                      "meta:descriptionId": "engaged-with-conversational-flow##xdm:pageURL##description##96671"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-conversational-flow##xdm:pageDetails##title##67921"
                 },
                 "xdm:conversationalFlowKey": {
                   "title": "Conversational Flow Key",
                   "description": "Key of the conversational flow.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "engaged-with-conversational-flow##xdm:conversationalFlowKey##title##99511",
+                  "meta:descriptionId": "engaged-with-conversational-flow##xdm:conversationalFlowKey##description##29051"
                 }
-              }
+              },
+              "meta:titleId": "engaged-with-conversational-flow##xdm:conversationalFlow##title##40041"
             }
-          }
+          },
+          "meta:titleId": "engaged-with-conversational-flow##xdm:engagement##title##81711"
         }
       }
     }
@@ -125,5 +153,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-01"
+  "meta:createdDate": "2025-01-01",
+  "meta:titleId": "engaged-with-conversational-flow##title##94871",
+  "meta:descriptionId": "engaged-with-conversational-flow##description##10801"
 }

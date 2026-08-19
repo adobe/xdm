@@ -45,7 +45,12 @@
           },
           "default": "notStored",
           "meta:titleId": "searchdescriptor##search:store##title##78701",
-          "meta:descriptionId": "searchdescriptor##search:store##description##76781"
+          "meta:descriptionId": "searchdescriptor##search:store##description##76781",
+          "meta:enumId": {
+            "notStored": "searchdescriptor##search:store##meta:enum##notStored##84071",
+            "stored": "searchdescriptor##search:store##meta:enum##stored##83651",
+            "storedAndFetchByDefault": "searchdescriptor##search:store##meta:enum##storedAndFetchByDefault##60251"
+          }
         },
         "search:sort": {
           "title": "Sort Type",
@@ -59,7 +64,13 @@
           },
           "default": "notSortable",
           "meta:titleId": "searchdescriptor##search:sort##title##73251",
-          "meta:descriptionId": "searchdescriptor##search:sort##description##96751"
+          "meta:descriptionId": "searchdescriptor##search:sort##description##96751",
+          "meta:enumId": {
+            "notSortable": "searchdescriptor##search:sort##meta:enum##notSortable##2791",
+            "sorted": "searchdescriptor##search:sort##meta:enum##sorted##77321",
+            "sortedCaseSensitive": "searchdescriptor##search:sort##meta:enum##sortedCaseSensitive##6801",
+            "sortedCaseInsensitive": "searchdescriptor##search:sort##meta:enum##sortedCaseInsensitive##43721"
+          }
         },
         "search:analyzers": {
           "title": "Analyzers",
@@ -84,7 +95,21 @@
           "description": "A set of analyzers to be applied when indexing this property.",
           "default": "noAnalysis",
           "meta:titleId": "searchdescriptor##search:analyzers##title##89401",
-          "meta:descriptionId": "searchdescriptor##search:analyzers##description##34701"
+          "meta:descriptionId": "searchdescriptor##search:analyzers##description##34701",
+          "meta:enumId": {
+            "noAnalysis": "searchdescriptor##search:analyzers##meta:enum##noAnalysis##14211",
+            "standard": "searchdescriptor##search:analyzers##meta:enum##standard##39041",
+            "langGeneric": "searchdescriptor##search:analyzers##meta:enum##langGeneric##51041",
+            "langFr": "searchdescriptor##search:analyzers##meta:enum##langFr##22481",
+            "langTh": "searchdescriptor##search:analyzers##meta:enum##langTh##62881",
+            "langDe": "searchdescriptor##search:analyzers##meta:enum##langDe##56261",
+            "langJa": "searchdescriptor##search:analyzers##meta:enum##langJa##98781",
+            "langZh": "searchdescriptor##search:analyzers##meta:enum##langZh##12161",
+            "startsWithDefaultAnalyzer": "searchdescriptor##search:analyzers##meta:enum##startsWithDefaultAnalyzer##40711",
+            "startsWithWhiteSpaceAnalyzer": "searchdescriptor##search:analyzers##meta:enum##startsWithWhiteSpaceAnalyzer##24161",
+            "fileName": "searchdescriptor##search:analyzers##meta:enum##fileName##86241",
+            "fileNameExtension": "searchdescriptor##search:analyzers##meta:enum##fileNameExtension##97101"
+          }
         },
         "search:defaultAnalyzer": {
           "title": "Default analyzer",
@@ -106,7 +131,21 @@
           },
           "default": "noAnalysis",
           "meta:titleId": "searchdescriptor##search:defaultAnalyzer##title##98641",
-          "meta:descriptionId": "searchdescriptor##search:defaultAnalyzer##description##68811"
+          "meta:descriptionId": "searchdescriptor##search:defaultAnalyzer##description##68811",
+          "meta:enumId": {
+            "noAnalysis": "searchdescriptor##search:defaultAnalyzer##meta:enum##noAnalysis##52731",
+            "standard": "searchdescriptor##search:defaultAnalyzer##meta:enum##standard##94111",
+            "langGeneric": "searchdescriptor##search:defaultAnalyzer##meta:enum##langGeneric##41911",
+            "langFr": "searchdescriptor##search:defaultAnalyzer##meta:enum##langFr##34731",
+            "langTh": "searchdescriptor##search:defaultAnalyzer##meta:enum##langTh##2981",
+            "langDe": "searchdescriptor##search:defaultAnalyzer##meta:enum##langDe##48431",
+            "langJa": "searchdescriptor##search:defaultAnalyzer##meta:enum##langJa##75541",
+            "langZh": "searchdescriptor##search:defaultAnalyzer##meta:enum##langZh##8071",
+            "startsWithDefaultAnalyzer": "searchdescriptor##search:defaultAnalyzer##meta:enum##startsWithDefaultAnalyzer##24871",
+            "startsWithWhiteSpaceAnalyzer": "searchdescriptor##search:defaultAnalyzer##meta:enum##startsWithWhiteSpaceAnalyzer##64941",
+            "fileName": "searchdescriptor##search:defaultAnalyzer##meta:enum##fileName##74361",
+            "fileNameExtension": "searchdescriptor##search:defaultAnalyzer##meta:enum##fileNameExtension##21091"
+          }
         }
       },
       "required": ["search:indexed"]

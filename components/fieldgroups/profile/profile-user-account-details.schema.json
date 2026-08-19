@@ -69,7 +69,13 @@
               },
               "description": "This should describe the current status of the account",
               "meta:titleId": "profile-user-account-details##xdm:status##title##94491",
-              "meta:descriptionId": "profile-user-account-details##xdm:status##description##22261"
+              "meta:descriptionId": "profile-user-account-details##xdm:status##description##22261",
+              "meta:enumId": {
+                "active": "profile-user-account-details##xdm:status##meta:enum##active##13741",
+                "inactive": "profile-user-account-details##xdm:status##meta:enum##inactive##77941",
+                "disabled": "profile-user-account-details##xdm:status##meta:enum##disabled##17261",
+                "other": "profile-user-account-details##xdm:status##meta:enum##other##54791"
+              }
             },
             "xdm:accountType": {
               "title": "Account Type",

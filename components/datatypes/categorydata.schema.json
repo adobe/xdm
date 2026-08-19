@@ -16,15 +16,18 @@
       "properties": {
         "xdm:categoryID": {
           "title": "Category identifier.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "categorydata##xdm:categoryID##title##11901"
         },
         "xdm:categoryName": {
           "title": "Category name",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "categorydata##xdm:categoryName##title##8411"
         },
         "xdm:categoryPath": {
           "title": "Category path",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "categorydata##xdm:categoryPath##title##12061"
         }
       }
     }
@@ -34,5 +37,7 @@
       "$ref": "#/definitions/categorydata"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "categorydata##title##75791",
+  "meta:descriptionId": "categorydata##description##77611"
 }

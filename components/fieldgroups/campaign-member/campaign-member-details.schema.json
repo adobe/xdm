@@ -134,7 +134,9 @@
             "xdm:personType": {
               "title": "Person Type",
               "description": "Use this property to map this campaign to the respective measure, eg. Marketo Measure.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "campaign-member-details##xdm:personType##title##42961",
+              "meta:descriptionId": "campaign-member-details##xdm:personType##description##74701"
             }
           }
         }

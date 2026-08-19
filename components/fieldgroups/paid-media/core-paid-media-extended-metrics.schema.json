@@ -28,226 +28,302 @@
                   "type": "integer",
                   "title": "Viewable Impressions",
                   "description": "Number of viewable impressions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:viewableImpressions##title##91891",
+                  "meta:descriptionId": "extended-metrics##xdm:viewableImpressions##description##9481"
                 },
                 "xdm:viewabilityRate": {
                   "type": "number",
                   "title": "Viewability Rate",
                   "description": "Percentage of impressions that were viewable",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "extended-metrics##xdm:viewabilityRate##title##90791",
+                  "meta:descriptionId": "extended-metrics##xdm:viewabilityRate##description##82661"
                 },
                 "xdm:uniqueClicks": {
                   "type": "integer",
                   "title": "Unique Clicks",
                   "description": "Number of unique users who clicked",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:uniqueClicks##title##9051",
+                  "meta:descriptionId": "extended-metrics##xdm:uniqueClicks##description##25121"
                 },
                 "xdm:linkClicks": {
                   "type": "integer",
                   "title": "Link Clicks",
                   "description": "Number of clicks on links",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:linkClicks##title##80931",
+                  "meta:descriptionId": "extended-metrics##xdm:linkClicks##description##78501"
                 },
                 "xdm:outboundClicks": {
                   "type": "integer",
                   "title": "Outbound Clicks",
                   "description": "Number of clicks leading to external sites",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:outboundClicks##title##82381",
+                  "meta:descriptionId": "extended-metrics##xdm:outboundClicks##description##91151"
                 },
                 "xdm:saves": {
                   "type": "integer",
                   "title": "Saves",
                   "description": "Number of saves/bookmarks",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:saves##title##63101",
+                  "meta:descriptionId": "extended-metrics##xdm:saves##description##45081"
                 },
                 "xdm:shares": {
                   "type": "integer",
                   "title": "Shares",
                   "description": "Number of shares",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:shares##title##80661",
+                  "meta:descriptionId": "extended-metrics##xdm:shares##description##41661"
                 },
                 "xdm:likes": {
                   "type": "integer",
                   "title": "Likes",
                   "description": "Number of likes/reactions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:likes##title##94211",
+                  "meta:descriptionId": "extended-metrics##xdm:likes##description##68191"
                 },
                 "xdm:comments": {
                   "type": "integer",
                   "title": "Comments",
                   "description": "Number of comments",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:comments##title##15671",
+                  "meta:descriptionId": "extended-metrics##xdm:comments##description##90951"
                 },
                 "xdm:pageEngagement": {
                   "type": "integer",
                   "title": "Page Engagement",
                   "description": "Page engagement actions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:pageEngagement##title##57271",
+                  "meta:descriptionId": "extended-metrics##xdm:pageEngagement##description##8311"
                 },
                 "xdm:pageLikes": {
                   "type": "integer",
                   "title": "Page Likes",
                   "description": "Page likes",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:pageLikes##title##92711",
+                  "meta:descriptionId": "extended-metrics##xdm:pageLikes##description##40021"
                 },
                 "xdm:postEngagement": {
                   "type": "integer",
                   "title": "Post Engagement",
                   "description": "Post engagement actions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:postEngagement##title##53541",
+                  "meta:descriptionId": "extended-metrics##xdm:postEngagement##description##2921"
                 },
                 "xdm:postComments": {
                   "type": "integer",
                   "title": "Post Comments",
                   "description": "Comments on posts",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:postComments##title##9831",
+                  "meta:descriptionId": "extended-metrics##xdm:postComments##description##61431"
                 },
                 "xdm:postReactions": {
                   "type": "integer",
                   "title": "Post Reactions",
                   "description": "Reactions on posts",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:postReactions##title##55461",
+                  "meta:descriptionId": "extended-metrics##xdm:postReactions##description##90341"
                 },
                 "xdm:postShares": {
                   "type": "integer",
                   "title": "Post Shares",
                   "description": "Shares of posts",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:postShares##title##82791",
+                  "meta:descriptionId": "extended-metrics##xdm:postShares##description##53911"
                 },
                 "xdm:postSaves": {
                   "type": "integer",
                   "title": "Post Saves",
                   "description": "Saves of posts",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:postSaves##title##88621",
+                  "meta:descriptionId": "extended-metrics##xdm:postSaves##description##25101"
                 },
                 "xdm:follows": {
                   "type": "integer",
                   "title": "Follows",
                   "description": "Number of new followers gained",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:follows##title##96891",
+                  "meta:descriptionId": "extended-metrics##xdm:follows##description##90531"
                 },
                 "xdm:profileVisits": {
                   "type": "integer",
                   "title": "Profile Visits",
                   "description": "Number of profile visits generated",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:profileVisits##title##77621",
+                  "meta:descriptionId": "extended-metrics##xdm:profileVisits##description##94291"
                 },
                 "xdm:websiteVisits": {
                   "type": "integer",
                   "title": "Website Visits",
                   "description": "Number of website visits generated",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:websiteVisits##title##83641",
+                  "meta:descriptionId": "extended-metrics##xdm:websiteVisits##description##17011"
                 },
                 "xdm:averageDwellTime": {
                   "type": "number",
                   "title": "Average Dwell Time",
                   "description": "Average dwell time (seconds) (alias for qualityMetrics.dwellTime to ease migration)",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:averageDwellTime##title##36571",
+                  "meta:descriptionId": "extended-metrics##xdm:averageDwellTime##description##57061"
                 },
                 "xdm:appInstalls": {
                   "type": "integer",
                   "title": "App Installs",
                   "description": "Number of app installations",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:appInstalls##title##33751",
+                  "meta:descriptionId": "extended-metrics##xdm:appInstalls##description##95121"
                 },
                 "xdm:appOpens": {
                   "type": "integer",
                   "title": "App Opens",
                   "description": "Number of app opens",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:appOpens##title##45971",
+                  "meta:descriptionId": "extended-metrics##xdm:appOpens##description##27781"
                 },
                 "xdm:leadSubmissions": {
                   "type": "integer",
                   "title": "Lead Submissions",
                   "description": "Number of lead form submissions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:leadSubmissions##title##33941",
+                  "meta:descriptionId": "extended-metrics##xdm:leadSubmissions##description##34141"
                 },
                 "xdm:signups": {
                   "type": "integer",
                   "title": "Signups",
                   "description": "Number of user signups",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:signups##title##77461",
+                  "meta:descriptionId": "extended-metrics##xdm:signups##description##57971"
                 },
                 "xdm:downloads": {
                   "type": "integer",
                   "title": "Downloads",
                   "description": "Number of downloads",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:downloads##title##2531",
+                  "meta:descriptionId": "extended-metrics##xdm:downloads##description##62321"
                 },
                 "xdm:subscriptions": {
                   "type": "integer",
                   "title": "Subscriptions",
                   "description": "Number of subscriptions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:subscriptions##title##92391",
+                  "meta:descriptionId": "extended-metrics##xdm:subscriptions##description##85691"
                 },
                 "xdm:checkouts": {
                   "type": "integer",
                   "title": "Checkouts",
                   "description": "Number of checkout initiations",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:checkouts##title##6071",
+                  "meta:descriptionId": "extended-metrics##xdm:checkouts##description##97931"
                 },
                 "xdm:addToCarts": {
                   "type": "integer",
                   "title": "Add to Carts",
                   "description": "Number of add to cart actions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:addToCarts##title##97751",
+                  "meta:descriptionId": "extended-metrics##xdm:addToCarts##description##76251"
                 },
                 "xdm:wishlistAdds": {
                   "type": "integer",
                   "title": "Wishlist Adds",
                   "description": "Number of wishlist additions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:wishlistAdds##title##36281",
+                  "meta:descriptionId": "extended-metrics##xdm:wishlistAdds##description##61491"
                 },
                 "xdm:productViews": {
                   "type": "integer",
                   "title": "Product Views",
                   "description": "Number of product page views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:productViews##title##93921",
+                  "meta:descriptionId": "extended-metrics##xdm:productViews##description##27491"
                 },
                 "xdm:photoViews": {
                   "type": "integer",
                   "title": "Photo Views",
                   "description": "Number of photo views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:photoViews##title##18281",
+                  "meta:descriptionId": "extended-metrics##xdm:photoViews##description##58421"
                 },
                 "xdm:catalogViews": {
                   "type": "integer",
                   "title": "Catalog Views",
                   "description": "Number of catalog views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:catalogViews##title##99271",
+                  "meta:descriptionId": "extended-metrics##xdm:catalogViews##description##71"
                 },
                 "xdm:storeVisits": {
                   "type": "integer",
                   "title": "Store Visits",
                   "description": "Number of physical store visits",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:storeVisits##title##72111",
+                  "meta:descriptionId": "extended-metrics##xdm:storeVisits##description##7831"
                 },
                 "xdm:callsGenerated": {
                   "type": "integer",
                   "title": "Calls Generated",
                   "description": "Number of phone calls generated",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:callsGenerated##title##2631",
+                  "meta:descriptionId": "extended-metrics##xdm:callsGenerated##description##78961"
                 },
                 "xdm:directionsRequested": {
                   "type": "integer",
                   "title": "Directions Requested",
                   "description": "Number of direction requests",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:directionsRequested##title##79191",
+                  "meta:descriptionId": "extended-metrics##xdm:directionsRequested##description##82901"
                 },
                 "xdm:eventResponses": {
                   "type": "integer",
                   "title": "Event Responses",
                   "description": "Number of event responses",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:eventResponses##title##92461",
+                  "meta:descriptionId": "extended-metrics##xdm:eventResponses##description##80661"
                 },
                 "xdm:messagesSent": {
                   "type": "integer",
                   "title": "Messages Sent",
                   "description": "Number of messages sent",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "extended-metrics##xdm:messagesSent##title##5741",
+                  "meta:descriptionId": "extended-metrics##xdm:messagesSent##description##39571"
                 }
-              }
+              },
+              "meta:titleId": "extended-metrics##xdm:extendedMetrics##title##21881",
+              "meta:descriptionId": "extended-metrics##xdm:extendedMetrics##description##47421"
             }
           }
         }
@@ -259,5 +335,7 @@
       "$ref": "#/definitions/extended-metrics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "extended-metrics##title##90321",
+  "meta:descriptionId": "extended-metrics##description##22311"
 }

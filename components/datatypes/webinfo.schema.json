@@ -72,7 +72,9 @@
             "xdm:isPreRendered": {
               "title": "Is pre-rendered",
               "type": "boolean",
-              "description": "Flag that indicates if the page has been pre-rendered or partially pre-rendered prior to being viewed."
+              "description": "Flag that indicates if the page has been pre-rendered or partially pre-rendered prior to being viewed.",
+              "meta:titleId": "webinfo##xdm:isPreRendered##title##82551",
+              "meta:descriptionId": "webinfo##xdm:isPreRendered##description##6481"
             },
             "xdm:pageViews": {
               "title": "Page Views",
@@ -101,7 +103,12 @@
                 "other": "Other"
               },
               "meta:titleId": "webinfo##xdm:type##title##29511",
-              "meta:descriptionId": "webinfo##xdm:type##description##48491"
+              "meta:descriptionId": "webinfo##xdm:type##description##48491",
+              "meta:enumId": {
+                "download": "webinfo##xdm:type##meta:enum##download##81691",
+                "exit": "webinfo##xdm:type##meta:enum##exit##51381",
+                "other": "webinfo##xdm:type##meta:enum##other##33411"
+              }
             },
             "xdm:URL": {
               "title": "URL",
@@ -178,7 +185,20 @@
                 "unknown": "Unknown"
               },
               "meta:titleId": "webinfo##xdm:type##title##17421",
-              "meta:descriptionId": "webinfo##xdm:type##description##31751"
+              "meta:descriptionId": "webinfo##xdm:type##description##31751",
+              "meta:enumId": {
+                "internal": "webinfo##xdm:type##meta:enum##internal##20461",
+                "external": "webinfo##xdm:type##meta:enum##external##71861",
+                "search_engine": "webinfo##xdm:type##meta:enum##search_engine##70491",
+                "typed_bookmarked": "webinfo##xdm:type##meta:enum##typed_bookmarked##2881",
+                "email": "webinfo##xdm:type##meta:enum##email##62151",
+                "social": "webinfo##xdm:type##meta:enum##social##32191",
+                "hard_drive": "webinfo##xdm:type##meta:enum##hard_drive##60191",
+                "usenet": "webinfo##xdm:type##meta:enum##usenet##43541",
+                "nojs": "webinfo##xdm:type##meta:enum##nojs##88271",
+                "conversational_ai": "webinfo##xdm:type##meta:enum##conversational_ai##87141",
+                "unknown": "webinfo##xdm:type##meta:enum##unknown##84281"
+              }
             }
           },
           "meta:titleId": "webinfo##xdm:webReferrer##title##93931",

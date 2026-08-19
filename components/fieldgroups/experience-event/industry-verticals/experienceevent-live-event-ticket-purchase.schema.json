@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Purchase history for tickets to a live event, e.g., a concert or sports game.",
   "definitions": {
     "experienceevent-live-event-purchase": {
@@ -22,27 +24,37 @@
             "xdm:ticketPurchaseID": {
               "title": "Ticket Purchase ID",
               "description": "Unique ID for the ticket purchase order.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "experienceevent-live-event-purchase##xdm:ticketPurchaseID##title##9701",
+              "meta:descriptionId": "experienceevent-live-event-purchase##xdm:ticketPurchaseID##description##95571"
             },
             "xdm:liveEventID": {
               "title": "Live Event Identifier",
               "description": "Unique ID for the event in which the ticket was purchased for.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "experienceevent-live-event-purchase##xdm:liveEventID##title##22301",
+              "meta:descriptionId": "experienceevent-live-event-purchase##xdm:liveEventID##description##13461"
             },
             "xdm:ticketMasterEventCode": {
               "title": "TicketMaster.com Event Code",
               "description": "TicketMaster.com Event Code",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "experienceevent-live-event-purchase##xdm:ticketMasterEventCode##title##47481",
+              "meta:descriptionId": "experienceevent-live-event-purchase##xdm:ticketMasterEventCode##description##10181"
             },
             "xdm:liveEventName": {
               "title": "Live Event Name",
               "description": "Name of the live event.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "experienceevent-live-event-purchase##xdm:liveEventName##title##52861",
+              "meta:descriptionId": "experienceevent-live-event-purchase##xdm:liveEventName##description##45221"
             },
             "xdm:corporateSponsorshipFlag": {
               "title": "Corporate Sponsorship Flag ",
               "description": "Indicates if the ticket was provided by a corporate sponsorship.",
-              "type": "boolean"
+              "type": "boolean",
+              "meta:titleId": "experienceevent-live-event-purchase##xdm:corporateSponsorshipFlag##title##68461",
+              "meta:descriptionId": "experienceevent-live-event-purchase##xdm:corporateSponsorshipFlag##description##53801"
             },
             "xdm:tickets": {
               "type": "array",
@@ -54,7 +66,9 @@
                   "xdm:barcodeID": {
                     "title": "Ticket Bar Code",
                     "description": "Unique bar code assigned to a ticket.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:barcodeID##title##92291",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:barcodeID##description##13031"
                   },
                   "xdm:deliveryMethod": {
                     "title": "Delivery Method",
@@ -63,70 +77,104 @@
                     "meta:enum": {
                       "postal": "Postal Delivery",
                       "digital": "Digital Delivery"
+                    },
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:deliveryMethod##title##94891",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:deliveryMethod##description##51011",
+                    "meta:enumId": {
+                      "postal": "experienceevent-live-event-purchase##xdm:deliveryMethod##meta:enum##postal##15101",
+                      "digital": "experienceevent-live-event-purchase##xdm:deliveryMethod##meta:enum##digital##56601"
                     }
                   },
                   "xdm:rowName": {
                     "title": "Seat Row Name",
                     "description": "Seat row name as printed on the ticket",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:rowName##title##47071",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:rowName##description##49061"
                   },
                   "xdm:seatingArea": {
                     "title": "Seating Area",
                     "description": "Seating area as printed on ticket",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:seatingArea##title##87961",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:seatingArea##description##8311"
                   },
                   "xdm:seatName": {
                     "title": "Seat Name",
                     "description": "Seat name as printed on ticket.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:seatName##title##40451",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:seatName##description##62141"
                   },
                   "xdm:seatingAreaNumeric": {
                     "title": "Seating Area Numeric",
                     "description": "Numeric Seating Area value",
-                    "type": "integer"
+                    "type": "integer",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:seatingAreaNumeric##title##78071",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:seatingAreaNumeric##description##40231"
                   },
                   "xdm:sectionCategory": {
                     "title": "Seating Section Category",
                     "description": "Category of section, used to describe tier of ticket, balcony, box, etc...",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:sectionCategory##title##62861",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:sectionCategory##description##56621"
                   },
                   "xdm:sectionGroup": {
                     "title": "Seating Section Group",
                     "description": "Section Group as presented on ticket",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:sectionGroup##title##81781",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:sectionGroup##description##74851"
                   },
                   "xdm:sectionLevel": {
                     "title": "Seating Section Level",
                     "description": "Section Level as presented on ticket.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:sectionLevel##title##74411",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:sectionLevel##description##33781"
                   },
                   "xdm:sectionName": {
                     "title": "Seating Section Name",
                     "description": "Section name as presented on the ticket.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:sectionName##title##93091",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:sectionName##description##5811"
                   },
                   "xdm:sectionRowName": {
                     "title": "Seating Section Row Name",
                     "description": "Seating section row name as presented on ticket.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:sectionRowName##title##2221",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:sectionRowName##description##30111"
                   },
                   "xdm:ticketClassCategory": {
                     "title": "Ticket Class Category",
                     "description": "Category of the ticket class.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:ticketClassCategory##title##84031",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:ticketClassCategory##description##37291"
                   },
                   "xdm:ticketClassGroupName": {
                     "title": "Ticket Class Group Name",
                     "description": "Group name of the ticket class.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:ticketClassGroupName##title##24591",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:ticketClassGroupName##description##90561"
                   },
                   "xdm:ticketClassName": {
                     "title": "Ticket Class Name",
                     "description": "Name of the ticket class.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:ticketClassName##title##92341",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:ticketClassName##description##94651"
                   },
                   "xdm:ticketType": {
-                    "enum": ["season", "package", "single"],
+                    "enum": [
+                      "season",
+                      "package",
+                      "single"
+                    ],
                     "title": "ticketType",
                     "description": "Enum: Type of ticket purchase, season, package, or single ticket.",
                     "type": "string",
@@ -134,15 +182,26 @@
                       "season": "Season Ticket Purchase",
                       "package": "Mini-Package Purchase",
                       "single": "Single Ticket Purchase"
+                    },
+                    "meta:titleId": "experienceevent-live-event-purchase##xdm:ticketType##title##15131",
+                    "meta:descriptionId": "experienceevent-live-event-purchase##xdm:ticketType##description##92681",
+                    "meta:enumId": {
+                      "season": "experienceevent-live-event-purchase##xdm:ticketType##meta:enum##season##67461",
+                      "package": "experienceevent-live-event-purchase##xdm:ticketType##meta:enum##package##48501",
+                      "single": "experienceevent-live-event-purchase##xdm:ticketType##meta:enum##single##92031"
                     }
                   }
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-live-event-purchase##xdm:tickets##title##15901",
+              "meta:descriptionId": "experienceevent-live-event-purchase##xdm:tickets##description##28611"
             },
             "xdm:ticketPurchase": {
               "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
               "description": "Transaction details for ticket purchase.",
-              "title": "Ticket Purchase Transaction"
+              "title": "Ticket Purchase Transaction",
+              "meta:titleId": "experienceevent-live-event-purchase##xdm:ticketPurchase##title##11381",
+              "meta:descriptionId": "experienceevent-live-event-purchase##xdm:ticketPurchase##description##32591"
             }
           }
         }
@@ -154,5 +213,7 @@
       "$ref": "#/definitions/experienceevent-live-event-purchase"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "experienceevent-live-event-purchase##title##42441",
+  "meta:descriptionId": "experienceevent-live-event-purchase##description##55411"
 }

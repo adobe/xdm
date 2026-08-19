@@ -29,15 +29,19 @@
               "properties": {
                 "xdm:conversationId": {
                   "type": "string",
-                  "description": "The conversation ID."
+                  "description": "The conversation ID.",
+                  "meta:descriptionId": "aep-agent-conversation-tracking##xdm:conversationId##description##2871"
                 },
                 "xdm:interactionId": {
                   "type": "string",
-                  "description": "The interaction ID."
+                  "description": "The interaction ID.",
+                  "meta:descriptionId": "aep-agent-conversation-tracking##xdm:interactionId##description##51901"
                 }
-              }
+              },
+              "meta:descriptionId": "aep-agent-conversation-tracking##xdm:gen_ai##description##14261"
             }
-          }
+          },
+          "meta:descriptionId": "aep-agent-conversation-tracking##xdm:adobe##description##50181"
         }
       }
     }
@@ -47,5 +51,7 @@
       "$ref": "#/definitions/aep-agent-conversation-tracking"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "aep-agent-conversation-tracking##title##80211",
+  "meta:descriptionId": "aep-agent-conversation-tracking##description##71141"
 }

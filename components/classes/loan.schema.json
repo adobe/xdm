@@ -78,7 +78,17 @@
           },
           "description": "Indicates the current status of the loan.",
           "meta:titleId": "loan##xdm:loanStatus##title##4831",
-          "meta:descriptionId": "loan##xdm:loanStatus##description##32881"
+          "meta:descriptionId": "loan##xdm:loanStatus##description##32881",
+          "meta:enumId": {
+            "notIssued": "loan##xdm:loanStatus##meta:enum##notIssued##86011",
+            "current": "loan##xdm:loanStatus##meta:enum##current##71881",
+            "inGracePeriod": "loan##xdm:loanStatus##meta:enum##inGracePeriod##18931",
+            "fullyPaid": "loan##xdm:loanStatus##meta:enum##fullyPaid##37551",
+            "late": "loan##xdm:loanStatus##meta:enum##late##21411",
+            "default": "loan##xdm:loanStatus##meta:enum##default##36511",
+            "chargedOff": "loan##xdm:loanStatus##meta:enum##chargedOff##99161",
+            "cancelled": "loan##xdm:loanStatus##meta:enum##cancelled##24751"
+          }
         },
         "xdm:termInMonths": {
           "title": "Term in Months",
@@ -151,11 +161,24 @@
             "debtConsolidation": "Debt Consolidation",
             "student": "Student",
             "automobile": "Automobile",
-            "mortgage": "Mortgage"
+            "mortgage": "Mortgage",
+            "meta:titleId": "loan##meta:enum##title##64711"
           },
           "description": "Records the type of loan issued.",
           "meta:titleId": "loan##xdm:loanType##title##10591",
-          "meta:descriptionId": "loan##xdm:loanType##description##48731"
+          "meta:descriptionId": "loan##xdm:loanType##description##48731",
+          "meta:enumId": {
+            "personal": "loan##xdm:loanType##meta:enum##personal##57551",
+            "cashAdvance": "loan##xdm:loanType##meta:enum##cashAdvance##99081",
+            "title": "loan##xdm:loanType##meta:enum##title##71961",
+            "homeEquity": "loan##xdm:loanType##meta:enum##homeEquity##7721",
+            "smallBusiness": "loan##xdm:loanType##meta:enum##smallBusiness##54931",
+            "debtConsolidation": "loan##xdm:loanType##meta:enum##debtConsolidation##65551",
+            "student": "loan##xdm:loanType##meta:enum##student##20151",
+            "automobile": "loan##xdm:loanType##meta:enum##automobile##39501",
+            "mortgage": "loan##xdm:loanType##meta:enum##mortgage##97641",
+            "meta:titleId": "loan##xdm:loanType##meta:enum##meta:titleId##97471"
+          }
         },
         "xdm:renegotiable": {
           "title": "Renegotiable",

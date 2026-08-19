@@ -24,35 +24,49 @@
             "xdm:version": {
               "title": "Version",
               "type": "string",
-              "description": "Experience version."
+              "description": "Experience version.",
+              "meta:titleId": "digital-experience##xdm:version##title##85831",
+              "meta:descriptionId": "digital-experience##xdm:version##description##74451"
             },
             "xdm:idSource": {
               "title": "idSource",
               "type": "string",
-              "description": "The source that created the id for this experience."
+              "description": "The source that created the id for this experience.",
+              "meta:titleId": "digital-experience##xdm:idSource##title##7011",
+              "meta:descriptionId": "digital-experience##xdm:idSource##description##36741"
             },
             "xdm:name": {
               "title": "Name",
               "type": "string",
-              "description": "Experience name."
+              "description": "Experience name.",
+              "meta:titleId": "digital-experience##xdm:name##title##24701",
+              "meta:descriptionId": "digital-experience##xdm:name##description##46591"
             },
             "xdm:description": {
               "title": "Description",
               "type": "string",
-              "description": "Experience description."
+              "description": "Experience description.",
+              "meta:titleId": "digital-experience##xdm:description##title##35481",
+              "meta:descriptionId": "digital-experience##xdm:description##description##51481"
             },
             "xdm:channel": {
               "title": "Channel",
               "type": "string",
-              "description": "Channel such as web or mobile."
+              "description": "Channel such as web or mobile.",
+              "meta:titleId": "digital-experience##xdm:channel##title##18991",
+              "meta:descriptionId": "digital-experience##xdm:channel##description##86171"
             },
             "xdm:thumbnailURL": {
               "title": "Thumbnail URL",
               "format": "uri",
               "type": "string",
-              "description": "Experience thumbnail url."
+              "description": "Experience thumbnail url.",
+              "meta:titleId": "digital-experience##xdm:thumbnailURL##title##39771",
+              "meta:descriptionId": "digital-experience##xdm:thumbnailURL##description##84121"
             }
-          }
+          },
+          "meta:titleId": "digital-experience##xdm:digitalExperience##title##41611",
+          "meta:descriptionId": "digital-experience##xdm:digitalExperience##description##7141"
         }
       }
     }
@@ -71,5 +85,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/featurizationattributes"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "digital-experience##title##4291",
+  "meta:descriptionId": "digital-experience##description##99731"
 }

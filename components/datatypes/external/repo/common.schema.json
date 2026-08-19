@@ -16,12 +16,16 @@
         "repo:name": {
           "type": "string",
           "title": "Name",
-          "description": "The name of the resource in the repository, such as the file or directory name."
+          "description": "The name of the resource in the repository, such as the file or directory name.",
+          "meta:titleId": "1.0##repo:name##title##92341",
+          "meta:descriptionId": "1.0##repo:name##description##51891"
         },
         "repo:path": {
           "type": "string",
           "title": "Path",
-          "description": "The path of the resource within the repository."
+          "description": "The path of the resource within the repository.",
+          "meta:titleId": "1.0##repo:path##title##49961",
+          "meta:descriptionId": "1.0##repo:path##description##82161"
         },
         "repo:id": {
           "type": "string",
@@ -30,7 +34,8 @@
           "examples": [
             "urn:aaid:aem:e36cf904-2f0f-411e-80da-5bf31293ab69"
           ],
-          "description": "The unique identifier of an addressable entity within a repository. The kind of entity that `repo:id` identifies depends on context: it may be an asset, a directory, or a person/principal. `repo:id` is therefore a generic repository-entity identifier and is not, by itself, specific to assets. In asset contexts it identifies the asset; Adobe Experience Manager's repository API treats `repo:id` as a deprecated alias of `repo:assetId`. Do not conflate `repo:id` with `repo:assetId`: `repo:assetId` is always the asset-scoped identifier, whereas `repo:id` identifies whichever entity the surrounding object describes."
+          "description": "The unique identifier of an addressable entity within a repository. The kind of entity that `repo:id` identifies depends on context: it may be an asset, a directory, or a person/principal. `repo:id` is therefore a generic repository-entity identifier and is not, by itself, specific to assets. In asset contexts it identifies the asset; Adobe Experience Manager's repository API treats `repo:id` as a deprecated alias of `repo:assetId`. Do not conflate `repo:id` with `repo:assetId`: `repo:assetId` is always the asset-scoped identifier, whereas `repo:id` identifies whichever entity the surrounding object describes.",
+          "meta:descriptionId": "1.0##repo:id##description##48431"
         },
         "repo:assetId": {
           "type": "string",
@@ -39,7 +44,8 @@
           "examples": [
             "urn:aaid:aem:e36cf904-2f0f-411e-80da-5bf31293ab69"
           ],
-          "description": "The unique, repository-scoped identifier of an asset. In asset contexts `repo:assetId` supersedes the generic `repo:id`, which is retained as a deprecated alias."
+          "description": "The unique, repository-scoped identifier of an asset. In asset contexts `repo:assetId` supersedes the generic `repo:id`, which is retained as a deprecated alias.",
+          "meta:descriptionId": "1.0##repo:assetId##description##5201"
         },
         "repo:assetClass": {
           "type": "string",
@@ -48,43 +54,51 @@
             "file",
             "directory"
           ],
-          "description": "The classification of the asset within the repository, such as whether it represents a file or a directory."
+          "description": "The classification of the asset within the repository, such as whether it represents a file or a directory.",
+          "meta:descriptionId": "1.0##repo:assetClass##description##11381"
         },
         "repo:repositoryId": {
           "type": "string",
           "meta:immutable": true,
           "meta:usereditable": false,
-          "description": "The identifier of the repository instance in which the resource is stored. Together with a resource identifier, it uniquely addresses a resource across repositories."
+          "description": "The identifier of the repository instance in which the resource is stored. Together with a resource identifier, it uniquely addresses a resource across repositories.",
+          "meta:descriptionId": "1.0##repo:repositoryId##description##79301"
         },
         "repo:repositoryType": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The type of the repository instance in which the resource is stored."
+          "description": "The type of the repository instance in which the resource is stored.",
+          "meta:descriptionId": "1.0##repo:repositoryType##description##54181"
         },
         "repo:etag": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "An ETag is an opaque entity-tag, returned as an HTTP/1.1 response header, used to determine whether the content of a resource at a given URL has changed."
+          "description": "An ETag is an opaque entity-tag, returned as an HTTP/1.1 response header, used to determine whether the content of a resource at a given URL has changed.",
+          "meta:descriptionId": "1.0##repo:etag##description##60641"
         },
         "repo:size": {
           "type": "integer",
           "meta:usereditable": false,
-          "description": "Size of the resource in bytes."
+          "description": "Size of the resource in bytes.",
+          "meta:descriptionId": "1.0##repo:size##description##36591"
         },
         "repo:version": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The version identifier of the resource. It is generated on both explicit and implicit save or upload."
+          "description": "The version identifier of the resource. It is generated on both explicit and implicit save or upload.",
+          "meta:descriptionId": "1.0##repo:version##description##19231"
         },
         "repo:state": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The lifecycle state of the resource within the repository."
+          "description": "The lifecycle state of the resource within the repository.",
+          "meta:descriptionId": "1.0##repo:state##description##2671"
         },
         "repo:md5": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The MD5 checksum of the resource's binary."
+          "description": "The MD5 checksum of the resource's binary.",
+          "meta:descriptionId": "1.0##repo:md5##description##4911"
         },
         "repo:resource": {
           "type": "object",
@@ -93,21 +107,26 @@
           "properties": {
             "repo:reltype": {
               "type": "string",
-              "description": "The relation type of the referenced resource."
+              "description": "The relation type of the referenced resource.",
+              "meta:descriptionId": "1.0##repo:reltype##description##9501"
             },
             "component_id": {
               "type": "string",
-              "description": "The identifier of the component within the resource."
+              "description": "The identifier of the component within the resource.",
+              "meta:descriptionId": "1.0##component_id##description##66831"
             },
             "revision": {
               "type": "string",
-              "description": "The revision of the referenced resource."
+              "description": "The revision of the referenced resource.",
+              "meta:descriptionId": "1.0##revision##description##91611"
             },
             "etag": {
               "type": "string",
-              "description": "The entity-tag of the referenced resource."
+              "description": "The entity-tag of the referenced resource.",
+              "meta:descriptionId": "1.0##etag##description##78231"
             }
-          }
+          },
+          "meta:descriptionId": "1.0##repo:resource##description##51451"
         },
         "dc:format": {
           "meta:usereditable": false,
@@ -153,7 +172,8 @@
           "examples": [
             "2004-10-23T12:00:00-06:00"
           ],
-          "description": "The server date and time when the resource was discarded (for example, moved to a recycle bin or trash) in the repository. The date time property should conform to ISO 8601 standard."
+          "description": "The server date and time when the resource was discarded (for example, moved to a recycle bin or trash) in the repository. The date time property should conform to ISO 8601 standard.",
+          "meta:descriptionId": "1.0##repo:discardDate##description##14431"
         },
         "repo:expires": {
           "type": "string",
@@ -162,12 +182,14 @@
           "examples": [
             "2004-10-23T12:00:00-06:00"
           ],
-          "description": "The server date and time when the resource is scheduled to expire. The date time property should conform to ISO 8601 standard."
+          "description": "The server date and time when the resource is scheduled to expire. The date time property should conform to ISO 8601 standard.",
+          "meta:descriptionId": "1.0##repo:expires##description##56741"
         },
         "repo:lastPublishedTime": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The timestamp at which the resource was most recently published, as reported by the publish subsystem."
+          "description": "The timestamp at which the resource was most recently published, as reported by the publish subsystem.",
+          "meta:descriptionId": "1.0##repo:lastPublishedTime##description##94591"
         }
       }
     },
@@ -176,17 +198,20 @@
         "repo:createdBy": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
+          "description": "ID of the user who initiated the action that caused the resource to be created in the repository.",
+          "meta:descriptionId": "1.0##repo:createdBy##description##54501"
         },
         "repo:modifiedBy": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
+          "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository.",
+          "meta:descriptionId": "1.0##repo:modifiedBy##description##29521"
         },
         "repo:discardedBy": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "ID of the user who initiated the action that caused the resource to be discarded in the repository."
+          "description": "ID of the user who initiated the action that caused the resource to be discarded in the repository.",
+          "meta:descriptionId": "1.0##repo:discardedBy##description##86341"
         }
       }
     },
@@ -198,7 +223,8 @@
           "items": {
             "type": "string"
           },
-          "description": "The ordered chain of ancestor resource identifiers, from the repository root to the immediate parent of this resource."
+          "description": "The ordered chain of ancestor resource identifiers, from the repository root to the immediate parent of this resource.",
+          "meta:descriptionId": "1.0##repo:ancestors##description##86681"
         }
       }
     },
@@ -210,7 +236,8 @@
           "additionalProperties": {
             "type": "string"
           },
-          "description": "The owner of the repository or resource, expressed as a set of identifying key/value pairs."
+          "description": "The owner of the repository or resource, expressed as a set of identifying key/value pairs.",
+          "meta:descriptionId": "1.0##repo:owner##description##39741"
         },
         "repo:acl": {
           "type": "array",
@@ -229,33 +256,39 @@
                     "properties": {
                       "@id": {
                         "type": "string",
-                        "description": "The identifier of the principal."
+                        "description": "The identifier of the principal.",
+                        "meta:descriptionId": "1.0##@id##description##73941"
                       },
                       "xdm:provider": {
                         "type": "string",
-                        "description": "The identity provider of the principal."
+                        "description": "The identity provider of the principal.",
+                        "meta:descriptionId": "1.0##xdm:provider##description##67421"
                       },
                       "@type": {
                         "type": "string",
-                        "description": "The type reference of the principal."
+                        "description": "The type reference of the principal.",
+                        "meta:descriptionId": "1.0##@type##description##551"
                       }
                     }
                   }
-                ]
+                ],
+                "meta:descriptionId": "1.0##repo:principal##description##13881"
               },
               "repo:privileges": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 },
-                "description": "Privileges granted or denied to the principal."
+                "description": "Privileges granted or denied to the principal.",
+                "meta:descriptionId": "1.0##repo:privileges##description##62611"
               },
               "repo:relations": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 },
-                "description": "List of relation link types to which this privilege applies."
+                "description": "List of relation link types to which this privilege applies.",
+                "meta:descriptionId": "1.0##repo:relations##description##74921"
               },
               "repo:modifier": {
                 "type": "string",
@@ -263,15 +296,18 @@
                   "GRANT",
                   "DENY"
                 ],
-                "description": "Optional modifier of the privilege: either `GRANT` or `DENY`. The default modifier is `GRANT` if this property is not present."
+                "description": "Optional modifier of the privilege: either `GRANT` or `DENY`. The default modifier is `GRANT` if this property is not present.",
+                "meta:descriptionId": "1.0##repo:modifier##description##52741"
               },
               "repo:inheritance": {
                 "type": "string",
-                "description": "Optional inheritance of the access control entry: whether the deny or grant is inherited by the children of the resource."
+                "description": "Optional inheritance of the access control entry: whether the deny or grant is inherited by the children of the resource.",
+                "meta:descriptionId": "1.0##repo:inheritance##description##60011"
               }
             }
           },
-          "description": "The access control list of the resource: the set of access control entries describing which privileges principals hold on the resource."
+          "description": "The access control list of the resource: the set of access control entries describing which privileges principals hold on the resource.",
+          "meta:descriptionId": "1.0##repo:acl##description##86511"
         }
       }
     },
@@ -280,12 +316,14 @@
         "repo:blocksize": {
           "type": "integer",
           "meta:usereditable": false,
-          "description": "The block size, in bytes, used for block-based transfer of the resource's binary."
+          "description": "The block size, in bytes, used for block-based transfer of the resource's binary.",
+          "meta:descriptionId": "1.0##repo:blocksize##description##52231"
         },
         "repo:accelerated": {
           "type": "boolean",
           "meta:usereditable": false,
-          "description": "Indicates whether accelerated transfer is available or in use for the resource's binary."
+          "description": "Indicates whether accelerated transfer is available or in use for the resource's binary.",
+          "meta:descriptionId": "1.0##repo:accelerated##description##51831"
         },
         "repo:availableRegions": {
           "type": "array",
@@ -293,12 +331,14 @@
           "items": {
             "type": "string"
           },
-          "description": "The set of regions in which the repository is available."
+          "description": "The set of regions in which the repository is available.",
+          "meta:descriptionId": "1.0##repo:availableRegions##description##73561"
         },
         "repo:environment": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The environment of the repository instance in which the resource is stored."
+          "description": "The environment of the repository instance in which the resource is stored.",
+          "meta:descriptionId": "1.0##repo:environment##description##67131"
         }
       }
     },
@@ -307,52 +347,62 @@
         "repo:scene7Domain": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The Dynamic Media (Scene7) server domain from which the asset's renditions are served."
+          "description": "The Dynamic Media (Scene7) server domain from which the asset's renditions are served.",
+          "meta:descriptionId": "1.0##repo:scene7Domain##description##45391"
         },
         "repo:scene7File": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The Dynamic Media (Scene7) file identifier of the asset."
+          "description": "The Dynamic Media (Scene7) file identifier of the asset.",
+          "meta:descriptionId": "1.0##repo:scene7File##description##11981"
         },
         "repo:scene7FileStatus": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The Dynamic Media (Scene7) publishing status of the asset."
+          "description": "The Dynamic Media (Scene7) publishing status of the asset.",
+          "meta:descriptionId": "1.0##repo:scene7FileStatus##description##49411"
         },
         "repo:scene7Folder": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The Dynamic Media (Scene7) folder path of the asset."
+          "description": "The Dynamic Media (Scene7) folder path of the asset.",
+          "meta:descriptionId": "1.0##repo:scene7Folder##description##52311"
         },
         "repo:scene7FontStyle": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The Dynamic Media (Scene7) font style of the asset, for font assets."
+          "description": "The Dynamic Media (Scene7) font style of the asset, for font assets.",
+          "meta:descriptionId": "1.0##repo:scene7FontStyle##description##38131"
         },
         "repo:scene7FontType": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The Dynamic Media (Scene7) font type of the asset, for font assets."
+          "description": "The Dynamic Media (Scene7) font type of the asset, for font assets.",
+          "meta:descriptionId": "1.0##repo:scene7FontType##description##82071"
         },
         "repo:scene7LastModified": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The timestamp at which the asset was last modified in Dynamic Media (Scene7)."
+          "description": "The timestamp at which the asset was last modified in Dynamic Media (Scene7).",
+          "meta:descriptionId": "1.0##repo:scene7LastModified##description##17831"
         },
         "repo:scene7Name": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The Dynamic Media (Scene7) asset name."
+          "description": "The Dynamic Media (Scene7) asset name.",
+          "meta:descriptionId": "1.0##repo:scene7Name##description##861"
         },
         "repo:scene7RTFName": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The Dynamic Media (Scene7) rich-text (RTF) name of the asset."
+          "description": "The Dynamic Media (Scene7) rich-text (RTF) name of the asset.",
+          "meta:descriptionId": "1.0##repo:scene7RTFName##description##70041"
         },
         "repo:scene7Type": {
           "type": "string",
           "meta:usereditable": false,
-          "description": "The Dynamic Media (Scene7) asset type (for example, Image)."
+          "description": "The Dynamic Media (Scene7) asset type (for example, Image).",
+          "meta:descriptionId": "1.0##repo:scene7Type##description##79111"
         }
       }
     }

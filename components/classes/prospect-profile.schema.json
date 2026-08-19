@@ -13,9 +13,6 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["all"]
-  },
-  "meta:tags": {
     "partnerProspect": true
   },
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
@@ -26,7 +23,9 @@
         "xdm:partnerID": {
           "title": "Partner ID",
           "description": "Typically a unique pseudonymous identifier which identifies an individual prospect.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "prospect-profile##xdm:partnerID##title##15311",
+          "meta:descriptionId": "prospect-profile##xdm:partnerID##description##77341"
         }
       }
     }
@@ -42,5 +41,7 @@
       "$ref": "#/definitions/prospect"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "prospect-profile##title##90431",
+  "meta:descriptionId": "prospect-profile##description##53241"
 }

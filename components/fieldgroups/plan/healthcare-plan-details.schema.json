@@ -27,22 +27,30 @@
             "xdm:payerID": {
               "title": "Payer ID",
               "type": "string",
-              "description": "Unique identifier of the payer. This is the insurance provider of the plan."
+              "description": "Unique identifier of the payer. This is the insurance provider of the plan.",
+              "meta:titleId": "healthcare-plan-details##xdm:payerID##title##93341",
+              "meta:descriptionId": "healthcare-plan-details##xdm:payerID##description##6831"
             },
             "xdm:payerName": {
               "title": "Payer Name",
               "type": "string",
-              "description": "Name of the payer. This is the insurance provider of the plan."
+              "description": "Name of the payer. This is the insurance provider of the plan.",
+              "meta:titleId": "healthcare-plan-details##xdm:payerName##title##92811",
+              "meta:descriptionId": "healthcare-plan-details##xdm:payerName##description##36001"
             },
             "xdm:targetOwnerType": {
               "title": "Target Owner Type",
               "type": "string",
-              "description": " The type of owner a plan is for. Examples are individual, group, organization, etc."
+              "description": " The type of owner a plan is for. Examples are individual, group, organization, etc.",
+              "meta:titleId": "healthcare-plan-details##xdm:targetOwnerType##title##63731",
+              "meta:descriptionId": "healthcare-plan-details##xdm:targetOwnerType##description##30661"
             },
             "xdm:isActive": {
               "title": "Is Active",
               "type": "boolean",
-              "description": "Indicates whether the plan is active."
+              "description": "Indicates whether the plan is active.",
+              "meta:titleId": "healthcare-plan-details##xdm:isActive##title##3441",
+              "meta:descriptionId": "healthcare-plan-details##xdm:isActive##description##91931"
             },
             "xdm:networkDetails": {
               "type": "array",
@@ -54,15 +62,20 @@
                   "xdm:networkID": {
                     "title": "Network Identifier",
                     "type": "string",
-                    "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate."
+                    "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate.",
+                    "meta:titleId": "healthcare-plan-details##xdm:networkID##title##65121",
+                    "meta:descriptionId": "healthcare-plan-details##xdm:networkID##description##17451"
                   },
                   "xdm:networkName": {
                     "title": "Network Name",
                     "type": "string",
-                    "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate."
+                    "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate.",
+                    "meta:titleId": "healthcare-plan-details##xdm:networkName##title##59441",
+                    "meta:descriptionId": "healthcare-plan-details##xdm:networkName##description##66881"
                   }
                 }
-              }
+              },
+              "meta:titleId": "healthcare-plan-details##xdm:networkDetails##title##10821"
             },
             "xdm:planType": {
               "title": "Plan Type",
@@ -73,7 +86,15 @@
                 "pos": "POS",
                 "hdhp": "HDHP"
               },
-              "description": "This indicates if the plan is primary, secondary or a tertiary plan."
+              "description": "This indicates if the plan is primary, secondary or a tertiary plan.",
+              "meta:titleId": "healthcare-plan-details##xdm:planType##title##32441",
+              "meta:descriptionId": "healthcare-plan-details##xdm:planType##description##181",
+              "meta:enumId": {
+                "hmo": "healthcare-plan-details##xdm:planType##meta:enum##hmo##6051",
+                "epo": "healthcare-plan-details##xdm:planType##meta:enum##epo##87651",
+                "pos": "healthcare-plan-details##xdm:planType##meta:enum##pos##51131",
+                "hdhp": "healthcare-plan-details##xdm:planType##meta:enum##hdhp##62021"
+              }
             },
             "xdm:planLevel": {
               "title": "Plan Level",
@@ -84,7 +105,15 @@
                 "tertiary": "Tertiary",
                 "quaternary": "Quaternary"
               },
-              "description": "This indicates if the plan is primary, secondary, tertiary etc."
+              "description": "This indicates if the plan is primary, secondary, tertiary etc.",
+              "meta:titleId": "healthcare-plan-details##xdm:planLevel##title##58101",
+              "meta:descriptionId": "healthcare-plan-details##xdm:planLevel##description##96361",
+              "meta:enumId": {
+                "primary": "healthcare-plan-details##xdm:planLevel##meta:enum##primary##83501",
+                "secondary": "healthcare-plan-details##xdm:planLevel##meta:enum##secondary##67981",
+                "tertiary": "healthcare-plan-details##xdm:planLevel##meta:enum##tertiary##95991",
+                "quaternary": "healthcare-plan-details##xdm:planLevel##meta:enum##quaternary##12141"
+              }
             },
             "xdm:coverageType": {
               "title": "Coverage Type",
@@ -95,15 +124,27 @@
                 "vision": "Vision",
                 "accident": "Accident"
               },
-              "description": "Plan coverage type."
+              "description": "Plan coverage type.",
+              "meta:titleId": "healthcare-plan-details##xdm:coverageType##title##13141",
+              "meta:descriptionId": "healthcare-plan-details##xdm:coverageType##description##27031",
+              "meta:enumId": {
+                "medical": "healthcare-plan-details##xdm:coverageType##meta:enum##medical##55281",
+                "dental": "healthcare-plan-details##xdm:coverageType##meta:enum##dental##43841",
+                "vision": "healthcare-plan-details##xdm:coverageType##meta:enum##vision##37541",
+                "accident": "healthcare-plan-details##xdm:coverageType##meta:enum##accident##46061"
+              }
             },
             "xdm:lastVerificationDate": {
               "title": "Last Verification Date",
               "type": "string",
               "format": "date-time",
-              "description": "The date on which the plan was last verified."
+              "description": "The date on which the plan was last verified.",
+              "meta:titleId": "healthcare-plan-details##xdm:lastVerificationDate##title##111",
+              "meta:descriptionId": "healthcare-plan-details##xdm:lastVerificationDate##description##33701"
             }
-          }
+          },
+          "meta:titleId": "healthcare-plan-details##xdm:healthcarePlanDetails##title##48541",
+          "meta:descriptionId": "healthcare-plan-details##xdm:healthcarePlanDetails##description##24911"
         }
       }
     }
@@ -113,5 +154,7 @@
       "$ref": "#/definitions/health-plan-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "healthcare-plan-details##title##67301",
+  "meta:descriptionId": "healthcare-plan-details##description##34751"
 }

@@ -47,6 +47,18 @@
                     "DATA_DRIVEN": "Data Driven",
                     "EVEN_CREDIT": "Even Credit",
                     "CUSTOM": "Custom Model"
+                  },
+                  "meta:titleId": "attribution-metrics##xdm:attributionModel##title##57491",
+                  "meta:descriptionId": "attribution-metrics##xdm:attributionModel##description##8711",
+                  "meta:enumId": {
+                    "LAST_CLICK": "attribution-metrics##xdm:attributionModel##meta:enum##LAST_CLICK##63751",
+                    "FIRST_CLICK": "attribution-metrics##xdm:attributionModel##meta:enum##FIRST_CLICK##81381",
+                    "LINEAR": "attribution-metrics##xdm:attributionModel##meta:enum##LINEAR##53221",
+                    "TIME_DECAY": "attribution-metrics##xdm:attributionModel##meta:enum##TIME_DECAY##95081",
+                    "POSITION_BASED": "attribution-metrics##xdm:attributionModel##meta:enum##POSITION_BASED##76611",
+                    "DATA_DRIVEN": "attribution-metrics##xdm:attributionModel##meta:enum##DATA_DRIVEN##52801",
+                    "EVEN_CREDIT": "attribution-metrics##xdm:attributionModel##meta:enum##EVEN_CREDIT##40321",
+                    "CUSTOM": "attribution-metrics##xdm:attributionModel##meta:enum##CUSTOM##33281"
                   }
                 },
                 "xdm:clickAttributionWindow": {
@@ -72,6 +84,18 @@
                     "60_DAY": "60 Days",
                     "90_DAY": "90 Days",
                     "CUSTOM": "Custom Window"
+                  },
+                  "meta:titleId": "attribution-metrics##xdm:clickAttributionWindow##title##23301",
+                  "meta:descriptionId": "attribution-metrics##xdm:clickAttributionWindow##description##75271",
+                  "meta:enumId": {
+                    "1_DAY": "attribution-metrics##xdm:clickAttributionWindow##meta:enum##1_DAY##90491",
+                    "7_DAY": "attribution-metrics##xdm:clickAttributionWindow##meta:enum##7_DAY##1321",
+                    "14_DAY": "attribution-metrics##xdm:clickAttributionWindow##meta:enum##14_DAY##47111",
+                    "28_DAY": "attribution-metrics##xdm:clickAttributionWindow##meta:enum##28_DAY##94981",
+                    "30_DAY": "attribution-metrics##xdm:clickAttributionWindow##meta:enum##30_DAY##96501",
+                    "60_DAY": "attribution-metrics##xdm:clickAttributionWindow##meta:enum##60_DAY##9661",
+                    "90_DAY": "attribution-metrics##xdm:clickAttributionWindow##meta:enum##90_DAY##52451",
+                    "CUSTOM": "attribution-metrics##xdm:clickAttributionWindow##meta:enum##CUSTOM##77711"
                   }
                 },
                 "xdm:viewAttributionWindow": {
@@ -93,6 +117,16 @@
                     "28_DAY": "28 Days",
                     "30_DAY": "30 Days",
                     "CUSTOM": "Custom Window"
+                  },
+                  "meta:titleId": "attribution-metrics##xdm:viewAttributionWindow##title##91591",
+                  "meta:descriptionId": "attribution-metrics##xdm:viewAttributionWindow##description##79941",
+                  "meta:enumId": {
+                    "1_DAY": "attribution-metrics##xdm:viewAttributionWindow##meta:enum##1_DAY##9441",
+                    "7_DAY": "attribution-metrics##xdm:viewAttributionWindow##meta:enum##7_DAY##13131",
+                    "14_DAY": "attribution-metrics##xdm:viewAttributionWindow##meta:enum##14_DAY##73941",
+                    "28_DAY": "attribution-metrics##xdm:viewAttributionWindow##meta:enum##28_DAY##47181",
+                    "30_DAY": "attribution-metrics##xdm:viewAttributionWindow##meta:enum##30_DAY##44441",
+                    "CUSTOM": "attribution-metrics##xdm:viewAttributionWindow##meta:enum##CUSTOM##70811"
                   }
                 },
                 "xdm:engagementAttributionWindow": {
@@ -114,6 +148,16 @@
                     "28_DAY": "28 Days",
                     "30_DAY": "30 Days",
                     "CUSTOM": "Custom Window"
+                  },
+                  "meta:titleId": "attribution-metrics##xdm:engagementAttributionWindow##title##7111",
+                  "meta:descriptionId": "attribution-metrics##xdm:engagementAttributionWindow##description##24391",
+                  "meta:enumId": {
+                    "1_DAY": "attribution-metrics##xdm:engagementAttributionWindow##meta:enum##1_DAY##89791",
+                    "7_DAY": "attribution-metrics##xdm:engagementAttributionWindow##meta:enum##7_DAY##93861",
+                    "14_DAY": "attribution-metrics##xdm:engagementAttributionWindow##meta:enum##14_DAY##97371",
+                    "28_DAY": "attribution-metrics##xdm:engagementAttributionWindow##meta:enum##28_DAY##71671",
+                    "30_DAY": "attribution-metrics##xdm:engagementAttributionWindow##meta:enum##30_DAY##78351",
+                    "CUSTOM": "attribution-metrics##xdm:engagementAttributionWindow##meta:enum##CUSTOM##32201"
                   }
                 },
                 "xdm:crossDeviceAttribution": {
@@ -123,12 +167,14 @@
                   "properties": {
                     "xdm:enabled": {
                       "type": "boolean",
-                      "title": "Enabled"
+                      "title": "Enabled",
+                      "meta:titleId": "attribution-metrics##xdm:enabled##title##85751"
                     },
                     "xdm:crossDeviceConversions": {
                       "type": "number",
                       "title": "Cross Device Conversions",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "attribution-metrics##xdm:crossDeviceConversions##title##29941"
                     },
                     "xdm:crossDeviceConversionRate": {
                       "type": "number",
@@ -136,25 +182,31 @@
                       "description": "(DEPRECATED — use xdm:crossDeviceConversionRateUncapped instead. Capped at 1.0 and cannot represent rates >1.0 where conversions outnumber the interactions used as the denominator.) Cross-device conversion rate.",
                       "meta:status": "deprecated",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "attribution-metrics##xdm:crossDeviceConversionRate##title##74601",
+                      "meta:descriptionId": "attribution-metrics##xdm:crossDeviceConversionRate##description##95561"
                     },
                     "xdm:crossDeviceConversionRateUncapped": {
                       "type": "number",
                       "title": "Cross Device Conversion Rate (Uncapped)",
                       "description": "Cross-device conversion rate. Can exceed 1.0 because conversions can outnumber the interactions used as the denominator.",
                       "meta:status": "stable",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "attribution-metrics##xdm:crossDeviceConversionRateUncapped##title##71461",
+                      "meta:descriptionId": "attribution-metrics##xdm:crossDeviceConversionRateUncapped##description##78641"
                     },
                     "xdm:deviceSwitchRate": {
                       "type": "number",
                       "title": "Device Switch Rate",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "attribution-metrics##xdm:deviceSwitchRate##title##71481"
                     },
                     "xdm:averageDevicesPerPath": {
                       "type": "number",
                       "title": "Average Devices Per Path",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "attribution-metrics##xdm:averageDevicesPerPath##title##76711"
                     },
                     "xdm:devicePathBreakdown": {
                       "type": "object",
@@ -165,30 +217,42 @@
                           "type": "number",
                           "title": "Mobile to Desktop Conversions",
                           "description": "Conversions where the user transitioned from a mobile device to a desktop device along the conversion path",
-                          "minimum": 0
+                          "minimum": 0,
+                          "meta:titleId": "attribution-metrics##xdm:mobileToDesktop##title##26811",
+                          "meta:descriptionId": "attribution-metrics##xdm:mobileToDesktop##description##78531"
                         },
                         "xdm:desktopToMobile": {
                           "type": "number",
                           "title": "Desktop to Mobile Conversions",
                           "description": "Conversions where the user transitioned from a desktop device to a mobile device along the conversion path",
-                          "minimum": 0
+                          "minimum": 0,
+                          "meta:titleId": "attribution-metrics##xdm:desktopToMobile##title##31261",
+                          "meta:descriptionId": "attribution-metrics##xdm:desktopToMobile##description##7281"
                         },
                         "xdm:mobileToMobileApp": {
                           "type": "number",
                           "title": "Mobile Web to Mobile App Conversions",
                           "description": "Conversions where the user transitioned from a mobile web experience to a mobile app along the conversion path",
-                          "minimum": 0
+                          "minimum": 0,
+                          "meta:titleId": "attribution-metrics##xdm:mobileToMobileApp##title##4411",
+                          "meta:descriptionId": "attribution-metrics##xdm:mobileToMobileApp##description##71411"
                         }
-                      }
+                      },
+                      "meta:titleId": "attribution-metrics##xdm:devicePathBreakdown##title##9801",
+                      "meta:descriptionId": "attribution-metrics##xdm:devicePathBreakdown##description##38451"
                     }
-                  }
+                  },
+                  "meta:titleId": "attribution-metrics##xdm:crossDeviceAttribution##title##27171",
+                  "meta:descriptionId": "attribution-metrics##xdm:crossDeviceAttribution##description##59111"
                 },
                 "xdm:attributionWeight": {
                   "type": "number",
                   "title": "Attribution Weight",
                   "description": "Weight assigned to this touchpoint in attribution",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "attribution-metrics##xdm:attributionWeight##title##9951",
+                  "meta:descriptionId": "attribution-metrics##xdm:attributionWeight##description##21851"
                 },
                 "xdm:touchpointPosition": {
                   "type": "string",
@@ -200,63 +264,89 @@
                     "middle": "Middle Touchpoint",
                     "last": "Last Touchpoint",
                     "only": "Only Touchpoint"
+                  },
+                  "meta:titleId": "attribution-metrics##xdm:touchpointPosition##title##83961",
+                  "meta:descriptionId": "attribution-metrics##xdm:touchpointPosition##description##10791",
+                  "meta:enumId": {
+                    "first": "attribution-metrics##xdm:touchpointPosition##meta:enum##first##70231",
+                    "middle": "attribution-metrics##xdm:touchpointPosition##meta:enum##middle##26441",
+                    "last": "attribution-metrics##xdm:touchpointPosition##meta:enum##last##6571",
+                    "only": "attribution-metrics##xdm:touchpointPosition##meta:enum##only##88251"
                   }
                 },
                 "xdm:touchpointSequence": {
                   "type": "integer",
                   "title": "Touchpoint Sequence",
                   "description": "Sequence number of this touchpoint in the journey",
-                  "minimum": 1
+                  "minimum": 1,
+                  "meta:titleId": "attribution-metrics##xdm:touchpointSequence##title##53301",
+                  "meta:descriptionId": "attribution-metrics##xdm:touchpointSequence##description##39421"
                 },
                 "xdm:totalTouchpoints": {
                   "type": "integer",
                   "title": "Total Touchpoints",
                   "description": "Total number of touchpoints in the conversion path",
-                  "minimum": 1
+                  "minimum": 1,
+                  "meta:titleId": "attribution-metrics##xdm:totalTouchpoints##title##40151",
+                  "meta:descriptionId": "attribution-metrics##xdm:totalTouchpoints##description##61511"
                 },
                 "xdm:pathLength": {
                   "type": "integer",
                   "title": "Path Length",
                   "description": "Length of the conversion path in days",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "attribution-metrics##xdm:pathLength##title##26841",
+                  "meta:descriptionId": "attribution-metrics##xdm:pathLength##description##23301"
                 },
                 "xdm:timeToConversion": {
                   "type": "number",
                   "title": "Time to Conversion",
                   "description": "Time from this touchpoint to conversion in hours",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "attribution-metrics##xdm:timeToConversion##title##79161",
+                  "meta:descriptionId": "attribution-metrics##xdm:timeToConversion##description##13561"
                 },
                 "xdm:attributionConfidence": {
                   "type": "number",
                   "title": "Attribution Confidence",
                   "description": "Confidence score for the attribution",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "attribution-metrics##xdm:attributionConfidence##title##97711",
+                  "meta:descriptionId": "attribution-metrics##xdm:attributionConfidence##description##74271"
                 },
                 "xdm:incrementalImpact": {
                   "type": "number",
                   "title": "Incremental Impact",
                   "description": "Incremental impact of this touchpoint on conversion",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "attribution-metrics##xdm:incrementalImpact##title##37201",
+                  "meta:descriptionId": "attribution-metrics##xdm:incrementalImpact##description##63391"
                 },
                 "xdm:baselineConversions": {
                   "type": "number",
                   "title": "Baseline Conversions",
                   "description": "Expected conversions without this touchpoint",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "attribution-metrics##xdm:baselineConversions##title##61921",
+                  "meta:descriptionId": "attribution-metrics##xdm:baselineConversions##description##25041"
                 },
                 "xdm:incrementalConversions": {
                   "type": "number",
                   "title": "Incremental Conversions",
                   "description": "Additional conversions attributed to this touchpoint",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "attribution-metrics##xdm:incrementalConversions##title##32711",
+                  "meta:descriptionId": "attribution-metrics##xdm:incrementalConversions##description##60291"
                 },
                 "xdm:liftPercentage": {
                   "type": "number",
                   "title": "Lift Percentage",
                   "description": "Percentage lift in conversions due to this touchpoint",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "attribution-metrics##xdm:liftPercentage##title##95671",
+                  "meta:descriptionId": "attribution-metrics##xdm:liftPercentage##description##53991"
                 },
                 "xdm:attributionMethodology": {
                   "type": "object",
@@ -266,32 +356,44 @@
                     "xdm:algorithmType": {
                       "type": "string",
                       "title": "Algorithm Type",
-                      "description": "Type of attribution algorithm used"
+                      "description": "Type of attribution algorithm used",
+                      "meta:titleId": "attribution-metrics##xdm:algorithmType##title##27831",
+                      "meta:descriptionId": "attribution-metrics##xdm:algorithmType##description##58781"
                     },
                     "xdm:modelVersion": {
                       "type": "string",
                       "title": "Model Version",
-                      "description": "Version of the attribution model"
+                      "description": "Version of the attribution model",
+                      "meta:titleId": "attribution-metrics##xdm:modelVersion##title##54481",
+                      "meta:descriptionId": "attribution-metrics##xdm:modelVersion##description##5561"
                     },
                     "xdm:trainingPeriod": {
                       "type": "string",
                       "title": "Training Period",
-                      "description": "Period used to train the attribution model"
+                      "description": "Period used to train the attribution model",
+                      "meta:titleId": "attribution-metrics##xdm:trainingPeriod##title##79111",
+                      "meta:descriptionId": "attribution-metrics##xdm:trainingPeriod##description##70121"
                     },
                     "xdm:dataQuality": {
                       "type": "number",
                       "title": "Data Quality",
                       "description": "Quality score of data used for attribution",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "attribution-metrics##xdm:dataQuality##title##27501",
+                      "meta:descriptionId": "attribution-metrics##xdm:dataQuality##description##44291"
                     },
                     "xdm:sampleSize": {
                       "type": "integer",
                       "title": "Sample Size",
                       "description": "Sample size used for attribution modeling",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "attribution-metrics##xdm:sampleSize##title##73001",
+                      "meta:descriptionId": "attribution-metrics##xdm:sampleSize##description##63931"
                     }
-                  }
+                  },
+                  "meta:titleId": "attribution-metrics##xdm:attributionMethodology##title##45521",
+                  "meta:descriptionId": "attribution-metrics##xdm:attributionMethodology##description##6561"
                 },
                 "xdm:crossChannelAttribution": {
                   "type": "object",
@@ -303,7 +405,9 @@
                       "title": "Channel Contribution",
                       "description": "This channel's contribution to the conversion",
                       "minimum": 0,
-                      "maximum": 1
+                      "maximum": 1,
+                      "meta:titleId": "attribution-metrics##xdm:channelContribution##title##25421",
+                      "meta:descriptionId": "attribution-metrics##xdm:channelContribution##description##1551"
                     },
                     "xdm:channelSequence": {
                       "type": "array",
@@ -315,29 +419,43 @@
                           "xdm:channel": {
                             "type": "string",
                             "title": "Channel",
-                            "description": "Marketing channel for this step in the conversion path"
+                            "description": "Marketing channel for this step in the conversion path",
+                            "meta:titleId": "attribution-metrics##xdm:channel##title##94881",
+                            "meta:descriptionId": "attribution-metrics##xdm:channel##description##22481"
                           },
                           "xdm:position": {
                             "type": "integer",
                             "title": "Position",
-                            "description": "Ordered position of this channel within the conversion path (1-based)"
+                            "description": "Ordered position of this channel within the conversion path (1-based)",
+                            "meta:titleId": "attribution-metrics##xdm:position##title##32741",
+                            "meta:descriptionId": "attribution-metrics##xdm:position##description##47011"
                           },
                           "xdm:weight": {
                             "type": "number",
                             "title": "Weight",
-                            "description": "Attribution weight assigned to this channel within the conversion path"
+                            "description": "Attribution weight assigned to this channel within the conversion path",
+                            "meta:titleId": "attribution-metrics##xdm:weight##title##85881",
+                            "meta:descriptionId": "attribution-metrics##xdm:weight##description##62331"
                           }
                         }
-                      }
+                      },
+                      "meta:titleId": "attribution-metrics##xdm:channelSequence##title##11941",
+                      "meta:descriptionId": "attribution-metrics##xdm:channelSequence##description##28611"
                     },
                     "xdm:dominantChannel": {
                       "type": "string",
                       "title": "Dominant Channel",
-                      "description": "Channel with the highest attribution weight"
+                      "description": "Channel with the highest attribution weight",
+                      "meta:titleId": "attribution-metrics##xdm:dominantChannel##title##53711",
+                      "meta:descriptionId": "attribution-metrics##xdm:dominantChannel##description##44251"
                     }
-                  }
+                  },
+                  "meta:titleId": "attribution-metrics##xdm:crossChannelAttribution##title##27961",
+                  "meta:descriptionId": "attribution-metrics##xdm:crossChannelAttribution##description##96901"
                 }
-              }
+              },
+              "meta:titleId": "attribution-metrics##xdm:attributionMetrics##title##4161",
+              "meta:descriptionId": "attribution-metrics##xdm:attributionMetrics##description##34911"
             }
           }
         }
@@ -349,5 +467,7 @@
       "$ref": "#/definitions/attribution-metrics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "attribution-metrics##title##28181",
+  "meta:descriptionId": "attribution-metrics##description##63741"
 }

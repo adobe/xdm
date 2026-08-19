@@ -37,20 +37,27 @@
                     "xdm:agentID": {
                       "title": "Agent ID",
                       "type": "string",
-                      "description": "Unique identifier of the agent."
+                      "description": "Unique identifier of the agent.",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:agentID##title##78911",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:agentID##description##32491"
                     },
                     "xdm:agentEmail": {
                       "title": "Agent Email",
                       "type": "string",
                       "format": "email",
-                      "description": "Email of the agent."
+                      "description": "Email of the agent.",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:agentEmail##title##37331",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:agentEmail##description##81121"
                     },
                     "xdm:agentName": {
                       "title": "Agent Name",
                       "type": "string",
-                      "description": "Name of the agent."
+                      "description": "Name of the agent.",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:agentName##title##38261",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:agentName##description##43771"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:agentDetails##title##53651"
                 },
                 "xdm:conversationDetails": {
                   "title": "Conversation Details",
@@ -59,19 +66,26 @@
                     "xdm:conversationStatus": {
                       "title": "Conversation Status",
                       "type": "string",
-                      "description": "The status of the conversation."
+                      "description": "The status of the conversation.",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:conversationStatus##title##46861",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:conversationStatus##description##93951"
                     },
                     "xdm:conversationSummary": {
                       "title": "Conversation Summary",
                       "type": "string",
-                      "description": "A brief summary of the conversation."
+                      "description": "A brief summary of the conversation.",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:conversationSummary##title##75861",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:conversationSummary##description##81651"
                     },
                     "xdm:conversationTranscript": {
                       "title": "Conversation Transcript",
                       "type": "string",
-                      "description": "Transcript of the conversation."
+                      "description": "Transcript of the conversation.",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:conversationTranscript##title##71891",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:conversationTranscript##description##64251"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:conversationDetails##title##86441"
                 },
                 "xdm:flowDetails": {
                   "title": "Flow Details",
@@ -80,19 +94,26 @@
                     "xdm:flowID": {
                       "title": "Flow ID",
                       "type": "string",
-                      "description": "Unique identifier of the flow."
+                      "description": "Unique identifier of the flow.",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:flowID##title##99311",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:flowID##description##48051"
                     },
                     "xdm:flowName": {
                       "title": "Flow Name",
                       "type": "string",
-                      "description": "The name of the flow."
+                      "description": "The name of the flow.",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:flowName##title##13961",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:flowName##description##16571"
                     },
                     "xdm:conversationalFlowKey": {
                       "title": "Conversational Flow Key",
                       "description": "Unique key of the flow.",
-                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:conversationalFlowKey##title##94491",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:conversationalFlowKey##description##50521"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:flowDetails##title##72561"
                 },
                 "xdm:pageDetails": {
                   "title": "Page Details",
@@ -102,13 +123,18 @@
                       "title": "Page URL",
                       "type": "string",
                       "format": "uri",
-                      "description": "URL of the page."
+                      "description": "URL of the page.",
+                      "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:pageURL##title##82931",
+                      "meta:descriptionId": "engaged-with-agent-in-conversational-flow##xdm:pageURL##description##7151"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:pageDetails##title##72171"
                 }
-              }
+              },
+              "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:agentInConversationalFlow##title##30011"
             }
-          }
+          },
+          "meta:titleId": "engaged-with-agent-in-conversational-flow##xdm:engagement##title##311"
         }
       }
     }
@@ -119,5 +145,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-10"
+  "meta:createdDate": "2025-01-10",
+  "meta:titleId": "engaged-with-agent-in-conversational-flow##title##1181",
+  "meta:descriptionId": "engaged-with-agent-in-conversational-flow##description##24921"
 }

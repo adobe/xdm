@@ -28,57 +28,85 @@
             "ZI": "Zoominfo",
             "DE": "Demandbase",
             "LS": "Leadspace"
+          },
+          "meta:titleId": "intent-details##xdm:sourceSystemType##title##24681",
+          "meta:descriptionId": "intent-details##xdm:sourceSystemType##description##79061",
+          "meta:enumId": {
+            "BO": "intent-details##xdm:sourceSystemType##meta:enum##BO##93911",
+            "ZI": "intent-details##xdm:sourceSystemType##meta:enum##ZI##10751",
+            "DE": "intent-details##xdm:sourceSystemType##meta:enum##DE##79421",
+            "LS": "intent-details##xdm:sourceSystemType##meta:enum##LS##95671"
           }
         },
         "xdm:domain": {
           "title": "Domain",
           "description": "Account Domain.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:domain##title##77441",
+          "meta:descriptionId": "intent-details##xdm:domain##description##7881"
         },
         "xdm:topicName": {
           "title": "Topic Name",
           "description": "Name of the topic.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:topicName##title##93471",
+          "meta:descriptionId": "intent-details##xdm:topicName##description##51281"
         },
         "xdm:thirdPartyAccountID": {
           "title": "Third Party Account ID",
           "description": "Account ID in third party system.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:thirdPartyAccountID##title##1181",
+          "meta:descriptionId": "intent-details##xdm:thirdPartyAccountID##description##16401"
         },
         "xdm:accountKey": {
           "title": "Account Key",
           "description": "Unique composite identifier of the account this intent is associated with.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "intent-details##xdm:accountKey##title##16841",
+          "meta:descriptionId": "intent-details##xdm:accountKey##description##46841"
         },
         "xdm:topicID": {
           "title": "Topic ID",
           "description": "Unique ID for Topic.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:topicID##title##9471",
+          "meta:descriptionId": "intent-details##xdm:topicID##description##33011"
         },
         "xdm:categoryName": {
           "title": "Category Name",
           "description": "Name of the Category, Keyword set to which topic belongs.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:categoryName##title##42361",
+          "meta:descriptionId": "intent-details##xdm:categoryName##description##91481"
         },
         "xdm:keywordSetId": {
           "title": "Keyword Set ID",
           "description": "Unique ID of the keyword set.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:keywordSetId##title##97241",
+          "meta:descriptionId": "intent-details##xdm:keywordSetId##description##45661"
         },
         "xdm:intentStrength": {
           "title": "Intent Strength",
           "description": "Intent Score (High, Med, Low).",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:intentStrength##title##49111",
+          "meta:descriptionId": "intent-details##xdm:intentStrength##description##46991"
         },
         "xdm:score": {
           "title": "Score",
           "description": "Intent Score numeric.",
-          "type": "integer"
+          "type": "integer",
+          "meta:titleId": "intent-details##xdm:score##title##88321",
+          "meta:descriptionId": "intent-details##xdm:score##description##18201"
         },
         "xdm:scoreDelta": {
           "title": "Score Delta",
           "description": "Delta score from previous week.",
-          "type": "integer"
+          "type": "integer",
+          "meta:titleId": "intent-details##xdm:scoreDelta##title##24791",
+          "meta:descriptionId": "intent-details##xdm:scoreDelta##description##12091"
         },
         "xdm:topSignalLocations": {
           "title": "Top Signal Locations",
@@ -86,39 +114,53 @@
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "intent-details##xdm:topSignalLocations##title##30591",
+          "meta:descriptionId": "intent-details##xdm:topSignalLocations##description##86961"
         },
         "xdm:recordedDate": {
           "title": "Recorded Date",
           "description": "Record generation date.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "intent-details##xdm:recordedDate##title##40881",
+          "meta:descriptionId": "intent-details##xdm:recordedDate##description##13431"
         },
         "xdm:createdDate": {
           "title": "Created Date",
           "description": "Record ingestion date.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "intent-details##xdm:createdDate##title##6951",
+          "meta:descriptionId": "intent-details##xdm:createdDate##description##12111"
         },
         "xdm:companyName": {
           "title": "Company Name",
           "description": "Name of the company in the the 3rd party system.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:companyName##title##92741",
+          "meta:descriptionId": "intent-details##xdm:companyName##description##58651"
         },
         "xdm:companySize": {
           "title": "Company Size",
           "description": "Size of the company.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:companySize##title##38031",
+          "meta:descriptionId": "intent-details##xdm:companySize##description##52521"
         },
         "xdm:industry": {
           "title": "Industry",
           "description": "Industry of the company.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:industry##title##21591",
+          "meta:descriptionId": "intent-details##xdm:industry##description##14061"
         },
         "xdm:DomainOrigin": {
           "title": "Domain Origin",
           "description": "Origin country of the Domain.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent-details##xdm:DomainOrigin##title##37551",
+          "meta:descriptionId": "intent-details##xdm:DomainOrigin##description##69161"
         }
       }
     }
@@ -128,5 +170,7 @@
       "$ref": "#/definitions/intent-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "intent-details##title##50161",
+  "meta:descriptionId": "intent-details##description##54491"
 }

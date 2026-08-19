@@ -103,12 +103,54 @@
                     "hotel": "Hotel Ad",
                     "travel": "Travel Ad",
                     "other": "Other Ad Type"
+                  },
+                  "meta:titleId": "ad-details##xdm:adType##title##86391",
+                  "meta:descriptionId": "ad-details##xdm:adType##description##9041",
+                  "meta:enumId": {
+                    "text": "ad-details##xdm:adType##meta:enum##text##40141",
+                    "expanded_text": "ad-details##xdm:adType##meta:enum##expanded_text##2821",
+                    "image": "ad-details##xdm:adType##meta:enum##image##57821",
+                    "video": "ad-details##xdm:adType##meta:enum##video##27401",
+                    "video_bumper": "ad-details##xdm:adType##meta:enum##video_bumper##61471",
+                    "video_non_skippable": "ad-details##xdm:adType##meta:enum##video_non_skippable##77711",
+                    "video_in_stream": "ad-details##xdm:adType##meta:enum##video_in_stream##99421",
+                    "video_responsive": "ad-details##xdm:adType##meta:enum##video_responsive##7251",
+                    "video_in_feed": "ad-details##xdm:adType##meta:enum##video_in_feed##93721",
+                    "carousel": "ad-details##xdm:adType##meta:enum##carousel##9331",
+                    "collection": "ad-details##xdm:adType##meta:enum##collection##26891",
+                    "dynamic": "ad-details##xdm:adType##meta:enum##dynamic##51451",
+                    "dynamic_search": "ad-details##xdm:adType##meta:enum##dynamic_search##4461",
+                    "dynamic_html5": "ad-details##xdm:adType##meta:enum##dynamic_html5##17751",
+                    "responsive": "ad-details##xdm:adType##meta:enum##responsive##81901",
+                    "responsive_display": "ad-details##xdm:adType##meta:enum##responsive_display##96651",
+                    "shopping": "ad-details##xdm:adType##meta:enum##shopping##97281",
+                    "shopping_product": "ad-details##xdm:adType##meta:enum##shopping_product##33981",
+                    "shopping_comparison": "ad-details##xdm:adType##meta:enum##shopping_comparison##58821",
+                    "app_install": "ad-details##xdm:adType##meta:enum##app_install##63841",
+                    "app_engagement": "ad-details##xdm:adType##meta:enum##app_engagement##68911",
+                    "app_pre_registration": "ad-details##xdm:adType##meta:enum##app_pre_registration##11511",
+                    "lead_form": "ad-details##xdm:adType##meta:enum##lead_form##70681",
+                    "playable": "ad-details##xdm:adType##meta:enum##playable##97851",
+                    "interactive": "ad-details##xdm:adType##meta:enum##interactive##73781",
+                    "html5_upload": "ad-details##xdm:adType##meta:enum##html5_upload##74731",
+                    "audio": "ad-details##xdm:adType##meta:enum##audio##20841",
+                    "display": "ad-details##xdm:adType##meta:enum##display##42371",
+                    "native": "ad-details##xdm:adType##meta:enum##native##95021",
+                    "dooh": "ad-details##xdm:adType##meta:enum##dooh##70741",
+                    "call": "ad-details##xdm:adType##meta:enum##call##47091",
+                    "smart": "ad-details##xdm:adType##meta:enum##smart##1361",
+                    "local": "ad-details##xdm:adType##meta:enum##local##73321",
+                    "hotel": "ad-details##xdm:adType##meta:enum##hotel##29481",
+                    "travel": "ad-details##xdm:adType##meta:enum##travel##83361",
+                    "other": "ad-details##xdm:adType##meta:enum##other##90371"
                   }
                 },
                 "xdm:creative": {
                   "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-creative",
                   "title": "Creative Details",
-                  "description": "Creative content and assets for the ad"
+                  "description": "Creative content and assets for the ad",
+                  "meta:titleId": "ad-details##xdm:creative##title##1431",
+                  "meta:descriptionId": "ad-details##xdm:creative##description##22341"
                 },
                 "xdm:reviewStatus": {
                   "type": "string",
@@ -129,6 +171,16 @@
                     "under_review": "Under Review",
                     "needs_attention": "Needs Attention",
                     "not_reviewed": "Not Reviewed"
+                  },
+                  "meta:titleId": "ad-details##xdm:reviewStatus##title##48481",
+                  "meta:descriptionId": "ad-details##xdm:reviewStatus##description##61391",
+                  "meta:enumId": {
+                    "pending": "ad-details##xdm:reviewStatus##meta:enum##pending##57581",
+                    "approved": "ad-details##xdm:reviewStatus##meta:enum##approved##23851",
+                    "rejected": "ad-details##xdm:reviewStatus##meta:enum##rejected##94071",
+                    "under_review": "ad-details##xdm:reviewStatus##meta:enum##under_review##10681",
+                    "needs_attention": "ad-details##xdm:reviewStatus##meta:enum##needs_attention##85391",
+                    "not_reviewed": "ad-details##xdm:reviewStatus##meta:enum##not_reviewed##81161"
                   }
                 },
                 "xdm:reviewStatusReasons": {
@@ -137,7 +189,9 @@
                   "description": "Reasons for review rejection or issues",
                   "items": {
                     "type": "string"
-                  }
+                  },
+                  "meta:titleId": "ad-details##xdm:reviewStatusReasons##title##93271",
+                  "meta:descriptionId": "ad-details##xdm:reviewStatusReasons##description##96111"
                 },
                 "xdm:deliveryStatus": {
                   "type": "string",
@@ -160,22 +214,39 @@
                     "limited": "Limited Delivery",
                     "not_delivering": "Not Delivering",
                     "completed": "Delivery Completed"
+                  },
+                  "meta:titleId": "ad-details##xdm:deliveryStatus##title##2871",
+                  "meta:descriptionId": "ad-details##xdm:deliveryStatus##description##71721",
+                  "meta:enumId": {
+                    "active": "ad-details##xdm:deliveryStatus##meta:enum##active##76941",
+                    "inactive": "ad-details##xdm:deliveryStatus##meta:enum##inactive##34371",
+                    "pending": "ad-details##xdm:deliveryStatus##meta:enum##pending##66561",
+                    "learning": "ad-details##xdm:deliveryStatus##meta:enum##learning##72531",
+                    "limited": "ad-details##xdm:deliveryStatus##meta:enum##limited##32341",
+                    "not_delivering": "ad-details##xdm:deliveryStatus##meta:enum##not_delivering##63381",
+                    "completed": "ad-details##xdm:deliveryStatus##meta:enum##completed##38331"
                   }
                 },
                 "xdm:isPinDeleted": {
                   "type": "boolean",
                   "title": "Is Pin Deleted",
-                  "description": "Whether the original pin/post is deleted (for social platforms)"
+                  "description": "Whether the original pin/post is deleted (for social platforms)",
+                  "meta:titleId": "ad-details##xdm:isPinDeleted##title##77181",
+                  "meta:descriptionId": "ad-details##xdm:isPinDeleted##description##68631"
                 },
                 "xdm:isRemovable": {
                   "type": "boolean",
                   "title": "Is Removable",
-                  "description": "Whether the ad can be removed"
+                  "description": "Whether the ad can be removed",
+                  "meta:titleId": "ad-details##xdm:isRemovable##title##2131",
+                  "meta:descriptionId": "ad-details##xdm:isRemovable##description##3051"
                 },
                 "xdm:payingAdvertiserName": {
                   "type": "string",
                   "title": "Paying Advertiser Name",
-                  "description": "Name of the paying advertiser (for political/regulated ads)"
+                  "description": "Name of the paying advertiser (for political/regulated ads)",
+                  "meta:titleId": "ad-details##xdm:payingAdvertiserName##title##97351",
+                  "meta:descriptionId": "ad-details##xdm:payingAdvertiserName##description##93901"
                 },
                 "xdm:creativeAssetGroupsSpec": {
                   "type": "object",
@@ -185,7 +256,9 @@
                     "xdm:isDynamic": {
                       "type": "boolean",
                       "title": "Is Dynamic Creative",
-                      "description": "Whether this uses dynamic creative assembly"
+                      "description": "Whether this uses dynamic creative assembly",
+                      "meta:titleId": "ad-details##xdm:isDynamic##title##16301",
+                      "meta:descriptionId": "ad-details##xdm:isDynamic##description##53011"
                     },
                     "xdm:assetGroups": {
                       "type": "array",
@@ -196,19 +269,25 @@
                         "properties": {
                           "xdm:groupName": {
                             "type": "string",
-                            "title": "Group Name"
+                            "title": "Group Name",
+                            "meta:titleId": "ad-details##xdm:groupName##title##5921"
                           },
                           "xdm:assetIDs": {
                             "type": "array",
                             "title": "Asset IDs",
                             "items": {
                               "type": "string"
-                            }
+                            },
+                            "meta:titleId": "ad-details##xdm:assetIDs##title##73061"
                           }
                         }
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:assetGroups##title##39451",
+                      "meta:descriptionId": "ad-details##xdm:assetGroups##description##20061"
                     }
-                  }
+                  },
+                  "meta:titleId": "ad-details##xdm:creativeAssetGroupsSpec##title##78011",
+                  "meta:descriptionId": "ad-details##xdm:creativeAssetGroupsSpec##description##30481"
                 },
                 "xdm:degreesOfFreedomSpec": {
                   "type": "object",
@@ -218,7 +297,9 @@
                     "xdm:enabled": {
                       "type": "boolean",
                       "title": "AI Enhancement Enabled",
-                      "description": "Whether AI creative enhancements are enabled"
+                      "description": "Whether AI creative enhancements are enabled",
+                      "meta:titleId": "ad-details##xdm:enabled##title##45771",
+                      "meta:descriptionId": "ad-details##xdm:enabled##description##55331"
                     },
                     "xdm:features": {
                       "type": "array",
@@ -226,9 +307,13 @@
                       "description": "Specific AI features enabled",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:features##title##45811",
+                      "meta:descriptionId": "ad-details##xdm:features##description##54241"
                     }
-                  }
+                  },
+                  "meta:titleId": "ad-details##xdm:degreesOfFreedomSpec##title##27241",
+                  "meta:descriptionId": "ad-details##xdm:degreesOfFreedomSpec##description##47451"
                 },
                 "xdm:socialMediaProperties": {
                   "type": "object",
@@ -238,12 +323,16 @@
                     "xdm:effectiveObjectStoryID": {
                       "type": "string",
                       "title": "Effective Object Story ID",
-                      "description": "Links to the social media post used as the ad"
+                      "description": "Links to the social media post used as the ad",
+                      "meta:titleId": "ad-details##xdm:effectiveObjectStoryID##title##49791",
+                      "meta:descriptionId": "ad-details##xdm:effectiveObjectStoryID##description##65141"
                     },
                     "xdm:sourceInstagramMediaID": {
                       "type": "string",
                       "title": "Source Instagram Media ID",
-                      "description": "Instagram media ID for Instagram-originated creatives"
+                      "description": "Instagram media ID for Instagram-originated creatives",
+                      "meta:titleId": "ad-details##xdm:sourceInstagramMediaID##title##37661",
+                      "meta:descriptionId": "ad-details##xdm:sourceInstagramMediaID##description##17411"
                     },
                     "xdm:objectStorySpec": {
                       "type": "object",
@@ -251,19 +340,27 @@
                       "description": "Full story specification for complex ad types",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:objectStorySpec##title##36031",
+                      "meta:descriptionId": "ad-details##xdm:objectStorySpec##description##23991"
                     },
                     "xdm:isShareable": {
                       "type": "boolean",
                       "title": "Is Shareable",
-                      "description": "Whether users can share the ad with friends"
+                      "description": "Whether users can share the ad with friends",
+                      "meta:titleId": "ad-details##xdm:isShareable##title##47921",
+                      "meta:descriptionId": "ad-details##xdm:isShareable##description##26991"
                     },
                     "xdm:favoriteDisplayMode": {
                       "type": "string",
                       "title": "Favorite Display Mode",
-                      "description": "How users can favorite the creative within the app"
+                      "description": "How users can favorite the creative within the app",
+                      "meta:titleId": "ad-details##xdm:favoriteDisplayMode##title##79751",
+                      "meta:descriptionId": "ad-details##xdm:favoriteDisplayMode##description##37681"
                     }
-                  }
+                  },
+                  "meta:titleId": "ad-details##xdm:socialMediaProperties##title##42681",
+                  "meta:descriptionId": "ad-details##xdm:socialMediaProperties##description##13281"
                 },
                 "xdm:appProperties": {
                   "type": "object",
@@ -276,7 +373,9 @@
                       "description": "Properties for app install ads",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:appInstallProperties##title##93731",
+                      "meta:descriptionId": "ad-details##xdm:appInstallProperties##description##77761"
                     },
                     "xdm:deepLinkProperties": {
                       "type": "object",
@@ -284,9 +383,13 @@
                       "description": "Properties for deep link ads",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:deepLinkProperties##title##44181",
+                      "meta:descriptionId": "ad-details##xdm:deepLinkProperties##description##72751"
                     }
-                  }
+                  },
+                  "meta:titleId": "ad-details##xdm:appProperties##title##44721",
+                  "meta:descriptionId": "ad-details##xdm:appProperties##description##59121"
                 },
                 "xdm:leadGenerationProperties": {
                   "type": "object",
@@ -296,14 +399,20 @@
                     "xdm:leadGenerationFormID": {
                       "type": "string",
                       "title": "Lead Generation Form ID",
-                      "description": "ID of the lead generation form"
+                      "description": "ID of the lead generation form",
+                      "meta:titleId": "ad-details##xdm:leadGenerationFormID##title##90361",
+                      "meta:descriptionId": "ad-details##xdm:leadGenerationFormID##description##14501"
                     },
                     "xdm:offerDisclaimerID": {
                       "type": "string",
                       "title": "Offer Disclaimer ID",
-                      "description": "ID of offer disclaimer associated with the creative"
+                      "description": "ID of offer disclaimer associated with the creative",
+                      "meta:titleId": "ad-details##xdm:offerDisclaimerID##title##92271",
+                      "meta:descriptionId": "ad-details##xdm:offerDisclaimerID##description##5281"
                     }
-                  }
+                  },
+                  "meta:titleId": "ad-details##xdm:leadGenerationProperties##title##50681",
+                  "meta:descriptionId": "ad-details##xdm:leadGenerationProperties##description##51231"
                 },
                 "xdm:partnershipProperties": {
                   "type": "object",
@@ -313,7 +422,9 @@
                     "xdm:creatorPartnershipType": {
                       "type": "string",
                       "title": "Creator Partnership Type",
-                      "description": "Type of creator partnership"
+                      "description": "Type of creator partnership",
+                      "meta:titleId": "ad-details##xdm:creatorPartnershipType##title##76461",
+                      "meta:descriptionId": "ad-details##xdm:creatorPartnershipType##description##69271"
                     },
                     "xdm:profileProperties": {
                       "type": "object",
@@ -323,11 +434,17 @@
                         "xdm:profileID": {
                           "type": "string",
                           "title": "Profile ID",
-                          "description": "ID of the associated profile"
+                          "description": "ID of the associated profile",
+                          "meta:titleId": "ad-details##xdm:profileID##title##33661",
+                          "meta:descriptionId": "ad-details##xdm:profileID##description##31651"
                         }
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:profileProperties##title##65711",
+                      "meta:descriptionId": "ad-details##xdm:profileProperties##description##3321"
                     }
-                  }
+                  },
+                  "meta:titleId": "ad-details##xdm:partnershipProperties##title##30171",
+                  "meta:descriptionId": "ad-details##xdm:partnershipProperties##description##91591"
                 },
                 "xdm:interactionProperties": {
                   "type": "object",
@@ -340,7 +457,9 @@
                       "description": "Properties for chat-enabled ads",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:chatProperties##title##44811",
+                      "meta:descriptionId": "ad-details##xdm:chatProperties##description##16931"
                     },
                     "xdm:webViewProperties": {
                       "type": "object",
@@ -348,7 +467,9 @@
                       "description": "Properties for web view ads",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:webViewProperties##title##12531",
+                      "meta:descriptionId": "ad-details##xdm:webViewProperties##description##19261"
                     },
                     "xdm:adToLensProperties": {
                       "type": "object",
@@ -356,7 +477,9 @@
                       "description": "Properties for AR lens ads",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:adToLensProperties##title##35561",
+                      "meta:descriptionId": "ad-details##xdm:adToLensProperties##description##61001"
                     },
                     "xdm:adToCallProperties": {
                       "type": "object",
@@ -364,7 +487,9 @@
                       "description": "Properties for call-to-action ads",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:adToCallProperties##title##74211",
+                      "meta:descriptionId": "ad-details##xdm:adToCallProperties##description##54011"
                     },
                     "xdm:adToMessageProperties": {
                       "type": "object",
@@ -372,7 +497,9 @@
                       "description": "Properties for message ads",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:adToMessageProperties##title##30551",
+                      "meta:descriptionId": "ad-details##xdm:adToMessageProperties##description##55051"
                     },
                     "xdm:reminderProperties": {
                       "type": "object",
@@ -380,9 +507,13 @@
                       "description": "Properties for reminder ads",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "ad-details##xdm:reminderProperties##title##78981",
+                      "meta:descriptionId": "ad-details##xdm:reminderProperties##description##32151"
                     }
-                  }
+                  },
+                  "meta:titleId": "ad-details##xdm:interactionProperties##title##86561",
+                  "meta:descriptionId": "ad-details##xdm:interactionProperties##description##64411"
                 },
                 "xdm:urlTracking": {
                   "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-url-tracking"
@@ -393,9 +524,13 @@
                   "type": "array",
                   "items": {
                     "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                  }
+                  },
+                  "meta:titleId": "ad-details##xdm:additionalDetails##title##3701",
+                  "meta:descriptionId": "ad-details##xdm:additionalDetails##description##8191"
                 }
-              }
+              },
+              "meta:titleId": "ad-details##xdm:adDetails##title##70691",
+              "meta:descriptionId": "ad-details##xdm:adDetails##description##62801"
             }
           }
         }
@@ -407,5 +542,7 @@
       "$ref": "#/definitions/ad-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "ad-details##title##92191",
+  "meta:descriptionId": "ad-details##description##33751"
 }

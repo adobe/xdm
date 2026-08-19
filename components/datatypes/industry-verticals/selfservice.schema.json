@@ -45,7 +45,14 @@
             "beta": "A production deployment environment used to introduce end-users of the `application` to new features.",
             "prod": "The production deployment environment."
           },
-          "meta:descriptionId": "selfservice##xdm:environment##description##9901"
+          "meta:descriptionId": "selfservice##xdm:environment##description##9901",
+          "meta:enumId": {
+            "dev": "selfservice##xdm:environment##meta:enum##dev##67741",
+            "qe": "selfservice##xdm:environment##meta:enum##qe##12621",
+            "stage": "selfservice##xdm:environment##meta:enum##stage##90121",
+            "beta": "selfservice##xdm:environment##meta:enum##beta##48381",
+            "prod": "selfservice##xdm:environment##meta:enum##prod##63781"
+          }
         },
         "xdm:cluster": {
           "name": "Cluster",

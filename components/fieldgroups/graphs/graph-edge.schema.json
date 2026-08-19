@@ -120,7 +120,13 @@
                         "offline_probabilistic": "Offline Probabilistic"
                       },
                       "meta:titleId": "graph-edge##xdm:relationType##title##18701",
-                      "meta:descriptionId": "graph-edge##xdm:relationType##description##16451"
+                      "meta:descriptionId": "graph-edge##xdm:relationType##description##16451",
+                      "meta:enumId": {
+                        "online_deterministic": "graph-edge##xdm:relationType##meta:enum##online_deterministic##94501",
+                        "online_probabilistic": "graph-edge##xdm:relationType##meta:enum##online_probabilistic##14471",
+                        "offline_deterministic": "graph-edge##xdm:relationType##meta:enum##offline_deterministic##62671",
+                        "offline_probabilistic": "graph-edge##xdm:relationType##meta:enum##offline_probabilistic##57251"
+                      }
                     },
                     "xdm:frequency": {
                       "title": "Frequency",

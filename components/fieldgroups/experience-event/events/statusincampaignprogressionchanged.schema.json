@@ -96,7 +96,9 @@
                   "title": "Webinar URL",
                   "type": "string",
                   "format": "uri",
-                  "description": "URL of the webinar."
+                  "description": "URL of the webinar.",
+                  "meta:titleId": "statusincampaignprogressionchanged##xdm:webinarURL##title##64171",
+                  "meta:descriptionId": "statusincampaignprogressionchanged##xdm:webinarURL##description##40881"
                 }
               },
               "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignProgression##title##89841"

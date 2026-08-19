@@ -28,13 +28,17 @@
                   "type": "string",
                   "format": "date-time",
                   "title": "Start Time",
-                  "description": "When the ad group becomes active/starts running. On platforms like Meta and TikTok, start/end times are set at the ad set/ad group level."
+                  "description": "When the ad group becomes active/starts running. On platforms like Meta and TikTok, start/end times are set at the ad set/ad group level.",
+                  "meta:titleId": "adgroup-details##xdm:startTime##title##13451",
+                  "meta:descriptionId": "adgroup-details##xdm:startTime##description##76371"
                 },
                 "xdm:endTime": {
                   "type": "string",
                   "format": "date-time",
                   "title": "End Time",
-                  "description": "When the ad group stops running/expires"
+                  "description": "When the ad group stops running/expires",
+                  "meta:titleId": "adgroup-details##xdm:endTime##title##60231",
+                  "meta:descriptionId": "adgroup-details##xdm:endTime##description##76181"
                 },
                 "xdm:adGroupType": {
                   "type": "string",
@@ -69,13 +73,32 @@
                     "audio": "Audio Ad Group",
                     "performance_max_asset_group": "Performance Max Asset Group (Google Ads PMax - asset pool from which ads are dynamically assembled)",
                     "other": "Other Ad Group Type"
+                  },
+                  "meta:titleId": "adgroup-details##xdm:adGroupType##title##81361",
+                  "meta:descriptionId": "adgroup-details##xdm:adGroupType##description##74091",
+                  "meta:enumId": {
+                    "standard": "adgroup-details##xdm:adGroupType##meta:enum##standard##1961",
+                    "dynamic": "adgroup-details##xdm:adGroupType##meta:enum##dynamic##38831",
+                    "smart": "adgroup-details##xdm:adGroupType##meta:enum##smart##36271",
+                    "shopping": "adgroup-details##xdm:adGroupType##meta:enum##shopping##91161",
+                    "video": "adgroup-details##xdm:adGroupType##meta:enum##video##18581",
+                    "app_install": "adgroup-details##xdm:adGroupType##meta:enum##app_install##13051",
+                    "lead_generation": "adgroup-details##xdm:adGroupType##meta:enum##lead_generation##29821",
+                    "reach_frequency": "adgroup-details##xdm:adGroupType##meta:enum##reach_frequency##85171",
+                    "hotel": "adgroup-details##xdm:adGroupType##meta:enum##hotel##30191",
+                    "travel": "adgroup-details##xdm:adGroupType##meta:enum##travel##31811",
+                    "audio": "adgroup-details##xdm:adGroupType##meta:enum##audio##73871",
+                    "performance_max_asset_group": "adgroup-details##xdm:adGroupType##meta:enum##performance_max_asset_group##86691",
+                    "other": "adgroup-details##xdm:adGroupType##meta:enum##other##71701"
                   }
                 },
                 "xdm:childAdType": {
                   "type": "string",
                   "title": "Child Ad Type",
                   "description": "Deprecated: Use adDetails.adType on each individual ad in the Ad Lookup instead. A single ad group can contain mixed ad types, making this field inaccurate for heterogeneous groups.",
-                  "meta:status": "deprecated"
+                  "meta:status": "deprecated",
+                  "meta:titleId": "adgroup-details##xdm:childAdType##title##46721",
+                  "meta:descriptionId": "adgroup-details##xdm:childAdType##description##17171"
                 },
                 "xdm:promotedObject": {
                   "type": "object",
@@ -84,18 +107,24 @@
                   "properties": {
                     "xdm:objectType": {
                       "type": "string",
-                      "title": "Object Type"
+                      "title": "Object Type",
+                      "meta:titleId": "adgroup-details##xdm:objectType##title##23571"
                     },
                     "xdm:objectID": {
                       "type": "string",
-                      "title": "Object ID"
+                      "title": "Object ID",
+                      "meta:titleId": "adgroup-details##xdm:objectID##title##24861"
                     },
                     "xdm:productSetID": {
                       "type": "string",
                       "title": "Product Set ID",
-                      "description": "Product catalog set ID for shopping campaigns"
+                      "description": "Product catalog set ID for shopping campaigns",
+                      "meta:titleId": "adgroup-details##xdm:productSetID##title##50601",
+                      "meta:descriptionId": "adgroup-details##xdm:productSetID##description##5351"
                     }
-                  }
+                  },
+                  "meta:titleId": "adgroup-details##xdm:promotedObject##title##48621",
+                  "meta:descriptionId": "adgroup-details##xdm:promotedObject##description##96811"
                 },
                 "xdm:budgetSettings": {
                   "type": "object",
@@ -110,33 +139,47 @@
                       "meta:enum": {
                         "daily": "Daily Budget",
                         "lifetime": "Lifetime Budget"
+                      },
+                      "meta:titleId": "adgroup-details##xdm:budgetType##title##11531",
+                      "meta:descriptionId": "adgroup-details##xdm:budgetType##description##85741",
+                      "meta:enumId": {
+                        "daily": "adgroup-details##xdm:budgetType##meta:enum##daily##42511",
+                        "lifetime": "adgroup-details##xdm:budgetType##meta:enum##lifetime##57951"
                       }
                     },
                     "xdm:dailyBudget": {
                       "type": "number",
                       "title": "Daily Budget",
                       "description": "Daily budget amount in account currency. Used on platforms like Meta and TikTok where budget is set at the ad set/ad group level.",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "adgroup-details##xdm:dailyBudget##title##52151",
+                      "meta:descriptionId": "adgroup-details##xdm:dailyBudget##description##86461"
                     },
                     "xdm:lifetimeBudget": {
                       "type": "number",
                       "title": "Lifetime Budget",
                       "description": "Total lifetime budget amount in account currency. Used on platforms like Meta and TikTok where budget is set at the ad set/ad group level.",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "adgroup-details##xdm:lifetimeBudget##title##71071",
+                      "meta:descriptionId": "adgroup-details##xdm:lifetimeBudget##description##32001"
                     },
                     "xdm:budgetInMicroCurrency": {
                       "type": "integer",
                       "title": "Budget (Micro Currency)",
                       "description": "Budget amount in micro currency units",
                       "minimum": 0,
-                      "maximum": 9007199254740991
+                      "maximum": 9007199254740991,
+                      "meta:titleId": "adgroup-details##xdm:budgetInMicroCurrency##title##81791",
+                      "meta:descriptionId": "adgroup-details##xdm:budgetInMicroCurrency##description##36491"
                     },
                     "xdm:bidInMicroCurrency": {
                       "type": "integer",
                       "title": "Bid (Micro Currency)",
                       "description": "Bid amount in micro currency units",
                       "minimum": 0,
-                      "maximum": 9007199254740991
+                      "maximum": 9007199254740991,
+                      "meta:titleId": "adgroup-details##xdm:bidInMicroCurrency##title##68811",
+                      "meta:descriptionId": "adgroup-details##xdm:bidInMicroCurrency##description##84161"
                     },
                     "xdm:bidStrategyType": {
                       "type": "string",
@@ -188,29 +231,64 @@
                         "commission": "Commission Bidding",
                         "manual_cpa": "Manual CPA",
                         "fixed_cpm": "Fixed CPM"
+                      },
+                      "meta:titleId": "adgroup-details##xdm:bidStrategyType##title##48421",
+                      "meta:enumId": {
+                        "manual_cpc": "adgroup-details##xdm:bidStrategyType##meta:enum##manual_cpc##45811",
+                        "enhanced_cpc": "adgroup-details##xdm:bidStrategyType##meta:enum##enhanced_cpc##58111",
+                        "maximize_clicks": "adgroup-details##xdm:bidStrategyType##meta:enum##maximize_clicks##78631",
+                        "maximize_conversions": "adgroup-details##xdm:bidStrategyType##meta:enum##maximize_conversions##17281",
+                        "maximize_conversion_value": "adgroup-details##xdm:bidStrategyType##meta:enum##maximize_conversion_value##24991",
+                        "target_cpa": "adgroup-details##xdm:bidStrategyType##meta:enum##target_cpa##54711",
+                        "target_roas": "adgroup-details##xdm:bidStrategyType##meta:enum##target_roas##42851",
+                        "target_impression_share": "adgroup-details##xdm:bidStrategyType##meta:enum##target_impression_share##10451",
+                        "automatic": "adgroup-details##xdm:bidStrategyType##meta:enum##automatic##21321",
+                        "lowest_cost": "adgroup-details##xdm:bidStrategyType##meta:enum##lowest_cost##20901",
+                        "cost_cap": "adgroup-details##xdm:bidStrategyType##meta:enum##cost_cap##30571",
+                        "bid_cap": "adgroup-details##xdm:bidStrategyType##meta:enum##bid_cap##40221",
+                        "min_roas": "adgroup-details##xdm:bidStrategyType##meta:enum##min_roas##15901",
+                        "manual_cpm": "adgroup-details##xdm:bidStrategyType##meta:enum##manual_cpm##3911",
+                        "manual_cpv": "adgroup-details##xdm:bidStrategyType##meta:enum##manual_cpv##29421",
+                        "target_cpm": "adgroup-details##xdm:bidStrategyType##meta:enum##target_cpm##4261",
+                        "target_cpv": "adgroup-details##xdm:bidStrategyType##meta:enum##target_cpv##51731",
+                        "target_cpc": "adgroup-details##xdm:bidStrategyType##meta:enum##target_cpc##80111",
+                        "percent_cpc": "adgroup-details##xdm:bidStrategyType##meta:enum##percent_cpc##61141",
+                        "commission": "adgroup-details##xdm:bidStrategyType##meta:enum##commission##18541",
+                        "manual_cpa": "adgroup-details##xdm:bidStrategyType##meta:enum##manual_cpa##76601",
+                        "fixed_cpm": "adgroup-details##xdm:bidStrategyType##meta:enum##fixed_cpm##14561"
                       }
                     },
                     "xdm:targetCpa": {
                       "type": "number",
                       "title": "Target CPA",
-                      "description": "Target cost per acquisition"
+                      "description": "Target cost per acquisition",
+                      "meta:titleId": "adgroup-details##xdm:targetCpa##title##73231",
+                      "meta:descriptionId": "adgroup-details##xdm:targetCpa##description##85081"
                     },
                     "xdm:targetRoas": {
                       "type": "number",
                       "title": "Target ROAS",
-                      "description": "Target return on ad spend"
+                      "description": "Target return on ad spend",
+                      "meta:titleId": "adgroup-details##xdm:targetRoas##title##93181",
+                      "meta:descriptionId": "adgroup-details##xdm:targetRoas##description##50121"
                     },
                     "xdm:roasValueMicro": {
                       "type": "integer",
                       "title": "ROAS Value (Micro)",
-                      "description": "Desired ROAS value in micro currency"
+                      "description": "Desired ROAS value in micro currency",
+                      "meta:titleId": "adgroup-details##xdm:roasValueMicro##title##36891",
+                      "meta:descriptionId": "adgroup-details##xdm:roasValueMicro##description##91581"
                     }
-                  }
+                  },
+                  "meta:titleId": "adgroup-details##xdm:budgetSettings##title##93451",
+                  "meta:descriptionId": "adgroup-details##xdm:budgetSettings##description##67231"
                 },
                 "xdm:targeting": {
                   "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-targeting",
                   "title": "Ad Group Targeting",
-                  "description": "Targeting specifications for the ad group"
+                  "description": "Targeting specifications for the ad group",
+                  "meta:titleId": "adgroup-details##xdm:targeting##title##44141",
+                  "meta:descriptionId": "adgroup-details##xdm:targeting##description##46401"
                 },
                 "xdm:optimizationSettings": {
                   "type": "object",
@@ -220,7 +298,9 @@
                     "xdm:optimizationGoal": {
                       "type": "string",
                       "title": "Optimization Goal",
-                      "description": "What the ad delivery is optimized for (e.g., link_clicks, impressions, conversions). On platforms like Meta and TikTok, optimization goal is set at the ad set/ad group level."
+                      "description": "What the ad delivery is optimized for (e.g., link_clicks, impressions, conversions). On platforms like Meta and TikTok, optimization goal is set at the ad set/ad group level.",
+                      "meta:titleId": "adgroup-details##xdm:optimizationGoal##title##38321",
+                      "meta:descriptionId": "adgroup-details##xdm:optimizationGoal##description##27091"
                     },
                     "xdm:optimizationGoalMetadata": {
                       "type": "object",
@@ -228,24 +308,34 @@
                       "description": "Metadata for optimization goals",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "adgroup-details##xdm:optimizationGoalMetadata##title##11151",
+                      "meta:descriptionId": "adgroup-details##xdm:optimizationGoalMetadata##description##79041"
                     },
                     "xdm:conversionWindow": {
                       "type": "string",
                       "title": "Conversion Window",
-                      "description": "Delivery optimization window"
+                      "description": "Delivery optimization window",
+                      "meta:titleId": "adgroup-details##xdm:conversionWindow##title##95521",
+                      "meta:descriptionId": "adgroup-details##xdm:conversionWindow##description##91"
                     },
                     "xdm:isAutoTargetingEnabled": {
                       "type": "boolean",
                       "title": "Auto Targeting Enabled",
-                      "description": "Whether auto-targeting is enabled"
+                      "description": "Whether auto-targeting is enabled",
+                      "meta:titleId": "adgroup-details##xdm:isAutoTargetingEnabled##title##39381",
+                      "meta:descriptionId": "adgroup-details##xdm:isAutoTargetingEnabled##description##98951"
                     },
                     "xdm:isCampaignOptimization": {
                       "type": "boolean",
                       "title": "Campaign Optimization",
-                      "description": "Whether creative optimization is enabled"
+                      "description": "Whether creative optimization is enabled",
+                      "meta:titleId": "adgroup-details##xdm:isCampaignOptimization##title##12411",
+                      "meta:descriptionId": "adgroup-details##xdm:isCampaignOptimization##description##69161"
                     }
-                  }
+                  },
+                  "meta:titleId": "adgroup-details##xdm:optimizationSettings##title##69811",
+                  "meta:descriptionId": "adgroup-details##xdm:optimizationSettings##description##76841"
                 },
                 "xdm:placementSettings": {
                   "type": "object",
@@ -255,7 +345,9 @@
                     "xdm:placementGroup": {
                       "type": "string",
                       "title": "Placement Group",
-                      "description": "Campaign placement group type"
+                      "description": "Campaign placement group type",
+                      "meta:titleId": "adgroup-details##xdm:placementGroup##title##27471",
+                      "meta:descriptionId": "adgroup-details##xdm:placementGroup##description##8211"
                     },
                     "xdm:placements": {
                       "type": "array",
@@ -263,7 +355,9 @@
                       "description": "Specific ad placements",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "adgroup-details##xdm:placements##title##8771",
+                      "meta:descriptionId": "adgroup-details##xdm:placements##description##79911"
                     },
                     "xdm:deviceTypes": {
                       "type": "array",
@@ -271,9 +365,13 @@
                       "description": "Targeted device types",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "adgroup-details##xdm:deviceTypes##title##52851",
+                      "meta:descriptionId": "adgroup-details##xdm:deviceTypes##description##62871"
                     }
-                  }
+                  },
+                  "meta:titleId": "adgroup-details##xdm:placementSettings##title##83081",
+                  "meta:descriptionId": "adgroup-details##xdm:placementSettings##description##85301"
                 },
                 "xdm:deliverySettings": {
                   "type": "object",
@@ -287,29 +385,44 @@
                       "meta:enum": {
                         "standard": "Standard Delivery",
                         "accelerated": "Accelerated Delivery"
+                      },
+                      "meta:titleId": "adgroup-details##xdm:pacingDeliveryType##title##55851",
+                      "meta:enumId": {
+                        "standard": "adgroup-details##xdm:pacingDeliveryType##meta:enum##standard##24811",
+                        "accelerated": "adgroup-details##xdm:pacingDeliveryType##meta:enum##accelerated##73661"
                       }
                     },
                     "xdm:deliveryConstraint": {
                       "type": "string",
                       "title": "Delivery Constraint",
-                      "description": "Type of delivery constraint"
+                      "description": "Type of delivery constraint",
+                      "meta:titleId": "adgroup-details##xdm:deliveryConstraint##title##42721",
+                      "meta:descriptionId": "adgroup-details##xdm:deliveryConstraint##description##701"
                     },
                     "xdm:deliveryStatus": {
                       "type": "string",
                       "title": "Delivery Status",
-                      "description": "Current delivery status"
+                      "description": "Current delivery status",
+                      "meta:titleId": "adgroup-details##xdm:deliveryStatus##title##86301",
+                      "meta:descriptionId": "adgroup-details##xdm:deliveryStatus##description##74321"
                     },
                     "xdm:reachGoal": {
                       "type": "integer",
                       "title": "Reach Goal",
-                      "description": "Target reach goal"
+                      "description": "Target reach goal",
+                      "meta:titleId": "adgroup-details##xdm:reachGoal##title##7121",
+                      "meta:descriptionId": "adgroup-details##xdm:reachGoal##description##2041"
                     },
                     "xdm:impressionGoal": {
                       "type": "integer",
                       "title": "Impression Goal",
-                      "description": "Target impression goal"
+                      "description": "Target impression goal",
+                      "meta:titleId": "adgroup-details##xdm:impressionGoal##title##98851",
+                      "meta:descriptionId": "adgroup-details##xdm:impressionGoal##description##58891"
                     }
-                  }
+                  },
+                  "meta:titleId": "adgroup-details##xdm:deliverySettings##title##32101",
+                  "meta:descriptionId": "adgroup-details##xdm:deliverySettings##description##63261"
                 },
                 "xdm:trackingSettings": {
                   "type": "object",
@@ -319,7 +432,9 @@
                     "xdm:pixelID": {
                       "type": "string",
                       "title": "Pixel ID",
-                      "description": "Pixel associated with the ad group"
+                      "description": "Pixel associated with the ad group",
+                      "meta:titleId": "adgroup-details##xdm:pixelID##title##88981",
+                      "meta:descriptionId": "adgroup-details##xdm:pixelID##description##70481"
                     },
                     "xdm:measurementProviderNames": {
                       "type": "array",
@@ -327,7 +442,9 @@
                       "description": "Approved measurement providers",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "adgroup-details##xdm:measurementProviderNames##title##88951",
+                      "meta:descriptionId": "adgroup-details##xdm:measurementProviderNames##description##50951"
                     },
                     "xdm:eventSources": {
                       "type": "array",
@@ -335,7 +452,9 @@
                       "description": "Event sources for tracking",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "adgroup-details##xdm:eventSources##title##36411",
+                      "meta:descriptionId": "adgroup-details##xdm:eventSources##description##77701"
                     },
                     "xdm:skadnetworkProperties": {
                       "type": "object",
@@ -345,14 +464,20 @@
                         "xdm:status": {
                           "type": "string",
                           "title": "SKAdNetwork Status",
-                          "description": "SKAdNetwork enrollment status"
+                          "description": "SKAdNetwork enrollment status",
+                          "meta:titleId": "adgroup-details##xdm:status##title##62311",
+                          "meta:descriptionId": "adgroup-details##xdm:status##description##5711"
                         }
-                      }
+                      },
+                      "meta:titleId": "adgroup-details##xdm:skadnetworkProperties##title##56421",
+                      "meta:descriptionId": "adgroup-details##xdm:skadnetworkProperties##description##3701"
                     },
                     "xdm:urlTracking": {
                       "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-url-tracking"
                     }
-                  }
+                  },
+                  "meta:titleId": "adgroup-details##xdm:trackingSettings##title##19861",
+                  "meta:descriptionId": "adgroup-details##xdm:trackingSettings##description##69031"
                 },
                 "xdm:brandSafetyConfig": {
                   "type": "object",
@@ -362,7 +487,9 @@
                     "xdm:inventoryFilter": {
                       "type": "string",
                       "title": "Inventory Filter",
-                      "description": "Brand safety inventory filter level"
+                      "description": "Brand safety inventory filter level",
+                      "meta:titleId": "adgroup-details##xdm:inventoryFilter##title##33551",
+                      "meta:descriptionId": "adgroup-details##xdm:inventoryFilter##description##36921"
                     },
                     "xdm:blockedCategories": {
                       "type": "array",
@@ -370,9 +497,13 @@
                       "description": "Content categories to avoid",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "adgroup-details##xdm:blockedCategories##title##53601",
+                      "meta:descriptionId": "adgroup-details##xdm:blockedCategories##description##33181"
                     }
-                  }
+                  },
+                  "meta:titleId": "adgroup-details##xdm:brandSafetyConfig##title##82001",
+                  "meta:descriptionId": "adgroup-details##xdm:brandSafetyConfig##description##43371"
                 },
                 "xdm:additionalDetails": {
                   "title": "Additional Ad Group Details",
@@ -380,9 +511,13 @@
                   "type": "array",
                   "items": {
                     "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                  }
+                  },
+                  "meta:titleId": "adgroup-details##xdm:additionalDetails##title##18131",
+                  "meta:descriptionId": "adgroup-details##xdm:additionalDetails##description##22851"
                 }
-              }
+              },
+              "meta:titleId": "adgroup-details##xdm:adGroupDetails##title##82641",
+              "meta:descriptionId": "adgroup-details##xdm:adGroupDetails##description##67741"
             }
           }
         }
@@ -394,5 +529,7 @@
       "$ref": "#/definitions/adgroup-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "adgroup-details##title##43251",
+  "meta:descriptionId": "adgroup-details##description##23171"
 }

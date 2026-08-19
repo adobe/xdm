@@ -27,7 +27,9 @@
             "xdm:isActive": {
               "title": "Is Active",
               "type": "boolean",
-              "description": "Indicates whether the provider is active."
+              "description": "Indicates whether the provider is active.",
+              "meta:titleId": "healthcare-provider##xdm:isActive##title##58841",
+              "meta:descriptionId": "healthcare-provider##xdm:isActive##description##24351"
             },
             "xdm:practiceType": {
               "title": "Service Provider Practice Type",
@@ -37,17 +39,28 @@
                 "attending_physician": "Attending Physician",
                 "physician": "Physician",
                 "emergency_physician": "Emergency Physician"
+              },
+              "meta:titleId": "healthcare-provider##xdm:practiceType##title##58031",
+              "meta:descriptionId": "healthcare-provider##xdm:practiceType##description##36321",
+              "meta:enumId": {
+                "attending_physician": "healthcare-provider##xdm:practiceType##meta:enum##attending_physician##41441",
+                "physician": "healthcare-provider##xdm:practiceType##meta:enum##physician##99551",
+                "emergency_physician": "healthcare-provider##xdm:practiceType##meta:enum##emergency_physician##11241"
               }
             },
             "xdm:practiceGroupName": {
               "title": "Service Provider Practice Group Name",
               "type": "string",
-              "description": "Service provider practice group name."
+              "description": "Service provider practice group name.",
+              "meta:titleId": "healthcare-provider##xdm:practiceGroupName##title##30871",
+              "meta:descriptionId": "healthcare-provider##xdm:practiceGroupName##description##9671"
             },
             "xdm:practiceGroupType": {
               "title": "Service Provider Practice Group Type",
               "type": "string",
-              "description": "Service provider practice group type."
+              "description": "Service provider practice group type.",
+              "meta:titleId": "healthcare-provider##xdm:practiceGroupType##title##25421",
+              "meta:descriptionId": "healthcare-provider##xdm:practiceGroupType##description##14511"
             },
             "xdm:specialities": {
               "title": "Specialities",
@@ -55,22 +68,30 @@
               "type": "array",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "healthcare-provider##xdm:specialities##title##30381",
+              "meta:descriptionId": "healthcare-provider##xdm:specialities##description##9861"
             },
             "xdm:phoneNumber": {
               "title": "Phone Number",
               "description": "Provider's phone number.",
-              "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+              "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+              "meta:titleId": "healthcare-provider##xdm:phoneNumber##title##75081",
+              "meta:descriptionId": "healthcare-provider##xdm:phoneNumber##description##74441"
             },
             "xdm:fax": {
               "title": "Fax Number",
               "description": "Provider's fax number.",
-              "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+              "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+              "meta:titleId": "healthcare-provider##xdm:fax##title##35601",
+              "meta:descriptionId": "healthcare-provider##xdm:fax##description##72871"
             },
             "xdm:emailAddress": {
               "title": "Provider's Email Address",
               "description": "Provider's email address.",
-              "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+              "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+              "meta:titleId": "healthcare-provider##xdm:emailAddress##title##53391",
+              "meta:descriptionId": "healthcare-provider##xdm:emailAddress##description##39701"
             },
             "xdm:addressDetails": {
               "title": "Provider Address Details",
@@ -82,14 +103,18 @@
                   "xdm:addressType": {
                     "title": "Address Type",
                     "type": "string",
-                    "description": "Type of address indicating where the provider provides services."
+                    "description": "Type of address indicating where the provider provides services.",
+                    "meta:titleId": "healthcare-provider##xdm:addressType##title##15321",
+                    "meta:descriptionId": "healthcare-provider##xdm:addressType##description##14461"
                   },
                   "xdm:address": {
                     "title": "Provider Address",
-                    "$ref": "https://ns.adobe.com/xdm/common/address"
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "meta:titleId": "healthcare-provider##xdm:address##title##21861"
                   }
                 }
-              }
+              },
+              "meta:titleId": "healthcare-provider##xdm:addressDetails##title##73411"
             },
             "xdm:qualifications": {
               "title": "Qualifications",
@@ -102,27 +127,37 @@
                   "xdm:code": {
                     "title": "Code",
                     "type": "string",
-                    "description": "Coded representation of the qualification."
+                    "description": "Coded representation of the qualification.",
+                    "meta:titleId": "healthcare-provider##xdm:code##title##9291",
+                    "meta:descriptionId": "healthcare-provider##xdm:code##description##67251"
                   },
                   "xdm:issuer": {
                     "title": "Issuer",
                     "type": "string",
-                    "description": "Organization name that regulates and issues the qualification."
+                    "description": "Organization name that regulates and issues the qualification.",
+                    "meta:titleId": "healthcare-provider##xdm:issuer##title##99451",
+                    "meta:descriptionId": "healthcare-provider##xdm:issuer##description##93481"
                   },
                   "xdm:startDate": {
                     "title": "Start Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Start date of this qualification."
+                    "description": "Start date of this qualification.",
+                    "meta:titleId": "healthcare-provider##xdm:startDate##title##75881",
+                    "meta:descriptionId": "healthcare-provider##xdm:startDate##description##12671"
                   },
                   "xdm:endDate": {
                     "title": "End Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which this qualification becomes inactive."
+                    "description": "Date on which this qualification becomes inactive.",
+                    "meta:titleId": "healthcare-provider##xdm:endDate##title##70931",
+                    "meta:descriptionId": "healthcare-provider##xdm:endDate##description##66121"
                   }
                 }
-              }
+              },
+              "meta:titleId": "healthcare-provider##xdm:qualifications##title##79561",
+              "meta:descriptionId": "healthcare-provider##xdm:qualifications##description##95461"
             },
             "xdm:languages": {
               "title": "Languages",
@@ -130,9 +165,13 @@
               "items": {
                 "type": "string"
               },
-              "description": "Languages in which the provider is proficient."
+              "description": "Languages in which the provider is proficient.",
+              "meta:titleId": "healthcare-provider##xdm:languages##title##24111",
+              "meta:descriptionId": "healthcare-provider##xdm:languages##description##75871"
             }
-          }
+          },
+          "meta:titleId": "healthcare-provider##xdm:healthcareProvider##title##89471",
+          "meta:descriptionId": "healthcare-provider##xdm:healthcareProvider##description##52841"
         }
       }
     }
@@ -142,5 +181,7 @@
       "$ref": "#/definitions/provider-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "healthcare-provider##title##86001",
+  "meta:descriptionId": "healthcare-provider##description##58851"
 }

@@ -148,7 +148,12 @@
                     "gaming": "A gaming stream (e.g. Twitch, Hitbox)."
                   },
                   "meta:titleId": "media##xdm:streamType##title##39001",
-                  "meta:descriptionId": "media##xdm:streamType##description##90081"
+                  "meta:descriptionId": "media##xdm:streamType##description##90081",
+                  "meta:enumId": {
+                    "audio": "media##xdm:streamType##meta:enum##audio##65351",
+                    "video": "media##xdm:streamType##meta:enum##video##13741",
+                    "gaming": "media##xdm:streamType##meta:enum##gaming##5331"
+                  }
                 },
                 "iptc4xmpExt:Season": {
                   "title": "Season",
@@ -268,7 +273,16 @@
                     "Audiobook": "Audiobook"
                   },
                   "meta:titleId": "media##xdm:broadcastContentType##title##60571",
-                  "meta:descriptionId": "media##xdm:broadcastContentType##description##2911"
+                  "meta:descriptionId": "media##xdm:broadcastContentType##description##2911",
+                  "meta:enumId": {
+                    "VOD": "media##xdm:broadcastContentType##meta:enum##VOD##8431",
+                    "Live": "media##xdm:broadcastContentType##meta:enum##Live##21351",
+                    "Linear": "media##xdm:broadcastContentType##meta:enum##Linear##89421",
+                    "UGC": "media##xdm:broadcastContentType##meta:enum##UGC##22481",
+                    "Radio": "media##xdm:broadcastContentType##meta:enum##Radio##49441",
+                    "Podcast": "media##xdm:broadcastContentType##meta:enum##Podcast##23401",
+                    "Audiobook": "media##xdm:broadcastContentType##meta:enum##Audiobook##51341"
+                  }
                 },
                 "xdm:playerSDKVersion": {
                   "title": "Player SDK version",
@@ -340,7 +354,11 @@
                             "external": "External source."
                           },
                           "meta:titleId": "media##xdm:errorSource##title##25331",
-                          "meta:descriptionId": "media##xdm:errorSource##description##82201"
+                          "meta:descriptionId": "media##xdm:errorSource##description##82201",
+                          "meta:enumId": {
+                            "player": "media##xdm:errorSource##meta:enum##player##56261",
+                            "external": "media##xdm:errorSource##meta:enum##external##51521"
+                          }
                         }
                       },
                       "required": ["xdm:errorID", "xdm:errorSource"],
@@ -566,7 +584,9 @@
                   "type": "array",
                   "items": {
                     "type": "string"
-                  }
+                  },
+                  "meta:titleId": "media##xdm:statesStart##title##33541",
+                  "meta:descriptionId": "media##xdm:statesStart##description##97291"
                 },
                 "xdm:statesEnd": {
                   "title": "List of states end",
@@ -574,7 +594,9 @@
                   "type": "array",
                   "items": {
                     "type": "string"
-                  }
+                  },
+                  "meta:titleId": "media##xdm:statesEnd##title##12401",
+                  "meta:descriptionId": "media##xdm:statesEnd##description##71591"
                 }
               },
               "meta:titleId": "media##xdm:primaryAssetViewDetails##title##24351",

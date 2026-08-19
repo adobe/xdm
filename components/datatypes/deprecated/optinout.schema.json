@@ -26,7 +26,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/adm##title##53511",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/adm##description##4291"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/adm##description##4291",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/adm##meta:enum##not_provided##4341",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/adm##meta:enum##pending##72941",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/adm##meta:enum##in##50841",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/adm##meta:enum##out##61971"
+          }
         },
         "https://ns.adobe.com/xdm/channels/agency": {
           "title": "Agency",
@@ -41,7 +47,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/agency##title##88641",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/agency##description##67051"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/agency##description##67051",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/agency##meta:enum##not_provided##7191",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/agency##meta:enum##pending##87641",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/agency##meta:enum##in##21961",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/agency##meta:enum##out##89541"
+          }
         },
         "https://ns.adobe.com/xdm/channels/apns": {
           "title": "Apple Push Notification Service",
@@ -56,7 +68,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/apns##title##87821",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/apns##description##35641"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/apns##description##35641",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/apns##meta:enum##not_provided##41711",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/apns##meta:enum##pending##4141",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/apns##meta:enum##in##8591",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/apns##meta:enum##out##54201"
+          }
         },
         "https://ns.adobe.com/xdm/channels/application": {
           "title": "Application",
@@ -71,7 +89,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/application##title##96651",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/application##description##82661"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/application##description##82661",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/application##meta:enum##not_provided##97661",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/application##meta:enum##pending##25351",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/application##meta:enum##in##22811",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/application##meta:enum##out##56841"
+          }
         },
         "https://ns.adobe.com/xdm/channels/baidu": {
           "title": "Baidu Cloud Push Service",
@@ -86,7 +110,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/baidu##title##68181",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/baidu##description##8231"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/baidu##description##8231",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/baidu##meta:enum##not_provided##33121",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/baidu##meta:enum##pending##61301",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/baidu##meta:enum##in##75721",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/baidu##meta:enum##out##65411"
+          }
         },
         "https://ns.adobe.com/xdm/channels/channel": {
           "title": "Experience Channel",
@@ -101,7 +131,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/channel##title##30901",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/channel##description##24501"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/channel##description##24501",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/channel##meta:enum##not_provided##4031",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/channel##meta:enum##pending##56921",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/channel##meta:enum##in##94221",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/channel##meta:enum##out##27091"
+          }
         },
         "https://ns.adobe.com/xdm/channels/direct-mail": {
           "title": "Direct mail",
@@ -116,7 +152,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/direct-mail##title##47641",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/direct-mail##description##96231"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/direct-mail##description##96231",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/direct-mail##meta:enum##not_provided##40231",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/direct-mail##meta:enum##pending##41851",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/direct-mail##meta:enum##in##15091",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/direct-mail##meta:enum##out##26821"
+          }
         },
         "https://ns.adobe.com/xdm/channels/email": {
           "title": "Email",
@@ -131,7 +173,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/email##title##52521",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/email##description##17321"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/email##description##17321",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/email##meta:enum##not_provided##7261",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/email##meta:enum##pending##4401",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/email##meta:enum##in##72091",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/email##meta:enum##out##1921"
+          }
         },
         "https://ns.adobe.com/xdm/channels/facebook-feed": {
           "title": "Facebook news feed",
@@ -146,7 +194,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/facebook-feed##title##41661",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/facebook-feed##description##74251"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/facebook-feed##description##74251",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/facebook-feed##meta:enum##not_provided##70661",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/facebook-feed##meta:enum##pending##8021",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/facebook-feed##meta:enum##in##48031",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/facebook-feed##meta:enum##out##27041"
+          }
         },
         "https://ns.adobe.com/xdm/channels/fax": {
           "title": "Fax",
@@ -161,7 +215,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/fax##title##96681",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/fax##description##14721"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/fax##description##14721",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/fax##meta:enum##not_provided##30431",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/fax##meta:enum##pending##63321",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/fax##meta:enum##in##2241",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/fax##meta:enum##out##1881"
+          }
         },
         "https://ns.adobe.com/xdm/channels/gcm": {
           "title": "Google Cloud Messaging",
@@ -176,7 +236,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/gcm##title##74151",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/gcm##description##65441"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/gcm##description##65441",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/gcm##meta:enum##not_provided##21771",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/gcm##meta:enum##pending##52371",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/gcm##meta:enum##in##39591",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/gcm##meta:enum##out##97141"
+          }
         },
         "https://ns.adobe.com/xdm/channels/line": {
           "title": "Line Platform Notification",
@@ -191,7 +257,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/line##title##87801",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/line##description##23361"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/line##description##23361",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/line##meta:enum##not_provided##41411",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/line##meta:enum##pending##23091",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/line##meta:enum##in##34721",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/line##meta:enum##out##71571"
+          }
         },
         "https://ns.adobe.com/xdm/channels/mobile-app": {
           "title": "Web",
@@ -206,7 +278,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/mobile-app##title##85041",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/mobile-app##description##91461"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/mobile-app##description##91461",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/mobile-app##meta:enum##not_provided##38961",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/mobile-app##meta:enum##pending##79141",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/mobile-app##meta:enum##in##77261",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/mobile-app##meta:enum##out##42951"
+          }
         },
         "https://ns.adobe.com/xdm/channels/mpns": {
           "title": "Microsoft Push Notification Service",
@@ -221,7 +299,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/mpns##title##6661",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/mpns##description##36491"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/mpns##description##36491",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/mpns##meta:enum##not_provided##68011",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/mpns##meta:enum##pending##36621",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/mpns##meta:enum##in##35071",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/mpns##meta:enum##out##64291"
+          }
         },
         "https://ns.adobe.com/xdm/channels/phone": {
           "title": "Phone",
@@ -236,7 +320,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/phone##title##2391",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/phone##description##72741"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/phone##description##72741",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/phone##meta:enum##not_provided##10491",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/phone##meta:enum##pending##65341",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/phone##meta:enum##in##54051",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/phone##meta:enum##out##6091"
+          }
         },
         "https://ns.adobe.com/xdm/channels/sms": {
           "title": "SMS",
@@ -251,7 +341,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/sms##title##77851",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/sms##description##12921"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/sms##description##12921",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/sms##meta:enum##not_provided##20461",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/sms##meta:enum##pending##39561",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/sms##meta:enum##in##31181",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/sms##meta:enum##out##64081"
+          }
         },
         "https://ns.adobe.com/xdm/channels/twitter-feed": {
           "title": "Twitter feed",
@@ -266,7 +362,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/twitter-feed##title##10821",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/twitter-feed##description##18801"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/twitter-feed##description##18801",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/twitter-feed##meta:enum##not_provided##20381",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/twitter-feed##meta:enum##pending##84031",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/twitter-feed##meta:enum##in##66791",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/twitter-feed##meta:enum##out##12251"
+          }
         },
         "https://ns.adobe.com/xdm/channels/web": {
           "title": "Web",
@@ -281,7 +383,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/web##title##70931",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/web##description##72591"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/web##description##72591",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/web##meta:enum##not_provided##35331",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/web##meta:enum##pending##45681",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/web##meta:enum##in##77361",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/web##meta:enum##out##3321"
+          }
         },
         "https://ns.adobe.com/xdm/channels/webpage": {
           "title": "Web Page",
@@ -296,7 +404,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/webpage##title##16651",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/webpage##description##97241"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/webpage##description##97241",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/webpage##meta:enum##not_provided##99751",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/webpage##meta:enum##pending##13471",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/webpage##meta:enum##in##12791",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/webpage##meta:enum##out##80511"
+          }
         },
         "https://ns.adobe.com/xdm/channels/wechat": {
           "title": "WeChat",
@@ -311,7 +425,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/wechat##title##25571",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/wechat##description##72651"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/wechat##description##72651",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/wechat##meta:enum##not_provided##76741",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/wechat##meta:enum##pending##71651",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/wechat##meta:enum##in##25411",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/wechat##meta:enum##out##46841"
+          }
         },
         "https://ns.adobe.com/xdm/channels/wns": {
           "title": "Windows Push Notification Service",
@@ -326,7 +446,13 @@
             "out": "Opt-out: the user declines to receive any messages on this channel."
           },
           "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/wns##title##11381",
-          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/wns##description##19781"
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/wns##description##19781",
+          "meta:enumId": {
+            "not_provided": "optinout##https://ns.adobe.com/xdm/channels/wns##meta:enum##not_provided##81121",
+            "pending": "optinout##https://ns.adobe.com/xdm/channels/wns##meta:enum##pending##58531",
+            "in": "optinout##https://ns.adobe.com/xdm/channels/wns##meta:enum##in##4981",
+            "out": "optinout##https://ns.adobe.com/xdm/channels/wns##meta:enum##out##28871"
+          }
         },
         "xdm:globalOptout": {
           "title": "Global Opt-out",

@@ -22,17 +22,23 @@
         "xdm:cpID": {
           "title": "Consent Policy ID",
           "type": "string",
-          "description": "A unique identifier for the consent policy record."
+          "description": "A unique identifier for the consent policy record.",
+          "meta:titleId": "consentpolicy##xdm:cpID##title##60901",
+          "meta:descriptionId": "consentpolicy##xdm:cpID##description##78381"
         },
         "xdm:name": {
           "title": "Consent Policy name",
           "type": "string",
-          "description": "Name of the consent policy."
+          "description": "Name of the consent policy.",
+          "meta:titleId": "consentpolicy##xdm:name##title##73531",
+          "meta:descriptionId": "consentpolicy##xdm:name##description##28001"
         },
         "xdm:description": {
           "title": "Consent Policy description",
           "type": "string",
-          "description": "Description of the consent policy."
+          "description": "Description of the consent policy.",
+          "meta:titleId": "consentpolicy##xdm:description##title##14071",
+          "meta:descriptionId": "consentpolicy##xdm:description##description##72651"
         },
         "xdm:status": {
           "type": "string",
@@ -42,6 +48,12 @@
           "meta:enum": {
             "ENABLED": "Enabled",
             "DISABLED": "Disabled"
+          },
+          "meta:titleId": "consentpolicy##xdm:status##title##62411",
+          "meta:descriptionId": "consentpolicy##xdm:status##description##22101",
+          "meta:enumId": {
+            "ENABLED": "consentpolicy##xdm:status##meta:enum##ENABLED##94261",
+            "DISABLED": "consentpolicy##xdm:status##meta:enum##DISABLED##60081"
           }
         }
       }
@@ -63,5 +75,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-08-11"
+  "meta:createdDate": "2025-08-11",
+  "meta:titleId": "consentpolicy##title##46641",
+  "meta:descriptionId": "consentpolicy##description##67431"
 }

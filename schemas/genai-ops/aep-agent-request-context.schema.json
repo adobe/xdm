@@ -35,64 +35,84 @@
                       "properties": {
                         "xdm:input": {
                           "type": "string",
-                          "description": "Input parameters for the function."
+                          "description": "Input parameters for the function.",
+                          "meta:descriptionId": "aep-agent-request-context##xdm:input##description##71711"
                         },
                         "xdm:output": {
                           "type": "string",
-                          "description": "Response from the function."
+                          "description": "Response from the function.",
+                          "meta:descriptionId": "aep-agent-request-context##xdm:output##description##46561"
                         }
                       }
                     },
                     "xdm:context": {
                       "type": "string",
-                      "description": "Agent-to-agent request text data. It should contain a subset of information from MessageSendParams.message.parts[].data_part as json string."
+                      "description": "Agent-to-agent request text data. It should contain a subset of information from MessageSendParams.message.parts[].data_part as json string.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:context##description##90051"
                     },
                     "xdm:message": {
                       "type": "string",
-                      "description": "Agent-to-agent request context data. It should contain a subset of information from MessageSendParams.message.parts[].text_part as json string."
+                      "description": "Agent-to-agent request context data. It should contain a subset of information from MessageSendParams.message.parts[].text_part as json string.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:message##description##83711"
                     },
                     "xdm:aoInstanceId": {
                       "type": "string",
-                      "description": "AO (Adobe Orchestrator) instance identifier used for request execution."
+                      "description": "AO (Adobe Orchestrator) instance identifier used for request execution.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:aoInstanceId##description##66301"
                     },
                     "xdm:copilotVersion": {
                       "type": "string",
-                      "description": "Version of the copilot being used for agent behavior determination."
+                      "description": "Version of the copilot being used for agent behavior determination.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:copilotVersion##description##96341"
                     },
                     "xdm:createdDate": {
                       "type": "string",
                       "format": "date-time",
-                      "description": "Timestamp when the request was created."
+                      "description": "Timestamp when the request was created.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:createdDate##description##57611"
                     },
                     "xdm:isTestRequest": {
                       "type": "boolean",
-                      "description": "Indicates whether this is a test request."
+                      "description": "Indicates whether this is a test request.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:isTestRequest##description##39641"
                     },
                     "xdm:llmFamily": {
                       "type": "string",
-                      "description": "The family of Large Language Model being used."
+                      "description": "The family of Large Language Model being used.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:llmFamily##description##21301"
                     },
                     "xdm:releaseVersion": {
                       "type": "string",
-                      "description": "Release version for determining enabled functionality and model types."
+                      "description": "Release version for determining enabled functionality and model types.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:releaseVersion##description##90221"
                     },
                     "xdm:username": {
                       "type": "string",
-                      "description": "Username of the person making the request."
+                      "description": "Username of the person making the request.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:username##description##5341"
                     },
                     "xdm:featureFlags": {
                       "type": "string",
-                      "description": "A collection of feature flags and their values. Each key represents a feature flag name, and the value represents the flag's current state or variant. Used to determine features enabled for specific users or context combinations."
+                      "description": "A collection of feature flags and their values. Each key represents a feature flag name, and the value represents the flag's current state or variant. Used to determine features enabled for specific users or context combinations.",
+                      "meta:descriptionId": "aep-agent-request-context##xdm:featureFlags##description##90141"
                     }
                   }
                 }
-              }
+              },
+              "meta:titleId": "aep-agent-request-context##xdm:gen_ai##title##59791",
+              "meta:descriptionId": "aep-agent-request-context##xdm:gen_ai##description##41791"
             }
           }
         }
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/aep-agent-request-context" }],
-  "meta:status": "experimental"
+  "allOf": [
+    {
+      "$ref": "#/definitions/aep-agent-request-context"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "aep-agent-request-context##title##96521",
+  "meta:descriptionId": "aep-agent-request-context##description##4901"
 }

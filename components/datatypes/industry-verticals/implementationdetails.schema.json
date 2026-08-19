@@ -39,7 +39,25 @@
             "https://ns.adobe.com/experience/mobilesdk/android/flutter": "Adobe Experience Platform Mobile SDK for Android flutter"
           },
           "meta:titleId": "implementationdetails##xdm:name##title##32991",
-          "meta:descriptionId": "implementationdetails##xdm:name##description##3101"
+          "meta:descriptionId": "implementationdetails##xdm:name##description##3101",
+          "meta:enumId": {
+            "https://ns.adobe.com/experience/analytics/scode": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/analytics/scode##47941",
+            "https://ns.adobe.com/experience/analytics/appmeasurement": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/analytics/appmeasurement##39421",
+            "https://ns.adobe.com/experience/analytics/mbox": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/analytics/mbox##15471",
+            "https://ns.adobe.com/experience/visitorapi": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/visitorapi##17641",
+            "https://ns.adobe.com/experience/adcloud/viewability": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/adcloud/viewability##22301",
+            "https://ns.adobe.com/experience/alloy": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/alloy##75871",
+            "https://ns.adobe.com/experience/alloy/reactor": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/alloy/reactor##93181",
+            "https://ns.adobe.com/experience/mobilesdk/ios": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/mobilesdk/ios##10721",
+            "https://ns.adobe.com/experience/mobilesdk/tvos": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/mobilesdk/tvos##52911",
+            "https://ns.adobe.com/experience/mobilesdk/android": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/mobilesdk/android##91181",
+            "https://ns.adobe.com/experience/mobilesdk/roku": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/mobilesdk/roku##46261",
+            "https://ns.adobe.com/experience/mobilesdk/ios/reactnative": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/mobilesdk/ios/reactnative##59851",
+            "https://ns.adobe.com/experience/mobilesdk/tvos/reactnative": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/mobilesdk/tvos/reactnative##79691",
+            "https://ns.adobe.com/experience/mobilesdk/android/reactnative": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/mobilesdk/android/reactnative##40741",
+            "https://ns.adobe.com/experience/mobilesdk/ios/flutter": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/mobilesdk/ios/flutter##80211",
+            "https://ns.adobe.com/experience/mobilesdk/android/flutter": "implementationdetails##xdm:name##meta:enum##https://ns.adobe.com/experience/mobilesdk/android/flutter##57061"
+          }
         },
         "xdm:version": {
           "title": "Version",
@@ -60,7 +78,13 @@
             "iot": "Internet of Things Device"
           },
           "meta:titleId": "implementationdetails##xdm:environment##title##39371",
-          "meta:descriptionId": "implementationdetails##xdm:environment##description##25981"
+          "meta:descriptionId": "implementationdetails##xdm:environment##description##25981",
+          "meta:enumId": {
+            "browser": "implementationdetails##xdm:environment##meta:enum##browser##38781",
+            "app": "implementationdetails##xdm:environment##meta:enum##app##9961",
+            "server": "implementationdetails##xdm:environment##meta:enum##server##30641",
+            "iot": "implementationdetails##xdm:environment##meta:enum##iot##88801"
+          }
         }
       }
     }

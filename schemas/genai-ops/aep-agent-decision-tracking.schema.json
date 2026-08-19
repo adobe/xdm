@@ -37,25 +37,30 @@
                           "properties": {
                             "xdm:type": {
                               "type": "string",
-                              "description": "Type of decision being made."
+                              "description": "Type of decision being made.",
+                              "meta:descriptionId": "aep-agent-decision-tracking##xdm:type##description##54131"
                             },
                             "xdm:options": {
                               "type": "string",
-                              "description": "JSON array of available choices considered."
+                              "description": "JSON array of available choices considered.",
+                              "meta:descriptionId": "aep-agent-decision-tracking##xdm:options##description##68401"
                             },
                             "xdm:selected": {
                               "type": "string",
-                              "description": "The option that was ultimately chosen."
+                              "description": "The option that was ultimately chosen.",
+                              "meta:descriptionId": "aep-agent-decision-tracking##xdm:selected##description##37851"
                             },
                             "xdm:confidence": {
                               "type": "number",
                               "description": "Confidence score for the decision.",
                               "minimum": 0,
-                              "maximum": 1
+                              "maximum": 1,
+                              "meta:descriptionId": "aep-agent-decision-tracking##xdm:confidence##description##85931"
                             },
                             "xdm:reasoning": {
                               "type": "string",
-                              "description": "Rationale or explanation for why this option was chosen."
+                              "description": "Rationale or explanation for why this option was chosen.",
+                              "meta:descriptionId": "aep-agent-decision-tracking##xdm:reasoning##description##14201"
                             }
                           }
                         }
@@ -65,11 +70,18 @@
                 }
               }
             }
-          }
+          },
+          "meta:descriptionId": "aep-agent-decision-tracking##xdm:adobe##description##15841"
         }
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/aep-agent-decision-tracking" }],
-  "meta:status": "experimental"
+  "allOf": [
+    {
+      "$ref": "#/definitions/aep-agent-decision-tracking"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "aep-agent-decision-tracking##title##56811",
+  "meta:descriptionId": "aep-agent-decision-tracking##description##89381"
 }

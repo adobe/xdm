@@ -18,12 +18,16 @@
         "xdm:name": {
           "title": "Custom Metadata Field Name",
           "type": "string",
-          "description": "The name of the custom field."
+          "description": "The name of the custom field.",
+          "meta:titleId": "customMetadataDetails##xdm:name##title##7081",
+          "meta:descriptionId": "customMetadataDetails##xdm:name##description##64931"
         },
         "xdm:value": {
           "title": "Custom Metadata Field Value",
           "type": "string",
-          "description": "The value of the custom field."
+          "description": "The value of the custom field.",
+          "meta:titleId": "customMetadataDetails##xdm:value##title##76061",
+          "meta:descriptionId": "customMetadataDetails##xdm:value##description##91461"
         }
       }
     }
@@ -32,5 +36,7 @@
     {
       "$ref": "#/definitions/customMetadataDetails"
     }
-  ]
+  ],
+  "meta:titleId": "customMetadataDetails##title##95551",
+  "meta:descriptionId": "customMetadataDetails##description##70951"
 }

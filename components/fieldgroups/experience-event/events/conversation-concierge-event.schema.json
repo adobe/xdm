@@ -32,12 +32,16 @@
                 "xdm:sessionId": {
                   "title": "Session ID",
                   "type": "string",
-                  "description": "Unique identifier for the Brand Concierge session."
+                  "description": "Unique identifier for the Brand Concierge session.",
+                  "meta:titleId": "conversation-concierge-event##xdm:sessionId##title##47111",
+                  "meta:descriptionId": "conversation-concierge-event##xdm:sessionId##description##91281"
                 },
                 "xdm:conversationId": {
                   "title": "Conversation ID",
                   "type": "string",
-                  "description": "Unique identifier for the conversation within the Brand Concierge session."
+                  "description": "Unique identifier for the conversation within the Brand Concierge session.",
+                  "meta:titleId": "conversation-concierge-event##xdm:conversationId##title##20561",
+                  "meta:descriptionId": "conversation-concierge-event##xdm:conversationId##description##4871"
                 },
                 "xdm:conciergeDetails": {
                   "title": "Concierge Details",
@@ -46,14 +50,19 @@
                     "xdm:conciergeId": {
                       "title": "Concierge ID",
                       "type": "string",
-                      "description": "Unique identifier for the Concierge."
+                      "description": "Unique identifier for the Concierge.",
+                      "meta:titleId": "conversation-concierge-event##xdm:conciergeId##title##75731",
+                      "meta:descriptionId": "conversation-concierge-event##xdm:conciergeId##description##95911"
                     },
                     "xdm:conciergeName": {
                       "title": "Concierge Name",
                       "type": "string",
-                      "description": "Display name of the Concierge."
+                      "description": "Display name of the Concierge.",
+                      "meta:titleId": "conversation-concierge-event##xdm:conciergeName##title##81771",
+                      "meta:descriptionId": "conversation-concierge-event##xdm:conciergeName##description##22461"
                     }
-                  }
+                  },
+                  "meta:titleId": "conversation-concierge-event##xdm:conciergeDetails##title##23171"
                 },
                 "xdm:sessionExpirationDetails": {
                   "title": "Session expiration details",
@@ -63,36 +72,56 @@
                       "title": "Created At",
                       "type": "string",
                       "format": "date-time",
-                      "description": "ISO 8601 timestamp for when the session or conversation context was created."
+                      "description": "ISO 8601 timestamp for when the session or conversation context was created.",
+                      "meta:titleId": "conversation-concierge-event##xdm:createdAt##title##22171",
+                      "meta:descriptionId": "conversation-concierge-event##xdm:createdAt##description##80511"
                     },
                     "xdm:endedAt": {
                       "title": "Ended At",
                       "type": "string",
                       "format": "date-time",
-                      "description": "ISO 8601 timestamp for when the session or conversation context ended."
+                      "description": "ISO 8601 timestamp for when the session or conversation context ended.",
+                      "meta:titleId": "conversation-concierge-event##xdm:endedAt##title##48151",
+                      "meta:descriptionId": "conversation-concierge-event##xdm:endedAt##description##37221"
                     },
                     "xdm:duration": {
                       "title": "Duration",
                       "type": "string",
                       "description": "Elapsed duration as an ISO 8601 duration (for example PT15M for 15 minutes).",
-                      "meta:status": "deprecated"
+                      "meta:status": "deprecated",
+                      "meta:titleId": "conversation-concierge-event##xdm:duration##title##65761",
+                      "meta:descriptionId": "conversation-concierge-event##xdm:duration##description##96841"
                     },
                     "xdm:conversationStatus": {
                       "title": "Conversation Status",
                       "type": "string",
                       "description": "Outcome of the conversation at session expiration.",
-                      "enum": ["INITIATED", "DROPPED", "COMPLETED"],
+                      "enum": [
+                        "INITIATED",
+                        "DROPPED",
+                        "COMPLETED"
+                      ],
                       "meta:enum": {
                         "INITIATED": "Conversation was initiated",
                         "DROPPED": "Visitor dropped off before completion",
                         "COMPLETED": "Conversation completed"
+                      },
+                      "meta:titleId": "conversation-concierge-event##xdm:conversationStatus##title##34011",
+                      "meta:descriptionId": "conversation-concierge-event##xdm:conversationStatus##description##4911",
+                      "meta:enumId": {
+                        "INITIATED": "conversation-concierge-event##xdm:conversationStatus##meta:enum##INITIATED##56331",
+                        "DROPPED": "conversation-concierge-event##xdm:conversationStatus##meta:enum##DROPPED##49541",
+                        "COMPLETED": "conversation-concierge-event##xdm:conversationStatus##meta:enum##COMPLETED##82031"
                       }
                     }
-                  }
+                  },
+                  "meta:titleId": "conversation-concierge-event##xdm:sessionExpirationDetails##title##94181"
                 }
-              }
+              },
+              "meta:titleId": "conversation-concierge-event##xdm:conversationConciergeEvent##title##40271"
             }
-          }
+          },
+          "meta:titleId": "conversation-concierge-event##xdm:engagement##title##66701"
         }
       }
     }
@@ -103,5 +132,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2026-04-07"
+  "meta:createdDate": "2026-04-07",
+  "meta:titleId": "conversation-concierge-event##title##27291",
+  "meta:descriptionId": "conversation-concierge-event##description##56911"
 }

@@ -29,34 +29,44 @@
                   "title": "Relevance Score",
                   "description": "Ad relevance score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:relevanceScore##title##60311",
+                  "meta:descriptionId": "quality-metrics##xdm:relevanceScore##description##83371"
                 },
                 "xdm:engagementScore": {
                   "type": "number",
                   "title": "Engagement Score",
                   "description": "Ad engagement quality score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:engagementScore##title##39381",
+                  "meta:descriptionId": "quality-metrics##xdm:engagementScore##description##4211"
                 },
                 "xdm:conversionScore": {
                   "type": "number",
                   "title": "Conversion Score",
                   "description": "Ad conversion quality score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:conversionScore##title##81741",
+                  "meta:descriptionId": "quality-metrics##xdm:conversionScore##description##44551"
                 },
                 "xdm:overallQualityScore": {
                   "type": "number",
                   "title": "Overall Quality Score",
                   "description": "Overall ad quality score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:overallQualityScore##title##22251",
+                  "meta:descriptionId": "quality-metrics##xdm:overallQualityScore##description##16351"
                 },
                 "xdm:negativeActions": {
                   "type": "integer",
                   "title": "Negative Actions",
                   "description": "Number of negative actions (hides, reports, etc.)",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "quality-metrics##xdm:negativeActions##title##77911",
+                  "meta:descriptionId": "quality-metrics##xdm:negativeActions##description##48341"
                 },
                 "xdm:negativeActionRate": {
                   "type": "number",
@@ -64,20 +74,26 @@
                   "description": "(DEPRECATED — use xdm:negativeActionRateUncapped instead. Capped at 1.0 and cannot represent rates >1.0 where a single impression yields multiple negative actions.) Rate of negative actions (negative actions/impressions).",
                   "meta:status": "deprecated",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "quality-metrics##xdm:negativeActionRate##title##38841",
+                  "meta:descriptionId": "quality-metrics##xdm:negativeActionRate##description##8481"
                 },
                 "xdm:negativeActionRateUncapped": {
                   "type": "number",
                   "title": "Negative Action Rate (Uncapped)",
                   "description": "Rate of negative actions (negative actions/impressions). Can exceed 1.0 because a single impression can yield multiple negative actions.",
                   "meta:status": "stable",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "quality-metrics##xdm:negativeActionRateUncapped##title##13811",
+                  "meta:descriptionId": "quality-metrics##xdm:negativeActionRateUncapped##description##32941"
                 },
                 "xdm:positiveActions": {
                   "type": "integer",
                   "title": "Positive Actions",
                   "description": "Number of positive actions (likes, shares, etc.)",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "quality-metrics##xdm:positiveActions##title##27351",
+                  "meta:descriptionId": "quality-metrics##xdm:positiveActions##description##60881"
                 },
                 "xdm:positiveActionRate": {
                   "type": "number",
@@ -85,131 +101,169 @@
                   "description": "(DEPRECATED — use xdm:positiveActionRateUncapped instead. Capped at 1.0 and cannot represent rates >1.0 where a single impression yields multiple positive actions.) Rate of positive actions (positive actions/impressions).",
                   "meta:status": "deprecated",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "quality-metrics##xdm:positiveActionRate##title##60621",
+                  "meta:descriptionId": "quality-metrics##xdm:positiveActionRate##description##37291"
                 },
                 "xdm:positiveActionRateUncapped": {
                   "type": "number",
                   "title": "Positive Action Rate (Uncapped)",
                   "description": "Rate of positive actions (positive actions/impressions). Can exceed 1.0 because a single impression can yield multiple positive actions.",
                   "meta:status": "stable",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "quality-metrics##xdm:positiveActionRateUncapped##title##62301",
+                  "meta:descriptionId": "quality-metrics##xdm:positiveActionRateUncapped##description##6431"
                 },
                 "xdm:brandSafetyScore": {
                   "type": "number",
                   "title": "Brand Safety Score",
                   "description": "Brand safety compliance score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:brandSafetyScore##title##18171",
+                  "meta:descriptionId": "quality-metrics##xdm:brandSafetyScore##description##87131"
                 },
                 "xdm:viewabilityScore": {
                   "type": "number",
                   "title": "Viewability Score",
                   "description": "Ad viewability quality score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:viewabilityScore##title##15361",
+                  "meta:descriptionId": "quality-metrics##xdm:viewabilityScore##description##68061"
                 },
                 "xdm:fraudScore": {
                   "type": "number",
                   "title": "Fraud Score",
                   "description": "Ad fraud risk score (higher = more risk)",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:fraudScore##title##73801",
+                  "meta:descriptionId": "quality-metrics##xdm:fraudScore##description##85451"
                 },
                 "xdm:invalidTrafficRate": {
                   "type": "number",
                   "title": "Invalid Traffic Rate",
                   "description": "Percentage of traffic flagged as invalid",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "quality-metrics##xdm:invalidTrafficRate##title##1411",
+                  "meta:descriptionId": "quality-metrics##xdm:invalidTrafficRate##description##6221"
                 },
                 "xdm:botTrafficRate": {
                   "type": "number",
                   "title": "Bot Traffic Rate",
                   "description": "Percentage of traffic identified as bot traffic",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "quality-metrics##xdm:botTrafficRate##title##4101",
+                  "meta:descriptionId": "quality-metrics##xdm:botTrafficRate##description##20111"
                 },
                 "xdm:humanTrafficRate": {
                   "type": "number",
                   "title": "Human Traffic Rate",
                   "description": "Percentage of traffic verified as human",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "quality-metrics##xdm:humanTrafficRate##title##50041",
+                  "meta:descriptionId": "quality-metrics##xdm:humanTrafficRate##description##16371"
                 },
                 "xdm:attentionScore": {
                   "type": "number",
                   "title": "Attention Score",
                   "description": "User attention quality score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:attentionScore##title##71081",
+                  "meta:descriptionId": "quality-metrics##xdm:attentionScore##description##37631"
                 },
                 "xdm:dwellTime": {
                   "type": "number",
                   "title": "Dwell Time",
                   "description": "Average time users spend viewing the ad (seconds)",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "quality-metrics##xdm:dwellTime##title##97771",
+                  "meta:descriptionId": "quality-metrics##xdm:dwellTime##description##40411"
                 },
                 "xdm:interactionDepth": {
                   "type": "number",
                   "title": "Interaction Depth",
                   "description": "Depth of user interaction with the ad",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "quality-metrics##xdm:interactionDepth##title##34451",
+                  "meta:descriptionId": "quality-metrics##xdm:interactionDepth##description##94891"
                 },
                 "xdm:creativeFatigue": {
                   "type": "number",
                   "title": "Creative Fatigue",
                   "description": "Creative fatigue score (higher = more fatigued)",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:creativeFatigue##title##64861",
+                  "meta:descriptionId": "quality-metrics##xdm:creativeFatigue##description##22201"
                 },
                 "xdm:frequencyFatigue": {
                   "type": "number",
                   "title": "Frequency Fatigue",
                   "description": "Frequency fatigue score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:frequencyFatigue##title##64341",
+                  "meta:descriptionId": "quality-metrics##xdm:frequencyFatigue##description##88691"
                 },
                 "xdm:audienceRelevance": {
                   "type": "number",
                   "title": "Audience Relevance",
                   "description": "Relevance of ad to target audience",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:audienceRelevance##title##33961",
+                  "meta:descriptionId": "quality-metrics##xdm:audienceRelevance##description##51681"
                 },
                 "xdm:contextualRelevance": {
                   "type": "number",
                   "title": "Contextual Relevance",
                   "description": "Relevance of ad to content context",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:contextualRelevance##title##66361",
+                  "meta:descriptionId": "quality-metrics##xdm:contextualRelevance##description##87901"
                 },
                 "xdm:emotionalResonance": {
                   "type": "number",
                   "title": "Emotional Resonance",
                   "description": "Emotional impact score of the ad",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:emotionalResonance##title##41411",
+                  "meta:descriptionId": "quality-metrics##xdm:emotionalResonance##description##17771"
                 },
                 "xdm:memorabilityScore": {
                   "type": "number",
                   "title": "Memorability Score",
                   "description": "Ad memorability score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:memorabilityScore##title##54871",
+                  "meta:descriptionId": "quality-metrics##xdm:memorabilityScore##description##30581"
                 },
                 "xdm:brandLiftScore": {
                   "type": "number",
                   "title": "Brand Lift Score",
                   "description": "Brand awareness lift score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:brandLiftScore##title##30641",
+                  "meta:descriptionId": "quality-metrics##xdm:brandLiftScore##description##50501"
                 },
                 "xdm:intentLiftScore": {
                   "type": "number",
                   "title": "Intent Lift Score",
                   "description": "Purchase intent lift score",
                   "minimum": 0,
-                  "maximum": 10
+                  "maximum": 10,
+                  "meta:titleId": "quality-metrics##xdm:intentLiftScore##title##51471",
+                  "meta:descriptionId": "quality-metrics##xdm:intentLiftScore##description##34801"
                 },
                 "xdm:qualityTrend": {
                   "type": "string",
@@ -221,6 +275,14 @@
                     "declining": "Quality is declining",
                     "stable": "Quality is stable",
                     "volatile": "Quality is volatile"
+                  },
+                  "meta:titleId": "quality-metrics##xdm:qualityTrend##title##19031",
+                  "meta:descriptionId": "quality-metrics##xdm:qualityTrend##description##84031",
+                  "meta:enumId": {
+                    "improving": "quality-metrics##xdm:qualityTrend##meta:enum##improving##66351",
+                    "declining": "quality-metrics##xdm:qualityTrend##meta:enum##declining##46551",
+                    "stable": "quality-metrics##xdm:qualityTrend##meta:enum##stable##97701",
+                    "volatile": "quality-metrics##xdm:qualityTrend##meta:enum##volatile##37601"
                   }
                 },
                 "xdm:benchmarkComparison": {
@@ -231,23 +293,33 @@
                     "xdm:industryAverage": {
                       "type": "number",
                       "title": "Industry Average",
-                      "description": "Industry average quality score"
+                      "description": "Industry average quality score",
+                      "meta:titleId": "quality-metrics##xdm:industryAverage##title##60911",
+                      "meta:descriptionId": "quality-metrics##xdm:industryAverage##description##41131"
                     },
                     "xdm:percentileRank": {
                       "type": "number",
                       "title": "Percentile Rank",
                       "description": "Percentile rank compared to industry",
                       "minimum": 0,
-                      "maximum": 100
+                      "maximum": 100,
+                      "meta:titleId": "quality-metrics##xdm:percentileRank##title##43191",
+                      "meta:descriptionId": "quality-metrics##xdm:percentileRank##description##96401"
                     },
                     "xdm:competitorAverage": {
                       "type": "number",
                       "title": "Competitor Average",
-                      "description": "Average quality score of competitors"
+                      "description": "Average quality score of competitors",
+                      "meta:titleId": "quality-metrics##xdm:competitorAverage##title##58741",
+                      "meta:descriptionId": "quality-metrics##xdm:competitorAverage##description##4961"
                     }
-                  }
+                  },
+                  "meta:titleId": "quality-metrics##xdm:benchmarkComparison##title##80171",
+                  "meta:descriptionId": "quality-metrics##xdm:benchmarkComparison##description##50761"
                 }
-              }
+              },
+              "meta:titleId": "quality-metrics##xdm:qualityMetrics##title##2261",
+              "meta:descriptionId": "quality-metrics##xdm:qualityMetrics##description##7471"
             }
           }
         }
@@ -259,5 +331,7 @@
       "$ref": "#/definitions/quality-metrics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "quality-metrics##title##34061",
+  "meta:descriptionId": "quality-metrics##description##27491"
 }

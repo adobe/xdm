@@ -22,40 +22,55 @@
             "xdm:flowRunID": {
               "title": "Flow Run ID",
               "type": "string",
-              "description": "Flow run identifier to uniquely identify a flow which was triggered when a segment was activated over a destination."
+              "description": "Flow run identifier to uniquely identify a flow which was triggered when a segment was activated over a destination.",
+              "meta:titleId": "aep-insights-metrics##xdm:flowRunID##title##32541",
+              "meta:descriptionId": "aep-insights-metrics##xdm:flowRunID##description##60641"
             },
             "xdm:flowCompletedTime": {
               "title": "Flow Completed Time",
               "type": "string",
               "format": "date-time",
-              "description": "The date and time when the flow was completed. It could be blank or NULL if the flow was not successful."
+              "description": "The date and time when the flow was completed. It could be blank or NULL if the flow was not successful.",
+              "meta:titleId": "aep-insights-metrics##xdm:flowCompletedTime##title##22771",
+              "meta:descriptionId": "aep-insights-metrics##xdm:flowCompletedTime##description##76921"
             },
             "xdm:flowRunStatus": {
               "title": "Flow Run Status",
               "type": "string",
-              "description": "The status of flow run. This could be success/partial-success/failed etc."
+              "description": "The status of flow run. This could be success/partial-success/failed etc.",
+              "meta:titleId": "aep-insights-metrics##xdm:flowRunStatus##title##82071",
+              "meta:descriptionId": "aep-insights-metrics##xdm:flowRunStatus##description##47241"
             },
             "xdm:totalProfilesActivated": {
               "title": "Total Profiles Activated",
               "type": "number",
-              "description": "Total number of profiles activated summarized at the granularity of provided dimensions in this record."
+              "description": "Total number of profiles activated summarized at the granularity of provided dimensions in this record.",
+              "meta:titleId": "aep-insights-metrics##xdm:totalProfilesActivated##title##33411",
+              "meta:descriptionId": "aep-insights-metrics##xdm:totalProfilesActivated##description##35151"
             },
             "xdm:totalIdentitiesSkipped": {
               "title": "Total Identities Skipped",
               "type": "number",
-              "description": "Total number of identities skipped summarized at the granularity of provided dimensions in this record."
+              "description": "Total number of identities skipped summarized at the granularity of provided dimensions in this record.",
+              "meta:titleId": "aep-insights-metrics##xdm:totalIdentitiesSkipped##title##84091",
+              "meta:descriptionId": "aep-insights-metrics##xdm:totalIdentitiesSkipped##description##30171"
             },
             "xdm:failedIdentitiesCount": {
               "title": "Count of failed Identities",
               "type": "number",
-              "description": "Count of failed identities summarized at the granularity of provided dimensions in this record."
+              "description": "Count of failed identities summarized at the granularity of provided dimensions in this record.",
+              "meta:titleId": "aep-insights-metrics##xdm:failedIdentitiesCount##title##35941",
+              "meta:descriptionId": "aep-insights-metrics##xdm:failedIdentitiesCount##description##79661"
             },
             "xdm:totalIdentitiesActivated": {
               "title": "Total Identities Activated",
               "type": "number",
-              "description": "Total number of identities activated summarized at the granularity of provided dimensions in this record."
+              "description": "Total number of identities activated summarized at the granularity of provided dimensions in this record.",
+              "meta:titleId": "aep-insights-metrics##xdm:totalIdentitiesActivated##title##31291",
+              "meta:descriptionId": "aep-insights-metrics##xdm:totalIdentitiesActivated##description##53121"
             }
-          }
+          },
+          "meta:descriptionId": "aep-insights-metrics##xdm:destinationMetrics##description##97441"
         },
         "xdm:segment": {
           "type": "object",
@@ -64,9 +79,12 @@
             "xdm:ID": {
               "title": "Segment Identifier",
               "type": "string",
-              "description": "Unique identifier of the segment."
+              "description": "Unique identifier of the segment.",
+              "meta:titleId": "aep-insights-metrics##xdm:ID##title##45161",
+              "meta:descriptionId": "aep-insights-metrics##xdm:ID##description##51061"
             }
-          }
+          },
+          "meta:descriptionId": "aep-insights-metrics##xdm:segment##description##21401"
         },
         "xdm:destination": {
           "type": "object",
@@ -75,9 +93,12 @@
             "xdm:ID": {
               "title": "Destination Identifier",
               "type": "string",
-              "description": "Unique identifier of the Destination."
+              "description": "Unique identifier of the Destination.",
+              "meta:titleId": "aep-insights-metrics##xdm:ID##title##1871",
+              "meta:descriptionId": "aep-insights-metrics##xdm:ID##description##89851"
             }
-          }
+          },
+          "meta:descriptionId": "aep-insights-metrics##xdm:destination##description##58531"
         }
       }
     }
@@ -90,5 +111,7 @@
       "$ref": "https://ns.adobe.com/xdm/classes/summarymetrics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "aep-insights-metrics##title##28311",
+  "meta:descriptionId": "aep-insights-metrics##description##94991"
 }

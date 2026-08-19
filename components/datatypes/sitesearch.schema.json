@@ -108,7 +108,12 @@
             "RELEVANCE": "Sort items by relevance"
           },
           "meta:titleId": "sitesearch##xdm:order##title##67381",
-          "meta:descriptionId": "sitesearch##xdm:order##description##40201"
+          "meta:descriptionId": "sitesearch##xdm:order##description##40201",
+          "meta:enumId": {
+            "ASC": "sitesearch##xdm:order##meta:enum##ASC##32691",
+            "DESC": "sitesearch##xdm:order##meta:enum##DESC##14291",
+            "RELEVANCE": "sitesearch##xdm:order##meta:enum##RELEVANCE##64951"
+          }
         }
       }
     }

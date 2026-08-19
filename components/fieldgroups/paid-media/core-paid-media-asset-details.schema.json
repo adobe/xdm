@@ -85,27 +85,66 @@
                     "message": "Message Asset",
                     "carousel_card": "Carousel Card Asset",
                     "other": "Other Asset Type"
+                  },
+                  "meta:titleId": "asset-details##xdm:assetType##title##34701",
+                  "meta:descriptionId": "asset-details##xdm:assetType##description##55801",
+                  "meta:enumId": {
+                    "image": "asset-details##xdm:assetType##meta:enum##image##69151",
+                    "video": "asset-details##xdm:assetType##meta:enum##video##46491",
+                    "audio": "asset-details##xdm:assetType##meta:enum##audio##58941",
+                    "text": "asset-details##xdm:assetType##meta:enum##text##92451",
+                    "sitelink": "asset-details##xdm:assetType##meta:enum##sitelink##58921",
+                    "callout": "asset-details##xdm:assetType##meta:enum##callout##96461",
+                    "structured_snippet": "asset-details##xdm:assetType##meta:enum##structured_snippet##62731",
+                    "promotion": "asset-details##xdm:assetType##meta:enum##promotion##40571",
+                    "price": "asset-details##xdm:assetType##meta:enum##price##59201",
+                    "call_to_action": "asset-details##xdm:assetType##meta:enum##call_to_action##70561",
+                    "hotel_callout": "asset-details##xdm:assetType##meta:enum##hotel_callout##42821",
+                    "html5": "asset-details##xdm:assetType##meta:enum##html5##13731",
+                    "media_bundle": "asset-details##xdm:assetType##meta:enum##media_bundle##39501",
+                    "document": "asset-details##xdm:assetType##meta:enum##document##77811",
+                    "page_feed": "asset-details##xdm:assetType##meta:enum##page_feed##40691",
+                    "lead_form": "asset-details##xdm:assetType##meta:enum##lead_form##32161",
+                    "dynamic_education": "asset-details##xdm:assetType##meta:enum##dynamic_education##9041",
+                    "youtube_video": "asset-details##xdm:assetType##meta:enum##youtube_video##19001",
+                    "dynamic": "asset-details##xdm:assetType##meta:enum##dynamic##56611",
+                    "call": "asset-details##xdm:assetType##meta:enum##call##37971",
+                    "app_link": "asset-details##xdm:assetType##meta:enum##app_link##15671",
+                    "booking": "asset-details##xdm:assetType##meta:enum##booking##42731",
+                    "location": "asset-details##xdm:assetType##meta:enum##location##98681",
+                    "hotel_property": "asset-details##xdm:assetType##meta:enum##hotel_property##85351",
+                    "message": "asset-details##xdm:assetType##meta:enum##message##39421",
+                    "carousel_card": "asset-details##xdm:assetType##meta:enum##carousel_card##55671",
+                    "other": "asset-details##xdm:assetType##meta:enum##other##29751"
                   }
                 },
                 "xdm:assetSubType": {
                   "type": "string",
                   "title": "Asset Sub-type",
-                  "description": "More specific asset sub-type or format"
+                  "description": "More specific asset sub-type or format",
+                  "meta:titleId": "asset-details##xdm:assetSubType##title##48241",
+                  "meta:descriptionId": "asset-details##xdm:assetSubType##description##57611"
                 },
                 "title": {
                   "type": "string",
                   "title": "Asset Title",
-                  "description": "Title or name of the asset"
+                  "description": "Title or name of the asset",
+                  "meta:titleId": "asset-details##title##title##67481",
+                  "meta:descriptionId": "asset-details##title##description##11091"
                 },
                 "description": {
                   "type": "string",
                   "title": "Asset Description",
-                  "description": "Description of the asset content"
+                  "description": "Description of the asset content",
+                  "meta:titleId": "asset-details##description##title##64551",
+                  "meta:descriptionId": "asset-details##description##description##8581"
                 },
                 "xdm:content": {
                   "type": "string",
                   "title": "Asset Content",
-                  "description": "Text content of the asset (for text assets)"
+                  "description": "Text content of the asset (for text assets)",
+                  "meta:titleId": "asset-details##xdm:content##title##50301",
+                  "meta:descriptionId": "asset-details##xdm:content##description##80771"
                 },
                 "xdm:mediaProperties": {
                   "type": "object",
@@ -115,29 +154,41 @@
                     "xdm:url": {
                       "type": "string",
                       "title": "Asset URL",
-                      "description": "Direct URL to access the asset"
+                      "description": "Direct URL to access the asset",
+                      "meta:titleId": "asset-details##xdm:url##title##52091",
+                      "meta:descriptionId": "asset-details##xdm:url##description##52361"
                     },
                     "xdm:permalinkURL": {
                       "type": "string",
                       "title": "Permalink URL",
-                      "description": "Permanent link to the asset"
+                      "description": "Permanent link to the asset",
+                      "meta:titleId": "asset-details##xdm:permalinkURL##title##15981",
+                      "meta:descriptionId": "asset-details##xdm:permalinkURL##description##25731"
                     },
                     "xdm:thumbnailURL": {
                       "type": "string",
                       "title": "Thumbnail URL",
-                      "description": "URL for asset thumbnail"
+                      "description": "URL for asset thumbnail",
+                      "meta:titleId": "asset-details##xdm:thumbnailURL##title##93881",
+                      "meta:descriptionId": "asset-details##xdm:thumbnailURL##description##7821"
                     },
                     "xdm:source": {
                       "type": "string",
                       "title": "Source URL",
-                      "description": "Original source URL of the asset"
+                      "description": "Original source URL of the asset",
+                      "meta:titleId": "asset-details##xdm:source##title##55581",
+                      "meta:descriptionId": "asset-details##xdm:source##description##8451"
                     },
                     "xdm:hash": {
                       "type": "string",
                       "title": "Asset Hash",
-                      "description": "Unique hash identifier for the asset content"
+                      "description": "Unique hash identifier for the asset content",
+                      "meta:titleId": "asset-details##xdm:hash##title##5141",
+                      "meta:descriptionId": "asset-details##xdm:hash##description##54411"
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:mediaProperties##title##13501",
+                  "meta:descriptionId": "asset-details##xdm:mediaProperties##description##11241"
                 },
                 "xdm:dimensions": {
                   "type": "object",
@@ -147,17 +198,23 @@
                     "xdm:width": {
                       "type": "integer",
                       "title": "Width",
-                      "description": "Width in pixels"
+                      "description": "Width in pixels",
+                      "meta:titleId": "asset-details##xdm:width##title##93231",
+                      "meta:descriptionId": "asset-details##xdm:width##description##77281"
                     },
                     "xdm:height": {
                       "type": "integer",
                       "title": "Height",
-                      "description": "Height in pixels"
+                      "description": "Height in pixels",
+                      "meta:titleId": "asset-details##xdm:height##title##89211",
+                      "meta:descriptionId": "asset-details##xdm:height##description##48571"
                     },
                     "xdm:aspectRatio": {
                       "type": "string",
                       "title": "Aspect Ratio",
-                      "description": "Aspect ratio of the asset (e.g., 16:9, 1:1)"
+                      "description": "Aspect ratio of the asset (e.g., 16:9, 1:1)",
+                      "meta:titleId": "asset-details##xdm:aspectRatio##title##72961",
+                      "meta:descriptionId": "asset-details##xdm:aspectRatio##description##28631"
                     },
                     "xdm:orientation": {
                       "type": "string",
@@ -167,9 +224,17 @@
                         "landscape": "Landscape",
                         "portrait": "Portrait",
                         "square": "Square"
+                      },
+                      "meta:titleId": "asset-details##xdm:orientation##title##49341",
+                      "meta:enumId": {
+                        "landscape": "asset-details##xdm:orientation##meta:enum##landscape##47591",
+                        "portrait": "asset-details##xdm:orientation##meta:enum##portrait##75841",
+                        "square": "asset-details##xdm:orientation##meta:enum##square##32421"
                       }
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:dimensions##title##32341",
+                  "meta:descriptionId": "asset-details##xdm:dimensions##description##13731"
                 },
                 "xdm:fileProperties": {
                   "type": "object",
@@ -179,29 +244,41 @@
                     "xdm:fileSize": {
                       "type": "integer",
                       "title": "File Size",
-                      "description": "File size in bytes"
+                      "description": "File size in bytes",
+                      "meta:titleId": "asset-details##xdm:fileSize##title##3781",
+                      "meta:descriptionId": "asset-details##xdm:fileSize##description##94451"
                     },
                     "xdm:fileSizeFormatted": {
                       "type": "string",
                       "title": "File Size Formatted",
-                      "description": "Human-readable file size (e.g., 2.5 MB)"
+                      "description": "Human-readable file size (e.g., 2.5 MB)",
+                      "meta:titleId": "asset-details##xdm:fileSizeFormatted##title##15081",
+                      "meta:descriptionId": "asset-details##xdm:fileSizeFormatted##description##71161"
                     },
                     "xdm:mimeType": {
                       "type": "string",
                       "title": "MIME Type",
-                      "description": "MIME type of the file"
+                      "description": "MIME type of the file",
+                      "meta:titleId": "asset-details##xdm:mimeType##title##65121",
+                      "meta:descriptionId": "asset-details##xdm:mimeType##description##29651"
                     },
                     "xdm:fileExtension": {
                       "type": "string",
                       "title": "File Extension",
-                      "description": "File extension (e.g., jpg, mp4, pdf)"
+                      "description": "File extension (e.g., jpg, mp4, pdf)",
+                      "meta:titleId": "asset-details##xdm:fileExtension##title##29341",
+                      "meta:descriptionId": "asset-details##xdm:fileExtension##description##33111"
                     },
                     "xdm:encoding": {
                       "type": "string",
                       "title": "Encoding",
-                      "description": "File encoding format"
+                      "description": "File encoding format",
+                      "meta:titleId": "asset-details##xdm:encoding##title##60121",
+                      "meta:descriptionId": "asset-details##xdm:encoding##description##59261"
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:fileProperties##title##22001",
+                  "meta:descriptionId": "asset-details##xdm:fileProperties##description##99751"
                 },
                 "xdm:videoProperties": {
                   "type": "object",
@@ -211,34 +288,48 @@
                     "xdm:duration": {
                       "type": "number",
                       "title": "Duration",
-                      "description": "Video duration in seconds"
+                      "description": "Video duration in seconds",
+                      "meta:titleId": "asset-details##xdm:duration##title##70631",
+                      "meta:descriptionId": "asset-details##xdm:duration##description##73321"
                     },
                     "xdm:frameRate": {
                       "type": "number",
                       "title": "Frame Rate",
-                      "description": "Video frame rate (fps)"
+                      "description": "Video frame rate (fps)",
+                      "meta:titleId": "asset-details##xdm:frameRate##title##33111",
+                      "meta:descriptionId": "asset-details##xdm:frameRate##description##74221"
                     },
                     "xdm:bitrate": {
                       "type": "integer",
                       "title": "Bitrate",
-                      "description": "Video bitrate in kbps"
+                      "description": "Video bitrate in kbps",
+                      "meta:titleId": "asset-details##xdm:bitrate##title##27911",
+                      "meta:descriptionId": "asset-details##xdm:bitrate##description##701"
                     },
                     "xdm:codec": {
                       "type": "string",
                       "title": "Video Codec",
-                      "description": "Video codec used"
+                      "description": "Video codec used",
+                      "meta:titleId": "asset-details##xdm:codec##title##69721",
+                      "meta:descriptionId": "asset-details##xdm:codec##description##71251"
                     },
                     "xdm:hasAudio": {
                       "type": "boolean",
                       "title": "Has Audio",
-                      "description": "Whether the video contains audio"
+                      "description": "Whether the video contains audio",
+                      "meta:titleId": "asset-details##xdm:hasAudio##title##98171",
+                      "meta:descriptionId": "asset-details##xdm:hasAudio##description##26361"
                     },
                     "xdm:youtubeVideoID": {
                       "type": "string",
                       "title": "YouTube Video ID",
-                      "description": "YouTube video ID (for YouTube video assets)"
+                      "description": "YouTube video ID (for YouTube video assets)",
+                      "meta:titleId": "asset-details##xdm:youtubeVideoID##title##28601",
+                      "meta:descriptionId": "asset-details##xdm:youtubeVideoID##description##17851"
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:videoProperties##title##90501",
+                  "meta:descriptionId": "asset-details##xdm:videoProperties##description##19271"
                 },
                 "xdm:imageProperties": {
                   "type": "object",
@@ -248,17 +339,23 @@
                     "xdm:colorSpace": {
                       "type": "string",
                       "title": "Color Space",
-                      "description": "Color space of the image (e.g., RGB, CMYK)"
+                      "description": "Color space of the image (e.g., RGB, CMYK)",
+                      "meta:titleId": "asset-details##xdm:colorSpace##title##55821",
+                      "meta:descriptionId": "asset-details##xdm:colorSpace##description##75971"
                     },
                     "xdm:hasTransparency": {
                       "type": "boolean",
                       "title": "Has Transparency",
-                      "description": "Whether the image has transparency/alpha channel"
+                      "description": "Whether the image has transparency/alpha channel",
+                      "meta:titleId": "asset-details##xdm:hasTransparency##title##75151",
+                      "meta:descriptionId": "asset-details##xdm:hasTransparency##description##19411"
                     },
                     "xdm:isAnimated": {
                       "type": "boolean",
                       "title": "Is Animated",
-                      "description": "Whether the image is animated (e.g., GIF)"
+                      "description": "Whether the image is animated (e.g., GIF)",
+                      "meta:titleId": "asset-details##xdm:isAnimated##title##95881",
+                      "meta:descriptionId": "asset-details##xdm:isAnimated##description##84141"
                     },
                     "xdm:dominantColors": {
                       "type": "array",
@@ -266,9 +363,13 @@
                       "description": "Dominant colors in the image",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "asset-details##xdm:dominantColors##title##29131",
+                      "meta:descriptionId": "asset-details##xdm:dominantColors##description##24121"
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:imageProperties##title##67071",
+                  "meta:descriptionId": "asset-details##xdm:imageProperties##description##89261"
                 },
                 "xdm:interactionProperties": {
                   "type": "object",
@@ -278,7 +379,9 @@
                     "xdm:interactionType": {
                       "type": "string",
                       "title": "Interaction Type",
-                      "description": "Type of interaction supported by the asset"
+                      "description": "Type of interaction supported by the asset",
+                      "meta:titleId": "asset-details##xdm:interactionType##title##78411",
+                      "meta:descriptionId": "asset-details##xdm:interactionType##description##92581"
                     },
                     "xdm:buttonProperties": {
                       "type": "object",
@@ -286,7 +389,9 @@
                       "description": "Properties for interactive buttons",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "asset-details##xdm:buttonProperties##title##93351",
+                      "meta:descriptionId": "asset-details##xdm:buttonProperties##description##25971"
                     },
                     "xdm:webViewProperties": {
                       "type": "object",
@@ -296,9 +401,13 @@
                         "xdm:url": {
                           "type": "string",
                           "title": "Web View URL",
-                          "description": "URL for web view interaction"
+                          "description": "URL for web view interaction",
+                          "meta:titleId": "asset-details##xdm:url##title##95361",
+                          "meta:descriptionId": "asset-details##xdm:url##description##66711"
                         }
-                      }
+                      },
+                      "meta:titleId": "asset-details##xdm:webViewProperties##title##70901",
+                      "meta:descriptionId": "asset-details##xdm:webViewProperties##description##4211"
                     },
                     "xdm:deepLinkProperties": {
                       "type": "object",
@@ -306,9 +415,13 @@
                       "description": "Properties for deep link interactions",
                       "additionalProperties": {
                         "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                      }
+                      },
+                      "meta:titleId": "asset-details##xdm:deepLinkProperties##title##18111",
+                      "meta:descriptionId": "asset-details##xdm:deepLinkProperties##description##38231"
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:interactionProperties##title##27601",
+                  "meta:descriptionId": "asset-details##xdm:interactionProperties##description##19071"
                 },
                 "xdm:leadFormProperties": {
                   "type": "object",
@@ -318,7 +431,9 @@
                     "xdm:backgroundImageAsset": {
                       "type": "string",
                       "title": "Background Image Asset",
-                      "description": "Background image asset for lead forms"
+                      "description": "Background image asset for lead forms",
+                      "meta:titleId": "asset-details##xdm:backgroundImageAsset##title##29001",
+                      "meta:descriptionId": "asset-details##xdm:backgroundImageAsset##description##21991"
                     },
                     "xdm:formFields": {
                       "type": "array",
@@ -329,20 +444,27 @@
                         "properties": {
                           "xdm:fieldType": {
                             "type": "string",
-                            "title": "Field Type"
+                            "title": "Field Type",
+                            "meta:titleId": "asset-details##xdm:fieldType##title##42391"
                           },
                           "xdm:fieldLabel": {
                             "type": "string",
-                            "title": "Field Label"
+                            "title": "Field Label",
+                            "meta:titleId": "asset-details##xdm:fieldLabel##title##48561"
                           },
                           "xdm:isRequired": {
                             "type": "boolean",
-                            "title": "Is Required"
+                            "title": "Is Required",
+                            "meta:titleId": "asset-details##xdm:isRequired##title##32061"
                           }
                         }
-                      }
+                      },
+                      "meta:titleId": "asset-details##xdm:formFields##title##76621",
+                      "meta:descriptionId": "asset-details##xdm:formFields##description##72211"
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:leadFormProperties##title##28951",
+                  "meta:descriptionId": "asset-details##xdm:leadFormProperties##description##20831"
                 },
                 "xdm:dynamicEducationProperties": {
                   "type": "object",
@@ -352,14 +474,20 @@
                     "xdm:imageURL": {
                       "type": "string",
                       "title": "Image URL",
-                      "description": "Main image URL for dynamic education asset"
+                      "description": "Main image URL for dynamic education asset",
+                      "meta:titleId": "asset-details##xdm:imageURL##title##39951",
+                      "meta:descriptionId": "asset-details##xdm:imageURL##description##92201"
                     },
                     "xdm:thumbnailImageURL": {
                       "type": "string",
                       "title": "Thumbnail Image URL",
-                      "description": "Thumbnail image URL for dynamic education asset"
+                      "description": "Thumbnail image URL for dynamic education asset",
+                      "meta:titleId": "asset-details##xdm:thumbnailImageURL##title##91551",
+                      "meta:descriptionId": "asset-details##xdm:thumbnailImageURL##description##49571"
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:dynamicEducationProperties##title##53081",
+                  "meta:descriptionId": "asset-details##xdm:dynamicEducationProperties##description##93161"
                 },
                 "xdm:usageMetadata": {
                   "type": "object",
@@ -369,13 +497,17 @@
                     "xdm:usageCount": {
                       "type": "integer",
                       "title": "Usage Count",
-                      "description": "Number of times this asset has been used"
+                      "description": "Number of times this asset has been used",
+                      "meta:titleId": "asset-details##xdm:usageCount##title##54701",
+                      "meta:descriptionId": "asset-details##xdm:usageCount##description##15641"
                     },
                     "xdm:lastUsedDate": {
                       "type": "string",
                       "format": "date-time",
                       "title": "Last Used Date",
-                      "description": "When the asset was last used"
+                      "description": "When the asset was last used",
+                      "meta:titleId": "asset-details##xdm:lastUsedDate##title##37901",
+                      "meta:descriptionId": "asset-details##xdm:lastUsedDate##description##691"
                     },
                     "xdm:associatedCampaigns": {
                       "type": "array",
@@ -383,7 +515,9 @@
                       "description": "Campaigns that use this asset",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "asset-details##xdm:associatedCampaigns##title##92041",
+                      "meta:descriptionId": "asset-details##xdm:associatedCampaigns##description##31241"
                     },
                     "xdm:associatedAds": {
                       "type": "array",
@@ -391,9 +525,13 @@
                       "description": "Ads that use this asset",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "asset-details##xdm:associatedAds##title##29111",
+                      "meta:descriptionId": "asset-details##xdm:associatedAds##description##70901"
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:usageMetadata##title##26561",
+                  "meta:descriptionId": "asset-details##xdm:usageMetadata##description##7761"
                 },
                 "xdm:additionalDetails": {
                   "title": "Additional Asset Details",
@@ -401,9 +539,13 @@
                   "type": "array",
                   "items": {
                     "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                  }
+                  },
+                  "meta:titleId": "asset-details##xdm:additionalDetails##title##52031",
+                  "meta:descriptionId": "asset-details##xdm:additionalDetails##description##67251"
                 }
-              }
+              },
+              "meta:titleId": "asset-details##xdm:assetDetails##title##11071",
+              "meta:descriptionId": "asset-details##xdm:assetDetails##description##80891"
             }
           }
         }
@@ -415,5 +557,7 @@
       "$ref": "#/definitions/asset-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "asset-details##title##80011",
+  "meta:descriptionId": "asset-details##description##93761"
 }

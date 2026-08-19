@@ -23,27 +23,37 @@
             "xdm:conciergeID": {
               "title": "Concierge ID",
               "type": "string",
-              "description": "Unique identifier for the concierge"
+              "description": "Unique identifier for the concierge",
+              "meta:titleId": "agenticevent##xdm:conciergeID##title##84451",
+              "meta:descriptionId": "agenticevent##xdm:conciergeID##description##26401"
             },
             "xdm:name": {
               "title": "Concierge Name",
               "type": "string",
-              "description": "Name of the concierge combining a set of agents"
+              "description": "Name of the concierge combining a set of agents",
+              "meta:titleId": "agenticevent##xdm:name##title##91221",
+              "meta:descriptionId": "agenticevent##xdm:name##description##31581"
             },
             "xdm:version": {
               "title": "Concierge Version",
               "type": "string",
-              "description": "Version of the concierge combining a set of agents"
+              "description": "Version of the concierge combining a set of agents",
+              "meta:titleId": "agenticevent##xdm:version##title##15321",
+              "meta:descriptionId": "agenticevent##xdm:version##description##55081"
             },
             "xdm:environment": {
               "title": "Environment",
               "type": "string",
-              "description": "Environment this event originated from (e.g. dev, stage, prod)"
+              "description": "Environment this event originated from (e.g. dev, stage, prod)",
+              "meta:titleId": "agenticevent##xdm:environment##title##8021",
+              "meta:descriptionId": "agenticevent##xdm:environment##description##1301"
             },
             "xdm:mode": {
               "title": "Mode",
               "type": "string",
-              "description": "Mode this event was created in (e.g. test, preview, release)"
+              "description": "Mode this event was created in (e.g. test, preview, release)",
+              "meta:titleId": "agenticevent##xdm:mode##title##12521",
+              "meta:descriptionId": "agenticevent##xdm:mode##description##82171"
             },
             "xdm:agents": {
               "type": "array",
@@ -55,22 +65,30 @@
                   "xdm:agentID": {
                     "title": "Agent ID",
                     "type": "string",
-                    "description": "Unique identifier for the agent"
+                    "description": "Unique identifier for the agent",
+                    "meta:titleId": "agenticevent##xdm:agentID##title##25901",
+                    "meta:descriptionId": "agenticevent##xdm:agentID##description##20301"
                   },
                   "xdm:name": {
                     "title": "Agent Name",
                     "type": "string",
-                    "description": "Name of the agent component"
+                    "description": "Name of the agent component",
+                    "meta:titleId": "agenticevent##xdm:name##title##7631",
+                    "meta:descriptionId": "agenticevent##xdm:name##description##45321"
                   },
                   "xdm:version": {
                     "title": "Agent Version",
                     "type": "string",
-                    "description": "Version of the agent component"
+                    "description": "Version of the agent component",
+                    "meta:titleId": "agenticevent##xdm:version##title##76931",
+                    "meta:descriptionId": "agenticevent##xdm:version##description##76701"
                   },
                   "xdm:score": {
                     "title": "Agent Matching Score",
                     "type": "number",
-                    "description": "Score used by orchestration engine matching the agent"
+                    "description": "Score used by orchestration engine matching the agent",
+                    "meta:titleId": "agenticevent##xdm:score##title##41861",
+                    "meta:descriptionId": "agenticevent##xdm:score##description##57531"
                   },
                   "xdm:skills": {
                     "type": "array",
@@ -82,27 +100,37 @@
                         "xdm:skillID": {
                           "title": "Skill ID",
                           "type": "string",
-                          "description": "Unique identifier for the skill"
+                          "description": "Unique identifier for the skill",
+                          "meta:titleId": "agenticevent##xdm:skillID##title##77031",
+                          "meta:descriptionId": "agenticevent##xdm:skillID##description##28251"
                         },
                         "xdm:name": {
                           "title": "Skill Name",
                           "type": "string",
-                          "description": "Name of skill used under the agent"
+                          "description": "Name of skill used under the agent",
+                          "meta:titleId": "agenticevent##xdm:name##title##98591",
+                          "meta:descriptionId": "agenticevent##xdm:name##description##96171"
                         },
                         "xdm:version": {
                           "title": "Skill Version",
                           "type": "string",
-                          "description": "Version of the skill provided by the agent"
+                          "description": "Version of the skill provided by the agent",
+                          "meta:titleId": "agenticevent##xdm:version##title##47871",
+                          "meta:descriptionId": "agenticevent##xdm:version##description##16231"
                         },
                         "xdm:score": {
                           "title": "Skill Matching Score",
                           "type": "number",
-                          "description": "Score resulting from the agent matching to the skill"
+                          "description": "Score resulting from the agent matching to the skill",
+                          "meta:titleId": "agenticevent##xdm:score##title##30941",
+                          "meta:descriptionId": "agenticevent##xdm:score##description##21011"
                         },
                         "xdm:failed": {
                           "title": "Skill Failed",
                           "type": "boolean",
-                          "description": "Flag stating that the skill execution failed"
+                          "description": "Flag stating that the skill execution failed",
+                          "meta:titleId": "agenticevent##xdm:failed##title##24961",
+                          "meta:descriptionId": "agenticevent##xdm:failed##description##38021"
                         },
                         "xdm:parameters": {
                           "type": "array",
@@ -110,15 +138,23 @@
                           "description": "Parameters passed in to the skill of the agent",
                           "items": {
                             "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
-                          }
+                          },
+                          "meta:titleId": "agenticevent##xdm:parameters##title##89521",
+                          "meta:descriptionId": "agenticevent##xdm:parameters##description##62541"
                         }
                       }
-                    }
+                    },
+                    "meta:titleId": "agenticevent##xdm:skills##title##24861",
+                    "meta:descriptionId": "agenticevent##xdm:skills##description##79911"
                   }
                 }
-              }
+              },
+              "meta:titleId": "agenticevent##xdm:agents##title##94991",
+              "meta:descriptionId": "agenticevent##xdm:agents##description##82651"
             }
-          }
+          },
+          "meta:titleId": "agenticevent##xdm:agenticExperience##title##63141",
+          "meta:descriptionId": "agenticevent##xdm:agenticExperience##description##6061"
         }
       }
     }
@@ -127,7 +163,11 @@
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
-    { "$ref": "#/definitions/agenticExperience" }
+    {
+      "$ref": "#/definitions/agenticExperience"
+    }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "agenticevent##title##41761",
+  "meta:descriptionId": "agenticevent##description##94561"
 }

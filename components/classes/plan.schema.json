@@ -19,12 +19,16 @@
         "xdm:planID": {
           "title": "Plan ID",
           "type": "string",
-          "description": "Unique identifier of the plan."
+          "description": "Unique identifier of the plan.",
+          "meta:titleId": "plan##xdm:planID##title##64951",
+          "meta:descriptionId": "plan##xdm:planID##description##90951"
         },
         "xdm:planName": {
           "title": "Plan Name",
           "type": "string",
-          "description": "Name of the plan."
+          "description": "Name of the plan.",
+          "meta:titleId": "plan##xdm:planName##title##28411",
+          "meta:descriptionId": "plan##xdm:planName##description##35561"
         }
       }
     }
@@ -37,5 +41,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "plan##title##6141",
+  "meta:descriptionId": "plan##description##93401"
 }

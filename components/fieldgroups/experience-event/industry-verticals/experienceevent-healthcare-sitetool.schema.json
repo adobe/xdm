@@ -31,12 +31,14 @@
             "xdm:name": {
               "Title": "Site Tool Name",
               "type": "string",
-              "description": "Name of the site tool. I.e., chatbot, survey, questionnaire."
+              "description": "Name of the site tool. I.e., chatbot, survey, questionnaire.",
+              "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:name##description##92361"
             },
             "xdm:section": {
               "Title": "Site Tool Section",
               "type": "string",
-              "description": "Section of the site tool. I.e., main, sub, etc."
+              "description": "Section of the site tool. I.e., main, sub, etc.",
+              "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:section##description##64911"
             },
             "xdm:actor": {
               "Title": "Actor",
@@ -46,12 +48,19 @@
                 "Member": "Member",
                 "Practitioner": "Practitioner",
                 "RelatedPerson": "RelatedPerson"
+              },
+              "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:actor##description##73481",
+              "meta:enumId": {
+                "Member": "experienceevent-healthcare-sitetool##xdm:actor##meta:enum##Member##39391",
+                "Practitioner": "experienceevent-healthcare-sitetool##xdm:actor##meta:enum##Practitioner##75341",
+                "RelatedPerson": "experienceevent-healthcare-sitetool##xdm:actor##meta:enum##RelatedPerson##98331"
               }
             },
             "xdm:actorID": {
               "Title": "Actor ID",
               "type": "string",
-              "description": "Reference to the actor who could be a member,practionner or a relatedperson."
+              "description": "Reference to the actor who could be a member,practionner or a relatedperson.",
+              "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:actorID##description##66571"
             },
             "xdm:dataGatheringEvent": {
               "Title": "Data Gathering Event",
@@ -61,7 +70,8 @@
                 "xdm:isTrue": {
                   "Title": "Is True",
                   "type": "boolean",
-                  "description": "Indicates if this event is a data gathering event like quiz,survey, poll."
+                  "description": "Indicates if this event is a data gathering event like quiz,survey, poll.",
+                  "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:isTrue##description##49981"
                 },
                 "xdm:data": {
                   "Title": "Data",
@@ -74,29 +84,36 @@
                       "xdm:question": {
                         "Title": "Question",
                         "type": "string",
-                        "description": "Question of for which the response is collected."
+                        "description": "Question of for which the response is collected.",
+                        "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:question##description##91691"
                       },
                       "xdm:response": {
                         "Title": "Response",
                         "type": "string",
-                        "description": "Response provided by the actor."
+                        "description": "Response provided by the actor.",
+                        "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:response##description##38151"
                       }
                     }
-                  }
+                  },
+                  "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:data##description##60251"
                 },
                 "xdm:score": {
                   "Title": "Score",
                   "type": "integer",
-                  "description": "Score secured by the actor based on event responses."
+                  "description": "Score secured by the actor based on event responses.",
+                  "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:score##description##701"
                 }
-              }
+              },
+              "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:dataGatheringEvent##description##49761"
             },
             "xdm:isKeyEvent": {
               "Title": "Is Key Event",
               "type": "boolean",
-              "description": "Indicates if this event is a key event."
+              "description": "Indicates if this event is a key event.",
+              "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:isKeyEvent##description##12111"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-healthcare-sitetool##xdm:sitetool##description##63971"
         }
       }
     }
@@ -106,5 +123,7 @@
       "$ref": "#/definitions/sitetool-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-healthcare-sitetool##title##7711",
+  "meta:descriptionId": "experienceevent-healthcare-sitetool##description##95091"
 }

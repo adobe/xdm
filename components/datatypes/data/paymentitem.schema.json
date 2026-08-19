@@ -44,7 +44,18 @@
             "other": "Other"
           },
           "meta:titleId": "paymentitem##xdm:paymentType##title##76411",
-          "meta:descriptionId": "paymentitem##xdm:paymentType##description##72701"
+          "meta:descriptionId": "paymentitem##xdm:paymentType##description##72701",
+          "meta:enumId": {
+            "cash": "paymentitem##xdm:paymentType##meta:enum##cash##51501",
+            "credit_card": "paymentitem##xdm:paymentType##meta:enum##credit_card##86221",
+            "debit_card": "paymentitem##xdm:paymentType##meta:enum##debit_card##57061",
+            "gift_card": "paymentitem##xdm:paymentType##meta:enum##gift_card##28701",
+            "check": "paymentitem##xdm:paymentType##meta:enum##check##34021",
+            "paypal": "paymentitem##xdm:paymentType##meta:enum##paypal##58131",
+            "wire_transfer": "paymentitem##xdm:paymentType##meta:enum##wire_transfer##29051",
+            "credit_card_reference": "paymentitem##xdm:paymentType##meta:enum##credit_card_reference##30271",
+            "other": "paymentitem##xdm:paymentType##meta:enum##other##52341"
+          }
         },
         "xdm:currencyCode": {
           "title": "Currency Code",

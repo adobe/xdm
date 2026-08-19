@@ -24,17 +24,23 @@
             "xdm:version": {
               "title": "Version",
               "type": "string",
-              "description": "Asset version."
+              "description": "Asset version.",
+              "meta:titleId": "digital-asset##xdm:version##title##26761",
+              "meta:descriptionId": "digital-asset##xdm:version##description##72931"
             },
             "xdm:perceptionID": {
               "title": "Perception Id",
               "type": "string",
-              "description": "Unique identifier of the asset perception."
+              "description": "Unique identifier of the asset perception.",
+              "meta:titleId": "digital-asset##xdm:perceptionID##title##83991",
+              "meta:descriptionId": "digital-asset##xdm:perceptionID##description##38881"
             },
             "xdm:idSource": {
               "title": "idSource",
               "type": "string",
-              "description": "The source that created the id for this asset."
+              "description": "The source that created the id for this asset.",
+              "meta:titleId": "digital-asset##xdm:idSource##title##8271",
+              "meta:descriptionId": "digital-asset##xdm:idSource##description##60801"
             },
             "xdm:assetSource": {
               "title": "assetSource",
@@ -44,35 +50,49 @@
                 "xdm:platform": {
                   "title": "Source Platform",
                   "type": "string",
-                  "description": "The source that created this asset such as ACA or AGS."
+                  "description": "The source that created this asset such as ACA or AGS.",
+                  "meta:titleId": "digital-asset##xdm:platform##title##42381",
+                  "meta:descriptionId": "digital-asset##xdm:platform##description##50681"
                 },
                 "xdm:sourceID": {
                   "title": "Source ID",
                   "type": "string",
-                  "description": "The id of the asset from the given source."
+                  "description": "The id of the asset from the given source.",
+                  "meta:titleId": "digital-asset##xdm:sourceID##title##89931",
+                  "meta:descriptionId": "digital-asset##xdm:sourceID##description##94021"
                 }
-              }
+              },
+              "meta:titleId": "digital-asset##xdm:assetSource##title##77521",
+              "meta:descriptionId": "digital-asset##xdm:assetSource##description##3501"
             },
             "xdm:name": {
               "title": "Name",
               "type": "string",
-              "description": "Asset name."
+              "description": "Asset name.",
+              "meta:titleId": "digital-asset##xdm:name##title##16431",
+              "meta:descriptionId": "digital-asset##xdm:name##description##7121"
             },
             "xdm:description": {
               "title": "Description",
               "type": "string",
-              "description": "Asset description."
+              "description": "Asset description.",
+              "meta:titleId": "digital-asset##xdm:description##title##28311",
+              "meta:descriptionId": "digital-asset##xdm:description##description##34311"
             },
             "xdm:assetType": {
               "title": "Asset Type",
               "type": "string",
-              "description": "Asset type such as image or video."
+              "description": "Asset type such as image or video.",
+              "meta:titleId": "digital-asset##xdm:assetType##title##41401",
+              "meta:descriptionId": "digital-asset##xdm:assetType##description##60641"
             },
             "xdm:thumbnailURL": {
               "title": "Thumbnail URL",
               "format": "uri",
               "type": "string",
-              "description": "Asset thumbnail url."
+              "description": "Asset thumbnail url.",
+              "meta:titleId": "digital-asset##xdm:thumbnailURL##title##54891",
+              "meta:descriptionId": "digital-asset##xdm:thumbnailURL##description##17381"
             },
             "xdm:additionalIDs": {
               "title": "Additional IDs",
@@ -84,17 +104,25 @@
                   "xdm:platform": {
                     "title": "Platform",
                     "type": "string",
-                    "description": "Platform such as Meta, DV360, or ACA."
+                    "description": "Platform such as Meta, DV360, or ACA.",
+                    "meta:titleId": "digital-asset##xdm:platform##title##57391",
+                    "meta:descriptionId": "digital-asset##xdm:platform##description##27961"
                   },
                   "xdm:platformID": {
                     "title": "Platform ID",
                     "type": "string",
-                    "description": "The asset identifier for the given platform."
+                    "description": "The asset identifier for the given platform.",
+                    "meta:titleId": "digital-asset##xdm:platformID##title##90871",
+                    "meta:descriptionId": "digital-asset##xdm:platformID##description##18541"
                   }
                 }
-              }
+              },
+              "meta:titleId": "digital-asset##xdm:additionalIDs##title##39191",
+              "meta:descriptionId": "digital-asset##xdm:additionalIDs##description##32321"
             }
-          }
+          },
+          "meta:titleId": "digital-asset##xdm:digitalAsset##title##28531",
+          "meta:descriptionId": "digital-asset##xdm:digitalAsset##description##68731"
         }
       }
     }
@@ -113,5 +141,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/featurizationattributes"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "digital-asset##title##36131",
+  "meta:descriptionId": "digital-asset##description##44841"
 }

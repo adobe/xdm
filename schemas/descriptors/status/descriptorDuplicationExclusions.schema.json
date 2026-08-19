@@ -21,7 +21,8 @@
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:descriptorDuplicationExclusions"
+          "const": "xdm:descriptorDuplicationExclusions",
+          "meta:titleId": "descriptorDuplicationExclusions##@type##title##55791"
         }
       },
       "required": ["xdm:sourceProperty"]
@@ -36,5 +37,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2025-09-24"
+  "meta:createdDate": "2025-09-24",
+  "meta:titleId": "descriptorDuplicationExclusions##title##20041",
+  "meta:descriptionId": "descriptorDuplicationExclusions##description##36181"
 }

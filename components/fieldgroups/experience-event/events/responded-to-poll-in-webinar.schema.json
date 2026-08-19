@@ -37,33 +37,46 @@
                     "xdm:campaignName": {
                       "title": "Campaign Name",
                       "type": "string",
-                      "description": "Name of the campaign."
+                      "description": "Name of the campaign.",
+                      "meta:titleId": "responded-to-poll-in-webinar##xdm:campaignName##title##80011",
+                      "meta:descriptionId": "responded-to-poll-in-webinar##xdm:campaignName##description##39331"
                     },
                     "xdm:campaignID": {
                       "title": "Campaign ID",
                       "type": "string",
-                      "description": "Unique identifier of the campaign."
+                      "description": "Unique identifier of the campaign.",
+                      "meta:titleId": "responded-to-poll-in-webinar##xdm:campaignID##title##86251",
+                      "meta:descriptionId": "responded-to-poll-in-webinar##xdm:campaignID##description##13821"
                     },
                     "xdm:question": {
                       "title": "Poll Question",
                       "type": "string",
-                      "description": "The poll question asked during the webinar."
+                      "description": "The poll question asked during the webinar.",
+                      "meta:titleId": "responded-to-poll-in-webinar##xdm:question##title##19911",
+                      "meta:descriptionId": "responded-to-poll-in-webinar##xdm:question##description##821"
                     },
                     "xdm:response": {
                       "title": "Poll Response",
                       "type": "string",
-                      "description": "The response to the poll question."
+                      "description": "The response to the poll question.",
+                      "meta:titleId": "responded-to-poll-in-webinar##xdm:response##title##57351",
+                      "meta:descriptionId": "responded-to-poll-in-webinar##xdm:response##description##20351"
                     },
                     "xdm:campaignKey": {
                       "title": "Campaign Key",
                       "description": "Unique key of the campaign.",
-                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                      "meta:titleId": "responded-to-poll-in-webinar##xdm:campaignKey##title##56931",
+                      "meta:descriptionId": "responded-to-poll-in-webinar##xdm:campaignKey##description##58351"
                     }
-                  }
+                  },
+                  "meta:titleId": "responded-to-poll-in-webinar##xdm:pollResponse##title##2161"
                 }
-              }
+              },
+              "meta:titleId": "responded-to-poll-in-webinar##xdm:webinar##title##85431"
             }
-          }
+          },
+          "meta:titleId": "responded-to-poll-in-webinar##xdm:leadOperation##title##49881"
         }
       }
     }
@@ -74,5 +87,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-10"
+  "meta:createdDate": "2025-01-10",
+  "meta:titleId": "responded-to-poll-in-webinar##title##57211",
+  "meta:descriptionId": "responded-to-poll-in-webinar##description##46051"
 }

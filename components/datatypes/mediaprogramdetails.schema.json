@@ -18,18 +18,24 @@
         "xdm:name": {
           "title": "Content Name",
           "type": "string",
-          "description": "This is the “friendly” (human-readable) name of the content. It will be used to create a Media Event of type ScheduleData with this value as friendly name."
+          "description": "This is the “friendly” (human-readable) name of the content. It will be used to create a Media Event of type ScheduleData with this value as friendly name.",
+          "meta:titleId": "mediaProgramDetails##xdm:name##title##87451",
+          "meta:descriptionId": "mediaProgramDetails##xdm:name##description##16091"
         },
         "xdm:length": {
           "title": "Media Content Length",
           "type": "integer",
-          "description": "Program Length - This is the length (or duration) of the program (in seconds)."
+          "description": "Program Length - This is the length (or duration) of the program (in seconds).",
+          "meta:titleId": "mediaProgramDetails##xdm:length##title##67831",
+          "meta:descriptionId": "mediaProgramDetails##xdm:length##description##5371"
         },
         "xdm:startTimestamp": {
           "title": "Timestamp of the Start of the Program",
           "type": "string",
           "format": "date-time",
-          "description": "The time when a program was started."
+          "description": "The time when a program was started.",
+          "meta:titleId": "mediaProgramDetails##xdm:startTimestamp##title##541",
+          "meta:descriptionId": "mediaProgramDetails##xdm:startTimestamp##description##99641"
         }
       },
       "required": ["xdm:name", "xdm:length", "xdm:startTimestamp"]
@@ -39,5 +45,7 @@
     {
       "$ref": "#/definitions/mediaProgramDetails"
     }
-  ]
+  ],
+  "meta:titleId": "mediaProgramDetails##title##5471",
+  "meta:descriptionId": "mediaProgramDetails##description##20201"
 }

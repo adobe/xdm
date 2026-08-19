@@ -46,7 +46,17 @@
             "usenet": "Usenet newsgroup"
           },
           "meta:titleId": "webreferrer##xdm:type##title##46481",
-          "meta:descriptionId": "webreferrer##xdm:type##description##97471"
+          "meta:descriptionId": "webreferrer##xdm:type##description##97471",
+          "meta:enumId": {
+            "internal": "webreferrer##xdm:type##meta:enum##internal##64231",
+            "external": "webreferrer##xdm:type##meta:enum##external##45421",
+            "search_engine": "webreferrer##xdm:type##meta:enum##search_engine##98211",
+            "typed_bookmarked": "webreferrer##xdm:type##meta:enum##typed_bookmarked##24201",
+            "email": "webreferrer##xdm:type##meta:enum##email##73691",
+            "social": "webreferrer##xdm:type##meta:enum##social##4151",
+            "unknown": "webreferrer##xdm:type##meta:enum##unknown##9271",
+            "usenet": "webreferrer##xdm:type##meta:enum##usenet##96731"
+          }
         }
       }
     }

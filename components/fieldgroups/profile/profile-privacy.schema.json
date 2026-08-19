@@ -39,7 +39,11 @@
                       "sales_sharing_opt_out": "Sales sharing opt-out"
                     },
                     "meta:titleId": "profile-privacy##xdm:optOutType##title##14671",
-                    "meta:descriptionId": "profile-privacy##xdm:optOutType##description##23971"
+                    "meta:descriptionId": "profile-privacy##xdm:optOutType##description##23971",
+                    "meta:enumId": {
+                      "general_opt_out": "profile-privacy##xdm:optOutType##meta:enum##general_opt_out##89001",
+                      "sales_sharing_opt_out": "profile-privacy##xdm:optOutType##meta:enum##sales_sharing_opt_out##89151"
+                    }
                   },
                   "xdm:optOutValue": {
                     "title": "Opt-out value",
@@ -53,7 +57,13 @@
                       "out": "Opt-out"
                     },
                     "meta:titleId": "profile-privacy##xdm:optOutValue##title##53741",
-                    "meta:descriptionId": "profile-privacy##xdm:optOutValue##description##20711"
+                    "meta:descriptionId": "profile-privacy##xdm:optOutValue##description##20711",
+                    "meta:enumId": {
+                      "not_provided": "profile-privacy##xdm:optOutValue##meta:enum##not_provided##96641",
+                      "pending": "profile-privacy##xdm:optOutValue##meta:enum##pending##86381",
+                      "in": "profile-privacy##xdm:optOutValue##meta:enum##in##58001",
+                      "out": "profile-privacy##xdm:optOutValue##meta:enum##out##72321"
+                    }
                   },
                   "xdm:timestamp": {
                     "title": "Opt-out timestamp",

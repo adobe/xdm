@@ -33,6 +33,13 @@ function addmetaTitleAndDecription(files){
 function addMetaId(obj, val,path,schemaname) {
     for (var i in obj) {
         if (!obj.hasOwnProperty(i)) continue;
+        if ((i === "meta:enum" || i === "meta:enumId") && obj[i] !== null && typeof obj[i] === 'object'
+            && !Array.isArray(obj[i]) && !obj[i].hasOwnProperty("type")) {
+            // obj[i] is an enum value->label map, not a nested schema object;
+            // its keys are enum values (which can collide with "title"/"description")
+            // and must not be mistaken for schema properties.
+            continue;
+        }
         if (typeof obj[i] == 'object') {
             addMetaId(obj[i], val,i,schemaname);
         } else if (i == val) {
@@ -57,7 +64,8 @@ function addMetaId(obj, val,path,schemaname) {
 function addEnumMetaIds(obj, path, schemaname) {
     for (var i in obj) {
         if (!obj.hasOwnProperty(i)) continue;
-        if (i === "meta:enum" && obj[i] !== null && typeof obj[i] === 'object' && !Array.isArray(obj[i])) {
+        if (i === "meta:enum" && obj[i] !== null && typeof obj[i] === 'object' && !Array.isArray(obj[i])
+            && !obj[i].hasOwnProperty("type")) {
             var enumLabels = obj[i];
             if (!obj.hasOwnProperty("meta:enumId")) {
                 obj["meta:enumId"] = {};

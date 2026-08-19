@@ -22,40 +22,10 @@
   "alternateDisplayInfo##xdm:note##description##59021": "When present, user friendly note to display. Similar to a description, but provides more details about the actual usage of the field.",
   "alternateDisplayInfo##meta:enum##title##76551": "Extended meta:enum values",
   "alternateDisplayInfo##xdm:excludeMetaEnum##title##13941": "Exclude meta:enum values",
-  "alternateDisplayInfo##properties##meta:enum##title##27931": "Extended meta:enum values",
-  "alternateDisplayInfo##properties##meta:enum##type##97561": "object",
-  "alternateDisplayInfo##properties##meta:enum##patternProperties##34231": {
-    ".+_.+": {
-      "oneOf": [
-        {
-          "type": "object"
-        },
-        {
-          "type": "string"
-        }
-      ]
-    }
-  },
-  "alternateDisplayInfo##properties##meta:enum##meta:titleId##88581": "alternateDisplayInfo##properties##meta:enum##title##27931",
   "alternateDisplayInfo##title##66501": "Friendly Name Descriptor",
   "alternateDisplayInfo##description##60941": "Allows to modify the \"title\" and \"description\" values of the core library schema fields. UI can use these to show a more friendly name for a standard field or to only show fields that have friendly names.",
   "descriptorMetaEnumRemove##@type##title##4421": "Type",
   "descriptorMetaEnumRemove##meta:enum##title##37811": "Extended meta:enum values",
-  "descriptorMetaEnumRemove##properties##meta:enum##title##73251": "Extended meta:enum values",
-  "descriptorMetaEnumRemove##properties##meta:enum##type##86061": "object",
-  "descriptorMetaEnumRemove##properties##meta:enum##patternProperties##44451": {
-    ".+_.+": {
-      "oneOf": [
-        {
-          "type": "object"
-        },
-        {
-          "type": "string"
-        }
-      ]
-    }
-  },
-  "descriptorMetaEnumRemove##properties##meta:enum##meta:titleId##2221": "descriptorMetaEnumRemove##properties##meta:enum##title##73251",
   "descriptorMetaEnumRemove##title##99171": "Remove MetaEnum Values Descriptor",
   "descriptorMetaEnumRemove##description##17491": "Allows to remove values from meta:enum.",
   "descriptorIdentity##@type##title##12131": "Type",
@@ -1396,7 +1366,6 @@
   "loan##xdm:fees##description##63201": "Tracks any fees or commissions applied to the loan.",
   "loan##xdm:gracePeriod##title##75241": "Grace Period",
   "loan##xdm:gracePeriod##description##74671": "Tracks the number of days a borrow has to issue a loan payment before the loan is considered to be in default.",
-  "loan##meta:enum##title##11511": "Title",
   "loan##xdm:loanType##title##10591": "Loan Type",
   "loan##xdm:loanType##description##48731": "Records the type of loan issued.",
   "loan##xdm:loanType##meta:enum##personal##33151": "Personal",

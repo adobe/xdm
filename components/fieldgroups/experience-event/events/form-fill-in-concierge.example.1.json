@@ -12,6 +12,7 @@
     "xdm:formFillInConcierge": {
       "xdm:source": "live_agent_service",
       "xdm:sessionId": "session-1234567890",
+      "xdm:conversationId": "conversation-abcdef1234",
       "xdm:conciergeDetails": {
         "xdm:conciergeId": "0f6d4fbd614a23bc0a49412a"
       },

@@ -33,13 +33,18 @@
                   "description": "Producing service for this form fill. Selects the downstream lead-resolution path.",
                   "enum": ["live_agent_service"],
                   "meta:enum": {
-                    "live_agent_service": "Live Agent Service — consumer resolves the lead via the Marketo Integration Service upsert-lead call"
+                    "live_agent_service": "Live Agent Service — consumer resolves the lead via the downstream lead-management integration's upsert-lead call"
                   }
                 },
                 "xdm:sessionId": {
                   "title": "Session ID",
                   "type": "string",
                   "description": "Unique identifier for the Brand Concierge session."
+                },
+                "xdm:conversationId": {
+                  "title": "Conversation ID",
+                  "type": "string",
+                  "description": "Unique identifier for the conversation within the Brand Concierge session."
                 },
                 "xdm:conciergeDetails": {
                   "title": "Concierge Details",
@@ -83,7 +88,7 @@
                     "xdm:leadPrimaryIdentifier": {
                       "title": "Lead Primary Identifier",
                       "type": "string",
-                      "description": "Primary identifier for the lead as resolved by the producer's synchronous upsert against the downstream lead system (for example, Marketo). Optional: when present, the consumer trusts it and skips its own upsert; when absent, the consumer resolves the lead itself."
+                      "description": "Primary identifier for the lead as resolved by the producer's synchronous upsert against the downstream lead system. Optional: when present, the consumer trusts it and skips its own upsert; when absent, the consumer resolves the lead itself."
                     }
                   }
                 }

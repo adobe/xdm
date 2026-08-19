@@ -19,28 +19,6 @@
   "definitions": {
     "formfillinconcierge": {
       "properties": {
-        "xdm:tenant": {
-          "title": "Tenant",
-          "type": "object",
-          "description": "Identifies the producing tenant so the consumer can resolve the subscription/config. Populated by the producer; not derived from the partition key.",
-          "properties": {
-            "xdm:imsOrgId": {
-              "title": "IMS Org ID",
-              "type": "string",
-              "description": "IMS organization identifier of the producing tenant."
-            },
-            "xdm:sandboxName": {
-              "title": "Sandbox Name",
-              "type": "string",
-              "description": "Sandbox name of the producing tenant. Live Agent Service keys tenants on IMS org + sandbox name."
-            },
-            "xdm:instanceId": {
-              "title": "Instance ID",
-              "type": "string",
-              "description": "Brand Concierge instance (concierge) identifier that emitted the event."
-            }
-          }
-        },
         "xdm:engagement": {
           "title": "Engagement",
           "type": "object",
@@ -58,10 +36,21 @@
                     "live_agent_service": "Live Agent Service — consumer resolves the lead via the Marketo Integration Service upsert-lead call"
                   }
                 },
-                "xdm:bcSessionId": {
-                  "title": "BC Session ID",
+                "xdm:sessionId": {
+                  "title": "Session ID",
                   "type": "string",
-                  "description": "Brand Concierge session in which the form was submitted. Correlates the upserted lead to its session in the consumer."
+                  "description": "Unique identifier for the Brand Concierge session."
+                },
+                "xdm:conciergeDetails": {
+                  "title": "Concierge Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:conciergeId": {
+                      "title": "Concierge ID",
+                      "type": "string",
+                      "description": "Unique identifier for the Concierge."
+                    }
+                  }
                 },
                 "xdm:leadDetails": {
                   "title": "Lead Details",

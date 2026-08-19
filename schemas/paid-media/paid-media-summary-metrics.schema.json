@@ -46,6 +46,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/mixins/paid-media/denormalized-names"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/paid-media/measurement-run"
     }
   ],
   "meta:status": "stable",

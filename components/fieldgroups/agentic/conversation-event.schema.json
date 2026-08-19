@@ -64,13 +64,15 @@
             "xdm:signals": {
               "type": "array",
               "title": "Conversation Signals",
-              "description": "Signals based on this event and the conversation to date",
+              "description": "Derived signals based on this event and the conversation to date. Each entry is a single signal with its own scope.",
               "items": {
                 "type": "object",
+                "title": "Conversation Signal",
+                "description": "A single derived conversation signal for a given scope. The type discriminator indicates which typed value field (stringValue, numberValue, or booleanValue) is populated on each entry of values.",
                 "properties": {
                   "xdm:scope": {
                     "title": "Scope",
-                    "description": "Scope of inputs from which this set of signals is derived.",
+                    "description": "Scope of inputs from which this signal is derived.",
                     "type": "string",
                     "examples": [
                       "turn",
@@ -81,10 +83,77 @@
                     "meta:titleId": "conversationevent##xdm:scope##title##54191",
                     "meta:descriptionId": "conversationevent##xdm:scope##description##59981"
                   },
+                  "xdm:name": {
+                    "title": "Signal Name",
+                    "meta:status": "experimental",
+                    "type": "string",
+                    "description": "Identifier for this signal (for example 'subjects', 'intents', 'tones', 'sentiment', or any producer-defined signal). Producers can add new signal types without a schema change."
+                  },
+                  "xdm:type": {
+                    "title": "Signal Value Type",
+                    "meta:status": "experimental",
+                    "type": "string",
+                    "description": "Data type of this signal's values; tells consumers which typed value field is populated on each entry of values.",
+                    "enum": ["string", "number", "boolean"],
+                    "meta:enum": {
+                      "string": "Values carry stringValue (e.g. an intent, tone, or extracted phrase)",
+                      "number": "Values carry numberValue (e.g. a sentiment score or intensity)",
+                      "boolean": "Values carry booleanValue (a true/false flag)"
+                    }
+                  },
+                  "xdm:values": {
+                    "title": "Signal Values",
+                    "meta:status": "experimental",
+                    "type": "array",
+                    "description": "One or more values for this signal.",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:stringValue": {
+                          "title": "String Value",
+                          "type": "string",
+                          "description": "Populated when type is 'string'. A categorical value such as an intent, tone, or extracted phrase."
+                        },
+                        "xdm:numberValue": {
+                          "title": "Number Value",
+                          "type": "number",
+                          "description": "Populated when type is 'number'. For example a sentiment score from -1 to 1, or an intensity."
+                        },
+                        "xdm:booleanValue": {
+                          "title": "Boolean Value",
+                          "type": "boolean",
+                          "description": "Populated when type is 'boolean'. A true or false flag."
+                        },
+                        "xdm:confidence": {
+                          "title": "Confidence",
+                          "type": "number",
+                          "description": "Confidence the producer assigns to this value, from 0 to 1.",
+                          "minimum": 0,
+                          "maximum": 1
+                        },
+                        "xdm:qualifiers": {
+                          "title": "Qualifiers",
+                          "type": "array",
+                          "description": "Additional descriptors for this value, similar to keywords but more meaningful.",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "xdm:metadata": {
+                          "title": "Metadata",
+                          "type": "array",
+                          "description": "Producer-defined metadata for this value as key/value pairs (for example the context around a signal value).",
+                          "items": {
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
+                          }
+                        }
+                      }
+                    }
+                  },
                   "xdm:attributes": {
                     "title": "Attributes",
                     "type": "object",
-                    "description": "(DEPRECATED — use xdm:attributesMap) The set of derived signals for this scope. Superseded by xdm:attributesMap, which models signals as an extensible map keyed by signal id.",
+                    "description": "(DEPRECATED — emit one signals[] entry per signal, populating name, type, and values.) The set of derived signals for this scope. Superseded by the flat per-signal fields on each signals[] entry.",
                     "meta:status": "deprecated",
                     "properties": {
                       "xdm:subjects": {
@@ -190,107 +259,7 @@
                         },
                         "meta:titleId": "conversationevent##xdm:sentiment##title##23891"
                       }
-                    },
-                    "meta:titleId": "conversationevent##xdm:attributes##title##29341",
-                    "meta:descriptionId": "conversationevent##xdm:attributes##description##55621"
-                  },
-                  "xdm:attributesMap": {
-                    "title": "Signal Attributes Map",
-                    "type": "object",
-                    "description": "Map of signal id to signal value. The key is the signal identifier (for example 'subjects', 'intents', 'tones', 'sentiment', or any producer-defined signal). Supersedes xdm:attributes; new signal types require no schema change.",
-                    "meta:xdmType": "map",
-                    "meta:status": "experimental",
-                    "additionalProperties": {
-                      "type": "object",
-                      "title": "Conversation Signal",
-                      "description": "A single derived conversation signal. The xdm:type discriminator indicates which typed value field (xdm:stringValue, xdm:numberValue, or xdm:booleanValue) is populated on each entry of xdm:values.",
-                      "properties": {
-                        "xdm:type": {
-                          "title": "Signal Value Type",
-                          "type": "string",
-                          "description": "Data type of this signal's values; tells consumers which typed value field is populated on each entry of xdm:values.",
-                          "enum": ["string", "number", "boolean"],
-                          "meta:enum": {
-                            "string": "Values carry xdm:stringValue (e.g. an intent, tone, or extracted phrase)",
-                            "number": "Values carry xdm:numberValue (e.g. a sentiment score or intensity)",
-                            "boolean": "Values carry xdm:booleanValue (a true/false flag)"
-                          },
-                          "meta:titleId": "conversationevent##xdm:type##title##53611",
-                          "meta:descriptionId": "conversationevent##xdm:type##description##97941",
-                          "meta:enumId": {
-                            "string": "conversationevent##xdm:type##meta:enum##string##9841",
-                            "number": "conversationevent##xdm:type##meta:enum##number##66891",
-                            "boolean": "conversationevent##xdm:type##meta:enum##boolean##23331"
-                          }
-                        },
-                        "xdm:values": {
-                          "title": "Signal Values",
-                          "type": "array",
-                          "description": "One or more values for this signal.",
-                          "items": {
-                            "type": "object",
-                            "properties": {
-                              "xdm:stringValue": {
-                                "title": "String Value",
-                                "type": "string",
-                                "description": "Populated when xdm:type is 'string'. A categorical value such as an intent, tone, or extracted phrase.",
-                                "meta:titleId": "conversationevent##xdm:stringValue##title##46191",
-                                "meta:descriptionId": "conversationevent##xdm:stringValue##description##35671"
-                              },
-                              "xdm:numberValue": {
-                                "title": "Number Value",
-                                "type": "number",
-                                "description": "Populated when xdm:type is 'number'. For example a sentiment score from -1 to 1, or an intensity.",
-                                "meta:titleId": "conversationevent##xdm:numberValue##title##75281",
-                                "meta:descriptionId": "conversationevent##xdm:numberValue##description##8941"
-                              },
-                              "xdm:booleanValue": {
-                                "title": "Boolean Value",
-                                "type": "boolean",
-                                "description": "Populated when xdm:type is 'boolean'. A true or false flag.",
-                                "meta:titleId": "conversationevent##xdm:booleanValue##title##49171",
-                                "meta:descriptionId": "conversationevent##xdm:booleanValue##description##58511"
-                              },
-                              "xdm:confidence": {
-                                "title": "Confidence",
-                                "type": "number",
-                                "description": "Confidence the producer assigns to this value, from 0 to 1.",
-                                "minimum": 0,
-                                "maximum": 1,
-                                "meta:titleId": "conversationevent##xdm:confidence##title##91741",
-                                "meta:descriptionId": "conversationevent##xdm:confidence##description##64001"
-                              },
-                              "xdm:qualifiers": {
-                                "title": "Qualifiers",
-                                "type": "array",
-                                "description": "Additional descriptors for this value, similar to keywords but more meaningful.",
-                                "items": {
-                                  "type": "string"
-                                },
-                                "meta:titleId": "conversationevent##xdm:qualifiers##title##88321",
-                                "meta:descriptionId": "conversationevent##xdm:qualifiers##description##69261"
-                              },
-                              "xdm:metadata": {
-                                "title": "Metadata",
-                                "type": "array",
-                                "description": "Producer-defined metadata for this value as key/value pairs (for example the context around a signal value). Modeled as an array of key/value pairs rather than a nested map so the enclosing xdm:attributesMap stays within the single-level map-depth limit.",
-                                "items": {
-                                  "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
-                                },
-                                "meta:titleId": "conversationevent##xdm:metadata##title##90491",
-                                "meta:descriptionId": "conversationevent##xdm:metadata##description##94571"
-                              }
-                            }
-                          },
-                          "meta:titleId": "conversationevent##xdm:values##title##66051",
-                          "meta:descriptionId": "conversationevent##xdm:values##description##18731"
-                        }
-                      },
-                      "meta:titleId": "conversationevent##additionalProperties##title##30931",
-                      "meta:descriptionId": "conversationevent##additionalProperties##description##79761"
-                    },
-                    "meta:titleId": "conversationevent##xdm:attributesMap##title##40251",
-                    "meta:descriptionId": "conversationevent##xdm:attributesMap##description##28881"
+                    }
                   }
                 }
               },

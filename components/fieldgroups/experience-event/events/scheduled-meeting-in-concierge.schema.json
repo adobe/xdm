@@ -32,9 +32,12 @@
                 "xdm:conciergeName": {
                   "title": "Concierge Name",
                   "type": "string",
-                  "description": "Name of the Concierge."
+                  "description": "Name of the Concierge.",
+                  "meta:titleId": "meeting-booked-concierge##xdm:conciergeName##title##4981",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:conciergeName##description##87731"
                 }
-              }
+              },
+              "meta:titleId": "meeting-booked-concierge##xdm:conciergeDetails##title##69591"
             },
             "xdm:consultantDetails": {
               "title": "Consultant details",
@@ -43,19 +46,26 @@
                 "xdm:consultantID": {
                   "title": "Consultant ID",
                   "type": "string",
-                  "description": "Unique Identifier for a Consultant"
+                  "description": "Unique Identifier for a Consultant",
+                  "meta:titleId": "meeting-booked-concierge##xdm:consultantID##title##19671",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:consultantID##description##32401"
                 },
                 "xdm:consultantEmail": {
                   "title": "Consultant Email",
                   "type": "string",
-                  "description": "Email address of the sales representative. Enables automated notifications and calendar integration."
+                  "description": "Email address of the sales representative. Enables automated notifications and calendar integration.",
+                  "meta:titleId": "meeting-booked-concierge##xdm:consultantEmail##title##36751",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:consultantEmail##description##84241"
                 },
                 "xdm:consultantName": {
                   "title": "Consultant Name",
                   "type": "string",
-                  "description": "Name of the sales representative with whom the meeting is scheduled. Enables sales team tracking and performance measurement."
+                  "description": "Name of the sales representative with whom the meeting is scheduled. Enables sales team tracking and performance measurement.",
+                  "meta:titleId": "meeting-booked-concierge##xdm:consultantName##title##83241",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:consultantName##description##67161"
                 }
-              }
+              },
+              "meta:titleId": "meeting-booked-concierge##xdm:consultantDetails##title##17811"
             },
             "xdm:meetingDetails": {
               "title": "Meeting Details",
@@ -64,43 +74,59 @@
                 "xdm:meetingStatus": {
                   "title": "Meeting Status",
                   "type": "string",
-                  "description": "Status of the scheduled meeting"
+                  "description": "Status of the scheduled meeting",
+                  "meta:titleId": "meeting-booked-concierge##xdm:meetingStatus##title##41911",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:meetingStatus##description##35261"
                 },
                 "xdm:scheduledFor": {
                   "title": "Scheduled At",
                   "type": "string",
                   "format": "date-time",
-                  "description": "Scheduled start time of the meeting"
+                  "description": "Scheduled start time of the meeting",
+                  "meta:titleId": "meeting-booked-concierge##xdm:scheduledFor##title##71051",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:scheduledFor##description##99531"
                 },
                 "xdm:routingType": {
                   "title": "Routing Type",
                   "type": "string",
-                  "description": "Routing type used for the meeting"
+                  "description": "Routing type used for the meeting",
+                  "meta:titleId": "meeting-booked-concierge##xdm:routingType##title##19081",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:routingType##description##32341"
                 },
                 "xdm:durationInMinutes": {
                   "title": "Meeting Duration",
                   "type": "integer",
-                  "description": "Duration of the scheduled meeting in minutes. Helps in calendar scheduling and time allocation."
+                  "description": "Duration of the scheduled meeting in minutes. Helps in calendar scheduling and time allocation.",
+                  "meta:titleId": "meeting-booked-concierge##xdm:durationInMinutes##title##99781",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:durationInMinutes##description##23651"
                 },
                 "xdm:createdAt": {
                   "title": "Created Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "ISO 8601 timestamp when the meeting was booked. Enables tracking of booking patterns and conversion timing."
+                  "description": "ISO 8601 timestamp when the meeting was booked. Enables tracking of booking patterns and conversion timing.",
+                  "meta:titleId": "meeting-booked-concierge##xdm:createdAt##title##5711",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:createdAt##description##66651"
                 },
                 "xdm:comments": {
                   "title": "Meeting Comments",
                   "type": "string",
-                  "description": "Comments from the meeting. Sales rep captures the context that can be used for other channels."
+                  "description": "Comments from the meeting. Sales rep captures the context that can be used for other channels.",
+                  "meta:titleId": "meeting-booked-concierge##xdm:comments##title##201",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:comments##description##47031"
                 }
-              }
+              },
+              "meta:titleId": "meeting-booked-concierge##xdm:meetingDetails##title##34711"
             },
             "xdm:conciergeKey": {
               "title": "Concierge Source",
               "description": "Source of the Concierge",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "meeting-booked-concierge##xdm:conciergeKey##title##64781",
+              "meta:descriptionId": "meeting-booked-concierge##xdm:conciergeKey##description##11221"
             }
-          }
+          },
+          "meta:titleId": "meeting-booked-concierge##xdm:scheduledmeeting##title##90681"
         }
       }
     }
@@ -111,5 +137,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-08-04"
+  "meta:createdDate": "2025-08-04",
+  "meta:titleId": "meeting-booked-concierge##title##23451",
+  "meta:descriptionId": "meeting-booked-concierge##description##82311"
 }

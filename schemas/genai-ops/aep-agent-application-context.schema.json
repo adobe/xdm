@@ -30,36 +30,43 @@
                   "properties": {
                     "xdm:userSurface": {
                       "type": "string",
-                      "description": "User interface surface where the request originated."
+                      "description": "User interface surface where the request originated.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:userSurface##description##18611"
                     },
                     "xdm:upstreamClient": {
                       "type": "string",
-                      "description": "Upstream client information for observability and feature flag management."
+                      "description": "Upstream client information for observability and feature flag management.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:upstreamClient##description##25771"
                     },
                     "xdm:pageName": {
                       "type": "string",
-                      "description": "Human-readable page name from the application."
+                      "description": "Human-readable page name from the application.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:pageName##description##64071"
                     },
                     "xdm:pageUrl": {
                       "type": "string",
-                      "description": "Full URL of the current page in the application."
+                      "description": "Full URL of the current page in the application.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:pageUrl##description##38191"
                     },
                     "xdm:dataview": {
                       "type": "object",
                       "properties": {
                         "xdm:id": {
                           "type": "string",
-                          "description": "Data view identifier (commonly used in analytics applications)."
+                          "description": "Data view identifier (commonly used in analytics applications).",
+                          "meta:descriptionId": "aep-agent-application-context##xdm:id##description##78641"
                         },
                         "xdm:name": {
                           "type": "string",
-                          "description": "The name of the dataview in the Adobe system."
+                          "description": "The name of the dataview in the Adobe system.",
+                          "meta:descriptionId": "aep-agent-application-context##xdm:name##description##42221"
                         }
                       }
                     },
                     "xdm:additionalAppContext": {
                       "type": "string",
-                      "description": "Additional application context in the Adobe system."
+                      "description": "Additional application context in the Adobe system.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:additionalAppContext##description##36871"
                     }
                   }
                 }
@@ -70,6 +77,12 @@
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/aep-agent-application-context" }],
-  "meta:status": "experimental"
+  "allOf": [
+    {
+      "$ref": "#/definitions/aep-agent-application-context"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "aep-agent-application-context##title##99841",
+  "meta:descriptionId": "aep-agent-application-context##description##20551"
 }

@@ -96,7 +96,21 @@
               },
               "description": "Type of claim submitted.",
               "meta:titleId": "experienceevent-insurance-claim-details##xdm:type##title##43121",
-              "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:type##description##10351"
+              "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:type##description##10351",
+              "meta:enumId": {
+                "product": "experienceevent-insurance-claim-details##xdm:type##meta:enum##product##55171",
+                "automobile": "experienceevent-insurance-claim-details##xdm:type##meta:enum##automobile##5171",
+                "renters": "experienceevent-insurance-claim-details##xdm:type##meta:enum##renters##38301",
+                "thirdPartyAutomobile": "experienceevent-insurance-claim-details##xdm:type##meta:enum##thirdPartyAutomobile##16671",
+                "thirdPartyHome": "experienceevent-insurance-claim-details##xdm:type##meta:enum##thirdPartyHome##37991",
+                "life": "experienceevent-insurance-claim-details##xdm:type##meta:enum##life##88421",
+                "health": "experienceevent-insurance-claim-details##xdm:type##meta:enum##health##26481",
+                "dental": "experienceevent-insurance-claim-details##xdm:type##meta:enum##dental##41791",
+                "vision": "experienceevent-insurance-claim-details##xdm:type##meta:enum##vision##25761",
+                "pet": "experienceevent-insurance-claim-details##xdm:type##meta:enum##pet##43921",
+                "flood": "experienceevent-insurance-claim-details##xdm:type##meta:enum##flood##34381",
+                "earthquake": "experienceevent-insurance-claim-details##xdm:type##meta:enum##earthquake##27121"
+              }
             }
           },
           "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:insuranceClaim##description##52781"

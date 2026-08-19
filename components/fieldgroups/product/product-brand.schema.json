@@ -21,13 +21,17 @@
           "title": "Product Page URL",
           "type": "string",
           "format": "uri",
-          "description": "The URL for the landing page of a product."
+          "description": "The URL for the landing page of a product.",
+          "meta:titleId": "product-brand##xdm:productPageURL##title##89021",
+          "meta:descriptionId": "product-brand##xdm:productPageURL##description##93541"
         },
         "xdm:productImageURL": {
           "title": "Product Image URL",
           "type": "string",
           "format": "uri",
-          "description": "The URL for the primary product image of the product."
+          "description": "The URL for the primary product image of the product.",
+          "meta:titleId": "product-brand##xdm:productImageURL##title##70991",
+          "meta:descriptionId": "product-brand##xdm:productImageURL##description##49071"
         }
       }
     }
@@ -37,5 +41,7 @@
       "$ref": "#/definitions/product-brand"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "product-brand##title##92351",
+  "meta:descriptionId": "product-brand##description##36751"
 }

@@ -22,32 +22,44 @@
             "xdm:createdBy": {
               "title": "Created By",
               "description": "Name of the user who created this record",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "contentaudit##xdm:createdBy##title##95411",
+              "meta:descriptionId": "contentaudit##xdm:createdBy##description##55051"
             },
             "xdm:createdDate": {
               "title": "Created Date",
               "description": "Date when this record was created.",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "contentaudit##xdm:createdDate##title##43741",
+              "meta:descriptionId": "contentaudit##xdm:createdDate##description##42571"
             },
             "xdm:lastUpdatedDate": {
               "title": "Last Updated Date",
               "description": "Date when this record was last modified.",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "contentaudit##xdm:lastUpdatedDate##title##871",
+              "meta:descriptionId": "contentaudit##xdm:lastUpdatedDate##description##20841"
             },
             "xdm:lastUpdatedBy": {
               "title": "Last Updated By",
               "description": "Service that last modified this record.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "contentaudit##xdm:lastUpdatedBy##title##97731",
+              "meta:descriptionId": "contentaudit##xdm:lastUpdatedBy##description##24961"
             },
             "xdm:expirationDate": {
               "title": "Expiration Date",
               "description": "Date when this record will expire.",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "contentaudit##xdm:expirationDate##title##59151",
+              "meta:descriptionId": "contentaudit##xdm:expirationDate##description##95031"
             }
-          }
+          },
+          "meta:titleId": "contentaudit##xdm:contentAudit##title##72531",
+          "meta:descriptionId": "contentaudit##xdm:contentAudit##description##42271"
         }
       }
     }
@@ -57,5 +69,7 @@
       "$ref": "#/definitions/content-audit"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "contentaudit##title##45911",
+  "meta:descriptionId": "contentaudit##description##24991"
 }

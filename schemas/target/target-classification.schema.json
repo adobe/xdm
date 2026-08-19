@@ -19,67 +19,93 @@
         "xdm:key": {
           "title": "Key",
           "type": "string",
-          "description": "The unique identity of activityId:experienceId:trafficTypeId:algorithmId"
+          "description": "The unique identity of activityId:experienceId:trafficTypeId:algorithmId",
+          "meta:titleId": "target-classification##xdm:key##title##36941",
+          "meta:descriptionId": "target-classification##xdm:key##description##9001"
         },
         "xdm:activityName": {
           "title": "Activity Name",
           "type": "string",
-          "description": "The name of the Target activity."
+          "description": "The name of the Target activity.",
+          "meta:titleId": "target-classification##xdm:activityName##title##66701",
+          "meta:descriptionId": "target-classification##xdm:activityName##description##46541"
         },
         "xdm:experienceName": {
           "title": "Experience Name",
           "type": "string",
-          "description": "The name of the Target experience."
+          "description": "The name of the Target experience.",
+          "meta:titleId": "target-classification##xdm:experienceName##title##90701",
+          "meta:descriptionId": "target-classification##xdm:experienceName##description##28881"
         },
         "xdm:activityExperience": {
           "title": "Activity Experience",
           "type": "string",
-          "description": "Target Activity name concatenated with experience name."
+          "description": "Target Activity name concatenated with experience name.",
+          "meta:titleId": "target-classification##xdm:activityExperience##title##97961",
+          "meta:descriptionId": "target-classification##xdm:activityExperience##description##96451"
         },
         "xdm:thirdID": {
           "title": "Third ID",
           "type": "string",
-          "description": "The third ID of the classification record."
+          "description": "The third ID of the classification record.",
+          "meta:titleId": "target-classification##xdm:thirdID##title##17611",
+          "meta:descriptionId": "target-classification##xdm:thirdID##description##87951"
         },
         "xdm:activityID": {
           "title": "Activity ID",
           "type": "string",
-          "description": "The identity of Target activity."
+          "description": "The identity of Target activity.",
+          "meta:titleId": "target-classification##xdm:activityID##title##8871",
+          "meta:descriptionId": "target-classification##xdm:activityID##description##7921"
         },
         "xdm:experienceID": {
           "title": "Experience ID",
           "type": "string",
-          "description": "The identity of Target experience."
+          "description": "The identity of Target experience.",
+          "meta:titleId": "target-classification##xdm:experienceID##title##13681",
+          "meta:descriptionId": "target-classification##xdm:experienceID##description##34021"
         },
         "xdm:analyticsReporting": {
           "title": "Analytics Reporting",
           "type": "string",
-          "description": "The reporting type associated with the Target activity."
+          "description": "The reporting type associated with the Target activity.",
+          "meta:titleId": "target-classification##xdm:analyticsReporting##title##69121",
+          "meta:descriptionId": "target-classification##xdm:analyticsReporting##description##8311"
         },
         "xdm:activeDates": {
           "title": "Active Dates",
           "type": "string",
-          "description": "The date of Target activity activation."
+          "description": "The date of Target activity activation.",
+          "meta:titleId": "target-classification##xdm:activeDates##title##63551",
+          "meta:descriptionId": "target-classification##xdm:activeDates##description##81831"
         },
         "xdm:controlExperience": {
           "title": "Control Experience",
           "type": "string",
-          "description": "The experience set as control experience in the Target activity."
+          "description": "The experience set as control experience in the Target activity.",
+          "meta:titleId": "target-classification##xdm:controlExperience##title##15481",
+          "meta:descriptionId": "target-classification##xdm:controlExperience##description##78821"
         },
         "xdm:algorithmID": {
           "title": "Algorithm ID",
           "type": "string",
-          "description": "The identity of the algorithm used in the Target activity."
+          "description": "The identity of the algorithm used in the Target activity.",
+          "meta:titleId": "target-classification##xdm:algorithmID##title##34551",
+          "meta:descriptionId": "target-classification##xdm:algorithmID##description##74771"
         },
         "xdm:controlVsTargeted": {
           "title": "Control VS Targeted",
           "type": "string",
-          "description": "The traffic allocation type for the Target activity."
+          "description": "The traffic allocation type for the Target activity.",
+          "meta:titleId": "target-classification##xdm:controlVsTargeted##title##13221",
+          "meta:descriptionId": "target-classification##xdm:controlVsTargeted##description##15121"
         },
         "xdm:trafficTypeID": {
           "title": "Traffic Type ID",
           "type": "string",
-          "description": "The identity of the traffic type associated with Target activity."
+          "description": "The identity of the traffic type associated with Target activity.",
+          "meta:titleId": "target-classification##xdm:trafficTypeID##title##60971",
+          "meta:descriptionId": "target-classification##xdm:trafficTypeID##description##53221"
         }
       },
       "required": [
@@ -100,5 +126,7 @@
       "$ref": "#/definitions/targetClassification"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "target-classification##title##95551",
+  "meta:descriptionId": "target-classification##description##95701"
 }

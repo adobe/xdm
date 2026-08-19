@@ -26,6 +26,13 @@
             "conversation.turn": "Conversation Turn",
             "conversation.recommendation": "Conversation Recommendation",
             "conversation.feedback": "Conversation Feedback"
+          },
+          "meta:titleId": "conversationevent##xdm:eventType##title##13121",
+          "meta:descriptionId": "conversationevent##xdm:eventType##description##7421",
+          "meta:enumId": {
+            "conversation.turn": "conversationevent##xdm:eventType##meta:enum##conversation.turn##94081",
+            "conversation.recommendation": "conversationevent##xdm:eventType##meta:enum##conversation.recommendation##95731",
+            "conversation.feedback": "conversationevent##xdm:eventType##meta:enum##conversation.feedback##48761"
           }
         },
         "xdm:conversation": {
@@ -36,17 +43,23 @@
             "xdm:conversationID": {
               "title": "Conversation ID",
               "type": "string",
-              "description": "ID to group several turns together"
+              "description": "ID to group several turns together",
+              "meta:titleId": "conversationevent##xdm:conversationID##title##37361",
+              "meta:descriptionId": "conversationevent##xdm:conversationID##description##37771"
             },
             "xdm:conversationName": {
               "title": "Conversation Name",
               "type": "string",
-              "description": "Name given to a conversation representing it's overall context"
+              "description": "Name given to a conversation representing it's overall context",
+              "meta:titleId": "conversationevent##xdm:conversationName##title##28461",
+              "meta:descriptionId": "conversationevent##xdm:conversationName##description##98431"
             },
             "xdm:turnID": {
               "title": "Turn ID",
               "type": "string",
-              "description": "A single instance of a prompt, response, and feedback"
+              "description": "A single instance of a prompt, response, and feedback",
+              "meta:titleId": "conversationevent##xdm:turnID##title##78061",
+              "meta:descriptionId": "conversationevent##xdm:turnID##description##72831"
             },
             "xdm:signals": {
               "type": "array",
@@ -66,13 +79,17 @@
                       "conversation-to-date",
                       "last-N-turns",
                       "feedback"
-                    ]
+                    ],
+                    "meta:titleId": "conversationevent##xdm:scope##title##58301",
+                    "meta:descriptionId": "conversationevent##xdm:scope##description##99131"
                   },
                   "xdm:name": {
                     "title": "Signal Name",
                     "meta:status": "experimental",
                     "type": "string",
-                    "description": "Identifier for this signal (for example 'subjects', 'intents', 'tones', 'sentiment', or any producer-defined signal). Producers can add new signal types without a schema change."
+                    "description": "Identifier for this signal (for example 'subjects', 'intents', 'tones', 'sentiment', or any producer-defined signal). Producers can add new signal types without a schema change.",
+                    "meta:titleId": "conversationevent##xdm:name##title##94081",
+                    "meta:descriptionId": "conversationevent##xdm:name##description##85851"
                   },
                   "xdm:type": {
                     "title": "Signal Value Type",
@@ -84,6 +101,13 @@
                       "string": "Values carry stringValue (e.g. an intent, tone, or extracted phrase)",
                       "number": "Values carry numberValue (e.g. a sentiment score or intensity)",
                       "boolean": "Values carry booleanValue (a true/false flag)"
+                    },
+                    "meta:titleId": "conversationevent##xdm:type##title##28491",
+                    "meta:descriptionId": "conversationevent##xdm:type##description##10661",
+                    "meta:enumId": {
+                      "string": "conversationevent##xdm:type##meta:enum##string##68321",
+                      "number": "conversationevent##xdm:type##meta:enum##number##13921",
+                      "boolean": "conversationevent##xdm:type##meta:enum##boolean##25991"
                     }
                   },
                   "xdm:values": {
@@ -97,24 +121,32 @@
                         "xdm:stringValue": {
                           "title": "String Value",
                           "type": "string",
-                          "description": "Populated when type is 'string'. A categorical value such as an intent, tone, or extracted phrase."
+                          "description": "Populated when type is 'string'. A categorical value such as an intent, tone, or extracted phrase.",
+                          "meta:titleId": "conversationevent##xdm:stringValue##title##6731",
+                          "meta:descriptionId": "conversationevent##xdm:stringValue##description##49811"
                         },
                         "xdm:numberValue": {
                           "title": "Number Value",
                           "type": "number",
-                          "description": "Populated when type is 'number'. For example a sentiment score from -1 to 1, or an intensity."
+                          "description": "Populated when type is 'number'. For example a sentiment score from -1 to 1, or an intensity.",
+                          "meta:titleId": "conversationevent##xdm:numberValue##title##64851",
+                          "meta:descriptionId": "conversationevent##xdm:numberValue##description##73771"
                         },
                         "xdm:booleanValue": {
                           "title": "Boolean Value",
                           "type": "boolean",
-                          "description": "Populated when type is 'boolean'. A true or false flag."
+                          "description": "Populated when type is 'boolean'. A true or false flag.",
+                          "meta:titleId": "conversationevent##xdm:booleanValue##title##5701",
+                          "meta:descriptionId": "conversationevent##xdm:booleanValue##description##79591"
                         },
                         "xdm:confidence": {
                           "title": "Confidence",
                           "type": "number",
                           "description": "Confidence the producer assigns to this value, from 0 to 1.",
                           "minimum": 0,
-                          "maximum": 1
+                          "maximum": 1,
+                          "meta:titleId": "conversationevent##xdm:confidence##title##92671",
+                          "meta:descriptionId": "conversationevent##xdm:confidence##description##90141"
                         },
                         "xdm:qualifiers": {
                           "title": "Qualifiers",
@@ -122,7 +154,9 @@
                           "description": "Additional descriptors for this value, similar to keywords but more meaningful.",
                           "items": {
                             "type": "string"
-                          }
+                          },
+                          "meta:titleId": "conversationevent##xdm:qualifiers##title##66431",
+                          "meta:descriptionId": "conversationevent##xdm:qualifiers##description##50491"
                         },
                         "xdm:metadata": {
                           "title": "Metadata",
@@ -130,10 +164,14 @@
                           "description": "Producer-defined metadata for this value as key/value pairs (for example the context around a signal value).",
                           "items": {
                             "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
-                          }
+                          },
+                          "meta:titleId": "conversationevent##xdm:metadata##title##49111",
+                          "meta:descriptionId": "conversationevent##xdm:metadata##description##21781"
                         }
                       }
-                    }
+                    },
+                    "meta:titleId": "conversationevent##xdm:values##title##22271",
+                    "meta:descriptionId": "conversationevent##xdm:values##description##60281"
                   },
                   "xdm:attributes": {
                     "title": "Attributes",
@@ -155,7 +193,9 @@
                                 "xdm:phrase": {
                                   "type": "string",
                                   "title": "Phrase",
-                                  "description": "A phrase or keyword extracted from the scoped input"
+                                  "description": "A phrase or keyword extracted from the scoped input",
+                                  "meta:titleId": "conversationevent##xdm:phrase##title##85261",
+                                  "meta:descriptionId": "conversationevent##xdm:phrase##description##78001"
                                 },
                                 "xdm:qualifiers": {
                                   "type": "array",
@@ -163,13 +203,19 @@
                                   "items": {
                                     "type": "string",
                                     "title": "Phrase Qualifiers",
-                                    "description": "List of qualifiers for the scoped input"
-                                  }
+                                    "description": "List of qualifiers for the scoped input",
+                                    "meta:titleId": "conversationevent##items##title##74271",
+                                    "meta:descriptionId": "conversationevent##items##description##20731"
+                                  },
+                                  "meta:titleId": "conversationevent##xdm:qualifiers##title##93361"
                                 }
-                              }
-                            }
+                              },
+                              "meta:descriptionId": "conversationevent##items##description##91471"
+                            },
+                            "meta:titleId": "conversationevent##xdm:values##title##33501"
                           }
-                        }
+                        },
+                        "meta:titleId": "conversationevent##xdm:subjects##title##84701"
                       },
                       "xdm:intents": {
                         "type": "object",
@@ -186,10 +232,14 @@
                                 "make a purchase",
                                 "learn more",
                                 "browsing"
-                              ]
-                            }
+                              ],
+                              "meta:titleId": "conversationevent##items##title##24521",
+                              "meta:descriptionId": "conversationevent##items##description##28501"
+                            },
+                            "meta:titleId": "conversationevent##xdm:values##title##8851"
                           }
-                        }
+                        },
+                        "meta:titleId": "conversationevent##xdm:intents##title##3761"
                       },
                       "xdm:tones": {
                         "type": "object",
@@ -202,10 +252,18 @@
                               "title": "Tone Values",
                               "description": "Tones derived from the scoped input",
                               "type": "string",
-                              "examples": ["thrilled", "contemplative", "upset"]
-                            }
+                              "examples": [
+                                "thrilled",
+                                "contemplative",
+                                "upset"
+                              ],
+                              "meta:titleId": "conversationevent##items##title##21361",
+                              "meta:descriptionId": "conversationevent##items##description##5261"
+                            },
+                            "meta:titleId": "conversationevent##xdm:values##title##89241"
                           }
-                        }
+                        },
+                        "meta:titleId": "conversationevent##xdm:tones##title##67611"
                       },
                       "xdm:sentiment": {
                         "type": "object",
@@ -215,16 +273,25 @@
                             "title": "Sentiment Value",
                             "type": "number",
                             "description": "Score from -1 (meaning negative) to 1 (indicating positive) to indicate sentiment",
-                            "minimum": -1.0,
-                            "maximum": 1.0,
-                            "examples": [-1.0, -0.34, 0, 0.7, 1.0]
+                            "minimum": -1,
+                            "maximum": 1,
+                            "examples": [-1, -0.34, 0, 0.7, 1],
+                            "meta:titleId": "conversationevent##xdm:value##title##95941",
+                            "meta:descriptionId": "conversationevent##xdm:value##description##55041"
                           }
-                        }
+                        },
+                        "meta:titleId": "conversationevent##xdm:sentiment##title##2931"
                       }
-                    }
+                    },
+                    "meta:titleId": "conversationevent##xdm:attributes##title##88271",
+                    "meta:descriptionId": "conversationevent##xdm:attributes##description##81291"
                   }
-                }
-              }
+                },
+                "meta:titleId": "conversationevent##items##title##68861",
+                "meta:descriptionId": "conversationevent##items##description##67671"
+              },
+              "meta:titleId": "conversationevent##xdm:signals##title##20741",
+              "meta:descriptionId": "conversationevent##xdm:signals##description##24351"
             },
             "xdm:prompt": {
               "title": "Prompt",
@@ -235,7 +302,9 @@
                   "title": "Prompt Source",
                   "type": "string",
                   "description": "Source of the prompt",
-                  "examples": ["end-user", "bot", "canned"]
+                  "examples": ["end-user", "bot", "canned"],
+                  "meta:titleId": "conversationevent##xdm:source##title##57911",
+                  "meta:descriptionId": "conversationevent##xdm:source##description##10511"
                 },
                 "xdm:raw": {
                   "type": "array",
@@ -247,18 +316,26 @@
                       "xdm:text": {
                         "title": "Text",
                         "description": "Text",
-                        "type": "string"
+                        "type": "string",
+                        "meta:titleId": "conversationevent##xdm:text##title##42941",
+                        "meta:descriptionId": "conversationevent##xdm:text##description##79221"
                       },
                       "xdm:purpose": {
                         "title": "Prompt Purpose",
                         "description": "Purpose of the prompt data. Users may input multiple things simultaneously such as text and a link or attachment.",
                         "type": "string",
-                        "examples": ["free-form text", "attachment", "link"]
+                        "examples": ["free-form text", "attachment", "link"],
+                        "meta:titleId": "conversationevent##xdm:purpose##title##95041",
+                        "meta:descriptionId": "conversationevent##xdm:purpose##description##5781"
                       }
                     }
-                  }
+                  },
+                  "meta:titleId": "conversationevent##xdm:raw##title##58211",
+                  "meta:descriptionId": "conversationevent##xdm:raw##description##79641"
                 }
-              }
+              },
+              "meta:titleId": "conversationevent##xdm:prompt##title##10201",
+              "meta:descriptionId": "conversationevent##xdm:prompt##description##7091"
             },
             "xdm:response": {
               "title": "Response",
@@ -269,7 +346,9 @@
                   "title": "Response Source",
                   "type": "string",
                   "description": "Source of the response",
-                  "examples": ["end-user", "bot", "canned"]
+                  "examples": ["end-user", "bot", "canned"],
+                  "meta:titleId": "conversationevent##xdm:source##title##80501",
+                  "meta:descriptionId": "conversationevent##xdm:source##description##9071"
                 },
                 "xdm:raw": {
                   "type": "array",
@@ -281,18 +360,26 @@
                       "xdm:text": {
                         "title": "Text",
                         "description": "Text",
-                        "type": "string"
+                        "type": "string",
+                        "meta:titleId": "conversationevent##xdm:text##title##84141",
+                        "meta:descriptionId": "conversationevent##xdm:text##description##17661"
                       },
                       "xdm:purpose": {
                         "title": "Response Purpose",
                         "description": "Purpose of the response data. Agents may respond with multiple things simultaneously such as text, video, links, pictures, etc.",
                         "type": "string",
-                        "examples": ["main", "link", "picture", "video"]
+                        "examples": ["main", "link", "picture", "video"],
+                        "meta:titleId": "conversationevent##xdm:purpose##title##78941",
+                        "meta:descriptionId": "conversationevent##xdm:purpose##description##76521"
                       }
                     }
-                  }
+                  },
+                  "meta:titleId": "conversationevent##xdm:raw##title##95771",
+                  "meta:descriptionId": "conversationevent##xdm:raw##description##641"
                 }
-              }
+              },
+              "meta:titleId": "conversationevent##xdm:response##title##85331",
+              "meta:descriptionId": "conversationevent##xdm:response##description##40721"
             },
             "xdm:feedback": {
               "title": "Feedback",
@@ -303,7 +390,9 @@
                   "title": "Feedback Source",
                   "type": "string",
                   "description": "Source of the feedback",
-                  "examples": ["end-user", "bot", "canned"]
+                  "examples": ["end-user", "bot", "canned"],
+                  "meta:titleId": "conversationevent##xdm:source##title##13471",
+                  "meta:descriptionId": "conversationevent##xdm:source##description##1711"
                 },
                 "xdm:raw": {
                   "type": "array",
@@ -315,7 +404,9 @@
                       "xdm:text": {
                         "title": "Text",
                         "description": "Text",
-                        "type": "string"
+                        "type": "string",
+                        "meta:titleId": "conversationevent##xdm:text##title##77741",
+                        "meta:descriptionId": "conversationevent##xdm:text##description##96741"
                       },
                       "xdm:purpose": {
                         "title": "Feedback Purpose",
@@ -326,10 +417,14 @@
                           "screenshot",
                           "attachment",
                           "link"
-                        ]
+                        ],
+                        "meta:titleId": "conversationevent##xdm:purpose##title##5231",
+                        "meta:descriptionId": "conversationevent##xdm:purpose##description##12141"
                       }
                     }
-                  }
+                  },
+                  "meta:titleId": "conversationevent##xdm:raw##title##34941",
+                  "meta:descriptionId": "conversationevent##xdm:raw##description##37411"
                 },
                 "xdm:rating": {
                   "title": "Feedback Rating",
@@ -339,7 +434,9 @@
                     "xdm:score": {
                       "title": "Feedback Rating Score",
                       "type": "number",
-                      "description": "Numerical value of the rating provided by the end-user ranging from -1.0 (negative) to 1.0 (positive)."
+                      "description": "Numerical value of the rating provided by the end-user ranging from -1.0 (negative) to 1.0 (positive).",
+                      "meta:titleId": "conversationevent##xdm:score##title##7161",
+                      "meta:descriptionId": "conversationevent##xdm:score##description##55201"
                     },
                     "xdm:classification": {
                       "title": "Feedback Rating Classification",
@@ -352,7 +449,9 @@
                         "Negative",
                         "5-stars",
                         "1-star"
-                      ]
+                      ],
+                      "meta:titleId": "conversationevent##xdm:classification##title##87081",
+                      "meta:descriptionId": "conversationevent##xdm:classification##description##50871"
                     },
                     "xdm:reasons": {
                       "title": "Feedback Rating Reasons",
@@ -360,13 +459,21 @@
                       "description": "Canned reasons why the customer provided this rating usually presented as a set of checkboxes.",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "conversationevent##xdm:reasons##title##21491",
+                      "meta:descriptionId": "conversationevent##xdm:reasons##description##78821"
                     }
-                  }
+                  },
+                  "meta:titleId": "conversationevent##xdm:rating##title##9001",
+                  "meta:descriptionId": "conversationevent##xdm:rating##description##99231"
                 }
-              }
+              },
+              "meta:titleId": "conversationevent##xdm:feedback##title##23181",
+              "meta:descriptionId": "conversationevent##xdm:feedback##description##16161"
             }
-          }
+          },
+          "meta:titleId": "conversationevent##xdm:conversation##title##52601",
+          "meta:descriptionId": "conversationevent##xdm:conversation##description##47301"
         }
       }
     }
@@ -379,5 +486,7 @@
       "$ref": "#/definitions/conversation"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "conversationevent##title##28131",
+  "meta:descriptionId": "conversationevent##description##60221"
 }

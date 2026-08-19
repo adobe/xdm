@@ -221,7 +221,13 @@
               "description": "Gender identity of the person.\n",
               "default": "not_specified",
               "meta:titleId": "profile-person-details-v2##xdm:gender##title##37361",
-              "meta:descriptionId": "profile-person-details-v2##xdm:gender##description##85251"
+              "meta:descriptionId": "profile-person-details-v2##xdm:gender##description##85251",
+              "meta:enumId": {
+                "male": "profile-person-details-v2##xdm:gender##meta:enum##male##39611",
+                "female": "profile-person-details-v2##xdm:gender##meta:enum##female##9161",
+                "not_specified": "profile-person-details-v2##xdm:gender##meta:enum##not_specified##89561",
+                "non_specific": "profile-person-details-v2##xdm:gender##meta:enum##non_specific##60031"
+              }
             }
           }
         }
@@ -252,7 +258,14 @@
               "description": "Describes a person's relationship with a significant other.",
               "default": "not_specified",
               "meta:titleId": "profile-person-details-v2##xdm:maritalStatus##title##84911",
-              "meta:descriptionId": "profile-person-details-v2##xdm:maritalStatus##description##43681"
+              "meta:descriptionId": "profile-person-details-v2##xdm:maritalStatus##description##43681",
+              "meta:enumId": {
+                "married": "profile-person-details-v2##xdm:maritalStatus##meta:enum##married##34201",
+                "single": "profile-person-details-v2##xdm:maritalStatus##meta:enum##single##66291",
+                "divorced": "profile-person-details-v2##xdm:maritalStatus##meta:enum##divorced##25621",
+                "widowed": "profile-person-details-v2##xdm:maritalStatus##meta:enum##widowed##3641",
+                "not_specified": "profile-person-details-v2##xdm:maritalStatus##meta:enum##not_specified##71471"
+              }
             }
           }
         }

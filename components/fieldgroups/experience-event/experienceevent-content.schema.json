@@ -24,12 +24,16 @@
             "xdm:idSource": {
               "title": "ID Source",
               "type": "string",
-              "description": "Content ID source."
+              "description": "Content ID source.",
+              "meta:titleId": "experienceevent-content##xdm:idSource##title##3711",
+              "meta:descriptionId": "experienceevent-content##xdm:idSource##description##3411"
             },
             "xdm:channel": {
               "title": "Channel",
               "type": "string",
-              "description": "Content channel."
+              "description": "Content channel.",
+              "meta:titleId": "experienceevent-content##xdm:channel##title##45021",
+              "meta:descriptionId": "experienceevent-content##xdm:channel##description##4171"
             },
             "xdm:experience": {
               "title": "Content Experience",
@@ -39,28 +43,38 @@
                 "xdm:experienceID": {
                   "title": "Content Experience ID",
                   "type": "string",
-                  "description": "Content experience identifier."
+                  "description": "Content experience identifier.",
+                  "meta:titleId": "experienceevent-content##xdm:experienceID##title##73201",
+                  "meta:descriptionId": "experienceevent-content##xdm:experienceID##description##99501"
                 },
                 "xdm:experienceSource": {
                   "title": "Content Experience Source",
                   "type": "string",
-                  "description": "Content experience source."
+                  "description": "Content experience source.",
+                  "meta:titleId": "experienceevent-content##xdm:experienceSource##title##34781",
+                  "meta:descriptionId": "experienceevent-content##xdm:experienceSource##description##53041"
                 },
                 "xdm:experienceChannel": {
                   "title": "Experience Channel",
                   "type": "string",
                   "description": "Content experience channel.",
-                  "meta:xdmType": "string"
+                  "meta:xdmType": "string",
+                  "meta:titleId": "experienceevent-content##xdm:experienceChannel##title##71511",
+                  "meta:descriptionId": "experienceevent-content##xdm:experienceChannel##description##85631"
                 },
                 "xdm:experienceClicks": {
                   "title": "Experience Clicks",
                   "description": "Content experience clicks.",
-                  "$ref": "https://ns.adobe.com/xdm/data/measure"
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "meta:titleId": "experienceevent-content##xdm:experienceClicks##title##42961",
+                  "meta:descriptionId": "experienceevent-content##xdm:experienceClicks##description##26411"
                 },
                 "xdm:experienceViews": {
                   "title": "Experience Views",
                   "description": "Content experience views.",
-                  "$ref": "https://ns.adobe.com/xdm/data/measure"
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
+                  "meta:titleId": "experienceevent-content##xdm:experienceViews##title##31111",
+                  "meta:descriptionId": "experienceevent-content##xdm:experienceViews##description##34791"
                 },
                 "xdm:experienceScroll": {
                   "type": "object",
@@ -70,24 +84,33 @@
                     "xdm:horizontalPercentageDepth": {
                       "title": "Horizontal Percentage Depth",
                       "description": "Content experience scroll horizontal percentage depth.",
-                      "$ref": "https://ns.adobe.com/xdm/data/measure"
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "meta:titleId": "experienceevent-content##xdm:horizontalPercentageDepth##title##87781",
+                      "meta:descriptionId": "experienceevent-content##xdm:horizontalPercentageDepth##description##25111"
                     },
                     "xdm:horizontalPixelDepth": {
                       "title": "Horizontal Pixel Depth",
                       "description": "Content experience scroll horizontal pixel depth.",
-                      "$ref": "https://ns.adobe.com/xdm/data/measure"
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "meta:titleId": "experienceevent-content##xdm:horizontalPixelDepth##title##43391",
+                      "meta:descriptionId": "experienceevent-content##xdm:horizontalPixelDepth##description##84941"
                     },
                     "xdm:verticalPercentageDepth": {
                       "title": "Vertical Percentage Depth",
                       "description": "Content experience scroll vertical percentage depth.",
-                      "$ref": "https://ns.adobe.com/xdm/data/measure"
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "meta:titleId": "experienceevent-content##xdm:verticalPercentageDepth##title##95741",
+                      "meta:descriptionId": "experienceevent-content##xdm:verticalPercentageDepth##description##95741"
                     },
                     "xdm:verticalPixelDepth": {
                       "title": "Vertical Pixel Depth",
                       "description": "Content experience scroll vertical pixel depth.",
-                      "$ref": "https://ns.adobe.com/xdm/data/measure"
+                      "$ref": "https://ns.adobe.com/xdm/data/measure",
+                      "meta:titleId": "experienceevent-content##xdm:verticalPixelDepth##title##25071",
+                      "meta:descriptionId": "experienceevent-content##xdm:verticalPixelDepth##description##72151"
                     }
-                  }
+                  },
+                  "meta:titleId": "experienceevent-content##xdm:experienceScroll##title##39191"
                 },
                 "xdm:experienceExtras": {
                   "title": "Experience Extras",
@@ -96,10 +119,15 @@
                   "description": "Additional experience properties.",
                   "additionalProperties": {
                     "type": "string",
-                    "description": "Additional property value of any type"
-                  }
+                    "description": "Additional property value of any type",
+                    "meta:descriptionId": "experienceevent-content##additionalProperties##description##84021"
+                  },
+                  "meta:titleId": "experienceevent-content##xdm:experienceExtras##title##4811",
+                  "meta:descriptionId": "experienceevent-content##xdm:experienceExtras##description##66131"
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-content##xdm:experience##title##13571",
+              "meta:descriptionId": "experienceevent-content##xdm:experience##description##48041"
             },
             "xdm:assets": {
               "title": "Content Assets",
@@ -112,64 +140,86 @@
                   "xdm:assetID": {
                     "title": "Content Asset ID",
                     "type": "string",
-                    "description": "Content asset identifier."
+                    "description": "Content asset identifier.",
+                    "meta:titleId": "experienceevent-content##xdm:assetID##title##13791",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetID##description##51011"
                   },
                   "xdm:assetSource": {
                     "title": "Content Asset Source",
                     "type": "string",
-                    "description": "Content asset source."
+                    "description": "Content asset source.",
+                    "meta:titleId": "experienceevent-content##xdm:assetSource##title##10291",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetSource##description##51501"
                   },
                   "xdm:assetBlock": {
                     "title": "Asset Block",
                     "type": "string",
                     "description": "Content asset block.",
-                    "meta:xdmType": "string"
+                    "meta:xdmType": "string",
+                    "meta:titleId": "experienceevent-content##xdm:assetBlock##title##67641",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetBlock##description##6781"
                   },
                   "xdm:assetHTMLPath": {
                     "title": "Asset HTML Path",
                     "type": "string",
                     "description": "Content asset HTML path.",
-                    "meta:xdmType": "string"
+                    "meta:xdmType": "string",
+                    "meta:titleId": "experienceevent-content##xdm:assetHTMLPath##title##43881",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetHTMLPath##description##69001"
                   },
                   "xdm:assetLinkURL": {
                     "title": "Asset Link URL",
                     "type": "string",
                     "description": "Content asset link URL.",
-                    "meta:xdmType": "string"
+                    "meta:xdmType": "string",
+                    "meta:titleId": "experienceevent-content##xdm:assetLinkURL##title##20061",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetLinkURL##description##18131"
                   },
                   "xdm:assetDisplayHeight": {
                     "title": "Asset Display Height",
                     "type": "number",
                     "description": "Content asset display height.",
-                    "meta:xdmType": "number"
+                    "meta:xdmType": "number",
+                    "meta:titleId": "experienceevent-content##xdm:assetDisplayHeight##title##9821",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetDisplayHeight##description##96341"
                   },
                   "xdm:assetDisplayWidth": {
                     "title": "Asset Display Width",
                     "type": "number",
                     "description": "Content asset display width.",
-                    "meta:xdmType": "number"
+                    "meta:xdmType": "number",
+                    "meta:titleId": "experienceevent-content##xdm:assetDisplayWidth##title##58421",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetDisplayWidth##description##32061"
                   },
                   "xdm:assetAbsoluteLeft": {
                     "title": "Asset Absolute Left",
                     "type": "number",
                     "description": "Content asset absolute left.",
-                    "meta:xdmType": "number"
+                    "meta:xdmType": "number",
+                    "meta:titleId": "experienceevent-content##xdm:assetAbsoluteLeft##title##46751",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetAbsoluteLeft##description##36081"
                   },
                   "xdm:assetAbsoluteTop": {
                     "title": "Asset Absolute Top",
                     "type": "number",
                     "description": "Content asset absolute top.",
-                    "meta:xdmType": "number"
+                    "meta:xdmType": "number",
+                    "meta:titleId": "experienceevent-content##xdm:assetAbsoluteTop##title##7721",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetAbsoluteTop##description##14281"
                   },
                   "xdm:assetClicks": {
                     "title": "Asset Clicks",
                     "description": "Content asset clicks.",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure"
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "meta:titleId": "experienceevent-content##xdm:assetClicks##title##52831",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetClicks##description##60061"
                   },
                   "xdm:assetViews": {
                     "title": "Asset Views",
                     "description": "Content asset views.",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure"
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "meta:titleId": "experienceevent-content##xdm:assetViews##title##12881",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetViews##description##46371"
                   },
                   "xdm:assetExtras": {
                     "title": "Asset Extras",
@@ -178,17 +228,25 @@
                     "description": "Additional asset properties.",
                     "additionalProperties": {
                       "type": "string",
-                      "description": "Additional property value of any type"
-                    }
+                      "description": "Additional property value of any type",
+                      "meta:descriptionId": "experienceevent-content##additionalProperties##description##67931"
+                    },
+                    "meta:titleId": "experienceevent-content##xdm:assetExtras##title##39471",
+                    "meta:descriptionId": "experienceevent-content##xdm:assetExtras##description##4081"
                   }
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-content##xdm:assets##title##71121",
+              "meta:descriptionId": "experienceevent-content##xdm:assets##description##37971"
             },
             "xdm:implementationDetails": {
               "title": "Implementation details",
-              "$ref": "https://ns.adobe.com/xdm/context/implementationdetails"
+              "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+              "meta:titleId": "experienceevent-content##xdm:implementationDetails##title##44251"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-content##xdm:experienceContent##title##94951",
+          "meta:descriptionId": "experienceevent-content##xdm:experienceContent##description##37031"
         }
       }
     }
@@ -198,5 +256,7 @@
       "$ref": "#/definitions/experienceevent-content"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-content##title##13061",
+  "meta:descriptionId": "experienceevent-content##description##24841"
 }

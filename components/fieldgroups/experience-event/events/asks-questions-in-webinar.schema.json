@@ -37,33 +37,46 @@
                     "xdm:campaignName": {
                       "title": "Campaign Name",
                       "type": "string",
-                      "description": "Name of the campaign."
+                      "description": "Name of the campaign.",
+                      "meta:titleId": "asks-questions-in-webinar##xdm:campaignName##title##61821",
+                      "meta:descriptionId": "asks-questions-in-webinar##xdm:campaignName##description##61611"
                     },
                     "xdm:campaignID": {
                       "title": "Campaign ID",
                       "type": "string",
-                      "description": "Unique identifier of the campaign."
+                      "description": "Unique identifier of the campaign.",
+                      "meta:titleId": "asks-questions-in-webinar##xdm:campaignID##title##53821",
+                      "meta:descriptionId": "asks-questions-in-webinar##xdm:campaignID##description##18261"
                     },
                     "xdm:isAnswered": {
                       "title": "Is Answered",
                       "type": "boolean",
-                      "description": "Indicates if the question was answered."
+                      "description": "Indicates if the question was answered.",
+                      "meta:titleId": "asks-questions-in-webinar##xdm:isAnswered##title##74051",
+                      "meta:descriptionId": "asks-questions-in-webinar##xdm:isAnswered##description##90751"
                     },
                     "xdm:question": {
                       "title": "Question",
                       "type": "string",
-                      "description": "The question asked during the webinar."
+                      "description": "The question asked during the webinar.",
+                      "meta:titleId": "asks-questions-in-webinar##xdm:question##title##33621",
+                      "meta:descriptionId": "asks-questions-in-webinar##xdm:question##description##33371"
                     },
                     "xdm:campaignKey": {
                       "title": "Campaign Key",
                       "description": "Unique key of the campaign.",
-                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                      "meta:titleId": "asks-questions-in-webinar##xdm:campaignKey##title##69381",
+                      "meta:descriptionId": "asks-questions-in-webinar##xdm:campaignKey##description##90001"
                     }
-                  }
+                  },
+                  "meta:titleId": "asks-questions-in-webinar##xdm:askQuestions##title##72761"
                 }
-              }
+              },
+              "meta:titleId": "asks-questions-in-webinar##xdm:webinar##title##54061"
             }
-          }
+          },
+          "meta:titleId": "asks-questions-in-webinar##xdm:leadOperation##title##87351"
         }
       }
     }
@@ -74,5 +87,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-10"
+  "meta:createdDate": "2025-01-10",
+  "meta:titleId": "asks-questions-in-webinar##title##65391",
+  "meta:descriptionId": "asks-questions-in-webinar##description##96781"
 }

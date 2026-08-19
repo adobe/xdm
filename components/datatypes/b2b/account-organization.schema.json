@@ -51,7 +51,9 @@
         "xdm:domain": {
           "title": "Website Domain",
           "type": "string",
-          "description": "The domain of the organization's website."
+          "description": "The domain of the organization's website.",
+          "meta:titleId": "b2b-account-organization##xdm:domain##title##95421",
+          "meta:descriptionId": "b2b-account-organization##xdm:domain##description##16751"
         },
         "xdm:marketSegment": {
           "title": "Market segment",

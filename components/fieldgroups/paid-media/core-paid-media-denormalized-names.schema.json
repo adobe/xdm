@@ -30,39 +30,55 @@
                 "xdm:accountName": {
                   "type": "string",
                   "title": "Account Name",
-                  "description": "Display name of the ad account. Mirrors accountDetails.accountName from the account lookup."
+                  "description": "Display name of the ad account. Mirrors accountDetails.accountName from the account lookup.",
+                  "meta:titleId": "denormalized-names##xdm:accountName##title##79011",
+                  "meta:descriptionId": "denormalized-names##xdm:accountName##description##76231"
                 },
                 "xdm:campaignName": {
                   "type": "string",
                   "title": "Campaign Name",
-                  "description": "Display name of the campaign. Mirrors metadata.name from the campaign lookup."
+                  "description": "Display name of the campaign. Mirrors metadata.name from the campaign lookup.",
+                  "meta:titleId": "denormalized-names##xdm:campaignName##title##79121",
+                  "meta:descriptionId": "denormalized-names##xdm:campaignName##description##64431"
                 },
                 "xdm:adGroupName": {
                   "type": "string",
                   "title": "Ad Group Name",
-                  "description": "Display name of the ad group/ad set/ad squad. Mirrors metadata.name from the ad group lookup."
+                  "description": "Display name of the ad group/ad set/ad squad. Mirrors metadata.name from the ad group lookup.",
+                  "meta:titleId": "denormalized-names##xdm:adGroupName##title##95831",
+                  "meta:descriptionId": "denormalized-names##xdm:adGroupName##description##60161"
                 },
                 "xdm:adName": {
                   "type": "string",
                   "title": "Ad Name",
-                  "description": "Display name of the individual ad. Mirrors metadata.name from the ad lookup."
+                  "description": "Display name of the individual ad. Mirrors metadata.name from the ad lookup.",
+                  "meta:titleId": "denormalized-names##xdm:adName##title##10791",
+                  "meta:descriptionId": "denormalized-names##xdm:adName##description##95181"
                 },
                 "xdm:experienceName": {
                   "type": "string",
                   "title": "Experience Name",
-                  "description": "Display name of the creative experience. Mirrors metadata.name from the experience lookup."
+                  "description": "Display name of the creative experience. Mirrors metadata.name from the experience lookup.",
+                  "meta:titleId": "denormalized-names##xdm:experienceName##title##13111",
+                  "meta:descriptionId": "denormalized-names##xdm:experienceName##description##42501"
                 },
                 "xdm:assetName": {
                   "type": "string",
                   "title": "Asset Name",
-                  "description": "Display name of the creative asset. Mirrors metadata.name from the asset lookup."
+                  "description": "Display name of the creative asset. Mirrors metadata.name from the asset lookup.",
+                  "meta:titleId": "denormalized-names##xdm:assetName##title##20521",
+                  "meta:descriptionId": "denormalized-names##xdm:assetName##description##62301"
                 },
                 "xdm:portfolioName": {
                   "type": "string",
                   "title": "Portfolio Name",
-                  "description": "Display name of the portfolio (Amazon Ads and similar platforms)."
+                  "description": "Display name of the portfolio (Amazon Ads and similar platforms).",
+                  "meta:titleId": "denormalized-names##xdm:portfolioName##title##47631",
+                  "meta:descriptionId": "denormalized-names##xdm:portfolioName##description##93631"
                 }
-              }
+              },
+              "meta:titleId": "denormalized-names##xdm:denormalizedNames##title##55331",
+              "meta:descriptionId": "denormalized-names##xdm:denormalizedNames##description##13621"
             }
           }
         }
@@ -74,5 +90,7 @@
       "$ref": "#/definitions/denormalized-names"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "denormalized-names##title##86801",
+  "meta:descriptionId": "denormalized-names##description##21111"
 }

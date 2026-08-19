@@ -60,27 +60,37 @@
         "xdm:shippingAddressPhone": {
           "title": "Shipping Address Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Phone number associated with shipping address."
+          "description": "Phone number associated with shipping address.",
+          "meta:titleId": "profile-personal-details##xdm:shippingAddressPhone##title##55981",
+          "meta:descriptionId": "profile-personal-details##xdm:shippingAddressPhone##description##56281"
         },
         "xdm:billingAddressPhone": {
           "title": "Billing Address Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Phone number associated with billing address."
+          "description": "Phone number associated with billing address.",
+          "meta:titleId": "profile-personal-details##xdm:billingAddressPhone##title##51561",
+          "meta:descriptionId": "profile-personal-details##xdm:billingAddressPhone##description##34021"
         },
         "xdm:shippingAddress": {
           "title": "Shipping Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Shipping postal address."
+          "description": "Shipping postal address.",
+          "meta:titleId": "profile-personal-details##xdm:shippingAddress##title##83041",
+          "meta:descriptionId": "profile-personal-details##xdm:shippingAddress##description##20431"
         },
         "xdm:billingAddress": {
           "title": "Billing Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Billing postal address."
+          "description": "Billing postal address.",
+          "meta:titleId": "profile-personal-details##xdm:billingAddress##title##8801",
+          "meta:descriptionId": "profile-personal-details##xdm:billingAddress##description##96931"
         },
         "xdm:mailingAddress": {
           "title": "Mailing Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Mailing postal address."
+          "description": "Mailing postal address.",
+          "meta:titleId": "profile-personal-details##xdm:mailingAddress##title##7001",
+          "meta:descriptionId": "profile-personal-details##xdm:mailingAddress##description##41101"
         }
       }
     }

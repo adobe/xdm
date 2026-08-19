@@ -16,12 +16,16 @@
         "xdm:trackingTemplate": {
           "type": "string",
           "title": "Tracking URL Template",
-          "description": "URL tracking template with macros (e.g., {lpurl}?s_kwcid=AL!{userid}!3!{creative})"
+          "description": "URL tracking template with macros (e.g., {lpurl}?s_kwcid=AL!{userid}!3!{creative})",
+          "meta:titleId": "paid-media-url-tracking##xdm:trackingTemplate##title##23981",
+          "meta:descriptionId": "paid-media-url-tracking##xdm:trackingTemplate##description##92521"
         },
         "xdm:finalUrlSuffix": {
           "type": "string",
           "title": "Final URL Suffix",
-          "description": "Parameters appended to the final URL"
+          "description": "Parameters appended to the final URL",
+          "meta:titleId": "paid-media-url-tracking##xdm:finalUrlSuffix##title##911",
+          "meta:descriptionId": "paid-media-url-tracking##xdm:finalUrlSuffix##description##56431"
         },
         "xdm:customParameters": {
           "type": "array",
@@ -33,15 +37,21 @@
               "xdm:key": {
                 "type": "string",
                 "title": "Parameter Key",
-                "description": "Parameter name (e.g., 'utm_source', 'campaign_id')"
+                "description": "Parameter name (e.g., 'utm_source', 'campaign_id')",
+                "meta:titleId": "paid-media-url-tracking##xdm:key##title##37401",
+                "meta:descriptionId": "paid-media-url-tracking##xdm:key##description##67541"
               },
               "xdm:value": {
                 "type": "string",
                 "title": "Parameter Value",
-                "description": "Parameter value or macro (e.g., '{campaignid}')"
+                "description": "Parameter value or macro (e.g., '{campaignid}')",
+                "meta:titleId": "paid-media-url-tracking##xdm:value##title##22121",
+                "meta:descriptionId": "paid-media-url-tracking##xdm:value##description##76511"
               }
             }
-          }
+          },
+          "meta:titleId": "paid-media-url-tracking##xdm:customParameters##title##36611",
+          "meta:descriptionId": "paid-media-url-tracking##xdm:customParameters##description##51301"
         }
       }
     }
@@ -51,5 +61,7 @@
       "$ref": "#/definitions/urlTracking"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "paid-media-url-tracking##title##22461",
+  "meta:descriptionId": "paid-media-url-tracking##description##8971"
 }

@@ -29,7 +29,8 @@
                 "type": "integer"
               },
               "type": "array",
-              "title": "Relative Triggers"
+              "title": "Relative Triggers",
+              "meta:titleId": "relative-triggers##triggersRelative##title##69201"
             }
           }
         },
@@ -41,7 +42,8 @@
                 "type": "integer"
               },
               "type": "array",
-              "title": "Relative Triggers"
+              "title": "Relative Triggers",
+              "meta:titleId": "relative-triggers##xdm:relativeTriggers##title##42581"
             }
           }
         }
@@ -52,5 +54,7 @@
     {
       "$ref": "#/definitions/customFields"
     }
-  ]
+  ],
+  "meta:titleId": "relative-triggers##title##17241",
+  "meta:descriptionId": "relative-triggers##description##73281"
 }

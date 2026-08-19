@@ -22,12 +22,16 @@
         "xdm:mediaCollection": {
           "title": "Media Collection Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
-          "description": "Media Collection related fields."
+          "description": "Media Collection related fields.",
+          "meta:titleId": "experienceevent-media-analytics##xdm:mediaCollection##title##5681",
+          "meta:descriptionId": "experienceevent-media-analytics##xdm:mediaCollection##description##76111"
         },
         "xdm:mediaReporting": {
           "title": "Media Reporting Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
-          "description": "Media Reporting related fields."
+          "description": "Media Reporting related fields.",
+          "meta:titleId": "experienceevent-media-analytics##xdm:mediaReporting##title##321",
+          "meta:descriptionId": "experienceevent-media-analytics##xdm:mediaReporting##description##91271"
         },
         "xdm:mediaDownloadedEvents": {
           "title": "List Of Media Collection Downloaded Content Events",
@@ -35,7 +39,9 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/mediaEvent"
           },
-          "description": "The list of media collection downloaded content events."
+          "description": "The list of media collection downloaded content events.",
+          "meta:titleId": "experienceevent-media-analytics##xdm:mediaDownloadedEvents##title##59321",
+          "meta:descriptionId": "experienceevent-media-analytics##xdm:mediaDownloadedEvents##description##9781"
         }
       }
     }
@@ -45,5 +51,7 @@
       "$ref": "#/definitions/experienceevent-mediaAnalytics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-media-analytics##title##12471",
+  "meta:descriptionId": "experienceevent-media-analytics##description##66461"
 }

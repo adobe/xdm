@@ -26,20 +26,28 @@
               "xdm:segmentID": {
                 "title": "Segment ID",
                 "type": "string",
-                "description": "Segment ID"
+                "description": "Segment ID",
+                "meta:titleId": "experienceevent-segment-list##xdm:segmentID##title##60071",
+                "meta:descriptionId": "experienceevent-segment-list##xdm:segmentID##description##24761"
               },
               "xdm:segmentName": {
                 "title": "Segment Name",
                 "type": "string",
-                "description": "Segment Name"
+                "description": "Segment Name",
+                "meta:titleId": "experienceevent-segment-list##xdm:segmentName##title##10041",
+                "meta:descriptionId": "experienceevent-segment-list##xdm:segmentName##description##41751"
               },
               "xdm:segmentNamespace": {
                 "title": "Segment Namespace",
                 "type": "string",
-                "description": "Segment Namespace"
+                "description": "Segment Namespace",
+                "meta:titleId": "experienceevent-segment-list##xdm:segmentNamespace##title##93711",
+                "meta:descriptionId": "experienceevent-segment-list##xdm:segmentNamespace##description##41051"
               }
             }
-          }
+          },
+          "meta:titleId": "experienceevent-segment-list##xdm:segmentList##title##58601",
+          "meta:descriptionId": "experienceevent-segment-list##xdm:segmentList##description##26061"
         }
       }
     }
@@ -50,5 +58,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2023-06-27"
+  "meta:createdDate": "2023-06-27",
+  "meta:titleId": "experienceevent-segment-list##title##15541",
+  "meta:descriptionId": "experienceevent-segment-list##description##82421"
 }

@@ -111,6 +111,10 @@
           "meta:enum": {
             "miles": "Miles",
             "kilometers": "Kilometers"
+          },
+          "meta:enumId": {
+            "miles": "internal-site-search##xdm:radiusType##meta:enum##miles##9081",
+            "kilometers": "internal-site-search##xdm:radiusType##meta:enum##kilometers##58931"
           }
         },
         "xdm:term": {
@@ -158,6 +162,10 @@
           "meta:enum": {
             "ascending": "Ascending",
             "descending": "Descending"
+          },
+          "meta:enumId": {
+            "ascending": "internal-site-search##xdm:sortOrder##meta:enum##ascending##50821",
+            "descending": "internal-site-search##xdm:sortOrder##meta:enum##descending##99391"
           }
         },
         "xdm:sortType": {
@@ -183,6 +191,15 @@
             "average customer review": "Average Customer Review",
             "discount": "Discount",
             "new items": "New Items"
+          },
+          "meta:enumId": {
+            "price: low to high": "internal-site-search##xdm:sortType##meta:enum##price: low to high##69811",
+            "price: high to low": "internal-site-search##xdm:sortType##meta:enum##price: high to low##3711",
+            "featured": "internal-site-search##xdm:sortType##meta:enum##featured##23841",
+            "best match": "internal-site-search##xdm:sortType##meta:enum##best match##54801",
+            "average customer review": "internal-site-search##xdm:sortType##meta:enum##average customer review##33891",
+            "discount": "internal-site-search##xdm:sortType##meta:enum##discount##52961",
+            "new items": "internal-site-search##xdm:sortType##meta:enum##new items##27201"
           }
         }
       }

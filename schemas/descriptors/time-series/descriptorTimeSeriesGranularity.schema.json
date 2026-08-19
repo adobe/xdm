@@ -37,12 +37,22 @@
             "year": "Yearly data"
           },
           "meta:titleId": "descriptorTimeSeriesGranularity##xdm:granularity##title##56551",
-          "meta:descriptionId": "descriptorTimeSeriesGranularity##xdm:granularity##description##79851"
+          "meta:descriptionId": "descriptorTimeSeriesGranularity##xdm:granularity##description##79851",
+          "meta:enumId": {
+            "hour": "descriptorTimeSeriesGranularity##xdm:granularity##meta:enum##hour##97551",
+            "day": "descriptorTimeSeriesGranularity##xdm:granularity##meta:enum##day##20101",
+            "week": "descriptorTimeSeriesGranularity##xdm:granularity##meta:enum##week##67311",
+            "month": "descriptorTimeSeriesGranularity##xdm:granularity##meta:enum##month##951",
+            "quarter": "descriptorTimeSeriesGranularity##xdm:granularity##meta:enum##quarter##35831",
+            "year": "descriptorTimeSeriesGranularity##xdm:granularity##meta:enum##year##98781"
+          }
         },
         "xdm:ianaTimezone": {
           "title": "Iana Timezone",
           "type": "string",
-          "description": "Timezone of the time-series / summary data as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones. The default is UTC."
+          "description": "Timezone of the time-series / summary data as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones. The default is UTC.",
+          "meta:titleId": "descriptorTimeSeriesGranularity##xdm:ianaTimezone##title##83891",
+          "meta:descriptionId": "descriptorTimeSeriesGranularity##xdm:ianaTimezone##description##83061"
         }
       },
       "required": ["xdm:granularity"]

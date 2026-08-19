@@ -38,6 +38,16 @@
             "ad": "Individual advertisement",
             "experience": "Creative experience or multi-asset composition",
             "asset": "Creative asset or media"
+          },
+          "meta:titleId": "paid-media##xdm:entityType##title##91661",
+          "meta:descriptionId": "paid-media##xdm:entityType##description##73911",
+          "meta:enumId": {
+            "account": "paid-media##xdm:entityType##meta:enum##account##24421",
+            "campaign": "paid-media##xdm:entityType##meta:enum##campaign##61011",
+            "adgroup": "paid-media##xdm:entityType##meta:enum##adgroup##33381",
+            "ad": "paid-media##xdm:entityType##meta:enum##ad##22341",
+            "experience": "paid-media##xdm:entityType##meta:enum##experience##56221",
+            "asset": "paid-media##xdm:entityType##meta:enum##asset##7611"
           }
         },
         "xdm:entityIDs": {
@@ -50,11 +60,13 @@
               "properties": {
                 "xdm:accountGUID": {
                   "type": "string",
-                  "title": "Account GUID"
+                  "title": "Account GUID",
+                  "meta:titleId": "paid-media##xdm:accountGUID##title##28251"
                 },
                 "xdm:accountID": {
                   "type": "string",
-                  "title": "Account ID"
+                  "title": "Account ID",
+                  "meta:titleId": "paid-media##xdm:accountID##title##4111"
                 }
               }
             },
@@ -63,11 +75,13 @@
               "properties": {
                 "xdm:campaignGUID": {
                   "type": "string",
-                  "title": "Campaign GUID"
+                  "title": "Campaign GUID",
+                  "meta:titleId": "paid-media##xdm:campaignGUID##title##32331"
                 },
                 "xdm:campaignID": {
                   "type": "string",
-                  "title": "Campaign ID"
+                  "title": "Campaign ID",
+                  "meta:titleId": "paid-media##xdm:campaignID##title##65531"
                 }
               }
             },
@@ -76,11 +90,13 @@
               "properties": {
                 "xdm:adGroupGUID": {
                   "type": "string",
-                  "title": "Ad Group GUID"
+                  "title": "Ad Group GUID",
+                  "meta:titleId": "paid-media##xdm:adGroupGUID##title##7661"
                 },
                 "xdm:adGroupID": {
                   "type": "string",
-                  "title": "Ad Group ID"
+                  "title": "Ad Group ID",
+                  "meta:titleId": "paid-media##xdm:adGroupID##title##70471"
                 }
               }
             },
@@ -89,11 +105,13 @@
               "properties": {
                 "xdm:adGUID": {
                   "type": "string",
-                  "title": "Ad GUID"
+                  "title": "Ad GUID",
+                  "meta:titleId": "paid-media##xdm:adGUID##title##11321"
                 },
                 "xdm:adID": {
                   "type": "string",
-                  "title": "Ad ID"
+                  "title": "Ad ID",
+                  "meta:titleId": "paid-media##xdm:adID##title##28381"
                 }
               }
             },
@@ -102,11 +120,13 @@
               "properties": {
                 "xdm:experienceGUID": {
                   "type": "string",
-                  "title": "Experience GUID"
+                  "title": "Experience GUID",
+                  "meta:titleId": "paid-media##xdm:experienceGUID##title##57071"
                 },
                 "xdm:experienceID": {
                   "type": "string",
-                  "title": "Experience ID"
+                  "title": "Experience ID",
+                  "meta:titleId": "paid-media##xdm:experienceID##title##87561"
                 }
               }
             },
@@ -115,15 +135,19 @@
               "properties": {
                 "xdm:assetGUID": {
                   "type": "string",
-                  "title": "Asset GUID"
+                  "title": "Asset GUID",
+                  "meta:titleId": "paid-media##xdm:assetGUID##title##21461"
                 },
                 "xdm:assetID": {
                   "type": "string",
-                  "title": "Asset ID"
+                  "title": "Asset ID",
+                  "meta:titleId": "paid-media##xdm:assetID##title##77641"
                 }
               }
             }
-          }
+          },
+          "meta:titleId": "paid-media##xdm:entityIDs##title##95281",
+          "meta:descriptionId": "paid-media##xdm:entityIDs##description##28321"
         }
       },
       "required": ["xdm:entityType"]
@@ -140,5 +164,7 @@
       "$ref": "#/definitions/paid-media"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "paid-media##title##54471",
+  "meta:descriptionId": "paid-media##description##57111"
 }

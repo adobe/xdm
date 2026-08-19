@@ -41,7 +41,11 @@
             "plaintext": "Plain text"
           },
           "meta:titleId": "profile-preferences-details##xdm:emailFormat##title##18781",
-          "meta:descriptionId": "profile-preferences-details##xdm:emailFormat##description##4401"
+          "meta:descriptionId": "profile-preferences-details##xdm:emailFormat##description##4401",
+          "meta:enumId": {
+            "html": "profile-preferences-details##xdm:emailFormat##meta:enum##html##99781",
+            "plaintext": "profile-preferences-details##xdm:emailFormat##meta:enum##plaintext##6851"
+          }
         },
         "xdm:timeZone": {
           "title": "Time zone",

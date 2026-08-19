@@ -31,13 +31,21 @@
                 "meta:enum": {
                   "realized": "Realized",
                   "exited": "Exited"
+                },
+                "meta:titleId": "profile-consentResults-v2##xdm:status##title##7761",
+                "meta:descriptionId": "profile-consentResults-v2##xdm:status##description##33801",
+                "meta:enumId": {
+                  "realized": "profile-consentResults-v2##xdm:status##meta:enum##realized##5601",
+                  "exited": "profile-consentResults-v2##xdm:status##meta:enum##exited##80971"
                 }
               },
               "xdm:ts": {
                 "title": "timestamp",
                 "description": "date time when the profile entered or exited consent policy",
                 "type": "string",
-                "format": "date-time"
+                "format": "date-time",
+                "meta:titleId": "profile-consentResults-v2##xdm:ts##title##78081",
+                "meta:descriptionId": "profile-consentResults-v2##xdm:ts##description##80701"
               },
               "xdm:identityLevelConsents": {
                 "title": "identity level consents",
@@ -59,25 +67,42 @@
                         "meta:enum": {
                           "realized": "Realized",
                           "exited": "Exited"
+                        },
+                        "meta:titleId": "profile-consentResults-v2##xdm:status##title##76331",
+                        "meta:descriptionId": "profile-consentResults-v2##xdm:status##description##64901",
+                        "meta:enumId": {
+                          "realized": "profile-consentResults-v2##xdm:status##meta:enum##realized##31021",
+                          "exited": "profile-consentResults-v2##xdm:status##meta:enum##exited##26661"
                         }
                       },
                       "xdm:ts": {
                         "title": "timestamp",
                         "description": "date time when the profile entered or exited consent policy",
                         "type": "string",
-                        "format": "date-time"
+                        "format": "date-time",
+                        "meta:titleId": "profile-consentResults-v2##xdm:ts##title##54271",
+                        "meta:descriptionId": "profile-consentResults-v2##xdm:ts##description##42371"
                       },
                       "xdm:identity": {
                         "title": "identity",
                         "description": "identity for which policy metadata is being defined",
-                        "type": "string"
+                        "type": "string",
+                        "meta:titleId": "profile-consentResults-v2##xdm:identity##title##13451",
+                        "meta:descriptionId": "profile-consentResults-v2##xdm:identity##description##9401"
                       }
                     }
-                  }
-                }
+                  },
+                  "meta:titleId": "profile-consentResults-v2##additionalProperties##title##33951",
+                  "meta:descriptionId": "profile-consentResults-v2##additionalProperties##description##63711"
+                },
+                "meta:titleId": "profile-consentResults-v2##xdm:identityLevelConsents##title##92411",
+                "meta:descriptionId": "profile-consentResults-v2##xdm:identityLevelConsents##description##9691"
               }
-            }
-          }
+            },
+            "meta:titleId": "profile-consentResults-v2##additionalProperties##title##56891",
+            "meta:descriptionId": "profile-consentResults-v2##additionalProperties##description##25731"
+          },
+          "meta:titleId": "profile-consentResults-v2##xdm:consentPoliciesResultMap##title##44521"
         }
       }
     }
@@ -87,5 +112,7 @@
       "$ref": "#/definitions/profile-consentResults"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-consentResults-v2##title##56181",
+  "meta:descriptionId": "profile-consentResults-v2##description##49211"
 }

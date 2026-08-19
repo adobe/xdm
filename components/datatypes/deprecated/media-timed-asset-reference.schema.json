@@ -108,7 +108,12 @@
             "gaming": "A gaming stream (e.g. Twitch, Hitbox)."
           },
           "meta:titleId": "media-timed-asset-reference##xdm:streamType##title##35021",
-          "meta:descriptionId": "media-timed-asset-reference##xdm:streamType##description##3831"
+          "meta:descriptionId": "media-timed-asset-reference##xdm:streamType##description##3831",
+          "meta:enumId": {
+            "audio": "media-timed-asset-reference##xdm:streamType##meta:enum##audio##61881",
+            "video": "media-timed-asset-reference##xdm:streamType##meta:enum##video##151",
+            "gaming": "media-timed-asset-reference##xdm:streamType##meta:enum##gaming##94531"
+          }
         },
         "iptc4xmpExt:Season": {
           "title": "Season",

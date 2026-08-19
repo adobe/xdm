@@ -28,223 +28,295 @@
                   "type": "integer",
                   "title": "Video Plays",
                   "description": "Number of video plays",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoPlays##title##1861",
+                  "meta:descriptionId": "video-metrics##xdm:videoPlays##description##19921"
                 },
                 "xdm:video3SecViews": {
                   "type": "integer",
                   "title": "3-Second Video Views",
                   "description": "Number of 3-second video views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:video3SecViews##title##16701",
+                  "meta:descriptionId": "video-metrics##xdm:video3SecViews##description##201"
                 },
                 "xdm:video2SecViews": {
                   "type": "integer",
                   "title": "2-Second Video Views",
                   "description": "Number of times video was viewed for at least 2 seconds",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:video2SecViews##title##35261",
+                  "meta:descriptionId": "video-metrics##xdm:video2SecViews##description##84871"
                 },
                 "xdm:video6SecViews": {
                   "type": "integer",
                   "title": "6-Second Video Views",
                   "description": "Number of times video was viewed for at least 6 seconds",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:video6SecViews##title##39591",
+                  "meta:descriptionId": "video-metrics##xdm:video6SecViews##description##57381"
                 },
                 "xdm:video10SecViews": {
                   "type": "integer",
                   "title": "10-Second Video Views",
                   "description": "Number of times video was viewed for at least 10 seconds",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:video10SecViews##title##26981",
+                  "meta:descriptionId": "video-metrics##xdm:video10SecViews##description##64871"
                 },
                 "xdm:videoViewRate2Sec": {
                   "type": "number",
                   "title": "2-Second Video View Rate",
                   "description": "Percentage of videos viewed for at least 2 seconds",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoViewRate2Sec##title##47511",
+                  "meta:descriptionId": "video-metrics##xdm:videoViewRate2Sec##description##8681"
                 },
                 "xdm:videoViewRate6Sec": {
                   "type": "number",
                   "title": "6-Second Video View Rate",
                   "description": "Percentage of videos viewed for at least 6 seconds",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoViewRate6Sec##title##66161",
+                  "meta:descriptionId": "video-metrics##xdm:videoViewRate6Sec##description##5191"
                 },
                 "xdm:video15SecViews": {
                   "type": "integer",
                   "title": "15-Second Video Views",
                   "description": "Number of 15-second video views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:video15SecViews##title##15501",
+                  "meta:descriptionId": "video-metrics##xdm:video15SecViews##description##41331"
                 },
                 "xdm:video30SecViews": {
                   "type": "integer",
                   "title": "30-Second Video Views",
                   "description": "Number of 30-second video views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:video30SecViews##title##21591",
+                  "meta:descriptionId": "video-metrics##xdm:video30SecViews##description##22831"
                 },
                 "xdm:videoQuartile1": {
                   "type": "integer",
                   "title": "Video 25% Completion",
                   "description": "Number of videos watched to 25%",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoQuartile1##title##8121",
+                  "meta:descriptionId": "video-metrics##xdm:videoQuartile1##description##29501"
                 },
                 "xdm:videoQuartile2": {
                   "type": "integer",
                   "title": "Video 50% Completion",
                   "description": "Number of videos watched to 50%",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoQuartile2##title##97991",
+                  "meta:descriptionId": "video-metrics##xdm:videoQuartile2##description##13051"
                 },
                 "xdm:videoQuartile3": {
                   "type": "integer",
                   "title": "Video 75% Completion",
                   "description": "Number of videos watched to 75%",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoQuartile3##title##44781",
+                  "meta:descriptionId": "video-metrics##xdm:videoQuartile3##description##94391"
                 },
                 "xdm:videoCompletions": {
                   "type": "integer",
                   "title": "Video Completions",
                   "description": "Number of videos watched to completion",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoCompletions##title##42571",
+                  "meta:descriptionId": "video-metrics##xdm:videoCompletions##description##12121"
                 },
                 "xdm:videoCompletionRate": {
                   "type": "number",
                   "title": "Video Completion Rate",
                   "description": "Percentage of videos watched to completion",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoCompletionRate##title##48961",
+                  "meta:descriptionId": "video-metrics##xdm:videoCompletionRate##description##76421"
                 },
                 "xdm:videoViewRate25Percent": {
                   "type": "number",
                   "title": "25% Video View Rate",
                   "description": "Percentage of videos viewed to 25% completion",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoViewRate25Percent##title##10411",
+                  "meta:descriptionId": "video-metrics##xdm:videoViewRate25Percent##description##53441"
                 },
                 "xdm:videoViewRate50Percent": {
                   "type": "number",
                   "title": "50% Video View Rate",
                   "description": "Percentage of videos viewed to 50% completion",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoViewRate50Percent##title##34641",
+                  "meta:descriptionId": "video-metrics##xdm:videoViewRate50Percent##description##54541"
                 },
                 "xdm:videoViewRate75Percent": {
                   "type": "number",
                   "title": "75% Video View Rate",
                   "description": "Percentage of videos viewed to 75% completion",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoViewRate75Percent##title##47551",
+                  "meta:descriptionId": "video-metrics##xdm:videoViewRate75Percent##description##76031"
                 },
                 "xdm:videoViewRate100Percent": {
                   "type": "number",
                   "title": "100% Video View Rate",
                   "description": "Percentage of videos viewed to 100% completion",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoViewRate100Percent##title##11821",
+                  "meta:descriptionId": "video-metrics##xdm:videoViewRate100Percent##description##12651"
                 },
                 "xdm:averageVideoWatchTime": {
                   "type": "number",
                   "title": "Average Video Watch Time",
                   "description": "Average time spent watching videos in seconds",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:averageVideoWatchTime##title##54131",
+                  "meta:descriptionId": "video-metrics##xdm:averageVideoWatchTime##description##77351"
                 },
                 "xdm:totalVideoWatchTime": {
                   "type": "number",
                   "title": "Total Video Watch Time",
                   "description": "Total time spent watching videos in seconds",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:totalVideoWatchTime##title##32121",
+                  "meta:descriptionId": "video-metrics##xdm:totalVideoWatchTime##description##84581"
                 },
                 "xdm:videoMrcViews": {
                   "type": "integer",
                   "title": "Video MRC Views",
                   "description": "Video views meeting MRC standards",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoMrcViews##title##23171",
+                  "meta:descriptionId": "video-metrics##xdm:videoMrcViews##description##331"
                 },
                 "xdm:videoThroughplayViews": {
                   "type": "integer",
                   "title": "Video Throughplay Views",
                   "description": "Number of throughplay video views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoThroughplayViews##title##88291",
+                  "meta:descriptionId": "video-metrics##xdm:videoThroughplayViews##description##89981"
                 },
                 "xdm:videoSkips": {
                   "type": "integer",
                   "title": "Video Skips",
                   "description": "Number of video skips",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoSkips##title##69061",
+                  "meta:descriptionId": "video-metrics##xdm:videoSkips##description##62211"
                 },
                 "xdm:videoSkipRate": {
                   "type": "number",
                   "title": "Video Skip Rate",
                   "description": "Percentage of videos that were skipped",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoSkipRate##title##31321",
+                  "meta:descriptionId": "video-metrics##xdm:videoSkipRate##description##32171"
                 },
                 "xdm:videoReplays": {
                   "type": "integer",
                   "title": "Video Replays",
                   "description": "Number of video replays",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoReplays##title##75811",
+                  "meta:descriptionId": "video-metrics##xdm:videoReplays##description##75811"
                 },
                 "xdm:videoPauses": {
                   "type": "integer",
                   "title": "Video Pauses",
                   "description": "Number of video pauses",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoPauses##title##94191",
+                  "meta:descriptionId": "video-metrics##xdm:videoPauses##description##21021"
                 },
                 "xdm:videoResumes": {
                   "type": "integer",
                   "title": "Video Resumes",
                   "description": "Number of video resumes after pause",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoResumes##title##17991",
+                  "meta:descriptionId": "video-metrics##xdm:videoResumes##description##18831"
                 },
                 "xdm:videoFullscreenViews": {
                   "type": "integer",
                   "title": "Video Fullscreen Views",
                   "description": "Number of fullscreen video views",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoFullscreenViews##title##1091",
+                  "meta:descriptionId": "video-metrics##xdm:videoFullscreenViews##description##86131"
                 },
                 "xdm:videoMutes": {
                   "type": "integer",
                   "title": "Video Mutes",
                   "description": "Number of video mutes",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoMutes##title##10261",
+                  "meta:descriptionId": "video-metrics##xdm:videoMutes##description##75581"
                 },
                 "xdm:videoUnmutes": {
                   "type": "integer",
                   "title": "Video Unmutes",
                   "description": "Number of video unmutes",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoUnmutes##title##78321",
+                  "meta:descriptionId": "video-metrics##xdm:videoUnmutes##description##19201"
                 },
                 "xdm:videoVolumeChanges": {
                   "type": "integer",
                   "title": "Video Volume Changes",
                   "description": "Number of video volume changes",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoVolumeChanges##title##6351",
+                  "meta:descriptionId": "video-metrics##xdm:videoVolumeChanges##description##30851"
                 },
                 "xdm:videoClickToPlays": {
                   "type": "integer",
                   "title": "Video Click to Plays",
                   "description": "Number of click-to-play actions",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoClickToPlays##title##13381",
+                  "meta:descriptionId": "video-metrics##xdm:videoClickToPlays##description##8001"
                 },
                 "xdm:videoAutoPlays": {
                   "type": "integer",
                   "title": "Video Auto Plays",
                   "description": "Number of auto-play video starts",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "video-metrics##xdm:videoAutoPlays##title##99571",
+                  "meta:descriptionId": "video-metrics##xdm:videoAutoPlays##description##60851"
                 },
                 "xdm:videoViewabilityRate": {
                   "type": "number",
                   "title": "Video Viewability Rate",
                   "description": "Percentage of video impressions that were viewable",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoViewabilityRate##title##191",
+                  "meta:descriptionId": "video-metrics##xdm:videoViewabilityRate##description##90731"
                 },
                 "xdm:videoAudibilityRate": {
                   "type": "number",
                   "title": "Video Audibility Rate",
                   "description": "Percentage of video views with audible sound",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "video-metrics##xdm:videoAudibilityRate##title##36861",
+                  "meta:descriptionId": "video-metrics##xdm:videoAudibilityRate##description##24051"
                 }
-              }
+              },
+              "meta:titleId": "video-metrics##xdm:videoMetrics##title##57891",
+              "meta:descriptionId": "video-metrics##xdm:videoMetrics##description##93841"
             }
           }
         }
@@ -256,5 +328,7 @@
       "$ref": "#/definitions/video-metrics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "video-metrics##title##6001",
+  "meta:descriptionId": "video-metrics##description##62681"
 }

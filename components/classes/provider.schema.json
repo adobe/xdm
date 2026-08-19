@@ -22,12 +22,16 @@
         "xdm:providerID": {
           "title": "Provider ID",
           "type": "string",
-          "description": "Unique identifier of the provider."
+          "description": "Unique identifier of the provider.",
+          "meta:titleId": "provider##xdm:providerID##title##11281",
+          "meta:descriptionId": "provider##xdm:providerID##description##90671"
         },
         "xdm:providerName": {
           "title": "Provider Name",
           "description": "Name of the provider.",
-          "$ref": "https://ns.adobe.com/xdm/context/person-name"
+          "$ref": "https://ns.adobe.com/xdm/context/person-name",
+          "meta:titleId": "provider##xdm:providerName##title##92961",
+          "meta:descriptionId": "provider##xdm:providerName##description##33511"
         }
       }
     }
@@ -40,5 +44,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "provider##title##30151",
+  "meta:descriptionId": "provider##description##54261"
 }

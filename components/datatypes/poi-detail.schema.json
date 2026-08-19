@@ -69,7 +69,14 @@
             "wifi-triangulation": "Wifi triangulation"
           },
           "meta:titleId": "poi-detail##xdm:locatingType##title##95171",
-          "meta:descriptionId": "poi-detail##xdm:locatingType##description##57851"
+          "meta:descriptionId": "poi-detail##xdm:locatingType##description##57851",
+          "meta:enumId": {
+            "beacon": "poi-detail##xdm:locatingType##meta:enum##beacon##70851",
+            "gps": "poi-detail##xdm:locatingType##meta:enum##gps##82961",
+            "ip": "poi-detail##xdm:locatingType##meta:enum##ip##20631",
+            "ip+wifi": "poi-detail##xdm:locatingType##meta:enum##ip+wifi##69101",
+            "wifi-triangulation": "poi-detail##xdm:locatingType##meta:enum##wifi-triangulation##32421"
+          }
         },
         "xdm:beaconInteractionDetails": {
           "title": "Beacon interaction details",
@@ -109,7 +116,13 @@
                 "unknown": "Not able to ascertain distance, signal likely very weak."
               },
               "meta:titleId": "poi-detail##xdm:proximity##title##6741",
-              "meta:descriptionId": "poi-detail##xdm:proximity##description##34491"
+              "meta:descriptionId": "poi-detail##xdm:proximity##description##34491",
+              "meta:enumId": {
+                "immediate": "poi-detail##xdm:proximity##meta:enum##immediate##34351",
+                "near": "poi-detail##xdm:proximity##meta:enum##near##45851",
+                "far": "poi-detail##xdm:proximity##meta:enum##far##13911",
+                "unknown": "poi-detail##xdm:proximity##meta:enum##unknown##48891"
+              }
             }
           },
           "meta:titleId": "poi-detail##xdm:beaconInteractionDetails##title##27181",
@@ -148,7 +161,9 @@
         "xdm:metadata": {
           "title": "POI metadata",
           "description": "metadata assigned to the POI by the administrator of the POI definitions.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/keyedlist"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/keyedlist",
+          "meta:titleId": "poi-detail##xdm:metadata##title##91501",
+          "meta:descriptionId": "poi-detail##xdm:metadata##description##6321"
         }
       }
     }

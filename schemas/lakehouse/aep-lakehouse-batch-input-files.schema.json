@@ -18,17 +18,23 @@
         "xdm:datasetID": {
           "title": "DatasetID",
           "description": "Dataset Id the batch was created for.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-batch-input-files##xdm:datasetID##title##68261",
+          "meta:descriptionId": "aep-lakehouse-batch-input-files##xdm:datasetID##description##89721"
         },
         "xdm:batchID": {
           "title": "BatchID",
           "description": "Id for the batch containing the input files.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-batch-input-files##xdm:batchID##title##39711",
+          "meta:descriptionId": "aep-lakehouse-batch-input-files##xdm:batchID##description##85611"
         },
         "xdm:path": {
           "title": "Path",
           "description": "Path reference for the input file relative to the root of the batch.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-batch-input-files##xdm:path##title##67321",
+          "meta:descriptionId": "aep-lakehouse-batch-input-files##xdm:path##description##77401"
         }
       }
     }
@@ -41,5 +47,7 @@
       "$ref": "#/definitions/batchInputFiles"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "aep-lakehouse-batch-input-files##title##50401",
+  "meta:descriptionId": "aep-lakehouse-batch-input-files##description##35321"
 }

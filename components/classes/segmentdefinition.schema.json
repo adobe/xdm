@@ -60,6 +60,13 @@
             "DELETED": "Deleted",
             "DRAFT": "Draft",
             "REVOKED": "Revoked"
+          },
+          "meta:enumId": {
+            "ACTIVE": "segmentdefinition##xdm:segmentStatus##meta:enum##ACTIVE##24641",
+            "INACTIVE": "segmentdefinition##xdm:segmentStatus##meta:enum##INACTIVE##53521",
+            "DELETED": "segmentdefinition##xdm:segmentStatus##meta:enum##DELETED##34871",
+            "DRAFT": "segmentdefinition##xdm:segmentStatus##meta:enum##DRAFT##53511",
+            "REVOKED": "segmentdefinition##xdm:segmentStatus##meta:enum##REVOKED##34611"
           }
         },
         "xdm:labels": {

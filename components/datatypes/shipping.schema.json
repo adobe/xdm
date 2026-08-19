@@ -16,19 +16,25 @@
         "xdm:shippingMethod": {
           "title": "Shipping Method",
           "type": "string",
-          "description": "The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, etc."
+          "description": "The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, etc.",
+          "meta:titleId": "shipping##xdm:shippingMethod##title##21421",
+          "meta:descriptionId": "shipping##xdm:shippingMethod##description##51191"
         },
         "xdm:shippingAmount": {
           "title": "Shipping Amount",
           "type": "number",
-          "description": "The amount the customer had to pay for shipping."
+          "description": "The amount the customer had to pay for shipping.",
+          "meta:titleId": "shipping##xdm:shippingAmount##title##79671",
+          "meta:descriptionId": "shipping##xdm:shippingAmount##description##76761"
         },
         "xdm:currencyCode": {
           "title": "Currency code",
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 alphabetic currency code used for pricing the product."
+          "description": "The ISO 4217 alphabetic currency code used for pricing the product.",
+          "meta:titleId": "shipping##xdm:currencyCode##title##39091",
+          "meta:descriptionId": "shipping##xdm:currencyCode##description##60811"
         },
         "xdm:shippingDestination": {
           "title": "Shipping Destination",
@@ -38,6 +44,12 @@
           "meta:enum": {
             "home": "Home",
             "store": "Store"
+          },
+          "meta:titleId": "shipping##xdm:shippingDestination##title##40611",
+          "meta:descriptionId": "shipping##xdm:shippingDestination##description##74191",
+          "meta:enumId": {
+            "home": "shipping##xdm:shippingDestination##meta:enum##home##64961",
+            "store": "shipping##xdm:shippingDestination##meta:enum##store##72241"
           }
         },
         "xdm:shipDate": {
@@ -51,17 +63,23 @@
         "xdm:address": {
           "title": "Shipping Address",
           "description": "Shipping Address.",
-          "$ref": "https://ns.adobe.com/xdm/common/address"
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "meta:titleId": "shipping##xdm:address##title##2841",
+          "meta:descriptionId": "shipping##xdm:address##description##29751"
         },
         "xdm:trackingNumber": {
           "title": "Tracking Number",
           "type": "number",
-          "description": "The tracking number provided by the shipping carrier for a order item shipment."
+          "description": "The tracking number provided by the shipping carrier for a order item shipment.",
+          "meta:titleId": "shipping##xdm:trackingNumber##title##69941",
+          "meta:descriptionId": "shipping##xdm:trackingNumber##description##88371"
         },
         "xdm:trackingURL": {
           "title": "Tracking URL",
           "type": "string",
-          "description": "The URL to track the shipping status of an order item."
+          "description": "The URL to track the shipping status of an order item.",
+          "meta:titleId": "shipping##xdm:trackingURL##title##23661",
+          "meta:descriptionId": "shipping##xdm:trackingURL##description##38991"
         }
       }
     }
@@ -71,5 +89,7 @@
       "$ref": "#/definitions/shipping"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "shipping##title##41161",
+  "meta:descriptionId": "shipping##description##10571"
 }

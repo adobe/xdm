@@ -27,62 +27,84 @@
             "xdm:locationID": {
               "title": "Location ID",
               "description": "Unique identifier for the Location in which the event is taking place.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:locationID##title##67071",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:locationID##description##46611"
             },
             "xdm:eventStartDateTime": {
               "title": "Event Start Datetime",
               "description": "Datetime for the event",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:eventStartDateTime##title##15551",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:eventStartDateTime##description##33801"
             },
             "xdm:attractionName": {
               "title": "Attraction Name",
               "description": "Name of the attraction(s) at the event",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:attractionName##title##20471",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:attractionName##description##47651"
             },
             "xdm:eventClassification": {
               "title": "Event Classification",
               "description": "Describes the type of event, e.g., sports, music",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:eventClassification##title##82241",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:eventClassification##description##74171"
             },
             "xdm:eventSubClassification": {
               "title": "Event Sub Classification",
               "description": "Describes the sub-type of the event. For example, if the classification is sports, the sub-classification might be the type of sport (baseball).",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:eventSubClassification##title##82181",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:eventSubClassification##description##41351"
             },
             "xdm:premiumDoorTime": {
               "title": "Premium Door Time",
               "description": "Door open time for premium ticket holders.",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:premiumDoorTime##title##85981",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:premiumDoorTime##description##67091"
             },
             "xdm:regularDoorTime": {
               "title": "Regular Door Time",
               "description": "The time the doors open for non-premium ticket holders.",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:regularDoorTime##title##86641",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:regularDoorTime##description##82681"
             },
             "xdm:ticketSalesStartTime": {
               "title": "Ticket Sales Start Time",
               "description": "",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:ticketSalesStartTime##title##85221",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:ticketSalesStartTime##description##71741"
             },
             "xdm:ticketSalesEndTime": {
               "title": "Ticket Sales End Time",
               "description": "",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:ticketSalesEndTime##title##73451",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:ticketSalesEndTime##description##41031"
             },
             "xdm:ticketsAvailable": {
               "title": "Tickets Available",
               "description": "Indicates if tickets are still available for the event or not.",
-              "type": "boolean"
+              "type": "boolean",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:ticketsAvailable##title##50721",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:ticketsAvailable##description##8341"
             },
             "xdm:eventSeasonName": {
               "title": "Season Name",
               "description": "Descriptive name of the event season, if it is an event within a series. For example, a sports season.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "sports-entertainment-event-schedule##xdm:eventSeasonName##title##63681",
+              "meta:descriptionId": "sports-entertainment-event-schedule##xdm:eventSeasonName##description##67781"
             }
           }
         }
@@ -94,5 +116,7 @@
       "$ref": "#/definitions/sports-entertainment-event-schedule"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "sports-entertainment-event-schedule##title##37701",
+  "meta:descriptionId": "sports-entertainment-event-schedule##description##34741"
 }

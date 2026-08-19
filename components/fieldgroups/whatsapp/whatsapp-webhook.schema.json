@@ -24,7 +24,9 @@
               "title": "Object",
               "description": "Always 'whatsapp_business_account'.",
               "type": "string",
-              "const": "whatsapp_business_account"
+              "const": "whatsapp_business_account",
+              "meta:titleId": "whatsapp-webhook##xdm:object##title##80451",
+              "meta:descriptionId": "whatsapp-webhook##xdm:object##description##5181"
             },
             "xdm:entry": {
               "title": "Entry",
@@ -39,7 +41,9 @@
                   "xdm:id": {
                     "title": "WABA ID",
                     "description": "WhatsApp Business Account ID.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "whatsapp-webhook##xdm:id##title##28081",
+                    "meta:descriptionId": "whatsapp-webhook##xdm:id##description##18571"
                   },
                   "xdm:changes": {
                     "title": "Changes",
@@ -58,6 +62,12 @@
                           "meta:enum": {
                             "messages": "Messages",
                             "statuses": "Statuses"
+                          },
+                          "meta:titleId": "whatsapp-webhook##xdm:field##title##6131",
+                          "meta:descriptionId": "whatsapp-webhook##xdm:field##description##2591",
+                          "meta:enumId": {
+                            "messages": "whatsapp-webhook##xdm:field##meta:enum##messages##7411",
+                            "statuses": "whatsapp-webhook##xdm:field##meta:enum##statuses##80231"
                           }
                         },
                         "xdm:value": {
@@ -68,7 +78,9 @@
                             "xdm:messaging_product": {
                               "title": "Messaging Product",
                               "description": "Always 'whatsapp'.",
-                              "type": "string"
+                              "type": "string",
+                              "meta:titleId": "whatsapp-webhook##xdm:messaging_product##title##79331",
+                              "meta:descriptionId": "whatsapp-webhook##xdm:messaging_product##description##27111"
                             },
                             "xdm:metadata": {
                               "title": "Metadata",
@@ -78,14 +90,20 @@
                                 "xdm:display_phone_number": {
                                   "title": "Display Phone Number",
                                   "description": "The business phone number displayed to customers.",
-                                  "type": "string"
+                                  "type": "string",
+                                  "meta:titleId": "whatsapp-webhook##xdm:display_phone_number##title##38871",
+                                  "meta:descriptionId": "whatsapp-webhook##xdm:display_phone_number##description##69821"
                                 },
                                 "xdm:phone_number_id": {
                                   "title": "Phone Number ID",
                                   "description": "The WhatsApp business phone number ID.",
-                                  "type": "string"
+                                  "type": "string",
+                                  "meta:titleId": "whatsapp-webhook##xdm:phone_number_id##title##89291",
+                                  "meta:descriptionId": "whatsapp-webhook##xdm:phone_number_id##description##39111"
                                 }
-                              }
+                              },
+                              "meta:titleId": "whatsapp-webhook##xdm:metadata##title##83371",
+                              "meta:descriptionId": "whatsapp-webhook##xdm:metadata##description##13491"
                             },
                             "xdm:contacts": {
                               "title": "Sender Contacts",
@@ -98,7 +116,9 @@
                                   "xdm:wa_id": {
                                     "title": "WhatsApp ID",
                                     "description": "The sender's WhatsApp ID (typically their phone number without +).",
-                                    "type": "string"
+                                    "type": "string",
+                                    "meta:titleId": "whatsapp-webhook##xdm:wa_id##title##91361",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:wa_id##description##11191"
                                   },
                                   "xdm:profile": {
                                     "title": "Profile",
@@ -108,12 +128,19 @@
                                       "xdm:name": {
                                         "title": "Name",
                                         "description": "The sender's WhatsApp display name.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:name##title##7681",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:name##description##86041"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:profile##title##83151",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:profile##description##99771"
                                   }
-                                }
-                              }
+                                },
+                                "meta:titleId": "whatsapp-webhook##items##title##60661"
+                              },
+                              "meta:titleId": "whatsapp-webhook##xdm:contacts##title##76901",
+                              "meta:descriptionId": "whatsapp-webhook##xdm:contacts##description##49551"
                             },
                             "xdm:messages": {
                               "title": "Messages",
@@ -127,17 +154,23 @@
                                   "xdm:id": {
                                     "title": "Message ID",
                                     "description": "Unique WhatsApp message ID (wamid). Stable and unique across all messages.",
-                                    "type": "string"
+                                    "type": "string",
+                                    "meta:titleId": "whatsapp-webhook##xdm:id##title##91691",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:id##description##11011"
                                   },
                                   "xdm:from": {
                                     "title": "From",
                                     "description": "The sender's phone number in E.164 format (without +). Matches senderContact.wa_id.",
-                                    "type": "string"
+                                    "type": "string",
+                                    "meta:titleId": "whatsapp-webhook##xdm:from##title##22551",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:from##description##64281"
                                   },
                                   "xdm:timestamp": {
                                     "title": "Timestamp",
                                     "description": "Unix epoch timestamp (seconds) when the message was sent.",
-                                    "type": "string"
+                                    "type": "string",
+                                    "meta:titleId": "whatsapp-webhook##xdm:timestamp##title##34121",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:timestamp##description##98291"
                                   },
                                   "xdm:type": {
                                     "title": "Message Type",
@@ -172,6 +205,23 @@
                                       "order": "Order",
                                       "reaction": "Reaction",
                                       "unsupported": "Unsupported"
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:type##title##14811",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:type##description##4041",
+                                    "meta:enumId": {
+                                      "text": "whatsapp-webhook##xdm:type##meta:enum##text##19301",
+                                      "audio": "whatsapp-webhook##xdm:type##meta:enum##audio##55611",
+                                      "image": "whatsapp-webhook##xdm:type##meta:enum##image##79151",
+                                      "video": "whatsapp-webhook##xdm:type##meta:enum##video##30941",
+                                      "document": "whatsapp-webhook##xdm:type##meta:enum##document##86551",
+                                      "sticker": "whatsapp-webhook##xdm:type##meta:enum##sticker##82921",
+                                      "location": "whatsapp-webhook##xdm:type##meta:enum##location##93301",
+                                      "contacts": "whatsapp-webhook##xdm:type##meta:enum##contacts##35731",
+                                      "interactive": "whatsapp-webhook##xdm:type##meta:enum##interactive##41841",
+                                      "button": "whatsapp-webhook##xdm:type##meta:enum##button##10781",
+                                      "order": "whatsapp-webhook##xdm:type##meta:enum##order##54691",
+                                      "reaction": "whatsapp-webhook##xdm:type##meta:enum##reaction##53721",
+                                      "unsupported": "whatsapp-webhook##xdm:type##meta:enum##unsupported##35471"
                                     }
                                   },
                                   "xdm:context": {
@@ -182,14 +232,20 @@
                                       "xdm:id": {
                                         "title": "Replied-To Message ID",
                                         "description": "The wamid of the message being replied to.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:id##title##59201",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:id##description##62321"
                                       },
                                       "xdm:from": {
                                         "title": "Replied-To From",
                                         "description": "Phone number of the sender of the original message.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:from##title##78141",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:from##description##60231"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:context##title##85751",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:context##description##33321"
                                   },
                                   "xdm:text": {
                                     "title": "Text Content",
@@ -199,9 +255,13 @@
                                       "xdm:body": {
                                         "title": "Body",
                                         "description": "The text of the message.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:body##title##55731",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:body##description##84241"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:text##title##19661",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:text##description##81851"
                                   },
                                   "xdm:audio": {
                                     "title": "Audio",
@@ -211,30 +271,42 @@
                                       "xdm:id": {
                                         "title": "Media ID",
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:id##title##34091",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:id##description##94141"
                                       },
                                       "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the audio file, e.g. 'audio/ogg; codecs=opus'.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:mime_type##title##61061",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:mime_type##description##4991"
                                       },
                                       "xdm:sha256": {
                                         "title": "SHA-256",
                                         "description": "SHA-256 hash of the audio file for integrity verification.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:sha256##title##40231",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:sha256##description##88431"
                                       },
                                       "xdm:url": {
                                         "title": "Media URL",
                                         "description": "URL to download the audio file directly from Meta's CDN.",
                                         "type": "string",
-                                        "format": "uri"
+                                        "format": "uri",
+                                        "meta:titleId": "whatsapp-webhook##xdm:url##title##67581",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:url##description##6251"
                                       },
                                       "xdm:voice": {
                                         "title": "Voice",
                                         "description": "True if the audio was recorded using the WhatsApp in-app voice recorder.",
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "meta:titleId": "whatsapp-webhook##xdm:voice##title##92151",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:voice##description##63201"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:audio##title##87751",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:audio##description##51151"
                                   },
                                   "xdm:image": {
                                     "title": "Image",
@@ -244,30 +316,42 @@
                                       "xdm:id": {
                                         "title": "Media ID",
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:id##title##73171",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:id##description##80741"
                                       },
                                       "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the image, e.g. 'image/jpeg'.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:mime_type##title##69431",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:mime_type##description##87791"
                                       },
                                       "xdm:sha256": {
                                         "title": "SHA-256",
                                         "description": "SHA-256 hash of the image file for integrity verification.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:sha256##title##5401",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:sha256##description##28591"
                                       },
                                       "xdm:caption": {
                                         "title": "Caption",
                                         "description": "Optional caption sent with the image.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:caption##title##5261",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:caption##description##99921"
                                       },
                                       "xdm:url": {
                                         "title": "Media URL",
                                         "description": "URL to download the image file directly from Meta's CDN.",
                                         "type": "string",
-                                        "format": "uri"
+                                        "format": "uri",
+                                        "meta:titleId": "whatsapp-webhook##xdm:url##title##82541",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:url##description##43581"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:image##title##18421",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:image##description##85361"
                                   },
                                   "xdm:video": {
                                     "title": "Video",
@@ -277,30 +361,42 @@
                                       "xdm:id": {
                                         "title": "Media ID",
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:id##title##71491",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:id##description##70801"
                                       },
                                       "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the video, e.g. 'video/mp4'.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:mime_type##title##74791",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:mime_type##description##61371"
                                       },
                                       "xdm:sha256": {
                                         "title": "SHA-256",
                                         "description": "SHA-256 hash of the video file for integrity verification.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:sha256##title##51341",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:sha256##description##82631"
                                       },
                                       "xdm:caption": {
                                         "title": "Caption",
                                         "description": "Optional caption sent with the video.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:caption##title##21891",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:caption##description##97311"
                                       },
                                       "xdm:url": {
                                         "title": "Media URL",
                                         "description": "URL to download the video file directly from Meta's CDN.",
                                         "type": "string",
-                                        "format": "uri"
+                                        "format": "uri",
+                                        "meta:titleId": "whatsapp-webhook##xdm:url##title##13931",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:url##description##73281"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:video##title##28361",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:video##description##57761"
                                   },
                                   "xdm:document": {
                                     "title": "Document",
@@ -310,35 +406,49 @@
                                       "xdm:id": {
                                         "title": "Media ID",
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:id##title##51201",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:id##description##37831"
                                       },
                                       "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the document, e.g. 'application/pdf'.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:mime_type##title##41571",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:mime_type##description##24411"
                                       },
                                       "xdm:sha256": {
                                         "title": "SHA-256",
                                         "description": "SHA-256 hash of the document file for integrity verification.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:sha256##title##27761",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:sha256##description##40931"
                                       },
                                       "xdm:filename": {
                                         "title": "Filename",
                                         "description": "Original filename of the document as sent by the user.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:filename##title##68471",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:filename##description##44571"
                                       },
                                       "xdm:caption": {
                                         "title": "Caption",
                                         "description": "Optional caption sent with the document.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:caption##title##1351",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:caption##description##81341"
                                       },
                                       "xdm:url": {
                                         "title": "Media URL",
                                         "description": "URL to download the document file directly from Meta's CDN.",
                                         "type": "string",
-                                        "format": "uri"
+                                        "format": "uri",
+                                        "meta:titleId": "whatsapp-webhook##xdm:url##title##25311",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:url##description##59001"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:document##title##98121",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:document##description##52301"
                                   },
                                   "xdm:sticker": {
                                     "title": "Sticker",
@@ -348,30 +458,42 @@
                                       "xdm:id": {
                                         "title": "Media ID",
                                         "description": "WhatsApp media ID. Use the Media API to retrieve the file.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:id##title##45971",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:id##description##5291"
                                       },
                                       "xdm:mime_type": {
                                         "title": "MIME Type",
                                         "description": "MIME type of the sticker. Always 'image/webp'.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:mime_type##title##76701",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:mime_type##description##70951"
                                       },
                                       "xdm:sha256": {
                                         "title": "SHA-256",
                                         "description": "SHA-256 hash of the sticker file for integrity verification.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:sha256##title##41461",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:sha256##description##61821"
                                       },
                                       "xdm:animated": {
                                         "title": "Animated",
                                         "description": "True if the sticker is animated.",
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "meta:titleId": "whatsapp-webhook##xdm:animated##title##27701",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:animated##description##10601"
                                       },
                                       "xdm:url": {
                                         "title": "Media URL",
                                         "description": "URL to download the sticker file directly from Meta's CDN.",
                                         "type": "string",
-                                        "format": "uri"
+                                        "format": "uri",
+                                        "meta:titleId": "whatsapp-webhook##xdm:url##title##40781",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:url##description##5961"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:sticker##title##59481",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:sticker##description##28301"
                                   },
                                   "xdm:location": {
                                     "title": "Location",
@@ -383,26 +505,36 @@
                                         "description": "Latitude of the location in decimal degrees.",
                                         "type": "number",
                                         "minimum": -90,
-                                        "maximum": 90
+                                        "maximum": 90,
+                                        "meta:titleId": "whatsapp-webhook##xdm:latitude##title##10971",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:latitude##description##1141"
                                       },
                                       "xdm:longitude": {
                                         "title": "Longitude",
                                         "description": "Longitude of the location in decimal degrees.",
                                         "type": "number",
                                         "minimum": -180,
-                                        "maximum": 180
+                                        "maximum": 180,
+                                        "meta:titleId": "whatsapp-webhook##xdm:longitude##title##98491",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:longitude##description##7251"
                                       },
                                       "xdm:name": {
                                         "title": "Name",
                                         "description": "Name of the location, if provided by the sender.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:name##title##18901",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:name##description##48201"
                                       },
                                       "xdm:address": {
                                         "title": "Address",
                                         "description": "Street address of the location, if provided by the sender.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:address##title##25201",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:address##description##88201"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:location##title##61441",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:location##description##92521"
                                   },
                                   "xdm:contact_cards": {
                                     "title": "Contact Cards",
@@ -417,29 +549,36 @@
                                           "properties": {
                                             "xdm:formatted_name": {
                                               "title": "Formatted Name",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:formatted_name##title##27741"
                                             },
                                             "xdm:first_name": {
                                               "title": "First Name",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:first_name##title##97881"
                                             },
                                             "xdm:last_name": {
                                               "title": "Last Name",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:last_name##title##58201"
                                             },
                                             "xdm:middle_name": {
                                               "title": "Middle Name",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:middle_name##title##57091"
                                             },
                                             "xdm:suffix": {
                                               "title": "Suffix",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:suffix##title##63771"
                                             },
                                             "xdm:prefix": {
                                               "title": "Prefix",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:prefix##title##92841"
                                             }
-                                          }
+                                          },
+                                          "meta:titleId": "whatsapp-webhook##xdm:name##title##92121"
                                         },
                                         "xdm:phones": {
                                           "title": "Phone Numbers",
@@ -449,18 +588,22 @@
                                             "properties": {
                                               "xdm:phone": {
                                                 "title": "Phone",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:phone##title##49471"
                                               },
                                               "xdm:type": {
                                                 "title": "Type",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:type##title##39791"
                                               },
                                               "xdm:wa_id": {
                                                 "title": "WhatsApp ID",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:wa_id##title##62951"
                                               }
                                             }
-                                          }
+                                          },
+                                          "meta:titleId": "whatsapp-webhook##xdm:phones##title##53951"
                                         },
                                         "xdm:emails": {
                                           "title": "Email Addresses",
@@ -470,14 +613,17 @@
                                             "properties": {
                                               "xdm:email": {
                                                 "title": "Email",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:email##title##78761"
                                               },
                                               "xdm:type": {
                                                 "title": "Type",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:type##title##54461"
                                               }
                                             }
-                                          }
+                                          },
+                                          "meta:titleId": "whatsapp-webhook##xdm:emails##title##67141"
                                         },
                                         "xdm:addresses": {
                                           "title": "Addresses",
@@ -487,34 +633,42 @@
                                             "properties": {
                                               "xdm:street": {
                                                 "title": "Street",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:street##title##42861"
                                               },
                                               "xdm:city": {
                                                 "title": "City",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:city##title##5661"
                                               },
                                               "xdm:state": {
                                                 "title": "State",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:state##title##71091"
                                               },
                                               "xdm:zip": {
                                                 "title": "ZIP",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:zip##title##19831"
                                               },
                                               "xdm:country": {
                                                 "title": "Country",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:country##title##37871"
                                               },
                                               "xdm:country_code": {
                                                 "title": "Country Code",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:country_code##title##13131"
                                               },
                                               "xdm:type": {
                                                 "title": "Type",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:type##title##63941"
                                               }
                                             }
-                                          }
+                                          },
+                                          "meta:titleId": "whatsapp-webhook##xdm:addresses##title##96861"
                                         },
                                         "xdm:urls": {
                                           "title": "URLs",
@@ -525,14 +679,17 @@
                                               "xdm:url": {
                                                 "title": "URL",
                                                 "type": "string",
-                                                "format": "uri"
+                                                "format": "uri",
+                                                "meta:titleId": "whatsapp-webhook##xdm:url##title##12431"
                                               },
                                               "xdm:type": {
                                                 "title": "Type",
-                                                "type": "string"
+                                                "type": "string",
+                                                "meta:titleId": "whatsapp-webhook##xdm:type##title##56041"
                                               }
                                             }
-                                          }
+                                          },
+                                          "meta:titleId": "whatsapp-webhook##xdm:urls##title##90291"
                                         },
                                         "xdm:org": {
                                           "title": "Organization",
@@ -540,20 +697,26 @@
                                           "properties": {
                                             "xdm:company": {
                                               "title": "Company",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:company##title##50381"
                                             },
                                             "xdm:department": {
                                               "title": "Department",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:department##title##14351"
                                             },
                                             "xdm:title": {
                                               "title": "Title",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:title##title##9781"
                                             }
-                                          }
+                                          },
+                                          "meta:titleId": "whatsapp-webhook##xdm:org##title##20531"
                                         }
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:contact_cards##title##27631",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:contact_cards##description##84001"
                                   },
                                   "xdm:interactive": {
                                     "title": "Interactive Reply",
@@ -568,6 +731,12 @@
                                         "meta:enum": {
                                           "button_reply": "Button Reply",
                                           "list_reply": "List Reply"
+                                        },
+                                        "meta:titleId": "whatsapp-webhook##xdm:type##title##89011",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:type##description##37991",
+                                        "meta:enumId": {
+                                          "button_reply": "whatsapp-webhook##xdm:type##meta:enum##button_reply##70811",
+                                          "list_reply": "whatsapp-webhook##xdm:type##meta:enum##list_reply##12181"
                                         }
                                       },
                                       "xdm:button_reply": {
@@ -577,13 +746,17 @@
                                         "properties": {
                                           "xdm:id": {
                                             "title": "Button ID",
-                                            "type": "string"
+                                            "type": "string",
+                                            "meta:titleId": "whatsapp-webhook##xdm:id##title##12561"
                                           },
                                           "xdm:title": {
                                             "title": "Button Title",
-                                            "type": "string"
+                                            "type": "string",
+                                            "meta:titleId": "whatsapp-webhook##xdm:title##title##24901"
                                           }
-                                        }
+                                        },
+                                        "meta:titleId": "whatsapp-webhook##xdm:button_reply##title##2081",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:button_reply##description##92731"
                                       },
                                       "xdm:list_reply": {
                                         "title": "List Reply",
@@ -592,19 +765,26 @@
                                         "properties": {
                                           "xdm:id": {
                                             "title": "Row ID",
-                                            "type": "string"
+                                            "type": "string",
+                                            "meta:titleId": "whatsapp-webhook##xdm:id##title##37491"
                                           },
                                           "xdm:title": {
                                             "title": "Row Title",
-                                            "type": "string"
+                                            "type": "string",
+                                            "meta:titleId": "whatsapp-webhook##xdm:title##title##30631"
                                           },
                                           "xdm:description": {
                                             "title": "Row Description",
-                                            "type": "string"
+                                            "type": "string",
+                                            "meta:titleId": "whatsapp-webhook##xdm:description##title##32991"
                                           }
-                                        }
+                                        },
+                                        "meta:titleId": "whatsapp-webhook##xdm:list_reply##title##71391",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:list_reply##description##67491"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:interactive##title##28861",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:interactive##description##51791"
                                   },
                                   "xdm:button": {
                                     "title": "Button",
@@ -614,14 +794,20 @@
                                       "xdm:payload": {
                                         "title": "Payload",
                                         "description": "Developer-defined payload for the button.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:payload##title##68711",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:payload##description##22101"
                                       },
                                       "xdm:text": {
                                         "title": "Text",
                                         "description": "The button label text.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:text##title##32261",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:text##description##99901"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:button##title##57481",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:button##description##49581"
                                   },
                                   "xdm:order": {
                                     "title": "Order",
@@ -631,12 +817,16 @@
                                       "xdm:catalog_id": {
                                         "title": "Catalog ID",
                                         "description": "ID of the WhatsApp catalog the order was placed from.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:catalog_id##title##18331",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:catalog_id##description##221"
                                       },
                                       "xdm:text": {
                                         "title": "Order Note",
                                         "description": "Optional note from the customer accompanying the order.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:text##title##78631",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:text##description##35281"
                                       },
                                       "xdm:product_items": {
                                         "title": "Product Items",
@@ -648,29 +838,41 @@
                                             "xdm:product_retailer_id": {
                                               "title": "Product Retailer ID",
                                               "description": "The retailer's SKU/product ID from the catalog.",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:product_retailer_id##title##61591",
+                                              "meta:descriptionId": "whatsapp-webhook##xdm:product_retailer_id##description##97421"
                                             },
                                             "xdm:quantity": {
                                               "title": "Quantity",
                                               "description": "Number of units ordered.",
                                               "type": "integer",
-                                              "minimum": 1
+                                              "minimum": 1,
+                                              "meta:titleId": "whatsapp-webhook##xdm:quantity##title##62161",
+                                              "meta:descriptionId": "whatsapp-webhook##xdm:quantity##description##75691"
                                             },
                                             "xdm:item_price": {
                                               "title": "Item Price",
                                               "description": "Unit price of the product at time of order.",
-                                              "type": "number"
+                                              "type": "number",
+                                              "meta:titleId": "whatsapp-webhook##xdm:item_price##title##51501",
+                                              "meta:descriptionId": "whatsapp-webhook##xdm:item_price##description##14691"
                                             },
                                             "xdm:currency": {
                                               "title": "Currency",
                                               "description": "ISO 4217 currency code.",
                                               "type": "string",
-                                              "pattern": "^[A-Z]{3}$"
+                                              "pattern": "^[A-Z]{3}$",
+                                              "meta:titleId": "whatsapp-webhook##xdm:currency##title##2911",
+                                              "meta:descriptionId": "whatsapp-webhook##xdm:currency##description##57691"
                                             }
                                           }
-                                        }
+                                        },
+                                        "meta:titleId": "whatsapp-webhook##xdm:product_items##title##33911",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:product_items##description##72241"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:order##title##64461",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:order##description##6841"
                                   },
                                   "xdm:reaction": {
                                     "title": "Reaction",
@@ -680,17 +882,27 @@
                                       "xdm:message_id": {
                                         "title": "Reacted-To Message ID",
                                         "description": "The wamid of the message that was reacted to.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:message_id##title##80941",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:message_id##description##84081"
                                       },
                                       "xdm:emoji": {
                                         "title": "Emoji",
                                         "description": "The emoji used as the reaction. Empty string means the reaction was removed.",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:emoji##title##21251",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:emoji##description##81361"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:reaction##title##65041",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:reaction##description##34821"
                                   }
-                                }
-                              }
+                                },
+                                "meta:titleId": "whatsapp-webhook##items##title##60811",
+                                "meta:descriptionId": "whatsapp-webhook##items##description##81281"
+                              },
+                              "meta:titleId": "whatsapp-webhook##xdm:messages##title##27951",
+                              "meta:descriptionId": "whatsapp-webhook##xdm:messages##description##17671"
                             },
                             "xdm:statuses": {
                               "title": "Statuses",
@@ -704,7 +916,9 @@
                                   "xdm:id": {
                                     "title": "Message ID",
                                     "description": "The wamid of the outbound message this status refers to.",
-                                    "type": "string"
+                                    "type": "string",
+                                    "meta:titleId": "whatsapp-webhook##xdm:id##title##44061",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:id##description##61231"
                                   },
                                   "xdm:status": {
                                     "title": "Status",
@@ -721,17 +935,29 @@
                                       "delivered": "Delivered",
                                       "read": "Read",
                                       "failed": "Failed"
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:status##title##94261",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:status##description##62591",
+                                    "meta:enumId": {
+                                      "sent": "whatsapp-webhook##xdm:status##meta:enum##sent##4501",
+                                      "delivered": "whatsapp-webhook##xdm:status##meta:enum##delivered##63861",
+                                      "read": "whatsapp-webhook##xdm:status##meta:enum##read##86931",
+                                      "failed": "whatsapp-webhook##xdm:status##meta:enum##failed##96181"
                                     }
                                   },
                                   "xdm:timestamp": {
                                     "title": "Timestamp",
                                     "description": "Unix epoch timestamp when this status was recorded.",
-                                    "type": "string"
+                                    "type": "string",
+                                    "meta:titleId": "whatsapp-webhook##xdm:timestamp##title##82081",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:timestamp##description##7421"
                                   },
                                   "xdm:recipient_id": {
                                     "title": "Recipient ID",
                                     "description": "Phone number of the message recipient.",
-                                    "type": "string"
+                                    "type": "string",
+                                    "meta:titleId": "whatsapp-webhook##xdm:recipient_id##title##12601",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:recipient_id##description##45401"
                                   },
                                   "xdm:conversation": {
                                     "title": "Conversation",
@@ -740,7 +966,8 @@
                                     "properties": {
                                       "xdm:id": {
                                         "title": "Conversation ID",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:id##title##42741"
                                       },
                                       "xdm:origin": {
                                         "title": "Origin",
@@ -749,11 +976,16 @@
                                           "xdm:type": {
                                             "title": "Origin Type",
                                             "description": "Billing category: 'business_initiated', 'user_initiated', or 'referral_conversion'.",
-                                            "type": "string"
+                                            "type": "string",
+                                            "meta:titleId": "whatsapp-webhook##xdm:type##title##5191",
+                                            "meta:descriptionId": "whatsapp-webhook##xdm:type##description##95131"
                                           }
-                                        }
+                                        },
+                                        "meta:titleId": "whatsapp-webhook##xdm:origin##title##79091"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:conversation##title##15431",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:conversation##description##99621"
                                   },
                                   "xdm:pricing": {
                                     "title": "Pricing",
@@ -762,17 +994,22 @@
                                       "xdm:billable": {
                                         "title": "Billable",
                                         "description": "Whether this message is billable.",
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "meta:titleId": "whatsapp-webhook##xdm:billable##title##32281",
+                                        "meta:descriptionId": "whatsapp-webhook##xdm:billable##description##96521"
                                       },
                                       "xdm:pricing_model": {
                                         "title": "Pricing Model",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:pricing_model##title##61191"
                                       },
                                       "xdm:category": {
                                         "title": "Category",
-                                        "type": "string"
+                                        "type": "string",
+                                        "meta:titleId": "whatsapp-webhook##xdm:category##title##35841"
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:pricing##title##22291"
                                   },
                                   "xdm:errors": {
                                     "title": "Errors",
@@ -783,40 +1020,62 @@
                                       "properties": {
                                         "xdm:code": {
                                           "title": "Error Code",
-                                          "type": "integer"
+                                          "type": "integer",
+                                          "meta:titleId": "whatsapp-webhook##xdm:code##title##93811"
                                         },
                                         "xdm:title": {
                                           "title": "Error Title",
-                                          "type": "string"
+                                          "type": "string",
+                                          "meta:titleId": "whatsapp-webhook##xdm:title##title##82431"
                                         },
                                         "xdm:message": {
                                           "title": "Error Message",
-                                          "type": "string"
+                                          "type": "string",
+                                          "meta:titleId": "whatsapp-webhook##xdm:message##title##93451"
                                         },
                                         "xdm:error_data": {
                                           "type": "object",
                                           "properties": {
                                             "xdm:details": {
                                               "title": "Details",
-                                              "type": "string"
+                                              "type": "string",
+                                              "meta:titleId": "whatsapp-webhook##xdm:details##title##55011"
                                             }
                                           }
                                         }
                                       }
-                                    }
+                                    },
+                                    "meta:titleId": "whatsapp-webhook##xdm:errors##title##72821",
+                                    "meta:descriptionId": "whatsapp-webhook##xdm:errors##description##44641"
                                   }
-                                }
-                              }
+                                },
+                                "meta:titleId": "whatsapp-webhook##items##title##68091",
+                                "meta:descriptionId": "whatsapp-webhook##items##description##94771"
+                              },
+                              "meta:titleId": "whatsapp-webhook##xdm:statuses##title##48561",
+                              "meta:descriptionId": "whatsapp-webhook##xdm:statuses##description##62221"
                             }
-                          }
+                          },
+                          "meta:titleId": "whatsapp-webhook##xdm:value##title##56791",
+                          "meta:descriptionId": "whatsapp-webhook##xdm:value##description##20121"
                         }
-                      }
-                    }
+                      },
+                      "meta:titleId": "whatsapp-webhook##items##title##3851",
+                      "meta:descriptionId": "whatsapp-webhook##items##description##36161"
+                    },
+                    "meta:titleId": "whatsapp-webhook##xdm:changes##title##14111",
+                    "meta:descriptionId": "whatsapp-webhook##xdm:changes##description##64091"
                   }
-                }
-              }
+                },
+                "meta:titleId": "whatsapp-webhook##items##title##80631",
+                "meta:descriptionId": "whatsapp-webhook##items##description##13421"
+              },
+              "meta:titleId": "whatsapp-webhook##xdm:entry##title##38561",
+              "meta:descriptionId": "whatsapp-webhook##xdm:entry##description##23281"
             }
-          }
+          },
+          "meta:titleId": "whatsapp-webhook##xdm:whatsappWebhook##title##33061",
+          "meta:descriptionId": "whatsapp-webhook##xdm:whatsappWebhook##description##96551"
         }
       }
     }
@@ -830,5 +1089,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2026-06-01"
+  "meta:createdDate": "2026-06-01",
+  "meta:titleId": "whatsapp-webhook##title##46001",
+  "meta:descriptionId": "whatsapp-webhook##description##57781"
 }

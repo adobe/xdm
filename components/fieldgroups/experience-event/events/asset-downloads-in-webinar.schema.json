@@ -37,28 +37,39 @@
                     "xdm:campaignName": {
                       "title": "Campaign Name",
                       "type": "string",
-                      "description": "Name of the campaign."
+                      "description": "Name of the campaign.",
+                      "meta:titleId": "asset-downloads-in-webinar##xdm:campaignName##title##19891",
+                      "meta:descriptionId": "asset-downloads-in-webinar##xdm:campaignName##description##26401"
                     },
                     "xdm:campaignID": {
                       "title": "Campaign ID",
                       "type": "string",
-                      "description": "Unique identifier of the campaign."
+                      "description": "Unique identifier of the campaign.",
+                      "meta:titleId": "asset-downloads-in-webinar##xdm:campaignID##title##38361",
+                      "meta:descriptionId": "asset-downloads-in-webinar##xdm:campaignID##description##86651"
                     },
                     "xdm:file": {
                       "title": "File",
                       "type": "string",
-                      "description": "The file downloaded during the webinar."
+                      "description": "The file downloaded during the webinar.",
+                      "meta:titleId": "asset-downloads-in-webinar##xdm:file##title##49381",
+                      "meta:descriptionId": "asset-downloads-in-webinar##xdm:file##description##18111"
                     },
                     "xdm:campaignKey": {
                       "title": "Campaign Key",
                       "description": "Unique key of the campaign.",
-                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                      "meta:titleId": "asset-downloads-in-webinar##xdm:campaignKey##title##21431",
+                      "meta:descriptionId": "asset-downloads-in-webinar##xdm:campaignKey##description##99221"
                     }
-                  }
+                  },
+                  "meta:titleId": "asset-downloads-in-webinar##xdm:assetDownload##title##17181"
                 }
-              }
+              },
+              "meta:titleId": "asset-downloads-in-webinar##xdm:webinar##title##28901"
             }
-          }
+          },
+          "meta:titleId": "asset-downloads-in-webinar##xdm:leadOperation##title##89951"
         }
       }
     }
@@ -69,5 +80,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-10"
+  "meta:createdDate": "2025-01-10",
+  "meta:titleId": "asset-downloads-in-webinar##title##42371",
+  "meta:descriptionId": "asset-downloads-in-webinar##description##97921"
 }

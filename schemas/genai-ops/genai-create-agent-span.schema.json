@@ -27,7 +27,8 @@
               "properties": {
                 "xdm:name": {
                   "type": "string",
-                  "description": "The name of the operation being performed."
+                  "description": "The name of the operation being performed.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:name##description##18021"
                 }
               }
             },
@@ -36,28 +37,33 @@
               "properties": {
                 "xdm:name": {
                   "type": "string",
-                  "description": "The Generative AI provider as identified by the client or server instrumentation."
+                  "description": "The Generative AI provider as identified by the client or server instrumentation.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:name##description##94791"
                 }
               }
             },
             "xdm:system": {
               "type": "string",
-              "description": "The Generative AI product as identified by the client or server instrumentation."
+              "description": "The Generative AI product as identified by the client or server instrumentation.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:system##description##58381"
             },
             "xdm:agent": {
               "type": "object",
               "properties": {
                 "xdm:description": {
                   "type": "string",
-                  "description": "Free-form description of the GenAI agent provided by the application."
+                  "description": "Free-form description of the GenAI agent provided by the application.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:description##description##72341"
                 },
                 "xdm:id": {
                   "type": "string",
-                  "description": "The unique identifier of the GenAI agent."
+                  "description": "The unique identifier of the GenAI agent.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:id##description##58351"
                 },
                 "xdm:name": {
                   "type": "string",
-                  "description": "Human-readable name of the GenAI agent provided by the application."
+                  "description": "Human-readable name of the GenAI agent provided by the application.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:name##description##84751"
                 }
               }
             },
@@ -66,13 +72,15 @@
               "properties": {
                 "xdm:model": {
                   "type": "string",
-                  "description": "The name of the GenAI model a request is being made to."
+                  "description": "The name of the GenAI model a request is being made to.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:model##description##8351"
                 }
               }
             },
             "xdm:system_instructions": {
               "type": "string",
-              "description": "The system message or instructions provided to the GenAI model separately from the chat history."
+              "description": "The system message or instructions provided to the GenAI model separately from the chat history.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:system_instructions##description##46811"
             }
           }
         },
@@ -81,7 +89,8 @@
           "properties": {
             "xdm:type": {
               "type": "string",
-              "description": "Describes a class of error the operation ended with."
+              "description": "Describes a class of error the operation ended with.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:type##description##45681"
             }
           }
         },
@@ -90,11 +99,13 @@
           "properties": {
             "xdm:port": {
               "type": "integer",
-              "description": "GenAI server port."
+              "description": "GenAI server port.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:port##description##45161"
             },
             "xdm:address": {
               "type": "string",
-              "description": "GenAI server address."
+              "description": "GenAI server address.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:address##description##21521"
             }
           }
         }
@@ -106,5 +117,7 @@
       "$ref": "#/definitions/genai-agent-creation-span"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "genai-create-agent-span##title##56961",
+  "meta:descriptionId": "genai-create-agent-span##description##4461"
 }

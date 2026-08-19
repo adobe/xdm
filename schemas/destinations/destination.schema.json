@@ -68,7 +68,11 @@
             "disabled": "Disabled and cannot be used"
           },
           "meta:titleId": "destination##xdm:destinationStatus##title##53881",
-          "meta:descriptionId": "destination##xdm:destinationStatus##description##61291"
+          "meta:descriptionId": "destination##xdm:destinationStatus##description##61291",
+          "meta:enumId": {
+            "enabled": "destination##xdm:destinationStatus##meta:enum##enabled##5221",
+            "disabled": "destination##xdm:destinationStatus##meta:enum##disabled##20881"
+          }
         },
         "xdm:version": {
           "title": "Version",
@@ -101,7 +105,11 @@
             "Streaming": "Streaming"
           },
           "meta:titleId": "destination##xdm:destinationFrequency##title##71911",
-          "meta:descriptionId": "destination##xdm:destinationFrequency##description##87861"
+          "meta:descriptionId": "destination##xdm:destinationFrequency##description##87861",
+          "meta:enumId": {
+            "Batch": "destination##xdm:destinationFrequency##meta:enum##Batch##99051",
+            "Streaming": "destination##xdm:destinationFrequency##meta:enum##Streaming##14751"
+          }
         }
       }
     }

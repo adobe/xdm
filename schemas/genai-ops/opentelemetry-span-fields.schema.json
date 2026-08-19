@@ -24,31 +24,38 @@
           "properties": {
             "xdm:trace_id": {
               "type": "string",
-              "description": "The ID of the trace."
+              "description": "The ID of the trace.",
+              "meta:descriptionId": "opentelemetry-span-fields##xdm:trace_id##description##68011"
             },
             "xdm:span_id": {
               "type": "string",
-              "description": "The ID of the span."
+              "description": "The ID of the span.",
+              "meta:descriptionId": "opentelemetry-span-fields##xdm:span_id##description##60571"
             },
             "xdm:parent_span_id": {
               "type": "string",
-              "description": "The ID of the parent span."
+              "description": "The ID of the parent span.",
+              "meta:descriptionId": "opentelemetry-span-fields##xdm:parent_span_id##description##47081"
             },
             "xdm:name": {
               "type": "string",
-              "description": "The name of the span."
+              "description": "The name of the span.",
+              "meta:descriptionId": "opentelemetry-span-fields##xdm:name##description##33441"
             },
             "xdm:kind": {
               "type": "string",
-              "description": "The kind of the span."
+              "description": "The kind of the span.",
+              "meta:descriptionId": "opentelemetry-span-fields##xdm:kind##description##37061"
             },
             "xdm:start_time_unix_nano": {
               "type": "number",
-              "description": "The start time of the span."
+              "description": "The start time of the span.",
+              "meta:descriptionId": "opentelemetry-span-fields##xdm:start_time_unix_nano##description##76031"
             },
             "xdm:end_time_unix_nano": {
               "type": "number",
-              "description": "The end time of the span."
+              "description": "The end time of the span.",
+              "meta:descriptionId": "opentelemetry-span-fields##xdm:end_time_unix_nano##description##62031"
             },
             "xdm:status": {
               "type": "object",
@@ -56,15 +63,23 @@
               "properties": {
                 "xdm:code": {
                   "type": "string",
-                  "description": "The code of the status."
+                  "description": "The code of the status.",
+                  "meta:descriptionId": "opentelemetry-span-fields##xdm:code##description##8301"
                 }
-              }
+              },
+              "meta:descriptionId": "opentelemetry-span-fields##xdm:status##description##48331"
             }
           }
         }
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/opentelemetry-span-fields" }],
-  "meta:status": "experimental"
+  "allOf": [
+    {
+      "$ref": "#/definitions/opentelemetry-span-fields"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "opentelemetry-span-fields##title##53881",
+  "meta:descriptionId": "opentelemetry-span-fields##description##43281"
 }

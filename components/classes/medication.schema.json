@@ -22,12 +22,16 @@
         "xdm:medicationID": {
           "title": "Medication ID",
           "type": "string",
-          "description": "Unique identifier of the medication."
+          "description": "Unique identifier of the medication.",
+          "meta:titleId": "medication##xdm:medicationID##title##87311",
+          "meta:descriptionId": "medication##xdm:medicationID##description##79191"
         },
         "xdm:medicationName": {
           "title": "Medication Name",
           "type": "string",
-          "description": "Name of the medication."
+          "description": "Name of the medication.",
+          "meta:titleId": "medication##xdm:medicationName##title##98261",
+          "meta:descriptionId": "medication##xdm:medicationName##description##12321"
         }
       }
     }
@@ -40,5 +44,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "medication##title##61921",
+  "meta:descriptionId": "medication##description##11991"
 }

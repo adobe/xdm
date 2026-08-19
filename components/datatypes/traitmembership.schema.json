@@ -20,13 +20,17 @@
           "title": "Last Qualification Time",
           "type": "string",
           "format": "date-time",
-          "description": "The timestamp when the profile last qualified for this trait."
+          "description": "The timestamp when the profile last qualified for this trait.",
+          "meta:titleId": "traitMembership##xdm:lastQualificationTime##title##91971",
+          "meta:descriptionId": "traitMembership##xdm:lastQualificationTime##description##64281"
         },
         "xdm:validUntil": {
           "title": "Valid Until Date",
           "type": "string",
           "format": "date-time",
-          "description": "The timestamp until which the trait membership is valid."
+          "description": "The timestamp until which the trait membership is valid.",
+          "meta:titleId": "traitMembership##xdm:validUntil##title##69871",
+          "meta:descriptionId": "traitMembership##xdm:validUntil##description##30171"
         }
       }
     }
@@ -35,5 +39,7 @@
     {
       "$ref": "#/definitions/traitMembership"
     }
-  ]
+  ],
+  "meta:titleId": "traitMembership##title##98411",
+  "meta:descriptionId": "traitMembership##description##55331"
 }

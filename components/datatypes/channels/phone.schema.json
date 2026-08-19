@@ -34,7 +34,12 @@
             "pull": "The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered.",
             "bidirectional": "Both `push` and `pull` interaction modes are supported by the channel."
           },
-          "meta:descriptionId": "phone##xdm:mode##description##75341"
+          "meta:descriptionId": "phone##xdm:mode##description##75341",
+          "meta:enumId": {
+            "push": "phone##xdm:mode##meta:enum##push##94501",
+            "pull": "phone##xdm:mode##meta:enum##pull##13881",
+            "bidirectional": "phone##xdm:mode##meta:enum##bidirectional##51041"
+          }
         },
         "@type": {
           "type": "string",
@@ -49,7 +54,15 @@
             "https://ns.adobe.com/xdm/channel-types/email": "Email",
             "https://ns.adobe.com/xdm/channel-types/offline": "Non-digital experience channels"
           },
-          "meta:descriptionId": "phone##@type##description##36651"
+          "meta:descriptionId": "phone##@type##description##36651",
+          "meta:enumId": {
+            "https://ns.adobe.com/xdm/channel-types/web": "phone##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/web##14261",
+            "https://ns.adobe.com/xdm/channel-types/social": "phone##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/social##35301",
+            "https://ns.adobe.com/xdm/channel-types/mobile": "phone##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/mobile##62221",
+            "https://ns.adobe.com/xdm/channel-types/messaging": "phone##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/messaging##28721",
+            "https://ns.adobe.com/xdm/channel-types/email": "phone##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/email##1751",
+            "https://ns.adobe.com/xdm/channel-types/offline": "phone##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/offline##25601"
+          }
         },
         "xdm:contentTypes": {
           "type": "array",

@@ -1,0 +1,78 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/mixins/paid-media/measurement-run",
+  "title": "Core Paid Media Measurement Run",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Run-level lineage, identity-match metrics, and additional dimension display names emitted by paid media measurement and attribution runs (e.g. Real-Time CDP Collaboration paid-media summary outputs). Carries per-run context and denormalized display values that do not fit the core identifier, metric, denormalized-name, or dimensional-breakdown fieldgroups.",
+  "definitions": {
+    "measurement-run": {
+      "properties": {
+        "xdm:paidMedia": {
+          "type": "object",
+          "properties": {
+            "xdm:measurementRun": {
+              "type": "object",
+              "title": "Measurement Run",
+              "description": "Fields stamped by a paid media measurement or attribution run onto each summary row.",
+              "properties": {
+                "xdm:moduleID": {
+                  "type": "string",
+                  "title": "Module ID",
+                  "description": "Identifier of the measurement module or report that emitted this row. Constant across every row produced by a single run and used to trace a row back to its originating pipeline execution."
+                },
+                "xdm:matchRate": {
+                  "type": "number",
+                  "title": "Identity Match Rate",
+                  "description": "Fraction of source conversions that identity-joined at least one impression across the fixed match-key set, ignoring time windows. Typically populated only on the whole-input rollup grain and left null on lower-grain rows where a single ratio is not meaningful. Expressed as a fraction in [0, 1].",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:groupedConversions": {
+                  "type": "number",
+                  "title": "Grouped Conversions",
+                  "description": "Attributed conversions deduplicated by a resolved household or identity group. Complements xdm:paidMedia.metrics.conversions (per-conversion count) with a household or group-level count at the same rollup grain.",
+                  "minimum": 0
+                },
+                "xdm:conversionEventType": {
+                  "type": "string",
+                  "title": "Conversion Event Type",
+                  "description": "Type of the source conversion event, carried through from the upstream conversion source (e.g. a dotted taxonomy like 'retail.purchase' or an ad-network event name). Customer-defined and unbounded: no fixed vocabulary is enforced. Populated on rows scoped to a single conversion event type and left null on impression-only breakdowns."
+                },
+                "xdm:audienceName": {
+                  "type": "string",
+                  "title": "Audience Name",
+                  "description": "Display name of the audience segment for this row. Mirrors xdm:paidMedia.dimensionalBreakdowns.audienceSegment (the identifier) with a human-readable label; populated on audience breakdown rows."
+                },
+                "xdm:placementName": {
+                  "type": "string",
+                  "title": "Placement Name",
+                  "description": "Display name of the placement for this row. Mirrors xdm:paidMedia.dimensionalBreakdowns.placement (the identifier) with a human-readable label; populated on placement breakdown rows."
+                },
+                "xdm:siteName": {
+                  "type": "string",
+                  "title": "Site Name",
+                  "description": "Site or domain on which the impression was served. Populated on site breakdown rows."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/measurement-run"
+    }
+  ],
+  "meta:status": "experimental"
+}

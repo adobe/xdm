@@ -23,6 +23,11 @@
           "description": "The primary event type for this time-series record.",
           "meta:enum": {
             "aep.ai.agent.trace": "AEP AI Agent Trace"
+          },
+          "meta:titleId": "aep-ai-agent-trace##xdm:eventType##title##15761",
+          "meta:descriptionId": "aep-ai-agent-trace##xdm:eventType##description##61001",
+          "meta:enumId": {
+            "aep.ai.agent.trace": "aep-ai-agent-trace##xdm:eventType##meta:enum##aep.ai.agent.trace##92831"
           }
         }
       }
@@ -36,5 +41,7 @@
       "$ref": "#/definitions/aep-ai-agent-trace-class"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "aep-ai-agent-trace##title##28521",
+  "meta:descriptionId": "aep-ai-agent-trace##description##59461"
 }

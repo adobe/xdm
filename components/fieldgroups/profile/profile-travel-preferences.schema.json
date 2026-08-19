@@ -35,7 +35,13 @@
               },
               "description": "Captures the user's preferred seat type for flights.",
               "meta:titleId": "travel-preferences##xdm:seat##title##40251",
-              "meta:descriptionId": "travel-preferences##xdm:seat##description##20281"
+              "meta:descriptionId": "travel-preferences##xdm:seat##description##20281",
+              "meta:enumId": {
+                "noPreference": "travel-preferences##xdm:seat##meta:enum##noPreference##73721",
+                "aisle": "travel-preferences##xdm:seat##meta:enum##aisle##42181",
+                "window": "travel-preferences##xdm:seat##meta:enum##window##58041",
+                "middle": "travel-preferences##xdm:seat##meta:enum##middle##63861"
+              }
             },
             "xdm:seatSection": {
               "title": "Seat Section",
@@ -56,7 +62,14 @@
               },
               "description": "Captures the user's preferred seat sectionfor flights.",
               "meta:titleId": "travel-preferences##xdm:seatSection ##title##18591",
-              "meta:descriptionId": "travel-preferences##xdm:seatSection ##description##77291"
+              "meta:descriptionId": "travel-preferences##xdm:seatSection ##description##77291",
+              "meta:enumId": {
+                "noPreference": "travel-preferences##xdm:seatSection##meta:enum##noPreference##9341",
+                "forward": "travel-preferences##xdm:seatSection##meta:enum##forward##111",
+                "bulkhead": "travel-preferences##xdm:seatSection##meta:enum##bulkhead##48481",
+                "exitRow": "travel-preferences##xdm:seatSection##meta:enum##exitRow##59851",
+                "rear": "travel-preferences##xdm:seatSection##meta:enum##rear##29191"
+              }
             },
             "xdm:meal": {
               "title": "Meal",
@@ -105,7 +118,28 @@
               },
               "description": "Tracks the user's meal preference, if provided.",
               "meta:titleId": "travel-preferences##xdm:meal##title##78791",
-              "meta:descriptionId": "travel-preferences##xdm:meal##description##17671"
+              "meta:descriptionId": "travel-preferences##xdm:meal##description##17671",
+              "meta:enumId": {
+                "regularMeal": "travel-preferences##xdm:meal##meta:enum##regularMeal##68391",
+                "blandLowResidue": "travel-preferences##xdm:meal##meta:enum##blandLowResidue##28191",
+                "childMeal": "travel-preferences##xdm:meal##meta:enum##childMeal##44401",
+                "diabeticMeal": "travel-preferences##xdm:meal##meta:enum##diabeticMeal##58261",
+                "fruitPlatter": "travel-preferences##xdm:meal##meta:enum##fruitPlatter##5601",
+                "glutenFreeMeal": "travel-preferences##xdm:meal##meta:enum##glutenFreeMeal##43411",
+                "infantBabyMeal": "travel-preferences##xdm:meal##meta:enum##infantBabyMeal##92001",
+                "kosherMeal": "travel-preferences##xdm:meal##meta:enum##kosherMeal##51841",
+                "lowCalorieMeal": "travel-preferences##xdm:meal##meta:enum##lowCalorieMeal##51771",
+                "lowSaltSodiumMeal": "travel-preferences##xdm:meal##meta:enum##lowSaltSodiumMeal##34831",
+                "halalMeal": "travel-preferences##xdm:meal##meta:enum##halalMeal##27321",
+                "noSaltMeal": "travel-preferences##xdm:meal##meta:enum##noSaltMeal##10241",
+                "nonLactoseMeal": "travel-preferences##xdm:meal##meta:enum##nonLactoseMeal##56341",
+                "peanutFreeMeal": "travel-preferences##xdm:meal##meta:enum##peanutFreeMeal##47641",
+                "seafoodMeal": "travel-preferences##xdm:meal##meta:enum##seafoodMeal##39691",
+                "vegLactoOvo": "travel-preferences##xdm:meal##meta:enum##vegLactoOvo##55671",
+                "vegetarian": "travel-preferences##xdm:meal##meta:enum##vegetarian##62891",
+                "vegetarianKosher": "travel-preferences##xdm:meal##meta:enum##vegetarianKosher##29401",
+                "vegetarianRaw": "travel-preferences##xdm:meal##meta:enum##vegetarianRaw##31301"
+              }
             },
             "xdm:preferredDepartureAirportCode": {
               "title": "Preferred Departure Airport Code",
@@ -125,7 +159,11 @@
               },
               "description": "Defines the user's preferred ticket delivery method.",
               "meta:titleId": "travel-preferences##xdm:ticketDelivery##title##93181",
-              "meta:descriptionId": "travel-preferences##xdm:ticketDelivery##description##26661"
+              "meta:descriptionId": "travel-preferences##xdm:ticketDelivery##description##26661",
+              "meta:enumId": {
+                "eTicket": "travel-preferences##xdm:ticketDelivery##meta:enum##eTicket##22131",
+                "physical": "travel-preferences##xdm:ticketDelivery##meta:enum##physical##92911"
+              }
             },
             "xdm:medicalAlerts": {
               "title": "Medical Alerts",
@@ -157,7 +195,16 @@
               },
               "description": "Tracks the user's preferred room type.",
               "meta:titleId": "travel-preferences##xdm:roomType##title##79691",
-              "meta:descriptionId": "travel-preferences##xdm:roomType##description##61471"
+              "meta:descriptionId": "travel-preferences##xdm:roomType##description##61471",
+              "meta:enumId": {
+                "noPreference": "travel-preferences##xdm:roomType##meta:enum##noPreference##52811",
+                "king": "travel-preferences##xdm:roomType##meta:enum##king##31901",
+                "queen": "travel-preferences##xdm:roomType##meta:enum##queen##69321",
+                "double": "travel-preferences##xdm:roomType##meta:enum##double##64111",
+                "twin": "travel-preferences##xdm:roomType##meta:enum##twin##63791",
+                "single": "travel-preferences##xdm:roomType##meta:enum##single##56851",
+                "disability": "travel-preferences##xdm:roomType##meta:enum##disability##63861"
+              }
             },
             "xdm:smokingRoom": {
               "title": "Smoking Room",
@@ -283,7 +330,28 @@
               },
               "description": "Records the user's vehicle type preference.",
               "meta:titleId": "travel-preferences##xdm:vehicleType##title##73971",
-              "meta:descriptionId": "travel-preferences##xdm:vehicleType##description##50501"
+              "meta:descriptionId": "travel-preferences##xdm:vehicleType##description##50501",
+              "meta:enumId": {
+                "miniCar": "travel-preferences##xdm:vehicleType##meta:enum##miniCar##92781",
+                "economyCar": "travel-preferences##xdm:vehicleType##meta:enum##economyCar##15011",
+                "economyCarHybrid": "travel-preferences##xdm:vehicleType##meta:enum##economyCarHybrid##10871",
+                "compactCar": "travel-preferences##xdm:vehicleType##meta:enum##compactCar##68811",
+                "compactCarHybrid": "travel-preferences##xdm:vehicleType##meta:enum##compactCarHybrid##62031",
+                "intermediateCar": "travel-preferences##xdm:vehicleType##meta:enum##intermediateCar##3901",
+                "intermediateCarHybrid": "travel-preferences##xdm:vehicleType##meta:enum##intermediateCarHybrid##24701",
+                "standardCar": "travel-preferences##xdm:vehicleType##meta:enum##standardCar##42621",
+                "standardCarHybrid": "travel-preferences##xdm:vehicleType##meta:enum##standardCarHybrid##12301",
+                "fullSizeCar": "travel-preferences##xdm:vehicleType##meta:enum##fullSizeCar##35581",
+                "fullSizeCarHybrid": "travel-preferences##xdm:vehicleType##meta:enum##fullSizeCarHybrid##18381",
+                "intermediateSUV": "travel-preferences##xdm:vehicleType##meta:enum##intermediateSUV##22021",
+                "miniVan": "travel-preferences##xdm:vehicleType##meta:enum##miniVan##52021",
+                "standardSUV": "travel-preferences##xdm:vehicleType##meta:enum##standardSUV##56231",
+                "fullSizeSUV": "travel-preferences##xdm:vehicleType##meta:enum##fullSizeSUV##29881",
+                "fullSizePickup": "travel-preferences##xdm:vehicleType##meta:enum##fullSizePickup##91131",
+                "premiumCar": "travel-preferences##xdm:vehicleType##meta:enum##premiumCar##66271",
+                "luxuryCar": "travel-preferences##xdm:vehicleType##meta:enum##luxuryCar##90171",
+                "specializedVehicle": "travel-preferences##xdm:vehicleType##meta:enum##specializedVehicle##84181"
+              }
             },
             "xdm:smokingVehicle": {
               "title": "Smoking Vehicle",

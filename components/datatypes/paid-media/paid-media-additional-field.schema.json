@@ -16,28 +16,38 @@
         "xdm:fieldName": {
           "title": "Field Name",
           "type": "string",
-          "description": "Name of the additional field"
+          "description": "Name of the additional field",
+          "meta:titleId": "paid-media-additional-field##xdm:fieldName##title##70471",
+          "meta:descriptionId": "paid-media-additional-field##xdm:fieldName##description##32981"
         },
         "xdm:stringValue": {
           "title": "String Value",
           "type": "string",
-          "description": "String value of the field"
+          "description": "String value of the field",
+          "meta:titleId": "paid-media-additional-field##xdm:stringValue##title##50301",
+          "meta:descriptionId": "paid-media-additional-field##xdm:stringValue##description##87391"
         },
         "xdm:numberValue": {
           "title": "Number Value",
           "type": "number",
-          "description": "Numeric value of the field"
+          "description": "Numeric value of the field",
+          "meta:titleId": "paid-media-additional-field##xdm:numberValue##title##63271",
+          "meta:descriptionId": "paid-media-additional-field##xdm:numberValue##description##2831"
         },
         "xdm:booleanValue": {
           "title": "Boolean Value",
           "type": "boolean",
-          "description": "Boolean value of the field"
+          "description": "Boolean value of the field",
+          "meta:titleId": "paid-media-additional-field##xdm:booleanValue##title##11021",
+          "meta:descriptionId": "paid-media-additional-field##xdm:booleanValue##description##10331"
         },
         "xdm:dateValue": {
           "title": "Date Value",
           "type": "string",
           "format": "date-time",
-          "description": "Date/time value of the field"
+          "description": "Date/time value of the field",
+          "meta:titleId": "paid-media-additional-field##xdm:dateValue##title##96571",
+          "meta:descriptionId": "paid-media-additional-field##xdm:dateValue##description##85601"
         }
       },
       "required": ["xdm:fieldName"]
@@ -48,5 +58,7 @@
       "$ref": "#/definitions/additionalField"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "paid-media-additional-field##title##11381",
+  "meta:descriptionId": "paid-media-additional-field##description##91811"
 }

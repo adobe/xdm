@@ -35,7 +35,12 @@
             "pull": "The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered.",
             "bidirectional": "Both `push` and `pull` interaction modes are supported by the channel."
           },
-          "meta:descriptionId": "channel##xdm:mode##description##40711"
+          "meta:descriptionId": "channel##xdm:mode##description##40711",
+          "meta:enumId": {
+            "push": "channel##xdm:mode##meta:enum##push##50081",
+            "pull": "channel##xdm:mode##meta:enum##pull##38451",
+            "bidirectional": "channel##xdm:mode##meta:enum##bidirectional##89091"
+          }
         },
         "@type": {
           "type": "string",
@@ -61,7 +66,27 @@
             "https://ns.adobe.com/xdm/channel-types/mail": "Mail",
             "https://ns.adobe.com/xdm/channel-types/instore": "Instore"
           },
-          "meta:descriptionId": "channel##@type##description##71341"
+          "meta:descriptionId": "channel##@type##description##71341",
+          "meta:enumId": {
+            "https://ns.adobe.com/xdm/channel-types/web": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/web##74981",
+            "https://ns.adobe.com/xdm/channel-types/social": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/social##69901",
+            "https://ns.adobe.com/xdm/channel-types/mobile": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/mobile##93831",
+            "https://ns.adobe.com/xdm/channel-types/messaging": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/messaging##79671",
+            "https://ns.adobe.com/xdm/channel-types/email": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/email##73431",
+            "https://ns.adobe.com/xdm/channel-types/offline": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/offline##21441",
+            "https://ns.adobe.com/xdm/channel-types/display": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/display##89881",
+            "https://ns.adobe.com/xdm/channel-types/search": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/search##57941",
+            "https://ns.adobe.com/xdm/channel-types/social_display": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/social_display##32471",
+            "https://ns.adobe.com/xdm/channel-types/video": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/video##19461",
+            "https://ns.adobe.com/xdm/channel-types/affiliate": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/affiliate##59651",
+            "https://ns.adobe.com/xdm/channel-types/affinity": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/affinity##66241",
+            "https://ns.adobe.com/xdm/channel-types/apps": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/apps##32851",
+            "https://ns.adobe.com/xdm/channel-types/preload": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/preload##74971",
+            "https://ns.adobe.com/xdm/channel-types/direct": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/direct##11461",
+            "https://ns.adobe.com/xdm/channel-types/external": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/external##70691",
+            "https://ns.adobe.com/xdm/channel-types/mail": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/mail##73311",
+            "https://ns.adobe.com/xdm/channel-types/instore": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/instore##9661"
+          }
         },
         "xdm:mediaType": {
           "type": "string",
@@ -71,7 +96,12 @@
             "owned": "Owned",
             "earned": "Earned"
           },
-          "meta:descriptionId": "channel##xdm:mediaType##description##84831"
+          "meta:descriptionId": "channel##xdm:mediaType##description##84831",
+          "meta:enumId": {
+            "paid": "channel##xdm:mediaType##meta:enum##paid##29471",
+            "owned": "channel##xdm:mediaType##meta:enum##owned##7491",
+            "earned": "channel##xdm:mediaType##meta:enum##earned##9651"
+          }
         },
         "xdm:mediaAction": {
           "type": "string",
@@ -90,7 +120,21 @@
             "userComplaints": "UserComplaints",
             "subscriptions": "Subscriptions"
           },
-          "meta:descriptionId": "channel##xdm:mediaAction##description##43291"
+          "meta:descriptionId": "channel##xdm:mediaAction##description##43291",
+          "meta:enumId": {
+            "opens": "channel##xdm:mediaAction##meta:enum##opens##55011",
+            "sends": "channel##xdm:mediaAction##meta:enum##sends##94591",
+            "clicks": "channel##xdm:mediaAction##meta:enum##clicks##83041",
+            "impressions": "channel##xdm:mediaAction##meta:enum##impressions##80521",
+            "bounces": "channel##xdm:mediaAction##meta:enum##bounces##87941",
+            "mirrorpages": "channel##xdm:mediaAction##meta:enum##mirrorpages##86771",
+            "nonDeliverables": "channel##xdm:mediaAction##meta:enum##nonDeliverables##35821",
+            "notSent": "channel##xdm:mediaAction##meta:enum##notSent##25411",
+            "offerOpens": "channel##xdm:mediaAction##meta:enum##offerOpens##41481",
+            "unSubscriptions": "channel##xdm:mediaAction##meta:enum##unSubscriptions##45271",
+            "userComplaints": "channel##xdm:mediaAction##meta:enum##userComplaints##6571",
+            "subscriptions": "channel##xdm:mediaAction##meta:enum##subscriptions##24391"
+          }
         },
         "xdm:contentTypes": {
           "type": "array",
@@ -128,7 +172,9 @@
         "xdm:referringSource": {
           "title": "Referring Source",
           "description": "Referring source to this channel",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "channel##xdm:referringSource##title##45451",
+          "meta:descriptionId": "channel##xdm:referringSource##description##67821"
         }
       }
     }

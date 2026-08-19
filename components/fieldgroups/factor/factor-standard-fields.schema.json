@@ -54,7 +54,11 @@
               "examples": ["Internal", "External"],
               "meta:titleId": "factor-standard-fields##xdm:factorType##title##98734",
               "meta:descriptionId": "factor-standard-fields##xdm:factorType##description##99703",
-              "default": "Internal"
+              "default": "Internal",
+              "meta:enumId": {
+                "Internal": "factor-standard-fields##xdm:factorType##meta:enum##Internal##22821",
+                "External": "factor-standard-fields##xdm:factorType##meta:enum##External##93611"
+              }
             },
             "xdm:valueType": {
               "title": "Value Type",
@@ -68,7 +72,11 @@
               "examples": ["Actual", "Forecasted"],
               "meta:titleId": "factor-standard-fields##xdm:valueType##title##98735",
               "meta:descriptionId": "factor-standard-fields##xdm:valueType##description##99704",
-              "default": "Actual"
+              "default": "Actual",
+              "meta:enumId": {
+                "Actual": "factor-standard-fields##xdm:valueType##meta:enum##Actual##38721",
+                "Forecasted": "factor-standard-fields##xdm:valueType##meta:enum##Forecasted##23011"
+              }
             },
             "xdm:granularity": {
               "title": "Granularity",
@@ -82,7 +90,12 @@
               },
               "examples": ["Daily", "Weekly", "Monthly"],
               "meta:titleId": "factor-standard-fields##xdm:granularity##title##98736",
-              "meta:descriptionId": "factor-standard-fields##xdm:granularity##description##99705"
+              "meta:descriptionId": "factor-standard-fields##xdm:granularity##description##99705",
+              "meta:enumId": {
+                "Daily": "factor-standard-fields##xdm:granularity##meta:enum##Daily##33341",
+                "Weekly": "factor-standard-fields##xdm:granularity##meta:enum##Weekly##17791",
+                "Monthly": "factor-standard-fields##xdm:granularity##meta:enum##Monthly##72751"
+              }
             }
           },
           "required": ["xdm:factorName", "xdm:factorValue"],

@@ -96,6 +96,28 @@
               "greek": "Greek",
               "american": "American",
               "thai": "Thai"
+            },
+            "meta:enumId": {
+              "chinese": "restaurant##items##meta:enum##chinese##46511",
+              "steak": "restaurant##items##meta:enum##steak##98701",
+              "sushi": "restaurant##items##meta:enum##sushi##71471",
+              "asian": "restaurant##items##meta:enum##asian##41621",
+              "vietnamese": "restaurant##items##meta:enum##vietnamese##85391",
+              "european": "restaurant##items##meta:enum##european##62581",
+              "french": "restaurant##items##meta:enum##french##83971",
+              "italian": "restaurant##items##meta:enum##italian##30531",
+              "burgers": "restaurant##items##meta:enum##burgers##52671",
+              "japanese": "restaurant##items##meta:enum##japanese##84311",
+              "barbecue": "restaurant##items##meta:enum##barbecue##26511",
+              "mediterranean": "restaurant##items##meta:enum##mediterranean##54301",
+              "indian": "restaurant##items##meta:enum##indian##26981",
+              "grill": "restaurant##items##meta:enum##grill##50781",
+              "seafood": "restaurant##items##meta:enum##seafood##361",
+              "steakhouse": "restaurant##items##meta:enum##steakhouse##40931",
+              "mexican": "restaurant##items##meta:enum##mexican##74581",
+              "greek": "restaurant##items##meta:enum##greek##15371",
+              "american": "restaurant##items##meta:enum##american##25631",
+              "thai": "restaurant##items##meta:enum##thai##16711"
             }
           },
           "meta:titleId": "restaurant##xdm:cuisine##title##50811",
@@ -113,6 +135,12 @@
               "ubereats": "UberEats",
               "doordash": "DoorDash",
               "other": "Other"
+            },
+            "meta:enumId": {
+              "grubhub": "restaurant##items##meta:enum##grubhub##68691",
+              "ubereats": "restaurant##items##meta:enum##ubereats##13221",
+              "doordash": "restaurant##items##meta:enum##doordash##46891",
+              "other": "restaurant##items##meta:enum##other##46521"
             }
           },
           "meta:titleId": "restaurant##xdm:deliveryPartners##title##72581",
@@ -137,6 +165,13 @@
               "curbside": "Curbside",
               "takeout": "Takeout",
               "dogFriendly": "Dog Friendly"
+            },
+            "meta:enumId": {
+              "outdoorSeating": "restaurant##items##meta:enum##outdoorSeating##84911",
+              "delivery": "restaurant##items##meta:enum##delivery##92111",
+              "curbside": "restaurant##items##meta:enum##curbside##26171",
+              "takeout": "restaurant##items##meta:enum##takeout##57731",
+              "dogFriendly": "restaurant##items##meta:enum##dogFriendly##90901"
             }
           },
           "meta:titleId": "restaurant##xdm:diningOptions##title##77411",

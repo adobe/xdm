@@ -47,7 +47,13 @@
             "education": "Education"
           },
           "meta:titleId": "emailaddress##xdm:type##title##361",
-          "meta:descriptionId": "emailaddress##xdm:type##description##85951"
+          "meta:descriptionId": "emailaddress##xdm:type##description##85951",
+          "meta:enumId": {
+            "unknown": "emailaddress##xdm:type##meta:enum##unknown##13071",
+            "personal": "emailaddress##xdm:type##meta:enum##personal##78611",
+            "work": "emailaddress##xdm:type##meta:enum##work##3651",
+            "education": "emailaddress##xdm:type##meta:enum##education##31781"
+          }
         },
         "xdm:status": {
           "title": "Status",
@@ -62,7 +68,14 @@
             "blocked": "Blocked"
           },
           "meta:titleId": "emailaddress##xdm:status##title##48261",
-          "meta:descriptionId": "emailaddress##xdm:status##description##48341"
+          "meta:descriptionId": "emailaddress##xdm:status##description##48341",
+          "meta:enumId": {
+            "active": "emailaddress##xdm:status##meta:enum##active##74031",
+            "incomplete": "emailaddress##xdm:status##meta:enum##incomplete##19381",
+            "pending_verification": "emailaddress##xdm:status##meta:enum##pending_verification##25071",
+            "blacklisted": "emailaddress##xdm:status##meta:enum##blacklisted##94001",
+            "blocked": "emailaddress##xdm:status##meta:enum##blocked##11411"
+          }
         },
         "xdm:statusReason": {
           "title": "Status reason",

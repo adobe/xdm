@@ -101,6 +101,13 @@
                     "stolen": "Stolen",
                     "never received": "Never Received",
                     "damaged": "Damaged"
+                  },
+                  "meta:enumId": {
+                    "new": "experienceevent-card-actions##xdm:cardOrderType##meta:enum##new##76811",
+                    "lost": "experienceevent-card-actions##xdm:cardOrderType##meta:enum##lost##66531",
+                    "stolen": "experienceevent-card-actions##xdm:cardOrderType##meta:enum##stolen##31261",
+                    "never received": "experienceevent-card-actions##xdm:cardOrderType##meta:enum##never received##98671",
+                    "damaged": "experienceevent-card-actions##xdm:cardOrderType##meta:enum##damaged##48421"
                   }
                 },
                 "xdm:cardType": {
@@ -128,6 +135,16 @@
                     "virtual": "Virtual",
                     "hsa": "HSA",
                     "fsa": "FSA"
+                  },
+                  "meta:enumId": {
+                    "credit": "experienceevent-card-actions##xdm:cardType##meta:enum##credit##28211",
+                    "debit": "experienceevent-card-actions##xdm:cardType##meta:enum##debit##72091",
+                    "prepaid": "experienceevent-card-actions##xdm:cardType##meta:enum##prepaid##60491",
+                    "paypal": "experienceevent-card-actions##xdm:cardType##meta:enum##paypal##83461",
+                    "atm": "experienceevent-card-actions##xdm:cardType##meta:enum##atm##50451",
+                    "virtual": "experienceevent-card-actions##xdm:cardType##meta:enum##virtual##95291",
+                    "hsa": "experienceevent-card-actions##xdm:cardType##meta:enum##hsa##14061",
+                    "fsa": "experienceevent-card-actions##xdm:cardType##meta:enum##fsa##26631"
                   }
                 },
                 "xdm:cardUnlocked": {

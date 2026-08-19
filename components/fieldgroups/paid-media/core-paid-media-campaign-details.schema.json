@@ -55,19 +55,39 @@
                     "catalog_sales": "Catalog Sales",
                     "store_visits": "Store Visits",
                     "other": "Other Objective"
+                  },
+                  "meta:titleId": "campaign-details##xdm:objective##title##36991",
+                  "meta:descriptionId": "campaign-details##xdm:objective##description##90791",
+                  "meta:enumId": {
+                    "awareness": "campaign-details##xdm:objective##meta:enum##awareness##63901",
+                    "consideration": "campaign-details##xdm:objective##meta:enum##consideration##22681",
+                    "conversions": "campaign-details##xdm:objective##meta:enum##conversions##4671",
+                    "reach": "campaign-details##xdm:objective##meta:enum##reach##93971",
+                    "traffic": "campaign-details##xdm:objective##meta:enum##traffic##79901",
+                    "engagement": "campaign-details##xdm:objective##meta:enum##engagement##74661",
+                    "app_installs": "campaign-details##xdm:objective##meta:enum##app_installs##25361",
+                    "video_views": "campaign-details##xdm:objective##meta:enum##video_views##70811",
+                    "lead_generation": "campaign-details##xdm:objective##meta:enum##lead_generation##461",
+                    "catalog_sales": "campaign-details##xdm:objective##meta:enum##catalog_sales##3581",
+                    "store_visits": "campaign-details##xdm:objective##meta:enum##store_visits##48191",
+                    "other": "campaign-details##xdm:objective##meta:enum##other##29281"
                   }
                 },
                 "xdm:startTime": {
                   "type": "string",
                   "format": "date-time",
                   "title": "Start Time",
-                  "description": "When the campaign becomes active/starts running"
+                  "description": "When the campaign becomes active/starts running",
+                  "meta:titleId": "campaign-details##xdm:startTime##title##57301",
+                  "meta:descriptionId": "campaign-details##xdm:startTime##description##74521"
                 },
                 "xdm:endTime": {
                   "type": "string",
                   "format": "date-time",
                   "title": "End Time",
-                  "description": "When the campaign stops running/expires"
+                  "description": "When the campaign stops running/expires",
+                  "meta:titleId": "campaign-details##xdm:endTime##title##49541",
+                  "meta:descriptionId": "campaign-details##xdm:endTime##description##12491"
                 },
                 "xdm:campaignType": {
                   "type": "string",
@@ -126,12 +146,43 @@
                     "travel": "Travel Campaign",
                     "smart": "Smart Campaign",
                     "other": "Other Campaign Type"
+                  },
+                  "meta:titleId": "campaign-details##xdm:campaignType##title##89441",
+                  "meta:descriptionId": "campaign-details##xdm:campaignType##description##89691",
+                  "meta:enumId": {
+                    "search": "campaign-details##xdm:campaignType##meta:enum##search##24261",
+                    "display": "campaign-details##xdm:campaignType##meta:enum##display##30171",
+                    "video": "campaign-details##xdm:campaignType##meta:enum##video##6661",
+                    "shopping": "campaign-details##xdm:campaignType##meta:enum##shopping##30531",
+                    "social": "campaign-details##xdm:campaignType##meta:enum##social##4121",
+                    "mobile_app": "campaign-details##xdm:campaignType##meta:enum##mobile_app##86201",
+                    "connected_tv": "campaign-details##xdm:campaignType##meta:enum##connected_tv##41621",
+                    "audio": "campaign-details##xdm:campaignType##meta:enum##audio##44391",
+                    "native": "campaign-details##xdm:campaignType##meta:enum##native##62301",
+                    "lead_generation": "campaign-details##xdm:campaignType##meta:enum##lead_generation##58571",
+                    "catalog_sales": "campaign-details##xdm:campaignType##meta:enum##catalog_sales##89091",
+                    "sponsored_products": "campaign-details##xdm:campaignType##meta:enum##sponsored_products##79131",
+                    "sponsored_brands": "campaign-details##xdm:campaignType##meta:enum##sponsored_brands##31141",
+                    "sponsored_display": "campaign-details##xdm:campaignType##meta:enum##sponsored_display##94651",
+                    "sponsored_tv": "campaign-details##xdm:campaignType##meta:enum##sponsored_tv##23701",
+                    "traffic": "campaign-details##xdm:campaignType##meta:enum##traffic##38221",
+                    "performance_max": "campaign-details##xdm:campaignType##meta:enum##performance_max##47061",
+                    "demand_gen": "campaign-details##xdm:campaignType##meta:enum##demand_gen##93201",
+                    "multi_channel": "campaign-details##xdm:campaignType##meta:enum##multi_channel##21111",
+                    "local": "campaign-details##xdm:campaignType##meta:enum##local##94881",
+                    "local_services": "campaign-details##xdm:campaignType##meta:enum##local_services##98851",
+                    "hotel": "campaign-details##xdm:campaignType##meta:enum##hotel##81051",
+                    "travel": "campaign-details##xdm:campaignType##meta:enum##travel##87601",
+                    "smart": "campaign-details##xdm:campaignType##meta:enum##smart##13441",
+                    "other": "campaign-details##xdm:campaignType##meta:enum##other##82411"
                   }
                 },
                 "xdm:subType": {
                   "type": "string",
                   "title": "Campaign Sub-type",
-                  "description": "More specific campaign sub-type or format. Maps to Google Ads advertising_channel_sub_type for non-automated variants (e.g., VIDEO_NON_SKIPPABLE, VIDEO_SEQUENCE)."
+                  "description": "More specific campaign sub-type or format. Maps to Google Ads advertising_channel_sub_type for non-automated variants (e.g., VIDEO_NON_SKIPPABLE, VIDEO_SEQUENCE).",
+                  "meta:titleId": "campaign-details##xdm:subType##title##65291",
+                  "meta:descriptionId": "campaign-details##xdm:subType##description##53121"
                 },
                 "xdm:promotedObject": {
                   "type": "object",
@@ -158,24 +209,42 @@
                         "website": "Website",
                         "catalog": "Product Catalog",
                         "other": "Other Object"
+                      },
+                      "meta:titleId": "campaign-details##xdm:objectType##title##95911",
+                      "meta:enumId": {
+                        "page": "campaign-details##xdm:objectType##meta:enum##page##21821",
+                        "app": "campaign-details##xdm:objectType##meta:enum##app##67121",
+                        "product": "campaign-details##xdm:objectType##meta:enum##product##90381",
+                        "event": "campaign-details##xdm:objectType##meta:enum##event##42181",
+                        "website": "campaign-details##xdm:objectType##meta:enum##website##39041",
+                        "catalog": "campaign-details##xdm:objectType##meta:enum##catalog##43141",
+                        "other": "campaign-details##xdm:objectType##meta:enum##other##61951"
                       }
                     },
                     "xdm:objectID": {
                       "type": "string",
                       "title": "Object ID",
-                      "description": "ID of the promoted object"
+                      "description": "ID of the promoted object",
+                      "meta:titleId": "campaign-details##xdm:objectID##title##73301",
+                      "meta:descriptionId": "campaign-details##xdm:objectID##description##31911"
                     },
                     "xdm:objectName": {
                       "type": "string",
                       "title": "Object Name",
-                      "description": "Name of the promoted object"
+                      "description": "Name of the promoted object",
+                      "meta:titleId": "campaign-details##xdm:objectName##title##55941",
+                      "meta:descriptionId": "campaign-details##xdm:objectName##description##33591"
                     },
                     "xdm:objectURL": {
                       "type": "string",
                       "title": "Object URL",
-                      "description": "URL of the promoted object"
+                      "description": "URL of the promoted object",
+                      "meta:titleId": "campaign-details##xdm:objectURL##title##84091",
+                      "meta:descriptionId": "campaign-details##xdm:objectURL##description##26621"
                     }
-                  }
+                  },
+                  "meta:titleId": "campaign-details##xdm:promotedObject##title##11171",
+                  "meta:descriptionId": "campaign-details##xdm:promotedObject##description##96261"
                 },
                 "xdm:budgetSettings": {
                   "type": "object",
@@ -185,7 +254,9 @@
                     "xdm:isCampaignBudgetOptimization": {
                       "type": "boolean",
                       "title": "Campaign Budget Optimization",
-                      "description": "Whether campaign uses automatic budget optimization"
+                      "description": "Whether campaign uses automatic budget optimization",
+                      "meta:titleId": "campaign-details##xdm:isCampaignBudgetOptimization##title##90621",
+                      "meta:descriptionId": "campaign-details##xdm:isCampaignBudgetOptimization##description##27191"
                     },
                     "xdm:budgetType": {
                       "type": "string",
@@ -200,25 +271,38 @@
                         "daily": "Daily Budget",
                         "lifetime": "Lifetime Budget",
                         "campaign_budget_optimization": "Campaign Budget Optimization"
+                      },
+                      "meta:titleId": "campaign-details##xdm:budgetType##title##22281",
+                      "meta:descriptionId": "campaign-details##xdm:budgetType##description##2831",
+                      "meta:enumId": {
+                        "daily": "campaign-details##xdm:budgetType##meta:enum##daily##5951",
+                        "lifetime": "campaign-details##xdm:budgetType##meta:enum##lifetime##65271",
+                        "campaign_budget_optimization": "campaign-details##xdm:budgetType##meta:enum##campaign_budget_optimization##5221"
                       }
                     },
                     "xdm:dailyBudget": {
                       "type": "number",
                       "title": "Daily Budget",
                       "description": "Daily budget amount in account currency",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "campaign-details##xdm:dailyBudget##title##11271",
+                      "meta:descriptionId": "campaign-details##xdm:dailyBudget##description##13921"
                     },
                     "xdm:lifetimeBudget": {
                       "type": "number",
                       "title": "Lifetime Budget",
                       "description": "Total lifetime budget amount in account currency",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "campaign-details##xdm:lifetimeBudget##title##83201",
+                      "meta:descriptionId": "campaign-details##xdm:lifetimeBudget##description##68721"
                     },
                     "xdm:spendCap": {
                       "type": "number",
                       "title": "Spend Cap",
                       "description": "Maximum amount that can be spent",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "campaign-details##xdm:spendCap##title##99781",
+                      "meta:descriptionId": "campaign-details##xdm:spendCap##description##10521"
                     },
                     "xdm:bidStrategy": {
                       "type": "string",
@@ -271,19 +355,51 @@
                         "commission": "Commission Bidding",
                         "manual_cpa": "Manual CPA",
                         "fixed_cpm": "Fixed CPM"
+                      },
+                      "meta:titleId": "campaign-details##xdm:bidStrategy##title##98971",
+                      "meta:descriptionId": "campaign-details##xdm:bidStrategy##description##31671",
+                      "meta:enumId": {
+                        "manual_cpc": "campaign-details##xdm:bidStrategy##meta:enum##manual_cpc##79921",
+                        "enhanced_cpc": "campaign-details##xdm:bidStrategy##meta:enum##enhanced_cpc##40851",
+                        "maximize_clicks": "campaign-details##xdm:bidStrategy##meta:enum##maximize_clicks##21611",
+                        "maximize_conversions": "campaign-details##xdm:bidStrategy##meta:enum##maximize_conversions##95511",
+                        "maximize_conversion_value": "campaign-details##xdm:bidStrategy##meta:enum##maximize_conversion_value##86781",
+                        "target_cpa": "campaign-details##xdm:bidStrategy##meta:enum##target_cpa##93401",
+                        "target_roas": "campaign-details##xdm:bidStrategy##meta:enum##target_roas##71181",
+                        "target_impression_share": "campaign-details##xdm:bidStrategy##meta:enum##target_impression_share##14571",
+                        "automatic": "campaign-details##xdm:bidStrategy##meta:enum##automatic##59901",
+                        "lowest_cost": "campaign-details##xdm:bidStrategy##meta:enum##lowest_cost##51221",
+                        "cost_cap": "campaign-details##xdm:bidStrategy##meta:enum##cost_cap##54591",
+                        "bid_cap": "campaign-details##xdm:bidStrategy##meta:enum##bid_cap##96011",
+                        "min_roas": "campaign-details##xdm:bidStrategy##meta:enum##min_roas##55661",
+                        "manual_cpm": "campaign-details##xdm:bidStrategy##meta:enum##manual_cpm##77411",
+                        "manual_cpv": "campaign-details##xdm:bidStrategy##meta:enum##manual_cpv##46371",
+                        "target_cpm": "campaign-details##xdm:bidStrategy##meta:enum##target_cpm##2411",
+                        "target_cpv": "campaign-details##xdm:bidStrategy##meta:enum##target_cpv##41531",
+                        "target_cpc": "campaign-details##xdm:bidStrategy##meta:enum##target_cpc##69601",
+                        "percent_cpc": "campaign-details##xdm:bidStrategy##meta:enum##percent_cpc##72081",
+                        "commission": "campaign-details##xdm:bidStrategy##meta:enum##commission##99511",
+                        "manual_cpa": "campaign-details##xdm:bidStrategy##meta:enum##manual_cpa##92661",
+                        "fixed_cpm": "campaign-details##xdm:bidStrategy##meta:enum##fixed_cpm##40101"
                       }
                     },
                     "xdm:bidAmount": {
                       "type": "number",
                       "title": "Bid Amount",
-                      "description": "Bid amount or target cost"
+                      "description": "Bid amount or target cost",
+                      "meta:titleId": "campaign-details##xdm:bidAmount##title##41771",
+                      "meta:descriptionId": "campaign-details##xdm:bidAmount##description##28651"
                     }
-                  }
+                  },
+                  "meta:titleId": "campaign-details##xdm:budgetSettings##title##86541",
+                  "meta:descriptionId": "campaign-details##xdm:budgetSettings##description##39801"
                 },
                 "xdm:targeting": {
                   "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-targeting",
                   "title": "Campaign Targeting",
-                  "description": "Targeting specifications for the campaign"
+                  "description": "Targeting specifications for the campaign",
+                  "meta:titleId": "campaign-details##xdm:targeting##title##56001",
+                  "meta:descriptionId": "campaign-details##xdm:targeting##description##40171"
                 },
                 "xdm:scheduling": {
                   "type": "object",
@@ -293,7 +409,9 @@
                     "xdm:isAlwaysOn": {
                       "type": "boolean",
                       "title": "Always On",
-                      "description": "Whether campaign runs continuously"
+                      "description": "Whether campaign runs continuously",
+                      "meta:titleId": "campaign-details##xdm:isAlwaysOn##title##60611",
+                      "meta:descriptionId": "campaign-details##xdm:isAlwaysOn##description##93781"
                     },
                     "xdm:flightDates": {
                       "type": "array",
@@ -305,20 +423,25 @@
                           "xdm:startDate": {
                             "type": "string",
                             "format": "date-time",
-                            "title": "Flight Start Date"
+                            "title": "Flight Start Date",
+                            "meta:titleId": "campaign-details##xdm:startDate##title##25831"
                           },
                           "xdm:endDate": {
                             "type": "string",
                             "format": "date-time",
-                            "title": "Flight End Date"
+                            "title": "Flight End Date",
+                            "meta:titleId": "campaign-details##xdm:endDate##title##84861"
                           },
                           "xdm:budget": {
                             "type": "number",
                             "title": "Flight Budget",
-                            "minimum": 0
+                            "minimum": 0,
+                            "meta:titleId": "campaign-details##xdm:budget##title##95251"
                           }
                         }
-                      }
+                      },
+                      "meta:titleId": "campaign-details##xdm:flightDates##title##22881",
+                      "meta:descriptionId": "campaign-details##xdm:flightDates##description##98481"
                     },
                     "xdm:dayParting": {
                       "type": "object",
@@ -327,7 +450,8 @@
                       "properties": {
                         "xdm:enabled": {
                           "type": "boolean",
-                          "title": "Day Parting Enabled"
+                          "title": "Day Parting Enabled",
+                          "meta:titleId": "campaign-details##xdm:enabled##title##62201"
                         },
                         "xdm:schedule": {
                           "type": "array",
@@ -357,6 +481,17 @@
                                   "friday": "Friday",
                                   "saturday": "Saturday",
                                   "sunday": "Sunday"
+                                },
+                                "meta:titleId": "campaign-details##xdm:dayOfWeek##title##41791",
+                                "meta:descriptionId": "campaign-details##xdm:dayOfWeek##description##58391",
+                                "meta:enumId": {
+                                  "monday": "campaign-details##xdm:dayOfWeek##meta:enum##monday##75281",
+                                  "tuesday": "campaign-details##xdm:dayOfWeek##meta:enum##tuesday##29861",
+                                  "wednesday": "campaign-details##xdm:dayOfWeek##meta:enum##wednesday##14401",
+                                  "thursday": "campaign-details##xdm:dayOfWeek##meta:enum##thursday##32691",
+                                  "friday": "campaign-details##xdm:dayOfWeek##meta:enum##friday##90681",
+                                  "saturday": "campaign-details##xdm:dayOfWeek##meta:enum##saturday##32201",
+                                  "sunday": "campaign-details##xdm:dayOfWeek##meta:enum##sunday##6391"
                                 }
                               },
                               "xdm:startHour": {
@@ -364,21 +499,31 @@
                                 "title": "Start Hour",
                                 "description": "Hour of the day the schedule window opens, expressed in 24-hour format (0-23)",
                                 "minimum": 0,
-                                "maximum": 23
+                                "maximum": 23,
+                                "meta:titleId": "campaign-details##xdm:startHour##title##24701",
+                                "meta:descriptionId": "campaign-details##xdm:startHour##description##79461"
                               },
                               "xdm:endHour": {
                                 "type": "integer",
                                 "title": "End Hour",
                                 "description": "Hour of the day the schedule window closes, expressed in 24-hour format (0-23)",
                                 "minimum": 0,
-                                "maximum": 23
+                                "maximum": 23,
+                                "meta:titleId": "campaign-details##xdm:endHour##title##78001",
+                                "meta:descriptionId": "campaign-details##xdm:endHour##description##85261"
                               }
                             }
-                          }
+                          },
+                          "meta:titleId": "campaign-details##xdm:schedule##title##81811",
+                          "meta:descriptionId": "campaign-details##xdm:schedule##description##4181"
                         }
-                      }
+                      },
+                      "meta:titleId": "campaign-details##xdm:dayParting##title##58821",
+                      "meta:descriptionId": "campaign-details##xdm:dayParting##description##18891"
                     }
-                  }
+                  },
+                  "meta:titleId": "campaign-details##xdm:scheduling##title##20041",
+                  "meta:descriptionId": "campaign-details##xdm:scheduling##description##96791"
                 },
                 "xdm:frequencyCapping": {
                   "type": "object",
@@ -387,12 +532,15 @@
                   "properties": {
                     "xdm:enabled": {
                       "type": "boolean",
-                      "title": "Frequency Capping Enabled"
+                      "title": "Frequency Capping Enabled",
+                      "meta:titleId": "campaign-details##xdm:enabled##title##26551"
                     },
                     "xdm:impressionCap": {
                       "type": "integer",
                       "title": "Impression Cap",
-                      "description": "Maximum impressions per user"
+                      "description": "Maximum impressions per user",
+                      "meta:titleId": "campaign-details##xdm:impressionCap##title##59521",
+                      "meta:descriptionId": "campaign-details##xdm:impressionCap##description##12921"
                     },
                     "xdm:timePeriod": {
                       "type": "string",
@@ -403,9 +551,18 @@
                         "day": "Per Day",
                         "week": "Per Week",
                         "month": "Per Month"
+                      },
+                      "meta:titleId": "campaign-details##xdm:timePeriod##title##22741",
+                      "meta:enumId": {
+                        "hour": "campaign-details##xdm:timePeriod##meta:enum##hour##93551",
+                        "day": "campaign-details##xdm:timePeriod##meta:enum##day##27741",
+                        "week": "campaign-details##xdm:timePeriod##meta:enum##week##80511",
+                        "month": "campaign-details##xdm:timePeriod##meta:enum##month##24401"
                       }
                     }
-                  }
+                  },
+                  "meta:titleId": "campaign-details##xdm:frequencyCapping##title##80331",
+                  "meta:descriptionId": "campaign-details##xdm:frequencyCapping##description##84021"
                 },
                 "xdm:conversionTracking": {
                   "type": "object",
@@ -418,7 +575,9 @@
                       "description": "Tracking pixel IDs associated with campaign",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "campaign-details##xdm:pixelIDs##title##22301",
+                      "meta:descriptionId": "campaign-details##xdm:pixelIDs##description##28181"
                     },
                     "xdm:conversionEvents": {
                       "type": "array",
@@ -426,17 +585,23 @@
                       "description": "Events being tracked for conversions",
                       "items": {
                         "type": "string"
-                      }
+                      },
+                      "meta:titleId": "campaign-details##xdm:conversionEvents##title##53681",
+                      "meta:descriptionId": "campaign-details##xdm:conversionEvents##description##50931"
                     },
                     "xdm:attributionWindow": {
                       "type": "string",
                       "title": "Attribution Window",
-                      "description": "Attribution window as a string (e.g., '7d_click_1d_view')"
+                      "description": "Attribution window as a string (e.g., '7d_click_1d_view')",
+                      "meta:titleId": "campaign-details##xdm:attributionWindow##title##30321",
+                      "meta:descriptionId": "campaign-details##xdm:attributionWindow##description##97511"
                     },
                     "xdm:urlTracking": {
                       "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-url-tracking"
                     }
-                  }
+                  },
+                  "meta:titleId": "campaign-details##xdm:conversionTracking##title##47741",
+                  "meta:descriptionId": "campaign-details##xdm:conversionTracking##description##63871"
                 },
                 "xdm:ios14CampaignType": {
                   "type": "string",
@@ -451,12 +616,21 @@
                     "REGULAR_CAMPAIGN": "Regular Campaign",
                     "IOS14_CAMPAIGN": "iOS 14 Dedicated Campaign",
                     "ADVANCED_DEDICATED_CAMPAIGN": "Advanced Dedicated Campaign"
+                  },
+                  "meta:titleId": "campaign-details##xdm:ios14CampaignType##title##77411",
+                  "meta:descriptionId": "campaign-details##xdm:ios14CampaignType##description##19861",
+                  "meta:enumId": {
+                    "REGULAR_CAMPAIGN": "campaign-details##xdm:ios14CampaignType##meta:enum##REGULAR_CAMPAIGN##98051",
+                    "IOS14_CAMPAIGN": "campaign-details##xdm:ios14CampaignType##meta:enum##IOS14_CAMPAIGN##1151",
+                    "ADVANCED_DEDICATED_CAMPAIGN": "campaign-details##xdm:ios14CampaignType##meta:enum##ADVANCED_DEDICATED_CAMPAIGN##93581"
                   }
                 },
                 "xdm:skanEnabled": {
                   "type": "boolean",
                   "title": "SKAN Enabled",
-                  "description": "Whether SKAdNetwork (Apple's attribution framework) is enabled for this campaign"
+                  "description": "Whether SKAdNetwork (Apple's attribution framework) is enabled for this campaign",
+                  "meta:titleId": "campaign-details##xdm:skanEnabled##title##11651",
+                  "meta:descriptionId": "campaign-details##xdm:skanEnabled##description##51811"
                 },
                 "xdm:skanPostbackWindow": {
                   "type": "string",
@@ -471,17 +645,28 @@
                     "POSTBACK_WINDOW_MODE1": "Postback Window 1 (0-2 days)",
                     "POSTBACK_WINDOW_MODE2": "Postback Window 2 (3-7 days)",
                     "POSTBACK_WINDOW_MODE3": "Postback Window 3 (8-35 days)"
+                  },
+                  "meta:titleId": "campaign-details##xdm:skanPostbackWindow##title##30081",
+                  "meta:descriptionId": "campaign-details##xdm:skanPostbackWindow##description##22081",
+                  "meta:enumId": {
+                    "POSTBACK_WINDOW_MODE1": "campaign-details##xdm:skanPostbackWindow##meta:enum##POSTBACK_WINDOW_MODE1##67271",
+                    "POSTBACK_WINDOW_MODE2": "campaign-details##xdm:skanPostbackWindow##meta:enum##POSTBACK_WINDOW_MODE2##61801",
+                    "POSTBACK_WINDOW_MODE3": "campaign-details##xdm:skanPostbackWindow##meta:enum##POSTBACK_WINDOW_MODE3##94301"
                   }
                 },
                 "xdm:appProfilePageEnabled": {
                   "type": "boolean",
                   "title": "App Profile Page Enabled",
-                  "description": "Whether App Profile Page is enabled for the campaign"
+                  "description": "Whether App Profile Page is enabled for the campaign",
+                  "meta:titleId": "campaign-details##xdm:appProfilePageEnabled##title##27831",
+                  "meta:descriptionId": "campaign-details##xdm:appProfilePageEnabled##description##54881"
                 },
                 "xdm:isAutomatedCampaign": {
                   "type": "boolean",
                   "title": "Is Automated Campaign",
-                  "description": "Whether this campaign uses platform-level automation with machine learning optimization. Should be true for inherently automated campaign types (e.g., performance_max, smart, demand_gen) and platform automation features (e.g., TikTok Smart+, Meta Advantage+)."
+                  "description": "Whether this campaign uses platform-level automation with machine learning optimization. Should be true for inherently automated campaign types (e.g., performance_max, smart, demand_gen) and platform automation features (e.g., TikTok Smart+, Meta Advantage+).",
+                  "meta:titleId": "campaign-details##xdm:isAutomatedCampaign##title##62801",
+                  "meta:descriptionId": "campaign-details##xdm:isAutomatedCampaign##description##21391"
                 },
                 "xdm:automatedCampaignType": {
                   "type": "string",
@@ -504,17 +689,32 @@
                     "DYNAMIC_CREATIVE": "Dynamic Creative Optimization",
                     "GMV_MAX": "GMV Max Campaign (TikTok)",
                     "OTHER": "Other Automated Type"
+                  },
+                  "meta:titleId": "campaign-details##xdm:automatedCampaignType##title##12451",
+                  "meta:descriptionId": "campaign-details##xdm:automatedCampaignType##description##95901",
+                  "meta:enumId": {
+                    "SMART_PLUS": "campaign-details##xdm:automatedCampaignType##meta:enum##SMART_PLUS##69431",
+                    "SMART_PERFORMANCE_WEB": "campaign-details##xdm:automatedCampaignType##meta:enum##SMART_PERFORMANCE_WEB##67311",
+                    "MAXIMUM_DELIVERY": "campaign-details##xdm:automatedCampaignType##meta:enum##MAXIMUM_DELIVERY##66011",
+                    "AUTO_CAMPAIGN": "campaign-details##xdm:automatedCampaignType##meta:enum##AUTO_CAMPAIGN##33201",
+                    "DYNAMIC_CREATIVE": "campaign-details##xdm:automatedCampaignType##meta:enum##DYNAMIC_CREATIVE##75791",
+                    "GMV_MAX": "campaign-details##xdm:automatedCampaignType##meta:enum##GMV_MAX##49751",
+                    "OTHER": "campaign-details##xdm:automatedCampaignType##meta:enum##OTHER##87621"
                   }
                 },
                 "xdm:catalogId": {
                   "type": "string",
                   "title": "Catalog ID",
-                  "description": "Product catalog identifier for catalog-based campaigns"
+                  "description": "Product catalog identifier for catalog-based campaigns",
+                  "meta:titleId": "campaign-details##xdm:catalogId##title##61291",
+                  "meta:descriptionId": "campaign-details##xdm:catalogId##description##77801"
                 },
                 "xdm:catalogAuthorizedBusinessCenterId": {
                   "type": "string",
                   "title": "Catalog Authorized Business Center ID",
-                  "description": "Business Center ID that authorized the catalog access"
+                  "description": "Business Center ID that authorized the catalog access",
+                  "meta:titleId": "campaign-details##xdm:catalogAuthorizedBusinessCenterId##title##43371",
+                  "meta:descriptionId": "campaign-details##xdm:catalogAuthorizedBusinessCenterId##description##45751"
                 },
                 "xdm:productSource": {
                   "type": "string",
@@ -539,22 +739,40 @@
                     "SHOPIFY": "Shopify Store",
                     "MANUAL": "Manually Selected Products",
                     "OTHER": "Other Product Source"
+                  },
+                  "meta:titleId": "campaign-details##xdm:productSource##title##39851",
+                  "meta:descriptionId": "campaign-details##xdm:productSource##description##50411",
+                  "meta:enumId": {
+                    "CATALOG": "campaign-details##xdm:productSource##meta:enum##CATALOG##26411",
+                    "STORE": "campaign-details##xdm:productSource##meta:enum##STORE##52431",
+                    "GOOGLE_MERCHANT_CENTER": "campaign-details##xdm:productSource##meta:enum##GOOGLE_MERCHANT_CENTER##47851",
+                    "TIKTOK_SHOP": "campaign-details##xdm:productSource##meta:enum##TIKTOK_SHOP##41991",
+                    "AMAZON": "campaign-details##xdm:productSource##meta:enum##AMAZON##25681",
+                    "SHOPIFY": "campaign-details##xdm:productSource##meta:enum##SHOPIFY##81951",
+                    "MANUAL": "campaign-details##xdm:productSource##meta:enum##MANUAL##25181",
+                    "OTHER": "campaign-details##xdm:productSource##meta:enum##OTHER##89641"
                   }
                 },
                 "xdm:productSetId": {
                   "type": "string",
                   "title": "Product Set ID",
-                  "description": "Specific product set within catalog"
+                  "description": "Specific product set within catalog",
+                  "meta:titleId": "campaign-details##xdm:productSetId##title##76931",
+                  "meta:descriptionId": "campaign-details##xdm:productSetId##description##26081"
                 },
                 "xdm:storeId": {
                   "type": "string",
                   "title": "Store ID",
-                  "description": "Online store identifier (e.g., TikTok Shop ID, Amazon Store ID)"
+                  "description": "Online store identifier (e.g., TikTok Shop ID, Amazon Store ID)",
+                  "meta:titleId": "campaign-details##xdm:storeId##title##47411",
+                  "meta:descriptionId": "campaign-details##xdm:storeId##description##11401"
                 },
                 "xdm:storeAuthorizedBusinessCenterId": {
                   "type": "string",
                   "title": "Store Authorized Business Center ID",
-                  "description": "Business Center ID that authorized the store access"
+                  "description": "Business Center ID that authorized the store access",
+                  "meta:titleId": "campaign-details##xdm:storeAuthorizedBusinessCenterId##title##45491",
+                  "meta:descriptionId": "campaign-details##xdm:storeAuthorizedBusinessCenterId##description##89181"
                 },
                 "xdm:placementBidAdjustments": {
                   "type": "array",
@@ -566,7 +784,9 @@
                       "xdm:placement": {
                         "type": "string",
                         "title": "Placement",
-                        "description": "Placement identifier (e.g., TOP_OF_SEARCH, PRODUCT_PAGE, HOME, DETAIL_PAGE)"
+                        "description": "Placement identifier (e.g., TOP_OF_SEARCH, PRODUCT_PAGE, HOME, DETAIL_PAGE)",
+                        "meta:titleId": "campaign-details##xdm:placement##title##95641",
+                        "meta:descriptionId": "campaign-details##xdm:placement##description##74441"
                       },
                       "xdm:placementType": {
                         "type": "string",
@@ -589,16 +809,31 @@
                           "STORIES": "Stories",
                           "REELS": "Reels",
                           "OTHER": "Other"
+                        },
+                        "meta:titleId": "campaign-details##xdm:placementType##title##63561",
+                        "meta:descriptionId": "campaign-details##xdm:placementType##description##98071",
+                        "meta:enumId": {
+                          "SEARCH": "campaign-details##xdm:placementType##meta:enum##SEARCH##41131",
+                          "PRODUCT_PAGE": "campaign-details##xdm:placementType##meta:enum##PRODUCT_PAGE##61811",
+                          "HOME": "campaign-details##xdm:placementType##meta:enum##HOME##8791",
+                          "FEED": "campaign-details##xdm:placementType##meta:enum##FEED##59811",
+                          "STORIES": "campaign-details##xdm:placementType##meta:enum##STORIES##28631",
+                          "REELS": "campaign-details##xdm:placementType##meta:enum##REELS##9891",
+                          "OTHER": "campaign-details##xdm:placementType##meta:enum##OTHER##11501"
                         }
                       },
                       "xdm:adjustmentPercentage": {
                         "type": "number",
                         "title": "Adjustment Percentage",
-                        "description": "Bid adjustment percentage (e.g., 50 for +50%, -25 for -25%)"
+                        "description": "Bid adjustment percentage (e.g., 50 for +50%, -25 for -25%)",
+                        "meta:titleId": "campaign-details##xdm:adjustmentPercentage##title##2121",
+                        "meta:descriptionId": "campaign-details##xdm:adjustmentPercentage##description##46441"
                       }
                     },
                     "required": ["xdm:placement", "xdm:adjustmentPercentage"]
-                  }
+                  },
+                  "meta:titleId": "campaign-details##xdm:placementBidAdjustments##title##65631",
+                  "meta:descriptionId": "campaign-details##xdm:placementBidAdjustments##description##2291"
                 },
                 "xdm:additionalDetails": {
                   "title": "Additional Campaign Details",
@@ -606,9 +841,13 @@
                   "type": "array",
                   "items": {
                     "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                  }
+                  },
+                  "meta:titleId": "campaign-details##xdm:additionalDetails##title##7431",
+                  "meta:descriptionId": "campaign-details##xdm:additionalDetails##description##20891"
                 }
-              }
+              },
+              "meta:titleId": "campaign-details##xdm:campaignDetails##title##30911",
+              "meta:descriptionId": "campaign-details##xdm:campaignDetails##description##92821"
             }
           }
         }
@@ -620,5 +859,7 @@
       "$ref": "#/definitions/campaign-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "campaign-details##title##95591",
+  "meta:descriptionId": "campaign-details##description##83471"
 }

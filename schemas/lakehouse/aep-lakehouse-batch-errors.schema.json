@@ -18,27 +18,37 @@
         "xdm:datasetID": {
           "title": "DatasetID",
           "description": "Dataset Id the batch was created for.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-batch-errors##xdm:datasetID##title##45591",
+          "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:datasetID##description##28691"
         },
         "xdm:batchID": {
           "title": "BatchID",
           "description": "Id for the batch containing the input files.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-batch-errors##xdm:batchID##title##74131",
+          "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:batchID##description##4051"
         },
         "xdm:path": {
           "title": "Path",
           "description": "Path to the input file that contained this record.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-batch-errors##xdm:path##title##81021",
+          "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:path##description##72171"
         },
         "xdm:record": {
           "title": "Record",
           "description": "JSON encoded record that failed to process.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-batch-errors##xdm:record##title##68451",
+          "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:record##description##83551"
         },
         "xdm:corruptRecord": {
           "title": "CorruptRecord",
           "description": "Original record that failed to process",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "aep-lakehouse-batch-errors##xdm:corruptRecord##title##55381",
+          "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:corruptRecord##description##12351"
         },
         "xdm:errorType": {
           "title": "ErrorType",
@@ -49,6 +59,13 @@
             "parse": "Parse",
             "conversion": "Conversion",
             "validation": "Validation"
+          },
+          "meta:titleId": "aep-lakehouse-batch-errors##xdm:errorType##title##36111",
+          "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:errorType##description##99711",
+          "meta:enumId": {
+            "parse": "aep-lakehouse-batch-errors##xdm:errorType##meta:enum##parse##67551",
+            "conversion": "aep-lakehouse-batch-errors##xdm:errorType##meta:enum##conversion##85991",
+            "validation": "aep-lakehouse-batch-errors##xdm:errorType##meta:enum##validation##50691"
           }
         },
         "xdm:errors": {
@@ -61,20 +78,28 @@
               "xdm:column": {
                 "title": "Column",
                 "type": "string",
-                "description": "The column that caused the error."
+                "description": "The column that caused the error.",
+                "meta:titleId": "aep-lakehouse-batch-errors##xdm:column##title##87231",
+                "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:column##description##50341"
               },
               "xdm:code": {
                 "title": "Code",
                 "type": "string",
-                "description": "Standard code for the error."
+                "description": "Standard code for the error.",
+                "meta:titleId": "aep-lakehouse-batch-errors##xdm:code##title##41061",
+                "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:code##description##37551"
               },
               "xdm:message": {
                 "title": "Message",
                 "type": "string",
-                "description": "Human readable message for the error."
+                "description": "Human readable message for the error.",
+                "meta:titleId": "aep-lakehouse-batch-errors##xdm:message##title##50791",
+                "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:message##description##21621"
               }
             }
-          }
+          },
+          "meta:titleId": "aep-lakehouse-batch-errors##xdm:errors##title##64501",
+          "meta:descriptionId": "aep-lakehouse-batch-errors##xdm:errors##description##89691"
         }
       }
     }
@@ -87,5 +112,7 @@
       "$ref": "#/definitions/batchErrors"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "aep-lakehouse-batch-errors##title##55031",
+  "meta:descriptionId": "aep-lakehouse-batch-errors##description##75471"
 }

@@ -117,7 +117,8 @@
         },
         "xdm:billing": {
           "$ref": "https://ns.adobe.com/xdm/datatypes/billing",
-          "description": "Billing details for one or more payments."
+          "description": "Billing details for one or more payments.",
+          "meta:descriptionId": "commerce##xdm:billing##description##31451"
         },
         "xdm:instantPurchase": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -127,32 +128,44 @@
         "xdm:requisitionListOpens": {
           "title": "Requisition List Opens",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Initializations of a new Requisition List."
+          "description": "Initializations of a new Requisition List.",
+          "meta:titleId": "commerce##xdm:requisitionListOpens##title##64661",
+          "meta:descriptionId": "commerce##xdm:requisitionListOpens##description##28081"
         },
         "xdm:requisitionListDeletes": {
           "title": "Requisition List Deletes",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Removal of requisition list."
+          "description": "Removal of requisition list.",
+          "meta:titleId": "commerce##xdm:requisitionListDeletes##title##24541",
+          "meta:descriptionId": "commerce##xdm:requisitionListDeletes##description##70181"
         },
         "xdm:requisitionListAdds": {
           "title": "Requisition List Adds",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Addition of a product(s) to a requisition list."
+          "description": "Addition of a product(s) to a requisition list.",
+          "meta:titleId": "commerce##xdm:requisitionListAdds##title##4211",
+          "meta:descriptionId": "commerce##xdm:requisitionListAdds##description##47611"
         },
         "xdm:requisitionListRemovals": {
           "title": "Requisition List Removals",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Removal of a product(s) from a requisition product list."
+          "description": "Removal of a product(s) from a requisition product list.",
+          "meta:titleId": "commerce##xdm:requisitionListRemovals##title##40141",
+          "meta:descriptionId": "commerce##xdm:requisitionListRemovals##description##50091"
         },
         "xdm:requisitionList": {
           "title": "Requisition List",
           "$ref": "https://ns.adobe.com/xdm/datatypes/requisitionlist",
-          "description": "The properties of requisition list created by customer."
+          "description": "The properties of requisition list created by customer.",
+          "meta:titleId": "commerce##xdm:requisitionList##title##49461",
+          "meta:descriptionId": "commerce##xdm:requisitionList##description##23581"
         },
         "xdm:commerceScope": {
           "title": "Scope",
           "$ref": "https://ns.adobe.com/xdm/datatypes/commercescope",
-          "description": "Commerce scope identifiers of where an event occurred (store view, store, website etc.)."
+          "description": "Commerce scope identifiers of where an event occurred (store view, store, website etc.).",
+          "meta:titleId": "commerce##xdm:commerceScope##title##77051",
+          "meta:descriptionId": "commerce##xdm:commerceScope##description##63871"
         }
       }
     }

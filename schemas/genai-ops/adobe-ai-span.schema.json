@@ -26,29 +26,40 @@
             "xdm:imsOrgId": {
               "title": "ImsOrg ID",
               "type": "string",
-              "description": "The ImsOrgID."
+              "description": "The ImsOrgID.",
+              "meta:titleId": "adobe-ai-span##xdm:imsOrgId##title##20581",
+              "meta:descriptionId": "adobe-ai-span##xdm:imsOrgId##description##38301"
             },
             "xdm:imsOrgName": {
               "title": "ImsOrg Name",
               "type": "string",
-              "description": "The ImsOrgName."
+              "description": "The ImsOrgName.",
+              "meta:titleId": "adobe-ai-span##xdm:imsOrgName##title##45461",
+              "meta:descriptionId": "adobe-ai-span##xdm:imsOrgName##description##90191"
             },
             "xdm:imsUserId": {
               "title": "ImsOrg User ID",
               "type": "string",
-              "description": "The ImsOrg User ID."
+              "description": "The ImsOrg User ID.",
+              "meta:titleId": "adobe-ai-span##xdm:imsUserId##title##85551",
+              "meta:descriptionId": "adobe-ai-span##xdm:imsUserId##description##56021"
             },
             "xdm:sandboxId": {
               "title": "SandboxID",
               "type": "string",
-              "description": "The SandboxID."
+              "description": "The SandboxID.",
+              "meta:titleId": "adobe-ai-span##xdm:sandboxId##title##24341",
+              "meta:descriptionId": "adobe-ai-span##xdm:sandboxId##description##82171"
             },
             "xdm:sandboxName": {
               "title": "SandboxName",
               "type": "string",
-              "description": "The SandboxName."
+              "description": "The SandboxName.",
+              "meta:titleId": "adobe-ai-span##xdm:sandboxName##title##60941",
+              "meta:descriptionId": "adobe-ai-span##xdm:sandboxName##description##64781"
             }
-          }
+          },
+          "meta:descriptionId": "adobe-ai-span##xdm:adobe##description##4351"
         },
         "xdm:scope": {
           "type": "object",
@@ -56,13 +67,16 @@
           "properties": {
             "xdm:name": {
               "type": "string",
-              "description": "The ID of the scope."
+              "description": "The ID of the scope.",
+              "meta:descriptionId": "adobe-ai-span##xdm:name##description##19171"
             },
             "xdm:version": {
               "type": "string",
-              "description": "The version of the scope."
+              "description": "The version of the scope.",
+              "meta:descriptionId": "adobe-ai-span##xdm:version##description##35281"
             }
-          }
+          },
+          "meta:descriptionId": "adobe-ai-span##xdm:scope##description##11641"
         }
       }
     }
@@ -72,5 +86,7 @@
       "$ref": "#/definitions/adobe-ai-span"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "adobe-ai-span##title##95751",
+  "meta:descriptionId": "adobe-ai-span##description##33991"
 }

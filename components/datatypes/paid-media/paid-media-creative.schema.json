@@ -18,7 +18,9 @@
         "xdm:assetID": {
           "type": "string",
           "title": "Asset ID",
-          "description": "Unique identifier for the asset"
+          "description": "Unique identifier for the asset",
+          "meta:titleId": "paid-media-creative##xdm:assetID##title##66671",
+          "meta:descriptionId": "paid-media-creative##xdm:assetID##description##89761"
         },
         "xdm:assetType": {
           "type": "string",
@@ -31,24 +33,39 @@
             "audio": "Audio",
             "document": "Document",
             "other": "Other Asset Type"
+          },
+          "meta:titleId": "paid-media-creative##xdm:assetType##title##22651",
+          "meta:descriptionId": "paid-media-creative##xdm:assetType##description##71691",
+          "meta:enumId": {
+            "image": "paid-media-creative##xdm:assetType##meta:enum##image##11861",
+            "video": "paid-media-creative##xdm:assetType##meta:enum##video##8741",
+            "audio": "paid-media-creative##xdm:assetType##meta:enum##audio##59851",
+            "document": "paid-media-creative##xdm:assetType##meta:enum##document##50001",
+            "other": "paid-media-creative##xdm:assetType##meta:enum##other##72461"
           }
         },
         "xdm:name": {
           "type": "string",
           "title": "Asset Name",
-          "description": "Name or title of the asset"
+          "description": "Name or title of the asset",
+          "meta:titleId": "paid-media-creative##xdm:name##title##18401",
+          "meta:descriptionId": "paid-media-creative##xdm:name##description##10411"
         },
         "xdm:url": {
           "type": "string",
           "format": "uri",
           "title": "Asset URL",
-          "description": "URL where the asset can be accessed"
+          "description": "URL where the asset can be accessed",
+          "meta:titleId": "paid-media-creative##xdm:url##title##8741",
+          "meta:descriptionId": "paid-media-creative##xdm:url##description##76691"
         },
         "xdm:thumbnailURL": {
           "type": "string",
           "format": "uri",
           "title": "Thumbnail URL",
-          "description": "URL for asset thumbnail"
+          "description": "URL for asset thumbnail",
+          "meta:titleId": "paid-media-creative##xdm:thumbnailURL##title##29261",
+          "meta:descriptionId": "paid-media-creative##xdm:thumbnailURL##description##19931"
         },
         "xdm:dimensions": {
           "type": "object",
@@ -59,33 +76,46 @@
               "type": "integer",
               "title": "Width",
               "description": "Width in pixels",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "paid-media-creative##xdm:width##title##15031",
+              "meta:descriptionId": "paid-media-creative##xdm:width##description##76161"
             },
             "xdm:height": {
               "type": "integer",
               "title": "Height",
               "description": "Height in pixels",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "paid-media-creative##xdm:height##title##19011",
+              "meta:descriptionId": "paid-media-creative##xdm:height##description##74271"
             }
-          }
+          },
+          "meta:titleId": "paid-media-creative##xdm:dimensions##title##66421",
+          "meta:descriptionId": "paid-media-creative##xdm:dimensions##description##42131"
         },
         "xdm:fileSize": {
           "type": "integer",
           "title": "File Size",
           "description": "File size in bytes",
-          "minimum": 0
+          "minimum": 0,
+          "meta:titleId": "paid-media-creative##xdm:fileSize##title##21101",
+          "meta:descriptionId": "paid-media-creative##xdm:fileSize##description##43101"
         },
         "xdm:duration": {
           "type": "number",
           "title": "Duration",
-          "description": "Duration in seconds (for video/audio assets)"
+          "description": "Duration in seconds (for video/audio assets)",
+          "meta:titleId": "paid-media-creative##xdm:duration##title##24411",
+          "meta:descriptionId": "paid-media-creative##xdm:duration##description##15251"
         },
         "xdm:hash": {
           "type": "string",
           "title": "Asset Hash",
-          "description": "Unique hash identifier for the asset content"
+          "description": "Unique hash identifier for the asset content",
+          "meta:titleId": "paid-media-creative##xdm:hash##title##59471",
+          "meta:descriptionId": "paid-media-creative##xdm:hash##description##54321"
         }
-      }
+      },
+      "meta:descriptionId": "paid-media-creative##creativeAsset##description##64691"
     },
     "creativeTrackingURL": {
       "type": "object",
@@ -94,15 +124,20 @@
         "xdm:eventType": {
           "type": "string",
           "title": "Event Type",
-          "description": "Type of event being tracked (click, impression, conversion)"
+          "description": "Type of event being tracked (click, impression, conversion)",
+          "meta:titleId": "paid-media-creative##xdm:eventType##title##81891",
+          "meta:descriptionId": "paid-media-creative##xdm:eventType##description##22881"
         },
         "xdm:url": {
           "type": "string",
           "format": "uri",
           "title": "Tracking URL",
-          "description": "The tracking URL"
+          "description": "The tracking URL",
+          "meta:titleId": "paid-media-creative##xdm:url##title##71091",
+          "meta:descriptionId": "paid-media-creative##xdm:url##description##43771"
         }
-      }
+      },
+      "meta:descriptionId": "paid-media-creative##creativeTrackingURL##description##45841"
     },
     "creativeCustomizer": {
       "type": "object",
@@ -111,7 +146,9 @@
         "xdm:name": {
           "type": "string",
           "title": "Customizer Name",
-          "description": "Name of the customizer attribute as defined in the ad network (e.g., Google Ads CustomizerAttribute.name such as 'discount' or 'price')."
+          "description": "Name of the customizer attribute as defined in the ad network (e.g., Google Ads CustomizerAttribute.name such as 'discount' or 'price').",
+          "meta:titleId": "paid-media-creative##xdm:name##title##94131",
+          "meta:descriptionId": "paid-media-creative##xdm:name##description##47891"
         },
         "xdm:type": {
           "type": "string",
@@ -123,12 +160,22 @@
             "number": "Numeric value",
             "price": "Monetary price",
             "percent": "Percentage"
+          },
+          "meta:titleId": "paid-media-creative##xdm:type##title##23181",
+          "meta:descriptionId": "paid-media-creative##xdm:type##description##6931",
+          "meta:enumId": {
+            "text": "paid-media-creative##xdm:type##meta:enum##text##61571",
+            "number": "paid-media-creative##xdm:type##meta:enum##number##43011",
+            "price": "paid-media-creative##xdm:type##meta:enum##price##96931",
+            "percent": "paid-media-creative##xdm:type##meta:enum##percent##87771"
           }
         },
         "xdm:value": {
           "type": "string",
           "title": "Customizer Value",
-          "description": "The resolved string value substituted into the rendered creative content for this variant."
+          "description": "The resolved string value substituted into the rendered creative content for this variant.",
+          "meta:titleId": "paid-media-creative##xdm:value##title##76241",
+          "meta:descriptionId": "paid-media-creative##xdm:value##description##77451"
         },
         "xdm:scope": {
           "type": "string",
@@ -151,9 +198,21 @@
             "adGroupCriterion": "Ad group criterion (keyword/audience) level",
             "asset": "Asset / asset group level",
             "other": "Other / network-specific scope"
+          },
+          "meta:titleId": "paid-media-creative##xdm:scope##title##55921",
+          "meta:descriptionId": "paid-media-creative##xdm:scope##description##97891",
+          "meta:enumId": {
+            "customer": "paid-media-creative##xdm:scope##meta:enum##customer##431",
+            "account": "paid-media-creative##xdm:scope##meta:enum##account##98381",
+            "campaign": "paid-media-creative##xdm:scope##meta:enum##campaign##88531",
+            "adGroup": "paid-media-creative##xdm:scope##meta:enum##adGroup##23791",
+            "adGroupCriterion": "paid-media-creative##xdm:scope##meta:enum##adGroupCriterion##73001",
+            "asset": "paid-media-creative##xdm:scope##meta:enum##asset##67661",
+            "other": "paid-media-creative##xdm:scope##meta:enum##other##31831"
           }
         }
-      }
+      },
+      "meta:descriptionId": "paid-media-creative##creativeCustomizer##description##43881"
     },
     "creativeVariant": {
       "type": "object",
@@ -162,14 +221,18 @@
         "xdm:variantID": {
           "type": "string",
           "title": "Variant ID",
-          "description": "Stable identifier for the variant within the parent creative. Use the ad-network's own identifier when one exists; otherwise the connector should mint a deterministic value (for example, a hash of the variant's discriminator fields)."
+          "description": "Stable identifier for the variant within the parent creative. Use the ad-network's own identifier when one exists; otherwise the connector should mint a deterministic value (for example, a hash of the variant's discriminator fields).",
+          "meta:titleId": "paid-media-creative##xdm:variantID##title##24151",
+          "meta:descriptionId": "paid-media-creative##xdm:variantID##description##61"
         },
         "xdm:language": {
           "type": "string",
           "title": "Language",
           "description": "BCP 47 language tag identifying the locale this variant targets, when the variant differs by language. Languages are specified in language code as defined in [IETF BCP 47](https://tools.ietf.org/html/bcp47).",
           "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
-          "examples": ["en-US", "ar-AR", "fr-FR", "ja-JP", "es-ES"]
+          "examples": ["en-US", "ar-AR", "fr-FR", "ja-JP", "es-ES"],
+          "meta:titleId": "paid-media-creative##xdm:language##title##52101",
+          "meta:descriptionId": "paid-media-creative##xdm:language##description##73121"
         },
         "xdm:customizers": {
           "type": "array",
@@ -177,34 +240,46 @@
           "description": "Resolved ad-network customizer / template attributes whose substitution produced this variant's rendered text and assets. Each entry captures one (name, type, value, scope) tuple. Absent when the variant differs only by language or when no customizer was used.",
           "items": {
             "$ref": "#/definitions/creativeCustomizer"
-          }
+          },
+          "meta:titleId": "paid-media-creative##xdm:customizers##title##28851",
+          "meta:descriptionId": "paid-media-creative##xdm:customizers##description##67491"
         },
         "xdm:title": {
           "type": "string",
           "title": "Title",
-          "description": "Resolved creative title or headline for this variant. Overrides the creative-level title."
+          "description": "Resolved creative title or headline for this variant. Overrides the creative-level title.",
+          "meta:titleId": "paid-media-creative##xdm:title##title##23931",
+          "meta:descriptionId": "paid-media-creative##xdm:title##description##14241"
         },
         "xdm:body": {
           "type": "string",
           "title": "Body Text",
-          "description": "Resolved body text or description for this variant. Overrides the creative-level body."
+          "description": "Resolved body text or description for this variant. Overrides the creative-level body.",
+          "meta:titleId": "paid-media-creative##xdm:body##title##59991",
+          "meta:descriptionId": "paid-media-creative##xdm:body##description##22521"
         },
         "xdm:callToAction": {
           "type": "string",
           "title": "Call to Action",
-          "description": "Resolved call to action text or type for this variant. Overrides the creative-level call to action."
+          "description": "Resolved call to action text or type for this variant. Overrides the creative-level call to action.",
+          "meta:titleId": "paid-media-creative##xdm:callToAction##title##89191",
+          "meta:descriptionId": "paid-media-creative##xdm:callToAction##description##99421"
         },
         "xdm:destinationURL": {
           "type": "string",
           "format": "uri",
           "title": "Destination URL",
-          "description": "Resolved landing page URL for this variant. Overrides the creative-level destination URL."
+          "description": "Resolved landing page URL for this variant. Overrides the creative-level destination URL.",
+          "meta:titleId": "paid-media-creative##xdm:destinationURL##title##10931",
+          "meta:descriptionId": "paid-media-creative##xdm:destinationURL##description##52421"
         },
         "xdm:displayURL": {
           "type": "string",
           "format": "uri",
           "title": "Display URL",
-          "description": "Resolved display URL for this variant. Overrides the creative-level display URL."
+          "description": "Resolved display URL for this variant. Overrides the creative-level display URL.",
+          "meta:titleId": "paid-media-creative##xdm:displayURL##title##64501",
+          "meta:descriptionId": "paid-media-creative##xdm:displayURL##description##70731"
         },
         "xdm:trackingURLs": {
           "type": "array",
@@ -212,7 +287,9 @@
           "description": "Variant-specific third-party tracking URLs. Overrides the creative-level tracking URLs.",
           "items": {
             "$ref": "#/definitions/creativeTrackingURL"
-          }
+          },
+          "meta:titleId": "paid-media-creative##xdm:trackingURLs##title##54661",
+          "meta:descriptionId": "paid-media-creative##xdm:trackingURLs##description##72961"
         },
         "xdm:assets": {
           "type": "array",
@@ -220,9 +297,12 @@
           "description": "Variant-specific media assets used in the rendered creative. Overrides the creative-level assets.",
           "items": {
             "$ref": "#/definitions/creativeAsset"
-          }
+          },
+          "meta:titleId": "paid-media-creative##xdm:assets##title##27371",
+          "meta:descriptionId": "paid-media-creative##xdm:assets##description##82491"
         }
-      }
+      },
+      "meta:descriptionId": "paid-media-creative##creativeVariant##description##25041"
     },
     "creativeLocaleVariant": {
       "type": "object",
@@ -234,34 +314,46 @@
           "title": "Language",
           "description": "BCP 47 language tag identifying the locale this variant targets. Languages are specified in language code as defined in [IETF BCP 47](https://tools.ietf.org/html/bcp47).",
           "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
-          "examples": ["en-US", "ar-AR", "fr-FR", "ja-JP", "es-ES"]
+          "examples": ["en-US", "ar-AR", "fr-FR", "ja-JP", "es-ES"],
+          "meta:titleId": "paid-media-creative##xdm:language##title##3931",
+          "meta:descriptionId": "paid-media-creative##xdm:language##description##87961"
         },
         "xdm:title": {
           "type": "string",
           "title": "Title",
-          "description": "Localized creative title or headline. Overrides the creative-level title for this locale."
+          "description": "Localized creative title or headline. Overrides the creative-level title for this locale.",
+          "meta:titleId": "paid-media-creative##xdm:title##title##30681",
+          "meta:descriptionId": "paid-media-creative##xdm:title##description##81801"
         },
         "xdm:body": {
           "type": "string",
           "title": "Body Text",
-          "description": "Localized body text or description. Overrides the creative-level body for this locale."
+          "description": "Localized body text or description. Overrides the creative-level body for this locale.",
+          "meta:titleId": "paid-media-creative##xdm:body##title##26221",
+          "meta:descriptionId": "paid-media-creative##xdm:body##description##40581"
         },
         "xdm:callToAction": {
           "type": "string",
           "title": "Call to Action",
-          "description": "Localized call to action text or type. Overrides the creative-level call to action for this locale."
+          "description": "Localized call to action text or type. Overrides the creative-level call to action for this locale.",
+          "meta:titleId": "paid-media-creative##xdm:callToAction##title##77561",
+          "meta:descriptionId": "paid-media-creative##xdm:callToAction##description##31131"
         },
         "xdm:destinationURL": {
           "type": "string",
           "format": "uri",
           "title": "Destination URL",
-          "description": "Localized landing page URL where users in this locale are directed. Overrides the creative-level destination URL for this locale."
+          "description": "Localized landing page URL where users in this locale are directed. Overrides the creative-level destination URL for this locale.",
+          "meta:titleId": "paid-media-creative##xdm:destinationURL##title##98161",
+          "meta:descriptionId": "paid-media-creative##xdm:destinationURL##description##28061"
         },
         "xdm:displayURL": {
           "type": "string",
           "format": "uri",
           "title": "Display URL",
-          "description": "Localized URL displayed in the ad for this locale. Overrides the creative-level display URL for this locale."
+          "description": "Localized URL displayed in the ad for this locale. Overrides the creative-level display URL for this locale.",
+          "meta:titleId": "paid-media-creative##xdm:displayURL##title##10011",
+          "meta:descriptionId": "paid-media-creative##xdm:displayURL##description##43961"
         },
         "xdm:trackingURLs": {
           "type": "array",
@@ -269,7 +361,9 @@
           "description": "Locale-specific third-party tracking URLs. Overrides the creative-level tracking URLs for this locale.",
           "items": {
             "$ref": "#/definitions/creativeTrackingURL"
-          }
+          },
+          "meta:titleId": "paid-media-creative##xdm:trackingURLs##title##9291",
+          "meta:descriptionId": "paid-media-creative##xdm:trackingURLs##description##6681"
         },
         "xdm:assets": {
           "type": "array",
@@ -277,9 +371,12 @@
           "description": "Locale-specific media assets used in the creative. Overrides the creative-level assets for this locale.",
           "items": {
             "$ref": "#/definitions/creativeAsset"
-          }
+          },
+          "meta:titleId": "paid-media-creative##xdm:assets##title##91621",
+          "meta:descriptionId": "paid-media-creative##xdm:assets##description##59501"
         }
-      }
+      },
+      "meta:descriptionId": "paid-media-creative##creativeLocaleVariant##description##10821"
     },
     "paidMediaCreative": {
       "properties": {
@@ -291,7 +388,9 @@
             "xdm:creativeID": {
               "type": "string",
               "title": "Creative ID",
-              "description": "Unique identifier for the creative"
+              "description": "Unique identifier for the creative",
+              "meta:titleId": "paid-media-creative##xdm:creativeID##title##34171",
+              "meta:descriptionId": "paid-media-creative##xdm:creativeID##description##92561"
             },
             "xdm:creativeType": {
               "type": "string",
@@ -318,34 +417,57 @@
                 "html5": "HTML5/Rich Media",
                 "playable": "Playable Ad",
                 "other": "Other Creative Type"
+              },
+              "meta:titleId": "paid-media-creative##xdm:creativeType##title##6041",
+              "meta:descriptionId": "paid-media-creative##xdm:creativeType##description##31181",
+              "meta:enumId": {
+                "image": "paid-media-creative##xdm:creativeType##meta:enum##image##23501",
+                "video": "paid-media-creative##xdm:creativeType##meta:enum##video##31731",
+                "carousel": "paid-media-creative##xdm:creativeType##meta:enum##carousel##99861",
+                "collection": "paid-media-creative##xdm:creativeType##meta:enum##collection##92571",
+                "dynamic": "paid-media-creative##xdm:creativeType##meta:enum##dynamic##27001",
+                "text": "paid-media-creative##xdm:creativeType##meta:enum##text##10901",
+                "html5": "paid-media-creative##xdm:creativeType##meta:enum##html5##93281",
+                "playable": "paid-media-creative##xdm:creativeType##meta:enum##playable##20921",
+                "other": "paid-media-creative##xdm:creativeType##meta:enum##other##93781"
               }
             },
             "xdm:title": {
               "type": "string",
               "title": "Title",
-              "description": "Creative title or headline. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
+              "description": "Creative title or headline. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants.",
+              "meta:titleId": "paid-media-creative##xdm:title##title##80571",
+              "meta:descriptionId": "paid-media-creative##xdm:title##description##4721"
             },
             "xdm:body": {
               "type": "string",
               "title": "Body Text",
-              "description": "Main body text or description. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
+              "description": "Main body text or description. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants.",
+              "meta:titleId": "paid-media-creative##xdm:body##title##40891",
+              "meta:descriptionId": "paid-media-creative##xdm:body##description##58251"
             },
             "xdm:callToAction": {
               "type": "string",
               "title": "Call to Action",
-              "description": "Call to action text or type. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
+              "description": "Call to action text or type. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants.",
+              "meta:titleId": "paid-media-creative##xdm:callToAction##title##2171",
+              "meta:descriptionId": "paid-media-creative##xdm:callToAction##description##141"
             },
             "xdm:destinationURL": {
               "type": "string",
               "format": "uri",
               "title": "Destination URL",
-              "description": "Landing page URL where users are directed. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
+              "description": "Landing page URL where users are directed. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants.",
+              "meta:titleId": "paid-media-creative##xdm:destinationURL##title##651",
+              "meta:descriptionId": "paid-media-creative##xdm:destinationURL##description##70751"
             },
             "xdm:displayURL": {
               "type": "string",
               "format": "uri",
               "title": "Display URL",
-              "description": "URL displayed in the ad. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants."
+              "description": "URL displayed in the ad. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants.",
+              "meta:titleId": "paid-media-creative##xdm:displayURL##title##10021",
+              "meta:descriptionId": "paid-media-creative##xdm:displayURL##description##25841"
             },
             "xdm:trackingURLs": {
               "type": "array",
@@ -353,7 +475,9 @@
               "description": "Third-party tracking URLs. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants.",
               "items": {
                 "$ref": "#/definitions/creativeTrackingURL"
-              }
+              },
+              "meta:titleId": "paid-media-creative##xdm:trackingURLs##title##60501",
+              "meta:descriptionId": "paid-media-creative##xdm:trackingURLs##description##12651"
             },
             "xdm:assets": {
               "type": "array",
@@ -361,7 +485,9 @@
               "description": "Media assets used in the creative. When the creative defines variants, this is the default value used for delivery contexts that do not match any entry in xdm:variants.",
               "items": {
                 "$ref": "#/definitions/creativeAsset"
-              }
+              },
+              "meta:titleId": "paid-media-creative##xdm:assets##title##70681",
+              "meta:descriptionId": "paid-media-creative##xdm:assets##description##77451"
             },
             "xdm:variants": {
               "type": "array",
@@ -369,7 +495,9 @@
               "description": "Enumerates every materially different rendered version that the ad network may serve from this single creative. Use one entry per distinct combination of language and resolved customizer values. Captures Meta Marketing API multi-language ads (asset_feed_spec language_label, see https://developers.facebook.com/docs/marketing-api/multi-language-ads/), Google Ads CustomizerAttribute substitution (see https://developers.google.com/google-ads/api/docs/ads/customize-responsive-search-ads), and equivalent localization or template-substitution mechanisms on other ad networks (TikTok, Snapchat, LinkedIn). Consumers should iterate this array to obtain the full set of rendered impressions for downstream snapshotting, feature extraction, or analytics. When a delivery context does not match any variant, fall back to the creative-level fields.",
               "items": {
                 "$ref": "#/definitions/creativeVariant"
-              }
+              },
+              "meta:titleId": "paid-media-creative##xdm:variants##title##88151",
+              "meta:descriptionId": "paid-media-creative##xdm:variants##description##76071"
             },
             "xdm:localeVariants": {
               "type": "array",
@@ -378,9 +506,13 @@
               "meta:status": "deprecated",
               "items": {
                 "$ref": "#/definitions/creativeLocaleVariant"
-              }
+              },
+              "meta:titleId": "paid-media-creative##xdm:localeVariants##title##83381",
+              "meta:descriptionId": "paid-media-creative##xdm:localeVariants##description##15171"
             }
-          }
+          },
+          "meta:titleId": "paid-media-creative##xdm:paidMediaCreative##title##69861",
+          "meta:descriptionId": "paid-media-creative##xdm:paidMediaCreative##description##54401"
         }
       }
     }
@@ -390,5 +522,7 @@
       "$ref": "#/definitions/paidMediaCreative"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "paid-media-creative##title##98661",
+  "meta:descriptionId": "paid-media-creative##description##98801"
 }

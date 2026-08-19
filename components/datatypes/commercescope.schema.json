@@ -17,22 +17,30 @@
         "xdm:environmentID": {
           "title": "Environment ID",
           "type": "string",
-          "description": "The environment ID. A 32-digit alphanumeric ID separated by hyphens."
+          "description": "The environment ID. A 32-digit alphanumeric ID separated by hyphens.",
+          "meta:titleId": "commercescope##xdm:environmentID##title##14101",
+          "meta:descriptionId": "commercescope##xdm:environmentID##description##43681"
         },
         "xdm:websiteCode": {
           "title": "Website Code",
           "type": "string",
-          "description": "The unique website code. Many websites may exist in an environment."
+          "description": "The unique website code. Many websites may exist in an environment.",
+          "meta:titleId": "commercescope##xdm:websiteCode##title##78681",
+          "meta:descriptionId": "commercescope##xdm:websiteCode##description##49251"
         },
         "xdm:storeCode": {
           "title": "Store Code",
           "type": "string",
-          "description": "The unique store code. Many stores may exist per website."
+          "description": "The unique store code. Many stores may exist per website.",
+          "meta:titleId": "commercescope##xdm:storeCode##title##90861",
+          "meta:descriptionId": "commercescope##xdm:storeCode##description##83411"
         },
         "xdm:storeViewCode": {
           "title": "Store View Code",
           "type": "string",
-          "description": "The unique store view code. Many store views may exist per store."
+          "description": "The unique store view code. Many store views may exist per store.",
+          "meta:titleId": "commercescope##xdm:storeViewCode##title##12811",
+          "meta:descriptionId": "commercescope##xdm:storeViewCode##description##27301"
         }
       }
     }
@@ -42,5 +50,7 @@
       "$ref": "#/definitions/commerce-scope"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "commercescope##title##60471",
+  "meta:descriptionId": "commercescope##description##70651"
 }

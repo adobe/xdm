@@ -18,23 +18,31 @@
         "xdm:ID": {
           "title": "Media Session ID",
           "type": "string",
-          "description": "This identifies an instance of a content stream unique to an individual playback."
+          "description": "This identifies an instance of a content stream unique to an individual playback.",
+          "meta:titleId": "sessionDetails##xdm:ID##title##96801",
+          "meta:descriptionId": "sessionDetails##xdm:ID##description##77961"
         },
         "xdm:name": {
           "title": "Content ID",
           "type": "string",
           "pattern": "^.{1,}$",
-          "description": "Content ID of the content, which can be used to tie back to other industry / CMS IDs."
+          "description": "Content ID of the content, which can be used to tie back to other industry / CMS IDs.",
+          "meta:titleId": "sessionDetails##xdm:name##title##21621",
+          "meta:descriptionId": "sessionDetails##xdm:name##description##53861"
         },
         "xdm:friendlyName": {
           "title": "Content Name",
           "type": "string",
-          "description": "This is the “friendly” (human-readable) name of the content."
+          "description": "This is the “friendly” (human-readable) name of the content.",
+          "meta:titleId": "sessionDetails##xdm:friendlyName##title##14721",
+          "meta:descriptionId": "sessionDetails##xdm:friendlyName##description##54841"
         },
         "xdm:length": {
           "title": "Media Content Length",
           "type": "integer",
-          "description": "Clip Length/Runtime - This is the maximum length (or duration) of the content being consumed (in seconds)."
+          "description": "Clip Length/Runtime - This is the maximum length (or duration) of the content being consumed (in seconds).",
+          "meta:titleId": "sessionDetails##xdm:length##title##91231",
+          "meta:descriptionId": "sessionDetails##xdm:length##description##79021"
         },
         "xdm:contentType": {
           "title": "Broadcast Content Type",
@@ -50,47 +58,76 @@
             "Podcast": "Audio podcast",
             "Audiobook": "Audiobook",
             "Song": "Song"
+          },
+          "meta:titleId": "sessionDetails##xdm:contentType##title##92721",
+          "meta:descriptionId": "sessionDetails##xdm:contentType##description##44101",
+          "meta:enumId": {
+            "VOD": "sessionDetails##xdm:contentType##meta:enum##VOD##23031",
+            "Live": "sessionDetails##xdm:contentType##meta:enum##Live##73771",
+            "Linear": "sessionDetails##xdm:contentType##meta:enum##Linear##42341",
+            "UGC": "sessionDetails##xdm:contentType##meta:enum##UGC##79561",
+            "DVOD": "sessionDetails##xdm:contentType##meta:enum##DVOD##42111",
+            "Radio": "sessionDetails##xdm:contentType##meta:enum##Radio##52161",
+            "Podcast": "sessionDetails##xdm:contentType##meta:enum##Podcast##38031",
+            "Audiobook": "sessionDetails##xdm:contentType##meta:enum##Audiobook##46521",
+            "Song": "sessionDetails##xdm:contentType##meta:enum##Song##81501"
           }
         },
         "xdm:playerName": {
           "title": "Content Player Name",
           "type": "string",
-          "description": "Name of the content player."
+          "description": "Name of the content player.",
+          "meta:titleId": "sessionDetails##xdm:playerName##title##26351",
+          "meta:descriptionId": "sessionDetails##xdm:playerName##description##86871"
         },
         "xdm:channel": {
           "title": "Content Channel",
           "type": "string",
-          "description": "Distribution channel from where the content was played."
+          "description": "Distribution channel from where the content was played.",
+          "meta:titleId": "sessionDetails##xdm:channel##title##78991",
+          "meta:descriptionId": "sessionDetails##xdm:channel##description##17351"
         },
         "xdm:appVersion": {
           "title": "Version",
           "type": "string",
-          "description": "The SDK version used by the player. This could have any custom value that makes sense for your player."
+          "description": "The SDK version used by the player. This could have any custom value that makes sense for your player.",
+          "meta:titleId": "sessionDetails##xdm:appVersion##title##41951",
+          "meta:descriptionId": "sessionDetails##xdm:appVersion##description##41411"
         },
         "xdm:show": {
           "title": "Series Name",
           "type": "string",
-          "description": "Program/Series Name. Program Name is required only if the show is part of a series."
+          "description": "Program/Series Name. Program Name is required only if the show is part of a series.",
+          "meta:titleId": "sessionDetails##xdm:show##title##74461",
+          "meta:descriptionId": "sessionDetails##xdm:show##description##73561"
         },
         "xdm:season": {
           "title": "Season Number",
           "type": "string",
-          "description": "The season number the show belongs to. Season Series is required only if the show is part of a series."
+          "description": "The season number the show belongs to. Season Series is required only if the show is part of a series.",
+          "meta:titleId": "sessionDetails##xdm:season##title##78291",
+          "meta:descriptionId": "sessionDetails##xdm:season##description##86021"
         },
         "xdm:episode": {
           "title": "Episode Number",
           "type": "string",
-          "description": "The number of the episode."
+          "description": "The number of the episode.",
+          "meta:titleId": "sessionDetails##xdm:episode##title##9221",
+          "meta:descriptionId": "sessionDetails##xdm:episode##description##94061"
         },
         "xdm:assetID": {
           "title": "Asset ID",
           "type": "string",
-          "description": "This is the unique identifier for the content of the media asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems."
+          "description": "This is the unique identifier for the content of the media asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems.",
+          "meta:titleId": "sessionDetails##xdm:assetID##title##89951",
+          "meta:descriptionId": "sessionDetails##xdm:assetID##description##94381"
         },
         "xdm:genre": {
           "title": "Genre",
           "type": "string",
-          "description": "Type or grouping of content as defined by content producer. Values should be comma delimited in variable implementation."
+          "description": "Type or grouping of content as defined by content producer. Values should be comma delimited in variable implementation.",
+          "meta:titleId": "sessionDetails##xdm:genre##title##64741",
+          "meta:descriptionId": "sessionDetails##xdm:genre##description##89691"
         },
         "xdm:genreList": {
           "title": "Genre List",
@@ -98,72 +135,100 @@
           "items": {
             "type": "string"
           },
-          "description": "Type or grouping of content as defined by content producer. Field represents the comma separated values provided in the genre field."
+          "description": "Type or grouping of content as defined by content producer. Field represents the comma separated values provided in the genre field.",
+          "meta:titleId": "sessionDetails##xdm:genreList##title##55751",
+          "meta:descriptionId": "sessionDetails##xdm:genreList##description##62151"
         },
         "xdm:firstAirDate": {
           "title": "First Air Date",
           "type": "string",
-          "description": "The date when the content first aired on television. Any date format is acceptable, but Adobe recommends: YYYY-MM-DD."
+          "description": "The date when the content first aired on television. Any date format is acceptable, but Adobe recommends: YYYY-MM-DD.",
+          "meta:titleId": "sessionDetails##xdm:firstAirDate##title##65411",
+          "meta:descriptionId": "sessionDetails##xdm:firstAirDate##description##34811"
         },
         "xdm:firstDigitalDate": {
           "title": "First Digital Date",
           "type": "string",
-          "description": "The date when the content first aired on any digital channel or platform. Any date format is acceptable but Adobe recommends: YYYY-MM-DD."
+          "description": "The date when the content first aired on any digital channel or platform. Any date format is acceptable but Adobe recommends: YYYY-MM-DD.",
+          "meta:titleId": "sessionDetails##xdm:firstDigitalDate##title##38621",
+          "meta:descriptionId": "sessionDetails##xdm:firstDigitalDate##description##28111"
         },
         "xdm:rating": {
           "title": "Rating Value",
           "type": "string",
-          "description": "Rating as defined by TV Parental Guidelines."
+          "description": "Rating as defined by TV Parental Guidelines.",
+          "meta:titleId": "sessionDetails##xdm:rating##title##2981",
+          "meta:descriptionId": "sessionDetails##xdm:rating##description##47781"
         },
         "xdm:originator": {
           "title": "Creator Name",
           "type": "string",
-          "description": "Creator of the content."
+          "description": "Creator of the content.",
+          "meta:titleId": "sessionDetails##xdm:originator##title##79741",
+          "meta:descriptionId": "sessionDetails##xdm:originator##description##43191"
         },
         "xdm:network": {
           "title": "Broadcast Network",
           "type": "string",
-          "description": "The network/channel name."
+          "description": "The network/channel name.",
+          "meta:titleId": "sessionDetails##xdm:network##title##67111",
+          "meta:descriptionId": "sessionDetails##xdm:network##description##57901"
         },
         "xdm:showType": {
           "title": "Show Type",
           "type": "string",
-          "description": "The type of content for example, trailer or full episode."
+          "description": "The type of content for example, trailer or full episode.",
+          "meta:titleId": "sessionDetails##xdm:showType##title##68921",
+          "meta:descriptionId": "sessionDetails##xdm:showType##description##75431"
         },
         "xdm:adLoad": {
           "title": "Ad Load Type",
           "type": "string",
-          "description": "The type of ad loaded as defined by each customer's internal representation."
+          "description": "The type of ad loaded as defined by each customer's internal representation.",
+          "meta:titleId": "sessionDetails##xdm:adLoad##title##83271",
+          "meta:descriptionId": "sessionDetails##xdm:adLoad##description##29691"
         },
         "xdm:mvpd": {
           "title": "MVPD Identifier",
           "type": "string",
-          "description": "MVPD provided via Adobe authentication."
+          "description": "MVPD provided via Adobe authentication.",
+          "meta:titleId": "sessionDetails##xdm:mvpd##title##80351",
+          "meta:descriptionId": "sessionDetails##xdm:mvpd##description##83561"
         },
         "xdm:authorized": {
           "title": "Media Authorized",
           "type": "string",
-          "description": "The user has been authorized via Adobe authentication."
+          "description": "The user has been authorized via Adobe authentication.",
+          "meta:titleId": "sessionDetails##xdm:authorized##title##20171",
+          "meta:descriptionId": "sessionDetails##xdm:authorized##description##59431"
         },
         "xdm:dayPart": {
           "title": "Day Part",
           "type": "string",
-          "description": "A property that defines the time of the day when the content was broadcast or played. This could have any value set as necessary by customers."
+          "description": "A property that defines the time of the day when the content was broadcast or played. This could have any value set as necessary by customers.",
+          "meta:titleId": "sessionDetails##xdm:dayPart##title##89471",
+          "meta:descriptionId": "sessionDetails##xdm:dayPart##description##80401"
         },
         "xdm:feed": {
           "title": "Feed Type",
           "type": "string",
-          "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL."
+          "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL.",
+          "meta:titleId": "sessionDetails##xdm:feed##title##57831",
+          "meta:descriptionId": "sessionDetails##xdm:feed##description##95591"
         },
         "xdm:streamFormat": {
           "title": "Stream Format",
           "type": "string",
-          "description": "Format of the stream (HD, SD)."
+          "description": "Format of the stream (HD, SD).",
+          "meta:titleId": "sessionDetails##xdm:streamFormat##title##24711",
+          "meta:descriptionId": "sessionDetails##xdm:streamFormat##description##9101"
         },
         "xdm:hasResume": {
           "title": "Resume",
           "type": "boolean",
-          "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period."
+          "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period.",
+          "meta:titleId": "sessionDetails##xdm:hasResume##title##40971",
+          "meta:descriptionId": "sessionDetails##xdm:hasResume##description##65501"
         },
         "xdm:streamType": {
           "title": "Stream Type",
@@ -173,162 +238,230 @@
           "meta:enum": {
             "video": "Video",
             "audio": "Audio"
+          },
+          "meta:titleId": "sessionDetails##xdm:streamType##title##61331",
+          "meta:descriptionId": "sessionDetails##xdm:streamType##description##35441",
+          "meta:enumId": {
+            "video": "sessionDetails##xdm:streamType##meta:enum##video##53571",
+            "audio": "sessionDetails##xdm:streamType##meta:enum##audio##20391"
           }
         },
         "xdm:artist": {
           "title": "Artist",
           "type": "string",
-          "description": "The name of the album artist or group performing the music recording or video."
+          "description": "The name of the album artist or group performing the music recording or video.",
+          "meta:titleId": "sessionDetails##xdm:artist##title##89751",
+          "meta:descriptionId": "sessionDetails##xdm:artist##description##57461"
         },
         "xdm:album": {
           "title": "Album",
           "type": "string",
-          "description": "The name of the album that the music recording or video belongs to."
+          "description": "The name of the album that the music recording or video belongs to.",
+          "meta:titleId": "sessionDetails##xdm:album##title##29081",
+          "meta:descriptionId": "sessionDetails##xdm:album##description##86601"
         },
         "xdm:label": {
           "title": "Record Label",
           "type": "string",
-          "description": "Name of the record label."
+          "description": "Name of the record label.",
+          "meta:titleId": "sessionDetails##xdm:label##title##7941",
+          "meta:descriptionId": "sessionDetails##xdm:label##description##95291"
         },
         "xdm:author": {
           "title": "Author",
           "type": "string",
-          "description": "Name of the media author."
+          "description": "Name of the media author.",
+          "meta:titleId": "sessionDetails##xdm:author##title##9191",
+          "meta:descriptionId": "sessionDetails##xdm:author##description##1951"
         },
         "xdm:station": {
           "title": "Radio Station",
           "type": "string",
-          "description": "The radio station name on which the audio is played."
+          "description": "The radio station name on which the audio is played.",
+          "meta:titleId": "sessionDetails##xdm:station##title##1271",
+          "meta:descriptionId": "sessionDetails##xdm:station##description##2111"
         },
         "xdm:publisher": {
           "title": "Publisher",
           "type": "string",
-          "description": "Name of the audio content publisher."
+          "description": "Name of the audio content publisher.",
+          "meta:titleId": "sessionDetails##xdm:publisher##title##33441",
+          "meta:descriptionId": "sessionDetails##xdm:publisher##description##99411"
         },
         "xdm:segment": {
           "title": "Video Segment",
           "type": "string",
-          "description": "The interval that describes the part of the content that has been viewed in minutes."
+          "description": "The interval that describes the part of the content that has been viewed in minutes.",
+          "meta:titleId": "sessionDetails##xdm:segment##title##25661",
+          "meta:descriptionId": "sessionDetails##xdm:segment##description##51931"
         },
         "xdm:isDownloaded": {
           "title": "Media Downloaded Flag",
           "type": "boolean",
-          "description": "The stream was played locally on the device after being downloaded."
+          "description": "The stream was played locally on the device after being downloaded.",
+          "meta:titleId": "sessionDetails##xdm:isDownloaded##title##70421",
+          "meta:descriptionId": "sessionDetails##xdm:isDownloaded##description##90781"
         },
         "xdm:isFederated": {
           "title": "Federated Data",
           "type": "boolean",
-          "description": "Set to true when the hit is federated (i.e., received by the customer as part of a federated data share, rather than their own implementation)."
+          "description": "Set to true when the hit is federated (i.e., received by the customer as part of a federated data share, rather than their own implementation).",
+          "meta:titleId": "sessionDetails##xdm:isFederated##title##24651",
+          "meta:descriptionId": "sessionDetails##xdm:isFederated##description##91981"
         },
         "xdm:isViewed": {
           "title": "Media Starts",
           "type": "boolean",
-          "description": "Load event for the media. (This occurs when the viewer clicks the Play button). This would count even if there are pre-roll ads, buffering, errors, and so on."
+          "description": "Load event for the media. (This occurs when the viewer clicks the Play button). This would count even if there are pre-roll ads, buffering, errors, and so on.",
+          "meta:titleId": "sessionDetails##xdm:isViewed##title##95061",
+          "meta:descriptionId": "sessionDetails##xdm:isViewed##description##96071"
         },
         "xdm:isPlayed": {
           "title": "Content Starts",
           "type": "boolean",
-          "description": "First frame of media is consumed. If the user drops during ad, buffering, etc., then there would be no “Content Start” event."
+          "description": "First frame of media is consumed. If the user drops during ad, buffering, etc., then there would be no “Content Start” event.",
+          "meta:titleId": "sessionDetails##xdm:isPlayed##title##5351",
+          "meta:descriptionId": "sessionDetails##xdm:isPlayed##description##97821"
         },
         "xdm:isCompleted": {
           "title": "Content Completes",
           "type": "boolean",
-          "description": "Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+          "description": "Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.",
+          "meta:titleId": "sessionDetails##xdm:isCompleted##title##31031",
+          "meta:descriptionId": "sessionDetails##xdm:isCompleted##description##38061"
         },
         "xdm:timePlayed": {
           "title": "Content Time Spent",
           "type": "integer",
-          "description": "Sums the event duration (in seconds) for all events of type PLAY on the main content."
+          "description": "Sums the event duration (in seconds) for all events of type PLAY on the main content.",
+          "meta:titleId": "sessionDetails##xdm:timePlayed##title##79521",
+          "meta:descriptionId": "sessionDetails##xdm:timePlayed##description##14231"
         },
         "xdm:totalTimePlayed": {
           "title": "Media Time Spent",
           "type": "integer",
-          "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads."
+          "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads.",
+          "meta:titleId": "sessionDetails##xdm:totalTimePlayed##title##29901",
+          "meta:descriptionId": "sessionDetails##xdm:totalTimePlayed##description##81491"
         },
         "xdm:scheduleTimePlayed": {
           "title": "Schedule Time Played",
           "type": "integer",
-          "description": "Sums the event duration (in seconds) for all events of type PLAY on the main content for the scheduled program."
+          "description": "Sums the event duration (in seconds) for all events of type PLAY on the main content for the scheduled program.",
+          "meta:titleId": "sessionDetails##xdm:scheduleTimePlayed##title##21481",
+          "meta:descriptionId": "sessionDetails##xdm:scheduleTimePlayed##description##64191"
         },
         "xdm:uniqueTimePlayed": {
           "title": "Unique Time Played",
           "type": "integer",
-          "description": "Describes the sum of the unique intervals seen by a user on a timed media asset - i.e. the length playback intervals viewed multiple times are only counted once."
+          "description": "Describes the sum of the unique intervals seen by a user on a timed media asset - i.e. the length playback intervals viewed multiple times are only counted once.",
+          "meta:titleId": "sessionDetails##xdm:uniqueTimePlayed##title##45891",
+          "meta:descriptionId": "sessionDetails##xdm:uniqueTimePlayed##description##6961"
         },
         "xdm:averageMinuteAudience": {
           "title": "Average Minute Audience",
           "type": "number",
-          "description": "Describes the average content time spent for a specific media item - i.e. the total content time spent divided by the length for all of the playback sessions."
+          "description": "Describes the average content time spent for a specific media item - i.e. the total content time spent divided by the length for all of the playback sessions.",
+          "meta:titleId": "sessionDetails##xdm:averageMinuteAudience##title##12081",
+          "meta:descriptionId": "sessionDetails##xdm:averageMinuteAudience##description##37551"
         },
         "xdm:adCount": {
           "title": "Ad Count",
           "type": "integer",
-          "description": "The number of ads started during the playback."
+          "description": "The number of ads started during the playback.",
+          "meta:titleId": "sessionDetails##xdm:adCount##title##89651",
+          "meta:descriptionId": "sessionDetails##xdm:adCount##description##40991"
         },
         "xdm:chapterCount": {
           "title": "Chapter Count",
           "type": "integer",
-          "description": "The number of chapters started during the playback."
+          "description": "The number of chapters started during the playback.",
+          "meta:titleId": "sessionDetails##xdm:chapterCount##title##97961",
+          "meta:descriptionId": "sessionDetails##xdm:chapterCount##description##48121"
         },
         "xdm:hasProgress10": {
           "title": "10% Progress Marker",
           "type": "boolean",
-          "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "sessionDetails##xdm:hasProgress10##title##57211",
+          "meta:descriptionId": "sessionDetails##xdm:hasProgress10##description##1131"
         },
         "xdm:hasProgress25": {
           "title": "25% Progress Marker",
           "type": "boolean",
-          "description": "Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "sessionDetails##xdm:hasProgress25##title##27021",
+          "meta:descriptionId": "sessionDetails##xdm:hasProgress25##description##84181"
         },
         "xdm:hasProgress50": {
           "title": "50% Progress Marker",
           "type": "boolean",
-          "description": "Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "sessionDetails##xdm:hasProgress50##title##96561",
+          "meta:descriptionId": "sessionDetails##xdm:hasProgress50##description##83991"
         },
         "xdm:hasProgress75": {
           "title": "75% Progress Marker",
           "type": "boolean",
-          "description": "Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "sessionDetails##xdm:hasProgress75##title##13941",
+          "meta:descriptionId": "sessionDetails##xdm:hasProgress75##description##82601"
         },
         "xdm:hasProgress95": {
           "title": "95% Progress Marker",
           "type": "boolean",
-          "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "sessionDetails##xdm:hasProgress95##title##91731",
+          "meta:descriptionId": "sessionDetails##xdm:hasProgress95##description##20711"
         },
         "xdm:estimatedStreams": {
           "title": "Estimated Streams",
           "type": "number",
-          "description": "The estimated number of video or audio streams per each individual content."
+          "description": "The estimated number of video or audio streams per each individual content.",
+          "meta:titleId": "sessionDetails##xdm:estimatedStreams##title##31661",
+          "meta:descriptionId": "sessionDetails##xdm:estimatedStreams##description##61191"
         },
         "xdm:hasPauseImpactedStreams": {
           "title": "Pause Impacted Streams",
           "type": "boolean",
-          "description": "Indicates if one or more pauses occurred during the playback of a single media item."
+          "description": "Indicates if one or more pauses occurred during the playback of a single media item.",
+          "meta:titleId": "sessionDetails##xdm:hasPauseImpactedStreams##title##2211",
+          "meta:descriptionId": "sessionDetails##xdm:hasPauseImpactedStreams##description##83691"
         },
         "xdm:pauseCount": {
           "title": "Pause Events",
           "type": "integer",
-          "description": "The number of pause periods that occurred during playback."
+          "description": "The number of pause periods that occurred during playback.",
+          "meta:titleId": "sessionDetails##xdm:pauseCount##title##99961",
+          "meta:descriptionId": "sessionDetails##xdm:pauseCount##description##87781"
         },
         "xdm:pauseTime": {
           "title": "Total Pause Duration",
           "type": "integer",
-          "description": "Describes the duration in seconds in which playback was paused by the user."
+          "description": "Describes the duration in seconds in which playback was paused by the user.",
+          "meta:titleId": "sessionDetails##xdm:pauseTime##title##55061",
+          "meta:descriptionId": "sessionDetails##xdm:pauseTime##description##8221"
         },
         "xdm:hasSegmentView": {
           "title": "Media Segment Views",
           "type": "boolean",
-          "description": "Indicates when at least one frame, not necessarily the first has been viewed."
+          "description": "Indicates when at least one frame, not necessarily the first has been viewed.",
+          "meta:titleId": "sessionDetails##xdm:hasSegmentView##title##87921",
+          "meta:descriptionId": "sessionDetails##xdm:hasSegmentView##description##95141"
         },
         "xdm:secondsSinceLastCall": {
           "title": "Media Session Server Timeout",
           "type": "number",
-          "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed."
+          "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed.",
+          "meta:titleId": "sessionDetails##xdm:secondsSinceLastCall##title##76371",
+          "meta:descriptionId": "sessionDetails##xdm:secondsSinceLastCall##description##52051"
         },
         "xdm:cdn": {
           "title": "Content Delivery Network",
           "type": "string",
-          "description": "The content delivery network of the content played."
+          "description": "The content delivery network of the content played.",
+          "meta:titleId": "sessionDetails##xdm:cdn##title##22931",
+          "meta:descriptionId": "sessionDetails##xdm:cdn##description##40701"
         },
         "xdm:pev3": {
           "title": "Pev3",
@@ -340,17 +473,29 @@
             "videoAd": "Video Ad",
             "audio": "Audio",
             "audioAd": "Audio Ad"
+          },
+          "meta:titleId": "sessionDetails##xdm:pev3##title##58431",
+          "meta:descriptionId": "sessionDetails##xdm:pev3##description##98921",
+          "meta:enumId": {
+            "video": "sessionDetails##xdm:pev3##meta:enum##video##55461",
+            "videoAd": "sessionDetails##xdm:pev3##meta:enum##videoAd##47751",
+            "audio": "sessionDetails##xdm:pev3##meta:enum##audio##18591",
+            "audioAd": "sessionDetails##xdm:pev3##meta:enum##audioAd##40011"
           }
         },
         "xdm:pccr": {
           "title": "Pccr",
           "type": "boolean",
-          "description": "Indicates that a redirect occurred."
+          "description": "Indicates that a redirect occurred.",
+          "meta:titleId": "sessionDetails##xdm:pccr##title##22881",
+          "meta:descriptionId": "sessionDetails##xdm:pccr##description##9131"
         },
         "xdm:dataIngestionSource": {
           "title": "Data Ingestion Source",
           "type": "string",
-          "description": "Indicates the method or channel through which the data was ingested into Adobe Experience Platform."
+          "description": "Indicates the method or channel through which the data was ingested into Adobe Experience Platform.",
+          "meta:titleId": "sessionDetails##xdm:dataIngestionSource##title##39501",
+          "meta:descriptionId": "sessionDetails##xdm:dataIngestionSource##description##41211"
         }
       },
       "required": ["xdm:name", "xdm:length", "xdm:contentType"]
@@ -360,5 +505,7 @@
     {
       "$ref": "#/definitions/sessionDetails"
     }
-  ]
+  ],
+  "meta:titleId": "sessionDetails##title##58691",
+  "meta:descriptionId": "sessionDetails##description##75681"
 }

@@ -24,7 +24,9 @@
               "description": "Targeted countries. New integrations SHOULD emit ISO 3166-1 alpha-2 codes (e.g. US, CA, GB, DE) to enable cross-network analytics in downstream datasets. Free-form country names are accepted for backwards compatibility but are deprecated and may be rejected once this datatype transitions from experimental to stable.",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:countries##title##74021",
+              "meta:descriptionId": "paid-media-targeting##xdm:countries##description##54461"
             },
             "xdm:regions": {
               "type": "array",
@@ -33,7 +35,9 @@
               "items": {
                 "type": "string",
                 "examples": ["US-CA", "DE-BB", "JP-13"]
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:regions##title##8761",
+              "meta:descriptionId": "paid-media-targeting##xdm:regions##description##7401"
             },
             "xdm:cities": {
               "type": "array",
@@ -41,7 +45,9 @@
               "description": "Targeted cities as canonical city names. ISO/UN-LOCODE is sparse for cities, so canonical names are used; callers should scope cities by the entries in `xdm:regions` and `xdm:countries` to disambiguate (e.g. \"Springfield\" under US-IL vs US-MA).",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:cities##title##12191",
+              "meta:descriptionId": "paid-media-targeting##xdm:cities##description##72181"
             },
             "xdm:postalCodes": {
               "type": "array",
@@ -49,7 +55,9 @@
               "description": "Targeted postal codes. Format varies by country; callers should scope postal codes by the entries in `xdm:countries`.",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:postalCodes##title##38191",
+              "meta:descriptionId": "paid-media-targeting##xdm:postalCodes##description##12161"
             },
             "xdm:dmaIDs": {
               "type": "array",
@@ -57,7 +65,9 @@
               "description": "Targeted Nielsen designated market area (DMA) codes. US-specific. Matches the `xdm:dmaID` convention in `components/datatypes/demographic/geo.schema.json`. Source networks map their native DMA criterion IDs (e.g. Google Ads `geoTargetConstant` entries with `Target Type = DMA Region`) to Nielsen DMA codes at ingestion.",
               "items": {
                 "type": "integer"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:dmaIDs##title##35051",
+              "meta:descriptionId": "paid-media-targeting##xdm:dmaIDs##description##11121"
             },
             "xdm:msaIDs": {
               "type": "array",
@@ -65,7 +75,9 @@
               "description": "Targeted metropolitan statistical area (MSA) codes. US-specific. Matches the `xdm:msaID` convention in `components/datatypes/demographic/geo.schema.json`.",
               "items": {
                 "type": "integer"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:msaIDs##title##9751",
+              "meta:descriptionId": "paid-media-targeting##xdm:msaIDs##description##91621"
             },
             "xdm:radius": {
               "type": "object",
@@ -74,18 +86,24 @@
               "properties": {
                 "xdm:latitude": {
                   "type": "number",
-                  "title": "Latitude"
+                  "title": "Latitude",
+                  "meta:titleId": "paid-media-targeting##xdm:latitude##title##33931"
                 },
                 "xdm:longitude": {
                   "type": "number",
-                  "title": "Longitude"
+                  "title": "Longitude",
+                  "meta:titleId": "paid-media-targeting##xdm:longitude##title##6651"
                 },
                 "xdm:radiusKm": {
                   "type": "number",
                   "title": "Radius (km)",
-                  "description": "Radius in kilometers"
+                  "description": "Radius in kilometers",
+                  "meta:titleId": "paid-media-targeting##xdm:radiusKm##title##92631",
+                  "meta:descriptionId": "paid-media-targeting##xdm:radiusKm##description##16981"
                 }
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:radius##title##41771",
+              "meta:descriptionId": "paid-media-targeting##xdm:radius##description##73971"
             },
             "xdm:radii": {
               "type": "array",
@@ -96,21 +114,29 @@
                 "properties": {
                   "xdm:latitude": {
                     "type": "number",
-                    "title": "Latitude"
+                    "title": "Latitude",
+                    "meta:titleId": "paid-media-targeting##xdm:latitude##title##67711"
                   },
                   "xdm:longitude": {
                     "type": "number",
-                    "title": "Longitude"
+                    "title": "Longitude",
+                    "meta:titleId": "paid-media-targeting##xdm:longitude##title##69091"
                   },
                   "xdm:radiusKm": {
                     "type": "number",
                     "title": "Radius (km)",
-                    "description": "Radius in kilometers"
+                    "description": "Radius in kilometers",
+                    "meta:titleId": "paid-media-targeting##xdm:radiusKm##title##59381",
+                    "meta:descriptionId": "paid-media-targeting##xdm:radiusKm##description##32001"
                   }
                 }
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:radii##title##2201",
+              "meta:descriptionId": "paid-media-targeting##xdm:radii##description##25101"
             }
-          }
+          },
+          "meta:titleId": "paid-media-targeting##xdm:geoTargeting##title##53821",
+          "meta:descriptionId": "paid-media-targeting##xdm:geoTargeting##description##61661"
         },
         "xdm:demographicTargeting": {
           "type": "object",
@@ -126,14 +152,18 @@
                 "properties": {
                   "xdm:minAge": {
                     "type": "integer",
-                    "title": "Minimum Age"
+                    "title": "Minimum Age",
+                    "meta:titleId": "paid-media-targeting##xdm:minAge##title##30911"
                   },
                   "xdm:maxAge": {
                     "type": "integer",
-                    "title": "Maximum Age"
+                    "title": "Maximum Age",
+                    "meta:titleId": "paid-media-targeting##xdm:maxAge##title##60461"
                   }
                 }
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:ageRanges##title##80541",
+              "meta:descriptionId": "paid-media-targeting##xdm:ageRanges##description##86601"
             },
             "xdm:genders": {
               "type": "array",
@@ -147,8 +177,16 @@
                   "female": "Female",
                   "all": "All Genders",
                   "unknown": "Unknown/Unspecified"
+                },
+                "meta:enumId": {
+                  "male": "paid-media-targeting##items##meta:enum##male##91101",
+                  "female": "paid-media-targeting##items##meta:enum##female##95271",
+                  "all": "paid-media-targeting##items##meta:enum##all##5121",
+                  "unknown": "paid-media-targeting##items##meta:enum##unknown##29321"
                 }
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:genders##title##30251",
+              "meta:descriptionId": "paid-media-targeting##xdm:genders##description##3411"
             },
             "xdm:languages": {
               "type": "array",
@@ -156,9 +194,13 @@
               "description": "Targeted languages (ISO language codes)",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:languages##title##16731",
+              "meta:descriptionId": "paid-media-targeting##xdm:languages##description##42931"
             }
-          }
+          },
+          "meta:titleId": "paid-media-targeting##xdm:demographicTargeting##title##45961",
+          "meta:descriptionId": "paid-media-targeting##xdm:demographicTargeting##description##32481"
         },
         "xdm:interestTargeting": {
           "type": "object",
@@ -171,7 +213,9 @@
               "description": "Targeted interest categories",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:interests##title##82611",
+              "meta:descriptionId": "paid-media-targeting##xdm:interests##description##34221"
             },
             "xdm:behaviors": {
               "type": "array",
@@ -179,7 +223,9 @@
               "description": "Targeted behaviors",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:behaviors##title##33691",
+              "meta:descriptionId": "paid-media-targeting##xdm:behaviors##description##19101"
             },
             "xdm:customAudiences": {
               "type": "array",
@@ -190,11 +236,13 @@
                 "properties": {
                   "xdm:audienceID": {
                     "type": "string",
-                    "title": "Audience ID"
+                    "title": "Audience ID",
+                    "meta:titleId": "paid-media-targeting##xdm:audienceID##title##58991"
                   },
                   "xdm:audienceName": {
                     "type": "string",
-                    "title": "Audience Name"
+                    "title": "Audience Name",
+                    "meta:titleId": "paid-media-targeting##xdm:audienceName##title##29941"
                   },
                   "xdm:audienceType": {
                     "type": "string",
@@ -216,12 +264,26 @@
                       "logical": "Logical Combination Audience (Google Ads)",
                       "rule_based": "Rule-Based Audience (Google Ads)",
                       "crm_based": "CRM-Based Audience (first-party customer data)"
+                    },
+                    "meta:titleId": "paid-media-targeting##xdm:audienceType##title##22631",
+                    "meta:enumId": {
+                      "custom": "paid-media-targeting##xdm:audienceType##meta:enum##custom##69771",
+                      "lookalike": "paid-media-targeting##xdm:audienceType##meta:enum##lookalike##63491",
+                      "retargeting": "paid-media-targeting##xdm:audienceType##meta:enum##retargeting##10511",
+                      "similar": "paid-media-targeting##xdm:audienceType##meta:enum##similar##10371",
+                      "logical": "paid-media-targeting##xdm:audienceType##meta:enum##logical##59381",
+                      "rule_based": "paid-media-targeting##xdm:audienceType##meta:enum##rule_based##96201",
+                      "crm_based": "paid-media-targeting##xdm:audienceType##meta:enum##crm_based##94851"
                     }
                   }
                 }
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:customAudiences##title##12551",
+              "meta:descriptionId": "paid-media-targeting##xdm:customAudiences##description##68491"
             }
-          }
+          },
+          "meta:titleId": "paid-media-targeting##xdm:interestTargeting##title##90331",
+          "meta:descriptionId": "paid-media-targeting##xdm:interestTargeting##description##21461"
         },
         "xdm:deviceTargeting": {
           "type": "object",
@@ -241,8 +303,17 @@
                   "tablet": "Tablet",
                   "tv": "Connected TV",
                   "other": "Other Device"
+                },
+                "meta:enumId": {
+                  "desktop": "paid-media-targeting##items##meta:enum##desktop##651",
+                  "mobile": "paid-media-targeting##items##meta:enum##mobile##3691",
+                  "tablet": "paid-media-targeting##items##meta:enum##tablet##59291",
+                  "tv": "paid-media-targeting##items##meta:enum##tv##47721",
+                  "other": "paid-media-targeting##items##meta:enum##other##71151"
                 }
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:deviceTypes##title##52641",
+              "meta:descriptionId": "paid-media-targeting##xdm:deviceTypes##description##34281"
             },
             "xdm:operatingSystems": {
               "type": "array",
@@ -250,7 +321,9 @@
               "description": "Targeted operating systems",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:operatingSystems##title##45551",
+              "meta:descriptionId": "paid-media-targeting##xdm:operatingSystems##description##3181"
             },
             "xdm:browsers": {
               "type": "array",
@@ -258,9 +331,13 @@
               "description": "Targeted browsers",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:browsers##title##14941",
+              "meta:descriptionId": "paid-media-targeting##xdm:browsers##description##22201"
             }
-          }
+          },
+          "meta:titleId": "paid-media-targeting##xdm:deviceTargeting##title##99731",
+          "meta:descriptionId": "paid-media-targeting##xdm:deviceTargeting##description##60991"
         },
         "xdm:placementTargeting": {
           "type": "object",
@@ -273,7 +350,9 @@
               "description": "Targeted ad placements",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:placements##title##82151",
+              "meta:descriptionId": "paid-media-targeting##xdm:placements##description##15271"
             },
             "xdm:publisherCategories": {
               "type": "array",
@@ -281,9 +360,13 @@
               "description": "Targeted publisher categories",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "paid-media-targeting##xdm:publisherCategories##title##72901",
+              "meta:descriptionId": "paid-media-targeting##xdm:publisherCategories##description##27741"
             }
-          }
+          },
+          "meta:titleId": "paid-media-targeting##xdm:placementTargeting##title##88961",
+          "meta:descriptionId": "paid-media-targeting##xdm:placementTargeting##description##26931"
         }
       }
     }
@@ -293,5 +376,7 @@
       "$ref": "#/definitions/targeting"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "paid-media-targeting##title##11461",
+  "meta:descriptionId": "paid-media-targeting##description##76731"
 }

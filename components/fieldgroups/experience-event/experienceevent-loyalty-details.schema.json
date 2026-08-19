@@ -33,30 +33,42 @@
                   "xdm:value": {
                     "title": "Discount Value",
                     "type": "number",
-                    "description": "Monetary value of the discount applied."
+                    "description": "Monetary value of the discount applied.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:value##title##46971",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:value##description##69321"
                   },
                   "xdm:source": {
                     "title": "Discount Source",
                     "type": "string",
-                    "description": "Origin of the discount (e.g., coupon, referral, pointsRedemption)."
+                    "description": "Origin of the discount (e.g., coupon, referral, pointsRedemption).",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:source##title##71761",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:source##description##53871"
                   },
                   "xdm:triggeredForItem": {
                     "title": "Triggered For Item",
                     "type": "string",
-                    "description": "SKU or identifier of the item this discount is for, if applicable."
+                    "description": "SKU or identifier of the item this discount is for, if applicable.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:triggeredForItem##title##68681",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:triggeredForItem##description##62631"
                   },
                   "xdm:scope": {
                     "title": "Scope",
                     "type": "string",
-                    "description": "Scope of the discount (e.g., additionalCost, item, total)."
+                    "description": "Scope of the discount (e.g., additionalCost, item, total).",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:scope##title##85051",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:scope##description##68121"
                   },
                   "xdm:promotionId": {
                     "title": "Promotion ID",
                     "type": "string",
-                    "description": "Identifier of the promotion that triggered this discount."
+                    "description": "Identifier of the promotion that triggered this discount.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:promotionId##title##84081",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:promotionId##description##17321"
                   }
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-loyalty-details##xdm:discounts##title##26641",
+              "meta:descriptionId": "experienceevent-loyalty-details##xdm:discounts##description##84851"
             },
             "xdm:couponRedemption": {
               "title": "Coupon Redemptions",
@@ -68,25 +80,35 @@
                   "xdm:id": {
                     "title": "Coupon ID",
                     "type": "string",
-                    "description": "Coupon code or identifier."
+                    "description": "Coupon code or identifier.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:id##title##57941",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:id##description##49261"
                   },
                   "xdm:series": {
                     "title": "Coupon Series",
                     "type": "string",
-                    "description": "Series or campaign the coupon belongs to."
+                    "description": "Series or campaign the coupon belongs to.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:series##title##73791",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:series##description##81301"
                   },
                   "xdm:seriesName": {
                     "title": "Coupon Series Name",
                     "type": "string",
-                    "description": "Human-readable name of the coupon series."
+                    "description": "Human-readable name of the coupon series.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:seriesName##title##36341",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:seriesName##description##46631"
                   },
                   "xdm:promotionId": {
                     "title": "Promotion ID",
                     "type": "string",
-                    "description": "Identifier of the promotion this coupon is from."
+                    "description": "Identifier of the promotion this coupon is from.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:promotionId##title##2981",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:promotionId##description##91921"
                   }
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-loyalty-details##xdm:couponRedemption##title##29731",
+              "meta:descriptionId": "experienceevent-loyalty-details##xdm:couponRedemption##description##1021"
             },
             "xdm:pointsRedemption": {
               "title": "Points Redemption",
@@ -98,25 +120,35 @@
                   "xdm:value": {
                     "title": "Points Value",
                     "type": "number",
-                    "description": "Number of points redeemed."
+                    "description": "Number of points redeemed.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:value##title##63561",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:value##description##25001"
                   },
                   "xdm:promotionId": {
                     "title": "Promotion ID",
                     "type": "string",
-                    "description": "Identifier of the promotion governing this points redemption."
+                    "description": "Identifier of the promotion governing this points redemption.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:promotionId##title##62471",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:promotionId##description##2131"
                   },
                   "xdm:loyaltyProgramId": {
                     "title": "Loyalty Program ID",
                     "type": "string",
-                    "description": "Identifier of the loyalty program managing these points."
+                    "description": "Identifier of the loyalty program managing these points.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:loyaltyProgramId##title##21051",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:loyaltyProgramId##description##63041"
                   },
                   "xdm:transactionId": {
                     "title": "Transaction ID",
                     "type": "string",
-                    "description": "Identifier of the points redemption transaction, if applicable."
+                    "description": "Identifier of the points redemption transaction, if applicable.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:transactionId##title##77501",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:transactionId##description##70461"
                   }
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-loyalty-details##xdm:pointsRedemption##title##46721",
+              "meta:descriptionId": "experienceevent-loyalty-details##xdm:pointsRedemption##description##84641"
             },
             "xdm:referralRedemption": {
               "title": "Referral Redemptions",
@@ -128,15 +160,21 @@
                   "xdm:code": {
                     "title": "Referral Code",
                     "type": "string",
-                    "description": "Referral code used."
+                    "description": "Referral code used.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:code##title##69501",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:code##description##22121"
                   },
                   "xdm:promotionId": {
                     "title": "Promotion ID",
                     "type": "string",
-                    "description": "Identifier of the promotion the referral is from."
+                    "description": "Identifier of the promotion the referral is from.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:promotionId##title##27941",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:promotionId##description##55951"
                   }
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-loyalty-details##xdm:referralRedemption##title##18241",
+              "meta:descriptionId": "experienceevent-loyalty-details##xdm:referralRedemption##description##54411"
             },
             "xdm:pointsGained": {
               "title": "Points Gained",
@@ -148,27 +186,38 @@
                   "xdm:value": {
                     "title": "Points Value",
                     "type": "number",
-                    "description": "Number of points gained."
+                    "description": "Number of points gained.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:value##title##18391",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:value##description##42921"
                   },
                   "xdm:promotionId": {
                     "title": "Promotion ID",
                     "type": "string",
-                    "description": "Identifier of the promotion governing this points acquisition."
+                    "description": "Identifier of the promotion governing this points acquisition.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:promotionId##title##53591",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:promotionId##description##31531"
                   },
                   "xdm:loyaltyProgramId": {
                     "title": "Loyalty Program ID",
                     "type": "string",
-                    "description": "Identifier of the loyalty program managing these points."
+                    "description": "Identifier of the loyalty program managing these points.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:loyaltyProgramId##title##13801",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:loyaltyProgramId##description##45881"
                   },
                   "xdm:transactionId": {
                     "title": "Transaction ID",
                     "type": "string",
-                    "description": "Identifier of the points acquisition transaction, if applicable."
+                    "description": "Identifier of the points acquisition transaction, if applicable.",
+                    "meta:titleId": "experienceevent-loyalty-details##xdm:transactionId##title##20351",
+                    "meta:descriptionId": "experienceevent-loyalty-details##xdm:transactionId##description##34881"
                   }
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-loyalty-details##xdm:pointsGained##title##37201",
+              "meta:descriptionId": "experienceevent-loyalty-details##xdm:pointsGained##description##29471"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-loyalty-details##xdm:loyalty##description##58901"
         }
       }
     }
@@ -178,5 +227,7 @@
       "$ref": "#/definitions/experienceevent-loyalty"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-loyalty-details##title##18151",
+  "meta:descriptionId": "experienceevent-loyalty-details##description##74291"
 }

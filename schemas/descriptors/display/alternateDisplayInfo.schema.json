@@ -93,6 +93,12 @@
             }
           },
           "meta:titleId": "alternateDisplayInfo##xdm:excludeMetaEnum##title##13941"
+        },
+        "meta:enumId": {
+          "title": "alternateDisplayInfo##properties##meta:enum##title##27931",
+          "type": "alternateDisplayInfo##properties##meta:enum##type##97561",
+          "patternProperties": "alternateDisplayInfo##properties##meta:enum##patternProperties##34231",
+          "meta:titleId": "alternateDisplayInfo##properties##meta:enum##meta:titleId##88581"
         }
       },
       "anyOf": [

@@ -23,32 +23,44 @@
             "xdm:ID": {
               "title": "Segment Identifier",
               "type": "string",
-              "description": "Unique identifier of the segment."
+              "description": "Unique identifier of the segment.",
+              "meta:titleId": "dim-segment##xdm:ID##title##27281",
+              "meta:descriptionId": "dim-segment##xdm:ID##description##43781"
             },
             "xdm:name": {
               "title": "Segment name",
               "type": "string",
-              "description": "Name of the segment."
+              "description": "Name of the segment.",
+              "meta:titleId": "dim-segment##xdm:name##title##96511",
+              "meta:descriptionId": "dim-segment##xdm:name##description##2051"
             },
             "xdm:description": {
               "title": "Segment description",
               "type": "string",
-              "description": "Description of the segment."
+              "description": "Description of the segment.",
+              "meta:titleId": "dim-segment##xdm:description##title##2521",
+              "meta:descriptionId": "dim-segment##xdm:description##description##62771"
             },
             "xdm:source": {
               "title": "Segment Source",
               "type": "string",
-              "description": "Segment source indicating whether the segment was sent from an internal or external source."
+              "description": "Segment source indicating whether the segment was sent from an internal or external source.",
+              "meta:titleId": "dim-segment##xdm:source##title##63041",
+              "meta:descriptionId": "dim-segment##xdm:source##description##91681"
             },
             "xdm:namespace": {
               "title": "Segment Namespace",
               "type": "string",
-              "description": "Segment namespace."
+              "description": "Segment namespace.",
+              "meta:titleId": "dim-segment##xdm:namespace##title##89671",
+              "meta:descriptionId": "dim-segment##xdm:namespace##description##33861"
             },
             "xdm:version": {
               "title": "Segment version",
               "type": "string",
-              "description": "Version of the segment."
+              "description": "Version of the segment.",
+              "meta:titleId": "dim-segment##xdm:version##title##46551",
+              "meta:descriptionId": "dim-segment##xdm:version##description##67341"
             },
             "xdm:status": {
               "type": "string",
@@ -61,9 +73,19 @@
                 "DELETED": "Deleted",
                 "DRAFT": "Draft",
                 "REVOKED": "Revoked"
+              },
+              "meta:titleId": "dim-segment##xdm:status##title##19241",
+              "meta:descriptionId": "dim-segment##xdm:status##description##77421",
+              "meta:enumId": {
+                "ACTIVE": "dim-segment##xdm:status##meta:enum##ACTIVE##37301",
+                "INACTIVE": "dim-segment##xdm:status##meta:enum##INACTIVE##49161",
+                "DELETED": "dim-segment##xdm:status##meta:enum##DELETED##46261",
+                "DRAFT": "dim-segment##xdm:status##meta:enum##DRAFT##61961",
+                "REVOKED": "dim-segment##xdm:status##meta:enum##REVOKED##97571"
               }
             }
-          }
+          },
+          "meta:descriptionId": "dim-segment##xdm:segment##description##41201"
         }
       }
     }
@@ -76,5 +98,7 @@
       "$ref": "#/definitions/segment"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "dim-segment##title##41681",
+  "meta:descriptionId": "dim-segment##description##38711"
 }

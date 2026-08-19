@@ -33,7 +33,15 @@
             "fully_recognized_street": "Fully recognized street"
           },
           "meta:titleId": "directmarketing-address##xdm:quality##title##62841",
-          "meta:descriptionId": "directmarketing-address##xdm:quality##description##74291"
+          "meta:descriptionId": "directmarketing-address##xdm:quality##description##74291",
+          "meta:enumId": {
+            "incomplete_address": "directmarketing-address##xdm:quality##meta:enum##incomplete_address##33781",
+            "unknown_town_postal_code": "directmarketing-address##xdm:quality##meta:enum##unknown_town_postal_code##57111",
+            "empty_street": "directmarketing-address##xdm:quality##meta:enum##empty_street##29161",
+            "unknown_street": "directmarketing-address##xdm:quality##meta:enum##unknown_street##85331",
+            "partially_recognized_street": "directmarketing-address##xdm:quality##meta:enum##partially_recognized_street##51761",
+            "fully_recognized_street": "directmarketing-address##xdm:quality##meta:enum##fully_recognized_street##72981"
+          }
         }
       }
     }

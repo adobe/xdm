@@ -36,15 +36,20 @@
                     "xdm:conciergeName": {
                       "title": "Concierge Name",
                       "type": "string",
-                      "description": "Name of the Concierge."
+                      "description": "Name of the Concierge.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:conciergeName##title##50431",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:conciergeName##description##85521"
                     },
                     "xdm:pageURL": {
                       "title": "Page URL",
                       "type": "string",
                       "format": "uri",
-                      "description": "The webpage where the conversation was initiated. Enables tracking of page-specific engagement and identifying high-performing content."
+                      "description": "The webpage where the conversation was initiated. Enables tracking of page-specific engagement and identifying high-performing content.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:pageURL##title##67661",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:pageURL##description##35521"
                     }
-                  }
+                  },
+                  "meta:titleId": "conversation-engagement-concierge##xdm:conciergeDetails##title##99691"
                 },
                 "xdm:conversationDetails": {
                   "title": "Conversation Details",
@@ -54,34 +59,53 @@
                       "title": "Created At",
                       "type": "string",
                       "format": "date-time",
-                      "description": "ISO 8601 timestamp when the conversation started. Useful for understanding peak engagement times."
+                      "description": "ISO 8601 timestamp when the conversation started. Useful for understanding peak engagement times.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:createdAt##title##84871",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:createdAt##description##26181"
                     },
                     "xdm:durationInSeconds": {
                       "title": "Duration",
                       "type": "integer",
-                      "description": "Total conversation duration in seconds. Quantifies engagement depth and helps prioritize high-engagement leads."
+                      "description": "Total conversation duration in seconds. Quantifies engagement depth and helps prioritize high-engagement leads.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:durationInSeconds##title##86861",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:durationInSeconds##description##78561"
                     },
                     "xdm:conversationStatus": {
                       "title": "Conversation Status",
                       "type": "string",
                       "description": "Whether the conversation was initiated, dropped, or completed. Helps in identifying drop-off points and optimizing interactions.",
-                      "enum": ["INITIATED", "DROPPED", "COMPLETED"],
+                      "enum": [
+                        "INITIATED",
+                        "DROPPED",
+                        "COMPLETED"
+                      ],
                       "meta:enum": {
                         "INITIATED": "Conversation was initiated",
                         "DROPPED": "Visitor dropped off before completion",
                         "COMPLETED": "Conversation completed"
+                      },
+                      "meta:titleId": "conversation-engagement-concierge##xdm:conversationStatus##title##19511",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:conversationStatus##description##31231",
+                      "meta:enumId": {
+                        "INITIATED": "conversation-engagement-concierge##xdm:conversationStatus##meta:enum##INITIATED##62521",
+                        "DROPPED": "conversation-engagement-concierge##xdm:conversationStatus##meta:enum##DROPPED##86211",
+                        "COMPLETED": "conversation-engagement-concierge##xdm:conversationStatus##meta:enum##COMPLETED##18261"
                       }
                     },
                     "xdm:conversationTranscript": {
                       "title": "Conversation Transcript",
                       "type": "string",
                       "format": "uri",
-                      "description": "URL link to the full transcript of the conversation. Enables sales reps to review past interactions for better follow-ups."
+                      "description": "URL link to the full transcript of the conversation. Enables sales reps to review past interactions for better follow-ups.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:conversationTranscript##title##68991",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:conversationTranscript##description##521"
                     },
                     "xdm:summary": {
                       "title": "Conversation Summary",
                       "type": "string",
-                      "description": "AI-generated summary of key discussion points. Saves sales reps time by highlighting important details quickly."
+                      "description": "AI-generated summary of key discussion points. Saves sales reps time by highlighting important details quickly.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:summary##title##58211",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:summary##description##68001"
                     },
                     "xdm:discussedTopics": {
                       "title": "Topics Discussed",
@@ -89,7 +113,9 @@
                       "items": {
                         "type": "string"
                       },
-                      "description": "Key topics extracted from the conversation (e.g., pricing, demo request, product features). Enables segmentation, nurturing, and intent-based scoring."
+                      "description": "Key topics extracted from the conversation (e.g., pricing, demo request, product features). Enables segmentation, nurturing, and intent-based scoring.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:discussedTopics##title##78571",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:discussedTopics##description##47321"
                     },
                     "xdm:productsOrServices": {
                       "title": "Products or Services",
@@ -97,36 +123,49 @@
                       "items": {
                         "type": "string"
                       },
-                      "description": "Products or services discussed during the conversation. Helps align follow-up content and sales pitches to customer interest."
+                      "description": "Products or services discussed during the conversation. Helps align follow-up content and sales pitches to customer interest.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:productsOrServices##title##9911",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:productsOrServices##description##91411"
                     },
                     "xdm:engagementScore": {
                       "title": "Engagement Score",
                       "type": "integer",
                       "minimum": 0,
                       "maximum": 100,
-                      "description": "A numerical score from 0 to 100 representing engagement or lead quality based on conversation depth, duration, and intent signals."
+                      "description": "A numerical score from 0 to 100 representing engagement or lead quality based on conversation depth, duration, and intent signals.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:engagementScore##title##17031",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:engagementScore##description##45421"
                     },
                     "xdm:language": {
                       "title": "Language",
                       "type": "string",
-                      "description": "The language in which the conversation took place, typically as a BCP 47 language tag. Enables localized engagement and personalization."
+                      "description": "The language in which the conversation took place, typically as a BCP 47 language tag. Enables localized engagement and personalization.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:language##title##43591",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:language##description##76921"
                     },
                     "xdm:chatTranscript": {
                       "title": "Chat Transcript",
                       "type": "string",
                       "format": "uri",
-                      "description": "URL link to the full transcript of the chat conversation. Enables sales reps to review past interactions; marketers can analyze chat patterns."
+                      "description": "URL link to the full transcript of the chat conversation. Enables sales reps to review past interactions; marketers can analyze chat patterns.",
+                      "meta:titleId": "conversation-engagement-concierge##xdm:chatTranscript##title##84691",
+                      "meta:descriptionId": "conversation-engagement-concierge##xdm:chatTranscript##description##71821"
                     }
-                  }
+                  },
+                  "meta:titleId": "conversation-engagement-concierge##xdm:conversationDetails##title##33781"
                 },
                 "xdm:conciergeKey": {
                   "title": "Concierge Key",
                   "description": "Source key of the Concierge.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "conversation-engagement-concierge##xdm:conciergeKey##title##80751",
+                  "meta:descriptionId": "conversation-engagement-concierge##xdm:conciergeKey##description##79751"
                 }
-              }
+              },
+              "meta:titleId": "conversation-engagement-concierge##xdm:brandConciergeConversation##title##62921"
             }
-          }
+          },
+          "meta:titleId": "conversation-engagement-concierge##xdm:engagement##title##72491"
         }
       }
     }
@@ -137,5 +176,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2026-04-07"
+  "meta:createdDate": "2026-04-07",
+  "meta:titleId": "conversation-engagement-concierge##title##84771",
+  "meta:descriptionId": "conversation-engagement-concierge##description##76781"
 }

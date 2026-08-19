@@ -25,22 +25,37 @@
             "closedCaptioning": "Closed Captioning",
             "pictureInPicture": "Picture In Picture",
             "inFocus": "In Focus"
+          },
+          "meta:titleId": "playerStateData##xdm:name##title##98051",
+          "meta:descriptionId": "playerStateData##xdm:name##description##81481",
+          "meta:enumId": {
+            "fullscreen": "playerStateData##xdm:name##meta:enum##fullscreen##15261",
+            "mute": "playerStateData##xdm:name##meta:enum##mute##55751",
+            "closedCaptioning": "playerStateData##xdm:name##meta:enum##closedCaptioning##511",
+            "pictureInPicture": "playerStateData##xdm:name##meta:enum##pictureInPicture##84731",
+            "inFocus": "playerStateData##xdm:name##meta:enum##inFocus##8001"
           }
         },
         "xdm:isSet": {
           "title": "Player State Set",
           "type": "boolean",
-          "description": "Whether or not the player state is set on that state."
+          "description": "Whether or not the player state is set on that state.",
+          "meta:titleId": "playerStateData##xdm:isSet##title##53021",
+          "meta:descriptionId": "playerStateData##xdm:isSet##description##22891"
         },
         "xdm:count": {
           "title": "Player State Count",
           "type": "integer",
-          "description": "The number of times that player state was set on the stream."
+          "description": "The number of times that player state was set on the stream.",
+          "meta:titleId": "playerStateData##xdm:count##title##19931",
+          "meta:descriptionId": "playerStateData##xdm:count##description##20941"
         },
         "xdm:time": {
           "title": "Player State Time",
           "type": "integer",
-          "description": "The total duration of that player state."
+          "description": "The total duration of that player state.",
+          "meta:titleId": "playerStateData##xdm:time##title##12321",
+          "meta:descriptionId": "playerStateData##xdm:time##description##72131"
         }
       },
       "required": ["xdm:name"]
@@ -50,5 +65,7 @@
     {
       "$ref": "#/definitions/playerStateData"
     }
-  ]
+  ],
+  "meta:titleId": "playerStateData##title##22981",
+  "meta:descriptionId": "playerStateData##description##43401"
 }

@@ -32,7 +32,20 @@
         "PI": "Public Interest"
       },
       "meta:titleId": "consents-and-preferences##choice-value##title##22381",
-      "meta:descriptionId": "consents-and-preferences##choice-value##description##81411"
+      "meta:descriptionId": "consents-and-preferences##choice-value##description##81411",
+      "meta:enumId": {
+        "y": "consents-and-preferences##choice-value##meta:enum##y##70211",
+        "n": "consents-and-preferences##choice-value##meta:enum##n##65601",
+        "p": "consents-and-preferences##choice-value##meta:enum##p##99521",
+        "u": "consents-and-preferences##choice-value##meta:enum##u##65351",
+        "dy": "consents-and-preferences##choice-value##meta:enum##dy##471",
+        "dn": "consents-and-preferences##choice-value##meta:enum##dn##79811",
+        "LI": "consents-and-preferences##choice-value##meta:enum##LI##62291",
+        "CT": "consents-and-preferences##choice-value##meta:enum##CT##87191",
+        "CP": "consents-and-preferences##choice-value##meta:enum##CP##43061",
+        "VI": "consents-and-preferences##choice-value##meta:enum##VI##51461",
+        "PI": "consents-and-preferences##choice-value##meta:enum##PI##27271"
+      }
     },
     "timestamp": {
       "title": "Preference timestamp",
@@ -149,7 +162,11 @@
             "IDFA": "Apple's ID for Advertisers (IDFA)",
             "GAID": "Google's Advertiser ID (GAID) also known as Android Advertiser ID (AAID)"
           },
-          "meta:titleId": "consents-and-preferences##xdm:idType##title##12521"
+          "meta:titleId": "consents-and-preferences##xdm:idType##title##12521",
+          "meta:enumId": {
+            "IDFA": "consents-and-preferences##xdm:idType##meta:enum##IDFA##7391",
+            "GAID": "consents-and-preferences##xdm:idType##meta:enum##GAID##33261"
+          }
         }
       },
       "required": ["xdm:val"]
@@ -254,7 +271,23 @@
             "unknown": "Unknown"
           },
           "meta:titleId": "consents-and-preferences##xdm:preferred##title##82291",
-          "meta:descriptionId": "consents-and-preferences##xdm:preferred##description##26021"
+          "meta:descriptionId": "consents-and-preferences##xdm:preferred##description##26021",
+          "meta:enumId": {
+            "email": "consents-and-preferences##xdm:preferred##meta:enum##email##5901",
+            "push": "consents-and-preferences##xdm:preferred##meta:enum##push##1531",
+            "inApp": "consents-and-preferences##xdm:preferred##meta:enum##inApp##99361",
+            "sms": "consents-and-preferences##xdm:preferred##meta:enum##sms##36401",
+            "whatsApp": "consents-and-preferences##xdm:preferred##meta:enum##whatsApp##53951",
+            "phone": "consents-and-preferences##xdm:preferred##meta:enum##phone##95721",
+            "phyMail": "consents-and-preferences##xdm:preferred##meta:enum##phyMail##53321",
+            "inVehicle": "consents-and-preferences##xdm:preferred##meta:enum##inVehicle##71641",
+            "inHome": "consents-and-preferences##xdm:preferred##meta:enum##inHome##66891",
+            "iot": "consents-and-preferences##xdm:preferred##meta:enum##iot##81",
+            "social": "consents-and-preferences##xdm:preferred##meta:enum##social##3601",
+            "other": "consents-and-preferences##xdm:preferred##meta:enum##other##88561",
+            "none": "consents-and-preferences##xdm:preferred##meta:enum##none##82971",
+            "unknown": "consents-and-preferences##xdm:preferred##meta:enum##unknown##65781"
+          }
         },
         "xdm:any": {
           "title": "General Direct Marketing Preference",
@@ -365,7 +398,23 @@
             "unknown": "Unknown"
           },
           "meta:titleId": "consents-and-preferences##xdm:preferred##title##74611",
-          "meta:descriptionId": "consents-and-preferences##xdm:preferred##description##21771"
+          "meta:descriptionId": "consents-and-preferences##xdm:preferred##description##21771",
+          "meta:enumId": {
+            "email": "consents-and-preferences##xdm:preferred##meta:enum##email##72131",
+            "push": "consents-and-preferences##xdm:preferred##meta:enum##push##5381",
+            "inApp": "consents-and-preferences##xdm:preferred##meta:enum##inApp##96721",
+            "sms": "consents-and-preferences##xdm:preferred##meta:enum##sms##1891",
+            "whatsApp": "consents-and-preferences##xdm:preferred##meta:enum##whatsApp##24181",
+            "phone": "consents-and-preferences##xdm:preferred##meta:enum##phone##95991",
+            "phyMail": "consents-and-preferences##xdm:preferred##meta:enum##phyMail##8151",
+            "inVehicle": "consents-and-preferences##xdm:preferred##meta:enum##inVehicle##62511",
+            "inHome": "consents-and-preferences##xdm:preferred##meta:enum##inHome##45801",
+            "iot": "consents-and-preferences##xdm:preferred##meta:enum##iot##90511",
+            "social": "consents-and-preferences##xdm:preferred##meta:enum##social##35311",
+            "other": "consents-and-preferences##xdm:preferred##meta:enum##other##42981",
+            "none": "consents-and-preferences##xdm:preferred##meta:enum##none##39951",
+            "unknown": "consents-and-preferences##xdm:preferred##meta:enum##unknown##15771"
+          }
         },
         "xdm:any": {
           "title": "General Direct Marketing Preference",
@@ -405,22 +454,30 @@
         "xdm:call": {
           "title": "Receive calls",
           "description": "User permits receiving calls",
-          "$ref": "#/definitions/marketing-field"
+          "$ref": "#/definitions/marketing-field",
+          "meta:titleId": "consents-and-preferences##xdm:call##title##26451",
+          "meta:descriptionId": "consents-and-preferences##xdm:call##description##58321"
         },
         "xdm:fax": {
           "title": "Receive fax",
           "description": "User permits receiving fax",
-          "$ref": "#/definitions/marketing-field"
+          "$ref": "#/definitions/marketing-field",
+          "meta:titleId": "consents-and-preferences##xdm:fax##title##52231",
+          "meta:descriptionId": "consents-and-preferences##xdm:fax##description##60721"
         },
         "xdm:commercialEmail": {
           "title": "Receive commercial emails",
           "description": "User permits receiving commercial emails",
-          "$ref": "#/definitions/marketing-field"
+          "$ref": "#/definitions/marketing-field",
+          "meta:titleId": "consents-and-preferences##xdm:commercialEmail##title##58561",
+          "meta:descriptionId": "consents-and-preferences##xdm:commercialEmail##description##41291"
         },
         "xdm:postalMail": {
           "title": "Receive postal mail",
           "description": "User permits receiving postal mail",
-          "$ref": "#/definitions/marketing-field"
+          "$ref": "#/definitions/marketing-field",
+          "meta:titleId": "consents-and-preferences##xdm:postalMail##title##79741",
+          "meta:descriptionId": "consents-and-preferences##xdm:postalMail##description##21821"
         }
       },
       "meta:titleId": "consents-and-preferences##base-marketing-with-subscriptions##title##25111",

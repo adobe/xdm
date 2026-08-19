@@ -27,42 +27,58 @@
                 "xdm:moduleID": {
                   "type": "string",
                   "title": "Module ID",
-                  "description": "Identifier of the measurement module or report that emitted this row. Constant across every row produced by a single run and used to trace a row back to its originating pipeline execution."
+                  "description": "Identifier of the measurement module or report that emitted this row. Constant across every row produced by a single run and used to trace a row back to its originating pipeline execution.",
+                  "meta:titleId": "measurement-run##xdm:moduleID##title##75801",
+                  "meta:descriptionId": "measurement-run##xdm:moduleID##description##42441"
                 },
                 "xdm:matchRate": {
                   "type": "number",
                   "title": "Identity Match Rate",
                   "description": "Fraction of source conversions that identity-joined at least one impression across the fixed match-key set, ignoring time windows. Typically populated only on the whole-input rollup grain and left null on lower-grain rows where a single ratio is not meaningful. Expressed as a fraction in [0, 1].",
                   "minimum": 0,
-                  "maximum": 1
+                  "maximum": 1,
+                  "meta:titleId": "measurement-run##xdm:matchRate##title##94711",
+                  "meta:descriptionId": "measurement-run##xdm:matchRate##description##5701"
                 },
                 "xdm:groupedConversions": {
                   "type": "number",
                   "title": "Grouped Conversions",
                   "description": "Attributed conversions deduplicated by a resolved household or identity group. Complements xdm:paidMedia.metrics.conversions (per-conversion count) with a household or group-level count at the same rollup grain.",
-                  "minimum": 0
+                  "minimum": 0,
+                  "meta:titleId": "measurement-run##xdm:groupedConversions##title##55021",
+                  "meta:descriptionId": "measurement-run##xdm:groupedConversions##description##38251"
                 },
                 "xdm:conversionEventType": {
                   "type": "string",
                   "title": "Conversion Event Type",
-                  "description": "Type of the source conversion event, carried through from the upstream conversion source (e.g. a dotted taxonomy like 'retail.purchase' or an ad-network event name). Customer-defined and unbounded: no fixed vocabulary is enforced. Populated on rows scoped to a single conversion event type and left null on impression-only breakdowns."
+                  "description": "Type of the source conversion event, carried through from the upstream conversion source (e.g. a dotted taxonomy like 'retail.purchase' or an ad-network event name). Customer-defined and unbounded: no fixed vocabulary is enforced. Populated on rows scoped to a single conversion event type and left null on impression-only breakdowns.",
+                  "meta:titleId": "measurement-run##xdm:conversionEventType##title##96691",
+                  "meta:descriptionId": "measurement-run##xdm:conversionEventType##description##40271"
                 },
                 "xdm:audienceName": {
                   "type": "string",
                   "title": "Audience Name",
-                  "description": "Display name of the audience segment for this row. Mirrors xdm:paidMedia.dimensionalBreakdowns.audienceSegment (the identifier) with a human-readable label; populated on audience breakdown rows."
+                  "description": "Display name of the audience segment for this row. Mirrors xdm:paidMedia.dimensionalBreakdowns.audienceSegment (the identifier) with a human-readable label; populated on audience breakdown rows.",
+                  "meta:titleId": "measurement-run##xdm:audienceName##title##12631",
+                  "meta:descriptionId": "measurement-run##xdm:audienceName##description##48821"
                 },
                 "xdm:placementName": {
                   "type": "string",
                   "title": "Placement Name",
-                  "description": "Display name of the placement for this row. Mirrors xdm:paidMedia.dimensionalBreakdowns.placement (the identifier) with a human-readable label; populated on placement breakdown rows."
+                  "description": "Display name of the placement for this row. Mirrors xdm:paidMedia.dimensionalBreakdowns.placement (the identifier) with a human-readable label; populated on placement breakdown rows.",
+                  "meta:titleId": "measurement-run##xdm:placementName##title##84691",
+                  "meta:descriptionId": "measurement-run##xdm:placementName##description##27771"
                 },
                 "xdm:siteName": {
                   "type": "string",
                   "title": "Site Name",
-                  "description": "Site or domain on which the impression was served. Populated on site breakdown rows."
+                  "description": "Site or domain on which the impression was served. Populated on site breakdown rows.",
+                  "meta:titleId": "measurement-run##xdm:siteName##title##32211",
+                  "meta:descriptionId": "measurement-run##xdm:siteName##description##75801"
                 }
-              }
+              },
+              "meta:titleId": "measurement-run##xdm:measurementRun##title##82381",
+              "meta:descriptionId": "measurement-run##xdm:measurementRun##description##73201"
             }
           }
         }
@@ -74,5 +90,7 @@
       "$ref": "#/definitions/measurement-run"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "measurement-run##title##94861",
+  "meta:descriptionId": "measurement-run##description##6871"
 }

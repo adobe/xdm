@@ -27,22 +27,30 @@
                 "xdm:accountName": {
                   "type": "string",
                   "title": "Account Name",
-                  "description": "Display name of the ad account"
+                  "description": "Display name of the ad account",
+                  "meta:titleId": "account-details##xdm:accountName##title##51481",
+                  "meta:descriptionId": "account-details##xdm:accountName##description##92091"
                 },
                 "xdm:currency": {
                   "type": "string",
                   "title": "Currency",
-                  "description": "Currency code (ISO 4217) for monetary values associated with this account"
+                  "description": "Currency code (ISO 4217) for monetary values associated with this account",
+                  "meta:titleId": "account-details##xdm:currency##title##37761",
+                  "meta:descriptionId": "account-details##xdm:currency##description##83331"
                 },
                 "xdm:currencyCode": {
                   "type": "string",
                   "title": "Currency Code",
-                  "description": "Alias of currency (ISO 4217) for migration from GenStudio templates"
+                  "description": "Alias of currency (ISO 4217) for migration from GenStudio templates",
+                  "meta:titleId": "account-details##xdm:currencyCode##title##66741",
+                  "meta:descriptionId": "account-details##xdm:currencyCode##description##96961"
                 },
                 "xdm:timezone": {
                   "type": "string",
                   "title": "Timezone",
-                  "description": "Timezone for the account (e.g., America/New_York)"
+                  "description": "Timezone for the account (e.g., America/New_York)",
+                  "meta:titleId": "account-details##xdm:timezone##title##74951",
+                  "meta:descriptionId": "account-details##xdm:timezone##description##46871"
                 },
                 "xdm:accountType": {
                   "type": "string",
@@ -55,37 +63,58 @@
                     "agency": "Agency Account",
                     "brand": "Brand Account",
                     "other": "Other Account Type"
+                  },
+                  "meta:titleId": "account-details##xdm:accountType##title##76781",
+                  "meta:descriptionId": "account-details##xdm:accountType##description##2591",
+                  "meta:enumId": {
+                    "business": "account-details##xdm:accountType##meta:enum##business##35801",
+                    "personal": "account-details##xdm:accountType##meta:enum##personal##65771",
+                    "agency": "account-details##xdm:accountType##meta:enum##agency##51991",
+                    "brand": "account-details##xdm:accountType##meta:enum##brand##60161",
+                    "other": "account-details##xdm:accountType##meta:enum##other##58391"
                   }
                 },
                 "xdm:businessName": {
                   "type": "string",
                   "title": "Business Name",
-                  "description": "Name of the business associated with the account"
+                  "description": "Name of the business associated with the account",
+                  "meta:titleId": "account-details##xdm:businessName##title##80471",
+                  "meta:descriptionId": "account-details##xdm:businessName##description##48551"
                 },
                 "xdm:industry": {
                   "type": "string",
                   "title": "Industry",
-                  "description": "Industry category of the business"
+                  "description": "Industry category of the business",
+                  "meta:titleId": "account-details##xdm:industry##title##88771",
+                  "meta:descriptionId": "account-details##xdm:industry##description##68211"
                 },
                 "xdm:country": {
                   "type": "string",
                   "title": "Country",
-                  "description": "Country where the account is registered (ISO country code)"
+                  "description": "Country where the account is registered (ISO country code)",
+                  "meta:titleId": "account-details##xdm:country##title##59521",
+                  "meta:descriptionId": "account-details##xdm:country##description##89271"
                 },
                 "xdm:isTestAccount": {
                   "type": "boolean",
                   "title": "Is Test Account",
-                  "description": "Whether this is a test/sandbox account"
+                  "description": "Whether this is a test/sandbox account",
+                  "meta:titleId": "account-details##xdm:isTestAccount##title##84181",
+                  "meta:descriptionId": "account-details##xdm:isTestAccount##description##11081"
                 },
                 "xdm:parentAccountID": {
                   "type": "string",
                   "title": "Parent Account ID",
-                  "description": "ID of parent account (for sub-accounts or managed accounts)"
+                  "description": "ID of parent account (for sub-accounts or managed accounts)",
+                  "meta:titleId": "account-details##xdm:parentAccountID##title##5941",
+                  "meta:descriptionId": "account-details##xdm:parentAccountID##description##28951"
                 },
                 "xdm:agencyID": {
                   "type": "string",
                   "title": "Agency ID",
-                  "description": "ID of managing agency (if applicable)"
+                  "description": "ID of managing agency (if applicable)",
+                  "meta:titleId": "account-details##xdm:agencyID##title##91071",
+                  "meta:descriptionId": "account-details##xdm:agencyID##description##20971"
                 },
                 "xdm:permissions": {
                   "type": "array",
@@ -110,8 +139,19 @@
                       "creative_manager": "Creative Manager",
                       "finance_manager": "Finance Manager",
                       "viewer": "Viewer"
+                    },
+                    "meta:enumId": {
+                      "owner": "account-details##items##meta:enum##owner##22431",
+                      "admin": "account-details##items##meta:enum##admin##71691",
+                      "analyst": "account-details##items##meta:enum##analyst##83501",
+                      "campaign_manager": "account-details##items##meta:enum##campaign_manager##33731",
+                      "creative_manager": "account-details##items##meta:enum##creative_manager##74101",
+                      "finance_manager": "account-details##items##meta:enum##finance_manager##90961",
+                      "viewer": "account-details##items##meta:enum##viewer##55981"
                     }
-                  }
+                  },
+                  "meta:titleId": "account-details##xdm:permissions##title##10391",
+                  "meta:descriptionId": "account-details##xdm:permissions##description##99021"
                 },
                 "xdm:spendingLimits": {
                   "type": "object",
@@ -122,21 +162,29 @@
                       "type": "number",
                       "title": "Daily Spending Limit",
                       "description": "Daily spending limit in account currency",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "account-details##xdm:dailyLimit##title##12451",
+                      "meta:descriptionId": "account-details##xdm:dailyLimit##description##11731"
                     },
                     "xdm:monthlyLimit": {
                       "type": "number",
                       "title": "Monthly Spending Limit",
                       "description": "Monthly spending limit in account currency",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "account-details##xdm:monthlyLimit##title##72451",
+                      "meta:descriptionId": "account-details##xdm:monthlyLimit##description##3861"
                     },
                     "xdm:totalLimit": {
                       "type": "number",
                       "title": "Total Spending Limit",
                       "description": "Total account spending limit",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "account-details##xdm:totalLimit##title##2431",
+                      "meta:descriptionId": "account-details##xdm:totalLimit##description##87901"
                     }
-                  }
+                  },
+                  "meta:titleId": "account-details##xdm:spendingLimits##title##74671",
+                  "meta:descriptionId": "account-details##xdm:spendingLimits##description##69071"
                 },
                 "xdm:billingInfo": {
                   "type": "object",
@@ -157,26 +205,41 @@
                         "postpaid": "Postpaid",
                         "credit_line": "Credit Line",
                         "credit_card": "Credit Card"
+                      },
+                      "meta:titleId": "account-details##xdm:billingType##title##80661",
+                      "meta:enumId": {
+                        "prepaid": "account-details##xdm:billingType##meta:enum##prepaid##13141",
+                        "postpaid": "account-details##xdm:billingType##meta:enum##postpaid##87771",
+                        "credit_line": "account-details##xdm:billingType##meta:enum##credit_line##66961",
+                        "credit_card": "account-details##xdm:billingType##meta:enum##credit_card##94311"
                       }
                     },
                     "xdm:paymentMethod": {
                       "type": "string",
                       "title": "Payment Method",
-                      "description": "Primary payment method"
+                      "description": "Primary payment method",
+                      "meta:titleId": "account-details##xdm:paymentMethod##title##51631",
+                      "meta:descriptionId": "account-details##xdm:paymentMethod##description##31501"
                     },
                     "xdm:creditLimit": {
                       "type": "number",
                       "title": "Credit Limit",
                       "description": "Account credit limit",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "account-details##xdm:creditLimit##title##98431",
+                      "meta:descriptionId": "account-details##xdm:creditLimit##description##86931"
                     },
                     "xdm:currentBalance": {
                       "type": "number",
                       "title": "Current Balance",
                       "description": "Current account balance",
-                      "minimum": 0
+                      "minimum": 0,
+                      "meta:titleId": "account-details##xdm:currentBalance##title##61211",
+                      "meta:descriptionId": "account-details##xdm:currentBalance##description##53821"
                     }
-                  }
+                  },
+                  "meta:titleId": "account-details##xdm:billingInfo##title##38701",
+                  "meta:descriptionId": "account-details##xdm:billingInfo##description##24281"
                 },
                 "xdm:contactInfo": {
                   "type": "object",
@@ -187,24 +250,34 @@
                       "type": "string",
                       "format": "email",
                       "title": "Primary Email",
-                      "description": "Primary contact email"
+                      "description": "Primary contact email",
+                      "meta:titleId": "account-details##xdm:primaryEmail##title##40581",
+                      "meta:descriptionId": "account-details##xdm:primaryEmail##description##44501"
                     },
                     "xdm:phone": {
                       "type": "string",
                       "title": "Phone Number",
-                      "description": "Primary contact phone number"
+                      "description": "Primary contact phone number",
+                      "meta:titleId": "account-details##xdm:phone##title##81541",
+                      "meta:descriptionId": "account-details##xdm:phone##description##80751"
                     },
                     "xdm:website": {
                       "type": "string",
                       "title": "Website URL",
-                      "description": "Business website URL"
+                      "description": "Business website URL",
+                      "meta:titleId": "account-details##xdm:website##title##63451",
+                      "meta:descriptionId": "account-details##xdm:website##description##85201"
                     },
                     "xdm:address": {
                       "title": "Business Address",
                       "description": "Business Address.",
-                      "$ref": "https://ns.adobe.com/xdm/common/address"
+                      "$ref": "https://ns.adobe.com/xdm/common/address",
+                      "meta:titleId": "account-details##xdm:address##title##31351",
+                      "meta:descriptionId": "account-details##xdm:address##description##31871"
                     }
-                  }
+                  },
+                  "meta:titleId": "account-details##xdm:contactInfo##title##79201",
+                  "meta:descriptionId": "account-details##xdm:contactInfo##description##14181"
                 },
                 "xdm:additionalDetails": {
                   "title": "Additional Account Details",
@@ -212,9 +285,13 @@
                   "type": "array",
                   "items": {
                     "$ref": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field"
-                  }
+                  },
+                  "meta:titleId": "account-details##xdm:additionalDetails##title##85731",
+                  "meta:descriptionId": "account-details##xdm:additionalDetails##description##30661"
                 }
-              }
+              },
+              "meta:titleId": "account-details##xdm:accountDetails##title##61861",
+              "meta:descriptionId": "account-details##xdm:accountDetails##description##1901"
             }
           }
         }
@@ -226,5 +303,7 @@
       "$ref": "#/definitions/account-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "account-details##title##74211",
+  "meta:descriptionId": "account-details##description##99421"
 }

@@ -24,40 +24,56 @@
             "xdm:version": {
               "title": "Asset Version",
               "type": "string",
-              "description": "Asset version."
+              "description": "Asset version.",
+              "meta:titleId": "content-experience##xdm:version##title##38861",
+              "meta:descriptionId": "content-experience##xdm:version##description##13971"
             },
             "xdm:experienceID": {
               "title": "Experience ID",
               "type": "string",
-              "description": "Unique identifier of the content experience."
+              "description": "Unique identifier of the content experience.",
+              "meta:titleId": "content-experience##xdm:experienceID##title##50261",
+              "meta:descriptionId": "content-experience##xdm:experienceID##description##73101"
             },
             "xdm:experienceGUID": {
               "title": "Experience GUID",
               "type": "string",
-              "description": "Global unique identifier of the content experience."
+              "description": "Global unique identifier of the content experience.",
+              "meta:titleId": "content-experience##xdm:experienceGUID##title##43631",
+              "meta:descriptionId": "content-experience##xdm:experienceGUID##description##83491"
             },
             "xdm:experienceName": {
               "title": "Experience Name",
               "type": "string",
-              "description": "Experience Name."
+              "description": "Experience Name.",
+              "meta:titleId": "content-experience##xdm:experienceName##title##37391",
+              "meta:descriptionId": "content-experience##xdm:experienceName##description##63741"
             },
             "xdm:experienceDescription": {
               "title": "Experience Description",
               "type": "string",
-              "description": "Experience description."
+              "description": "Experience description.",
+              "meta:titleId": "content-experience##xdm:experienceDescription##title##38601",
+              "meta:descriptionId": "content-experience##xdm:experienceDescription##description##74531"
             },
             "xdm:experienceChannel": {
               "title": "Experience Channel",
               "type": "string",
-              "description": "Experience channel such as web, mobile or email."
+              "description": "Experience channel such as web, mobile or email.",
+              "meta:titleId": "content-experience##xdm:experienceChannel##title##52771",
+              "meta:descriptionId": "content-experience##xdm:experienceChannel##description##53041"
             },
             "xdm:experienceThumbnailURL": {
               "title": "Experience thumbnail URL",
               "format": "uri",
               "type": "string",
-              "description": "Experience thumbnail url."
+              "description": "Experience thumbnail url.",
+              "meta:titleId": "content-experience##xdm:experienceThumbnailURL##title##52721",
+              "meta:descriptionId": "content-experience##xdm:experienceThumbnailURL##description##57471"
             }
-          }
+          },
+          "meta:titleId": "content-experience##xdm:contentExperience##title##26801",
+          "meta:descriptionId": "content-experience##xdm:contentExperience##description##72451"
         }
       }
     },
@@ -71,7 +87,9 @@
             "xdm:version": {
               "title": "Experience Featurization Version",
               "type": "string",
-              "description": "Experience featurization version."
+              "description": "Experience featurization version.",
+              "meta:titleId": "content-experience##xdm:version##title##49311",
+              "meta:descriptionId": "content-experience##xdm:version##description##87051"
             },
             "xdm:keywords": {
               "title": "Experience Keywords",
@@ -79,7 +97,9 @@
               "description": "Experience keywords.",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "content-experience##xdm:keywords##title##26721",
+              "meta:descriptionId": "content-experience##xdm:keywords##description##58021"
             },
             "xdm:namedEntities": {
               "title": "Experience Named Entities",
@@ -87,7 +107,9 @@
               "description": "All the named entities that are present in the given text, categorised as follows:\n Person\n Location\n Organisation\n Event\n Product\n Work of Art\n Law\n Language\n Miscellaneous\n",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "content-experience##xdm:namedEntities##title##61311",
+              "meta:descriptionId": "content-experience##xdm:namedEntities##description##11851"
             },
             "xdm:persuasionStrategies": {
               "title": "Experience Persuasion Strategies",
@@ -95,7 +117,9 @@
               "description": "Persuasion strategies that are present in the given text.\n\nThe possible values are:\n\nSocial Identity\nSocial Proof\nAuthority\nConcreteness\nFoot in the Door\nOvercoming Reactance\nReciprocity\nAnchoring and Comparison\nSocial Impact\nScarcity\nAnthropomorphism",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "content-experience##xdm:persuasionStrategies##title##57581",
+              "meta:descriptionId": "content-experience##xdm:persuasionStrategies##description##52191"
             },
             "xdm:emotions": {
               "title": "Experience Emotions",
@@ -103,7 +127,9 @@
               "description": "Experience emotions.",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "content-experience##xdm:emotions##title##77991",
+              "meta:descriptionId": "content-experience##xdm:emotions##description##14661"
             },
             "xdm:visualContentDensity": {
               "title": "Experience Visual Content Density",
@@ -113,110 +139,149 @@
                 "low": "Low",
                 "medium": "Medium",
                 "high": "High"
+              },
+              "meta:titleId": "content-experience##xdm:visualContentDensity##title##62921",
+              "meta:descriptionId": "content-experience##xdm:visualContentDensity##description##10661",
+              "meta:enumId": {
+                "low": "content-experience##xdm:visualContentDensity##meta:enum##low##30841",
+                "medium": "content-experience##xdm:visualContentDensity##meta:enum##medium##51701",
+                "high": "content-experience##xdm:visualContentDensity##meta:enum##high##77221"
               }
             },
             "xdm:wordsCount": {
               "title": "Experience Words Count",
               "type": "integer",
               "description": "Experience words Count.",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "content-experience##xdm:wordsCount##title##22621",
+              "meta:descriptionId": "content-experience##xdm:wordsCount##description##48661"
             },
             "xdm:sentencesCount": {
               "title": "Experience Sentences Count",
               "type": "integer",
               "description": "Experience Sentences Count.",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "content-experience##xdm:sentencesCount##title##12491",
+              "meta:descriptionId": "content-experience##xdm:sentencesCount##description##97531"
             },
             "xdm:hashTagsCount": {
               "title": "Experience Hash Tags Count",
               "type": "integer",
               "description": "Experience hash tags count.",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "content-experience##xdm:hashTagsCount##title##91031",
+              "meta:descriptionId": "content-experience##xdm:hashTagsCount##description##28171"
             },
             "xdm:emojisCount": {
               "title": "Experience Emojis Count",
               "type": "integer",
               "description": "Experience emojis count.",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "content-experience##xdm:emojisCount##title##56341",
+              "meta:descriptionId": "content-experience##xdm:emojisCount##description##22551"
             },
             "xdm:textQuotesCount": {
               "title": "Experience Text Quotes Count",
               "type": "integer",
               "description": "Experience text quotes count.",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "content-experience##xdm:textQuotesCount##title##77241",
+              "meta:descriptionId": "content-experience##xdm:textQuotesCount##description##75981"
             },
             "xdm:wordsCountPerSentence": {
               "title": "Experience Words Count Per Sentence",
               "type": "number",
               "description": "Experience words count per sentence.",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "content-experience##xdm:wordsCountPerSentence##title##68711",
+              "meta:descriptionId": "content-experience##xdm:wordsCountPerSentence##description##31441"
             },
             "xdm:stopWordsRatio": {
               "title": "Experience Stop Words Ratio",
               "type": "number",
               "description": "Experience stop words ratio.",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "content-experience##xdm:stopWordsRatio##title##8951",
+              "meta:descriptionId": "content-experience##xdm:stopWordsRatio##description##93411"
             },
             "xdm:readability": {
               "title": "Experience Readability",
               "type": "string",
-              "description": "Experience readability."
+              "description": "Experience readability.",
+              "meta:titleId": "content-experience##xdm:readability##title##19721",
+              "meta:descriptionId": "content-experience##xdm:readability##description##31131"
             },
             "xdm:mobilePageSpeedScore": {
               "title": "Experience Mobile Page Speed Score",
               "type": "integer",
               "description": "Experience mobile page speed overall score.",
               "minimum": 0,
-              "maximum": 100
+              "maximum": 100,
+              "meta:titleId": "content-experience##xdm:mobilePageSpeedScore##title##42791",
+              "meta:descriptionId": "content-experience##xdm:mobilePageSpeedScore##description##36851"
             },
             "xdm:mobileSEOScore": {
               "title": "Experience Mobile SEO Score",
               "type": "integer",
               "description": "Experience mobile seo overall score.",
               "minimum": 0,
-              "maximum": 100
+              "maximum": 100,
+              "meta:titleId": "content-experience##xdm:mobileSEOScore##title##35191",
+              "meta:descriptionId": "content-experience##xdm:mobileSEOScore##description##401"
             },
             "xdm:mobileAccessibilityScore": {
               "title": "Experience Mobile Accessibility Score",
               "type": "integer",
               "description": "Experience mobile accessibility overall score.",
               "minimum": 0,
-              "maximum": 100
+              "maximum": 100,
+              "meta:titleId": "content-experience##xdm:mobileAccessibilityScore##title##72731",
+              "meta:descriptionId": "content-experience##xdm:mobileAccessibilityScore##description##91471"
             },
             "xdm:mobileBestPracticesScore": {
               "title": "Experience Mobile Best Practices Score",
               "type": "integer",
               "description": "Experience mobile best practices overall score.",
               "minimum": 0,
-              "maximum": 100
+              "maximum": 100,
+              "meta:titleId": "content-experience##xdm:mobileBestPracticesScore##title##94891",
+              "meta:descriptionId": "content-experience##xdm:mobileBestPracticesScore##description##37721"
             },
             "xdm:desktopPageSpeedScore": {
               "title": "Experience Desktop Page Speed Score",
               "type": "integer",
               "description": "Experience desktop page speed overall score.",
               "minimum": 0,
-              "maximum": 100
+              "maximum": 100,
+              "meta:titleId": "content-experience##xdm:desktopPageSpeedScore##title##3671",
+              "meta:descriptionId": "content-experience##xdm:desktopPageSpeedScore##description##81431"
             },
             "xdm:desktopSEOScore": {
               "title": "Experience Desktop SEO Score",
               "type": "integer",
               "description": "Experience desktop seo overall score.",
               "minimum": 0,
-              "maximum": 100
+              "maximum": 100,
+              "meta:titleId": "content-experience##xdm:desktopSEOScore##title##32561",
+              "meta:descriptionId": "content-experience##xdm:desktopSEOScore##description##75151"
             },
             "xdm:desktopAccessibilityScore": {
               "title": "Experience Desktop Accessibility Score",
               "type": "integer",
               "description": "Experience desktop accessibility overall score.",
               "minimum": 0,
-              "maximum": 100
+              "maximum": 100,
+              "meta:titleId": "content-experience##xdm:desktopAccessibilityScore##title##63751",
+              "meta:descriptionId": "content-experience##xdm:desktopAccessibilityScore##description##93831"
             },
             "xdm:desktopBestPracticesScore": {
               "title": "Experience Desktop Best Practices Score",
               "type": "integer",
               "description": "Experience desktop best practices overall score.",
               "minimum": 0,
-              "maximum": 100
+              "maximum": 100,
+              "meta:titleId": "content-experience##xdm:desktopBestPracticesScore##title##91811",
+              "meta:descriptionId": "content-experience##xdm:desktopBestPracticesScore##description##49921"
             },
             "xdm:products": {
               "title": "Products",
@@ -224,7 +289,9 @@
               "description": "List of products.",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "content-experience##xdm:products##title##90711",
+              "meta:descriptionId": "content-experience##xdm:products##description##78411"
             },
             "xdm:narratives": {
               "title": "Narratives",
@@ -232,7 +299,9 @@
               "description": "The narratives which the piece of text is building based on relevance from a marketer's view point",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "content-experience##xdm:narratives##title##9971",
+              "meta:descriptionId": "content-experience##xdm:narratives##description##64881"
             },
             "xdm:tones": {
               "title": "Tones",
@@ -240,7 +309,9 @@
               "description": "Returns the tone of the text from the following taxonomy:\n\nformal\nconversational\nmatter-of-fact\nassertive\nenthusiastic\nhumorous\ninspirational\nempathetic\nsensory\nstorytelling\npoetic\npersonal\nquantitative",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "content-experience##xdm:tones##title##34371",
+              "meta:descriptionId": "content-experience##xdm:tones##description##11551"
             },
             "xdm:marketingEmotions": {
               "title": "Marketing Emotions",
@@ -248,7 +319,9 @@
               "description": "Returns the emotion invoked in the reader of a marketing message:\n\nUrgency\nExclusivity\nEncouragement\nChallenge\nCuriosity\nAchievement\nTrust\nSimplicity\nFascination",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "content-experience##xdm:marketingEmotions##title##26011",
+              "meta:descriptionId": "content-experience##xdm:marketingEmotions##description##78811"
             },
             "xdm:concepts": {
               "title": "Concepts",
@@ -256,14 +329,20 @@
               "description": "Relevant concepts in the text.",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "content-experience##xdm:concepts##title##28331",
+              "meta:descriptionId": "content-experience##xdm:concepts##description##91621"
             },
             "xdm:webpageType": {
               "title": "Web Page Type",
               "type": "string",
-              "description": "For web channel; one of the given webpageTypes:\n\nHomepage\nAbout us\nContact us\nBlog/Articles\nNews\nProduct/Services\nCSR\nCareers\n"
+              "description": "For web channel; one of the given webpageTypes:\n\nHomepage\nAbout us\nContact us\nBlog/Articles\nNews\nProduct/Services\nCSR\nCareers\n",
+              "meta:titleId": "content-experience##xdm:webpageType##title##84291",
+              "meta:descriptionId": "content-experience##xdm:webpageType##description##56641"
             }
-          }
+          },
+          "meta:titleId": "content-experience##xdm:contentFeaturization##title##4661",
+          "meta:descriptionId": "content-experience##xdm:contentFeaturization##description##55651"
         }
       }
     }
@@ -279,5 +358,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "content-experience##title##10961",
+  "meta:descriptionId": "content-experience##description##13311"
 }

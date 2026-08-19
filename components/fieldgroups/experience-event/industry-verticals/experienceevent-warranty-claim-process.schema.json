@@ -64,7 +64,14 @@
                 "automobile": "Automobile"
               },
               "meta:titleId": "experienceevent-warranty-claim-details##xdm:type##title##56731",
-              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:type##description##59551"
+              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:type##description##59551",
+              "meta:enumId": {
+                "product": "experienceevent-warranty-claim-details##xdm:type##meta:enum##product##96641",
+                "recall": "experienceevent-warranty-claim-details##xdm:type##meta:enum##recall##861",
+                "service": "experienceevent-warranty-claim-details##xdm:type##meta:enum##service##38121",
+                "home": "experienceevent-warranty-claim-details##xdm:type##meta:enum##home##21901",
+                "automobile": "experienceevent-warranty-claim-details##xdm:type##meta:enum##automobile##86761"
+              }
             }
           },
           "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:warrantyClaim##description##77321"

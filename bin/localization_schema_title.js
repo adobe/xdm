@@ -12,7 +12,7 @@ schemaFiles = schemaFiles.concat(componentFiles);
 addmetaTitleAndDecription(schemaFiles)
 
 /*This method will renter through every files and
-add meta:titleId and meta:descriptionId to all the files 
+add meta:titleId and meta:descriptionId to all the files
 in the schema,components and extensions folder*/
 function addmetaTitleAndDecription(files){
     var localObj = new Object();
@@ -22,6 +22,7 @@ function addmetaTitleAndDecription(files){
         var schemaname = id.substr(id.lastIndexOf('/') + 1);
         addMetaId(originalSchema,"title",null,schemaname);
         addMetaId(originalSchema,"description",null,schemaname);
+        addEnumMetaIds(originalSchema,null,schemaname);
         fs.writeFileSync(file, JSON.stringify(originalSchema,null, 2), 'utf8');
 
 	createLocalizationFileAttributes(originalSchema, localObj)
@@ -30,7 +31,7 @@ function addmetaTitleAndDecription(files){
 }
 
 function addMetaId(obj, val,path,schemaname) {
-    for (var i in obj) { 
+    for (var i in obj) {
         if (!obj.hasOwnProperty(i)) continue;
         if (typeof obj[i] == 'object') {
             addMetaId(obj[i], val,i,schemaname);
@@ -38,7 +39,7 @@ function addMetaId(obj, val,path,schemaname) {
             if(val === 'title' && obj.hasOwnProperty("meta:titleId")) continue;
             if(val === 'description' && obj.hasOwnProperty("meta:descriptionId")) continue;
             if(path == null){
-                path = schemaname + '##' + i + "##" + Math.floor(Math.random()*10000)+1;  
+                path = schemaname + '##' + i + "##" + Math.floor(Math.random()*10000)+1;
             }else{
                   path = schemaname + '##' + path + "##" +i+ "##" + Math.floor(Math.random()*10000)+1;
             }
@@ -47,14 +48,55 @@ function addMetaId(obj, val,path,schemaname) {
     }
 }
 
+/* Walks the schema tree looking for object-form `meta:enum` maps
+   (value -> label) and generates a sibling `meta:enumId` map
+   (value -> localization id), one id per enum value.
+   Array-form `meta:enum` (no separate label text) is left untouched.
+   Existing entries in `meta:enumId` are preserved so re-running is
+   additive/idempotent per enum value, not per property. */
+function addEnumMetaIds(obj, path, schemaname) {
+    for (var i in obj) {
+        if (!obj.hasOwnProperty(i)) continue;
+        if (i === "meta:enum" && obj[i] !== null && typeof obj[i] === 'object' && !Array.isArray(obj[i])) {
+            var enumLabels = obj[i];
+            if (!obj.hasOwnProperty("meta:enumId")) {
+                obj["meta:enumId"] = {};
+            }
+            for (var enumValue in enumLabels) {
+                if (!enumLabels.hasOwnProperty(enumValue)) continue;
+                if (obj["meta:enumId"].hasOwnProperty(enumValue)) continue;
+                var enumPath;
+                if (path == null) {
+                    enumPath = schemaname + '##' + 'meta:enum' + '##' + enumValue + '##' + Math.floor(Math.random()*10000)+1;
+                } else {
+                    enumPath = schemaname + '##' + path + '##' + 'meta:enum' + '##' + enumValue + '##' + Math.floor(Math.random()*10000)+1;
+                }
+                obj["meta:enumId"][enumValue] = enumPath;
+            }
+        } else if (typeof obj[i] == 'object') {
+            addEnumMetaIds(obj[i], i, schemaname);
+        }
+    }
+}
+
 console.log("Script Completed")
 /* This method will find the meta:titleId and meta:descriptionId
-in the source files and create en_us.json file with 
-meta:titleId/meta:descriptionId as the key and 
+in the source files and create en_us.json file with
+meta:titleId/meta:descriptionId as the key and
 value from title/description as value */
 function createLocalizationFileAttributes(obj, localObj){
 	for(var i in obj) {
-         if (typeof obj[i] == 'object') {
+        if (i === "meta:enumId" && obj[i] !== null && typeof obj[i] === 'object' && !Array.isArray(obj[i])
+            && obj["meta:enum"] && typeof obj["meta:enum"] === 'object' && !Array.isArray(obj["meta:enum"])) {
+            var enumIds = obj[i];
+            var enumLabels = obj["meta:enum"];
+            for (var enumValue in enumIds) {
+                if (!enumIds.hasOwnProperty(enumValue)) continue;
+                if (!enumLabels.hasOwnProperty(enumValue)) continue;
+                localObj[enumIds[enumValue]] = enumLabels[enumValue];
+            }
+        }
+        if (typeof obj[i] == 'object') {
             createLocalizationFileAttributes(obj[i], localObj);
         }else if(obj["title"] && i == "meta:titleId"){
             titleVal = obj["title"]
@@ -65,6 +107,6 @@ function createLocalizationFileAttributes(obj, localObj){
             metaDescId = obj["meta:descriptionId"]
 	        localObj[metaDescId] = descVal
 	    }
-	 
+
     }
 }

@@ -35,14 +35,19 @@
                     "xdm:flowID": {
                       "title": "Flow ID",
                       "type": "string",
-                      "description": "Unique identifier of the flow."
+                      "description": "Unique identifier of the flow.",
+                      "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:flowID##title##55911",
+                      "meta:descriptionId": "interacted-with-document-in-conversational-flow##xdm:flowID##description##29481"
                     },
                     "xdm:flowName": {
                       "title": "Flow Name",
                       "type": "string",
-                      "description": "The name of the flow."
+                      "description": "The name of the flow.",
+                      "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:flowName##title##41811",
+                      "meta:descriptionId": "interacted-with-document-in-conversational-flow##xdm:flowName##description##37301"
                     }
-                  }
+                  },
+                  "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:flowDetails##title##10871"
                 },
                 "xdm:documentDetails": {
                   "title": "Document Details",
@@ -51,35 +56,48 @@
                     "xdm:documentID": {
                       "title": "Document ID",
                       "type": "string",
-                      "description": "Unique identifier of the document."
+                      "description": "Unique identifier of the document.",
+                      "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:documentID##title##54111",
+                      "meta:descriptionId": "interacted-with-document-in-conversational-flow##xdm:documentID##description##35861"
                     },
                     "xdm:documentName": {
                       "title": "Document Name",
                       "type": "string",
-                      "description": "The name of the document."
+                      "description": "The name of the document.",
+                      "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:documentName##title##92681",
+                      "meta:descriptionId": "interacted-with-document-in-conversational-flow##xdm:documentName##description##21601"
                     },
                     "xdm:documentURL": {
                       "title": "Document URL",
                       "type": "string",
                       "format": "uri",
-                      "description": "URL of the document."
+                      "description": "URL of the document.",
+                      "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:documentURL##title##43631",
+                      "meta:descriptionId": "interacted-with-document-in-conversational-flow##xdm:documentURL##description##88371"
                     },
                     "xdm:isDownloaded": {
                       "title": "Is Document Downloaded",
                       "type": "boolean",
-                      "description": "Indicates if the document was downloaded."
+                      "description": "Indicates if the document was downloaded.",
+                      "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:isDownloaded##title##47591",
+                      "meta:descriptionId": "interacted-with-document-in-conversational-flow##xdm:isDownloaded##description##41321"
                     },
                     "xdm:isOpened": {
                       "title": "Is Document Opened",
                       "type": "boolean",
-                      "description": "Indicates if the document was opened."
+                      "description": "Indicates if the document was opened.",
+                      "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:isOpened##title##69741",
+                      "meta:descriptionId": "interacted-with-document-in-conversational-flow##xdm:isOpened##description##18531"
                     },
                     "xdm:documentKey": {
                       "title": "Document Key",
                       "description": "Unique key of the document.",
-                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                      "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:documentKey##title##24531",
+                      "meta:descriptionId": "interacted-with-document-in-conversational-flow##xdm:documentKey##description##2091"
                     }
-                  }
+                  },
+                  "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:documentDetails##title##61671"
                 },
                 "xdm:pageDetails": {
                   "title": "Page Details",
@@ -89,9 +107,12 @@
                       "title": "Page URL",
                       "type": "string",
                       "format": "uri",
-                      "description": "URL of the page."
+                      "description": "URL of the page.",
+                      "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:pageURL##title##83621",
+                      "meta:descriptionId": "interacted-with-document-in-conversational-flow##xdm:pageURL##description##81241"
                     }
-                  }
+                  },
+                  "meta:titleId": "interacted-with-document-in-conversational-flow##xdm:pageDetails##title##22191"
                 }
               }
             }
@@ -106,5 +127,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-10"
+  "meta:createdDate": "2025-01-10",
+  "meta:titleId": "interacted-with-document-in-conversational-flow##title##90201",
+  "meta:descriptionId": "interacted-with-document-in-conversational-flow##description##91431"
 }

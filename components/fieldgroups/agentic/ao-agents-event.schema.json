@@ -26,7 +26,8 @@
               "properties": {
                 "eventname": {
                   "type": "string",
-                  "description": "Event name following pattern {namespace}.{component}.{eventName}"
+                  "description": "Event name following pattern {namespace}.{component}.{eventName}",
+                  "meta:descriptionId": "aoAgentsEventFields##eventname##description##77501"
                 },
                 "attributes": {
                   "type": "object",
@@ -35,39 +36,48 @@
                   "properties": {
                     "imsOrgID": {
                       "type": "string",
-                      "description": "Adobe IMS organization identifier"
+                      "description": "Adobe IMS organization identifier",
+                      "meta:descriptionId": "aoAgentsEventFields##imsOrgID##description##88951"
                     },
                     "imsUserID": {
                       "type": "string",
-                      "description": "Adobe IMS user identifier"
+                      "description": "Adobe IMS user identifier",
+                      "meta:descriptionId": "aoAgentsEventFields##imsUserID##description##22061"
                     },
                     "sandboxName": {
                       "type": "string",
-                      "description": "AEP Sandbox name"
+                      "description": "AEP Sandbox name",
+                      "meta:descriptionId": "aoAgentsEventFields##sandboxName##description##12381"
                     },
                     "sandboxID": {
                       "type": "string",
-                      "description": "AEP Sandbox identifier"
+                      "description": "AEP Sandbox identifier",
+                      "meta:descriptionId": "aoAgentsEventFields##sandboxID##description##18811"
                     },
                     "aoManifestID": {
                       "type": "string",
-                      "description": "Agent manifest identifier (e.g., aiassistant_p1_manifest)"
+                      "description": "Agent manifest identifier (e.g., aiassistant_p1_manifest)",
+                      "meta:descriptionId": "aoAgentsEventFields##aoManifestID##description##68601"
                     },
                     "aoSchemaVersion": {
                       "type": "string",
-                      "description": "Event schema version following semantic versioning (e.g., '1.0.0'). Indicates which schema version this event conforms to."
+                      "description": "Event schema version following semantic versioning (e.g., '1.0.0'). Indicates which schema version this event conforms to.",
+                      "meta:descriptionId": "aoAgentsEventFields##aoSchemaVersion##description##66911"
                     },
                     "aoAppApplication": {
                       "type": "string",
-                      "description": "Application identifier (e.g., CJA, AEP)"
+                      "description": "Application identifier (e.g., CJA, AEP)",
+                      "meta:descriptionId": "aoAgentsEventFields##aoAppApplication##description##88591"
                     },
                     "aoAppUpstreamClient": {
                       "type": "string",
-                      "description": "Upstream client from which the user has done the request (e.g., next gen-ui, ms-copilot)"
+                      "description": "Upstream client from which the user has done the request (e.g., next gen-ui, ms-copilot)",
+                      "meta:descriptionId": "aoAgentsEventFields##aoAppUpstreamClient##description##53121"
                     },
                     "aoAppUserSurface": {
                       "type": "string",
-                      "description": "Surface from which the user has made the request (e.g., teams, powerpoint)"
+                      "description": "Surface from which the user has made the request (e.g., teams, powerpoint)",
+                      "meta:descriptionId": "aoAgentsEventFields##aoAppUserSurface##description##97101"
                     },
                     "aoCustomerDataUsage": {
                       "type": "string",
@@ -83,9 +93,17 @@
                         "secondary": "Secondary",
                         "no_data_access": "No Data Access",
                         "unknown": "Unknown"
+                      },
+                      "meta:descriptionId": "aoAgentsEventFields##aoCustomerDataUsage##description##17891",
+                      "meta:enumId": {
+                        "primary": "aoAgentsEventFields##aoCustomerDataUsage##meta:enum##primary##13461",
+                        "secondary": "aoAgentsEventFields##aoCustomerDataUsage##meta:enum##secondary##31441",
+                        "no_data_access": "aoAgentsEventFields##aoCustomerDataUsage##meta:enum##no_data_access##46251",
+                        "unknown": "aoAgentsEventFields##aoCustomerDataUsage##meta:enum##unknown##24631"
                       }
                     }
-                  }
+                  },
+                  "meta:descriptionId": "aoAgentsEventFields##attributes##description##34041"
                 },
                 "body": {
                   "type": "object",
@@ -93,19 +111,26 @@
                   "properties": {
                     "errorType": {
                       "type": "string",
-                      "description": "Exception class name (for error events)"
+                      "description": "Exception class name (for error events)",
+                      "meta:descriptionId": "aoAgentsEventFields##errorType##description##53831"
                     },
                     "feedbackType": {
                       "type": "string",
                       "description": "Feedback type (e.g., interaction feedback, in the future perhaps llm-generated info on conversation quality) (for feedback event)",
-                      "examples": ["InteractionFeedback"]
+                      "examples": ["InteractionFeedback"],
+                      "meta:descriptionId": "aoAgentsEventFields##feedbackType##description##42211"
                     }
-                  }
+                  },
+                  "meta:descriptionId": "aoAgentsEventFields##body##description##98621"
                 }
               },
-              "required": ["eventname", "attributes"]
+              "required": ["eventname", "attributes"],
+              "meta:titleId": "aoAgentsEventFields##internal##title##74921",
+              "meta:descriptionId": "aoAgentsEventFields##internal##description##50631"
             }
-          }
+          },
+          "meta:titleId": "aoAgentsEventFields##agenticExperience##title##29671",
+          "meta:descriptionId": "aoAgentsEventFields##agenticExperience##description##17521"
         }
       }
     }
@@ -115,5 +140,7 @@
       "$ref": "#/definitions/aoAgentsEventFields"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "aoAgentsEventFields##title##81331",
+  "meta:descriptionId": "aoAgentsEventFields##description##1401"
 }

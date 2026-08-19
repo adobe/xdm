@@ -4,6 +4,7 @@
 
 Fixed Issues
 
+- #2206 Conversation Event field group: introduce extensible conversation signals as a flat array. Each `xdm:signals[]` entry carries `xdm:scope`, `xdm:name`, `xdm:type`, and `xdm:values`; the legacy `xdm:attributes` object is retained as `deprecated`. A flat array of one uniform shape ingests cleanly from JSON and Parquet, avoiding the struct→map conversion and single-level map-depth limits a map incurs. Combines the field group foundation from #2232 with the flat-array rework from #2238.
 - #2213 Repository (`repo:`) namespace under-specified the properties used by AEM's repository API. Added the full set of `repo:` properties to the `core/1.0` Common Properties datatype and clarified that `repo:id` is a generic addressable-entity identifier, distinct from the asset-scoped `repo:assetId`.
 
 ## Release 0.9.9

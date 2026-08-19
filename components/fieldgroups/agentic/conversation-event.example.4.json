@@ -1,0 +1,108 @@
+{
+  "xdm:eventType": "conversation.turn",
+  "xdm:conversation": {
+    "xdm:conversationID": "conv-002",
+    "xdm:conversationName": "Geography of Europe",
+    "xdm:turnID": "turn-001",
+    "xdm:signals": [
+      {
+        "xdm:scope": "turn",
+        "xdm:name": "subjects",
+        "xdm:type": "string",
+        "xdm:values": [
+          {
+            "xdm:stringValue": "capital of France",
+            "xdm:qualifiers": ["geographic", "factual", "educational"]
+          },
+          {
+            "xdm:stringValue": "Paris",
+            "xdm:qualifiers": ["city", "capital"]
+          }
+        ]
+      },
+      {
+        "xdm:scope": "turn",
+        "xdm:name": "intents",
+        "xdm:type": "string",
+        "xdm:values": [
+          { "xdm:stringValue": "learn more" },
+          { "xdm:stringValue": "fact-checking" }
+        ]
+      },
+      {
+        "xdm:scope": "turn",
+        "xdm:name": "tones",
+        "xdm:type": "string",
+        "xdm:values": [
+          { "xdm:stringValue": "curious" },
+          { "xdm:stringValue": "questioning" }
+        ]
+      },
+      {
+        "xdm:scope": "turn",
+        "xdm:name": "sentiment",
+        "xdm:type": "number",
+        "xdm:values": [{ "xdm:numberValue": 0.3, "xdm:confidence": 0.9 }]
+      },
+      {
+        "xdm:scope": "turn",
+        "xdm:name": "language",
+        "xdm:type": "string",
+        "xdm:values": [{ "xdm:stringValue": "fr", "xdm:confidence": 0.98 }]
+      },
+      {
+        "xdm:scope": "turn",
+        "xdm:name": "keywords",
+        "xdm:type": "string",
+        "xdm:values": [
+          { "xdm:stringValue": "France" },
+          { "xdm:stringValue": "Paris" },
+          { "xdm:stringValue": "capital" }
+        ]
+      },
+      {
+        "xdm:scope": "turn",
+        "xdm:name": "topics",
+        "xdm:type": "string",
+        "xdm:values": [
+          {
+            "xdm:stringValue": "Questions about European Geography",
+            "xdm:metadata": [
+              {
+                "xdm:key": "context",
+                "xdm:value": "There is a question about the capital of France"
+              }
+            ]
+          },
+          {
+            "xdm:stringValue": "Questions about Countries and Capitals",
+            "xdm:metadata": [
+              {
+                "xdm:key": "context",
+                "xdm:value": "Specific question about the capital of France which is Paris"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "xdm:prompt": {
+      "xdm:source": "end-user",
+      "xdm:raw": [
+        {
+          "xdm:text": "What is the capital of France?",
+          "xdm:purpose": "User Input"
+        }
+      ]
+    },
+    "xdm:response": {
+      "xdm:source": "concierge",
+      "xdm:raw": [
+        {
+          "xdm:text": "The capital of France is Paris.",
+          "xdm:purpose": "main"
+        }
+      ]
+    }
+  }
+}

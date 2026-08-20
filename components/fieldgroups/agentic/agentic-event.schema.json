@@ -104,6 +104,21 @@
                           "type": "boolean",
                           "description": "Flag stating that the skill execution failed"
                         },
+                        "xdm:contextMode": {
+                          "title": "Skill Context Mode",
+                          "type": "string",
+                          "description": "Where the skill runs"
+                        },
+                        "xdm:errorReason": {
+                          "title": "Skill Load Error Reason",
+                          "type": "string",
+                          "description": "Reason the skill failed to load"
+                        },
+                        "xdm:source": {
+                          "title": "Skill Source",
+                          "type": "string",
+                          "description": "Where the skill was loaded from"
+                        },
                         "xdm:parameters": {
                           "type": "array",
                           "title": "Skill Parameters",

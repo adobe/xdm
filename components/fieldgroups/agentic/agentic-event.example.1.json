@@ -17,6 +17,8 @@
             "xdm:name": "Intent Recognition",
             "xdm:version": "1.0.0",
             "xdm:score": 0.95,
+            "xdm:contextMode": "inline",
+            "xdm:source": "inline",
             "xdm:parameters": [
               {
                 "key": "language",
@@ -34,12 +36,19 @@
             "xdm:version": "1.2.0",
             "xdm:score": 0.89,
             "xdm:failed": true,
+            "xdm:contextMode": "fork",
+            "xdm:source": "deferred",
             "xdm:parameters": [
               {
                 "key": "maxResults",
                 "value": "5"
               }
             ]
+          },
+          {
+            "xdm:skillID": "skill-kb-search-001",
+            "xdm:name": "Knowledge Base Search",
+            "xdm:errorReason": "Skill 'skill-kb-search-001' not found."
           }
         ]
       },

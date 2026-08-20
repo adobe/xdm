@@ -10,6 +10,7 @@
   "title": "Semantic Signal Details",
   "type": "object",
   "meta:extensible": true,
+  "meta:abstract": true,
   "meta:tags": {
     "industry": ["all"]
   },

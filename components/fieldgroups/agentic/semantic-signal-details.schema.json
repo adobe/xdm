@@ -1,0 +1,95 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/agentic/semanticsignaldetails",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Semantic Signal Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Captures a qualified semantic signal extracted from an unstructured source interaction such as a conversation, session, or document. These fields are system-generated and not user-editable.",
+  "definitions": {
+    "semantic-signal-details": {
+      "properties": {
+        "xdm:semanticSignal": {
+          "title": "Semantic Signal",
+          "type": "object",
+          "meta:usereditable": false,
+          "description": "A qualified semantic signal extracted from a source interaction.",
+          "properties": {
+            "xdm:name": {
+              "title": "Signal ID",
+              "type": "string",
+              "minLength": 1,
+              "description": "Name for the semantic signal. This value is the authoritative key for segmentation and aggregation."
+            },
+            "xdm:group": {
+              "title": "Signal Group",
+              "type": "string",
+              "minLength": 1,
+              "description": "Human-readable category used to organize related semantic signals."
+            },
+            "xdm:score": {
+              "title": "Signal Score",
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "description": "Normalized confidence or evidence score for the signal within the source interaction."
+            },
+            "xdm:strength": {
+              "title": "Signal Strength",
+              "type": "string",
+              "enum": ["low", "medium", "high"],
+              "meta:enum": {
+                "low": "Low",
+                "medium": "Medium",
+                "high": "High"
+              },
+              "description": "Qualification tier derived from the signal score and configured signal thresholds."
+            },
+            "xdm:channel": {
+              "title": "Experience Channel",
+              "description": "Channel through which the source interaction occurred.",
+              "$ref": "https://ns.adobe.com/xdm/channels/channel"
+            },
+            "xdm:sourceId": {
+              "title": "Source ID",
+              "type": "string",
+              "minLength": 1,
+              "description": "Identifier of the conversation, session, document, or other source interaction from which the signal was extracted."
+            },
+            "xdm:definitionVersion": {
+              "title": "Signal Definition Version",
+              "type": "string",
+              "minLength": 1,
+              "description": "Version of the semantic signal definition, scoring logic, and qualification thresholds."
+            },
+            "xdm:extractionModelVersion": {
+              "title": "Extraction Model Version",
+              "type": "string",
+              "minLength": 1,
+              "description": "Version of the model or extraction system that produced the signal observation."
+            }
+          },
+          "required": ["xdm:name", "xdm:group", "xdm:strength", "xdm:channel"]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/semantic-signal-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,32 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/unstructured-content",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Unstructured Content",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "A minimal, reusable shape carrying extracted free-text content, such as a note, review, or message body. Lineage (source dataset, batch id, ingestion timestamp, extraction pipeline version) is intentionally not modeled here — it is covered by standard Catalog/batch metadata.",
+  "definitions": {
+    "unstructured-content": {
+      "properties": {
+        "xdm:rawText": {
+          "title": "Raw Text",
+          "type": "string",
+          "description": "The unstructured free-text content, taken verbatim from the source."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/unstructured-content"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2026-09-02"
+}

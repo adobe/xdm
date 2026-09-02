@@ -85,7 +85,6 @@
                   },
                   "xdm:name": {
                     "title": "Signal Name",
-                    "meta:status": "experimental",
                     "type": "string",
                     "description": "Identifier for this signal (for example 'subjects', 'intents', 'tones', 'sentiment', or any producer-defined signal). Producers can add new signal types without a schema change.",
                     "meta:titleId": "conversationevent##xdm:name##title##94081",
@@ -93,7 +92,6 @@
                   },
                   "xdm:type": {
                     "title": "Signal Value Type",
-                    "meta:status": "experimental",
                     "type": "string",
                     "description": "Data type of this signal's values; tells consumers which typed value field is populated on each entry of values.",
                     "enum": ["string", "number", "boolean"],
@@ -112,7 +110,6 @@
                   },
                   "xdm:values": {
                     "title": "Signal Values",
-                    "meta:status": "experimental",
                     "type": "array",
                     "description": "One or more values for this signal.",
                     "items": {

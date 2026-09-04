@@ -1,0 +1,15 @@
+{
+  "xdm:conversationTopicTaxonomy": {
+    "xdm:signals": {
+      "xdm:topic": {
+        "xdm:taxonomy": {
+          "xdm:level1": "Customer Support",
+          "xdm:level2": "Billing",
+          "xdm:level3": "Payments",
+          "xdm:level4": "Refunds",
+          "xdm:level5": "Refund Status"
+        }
+      }
+    }
+  }
+}

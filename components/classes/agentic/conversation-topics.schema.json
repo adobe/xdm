@@ -1,0 +1,87 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/agentic/conversation-topics",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Conversation Topics",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:status": "stable",
+  "description": "A conversation record capturing derived conversation signals, including a topic taxonomy classification. Record-based (time-invariant) so it can be composed into a schema and used as a lookup/reference dataset.",
+  "definitions": {
+    "conversation-topics": {
+      "properties": {
+        "xdm:conversationTopicTaxonomy": {
+          "title": "Conversation Topic Taxonomy",
+          "type": "object",
+          "description": "Container for conversation topic taxonomy.",
+          "properties": {
+            "xdm:signals": {
+              "title": "Signals",
+              "type": "object",
+              "description": "Derived signals for the conversation.",
+              "properties": {
+                "xdm:topic": {
+                  "title": "Topic",
+                  "type": "object",
+                  "description": "Topic classification derived for the conversation.",
+                  "properties": {
+                    "xdm:taxonomy": {
+                      "title": "Topic Taxonomy",
+                      "type": "object",
+                      "description": "Denormalized topic taxonomy levels, from the top-level (level1) root down to the deepest level.",
+                      "properties": {
+                        "xdm:level1": {
+                          "title": "Topic Level 1",
+                          "type": "string",
+                          "description": "The highest-level (root) parent topic in the taxonomy."
+                        },
+                        "xdm:level2": {
+                          "title": "Topic Level 2",
+                          "type": "string",
+                          "description": "The second-level topic, a child of level1."
+                        },
+                        "xdm:level3": {
+                          "title": "Topic Level 3",
+                          "type": "string",
+                          "description": "The third-level topic, a child of level2."
+                        },
+                        "xdm:level4": {
+                          "title": "Topic Level 4",
+                          "type": "string",
+                          "description": "The fourth-level topic, a child of level3."
+                        },
+                        "xdm:level5": {
+                          "title": "Topic Level 5",
+                          "type": "string",
+                          "description": "The fifth-level (deepest) topic, a child of level4."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/conversation-topics"
+    }
+  ]
+}

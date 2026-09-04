@@ -93,7 +93,8 @@
                   "xdm:skills": {
                     "type": "array",
                     "title": "Agent Skills",
-                    "description": "Skills associated with a particular agent",
+                    "description": "(DEPRECATED - use xdm:agenticExperience.xdm:skills instead, which owns the full ordered list of skill calls and links each skill to its optional agent via xdm:agentID.) Skills associated with a particular agent",
+                    "meta:status": "deprecated",
                     "items": {
                       "type": "object",
                       "properties": {
@@ -166,6 +167,115 @@
               },
               "meta:titleId": "agenticevent##xdm:agents##title##58101",
               "meta:descriptionId": "agenticevent##xdm:agents##description##9211"
+            },
+            "xdm:skills": {
+              "type": "array",
+              "title": "Skills",
+              "description": "Full, ordered list of skill invocations for this experience, across all agents. Each entry records the skill that was called, why it was called (xdm:reasoning), the optional agent it was executed under (xdm:agentID), and ordering/de-duplication keys for downstream blending (xdm:skillInvocationID, xdm:timestamp). Replaces the deprecated per-agent xdm:agents[].xdm:skills array.",
+              "meta:status": "experimental",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:skillID": {
+                    "title": "Skill ID",
+                    "type": "string",
+                    "description": "Identifier of the skill definition that was called."
+                  },
+                  "xdm:skillInvocationID": {
+                    "title": "Skill Invocation ID",
+                    "type": "string",
+                    "description": "Unique identifier for this individual skill invocation, consistent even with redeliveries of the same call. Intended as the de-duplication key when merging skill arrays downstream."
+                  },
+                  "xdm:name": {
+                    "title": "Skill Name",
+                    "type": "string",
+                    "description": "Name of the skill that was called"
+                  },
+                  "xdm:version": {
+                    "title": "Skill Version",
+                    "type": "string",
+                    "description": "Version of the skill that was called"
+                  },
+                  "xdm:agentID": {
+                    "title": "Agent ID",
+                    "type": "string",
+                    "description": "Identifier of the agent that invoked this skill, correlating to xdm:agents[].xdm:agentID. Populated with the invoking agent: the root/orchestrator agent for main-loop skills, or the subagent for skills invoked by a subagent. Because subagents run in parallel, this is the grouping key consumers use to order skills within an agent."
+                  },
+                  "xdm:invocationSource": {
+                    "title": "Invocation Source",
+                    "type": "string",
+                    "description": "Whether this skill was invoked by the main agentic loop or by a subagent",
+                    "meta:enum": {
+                      "main": "Invoked by the harness main agentic loop",
+                      "subagent": "Invoked by a subagent"
+                    }
+                  },
+                  "xdm:score": {
+                    "title": "Skill Matching Score",
+                    "type": "number",
+                    "description": "Score resulting from matching the skill"
+                  },
+                  "xdm:failed": {
+                    "title": "Skill Failed",
+                    "type": "boolean",
+                    "description": "Flag stating that the skill execution failed"
+                  },
+                  "xdm:errorReason": {
+                    "title": "Skill Error Reason",
+                    "type": "string",
+                    "description": "Reason the skill failed"
+                  },
+                  "xdm:sequenceNumber": {
+                    "title": "Skill Sequence Number",
+                    "type": "integer",
+                    "description": "Monotonically increasing index of this skill call within a single agent execution — not turn-global, since subagents run in parallel. Ordering: consumers group by xdm:agentID, then order within each group by xdm:sequenceNumber, then xdm:timestamp as tiebreaker and fallback. Optional — populated when the producer can emit a per-execution counter"
+                  },
+                  "xdm:timestamp": {
+                    "title": "Skill Timestamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Time the skill was invoked, ISO 8601 UTC. Ordering key used after xdm:sequenceNumber (consumers order by sequenceNumber, then timestamp). Producers should always populate this; the requirement is enforced by convention rather than a hard schema constraint so partially-instrumented producers are not dropped at ingestion."
+                  },
+                  "xdm:skillSource": {
+                    "title": "Skill Source",
+                    "type": "string",
+                    "description": "How the skill definition was delivered to the runtime",
+                    "meta:enum": {
+                      "inline": "Skill content loaded inline into the current context",
+                      "deferred": "Skill content loaded on demand / deferred"
+                    }
+                  },
+                  "xdm:executionContext": {
+                    "title": "Execution Context",
+                    "type": "string",
+                    "description": "Where the skill executes relative to the calling agent",
+                    "meta:enum": {
+                      "inline": "Runs inline in the calling agent's context",
+                      "forked": "Runs in a forked sub-agent context"
+                    }
+                  },
+                  "xdm:reasoning": {
+                    "type": "object",
+                    "title": "Skill Reasoning",
+                    "description": "Why this skill was called.",
+                    "properties": {
+                      "xdm:narration": {
+                        "title": "Reasoning Narration",
+                        "type": "string",
+                        "description": "Natural-language explanation of why this skill was called."
+                      }
+                    }
+                  },
+                  "xdm:parameters": {
+                    "type": "array",
+                    "title": "Skill Parameters",
+                    "description": "Parameters passed in to the skill",
+                    "items": {
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
+                    }
+                  }
+                }
+              }
             }
           },
           "meta:titleId": "agenticevent##xdm:agenticExperience##title##81661",

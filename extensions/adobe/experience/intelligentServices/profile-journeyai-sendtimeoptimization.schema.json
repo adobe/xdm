@@ -137,6 +137,18 @@
                   "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##title##50251",
                   "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##description##1251"
                 },
+                "https://ns.adobe.com/experience/intelligentServices/smsSendTimeOptimization": {
+                  "title": "SMS Send Time Optimization",
+                  "description": "Send time optimization scores here are for the SMS channel.",
+                  "type": "object",
+                  "properties": {
+                    "https://ns.adobe.com/experience/intelligentServices/sendTimeRankClick": {
+                      "title": "Send Time Score Rank to Optimize Click",
+                      "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23 (168 length string), representing the order of the inclination of a customer clicking a link in an SMS message if it's sent at that hour.",
+                      "type": "string"
+                    }
+                  }
+                },
                 "https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo": {
                   "title": "Send Time Optimization Score Info",
                   "description": "This information contains send time optimization model version and scoring date as a concatenated string, e.g. v1.2.0_2020-09-29.",

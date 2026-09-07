@@ -1,0 +1,109 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/form-fill-concierge",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Form fill in Brand Concierge",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "form.filled",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Emitted when a visitor submits a lead-capture form during a Brand Concierge session.",
+  "definitions": {
+    "formfillinconcierge": {
+      "properties": {
+        "xdm:engagement": {
+          "title": "Engagement",
+          "type": "object",
+          "properties": {
+            "xdm:formFillInConcierge": {
+              "title": "Form fill in Concierge",
+              "type": "object",
+              "properties": {
+                "xdm:source": {
+                  "title": "Source",
+                  "type": "string",
+                  "description": "Producing service for this form fill. Selects the downstream lead-resolution path.",
+                  "enum": ["live_agent_service"],
+                  "meta:enum": {
+                    "live_agent_service": "Live Agent Service — consumer resolves the lead via the downstream lead-management integration's upsert-lead call"
+                  }
+                },
+                "xdm:sessionId": {
+                  "title": "Session ID",
+                  "type": "string",
+                  "description": "Unique identifier for the Brand Concierge session."
+                },
+                "xdm:conversationId": {
+                  "title": "Conversation ID",
+                  "type": "string",
+                  "description": "Unique identifier for the conversation within the Brand Concierge session."
+                },
+                "xdm:conciergeDetails": {
+                  "title": "Concierge Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:conciergeId": {
+                      "title": "Concierge ID",
+                      "type": "string",
+                      "description": "Unique identifier for the Concierge."
+                    }
+                  }
+                },
+                "xdm:leadDetails": {
+                  "title": "Lead Details",
+                  "type": "object",
+                  "properties": {
+                    "xdm:leadEmail": {
+                      "title": "Lead Email",
+                      "type": "string",
+                      "format": "email",
+                      "description": "Email address submitted on the form."
+                    },
+                    "xdm:attributes": {
+                      "title": "Form Attributes",
+                      "type": "array",
+                      "description": "Tenant-configured form fields as name/value pairs. Field names are tenant-defined and therefore not individually modelled.",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "xdm:name": {
+                            "title": "Attribute Name",
+                            "type": "string"
+                          },
+                          "xdm:value": {
+                            "title": "Attribute Value",
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "xdm:leadPrimaryIdentifier": {
+                      "title": "Lead Primary Identifier",
+                      "type": "string",
+                      "description": "Primary identifier for the lead as resolved by the producer's synchronous upsert against the downstream lead system. Optional: when present, the consumer trusts it and skips its own upsert; when absent, the consumer resolves the lead itself."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/formfillinconcierge"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2026-08-17"
+}

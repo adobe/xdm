@@ -1,0 +1,42 @@
+{
+  "xdm:placeContext": {
+    "xdm:ianaTimezone": "America/Los_Angeles",
+    "xdm:IPLocalTimezoneOffset": -420,
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "US-CA",
+      "xdm:city": "San Jose",
+      "xdm:postalCode": "95110",
+      "xdm:dmaID": 807,
+      "schema:latitude": 37.33,
+      "schema:longitude": -121.89
+    }
+  },
+  "xdm:device": {
+    "xdm:typeID": "31496625",
+    "xdm:typeIDService": "https://ns.adobe.com/xdm/external/deviceatlas",
+    "xdm:type": "Mobile Phone",
+    "xdm:manufacturer": "Samsung",
+    "xdm:model": "Galaxy S9",
+    "xdm:modelNumber": "SM-G960F",
+    "xdm:screenHeight": 2960,
+    "xdm:screenWidth": 1440,
+    "xdm:colorDepth": 24
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:operatingSystem": "Android",
+    "xdm:operatingSystemVersion": "8.0.0",
+    "xdm:operatingSystemVendor": "Google",
+    "xdm:connectionType": "wireless_wifi",
+    "xdm:proxyType": "vpn",
+    "xdm:carrier": "Verizon",
+    "xdm:domain": "verizon.net",
+    "xdm:ISP": "Verizon",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "70.0",
+      "xdm:vendor": "Google"
+    }
+  }
+}

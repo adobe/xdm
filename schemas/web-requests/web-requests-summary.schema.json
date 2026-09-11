@@ -1,0 +1,34 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/schemas/web-requests-summary",
+  "title": "Web Requests Summary",
+  "type": "object",
+  "description": "Reference schema for an aggregated web-request summary dataset (for example CDN weblog rollups delivered to Customer Journey Analytics as summary data). Composes the Summary Metrics class with the CDN Requests Summary transport field group and the geo/device/environment, bot detection, and derived classification field groups. Provided as an end-to-end example and Data Prep mapping target; it is not intended to be attached like a field group.",
+  "meta:class": "https://ns.adobe.com/xdm/classes/summarymetrics",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/classes/summarymetrics"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/fieldgroups/cdn-requests-summary"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/fieldgroups/web-requests-environment-summary"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/fieldgroups/web-requests-bot-detection-summary"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/fieldgroups/web-requests-summary-classification"
+    }
+  ],
+  "meta:status": "experimental"
+}

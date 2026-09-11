@@ -1,0 +1,2 @@
+Rich bot classification for aggregated web-request summary records.
+The bot name mirrors the standard ExperienceEvent Bot Detection field group, extended with the matched rule source and rule identifier. Bot confidence is carried as an additive score sum and a scored-request count, so an average bot score can be computed at any aggregation grain. This supersedes the coarse bot type string carried on the CDN Requests Summary field group.

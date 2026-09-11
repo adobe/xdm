@@ -123,6 +123,18 @@
               "minimum": 1,
               "meta:titleId": "cdn-requests-summary##xdm:requests##title##33821",
               "meta:descriptionId": "cdn-requests-summary##xdm:requests##description##48101"
+            },
+            "xdm:requestBytes": {
+              "title": "Total Request Bytes",
+              "type": "integer",
+              "minimum": 0,
+              "description": "Total number of request bytes summed across all aggregated requests."
+            },
+            "xdm:responseBytes": {
+              "title": "Total Response Bytes",
+              "type": "integer",
+              "minimum": 0,
+              "description": "Total number of response bytes summed across all aggregated requests."
             }
           },
           "meta:titleId": "cdn-requests-summary##xdm:cdn##title##66831",

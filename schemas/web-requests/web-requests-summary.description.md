@@ -1,0 +1,2 @@
+Reference schema for an aggregated web-request summary dataset, such as CDN weblog rollups delivered to Customer Journey Analytics as summary data.
+Composes the Summary Metrics class with the CDN Requests Summary transport field group and the web-requests geo/device/environment, bot detection, and derived classification field groups. It is provided as an end-to-end example and Data Prep mapping target rather than as a reusable field group.

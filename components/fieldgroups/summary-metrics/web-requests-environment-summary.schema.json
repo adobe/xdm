@@ -1,0 +1,49 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/web-requests-environment-summary",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Web Requests Environment Summary",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Environment, device, and place-context dimensions for aggregated web-request summary records. Reuses the standard Place Context, Device, and Environment datatypes so the field shapes match those emitted on interactive ExperienceEvents (e.g. by the Edge orchestration layer), for cross-dataset familiarity.",
+  "definitions": {
+    "web-requests-environment-summary": {
+      "properties": {
+        "xdm:placeContext": {
+          "title": "Place context",
+          "$ref": "https://ns.adobe.com/xdm/context/placecontext",
+          "description": "Geo location, IANA timezone, and IP-derived local time zone offset resolved for the aggregated requests."
+        },
+        "xdm:device": {
+          "title": "Device",
+          "$ref": "https://ns.adobe.com/xdm/context/device",
+          "description": "Device hardware characteristics (type, manufacturer, model, screen dimensions) resolved for the aggregated requests."
+        },
+        "xdm:environment": {
+          "title": "Environment",
+          "$ref": "https://ns.adobe.com/xdm/context/environment",
+          "description": "Network and software environment (ISP, carrier, domain, connection and proxy type, operating system, browser details) resolved for the aggregated requests."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/web-requests-environment-summary"
+    }
+  ],
+  "meta:status": "experimental"
+}

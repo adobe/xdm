@@ -1,0 +1,74 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/web-requests-bot-detection-summary",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Web Requests Bot Detection Summary",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Rich bot classification for aggregated web-request summary records. The bot name mirrors the standard ExperienceEvent Bot Detection field group, extended with ruleSource and ruleId to capture which detection signal produced a definitive match. Bot confidence is carried as an additive scoreSum plus a scoredRequests count so an average score (scoreSum / scoredRequests) re-aggregates correctly at any grain. Supersedes the coarse xdm:cdn.botType string from the CDN Requests Summary field group. These fields are system-generated and not user-editable.",
+  "definitions": {
+    "web-requests-bot-detection-summary": {
+      "properties": {
+        "xdm:botDetection": {
+          "title": "Bot Detection",
+          "type": "object",
+          "meta:usereditable": false,
+          "description": "Information about bot generated traffic for the aggregated requests.",
+          "properties": {
+            "xdm:scoreSum": {
+              "title": "Bot Score Sum",
+              "type": "number",
+              "minimum": 0,
+              "description": "Additive sum of the per-request bot probability scores (each between 0 and 1) across the aggregated requests. Not meaningful on its own; divide by scoredRequests to obtain an average bot score that re-aggregates correctly at any grain."
+            },
+            "xdm:scoredRequests": {
+              "title": "Scored Request Count",
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of aggregated requests that produced a bot score. Denominator for the average bot score (scoreSum / scoredRequests). Equals the total request count when every request is scored."
+            },
+            "xdm:name": {
+              "title": "Name",
+              "type": "string",
+              "description": "Bot name of the matched rule (for example the IAB or customer rule name)."
+            },
+            "xdm:ruleSource": {
+              "title": "Rule Source",
+              "type": "string",
+              "meta:enum": {
+                "none": "No rule matched",
+                "iab": "IAB rule",
+                "customer": "Customer rule"
+              },
+              "description": "Which detection signal, if any, produced a definitive match. Suggested values only; new detectors may be added without a schema change."
+            },
+            "xdm:ruleId": {
+              "title": "Rule Identifier",
+              "type": "string",
+              "description": "Identifier of the matched customer rule. Empty unless ruleSource is 'customer'."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/web-requests-bot-detection-summary"
+    }
+  ],
+  "meta:status": "experimental"
+}

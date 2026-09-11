@@ -1,0 +1,74 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/descriptors/descriptorDataMasking",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Data Masking Descriptor",
+  "meta:extensible": false,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+  ],
+  "meta:abstract": false,
+  "type": "object",
+  "description": "Configures a data masking transformation function on a field. Callers whose access level entitles them only to masking (not full access) receive this configuration instead of the field's raw value, and are expected to apply the transformation themselves. This descriptor carries masking configuration metadata only; it does not hold or transform the underlying field value.",
+  "definitions": {
+    "descriptorDataMasking": {
+      "properties": {
+        "@type": {
+          "title": "Type",
+          "type": "string",
+          "const": "xdm:descriptorDataMasking"
+        },
+        "xdm:dataMaskingFunction": {
+          "title": "Data Masking Function",
+          "type": "object",
+          "description": "The masking transformation function configured for the target field.",
+          "properties": {
+            "xdm:identifier": {
+              "title": "Identifier",
+              "type": "string",
+              "description": "Identifier of the masking function, as published by the Access Control Service's masking function catalog. This is an open, catalog-owned vocabulary that can grow over time as new functions are published; the known values below are documented for reference and are not an exhaustive, closed list.",
+              "meta:enum": {
+                "REDACT_EMAIL": "Redact email",
+                "REDACT_CARD_NUMBER": "Redact card number"
+              }
+            },
+            "xdm:parameters": {
+              "title": "Parameters",
+              "type": "object",
+              "description": "Parameters for the masking function named by `xdm:identifier`. The set of valid parameter names and types is declared per function by the Access Control Service's masking function catalog, not fixed by this schema, so parameter keys are not `xdm:`-namespaced - they mirror the catalog's own declared parameter names. Parameters always include a mandatory `defaultValue`, returned when the function cannot be applied to the field's actual value.",
+              "properties": {
+                "redactChar": {
+                  "title": "Redact Character",
+                  "type": "string",
+                  "description": "The character used to replace redacted portions of the field's value."
+                },
+                "defaultValue": {
+                  "title": "Default Value",
+                  "type": "string",
+                  "description": "The value returned when the masking function cannot be applied to the field's actual value."
+                }
+              }
+            }
+          },
+          "required": ["xdm:identifier", "xdm:parameters"]
+        }
+      },
+      "required": ["xdm:sourceProperty", "xdm:dataMaskingFunction"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+    },
+    {
+      "$ref": "#/definitions/descriptorDataMasking"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2026-09-11"
+}

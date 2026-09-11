@@ -1,0 +1,54 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/web-requests-summary-classification",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Web Requests Summary Classification",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Derived classification dimensions for web-request summary records that have no standard datatype home. These fields are system-generated and not user-editable.",
+  "definitions": {
+    "web-requests-summary-classification": {
+      "properties": {
+        "xdm:webRequestsSummary": {
+          "title": "Web Requests Summary",
+          "type": "object",
+          "meta:usereditable": false,
+          "description": "Derived classification dimensions for the summarized web requests.",
+          "properties": {
+            "xdm:deviceType": {
+              "title": "Normalized Device Type",
+              "type": "string",
+              "meta:enum": {
+                "unknown": "Unknown",
+                "desktop": "Desktop",
+                "mobile": "Mobile",
+                "tablet": "Tablet",
+                "bot": "Bot"
+              },
+              "description": "Normalized device classification derived from the raw hardware type and the bot detection signal. Suggested values only; complements the raw device.type value. Mirrors the soft-enum approach of the standard device.type field."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/web-requests-summary-classification"
+    }
+  ],
+  "meta:status": "experimental"
+}

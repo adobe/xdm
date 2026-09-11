@@ -10,6 +10,8 @@
     "xdm:referer": "chat.openai.com",
     "xdm:xForwardedHost": "forwarded-host-example.com",
     "xdm:timeToFirstByte": 145.5,
-    "xdm:requests": 127
+    "xdm:requests": 127,
+    "xdm:requestBytes": 45231,
+    "xdm:responseBytes": 1203945
   }
 }

@@ -113,6 +113,47 @@
                         "DROPPED": "conversation-concierge-event##xdm:conversationStatus##meta:enum##DROPPED##34081",
                         "COMPLETED": "conversation-concierge-event##xdm:conversationStatus##meta:enum##COMPLETED##6111"
                       }
+                    },
+                    "xdm:transcript": {
+                      "title": "Transcript",
+                      "type": "array",
+                      "description": "Ordered transcript of the conversation, oldest message first.",
+                      "items": {
+                        "title": "Transcript message",
+                        "type": "object",
+                        "properties": {
+                          "xdm:role": {
+                            "title": "Role",
+                            "type": "string",
+                            "description": "Who sent this message.",
+                            "enum": [
+                              "user",
+                              "assistant"
+                            ]
+                          },
+                          "xdm:content": {
+                            "title": "Content",
+                            "type": "string",
+                            "description": "Text content of the message."
+                          },
+                          "xdm:interactionId": {
+                            "title": "Interaction ID",
+                            "type": "string",
+                            "description": "Unique identifier for the interaction this message belongs to."
+                          },
+                          "xdm:sequence": {
+                            "title": "Sequence",
+                            "type": "integer",
+                            "description": "Ordering position of the interaction within the conversation."
+                          },
+                          "xdm:createdAt": {
+                            "title": "Created At",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "ISO 8601 timestamp for when the message was created."
+                          }
+                        }
+                      }
                     }
                   },
                   "meta:titleId": "conversation-concierge-event##xdm:sessionExpirationDetails##title##59491"

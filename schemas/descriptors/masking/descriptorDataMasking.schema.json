@@ -31,15 +31,12 @@
             "xdm:identifier": {
               "title": "Identifier",
               "type": "string",
-              "description": "Identifier of the masking function, as published by the Access Control Service's masking function catalog. This is an open, catalog-owned vocabulary that can grow over time as new functions are published; the known values below are documented for reference and are not an exhaustive, closed list.",
-              "meta:enum": {
-                "REDACT_EMAIL": "Redact email",
-                "REDACT_CARD_NUMBER": "Redact card number"
-              }
+              "description": "Identifier of the masking function, as published by the Access Control Service's masking function catalog (e.g. REDACT_EMAIL, REDACT_CARD_NUMBER). This is an open, catalog-owned vocabulary that can grow over time as new functions are published."
             },
             "xdm:parameters": {
               "title": "Parameters",
               "type": "object",
+              "additionalProperties": true,
               "description": "Parameters for the masking function named by `xdm:identifier`. The set of valid parameter names and types is declared per function by the Access Control Service's masking function catalog, not fixed by this schema, so parameter keys are not `xdm:`-namespaced - they mirror the catalog's own declared parameter names. Parameters always include a mandatory `defaultValue`, returned when the function cannot be applied to the field's actual value.",
               "properties": {
                 "redactChar": {

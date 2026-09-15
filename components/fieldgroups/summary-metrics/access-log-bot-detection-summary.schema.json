@@ -1,0 +1,65 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/fieldgroups/access-log-bot-detection-summary",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Access Log Bot Detection Summary",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/summarymetrics"],
+  "description": "Bot classification for aggregated access-log summary records, expressed as additive counts of requests in three mutually exclusive bands (bot, uncertain, not-bot). The bands are derived upstream from per-request bot scores using customer-chosen thresholds; setting the bot and uncertain thresholds equal collapses to a two-way bot / not-bot split. Counts are additive and re-aggregate correctly at any grain. The optional bot name mirrors the standard ExperienceEvent Bot Detection field group and is populated only when bot name is used as a grouping dimension. These fields are system-generated and not user-editable.",
+  "definitions": {
+    "access-log-bot-detection-summary": {
+      "properties": {
+        "xdm:botDetection": {
+          "title": "Bot Detection",
+          "type": "object",
+          "meta:usereditable": false,
+          "description": "Bot classification counts for the aggregated requests.",
+          "properties": {
+            "xdm:botRequests": {
+              "title": "Bot Request Count",
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of aggregated requests classified as bots (per-request bot score at or above the customer's bot threshold)."
+            },
+            "xdm:uncertainRequests": {
+              "title": "Uncertain Request Count",
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of aggregated requests whose bot classification is uncertain (per-request bot score between the customer's not-bot and bot thresholds). Zero when the two thresholds are equal."
+            },
+            "xdm:notBotRequests": {
+              "title": "Not-Bot Request Count",
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of aggregated requests classified as not bots (per-request bot score at or below the customer's not-bot threshold)."
+            },
+            "xdm:name": {
+              "title": "Name",
+              "type": "string",
+              "description": "Bot name from the matched detection rule (for example the IAB or customer rule name). Populated only when the summary is grouped by bot name."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/access-log-bot-detection-summary"
+    }
+  ],
+  "meta:status": "experimental"
+}

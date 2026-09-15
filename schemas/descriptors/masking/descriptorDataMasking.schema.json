@@ -39,11 +39,6 @@
               "additionalProperties": true,
               "description": "Parameters for the masking function named by `xdm:identifier`. The set of valid parameter names and types is declared per function by the Access Control Service's masking function catalog, not fixed by this schema, so parameter keys are not `xdm:`-namespaced - they mirror the catalog's own declared parameter names. Parameters always include a mandatory `defaultValue`, returned when the function cannot be applied to the field's actual value.",
               "properties": {
-                "redactChar": {
-                  "title": "Redact Character",
-                  "type": "string",
-                  "description": "The character used to replace redacted portions of the field's value."
-                },
                 "defaultValue": {
                   "title": "Default Value",
                   "type": "string",

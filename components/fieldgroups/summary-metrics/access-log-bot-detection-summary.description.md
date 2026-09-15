@@ -1,0 +1,2 @@
+Bot classification for aggregated access-log summary records, expressed as additive counts of requests in three mutually exclusive bands: bot, uncertain, and not-bot.
+The bands are derived upstream from per-request bot scores using customer-chosen thresholds (setting the bot and uncertain thresholds equal collapses to a two-way bot / not-bot split). Because the values are counts, they re-aggregate correctly at any grain. An optional bot name mirrors the standard ExperienceEvent Bot Detection field group and is populated only when the summary is grouped by bot name.

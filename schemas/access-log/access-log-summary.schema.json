@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/xdm/schemas/access-log-summary",
   "title": "Access Log Summary",
   "type": "object",
-  "description": "Reference schema for an aggregated access-log summary dataset (for example CDN weblog, mobile, and thin-app request rollups delivered to Customer Journey Analytics as summary data). Composes the Summary Metrics class with the CDN Requests Summary transport field group and the access-log geo/device/environment and bot detection field groups. Provided as an end-to-end example and Data Prep mapping target; it is not intended to be attached like a field group.",
+  "description": "Reference schema for an aggregated access-log summary dataset (for example CDN weblog, mobile, and thin-app request rollups delivered to Customer Journey Analytics as summary data). Composes the Summary Metrics class with the CDN Requests Summary transport field group and the access-log geo/device/environment, bot detection, and consent field groups. Provided as an end-to-end example and Data Prep mapping target; it is not intended to be attached like a field group.",
   "meta:class": "https://ns.adobe.com/xdm/classes/summarymetrics",
   "meta:extensible": false,
   "meta:abstract": false,
@@ -25,6 +25,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/fieldgroups/access-log-bot-detection-summary"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/fieldgroups/access-log-consent-summary"
     }
   ],
   "meta:status": "experimental"

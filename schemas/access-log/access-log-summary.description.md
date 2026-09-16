@@ -1,2 +1,2 @@
 Reference schema for an aggregated access-log summary dataset, such as CDN weblog, mobile, and thin-app request rollups delivered to Customer Journey Analytics as summary data.
-Composes the Summary Metrics class with the CDN Requests Summary transport field group and the access-log geo/device/environment, bot detection, and derived classification field groups. It is provided as an end-to-end example and Data Prep mapping target rather than as a reusable field group.
+Composes the Summary Metrics class with the CDN Requests Summary transport field group and the access-log geo/device/environment, bot detection, and consent field groups. It is provided as an end-to-end example and Data Prep mapping target rather than as a reusable field group.

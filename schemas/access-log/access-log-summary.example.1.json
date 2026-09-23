@@ -1,0 +1,37 @@
+{
+  "xdm:timestamp": "2026-09-15T18:00:00Z",
+  "xdm:cdn": {
+    "xdm:cdnProvider": "akamai",
+    "xdm:url": "https://www.example.com/products/analytics",
+    "xdm:requests": 342
+  },
+  "xdm:placeContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "US-CA"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Samsung"
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:operatingSystem": "Android",
+    "xdm:operatingSystemVendor": "Google",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:vendor": "Google"
+    }
+  },
+  "xdm:botDetection": {
+    "xdm:botRequests": 3,
+    "xdm:uncertainRequests": 9,
+    "xdm:notBotRequests": 330
+  },
+  "xdm:consents": {
+    "xdm:collect": {
+      "xdm:val": "dy"
+    }
+  }
+}

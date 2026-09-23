@@ -1,0 +1,24 @@
+{
+  "xdm:timestamp": "2026-09-15T00:00:00Z",
+  "xdm:cdn": {
+    "xdm:cdnProvider": "cloudflare",
+    "xdm:url": "https://www.example.com/products/analytics",
+    "xdm:requests": 128000
+  },
+  "xdm:placeContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US"
+    }
+  },
+  "xdm:botDetection": {
+    "xdm:name": "GPTBot",
+    "xdm:botRequests": 128000,
+    "xdm:uncertainRequests": 0,
+    "xdm:notBotRequests": 0
+  },
+  "xdm:consents": {
+    "xdm:collect": {
+      "xdm:val": "dn"
+    }
+  }
+}

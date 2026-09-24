@@ -1,0 +1,144 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge-personalization",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Challenge Personalization",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Personalization settings for loyalty challenges including task configurations, product restrictions, goals, and time windows.",
+  "definitions": {
+    "challenge-personalization": {
+      "properties": {
+        "xdm:challenge": {
+          "title": "Challenge",
+          "type": "object",
+          "description": "Challenge personalization details.",
+          "properties": {
+            "xdm:description": {
+              "title": "Description",
+              "type": "string",
+              "description": "Personalized challenge description."
+            },
+            "xdm:reward": {
+              "title": "Reward",
+              "type": "string",
+              "description": "Reward for completing the entire challenge."
+            },
+            "xdm:tasks": {
+              "title": "Tasks",
+              "type": "array",
+              "description": "List of tasks within the challenge.",
+              "items": {
+                "type": "object",
+                "required": [
+                  "xdm:name"
+                ],
+                "properties": {
+                  "xdm:name": {
+                    "title": "Task Name",
+                    "type": "string",
+                    "description": "Name of the task to personalize."
+                  },
+                  "xdm:description": {
+                    "title": "Task Description",
+                    "type": "string",
+                    "description": "Personalized task description."
+                  },
+                  "xdm:excludedItemLabels": {
+                    "title": "Excluded Item Labels",
+                    "type": "array",
+                    "description": "List of product SKU/categories/labels excluded from qualifying for this task.",
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "xdm:includedItemLabels": {
+                    "title": "Included Item Labels",
+                    "type": "array",
+                    "description": "List of product SKUs/categories/labels that can qualify for this task.",
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "xdm:qtyMin": {
+                    "title": "Minimum Quantity",
+                    "type": "number",
+                    "description": "Target quantity to achieve."
+                  },
+                  "xdm:spendMin": {
+                    "title": "Minimum Spend",
+                    "type": "number",
+                    "description": "Target spending amount to achieve."
+                  },
+                  "xdm:multiDay": {
+                    "title": "multiDay",
+                    "type": "object",
+                    "description": "Multi-day visit requirements for task completion.",
+                    "properties": {
+                      "xdm:contiguous": {
+                        "title": "Contiguous",
+                        "type": "boolean",
+                        "description": "Whether the visits must be on consecutive days."
+                      },
+                        "xdm:days": {
+                        "title": "Days",
+                        "type": "integer",
+                        "description": "Number of qualified days required."
+                      }
+                    }
+                  },
+                  "xdm:maxRepeats": {
+                    "title": "Max Repeats",
+                    "type": "integer",
+                    "description": "Maximum number of times this task can be repeated."
+                  },
+                  "xdm:reward": {
+                    "title": "Reward",
+                    "type": "string",
+                    "description": "Reward for completing this task."
+                  }
+                }
+              }
+            },
+            "xdm:timeOfDay": {
+              "title": "Time of Day",
+              "type": "object",
+              "description": "Time window during the day for which the challenge is active.",
+              "properties": {
+                "xdm:start": {
+                  "title": "Start",
+                  "type": "integer",
+                  "description": "Start time in minutes from midnight (e.g., 720 for 12:00 PM)."
+                },
+                "xdm:end": {
+                  "title": "End",
+                  "type": "integer",
+                  "description": "End time in minutes from midnight (e.g., 900 for 3:00 PM)."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/challenge-personalization"
+    }
+  ],
+  "meta:status": "experimental"
+}
+

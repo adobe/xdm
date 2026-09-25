@@ -53,6 +53,12 @@
                         "xdm:val": "y"
                     }
                 },
+                "xdm:tracking": {
+                    "xdm:open": {
+                        "xdm:val": "n",
+                        "xdm:time": "2026-09-24T10:00:00+00:00"
+                    }
+                },
                 "xdm:idSpecific": {
                     "ECID": {
                         "12345678-abcdef09-87654321-fedcba90": {
@@ -96,6 +102,12 @@
                             "xdm:marketing": {
                                 "xdm:email": {
                                     "xdm:val": "n"
+                                }
+                            },
+                            "xdm:tracking": {
+                                "xdm:open": {
+                                    "xdm:val": "n",
+                                    "xdm:time": "2026-09-24T10:00:00+00:00"
                                 }
                             }
                         }

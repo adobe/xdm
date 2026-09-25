@@ -28,6 +28,13 @@
         "xdm:reason": "Too Frequent"
       }
     },
+    "xdm:tracking": {
+      "xdm:open": {
+        "xdm:val": "n",
+        "xdm:time": "2026-09-24T10:00:00+00:00",
+        "xdm:reason": "User declined open tracking"
+      }
+    },
     "xdm:metadata": {
       "xdm:time": "2019-01-01T15:52:25+00:00"
     }

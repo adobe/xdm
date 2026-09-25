@@ -40,6 +40,12 @@ This schema captures privacy, personalization and marketing preferences (consent
         "xdm:val": "y"
       }
     },
+    "xdm:tracking": {
+      "xdm:open": {
+        "xdm:val": "n",
+        "xdm:time": "2026-09-24T10:00:00+00:00"
+      }
+    },
     "xdm:idSpecific": {
       "ECID": {
         "12345678-abcdef09-87654321-fedcba90": {
@@ -84,6 +90,12 @@ This schema captures privacy, personalization and marketing preferences (consent
             "xdm:email": {
               "xdm:val": "n"
             }
+          },
+          "xdm:tracking": {
+            "xdm:open": {
+              "xdm:val": "n",
+              "xdm:time": "2026-09-24T10:00:00+00:00"
+            }
           }
         }
       }
@@ -126,6 +138,7 @@ Specific Consent and Preference Options
 | `xdm:metadata`|  | Optional |
 | `xdm:personalize`|  | Optional |
 | `xdm:share`|  | Optional |
+| `xdm:tracking`|  | Optional |
 
 
 
@@ -202,6 +215,9 @@ Unknown type `object`.
         },
         "xdm:marketing": {
           "$ref": "#/definitions/idSpecific-marketing"
+        },
+        "xdm:tracking": {
+          "$ref": "#/definitions/base-tracking"
         }
       },
       "meta:titleId": "consents-and-preferences##additionalProperties##title##80371"
@@ -298,6 +314,25 @@ Sharing of user's data with 2nd or 3rd parties is permitted
 
 
 * []() – `#/definitions/consent-field`
+
+
+
+
+
+
+
+#### xdm:tracking
+
+undefined
+
+`xdm:tracking`
+* is optional
+* type: reference
+
+##### xdm:tracking Type
+
+
+* []() – `#/definitions/base-tracking`
 
 
 

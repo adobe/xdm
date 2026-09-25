@@ -463,6 +463,36 @@
             "meta:titleId": "consents-and-preferences##idSpecific-marketing##title##57411",
             "meta:descriptionId": "consents-and-preferences##idSpecific-marketing##description##40711"
         },
+        "tracking-field": {
+            "type": "object",
+            "properties": {
+                "xdm:val": {
+                    "description": "The value specified by the user as their tracking consent choice, or the basis of processing that precludes the need for user consent",
+                    "$ref": "#/definitions/choice-value"
+                },
+                "xdm:time": {
+                    "$ref": "#/definitions/timestamp"
+                },
+                "xdm:reason": {
+                    "$ref": "#/definitions/reason"
+                }
+            },
+            "required": [
+                "xdm:val"
+            ]
+        },
+        "base-tracking": {
+            "title": "Tracking Preferences",
+            "description": "User's preferences for tracking of message engagement, such as open tracking and click tracking",
+            "type": "object",
+            "properties": {
+                "xdm:open": {
+                    "title": "Open Tracking",
+                    "description": "User permits tracking of when a message is opened, for example via the open-tracking pixel in an email",
+                    "$ref": "#/definitions/tracking-field"
+                }
+            }
+        },
         "metadata": {
             "properties": {
                 "xdm:time": {
@@ -509,6 +539,9 @@
                         "xdm:marketing": {
                             "$ref": "#/definitions/base-marketing"
                         },
+                        "xdm:tracking": {
+                            "$ref": "#/definitions/base-tracking"
+                        },
                         "xdm:metadata": {
                             "title": "Consent and Preference Metadata",
                             "description": "Metadata that applies to all consents and preferences that don't specify a different value",
@@ -549,6 +582,9 @@
                         "xdm:marketing": {
                             "$ref": "#/definitions/base-marketing-with-subscriptions"
                         },
+                        "xdm:tracking": {
+                            "$ref": "#/definitions/base-tracking"
+                        },
                         "xdm:idSpecific": {
                             "title": "Identifier specific",
                             "description": "Identifier specific consents and preferences",
@@ -588,6 +624,9 @@
                                         },
                                         "xdm:marketing": {
                                             "$ref": "#/definitions/idSpecific-marketing"
+                                        },
+                                        "xdm:tracking": {
+                                            "$ref": "#/definitions/base-tracking"
                                         }
                                     },
                                     "meta:titleId": "consents-and-preferences##additionalProperties##title##80371"
@@ -656,6 +695,13 @@
                     "xdm:push": {
                         "xdm:val": "n",
                         "xdm:reason": "Too Frequent"
+                    }
+                },
+                "xdm:tracking": {
+                    "xdm:open": {
+                        "xdm:val": "n",
+                        "xdm:time": "2026-09-24T10:00:00+00:00",
+                        "xdm:reason": "User declined open tracking"
                     }
                 },
                 "xdm:metadata": {

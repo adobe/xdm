@@ -36,11 +36,19 @@ Captures consumer consent for collection and use of data related to privacy, per
         "xdm:val": "y"
       },
       "xdm:email": {
-        "xdm:val": "y"
+        "xdm:val": "y",
+        "xdm:time": "2026-09-01T10:00:00+00:00"
       },
       "xdm:push": {
         "xdm:val": "n",
         "xdm:reason": "Too Frequent"
+      }
+    },
+    "xdm:tracking": {
+      "xdm:open": {
+        "xdm:val": "n",
+        "xdm:time": "2026-09-24T10:00:00+00:00",
+        "xdm:reason": "User declined open tracking"
       }
     },
     "xdm:metadata": {
@@ -81,6 +89,7 @@ Specific Consent and Preference Options
 | `xdm:metadata`|  | Optional |
 | `xdm:personalize`|  | Optional |
 | `xdm:share`|  | Optional |
+| `xdm:tracking`|  | Optional |
 
 
 
@@ -202,6 +211,25 @@ Sharing of user's data with 2nd or 3rd parties is permitted
 
 
 
+#### xdm:tracking
+
+undefined
+
+`xdm:tracking`
+* is optional
+* type: reference
+
+##### xdm:tracking Type
+
+
+* []() – `#/definitions/base-tracking`
+
+
+
+
+
+
+
 
 
 
@@ -216,14 +244,15 @@ Sharing of user's data with 2nd or 3rd parties is permitted
 | [xdm:email](#xdmemail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
 | [xdm:fax](#xdmfax) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:idType](#xdmidtype) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/adid-consent-field` |
+| [xdm:open](#xdmopen) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-tracking` |
 | [xdm:postalMail](#xdmpostalmail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:preferred](#xdmpreferred) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:push](#xdmpush) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
-| [xdm:reason](#xdmreason) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/marketing-with-subscriptions` |
+| [xdm:reason](#xdmreason) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/tracking-field` |
 | [xdm:sms](#xdmsms) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
 | [xdm:subscriptions](#xdmsubscriptions) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/marketing-with-subscriptions` |
 | [xdm:time](#xdmtime) | `string` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/metadata` |
-| [xdm:val](#xdmval) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/marketing-with-subscriptions` |
+| [xdm:val](#xdmval) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/tracking-field` |
 
 ## xdm:any
 ### General Direct Marketing Preference
@@ -356,6 +385,25 @@ The value of this property **must** be equal to one of the [known values below](
 |-------|-------------|
 | `IDFA` | Apple&#39;s ID for Advertisers (IDFA) |
 | `GAID` | Google&#39;s Advertiser ID (GAID) also known as Android Advertiser ID (AAID) |
+
+
+
+
+## xdm:open
+### Open Tracking
+
+User permits tracking of when a message is opened, for example via the open-tracking pixel in an email
+
+`xdm:open`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:open Type
+
+
+* []() – `#/definitions/tracking-field`
+
 
 
 

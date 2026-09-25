@@ -37,7 +37,14 @@ This schema captures privacy, personalization and marketing preferences (consent
         "xdm:val": "y"
       },
       "xdm:email": {
-        "xdm:val": "y"
+        "xdm:val": "y",
+        "xdm:time": "2026-09-01T10:00:00+00:00"
+      }
+    },
+    "xdm:tracking": {
+      "xdm:open": {
+        "xdm:val": "n",
+        "xdm:time": "2026-09-24T10:00:00+00:00"
       }
     },
     "xdm:idSpecific": {
@@ -75,14 +82,22 @@ This schema captures privacy, personalization and marketing preferences (consent
         "john@xyz.com": {
           "xdm:marketing": {
             "xdm:email": {
-              "xdm:val": "y"
+              "xdm:val": "y",
+              "xdm:time": "2026-09-01T10:00:00+00:00"
             }
           }
         },
         "johnny@company.com": {
           "xdm:marketing": {
             "xdm:email": {
-              "xdm:val": "n"
+              "xdm:val": "n",
+              "xdm:time": "2026-09-01T10:00:00+00:00"
+            }
+          },
+          "xdm:tracking": {
+            "xdm:open": {
+              "xdm:val": "n",
+              "xdm:time": "2026-09-24T10:00:00+00:00"
             }
           }
         }
@@ -126,6 +141,7 @@ Specific Consent and Preference Options
 | `xdm:metadata`|  | Optional |
 | `xdm:personalize`|  | Optional |
 | `xdm:share`|  | Optional |
+| `xdm:tracking`|  | Optional |
 
 
 
@@ -202,6 +218,9 @@ Unknown type `object`.
         },
         "xdm:marketing": {
           "$ref": "#/definitions/idSpecific-marketing"
+        },
+        "xdm:tracking": {
+          "$ref": "#/definitions/base-tracking"
         }
       },
       "meta:titleId": "consents-and-preferences##additionalProperties##title##80371"
@@ -298,6 +317,25 @@ Sharing of user's data with 2nd or 3rd parties is permitted
 
 
 * []() – `#/definitions/consent-field`
+
+
+
+
+
+
+
+#### xdm:tracking
+
+undefined
+
+`xdm:tracking`
+* is optional
+* type: reference
+
+##### xdm:tracking Type
+
+
+* []() – `#/definitions/base-tracking`
 
 
 

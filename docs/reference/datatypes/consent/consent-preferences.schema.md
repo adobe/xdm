@@ -36,7 +36,8 @@ Captures consumer consent for collection and use of data related to privacy, per
         "xdm:val": "y"
       },
       "xdm:email": {
-        "xdm:val": "y"
+        "xdm:val": "y",
+        "xdm:time": "2026-09-01T10:00:00+00:00"
       },
       "xdm:push": {
         "xdm:val": "n",
@@ -553,7 +554,6 @@ Timestamp of this complete set of user consents and preferences. This value shou
 
 ## xdm:val
 
-The value specified by the user as their tracking consent choice, or the basis of processing that precludes the need for user consent
 
 `xdm:val`
 * is optional

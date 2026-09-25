@@ -50,7 +50,8 @@
                         "xdm:val": "y"
                     },
                     "xdm:email": {
-                        "xdm:val": "y"
+                        "xdm:val": "y",
+                        "xdm:time": "2026-09-01T10:00:00+00:00"
                     }
                 },
                 "xdm:tracking": {
@@ -94,14 +95,16 @@
                         "john@xyz.com": {
                             "xdm:marketing": {
                                 "xdm:email": {
-                                    "xdm:val": "y"
+                                    "xdm:val": "y",
+                                    "xdm:time": "2026-09-01T10:00:00+00:00"
                                 }
                             }
                         },
                         "johnny@company.com": {
                             "xdm:marketing": {
                                 "xdm:email": {
-                                    "xdm:val": "n"
+                                    "xdm:val": "n",
+                                    "xdm:time": "2026-09-01T10:00:00+00:00"
                                 }
                             },
                             "xdm:tracking": {

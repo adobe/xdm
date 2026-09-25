@@ -37,7 +37,8 @@ This schema captures privacy, personalization and marketing preferences (consent
         "xdm:val": "y"
       },
       "xdm:email": {
-        "xdm:val": "y"
+        "xdm:val": "y",
+        "xdm:time": "2026-09-01T10:00:00+00:00"
       }
     },
     "xdm:tracking": {
@@ -81,14 +82,16 @@ This schema captures privacy, personalization and marketing preferences (consent
         "john@xyz.com": {
           "xdm:marketing": {
             "xdm:email": {
-              "xdm:val": "y"
+              "xdm:val": "y",
+              "xdm:time": "2026-09-01T10:00:00+00:00"
             }
           }
         },
         "johnny@company.com": {
           "xdm:marketing": {
             "xdm:email": {
-              "xdm:val": "n"
+              "xdm:val": "n",
+              "xdm:time": "2026-09-01T10:00:00+00:00"
             }
           },
           "xdm:tracking": {

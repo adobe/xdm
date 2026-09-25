@@ -467,7 +467,6 @@
             "type": "object",
             "properties": {
                 "xdm:val": {
-                    "description": "The value specified by the user as their tracking consent choice, or the basis of processing that precludes the need for user consent",
                     "$ref": "#/definitions/choice-value"
                 },
                 "xdm:time": {
@@ -483,7 +482,7 @@
         },
         "base-tracking": {
             "title": "Tracking Preferences",
-            "description": "User's preferences for tracking of message engagement, such as open tracking and click tracking",
+            "description": "User's preferences for tracking of message engagement, such as email open tracking",
             "type": "object",
             "properties": {
                 "xdm:open": {
@@ -690,7 +689,8 @@
                         "xdm:val": "y"
                     },
                     "xdm:email": {
-                        "xdm:val": "y"
+                        "xdm:val": "y",
+                        "xdm:time": "2026-09-01T10:00:00+00:00"
                     },
                     "xdm:push": {
                         "xdm:val": "n",

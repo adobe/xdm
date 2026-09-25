@@ -5,6 +5,8 @@
     "xdm:version": "1.0.0",
     "xdm:environment": "dev",
     "xdm:mode": "preview",
+    "xdm:status": "out-of-scope",
+    "xdm:statusMessage": "The request is outside the capabilities supported by this experience.",
     "xdm:agents": [
       {
         "xdm:agentID": "agent-bond-007",

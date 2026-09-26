@@ -55,6 +55,30 @@
               "meta:titleId": "agenticevent##xdm:mode##title##21201",
               "meta:descriptionId": "agenticevent##xdm:mode##description##47551"
             },
+            "xdm:status": {
+              "title": "Agentic Experience Status",
+              "type": "string",
+              "description": "Status of the full agentic experience at the time this event is emitted. Producers should emit an out-of-scope status when the agent determines it cannot handle the request, rather than deriving the status from response content.",
+              "meta:status": "experimental",
+              "enum": ["success", "error", "out-of-scope"],
+              "meta:enum": {
+                "success": "The agentic experience completed successfully.",
+                "error": "The agentic experience encountered an error.",
+                "out-of-scope": "The agentic experience determined that it cannot handle the request."
+              }
+            },
+            "xdm:statusMessage": {
+              "title": "Agentic Experience Status Message",
+              "type": "string",
+              "description": "Optional diagnostic details about the status of the full agentic experience event, such as an error message or the reason a request is out of scope. Consumers should use xdm:status, not this message, to classify the outcome.",
+              "meta:status": "experimental"
+            },
+            "xdm:sourceSystem": {
+              "title": "Agentic Experience Source System",
+              "type": "string",
+              "description": "Identifier of the component that produced the agentic experience status, such as the agent ID for an agent-side status or the source system name when no agent was invoked.",
+              "meta:status": "experimental"
+            },
             "xdm:agents": {
               "type": "array",
               "title": "Agents",

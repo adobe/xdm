@@ -73,6 +73,12 @@
               "description": "Optional diagnostic details about the status of the full agentic experience event, such as an error message or the reason a request is out of scope. Consumers should use xdm:status, not this message, to classify the outcome.",
               "meta:status": "experimental"
             },
+            "xdm:sourceSystem": {
+              "title": "Agentic Experience Source System",
+              "type": "string",
+              "description": "Identifier of the component that produced the agentic experience status, such as the agent ID for an agent-side status or the source system name when no agent was invoked.",
+              "meta:status": "experimental"
+            },
             "xdm:agents": {
               "type": "array",
               "title": "Agents",

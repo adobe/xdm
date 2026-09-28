@@ -1,0 +1,21 @@
+{
+  "xdm:placeContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "US-CA"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Samsung"
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:operatingSystem": "Android",
+    "xdm:operatingSystemVendor": "Google",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:vendor": "Google"
+    }
+  }
+}

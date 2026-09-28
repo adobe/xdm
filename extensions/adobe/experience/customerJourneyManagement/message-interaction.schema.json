@@ -102,7 +102,13 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/deviceType": {
           "title": "Device Type",
           "type": "string",
-          "description": "The type of device used for this interaction, such as mobile, tablet, or desktop. Derived from device lookup at the Edge or from the request User-Agent."
+          "description": "The type of device used for this interaction.",
+          "meta:enum": {
+            "mobile": "Mobile",
+            "tablet": "Tablet",
+            "desktop": "Desktop",
+            "NA": "Not available"
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/operatingSystem": {
           "title": "Operating System",

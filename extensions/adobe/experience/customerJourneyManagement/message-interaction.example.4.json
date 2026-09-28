@@ -1,6 +1,9 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "open",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/isBot": true,
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/deviceType": "mobile",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/operatingSystem": "iOS",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/operatingSystemVersion": "17.4",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/url": "https://www.adobe.com/",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "offer",

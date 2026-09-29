@@ -57,7 +57,13 @@
             "blocked": "Blocked"
           },
           "meta:titleId": "phonenumber##xdm:status##title##48581",
-          "meta:descriptionId": "phonenumber##xdm:status##description##63871"
+          "meta:descriptionId": "phonenumber##xdm:status##description##63871",
+          "meta:enumId": {
+            "active": "phonenumber##xdm:status##meta:enum##active##53951",
+            "incomplete": "phonenumber##xdm:status##meta:enum##incomplete##47791",
+            "blacklisted": "phonenumber##xdm:status##meta:enum##blacklisted##76281",
+            "blocked": "phonenumber##xdm:status##meta:enum##blocked##61541"
+          }
         },
         "xdm:statusReason": {
           "title": "Status reason",
@@ -77,7 +83,13 @@
             "successfullyUsed": "Successfully used"
           },
           "meta:titleId": "phonenumber##xdm:validity##title##52201",
-          "meta:descriptionId": "phonenumber##xdm:validity##description##36201"
+          "meta:descriptionId": "phonenumber##xdm:validity##description##36201",
+          "meta:enumId": {
+            "consistent": "phonenumber##xdm:validity##meta:enum##consistent##58021",
+            "inconsistent": "phonenumber##xdm:validity##meta:enum##inconsistent##42051",
+            "incomplete": "phonenumber##xdm:validity##meta:enum##incomplete##76081",
+            "successfullyUsed": "phonenumber##xdm:validity##meta:enum##successfullyUsed##73261"
+          }
         }
       }
     }

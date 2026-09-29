@@ -1,0 +1,171 @@
+{
+  "xdm:entityType": "adgroup",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:campaignID": "23851234567890789",
+    "xdm:campaignGUID": "meta_act_123456789012345_23851234567890789",
+    "xdm:adGroupID": "23851234567890456",
+    "xdm:adGroupGUID": "meta_act_123456789012345_23851234567890456",
+    "xdm:hierarchyPath": "act_123456789012345/23851234567890789/23851234567890456",
+    "xdm:metadata": {
+      "xdm:name": "Fall Launch - Video - 25-54 - Tech Enthusiasts",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:createdTime": "2025-10-20T12:00:00Z",
+      "xdm:updatedTime": "2025-11-09T14:00:00Z"
+    },
+    "xdm:adGroupDetails": {
+      "xdm:adGroupType": "standard",
+      "xdm:childAdType": "video",
+      "xdm:promotedObject": {
+        "xdm:objectType": "page",
+        "xdm:objectID": "page_acmecorp_official"
+      },
+      "xdm:budgetSettings": {
+        "xdm:budgetInMicroCurrency": 500000000,
+        "xdm:bidStrategyType": "lowest_cost"
+      },
+      "xdm:targeting": {
+        "xdm:geoTargeting": {
+          "xdm:countries": ["US"],
+          "xdm:regions": ["US-CA", "US-NY", "US-TX", "US-FL"],
+          "xdm:cities": [
+            "San Francisco",
+            "Los Angeles",
+            "New York",
+            "Austin",
+            "Miami"
+          ]
+        },
+        "xdm:demographicTargeting": {
+          "xdm:ageRanges": [
+            {
+              "xdm:minAge": 25,
+              "xdm:maxAge": 54
+            }
+          ],
+          "xdm:genders": ["male", "female"],
+          "xdm:languages": ["en"]
+        },
+        "xdm:interestTargeting": {
+          "xdm:interests": [
+            "Technology",
+            "Business",
+            "Innovation",
+            "Entrepreneurship"
+          ],
+          "xdm:behaviors": [
+            "Early technology adopters",
+            "Business decision makers"
+          ],
+          "xdm:customAudiences": [
+            {
+              "xdm:audienceID": "audience_website_visitors_30d",
+              "xdm:audienceName": "Website Visitors - Last 30 Days",
+              "xdm:audienceType": "retargeting"
+            },
+            {
+              "xdm:audienceID": "audience_app_users",
+              "xdm:audienceName": "Acme App Users",
+              "xdm:audienceType": "custom"
+            },
+            {
+              "xdm:audienceID": "audience_purchasers_90d_lal",
+              "xdm:audienceName": "Lookalike - Purchasers 90d",
+              "xdm:audienceType": "lookalike"
+            }
+          ]
+        },
+        "xdm:deviceTargeting": {
+          "xdm:deviceTypes": ["mobile", "desktop"],
+          "xdm:operatingSystems": ["iOS", "Android", "Windows", "macOS"]
+        },
+        "xdm:placementTargeting": {
+          "xdm:placements": [
+            "facebook_feed",
+            "instagram_feed",
+            "facebook_marketplace",
+            "facebook_video_feeds",
+            "instagram_explore",
+            "instagram_reels",
+            "messenger_inbox",
+            "audience_network_native"
+          ]
+        }
+      },
+      "xdm:optimizationSettings": {
+        "xdm:conversionWindow": "7d_click_1d_view",
+        "xdm:isAutoTargetingEnabled": false,
+        "xdm:isCampaignOptimization": false
+      },
+      "xdm:placementSettings": {
+        "xdm:placementGroup": "automatic",
+        "xdm:placements": [
+          "facebook_feed",
+          "instagram_feed",
+          "facebook_marketplace",
+          "facebook_video_feeds",
+          "instagram_explore",
+          "instagram_reels",
+          "messenger_inbox",
+          "audience_network_native"
+        ],
+        "xdm:deviceTypes": ["mobile", "desktop"]
+      },
+      "xdm:deliverySettings": {
+        "xdm:pacingDeliveryType": "standard",
+        "xdm:deliveryStatus": "active"
+      },
+      "xdm:trackingSettings": {
+        "xdm:pixelID": "pixel_123456789",
+        "xdm:eventSources": ["pixel", "app"],
+        "xdm:urlTracking": {
+          "xdm:trackingTemplate": "https://track.acmecorp.com/click?adset={adset_id}&placement={placement}",
+          "xdm:finalUrlSuffix": "utm_source=facebook&utm_medium=paid&utm_campaign=fall2025&utm_content=video_adset",
+          "xdm:customParameters": [
+            {
+              "xdm:key": "utm_source",
+              "xdm:value": "facebook"
+            },
+            {
+              "xdm:key": "utm_medium",
+              "xdm:value": "paid"
+            }
+          ]
+        }
+      },
+      "xdm:brandSafetyConfig": {
+        "xdm:inventoryFilter": "standard",
+        "xdm:blockedCategories": ["mature_content", "political"]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_adset_id",
+          "xdm:stringValue": "23851234567890456"
+        },
+        {
+          "xdm:fieldName": "meta_optimization_goal",
+          "xdm:stringValue": "LINK_CLICKS"
+        },
+        {
+          "xdm:fieldName": "meta_billing_event",
+          "xdm:stringValue": "IMPRESSIONS"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        },
+        {
+          "xdm:fieldName": "meta_destination_type",
+          "xdm:stringValue": "WEBSITE"
+        },
+        {
+          "xdm:fieldName": "meta_promoted_object_type",
+          "xdm:stringValue": "PAGE"
+        }
+      ]
+    }
+  }
+}

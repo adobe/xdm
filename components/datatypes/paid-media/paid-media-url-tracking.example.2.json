@@ -1,0 +1,17 @@
+{
+  "xdm:trackingTemplate": "https://example.com/track?url={lpurl}&campaign={campaignid}",
+  "xdm:customParameters": [
+    {
+      "xdm:key": "utm_source",
+      "xdm:value": "facebook"
+    },
+    {
+      "xdm:key": "utm_campaign",
+      "xdm:value": "{campaign.name}"
+    },
+    {
+      "xdm:key": "utm_content",
+      "xdm:value": "{ad.id}"
+    }
+  ]
+}

@@ -31,7 +31,12 @@
             "authenticated": "User identified by a login or similar action that was valid at the time of the event observation.",
             "loggedOut": "User was identified by a login action at some point of time previously, but is not currently logged in."
           },
-          "meta:descriptionId": "identityitem##xdm:authenticatedState##description##59181"
+          "meta:descriptionId": "identityitem##xdm:authenticatedState##description##59181",
+          "meta:enumId": {
+            "ambiguous": "identityitem##xdm:authenticatedState##meta:enum##ambiguous##43821",
+            "authenticated": "identityitem##xdm:authenticatedState##meta:enum##authenticated##58521",
+            "loggedOut": "identityitem##xdm:authenticatedState##meta:enum##loggedOut##23661"
+          }
         },
         "xdm:primary": {
           "title": "Primary",

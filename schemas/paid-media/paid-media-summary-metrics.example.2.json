@@ -1,0 +1,74 @@
+{
+  "xdm:timestamp": "2025-11-09T00:00:00Z",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "123-456-7890",
+    "xdm:accountGUID": "gads_123_456_7890",
+    "xdm:campaignID": "20456789012",
+    "xdm:campaignGUID": "gads_20456789012",
+    "xdm:adGroupID": "30567890123",
+    "xdm:adGroupGUID": "gads_30567890123",
+    "xdm:hierarchyPath": "123-456-7890/20456789012/30567890123",
+    "xdm:channel": "PaidMedia",
+    "xdm:metrics": {
+      "xdm:impressions": 68000,
+      "xdm:clicks": 2720,
+      "xdm:spend": 4080.0,
+      "xdm:conversions": 136,
+      "xdm:conversionValue": 8160.0,
+      "xdm:ctr": 0.04,
+      "xdm:cpc": 1.5,
+      "xdm:cpm": 60.0,
+      "xdm:costPerConversion": 30.0,
+      "xdm:roas": 2.0,
+      "xdm:engagements": 3400,
+      "xdm:engagementRate": 0.05
+    },
+    "xdm:dimensionalBreakdowns": {
+      "xdm:deviceType": "desktop",
+      "xdm:platform": "search",
+      "xdm:country": "US",
+      "xdm:region": "California",
+      "xdm:language": "en",
+      "xdm:campaignObjective": "SEARCH",
+      "xdm:optimizationGoal": "MAXIMIZE_CONVERSIONS"
+    },
+    "xdm:extendedMetrics": {
+      "xdm:uniqueClicks": 2584,
+      "xdm:linkClicks": 2720,
+      "xdm:websiteVisits": 2448
+    },
+    "xdm:costMetrics": {
+      "xdm:averageCpc": 1.5,
+      "xdm:averageCpm": 60.0,
+      "xdm:averageCpa": 30.0,
+      "xdm:qualityScore": 7,
+      "xdm:adRank": 4.2,
+      "xdm:impressionShare": {
+        "xdm:impressionShare": 0.72,
+        "xdm:lostImpressionShareRank": 0.12,
+        "xdm:lostImpressionShareBudget": 0.16,
+        "xdm:topImpressionShare": 0.58,
+        "xdm:absoluteTopImpressionShare": 0.31
+      },
+      "xdm:budgetUtilization": {
+        "xdm:budgetAllocated": 5000.0,
+        "xdm:budgetSpent": 4080.0,
+        "xdm:budgetRemaining": 920.0,
+        "xdm:budgetUtilization": 0.816,
+        "xdm:dailyBudget": 5000.0,
+        "xdm:pacingStatus": "on_track"
+      }
+    },
+    "xdm:attributionMetrics": {
+      "xdm:attributionModel": "DATA_DRIVEN",
+      "xdm:clickAttributionWindow": "30_DAY",
+      "xdm:viewAttributionWindow": "1_DAY"
+    },
+    "xdm:qualityMetrics": {
+      "xdm:overallQualityScore": 7.0,
+      "xdm:relevanceScore": 7.5,
+      "xdm:qualityTrend": "improving"
+    }
+  }
+}

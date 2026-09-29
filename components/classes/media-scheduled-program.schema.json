@@ -23,12 +23,16 @@
           "title": "The date of the schedule event",
           "type": "string",
           "format": "date",
-          "description": "The date when a program was scheduled."
+          "description": "The date when a program was scheduled.",
+          "meta:titleId": "media-scheduled-program##xdm:scheduleDate##title##82321",
+          "meta:descriptionId": "media-scheduled-program##xdm:scheduleDate##description##36201"
         },
         "xdm:mediaProgramDetails": {
           "title": "Media Program Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/mediaProgramDetails",
-          "description": "Media Program related fields."
+          "description": "Media Program related fields.",
+          "meta:titleId": "media-scheduled-program##xdm:mediaProgramDetails##title##37711",
+          "meta:descriptionId": "media-scheduled-program##xdm:mediaProgramDetails##description##33121"
         },
         "xdm:defaultMetadata": {
           "title": "The Default Metadata",
@@ -37,22 +41,30 @@
             "xdm:show": {
               "title": "Series Name",
               "type": "string",
-              "description": "Program/Series Name. Program Name is required only if the show is part of a series."
+              "description": "Program/Series Name. Program Name is required only if the show is part of a series.",
+              "meta:titleId": "media-scheduled-program##xdm:show##title##56891",
+              "meta:descriptionId": "media-scheduled-program##xdm:show##description##71071"
             },
             "xdm:season": {
               "title": "Season Number",
               "type": "string",
-              "description": "The season number the show belongs to. Season Series is required only if the show is part of a series."
+              "description": "The season number the show belongs to. Season Series is required only if the show is part of a series.",
+              "meta:titleId": "media-scheduled-program##xdm:season##title##23281",
+              "meta:descriptionId": "media-scheduled-program##xdm:season##description##72361"
             },
             "xdm:episode": {
               "title": "Episode Number",
               "type": "string",
-              "description": "The number of the episode."
+              "description": "The number of the episode.",
+              "meta:titleId": "media-scheduled-program##xdm:episode##title##10251",
+              "meta:descriptionId": "media-scheduled-program##xdm:episode##description##24241"
             },
             "xdm:assetID": {
               "title": "Asset ID",
               "type": "string",
-              "description": "This is the unique identifier for the content of the media asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems."
+              "description": "This is the unique identifier for the content of the media asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems.",
+              "meta:titleId": "media-scheduled-program##xdm:assetID##title##92541",
+              "meta:descriptionId": "media-scheduled-program##xdm:assetID##description##69711"
             },
             "xdm:genreList": {
               "title": "Genre List",
@@ -60,90 +72,126 @@
               "items": {
                 "type": "string"
               },
-              "description": "Type or grouping of content as defined by content producer. Field represents the comma separated values provided in the genre field."
+              "description": "Type or grouping of content as defined by content producer. Field represents the comma separated values provided in the genre field.",
+              "meta:titleId": "media-scheduled-program##xdm:genreList##title##91771",
+              "meta:descriptionId": "media-scheduled-program##xdm:genreList##description##72811"
             },
             "xdm:firstAirDate": {
               "title": "First Air Date",
               "type": "string",
-              "description": "The date when the content first aired on television. Any date format is acceptable, but Adobe recommends: YYYY-MM-DD."
+              "description": "The date when the content first aired on television. Any date format is acceptable, but Adobe recommends: YYYY-MM-DD.",
+              "meta:titleId": "media-scheduled-program##xdm:firstAirDate##title##20801",
+              "meta:descriptionId": "media-scheduled-program##xdm:firstAirDate##description##25501"
             },
             "xdm:firstDigitalDate": {
               "title": "First Digital Date",
               "type": "string",
-              "description": "The date when the content first aired on any digital channel or platform. Any date format is acceptable but Adobe recommends: YYYY-MM-DD."
+              "description": "The date when the content first aired on any digital channel or platform. Any date format is acceptable but Adobe recommends: YYYY-MM-DD.",
+              "meta:titleId": "media-scheduled-program##xdm:firstDigitalDate##title##26741",
+              "meta:descriptionId": "media-scheduled-program##xdm:firstDigitalDate##description##46941"
             },
             "xdm:rating": {
               "title": "Rating Value",
               "type": "string",
-              "description": "Rating as defined by TV Parental Guidelines."
+              "description": "Rating as defined by TV Parental Guidelines.",
+              "meta:titleId": "media-scheduled-program##xdm:rating##title##36391",
+              "meta:descriptionId": "media-scheduled-program##xdm:rating##description##56281"
             },
             "xdm:originator": {
               "title": "Creator Name",
               "type": "string",
-              "description": "Creator of the content."
+              "description": "Creator of the content.",
+              "meta:titleId": "media-scheduled-program##xdm:originator##title##9881",
+              "meta:descriptionId": "media-scheduled-program##xdm:originator##description##34381"
             },
             "xdm:network": {
               "title": "Broadcast Network",
               "type": "string",
-              "description": "The network/channel name."
+              "description": "The network/channel name.",
+              "meta:titleId": "media-scheduled-program##xdm:network##title##44011",
+              "meta:descriptionId": "media-scheduled-program##xdm:network##description##21311"
             },
             "xdm:showType": {
               "title": "Show Type",
               "type": "string",
-              "description": "The type of content for example, trailer or full episode."
+              "description": "The type of content for example, trailer or full episode.",
+              "meta:titleId": "media-scheduled-program##xdm:showType##title##88781",
+              "meta:descriptionId": "media-scheduled-program##xdm:showType##description##22581"
             },
             "xdm:dayPart": {
               "title": "Day Part",
               "type": "string",
-              "description": "A property that defines the time of the day when the content was broadcast or played. This could have any value set as necessary by customers."
+              "description": "A property that defines the time of the day when the content was broadcast or played. This could have any value set as necessary by customers.",
+              "meta:titleId": "media-scheduled-program##xdm:dayPart##title##97631",
+              "meta:descriptionId": "media-scheduled-program##xdm:dayPart##description##20491"
             },
             "xdm:feed": {
               "title": "Feed Type",
               "type": "string",
-              "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL."
+              "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL.",
+              "meta:titleId": "media-scheduled-program##xdm:feed##title##73141",
+              "meta:descriptionId": "media-scheduled-program##xdm:feed##description##74721"
             },
             "xdm:streamFormat": {
               "title": "Stream Format",
               "type": "string",
-              "description": "Format of the stream (HD, SD)."
+              "description": "Format of the stream (HD, SD).",
+              "meta:titleId": "media-scheduled-program##xdm:streamFormat##title##4081",
+              "meta:descriptionId": "media-scheduled-program##xdm:streamFormat##description##27141"
             },
             "xdm:artist": {
               "title": "Artist",
               "type": "string",
-              "description": "The name of the album artist or group performing the music recording or video."
+              "description": "The name of the album artist or group performing the music recording or video.",
+              "meta:titleId": "media-scheduled-program##xdm:artist##title##38461",
+              "meta:descriptionId": "media-scheduled-program##xdm:artist##description##99211"
             },
             "xdm:album": {
               "title": "Album",
               "type": "string",
-              "description": "The name of the album that the music recording or video belongs to."
+              "description": "The name of the album that the music recording or video belongs to.",
+              "meta:titleId": "media-scheduled-program##xdm:album##title##14281",
+              "meta:descriptionId": "media-scheduled-program##xdm:album##description##59031"
             },
             "xdm:label": {
               "title": "Record Label",
               "type": "string",
-              "description": "Name of the record label."
+              "description": "Name of the record label.",
+              "meta:titleId": "media-scheduled-program##xdm:label##title##52321",
+              "meta:descriptionId": "media-scheduled-program##xdm:label##description##92101"
             },
             "xdm:author": {
               "title": "Author",
               "type": "string",
-              "description": "Name of the media author."
+              "description": "Name of the media author.",
+              "meta:titleId": "media-scheduled-program##xdm:author##title##30121",
+              "meta:descriptionId": "media-scheduled-program##xdm:author##description##37861"
             },
             "xdm:station": {
               "title": "Radio Station",
               "type": "string",
-              "description": "The radio station name on which the audio is played."
+              "description": "The radio station name on which the audio is played.",
+              "meta:titleId": "media-scheduled-program##xdm:station##title##441",
+              "meta:descriptionId": "media-scheduled-program##xdm:station##description##74951"
             },
             "xdm:publisher": {
               "title": "Publisher",
               "type": "string",
-              "description": "Name of the audio content publisher."
+              "description": "Name of the audio content publisher.",
+              "meta:titleId": "media-scheduled-program##xdm:publisher##title##22111",
+              "meta:descriptionId": "media-scheduled-program##xdm:publisher##description##87771"
             },
             "xdm:cdn": {
               "title": "Content Delivery Network",
               "type": "string",
-              "description": "The content delivery network of the content played."
+              "description": "The content delivery network of the content played.",
+              "meta:titleId": "media-scheduled-program##xdm:cdn##title##7501",
+              "meta:descriptionId": "media-scheduled-program##xdm:cdn##description##41301"
             }
           },
-          "description": "The scheduled program default metadata that will be used to overwrite the default metadata of the generated media events."
+          "description": "The scheduled program default metadata that will be used to overwrite the default metadata of the generated media events.",
+          "meta:titleId": "media-scheduled-program##xdm:defaultMetadata##title##39041",
+          "meta:descriptionId": "media-scheduled-program##xdm:defaultMetadata##description##37011"
         },
         "xdm:customMetadata": {
           "title": "The Custom Metadata",
@@ -151,7 +199,9 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/customMetadataDetails"
           },
-          "description": "The list of custom metadata."
+          "description": "The list of custom metadata.",
+          "meta:titleId": "media-scheduled-program##xdm:customMetadata##title##26811",
+          "meta:descriptionId": "media-scheduled-program##xdm:customMetadata##description##40991"
         },
         "xdm:scheduleFilter": {
           "title": "The Schedule Filter",
@@ -161,14 +211,20 @@
             "xdm:filterPath": {
               "title": "The filter path",
               "type": "string",
-              "description": "The xdm path of the property used to filter media events"
+              "description": "The xdm path of the property used to filter media events",
+              "meta:titleId": "media-scheduled-program##xdm:filterPath##title##19241",
+              "meta:descriptionId": "media-scheduled-program##xdm:filterPath##description##68971"
             },
             "xdm:filterValue": {
               "title": "The filter value",
               "type": "string",
-              "description": "The value of the property used to filter media events"
+              "description": "The value of the property used to filter media events",
+              "meta:titleId": "media-scheduled-program##xdm:filterValue##title##75181",
+              "meta:descriptionId": "media-scheduled-program##xdm:filterValue##description##65981"
             }
-          }
+          },
+          "meta:titleId": "media-scheduled-program##xdm:scheduleFilter##title##57401",
+          "meta:descriptionId": "media-scheduled-program##xdm:scheduleFilter##description##66051"
         }
       },
       "required": [
@@ -188,5 +244,7 @@
       "$ref": "#/definitions/media-scheduled-program"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "media-scheduled-program##title##13021",
+  "meta:descriptionId": "media-scheduled-program##description##3381"
 }

@@ -1,0 +1,81 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/consentpolicy",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Consent Policy",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This is the base class for a consent policy definition which includes fields like name, description, and status. This class can be used to build Consent Policy XDM schemas.",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/xdm/common/auditable"
+  ],
+  "definitions": {
+    "consentpolicy": {
+      "properties": {
+        "xdm:cpID": {
+          "title": "Consent Policy ID",
+          "type": "string",
+          "description": "A unique identifier for the consent policy record.",
+          "meta:titleId": "consentpolicy##xdm:cpID##title##84091",
+          "meta:descriptionId": "consentpolicy##xdm:cpID##description##28001"
+        },
+        "xdm:name": {
+          "title": "Consent Policy name",
+          "type": "string",
+          "description": "Name of the consent policy.",
+          "meta:titleId": "consentpolicy##xdm:name##title##11511",
+          "meta:descriptionId": "consentpolicy##xdm:name##description##24251"
+        },
+        "xdm:description": {
+          "title": "Consent Policy description",
+          "type": "string",
+          "description": "Description of the consent policy.",
+          "meta:titleId": "consentpolicy##xdm:description##title##3871",
+          "meta:descriptionId": "consentpolicy##xdm:description##description##96631"
+        },
+        "xdm:status": {
+          "type": "string",
+          "title": "Consent Policy status",
+          "description": "Current status of consent policy from external system normalized to enabled or disabled.",
+          "enum": ["ENABLED", "DISABLED"],
+          "meta:enum": {
+            "ENABLED": "Enabled",
+            "DISABLED": "Disabled"
+          },
+          "meta:titleId": "consentpolicy##xdm:status##title##97021",
+          "meta:descriptionId": "consentpolicy##xdm:status##description##38661",
+          "meta:enumId": {
+            "ENABLED": "consentpolicy##xdm:status##meta:enum##ENABLED##99211",
+            "DISABLED": "consentpolicy##xdm:status##meta:enum##DISABLED##2381"
+          }
+        }
+      }
+    }
+  },
+  "required": ["xdm:name"],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/consentpolicy"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2025-08-11",
+  "meta:titleId": "consentpolicy##title##61941",
+  "meta:descriptionId": "consentpolicy##description##22061"
+}

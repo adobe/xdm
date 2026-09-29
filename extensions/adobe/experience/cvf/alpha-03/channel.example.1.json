@@ -1,0 +1,25 @@
+{
+  "cvf": {
+    "category": "channel",
+    "sandbox": {
+      "name": "Sample Value",
+      "type": "Sample Value",
+      "org": {
+        "id": "Sample Value",
+        "tenantId": "Sample Value"
+      }
+    },
+    "snapshotTime": "2026-03-06T12:00:00.000Z",
+    "channel": {
+      "name": "sms",
+      "clickThroughRate": 0.0345,
+      "numSent": 503,
+      "numDelivered": 479,
+      "numDisplayed": 0,
+      "numClicked": 0,
+      "numBounced": 24,
+      "numUnsubscribed": 0,
+      "numReported": 0
+    }
+  }
+}

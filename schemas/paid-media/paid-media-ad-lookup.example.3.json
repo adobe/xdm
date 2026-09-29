@@ -1,0 +1,119 @@
+{
+  "xdm:entityType": "ad",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "tiktok",
+    "xdm:accountID": "7012345678901234567",
+    "xdm:accountGUID": "tiktok_7012345678901234567",
+    "xdm:campaignID": "7098765432109876543",
+    "xdm:campaignGUID": "tiktok_7012345678901234567_7098765432109876543",
+    "xdm:adGroupID": "7055566677788899900",
+    "xdm:adGroupGUID": "tiktok_7012345678901234567_7055566677788899900",
+    "xdm:adID": "7088899900011122233",
+    "xdm:adGUID": "tiktok_7012345678901234567_7088899900011122233",
+    "xdm:hierarchyPath": "7012345678901234567/7098765432109876543/7055566677788899900/7088899900011122233",
+    "xdm:metadata": {
+      "xdm:name": "Summer Collection - 15s In-Feed Video",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:createdTime": "2025-06-01T09:00:00Z",
+      "xdm:updatedTime": "2025-06-15T14:30:00Z"
+    },
+    "xdm:adDetails": {
+      "xdm:adType": "video",
+      "xdm:creative": {
+        "xdm:paidMediaCreative": {
+          "xdm:creativeID": "tiktok_creative_vid_445566778",
+          "xdm:creativeType": "video",
+          "xdm:title": "Summer Styles You Need Right Now",
+          "xdm:body": "Fresh summer looks just dropped. Shop the collection before it sells out. Free shipping over $35.",
+          "xdm:callToAction": "Shop Now",
+          "xdm:destinationURL": "https://www.acmefashion.com/summer-collection?utm_source=tiktok&utm_medium=video&utm_campaign=summer2025",
+          "xdm:displayURL": "https://www.acmefashion.com/summer-collection",
+          "xdm:trackingURLs": [
+            {
+              "xdm:eventType": "impression",
+              "xdm:url": "https://track.acmefashion.com/impression?ad=tiktok_vid_445566778"
+            },
+            {
+              "xdm:eventType": "click",
+              "xdm:url": "https://track.acmefashion.com/click?ad=tiktok_vid_445566778"
+            }
+          ],
+          "xdm:assets": [
+            {
+              "xdm:assetID": "video_summer_15s_001",
+              "xdm:assetType": "video",
+              "xdm:name": "Summer Collection 15s In-Feed Video",
+              "xdm:url": "https://cdn.acmefashion.com/ads/summer-collection-15s.mp4",
+              "xdm:thumbnailURL": "https://cdn.acmefashion.com/ads/summer-collection-thumb.jpg",
+              "xdm:dimensions": {
+                "xdm:width": 1080,
+                "xdm:height": 1920
+              },
+              "xdm:fileSize": 8500000,
+              "xdm:duration": 15
+            }
+          ]
+        }
+      },
+      "xdm:reviewStatus": "approved",
+      "xdm:deliveryStatus": "active",
+      "xdm:isPinDeleted": false,
+      "xdm:isRemovable": true,
+      "xdm:socialMediaProperties": {
+        "xdm:isShareable": true,
+        "xdm:favoriteDisplayMode": "enabled"
+      },
+      "xdm:creativeAssetGroupsSpec": {
+        "xdm:isDynamic": false
+      },
+      "xdm:degreesOfFreedomSpec": {
+        "xdm:enabled": true,
+        "xdm:features": ["smart_creative", "auto_thumbnail"]
+      },
+      "xdm:urlTracking": {
+        "xdm:trackingTemplate": "https://track.acmefashion.com/click?ad={ad_id}&placement={placement}",
+        "xdm:customParameters": [
+          {
+            "xdm:key": "utm_source",
+            "xdm:value": "tiktok"
+          },
+          {
+            "xdm:key": "utm_medium",
+            "xdm:value": "video"
+          },
+          {
+            "xdm:key": "utm_campaign",
+            "xdm:value": "summer2025"
+          }
+        ]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "tiktok_ad_id",
+          "xdm:stringValue": "7088899900011122233"
+        },
+        {
+          "xdm:fieldName": "tiktok_ad_format",
+          "xdm:stringValue": "SINGLE_VIDEO"
+        },
+        {
+          "xdm:fieldName": "tiktok_identity_type",
+          "xdm:stringValue": "CUSTOMIZED_USER"
+        },
+        {
+          "xdm:fieldName": "tiktok_identity_id",
+          "xdm:stringValue": "7012345000000000001"
+        },
+        {
+          "xdm:fieldName": "tiktok_is_aco",
+          "xdm:booleanValue": false
+        },
+        {
+          "xdm:fieldName": "tiktok_landing_page_url",
+          "xdm:stringValue": "https://www.acmefashion.com/summer-collection"
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,6 @@
 {
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "bot_open",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "open",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/isBot": true,
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/url": "https://www.adobe.com/",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "offer",

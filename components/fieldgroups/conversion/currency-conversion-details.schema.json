@@ -20,30 +20,40 @@
           "title": "Source ISO Code",
           "type": "string",
           "pattern": "^[A-Z]{3}$",
-          "description": "Currency ISO code, the source currency."
+          "description": "Currency ISO code, the source currency.",
+          "meta:titleId": "currency-conversion-details##xdm:sourceISOCode##title##98481",
+          "meta:descriptionId": "currency-conversion-details##xdm:sourceISOCode##description##3041"
         },
         "xdm:targetISOCode": {
           "title": "Target ISO Code",
           "type": "string",
           "pattern": "^[A-Z]{3}$",
-          "description": "Currency ISO code, the target currency."
+          "description": "Currency ISO code, the target currency.",
+          "meta:titleId": "currency-conversion-details##xdm:targetISOCode##title##83011",
+          "meta:descriptionId": "currency-conversion-details##xdm:targetISOCode##description##38461"
         },
         "xdm:startDate": {
           "title": "Start Date",
           "type": "string",
           "format": "date",
-          "description": "Start date of the conversion rate. This date is inclusive."
+          "description": "Start date of the conversion rate. This date is inclusive.",
+          "meta:titleId": "currency-conversion-details##xdm:startDate##title##68181",
+          "meta:descriptionId": "currency-conversion-details##xdm:startDate##description##28121"
         },
         "xdm:endDate": {
           "title": "End Date",
           "type": "string",
           "format": "date",
-          "description": "End date of the conversion rate. This date is exclusive."
+          "description": "End date of the conversion rate. This date is exclusive.",
+          "meta:titleId": "currency-conversion-details##xdm:endDate##title##90991",
+          "meta:descriptionId": "currency-conversion-details##xdm:endDate##description##62361"
         },
         "xdm:conversionRate": {
           "title": "Conversion Rate",
           "type": "number",
-          "description": "Rate used to convert the source currency to the target currency."
+          "description": "Rate used to convert the source currency to the target currency.",
+          "meta:titleId": "currency-conversion-details##xdm:conversionRate##title##74511",
+          "meta:descriptionId": "currency-conversion-details##xdm:conversionRate##description##60601"
         }
       }
     }
@@ -54,5 +64,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2022-10-18"
+  "meta:createdDate": "2022-10-18",
+  "meta:titleId": "currency-conversion-details##title##6411",
+  "meta:descriptionId": "currency-conversion-details##description##53581"
 }

@@ -1,0 +1,80 @@
+{
+  "xdm:entityType": "asset",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:assetID": "222333444555",
+    "xdm:assetGUID": "google_ads_1234567890_asset_222333444555",
+    "xdm:hierarchyPath": "1234567890/222333444555",
+    "xdm:metadata": {
+      "xdm:name": "Holiday Sale - Display Banner",
+      "xdm:status": "active",
+      "xdm:createdTime": "2025-09-18T11:00:00Z",
+      "xdm:updatedTime": "2025-10-05T14:00:00Z"
+    },
+    "xdm:assetDetails": {
+      "xdm:assetType": "image",
+      "xdm:assetSubType": "marketing_image",
+      "title": "Holiday Sale - Up to 50% Off Everything",
+      "description": "Promotional display banner for the annual holiday sale campaign featuring product imagery and discount messaging.",
+      "xdm:mediaProperties": {
+        "xdm:url": "https://googleads.g.doubleclick.net/pagead/imgad?id=222333444555",
+        "xdm:thumbnailURL": "https://googleads.g.doubleclick.net/pagead/imgad?id=222333444555&sz=150x150",
+        "xdm:source": "https://ads.google.com/aw/assets/222333444555",
+        "xdm:hash": "pqr678stu901vwx234yz567abc123def456"
+      },
+      "xdm:dimensions": {
+        "xdm:width": 1200,
+        "xdm:height": 628,
+        "xdm:aspectRatio": "1.91:1",
+        "xdm:orientation": "landscape"
+      },
+      "xdm:fileProperties": {
+        "xdm:fileSize": 2456789,
+        "xdm:fileSizeFormatted": "2.3 MB",
+        "xdm:mimeType": "image/png",
+        "xdm:fileExtension": "png"
+      },
+      "xdm:imageProperties": {
+        "xdm:colorSpace": "sRGB",
+        "xdm:hasTransparency": true,
+        "xdm:isAnimated": false,
+        "xdm:dominantColors": ["#CC0000", "#FFFFFF", "#FFD700"]
+      },
+      "xdm:usageMetadata": {
+        "xdm:usageCount": 15,
+        "xdm:lastUsedDate": "2025-11-09T10:00:00Z",
+        "xdm:associatedCampaigns": [
+          "camp_google_abc123",
+          "camp_google_def456",
+          "camp_google_ghi789"
+        ],
+        "xdm:associatedAds": [
+          "ad_google_111",
+          "ad_google_222",
+          "ad_google_333",
+          "ad_google_444"
+        ]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_asset_type",
+          "xdm:stringValue": "IMAGE"
+        },
+        {
+          "xdm:fieldName": "google_asset_performance_label",
+          "xdm:stringValue": "GOOD"
+        },
+        {
+          "xdm:fieldName": "google_asset_field_type",
+          "xdm:stringValue": "MARKETING_IMAGE"
+        },
+        {
+          "xdm:fieldName": "google_asset_policy_summary_approval_status",
+          "xdm:stringValue": "APPROVED"
+        }
+      ]
+    }
+  }
+}

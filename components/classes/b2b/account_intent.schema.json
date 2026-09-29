@@ -23,7 +23,9 @@
         "xdm:accountIntentID": {
           "title": "Account Intent ID",
           "description": "Adobe generated unique identifier for the record.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "intent##xdm:accountIntentID##title##56261",
+          "meta:descriptionId": "intent##xdm:accountIntentID##description##81351"
         }
       }
     }
@@ -45,5 +47,7 @@
       "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "intent##title##83021",
+  "meta:descriptionId": "intent##description##89171"
 }

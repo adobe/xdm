@@ -1,0 +1,39 @@
+{
+  "xdm:timestamp": "2026-04-15T00:00:00Z",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "other",
+    "xdm:accountID": "advertiser_69a8807d673af677c92bddbc",
+    "xdm:campaignID": "cmp_2026_spring_launch",
+    "xdm:channel": "PaidMedia",
+    "xdm:denormalizedNames": {
+      "xdm:accountName": "Acme Corp",
+      "xdm:campaignName": "Spring 2026 Launch",
+      "xdm:adName": "Hero Video 15s"
+    },
+    "xdm:metrics": {
+      "xdm:impressions": 4820000,
+      "xdm:reach": 1750000,
+      "xdm:conversions": 18450
+    },
+    "xdm:dimensionalBreakdowns": {
+      "xdm:breakdownType": "PLACEMENT_PER_CAMPAIGN",
+      "xdm:placement": "placement_abc123",
+      "xdm:audienceSegment": "audience_tech_enthusiasts",
+      "xdm:deviceType": "mobile",
+      "xdm:creativeFormat": "video"
+    },
+    "xdm:attributionMetrics": {
+      "xdm:clickAttributionWindow": "14_DAY",
+      "xdm:viewAttributionWindow": "14_DAY"
+    },
+    "xdm:measurementRun": {
+      "xdm:moduleID": "collab_paid_media_measurement_v1",
+      "xdm:matchRate": 0.155,
+      "xdm:groupedConversions": 12450,
+      "xdm:conversionEventType": "retail.purchase",
+      "xdm:audienceName": "Tech Enthusiasts 25-54",
+      "xdm:placementName": "Instagram Feed - Stories",
+      "xdm:siteName": "example.com"
+    }
+  }
+}

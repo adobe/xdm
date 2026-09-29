@@ -1,0 +1,88 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/aep-agent-application-context",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Agent Application Span",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
+  ],
+  "description": "Captures properties related to AEP Agent Application.",
+  "definitions": {
+    "aep-agent-application-context": {
+      "properties": {
+        "xdm:adobe": {
+          "type": "object",
+          "properties": {
+            "xdm:gen_ai": {
+              "type": "object",
+              "properties": {
+                "xdm:application": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:userSurface": {
+                      "type": "string",
+                      "description": "User interface surface where the request originated.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:userSurface##description##18611"
+                    },
+                    "xdm:upstreamClient": {
+                      "type": "string",
+                      "description": "Upstream client information for observability and feature flag management.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:upstreamClient##description##25771"
+                    },
+                    "xdm:pageName": {
+                      "type": "string",
+                      "description": "Human-readable page name from the application.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:pageName##description##64071"
+                    },
+                    "xdm:pageUrl": {
+                      "type": "string",
+                      "description": "Full URL of the current page in the application.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:pageUrl##description##38191"
+                    },
+                    "xdm:dataview": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:id": {
+                          "type": "string",
+                          "description": "Data view identifier (commonly used in analytics applications).",
+                          "meta:descriptionId": "aep-agent-application-context##xdm:id##description##78641"
+                        },
+                        "xdm:name": {
+                          "type": "string",
+                          "description": "The name of the dataview in the Adobe system.",
+                          "meta:descriptionId": "aep-agent-application-context##xdm:name##description##42221"
+                        }
+                      }
+                    },
+                    "xdm:additionalAppContext": {
+                      "type": "string",
+                      "description": "Additional application context in the Adobe system.",
+                      "meta:descriptionId": "aep-agent-application-context##xdm:additionalAppContext##description##36871"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/aep-agent-application-context"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "aep-agent-application-context##title##99841",
+  "meta:descriptionId": "aep-agent-application-context##description##20551"
+}

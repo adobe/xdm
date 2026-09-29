@@ -1,0 +1,119 @@
+{
+  "xdm:entityType": "ad",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:campaignID": "9876543210",
+    "xdm:campaignGUID": "google_ads_1234567890_9876543210",
+    "xdm:adGroupID": "5555666677",
+    "xdm:adGroupGUID": "google_ads_1234567890_5555666677",
+    "xdm:adID": "8888999900",
+    "xdm:adGUID": "google_ads_1234567890_8888999900",
+    "xdm:hierarchyPath": "1234567890/9876543210/5555666677/8888999900",
+    "xdm:metadata": {
+      "xdm:name": "Responsive Search Ad - Enterprise Cloud Solutions",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:createdTime": "2025-09-20T14:00:00Z",
+      "xdm:updatedTime": "2025-11-09T08:00:00Z"
+    },
+    "xdm:adDetails": {
+      "xdm:adType": "responsive",
+      "xdm:creative": {
+        "xdm:paidMediaCreative": {
+          "xdm:creativeID": "rsa_111222333",
+          "xdm:creativeType": "text",
+          "xdm:title": "Enterprise Cloud Solutions | Acme Corp",
+          "xdm:body": "Scalable cloud infrastructure trusted by Fortune 500 companies. Start your free trial today.",
+          "xdm:callToAction": "Get Started",
+          "xdm:destinationURL": "https://www.acmecorp.com/cloud-solutions?utm_source=google&utm_medium=search&utm_campaign=enterprise_cloud",
+          "xdm:displayURL": "https://www.acmecorp.com/cloud-solutions",
+          "xdm:assets": [
+            {
+              "xdm:assetID": "headline_1",
+              "xdm:assetType": "other",
+              "xdm:name": "Enterprise Cloud Solutions"
+            },
+            {
+              "xdm:assetID": "headline_2",
+              "xdm:assetType": "other",
+              "xdm:name": "Scalable Cloud Infrastructure"
+            },
+            {
+              "xdm:assetID": "headline_3",
+              "xdm:assetType": "other",
+              "xdm:name": "Free Trial - Get Started Today"
+            },
+            {
+              "xdm:assetID": "description_1",
+              "xdm:assetType": "other",
+              "xdm:name": "Trusted by Fortune 500 companies. 99.99% uptime SLA. 24/7 support included."
+            },
+            {
+              "xdm:assetID": "description_2",
+              "xdm:assetType": "other",
+              "xdm:name": "Deploy in minutes. Scale instantly. Pay only for what you use. Start free."
+            }
+          ]
+        }
+      },
+      "xdm:reviewStatus": "approved",
+      "xdm:deliveryStatus": "active",
+      "xdm:isPinDeleted": false,
+      "xdm:isRemovable": true,
+      "xdm:degreesOfFreedomSpec": {
+        "xdm:enabled": true,
+        "xdm:features": ["auto_generated_assets", "text_optimization"]
+      },
+      "xdm:urlTracking": {
+        "xdm:trackingTemplate": "{lpurl}?s_kwcid=AL!{userid}!3!{creative}!{matchtype}!{placement}!{network}",
+        "xdm:finalUrlSuffix": "gclid={gclid}&utm_source=google&utm_medium=search",
+        "xdm:customParameters": [
+          {
+            "xdm:key": "campaignid",
+            "xdm:value": "{campaignid}"
+          },
+          {
+            "xdm:key": "adgroupid",
+            "xdm:value": "{adgroupid}"
+          },
+          {
+            "xdm:key": "keyword",
+            "xdm:value": "{keyword}"
+          }
+        ]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_ad_type",
+          "xdm:stringValue": "RESPONSIVE_SEARCH_AD"
+        },
+        {
+          "xdm:fieldName": "google_ad_status",
+          "xdm:stringValue": "ENABLED"
+        },
+        {
+          "xdm:fieldName": "google_policy_summary_approval_status",
+          "xdm:stringValue": "APPROVED"
+        },
+        {
+          "xdm:fieldName": "google_ad_strength",
+          "xdm:stringValue": "EXCELLENT"
+        },
+        {
+          "xdm:fieldName": "google_pinned_headline_position_1",
+          "xdm:stringValue": "Enterprise Cloud Solutions"
+        },
+        {
+          "xdm:fieldName": "google_responsive_search_ad_path1",
+          "xdm:stringValue": "cloud"
+        },
+        {
+          "xdm:fieldName": "google_responsive_search_ad_path2",
+          "xdm:stringValue": "solutions"
+        }
+      ]
+    }
+  }
+}

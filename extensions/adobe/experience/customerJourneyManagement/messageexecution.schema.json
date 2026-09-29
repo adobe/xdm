@@ -115,6 +115,11 @@
           "type": "string",
           "description": "GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID's."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/waveID": {
+          "title": "Wave ID",
+          "type": "string",
+          "description": "Identifier of the wave execution for this message execution. Present when the message execution originates from a wave-driven Journey or Campaign Action and used to correlate with step events and message feedback across the pipeline."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audience": {
           "title": "Audience",
           "type": "object",
@@ -157,7 +162,9 @@
               "meta:enum": {
                 "orchestratedCampaign": "Orchestrated Campaign",
                 "singleStepCampaign": "Single Step Campaign",
-                "journey": "Journey"
+                "journey": "Journey",
+                "b2bAccountJourneys": "B2B Account Journeys",
+                "b2bLeadJourneys": "B2B Lead Journeys"
               }
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/sourceID": {

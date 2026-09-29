@@ -36,19 +36,26 @@
                     "xdm:agentID": {
                       "title": "Agent ID",
                       "type": "string",
-                      "description": "Unique Identifier for an Agent."
+                      "description": "Unique Identifier for an Agent.",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:agentID##title##43021",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:agentID##description##47311"
                     },
                     "xdm:agentEmail": {
                       "title": "Agent Email",
                       "type": "string",
-                      "description": "Email of the Agent."
+                      "description": "Email of the Agent.",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:agentEmail##title##80431",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:agentEmail##description##50011"
                     },
                     "xdm:agentName": {
                       "title": "Agent Name",
                       "type": "string",
-                      "description": "Name of the Agent."
+                      "description": "Name of the Agent.",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:agentName##title##19761",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:agentName##description##81251"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-agent-in-dialog##xdm:agentDetails##title##29641"
                 },
                 "xdm:conversationDetails": {
                   "title": "Conversation Details",
@@ -57,17 +64,23 @@
                     "xdm:status": {
                       "title": "Status",
                       "type": "string",
-                      "description": "The status of the dialogue session (e.g., Completed)."
+                      "description": "The status of the dialogue session (e.g., Completed).",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:status##title##46891",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:status##description##40761"
                     },
                     "xdm:summary": {
                       "title": "Summary",
                       "type": "string",
-                      "description": "A brief summary of the dialogue conversation."
+                      "description": "A brief summary of the dialogue conversation.",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:summary##title##62431",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:summary##description##74261"
                     },
                     "xdm:transcript": {
                       "title": "Transcript",
                       "type": "string",
-                      "description": "Transcript of the chat conversation."
+                      "description": "Transcript of the chat conversation.",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:transcript##title##85741",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:transcript##description##61201"
                     },
                     "xdm:discussedTopics": {
                       "title": "Discussed Topics",
@@ -75,9 +88,12 @@
                       "items": {
                         "type": "string"
                       },
-                      "description": "Topics discussed during the dialogue session."
+                      "description": "Topics discussed during the dialogue session.",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:discussedTopics##title##68531",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:discussedTopics##description##51311"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-agent-in-dialog##xdm:conversationDetails##title##80681"
                 },
                 "xdm:dialogueDetails": {
                   "title": "Dialogue Details",
@@ -86,28 +102,39 @@
                     "xdm:dialogueID": {
                       "title": "Dialogue ID",
                       "type": "string",
-                      "description": "Unique Identifier for a Dialogue."
+                      "description": "Unique Identifier for a Dialogue.",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:dialogueID##title##96611",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:dialogueID##description##56841"
                     },
                     "xdm:dialogueName": {
                       "title": "Dialogue Name",
                       "type": "string",
-                      "description": "Name of the Dialogue."
+                      "description": "Name of the Dialogue.",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:dialogueName##title##86881",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:dialogueName##description##64931"
                     },
                     "xdm:pageURL": {
                       "title": "Page URL",
                       "type": "string",
-                      "description": "URL of the page where the dialogue is initiated."
+                      "description": "URL of the page where the dialogue is initiated.",
+                      "meta:titleId": "engaged-with-agent-in-dialog##xdm:pageURL##title##74171",
+                      "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:pageURL##description##89711"
                     }
-                  }
+                  },
+                  "meta:titleId": "engaged-with-agent-in-dialog##xdm:dialogueDetails##title##50351"
                 },
                 "xdm:dialogueKey": {
                   "title": "Dialogue Key",
                   "description": "Key of the dialogue.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "engaged-with-agent-in-dialog##xdm:dialogueKey##title##89811",
+                  "meta:descriptionId": "engaged-with-agent-in-dialog##xdm:dialogueKey##description##78001"
                 }
-              }
+              },
+              "meta:titleId": "engaged-with-agent-in-dialog##xdm:agentInDialogue##title##84751"
             }
-          }
+          },
+          "meta:titleId": "engaged-with-agent-in-dialog##xdm:engagement##title##19571"
         }
       }
     }
@@ -118,5 +145,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-10"
+  "meta:createdDate": "2025-01-10",
+  "meta:titleId": "engaged-with-agent-in-dialog##title##37521",
+  "meta:descriptionId": "engaged-with-agent-in-dialog##description##12451"
 }

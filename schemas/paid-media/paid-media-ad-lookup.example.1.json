@@ -1,0 +1,113 @@
+{
+  "xdm:entityType": "ad",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:campaignID": "23851234567890789",
+    "xdm:campaignGUID": "meta_act_123456789012345_23851234567890789",
+    "xdm:adGroupID": "23851234567890456",
+    "xdm:adGroupGUID": "meta_act_123456789012345_23851234567890456",
+    "xdm:adID": "23851234567890124",
+    "xdm:adGUID": "meta_act_123456789012345_23851234567890124",
+    "xdm:experienceID": "creative_img_456789123",
+    "xdm:experienceGUID": "meta_act_123456789012345_creative_img_456789123",
+    "xdm:hierarchyPath": "act_123456789012345/23851234567890789/23851234567890456/23851234567890124",
+    "xdm:metadata": {
+      "xdm:name": "Holiday Sale - Hero Banner Image Ad",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:createdTime": "2025-11-01T10:00:00Z",
+      "xdm:updatedTime": "2025-11-09T11:00:00Z"
+    },
+    "xdm:adDetails": {
+      "xdm:adType": "image",
+      "xdm:creative": {
+        "xdm:paidMediaCreative": {
+          "xdm:creativeID": "creative_img_456789123",
+          "xdm:creativeType": "image",
+          "xdm:title": "Holiday Sale - Up to 50% Off Everything",
+          "xdm:body": "Shop our biggest holiday sale of the year. Free shipping on orders over $50. Limited time offer.",
+          "xdm:callToAction": "Shop Now",
+          "xdm:destinationURL": "https://shop.acmecorp.com/holiday-sale?utm_source=facebook&utm_medium=image&utm_campaign=holiday2025",
+          "xdm:displayURL": "https://shop.acmecorp.com/holiday-sale",
+          "xdm:trackingURLs": [
+            {
+              "xdm:eventType": "impression",
+              "xdm:url": "https://track.acmecorp.com/impression?ad=img_456789123"
+            },
+            {
+              "xdm:eventType": "click",
+              "xdm:url": "https://track.acmecorp.com/click?ad=img_456789123"
+            }
+          ],
+          "xdm:assets": [
+            {
+              "xdm:assetID": "asset_hero_banner_001",
+              "xdm:assetType": "image",
+              "xdm:name": "Holiday Sale Hero Banner 1200x628",
+              "xdm:url": "https://cdn.acmecorp.com/ads/holiday-sale-hero-1200x628.jpg",
+              "xdm:thumbnailURL": "https://cdn.acmecorp.com/ads/holiday-sale-hero-thumb.jpg",
+              "xdm:dimensions": {
+                "xdm:width": 1200,
+                "xdm:height": 628
+              },
+              "xdm:fileSize": 245000,
+              "xdm:hash": "abc123def456ghi789jkl012"
+            }
+          ]
+        }
+      },
+      "xdm:reviewStatus": "approved",
+      "xdm:deliveryStatus": "active",
+      "xdm:isPinDeleted": false,
+      "xdm:isRemovable": true,
+      "xdm:payingAdvertiserName": "Acme Corp",
+      "xdm:socialMediaProperties": {
+        "xdm:effectiveObjectStoryID": "page_acmecorp_official_post_987654322",
+        "xdm:sourceInstagramMediaID": "ig_media_112233445566",
+        "xdm:isShareable": true
+      },
+      "xdm:urlTracking": {
+        "xdm:trackingTemplate": "https://track.acmecorp.com/click?ad={ad_id}&placement={placement}",
+        "xdm:finalUrlSuffix": "utm_source=facebook&utm_medium=image&utm_campaign=holiday2025",
+        "xdm:customParameters": [
+          {
+            "xdm:key": "utm_content",
+            "xdm:value": "hero_banner"
+          },
+          {
+            "xdm:key": "utm_term",
+            "xdm:value": "holiday_sale"
+          }
+        ]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_ad_id",
+          "xdm:stringValue": "23851234567890124"
+        },
+        {
+          "xdm:fieldName": "meta_image_hash",
+          "xdm:stringValue": "abc123def456ghi789jkl012"
+        },
+        {
+          "xdm:fieldName": "meta_placement_optimization",
+          "xdm:stringValue": "automatic"
+        },
+        {
+          "xdm:fieldName": "meta_objective",
+          "xdm:stringValue": "OUTCOME_TRAFFIC"
+        },
+        {
+          "xdm:fieldName": "meta_buying_type",
+          "xdm:stringValue": "AUCTION"
+        },
+        {
+          "xdm:fieldName": "meta_bid_strategy",
+          "xdm:stringValue": "LOWEST_COST_WITHOUT_CAP"
+        }
+      ]
+    }
+  }
+}

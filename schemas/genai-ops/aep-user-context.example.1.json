@@ -1,0 +1,15 @@
+{
+  "xdm:user": {
+    "xdm:id": "user-12345-abcdef"
+  },
+  "xdm:adobe": {
+    "xdm:userPermissions": {
+      "canReadData": true,
+      "canWriteData": false,
+      "canDeleteData": false,
+      "canManageUsers": true,
+      "canAccessAnalytics": true,
+      "canExportData": false
+    }
+  }
+}

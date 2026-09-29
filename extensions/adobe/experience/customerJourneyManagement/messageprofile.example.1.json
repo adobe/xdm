@@ -1,12 +1,18 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf95",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID": "5319c886-def4-57c3-bff3-8dbaf053df97",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileTrackingID": "3218b775-bef3-46b2-aee2-7caae052cf96",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/email"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/sendTimeOptimizationType": 1,
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/optimizedSendTime": "2026-08-06T14:30:00.000Z",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/entryCount": 1,
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionID": "123456",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionName": "Booking",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92",

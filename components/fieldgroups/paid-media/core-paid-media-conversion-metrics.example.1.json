@@ -1,0 +1,53 @@
+{
+  "xdm:paidMedia": {
+    "xdm:conversionMetrics": {
+      "xdm:postClickConversions": 1250,
+      "xdm:postViewConversions": 385,
+      "xdm:postEngagementConversions": 125,
+      "xdm:conversionsByType": {
+        "xdm:purchases": 875,
+        "xdm:addToCart": 2340,
+        "xdm:initiateCheckout": 1450,
+        "xdm:leads": 245,
+        "xdm:registrations": 180,
+        "xdm:downloads": 320,
+        "xdm:subscriptions": 95,
+        "xdm:customEvents": 125,
+        "xdm:addPaymentInfo": 1120,
+        "xdm:search": 3400,
+        "xdm:viewContent": 8950,
+        "xdm:landingPageView": 2200
+      },
+      "xdm:conversionRate": 0.0352,
+      "xdm:conversionRateUncapped": 1.18,
+      "xdm:costPerAction": 10.23,
+      "xdm:conversionLag": 8.3,
+      "xdm:conversionPath": {
+        "xdm:averagePathLength": 4.2,
+        "xdm:medianPathLength": 3,
+        "xdm:singleTouchConversions": 180,
+        "xdm:multiTouchConversions": 1580,
+        "xdm:averageTouchpoints": 4.2,
+        "xdm:assistedConversions": 890,
+        "xdm:directConversions": 870
+      },
+      "xdm:assistedConversions": 890,
+      "xdm:directConversions": 870,
+      "xdm:newCustomerConversions": 625,
+      "xdm:returningCustomerConversions": 1135,
+      "xdm:averageOrderValue": 214.29,
+      "xdm:totalOrderValue": 187500,
+      "xdm:conversionQuality": {
+        "xdm:qualityScore": 8.2,
+        "xdm:fraudRate": 0.012,
+        "xdm:validationRate": 0.965
+      },
+      "xdm:leads": 245,
+      "xdm:qualifiedLeads": 185,
+      "xdm:costPerLead": 73.47,
+      "xdm:leadFormOpens": 890,
+      "xdm:leadFormSubmissions": 245,
+      "xdm:leadFormCompletionRate": 0.275
+    }
+  }
+}

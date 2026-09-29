@@ -76,7 +76,14 @@
                     },
                     "description": "Tracks the type of connection type for the subscription.",
                     "meta:titleId": "profile-telecom-subscription##xdm:connectionType##title##41901",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:connectionType##description##13601"
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:connectionType##description##13601",
+                    "meta:enumId": {
+                      "cable": "profile-telecom-subscription##xdm:connectionType##meta:enum##cable##91271",
+                      "dsl": "profile-telecom-subscription##xdm:connectionType##meta:enum##dsl##40621",
+                      "fiber": "profile-telecom-subscription##xdm:connectionType##meta:enum##fiber##13931",
+                      "mobile": "profile-telecom-subscription##xdm:connectionType##meta:enum##mobile##83081",
+                      "satellite": "profile-telecom-subscription##xdm:connectionType##meta:enum##satellite##3881"
+                    }
                   },
                   "xdm:downloadSpeed": {
                     "title": "Download Speed",

@@ -29,67 +29,93 @@
                 "xdm:mortgageAssumptionAmountFromDeed": {
                   "type": "number",
                   "title": "FD020-MortgageAssumptionAmountfromDeed",
-                  "description": "Assumption amount related to existing mortgage"
+                  "description": "Assumption amount related to existing mortgage",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:mortgageAssumptionAmountFromDeed##title##75851",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:mortgageAssumptionAmountFromDeed##description##66691"
                 },
                 "xdm:totalValueCalculated": {
                   "type": "number",
                   "title": "FT008-TotalValueCalculated",
-                  "description": "The Land and Improvement Value closest to current market value used for assessment by county or local taxing authorities  (in single dollar units)."
+                  "description": "The Land and Improvement Value closest to current market value used for assessment by county or local taxing authorities  (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:totalValueCalculated##title##23951",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:totalValueCalculated##description##61891"
                 },
                 "xdm:totalValueCalculatedInd": {
                   "type": "string",
                   "title": "FT011-TotalValueCalculatedInd",
-                  "description": "The indicator of the type of values used to seed the TOTAL VALUE CALCULATED field."
+                  "description": "The indicator of the type of values used to seed the TOTAL VALUE CALCULATED field.",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:totalValueCalculatedInd##title##42891",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:totalValueCalculatedInd##description##65761"
                 },
                 "xdm:assdTotalValue": {
                   "type": "number",
                   "title": "FT014-AssdTotalValue",
-                  "description": "The Assessed Total Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                  "description": "The Assessed Total Value as provided by the county or local taxing/assessment authority (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:assdTotalValue##title##64931",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:assdTotalValue##description##8691"
                 },
                 "xdm:assdLandValue": {
                   "type": "number",
                   "title": "FT015-AssdLandValue",
-                  "description": "The Assessed Land Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                  "description": "The Assessed Land Value as provided by the county or local taxing/assessment authority (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:assdLandValue##title##30341",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:assdLandValue##description##62351"
                 },
                 "xdm:assdImprovementValue": {
                   "type": "number",
                   "title": "FT016-AssdImprovementValue",
-                  "description": "The Assessed Improvement Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                  "description": "The Assessed Improvement Value as provided by the county or local taxing/assessment authority (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:assdImprovementValue##title##36691",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:assdImprovementValue##description##76531"
                 },
                 "xdm:marketTotalValue": {
                   "type": "number",
                   "title": "FT017-MarketTotalValue",
-                  "description": "The Total Market Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                  "description": "The Total Market Value as provided by the county or local taxing/assessment authority (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:marketTotalValue##title##11441",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:marketTotalValue##description##87871"
                 },
                 "xdm:marketLandValue": {
                   "type": "number",
                   "title": "FT018-MarketLandValue",
-                  "description": "The Market Land Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                  "description": "The Market Land Value as provided by the county or local taxing/assessment authority (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:marketLandValue##title##87911",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:marketLandValue##description##4811"
                 },
                 "xdm:marketImprovementValue": {
                   "type": "number",
                   "title": "FT019-MarketImprovementValue",
-                  "description": "The Market Improvement Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                  "description": "The Market Improvement Value as provided by the county or local taxing/assessment authority (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:marketImprovementValue##title##70681",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:marketImprovementValue##description##89371"
                 },
                 "xdm:apprTotalValue": {
                   "type": "number",
                   "title": "FT020-ApprTotalValue",
-                  "description": "The Appraised Total Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                  "description": "The Appraised Total Value as provided by the county or local taxing/assessment authority (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:apprTotalValue##title##24091",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:apprTotalValue##description##13501"
                 },
                 "xdm:apprLandValue": {
                   "type": "number",
                   "title": "FT021-ApprLandValue",
-                  "description": "The Appraised Land Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                  "description": "The Appraised Land Value as provided by the county or local taxing/assessment authority (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:apprLandValue##title##66771",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:apprLandValue##description##83231"
                 },
                 "xdm:apprImprovementValue": {
                   "type": "number",
                   "title": "FT022-ApprImprovementValue",
-                  "description": "The Appraised Improvement Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                  "description": "The Appraised Improvement Value as provided by the county or local taxing/assessment authority (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:apprImprovementValue##title##65261",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:apprImprovementValue##description##71691"
                 },
                 "xdm:taxYear": {
                   "type": "integer",
                   "title": "FT024-TaxYear",
-                  "description": "The tax or assessment year for which the taxes were billed."
+                  "description": "The tax or assessment year for which the taxes were billed.",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:taxYear##title##13661",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:taxYear##description##53661"
                 }
               }
             },
@@ -99,42 +125,58 @@
                 "xdm:lenderLastName": {
                   "type": "string",
                   "title": "FD006-LenderLastName",
-                  "description": "Name of Lender as recorded on original document"
+                  "description": "Name of Lender as recorded on original document",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:lenderLastName##title##44821",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:lenderLastName##description##38161"
                 },
                 "xdm:lenderFirstName": {
                   "type": "string",
                   "title": "FD007-LenderFirstName",
-                  "description": "May be first name if lender is private party"
+                  "description": "May be first name if lender is private party",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:lenderFirstName##title##99941",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:lenderFirstName##description##94931"
                 },
                 "xdm:lenderAddress": {
                   "type": "string",
                   "title": "FD008-LenderAddress",
-                  "description": "Number and street of Lender as recorded on Deed document"
+                  "description": "Number and street of Lender as recorded on Deed document",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:lenderAddress##title##76901",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:lenderAddress##description##83201"
                 },
                 "xdm:lenderCity": {
                   "type": "string",
                   "title": "FD009-LenderCity",
-                  "description": "City location of Lender"
+                  "description": "City location of Lender",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:lenderCity##title##91681",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:lenderCity##description##35071"
                 },
                 "xdm:lenderState": {
                   "type": "string",
                   "title": "FD010-LenderState",
-                  "description": "State location of Lender standardized as two letter USPS abbreviation"
+                  "description": "State location of Lender standardized as two letter USPS abbreviation",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:lenderState##title##51611",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:lenderState##description##92341"
                 },
                 "xdm:lenderZIP": {
                   "type": "string",
                   "title": "FD011-LenderZIP",
-                  "description": "5-digit USPS AIP code location of Lender"
+                  "description": "5-digit USPS AIP code location of Lender",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:lenderZIP##title##15011",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:lenderZIP##description##37131"
                 },
                 "xdm:lenderZIP4": {
                   "type": "string",
                   "title": "FD012-LenderZIP4",
-                  "description": "Last 4 digits of 9-digit USPS ZIP code location of Lender"
+                  "description": "Last 4 digits of 9-digit USPS ZIP code location of Lender",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:lenderZIP4##title##8151",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:lenderZIP4##description##56571"
                 },
                 "xdm:sellerCarryBack": {
                   "type": "string",
                   "title": "FD029-SellerCarryBack",
-                  "description": "Indicator showing Seller carried mortgage"
+                  "description": "Indicator showing Seller carried mortgage",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:sellerCarryBack##title##49741",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:sellerCarryBack##description##60401"
                 }
               }
             },
@@ -144,54 +186,74 @@
                 "xdm:addChangeField": {
                   "type": "string",
                   "title": "FD036-Add/ChangeField",
-                  "description": "Indicator showing if record is a new record or changed older record"
+                  "description": "Indicator showing if record is a new record or changed older record",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:addChangeField##title##24401",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:addChangeField##description##51031"
                 },
                 "xdm:mortgageIntRate": {
                   "type": "number",
                   "title": "FD049-MortgageIntRate",
-                  "description": "Interest rate on mortgage (with 3 decimals)"
+                  "description": "Interest rate on mortgage (with 3 decimals)",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:mortgageIntRate##title##4111",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:mortgageIntRate##description##46111"
                 },
                 "xdm:ownerCorporateIndicator": {
                   "type": "string",
                   "title": "FT005-OwnerCorporateIndicator",
-                  "description": "The Name of the property owner has been recognized as a corporation or business"
+                  "description": "The Name of the property owner has been recognized as a corporation or business",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:ownerCorporateIndicator##title##59081",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:ownerCorporateIndicator##description##49861"
                 },
                 "xdm:mortgageDueDate": {
                   "type": "string",
                   "format": "date-time",
                   "title": "FT036-MortgageDueDate",
-                  "description": "The date the mortgage amount becomes due."
+                  "description": "The date the mortgage amount becomes due.",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:mortgageDueDate##title##23811",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:mortgageDueDate##description##67241"
                 },
                 "xdm:mortgageAssumptionAmountFromTaxAssessor": {
                   "type": "number",
                   "title": "FT037-MortgageAssumptionAmountfromTaxAssessor",
-                  "description": "The assumption amount related to an existing mortgage (in single dollar units)."
+                  "description": "The assumption amount related to an existing mortgage (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:mortgageAssumptionAmountFromTaxAssessor##title##63761",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:mortgageAssumptionAmountFromTaxAssessor##description##4971"
                 },
                 "xdm:priorSalesDeedCategoryType": {
                   "type": "string",
                   "title": "FT043-PriorSalesDeedCategoryType",
-                  "description": "The type of deed used to record the prior sales transaction"
+                  "description": "The type of deed used to record the prior sales transaction",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:priorSalesDeedCategoryType##title##66171",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:priorSalesDeedCategoryType##description##65481"
                 },
                 "xdm:priorSaleDate": {
                   "type": "string",
                   "format": "date-time",
                   "title": "FT044-PriorSaleDate",
-                  "description": "The date the sales transaction was legally completed"
+                  "description": "The date the sales transaction was legally completed",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:priorSaleDate##title##9061",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:priorSaleDate##description##84611"
                 },
                 "xdm:priorSalePrice": {
                   "type": "number",
                   "title": "FT045-PriorSalePrice",
-                  "description": "Price of the sale as depicted on the recorded sales transaction (in single dollar units)."
+                  "description": "Price of the sale as depicted on the recorded sales transaction (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:priorSalePrice##title##99101",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:priorSalePrice##description##53631"
                 },
                 "xdm:priorSaleCode": {
                   "type": "string",
                   "title": "FT046-PriorSaleCode",
-                  "description": "This field indicates the type of financial consideration"
+                  "description": "This field indicates the type of financial consideration",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:priorSaleCode##title##97351",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:priorSaleCode##description##24761"
                 },
                 "xdm:priorMortgageAmount": {
                   "type": "number",
                   "title": "FT047-PriorMortgageAmount",
-                  "description": "The amount associated with the mortgage of the prior sale (in single dollar units)."
+                  "description": "The amount associated with the mortgage of the prior sale (in single dollar units).",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:priorMortgageAmount##title##36701",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:priorMortgageAmount##description##60351"
                 }
               }
             },
@@ -201,46 +263,64 @@
                 "xdm:residentialModelIndicator": {
                   "type": "string",
                   "title": "FD014-ResidentialModelIndicator",
-                  "description": "Indicator of residential property based on zip code and value"
+                  "description": "Indicator of residential property based on zip code and value",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:residentialModelIndicator##title##72511",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:residentialModelIndicator##description##84741"
                 },
                 "xdm:numberOfBuildings": {
                   "type": "integer",
                   "title": "FT004-NumberofBuildings",
-                  "description": "Total number of buildings on the parcel (with no implied decimals)"
+                  "description": "Total number of buildings on the parcel (with no implied decimals)",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:numberOfBuildings##title##53931",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:numberOfBuildings##description##20511"
                 },
                 "xdm:buildingLdgImpvCode": {
                   "type": "string",
                   "title": "FT056-BuildingldgImpvCode",
-                  "description": "The primary improvement type"
+                  "description": "The primary improvement type",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:buildingLdgImpvCode##title##24961",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:buildingLdgImpvCode##description##16141"
                 },
                 "xdm:condition": {
                   "type": "string",
                   "title": "FT057-Condition",
-                  "description": "The physical condition of the premises improvement"
+                  "description": "The physical condition of the premises improvement",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:condition##title##96451",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:condition##description##57501"
                 },
                 "xdm:garage": {
                   "type": "string",
                   "title": "FT060-Garage",
-                  "description": "Type of garage or carport present"
+                  "description": "Type of garage or carport present",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:garage##title##39981",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:garage##description##72961"
                 },
                 "xdm:mobileHomeInd": {
                   "type": "string",
                   "title": "FT061-MobileHomeInd",
-                  "description": "The indicator of Mobile Home's presence on the parcel."
+                  "description": "The indicator of Mobile Home's presence on the parcel.",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:mobileHomeInd##title##62151",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:mobileHomeInd##description##49171"
                 },
                 "xdm:parkingSpaces": {
                   "type": "integer",
                   "title": "FT062-ParkingSpaces",
-                  "description": "The total number of Parking Spaces or Car Capacity associated with the Garage or Parking type."
+                  "description": "The total number of Parking Spaces or Car Capacity associated with the Garage or Parking type.",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:parkingSpaces##title##33181",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:parkingSpaces##description##64261"
                 },
                 "xdm:style": {
                   "type": "string",
                   "title": "FT065-Style",
-                  "description": "Type of building style"
+                  "description": "Type of building style",
+                  "meta:titleId": "prospect-details-merkle-corelogic##xdm:style##title##19341",
+                  "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:style##description##27111"
                 }
               }
             }
-          }
+          },
+          "meta:titleId": "prospect-details-merkle-corelogic##xdm:merkle##title##42181",
+          "meta:descriptionId": "prospect-details-merkle-corelogic##xdm:merkle##description##48411"
         }
       }
     }
@@ -250,5 +330,7 @@
       "$ref": "#/definitions/merkle-corelogic"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "prospect-details-merkle-corelogic##title##45401",
+  "meta:descriptionId": "prospect-details-merkle-corelogic##description##67581"
 }

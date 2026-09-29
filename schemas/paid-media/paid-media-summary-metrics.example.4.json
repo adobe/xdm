@@ -1,0 +1,109 @@
+{
+  "xdm:timestamp": "2025-11-09T00:00:00Z",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_987654321098765",
+    "xdm:accountGUID": "meta_act_987654321098765",
+    "xdm:campaignID": "23859876543210456",
+    "xdm:campaignGUID": "meta_23859876543210456",
+    "xdm:adGroupID": "23859876543210789",
+    "xdm:adGroupGUID": "meta_23859876543210789",
+    "xdm:adID": "23859876543210123",
+    "xdm:adGUID": "meta_23859876543210123",
+    "xdm:hierarchyPath": "act_987654321098765/23859876543210456/23859876543210789/23859876543210123",
+    "xdm:channel": "PaidMedia",
+    "xdm:metrics": {
+      "xdm:impressions": 85000,
+      "xdm:clicks": 2550,
+      "xdm:reach": 62000,
+      "xdm:frequency": 1.37,
+      "xdm:spend": 1700.0,
+      "xdm:conversions": 102,
+      "xdm:conversionValue": 5100.0,
+      "xdm:ctr": 0.03,
+      "xdm:cpc": 0.67,
+      "xdm:cpm": 20.0,
+      "xdm:costPerConversion": 16.67,
+      "xdm:roas": 3.0,
+      "xdm:videoViews": 68000,
+      "xdm:videoCompletions": 25500,
+      "xdm:engagements": 10200,
+      "xdm:engagementRate": 0.12,
+      "xdm:additionalMetrics": [
+        {
+          "xdm:metricName": "purchases_1d_click",
+          "xdm:metricValue": 58,
+          "xdm:metricType": "attribution"
+        },
+        {
+          "xdm:metricName": "purchases_7d_click",
+          "xdm:metricValue": 85,
+          "xdm:metricType": "attribution"
+        },
+        {
+          "xdm:metricName": "purchases_1d_view",
+          "xdm:metricValue": 17,
+          "xdm:metricType": "attribution"
+        }
+      ]
+    },
+    "xdm:dimensionalBreakdowns": {
+      "xdm:deviceType": "mobile",
+      "xdm:placement": "reels",
+      "xdm:platform": "instagram",
+      "xdm:ageGroup": "18-34",
+      "xdm:gender": "all",
+      "xdm:country": "US",
+      "xdm:creativeFormat": "video"
+    },
+    "xdm:extendedMetrics": {
+      "xdm:likes": 5100,
+      "xdm:comments": 1020,
+      "xdm:shares": 2550,
+      "xdm:saves": 1530,
+      "xdm:linkClicks": 2550,
+      "xdm:outboundClicks": 2380,
+      "xdm:uniqueClicks": 2295
+    },
+    "xdm:videoMetrics": {
+      "xdm:videoPlays": 85000,
+      "xdm:video3SecViews": 72250,
+      "xdm:video15SecViews": 51000,
+      "xdm:videoQuartile1": 63750,
+      "xdm:videoQuartile2": 42500,
+      "xdm:videoQuartile3": 34000,
+      "xdm:videoCompletions": 25500,
+      "xdm:videoCompletionRate": 0.3,
+      "xdm:videoThroughplayViews": 51000,
+      "xdm:averageVideoWatchTime": 12.4,
+      "xdm:totalVideoWatchTime": 1054000,
+      "xdm:videoSkips": 8500,
+      "xdm:videoSkipRate": 0.1,
+      "xdm:videoReplays": 4250,
+      "xdm:videoPauses": 6800,
+      "xdm:videoResumes": 5100,
+      "xdm:videoMutes": 3400,
+      "xdm:videoUnmutes": 1700
+    },
+    "xdm:costMetrics": {
+      "xdm:averageCpc": 0.67,
+      "xdm:averageCpm": 20.0,
+      "xdm:averageCpa": 16.67,
+      "xdm:averageCpv": 0.025
+    },
+    "xdm:attributionMetrics": {
+      "xdm:attributionModel": "LAST_CLICK",
+      "xdm:clickAttributionWindow": "7_DAY",
+      "xdm:viewAttributionWindow": "1_DAY"
+    },
+    "xdm:qualityMetrics": {
+      "xdm:overallQualityScore": 8.2,
+      "xdm:relevanceScore": 8.5,
+      "xdm:engagementScore": 9.0,
+      "xdm:conversionScore": 7.8,
+      "xdm:attentionScore": 8.0,
+      "xdm:creativeFatigue": 1.5,
+      "xdm:qualityTrend": "improving"
+    }
+  }
+}

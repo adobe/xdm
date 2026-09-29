@@ -1,0 +1,124 @@
+{
+  "xdm:entityType": "adgroup",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:campaignID": "20123456789",
+    "xdm:campaignGUID": "google_ads_1234567890_20123456789",
+    "xdm:adGroupID": "7777888899",
+    "xdm:adGroupGUID": "google_ads_1234567890_7777888899",
+    "xdm:hierarchyPath": "1234567890/20123456789/7777888899",
+    "xdm:metadata": {
+      "xdm:name": "Holiday Deals - PMax Asset Group A",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:currency": "USD",
+      "xdm:timezone": "America/Los_Angeles",
+      "xdm:createdTime": "2025-10-01T08:00:00Z",
+      "xdm:updatedTime": "2025-11-09T12:00:00Z",
+      "xdm:startTime": "2025-11-01T00:00:00Z",
+      "xdm:endTime": "2025-12-31T23:59:59Z",
+      "xdm:objective": "conversions",
+      "xdm:biddingStrategy": "maximize_conversion_value",
+      "xdm:optimizationGoal": "MAXIMIZE_CONVERSION_VALUE"
+    },
+    "xdm:adGroupDetails": {
+      "xdm:adGroupType": "performance_max_asset_group",
+      "xdm:budgetSettings": {
+        "xdm:bidStrategyType": "maximize_conversion_value",
+        "xdm:targetRoas": 4.0,
+        "xdm:roasValueMicro": 4000000
+      },
+      "xdm:targeting": {
+        "xdm:geoTargeting": {
+          "xdm:countries": ["US", "CA"],
+          "xdm:regions": [
+            "California",
+            "New York",
+            "Texas",
+            "Ontario",
+            "British Columbia"
+          ]
+        },
+        "xdm:demographicTargeting": {
+          "xdm:ageRanges": [
+            {
+              "xdm:minAge": 25,
+              "xdm:maxAge": 65
+            }
+          ],
+          "xdm:genders": ["all"],
+          "xdm:languages": ["en"]
+        },
+        "xdm:interestTargeting": {
+          "xdm:interests": ["Shopping", "Electronics", "Holiday gifts"],
+          "xdm:customAudiences": [
+            {
+              "xdm:audienceID": "remarketing_past_purchasers",
+              "xdm:audienceName": "Past Purchasers - 180 Days",
+              "xdm:audienceType": "retargeting"
+            }
+          ]
+        },
+        "xdm:deviceTargeting": {
+          "xdm:deviceTypes": ["mobile", "desktop", "tablet"]
+        }
+      },
+      "xdm:optimizationSettings": {
+        "xdm:isAutoTargetingEnabled": true,
+        "xdm:isCampaignOptimization": true
+      },
+      "xdm:placementSettings": {
+        "xdm:placementGroup": "performance_max",
+        "xdm:placements": [
+          "google_search",
+          "google_display",
+          "youtube",
+          "gmail",
+          "discover",
+          "maps"
+        ],
+        "xdm:deviceTypes": ["mobile", "desktop", "tablet"]
+      },
+      "xdm:deliverySettings": {
+        "xdm:pacingDeliveryType": "standard",
+        "xdm:deliveryStatus": "active"
+      },
+      "xdm:trackingSettings": {
+        "xdm:measurementProviderNames": ["Google Analytics"],
+        "xdm:eventSources": ["google_ads_conversion_tag"],
+        "xdm:urlTracking": {
+          "xdm:trackingTemplate": "{lpurl}?s_kwcid=AL!{userid}!3!{creative}!pmax!{placement}!{network}",
+          "xdm:finalUrlSuffix": "gclid={gclid}&utm_source=google&utm_medium=pmax&utm_campaign=holiday2025"
+        }
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_asset_group_id",
+          "xdm:stringValue": "7777888899"
+        },
+        {
+          "xdm:fieldName": "google_asset_group_status",
+          "xdm:stringValue": "ENABLED"
+        },
+        {
+          "xdm:fieldName": "google_campaign_type",
+          "xdm:stringValue": "PERFORMANCE_MAX"
+        },
+        {
+          "xdm:fieldName": "google_listing_group_filter_type",
+          "xdm:stringValue": "ALL_PRODUCTS"
+        },
+        {
+          "xdm:fieldName": "google_asset_group_primary_status",
+          "xdm:stringValue": "ELIGIBLE"
+        },
+        {
+          "xdm:fieldName": "google_asset_group_primary_status_reason",
+          "xdm:stringValue": "ASSET_GROUP_APPROVED"
+        }
+      ]
+    }
+  }
+}

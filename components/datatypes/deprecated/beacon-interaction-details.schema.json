@@ -47,7 +47,13 @@
             "unknown": "Not able to ascertain distance, signal likely very weak."
           },
           "meta:titleId": "beacon-interaction-details##xdm:proximity##title##25571",
-          "meta:descriptionId": "beacon-interaction-details##xdm:proximity##description##68591"
+          "meta:descriptionId": "beacon-interaction-details##xdm:proximity##description##68591",
+          "meta:enumId": {
+            "immediate": "beacon-interaction-details##xdm:proximity##meta:enum##immediate##21521",
+            "near": "beacon-interaction-details##xdm:proximity##meta:enum##near##53231",
+            "far": "beacon-interaction-details##xdm:proximity##meta:enum##far##74011",
+            "unknown": "beacon-interaction-details##xdm:proximity##meta:enum##unknown##35591"
+          }
         }
       }
     }

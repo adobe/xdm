@@ -39,6 +39,16 @@
             "addToJourney": "Added to Journey",
             "removeFromJourney": "Removed from Journey",
             "accountInterestingMoment": "Account Interesting Moment"
+          },
+          "meta:titleId": "account-activity##xdm:accountEventType##title##67361",
+          "meta:descriptionId": "account-activity##xdm:accountEventType##description##27921",
+          "meta:enumId": {
+            "system": "account-activity##xdm:accountEventType##meta:enum##system##48591",
+            "addToAccountList": "account-activity##xdm:accountEventType##meta:enum##addToAccountList##95601",
+            "removeFromAccountList": "account-activity##xdm:accountEventType##meta:enum##removeFromAccountList##16751",
+            "addToJourney": "account-activity##xdm:accountEventType##meta:enum##addToJourney##19141",
+            "removeFromJourney": "account-activity##xdm:accountEventType##meta:enum##removeFromJourney##12941",
+            "accountInterestingMoment": "account-activity##xdm:accountEventType##meta:enum##accountInterestingMoment##38491"
           }
         }
       }

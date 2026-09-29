@@ -1,0 +1,15 @@
+{
+  "xdm:semanticSignal": {
+    "xdm:name": "gluten_free",
+    "xdm:group": "dietary_preferences",
+    "xdm:score": 0.82,
+    "xdm:strength": "high",
+    "xdm:channel": {
+      "@id": "https://ns.adobe.com/xdm/channels/web",
+      "@type": "https://ns.adobe.com/xdm/channel-types/web"
+    },
+    "xdm:sourceId": "conv-8f3a1c",
+    "xdm:definitionVersion": "2026.01",
+    "xdm:extractionModelVersion": "sps-extract-1.4.0"
+  }
+}

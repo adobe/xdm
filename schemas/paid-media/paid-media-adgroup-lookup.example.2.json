@@ -1,0 +1,134 @@
+{
+  "xdm:entityType": "adgroup",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:campaignID": "9876543210",
+    "xdm:campaignGUID": "google_ads_1234567890_9876543210",
+    "xdm:adGroupID": "5555666677",
+    "xdm:adGroupGUID": "google_ads_1234567890_5555666677",
+    "xdm:hierarchyPath": "1234567890/9876543210/5555666677",
+    "xdm:metadata": {
+      "xdm:name": "Tech Professionals - Responsive Search",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:createdTime": "2025-09-15T10:00:00Z",
+      "xdm:updatedTime": "2025-11-09T09:00:00Z"
+    },
+    "xdm:adGroupDetails": {
+      "xdm:adGroupType": "standard",
+      "xdm:childAdType": "responsive_search",
+      "xdm:budgetSettings": {
+        "xdm:bidInMicroCurrency": 5000000,
+        "xdm:bidStrategyType": "target_cpa",
+        "xdm:targetCpa": 25.0
+      },
+      "xdm:targeting": {
+        "xdm:geoTargeting": {
+          "xdm:countries": ["US"],
+          "xdm:regions": ["US-NY", "US-CA", "US-MA", "US-WA"],
+          "xdm:cities": ["New York", "San Francisco", "Boston", "Seattle"]
+        },
+        "xdm:demographicTargeting": {
+          "xdm:ageRanges": [
+            {
+              "xdm:minAge": 25,
+              "xdm:maxAge": 65
+            }
+          ],
+          "xdm:genders": ["all"],
+          "xdm:languages": ["en"]
+        },
+        "xdm:interestTargeting": {
+          "xdm:interests": [
+            "Technology & Computing",
+            "Business & Industrial",
+            "Software"
+          ],
+          "xdm:customAudiences": [
+            {
+              "xdm:audienceID": "remarketing_website_visitors",
+              "xdm:audienceName": "Remarketing - Website Visitors",
+              "xdm:audienceType": "retargeting"
+            },
+            {
+              "xdm:audienceID": "customer_match_list",
+              "xdm:audienceName": "Customer Match - CRM List",
+              "xdm:audienceType": "custom"
+            }
+          ]
+        },
+        "xdm:deviceTargeting": {
+          "xdm:deviceTypes": ["mobile", "desktop", "tablet"]
+        }
+      },
+      "xdm:optimizationSettings": {
+        "xdm:conversionWindow": "30d_click",
+        "xdm:isAutoTargetingEnabled": true,
+        "xdm:isCampaignOptimization": false
+      },
+      "xdm:placementSettings": {
+        "xdm:placementGroup": "search_network",
+        "xdm:placements": ["google_search", "search_partners"],
+        "xdm:deviceTypes": ["mobile", "desktop", "tablet"]
+      },
+      "xdm:deliverySettings": {
+        "xdm:pacingDeliveryType": "standard",
+        "xdm:deliveryStatus": "active"
+      },
+      "xdm:trackingSettings": {
+        "xdm:measurementProviderNames": ["Google Analytics"],
+        "xdm:eventSources": ["google_ads_conversion_tag"],
+        "xdm:urlTracking": {
+          "xdm:trackingTemplate": "{lpurl}?s_kwcid=AL!{userid}!3!{creative}!{matchtype}!{placement}!{network}",
+          "xdm:finalUrlSuffix": "gclid={gclid}&utm_source=google&utm_medium=search",
+          "xdm:customParameters": [
+            {
+              "xdm:key": "campaignid",
+              "xdm:value": "{campaignid}"
+            },
+            {
+              "xdm:key": "adgroupid",
+              "xdm:value": "{adgroupid}"
+            },
+            {
+              "xdm:key": "keyword",
+              "xdm:value": "{keyword}"
+            }
+          ]
+        }
+      },
+      "xdm:brandSafetyConfig": {
+        "xdm:inventoryFilter": "standard",
+        "xdm:blockedCategories": ["mature_content"]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_ad_group_id",
+          "xdm:stringValue": "5555666677"
+        },
+        {
+          "xdm:fieldName": "google_ad_group_type",
+          "xdm:stringValue": "SEARCH_STANDARD"
+        },
+        {
+          "xdm:fieldName": "google_ad_group_status",
+          "xdm:stringValue": "ENABLED"
+        },
+        {
+          "xdm:fieldName": "google_target_cpa_micros",
+          "xdm:stringValue": "25000000"
+        },
+        {
+          "xdm:fieldName": "google_ad_rotation_mode",
+          "xdm:stringValue": "OPTIMIZE"
+        },
+        {
+          "xdm:fieldName": "google_effective_target_cpa_source",
+          "xdm:stringValue": "AD_GROUP"
+        }
+      ]
+    }
+  }
+}

@@ -35,6 +35,11 @@
               "description": "This field describes the Namespace referenced by the Profile used in the Journey. Present if the current step is running in the context of a unitary journey. E.g: Email, ECID ",
               "meta:titleId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileNamespace##title##17071",
               "meta:descriptionId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileNamespace##description##39081"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/supplementalID": {
+              "title": "Supplemental ID",
+              "type": "string",
+              "description": "Identity value corresponding to the supplemental namespace"
             }
           },
           "meta:titleId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##92061"

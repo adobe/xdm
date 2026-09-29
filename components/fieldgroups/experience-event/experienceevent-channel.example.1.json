@@ -1,6 +1,7 @@
 {
   "xdm:channel": {
     "@id": "https://ns.adobe.com/xdm/channels/apns",
-    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile",
+    "xdm:referringSource": "source1"
   }
 }

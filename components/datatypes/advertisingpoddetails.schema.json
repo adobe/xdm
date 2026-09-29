@@ -18,22 +18,30 @@
         "xdm:ID": {
           "title": "Ad Break ID",
           "type": "string",
-          "description": "The ID of the ad break."
+          "description": "The ID of the ad break.",
+          "meta:titleId": "advertisingPodDetails##xdm:ID##title##63321",
+          "meta:descriptionId": "advertisingPodDetails##xdm:ID##description##89591"
         },
         "xdm:friendlyName": {
           "title": "Pod Friendly Name",
           "type": "string",
-          "description": "The friendly name of the Ad Break."
+          "description": "The friendly name of the Ad Break.",
+          "meta:titleId": "advertisingPodDetails##xdm:friendlyName##title##23391",
+          "meta:descriptionId": "advertisingPodDetails##xdm:friendlyName##description##47911"
         },
         "xdm:index": {
           "title": "Ad In Pod Position (Ad Break Start)",
           "type": "integer",
-          "description": "The index of the ad inside the parent ad break start, for example, the first ad has index 0 and the second ad has index 1."
+          "description": "The index of the ad inside the parent ad break start, for example, the first ad has index 0 and the second ad has index 1.",
+          "meta:titleId": "advertisingPodDetails##xdm:index##title##65241",
+          "meta:descriptionId": "advertisingPodDetails##xdm:index##description##32391"
         },
         "xdm:offset": {
           "title": "Pod Offset",
           "type": "integer",
-          "description": "The offset of the ad break inside the content, in seconds."
+          "description": "The offset of the ad break inside the content, in seconds.",
+          "meta:titleId": "advertisingPodDetails##xdm:offset##title##20381",
+          "meta:descriptionId": "advertisingPodDetails##xdm:offset##description##14241"
         }
       },
       "required": []
@@ -43,5 +51,7 @@
     {
       "$ref": "#/definitions/advertisingPodDetails"
     }
-  ]
+  ],
+  "meta:titleId": "advertisingPodDetails##title##83661",
+  "meta:descriptionId": "advertisingPodDetails##description##161"
 }

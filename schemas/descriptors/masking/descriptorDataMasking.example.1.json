@@ -1,0 +1,13 @@
+{
+  "@type": "xdm:descriptorDataMasking",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-personal-details",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": "/personalEmail/address",
+  "xdm:dataMaskingFunction": {
+    "xdm:identifier": "REDACT_EMAIL",
+    "xdm:parameters": {
+      "redactChar": "*",
+      "defaultValue": "****@example.com"
+    }
+  }
+}

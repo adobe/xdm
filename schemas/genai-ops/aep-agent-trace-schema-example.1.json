@@ -1,0 +1,154 @@
+{
+  "context": {
+    "xdm": "ao-sdk-tracing",
+    "version": "1.0.0"
+  },
+  "@id": "https://example.com/agent-trace/12345678-1234-1234-1234-123456789012",
+  "xdm:timestamp": "2025-01-27T10:30:45.123Z",
+  "xdm:eventType": "genai.agent.trace",
+  "xdm:user": {
+    "xdm:id": "user-12345"
+  },
+  "xdm:adobe": {
+    "xdm:imsOrgId": "1234567890ABCDEF12345678@AdobeOrg",
+    "xdm:imsOrgName": "Adobe Experience Platform Demo",
+    "xdm:imsUserId": "user123@adobe.com",
+    "xdm:sandboxId": "prod-sandbox-001",
+    "xdm:sandboxName": "Production Sandbox",
+    "xdm:userPermissions": {
+      "read_analytics": true,
+      "write_segments": false,
+      "admin_access": true
+    },
+    "xdm:gen_ai": {
+      "xdm:conversationId": "conv_abc123def456",
+      "xdm:interactionId": "interaction_789xyz012",
+      "xdm:application": {
+        "xdm:userSurface": "web-dashboard",
+        "xdm:upstreamClient": "analytics-workspace-v2.1.0",
+        "xdm:pageName": "Customer Journey Analytics Dashboard",
+        "xdm:pageUrl": "https://analytics.adobe.com/workspace/projects/12345",
+        "xdm:dataview": {
+          "xdm:id": "dv_retail_analytics_2024",
+          "xdm:name": "Retail Analytics 2024"
+        },
+        "xdm:additionalAppContext": "project_id=proj_abc123, workspace_version=2.1.0"
+      },
+      "xdm:request": {
+        "xdm:function": {
+          "xdm:input": "{\"user_query\": \"Show me the top performing products last quarter\", \"filters\": [{\"dimension\": \"product_category\", \"operator\": \"equals\", \"value\": \"electronics\"}]}",
+          "xdm:output": "{\"top_products\": [\"product_A\", \"product_B\", \"product_C\"], \"total_revenue\": 1234567.89}"
+        },
+        "xdm:context": "{\"user_query\": \"Show me the top performing products last quarter\", \"filters\": [{\"dimension\": \"product_category\", \"operator\": \"equals\", \"value\": \"electronics\"}]}",
+        "xdm:message": "{\"text_part\": \"Analyze sales performance for electronics products in Q4 2024, focusing on revenue and conversion metrics\"}",
+        "xdm:aoInstanceId": "ao-instance-prod-001",
+        "xdm:copilotVersion": "v3.2.1",
+        "xdm:createdDate": "2025-01-27T10:30:00.000Z",
+        "xdm:isTestRequest": false,
+        "xdm:llmFamily": "gpt-4-turbo",
+        "xdm:releaseVersion": "2024.12.1",
+        "xdm:username": "john.analyst@company.com",
+        "xdm:featureFlags": "{\"advanced_analytics\": true, \"beta_visualizations\": false, \"ai_insights\": true}"
+      },
+      "xdm:agent": {
+        "xdm:execution": {
+          "xdm:decision": {
+            "xdm:type": "tool_selection",
+            "xdm:options": "[\"analytics_query\", \"data_visualization\", \"report_generation\", \"trend_analysis\"]",
+            "xdm:selected": "trend_analysis",
+            "xdm:confidence": 0.87,
+            "xdm:reasoning": "Based on the user's request for insights on engagement patterns, trend analysis is the most appropriate tool to identify patterns and changes over time in the specified metrics."
+          },
+          "xdm:planning": {
+            "xdm:strategy": "hierarchical_decomposition",
+            "xdm:taskCount": 4,
+            "xdm:complexity": "medium",
+            "xdm:dependencies": "[{\"task_id\": \"data_fetch\", \"depends_on\": []}, {\"task_id\": \"aggregation\", \"depends_on\": [\"data_fetch\"]}, {\"task_id\": \"visualization\", \"depends_on\": [\"aggregation\"]}]"
+          }
+        },
+        "xdm:customAttributes": "{\"execution_mode\": \"streaming\", \"cache_enabled\": true, \"debug_level\": \"info\", \"analytics_workspace_integration\": true}"
+      }
+    }
+  },
+  "xdm:scope": {
+    "xdm:name": "analytics-agent-scope",
+    "xdm:version": "2.1.0"
+  },
+  "xdm:gen_ai": {
+    "xdm:operation": {
+      "xdm:name": "analyze_sales_performance"
+    },
+    "xdm:provider": {
+      "xdm:name": "Adobe"
+    },
+    "xdm:system": "Adobe Analytics AI",
+    "xdm:agent": {
+      "xdm:description": "Analytics AI Assistant specialized in customer journey analysis and performance metrics",
+      "xdm:id": "agent-analytics-assistant-v2",
+      "xdm:name": "Analytics Assistant"
+    },
+    "xdm:conversation": {
+      "xdm:id": "conv_analytics_session_789"
+    },
+    "xdm:data_source": {
+      "xdm:id": "analytics_datastore_prod"
+    },
+    "xdm:system_instructions": "You are an analytics AI assistant specialized in customer journey analysis and performance metrics. Provide clear, accurate insights based on the data available. Always explain your reasoning and include confidence levels when making predictions.",
+    "xdm:input": {
+      "xdm:messages": "[{\"role\": \"user\", \"content\": \"Show me the top performing products last quarter for electronics category\"}, {\"role\": \"assistant\", \"content\": \"I'll analyze the electronics product performance data for Q4 2024...\"}]"
+    },
+    "xdm:output": {
+      "xdm:type": "application/json",
+      "xdm:messages": "[{\"role\": \"assistant\", \"content\": \"Based on the Q4 2024 analytics data, here are the top performing electronics products...\"}]"
+    },
+    "xdm:request": {
+      "xdm:choice": {
+        "xdm:count": 1
+      },
+      "xdm:model": "gpt-4-turbo-2024-04-09",
+      "xdm:seed": 42,
+      "xdm:frequency_penalty": 0.1,
+      "xdm:max_tokens": 2048,
+      "xdm:presence_penalty": 0.05,
+      "xdm:stop_sequences": ["END_ANALYSIS", "STOP"],
+      "xdm:temperature": 0.3,
+      "xdm:top_p": 0.9,
+      "xdm:top_k": 50
+    },
+    "xdm:response": {
+      "xdm:finish_reasons": ["stop"],
+      "xdm:id": "resp_analytics_12345",
+      "xdm:model": "gpt-4-turbo-2024-04-09"
+    },
+    "xdm:usage": {
+      "xdm:input_tokens": 1250,
+      "xdm:output_tokens": 890
+    },
+    "xdm:tool": {
+      "xdm:call": {
+        "xdm:id": "tool_call_analytics_query_001"
+      },
+      "xdm:description": "Executes SQL queries against the analytics data warehouse with performance optimization",
+      "xdm:name": "analytics_query_executor"
+    }
+  },
+  "xdm:error": {
+    "xdm:type": "none"
+  },
+  "xdm:server": {
+    "xdm:address": "genai-analytics-prod.adobe.com",
+    "xdm:port": 443
+  },
+  "xdm:opentelemetrySpan": {
+    "xdm:trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+    "xdm:span_id": "00f067aa0ba902b7",
+    "xdm:parent_span_id": "0af7651916cd43dd",
+    "xdm:name": "genai.agent.analytics.query",
+    "xdm:kind": "server",
+    "xdm:start_time_unix_nano": 1706356200000000000,
+    "xdm:end_time_unix_nano": 1706356205500000000,
+    "xdm:status": {
+      "xdm:code": "ok"
+    }
+  }
+}

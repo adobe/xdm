@@ -1,0 +1,123 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/genai-create-agent-span",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "GenAI Agent Creation Span",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
+  ],
+  "description": "Captures properties related to GenAI Agent Creation Spans.",
+  "definitions": {
+    "genai-agent-creation-span": {
+      "properties": {
+        "xdm:gen_ai": {
+          "type": "object",
+          "properties": {
+            "xdm:operation": {
+              "type": "object",
+              "properties": {
+                "xdm:name": {
+                  "type": "string",
+                  "description": "The name of the operation being performed.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:name##description##18021"
+                }
+              }
+            },
+            "xdm:provider": {
+              "type": "object",
+              "properties": {
+                "xdm:name": {
+                  "type": "string",
+                  "description": "The Generative AI provider as identified by the client or server instrumentation.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:name##description##94791"
+                }
+              }
+            },
+            "xdm:system": {
+              "type": "string",
+              "description": "The Generative AI product as identified by the client or server instrumentation.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:system##description##58381"
+            },
+            "xdm:agent": {
+              "type": "object",
+              "properties": {
+                "xdm:description": {
+                  "type": "string",
+                  "description": "Free-form description of the GenAI agent provided by the application.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:description##description##72341"
+                },
+                "xdm:id": {
+                  "type": "string",
+                  "description": "The unique identifier of the GenAI agent.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:id##description##58351"
+                },
+                "xdm:name": {
+                  "type": "string",
+                  "description": "Human-readable name of the GenAI agent provided by the application.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:name##description##84751"
+                }
+              }
+            },
+            "xdm:request": {
+              "type": "object",
+              "properties": {
+                "xdm:model": {
+                  "type": "string",
+                  "description": "The name of the GenAI model a request is being made to.",
+                  "meta:descriptionId": "genai-create-agent-span##xdm:model##description##8351"
+                }
+              }
+            },
+            "xdm:system_instructions": {
+              "type": "string",
+              "description": "The system message or instructions provided to the GenAI model separately from the chat history.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:system_instructions##description##46811"
+            }
+          }
+        },
+        "xdm:error": {
+          "type": "object",
+          "properties": {
+            "xdm:type": {
+              "type": "string",
+              "description": "Describes a class of error the operation ended with.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:type##description##45681"
+            }
+          }
+        },
+        "xdm:server": {
+          "type": "object",
+          "properties": {
+            "xdm:port": {
+              "type": "integer",
+              "description": "GenAI server port.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:port##description##45161"
+            },
+            "xdm:address": {
+              "type": "string",
+              "description": "GenAI server address.",
+              "meta:descriptionId": "genai-create-agent-span##xdm:address##description##21521"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/genai-agent-creation-span"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "genai-create-agent-span##title##56961",
+  "meta:descriptionId": "genai-create-agent-span##description##4461"
+}

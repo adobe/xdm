@@ -26,8 +26,9 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
     "xdm:server": "example.com",
     "xdm:name": "product home",
     "xdm:URL": "https://www.example.com/products",
-    "xdm:errorPage": false,
-    "xdm:homePage": true,
+    "xdm:isErrorPage": false,
+    "xdm:isHomePage": true,
+    "xdm:isPreRendered": true,
     "xdm:pageViews": {
       "xdm:value": 1
     }
@@ -46,8 +47,9 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
     "xdm:server": "example.com",
     "xdm:name": "product home",
     "xdm:URL": "https://www.example.com/products",
-    "xdm:errorPage": false,
-    "xdm:homePage": true
+    "xdm:isErrorPage": false,
+    "xdm:isHomePage": true,
+    "xdm:isPreRendered": false
   },
   "xdm:webInteraction": {
     "xdm:type": "other",
@@ -231,6 +233,7 @@ Details about the web page where the web interaction occurred.
 | `xdm:URL`| string | Optional |
 | `xdm:isErrorPage`| boolean | Optional |
 | `xdm:isHomePage`| boolean | Optional |
+| `xdm:isPreRendered`| boolean | Optional |
 | `xdm:name`| string | Optional |
 | `xdm:pageViews`|  | Optional |
 | `xdm:server`| string | Optional |
@@ -290,6 +293,26 @@ Flag that indicate if the page is the site home page or not.  The definition of 
 * type: `boolean`
 
 ##### xdm:isHomePage Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:isPreRendered
+##### Is pre-rendered
+
+Flag that indicates if the page has been pre-rendered or partially pre-rendered prior to being viewed.
+
+`xdm:isPreRendered`
+* is optional
+* type: `boolean`
+
+##### xdm:isPreRendered Type
 
 
 `boolean`
@@ -471,8 +494,11 @@ The value of this property **must** be equal to one of the [known values below](
 | `typed_bookmarked` | Typed or bookmarked |
 | `email` | Email |
 | `social` | Social network |
-| `unknown` | Unknown |
+| `hard_drive` | Hard Drive |
 | `usenet` | Usenet newsgroup |
+| `nojs` | No JS |
+| `conversational_ai` | Conversational AI |
+| `unknown` | Unknown |
 
 
 

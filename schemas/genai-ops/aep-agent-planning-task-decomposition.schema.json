@@ -1,0 +1,88 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/aep-agent-planning-task-decomposition",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Agent Planning Task Decomposition",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/aep-ai-agent-trace"
+  ],
+  "description": "Captures properties related to AEP Agent Application.",
+  "definitions": {
+    "aep-agent-planning-task-decomposition": {
+      "properties": {
+        "xdm:adobe": {
+          "type": "object",
+          "description": "GenAI Block",
+          "properties": {
+            "xdm:gen_ai": {
+              "type": "object",
+              "description": "Agent Block",
+              "properties": {
+                "xdm:agent": {
+                  "type": "object",
+                  "description": "Adobe Block",
+                  "properties": {
+                    "xdm:execution": {
+                      "type": "object",
+                      "description": "Execution Block",
+                      "properties": {
+                        "xdm:planning": {
+                          "type": "object",
+                          "description": "Planning Block",
+                          "properties": {
+                            "xdm:strategy": {
+                              "type": "string",
+                              "description": "Planning approach or methodology used.",
+                              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:strategy##description##83791"
+                            },
+                            "xdm:taskCount": {
+                              "type": "integer",
+                              "description": "Number of subtasks or components created.",
+                              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:taskCount##description##8461"
+                            },
+                            "xdm:complexity": {
+                              "type": "string",
+                              "description": "Assessment of task complexity level.",
+                              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:complexity##description##32561"
+                            },
+                            "xdm:dependencies": {
+                              "type": "string",
+                              "description": "JSON array of task dependencies identified.",
+                              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:dependencies##description##63141"
+                            }
+                          },
+                          "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:planning##description##59671"
+                        }
+                      },
+                      "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:execution##description##171"
+                    }
+                  },
+                  "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:agent##description##2961"
+                }
+              },
+              "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:gen_ai##description##47831"
+            }
+          },
+          "meta:descriptionId": "aep-agent-planning-task-decomposition##xdm:adobe##description##43941"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/aep-agent-planning-task-decomposition"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "aep-agent-planning-task-decomposition##title##74581",
+  "meta:descriptionId": "aep-agent-planning-task-decomposition##description##60471"
+}

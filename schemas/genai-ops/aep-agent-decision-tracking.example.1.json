@@ -1,0 +1,17 @@
+{
+  "xdm:adobe": {
+    "xdm:gen_ai": {
+      "xdm:agent": {
+        "xdm:execution": {
+          "xdm:decision": {
+            "xdm:type": "tool_selection",
+            "xdm:options": "[\"analytics_query\", \"data_visualization\", \"report_generation\", \"trend_analysis\"]",
+            "xdm:selected": "trend_analysis",
+            "xdm:confidence": 0.87,
+            "xdm:reasoning": "Based on the user's request for insights on engagement patterns, trend analysis is the most appropriate tool to identify patterns and changes over time in the specified metrics."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "xdm:entityType": "campaign",
+  "xdm:entityIDs": {
+    "xdm:account": {
+      "xdm:accountGUID": "urn:paidmedia:account:550e8400-e29b-41d4-a716-446655440000",
+      "xdm:accountID": "act_987654321"
+    },
+    "xdm:campaign": {
+      "xdm:campaignGUID": "urn:paidmedia:campaign:660e8400-e29b-41d4-a716-446655440001",
+      "xdm:campaignID": "camp_12345"
+    }
+  }
+}

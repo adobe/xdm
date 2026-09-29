@@ -12,6 +12,10 @@ XDM is at version `1.31.4`.
 
 You can find more about our versioning in [docs/introduction.md](docs/introduction.md#versioning)
 
+## Review Workflow
+
+Once your PR is ready, please add the **`needs review`** label so reviewers are notified and can take a look 👍
+
 ## XDM Visualization
 
 See [visualization of the master branch](https://opensource.adobe.com/xdmVisualization/prod/master/), which is refreshed every 12 hours.

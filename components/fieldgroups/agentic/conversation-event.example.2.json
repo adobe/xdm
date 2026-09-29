@@ -1,0 +1,61 @@
+{
+  "xdm:eventType": "conversation.turn",
+  "xdm:conversation": {
+    "xdm:conversationID": "conv-001",
+    "xdm:turnID": "int-001",
+    "xdm:signals": [
+      {
+        "xdm:scope": "turn",
+        "xdm:attributes": {
+          "xdm:subjects": {
+            "xdm:values": [
+              {
+                "xdm:phrase": "capital of France",
+                "xdm:qualifiers": ["geographic", "factual", "basic-knowledge"]
+              },
+              {
+                "xdm:phrase": "Paris",
+                "xdm:qualifiers": ["city", "capital", "accurate-response"]
+              }
+            ]
+          },
+          "xdm:intents": {
+            "xdm:values": ["learn more"]
+          },
+          "xdm:sentiment": {
+            "xdm:value": 0.1
+          },
+          "xdm:tones": {
+            "xdm:values": ["curious", "neutral"]
+          }
+        }
+      }
+    ],
+    "xdm:prompt": {
+      "xdm:source": "end-user",
+      "xdm:raw": [
+        {
+          "xdm:text": "What is the capital of France?",
+          "xdm:purpose": "User Input"
+        }
+      ]
+    },
+    "xdm:response": {
+      "xdm:source": "concierge",
+      "xdm:raw": [
+        {
+          "xdm:text": "The capital of France is Paris.",
+          "xdm:purpose": "main"
+        },
+        {
+          "xdm:text": "Would you like to plan a trip to Paris?",
+          "xdm:purpose": "advertisement"
+        },
+        {
+          "xdm:text": "https://en.wikipedia.org/wiki/France",
+          "xdm:purpose": "citation"
+        }
+      ]
+    }
+  }
+}

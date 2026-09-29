@@ -15,9 +15,13 @@
     "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
   ],
   "meta:tags": {
-    "industry": ["travel_and_hospitality"]
+    "industry": [
+      "travel_and_hospitality"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Collects all details specific to a lodging reservation.",
   "definitions": {
     "reservations": {
@@ -169,7 +173,12 @@
                     },
                     "description": "Type of accessible room, such as mobility, hearing, or other.",
                     "meta:titleId": "experienceevent-lodging-reservation##xdm:roomAccessibilityType##title##27001",
-                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:roomAccessibilityType##description##281"
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:roomAccessibilityType##description##281",
+                    "meta:enumId": {
+                      "mobility": "experienceevent-lodging-reservation##xdm:roomAccessibilityType##meta:enum##mobility##26161",
+                      "hearing": "experienceevent-lodging-reservation##xdm:roomAccessibilityType##meta:enum##hearing##63261",
+                      "other": "experienceevent-lodging-reservation##xdm:roomAccessibilityType##meta:enum##other##29591"
+                    }
                   },
                   "xdm:roomCapacity": {
                     "title": "Room Capacity",
@@ -190,7 +199,14 @@
                     },
                     "description": "Captures the type of room being reserved.",
                     "meta:titleId": "experienceevent-lodging-reservation##xdm:roomType##title##73261",
-                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:roomType##description##78611"
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:roomType##description##78611",
+                    "meta:enumId": {
+                      "queen": "experienceevent-lodging-reservation##xdm:roomType##meta:enum##queen##50631",
+                      "king": "experienceevent-lodging-reservation##xdm:roomType##meta:enum##king##24301",
+                      "double": "experienceevent-lodging-reservation##xdm:roomType##meta:enum##double##10711",
+                      "meeting room": "experienceevent-lodging-reservation##xdm:roomType##meta:enum##meeting room##84841",
+                      "other": "experienceevent-lodging-reservation##xdm:roomType##meta:enum##other##9371"
+                    }
                   },
                   "xdm:smoking": {
                     "title": "Smoking",
@@ -280,7 +296,11 @@
                     },
                     "description": "Tracks the purpose of the reservation, typically either business or personal.",
                     "meta:titleId": "experienceevent-lodging-reservation##xdm:purpose##title##91351",
-                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:purpose##description##1841"
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:purpose##description##1841",
+                    "meta:enumId": {
+                      "business": "experienceevent-lodging-reservation##xdm:purpose##meta:enum##business##49381",
+                      "personal": "experienceevent-lodging-reservation##xdm:purpose##meta:enum##personal##49191"
+                    }
                   },
                   "xdm:tripType": {
                     "title": "Trip Type",
@@ -292,7 +312,12 @@
                     },
                     "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
                     "meta:titleId": "experienceevent-lodging-reservation##xdm:tripType##title##20021",
-                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:tripType##description##18411"
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:tripType##description##18411",
+                    "meta:enumId": {
+                      "roundtrip": "experienceevent-lodging-reservation##xdm:tripType##meta:enum##roundtrip##16801",
+                      "oneWay": "experienceevent-lodging-reservation##xdm:tripType##meta:enum##oneWay##92401",
+                      "multiCity": "experienceevent-lodging-reservation##xdm:tripType##meta:enum##multiCity##45891"
+                    }
                   },
                   "xdm:lodgingCheckIn": {
                     "type": "object",
@@ -367,7 +392,9 @@
                         "format": "uri-reference",
                         "type": "string",
                         "description": "URL for receipt sent to guest upon checkout.",
-                        "title": "receiptURL"
+                        "title": "receiptURL",
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:receiptURL##title##38081",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:receiptURL##description##95151"
                       },
                       "xdm:dailyCharges": {
                         "type": "array",
@@ -380,28 +407,40 @@
                               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
                               "type": "object",
                               "description": "Daily charge amount in the appropriate currency.",
-                              "title": "Daily Charge"
+                              "title": "Daily Charge",
+                              "meta:titleId": "experienceevent-lodging-reservation##xdm:dailyCharge##title##4881",
+                              "meta:descriptionId": "experienceevent-lodging-reservation##xdm:dailyCharge##description##59021"
                             },
                             "xdm:chargeDescription": {
                               "type": "string",
                               "title": "chargeDescription",
-                              "description": "Description of the charge line item."
+                              "description": "Description of the charge line item.",
+                              "meta:titleId": "experienceevent-lodging-reservation##xdm:chargeDescription##title##62231",
+                              "meta:descriptionId": "experienceevent-lodging-reservation##xdm:chargeDescription##description##50071"
                             },
                             "xdm:chargeReferenceCode": {
                               "type": "string",
                               "title": "chargeReferenceCode",
-                              "description": "Reference code of the charge line item."
+                              "description": "Reference code of the charge line item.",
+                              "meta:titleId": "experienceevent-lodging-reservation##xdm:chargeReferenceCode##title##81241",
+                              "meta:descriptionId": "experienceevent-lodging-reservation##xdm:chargeReferenceCode##description##93671"
                             },
                             "xdm:chargeDate": {
                               "format": "date",
                               "type": "string",
                               "title": "chargeDate",
-                              "description": "Date of the charge line item."
+                              "description": "Date of the charge line item.",
+                              "meta:titleId": "experienceevent-lodging-reservation##xdm:chargeDate##title##30471",
+                              "meta:descriptionId": "experienceevent-lodging-reservation##xdm:chargeDate##description##91311"
                             }
                           }
-                        }
+                        },
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:dailyCharges##title##58181",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:dailyCharges##description##45661"
                       }
-                    }
+                    },
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:lodgingCheckout##title##99611",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:lodgingCheckout##description##3101"
                   }
                 }
               }

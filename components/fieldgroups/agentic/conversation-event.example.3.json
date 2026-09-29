@@ -1,0 +1,61 @@
+{
+  "xdm:eventType": "conversation.feedback",
+  "xdm:conversation": {
+    "xdm:conversationID": "conv-001",
+    "xdm:turnID": "int-001",
+    "xdm:signals": [
+      {
+        "xdm:scope": "feedback",
+        "xdm:attributes": {
+          "xdm:subjects": {
+            "xdm:values": [
+              {
+                "xdm:phrase": "positive feedback",
+                "xdm:qualifiers": ["satisfaction", "thumbs-up", "user-rating"]
+              },
+              {
+                "xdm:phrase": "accuracy appreciation",
+                "xdm:qualifiers": ["quality", "correctness", "helpful"]
+              },
+              {
+                "xdm:phrase": "response speed",
+                "xdm:qualifiers": [
+                  "efficiency",
+                  "quick-response",
+                  "performance"
+                ]
+              }
+            ]
+          },
+          "xdm:intents": {
+            "xdm:values": ["provide feedback"]
+          },
+          "xdm:sentiment": {
+            "xdm:value": 0.9
+          },
+          "xdm:tones": {
+            "xdm:values": ["satisfied", "appreciative"]
+          }
+        }
+      }
+    ],
+    "xdm:feedback": {
+      "xdm:source": "end-user",
+      "xdm:raw": [
+        {
+          "xdm:text": "Great help",
+          "xdm:purpose": "enum picker"
+        },
+        {
+          "xdm:text": "screenshot.png",
+          "xdm:purpose": "image"
+        }
+      ],
+      "xdm:rating": {
+        "xdm:score": 1,
+        "xdm:classification": "Thumbs Up",
+        "xdm:reasons": ["Accurate", "Quick response"]
+      }
+    }
+  }
+}

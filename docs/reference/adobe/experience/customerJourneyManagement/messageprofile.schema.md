@@ -21,6 +21,7 @@ Message Profile details for the Adobe CJM ExperienceEvent.
 ```json
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf94",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID": "5319c886-def4-57c3-bff3-8dbaf053df97",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/email"
   },
@@ -44,6 +45,7 @@ Message Profile details for the Adobe CJM ExperienceEvent.
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofileissendtimeoptimized) | `boolean` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofileistestexecution) | `boolean` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilemessageprofileid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofile-requestid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilevariant) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform](#httpsnsadobecomexperiencecustomerjourneymanagementpushchannelcontextplatform) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider](#httpsnsadobecomexperiencecustomerjourneymanagementsmschannelcontextsmsprovider) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
@@ -293,6 +295,26 @@ SMS inbound reply, e.g. stop, start, subscribe, etc.
 `string`
 
 
+
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID
+### Request ID
+
+A unique request id refers to every single message sent as part of a MessageExecution activity.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID Type
+
+
+`string`
 
 
 

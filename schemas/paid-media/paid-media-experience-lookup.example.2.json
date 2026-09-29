@@ -1,0 +1,84 @@
+{
+  "xdm:entityType": "experience",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:campaignID": "19876543210",
+    "xdm:campaignGUID": "google_ads_1234567890_camp_19876543210",
+    "xdm:adGroupID": "134567890123",
+    "xdm:adGroupGUID": "google_ads_1234567890_adgrp_134567890123",
+    "xdm:experienceID": "rda_111222333444",
+    "xdm:experienceGUID": "google_ads_1234567890_exp_rda_111222333444",
+    "xdm:hierarchyPath": "1234567890/19876543210/134567890123/rda_111222333444",
+    "xdm:metadata": {
+      "xdm:name": "Responsive Display - Enterprise Software Solutions",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:createdTime": "2025-09-20T13:00:00Z",
+      "xdm:updatedTime": "2025-11-05T09:00:00Z"
+    },
+    "xdm:experienceDetails": {
+      "xdm:experienceName": "Responsive Display - Enterprise Software Solutions",
+      "xdm:experienceDescription": "Multi-asset responsive display ad for enterprise software targeting IT decision makers on the Google Display Network",
+      "xdm:experienceType": "single_image",
+      "xdm:sourceURL": "https://ads.google.com/aw/ads?adId=rda_111222333444&campaignId=19876543210",
+      "xdm:thumbnailURL": "https://tpc.googlesyndication.com/simgad/rda_111222333444_thumb",
+      "xdm:landingPageURL": "https://www.acmecorp.com/enterprise-solutions?utm_source=google&utm_medium=display&utm_campaign=enterprise_q4",
+      "xdm:headingText": "Enterprise Software That Scales With You",
+      "xdm:bodyText": "Streamline operations with our all-in-one platform. Trusted by 5,000+ companies. Start your free trial today.",
+      "xdm:callToAction": "Start Free Trial",
+      "xdm:assetIDs": ["222333444555", "333444555666", "444555666777"],
+      "xdm:assetGUIDs": [
+        "google_ads_1234567890_asset_222333444555",
+        "google_ads_1234567890_asset_333444555666",
+        "google_ads_1234567890_asset_444555666777"
+      ],
+      "xdm:interactionProperties": {
+        "xdm:isInteractive": true,
+        "xdm:interactionType": "click"
+      },
+      "xdm:performanceMetadata": {
+        "xdm:usageCount": 15,
+        "xdm:lastUsedDate": "2025-11-09T10:00:00Z",
+        "xdm:associatedCampaigns": ["19876543210", "19876543211"],
+        "xdm:associatedAds": [
+          "ad_gdn_001",
+          "ad_gdn_002",
+          "ad_gdn_003",
+          "ad_gdn_004"
+        ]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_ad_type",
+          "xdm:stringValue": "RESPONSIVE_DISPLAY_AD"
+        },
+        {
+          "xdm:fieldName": "google_ad_strength",
+          "xdm:stringValue": "EXCELLENT"
+        },
+        {
+          "xdm:fieldName": "google_policy_approval_status",
+          "xdm:stringValue": "APPROVED"
+        },
+        {
+          "xdm:fieldName": "google_long_headline",
+          "xdm:stringValue": "Transform Your Business Operations With Our Award-Winning Enterprise Platform"
+        },
+        {
+          "xdm:fieldName": "google_business_name",
+          "xdm:stringValue": "Acme Corp"
+        },
+        {
+          "xdm:fieldName": "google_allow_flexible_color",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_marketing_image_count",
+          "xdm:numberValue": 3
+        }
+      ]
+    }
+  }
+}

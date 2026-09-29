@@ -49,7 +49,7 @@
                   "description": "The privacy settings for the data connection.",
                   "type": "object",
                   "properties": {
-                    "xdm:marketingActions": {
+                    "xdm:applyMarketingActions": {
                       "title": "Marketing Actions",
                       "description": "The marketing actions for the data connection.",
                       "type": "array",
@@ -59,12 +59,51 @@
                         "type": "string"
                       }
                     },
-                    "xdm:consentPolicy": {
+                    "xdm:applyDataSharingConsentPolicies": {
                       "title": "Consent Policy",
                       "description": "The consent policy for the data connection.",
                       "type": "string"
+                    },
+                    "xdm:audienceConsentSettings": {
+                      "title": "Audience Consent Settings",
+                      "description": "Audience consent settings for the data connection.",
+                      "type": "object",
+                      "properties": {
+                        "xdm:filterType": {
+                          "title": "Filter Type",
+                          "description": "Filter type for the audience consent settings.",
+                          "type": "string"
+                        },
+                        "xdm:audiences": {
+                          "title": "Audiences",
+                          "description": "The audience metadata in the data connection.",
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "xdm:id": {
+                                "title": "Audience Id",
+                                "description": "The audience id of the audience.",
+                                "type": "string"
+                              },
+                              "xdm:namespace": {
+                                "title": "Audience Namespace",
+                                "description": "The namespace of the audience.",
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
+                },
+                "xdm:audienceTTL": {
+                  "title": "Audience Time-to-Live",
+                  "description": "The TTL for the audience.",
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740992
                 }
               }
             }

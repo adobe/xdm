@@ -1,0 +1,103 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/ajo/loyalty/challenge/taskCompletion",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Challenge Task Completion",
+  "description": "Details about task completion records within a loyalty challenge's task, including accumulated values and item-level tracking.",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "taskCompletion": {
+      "properties": {
+        "xdm:completionDate": {
+          "title": "Completion Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time when the task was completed."
+        },
+        "xdm:accumulators": {
+          "title": "Accumulators",
+          "type": "object",
+          "description": "Accumulated quantity, spend on qualifying items only, days, and item-level entries for this task completion.",
+          "properties": {
+            "xdm:qty": {
+              "title": "Quantity",
+              "type": "number",
+              "description": "Total quantity accumulated."
+            },
+            "xdm:spend": {
+              "title": "Spend",
+              "type": "number",
+              "description": "Spend from items that satisfied this task only, excluding other line items in the same transactions."
+            },
+            "xdm:days": {
+              "title": "Days",
+              "type": "integer",
+              "description": "Number of qualified days accumulated."
+            },
+            "xdm:item_list": {
+              "title": "Item List",
+              "type": "array",
+              "description": "Item-level contributions that counted toward this task completion.",
+              "items": {
+                "$ref": "https://ns.adobe.com/experience/ajo/loyalty/challenge/accumulatorItemEntry"
+              },
+              "meta:xdmType": "array"
+            }
+          }
+        },
+        "xdm:quantity": {
+          "title": "Quantity",
+          "type": "number",
+          "description": "Total quantity accumulated for this task completion.",
+          "meta:status": "deprecated"
+        },
+        "xdm:spend": {
+          "title": "Spend",
+          "type": "number",
+          "description": "Spend from items that satisfied this task only, excluding other line items in the same transactions.",
+          "meta:status": "deprecated"
+        },
+        "xdm:days": {
+          "title": "days",
+          "type": "integer",
+          "description": "Number of qualified days accumulated for this task completion.",
+          "meta:status": "deprecated"
+        },
+        "xdm:qualifiedEvents": {
+          "title": "Qualified Events",
+          "type": "array",
+          "description": "List of events that provided progress toward task completion.",
+          "meta:status": "deprecated",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:timestamp": {
+                "title": "Timestamp",
+                "type": "string",
+                "format": "date-time",
+                "description": "Timestamp of the qualified event."
+              },
+              "xdm:transactionId": {
+                "title": "Transaction ID",
+                "type": "string",
+                "description": "Transaction ID associated with this qualified event.",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    { "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context" },
+    { "$ref": "#/definitions/taskCompletion" }
+  ],
+  "meta:status": "stable"
+}

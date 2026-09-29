@@ -1,0 +1,14 @@
+{
+  "xdm:gen_ai": {
+    "xdm:tool": {
+      "xdm:call": {
+        "xdm:id": "call_abc123def456"
+      },
+      "xdm:description": "Analyzes website traffic data and generates insights on user engagement patterns",
+      "xdm:name": "analytics_trend_analyzer"
+    }
+  },
+  "xdm:error": {
+    "xdm:type": "none"
+  }
+}

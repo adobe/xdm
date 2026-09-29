@@ -37,29 +37,40 @@
                     "xdm:campaignName": {
                       "title": "Campaign Name",
                       "type": "string",
-                      "description": "Name of the campaign."
+                      "description": "Name of the campaign.",
+                      "meta:titleId": "call-to-action-clicked-in-webinar##xdm:campaignName##title##58471",
+                      "meta:descriptionId": "call-to-action-clicked-in-webinar##xdm:campaignName##description##10101"
                     },
                     "xdm:campaignID": {
                       "title": "Campaign ID",
                       "type": "string",
-                      "description": "Unique identifier of the campaign."
+                      "description": "Unique identifier of the campaign.",
+                      "meta:titleId": "call-to-action-clicked-in-webinar##xdm:campaignID##title##10051",
+                      "meta:descriptionId": "call-to-action-clicked-in-webinar##xdm:campaignID##description##48841"
                     },
                     "xdm:linkClicked": {
                       "title": "Link Clicked",
                       "type": "string",
                       "format": "uri",
-                      "description": "The link clicked during the webinar."
+                      "description": "The link clicked during the webinar.",
+                      "meta:titleId": "call-to-action-clicked-in-webinar##xdm:linkClicked##title##52391",
+                      "meta:descriptionId": "call-to-action-clicked-in-webinar##xdm:linkClicked##description##79371"
                     },
                     "xdm:campaignKey": {
                       "title": "Campaign Key",
                       "description": "Unique key of the campaign.",
-                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                      "meta:titleId": "call-to-action-clicked-in-webinar##xdm:campaignKey##title##75181",
+                      "meta:descriptionId": "call-to-action-clicked-in-webinar##xdm:campaignKey##description##75491"
                     }
-                  }
+                  },
+                  "meta:titleId": "call-to-action-clicked-in-webinar##xdm:callToActionClick##title##15211"
                 }
-              }
+              },
+              "meta:titleId": "call-to-action-clicked-in-webinar##xdm:webinar##title##78641"
             }
-          }
+          },
+          "meta:titleId": "call-to-action-clicked-in-webinar##xdm:leadOperation##title##75051"
         }
       }
     }
@@ -70,5 +81,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2025-01-01"
+  "meta:createdDate": "2025-01-01",
+  "meta:titleId": "call-to-action-clicked-in-webinar##title##11921",
+  "meta:descriptionId": "call-to-action-clicked-in-webinar##description##59261"
 }

@@ -35,6 +35,8 @@ const ignoredForRequiredValidation =
     "../schemas/descriptors/identity/descriptorIdentity.schema.json",
     "../schemas/descriptors/identity/descriptorReferenceIdentity.schema.json",
     "../schemas/descriptors/status/descriptorDeprecated.schema.json",
+        "../schemas/descriptors/status/descriptorDuplicationExclusions.schema.json",
+    "../schemas/descriptors/masking/descriptorDataMasking.schema.json",
     "../schemas/descriptors/primarykey/descriptorPrimaryKey.schema.json",
     "../schemas/descriptors/version/descriptorVersion.schema.json",
     "../extensions/adobe/experience/audiencemanager/segmentfolder.schema.json",

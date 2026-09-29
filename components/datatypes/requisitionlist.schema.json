@@ -16,17 +16,23 @@
         "xdm:ID": {
           "title": "Requisition List ID",
           "type": "string",
-          "description": "Unique identifier of the requisition list."
+          "description": "Unique identifier of the requisition list.",
+          "meta:titleId": "requisitionlist##xdm:ID##title##82361",
+          "meta:descriptionId": "requisitionlist##xdm:ID##description##34191"
         },
         "xdm:name": {
           "title": "Requisition List Name",
           "type": "string",
-          "description": "Name of the requisition list specified by the customer."
+          "description": "Name of the requisition list specified by the customer.",
+          "meta:titleId": "requisitionlist##xdm:name##title##32051",
+          "meta:descriptionId": "requisitionlist##xdm:name##description##31071"
         },
         "xdm:description": {
           "title": "Requisition List Description",
           "type": "string",
-          "description": "Description of the requisition list specified by the customer."
+          "description": "Description of the requisition list specified by the customer.",
+          "meta:titleId": "requisitionlist##xdm:description##title##13271",
+          "meta:descriptionId": "requisitionlist##xdm:description##description##10401"
         }
       }
     }
@@ -36,5 +42,7 @@
       "$ref": "#/definitions/requisitionList"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "requisitionlist##title##40061",
+  "meta:descriptionId": "requisitionlist##description##44401"
 }

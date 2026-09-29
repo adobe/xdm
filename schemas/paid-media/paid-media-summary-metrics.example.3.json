@@ -1,0 +1,81 @@
+{
+  "xdm:timestamp": "2025-11-09T00:00:00Z",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "tiktok",
+    "xdm:accountID": "7012345678901234567",
+    "xdm:accountGUID": "tt_7012345678901234567",
+    "xdm:campaignID": "1780123456789012",
+    "xdm:campaignGUID": "tt_1780123456789012",
+    "xdm:adGroupID": "1780234567890123",
+    "xdm:adGroupGUID": "tt_1780234567890123",
+    "xdm:adID": "1780345678901234",
+    "xdm:adGUID": "tt_1780345678901234",
+    "xdm:hierarchyPath": "7012345678901234567/1780123456789012/1780234567890123/1780345678901234",
+    "xdm:channel": "PaidMedia",
+    "xdm:metrics": {
+      "xdm:impressions": 210000,
+      "xdm:clicks": 6300,
+      "xdm:reach": 145000,
+      "xdm:frequency": 1.45,
+      "xdm:spend": 1890.0,
+      "xdm:conversions": 189,
+      "xdm:conversionValue": 5670.0,
+      "xdm:ctr": 0.03,
+      "xdm:cpc": 0.3,
+      "xdm:cpm": 9.0,
+      "xdm:costPerConversion": 10.0,
+      "xdm:roas": 3.0,
+      "xdm:videoViews": 168000,
+      "xdm:videoCompletions": 42000,
+      "xdm:engagements": 18900,
+      "xdm:engagementRate": 0.09
+    },
+    "xdm:dimensionalBreakdowns": {
+      "xdm:deviceType": "mobile",
+      "xdm:placement": "tiktok_feed",
+      "xdm:ageGroup": "18-24",
+      "xdm:gender": "female",
+      "xdm:country": "US",
+      "xdm:creativeFormat": "video",
+      "xdm:campaignObjective": "CONVERSIONS"
+    },
+    "xdm:extendedMetrics": {
+      "xdm:likes": 12600,
+      "xdm:comments": 2100,
+      "xdm:shares": 4200,
+      "xdm:follows": 630,
+      "xdm:profileVisits": 1890
+    },
+    "xdm:videoMetrics": {
+      "xdm:videoPlays": 210000,
+      "xdm:video2SecViews": 189000,
+      "xdm:video6SecViews": 147000,
+      "xdm:videoQuartile1": 126000,
+      "xdm:videoQuartile2": 84000,
+      "xdm:videoQuartile3": 63000,
+      "xdm:videoCompletions": 42000,
+      "xdm:videoCompletionRate": 0.2,
+      "xdm:averageVideoWatchTime": 8.5,
+      "xdm:totalVideoWatchTime": 1785000
+    },
+    "xdm:costMetrics": {
+      "xdm:averageCpc": 0.3,
+      "xdm:averageCpm": 9.0,
+      "xdm:averageCpa": 10.0,
+      "xdm:averageCpv": 0.011
+    },
+    "xdm:attributionMetrics": {
+      "xdm:attributionModel": "LAST_CLICK",
+      "xdm:clickAttributionWindow": "7_DAY",
+      "xdm:viewAttributionWindow": "1_DAY"
+    },
+    "xdm:qualityMetrics": {
+      "xdm:overallQualityScore": 7.2,
+      "xdm:relevanceScore": 7.8,
+      "xdm:engagementScore": 8.5,
+      "xdm:attentionScore": 7.0,
+      "xdm:creativeFatigue": 2.1,
+      "xdm:qualityTrend": "stable"
+    }
+  }
+}

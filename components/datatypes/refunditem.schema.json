@@ -16,12 +16,16 @@
         "xdm:transactionID": {
           "title": "Transaction ID",
           "type": "string",
-          "description": "The unique transaction identifier for this refund item."
+          "description": "The unique transaction identifier for this refund item.",
+          "meta:titleId": "refunditem##xdm:transactionID##title##29221",
+          "meta:descriptionId": "refunditem##xdm:transactionID##description##17871"
         },
         "xdm:refundAmount": {
           "title": "Refund Amount",
           "type": "number",
-          "description": "The value of the refund."
+          "description": "The value of the refund.",
+          "meta:titleId": "refunditem##xdm:refundAmount##title##37771",
+          "meta:descriptionId": "refunditem##xdm:refundAmount##description##89221"
         },
         "xdm:refundReason": {
           "title": "Refund Reason",
@@ -32,6 +36,12 @@
           "meta:enum": {
             "return": "Return",
             "price_adjustment": "Price Adjustment"
+          },
+          "meta:titleId": "refunditem##xdm:refundReason##title##96601",
+          "meta:descriptionId": "refunditem##xdm:refundReason##description##52371",
+          "meta:enumId": {
+            "return": "refunditem##xdm:refundReason##meta:enum##return##59971",
+            "price_adjustment": "refunditem##xdm:refundReason##meta:enum##price_adjustment##53681"
           }
         },
         "xdm:refundPaymentType": {
@@ -60,6 +70,19 @@
             "wire_transfer": "Wire Transfer",
             "credit_card_reference": "Credit Card Reference Transaction",
             "other": "Other"
+          },
+          "meta:titleId": "refunditem##xdm:refundPaymentType##title##86041",
+          "meta:descriptionId": "refunditem##xdm:refundPaymentType##description##14281",
+          "meta:enumId": {
+            "cash": "refunditem##xdm:refundPaymentType##meta:enum##cash##10111",
+            "credit_card": "refunditem##xdm:refundPaymentType##meta:enum##credit_card##87721",
+            "debit_card": "refunditem##xdm:refundPaymentType##meta:enum##debit_card##54071",
+            "gift_card": "refunditem##xdm:refundPaymentType##meta:enum##gift_card##62211",
+            "check": "refunditem##xdm:refundPaymentType##meta:enum##check##80771",
+            "paypal": "refunditem##xdm:refundPaymentType##meta:enum##paypal##9131",
+            "wire_transfer": "refunditem##xdm:refundPaymentType##meta:enum##wire_transfer##31091",
+            "credit_card_reference": "refunditem##xdm:refundPaymentType##meta:enum##credit_card_reference##87631",
+            "other": "refunditem##xdm:refundPaymentType##meta:enum##other##30361"
           }
         },
         "xdm:currencyCode": {
@@ -67,7 +90,9 @@
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code used for this refund item."
+          "description": "The ISO 4217 currency code used for this refund item.",
+          "meta:titleId": "refunditem##xdm:currencyCode##title##80641",
+          "meta:descriptionId": "refunditem##xdm:currencyCode##description##56201"
         }
       }
     }
@@ -77,5 +102,7 @@
       "$ref": "#/definitions/refunditem"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "refunditem##title##29801",
+  "meta:descriptionId": "refunditem##description##32721"
 }

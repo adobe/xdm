@@ -78,7 +78,17 @@
           },
           "description": "Indicates the current status of the loan.",
           "meta:titleId": "loan##xdm:loanStatus##title##4831",
-          "meta:descriptionId": "loan##xdm:loanStatus##description##32881"
+          "meta:descriptionId": "loan##xdm:loanStatus##description##32881",
+          "meta:enumId": {
+            "notIssued": "loan##xdm:loanStatus##meta:enum##notIssued##6971",
+            "current": "loan##xdm:loanStatus##meta:enum##current##5351",
+            "inGracePeriod": "loan##xdm:loanStatus##meta:enum##inGracePeriod##82981",
+            "fullyPaid": "loan##xdm:loanStatus##meta:enum##fullyPaid##34591",
+            "late": "loan##xdm:loanStatus##meta:enum##late##73981",
+            "default": "loan##xdm:loanStatus##meta:enum##default##57691",
+            "chargedOff": "loan##xdm:loanStatus##meta:enum##chargedOff##70101",
+            "cancelled": "loan##xdm:loanStatus##meta:enum##cancelled##64671"
+          }
         },
         "xdm:termInMonths": {
           "title": "Term in Months",
@@ -155,7 +165,19 @@
           },
           "description": "Records the type of loan issued.",
           "meta:titleId": "loan##xdm:loanType##title##10591",
-          "meta:descriptionId": "loan##xdm:loanType##description##48731"
+          "meta:descriptionId": "loan##xdm:loanType##description##48731",
+          "meta:enumId": {
+            "personal": "loan##xdm:loanType##meta:enum##personal##33151",
+            "cashAdvance": "loan##xdm:loanType##meta:enum##cashAdvance##72061",
+            "title": "loan##xdm:loanType##meta:enum##title##14781",
+            "homeEquity": "loan##xdm:loanType##meta:enum##homeEquity##19051",
+            "smallBusiness": "loan##xdm:loanType##meta:enum##smallBusiness##41821",
+            "debtConsolidation": "loan##xdm:loanType##meta:enum##debtConsolidation##71651",
+            "student": "loan##xdm:loanType##meta:enum##student##76671",
+            "automobile": "loan##xdm:loanType##meta:enum##automobile##91921",
+            "mortgage": "loan##xdm:loanType##meta:enum##mortgage##77641",
+            "meta:titleId": "loan##xdm:loanType##meta:enum##meta:titleId##72821"
+          }
         },
         "xdm:renegotiable": {
           "title": "Renegotiable",

@@ -1,0 +1,51 @@
+{
+  "xdm:timestamp": "2025-11-09T00:00:00Z",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "987-654-3210",
+    "xdm:accountGUID": "gads_987_654_3210",
+    "xdm:campaignID": "20987654321",
+    "xdm:campaignGUID": "gads_20987654321",
+    "xdm:adGroupID": "30987654321",
+    "xdm:adGroupGUID": "gads_30987654321",
+    "xdm:adID": "40987654321",
+    "xdm:adGUID": "gads_40987654321",
+    "xdm:hierarchyPath": "987-654-3210/20987654321/30987654321/40987654321",
+    "xdm:metrics": {
+      "xdm:impressions": 28000,
+      "xdm:clicks": 1960,
+      "xdm:spend": 3920.0,
+      "xdm:conversions": 196,
+      "xdm:conversionValue": 19600.0,
+      "xdm:ctr": 0.07,
+      "xdm:cpc": 2.0,
+      "xdm:cpm": 140.0,
+      "xdm:costPerConversion": 20.0,
+      "xdm:roas": 5.0
+    },
+    "xdm:dimensionalBreakdowns": {
+      "xdm:deviceType": "desktop",
+      "xdm:adNetworkType": "search",
+      "xdm:adSlot": "top",
+      "xdm:country": "US",
+      "xdm:region": "New York",
+      "xdm:language": "en",
+      "xdm:campaignObjective": "SEARCH",
+      "xdm:optimizationGoal": "TARGET_CPA"
+    },
+    "xdm:costMetrics": {
+      "xdm:averageCpc": 2.0,
+      "xdm:averageCpm": 140.0,
+      "xdm:averageCpa": 20.0,
+      "xdm:qualityScore": 8,
+      "xdm:adRank": 5.1,
+      "xdm:impressionShare": {
+        "xdm:impressionShare": 0.85,
+        "xdm:lostImpressionShareRank": 0.08,
+        "xdm:lostImpressionShareBudget": 0.07,
+        "xdm:topImpressionShare": 0.72,
+        "xdm:absoluteTopImpressionShare": 0.45
+      }
+    }
+  }
+}

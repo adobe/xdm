@@ -18,42 +18,58 @@
         "xdm:friendlyName": {
           "title": "Chapter Name",
           "type": "string",
-          "description": "The name of the chapter and/or segment."
+          "description": "The name of the chapter and/or segment.",
+          "meta:titleId": "chapterDetails##xdm:friendlyName##title##16721",
+          "meta:descriptionId": "chapterDetails##xdm:friendlyName##description##38081"
         },
         "xdm:length": {
           "title": "Chapter Length Or Duration",
           "type": "integer",
-          "description": "The length of the chapter, in seconds."
+          "description": "The length of the chapter, in seconds.",
+          "meta:titleId": "chapterDetails##xdm:length##title##95991",
+          "meta:descriptionId": "chapterDetails##xdm:length##description##10891"
         },
         "xdm:offset": {
           "title": "Chapter Offset",
           "type": "integer",
-          "description": "The offset of the chapter inside the content (in seconds) from the start."
+          "description": "The offset of the chapter inside the content (in seconds) from the start.",
+          "meta:titleId": "chapterDetails##xdm:offset##title##41501",
+          "meta:descriptionId": "chapterDetails##xdm:offset##description##29011"
         },
         "xdm:index": {
           "title": "Chapter Position",
           "type": "integer",
-          "description": "The position (index, integer) of the chapter inside the content."
+          "description": "The position (index, integer) of the chapter inside the content.",
+          "meta:titleId": "chapterDetails##xdm:index##title##20611",
+          "meta:descriptionId": "chapterDetails##xdm:index##description##73181"
         },
         "xdm:ID": {
           "title": "Chapter ID",
           "type": "string",
-          "description": "The auto-generated ID of the chapter."
+          "description": "The auto-generated ID of the chapter.",
+          "meta:titleId": "chapterDetails##xdm:ID##title##80831",
+          "meta:descriptionId": "chapterDetails##xdm:ID##description##35291"
         },
         "xdm:isStarted": {
           "title": "Chapter Started",
           "type": "boolean",
-          "description": "Chapter is started."
+          "description": "Chapter is started.",
+          "meta:titleId": "chapterDetails##xdm:isStarted##title##41301",
+          "meta:descriptionId": "chapterDetails##xdm:isStarted##description##11861"
         },
         "xdm:isCompleted": {
           "title": "Chapter Completed",
           "type": "boolean",
-          "description": "Chapter is completed."
+          "description": "Chapter is completed.",
+          "meta:titleId": "chapterDetails##xdm:isCompleted##title##2201",
+          "meta:descriptionId": "chapterDetails##xdm:isCompleted##description##5511"
         },
         "xdm:timePlayed": {
           "title": "Chapter Time Played",
           "type": "integer",
-          "description": "The time spent on the chapter, in seconds."
+          "description": "The time spent on the chapter, in seconds.",
+          "meta:titleId": "chapterDetails##xdm:timePlayed##title##86901",
+          "meta:descriptionId": "chapterDetails##xdm:timePlayed##description##30461"
         }
       },
       "required": []
@@ -63,5 +79,7 @@
     {
       "$ref": "#/definitions/chapterDetails"
     }
-  ]
+  ],
+  "meta:titleId": "chapterDetails##title##61101",
+  "meta:descriptionId": "chapterDetails##description##48261"
 }

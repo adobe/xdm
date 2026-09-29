@@ -13,13 +13,15 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "definitions": {
     "dataconnection": {
       "properties": {
-        "xdm:collaboratorId": {
-          "title": "Collaborator ID",
-          "description": "Unique identifier of Collaborator.",
+        "xdm:id": {
+          "title": "Id",
+          "description": "The id of the data connection.",
           "type": "string"
         },
         "xdm:name": {
@@ -32,9 +34,33 @@
           "description": "The description of the data connection.",
           "type": "string"
         },
+        "xdm:status": {
+          "title": "Status",
+          "description": "The status of the data connection.",
+          "type": "string"
+        },
         "xdm:imsOrg": {
           "title": "IMS Org",
           "description": "The IMS Organization ID associated with the data connection.",
+          "type": "string"
+        },
+        "xdm:createdAtEpochMillis": {
+          "title": "Timestamp of Data Connection Creation",
+          "description": "The timestamp of when the data connection was created.",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "xdm:updatedAtEpochMillis": {
+          "title": "Timestamp of Data Connection Update",
+          "description": "The timestamp of when the data connection was updated.",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "xdm:createdBy": {
+          "title": "Created By",
+          "description": "The user or system that created the data connection.",
           "type": "string"
         },
         "xdm:ownerCollaboratorId": {
@@ -42,20 +68,112 @@
           "description": "The owner collaborator ID for the data connection.",
           "type": "string"
         },
+        "xdm:updatedBy": {
+          "title": "Updated By",
+          "description": "The user or system that last updated the data connection.",
+          "type": "string"
+        },
+        "xdm:version": {
+          "title": "Version",
+          "description": "The version of the data connection.",
+          "type": "string"
+        },
+        "xdm:collaboratorId": {
+          "title": "Collaborator ID",
+          "description": "Unique identifier of Collaborator.",
+          "type": "string"
+        },
         "xdm:sourceType": {
           "title": "Source Type",
-          "description": "The type of data source.",
+          "description": "The source of data involved with the data connection.",
           "type": "string"
         },
-        "xdm:datasetEntityType": {
-          "title": "Dataset Entity Type",
-          "description": "The type of dataset entity.",
+        "xdm:type": {
+          "title": "Data Connection Type",
+          "description": "The type of data that is involved with the data connection.",
           "type": "string"
         },
-        "xdm:status": {
-          "title": "Status",
-          "description": "The status of the data connection.",
-          "type": "string"
+        "xdm:isEgress": {
+          "title": "Egress Data Connection",
+          "description": "Determines if the data connection is an egress data connection.",
+          "type": "boolean"
+        },
+        "xdm:isSystem": {
+          "title": "System Data Connection",
+          "description": "Determines if the data connection is a system data connection.",
+          "type": "boolean"
+        },
+        "xdm:fieldMappings": {
+          "title": "Field Mappings",
+          "description": "Mappings from source namespaces to target namespaces.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:sourceName": {
+                "title": "Source Field Name",
+                "description": "The name of the source field.",
+                "type": "string"
+              },
+              "xdm:targetName": {
+                "title": "Target Field Name",
+                "description": "The name of the target field.",
+                "type": "string"
+              },
+              "xdm:matchKey": {
+                "title": "Match Key",
+                "description": "Boolean to determine whether the field is a match key or not.",
+                "type": "boolean"
+              },
+              "xdm:sourceType": {
+                "title": "Field Source Type",
+                "description": "The source field type.",
+                "type": "string"
+              },
+              "xdm:transformation": {
+                "title": "Transformation",
+                "description": "Transformation functions between the source and target namespace.",
+                "type": "object",
+                "properties": {
+                  "xdm:functions": {
+                    "title": "Transformation Functions",
+                    "description": "List of transformation functions.",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:type": {
+                          "title": "Function Type",
+                          "description": "The type of transformation function.",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "xdm:relationships": {
+                "title": "Relationships",
+                "description": "Data connection field relationships.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:type": {
+                      "title": "Field Relationship Type",
+                      "description": "Type of field relationship (currently used for activation mapping).",
+                      "type": "string"
+                    },
+                    "xdm:target": {
+                      "title": "Field Relationship Target",
+                      "description": "The field relationship target.",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
         },
         "xdm:scheduleSettings": {
           "title": "Schedule Settings",
@@ -75,6 +193,11 @@
               "type": "integer",
               "minimum": 0,
               "maximum": 9007199254740992
+            },
+            "xdm:frequency": {
+              "title": "Data Export Frequency",
+              "description": "The frequency of which data will be exported.",
+              "type": "string"
             }
           },
           "meta:xdmType": "object"
@@ -93,20 +216,40 @@
           "minimum": 0,
           "maximum": 9007199254740992
         },
-        "xdm:createdBy": {
-          "title": "Created By",
-          "description": "The user or system that created the data connection.",
-          "type": "string"
-        },
-        "xdm:updatedBy": {
-          "title": "Updated By",
-          "description": "The user or system that last updated the data connection.",
-          "type": "string"
-        },
-        "xdm:version": {
-          "title": "Version",
-          "description": "The version of the data connection.",
-          "type": "string"
+        "xdm:matchKeyToUseCaseSettings": {
+          "title": "Match Key Use Case Settings",
+          "description": "Use case configuration for each match key.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:id": {
+                "title": "Match Key Type",
+                "description": "The name/id of the match key.",
+                "type": "string"
+              },
+              "xdm:discover": {
+                "title": "Discover Use-case",
+                "description": "Determines if the match key can be used for discover purposes.",
+                "type": "boolean"
+              },
+              "xdm:share": {
+                "title": "Share Use-case",
+                "description": "Determines if the match key can be used for share purposes.",
+                "type": "boolean"
+              },
+              "xdm:activate": {
+                "title": "Activate Use-case",
+                "description": "Determines if the match key can be used for activate purposes.",
+                "type": "boolean"
+              },
+              "xdm:measure": {
+                "title": "Measurement Use-case",
+                "description": "Determines if the match key can be used for measurement purposes.",
+                "type": "boolean"
+              }
+            }
+          }
         }
       }
     }

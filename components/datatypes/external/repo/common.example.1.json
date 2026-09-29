@@ -1,5 +1,20 @@
 {
   "repo:name": "example.png",
   "repo:path": "/examples/from/xdm/example.png",
+  "repo:id": "urn:aaid:aem:e36cf904-2f0f-411e-80da-5bf31293ab69",
+  "repo:assetId": "urn:aaid:aem:e36cf904-2f0f-411e-80da-5bf31293ab69",
+  "repo:assetClass": "file",
+  "repo:repositoryId": "author-p49105-e258067.adobeaemcloud.com",
+  "repo:etag": "\"bb04c75eb7b4d4d1d417b105542224e1\"",
+  "repo:size": 3668936,
+  "repo:version": "oak:1.0::ci:bb04c75eb7b4d4d1d417b105542224e1",
+  "repo:state": "ACTIVE",
+  "repo:ancestors": [
+    "urn:aaid:aem:4141271f-e5cb-49f2-9aad-478e8c106799"
+  ],
+  "repo:createDate": "2004-10-23T12:00:00-06:00",
+  "repo:modifyDate": "2004-10-23T12:00:00-06:00",
+  "repo:createdBy": "jane.doe@example.com",
+  "repo:modifiedBy": "jane.doe@example.com",
   "dc:format": "image/png"
 }

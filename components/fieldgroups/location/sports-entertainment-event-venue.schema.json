@@ -30,12 +30,16 @@
                 "type": "string"
               },
               "title": "DMA List",
-              "type": "array"
+              "type": "array",
+              "meta:titleId": "sports-entertainment-event-venue##xdm:designatedMarketAreas##title##80271",
+              "meta:descriptionId": "sports-entertainment-event-venue##xdm:designatedMarketAreas##description##18711"
             },
             "xdm:currency": {
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Local currency accepted by the venue.",
-              "title": "Currency"
+              "title": "Currency",
+              "meta:titleId": "sports-entertainment-event-venue##xdm:currency##title##36531",
+              "meta:descriptionId": "sports-entertainment-event-venue##xdm:currency##description##97661"
             },
             "xdm:markets": {
               "description": "Markets of the venue",
@@ -44,30 +48,42 @@
               },
               "required": [],
               "title": "Markets",
-              "type": "array"
+              "type": "array",
+              "meta:titleId": "sports-entertainment-event-venue##xdm:markets##title##35081",
+              "meta:descriptionId": "sports-entertainment-event-venue##xdm:markets##description##85001"
             },
             "xdm:physicalAddress": {
               "$ref": "https://ns.adobe.com/xdm/common/address",
               "description": "Physical Address of the event venue.",
-              "title": "Physical Address"
+              "title": "Physical Address",
+              "meta:titleId": "sports-entertainment-event-venue##xdm:physicalAddress##title##29871",
+              "meta:descriptionId": "sports-entertainment-event-venue##xdm:physicalAddress##description##48381"
             },
             "xdm:seatingCapacity": {
               "description": "Seating capacity of the venue.",
               "title": "Seating Capacity",
-              "type": "integer"
+              "type": "integer",
+              "meta:titleId": "sports-entertainment-event-venue##xdm:seatingCapacity##title##68241",
+              "meta:descriptionId": "sports-entertainment-event-venue##xdm:seatingCapacity##description##23531"
             },
             "xdm:timeZone": {
               "description": "Time zone in which the venue resides.",
               "title": "Time Zone",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "sports-entertainment-event-venue##xdm:timeZone##title##13271",
+              "meta:descriptionId": "sports-entertainment-event-venue##xdm:timeZone##description##98651"
             },
             "xdm:url": {
               "description": "URL for the Venue web presence.",
               "required": [],
               "title": "URL",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "sports-entertainment-event-venue##xdm:url##title##70461",
+              "meta:descriptionId": "sports-entertainment-event-venue##xdm:url##description##40991"
             }
-          }
+          },
+          "meta:titleId": "sports-entertainment-event-venue##xdm:eventVenue##title##13881",
+          "meta:descriptionId": "sports-entertainment-event-venue##xdm:eventVenue##description##18631"
         }
       }
     }
@@ -77,5 +93,7 @@
       "$ref": "#/definitions/sports-entertainment-event-venue"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "sports-entertainment-event-venue##title##56651",
+  "meta:descriptionId": "sports-entertainment-event-venue##description##16711"
 }

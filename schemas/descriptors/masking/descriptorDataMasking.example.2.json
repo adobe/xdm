@@ -1,0 +1,15 @@
+{
+  "@type": "xdm:descriptorDataMasking",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": "/paymentInfo/cardNumber",
+  "xdm:dataMaskingFunction": {
+    "xdm:identifier": "REDACT_CARD_NUMBER",
+    "xdm:parameters": {
+      "from": 1,
+      "to": 12,
+      "redactChar": "X",
+      "defaultValue": "XXXX-XXXX-XXXX-####"
+    }
+  }
+}

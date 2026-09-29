@@ -440,17 +440,19 @@ The referrer type.
 The value of this property **must** be equal to one of the [known values below](#xdmwebreferrer-known-values).
 
 ##### xdm:type Known Values
-| Value | Description |
-|-------|-------------|
-| `internal` | Internal |
-| `external` | External |
-| `search_engine` | Search engine |
+| Value              | Description         |
+|--------------------|---------------------|
+| `internal`         | Internal            |
+| `external`         | External            |
+| `search_engine`    | Search engine       |
 | `typed_bookmarked` | Typed or bookmarked |
-| `email` | Email |
-| `social` | Social network |
-| `unknown` | Unknown |
-| `news` | Usenet newsgroup |
-| `usenet` |  |
+| `email`            | Email               |
+| `social`           | Social network      |
+| `hard_drive`       | Hard Drive          |
+| `usenet`           | Usenet newsgroup    |
+| `nojs`             | No JS               |
+| `conversational_ai`| Conversational AI   |
+| `unknown`          | Unknown             |
 
 
 

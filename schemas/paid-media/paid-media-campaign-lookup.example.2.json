@@ -1,0 +1,156 @@
+{
+  "xdm:entityType": "campaign",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "1234567890",
+    "xdm:accountGUID": "google_ads_1234567890",
+    "xdm:campaignID": "9876543210",
+    "xdm:campaignGUID": "google_ads_1234567890_9876543210",
+    "xdm:hierarchyPath": "1234567890/9876543210",
+    "xdm:metadata": {
+      "xdm:name": "Holiday 2025 - Search Campaign",
+      "xdm:status": "active",
+      "xdm:servingStatus": "CAMPAIGN_STATUS_ENABLED",
+      "xdm:createdTime": "2025-09-10T08:00:00Z",
+      "xdm:updatedTime": "2025-11-09T10:00:00Z"
+    },
+    "xdm:campaignDetails": {
+      "xdm:campaignType": "search",
+      "xdm:subType": "standard_search",
+      "xdm:isAutomatedCampaign": false,
+      "xdm:promotedObject": {
+        "xdm:objectType": "website",
+        "xdm:objectName": "ACME Corp Website",
+        "xdm:objectURL": "https://www.acmecorp.com"
+      },
+      "xdm:budgetSettings": {
+        "xdm:isCampaignBudgetOptimization": false,
+        "xdm:spendCap": 50000,
+        "xdm:bidStrategy": "target_cpa",
+        "xdm:bidAmount": 25.5
+      },
+      "xdm:targeting": {
+        "xdm:geoTargeting": {
+          "xdm:countries": ["US"],
+          "xdm:regions": ["US-NY", "US-NJ", "US-CT", "US-PA"]
+        },
+        "xdm:demographicTargeting": {
+          "xdm:ageRanges": [
+            {
+              "xdm:minAge": 18,
+              "xdm:maxAge": 65
+            }
+          ],
+          "xdm:genders": ["all"],
+          "xdm:languages": ["en"]
+        },
+        "xdm:deviceTargeting": {
+          "xdm:deviceTypes": ["desktop", "mobile", "tablet"]
+        }
+      },
+      "xdm:scheduling": {
+        "xdm:isAlwaysOn": true,
+        "xdm:dayParting": {
+          "xdm:enabled": true,
+          "xdm:schedule": [
+            {
+              "xdm:dayOfWeek": "monday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "tuesday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "wednesday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "thursday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "friday",
+              "xdm:startHour": 8,
+              "xdm:endHour": 22
+            },
+            {
+              "xdm:dayOfWeek": "saturday",
+              "xdm:startHour": 10,
+              "xdm:endHour": 20
+            },
+            {
+              "xdm:dayOfWeek": "sunday",
+              "xdm:startHour": 10,
+              "xdm:endHour": 20
+            }
+          ]
+        }
+      },
+      "xdm:frequencyCapping": {
+        "xdm:enabled": false
+      },
+      "xdm:conversionTracking": {
+        "xdm:pixelIDs": ["AW-987654321"],
+        "xdm:conversionEvents": [
+          "purchase",
+          "add_to_cart",
+          "begin_checkout",
+          "sign_up"
+        ],
+        "xdm:attributionWindow": "30d_click",
+        "xdm:urlTracking": {
+          "xdm:trackingTemplate": "{lpurl}?s_kwcid=AL!{userid}!3!{creative}!{matchtype}!{placement}!{network}!{keyword}",
+          "xdm:finalUrlSuffix": "gclid={gclid}&gclsrc=aw.ds",
+          "xdm:customParameters": [
+            {
+              "xdm:key": "utm_source",
+              "xdm:value": "google"
+            },
+            {
+              "xdm:key": "utm_medium",
+              "xdm:value": "cpc"
+            },
+            {
+              "xdm:key": "utm_campaign",
+              "xdm:value": "{_campaign}"
+            }
+          ]
+        }
+      },
+      "xdm:placementBidAdjustments": [
+        {
+          "xdm:placement": "TOP_OF_SEARCH",
+          "xdm:placementType": "SEARCH",
+          "xdm:adjustmentPercentage": 25
+        }
+      ],
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_advertising_channel_type",
+          "xdm:stringValue": "SEARCH"
+        },
+        {
+          "xdm:fieldName": "google_bidding_strategy_type",
+          "xdm:stringValue": "TARGET_CPA"
+        },
+        {
+          "xdm:fieldName": "google_serving_status",
+          "xdm:stringValue": "SERVING"
+        },
+        {
+          "xdm:fieldName": "google_network_settings_target_search_network",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "google_network_settings_target_content_network",
+          "xdm:booleanValue": false
+        }
+      ]
+    }
+  }
+}

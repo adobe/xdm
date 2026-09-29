@@ -1,0 +1,108 @@
+{
+  "xdm:entityType": "experience",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:campaignID": "120345678901234",
+    "xdm:campaignGUID": "meta_act_123456789012345_camp_120345678901234",
+    "xdm:adGroupID": "120567890123456",
+    "xdm:adGroupGUID": "meta_act_123456789012345_adset_120567890123456",
+    "xdm:experienceID": "dyn_carousel_998877665",
+    "xdm:experienceGUID": "meta_act_123456789012345_exp_dyn_carousel_998877665",
+    "xdm:hierarchyPath": "act_123456789012345/120345678901234/120567890123456/dyn_carousel_998877665",
+    "xdm:metadata": {
+      "xdm:name": "Fall Collection - Dynamic Carousel Experience",
+      "xdm:status": "active",
+      "xdm:createdTime": "2025-10-15T09:30:00Z",
+      "xdm:updatedTime": "2025-11-02T14:20:00Z"
+    },
+    "xdm:experienceDetails": {
+      "xdm:experienceName": "Fall Collection - Dynamic Carousel Experience",
+      "xdm:experienceDescription": "Dynamic carousel showcasing top fall collection products with personalized card ordering",
+      "xdm:experienceType": "carousel",
+      "xdm:thumbnailURL": "https://cdn.meta.com/creatives/act_123456789012345/dyn_carousel_998877665/thumb.jpg",
+      "xdm:landingPageURL": "https://www.acmefashion.com/fall-collection?utm_source=meta&utm_medium=paid&utm_campaign=fall2025",
+      "xdm:headingText": "New Fall Arrivals",
+      "xdm:bodyText": "Discover our curated fall collection. Handcrafted styles designed for the modern wardrobe. Shop now and get free shipping on orders over $75.",
+      "xdm:callToAction": "Shop Now",
+      "xdm:assetIDs": [
+        "img_101010101",
+        "img_202020202",
+        "img_303030303",
+        "img_404040404"
+      ],
+      "xdm:assetGUIDs": [
+        "meta_act_123456789012345_asset_img_101010101",
+        "meta_act_123456789012345_asset_img_202020202",
+        "meta_act_123456789012345_asset_img_303030303",
+        "meta_act_123456789012345_asset_img_404040404"
+      ],
+      "xdm:carouselProperties": {
+        "xdm:cardCount": 4,
+        "xdm:cards": [
+          {
+            "xdm:cardIndex": 0,
+            "xdm:assetID": "img_101010101",
+            "xdm:assetGUID": "meta_act_123456789012345_asset_img_101010101",
+            "xdm:heading": "Wool Blend Overcoat",
+            "xdm:description": "Premium wool blend in charcoal grey - $189",
+            "xdm:destinationURL": "https://www.acmefashion.com/products/wool-overcoat?utm_source=meta&utm_content=card1"
+          },
+          {
+            "xdm:cardIndex": 1,
+            "xdm:assetID": "img_202020202",
+            "xdm:assetGUID": "meta_act_123456789012345_asset_img_202020202",
+            "xdm:heading": "Cashmere Scarf Set",
+            "xdm:description": "100% cashmere in autumn tones - $95",
+            "xdm:destinationURL": "https://www.acmefashion.com/products/cashmere-scarf?utm_source=meta&utm_content=card2"
+          },
+          {
+            "xdm:cardIndex": 2,
+            "xdm:assetID": "img_303030303",
+            "xdm:assetGUID": "meta_act_123456789012345_asset_img_303030303",
+            "xdm:heading": "Leather Ankle Boots",
+            "xdm:description": "Handcrafted Italian leather - $245",
+            "xdm:destinationURL": "https://www.acmefashion.com/products/ankle-boots?utm_source=meta&utm_content=card3"
+          },
+          {
+            "xdm:cardIndex": 3,
+            "xdm:assetID": "img_404040404",
+            "xdm:assetGUID": "meta_act_123456789012345_asset_img_404040404",
+            "xdm:heading": "Merino Turtleneck",
+            "xdm:description": "Soft merino wool in 6 colors - $120",
+            "xdm:destinationURL": "https://www.acmefashion.com/products/merino-turtleneck?utm_source=meta&utm_content=card4"
+          }
+        ]
+      },
+      "xdm:interactionProperties": {
+        "xdm:isInteractive": true,
+        "xdm:interactionType": "swipe"
+      },
+      "xdm:performanceMetadata": {
+        "xdm:usageCount": 8,
+        "xdm:lastUsedDate": "2025-11-09T15:00:00Z",
+        "xdm:associatedCampaigns": ["120345678901234", "120345678905678"],
+        "xdm:associatedAds": ["ad_550011", "ad_550022", "ad_550033"]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_dynamic_creative",
+          "xdm:booleanValue": true
+        },
+        {
+          "xdm:fieldName": "meta_objective_type",
+          "xdm:stringValue": "OUTCOME_SALES"
+        },
+        {
+          "xdm:fieldName": "meta_placement_optimization",
+          "xdm:stringValue": "automatic"
+        },
+        {
+          "xdm:fieldName": "meta_catalog_id",
+          "xdm:stringValue": "catalog_778899001122"
+        }
+      ]
+    }
+  }
+}

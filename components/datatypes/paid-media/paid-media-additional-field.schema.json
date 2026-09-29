@@ -1,0 +1,64 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/datatypes/paid-media-additional-field",
+  "title": "Paid Media Additional Field",
+  "type": "object",
+  "description": "Flexible field structure for storing platform-specific or custom fields not defined in core schema.  Supports multiple value types to accommodate different data types from paid media network APIs.",
+  "definitions": {
+    "additionalField": {
+      "properties": {
+        "xdm:fieldName": {
+          "title": "Field Name",
+          "type": "string",
+          "description": "Name of the additional field",
+          "meta:titleId": "paid-media-additional-field##xdm:fieldName##title##70471",
+          "meta:descriptionId": "paid-media-additional-field##xdm:fieldName##description##32981"
+        },
+        "xdm:stringValue": {
+          "title": "String Value",
+          "type": "string",
+          "description": "String value of the field",
+          "meta:titleId": "paid-media-additional-field##xdm:stringValue##title##50301",
+          "meta:descriptionId": "paid-media-additional-field##xdm:stringValue##description##87391"
+        },
+        "xdm:numberValue": {
+          "title": "Number Value",
+          "type": "number",
+          "description": "Numeric value of the field",
+          "meta:titleId": "paid-media-additional-field##xdm:numberValue##title##63271",
+          "meta:descriptionId": "paid-media-additional-field##xdm:numberValue##description##2831"
+        },
+        "xdm:booleanValue": {
+          "title": "Boolean Value",
+          "type": "boolean",
+          "description": "Boolean value of the field",
+          "meta:titleId": "paid-media-additional-field##xdm:booleanValue##title##11021",
+          "meta:descriptionId": "paid-media-additional-field##xdm:booleanValue##description##10331"
+        },
+        "xdm:dateValue": {
+          "title": "Date Value",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date/time value of the field",
+          "meta:titleId": "paid-media-additional-field##xdm:dateValue##title##96571",
+          "meta:descriptionId": "paid-media-additional-field##xdm:dateValue##description##85601"
+        }
+      },
+      "required": ["xdm:fieldName"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/additionalField"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:titleId": "paid-media-additional-field##title##11381",
+  "meta:descriptionId": "paid-media-additional-field##description##91811"
+}

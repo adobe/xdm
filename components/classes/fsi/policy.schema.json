@@ -67,6 +67,12 @@
             "automobile": "Automobile",
             "renter": "Renter",
             "boat": "Boat"
+          },
+          "meta:enumId": {
+            "home": "policy##xdm:type##meta:enum##home##8411",
+            "automobile": "policy##xdm:type##meta:enum##automobile##50371",
+            "renter": "policy##xdm:type##meta:enum##renter##3611",
+            "boat": "policy##xdm:type##meta:enum##boat##60391"
           }
         },
         "xdm:assignedBeneficiary": {

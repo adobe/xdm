@@ -140,7 +140,9 @@
         "xdm:accountOwnerID": {
           "title": "Account Owner ID",
           "description": "The CRM specific id used to identify either a single user or team of users who have ownership of this sales account.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "account-details##xdm:accountOwnerID##title##18781",
+          "meta:descriptionId": "account-details##xdm:accountOwnerID##description##61711"
         },
         "xdm:accountTradeStyle": {
           "title": "Account Trade Style",

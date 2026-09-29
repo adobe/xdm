@@ -66,7 +66,16 @@
             "Audiobook": "Audiobook"
           },
           "meta:titleId": "media-timed-asset-view-details##xdm:broadcastContentType##title##8641",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:broadcastContentType##description##74601"
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:broadcastContentType##description##74601",
+          "meta:enumId": {
+            "VOD": "media-timed-asset-view-details##xdm:broadcastContentType##meta:enum##VOD##96631",
+            "Live": "media-timed-asset-view-details##xdm:broadcastContentType##meta:enum##Live##33371",
+            "Linear": "media-timed-asset-view-details##xdm:broadcastContentType##meta:enum##Linear##32631",
+            "UGC": "media-timed-asset-view-details##xdm:broadcastContentType##meta:enum##UGC##87031",
+            "Radio": "media-timed-asset-view-details##xdm:broadcastContentType##meta:enum##Radio##61201",
+            "Podcast": "media-timed-asset-view-details##xdm:broadcastContentType##meta:enum##Podcast##37241",
+            "Audiobook": "media-timed-asset-view-details##xdm:broadcastContentType##meta:enum##Audiobook##70201"
+          }
         },
         "xdm:playerSDKVersion": {
           "title": "Player SDK version",

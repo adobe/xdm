@@ -59,7 +59,12 @@
             "outbound": "Outbound"
           },
           "meta:titleId": "phoneinteraction##xdm:type##title##66491",
-          "meta:descriptionId": "phoneinteraction##xdm:type##description##8311"
+          "meta:descriptionId": "phoneinteraction##xdm:type##description##8311",
+          "meta:enumId": {
+            "internal": "phoneinteraction##xdm:type##meta:enum##internal##86301",
+            "inbound": "phoneinteraction##xdm:type##meta:enum##inbound##5401",
+            "outbound": "phoneinteraction##xdm:type##meta:enum##outbound##61601"
+          }
         },
         "xdm:fromNumber": {
           "title": "Phone Number of the initiator of the call",

@@ -1,0 +1,67 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/datatypes/paid-media-url-tracking",
+  "title": "Paid Media URL Tracking",
+  "type": "object",
+  "description": "URL tracking configuration for paid media campaigns, ad groups, and ads. Captures tracking templates and custom parameters used to track user clicks and conversions.",
+  "definitions": {
+    "urlTracking": {
+      "properties": {
+        "xdm:trackingTemplate": {
+          "type": "string",
+          "title": "Tracking URL Template",
+          "description": "URL tracking template with macros (e.g., {lpurl}?s_kwcid=AL!{userid}!3!{creative})",
+          "meta:titleId": "paid-media-url-tracking##xdm:trackingTemplate##title##23981",
+          "meta:descriptionId": "paid-media-url-tracking##xdm:trackingTemplate##description##92521"
+        },
+        "xdm:finalUrlSuffix": {
+          "type": "string",
+          "title": "Final URL Suffix",
+          "description": "Parameters appended to the final URL",
+          "meta:titleId": "paid-media-url-tracking##xdm:finalUrlSuffix##title##911",
+          "meta:descriptionId": "paid-media-url-tracking##xdm:finalUrlSuffix##description##56431"
+        },
+        "xdm:customParameters": {
+          "type": "array",
+          "title": "Custom URL Parameters",
+          "description": "Custom tracking parameters configured for the entity",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:key": {
+                "type": "string",
+                "title": "Parameter Key",
+                "description": "Parameter name (e.g., 'utm_source', 'campaign_id')",
+                "meta:titleId": "paid-media-url-tracking##xdm:key##title##37401",
+                "meta:descriptionId": "paid-media-url-tracking##xdm:key##description##67541"
+              },
+              "xdm:value": {
+                "type": "string",
+                "title": "Parameter Value",
+                "description": "Parameter value or macro (e.g., '{campaignid}')",
+                "meta:titleId": "paid-media-url-tracking##xdm:value##title##22121",
+                "meta:descriptionId": "paid-media-url-tracking##xdm:value##description##76511"
+              }
+            }
+          },
+          "meta:titleId": "paid-media-url-tracking##xdm:customParameters##title##36611",
+          "meta:descriptionId": "paid-media-url-tracking##xdm:customParameters##description##51301"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/urlTracking"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:titleId": "paid-media-url-tracking##title##22461",
+  "meta:descriptionId": "paid-media-url-tracking##description##8971"
+}

@@ -76,6 +76,12 @@
                       "business class": "Business Class",
                       "premium economy": "Premium Economy",
                       "economy": "Economy"
+                    },
+                    "meta:enumId": {
+                      "first class": "experienceevent-flight-reservation##xdm:fareClass##meta:enum##first class##85281",
+                      "business class": "experienceevent-flight-reservation##xdm:fareClass##meta:enum##business class##47891",
+                      "premium economy": "experienceevent-flight-reservation##xdm:fareClass##meta:enum##premium economy##38361",
+                      "economy": "experienceevent-flight-reservation##xdm:fareClass##meta:enum##economy##64071"
                     }
                   },
                   "xdm:departureDate": {
@@ -142,7 +148,15 @@
                     },
                     "description": "Sales channel from which the reservation was booked.",
                     "meta:titleId": "experienceevent-flight-reservation##xdm:salesChannel##title##91211",
-                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:salesChannel##description##86171"
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:salesChannel##description##86171",
+                    "meta:enumId": {
+                      "web": "experienceevent-flight-reservation##xdm:salesChannel##meta:enum##web##27461",
+                      "mobile": "experienceevent-flight-reservation##xdm:salesChannel##meta:enum##mobile##68091",
+                      "mobileApp": "experienceevent-flight-reservation##xdm:salesChannel##meta:enum##mobileApp##38071",
+                      "callCenter": "experienceevent-flight-reservation##xdm:salesChannel##meta:enum##callCenter##18211",
+                      "agent": "experienceevent-flight-reservation##xdm:salesChannel##meta:enum##agent##44821",
+                      "thirdParty": "experienceevent-flight-reservation##xdm:salesChannel##meta:enum##thirdParty##7891"
+                    }
                   },
                   "xdm:securityScreening": {
                     "title": "Security Screening",
@@ -153,7 +167,11 @@
                     },
                     "description": "Type of security screening the passenger is subject to.",
                     "meta:titleId": "experienceevent-flight-reservation##xdm:securityScreening##title##55351",
-                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:securityScreening##description##52661"
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:securityScreening##description##52661",
+                    "meta:enumId": {
+                      "standard": "experienceevent-flight-reservation##xdm:securityScreening##meta:enum##standard##86141",
+                      "precheck": "experienceevent-flight-reservation##xdm:securityScreening##meta:enum##precheck##81861"
+                    }
                   },
                   "xdm:status": {
                     "title": "Status",
@@ -166,7 +184,13 @@
                     },
                     "description": "The status of the flight reservation.",
                     "meta:titleId": "experienceevent-flight-reservation##xdm:status##title##41261",
-                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:status##description##66421"
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:status##description##66421",
+                    "meta:enumId": {
+                      "cancelled": "experienceevent-flight-reservation##xdm:status##meta:enum##cancelled##43721",
+                      "confirmed": "experienceevent-flight-reservation##xdm:status##meta:enum##confirmed##99881",
+                      "hold": "experienceevent-flight-reservation##xdm:status##meta:enum##hold##26301",
+                      "pending": "experienceevent-flight-reservation##xdm:status##meta:enum##pending##83221"
+                    }
                   },
                   "xdm:cancellation": {
                     "title": "Cancellation",
@@ -249,7 +273,11 @@
                     },
                     "description": "Tracks the purpose of the reservation, typically either business or personal.",
                     "meta:titleId": "experienceevent-flight-reservation##xdm:purpose##title##47201",
-                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:purpose##description##7121"
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:purpose##description##7121",
+                    "meta:enumId": {
+                      "business": "experienceevent-flight-reservation##xdm:purpose##meta:enum##business##53461",
+                      "personal": "experienceevent-flight-reservation##xdm:purpose##meta:enum##personal##11081"
+                    }
                   },
                   "xdm:tripType": {
                     "title": "Trip Type",
@@ -261,7 +289,12 @@
                     },
                     "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
                     "meta:titleId": "experienceevent-flight-reservation##xdm:tripType##title##23641",
-                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:tripType##description##33971"
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:tripType##description##33971",
+                    "meta:enumId": {
+                      "roundtrip": "experienceevent-flight-reservation##xdm:tripType##meta:enum##roundtrip##92621",
+                      "oneWay": "experienceevent-flight-reservation##xdm:tripType##meta:enum##oneWay##8451",
+                      "multiCity": "experienceevent-flight-reservation##xdm:tripType##meta:enum##multiCity##77481"
+                    }
                   },
                   "xdm:flightCheckIn": {
                     "type": "object",
@@ -305,6 +338,12 @@
                           "mobile": "Mobile",
                           "web": "Web",
                           "kiosk": "Kiosk"
+                        },
+                        "meta:enumId": {
+                          "counter": "experienceevent-flight-reservation##xdm:checkInMethod##meta:enum##counter##58491",
+                          "mobile": "experienceevent-flight-reservation##xdm:checkInMethod##meta:enum##mobile##95261",
+                          "web": "experienceevent-flight-reservation##xdm:checkInMethod##meta:enum##web##62801",
+                          "kiosk": "experienceevent-flight-reservation##xdm:checkInMethod##meta:enum##kiosk##96111"
                         }
                       },
                       "xdm:checkInProcess": {

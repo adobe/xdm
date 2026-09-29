@@ -1,0 +1,98 @@
+{
+  "xdm:timestamp": "2025-11-09T00:00:00Z",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "987-654-3210",
+    "xdm:accountGUID": "gads_987_654_3210",
+    "xdm:campaignID": "20987654321",
+    "xdm:campaignGUID": "gads_20987654321",
+    "xdm:adGroupID": "30987654321",
+    "xdm:adGroupGUID": "gads_30987654321",
+    "xdm:adID": "40987654321",
+    "xdm:adGUID": "gads_40987654321",
+    "xdm:hierarchyPath": "987-654-3210/20987654321/30987654321/40987654321",
+    "xdm:channel": "PaidMedia",
+    "xdm:metrics": {
+      "xdm:impressions": 45000,
+      "xdm:clicks": 3150,
+      "xdm:spend": 6300.0,
+      "xdm:conversions": 315,
+      "xdm:conversionValue": 31500.0,
+      "xdm:ctr": 0.07,
+      "xdm:cpc": 2.0,
+      "xdm:cpm": 140.0,
+      "xdm:costPerConversion": 20.0,
+      "xdm:roas": 5.0
+    },
+    "xdm:dimensionalBreakdowns": {
+      "xdm:deviceType": "desktop",
+      "xdm:platform": "search",
+      "xdm:country": "US",
+      "xdm:region": "New York",
+      "xdm:language": "en",
+      "xdm:campaignObjective": "SEARCH",
+      "xdm:optimizationGoal": "TARGET_CPA"
+    },
+    "xdm:conversionMetrics": {
+      "xdm:postClickConversions": 284,
+      "xdm:postViewConversions": 31,
+      "xdm:conversionRate": 0.089,
+      "xdm:costPerAction": 20.0,
+      "xdm:conversionsByType": {
+        "xdm:purchases": 189,
+        "xdm:addToCart": 567,
+        "xdm:initiateCheckout": 378,
+        "xdm:leads": 63,
+        "xdm:viewContent": 1260,
+        "xdm:landingPageView": 2835
+      },
+      "xdm:conversionLag": 18.5,
+      "xdm:conversionPath": {
+        "xdm:averagePathLength": 3.2,
+        "xdm:singleTouchConversions": 126,
+        "xdm:multiTouchConversions": 189,
+        "xdm:averageTouchpoints": 2.8,
+        "xdm:assistedConversions": 95,
+        "xdm:directConversions": 220
+      },
+      "xdm:newCustomerConversions": 201,
+      "xdm:returningCustomerConversions": 114,
+      "xdm:averageOrderValue": 100.0,
+      "xdm:totalOrderValue": 31500.0,
+      "xdm:leads": 63,
+      "xdm:qualifiedLeads": 38,
+      "xdm:costPerLead": 100.0
+    },
+    "xdm:costMetrics": {
+      "xdm:averageCpc": 2.0,
+      "xdm:averageCpm": 140.0,
+      "xdm:averageCpa": 20.0,
+      "xdm:qualityScore": 8,
+      "xdm:adRank": 5.1,
+      "xdm:impressionShare": {
+        "xdm:impressionShare": 0.85,
+        "xdm:lostImpressionShareRank": 0.08,
+        "xdm:lostImpressionShareBudget": 0.07,
+        "xdm:topImpressionShare": 0.72,
+        "xdm:absoluteTopImpressionShare": 0.45
+      }
+    },
+    "xdm:attributionMetrics": {
+      "xdm:attributionModel": "DATA_DRIVEN",
+      "xdm:clickAttributionWindow": "30_DAY",
+      "xdm:viewAttributionWindow": "1_DAY",
+      "xdm:crossDeviceAttribution": {
+        "xdm:enabled": true,
+        "xdm:crossDeviceConversions": 47,
+        "xdm:crossDeviceConversionRate": 0.15,
+        "xdm:averageDevicesPerPath": 1.8
+      }
+    },
+    "xdm:qualityMetrics": {
+      "xdm:overallQualityScore": 8.0,
+      "xdm:relevanceScore": 8.5,
+      "xdm:conversionScore": 9.0,
+      "xdm:qualityTrend": "stable"
+    }
+  }
+}

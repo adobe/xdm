@@ -1,0 +1,45 @@
+{
+  "meta:license": [
+    "Copyright 2025 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/traitMembership",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Trait Membership Details",
+  "type": "object",
+  "meta:status": "stable",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Details about trait membership for a profile, including qualification time and expiration information.",
+  "definitions": {
+    "traitMembership": {
+      "properties": {
+        "xdm:lastQualificationTime": {
+          "title": "Last Qualification Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the profile last qualified for this trait.",
+          "meta:titleId": "traitMembership##xdm:lastQualificationTime##title##91971",
+          "meta:descriptionId": "traitMembership##xdm:lastQualificationTime##description##64281"
+        },
+        "xdm:validUntil": {
+          "title": "Valid Until Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp until which the trait membership is valid.",
+          "meta:titleId": "traitMembership##xdm:validUntil##title##69871",
+          "meta:descriptionId": "traitMembership##xdm:validUntil##description##30171"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/traitMembership"
+    }
+  ],
+  "meta:titleId": "traitMembership##title##98411",
+  "meta:descriptionId": "traitMembership##description##55331"
+}

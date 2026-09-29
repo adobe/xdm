@@ -29,7 +29,8 @@
           "description": "The type of descriptor this object represents.",
           "meta:enum": {},
           "meta:titleId": "schemadescriptor##@type##title##15981",
-          "meta:descriptionId": "schemadescriptor##@type##description##6141"
+          "meta:descriptionId": "schemadescriptor##@type##description##6141",
+          "meta:enumId": {}
         },
         "xdm:sourceSchema": {
           "title": "Source Schema",

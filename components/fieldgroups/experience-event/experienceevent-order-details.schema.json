@@ -25,12 +25,16 @@
           "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
-          }
+          },
+          "meta:titleId": "experienceevent-order-details##xdm:productListItems##title##26471",
+          "meta:descriptionId": "experienceevent-order-details##xdm:productListItems##description##7751"
         },
         "xdm:order": {
           "title": "Order",
           "$ref": "https://ns.adobe.com/xdm/datatypes/store-web-order",
-          "description": "Product Orders and realted information like payments."
+          "description": "Product Orders and realted information like payments.",
+          "meta:titleId": "experienceevent-order-details##xdm:order##title##21621",
+          "meta:descriptionId": "experienceevent-order-details##xdm:order##description##19911"
         },
         "xdm:store": {
           "title": "Store Details",
@@ -40,9 +44,13 @@
             "xdm:storeID": {
               "title": "Store ID",
               "type": "string",
-              "description": "Unique identifier for the store."
+              "description": "Unique identifier for the store.",
+              "meta:titleId": "experienceevent-order-details##xdm:storeID##title##17731",
+              "meta:descriptionId": "experienceevent-order-details##xdm:storeID##description##21581"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-order-details##xdm:store##title##66311",
+          "meta:descriptionId": "experienceevent-order-details##xdm:store##description##43541"
         },
         "xdm:billing": {
           "title": "Billing Details",
@@ -52,14 +60,20 @@
             "xdm:address": {
               "title": "Billing Address",
               "description": "Billing Address.",
-              "$ref": "https://ns.adobe.com/xdm/common/address"
+              "$ref": "https://ns.adobe.com/xdm/common/address",
+              "meta:titleId": "experienceevent-order-details##xdm:address##title##44781",
+              "meta:descriptionId": "experienceevent-order-details##xdm:address##description##60631"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-order-details##xdm:billing##title##66651",
+          "meta:descriptionId": "experienceevent-order-details##xdm:billing##description##47731"
         },
         "xdm:shipping": {
           "title": "Shipping",
           "$ref": "https://ns.adobe.com/xdm/datatypes/shipping",
-          "description": "Shipping related informnation for the order."
+          "description": "Shipping related informnation for the order.",
+          "meta:titleId": "experienceevent-order-details##xdm:shipping##title##39211",
+          "meta:descriptionId": "experienceevent-order-details##xdm:shipping##description##94941"
         }
       }
     }
@@ -69,5 +83,7 @@
       "$ref": "#/definitions/experienceevent-order"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "experienceevent-order-details##title##3021",
+  "meta:descriptionId": "experienceevent-order-details##description##61981"
 }

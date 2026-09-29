@@ -57,7 +57,20 @@ A set of meta-data fields related to various AJO entities which are related to m
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName": "Email 100Kb Message",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID": "04832ee5-51ff-4706-af8a-dsff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion": "Email 100Kb Message (1b)"
-  }
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/id": "rswe23",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Test Rule Set Name"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicy": [
+    {
+      "xdm:decisionPolicyID": "dp-98765-wxyz-4321-ijkl",
+      "xdm:decisionPolicyName": "Test decision Policy",
+      "xdm:decisionPolicyType": "RANKING",
+      "xdm:rankingType": "SCORING_FUNCTION",
+      "xdm:formulaId": "UUID0"
+    }
+  ]
 }
 ```
 
@@ -69,6 +82,8 @@ A set of meta-data fields related to various AJO entities which are related to m
 | [https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails](#httpsnsadobecomexperiencecustomerjourneymanagemententitieschanneldetails) | channelDetails.schema | Optional | AJO Entity Fields (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment](#httpsnsadobecomexperiencecustomerjourneymanagemententitiesexperiment) | `object` | Optional | AJO Entity Fields (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/entities/journey](#httpsnsadobecomexperiencecustomerjourneymanagemententitiesjourney) | `object` | Optional | AJO Entity Fields (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet](#httpsnsadobecomexperiencecustomerjourneymanagemententitiesruleset) | `object` | Optional | AJO Entity Fields (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicy](#httpsnsadobecomexperiencecustomerjourneymanagementitiesdecisionpolicy) | `array` | Optional | AJO Entity Fields (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign
@@ -482,6 +497,256 @@ Represents a frozen version of a Journey
 
 `string`
 
+
+
+
+
+
+
+
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet
+### AJO Ruleset Entity Specific Fields
+
+AJO Ruleset Entity Specific Fields
+
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet`
+* is optional
+* type: `object`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/id`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/name`| string | Optional|
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/id
+##### Rule Set ID
+
+ID of the Rule Set
+
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/id`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/id Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/name
+##### Rule Set Name
+
+Name of the Rule Set
+
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/name`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/name Type
+
+
+`string`
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicy
+### AJO Decision Policy Entity
+
+AJO Decision Policy Entity Specific Fields
+
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicy`
+* is optional
+* type: `array`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/entities/decisionPolicy Type
+
+Array type: `object[]`
+
+All items must be of the type:
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:decisionPolicyID`| string | Optional |
+| `xdm:decisionPolicyName`| string | Optional |
+| `xdm:decisionPolicyType`| string | Optional |
+| `xdm:rankingType`| string | Optional |
+| `xdm:formulaId`| string | Optional |
+| `xdm:transitions`| array | Optional |
+
+
+
+#### xdm:decisionPolicyID
+##### Decision Policy ID
+
+Unique identifier for the decision policy.
+
+`xdm:decisionPolicyID`
+* is optional
+* type: `string`
+
+##### xdm:decisionPolicyID Type
+
+
+`string`
+
+
+
+
+#### xdm:decisionPolicyName
+##### Decision Policy Name
+
+Name of the decision policy.
+
+`xdm:decisionPolicyName`
+* is optional
+* type: `string`
+
+##### xdm:decisionPolicyName Type
+
+
+`string`
+
+
+
+
+#### xdm:decisionPolicyType
+##### Decision Policy Type
+
+Type of the decision policy.
+
+`xdm:decisionPolicyType`
+* is optional
+* type: `string`
+
+##### xdm:decisionPolicyType Type
+
+
+`string`
+
+
+
+
+#### xdm:rankingType
+##### Ranking Type
+
+Ranking type for ranking-based decision policies.
+
+`xdm:rankingType`
+* is optional
+* type: `string`
+
+##### xdm:rankingType Type
+
+
+`string`
+
+
+
+
+#### xdm:formulaId
+##### Formula ID
+
+ID of the formula used for ranking.
+
+`xdm:formulaId`
+* is optional
+* type: `string`
+
+##### xdm:formulaId Type
+
+
+`string`
+
+
+
+
+#### xdm:transitions
+##### Transition
+
+Transition-specific fields for the decision policy.
+
+`xdm:transitions`
+* is optional
+* type: `array`
+
+
+##### xdm:transitions Type
+
+Array type: `object[]`
+
+All items must be of the type:
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:transitionID`| string | Optional |
+| `xdm:transitionName`| string | Optional |
+| `xdm:transitionType`| string | Optional |
+| `xdm:eligibilityRule`| string | Optional |
+| `xdm:experimentID`| string | Optional |
+| `xdm:treatmentID`| string | Optional |
+| `xdm:isHoldout`| boolean | Optional |
+
+
+##### xdm:transitionID
+###### Transition ID
+
+Unique identifier for the transition node.
+
+##### xdm:transitionName
+###### Transition Name
+
+Name of the transition node.
+
+##### xdm:transitionType
+###### Transition Type
+
+Type of the transition node.
+
+##### xdm:eligibilityRule
+###### Eligibility Rule
+
+Eligibility rule for the decision node.
+
+##### xdm:experimentID
+###### Experiment ID
+
+ID of the associated experiment.
+
+##### xdm:treatmentID
+###### Treatment ID
+
+ID of the associated treatment.
+
+##### xdm:isHoldout
+###### Treatment Holdout
+
+Indicates whether the treatment is a holdout.
 
 
 

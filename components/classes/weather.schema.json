@@ -20,7 +20,9 @@
         "xdm:weatherID": {
           "title": "Weather ID",
           "description": "Weather identifier",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "weather##xdm:weatherID##title##89081",
+          "meta:descriptionId": "weather##xdm:weatherID##description##3931"
         }
       }
     }
@@ -33,5 +35,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
-  "required": ["xdm:weatherID"]
+  "required": ["xdm:weatherID"],
+  "meta:titleId": "weather##title##10111",
+  "meta:descriptionId": "weather##description##61751"
 }

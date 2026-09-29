@@ -1,0 +1,94 @@
+{
+  "xdm:entityType": "asset",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "google_ads",
+    "xdm:accountID": "9876543210",
+    "xdm:accountGUID": "google_ads_9876543210",
+    "xdm:assetID": "555666777888",
+    "xdm:assetGUID": "google_ads_9876543210_asset_555666777888",
+    "xdm:hierarchyPath": "9876543210/555666777888",
+    "xdm:metadata": {
+      "xdm:name": "B2B Lead Capture - Free Demo Request",
+      "xdm:status": "active",
+      "xdm:createdTime": "2025-11-01T09:00:00Z",
+      "xdm:updatedTime": "2025-11-10T16:30:00Z"
+    },
+    "xdm:assetDetails": {
+      "xdm:assetType": "lead_form",
+      "xdm:assetSubType": "lead_form_extension",
+      "title": "Request a Free Product Demo",
+      "description": "Lead generation form for capturing demo requests from prospective B2B customers.",
+      "xdm:leadFormProperties": {
+        "xdm:backgroundImageAsset": "google_ads_9876543210_asset_111222333444",
+        "xdm:formFields": [
+          {
+            "xdm:fieldType": "FULL_NAME",
+            "xdm:fieldLabel": "Full Name",
+            "xdm:isRequired": true
+          },
+          {
+            "xdm:fieldType": "EMAIL",
+            "xdm:fieldLabel": "Work Email",
+            "xdm:isRequired": true
+          },
+          {
+            "xdm:fieldType": "PHONE_NUMBER",
+            "xdm:fieldLabel": "Phone Number",
+            "xdm:isRequired": false
+          },
+          {
+            "xdm:fieldType": "COMPANY_NAME",
+            "xdm:fieldLabel": "Company Name",
+            "xdm:isRequired": true
+          },
+          {
+            "xdm:fieldType": "WORK_TITLE",
+            "xdm:fieldLabel": "Job Title",
+            "xdm:isRequired": false
+          }
+        ]
+      },
+      "xdm:interactionProperties": {
+        "xdm:interactionType": "lead_form_submit",
+        "xdm:webViewProperties": {
+          "xdm:url": "https://www.acmecorp.com/demo-confirmation"
+        }
+      },
+      "xdm:usageMetadata": {
+        "xdm:usageCount": 4,
+        "xdm:lastUsedDate": "2025-11-10T12:00:00Z",
+        "xdm:associatedCampaigns": [
+          "camp_google_lead_001",
+          "camp_google_lead_002"
+        ],
+        "xdm:associatedAds": [
+          "ad_google_lead_501",
+          "ad_google_lead_502",
+          "ad_google_lead_503"
+        ]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "google_lead_form_id",
+          "xdm:stringValue": "555666777888"
+        },
+        {
+          "xdm:fieldName": "google_lead_form_call_to_action_type",
+          "xdm:stringValue": "BOOK_NOW"
+        },
+        {
+          "xdm:fieldName": "google_lead_form_post_submit_call_to_action_type",
+          "xdm:stringValue": "VISIT_SITE"
+        },
+        {
+          "xdm:fieldName": "google_lead_form_delivery_method",
+          "xdm:stringValue": "WEBHOOK"
+        },
+        {
+          "xdm:fieldName": "google_lead_form_desired_intent",
+          "xdm:stringValue": "HIGH_INTENT"
+        }
+      ]
+    }
+  }
+}

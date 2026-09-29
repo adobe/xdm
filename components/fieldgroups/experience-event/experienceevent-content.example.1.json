@@ -1,5 +1,7 @@
 {
   "xdm:experienceContent": {
+    "xdm:idSource": "adobe-analytics",
+    "xdm:channel": "web",
     "xdm:experience": {
       "xdm:experienceID": "https://domain.com:2023-01-01",
       "xdm:experienceSource": "https://domain.com",
@@ -23,6 +25,11 @@
         "xdm:verticalPixelDepth": {
           "xdm:value": 0.0
         }
+      },
+      "xdm:experienceExtras": {
+        "viewDurations": "15.5",
+        "loadDurations": "2.3",
+        "type": "header"
       }
     },
     "xdm:assets": [
@@ -41,6 +48,11 @@
         },
         "xdm:assetViews": {
           "xdm:value": 20
+        },
+        "xdm:assetExtras": {
+          "viewDurations": "12",
+          "loadDurations": "2.2",
+          "type": "header"
         }
       },
       {
@@ -58,6 +70,10 @@
         },
         "xdm:assetViews": {
           "xdm:value": 30
+        },
+        "xdm:assetExtras": {
+          "viewDurations": "12.7",
+          "loadDurations": "0.8"
         }
       }
     ],

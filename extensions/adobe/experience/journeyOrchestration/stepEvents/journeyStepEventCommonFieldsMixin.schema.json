@@ -274,6 +274,11 @@
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID##title##35411",
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID##description##96341"
             },
+            "https://ns.adobe.com/experience/journeyOrchestration/waveID": {
+              "title": "waveID",
+              "description": "Identifier of the wave execution for this journey instance. Present when the journey instance is orchestrated as part of a wave and used to correlate step events and downstream message feedback events.",
+              "type": "string"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID": {
               "meta:status": "deprecated",
               "title": "batchUnitaryBranchID",
@@ -455,6 +460,16 @@
               "title": "Dry run ID",
               "type": "string",
               "description": "Dry run ID corresponding to Dry run instance of a journey"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/testModeType": {
+              "title": "Test Mode Type",
+              "type": "string",
+              "description": "Specifies the Test Mode type for a journey run, indicating whether it was triggered in CLASSIC or SIMULATED mode."
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/simulationRunId": {
+              "title": "Simulation Run ID",
+              "type": "string",
+              "description": "Simulation Run ID corresponding to the Simulated Mode run of a journey"
             }
           },
           "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##31091"

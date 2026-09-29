@@ -129,6 +129,28 @@
               "$ref": "https://ns.adobe.com/xdm/channels/channel",
               "description": "Each specific experience channel defines a constant `@id`."
             },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/customChannel": {
+              "title": "Custom Channel Specific Fields",
+              "type": "object",
+              "description": "Fields specific to customer-created custom channels delivered via outbound HTTP calls.",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": {
+                  "title": "Custom Channel Name",
+                  "type": "string",
+                  "description": "The display name of the custom channel as configured by the customer."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/endpoint": {
+                  "title": "Custom Channel Endpoint",
+                  "type": "string",
+                  "description": "The configured endpoint URL in template form."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/httpMethod": {
+                  "title": "Custom Channel HTTP Method",
+                  "type": "string",
+                  "description": "The HTTP method used to call the endpoint (for example, POST)."
+                }
+              }
+            },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": {
               "title": "The json template used in the message",
               "type": "string",
@@ -139,6 +161,16 @@
               "type": "string",
               "format": "date-time",
               "description": "Time at which message was published"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigName": {
+              "title": "Channel Configuration Name",
+              "type": "string",
+              "description": "The name of the configuration used during creation of the journey or campaign"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigID": {
+              "title": "Channel Configuration ID",
+              "type": "string",
+              "description": "The ID of the configuration used during creation of the journey or campaign"
             }
           }
         },
@@ -235,7 +267,34 @@
                 "title": "Decision Policy Type",
                 "type": "string",
                 "description": "Decision Policy Type"
+              },
+              "xdm:rankingType": {
+                "title": "Ranking Type",
+                "type": "string",
+                "description": "Ranking Type of the decision policy"
+              },
+              "xdm:formulaId": {
+                "title": "Formula ID",
+                "type": "string",
+                "description": "ID of the formula used for ranking"
               }
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet": {
+          "title": "AJO Rule Set Entity",
+          "type": "object",
+          "description": "AJO Rule Set Entity Specific Fields",
+          "properties": {
+            "xdm:id": {
+              "title": "Rule Set ID",
+              "type": "string",
+              "description": "ID for the rule set"
+            },
+            "xdm:name": {
+              "title": "Rule Set Name",
+              "type": "string",
+              "description": "Name for the rule set"
             }
           }
         },
@@ -335,6 +394,16 @@
               "title": "Orchestrated Campaign Action Identity Namespace",
               "type": "string",
               "description": "Represents the Orchestrated Campaign Action Identity Namespace"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/targetDimension": {
+              "title": "Orchestrated Campaign Target Dimension",
+              "type": "string",
+              "description": "Represents the main sending dimension of the orchestrated campaign action."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/secondaryDimension": {
+              "title": "Orchestrated Campaign Secondary Dimension",
+              "type": "string",
+              "description": "Represents the secondary sending dimension for the orchestrated campaign action."
             }
           }
         },
@@ -367,6 +436,42 @@
               "title": "Inline Campaign Action ID",
               "type": "string",
               "description": "Represents the Inline Campaign Action ID"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/parentSourceMeta": {
+          "title": "AJO Parent Source Meta Entity",
+          "type": "object",
+          "description": "AJO Parent Source Meta Entity Specific Fields. Captures details about the source entity (Campaign, Journey, etc.) from which this AJO entity originated.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceID": {
+              "title": "Source ID",
+              "type": "string",
+              "description": "Source Id of the entity where message originate."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceType": {
+              "title": "Source Type",
+              "type": "string",
+              "description": "Classifies the source type of the message.",
+              "meta:enum": {
+                "orchestratedCampaign": "Orchestrated Campaign",
+                "singleStepCampaign": "Single Step Campaign",
+                "journey": "Journey",
+                "b2bAccountJourneys": "B2B Account Journeys",
+                "b2bLeadJourneys": "B2B Lead Journeys",
+                "smbCampaign": "SMB Campaign",
+                "haloCampaign": "Halo Campaign"
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceVersionID": {
+              "title": "Source Version ID",
+              "type": "string",
+              "description": "Source Version Id of the entity where message originate."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceActionID": {
+              "title": "Source Action ID",
+              "type": "string",
+              "description": "Action id of the source from where message originate"
             }
           }
         },

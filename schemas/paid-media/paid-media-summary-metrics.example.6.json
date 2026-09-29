@@ -1,0 +1,101 @@
+{
+  "xdm:timestamp": "2025-11-09T00:00:00Z",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "linkedin",
+    "xdm:accountID": "508123456",
+    "xdm:accountGUID": "li_508123456",
+    "xdm:campaignID": "li_camp_201234567",
+    "xdm:campaignGUID": "li_201234567",
+    "xdm:adGroupID": "li_ag_301234567",
+    "xdm:adGroupGUID": "li_301234567",
+    "xdm:hierarchyPath": "508123456/li_camp_201234567/li_ag_301234567",
+    "xdm:channel": "PaidMedia",
+    "xdm:metrics": {
+      "xdm:impressions": 52000,
+      "xdm:clicks": 1560,
+      "xdm:reach": 38000,
+      "xdm:frequency": 1.37,
+      "xdm:spend": 7800.0,
+      "xdm:conversions": 78,
+      "xdm:conversionValue": 23400.0,
+      "xdm:ctr": 0.03,
+      "xdm:cpc": 5.0,
+      "xdm:cpm": 150.0,
+      "xdm:costPerConversion": 100.0,
+      "xdm:roas": 3.0,
+      "xdm:engagements": 4160,
+      "xdm:engagementRate": 0.08
+    },
+    "xdm:dimensionalBreakdowns": {
+      "xdm:deviceType": "desktop",
+      "xdm:platform": "linkedin_feed",
+      "xdm:ageGroup": "25-54",
+      "xdm:gender": "all",
+      "xdm:country": "US",
+      "xdm:region": "California",
+      "xdm:interestCategory": "Technology",
+      "xdm:audienceSegment": "B2B_decision_makers",
+      "xdm:campaignObjective": "LEAD_GENERATION",
+      "xdm:creativeFormat": "carousel"
+    },
+    "xdm:extendedMetrics": {
+      "xdm:likes": 2080,
+      "xdm:comments": 520,
+      "xdm:shares": 780,
+      "xdm:follows": 312,
+      "xdm:linkClicks": 1560,
+      "xdm:uniqueClicks": 1404,
+      "xdm:leadSubmissions": 78,
+      "xdm:websiteVisits": 1248
+    },
+    "xdm:conversionMetrics": {
+      "xdm:postClickConversions": 62,
+      "xdm:postViewConversions": 16,
+      "xdm:conversionRate": 0.05,
+      "xdm:costPerAction": 100.0,
+      "xdm:conversionsByType": {
+        "xdm:leads": 78,
+        "xdm:registrations": 31,
+        "xdm:downloads": 47
+      },
+      "xdm:leads": 78,
+      "xdm:qualifiedLeads": 47,
+      "xdm:costPerLead": 100.0,
+      "xdm:leadFormOpens": 234,
+      "xdm:leadFormSubmissions": 78,
+      "xdm:leadFormCompletionRate": 0.333
+    },
+    "xdm:costMetrics": {
+      "xdm:averageCpc": 5.0,
+      "xdm:averageCpm": 150.0,
+      "xdm:averageCpa": 100.0,
+      "xdm:averageCpl": 100.0,
+      "xdm:budgetUtilization": {
+        "xdm:budgetAllocated": 10000.0,
+        "xdm:budgetSpent": 7800.0,
+        "xdm:budgetRemaining": 2200.0,
+        "xdm:budgetUtilization": 0.78,
+        "xdm:dailyBudget": 10000.0,
+        "xdm:pacingStatus": "on_track"
+      },
+      "xdm:costTrend": "stable"
+    },
+    "xdm:attributionMetrics": {
+      "xdm:attributionModel": "LINEAR",
+      "xdm:clickAttributionWindow": "30_DAY",
+      "xdm:viewAttributionWindow": "7_DAY"
+    },
+    "xdm:qualityMetrics": {
+      "xdm:overallQualityScore": 7.5,
+      "xdm:relevanceScore": 8.0,
+      "xdm:engagementScore": 7.2,
+      "xdm:conversionScore": 7.8,
+      "xdm:audienceRelevance": 8.5,
+      "xdm:qualityTrend": "improving",
+      "xdm:benchmarkComparison": {
+        "xdm:industryAverage": 6.0,
+        "xdm:percentileRank": 78
+      }
+    }
+  }
+}

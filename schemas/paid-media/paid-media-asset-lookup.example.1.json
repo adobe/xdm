@@ -1,0 +1,82 @@
+{
+  "xdm:entityType": "asset",
+  "xdm:paidMedia": {
+    "xdm:adNetwork": "meta",
+    "xdm:accountID": "act_123456789012345",
+    "xdm:accountGUID": "meta_act_123456789012345",
+    "xdm:assetID": "987654321012345",
+    "xdm:assetGUID": "meta_act_123456789012345_asset_987654321012345",
+    "xdm:hierarchyPath": "act_123456789012345/987654321012345",
+    "xdm:metadata": {
+      "xdm:name": "Fall Product Launch - 30 Second Video",
+      "xdm:status": "active",
+      "xdm:createdTime": "2025-10-25T14:00:00Z",
+      "xdm:updatedTime": "2025-11-05T10:00:00Z"
+    },
+    "xdm:assetDetails": {
+      "xdm:assetType": "video",
+      "xdm:assetSubType": "feed_video",
+      "title": "Introducing Our Revolutionary New Product",
+      "description": "Experience the future of technology with our latest innovation. Available now for a limited time.",
+      "xdm:mediaProperties": {
+        "xdm:url": "https://video.xx.fbcdn.net/v/t42.1790-2/987654321012345_video.mp4",
+        "xdm:permalinkURL": "https://www.facebook.com/ads/library/?id=987654321012345",
+        "xdm:thumbnailURL": "https://scontent.xx.fbcdn.net/v/t45.1600-4/987654321012345_thumb.jpg",
+        "xdm:source": "https://business.facebook.com/creatives/987654321012345",
+        "xdm:hash": "abc123def456ghi789jkl012mno345pqr678"
+      },
+      "xdm:dimensions": {
+        "xdm:width": 1920,
+        "xdm:height": 1080,
+        "xdm:aspectRatio": "16:9",
+        "xdm:orientation": "landscape"
+      },
+      "xdm:fileProperties": {
+        "xdm:fileSize": 45678912,
+        "xdm:fileSizeFormatted": "43.6 MB",
+        "xdm:mimeType": "video/mp4",
+        "xdm:fileExtension": "mp4",
+        "xdm:encoding": "h264"
+      },
+      "xdm:videoProperties": {
+        "xdm:duration": 30.5,
+        "xdm:frameRate": 30,
+        "xdm:bitrate": 5000,
+        "xdm:codec": "h264",
+        "xdm:hasAudio": true
+      },
+      "xdm:usageMetadata": {
+        "xdm:usageCount": 12,
+        "xdm:lastUsedDate": "2025-11-09T15:00:00Z",
+        "xdm:associatedCampaigns": [
+          "camp_111222333",
+          "camp_444555666",
+          "camp_777888999"
+        ],
+        "xdm:associatedAds": ["ad_101010101", "ad_202020202", "ad_303030303"]
+      },
+      "xdm:additionalDetails": [
+        {
+          "xdm:fieldName": "meta_video_id",
+          "xdm:stringValue": "987654321012345"
+        },
+        {
+          "xdm:fieldName": "meta_video_status",
+          "xdm:stringValue": "ready"
+        },
+        {
+          "xdm:fieldName": "meta_video_type",
+          "xdm:stringValue": "uploaded"
+        },
+        {
+          "xdm:fieldName": "meta_thumbnail_source",
+          "xdm:stringValue": "auto_generated"
+        },
+        {
+          "xdm:fieldName": "meta_video_insights_enabled",
+          "xdm:booleanValue": true
+        }
+      ]
+    }
+  }
+}

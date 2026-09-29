@@ -30,6 +30,13 @@
           "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##title##31921",
           "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##description##94561"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID": {
+          "title": "Request ID",
+          "type": "string",
+          "description": "A unique request id refers to every single message sent as part of a MessageExecution activity.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##title##31922",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/requestID##description##94562"
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
           "title": "Experience channel",
           "description": "Experience channel related to the ExperienceEvent.",
@@ -48,6 +55,38 @@
           "title": "isSendTimeOptimized",
           "type": "boolean",
           "description": "True if the message execution is send time optimized."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/sendTimeOptimizationType": {
+          "title": "Send Time Optimization Type",
+          "type": "integer",
+          "description": "The Send Time Optimization result type for this lead.",
+          "meta:enum": {
+            "1": "STO Optimized",
+            "2": "Control Group",
+            "3": "No Result",
+            "4": "Not Tried"
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/optimizedSendTime": {
+          "title": "Optimized Send Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "The optimized send time computed by Send Time Optimization for this lead."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/entryCount": {
+          "title": "Entry Count",
+          "type": "integer",
+          "description": "The number of times this lead has entered or re-entered the source (e.g. journey, campaign) that produced this message execution. This is per-lead and varies across leads in the same execution, so it cannot be resolved from journey- or campaign-level identifiers."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionName": {
+          "title": "Secondary Dimension Name",
+          "type": "string",
+          "description": "The secondary dimension name of the message profile."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/secondaryDimensionID": {
+          "title": "Secondary Dimension Id",
+          "type": "string",
+          "description": "The secondary dimension id of the message profile."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": {
           "title": "isTestExecution",
@@ -81,6 +120,14 @@
           "type": "string",
           "description": "Domain of the recipient's email address."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/attachment": {
+          "title": "Email Attachments",
+          "type": "array",
+          "description": "List of attachments in the email message.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/attachment"
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
           "title": "Push Platform",
           "type": "string",
@@ -91,6 +138,34 @@
           },
           "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title##73351",
           "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description##33451"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/liveActivity": {
+          "title": "Live Activity Details",
+          "type": "object",
+          "description": "Live activity context for mobile push notifications. It includes the live activity ID, live activity event and an optional channel id which is used incase of broadcasting a live activity across multiple devices.",
+          "properties": {
+            "xdm:event": {
+              "title": "Live Activity Event",
+              "type": "string",
+              "description": "The type of live activity event being triggered.",
+              "meta:enum": {
+                "localStart": "Local start event for live activity",
+                "pushToStart": "Push to start or remote start event for live activity",
+                "update": "Update event for live activity",
+                "end": "End event for live activity"
+              }
+            },
+            "xdm:channelID": {
+              "title": "Broadcast Channel ID",
+              "type": "string",
+              "description": "The broadcast channel identifier for the live activity."
+            },
+            "xdm:liveActivityID": {
+              "title": "Live Activity ID",
+              "type": "string",
+              "description": "The unique identifier for the live activity."
+            }
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": {
           "title": "SMS Provider",
@@ -134,6 +209,61 @@
           "format": "date-time",
           "description": "Timestamp from Provider"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/status": {
+          "title": "Status",
+          "type": "object",
+          "description": "Status section containing provider feedback details.",
+          "properties": {
+            "xdm:feedbackStatus": {
+              "title": "Feedback Status",
+              "type": "string",
+              "description": "Actual feedback status (mapped to standard enum).",
+              "enum": [
+                "error",
+                "exclude",
+                "sent",
+                "bounce",
+                "delay",
+                "duplicate",
+                "denylist",
+                "delivered",
+                "unknown",
+                "read"
+              ],
+              "meta:enum": {
+                "error": "Message processing failed",
+                "exclude": "Message profile filtered out",
+                "sent": "Message sent",
+                "bounce": "Message bounced",
+                "delay": "Message delayed",
+                "duplicate": "Duplicate message skipped",
+                "denylist": "Invalid destination skipped",
+                "delivered": "Message Delivered",
+                "unknown": "Unknown feedback status",
+                "read": "Message read"
+              }
+            },
+            "xdm:providerFeedbackStatus": {
+              "title": "Provider Feedback Status",
+              "type": "string",
+              "description": "Status as reported by the SMS provider (e.g. DeliveredToTerminal), before mapping."
+            },
+            "xdm:message": {
+              "title": "Message",
+              "type": "string",
+              "description": "Message from the SMS provider, either success or failure."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/metadata": {
+          "title": "SMS Metadata",
+          "type": "object",
+          "description": "A dynamic map of additional metadata key/value pairs associated with the SMS channel context.",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/messageType": {
           "title": "whatsApp Message Type",
           "type": "string",
@@ -164,6 +294,96 @@
           "type": "string",
           "format": "date-time",
           "description": "Timestamp from Meta / WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/status": {
+          "title": "Status",
+          "type": "object",
+          "description": "Status section containing provider feedback details.",
+          "properties": {
+            "xdm:feedbackStatus": {
+              "title": "Feedback Status",
+              "type": "string",
+              "description": "Actual feedback status (mapped to standard enum). Not the raw provider status.",
+              "enum": [
+                "error",
+                "exclude",
+                "sent",
+                "bounce",
+                "delay",
+                "duplicate",
+                "denylist",
+                "delivered",
+                "unknown",
+                "read"
+              ],
+              "meta:enum": {
+                "error": "Message processing failed",
+                "exclude": "Message profile filtered out",
+                "sent": "Message sent",
+                "bounce": "Message bounced",
+                "delay": "Message delayed",
+                "duplicate": "Duplicate message skipped",
+                "denylist": "Invalid destination skipped",
+                "delivered": "Message Delivered",
+                "unknown": "Unknown feedback status",
+                "read": "Message read"
+              }
+            },
+            "xdm:providerFeedbackStatus": {
+              "title": "Provider Feedback Status",
+              "type": "string",
+              "description": "Status as reported by the WhatsApp provider (e.g. DeliveredToTerminal), before mapping."
+            },
+            "xdm:message": {
+              "title": "Message",
+              "type": "string",
+              "description": "Message from the WhatsApp provider, either success or failure."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionEvent": {
+          "title": "Response Content",
+          "type": "string",
+          "description": "Content of the user response - emoji for reactions, or message text for replies to a specific message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionMessageID": {
+          "title": "Original Message ID",
+          "type": "string",
+          "description": "ID of the original message being responded to (for reactions or replies)"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/reactionActionName": {
+          "title": "Response Action Type",
+          "type": "string",
+          "description": "Type of response action from WhatsApp - react, unreact, or reply"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedTitle": {
+          "title": "User-selected title from WhatsApp ",
+          "type": "string",
+          "description": "User-selected title from WhatsApp"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveType": {
+          "title": "Interactive type from WhatsApp ",
+          "type": "string",
+          "description": "Interactive type from WhatsApp message — options include: list reply, button reply, and button."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedDescription": {
+          "title": "Selected Description",
+          "type": "string",
+          "description": "Description of the Selected WhatsApp interactive message"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/interactiveSelectedID": {
+          "title": "ID of the selected option from WhatsApp ",
+          "type": "string",
+          "description": "ID of the selected option from WhatsApp "
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/whatsAppChannelContext/metadata": {
+          "title": "WhatsApp Metadata",
+          "type": "object",
+          "description": "A dynamic map of additional metadata key/value pairs associated with the WhatsApp channel context.",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       }
     }

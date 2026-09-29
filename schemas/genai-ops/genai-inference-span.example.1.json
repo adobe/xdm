@@ -1,0 +1,44 @@
+{
+  "xdm:gen_ai": {
+    "xdm:operation": {
+      "xdm:name": "chat_completion"
+    },
+    "xdm:system": "openai-gpt4",
+    "xdm:conversation": {
+      "xdm:id": "conv-2025-01-15-abc123"
+    },
+    "xdm:output": {
+      "xdm:type": "text"
+    },
+    "xdm:request": {
+      "xdm:choice": {
+        "xdm:count": 1
+      },
+      "xdm:model": "gpt-4-turbo",
+      "xdm:seed": 42,
+      "xdm:frequency_penalty": 0.0,
+      "xdm:max_tokens": 2048,
+      "xdm:presence_penalty": 0.0,
+      "xdm:stop_sequences": ["\\n\\n", "END"],
+      "xdm:temperature": 0.7,
+      "xdm:top_k": 50,
+      "xdm:top_p": 0.9
+    },
+    "xdm:response": {
+      "xdm:finish_reasons": ["stop"],
+      "xdm:id": "chatcmpl-abc123def456",
+      "xdm:model": "gpt-4-turbo-2024-04-09"
+    },
+    "xdm:usage": {
+      "xdm:input_tokens": 150,
+      "xdm:output_tokens": 75
+    }
+  },
+  "xdm:error": {
+    "xdm:type": "none"
+  },
+  "xdm:server": {
+    "xdm:address": "api.openai.com",
+    "xdm:port": 443
+  }
+}

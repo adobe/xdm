@@ -25,8 +25,15 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
       "@id": "https://ns.adobe.com/xdm/channels/email"
     },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/customChannel": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Acme Marketing Channel",
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/endpoint": "https://api.example.com/v1/messages",
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/httpMethod": "POST"
+    },
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": "Hi {{person.firstName}}",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublishedAt": "2021-06-25T15:52:25+00:00"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublishedAt": "2021-06-25T15:52:25+00:00",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigName": "Push Configuration Name",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelConfigID": "07455ee5-51ff-4706-af8a-a8ff6756308b"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID": "123456",
@@ -39,6 +46,8 @@
       "xdm:decisionPolicyID": "123-456-789-c",
       "xdm:decisionPolicyName": "Decision Policy",
       "xdm:decisionPolicyType": "Message",
+      "xdm:rankingType": "",
+      "xdm:formulaId": "",
       "xdm:transitions": [
         {
           "xdm:transitionID": "node-67890",
@@ -62,6 +71,10 @@
       ]
     }
   ],
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/ruleSet": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/id": "a2YioO",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Rule Set Name"
+  },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName": "Marketing Test Journey",
@@ -81,13 +94,21 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID": "0979238rf-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": "0899238rf-51ff",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionName": "Email Service",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionIdentityNamespace": "Profile"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionIdentityNamespace": "Profile",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/targetDimension": "Recipients",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/secondaryDimension": "Booking"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/executableAction": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/id": "inline campaign -1",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceType": "Orchestrated Campaign",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/versionID": "inline campaign -1-2",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/actionID": "inline campaign -1-2-3"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/parentSourceMeta": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceID": "123-1234-8989",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceType": "smbCampaign",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceVersionID": "676-23-1234-8989",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/sourceActionID": "235-898798-989"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/tags": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/values": [

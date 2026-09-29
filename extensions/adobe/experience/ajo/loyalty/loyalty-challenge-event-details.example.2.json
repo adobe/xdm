@@ -1,0 +1,27 @@
+{
+  "_experience": {
+    "ajo": {
+      "loyalty": {
+        "challenge": {
+          "locationId": "online-store",
+          "transactionId": "txn-789012",          
+          "itemList": [
+            {
+              "unitPrice": 150.00,
+              "quantity": 1,
+              "itemName": "Premium Membership",
+              "itemMap": {
+                "duration": "annual",
+                "tier": "gold"
+              },
+              "itemSet": [
+                "membership",
+                "premium"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

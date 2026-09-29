@@ -62,7 +62,12 @@
                     },
                     "description": "Refers to the credit bureau responsible for providing the credit score.",
                     "meta:titleId": "profile-personal-finance-details##xdm:provider##title##97531",
-                    "meta:descriptionId": "profile-personal-finance-details##xdm:provider##description##33021"
+                    "meta:descriptionId": "profile-personal-finance-details##xdm:provider##description##33021",
+                    "meta:enumId": {
+                      "experian": "profile-personal-finance-details##xdm:provider##meta:enum##experian##4151",
+                      "equifax": "profile-personal-finance-details##xdm:provider##meta:enum##equifax##92281",
+                      "transunion": "profile-personal-finance-details##xdm:provider##meta:enum##transunion##17231"
+                    }
                   },
                   "xdm:scoreDate": {
                     "title": "Score Date",
@@ -88,7 +93,15 @@
               },
               "description": "Tracks the employment status of the user.",
               "meta:titleId": "profile-personal-finance-details##xdm:employmentStatus##title##67451",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:employmentStatus##description##47761"
+              "meta:descriptionId": "profile-personal-finance-details##xdm:employmentStatus##description##47761",
+              "meta:enumId": {
+                "fullTime": "profile-personal-finance-details##xdm:employmentStatus##meta:enum##fullTime##37001",
+                "partTime": "profile-personal-finance-details##xdm:employmentStatus##meta:enum##partTime##39651",
+                "temporary": "profile-personal-finance-details##xdm:employmentStatus##meta:enum##temporary##24051",
+                "selfEmployed": "profile-personal-finance-details##xdm:employmentStatus##meta:enum##selfEmployed##29461",
+                "retired": "profile-personal-finance-details##xdm:employmentStatus##meta:enum##retired##70631",
+                "unemployed": "profile-personal-finance-details##xdm:employmentStatus##meta:enum##unemployed##34221"
+              }
             },
             "xdm:ID": {
               "title": "ID",

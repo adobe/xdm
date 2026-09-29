@@ -36,6 +36,13 @@
             "system": "System",
             "accountScoreChange": "Account Score Change",
             "accountDataValueChange": "Account Data Value Change"
+          },
+          "meta:titleId": "account-history##xdm:accountEventType##title##14921",
+          "meta:descriptionId": "account-history##xdm:accountEventType##description##66181",
+          "meta:enumId": {
+            "system": "account-history##xdm:accountEventType##meta:enum##system##70861",
+            "accountScoreChange": "account-history##xdm:accountEventType##meta:enum##accountScoreChange##43341",
+            "accountDataValueChange": "account-history##xdm:accountEventType##meta:enum##accountDataValueChange##18091"
           }
         }
       }

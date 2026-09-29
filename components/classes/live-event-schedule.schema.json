@@ -22,12 +22,16 @@
         "xdm:liveEventName": {
           "title": "Live Event Name",
           "description": "Name of the event.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "live-event-schedule##xdm:liveEventName##title##59161",
+          "meta:descriptionId": "live-event-schedule##xdm:liveEventName##description##52191"
         },
         "xdm:liveEventID": {
           "title": "Live Event ID",
           "description": "Unique Identifier for the Live Event",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "live-event-schedule##xdm:liveEventID##title##9601",
+          "meta:descriptionId": "live-event-schedule##xdm:liveEventID##description##97691"
         }
       }
     }
@@ -40,5 +44,7 @@
       "$ref": "#/definitions/live-event-schedule"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "live-event-schedule##title##45251",
+  "meta:descriptionId": "live-event-schedule##description##10521"
 }

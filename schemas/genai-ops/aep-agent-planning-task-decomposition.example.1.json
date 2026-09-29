@@ -1,0 +1,16 @@
+{
+  "xdm:adobe": {
+    "xdm:gen_ai": {
+      "xdm:agent": {
+        "xdm:execution": {
+          "xdm:planning": {
+            "xdm:strategy": "hierarchical_decomposition",
+            "xdm:taskCount": 4,
+            "xdm:complexity": "medium",
+            "xdm:dependencies": "[{\"task\": \"data_collection\", \"depends_on\": []}, {\"task\": \"data_analysis\", \"depends_on\": [\"data_collection\"]}, {\"task\": \"visualization\", \"depends_on\": [\"data_analysis\"]}, {\"task\": \"report_generation\", \"depends_on\": [\"visualization\"]}]"
+          }
+        }
+      }
+    }
+  }
+}

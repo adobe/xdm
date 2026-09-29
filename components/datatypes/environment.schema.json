@@ -27,7 +27,14 @@
             "widget": "Application extension"
           },
           "meta:titleId": "environment##xdm:type##title##45711",
-          "meta:descriptionId": "environment##xdm:type##description##26511"
+          "meta:descriptionId": "environment##xdm:type##description##26511",
+          "meta:enumId": {
+            "browser": "environment##xdm:type##meta:enum##browser##72421",
+            "application": "environment##xdm:type##meta:enum##application##33191",
+            "iot": "environment##xdm:type##meta:enum##iot##2711",
+            "external": "environment##xdm:type##meta:enum##external##23511",
+            "widget": "environment##xdm:type##meta:enum##widget##86081"
+          }
         }
       }
     },
@@ -170,7 +177,26 @@
             "modem": "Modem"
           },
           "meta:titleId": "environment##xdm:connectionType##title##5651",
-          "meta:descriptionId": "environment##xdm:connectionType##description##11031"
+          "meta:descriptionId": "environment##xdm:connectionType##description##11031",
+          "meta:enumId": {
+            "dialup": "environment##xdm:connectionType##meta:enum##dialup##5741",
+            "isdn": "environment##xdm:connectionType##meta:enum##isdn##26891",
+            "bisdn": "environment##xdm:connectionType##meta:enum##bisdn##20341",
+            "dsl": "environment##xdm:connectionType##meta:enum##dsl##94071",
+            "cable": "environment##xdm:connectionType##meta:enum##cable##27111",
+            "wireless_wifi": "environment##xdm:connectionType##meta:enum##wireless_wifi##6621",
+            "mobile": "environment##xdm:connectionType##meta:enum##mobile##83381",
+            "mobile_edge": "environment##xdm:connectionType##meta:enum##mobile_edge##67341",
+            "mobile_gprs": "environment##xdm:connectionType##meta:enum##mobile_gprs##48311",
+            "mobile_2g": "environment##xdm:connectionType##meta:enum##mobile_2g##8301",
+            "mobile_3g": "environment##xdm:connectionType##meta:enum##mobile_3g##84171",
+            "mobile_lte": "environment##xdm:connectionType##meta:enum##mobile_lte##96971",
+            "t1": "environment##xdm:connectionType##meta:enum##t1##38421",
+            "t3": "environment##xdm:connectionType##meta:enum##t3##61481",
+            "oc3": "environment##xdm:connectionType##meta:enum##oc3##66801",
+            "lan": "environment##xdm:connectionType##meta:enum##lan##8131",
+            "modem": "environment##xdm:connectionType##meta:enum##modem##65191"
+          }
         }
       }
     },
@@ -205,7 +231,19 @@
             "transparent": "Transparent"
           },
           "meta:titleId": "environment##xdm:proxyType##title##12341",
-          "meta:descriptionId": "environment##xdm:proxyType##description##12341"
+          "meta:descriptionId": "environment##xdm:proxyType##description##12341",
+          "meta:enumId": {
+            "anonymous": "environment##xdm:proxyType##meta:enum##anonymous##62891",
+            "consumer-privacy": "environment##xdm:proxyType##meta:enum##consumer-privacy##89981",
+            "corporate": "environment##xdm:proxyType##meta:enum##corporate##59401",
+            "edu": "environment##xdm:proxyType##meta:enum##edu##86171",
+            "public": "environment##xdm:proxyType##meta:enum##public##62571",
+            "cloud": "environment##xdm:proxyType##meta:enum##cloud##19701",
+            "cloud-security": "environment##xdm:proxyType##meta:enum##cloud-security##53631",
+            "dns": "environment##xdm:proxyType##meta:enum##dns##58601",
+            "vpn": "environment##xdm:proxyType##meta:enum##vpn##1021",
+            "transparent": "environment##xdm:proxyType##meta:enum##transparent##53531"
+          }
         }
       }
     },

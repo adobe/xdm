@@ -53,6 +53,11 @@
           "type": "string",
           "format": "date-time",
           "description": "Publish date & time of the fragment at AJO (outside of ExD)"
+        },
+        "xdm:externalReference": {
+          "title": "External Reference",
+          "description": "Reference details when fragment is from an external source. Contains external id, origin, and metadata (repo, model info).",
+          "$ref": "https://ns.adobe.com/experience/decisioning/external-fragment"
         }
       },
       "required": ["xdm:type"]

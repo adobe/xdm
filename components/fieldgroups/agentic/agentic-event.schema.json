@@ -276,6 +276,102 @@
                   }
                 }
               }
+            },
+            "xdm:tools": {
+              "type": "array",
+              "title": "Tools",
+              "description": "Full, ordered list of tool invocations for this experience, across all agents. Parallel to xdm:skills: tools and skills are independent — an agent may call tools directly, skills, or a mix. Each entry records the tool that was called, the optional agent it was invoked by (xdm:agentID), the optional skill invocation it was associated with (xdm:skillInvocationID, by inference only — the runtime does not guarantee a hard skill-to-tool causal link), why it was called (xdm:reasoning), and ordering/de-duplication keys for downstream blending (xdm:toolInvocationID, xdm:sequenceNumber, xdm:timestamp).",
+              "meta:status": "experimental",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:toolID": {
+                    "title": "Tool ID",
+                    "type": "string",
+                    "description": "Identifier of the tool definition that was called."
+                  },
+                  "xdm:toolInvocationID": {
+                    "title": "Tool Invocation ID",
+                    "type": "string",
+                    "description": "Unique identifier for this individual tool invocation, consistent even with redeliveries of the same call. Intended as the de-duplication key when merging tool arrays downstream."
+                  },
+                  "xdm:name": {
+                    "title": "Tool Name",
+                    "type": "string",
+                    "description": "Name of the tool that was called"
+                  },
+                  "xdm:version": {
+                    "title": "Tool Version",
+                    "type": "string",
+                    "description": "Version of the tool that was called"
+                  },
+                  "xdm:agentID": {
+                    "title": "Agent ID",
+                    "type": "string",
+                    "description": "Identifier of the agent that invoked this tool, correlating to xdm:agents[].xdm:agentID. Populated with the invoking agent: the root/orchestrator agent for main-loop tool calls, or the subagent for tool calls made by a subagent. Because subagents run in parallel, this is the grouping key consumers use to order tool calls within an agent."
+                  },
+                  "xdm:skillInvocationID": {
+                    "title": "Associated Skill Invocation ID",
+                    "type": "string",
+                    "description": "Optional link to the skill invocation this tool call was associated with, correlating to xdm:skills[].xdm:skillInvocationID. Populated only when the runtime can attribute the tool call to a skill; the association is by inference (the skill was loaded and then the model chose the tool), not a guaranteed causal link. Absent for tool calls made without an associated skill."
+                  },
+                  "xdm:serverID": {
+                    "title": "Tool Server ID",
+                    "type": "string",
+                    "description": "Identifier of the upstream server that served the tool, for tools proxied from an external provider such as an MCP server. Absent for built-in / in-process tools."
+                  },
+                  "xdm:invocationSource": {
+                    "title": "Invocation Source",
+                    "type": "string",
+                    "description": "Whether this tool was invoked by the main agentic loop or by a subagent",
+                    "meta:enum": {
+                      "main": "Invoked by the harness main agentic loop",
+                      "subagent": "Invoked by a subagent"
+                    }
+                  },
+                  "xdm:failed": {
+                    "title": "Tool Failed",
+                    "type": "boolean",
+                    "description": "Flag stating that the tool execution failed"
+                  },
+                  "xdm:errorReason": {
+                    "title": "Tool Error Reason",
+                    "type": "string",
+                    "description": "Reason the tool failed"
+                  },
+                  "xdm:sequenceNumber": {
+                    "title": "Tool Sequence Number",
+                    "type": "integer",
+                    "description": "Monotonically increasing index of this tool call within a single agent execution — not turn-global, since subagents run in parallel. Ordering: consumers group by xdm:agentID, then order within each group by xdm:sequenceNumber, then xdm:timestamp as tiebreaker and fallback. Optional — populated when the producer can emit a per-execution counter"
+                  },
+                  "xdm:timestamp": {
+                    "title": "Tool Timestamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Time the tool was invoked, ISO 8601 UTC. Ordering key used after xdm:sequenceNumber (consumers order by sequenceNumber, then timestamp). Producers should always populate this; the requirement is enforced by convention rather than a hard schema constraint so partially-instrumented producers are not dropped at ingestion."
+                  },
+                  "xdm:reasoning": {
+                    "type": "object",
+                    "title": "Tool Reasoning",
+                    "description": "Why this tool was called.",
+                    "properties": {
+                      "xdm:narration": {
+                        "title": "Reasoning Narration",
+                        "type": "string",
+                        "description": "Natural-language explanation of why this tool was called."
+                      }
+                    }
+                  },
+                  "xdm:parameters": {
+                    "type": "array",
+                    "title": "Tool Parameters",
+                    "description": "Parameters (arguments) passed in to the tool",
+                    "items": {
+                      "$ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
+                    }
+                  }
+                }
+              }
             }
           },
           "meta:titleId": "agenticevent##xdm:agenticExperience##title##81661",

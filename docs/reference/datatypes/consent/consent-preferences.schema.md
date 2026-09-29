@@ -45,10 +45,12 @@ Captures consumer consent for collection and use of data related to privacy, per
       }
     },
     "xdm:tracking": {
-      "xdm:open": {
-        "xdm:val": "n",
-        "xdm:time": "2026-09-24T10:00:00+00:00",
-        "xdm:reason": "User declined open tracking"
+      "xdm:email": {
+        "xdm:open": {
+          "xdm:val": "n",
+          "xdm:time": "2026-09-24T10:00:00+00:00",
+          "xdm:reason": "User declined open tracking"
+        }
       }
     },
     "xdm:metadata": {
@@ -241,10 +243,10 @@ undefined
 | [xdm:call](#xdmcall) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:commercialEmail](#xdmcommercialemail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:content](#xdmcontent) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-personalization` |
-| [xdm:email](#xdmemail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
+| [xdm:email (marketing)](#xdmemail-marketing) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
+| [xdm:email (tracking)](#xdmemail-tracking) | `object` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-tracking` |
 | [xdm:fax](#xdmfax) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:idType](#xdmidtype) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/adid-consent-field` |
-| [xdm:open](#xdmopen) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-tracking` |
 | [xdm:postalMail](#xdmpostalmail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:preferred](#xdmpreferred) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:push](#xdmpush) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
@@ -330,7 +332,7 @@ Allow personalization of the content on my site or in my apps
 
 
 
-## xdm:email
+## xdm:email (marketing)
 ### Receive email
 
 User agrees to receive email
@@ -340,10 +342,55 @@ User agrees to receive email
 * type: reference
 * defined in this schema
 
-### xdm:email Type
+### xdm:email (marketing) Type
 
 
 * []() – `#/definitions/marketing-field`
+
+
+
+
+
+## xdm:email (tracking)
+### Email Tracking
+
+User's preferences for tracking engagement with email messages
+
+`xdm:email`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:email (tracking) Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:open`|  | Optional |
+
+
+
+#### xdm:open
+##### Open Tracking
+
+User permits tracking of when an email is opened, for example via an open-tracking pixel
+
+`xdm:open`
+* is optional
+* type: reference
+
+##### xdm:open Type
+
+
+* []() – `#/definitions/tracking-field`
+
+
+
+
+
 
 
 
@@ -385,25 +432,6 @@ The value of this property **must** be equal to one of the [known values below](
 |-------|-------------|
 | `IDFA` | Apple&#39;s ID for Advertisers (IDFA) |
 | `GAID` | Google&#39;s Advertiser ID (GAID) also known as Android Advertiser ID (AAID) |
-
-
-
-
-## xdm:open
-### Open Tracking
-
-User permits tracking of when a message is opened, for example via the open-tracking pixel in an email
-
-`xdm:open`
-* is optional
-* type: reference
-* defined in this schema
-
-### xdm:open Type
-
-
-* []() – `#/definitions/tracking-field`
-
 
 
 
@@ -564,7 +592,6 @@ Timestamp of this complete set of user consents and preferences. This value shou
 
 
 * []() – `#/definitions/choice-value`
-
 
 
 

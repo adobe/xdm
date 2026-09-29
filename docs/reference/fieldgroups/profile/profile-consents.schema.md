@@ -42,9 +42,11 @@ This schema captures privacy, personalization and marketing preferences (consent
       }
     },
     "xdm:tracking": {
-      "xdm:open": {
-        "xdm:val": "n",
-        "xdm:time": "2026-09-24T10:00:00+00:00"
+      "xdm:email": {
+        "xdm:open": {
+          "xdm:val": "n",
+          "xdm:time": "2026-09-24T10:00:00+00:00"
+        }
       }
     },
     "xdm:idSpecific": {
@@ -95,9 +97,11 @@ This schema captures privacy, personalization and marketing preferences (consent
             }
           },
           "xdm:tracking": {
-            "xdm:open": {
-              "xdm:val": "n",
-              "xdm:time": "2026-09-24T10:00:00+00:00"
+            "xdm:email": {
+              "xdm:open": {
+                "xdm:val": "n",
+                "xdm:time": "2026-09-24T10:00:00+00:00"
+              }
             }
           }
         }

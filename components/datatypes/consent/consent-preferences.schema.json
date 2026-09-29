@@ -455,13 +455,20 @@
     },
     "base-tracking": {
       "title": "Tracking Preferences",
-      "description": "User's preferences for tracking of message engagement, such as email open tracking",
+      "description": "User's preferences for tracking engagement with messages by channel",
       "type": "object",
       "properties": {
-        "xdm:open": {
-          "title": "Open Tracking",
-          "description": "User permits tracking of when a message is opened, for example via the open-tracking pixel in an email",
-          "$ref": "#/definitions/tracking-field"
+        "xdm:email": {
+          "title": "Email Tracking",
+          "description": "User's preferences for tracking engagement with email messages",
+          "type": "object",
+          "properties": {
+            "xdm:open": {
+              "title": "Open Tracking",
+              "description": "User permits tracking of when an email is opened, for example via an open-tracking pixel",
+              "$ref": "#/definitions/tracking-field"
+            }
+          }
         }
       }
     },

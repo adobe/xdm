@@ -106,18 +106,20 @@
           "meta:enum": {
             "mobile": "Mobile",
             "tablet": "Tablet",
-            "desktop": "Desktop"
+            "desktop": "Desktop",
+            "other": "Other",
+            "unknown": "Unknown"
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/operatingSystem": {
           "title": "Operating System",
           "type": "string",
-          "description": "The name of the operating system on the device used for this interaction, such as iOS, Android, Windows, or macOS."
+          "description": "The name of the operating system on the device used for this interaction, such as iOS, Android, Windows, or macOS, or unknown when it could not be identified."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/operatingSystemVersion": {
           "title": "Operating System Version",
           "type": "string",
-          "description": "The version of the operating system on the device used for this interaction, such as 17.4."
+          "description": "The version of the operating system on the device used for this interaction, such as 17.4, or unknown when it could not be identified."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
           "title": "Offer Details",

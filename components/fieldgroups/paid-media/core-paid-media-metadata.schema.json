@@ -44,7 +44,8 @@
                     "completed",
                     "pending_review",
                     "rejected",
-                    "unknown"
+                    "unknown",
+                    "scheduled"
                   ],
                   "meta:enum": {
                     "active": "Active/Running",
@@ -55,7 +56,8 @@
                     "completed": "Completed",
                     "pending_review": "Pending Review",
                     "rejected": "Rejected",
-                    "unknown": "Unknown Status"
+                    "unknown": "Unknown Status",
+                    "scheduled": "Scheduled"
                   },
                   "meta:titleId": "core-metadata##xdm:status##title##33741",
                   "meta:descriptionId": "core-metadata##xdm:status##description##43611",
@@ -68,7 +70,8 @@
                     "completed": "core-metadata##xdm:status##meta:enum##completed##86171",
                     "pending_review": "core-metadata##xdm:status##meta:enum##pending_review##74021",
                     "rejected": "core-metadata##xdm:status##meta:enum##rejected##34311",
-                    "unknown": "core-metadata##xdm:status##meta:enum##unknown##56241"
+                    "unknown": "core-metadata##xdm:status##meta:enum##unknown##56241",
+                    "scheduled": "core-metadata##xdm:status##meta:enum##scheduled##49871"
                   }
                 },
                 "xdm:servingStatus": {
@@ -251,18 +254,28 @@
                   "title": "Budget Type",
                   "description": "Deprecated: Use campaignDetails.budgetSettings.budgetType or adGroupDetails.budgetSettings.budgetType instead. Type of budget allocation.",
                   "meta:status": "deprecated",
-                  "enum": ["daily", "lifetime", "campaign_budget_optimization"],
+                  "enum": [
+                    "daily",
+                    "lifetime",
+                    "campaign_budget_optimization",
+                    "weekly",
+                    "monthly"
+                  ],
                   "meta:enum": {
                     "daily": "Daily Budget",
                     "lifetime": "Lifetime Budget",
-                    "campaign_budget_optimization": "Campaign Budget Optimization"
+                    "campaign_budget_optimization": "Campaign Budget Optimization",
+                    "weekly": "Weekly Budget",
+                    "monthly": "Monthly Budget"
                   },
                   "meta:titleId": "core-metadata##xdm:budgetType##title##55941",
                   "meta:descriptionId": "core-metadata##xdm:budgetType##description##10911",
                   "meta:enumId": {
                     "daily": "core-metadata##xdm:budgetType##meta:enum##daily##42491",
                     "lifetime": "core-metadata##xdm:budgetType##meta:enum##lifetime##63691",
-                    "campaign_budget_optimization": "core-metadata##xdm:budgetType##meta:enum##campaign_budget_optimization##45271"
+                    "campaign_budget_optimization": "core-metadata##xdm:budgetType##meta:enum##campaign_budget_optimization##45271",
+                    "weekly": "core-metadata##xdm:budgetType##meta:enum##weekly##49871",
+                    "monthly": "core-metadata##xdm:budgetType##meta:enum##monthly##49871"
                   }
                 },
                 "xdm:dailyBudget": {

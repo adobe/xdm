@@ -265,19 +265,25 @@
                       "enum": [
                         "daily",
                         "lifetime",
-                        "campaign_budget_optimization"
+                        "campaign_budget_optimization",
+                        "weekly",
+                        "monthly"
                       ],
                       "meta:enum": {
                         "daily": "Daily Budget",
                         "lifetime": "Lifetime Budget",
-                        "campaign_budget_optimization": "Campaign Budget Optimization"
+                        "campaign_budget_optimization": "Campaign Budget Optimization",
+                        "weekly": "Weekly Budget",
+                        "monthly": "Monthly Budget"
                       },
                       "meta:titleId": "campaign-details##xdm:budgetType##title##22281",
                       "meta:descriptionId": "campaign-details##xdm:budgetType##description##2831",
                       "meta:enumId": {
                         "daily": "campaign-details##xdm:budgetType##meta:enum##daily##5951",
                         "lifetime": "campaign-details##xdm:budgetType##meta:enum##lifetime##65271",
-                        "campaign_budget_optimization": "campaign-details##xdm:budgetType##meta:enum##campaign_budget_optimization##5221"
+                        "campaign_budget_optimization": "campaign-details##xdm:budgetType##meta:enum##campaign_budget_optimization##5221",
+                        "weekly": "campaign-details##xdm:budgetType##meta:enum##weekly##49871",
+                        "monthly": "campaign-details##xdm:budgetType##meta:enum##monthly##49871"
                       }
                     },
                     "xdm:dailyBudget": {

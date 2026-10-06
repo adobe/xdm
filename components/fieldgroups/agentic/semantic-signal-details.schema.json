@@ -47,10 +47,10 @@
             "xdm:strength": {
               "title": "Signal Strength",
               "type": "string",
-              "enum": ["low", "medium", "high"],
+              "enum": ["low", "moderate", "high"],
               "meta:enum": {
                 "low": "Low",
-                "medium": "Medium",
+                "moderate": "Moderate",
                 "high": "High"
               },
               "description": "Qualification tier derived from the signal score and configured signal thresholds."
@@ -92,5 +92,5 @@
       "$ref": "#/definitions/semantic-signal-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

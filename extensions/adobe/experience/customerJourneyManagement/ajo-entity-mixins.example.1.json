@@ -75,6 +75,10 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/id": "a2YioO",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Rule Set Name"
   },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/engagementStrategy": {
+    "xdm:id": "2c1b53c8-6f62-4f31-96f7-b8a877d2c93c",
+    "xdm:name": "Customer Engagement Strategy"
+  },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName": "Marketing Test Journey",

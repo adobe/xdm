@@ -298,23 +298,6 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/entities/engagementStrategy": {
-          "title": "Engagement Strategy Entity",
-          "type": "object",
-          "description": "Engagement Strategy Entity Specific Fields",
-          "properties": {
-            "xdm:id": {
-              "title": "Engagement Strategy ID",
-              "type": "string",
-              "description": "ID for the engagement strategy"
-            },
-            "xdm:name": {
-              "title": "Engagement Strategy Name",
-              "type": "string",
-              "description": "Name for the engagement strategy"
-            }
-          }
-        },
         "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
           "title": "AJO Journey Entity",
           "type": "object",
@@ -529,6 +512,9 @@
     },
     {
       "$ref": "#/definitions/entities"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/engagement-strategy"
     }
   ],
   "meta:status": "stable"

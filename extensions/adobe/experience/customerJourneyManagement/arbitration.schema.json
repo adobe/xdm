@@ -1,0 +1,66 @@
+{
+  "meta:license": [
+    "Copyright 2026 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/arbitration",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Arbitration Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Arbitration details for determining whether a touchpoint is executed or suppressed.",
+  "definitions": {
+    "arbitration": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/arbitration": {
+          "title": "Arbitration",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/arbitration/outcome": {
+              "title": "Outcome",
+              "type": "string",
+              "description": "The final touchpoint outcome determined by arbitration.",
+              "enum": ["EXECUTE", "SUPPRESS"],
+              "meta:enum": {
+                "EXECUTE": "Execute",
+                "SUPPRESS": "Suppress"
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/arbitration/reason": {
+              "title": "Reason",
+              "type": "string",
+              "description": "The reason for the arbitration outcome.",
+              "enum": [
+                "NO_CONFLICT",
+                "HIGHER_PRIORITY",
+                "SKIPPED",
+                "LOWER_PRIORITY",
+                "CAP_REACHED"
+              ],
+              "meta:enum": {
+                "NO_CONFLICT": "No Conflict",
+                "HIGHER_PRIORITY": "Higher Priority",
+                "SKIPPED": "Skipped",
+                "LOWER_PRIORITY": "Lower Priority",
+                "CAP_REACHED": "Cap Reached"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/arbitration"
+    }
+  ],
+  "meta:status": "stable"
+}

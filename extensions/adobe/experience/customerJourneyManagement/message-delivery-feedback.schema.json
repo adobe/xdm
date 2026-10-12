@@ -164,6 +164,9 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
+      "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/arbitration"
+    },
+    {
       "$ref": "#/definitions/messageDeliveryfeedback"
     }
   ],

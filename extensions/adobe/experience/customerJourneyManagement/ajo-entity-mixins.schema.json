@@ -315,6 +315,23 @@
             }
           }
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/sandbox": {
+          "title": "Sandbox Entity",
+          "type": "object",
+          "description": "Identifies the sandbox associated with an AJO entity record.",
+          "properties": {
+            "xdm:id": {
+              "title": "Sandbox ID",
+              "type": "string",
+              "description": "ID for the sandbox."
+            },
+            "xdm:name": {
+              "title": "Sandbox Name",
+              "type": "string",
+              "description": "Name for the sandbox."
+            }
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
           "title": "AJO Journey Entity",
           "type": "object",

@@ -298,6 +298,23 @@
             }
           }
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/engagementStrategy": {
+          "title": "Engagement Strategy Entity",
+          "type": "object",
+          "description": "Identifies the engagement strategy associated with an AJO entity record.",
+          "properties": {
+            "xdm:id": {
+              "title": "Engagement Strategy ID",
+              "type": "string",
+              "description": "ID for the engagement strategy. Related journey, arbitration node, and message entity records can populate this field to identify the strategy that was evaluated."
+            },
+            "xdm:name": {
+              "title": "Engagement Strategy Name",
+              "type": "string",
+              "description": "Name for the engagement strategy. This field is populated on the entity record representing the engagement strategy itself."
+            }
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
           "title": "AJO Journey Entity",
           "type": "object",
@@ -512,9 +529,6 @@
     },
     {
       "$ref": "#/definitions/entities"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/engagement-strategy"
     }
   ],
   "meta:status": "stable"

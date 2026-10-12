@@ -26,31 +26,12 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/arbitration/outcome": {
               "title": "Outcome",
               "type": "string",
-              "description": "The final touchpoint outcome determined by arbitration.",
-              "enum": ["EXECUTE", "SUPPRESS"],
-              "meta:enum": {
-                "EXECUTE": "Execute",
-                "SUPPRESS": "Suppress"
-              }
+              "description": "The final touchpoint outcome determined by arbitration."
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/arbitration/reason": {
               "title": "Reason",
               "type": "string",
-              "description": "The reason for the arbitration outcome.",
-              "enum": [
-                "NO_CONFLICT",
-                "HIGHER_PRIORITY",
-                "SKIPPED",
-                "LOWER_PRIORITY",
-                "CAP_REACHED"
-              ],
-              "meta:enum": {
-                "NO_CONFLICT": "No Conflict",
-                "HIGHER_PRIORITY": "Higher Priority",
-                "SKIPPED": "Skipped",
-                "LOWER_PRIORITY": "Lower Priority",
-                "CAP_REACHED": "Cap Reached"
-              }
+              "description": "The reason for the arbitration outcome."
             }
           }
         }

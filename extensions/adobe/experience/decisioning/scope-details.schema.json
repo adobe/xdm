@@ -57,6 +57,11 @@
           "title": "Correlation Identifier",
           "description": "The campaign, journey, or other object to which this activity can be correlated. This string will often be further classified in the reporting engine."
         },
+        "xdm:versionId": {
+          "type": "string",
+          "title": "Decision Version Identifier",
+          "description": "Version identifier of the configuration (activity, decision policy, or experiment) in effect when this decision was made."
+        },
         "xdm:interactionMeasurements": {
           "type": "array",
           "items": {

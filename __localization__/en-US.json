@@ -8509,6 +8509,8 @@
   "adgroup-details##xdm:budgetType##description##69761": "Type of budget allocation at ad group level",
   "adgroup-details##xdm:budgetType##meta:enum##daily##38731": "Daily Budget",
   "adgroup-details##xdm:budgetType##meta:enum##lifetime##95601": "Lifetime Budget",
+  "adgroup-details##xdm:budgetType##meta:enum##weekly##49871": "Weekly Budget",
+  "adgroup-details##xdm:budgetType##meta:enum##monthly##49871": "Monthly Budget",
   "adgroup-details##xdm:dailyBudget##title##55711": "Daily Budget",
   "adgroup-details##xdm:dailyBudget##description##68931": "Daily budget amount in account currency. Used on platforms like Meta and TikTok where budget is set at the ad set/ad group level.",
   "adgroup-details##xdm:lifetimeBudget##title##80881": "Lifetime Budget",

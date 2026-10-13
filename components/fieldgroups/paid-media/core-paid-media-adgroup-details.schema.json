@@ -135,16 +135,20 @@
                       "type": "string",
                       "title": "Budget Type",
                       "description": "Type of budget allocation at ad group level",
-                      "enum": ["daily", "lifetime"],
+                      "enum": ["daily", "lifetime", "weekly", "monthly"],
                       "meta:enum": {
                         "daily": "Daily Budget",
-                        "lifetime": "Lifetime Budget"
+                        "lifetime": "Lifetime Budget",
+                        "weekly": "Weekly Budget",
+                        "monthly": "Monthly Budget"
                       },
                       "meta:titleId": "adgroup-details##xdm:budgetType##title##81771",
                       "meta:descriptionId": "adgroup-details##xdm:budgetType##description##69761",
                       "meta:enumId": {
                         "daily": "adgroup-details##xdm:budgetType##meta:enum##daily##38731",
-                        "lifetime": "adgroup-details##xdm:budgetType##meta:enum##lifetime##95601"
+                        "lifetime": "adgroup-details##xdm:budgetType##meta:enum##lifetime##95601",
+                        "weekly": "adgroup-details##xdm:budgetType##meta:enum##weekly##49871",
+                        "monthly": "adgroup-details##xdm:budgetType##meta:enum##monthly##49871"
                       }
                     },
                     "xdm:dailyBudget": {

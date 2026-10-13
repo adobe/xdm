@@ -23,12 +23,12 @@
           "title": "Arbitration",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/arbitration/outcome": {
+            "xdm:outcome": {
               "title": "Outcome",
               "type": "string",
               "description": "The final touchpoint outcome determined by arbitration."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/arbitration/reason": {
+            "xdm:reason": {
               "title": "Reason",
               "type": "string",
               "description": "The reason for the arbitration outcome."
@@ -43,5 +43,5 @@
       "$ref": "#/definitions/arbitration"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "experimental"
 }

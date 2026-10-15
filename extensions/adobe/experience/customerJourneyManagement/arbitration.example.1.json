@@ -6,7 +6,9 @@
       "xdm:priority": 100
     },
     "xdm:additionalDetails": {
-      "source": "journey"
+      "source": "journey",
+      "candidateCount": 5,
+      "wasReevaluated": true
     }
   }
 }

@@ -64,11 +64,7 @@
               "title": "origSegmentQualificationStatus",
               "description": "Indicates original Segment Qualification Status. Possible values can be: existing, realized, exited",
               "type": "string",
-              "enum": [
-                "existing",
-                "realized",
-                "exited"
-              ],
+              "enum": ["existing", "realized", "exited"],
               "meta:enum": {
                 "existing": "existing",
                 "realized": "realized",
@@ -278,6 +274,12 @@
               "title": "waveID",
               "description": "Identifier of the wave execution for this journey instance. Present when the journey instance is orchestrated as part of a wave and used to correlate step events and downstream message feedback events.",
               "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/throttledStepWaitTime": {
+              "title": "throttledStepWaitTime",
+              "description": "Time(ms) the event that triggered this step was delayed by journey throughput throttling before being processed, including the time it spent queued while the organization was throttled. Only present on unitary step events directly triggered by an event that went through journey throughput throttling.",
+              "type": "integer",
+              "minimum": 0
             },
             "https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID": {
               "meta:status": "deprecated",

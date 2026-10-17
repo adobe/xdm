@@ -120,6 +120,11 @@
           "type": "string",
           "description": "Identifier of the wave execution for this message execution. Present when the message execution originates from a wave-driven Journey or Campaign Action and used to correlate with step events and message feedback across the pipeline."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/engagementStrategyID": {
+          "title": "Engagement Strategy ID",
+          "type": "string",
+          "description": "Identifier of the engagement strategy linked to this message execution."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/audience": {
           "title": "Audience",
           "type": "object",

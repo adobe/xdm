@@ -1,6 +1,14 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/arbitration": {
     "xdm:outcome": "EXECUTE",
-    "xdm:reason": "NO_CONFLICT"
+    "xdm:reason": "NO_CONFLICT",
+    "xdm:details": {
+      "xdm:priority": 100
+    },
+    "xdm:debugLogs": {
+      "source": "journey",
+      "candidateCount": "5",
+      "wasReevaluated": "true"
+    }
   }
 }

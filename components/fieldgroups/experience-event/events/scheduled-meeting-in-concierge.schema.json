@@ -14,9 +14,7 @@
   },
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "meeting.booked.concierge",
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Booked a meeting with consultant in the Conversation.",
   "definitions": {
     "scheduledmeetinginconcierge": {
@@ -114,9 +112,30 @@
                   "description": "Comments from the meeting. Sales rep captures the context that can be used for other channels.",
                   "meta:titleId": "meeting-booked-concierge##xdm:comments##title##201",
                   "meta:descriptionId": "meeting-booked-concierge##xdm:comments##description##47031"
+                },
+                "xdm:meetingBookingID": {
+                  "title": "Meeting Booking ID",
+                  "type": "string",
+                  "description": "Unique identifier of the meeting booking. Stays the same when the event is redelivered, so consumers can deduplicate on it.",
+                  "meta:titleId": "meeting-booked-concierge##xdm:meetingBookingID##title##52817",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:meetingBookingID##description##60433"
                 }
               },
               "meta:titleId": "meeting-booked-concierge##xdm:meetingDetails##title##34711"
+            },
+            "xdm:conciergeConversationDetails": {
+              "title": "Concierge Session Details",
+              "type": "object",
+              "properties": {
+                "xdm:sessionID": {
+                  "title": "Session ID",
+                  "type": "string",
+                  "description": "Unique identifier of the session the meeting was booked in. Used to link the booking to the conversation or engagement that led to it.",
+                  "meta:titleId": "meeting-booked-concierge##xdm:sessionID##title##38261",
+                  "meta:descriptionId": "meeting-booked-concierge##xdm:sessionID##description##74129"
+                }
+              },
+              "meta:titleId": "meeting-booked-concierge##xdm:conciergeConversationDetails##title##81547"
             },
             "xdm:conciergeKey": {
               "title": "Concierge Source",

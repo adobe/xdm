@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Thin field group carrying extracted unstructured free-text content on an Experience Event, such as a note, review, or message body landed by an unstructured-data ingestion pipeline.",
+  "description": "Field group carrying extracted unstructured free-text content and an optional identity value on an Experience Event, such as a note, review, or message body landed by an unstructured-data ingestion pipeline.",
   "definitions": {
     "experienceevent-unstructured-content": {
       "properties": {
@@ -32,6 +32,6 @@
       "$ref": "#/definitions/experienceevent-unstructured-content"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2026-09-02"
 }

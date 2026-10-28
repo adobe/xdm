@@ -22,22 +22,6 @@
           "description": "Extracted unstructured free-text content associated with this event."
         }
       }
-    },
-    "experienceevent-unstructured-content-identity": {
-      "properties": {
-        "xdm:unstructuredContent": {
-          "title": "Unstructured Content",
-          "type": "object",
-          "description": "Extracted unstructured free-text content associated with this event.",
-          "properties": {
-            "xdm:identity": {
-              "title": "Identity",
-              "type": "string",
-              "description": "An identity value associated with the unstructured content. Its identity namespace and identity behavior are configured through an identity descriptor on the consuming schema."
-            }
-          }
-        }
-      }
     }
   },
   "allOf": [
@@ -46,9 +30,6 @@
     },
     {
       "$ref": "#/definitions/experienceevent-unstructured-content"
-    },
-    {
-      "$ref": "#/definitions/experienceevent-unstructured-content-identity"
     }
   ],
   "meta:status": "stable",

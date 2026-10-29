@@ -9,7 +9,11 @@
     "xdm:meetingDetails": {
       "xdm:meetingStatus": "scheduled",
       "xdm:scheduledFor": "2025-09-30T10:00:00Z",
-      "xdm:routingType": "manual"
+      "xdm:routingType": "manual",
+      "xdm:meetingBookingID": "6a1f3c2e9b7d4e0f8c5a2b1d"
+    },
+    "xdm:conciergeConversationDetails": {
+      "xdm:sessionID": "session-xyz789"
     },
     "xdm:conciergeKey": {
       "xdm:sourceID": "b2b-platform",

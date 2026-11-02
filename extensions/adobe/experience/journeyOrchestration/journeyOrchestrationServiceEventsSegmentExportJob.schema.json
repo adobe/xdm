@@ -54,6 +54,13 @@
               "maximum": 100000000000,
               "description": "The number of segments failed while exporting through the job"
             },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFiltered": {
+              "title": "Export Count Filtered",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000000000,
+              "description": "The number of profiles excluded from the export job by filter criteria, such as an audience sub-filter evaluated against the triggering business event"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": {
               "title": "Export Segment ID",
               "type": "string",

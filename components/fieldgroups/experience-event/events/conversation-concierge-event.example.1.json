@@ -1,6 +1,18 @@
 {
   "xdm:eventType": "session_expiration",
   "xdm:timestamp": "2026-04-06T12:00:00Z",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "14522272242813147102683189683212217746"
+      }
+    ],
+    "marketo_cookie": [
+      {
+        "xdm:id": "id:123-ABC-456&token:_mch-adobe.com-1234567890"
+      }
+    ]
+  },
   "xdm:engagement": {
     "xdm:conversationConciergeEvent": {
       "xdm:sessionId": "session-1234567890",

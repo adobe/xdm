@@ -1,0 +1,173 @@
+const assert = require("assert");
+const fs = require("fs");
+const $ = require("shelljs");
+
+function assertValidMaps(schema, location = "#") {
+  if (!schema || typeof schema !== "object" || Array.isArray(schema)) {
+    return;
+  }
+
+  if (schema["meta:xdmType"] === "map") {
+    assert.strictEqual(
+      schema.type,
+      "object",
+      location + ': an XDM map must have type "object"'
+    );
+    const values = schema.additionalProperties;
+    assert(
+      values && typeof values === "object" && !Array.isArray(values),
+      location +
+        ": an XDM map must define a value schema in additionalProperties"
+    );
+    assert(
+      (typeof values.type === "string" &&
+        ["string", "number", "integer", "boolean", "object", "array"].includes(
+          values.type
+        )) ||
+        (typeof values.$ref === "string" && values.$ref.length > 0),
+      location +
+        ": map additionalProperties must declare a concrete type or a non-empty $ref"
+    );
+  }
+
+  ["definitions", "properties", "patternProperties", "dependencies"].forEach(
+    keyword => {
+      Object.keys(schema[keyword] || {}).forEach(name => {
+        assertValidMaps(
+          schema[keyword][name],
+          location + "/" + keyword + "/" + name
+        );
+      });
+    }
+  );
+  [
+    "additionalProperties",
+    "additionalItems",
+    "items",
+    "contains",
+    "propertyNames",
+    "not",
+    "allOf",
+    "anyOf",
+    "oneOf"
+  ].forEach(keyword => {
+    const child = schema[keyword];
+    if (Array.isArray(child)) {
+      child.forEach((item, index) => {
+        assertValidMaps(item, location + "/" + keyword + "/" + index);
+      });
+    } else {
+      assertValidMaps(child, location + "/" + keyword);
+    }
+  });
+}
+
+describe("XDM map validation regressions", () => {
+  function map(additionalProperties) {
+    return {
+      type: "object",
+      "meta:xdmType": "map",
+      additionalProperties
+    };
+  }
+
+  [
+    true,
+    false,
+    undefined,
+    null,
+    [],
+    {},
+    { description: "No value type" },
+    { type: ["string", "number"] },
+    { type: "" },
+    { $ref: "" }
+  ].forEach(values => {
+    it("rejects untyped map values: " + JSON.stringify(values), () => {
+      assert.throws(() => assertValidMaps(map(values)), /additionalProperties/);
+    });
+  });
+
+  [
+    { type: "string" },
+    { type: "number" },
+    { type: "integer" },
+    { type: "boolean" },
+    { type: "object", properties: { value: { type: "string" } } },
+    { type: "array", items: { type: "string" } },
+    { $ref: "https://ns.adobe.com/xdm/context/segmentmembership" },
+    { $ref: "#/definitions/value" },
+    map({ type: "string" })
+  ].forEach(values => {
+    it(
+      "accepts typed or referenced map values: " + JSON.stringify(values),
+      () => {
+        assert.doesNotThrow(() => assertValidMaps(map(values)));
+      }
+    );
+  });
+
+  it("rejects maps that do not have object type", () => {
+    const schema = map({ type: "string" });
+    schema.type = "string";
+    assert.throws(() => assertValidMaps(schema), /must have type "object"/);
+  });
+
+  [
+    {
+      definitions: {
+        arbitration: { properties: { "xdm:additionalDetails": map(true) } }
+      }
+    },
+    { type: "array", items: map(true) },
+    { type: "array", items: [map(true)] },
+    { allOf: [{ properties: { details: map(true) } }] },
+    { anyOf: [map(true)] },
+    { oneOf: [map(true)] },
+    { patternProperties: { ".*": map(true) } },
+    { dependencies: { details: map(true) } },
+    map(map(true))
+  ].forEach((schema, index) => {
+    it("rejects a nested untyped map in schema case " + index, () => {
+      assert.throws(() => assertValidMaps(schema), /additionalProperties/);
+    });
+  });
+
+  it("reports the location of the invalid map", () => {
+    assert.throws(
+      () =>
+        assertValidMaps(
+          { properties: { "xdm:additionalDetails": map(true) } },
+          "arbitration.schema.json#"
+        ),
+      /arbitration\.schema\.json#\/properties\/xdm:additionalDetails/
+    );
+  });
+
+  it("ignores map-shaped example data and ordinary object schemas", () => {
+    assert.doesNotThrow(() =>
+      assertValidMaps({
+        type: "object",
+        additionalProperties: true,
+        examples: [map(true)],
+        default: map(true),
+        "meta:enum": { example: map(true) }
+      })
+    );
+  });
+});
+
+describe("Validity of XDM map declarations", () => {
+  const schemas = $.find("schemas", "components", "extensions").filter(name =>
+    /\.schema\.json$/.test(name)
+  );
+
+  schemas.forEach(schema => {
+    it("Validating maps in " + schema, () => {
+      assertValidMaps(
+        JSON.parse(fs.readFileSync(schema, "utf8")),
+        schema + "#"
+      );
+    });
+  });
+});

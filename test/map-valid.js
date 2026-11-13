@@ -3,7 +3,13 @@ const fs = require("fs");
 const $ = require("shelljs");
 
 function assertValidMaps(schema, location = "#") {
-  if (!schema || typeof schema !== "object" || Array.isArray(schema)) {
+  if (!schema || typeof schema !== "object") {
+    return;
+  }
+  if (Array.isArray(schema)) {
+    schema.forEach((item, index) => {
+      assertValidMaps(item, location + "/" + index);
+    });
     return;
   }
 
@@ -30,31 +36,27 @@ function assertValidMaps(schema, location = "#") {
     );
   }
 
-  ["definitions", "properties", "patternProperties", "dependencies"].forEach(
-    keyword => {
-      Object.keys(schema[keyword] || {}).forEach(name => {
-        assertValidMaps(
-          schema[keyword][name],
-          location + "/" + keyword + "/" + name
-        );
-      });
+  Object.keys(schema).forEach(keyword => {
+    if (
+      ["examples", "default", "enum", "const", "meta:enum"].includes(keyword)
+    ) {
+      return;
     }
-  );
-  [
-    "additionalProperties",
-    "additionalItems",
-    "items",
-    "contains",
-    "propertyNames",
-    "not",
-    "allOf",
-    "anyOf",
-    "oneOf"
-  ].forEach(keyword => {
+
     const child = schema[keyword];
-    if (Array.isArray(child)) {
-      child.forEach((item, index) => {
-        assertValidMaps(item, location + "/" + keyword + "/" + index);
+    if (
+      [
+        "definitions",
+        "$defs",
+        "properties",
+        "patternProperties",
+        "dependencies",
+        "dependentSchemas"
+      ].includes(keyword)
+    ) {
+      // Dictionary keys are schema names, not keywords to skip.
+      Object.keys(child || {}).forEach(name => {
+        assertValidMaps(child[name], location + "/" + keyword + "/" + name);
       });
     } else {
       assertValidMaps(child, location + "/" + keyword);
@@ -126,6 +128,19 @@ describe("XDM map validation regressions", () => {
     { oneOf: [map(true)] },
     { patternProperties: { ".*": map(true) } },
     { dependencies: { details: map(true) } },
+    { if: map(true) },
+    { then: map(true) },
+    { else: map(true) },
+    { dependentSchemas: { details: map(true) } },
+    { $defs: { details: map(true) } },
+    { unevaluatedProperties: map(true) },
+    { prefixItems: [map(true)] },
+    { customContainer: { nested: [map(true)] } },
+    {
+      $defs: {
+        details: { if: { properties: { value: map(true) } } }
+      }
+    },
     map(map(true))
   ].forEach((schema, index) => {
     it("rejects a nested untyped map in schema case " + index, () => {
@@ -151,7 +166,45 @@ describe("XDM map validation regressions", () => {
         additionalProperties: true,
         examples: [map(true)],
         default: map(true),
+        enum: [map(true)],
+        const: map(true),
         "meta:enum": { example: map(true) }
+      })
+    );
+  });
+
+  [
+    "definitions",
+    "$defs",
+    "properties",
+    "patternProperties",
+    "dependencies",
+    "dependentSchemas"
+  ].forEach(keyword => {
+    ["examples", "default", "enum", "const", "meta:enum"].forEach(name => {
+      it("validates schemas named " + name + " under " + keyword, () => {
+        assert.throws(
+          () => assertValidMaps({ [keyword]: { [name]: map(true) } }),
+          /additionalProperties/
+        );
+      });
+    });
+  });
+
+  it("ignores data-only values inside nested schemas", () => {
+    assert.doesNotThrow(() =>
+      assertValidMaps({
+        $defs: {
+          details: {
+            if: {
+              examples: [{ nested: map(true) }],
+              default: { nested: map(true) },
+              enum: [map(true)],
+              const: map(true),
+              "meta:enum": { example: map(true) }
+            }
+          }
+        }
       })
     );
   });

@@ -2,6 +2,10 @@ const assert = require("assert");
 const fs = require("fs");
 const $ = require("shelljs");
 
+// Checks declared map/value types, including standard XDM maps with complex values
+// or references. Intentionally not a custom-map API compliance check, whose
+// documented value types are limited to string and integer.
+// References need only be non-empty strings; their targets are not resolved.
 function assertValidMaps(schema, location = "#") {
   if (!schema || typeof schema !== "object") {
     return;
@@ -20,10 +24,12 @@ function assertValidMaps(schema, location = "#") {
       location + ': an XDM map must have type "object"'
     );
     const values = schema.additionalProperties;
+    const valueDescription = JSON.stringify(values);
     assert(
       values && typeof values === "object" && !Array.isArray(values),
       location +
-        ": an XDM map must define a value schema in additionalProperties"
+        ": an XDM map must define a value schema in additionalProperties; received " +
+        valueDescription
     );
     assert(
       (typeof values.type === "string" &&
@@ -32,13 +38,15 @@ function assertValidMaps(schema, location = "#") {
         )) ||
         (typeof values.$ref === "string" && values.$ref.length > 0),
       location +
-        ": map additionalProperties must declare a concrete type or a non-empty $ref"
+        ": map additionalProperties must declare a concrete type or a non-empty $ref; received " +
+        valueDescription
     );
   }
 
   Object.keys(schema).forEach(keyword => {
     if (
-      ["examples", "default", "enum", "const", "meta:enum"].includes(keyword)
+      keyword.startsWith("meta:") ||
+      ["examples", "default", "enum", "const"].includes(keyword)
     ) {
       return;
     }
@@ -159,6 +167,22 @@ describe("XDM map validation regressions", () => {
     );
   });
 
+  [true, undefined, {}, { type: ["string", "number"] }].forEach(values => {
+    it(
+      "reports the invalid additionalProperties value: " +
+        JSON.stringify(values),
+      () => {
+        assert.throws(
+          () => assertValidMaps(map(values), "example.schema.json#"),
+          error =>
+            error instanceof assert.AssertionError &&
+            error.message.includes("example.schema.json#") &&
+            error.message.includes("received " + JSON.stringify(values))
+        );
+      }
+    );
+  });
+
   it("ignores map-shaped example data and ordinary object schemas", () => {
     assert.doesNotThrow(() =>
       assertValidMaps({
@@ -173,6 +197,21 @@ describe("XDM map validation regressions", () => {
     );
   });
 
+  ["meta:tags", "meta:customMetadata"].forEach(keyword => {
+    it("ignores map-shaped data inside " + keyword, () => {
+      assert.doesNotThrow(() =>
+        assertValidMaps({
+          properties: {
+            details: {
+              type: "string",
+              [keyword]: { nested: [map(true)] }
+            }
+          }
+        })
+      );
+    });
+  });
+
   [
     "definitions",
     "$defs",
@@ -181,14 +220,16 @@ describe("XDM map validation regressions", () => {
     "dependencies",
     "dependentSchemas"
   ].forEach(keyword => {
-    ["examples", "default", "enum", "const", "meta:enum"].forEach(name => {
-      it("validates schemas named " + name + " under " + keyword, () => {
-        assert.throws(
-          () => assertValidMaps({ [keyword]: { [name]: map(true) } }),
-          /additionalProperties/
-        );
-      });
-    });
+    ["examples", "default", "enum", "const", "meta:enum", "meta:tags"].forEach(
+      name => {
+        it("validates schemas named " + name + " under " + keyword, () => {
+          assert.throws(
+            () => assertValidMaps({ [keyword]: { [name]: map(true) } }),
+            /additionalProperties/
+          );
+        });
+      }
+    );
   });
 
   it("ignores data-only values inside nested schemas", () => {

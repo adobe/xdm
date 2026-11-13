@@ -2,10 +2,9 @@ const assert = require("assert");
 const fs = require("fs");
 const $ = require("shelljs");
 
-// Checks declared map/value types, including standard XDM maps with complex values
-// or references. Intentionally not a custom-map API compliance check, whose
-// documented value types are limited to string and integer.
-// References need only be non-empty strings; their targets are not resolved.
+// Guards against untyped XDM map values by requiring a concrete type or non-empty
+// $ref. Does not resolve references, fully validate value schemas, or enforce
+// custom-map API compliance.
 function assertValidMaps(schema, location = "#") {
   if (!schema || typeof schema !== "object") {
     return;

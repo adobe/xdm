@@ -64,7 +64,11 @@
             "https://ns.adobe.com/xdm/channel-types/direct": "Direct",
             "https://ns.adobe.com/xdm/channel-types/external": "External",
             "https://ns.adobe.com/xdm/channel-types/mail": "Mail",
-            "https://ns.adobe.com/xdm/channel-types/instore": "Instore"
+            "https://ns.adobe.com/xdm/channel-types/instore": "Instore",
+            "https://ns.adobe.com/xdm/channel-types/conversational_ai": "Conversational AI agents, such as AI chat assistants, brand concierges and voice agents",
+            "https://ns.adobe.com/xdm/channel-types/voice": "Voice calls and voice messages, such as call center calls",
+            "https://ns.adobe.com/xdm/channel-types/video_conference": "Video conferences, meetings and video calls",
+            "https://ns.adobe.com/xdm/channel-types/survey": "Surveys and feedback forms"
           },
           "meta:descriptionId": "channel##@type##description##71341",
           "meta:enumId": {
@@ -85,7 +89,11 @@
             "https://ns.adobe.com/xdm/channel-types/direct": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/direct##11461",
             "https://ns.adobe.com/xdm/channel-types/external": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/external##70691",
             "https://ns.adobe.com/xdm/channel-types/mail": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/mail##73311",
-            "https://ns.adobe.com/xdm/channel-types/instore": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/instore##9661"
+            "https://ns.adobe.com/xdm/channel-types/instore": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/instore##9661",
+            "https://ns.adobe.com/xdm/channel-types/conversational_ai": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/conversational_ai##31207",
+            "https://ns.adobe.com/xdm/channel-types/voice": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/voice##64813",
+            "https://ns.adobe.com/xdm/channel-types/video_conference": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/video_conference##47529",
+            "https://ns.adobe.com/xdm/channel-types/survey": "channel##@type##meta:enum##https://ns.adobe.com/xdm/channel-types/survey##85362"
           }
         },
         "xdm:mediaType": {

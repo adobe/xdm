@@ -42,6 +42,11 @@
           "title": "Media Reporting Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
           "description": "Media Reporting related fields."
+        },
+        "https://ns.adobe.com/experience/adcloud/conversionDetails": {
+          "title": "Ad Conversion Details",
+          "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
+          "description": "Search Ad Conversion Details."
         }
       }
     }

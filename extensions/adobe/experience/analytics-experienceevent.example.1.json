@@ -112,5 +112,12 @@
     "xdm:eVars": {
       "xdm:eVar1": "customer"
     }
+  },
+  "https://ns.adobe.com/experience/adcloud/conversionDetails": {
+    "xdm:trackingCode": "222222|333333|1",
+    "xdm:trackingIdentities": "aaaaaaa|bbbbbbb|cccccc",
+    "xdm:conversionProperties": {
+      "orderType": "purchase"
+    }
   }
 }

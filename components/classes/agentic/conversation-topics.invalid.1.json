@@ -1,0 +1,12 @@
+{
+  "xdm:conversationTopicTaxonomy": {
+    "xdm:signals": {
+      "xdm:topic": {
+        "xdm:taxonomy": {
+          "xdm:level1": "Customer Support",
+          "xdm:leaf": 42
+        }
+      }
+    }
+  }
+}

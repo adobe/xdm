@@ -64,6 +64,11 @@
                           "title": "Topic Level 5",
                           "type": "string",
                           "description": "The fifth-level (deepest) topic, a child of level4."
+                        },
+                        "xdm:leaf": {
+                          "title": "Topic Leaf",
+                          "type": "string",
+                          "description": "The most-specific topic name, matching the deepest populated taxonomy level. For hierarchies with fewer than five levels, this is the name at the last populated level."
                         }
                       }
                     }
